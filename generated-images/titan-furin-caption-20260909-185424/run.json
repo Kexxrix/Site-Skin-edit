@@ -1,0 +1,81 @@
+{
+  "run_id": "titan-furin-caption-20260909-185424",
+  "status": "english_captioned_first_frame_and_six_second_prompt_ready_for_trial",
+  "user_request": "Try the intended post-edit caption inside a single generated video; six-second source clips, four seconds selected per clip for a twelve-second edit. User subsequently changed the added caption from Korean to English before image generation.",
+  "output": {
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-81d7d0e7-22ed-4a7e-ba33-afb21c816881.png",
+    "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-furin-caption-20260909-185424\\results\\01-furin-tablet-english-caption.png",
+    "sha256": "fc7386b5d5d6b3d664f98f1f94c066e7e53044d21ef8df5cde80153a6fcac219",
+    "bytes": 1943551,
+    "action": "moved_this_generated_output_only",
+    "source_residue": false,
+    "format": "PNG",
+    "size": [
+      1918,
+      820
+    ]
+  },
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-furin-wide-20260909-183213/results/01-furin-tablet-wide.png",
+      "sha256": "2ebafe21ca31c7a4dfe4e97440819ce4e489824e66b53884153a7d159f18d311"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/titan_promotion/public/assets/fire.webp",
+      "sha256": "5092cc3641227084e07be4e7a467f85d3638cfbb24bac369a046e3780ee3f70d"
+    }
+  ],
+  "image_prompt": "prompts/01-caption-image.txt",
+  "image_request": "prompts/01-caption-image-request.json",
+  "grok_prompt": "prompts/02-grok-caption-six-seconds.txt",
+  "caption": [
+    "CORE SYSTEMS",
+    "BUILT IN-HOUSE"
+  ],
+  "video_duration_seconds": 6,
+  "proposed_usable_interval_seconds": [
+    0.5,
+    4.5
+  ],
+  "planned_edit": {
+    "clip_count": 3,
+    "seconds_per_clip": 4,
+    "total_seconds": 12,
+    "currently_prepared": "first clip only"
+  },
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "failed": 0,
+    "skipped": 0,
+    "selected_for_video_trial": 1,
+    "accepted_by_user": 0,
+    "adopted": 0
+  },
+  "qa": {
+    "verified_at": "2026-09-09T10:01:32.531195+00:00",
+    "format": "PNG",
+    "size": [
+      1918,
+      820
+    ],
+    "bytes": 1943551,
+    "sha256": "fc7386b5d5d6b3d664f98f1f94c066e7e53044d21ef8df5cde80153a6fcac219",
+    "move_hash_match": true,
+    "default_source_residue": false,
+    "references_unchanged": true,
+    "image_readable": true,
+    "output_ratio": 2.3390243902439023,
+    "target_ratio": 2.34375,
+    "ratio_error_percent": 0.2016260162601687,
+    "caption_read_visually": [
+      "CORE SYSTEMS",
+      "BUILT IN-HOUSE"
+    ],
+    "caption_language": "English",
+    "caption_and_tablet_visible_at_937_5_by_400": true,
+    "source_ui_exact_copy": false,
+    "video_generated_or_tested": false,
+    "site_modified": false
+  }
+}

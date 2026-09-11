@@ -1,0 +1,28 @@
+{
+  "scope": "static first-frame inspection only",
+  "text_lines_seen": [
+    "PARTNER EARNINGS",
+    "AUTO-CALCULATED & RECORDED"
+  ],
+  "checks": {
+    "exact_spelling": true,
+    "hyphen_and_ampersand": true,
+    "two_lines": true,
+    "text_fully_visible": true,
+    "white_text_clear_of_foreground_objects": true,
+    "original_C_style_retained": true,
+    "native_png_decoded": true,
+    "move_sha256_matched": true
+  },
+  "observations": [
+    "Headline is larger than the single-line secondary phrase.",
+    "Both lines are centered with a visible gap and broad side margins.",
+    "Blue ribbon, silver ring and glass panel remain perimeter graphics."
+  ],
+  "remaining": [
+    "Grok motion has not been generated.",
+    "Text integrity and the requested 3-second reading section require video review.",
+    "Website application and responsive playback have not been performed for this test."
+  ],
+  "result": "static_input_qa_pass_not_user_acceptance"
+}

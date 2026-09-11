@@ -1,0 +1,768 @@
+{
+  "timestamp": "2026-09-11T09-32-29-640Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1"
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1"
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "Advanced"
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "iPad10_MODEL",
+                  "property": [
+                    "Transform"
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "iPad10_MODEL",
+                  "property": [
+                    "Geometry Options"
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "Camera_Product",
+                  "property": [
+                    "Transform"
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "Camera_Product",
+                  "property": [
+                    "Camera Options"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ]
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "path": [
+                "Text",
+                "Animators",
+                "Animator 1"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Selectors",
+                  "matchName": "ADBE Text Selectors",
+                  "isGroup": true,
+                  "numChildren": 1
+                },
+                {
+                  "index": 2,
+                  "name": "Properties",
+                  "matchName": "ADBE Text Animator Properties",
+                  "isGroup": true,
+                  "numChildren": 103
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "path": [
+                "Text",
+                "Animators",
+                "Animator 1",
+                "Selectors",
+                "Range Selector 1"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Start",
+                  "matchName": "ADBE Text Percent Start",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "End",
+                  "matchName": "ADBE Text Percent End",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Offset",
+                  "matchName": "ADBE Text Percent Offset",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Start",
+                  "matchName": "ADBE Text Index Start",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "End",
+                  "matchName": "ADBE Text Index End",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Offset",
+                  "matchName": "ADBE Text Index Offset",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Advanced",
+                  "matchName": "ADBE Text Range Advanced",
+                  "isGroup": true,
+                  "numChildren": 10
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "path": [
+                "Text",
+                "Animators",
+                "Slide Up By Word",
+                "Selectors",
+                "Range Selector 1",
+                "Advanced"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Units",
+                  "matchName": "ADBE Text Range Units",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Based On",
+                  "matchName": "ADBE Text Range Type2",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Mode",
+                  "matchName": "ADBE Text Selector Mode",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Amount",
+                  "matchName": "ADBE Text Selector Max Amount",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "Shape",
+                  "matchName": "ADBE Text Range Shape",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Smoothness",
+                  "matchName": "ADBE Text Selector Smoothness",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Ease High",
+                  "matchName": "ADBE Text Levels Max Ease",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 8,
+                  "name": "Ease Low",
+                  "matchName": "ADBE Text Levels Min Ease",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 9,
+                  "name": "Randomize Order",
+                  "matchName": "ADBE Text Randomize Order",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 10,
+                  "name": "Random Seed",
+                  "matchName": "ADBE Text Random Seed",
+                  "isGroup": false,
+                  "numChildren": 0
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "path": [
+                "Transform"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Anchor Point",
+                  "matchName": "ADBE Anchor Point",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Position",
+                  "matchName": "ADBE Position",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "X Position",
+                  "matchName": "ADBE Position_0",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Y Position",
+                  "matchName": "ADBE Position_1",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "Z Position",
+                  "matchName": "ADBE Position_2",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Scale",
+                  "matchName": "ADBE Scale",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Orientation",
+                  "matchName": "ADBE Orientation",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 8,
+                  "name": "X Rotation",
+                  "matchName": "ADBE Rotate X",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 9,
+                  "name": "Y Rotation",
+                  "matchName": "ADBE Rotate Y",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 10,
+                  "name": "Z Rotation",
+                  "matchName": "ADBE Rotate Z",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 11,
+                  "name": "Opacity",
+                  "matchName": "ADBE Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 12,
+                  "name": "Appears in Reflections",
+                  "matchName": "ADBE Envir Appear in Reflect",
+                  "isGroup": false,
+                  "numChildren": 0
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "path": [
+                "Geometry Options"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Bevel Style",
+                  "matchName": "ADBE Bevel Styles",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Bevel Direction",
+                  "matchName": "ADBE Bevel Direction",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Bevel Depth",
+                  "matchName": "ADBE Bevel Depth",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Hole Bevel Depth",
+                  "matchName": "ADBE Hole Bevel Depth",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "Extrusion Depth",
+                  "matchName": "ADBE Extrsn Depth",
+                  "isGroup": false,
+                  "numChildren": 0
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "path": [
+                "Transform"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Point of Interest",
+                  "matchName": "ADBE Anchor Point",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Position",
+                  "matchName": "ADBE Position",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "X Position",
+                  "matchName": "ADBE Position_0",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Y Position",
+                  "matchName": "ADBE Position_1",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "Z Position",
+                  "matchName": "ADBE Position_2",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Scale",
+                  "matchName": "ADBE Scale",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Orientation",
+                  "matchName": "ADBE Orientation",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 8,
+                  "name": "X Rotation",
+                  "matchName": "ADBE Rotate X",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 9,
+                  "name": "Y Rotation",
+                  "matchName": "ADBE Rotate Y",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 10,
+                  "name": "Z Rotation",
+                  "matchName": "ADBE Rotate Z",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 11,
+                  "name": "Opacity",
+                  "matchName": "ADBE Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 12,
+                  "name": "Appears in Reflections",
+                  "matchName": "ADBE Envir Appear in Reflect",
+                  "isGroup": false,
+                  "numChildren": 0
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "path": [
+                "Camera Options"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Zoom",
+                  "matchName": "ADBE Camera Zoom",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Depth of Field",
+                  "matchName": "ADBE Camera Depth of Field",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Focus Distance",
+                  "matchName": "ADBE Camera Focus Distance",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Aperture",
+                  "matchName": "ADBE Camera Aperture",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "Blur Level",
+                  "matchName": "ADBE Camera Blur Level",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Focus Area Width",
+                  "matchName": "ADBE Camera Focus Area Width",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Near, Far Blur Level",
+                  "matchName": "ADBE Camera Split Blur Level",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 8,
+                  "name": "Iris Shape",
+                  "matchName": "ADBE Iris Shape",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 9,
+                  "name": "Iris Rotation",
+                  "matchName": "ADBE Iris Rotation",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 10,
+                  "name": "Iris Roundness",
+                  "matchName": "ADBE Iris Roundness",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 11,
+                  "name": "Iris Aspect Ratio",
+                  "matchName": "ADBE Iris Aspect Ratio",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 12,
+                  "name": "Iris Diffraction Fringe",
+                  "matchName": "ADBE Iris Diffraction Fringe",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 13,
+                  "name": "Highlight Gain",
+                  "matchName": "ADBE Iris Highlight Gain",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 14,
+                  "name": "Highlight Threshold",
+                  "matchName": "ADBE Iris Highlight Threshold",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 15,
+                  "name": "Highlight Saturation",
+                  "matchName": "ADBE Iris Hightlight Saturation",
+                  "isGroup": false,
+                  "numChildren": 0
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Start",
+              "matchName": "ADBE Text Percent Start",
+              "value": 0,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "End",
+              "matchName": "ADBE Text Percent End",
+              "value": 25,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Offset",
+              "matchName": "ADBE Text Percent Offset",
+              "value": 100,
+              "numKeys": 2,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Start",
+              "matchName": "ADBE Text Percent Start",
+              "value": 13,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "End",
+              "matchName": "ADBE Text Percent End",
+              "value": 100,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Offset",
+              "matchName": "ADBE Text Percent Offset",
+              "value": -100,
+              "numKeys": 2,
+              "hasExpression": false
+            }
+          ],
+          "count": 13,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": null,
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 373
+      }
+    }
+  ]
+}

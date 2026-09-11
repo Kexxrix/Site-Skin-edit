@@ -1,0 +1,14 @@
+아래 폴더의 자료로 TITAN 첫 두 컷만 After Effects MCP로 구현해주세요.
+E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818
+
+먼저 motion-instructions.md와 mcp-implementation-notes.md를 읽으세요.
+results/01-meet-titan.png와 results/02-built-in-house.png는 정착 화면의 구도 가이드입니다. 가이드를 Guide Layer로 임포트하고, 실제 화면은 네이티브 텍스트 5개와 Solid/Shape로 재작성하세요. 가이드의 미세한 얼룩·톤 변화는 복제하지 말고, 문서의 색·폰트·타이밍을 우선하세요. 최종 렌더에서는 두 가이드를 모두 끄세요.
+
+2400×1024, 75:32, 30fps, 3초(90프레임)입니다.
+Meet TITAN → 차콜 화면 와이프 → Core systems → Built → in-house가 순서대로 추가되고 마지막 문구가 유지됩니다.
+전체 콘티, 제품 컷, 오디오, 사이트 적용은 진행하지 마세요.
+
+현재 프로젝트의 dirty 상태와 기존 Hello World를 먼저 확인하고 보존하세요. 새 이름의 컴포지션과 새 ae-output-v001 폴더를 사용하고, 충돌하면 접미사를 올리세요. 기존 AEP나 렌더 파일을 덮어쓰거나 기존 큐 전체를 실행하지 마세요. eval.run을 활성화하지 않고 현재 허용된 catalog 명령으로 구현하세요.
+
+정착 프레임 F18/F75를 먼저 확인하고 애니메이션을 붙이세요. 프레임별 검수와 전체 재생을 마친 뒤 AEP, 2400×1024 MP4, 비교 PNG 2장, 문구·3초·30fps·90프레임 검증 결과를 보고해주세요. 기술 검증 통과와 사용자 미감 승인은 구분하세요.
+

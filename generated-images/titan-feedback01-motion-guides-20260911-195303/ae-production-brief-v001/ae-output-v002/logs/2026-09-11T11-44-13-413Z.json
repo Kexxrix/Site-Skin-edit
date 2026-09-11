@@ -1,0 +1,311 @@
+{
+  "started": "2026-09-11T11:44:05.677Z",
+  "ended": "2026-09-11T11:44:13.413Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "sourceItemId": 252,
+                  "name": "GUIDE_06_SPORTSBOOK_FINAL"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "GUIDE_06_SPORTSBOOK_FINAL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "value": [
+                    125,
+                    125,
+                    100
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "GUIDE_06_SPORTSBOOK_FINAL",
+                  "props": {
+                    "enabled": false,
+                    "guideLayer": true,
+                    "locked": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "sourceItemId": 253,
+                  "name": "GUIDE_07_OPERATIONS_FINAL"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "GUIDE_07_OPERATIONS_FINAL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "value": [
+                    125,
+                    125,
+                    100
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "GUIDE_07_OPERATIONS_FINAL",
+                  "props": {
+                    "enabled": false,
+                    "guideLayer": true,
+                    "locked": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "sourceItemId": 254,
+                  "name": "GUIDE_08_AUTO_BLOCKED_FINAL"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "GUIDE_08_AUTO_BLOCKED_FINAL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "value": [
+                    125,
+                    125,
+                    100
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "GUIDE_08_AUTO_BLOCKED_FINAL",
+                  "props": {
+                    "enabled": false,
+                    "guideLayer": true,
+                    "locked": true
+                  }
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "index": 1,
+              "name": "GUIDE_06_SPORTSBOOK_FINAL"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "GUIDE_06_SPORTSBOOK_FINAL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "GUIDE_06_SPORTSBOOK_FINAL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "GUIDE_07_OPERATIONS_FINAL"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "GUIDE_07_OPERATIONS_FINAL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "GUIDE_07_OPERATIONS_FINAL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "GUIDE_08_AUTO_BLOCKED_FINAL"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "GUIDE_08_AUTO_BLOCKED_FINAL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "GUIDE_08_AUTO_BLOCKED_FINAL",
+                  "warnings": []
+                }
+              ]
+            }
+          ],
+          "count": 9,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "S08_WHOLE_SCENE_OVERLAY_CONTAINER"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 378
+      },
+      "elapsedMs": 387
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 1862
+      },
+      "elapsedMs": 1865
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "project.open",
+          "args": {
+            "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+            "save": false
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "numItems": 30,
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 2230
+      },
+      "elapsedMs": 2232
+    },
+    {
+      "call": {
+        "name": "ae_project_export_json",
+        "args": {
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/final-native-project.json"
+        }
+      },
+      "response": {
+        "ok": true,
+        "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/final-native-project.json",
+        "bytes": 1843762,
+        "itemCount": 30,
+        "durationMs": 2967
+      },
+      "elapsedMs": 2991
+    }
+  ]
+}

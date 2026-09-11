@@ -1,0 +1,303 @@
+{
+  "run_id": "titan-video-frames-20260909-174303",
+  "status": "first_frames_and_prompts_prepared_video_untested",
+  "request": "First-frame stills and Grok Imagine prompts for four approximately four-second shots; actual public product UI composited by code as requested.",
+  "output_directory": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303",
+  "image_generation": "Codex built-in image generation",
+  "video_generation": "User will generate and edit in Grok Imagine",
+  "counts": {
+    "requested_scenes": 4,
+    "attempted_image_generations": 5,
+    "successful_image_generations": 5,
+    "failed_image_generations": 0,
+    "selected_first_frames": 4,
+    "qa_pass_selected_frames": 4,
+    "superseded_generated_variants": 1,
+    "user_accepted_final_frames": 0,
+    "site_adopted_frames": 0
+  },
+  "scenes": [
+    {
+      "id": "01",
+      "title": "CAT VILLAGE tablet",
+      "first_frame": "derived/01-tablet-start-character.png",
+      "sha256": "cb5c83431bfc59f36b8e7b34ab54af24bc618925bf1761068a852b64b81ec549",
+      "bytes": 1842817,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/01-tablet-plate.png",
+      "video_prompt": "prompts/01-tablet-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": "qa/01-tablet-character-composite.json",
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    },
+    {
+      "id": "02",
+      "title": "COBALT overhead phone",
+      "first_frame": "derived/02-phone-start.png",
+      "sha256": "07d46a991ced4fcdb149adedd42cf81d13d2c1fee90dde378d4380a5b08dafb1",
+      "bytes": 2758816,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/02-phone-overhead-v002-plate.png",
+      "video_prompt": "prompts/02-phone-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": "qa/02-phone-composite.json",
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    },
+    {
+      "id": "03",
+      "title": "Calculation records align",
+      "first_frame": "results/03-ledger-start.png",
+      "sha256": "5ce8c39846ff19da5be2c9f8fa819f42d402c2212145b1a1a7526075fc9dff23",
+      "bytes": 1471169,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/03-ledger-start.png",
+      "video_prompt": "prompts/03-ledger-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": null,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    },
+    {
+      "id": "04",
+      "title": "Two-product end shot",
+      "first_frame": "derived/04-products-start.png",
+      "sha256": "022664ee2160904b2bf1d7d4051b7538914d6a7d85375961ee66c36377a3fca2",
+      "bytes": 1713909,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/04-products-plate.png",
+      "video_prompt": "prompts/04-products-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": "qa/04-products-composite.json",
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    }
+  ],
+  "generated_plates": [
+    {
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-c8ee6aab-2341-4b29-a344-bd80f8a4b15e.png",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\results\\01-tablet-plate.png",
+      "sha256": "c0b22d9c57708dcd4d65db5c73ff4146e25db54b30db1ce24316d15bdafeeb87",
+      "bytes": 1395840,
+      "action": "moved_this_generated_output_only",
+      "source_residue": false,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "prompt": "prompts/01-tablet-image.txt",
+      "image_references": [],
+      "status": "selected_plate",
+      "accepted_by_user": false,
+      "adopted": false
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-5aa755eb-c49a-44db-bb35-131406332eb0.png",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\results\\02-phone-plate.png",
+      "sha256": "37c8eb50d54ed9a2fafffbf448777b0b9d2f71de4581123759c9e2e05cf8fc62",
+      "bytes": 1469807,
+      "action": "moved_this_generated_output_only",
+      "source_residue": false,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "prompt": "prompts/02-phone-image.txt",
+      "image_references": [
+        "results/01-tablet-plate.png"
+      ],
+      "status": "superseded_after_user_composition_feedback",
+      "accepted_by_user": false,
+      "adopted": false
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-9e8a52dd-5e43-4d07-82b4-7dc4b6f81f4e.png",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\results\\02-phone-overhead-v002-plate.png",
+      "sha256": "e63f2c0fa0ca63e0c00a3684d43dff8ca58a77707ec7f8bb989bcf8e12216e4c",
+      "bytes": 2736811,
+      "action": "moved_this_generated_output_only",
+      "source_residue": false,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "prompt": "prompts/02-phone-overhead-v002-image.txt",
+      "image_references": [],
+      "status": "selected_plate",
+      "accepted_by_user": false,
+      "adopted": false
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-c39dd76b-44ad-4434-a9f8-f031ca76cebc.png",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\results\\03-ledger-start.png",
+      "sha256": "5ce8c39846ff19da5be2c9f8fa819f42d402c2212145b1a1a7526075fc9dff23",
+      "bytes": 1471169,
+      "action": "moved_this_generated_output_only",
+      "source_residue": false,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "prompt": "prompts/03-ledger-image.txt",
+      "image_references": [],
+      "status": "selected_final_frame",
+      "accepted_by_user": false,
+      "adopted": false
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-975de636-f147-446a-9a52-e413157b2851.png",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\results\\04-products-plate.png",
+      "sha256": "e5f3523554375072c2f2fd4462ab8943e461b591cf95840b00aa31867b1f77be",
+      "bytes": 1403934,
+      "action": "moved_this_generated_output_only",
+      "source_residue": false,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "prompt": "prompts/04-products-image.txt",
+      "image_references": [],
+      "status": "selected_plate",
+      "accepted_by_user": false,
+      "adopted": false
+    }
+  ],
+  "source_images": [
+    {
+      "path": "sources/cat-village-tablet-character.png",
+      "sha256": "c79fae62e6db327ae789b698b31c9ba3fe7d346bea7432472d14cf90458727b9",
+      "bytes": 1630169,
+      "size": [
+        1200,
+        900
+      ],
+      "source_content_regenerated": false
+    },
+    {
+      "path": "sources/cat-village-tablet.png",
+      "sha256": "72403bc79ceda3715071c8a793304f067aa2251ee187170e0f2a035a8827775b",
+      "bytes": 1616291,
+      "size": [
+        1200,
+        900
+      ],
+      "source_content_regenerated": false
+    },
+    {
+      "path": "sources/chosen-sportsbook-phone.png",
+      "sha256": "2767c803ceb553ca37d98eae2a2594f307d1cfa47f236c9a257e3e4c3d8bb074",
+      "bytes": 295354,
+      "size": [
+        780,
+        1688
+      ],
+      "source_content_regenerated": false
+    },
+    {
+      "path": "sources/cobalt-phone-tall.png",
+      "sha256": "0680923415c81ad9ef9f4e3f8da96de60380a313b16f644121b28f162f366bc2",
+      "bytes": 304717,
+      "size": [
+        780,
+        1820
+      ],
+      "source_content_regenerated": false
+    },
+    {
+      "path": "sources/sportsbook-aures-desktop-detail-crop.png",
+      "sha256": "0d3dd4174eba0ae29423529a79a6da155ee677b61369ef20e586e1f36d506938",
+      "bytes": 1007617,
+      "size": [
+        780,
+        1688
+      ],
+      "source_content_regenerated": false
+    },
+    {
+      "path": "sources/sportsbook-cobalt-desktop-detail-crop.png",
+      "sha256": "2767c803ceb553ca37d98eae2a2594f307d1cfa47f236c9a257e3e4c3d8bb074",
+      "bytes": 295354,
+      "size": [
+        780,
+        1688
+      ],
+      "source_content_regenerated": false
+    },
+    {
+      "path": "sources/sportsbook-lumiere-desktop-detail-crop.png",
+      "sha256": "32dbadd48de045c72c46a945811e958015303075f7f5faf40cb0360e40e23d42",
+      "bytes": 852115,
+      "size": [
+        780,
+        1688
+      ],
+      "source_content_regenerated": false
+    }
+  ],
+  "source_capture_manifest": "sources/capture-manifest.json",
+  "composition_methods": [
+    "qa/compose-tablet-character.py",
+    "qa/compose-phone.py",
+    "qa/compose-products.py"
+  ],
+  "constraints": {
+    "actual_ui_code_composited": true,
+    "ui_regenerated_by_image_model": false,
+    "sportsbook_source": "User-approved COBALT desktop match-list detail crop; not a native mobile page",
+    "settlement_scene": "Conceptual record-sheet alignment; not actual back-office UI and not remittance",
+    "site_crop_note": "Source PNGs are approximately 16:9. Centered cover inside 938x400 crops top/bottom; scene 02 clips phone tips. Use 16:9 composition when trying Grok; website edit requires framing review.",
+    "brand_text": "TITAN SOLUTION is provided as editing text, not generated pixels",
+    "video_duration_note": "Four seconds is an editing target, not a verified Grok web UI duration control."
+  },
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/titan_promotion/docs/briefs/hero-media-brief.md",
+      "role": "Message and product brief; current user overrides orange palette, consistent photo series, and older production split"
+    },
+    {
+      "url": "https://docs.x.ai/developers/model-capabilities/video/image-to-video",
+      "role": "Official image-to-video usage"
+    },
+    {
+      "url": "https://x.ai/grok/use-cases/video-generation",
+      "role": "Official prompting guidance"
+    }
+  ],
+  "verification": "qa/final-verification.json",
+  "website_modified": false,
+  "video_tested": false
+}

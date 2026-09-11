@@ -1,0 +1,303 @@
+{
+  "context": {
+    "ok": true,
+    "result": {
+      "project": {
+        "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v002/TITAN-TwoCuts-3s-v002.aep",
+        "dirty": false,
+        "numItems": 12,
+        "bitsPerChannel": 8
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12,
+        "bgColor": [
+          0.96078431372549,
+          0.95294117647059,
+          0.93333333333333
+        ]
+      },
+      "selectedLayers": [],
+      "helpers": [
+        "AE.findCompByNameOrId(nameOrId)",
+        "AE.findComps(nameOrIdOrPattern) — '*' glob supported",
+        "AE.findItemById(id)",
+        "AE.findItem(idOrName) — any project item",
+        "AE.findFolder(idOrName) — null/undefined = root folder",
+        "AE.findLayerInComp(comp, indexOrNameOrIdRef) — accepts { id: n } (stable Layer.id, AE 22+)",
+        "AE.findLayerById(comp, id)",
+        "AE.resolveLayers(comp, target) — index | name | { id: n } | 'selected' | 'all'",
+        "AE.snapshotKeys(prop) / AE.applyKeys(prop, keys) / AE.removeAllKeys(prop)",
+        "AE.serializeItemSummary(item)",
+        "AE.serializeLayerSummary(layer)",
+        "AE.serializeLayerFull(layer, opts)",
+        "AE.serializeTransform(layer)",
+        "AE.serializePropertyGroup(group, depth, maxDepth)",
+        "AE.serializeCompMarkers(comp)",
+        "AE.exportProject()",
+        "AE.importProject(doc, opts)",
+        "AE.safeGet(fn, fallback)",
+        "AE.valueToJson(val)"
+      ],
+      "es3Rules": [
+        "var only (no let/const)",
+        "function() {} only (no arrow =>)",
+        "string concat only (no template literals)",
+        "for(var i=0;i<n;i++) only (no for-of, no forEach/map/filter)",
+        "indexOf !== -1 (no includes/startsWith/endsWith)",
+        "log('msg') to push breadcrumbs",
+        "return <JSON-serializable> at end"
+      ],
+      "undoContract": [
+        "every ae_do / eval.run call is auto-wrapped in ONE undo group",
+        "one Ctrl+Z (or project.undo) reverts the entire call; batch.run = one call = one undo step",
+        "NEVER call app.beginUndoGroup/endUndoGroup in eval.run code — an unbalanced group corrupts undo for the session",
+        "undo/redo itself runs OUTSIDE the group: use project.undo (or command.execute 16/2035) as its own call — never inside batch.run, and never via eval.run",
+        "ae_save_project and files written to disk (rendered PNGs, exported JSON) are NOT undoable"
+      ],
+      "items": [
+        {
+          "id": 1,
+          "name": "Codex_Hello_World_1920x1080",
+          "type": "Folder"
+        },
+        {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "type": "Folder"
+        },
+        {
+          "id": 114,
+          "name": "iPhone17",
+          "type": "Folder"
+        },
+        {
+          "id": 113,
+          "name": "iPhone17.glb",
+          "type": "Folder"
+        },
+        {
+          "id": 96,
+          "name": "REF_CUT_01",
+          "type": "Folder"
+        },
+        {
+          "id": 97,
+          "name": "REF_CUT_02",
+          "type": "Folder"
+        },
+        {
+          "id": 29,
+          "name": "Solids",
+          "type": "Folder"
+        },
+        {
+          "id": 100,
+          "name": "C01_BG_IVORY",
+          "type": "Folder"
+        },
+        {
+          "id": 106,
+          "name": "C02_BG_CHARCOAL_WIPE",
+          "type": "Folder"
+        },
+        {
+          "id": 30,
+          "name": "Dark Gray Solid 1",
+          "type": "Folder"
+        },
+        {
+          "id": 46,
+          "name": "Gray Radial Background",
+          "type": "Folder"
+        },
+        {
+          "id": 84,
+          "name": "TITAN_TwoCuts_75x32_3s_v001",
+          "type": "Folder"
+        }
+      ]
+    },
+    "logs": [],
+    "durationMs": 367
+  },
+  "sourceFiles": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\ae-output-v002\\TITAN-TwoCuts-3s-v002.aep",
+      "bytes": 610219,
+      "sha256": "396ba4fa7c75c9f6124005c983a3df7348b332fad8a6cbad1e4d0ebb9a502bc7",
+      "mtime": "2026-09-11T12:58:58.0000000+09:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\Codex\\2026-09-07\\new-chat\\work\\device-mockup-blender-20260911\\exports\\iPhone17.glb",
+      "bytes": 1080912,
+      "sha256": "9bbe83574181e3fdf7185a2e6d542a11a62364078d19fa4bac70c492dcf5a1e5",
+      "mtime": "2026-09-11T12:22:20.6717813+09:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\Codex\\2026-09-07\\new-chat\\work\\device-mockup-blender-20260911\\exports\\iPad10.glb",
+      "bytes": 1714248,
+      "sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+      "mtime": "2026-09-11T12:23:44.8793334+09:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\Codex\\2026-09-07\\new-chat\\work\\device-mockup-blender-20260911\\models\\iPhone17.blend",
+      "bytes": 289820,
+      "sha256": "1bec4222969b58f30ccf672451c981fb7ac3068170f172e8fca058c74e958c4c",
+      "mtime": "2026-09-11T12:22:20.6983384+09:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\Codex\\2026-09-07\\new-chat\\work\\device-mockup-blender-20260911\\models\\iPad10.blend",
+      "bytes": 377836,
+      "sha256": "e7f2018331c7b0ee780447a8b496d49b7f146be7295ce355472e65b1e53e443a",
+      "mtime": "2026-09-11T12:23:44.9134424+09:00"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\01-meet-titan.png",
+      "bytes": 825293,
+      "sha256": "a0594109128e86ac5a63396cb8546a558f7a9f8bda12d60a1a5ef4ded0f1a110",
+      "mtime": "2026-09-11T11:50:26.0000000+09:00"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\02-built-in-house.png",
+      "bytes": 957560,
+      "sha256": "1baba08917515f2a902164bfa24adfe296cb2200ddcdb91088e21b824516b2fc",
+      "mtime": "2026-09-11T11:51:50.0000000+09:00"
+    }
+  ],
+  "phoneTest": {
+    "ok": true,
+    "result": {
+      "index": 1,
+      "id": 126,
+      "name": "iPhone17.glb",
+      "type": "ThreeDModelLayer",
+      "enabled": true,
+      "solo": false,
+      "shy": false,
+      "locked": false,
+      "inPoint": 0,
+      "outPoint": 30,
+      "startTime": 0,
+      "stretch": 100,
+      "parentIndex": null,
+      "label": 3,
+      "parent": null,
+      "transformGroup": {
+        "name": "Transform",
+        "matchName": "ADBE Transform Group",
+        "properties": [
+          {
+            "name": "Anchor Point",
+            "matchName": "ADBE Anchor Point",
+            "propertyValueType": "ThreeD_SPATIAL",
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "Position",
+            "matchName": "ADBE Position",
+            "propertyValueType": "ThreeD_SPATIAL",
+            "value": [
+              470.5,
+              836,
+              0
+            ]
+          },
+          {
+            "name": "X Position",
+            "matchName": "ADBE Position_0",
+            "propertyValueType": "OneD",
+            "value": 0
+          },
+          {
+            "name": "Y Position",
+            "matchName": "ADBE Position_1",
+            "propertyValueType": "OneD",
+            "value": 0
+          },
+          {
+            "name": "Z Position",
+            "matchName": "ADBE Position_2",
+            "propertyValueType": "OneD",
+            "value": 0
+          },
+          {
+            "name": "Scale",
+            "matchName": "ADBE Scale",
+            "propertyValueType": "ThreeD",
+            "value": [
+              1173,
+              1173,
+              1173
+            ]
+          },
+          {
+            "name": "Orientation",
+            "matchName": "ADBE Orientation",
+            "propertyValueType": "ThreeD_SPATIAL",
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "X Rotation",
+            "matchName": "ADBE Rotate X",
+            "propertyValueType": "OneD",
+            "value": 82
+          },
+          {
+            "name": "Y Rotation",
+            "matchName": "ADBE Rotate Y",
+            "propertyValueType": "OneD",
+            "value": 1
+          },
+          {
+            "name": "Z Rotation",
+            "matchName": "ADBE Rotate Z",
+            "propertyValueType": "OneD",
+            "value": 12950
+          },
+          {
+            "name": "Opacity",
+            "matchName": "ADBE Opacity",
+            "propertyValueType": "OneD",
+            "value": 100
+          },
+          {
+            "name": "Appears in Reflections",
+            "matchName": "ADBE Envir Appear in Reflect",
+            "propertyValueType": "OneD",
+            "value": 1
+          }
+        ],
+        "groups": []
+      },
+      "effectsGroup": null,
+      "masksGroup": null,
+      "ok": true,
+      "found": true
+    },
+    "logs": [],
+    "durationMs": 374
+  },
+  "readOnlyConfirmed": {
+    "oldProjectDirty": false,
+    "oldCompId": 84,
+    "oldCompLayerCount": 12,
+    "phoneTestCompId": 114,
+    "phoneTestModelLayerId": 126,
+    "queueCount": 0,
+    "evalRunEnabled": false
+  }
+}

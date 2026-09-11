@@ -1,0 +1,7 @@
+import http from 'node:http';import fs from 'node:fs';import path from 'node:path';
+const base=new URL('./',import.meta.url).pathname.replace(/^\//,'');
+const final=process.argv.includes('--final');const port=final?8872:8871;
+http.createServer((req,res)=>{if(req.url==='/log'&&req.method==='POST'){let b='';req.on('data',x=>{b+=x;if(b.length>2e6)req.destroy()});req.on('end',()=>{try{const j=JSON.parse(b);fs.writeFileSync(path.join(base,'qa/playback-'+Date.now()+'.json'),JSON.stringify(j,null,2),{flag:'wx'});res.writeHead(200);res.end('recorded')}catch{res.writeHead(400);res.end()}});return;}
+const files={'/':path.join(base,'qa/review.html'),'/review.mp4':path.join(base,final?'TITAN-Scenes01-03-v001.mp4':'qa/review-pass1.mp4')};const file=files[req.url];if(!file){res.writeHead(404);res.end();return;}
+const size=fs.statSync(file).size,range=req.headers.range;let start=0,end=size-1;res.setHeader('Content-Type',req.url==='/'?'text/html; charset=utf-8':'video/mp4');res.setHeader('Accept-Ranges','bytes');if(range){const m=/bytes=(\d+)-(\d*)/.exec(range);if(m){start=+m[1];if(m[2])end=Math.min(+m[2],end);res.writeHead(206,{'Content-Range':`bytes ${start}-${end}/${size}`,'Content-Length':end-start+1});}}else res.writeHead(200,{'Content-Length':size});fs.createReadStream(file,{start,end}).pipe(res);
+}).listen(port,'127.0.0.1',()=>console.log('QA preview http://127.0.0.1:'+port+' final='+final));

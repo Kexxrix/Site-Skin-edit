@@ -1,0 +1,275 @@
+{
+  "checked_at": "2026-09-11T11:30:04.945Z",
+  "scope": "Before any added content: preserve changed source and compare to prior final native record and MP4",
+  "source_aep_sha256": "7e44100ab29f9356942e9bace32e9dd3f7721280356319c64ed9a2383d9152f7",
+  "historical_report_sha256": "fef5fff8170fcf67c925195a04f97acbbd0a930831f832538522821e866ac2a4",
+  "byte_identical_to_historical": false,
+  "ignored_only_evaluated_dynamic_values": [
+    "DEVICE_iPad10_3D/layers/2/transformGroup/properties/1/value",
+    "DEVICE_iPad10_3D/layers/2/transformGroup/properties/8/value",
+    "DEVICE_iPad10_3D/layers/2/transformGroup/properties/9/value",
+    "TITAN_MASTER_20S/layers/0/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/1/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/2/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/3/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/4/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/6/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/7/contentsGroup/groups/0/groups/0/groups/0/properties/1/value",
+    "TITAN_MASTER_20S/layers/7/contentsGroup/groups/0/groups/0/groups/1/properties/2/value",
+    "TITAN_MASTER_20S/layers/8/contentsGroup/groups/0/groups/0/groups/0/properties/1/value",
+    "TITAN_MASTER_20S/layers/9/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/10/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/11/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/11/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/12/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/12/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/13/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/13/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/14/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/14/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/15/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/15/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/16/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/16/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/17/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/layers/17/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/18/transformGroup/properties/10/value",
+    "TITAN_MASTER_20S/layers/19/transformGroup/properties/1/value",
+    "TITAN_MASTER_20S/markers/value"
+  ],
+  "numeric_tolerance": 1e-7,
+  "structural_differences": [],
+  "unsaved_vs_disk_structural_differences": [],
+  "frames": [
+    {
+      "frame": 0,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F000.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F000.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 4946506,
+        "total_channels": 7372800,
+        "mae": 0.7013633897569445,
+        "max_channel_difference": 80,
+        "psnr_db": 48.45013493244403
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 4946506,
+        "total_channels": 7372800,
+        "mae": 0.7013633897569445,
+        "max_channel_difference": 80,
+        "psnr_db": 48.45013493244403
+      }
+    },
+    {
+      "frame": 39,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F039.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F039.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 3365219,
+        "total_channels": 7372800,
+        "mae": 0.7145034450954861,
+        "max_channel_difference": 82,
+        "psnr_db": 45.16357548719249
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 3365219,
+        "total_channels": 7372800,
+        "mae": 0.7145034450954861,
+        "max_channel_difference": 82,
+        "psnr_db": 45.16357548719249
+      }
+    },
+    {
+      "frame": 70,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F070.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F070.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 2581010,
+        "total_channels": 7372800,
+        "mae": 0.8049454752604167,
+        "max_channel_difference": 96,
+        "psnr_db": 41.78901845684074
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 2581010,
+        "total_channels": 7372800,
+        "mae": 0.8049454752604167,
+        "max_channel_difference": 96,
+        "psnr_db": 41.78901845684074
+      }
+    },
+    {
+      "frame": 100,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F100.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F100.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 2634237,
+        "total_channels": 7372800,
+        "mae": 0.8419325086805556,
+        "max_channel_difference": 98,
+        "psnr_db": 41.07031369399973
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 2634237,
+        "total_channels": 7372800,
+        "mae": 0.8419325086805556,
+        "max_channel_difference": 98,
+        "psnr_db": 41.07031369399973
+      }
+    },
+    {
+      "frame": 114,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F114.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F114.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 3511303,
+        "total_channels": 7372800,
+        "mae": 0.8078099229600695,
+        "max_channel_difference": 78,
+        "psnr_db": 43.39101303436621
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 3511303,
+        "total_channels": 7372800,
+        "mae": 0.8078099229600695,
+        "max_channel_difference": 78,
+        "psnr_db": 43.39101303436621
+      }
+    },
+    {
+      "frame": 124,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F124.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F124.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5134178,
+        "total_channels": 7372800,
+        "mae": 1.1051687282986111,
+        "max_channel_difference": 78,
+        "psnr_db": 41.2443453782841
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5134178,
+        "total_channels": 7372800,
+        "mae": 1.1051687282986111,
+        "max_channel_difference": 78,
+        "psnr_db": 41.2443453782841
+      }
+    },
+    {
+      "frame": 135,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F135.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F135.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5265922,
+        "total_channels": 7372800,
+        "mae": 1.2171031358506945,
+        "max_channel_difference": 81,
+        "psnr_db": 41.162792482096606
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5265922,
+        "total_channels": 7372800,
+        "mae": 1.2171031358506945,
+        "max_channel_difference": 81,
+        "psnr_db": 41.162792482096606
+      }
+    },
+    {
+      "frame": 155,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F155.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F155.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5423542,
+        "total_channels": 7372800,
+        "mae": 1.4267914496527778,
+        "max_channel_difference": 83,
+        "psnr_db": 39.65500840691017
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5423542,
+        "total_channels": 7372800,
+        "mae": 1.4267914496527778,
+        "max_channel_difference": 83,
+        "psnr_db": 39.65500840691017
+      },
+      "historical_native_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-reopened-F155.png",
+      "native_before_vs_historical_native": {
+        "identical": false,
+        "changed_channels": 301,
+        "total_channels": 7372800,
+        "mae": 0.00019178602430555556,
+        "max_channel_difference": 15,
+        "psnr_db": 77.12510145796142
+      }
+    },
+    {
+      "frame": 163,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F163.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F163.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5421217,
+        "total_channels": 7372800,
+        "mae": 1.4208144802517362,
+        "max_channel_difference": 81,
+        "psnr_db": 39.681242124166666
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5421217,
+        "total_channels": 7372800,
+        "mae": 1.4208144802517362,
+        "max_channel_difference": 81,
+        "psnr_db": 39.681242124166666
+      }
+    },
+    {
+      "frame": 170,
+      "historical_review_png": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\final-F170.png",
+      "historical_review_png_origin": "Extracted H.264 review frame, not a native AE PNG",
+      "current_native_png": "qa/before-F170.png",
+      "historical_review_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5421660,
+        "total_channels": 7372800,
+        "mae": 1.4221906195746528,
+        "max_channel_difference": 81,
+        "psnr_db": 39.60983012599323
+      },
+      "baseline_h264_vs_current_native": {
+        "identical": false,
+        "changed_channels": 5421660,
+        "total_channels": 7372800,
+        "mae": 1.4221906195746528,
+        "max_channel_difference": 81,
+        "psnr_db": 39.60983012599323
+      }
+    }
+  ],
+  "historical_binary_change_cause": "Not determined; serialized authored content and native frame comparison are reported separately, not a claim that the AEP binaries are identical."
+}

@@ -1,0 +1,39 @@
+{
+  "request": {
+    "name": "ae_do",
+    "arguments": {
+      "operation": "render.status",
+      "args": {}
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"ok\": true,\n    \"rendering\": false,\n    \"numItems\": 0,\n    \"canQueueInAME\": false,\n    \"items\": []\n  },\n  \"context\": {\n    \"project\": {\n      \"numItems\": 3,\n      \"dirty\": true,\n      \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\"\n    },\n    \"activeComp\": null,\n    \"selectedLayers\": []\n  },\n  \"logs\": [],\n  \"durationMs\": 385\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "rendering": false,
+        "numItems": 0,
+        "canQueueInAME": false,
+        "items": []
+      },
+      "context": {
+        "project": {
+          "numItems": 3,
+          "dirty": true,
+          "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep"
+        },
+        "activeComp": null,
+        "selectedLayers": []
+      },
+      "logs": [],
+      "durationMs": 385
+    },
+    "isError": false
+  }
+}

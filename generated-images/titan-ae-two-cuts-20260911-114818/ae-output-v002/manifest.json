@@ -1,0 +1,177 @@
+{
+  "status": "technical_verification_passed",
+  "userAestheticApproval": "pending",
+  "scope": "First two TITAN cuts only; no audio, product cuts, full storyboard or site changes.",
+  "comp": "TITAN_TwoCuts_75x32_3s_v001",
+  "outputFolder": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v002",
+  "files": [
+    {
+      "name": "compare-F18-meet-titan.png",
+      "bytes": 51845,
+      "sha256": "5df92015f47597c9e6f3c1d9203fd8ae6ee6725c6ac71259f58f47cdf37b2383"
+    },
+    {
+      "name": "compare-F75-built-in-house.png",
+      "bytes": 54811,
+      "sha256": "fe4e14d9a73c6d73ddc9f43c09e26f4f45ba0707acb5e9d010877c48d25bdd63"
+    },
+    {
+      "name": "TITAN-TwoCuts-3s-v002.aep",
+      "bytes": 543077,
+      "sha256": "aba719d9c019852dd25fb6b9b8bfcc4ec2cd2fbffab86a82c7e9a0345d94cf74"
+    },
+    {
+      "name": "TITAN-TwoCuts-3s-v002.mp4",
+      "bytes": 78821,
+      "sha256": "81582752c0dd79bea2fcc33d10a9ddfff4ab2ad838d118ab830e6d8e0f67d371"
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "comp": {
+      "name": "TITAN_TwoCuts_75x32_3s_v001",
+      "width": 2400,
+      "height": 1024,
+      "fps": 30,
+      "duration": 3,
+      "frames": 90,
+      "pixelAspect": 1
+    },
+    "layerCounts": {
+      "text": 5,
+      "shape": 3,
+      "solid": 2,
+      "disabledReferences": 2
+    },
+    "propertyTests": {
+      "total": 67,
+      "passed": 67,
+      "maxError": 0.00497833472454
+    },
+    "preservation": [
+      {
+        "id": 1,
+        "name": "Codex_Hello_World_1920x1080",
+        "unchanged": true
+      },
+      {
+        "id": 32,
+        "name": "Hello_World_Stretch_3s",
+        "unchanged": true
+      },
+      {
+        "id": 29,
+        "name": "Solids",
+        "unchanged": true
+      },
+      {
+        "id": 30,
+        "name": "Dark Gray Solid 1",
+        "unchanged": true
+      },
+      {
+        "id": 46,
+        "name": "Gray Radial Background",
+        "unchanged": true
+      }
+    ],
+    "originalFiles": [
+      {
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep",
+        "sha256": "20ac6f9d6f9a0cfda77ee80cd13f0b57358574c25f3ddff75c560de3002e969e",
+        "unchanged": true
+      },
+      {
+        "file": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\01-meet-titan.png",
+        "sha256": "a0594109128e86ac5a63396cb8546a558f7a9f8bda12d60a1a5ef4ded0f1a110",
+        "unchanged": true
+      },
+      {
+        "file": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\02-built-in-house.png",
+        "sha256": "1baba08917515f2a902164bfa24adfe296cb2200ddcdb91088e21b824516b2fc",
+        "unchanged": true
+      }
+    ],
+    "frameCount": 90,
+    "allFramesOpaque": true,
+    "cut1Hold": "F14-F24 identical pixels",
+    "cut2Hold": "F61-F89 identical pixels",
+    "F00": "uniform #F5F3EE",
+    "F33": "uniform #24262A",
+    "renderErrors": 0,
+    "colorWarnings": 0,
+    "renderRoute": "isolated aerender from saved AEP"
+  },
+  "mediaProbe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 2400,
+        "height": 1024,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "75:32",
+        "pix_fmt": "yuv420p",
+        "color_space": "bt709",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "duration": "3.000000",
+        "nb_frames": "90",
+        "nb_read_frames": "90"
+      }
+    ],
+    "format": {
+      "duration": "3.000000",
+      "size": "78821"
+    }
+  },
+  "fullDecode": {
+    "tool": "ffmpeg",
+    "exitCode": 0,
+    "errors": []
+  },
+  "playback": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8770/TITAN-TwoCuts-3s-v002.mp4",
+    "browser": "Codex In-app Browser",
+    "method": "Native video controls; replay from beginning and inspect the playing state and final rendered frame.",
+    "observedPlaying": {
+      "currentTime": 0.200639,
+      "duration": 3,
+      "paused": false,
+      "ended": false
+    },
+    "observedEnd": {
+      "currentTime": 3,
+      "duration": 3,
+      "paused": true,
+      "ended": true,
+      "readyState": 4,
+      "width": 2400,
+      "height": 1024
+    },
+    "consoleWarningsAndErrors": [],
+    "visualObservations": [
+      "Ivory Meet/TITAN entry visible during replay.",
+      "Final Core systems / Built in-house and orange underline visible at end."
+    ],
+    "limits": "Live screenshots sample the start and end. Timing and intermediate transition states are additionally checked through the 90 rendered frames and 67 property tests."
+  },
+  "sourcePreservation": "Existing Hello World project items and AEP, reference PNGs, and v001 files preserved.",
+  "recovery": {
+    "restoredLayer": "C02_UNDERLINE",
+    "newLayerId": 112,
+    "cause": "unconfirmed",
+    "mitigation": "Render all 90 frames with an isolated Adobe aerender process from the saved v002 AEP; do not reuse interactive AE."
+  },
+  "liveEditor": {
+    "dirty": true,
+    "savedProjectOverwrittenAfterRender": false,
+    "selectedLayers": 0,
+    "layerCount": 12,
+    "renderQueueCount": 0
+  },
+  "colorCaveat": "PNG RGB colors were verified. H.264 yuv420p uses lossy encoding; ffprobe reports bt709 matrix but no explicit primaries/transfer values. Exact RGB appearance is not guaranteed across all players."
+}

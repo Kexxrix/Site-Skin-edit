@@ -1,0 +1,144 @@
+{
+  "timestamp": "2026-09-11T09-50-40-848Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.list",
+          "args": {
+            "comp": "TITAN_MASTER_20S",
+            "layer": "SHARED_LINE_01_to_03",
+            "property": [
+              "Contents",
+              "Continuous_Path"
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "path": [
+            "Contents",
+            "Continuous_Path"
+          ],
+          "children": [
+            {
+              "index": 1,
+              "name": "Blend Mode",
+              "matchName": "ADBE Vector Blend Mode",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 2,
+              "name": "Contents",
+              "matchName": "ADBE Vectors Group",
+              "isGroup": true,
+              "numChildren": 2
+            },
+            {
+              "index": 3,
+              "name": "Transform",
+              "matchName": "ADBE Vector Transform Group",
+              "isGroup": true,
+              "numChildren": 7
+            },
+            {
+              "index": 4,
+              "name": "Material Options",
+              "matchName": "ADBE Vector Materials Group",
+              "isGroup": true,
+              "numChildren": 48
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 379
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.get",
+          "args": {
+            "comp": "TITAN_MASTER_20S",
+            "layer": "S01_Meet",
+            "property": [
+              "Text",
+              "Animators",
+              "Animator 1",
+              "Properties",
+              "ADBE Text Position 3D"
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "name": "Position",
+          "matchName": "ADBE Text Position 3D",
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 369
+      }
+    }
+  ]
+}

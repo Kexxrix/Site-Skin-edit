@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-09-11T09-50-10-157Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 0.06666666666666667
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/3D Text/3D Basic Position Z Cascade In.ffx"
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 1.3
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Slide Up By Word.ffx"
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 2.2
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Slide Up By Word.ffx"
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 3.1
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Slide Up By Word.ffx"
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 3.9
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Slide Up By Word.ffx"
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 60000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "time": 0.06666666666667
+            },
+            {
+              "ok": true,
+              "applied": "3D Basic Position Z Cascade In.ffx",
+              "numEffects": 0
+            },
+            {
+              "ok": true,
+              "time": 1.3
+            },
+            {
+              "ok": true,
+              "applied": "Slide Up By Word.ffx",
+              "numEffects": 0
+            },
+            {
+              "ok": true,
+              "time": 2.2
+            },
+            {
+              "ok": true,
+              "applied": "Slide Up By Word.ffx",
+              "numEffects": 0
+            },
+            {
+              "ok": true,
+              "time": 3.1
+            },
+            {
+              "ok": true,
+              "applied": "Slide Up By Word.ffx",
+              "numEffects": 0
+            },
+            {
+              "ok": true,
+              "time": 3.9
+            },
+            {
+              "ok": true,
+              "applied": "Slide Up By Word.ffx",
+              "numEffects": 0
+            }
+          ],
+          "count": 10,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 1112
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "topic": "titan-ae-two-cuts",
+  "created_at": "2026-09-11T11:57:35.009732+09:00",
+  "status": "handoff_materials_complete_ae_not_executed",
+  "request": "Two reference images and motion instructions for first two cuts only, plus current AE MCP implementation research; original desktop hero ratio replaces 16:9.",
+  "planned_ae_comp": {
+    "width": 2400,
+    "height": 1024,
+    "pixel_aspect_ratio": 1,
+    "ratio": "75:32",
+    "fps": 30,
+    "duration_seconds": 3,
+    "frame_count": 90
+  },
+  "counts": {
+    "attempted": 2,
+    "succeeded": 2,
+    "failed": 0,
+    "skipped": 0,
+    "qa_passed_guides": 2,
+    "rejected": 0,
+    "user_accepted": 0,
+    "site_adopted": 0,
+    "ae_executions": 0,
+    "video_renders": 0
+  },
+  "generator": "Codex built-in image_gen",
+  "assets": [
+    {
+      "file": "01-meet-titan.png",
+      "generated_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-f6d33229-7b7b-4c5b-a7eb-a1fd2e1def85.png",
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\01-meet-titan.png",
+      "action": "move",
+      "sha256": "A0594109128E86AC5A63396CB8546A558F7A9F8BDA12D60A1A5EF4DED0F1A110",
+      "bytes": 825293,
+      "format": "PNG",
+      "width": 1920,
+      "height": 819,
+      "aspect_ratio": 2.3443223443223444,
+      "target_ratio": "75:32",
+      "ratio_rounding_pass": true,
+      "cropped": false,
+      "resized": false,
+      "user_accepted": false,
+      "site_adopted": false,
+      "prompt": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\prompts\\01-meet-titan.txt",
+      "references": [],
+      "qa_status": "usable_composition_guide_with_documented_raster_and_weight_caveats"
+    },
+    {
+      "file": "02-built-in-house.png",
+      "generated_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-9447518d-6dca-421a-a5f3-77f15c9e0420.png",
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\02-built-in-house.png",
+      "action": "move",
+      "sha256": "1BABA08917515F2A902164BFA24ADFE296CB2200DDCDB91088E21B824516B2FC",
+      "bytes": 957560,
+      "format": "PNG",
+      "width": 1920,
+      "height": 819,
+      "aspect_ratio": 2.3443223443223444,
+      "target_ratio": "75:32",
+      "ratio_rounding_pass": true,
+      "cropped": false,
+      "resized": false,
+      "user_accepted": false,
+      "site_adopted": false,
+      "prompt": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\prompts\\02-built-in-house.txt",
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\01-meet-titan.png",
+          "sha256": "A0594109128E86AC5A63396CB8546A558F7A9F8BDA12D60A1A5EF4DED0F1A110",
+          "role": "style_and_spacing_only"
+        }
+      ],
+      "qa_status": "usable_composition_guide_with_documented_raster_and_weight_caveats"
+    }
+  ],
+  "documents": {
+    "motion": "motion-instructions.md",
+    "mcp_research": "mcp-implementation-notes.md",
+    "handoff_prompt": "handoff-to-ae-task.txt",
+    "generation_review": "qa/generation-review.md",
+    "validation": "qa/validation.json"
+  },
+  "sources": {
+    "hero_css": "E:/codexwork/Site-Skin-edit/titan_promotion/components/hero.module.css",
+    "previous_text_test_prompt": "E:/codexwork/Site-Skin-edit/generated-images/titan-korean-sequence-20260910-190140/prompts/grok-text-only-15s-test.txt"
+  },
+  "preservation": {
+    "existing_site_edited": false,
+    "existing_ae_project_edited": false,
+    "old_generations_changed": false
+  },
+  "remaining_verification": [
+    "Native AE text and shape reconstruction",
+    "New composition motion and frame review",
+    "Actual 3 second video render and playback",
+    "User visual acceptance"
+  ]
+}

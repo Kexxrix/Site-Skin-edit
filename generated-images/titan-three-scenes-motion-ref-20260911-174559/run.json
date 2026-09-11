@@ -1,0 +1,261 @@
+{
+  "run_id": "titan-three-scenes-motion-ref-20260911-174559",
+  "theme": "TITAN three-scene kinetic typography reference redesign",
+  "brand_exact": "TITAN",
+  "requested_roles_and_counts": [
+    {
+      "scene": "01",
+      "count": 1,
+      "role": "Meet TITAN"
+    },
+    {
+      "scene": "02",
+      "count": 1,
+      "role": "Core systems / Built in-house"
+    },
+    {
+      "scene": "03",
+      "count": 1,
+      "role": "CAT VILLAGE / Casino Slot, outline arrival"
+    }
+  ],
+  "character_use": "Only existing CAT VILLAGE mascot inside supplied tablet screen",
+  "generation_route": "codex_builtin",
+  "output_directory": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results",
+  "editing_mode": "agent",
+  "selection_authority": "User requested three new reference images; agent may review and make bounded corrections; user acceptance and AE adoption pending",
+  "shared_visual_rules": {
+    "user_requirements": [
+      "Regenerate scenes 1, 2, 3 as separate images",
+      "Consistent wide aspect matching current 75:32 AE project",
+      "Remove Korean added copy",
+      "Use studied KDA lettering and graphic-transition techniques",
+      "Design for active AE text/preset/shape/3D motion",
+      "Scene 3 centered filled text becomes outlines when rotating tablet arrives front-facing",
+      "Scene 3 exact added copy CAT VILLAGE and Casino Slot"
+    ],
+    "inferred_from_selected_references": [
+      "Warm ivory, charcoal and restrained orange from current AE scenes",
+      "Arc-to-line-to-frame visual continuity",
+      "Frame 3 depicts outline arrival endpoint; temporal start and transition recorded separately",
+      "Scenes 1 and 2 focus on typography; scene 3 owns the product device"
+    ],
+    "local_details_not_to_propagate": [
+      "Old 16:9 ratio",
+      "Old Korean overlay text",
+      "Old very heavy Korean typography",
+      "Old tablet-on-right layout",
+      "KDA lyrics, symbols, characters and palette"
+    ]
+  },
+  "references": [
+    {
+      "role": "Previous scene 01 copy and palette",
+      "sha256": "a0594109128e86ac5a63396cb8546a558f7a9f8bda12d60a1a5ef4ded0f1a110",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/01-meet-titan.png"
+    },
+    {
+      "role": "Previous scene 02 copy and palette",
+      "sha256": "1baba08917515f2a902164bfa24adfe296cb2200ddcdb91088e21b824516b2fc",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/02-built-in-house.png"
+    },
+    {
+      "role": "Reviewed prior scene 03; not a new typography/layout reference",
+      "sha256": "b378c5c7536783b61df675a63174d65a4a1fc05fa4f850ca353a5d181880c302",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-korean-sequence-20260910-190140/results/05-cat-village.png"
+    },
+    {
+      "role": "Actual CAT VILLAGE product display for scene 03",
+      "sha256": "c79fae62e6db327ae789b698b31c9ba3fe7d346bea7432472d14cf90458727b9",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/sources/cat-village-tablet-character.png"
+    }
+  ],
+  "assets": [
+    {
+      "width": 1920,
+      "height": 819,
+      "transfer": "moved",
+      "format_guid": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+      "reference_images": [
+        {
+          "role": "Previous scene 01 copy and palette",
+          "sha256": "a0594109128e86ac5a63396cb8546a558f7a9f8bda12d60a1a5ef4ded0f1a110",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/01-meet-titan.png"
+        }
+      ],
+      "generated": true,
+      "prompt_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/prompts/01-meet-titan.txt",
+      "generated_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-e5571e50-e126-410a-a772-75f502215127.png",
+      "height_rounding_error_px": 0.20000000000004547,
+      "qa_pass": true,
+      "sha256": "79f770482c76ad70ae667ae1558df446e3476355fcf8d29c78b6bce61c233ee0",
+      "accepted_by_user": false,
+      "file": "01-meet-titan.png",
+      "bytes": 951999,
+      "visual_qa": "Meet TITAN correct, English-only added copy, readable fill title and oversized hollow outline echo, ivory/charcoal/orange, open arc and handoff dot. Raster soft fade present on some background strokes; rebuild as controlled paths in AE.",
+      "adopted": false,
+      "ratio_pass": true,
+      "selected_by_agent": true,
+      "hash_verified": true,
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\01-meet-titan.png",
+      "scene": "01",
+      "aspect_ratio": 2.3443223443223444
+    },
+    {
+      "visual_qa": "Core systems / Built in-house correct, regular hyphen, outline BUILT echo, orange underline extends into frame corner with dot. All primary copy readable; no Korean or device. Large outline intentionally cropped at edges.",
+      "scene": "02",
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\02-built-in-house.png",
+      "transfer": "moved",
+      "width": 1920,
+      "file": "02-built-in-house.png",
+      "aspect_ratio": 2.3443223443223444,
+      "adopted": false,
+      "format_guid": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+      "hash_verified": true,
+      "generated_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-43305312-b35c-4655-8cb6-c9c6946ea48a.png",
+      "bytes": 1014268,
+      "prompt_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/prompts/02-built-in-house.txt",
+      "qa_pass": true,
+      "height_rounding_error_px": 0.20000000000004547,
+      "generated": true,
+      "ratio_pass": true,
+      "sha256": "d8886b98474a1227e65e07ea1b97177a33a4af0b53a206edb0cc0924f5ce59ce",
+      "height": 819,
+      "accepted_by_user": false,
+      "selected_by_agent": true,
+      "reference_images": [
+        {
+          "role": "New scene 01 visual language; selected by agent, not user accepted",
+          "sha256": "79f770482c76ad70ae667ae1558df446e3476355fcf8d29c78b6bce61c233ee0",
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\01-meet-titan.png"
+        },
+        {
+          "role": "Previous scene 02 copy and palette",
+          "sha256": "1baba08917515f2a902164bfa24adfe296cb2200ddcdb91088e21b824516b2fc",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/02-built-in-house.png"
+        }
+      ]
+    },
+    {
+      "scene": "03",
+      "generated_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-5ceedc46-c49e-45c0-99c5-0c4a5da6947a.png",
+      "sha256": "b259c9f36390e41f6ad1ac67acb92e4aa3b4012d4195af755df26df0884edfbf",
+      "ratio_pass": true,
+      "accepted_by_user": false,
+      "generated": true,
+      "qa_pass": true,
+      "visual_qa": "CAT VILLAGE / Casino Slot exact added copy, outline-only dominant typography overlaps a centered straight-on landscape tablet. Screen is visible through glyph interiors. One complete tablet, no pedestal, no Korean added copy. Existing Japanese UI remains within product display. Output UI is a generated reference, not pixel-identical to screenshot. Rotation, depth approach and temporal Fill-to-Outline event are not demonstrated by this still.",
+      "format_guid": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+      "hash_verified": true,
+      "transfer": "moved",
+      "adopted": false,
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\03-cat-village-outline-arrival.png",
+      "aspect_ratio": 2.3443223443223444,
+      "height": 819,
+      "file": "03-cat-village-outline-arrival.png",
+      "prompt_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/prompts/03-cat-village-outline-arrival.txt",
+      "height_rounding_error_px": 0.20000000000004547,
+      "reference_images": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\01-meet-titan.png",
+          "role": "New scene 01 visual language; selected by agent",
+          "sha256": "79f770482c76ad70ae667ae1558df446e3476355fcf8d29c78b6bce61c233ee0"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\02-built-in-house.png",
+          "role": "New scene 02 frame and outline continuity; selected by agent",
+          "sha256": "d8886b98474a1227e65e07ea1b97177a33a4af0b53a206edb0cc0924f5ce59ce"
+        },
+        {
+          "role": "Actual CAT VILLAGE product display for scene 03",
+          "sha256": "c79fae62e6db327ae789b698b31c9ba3fe7d346bea7432472d14cf90458727b9",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/sources/cat-village-tablet-character.png"
+        }
+      ],
+      "width": 1920,
+      "selected_by_agent": true,
+      "bytes": 1638387
+    }
+  ],
+  "counts": {
+    "attempted": 3,
+    "generated": 3,
+    "failed": 0,
+    "skipped": 0,
+    "qa_pass": 3,
+    "selected_by_agent": 3,
+    "accepted_by_user": 0,
+    "rejected": 0
+  },
+  "next_action": "User reviews the three reference images; AE production is not started by this image request",
+  "target_aspect_ratio": {
+    "actual_size_rule": "Record tool output; verify 75:32 exactly or subpixel rounding, do not resize originals",
+    "numerator": 75,
+    "requested_pixel_size": "2400x1024",
+    "denominator": 32
+  },
+  "status": "completed_reference_images_pending_user_selection",
+  "motion_execution_status": "Not run; this delivery is three static reference images with reconstruction notes",
+  "created_at": "2026-09-11T17:48:31.0865149+09:00",
+  "final_file_verification": [
+    {
+      "scene": "01",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\01-meet-titan.png",
+      "bytes": 951999,
+      "width": 1920,
+      "height": 819,
+      "png": true,
+      "sha_match": true,
+      "source_moved": true,
+      "prompt_exists": true
+    },
+    {
+      "scene": "02",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\02-built-in-house.png",
+      "bytes": 1014268,
+      "width": 1920,
+      "height": 819,
+      "png": true,
+      "sha_match": true,
+      "source_moved": true,
+      "prompt_exists": true
+    },
+    {
+      "scene": "03",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\results\\03-cat-village-outline-arrival.png",
+      "bytes": 1638387,
+      "width": 1920,
+      "height": 819,
+      "png": true,
+      "sha_match": true,
+      "source_moved": true,
+      "prompt_exists": true
+    }
+  ],
+  "source_preservation": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/01-meet-titan.png",
+      "sha256": "a0594109128e86ac5a63396cb8546a558f7a9f8bda12d60a1a5ef4ded0f1a110",
+      "unchanged": true
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/02-built-in-house.png",
+      "sha256": "1baba08917515f2a902164bfa24adfe296cb2200ddcdb91088e21b824516b2fc",
+      "unchanged": true
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-korean-sequence-20260910-190140/results/05-cat-village.png",
+      "sha256": "b378c5c7536783b61df675a63174d65a4a1fc05fa4f850ca353a5d181880c302",
+      "unchanged": true
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/sources/cat-village-tablet-character.png",
+      "sha256": "c79fae62e6db327ae789b698b31c9ba3fe7d346bea7432472d14cf90458727b9",
+      "unchanged": true
+    }
+  ],
+  "completed_at": "2026-09-11T08:56:50.5442405+00:00",
+  "final_actual_dimensions": "1920x819 PNG, all 3 images",
+  "motion_notes_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/MOTION-REFERENCE.ko.md",
+  "review_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/qa/generation-review.md"
+}

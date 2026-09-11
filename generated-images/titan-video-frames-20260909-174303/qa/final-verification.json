@@ -1,0 +1,100 @@
+{
+  "verified_at": "2026-09-09T09:11:18.450707+00:00",
+  "selected_frame_count": 4,
+  "unique_selected_frame_hashes": 4,
+  "all_png_readable": true,
+  "approximate_16_9_ratio_pass": true,
+  "all_generation_moves_hash_matched": true,
+  "generated_default_source_residue": false,
+  "all_paired_video_prompts_present": true,
+  "selected_frames": [
+    {
+      "id": "01",
+      "title": "CAT VILLAGE tablet",
+      "first_frame": "derived/01-tablet-start-character.png",
+      "sha256": "cb5c83431bfc59f36b8e7b34ab54af24bc618925bf1761068a852b64b81ec549",
+      "bytes": 1842817,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/01-tablet-plate.png",
+      "video_prompt": "prompts/01-tablet-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": "qa/01-tablet-character-composite.json",
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    },
+    {
+      "id": "02",
+      "title": "COBALT overhead phone",
+      "first_frame": "derived/02-phone-start.png",
+      "sha256": "07d46a991ced4fcdb149adedd42cf81d13d2c1fee90dde378d4380a5b08dafb1",
+      "bytes": 2758816,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/02-phone-overhead-v002-plate.png",
+      "video_prompt": "prompts/02-phone-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": "qa/02-phone-composite.json",
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    },
+    {
+      "id": "03",
+      "title": "Calculation records align",
+      "first_frame": "results/03-ledger-start.png",
+      "sha256": "5ce8c39846ff19da5be2c9f8fa819f42d402c2212145b1a1a7526075fc9dff23",
+      "bytes": 1471169,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/03-ledger-start.png",
+      "video_prompt": "prompts/03-ledger-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": null,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    },
+    {
+      "id": "04",
+      "title": "Two-product end shot",
+      "first_frame": "derived/04-products-start.png",
+      "sha256": "022664ee2160904b2bf1d7d4051b7538914d6a7d85375961ee66c36377a3fca2",
+      "bytes": 1713909,
+      "format": "PNG",
+      "size": [
+        1672,
+        941
+      ],
+      "plate": "results/04-products-plate.png",
+      "video_prompt": "prompts/04-products-grok.txt",
+      "target_edit_duration_seconds": 4,
+      "qa_evidence": "qa/04-products-composite.json",
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "actual_video_generated_or_tested": false
+    }
+  ],
+  "raw_generated_count": 5,
+  "superseded_generated_count": 1,
+  "video_generation_tested": false,
+  "site_modified_or_deployed_by_this_run": false
+}

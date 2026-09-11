@@ -1,0 +1,3096 @@
+{
+  "timestamp": "2026-09-11T09-50-13-696Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 45
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 0,
+                  "value": -100
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 0.3333333333333333,
+                  "value": 100
+                }
+              },
+              {
+                "operation": "keyframe.set_easing",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2,
+                  "inSpeed": 0,
+                  "outSpeed": 0,
+                  "inInfluence": 65,
+                  "outInfluence": 33
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "value": [
+                    0,
+                    42,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Properties",
+                    "ADBE Text Rotation X"
+                  ],
+                  "value": 65
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 65
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 0.06666666666666667,
+                  "value": -100
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 0.3333333333333333,
+                  "value": 100
+                }
+              },
+              {
+                "operation": "keyframe.set_easing",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2,
+                  "inSpeed": 0,
+                  "outSpeed": 0,
+                  "inInfluence": 65,
+                  "outInfluence": 33
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    220
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 65
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 1.3,
+                  "value": -100
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 1.5333333333333334,
+                  "value": 100
+                }
+              },
+              {
+                "operation": "keyframe.set_easing",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2,
+                  "inSpeed": 0,
+                  "outSpeed": 0,
+                  "inInfluence": 65,
+                  "outInfluence": 33
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "value": [
+                    -160,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 65
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 2.2,
+                  "value": -100
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 2.433333333333333,
+                  "value": 100
+                }
+              },
+              {
+                "operation": "keyframe.set_easing",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2,
+                  "inSpeed": 0,
+                  "outSpeed": 0,
+                  "inInfluence": 65,
+                  "outInfluence": 33
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "value": [
+                    0,
+                    90,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 65
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 3.1,
+                  "value": -100
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 3.3333333333333335,
+                  "value": 100
+                }
+              },
+              {
+                "operation": "keyframe.set_easing",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2,
+                  "inSpeed": 0,
+                  "outSpeed": 0,
+                  "inInfluence": 65,
+                  "outInfluence": 33
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "value": [
+                    230,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 65
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 3.8,
+                  "value": -100
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 4.066666666666666,
+                  "value": 100
+                }
+              },
+              {
+                "operation": "keyframe.set_easing",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2,
+                  "inSpeed": 0,
+                  "outSpeed": 0,
+                  "inInfluence": 65,
+                  "outInfluence": 33
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "value": [
+                    520,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 65
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 3.9,
+                  "value": -100
+                }
+              },
+              {
+                "operation": "keyframe.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 4.133333333333334,
+                  "value": 100
+                }
+              },
+              {
+                "operation": "keyframe.set_easing",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "ADBE Text Percent Offset"
+                  ],
+                  "keyIndex": 2,
+                  "inSpeed": 0,
+                  "outSpeed": 0,
+                  "inInfluence": 65,
+                  "outInfluence": 33
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "value": [
+                    380,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}var q=s(p(31,44));[680+1000*q,685-180*q,0];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*(1-s(p(33,43)));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}var q=s(p(31,44));[1100+1000*q,685-180*q,0];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*(1-s(p(33,43)));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN_Outline",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}[42-34*s(p(0,30))+480*s(p(31,44)),635+35*(1-s(p(0,14)))-90*s(p(31,44))];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN_Outline",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}85*(1-s(p(32,44)));"
+                }
+              },
+              {
+                "operation": "mask.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN_Outline",
+                  "name": "Soft_lower_letter_edge"
+                }
+              },
+              {
+                "operation": "mask.set_path",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN_Outline",
+                  "maskIndex": 1,
+                  "vertices": [
+                    [
+                      -500,
+                      -1100
+                    ],
+                    [
+                      3000,
+                      -1100
+                    ],
+                    [
+                      3000,
+                      -150
+                    ],
+                    [
+                      -500,
+                      -150
+                    ]
+                  ]
+                }
+              },
+              {
+                "operation": "mask.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN_Outline",
+                  "maskIndex": 1,
+                  "feather": [
+                    0,
+                    130
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}[700-1800*s(p(108,118)),430];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*(1-s(p(111,118)));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}[700-1800*s(p(108,118)),591];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*(1-s(p(111,118)));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}[1138-1800*s(p(108,118)),591];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*(1-s(p(111,118)));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_BUILT_Outline",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}[-85+65*(1-s(p(68,80)))-320*s(p(108,120)),800];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_BUILT_Outline",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}75*s(p(68,75))*(1-s(p(108,120)));"
+                }
+              },
+              {
+                "operation": "mask.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_BUILT_Outline",
+                  "name": "Clear_foreground_copy"
+                }
+              },
+              {
+                "operation": "mask.set_path",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_BUILT_Outline",
+                  "maskIndex": 1,
+                  "vertices": [
+                    [
+                      720,
+                      -490
+                    ],
+                    [
+                      2000,
+                      -490
+                    ],
+                    [
+                      2000,
+                      -140
+                    ],
+                    [
+                      720,
+                      -140
+                    ]
+                  ]
+                }
+              },
+              {
+                "operation": "mask.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_BUILT_Outline",
+                  "maskIndex": 1,
+                  "mode": "Subtract",
+                  "feather": [
+                    120,
+                    60
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "BG_Charcoal_Reveal",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}[1200+2400*(1-s(p(31,44))),512];"
+                }
+              },
+              {
+                "operation": "layer.create_solid",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "name": "BG03_Ivory_Frame_Wipe",
+                  "color": [
+                    0.961,
+                    0.953,
+                    0.933
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "BG03_Ivory_Frame_Wipe",
+                  "props": {
+                    "inPoint": 3.6,
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "BG03_Ivory_Frame_Wipe",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}[1200+2400*(1-s(p(108,124))),512];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*(1-s(p(132,138)));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*(1-s(p(132,138)));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*s(p(132,138));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Outline",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*s(p(132,138));"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "props": {
+                    "inPoint": 3.9
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Outline",
+                  "props": {
+                    "inPoint": 4.4
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline",
+                  "props": {
+                    "inPoint": 4.4
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "name": "S03_CAT_Outline_OnDevice",
+                  "text": "CAT VILLAGE"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline_OnDevice",
+                  "font": "Pretendard-Bold",
+                  "fontSize": 370,
+                  "fillColor": [
+                    0.961,
+                    0.953,
+                    0.933
+                  ],
+                  "strokeColor": [
+                    0.961,
+                    0.953,
+                    0.933
+                  ],
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeWidth": 2,
+                  "tracking": -20,
+                  "justification": "left",
+                  "autoKernType": "metric"
+                }
+              },
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline_OnDevice",
+                  "position": [
+                    108,
+                    539
+                  ],
+                  "anchorPoint": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline_OnDevice",
+                  "props": {
+                    "inPoint": 4.4,
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline_OnDevice",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*s(p(132,138));"
+                }
+              },
+              {
+                "operation": "mask.add",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline_OnDevice",
+                  "name": "Device_overlap_stroke_only"
+                }
+              },
+              {
+                "operation": "mask.set_path",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline_OnDevice",
+                  "maskIndex": 1,
+                  "vertices": [
+                    [
+                      518,
+                      -440
+                    ],
+                    [
+                      1666,
+                      -440
+                    ],
+                    [
+                      1666,
+                      387
+                    ],
+                    [
+                      518,
+                      387
+                    ]
+                  ]
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "name": "SHARED_LINE_01_to_03"
+                }
+              },
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "anchorPoint": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "name": "Continuous_Path"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      460,
+                      750
+                    ],
+                    [
+                      1440,
+                      431
+                    ]
+                  ],
+                  "closed": false
+                }
+              },
+              {
+                "operation": "shape.add_stroke",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ],
+                  "width": 3.2
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "property": [
+                    "Contents",
+                    "Continuous_Path",
+                    "Path 1",
+                    "Path"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}\nfunction mix(a,b,q){return [a[0]+(b[0]-a[0])*q,a[1]+(b[1]-a[1])*q];}\nfunction bez(t){var u=1-t;return [u*u*u*460+3*u*u*t*635+3*u*t*t*1060+t*t*t*1440,u*u*u*750+3*u*u*t*338+3*u*t*t*256+t*t*t*431];}\nvar pts=[];var i,t,q;\nif(f<44){var drawn=s(p(0,10)),m=s(p(31,44));for(i=0;i<=48;i++){t=i/48;pts.push(mix(bez(t*drawn),[708+1102*t,638],m));}}\nelse if(f<74){q=s(p(47,65));for(i=0;i<=48;i++){t=i/48;pts.push([708+1102*t*(1-q),638]);}}\nelse if(f<108){q=s(p(74,101));pts=[[708,638],[708+1102*q,638]];}\nelse if(f<114){q=s(p(108,114));pts=[[708,638],[1810,638],[1810,638-478*q]];}\nelse if(f<124){q=s(p(114,124));pts=[[708,638],[1810,638],[1810,160],[1810-1432*q,160]];}\nelse if(f<131){q=s(p(124,131));pts=[[708,638],[1810,638],[1810,160],[378,160],[378,160+590*q]];}\nelse if(f<138){q=s(p(131,138));pts=[[708,638],[1810,638],[1810,160],[378,160],[378,750],[378+1662*q,750]];}\nelse{q=s(p(164,170));pts=[[708,638],[1810,638],[1810,160],[378,160],[378,750],[2040,750],[2040+80*q,750+80*q*q]];}\ncreatePath(pts,[],[],false);"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "property": [
+                    "Contents",
+                    "Continuous_Path",
+                    "Stroke 1",
+                    "Color"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}var q=s(p(31,44));[0.137+0.863*q,0.153+0.317*q,0.173-0.133*q,1];"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "props": {
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "name": "SHARED_DOT_ENDPOINT"
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_DOT_ENDPOINT",
+                  "name": "Dot"
+                }
+              },
+              {
+                "operation": "shape.add_ellipse",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_DOT_ENDPOINT",
+                  "groupIndex": 1,
+                  "size": [
+                    42,
+                    42
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_DOT_ENDPOINT",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_DOT_ENDPOINT",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var L=thisComp.layer(\"SHARED_LINE_01_to_03\");var p=L.content(\"Continuous_Path\").content(\"Path 1\").path.points();L.toComp(p[p.length-1]);"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_DOT_ENDPOINT",
+                  "props": {
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "name": "OUTER_ARC_Ivory_Scenes"
+                }
+              },
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "OUTER_ARC_Ivory_Scenes",
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "anchorPoint": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "OUTER_ARC_Ivory_Scenes",
+                  "name": "Arc"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "OUTER_ARC_Ivory_Scenes",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      -70,
+                      270
+                    ],
+                    [
+                      940,
+                      1055
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      85,
+                      560
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      -550,
+                      0
+                    ]
+                  ],
+                  "closed": false
+                }
+              },
+              {
+                "operation": "shape.add_stroke",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "OUTER_ARC_Ivory_Scenes",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ],
+                  "width": 3
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "OUTER_ARC_Ivory_Scenes",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}100*((1-s(p(31,44)))+s(p(114,124)));"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "OUTER_ARC_Ivory_Scenes",
+                  "props": {
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "iPad10_MODEL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}var q=1-Math.pow(1-p(114,135),3);[1200+110*(1-q),512+100*(1-q),4500*(1-q)];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "iPad10_MODEL",
+                  "property": [
+                    "Transform",
+                    "Y Rotation"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}var q=1-Math.pow(1-p(114,135),3);55*(1-q);"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "iPad10_MODEL",
+                  "property": [
+                    "Transform",
+                    "Z Rotation"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}var q=1-Math.pow(1-p(114,135),3);-7*(1-q);"
+                }
+              },
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "iPad10_MODEL",
+                  "scale": [
+                    900,
+                    900,
+                    900
+                  ]
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "BG_Ivory",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "BG_Charcoal_Reveal",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN_Outline",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_BUILT_Outline",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_TITAN",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Core_systems",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Built",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_in_house",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "BG03_Ivory_Frame_Wipe",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "OUTER_ARC_Ivory_Scenes",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_DOT_ENDPOINT",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_iPad_REAL_3D",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline_OnDevice",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Outline",
+                  "toIndex": 1
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "props": {
+                    "motionBlur": true,
+                    "shutterAngle": 120,
+                    "shutterPhase": -60,
+                    "workAreaStart": 0,
+                    "workAreaDuration": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 0,
+                  "comment": "01 Meet TITAN"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 1.3,
+                  "comment": "02a Core systems"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 2.2,
+                  "comment": "02b Built"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 3.1,
+                  "comment": "02c in-house"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 3.8,
+                  "comment": "03 CAT VILLAGE / Casino Slot"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 5.7,
+                  "comment": "06 Sportsbook - RESERVED NOT BUILT"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 7.6,
+                  "comment": "07 Operations / refined - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 8.6,
+                  "comment": "08 Sudden odds shift - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 9.3,
+                  "comment": "09 Bets auto-blocked - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 10.5,
+                  "comment": "10 Limit changes - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 11.2,
+                  "comment": "11 Effective next round - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 12.7,
+                  "comment": "12 Partner earnings - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 14,
+                  "comment": "13 Auto-calculated - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 15.2,
+                  "comment": "14 In the back office - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 16,
+                  "comment": "15 Recorded - RESERVED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 17.7,
+                  "comment": "16 TITAN SOLUTION / loop - RESERVED"
+                }
+              },
+              {
+                "operation": "timeline.set_active_comp",
+                "args": {
+                  "comp": "TITAN_MASTER_20S"
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 5.166666666666667
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 60000
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "OPERATION_FAILED",
+          "message": "batch.run: 1 of 165 operations failed",
+          "retryable": false,
+          "hint": "Inspect details.result.results — each entry matches the input order and carries its own error.",
+          "details": {
+            "operation": "batch.run",
+            "result": {
+              "ok": false,
+              "error": "1 of 165 operations failed",
+              "results": [
+                {
+                  "ok": true,
+                  "numKeys": 1
+                },
+                {
+                  "ok": true,
+                  "numKeys": 0
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_Meet",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_Meet",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "numKeys": 2,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "keyIndex": 2,
+                  "interpolation": "applied"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_Meet",
+                      "ok": false,
+                      "error": "After Effects (Beta) error: Can not “set value” wi"
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_Meet",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_Meet",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1
+                },
+                {
+                  "ok": true,
+                  "numKeys": 0
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_TITAN",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_TITAN",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "numKeys": 2,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "keyIndex": 2,
+                  "interpolation": "applied"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_TITAN",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S01_TITAN",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1
+                },
+                {
+                  "ok": true,
+                  "numKeys": 0
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Core_systems",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Core_systems",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "numKeys": 2,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "keyIndex": 2,
+                  "interpolation": "applied"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Core_systems",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Core_systems",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1
+                },
+                {
+                  "ok": true,
+                  "numKeys": 0
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Built",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Built",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "numKeys": 2,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "keyIndex": 2,
+                  "interpolation": "applied"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Built",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_Built",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1
+                },
+                {
+                  "ok": true,
+                  "numKeys": 0
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_in_house",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_in_house",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "numKeys": 2,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "keyIndex": 2,
+                  "interpolation": "applied"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_in_house",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S02_in_house",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1
+                },
+                {
+                  "ok": true,
+                  "numKeys": 0
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_CAT_Fill",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_CAT_Fill",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "numKeys": 2,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "keyIndex": 2,
+                  "interpolation": "applied"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_CAT_Fill",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_CAT_Fill",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1
+                },
+                {
+                  "ok": true,
+                  "numKeys": 0
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_Casino_Fill",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_Casino_Fill",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "numKeys": 1,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "numKeys": 2,
+                  "name": "Offset"
+                },
+                {
+                  "ok": true,
+                  "keyIndex": 2,
+                  "interpolation": "applied"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_Casino_Fill",
+                      "ok": true
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_Casino_Fill",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1,
+                  "name": "Soft_lower_letter_edge"
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1,
+                  "warnings": []
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1,
+                  "name": "Clear_foreground_copy"
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1,
+                  "warnings": []
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "index": 1,
+                  "name": "BG03_Ivory_Frame_Wipe"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "BG03_Ivory_Frame_Wipe",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "name": "Position",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_Casino_Fill",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_Casino_Outline",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_CAT_Outline",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "index": 1,
+                  "name": "S03_CAT_Outline_OnDevice",
+                  "boxText": false,
+                  "vertical": false
+                },
+                {
+                  "ok": true,
+                  "warnings": []
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_CAT_Outline_OnDevice",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "S03_CAT_Outline_OnDevice",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "name": "Opacity",
+                  "expressionEnabled": true
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1,
+                  "name": "Device_overlap_stroke_only"
+                },
+                {
+                  "ok": true,
+                  "maskIndex": 1
+                },
+                {
+                  "ok": true,
+                  "index": 1,
+                  "name": "SHARED_LINE_01_to_03"
+                },
+                {
+                  "ok": true,
+                  "count": 1,
+                  "layers": [
+                    {
+                      "name": "SHARED_LINE_01_to_03",
+                      "warnings": []
+                    }
+                  ]
+                },
+                {
+                  "ok": true,
+                  "groupIndex": 1,
+                  "name": "Continuous_Path"
+                },
+                {
+                  "ok": true,
+                  "name": "Path 1"
+                },
+                {
+                  "ok": true,
+                  "name": "Stroke 1"
+                },
+                {
+                  "ok": false,
+                  "error": "property segment 'Path 1' not found at depth 2"
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                },
+                {
+                  "skipped": true
+                }
+              ],
+              "count": 165,
+              "failed": 1
+            },
+            "context": {
+              "project": {
+                "numItems": 13,
+                "dirty": true,
+                "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+              },
+              "activeComp": {
+                "id": 13,
+                "name": "DEVICE_iPad10_3D",
+                "width": 2400,
+                "height": 1024,
+                "fps": 30,
+                "duration": 20,
+                "numLayers": 4
+              },
+              "selectedLayers": [
+                {
+                  "index": 3,
+                  "name": "iPad10_MODEL"
+                }
+              ]
+            }
+          },
+          "durationMs": 3269
+        }
+      }
+    }
+  ]
+}

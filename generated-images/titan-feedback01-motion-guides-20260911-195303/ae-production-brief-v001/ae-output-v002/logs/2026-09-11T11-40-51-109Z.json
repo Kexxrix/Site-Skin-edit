@@ -1,0 +1,6465 @@
+{
+  "started": "2026-09-11T11:40:37.444Z",
+  "ended": "2026-09-11T11:40:51.109Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "props": {
+                    "motionBlur": true,
+                    "shutterAngle": 180,
+                    "shutterPhase": -90
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "props": {
+                    "motionBlur": true,
+                    "shutterAngle": 180,
+                    "shutterPhase": -90
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Full_Perwinkle_Background"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Full_Perwinkle_Background",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    1200,
+                    512,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Full_Perwinkle_Background",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Full_Perwinkle_Background",
+                  "groupIndex": 1,
+                  "size": [
+                    2400,
+                    1024
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Full_Perwinkle_Background",
+                  "groupIndex": 1,
+                  "color": [
+                    0.557,
+                    0.576,
+                    0.965,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Full_Perwinkle_Background",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_null",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_RAIL_MOTION"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_RAIL_MOTION",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Anchor Point"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_RAIL_MOTION",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=time*30;var d=14*clamp(f-262,0,5)+36*clamp(f-267,0,6)+60*clamp(f-273,0,6);[0,646-d,0];"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_0"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    -995,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_0_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    -896,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_0_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_1"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    -695,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_1_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    -596,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_1_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_2"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    -395,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_2_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    -296,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_2_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_3"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    -95,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_3_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    4,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_3_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_4"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    205,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_4_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    304,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_5"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    505,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_5_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    604,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_5_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_6"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    805,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_6_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    904,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_6_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_7"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    1105,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_7_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    1204,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_7_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_8"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    1405,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_8_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    1504,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_8_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_9"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    210,
+                    1705,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_LEFT_Cell_9_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    205,
+                    1804,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_9_SHIFT",
+                  "parentLayer": "S08_LEFT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_null",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_RAIL_MOTION"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_RAIL_MOTION",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Anchor Point"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_RAIL_MOTION",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=time*30;var d=14*clamp(f-262,0,5)+36*clamp(f-267,0,6)+60*clamp(f-273,0,6);[0,-646+d,0];"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_0"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    -995,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_0_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    -896,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_0_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_1"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    -695,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_1_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    -596,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_1_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_2"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    -395,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_2_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    -296,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_2_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_3"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    -95,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_3_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    4,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_3_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_4"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    205,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_4_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    304,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_4_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_5"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    505,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_5_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    604,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_5_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_6"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    805,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_6_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    904,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_6_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_7"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    1105,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_7_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    1204,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_7_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_8"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    1405,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_8_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    1504,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_8_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_9"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2190,
+                    1705,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9",
+                  "groupIndex": 1,
+                  "size": [
+                    420,
+                    300
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_RIGHT_Cell_9_SHIFT",
+                  "text": "SHIFT"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9_SHIFT",
+                  "font": "Pretendard-Black",
+                  "fontSize": 300,
+                  "horizontalScale": 0.6,
+                  "justification": "center",
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "strokeWidth": 2,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9_SHIFT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    2185,
+                    1804,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9_SHIFT",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_RIGHT_Cell_9_SHIFT",
+                  "parentLayer": "S08_RIGHT_RAIL_MOTION",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Center_Native_Panel"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Center_Native_Panel",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    1200,
+                    512,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Center_Native_Panel",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Center_Native_Panel",
+                  "groupIndex": 1,
+                  "size": [
+                    1560,
+                    1024
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Center_Native_Panel",
+                  "groupIndex": 1,
+                  "color": [
+                    0.557,
+                    0.576,
+                    0.965,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Center_Native_Panel",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Rails_Top_Crop"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Top_Crop",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    1200,
+                    27.5,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Top_Crop",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Top_Crop",
+                  "groupIndex": 1,
+                  "size": [
+                    2400,
+                    55
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Top_Crop",
+                  "groupIndex": 1,
+                  "color": [
+                    0.557,
+                    0.576,
+                    0.965,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Top_Crop",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Rails_Bottom_Crop"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Bottom_Crop",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    1200,
+                    989.5,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Bottom_Crop",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Bottom_Crop",
+                  "groupIndex": 1,
+                  "size": [
+                    2400,
+                    69
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Bottom_Crop",
+                  "groupIndex": 1,
+                  "color": [
+                    0.557,
+                    0.576,
+                    0.965,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Rails_Bottom_Crop",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Left_Divider"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Left_Divider",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    420,
+                    512,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Left_Divider",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Left_Divider",
+                  "groupIndex": 1,
+                  "size": [
+                    12,
+                    1024
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Left_Divider",
+                  "groupIndex": 1,
+                  "color": [
+                    0.07,
+                    0.085,
+                    0.1,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Left_Divider",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Right_Divider"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Right_Divider",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    1980,
+                    512,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Right_Divider",
+                  "name": "Native_Rectangle"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Right_Divider",
+                  "groupIndex": 1,
+                  "size": [
+                    12,
+                    1024
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Right_Divider",
+                  "groupIndex": 1,
+                  "color": [
+                    0.07,
+                    0.085,
+                    0.1,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Right_Divider",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Condition_Sudden",
+                  "text": "Sudden"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "font": "Pretendard-ExtraBold",
+                  "fontSize": 66,
+                  "fillColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "tracking": -20
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    550,
+                    286,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "props": {
+                    "inPoint": 8.7,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "text.add_animator",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "name": "aftr_wordReveal_4frames_stagger1",
+                  "properties": {
+                    "ADBE Text Position 3D": [
+                      0,
+                      80,
+                      0
+                    ],
+                    "ADBE Text Opacity": 0
+                  },
+                  "selector": "range",
+                  "rangeStart": 0,
+                  "rangeEnd": 100,
+                  "rangeOffset": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Range Type2"
+                  ],
+                  "value": 3
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Levels Max Ease"
+                  ],
+                  "value": 20
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Levels Min Ease"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_Sudden",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Selector Max Amount"
+                  ],
+                  "expression": "var u=clamp((time*30-261)/4,0,1);100*(1-u*u*u*(10+u*(-15+6*u)));"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Condition_odds",
+                  "text": "odds"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "font": "Pretendard-ExtraBold",
+                  "fontSize": 66,
+                  "fillColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "tracking": -20
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    550,
+                    286,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var L=thisComp.layer('S08_Condition_Sudden');[L.position[0]+L.sourceRectAtTime(9,false).width+18,286,0];"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "props": {
+                    "inPoint": 8.733333333333333,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "text.add_animator",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "name": "aftr_wordReveal_4frames_stagger1",
+                  "properties": {
+                    "ADBE Text Position 3D": [
+                      0,
+                      80,
+                      0
+                    ],
+                    "ADBE Text Opacity": 0
+                  },
+                  "selector": "range",
+                  "rangeStart": 0,
+                  "rangeEnd": 100,
+                  "rangeOffset": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Range Type2"
+                  ],
+                  "value": 3
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Levels Max Ease"
+                  ],
+                  "value": 20
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Levels Min Ease"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_odds",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Selector Max Amount"
+                  ],
+                  "expression": "var u=clamp((time*30-262)/4,0,1);100*(1-u*u*u*(10+u*(-15+6*u)));"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Condition_shift",
+                  "text": "shift"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "font": "Pretendard-ExtraBold",
+                  "fontSize": 66,
+                  "fillColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "tracking": -20
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    550,
+                    286,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var L=thisComp.layer('S08_Condition_odds');[L.position[0]+L.sourceRectAtTime(9,false).width+18,286,0];"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "props": {
+                    "inPoint": 8.766666666666667,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "text.add_animator",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "name": "aftr_wordReveal_4frames_stagger1",
+                  "properties": {
+                    "ADBE Text Position 3D": [
+                      0,
+                      80,
+                      0
+                    ],
+                    "ADBE Text Opacity": 0
+                  },
+                  "selector": "range",
+                  "rangeStart": 0,
+                  "rangeEnd": 100,
+                  "rangeOffset": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Range Type2"
+                  ],
+                  "value": 3
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Levels Max Ease"
+                  ],
+                  "value": 20
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Levels Min Ease"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Condition_shift",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Selector Max Amount"
+                  ],
+                  "expression": "var u=clamp((time*30-263)/4,0,1);100*(1-u*u*u*(10+u*(-15+6*u)));"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_Bets",
+                  "text": "Bets"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "font": "Pretendard-Black",
+                  "fontSize": 285,
+                  "fillColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    550,
+                    520,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "props": {
+                    "inPoint": 9.3,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "time": 9.3
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Scale/Scale In By Word.ffx"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "name": "S08_auto-blocked",
+                  "text": "auto-blocked"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "font": "Pretendard-Black",
+                  "fontSize": 245,
+                  "fillColor": [
+                    0.07,
+                    0.085,
+                    0.1
+                  ],
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "tracking": -40
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    550,
+                    706,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "props": {
+                    "inPoint": 9.366666666666667,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "mask.add",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "name": "Six_Frame_Left_To_Right_Reveal"
+                }
+              },
+              {
+                "operation": "mask.set_path",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "maskIndex": 1,
+                  "vertices": [
+                    [
+                      -10,
+                      -300
+                    ],
+                    [
+                      1600,
+                      -300
+                    ],
+                    [
+                      1600,
+                      50
+                    ],
+                    [
+                      -10,
+                      50
+                    ]
+                  ],
+                  "closed": true
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "property": [
+                    "ADBE Mask Parade",
+                    1,
+                    "ADBE Mask Shape"
+                  ],
+                  "expression": "var u=clamp((time*30-281)/6,0,1);var q=u*u*u*(10+u*(-15+6*u));var right=-10+1610*q;createPath([[-10,-300],[right,-300],[right,50],[-10,50]],[],[],true);"
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "sourceItemId": 171,
+                  "name": "S08_ALL_CONTENT_NATIVE_ZOOM"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "layer": "S08_ALL_CONTENT_NATIVE_ZOOM",
+                  "props": {
+                    "collapseTransformation": true,
+                    "motionBlur": true,
+                    "audioEnabled": false
+                  }
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "layer": "S08_ALL_CONTENT_NATIVE_ZOOM",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Anchor Point"
+                  ],
+                  "value": [
+                    210,
+                    251,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "layer": "S08_ALL_CONTENT_NATIVE_ZOOM",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-252)/8,0,1);var q=u*u*u*(10+u*(-15+6*u));[1200-990*q,512-261*q,0];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "layer": "S08_ALL_CONTENT_NATIVE_ZOOM",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "expression": "var u=clamp((time*30-252)/8,0,1);var q=u*u*u*(10+u*(-15+6*u));[600-500*q,600-500*q,100];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "layer": "S08_ALL_CONTENT_NATIVE_ZOOM",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "expression": "100*clamp((time*30-250)/2,0,1);"
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "sourceItemId": 183,
+                  "name": "S08_WHOLE_SCENE_OVERLAY_CONTAINER"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S08_WHOLE_SCENE_OVERLAY_CONTAINER",
+                  "props": {
+                    "inPoint": 8.333333333333334,
+                    "outPoint": 10.5,
+                    "audioEnabled": false,
+                    "motionBlur": false
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_work_area",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "start": 0,
+                  "duration": 10.5
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 90000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "SCENE08_SHIFT_NATIVE",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "name": "SCENE08_WHOLE_OVERLAY_180DEG",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Full_Perwinkle_Background"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Full_Perwinkle_Background",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Full_Perwinkle_Background",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_RAIL_MOTION"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_RAIL_MOTION",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_0"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_0",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_0",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 2,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_0_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_0_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_0_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 3,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_1",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_1",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 4,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_1_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_1_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_1_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 5,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_2"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_2",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_2",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 6,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_2_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_2_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_2_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 7,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_3"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_3",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_3",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 8,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_3_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_3_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_3_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 9,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_4"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_4",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_4",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 10,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_4_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_4_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_4_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 11,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_5"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_5",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_5",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 12,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_5_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_5_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_5_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 13,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_6"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_6",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_6",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 14,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_6_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_6_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_6_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 15,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_7"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_7",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_7",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 16,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_7_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_7_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_7_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 17,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_8"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_8",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_8",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 18,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_8_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_8_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_8_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 19,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_9"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_9",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_9",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 20,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_LEFT_Cell_9_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_9_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_LEFT_Cell_9_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 21,
+                "name": "S08_LEFT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_RAIL_MOTION"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_RAIL_MOTION",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_0"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_0",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_0",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 2,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_0_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_0_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_0_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 3,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_1",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_1",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 4,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_1_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_1_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_1_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 5,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_2"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_2",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_2",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 6,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_2_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_2_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_2_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 7,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_3"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_3",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_3",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 8,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_3_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_3_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_3_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 9,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_4"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_4",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_4",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 10,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_4_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_4_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_4_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 11,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_5"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_5",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_5",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 12,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_5_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_5_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_5_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 13,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_6"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_6",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_6",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 14,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_6_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_6_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_6_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 15,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_7"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_7",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_7",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 16,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_7_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_7_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_7_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 17,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_8"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_8",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_8",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 18,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_8_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_8_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_8_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 19,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_9"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_9",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_9",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 20,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_RIGHT_Cell_9_SHIFT",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_9_SHIFT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_RIGHT_Cell_9_SHIFT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 21,
+                "name": "S08_RIGHT_RAIL_MOTION"
+              }
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Center_Native_Panel"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Center_Native_Panel",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Center_Native_Panel",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Rails_Top_Crop"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Rails_Top_Crop",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Rails_Top_Crop",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Rails_Bottom_Crop"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Rails_Bottom_Crop",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Rails_Bottom_Crop",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Left_Divider"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Left_Divider",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Left_Divider",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Right_Divider"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Right_Divider",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Rectangle"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Right_Divider",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Condition_Sudden",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_Sudden",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_Sudden",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "animator": "aftr_wordReveal_4frames_stagger1",
+              "animatorIndex": 1,
+              "addedProperties": [
+                "ADBE Text Position 3D",
+                "ADBE Text Opacity"
+              ],
+              "selector": "Range Selector 1",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_Sudden",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_Sudden",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_Sudden",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Condition_odds",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_odds",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_odds",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "animator": "aftr_wordReveal_4frames_stagger1",
+              "animatorIndex": 1,
+              "addedProperties": [
+                "ADBE Text Position 3D",
+                "ADBE Text Opacity"
+              ],
+              "selector": "Range Selector 1",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_odds",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_odds",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_odds",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Condition_shift",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_shift",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_shift",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "animator": "aftr_wordReveal_4frames_stagger1",
+              "animatorIndex": 1,
+              "addedProperties": [
+                "ADBE Text Position 3D",
+                "ADBE Text Opacity"
+              ],
+              "selector": "Range Selector 1",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_shift",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_shift",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Condition_shift",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_Bets",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "time": 9.3
+            },
+            {
+              "ok": true,
+              "applied": "Scale In By Word.ffx",
+              "numEffects": 0
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_auto-blocked",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_auto-blocked",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_auto-blocked",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "maskIndex": 1,
+              "name": "Six_Frame_Left_To_Right_Reveal"
+            },
+            {
+              "ok": true,
+              "maskIndex": 1
+            },
+            {
+              "ok": true,
+              "name": "Mask Path",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_ALL_CONTENT_NATIVE_ZOOM"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_ALL_CONTENT_NATIVE_ZOOM",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_ALL_CONTENT_NATIVE_ZOOM",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Scale",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S08_WHOLE_SCENE_OVERLAY_CONTAINER"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_WHOLE_SCENE_OVERLAY_CONTAINER",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 10.5
+            }
+          ],
+          "count": 335,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 91,
+            "name": "SCREEN_iPhone17_VIDEO_CONTAIN",
+            "width": 1206,
+            "height": 2622,
+            "fps": 24,
+            "duration": 20,
+            "numLayers": 3
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 9416
+      },
+      "elapsedMs": 9429
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 2525
+      },
+      "elapsedMs": 2527
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.list",
+          "args": {
+            "comp": "SCENE08_SHIFT_NATIVE",
+            "layer": "S08_Bets",
+            "property": [
+              "ADBE Text Properties",
+              "ADBE Text Animators"
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "path": [
+            "ADBE Text Properties",
+            "ADBE Text Animators"
+          ],
+          "children": [
+            {
+              "index": 1,
+              "name": "Animator 1",
+              "matchName": "ADBE Text Animator",
+              "isGroup": true,
+              "numChildren": 2
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 91,
+            "name": "SCREEN_iPhone17_VIDEO_CONTAIN",
+            "width": 1206,
+            "height": 2622,
+            "fps": 24,
+            "duration": 20,
+            "numLayers": 3
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 358
+      },
+      "elapsedMs": 361
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 9.566666666666666,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-initial-F287.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-initial-F287.png",
+          "time": 9.56666666666667,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 389
+      },
+      "elapsedMs": 1122
+    }
+  ]
+}

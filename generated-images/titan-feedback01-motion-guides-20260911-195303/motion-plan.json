@@ -1,0 +1,865 @@
+{
+  "schema_version": 1,
+  "status": "motion_design_ready_not_applied_to_ae",
+  "latest_transition_choice": "Scene 06 itself is enlarged so its top-left SHIFT cell covers the viewport; overlay it above fixed scene 05, then scale/position the whole scene 06 back to its identity transform.",
+  "interpretation": {
+    "existing_built_scene": "Example of forbidden repetition only; excluded from this revision.",
+    "feedback01_main": "Repair scene-03 tail continuity, remove scene-04 repeated arc, specify transitions and lettering/reel motion.",
+    "feedback02_main": "Earlier scene-to-tile idea clarified by the user: move the enlarged scene 06, not a shrinking scene-05 thumbnail.",
+    "feedback03_main": "User explicitly selected expanded scene-06 overlay → eased, motion-blurred zoom-out to its native size and position."
+  },
+  "canvas": {
+    "width": 2400,
+    "height": 1024,
+    "fps": 30
+  },
+  "scene_spans": [
+    {
+      "scene": 4,
+      "start": 171,
+      "end_exclusive": 228
+    },
+    {
+      "scene": 5,
+      "start": 228,
+      "end_exclusive": 258
+    },
+    {
+      "scene": 6,
+      "start": 258,
+      "end_exclusive": 315
+    }
+  ],
+  "existing_master": {
+    "duration_seconds": 20,
+    "frames": 600,
+    "unchanged": true
+  },
+  "events": [
+    {
+      "id": "s03_tail_turn",
+      "start": 164,
+      "end_exclusive": 171,
+      "action": "Change only the terminal segment to a right-to-down quarter circle; keep its ending coordinate [2120,830]."
+    },
+    {
+      "id": "s03_to_s04_scroll",
+      "start": 171,
+      "end_exclusive": 180,
+      "action": "Shared world y translation 0→-1024; scene 03 moves up, scene 04 enters from below; the same dot follows the continuous path."
+    },
+    {
+      "id": "s04_settle",
+      "start": 180,
+      "end_exclusive": 182,
+      "action": "Product/title settle; no repeated lower-left arc."
+    },
+    {
+      "id": "s04_read",
+      "start": 182,
+      "end_exclusive": 220,
+      "action": "Keep phone and title readable. The screen source can continue playing."
+    },
+    {
+      "id": "s04_to_s05_trigger",
+      "start": 220,
+      "end_exclusive": 222,
+      "action": "The orange endpoint stretches into a short ribbon."
+    },
+    {
+      "id": "s04_to_s05_wipe",
+      "start": 222,
+      "end_exclusive": 228,
+      "action": "The ribbon becomes scene-05's broad orange strip while an attached charcoal plane covers the frame right-to-left."
+    },
+    {
+      "id": "s05_operations_in",
+      "start": 228,
+      "end_exclusive": 232,
+      "action": "Operations, enters as one readable word block; no rectangle stroke reveal."
+    },
+    {
+      "id": "s05_refined_in",
+      "start": 230,
+      "end_exclusive": 234,
+      "action": "refined makes a short horizontal stretch-to-normal reveal beneath Operations,."
+    },
+    {
+      "id": "s05_read",
+      "start": 234,
+      "end_exclusive": 250,
+      "action": "Full foreground copy readable; outlined OPERATIONS rows move horizontally in opposite directions; broad planes are already aligned."
+    },
+    {
+      "id": "s06_enlarged_overlay",
+      "start": 250,
+      "end_exclusive": 252,
+      "action": "Scene 05 remains fixed behind. Scene 06 is at 600% around the top-left SHIFT cell; raise scene-06 opacity from 0 to 100 so enlarged SHIFT overlays scene 05."
+    },
+    {
+      "id": "s05_to_s06_zoomout",
+      "start": 252,
+      "end_exclusive": 260,
+      "action": "Keep scene-06 anchor [210,205]. Animate its scale 600→100% and position [1200,512]→[210,205] with one eased progress; enable motion blur. Entire scene 06 is revealed."
+    },
+    {
+      "id": "s06_zoom_settle",
+      "start": 260,
+      "end_exclusive": 262,
+      "action": "At 100% scene 06 is exactly in native screen coordinates. Hold the reel cells until their motion begins; no miniature-scene exchange."
+    },
+    {
+      "id": "s06_condition_in",
+      "start": 261,
+      "end_exclusive": 267,
+      "action": "Sudden / odds / shift reveal with 1-frame word stagger and 4-frame movement per word; remain as small context."
+    },
+    {
+      "id": "s06_reels_low",
+      "start": 262,
+      "end_exclusive": 267,
+      "action": "Left reel up and right reel down at 14 px/frame."
+    },
+    {
+      "id": "s06_reels_fast",
+      "start": 267,
+      "end_exclusive": 273,
+      "action": "Opposed vertical reels accelerate to 36 px/frame."
+    },
+    {
+      "id": "s06_reels_peak",
+      "start": 273,
+      "end_exclusive": 279,
+      "action": "Opposed reels at 60 px/frame; color panels travel with their SHIFT text, no independent flashing."
+    },
+    {
+      "id": "s06_reels_stop",
+      "frame": 279,
+      "action": "Set position hold for both reels on exactly this frame. Stop the color cycle and any independent background motion at the same frame."
+    },
+    {
+      "id": "s06_bets_in",
+      "start": 279,
+      "end_exclusive": 284,
+      "action": "Bets enters as a whole heavy word, scale 118%→100% and y +60→0; no elastic bounce."
+    },
+    {
+      "id": "s06_auto_blocked_in",
+      "start": 281,
+      "end_exclusive": 287,
+      "action": "auto-blocked reveals left-to-right through a clean matte; keep the hyphen."
+    },
+    {
+      "id": "s06_result_read",
+      "start": 287,
+      "end_exclusive": 315,
+      "action": "Hold the full result for 28 frames; reels remain stopped."
+    }
+  ],
+  "s03_path": {
+    "observed_current_endpoint": [
+      2120,
+      830
+    ],
+    "observed_current_terminal_start": [
+      2040,
+      750
+    ],
+    "observed_current_shape": "Current authored path contains a straight terminal segment with no bezier tangent.",
+    "proposed_quarter_circle": {
+      "center": [
+        2040,
+        830
+      ],
+      "radius": 80,
+      "start": [
+        2040,
+        750
+      ],
+      "end": [
+        2120,
+        830
+      ],
+      "out_tangent_at_start": [
+        44.18278,
+        0
+      ],
+      "in_tangent_at_end": [
+        0,
+        -44.18278
+      ]
+    },
+    "shared_scene_origins_y": [
+      0,
+      1024
+    ],
+    "next_path": {
+      "vertical_x": 2120,
+      "vertical_start_y": 830,
+      "vertical_end_y": 1760,
+      "quarter_circle_center": [
+        2240,
+        1760
+      ],
+      "radius": 120,
+      "endpoint": [
+        2240,
+        1880
+      ],
+      "endpoint_screen_after_scroll": [
+        2240,
+        856
+      ]
+    },
+    "scroll_samples": [
+      {
+        "frame": 171,
+        "q": 0,
+        "viewport_y": 0,
+        "dot_world": [
+          2120,
+          830
+        ],
+        "dot_screen": [
+          2120,
+          830
+        ]
+      },
+      {
+        "frame": 172,
+        "q": 0.011532794797541025,
+        "viewport_y": 11.80958187268201,
+        "dot_world": [
+          2120,
+          842.8993797663919
+        ],
+        "dot_screen": [
+          2120,
+          831.0897978937099
+        ]
+      },
+      {
+        "frame": 173,
+        "q": 0.07641111619163746,
+        "viewport_y": 78.24498298023676,
+        "dot_world": [
+          2120,
+          915.4654941350375
+        ],
+        "dot_screen": [
+          2120,
+          837.2205111548008
+        ]
+      },
+      {
+        "frame": 174,
+        "q": 0.20987654320987653,
+        "viewport_y": 214.91358024691357,
+        "dot_world": [
+          2120,
+          1064.7459815637233
+        ],
+        "dot_screen": [
+          2120,
+          849.8324013168096
+        ]
+      },
+      {
+        "frame": 175,
+        "q": 0.39668749682467097,
+        "viewport_y": 406.2079967484631,
+        "dot_world": [
+          2120,
+          1273.6932035946627
+        ],
+        "dot_screen": [
+          2120,
+          867.4852068461996
+        ]
+      },
+      {
+        "frame": 176,
+        "q": 0.603312503175329,
+        "viewport_y": 617.7920032515369,
+        "dot_world": [
+          2120,
+          1504.802355620725
+        ],
+        "dot_screen": [
+          2120,
+          887.010352369188
+        ]
+      },
+      {
+        "frame": 177,
+        "q": 0.7901234567901235,
+        "viewport_y": 809.0864197530865,
+        "dot_world": [
+          2120,
+          1713.7495776516644
+        ],
+        "dot_screen": [
+          2120,
+          904.6631578985779
+        ]
+      },
+      {
+        "frame": 178,
+        "q": 0.923588883808363,
+        "viewport_y": 945.7550170197637,
+        "dot_world": [
+          2161.578798452516,
+          1850.8301444887593
+        ],
+        "dot_screen": [
+          2161.578798452516,
+          905.0751274689956
+        ]
+      },
+      {
+        "frame": 179,
+        "q": 0.9884672052024583,
+        "viewport_y": 1012.1904181273173,
+        "dot_world": [
+          2227.125448238598,
+          1879.3073590225808
+        ],
+        "dot_screen": [
+          2227.125448238598,
+          867.1169408952635
+        ]
+      },
+      {
+        "frame": 180,
+        "q": 1,
+        "viewport_y": 1024,
+        "dot_world": [
+          2240,
+          1880
+        ],
+        "dot_screen": [
+          2240,
+          856
+        ]
+      }
+    ]
+  },
+  "scene05_background": {
+    "outline_text": "OPERATIONS",
+    "top_row_velocity_px_per_frame": -24,
+    "bottom_row_velocity_px_per_frame": 18,
+    "loop_method": "Duplicate a measured word+gap cycle; wrap translation at the cycle width.",
+    "interior_rectangle_stroke": false
+  },
+  "scene06_reels": {
+    "tile_height": 300,
+    "cycle_cells": 3,
+    "cycle_height": 900,
+    "start_frame": 262,
+    "stop_frame": 279,
+    "total_displacement": 646,
+    "directions": {
+      "left": "up",
+      "right": "down"
+    },
+    "color_behavior": "Move each colored background with its SHIFT lettering as a single cell. Left order charcoal/ivory/orange; right offset by one cell. No stand-alone color flicker.",
+    "phase_rule": "Choose initial loop phase from the desired F279 stop phase minus signed total displacement. Do not snap to a new phase at F279.",
+    "stop_scope": "Both reel positions, palette changes and background motion. Result text has its planned entrance after F279.",
+    "samples": [
+      {
+        "frame": 262,
+        "left_y": 0,
+        "right_y": 0
+      },
+      {
+        "frame": 267,
+        "left_y": -70,
+        "right_y": 70
+      },
+      {
+        "frame": 273,
+        "left_y": -286,
+        "right_y": 286
+      },
+      {
+        "frame": 278,
+        "left_y": -586,
+        "right_y": 586
+      },
+      {
+        "frame": 279,
+        "left_y": -646,
+        "right_y": 646
+      },
+      {
+        "frame": 280,
+        "left_y": -646,
+        "right_y": 646
+      },
+      {
+        "frame": 287,
+        "left_y": -646,
+        "right_y": 646
+      },
+      {
+        "frame": 314,
+        "left_y": -646,
+        "right_y": 646
+      },
+      {
+        "frame": 315,
+        "left_y": -646,
+        "right_y": 646
+      }
+    ]
+  },
+  "presets": [
+    {
+      "target": "Operations,",
+      "candidate": "Text/Animate In/Straight In By Word.ffx",
+      "usage": "Entry starting point; retime and set final position/fonts to the approved design.",
+      "applied": false
+    },
+    {
+      "target": "refined",
+      "candidate": "Text/Animate In/Stretch In Each Word.ffx",
+      "usage": "Short word stretch starting point; preserve italic face and remove any unwanted extra motion.",
+      "applied": false
+    },
+    {
+      "target": "Sudden odds shift",
+      "candidate": "aftr wordReveal",
+      "usage": "Map the source definition to existing native text animator operations: revealFrames=4, stagger=1; no second controller installation.",
+      "applied": false,
+      "source_url": "https://github.com/Arman-Luthra/aftr/blob/628397d700d6282fe2be4d42f4a388392250947a/panel/jsx/commands/text.jsx"
+    },
+    {
+      "target": "Bets",
+      "candidate": "Text/Scale/Scale In By Word.ffx",
+      "usage": "Whole-word scale starting point; override to 118→100 in five frames; no elastic oscillation.",
+      "applied": false
+    }
+  ],
+  "must_not_repeat": [
+    "The lower-left arc in scene 04.",
+    "Interior thin rectangle drawing as the main reveal.",
+    "The word BUILT in new scene 05.",
+    "The same horizontal repeated-outline movement in the scene-06 reels.",
+    "Scene-06 reels continuing after the auto-block event."
+  ],
+  "verification_scope": "Static transform/coverage geometry, timing, local preset availability and MCP comp.precompose capability verified. Actual eased motion blur and visual smoothness require native AE rendering.",
+  "overlay_zoomout": {
+    "moving_layer": "Entire native scene-06 precomp including background, panels, both SHIFT reels and the foreground text layers. Foreground text entrances remain hidden until their specified frames.",
+    "scene05_behavior": "Fixed behind scene 06; never shrink, move or turn scene 05 into a miniature.",
+    "target_cell_in_scene06": {
+      "x": 0,
+      "y": 55,
+      "width": 420,
+      "height": 300,
+      "center": [
+        210,
+        205
+      ]
+    },
+    "anchor_point_fixed": [
+      210,
+      205
+    ],
+    "initial_transform": {
+      "scale_percent": [
+        600,
+        600
+      ],
+      "position": [
+        1200,
+        512
+      ],
+      "opacity_at_frame250": 0,
+      "opacity_at_frame252": 100
+    },
+    "final_transform": {
+      "scale_percent": [
+        100,
+        100
+      ],
+      "position": [
+        210,
+        205
+      ],
+      "anchor_point": [
+        210,
+        205
+      ],
+      "opacity": 100,
+      "frame": 260
+    },
+    "identity_formula": "screenPoint = position + scale * (sourcePoint-anchor); final position=anchor and scale=1, therefore screenPoint=sourcePoint.",
+    "overlay_frames": 2,
+    "zoom_frames": 8,
+    "total_transition_frames": 10,
+    "total_transition_seconds": 0.3333333333333333,
+    "overlap_note": "F250–260 straddles nominal scene marker F258. It does not add time; new scene 06 is the overlay above scene 05.",
+    "zoom_progress": "q=6*u^5-15*u^4+10*u^3, u=clamp((frame-252)/8,0,1). Scale and Position must share this same progress.",
+    "motion_blur": {
+      "enabled": true,
+      "initial_shutter_angle_degrees": 180,
+      "scope": "Scene-06 reveal transform and its moving layer(s); inspect actual native render for blur at peak velocity and crispness at the stop.",
+      "validated": false
+    },
+    "initial_coverage": {
+      "target_cell_width": 2520,
+      "target_cell_height": 1800,
+      "viewport_width": 2400,
+      "viewport_height": 1024,
+      "note": "The enlarged SHIFT cell deliberately extends outside the viewport; no fitting of scene 05 into a differently shaped tile is required."
+    },
+    "must_preserve": [
+      "Constant anchor throughout the zoom.",
+      "Identical scale in x and y.",
+      "No independent motion of reel cells during overlay/zoom.",
+      "All scene-06 content inherits the single reveal transform.",
+      "No scene-05 thumbnail, docking shadow, card border, content replacement wipe or letterbox padding.",
+      "Do not simply enlarge the raster guide for production; preserve native editable text and shape construction."
+    ],
+    "samples": [
+      {
+        "frame": 250,
+        "opacity": 0,
+        "q": 0,
+        "scale_percent": 600,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          1200,
+          512
+        ],
+        "scene_bounds": [
+          -60,
+          -718,
+          14400,
+          6144
+        ],
+        "target_cell_bounds": [
+          -60,
+          -388,
+          2520,
+          1800
+        ]
+      },
+      {
+        "frame": 251,
+        "opacity": 50,
+        "q": 0,
+        "scale_percent": 600,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          1200,
+          512
+        ],
+        "scene_bounds": [
+          -60,
+          -718,
+          14400,
+          6144
+        ],
+        "target_cell_bounds": [
+          -60,
+          -388,
+          2520,
+          1800
+        ]
+      },
+      {
+        "frame": 252,
+        "opacity": 100,
+        "q": 0,
+        "scale_percent": 600,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          1200,
+          512
+        ],
+        "scene_bounds": [
+          -60,
+          -718,
+          14400,
+          6144
+        ],
+        "target_cell_bounds": [
+          -60,
+          -388,
+          2520,
+          1800
+        ]
+      },
+      {
+        "frame": 253,
+        "opacity": 100,
+        "q": 0.01605224609375,
+        "scale_percent": 591.973876953125,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          1184.1082763671875,
+          507.07196044921875
+        ],
+        "scene_bounds": [
+          -59.036865234375,
+          -706.4744873046875,
+          14207.373046875,
+          6061.8125
+        ],
+        "target_cell_bounds": [
+          -59.036865234375,
+          -380.88885498046875,
+          2486.290283203125,
+          1775.921630859375
+        ]
+      },
+      {
+        "frame": 254,
+        "opacity": 100,
+        "q": 0.103515625,
+        "scale_percent": 548.2421875,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          1097.51953125,
+          480.220703125
+        ],
+        "scene_bounds": [
+          -53.7890625,
+          -643.67578125,
+          13157.8125,
+          5614
+        ],
+        "target_cell_bounds": [
+          -53.7890625,
+          -342.142578125,
+          2302.6171875,
+          1644.7265625
+        ]
+      },
+      {
+        "frame": 255,
+        "opacity": 100,
+        "q": 0.27520751953125,
+        "scale_percent": 462.396240234375,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          927.5445556640625,
+          427.51129150390625
+        ],
+        "scene_bounds": [
+          -43.487548828125,
+          -520.4010009765625,
+          11097.509765625,
+          4734.9375
+        ],
+        "target_cell_bounds": [
+          -43.487548828125,
+          -266.08306884765625,
+          1942.064208984375,
+          1387.188720703125
+        ]
+      },
+      {
+        "frame": 256,
+        "opacity": 100,
+        "q": 0.5,
+        "scale_percent": 350,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          705,
+          358.5
+        ],
+        "scene_bounds": [
+          -30,
+          -359,
+          8400,
+          3584
+        ],
+        "target_cell_bounds": [
+          -30,
+          -166.5,
+          1470,
+          1050
+        ]
+      },
+      {
+        "frame": 257,
+        "opacity": 100,
+        "q": 0.72479248046875,
+        "scale_percent": 237.603759765625,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          482.4554443359375,
+          289.48870849609375
+        ],
+        "scene_bounds": [
+          -16.512451171875,
+          -197.5989990234375,
+          5702.490234375,
+          2433.0625
+        ],
+        "target_cell_bounds": [
+          -16.512451171875,
+          -66.91693115234375,
+          997.935791015625,
+          712.811279296875
+        ]
+      },
+      {
+        "frame": 258,
+        "opacity": 100,
+        "q": 0.896484375,
+        "scale_percent": 151.7578125,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          312.48046875,
+          236.779296875
+        ],
+        "scene_bounds": [
+          -6.2109375,
+          -74.32421875,
+          3642.1875,
+          1554
+        ],
+        "target_cell_bounds": [
+          -6.2109375,
+          9.142578125,
+          637.3828125,
+          455.2734375
+        ]
+      },
+      {
+        "frame": 259,
+        "opacity": 100,
+        "q": 0.98394775390625,
+        "scale_percent": 108.026123046875,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          225.8917236328125,
+          209.92803955078125
+        ],
+        "scene_bounds": [
+          -0.963134765625,
+          -11.5255126953125,
+          2592.626953125,
+          1106.1875
+        ],
+        "target_cell_bounds": [
+          -0.963134765625,
+          47.88885498046875,
+          453.709716796875,
+          324.078369140625
+        ]
+      },
+      {
+        "frame": 260,
+        "opacity": 100,
+        "q": 1,
+        "scale_percent": 100,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          210,
+          205
+        ],
+        "scene_bounds": [
+          0,
+          0,
+          2400,
+          1024
+        ],
+        "target_cell_bounds": [
+          0,
+          55,
+          420,
+          300
+        ]
+      },
+      {
+        "frame": 261,
+        "opacity": 100,
+        "q": 1,
+        "scale_percent": 100,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          210,
+          205
+        ],
+        "scene_bounds": [
+          0,
+          0,
+          2400,
+          1024
+        ],
+        "target_cell_bounds": [
+          0,
+          55,
+          420,
+          300
+        ]
+      },
+      {
+        "frame": 262,
+        "opacity": 100,
+        "q": 1,
+        "scale_percent": 100,
+        "anchor": [
+          210,
+          205
+        ],
+        "position": [
+          210,
+          205
+        ],
+        "scene_bounds": [
+          0,
+          0,
+          2400,
+          1024
+        ],
+        "target_cell_bounds": [
+          0,
+          55,
+          420,
+          300
+        ]
+      }
+    ]
+  }
+}

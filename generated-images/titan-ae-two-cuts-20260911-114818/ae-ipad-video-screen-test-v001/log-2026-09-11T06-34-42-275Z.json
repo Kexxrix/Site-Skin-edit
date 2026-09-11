@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-09-11T06-34-42-275Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.start",
+          "args": {},
+          "timeoutMs": 600000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendered": 2
+        },
+        "context": {
+          "project": {
+            "numItems": 22,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 22754
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.status",
+          "args": {}
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendering": false,
+          "numItems": 2,
+          "canQueueInAME": false,
+          "items": [
+            {
+              "index": 1,
+              "comp": "TITAN_DEVICE_iPad_3D_v003",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 3,
+              "elapsedSeconds": 2,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/iPad-VideoScreen-Test-3s.mp4"
+              ]
+            },
+            {
+              "index": 2,
+              "comp": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 3,
+              "elapsedSeconds": 20,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-Preview-3s.mp4"
+              ]
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 22,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 367
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project",
+        "args": {}
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+        },
+        "logs": [],
+        "durationMs": 1590
+      }
+    }
+  ]
+}

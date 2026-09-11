@@ -1,0 +1,2793 @@
+{
+  "timestamp": "2026-09-11T07-36-13-759Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 0,
+                  "comment": "M_START"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 0.8,
+                  "comment": "M_SETTLED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 0.9666666666666667,
+                  "comment": "E1_SETTLED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 1.1333333333333333,
+                  "comment": "E2_SETTLED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 1.3,
+                  "comment": "T_SETTLED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 1.7,
+                  "comment": "ARC_FULL"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 3.1,
+                  "comment": "C01_SETTLED"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 3.7,
+                  "comment": "WIPE_START"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 4.1,
+                  "comment": "C02_BG_READY"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 5.133333333333334,
+                  "comment": "LETTERING_DONE"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 5.166666666666667,
+                  "comment": "IPAD_ENTER"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 5.566666666666666,
+                  "comment": "CONTACT"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 5.8,
+                  "comment": "PUSH_MAX"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 7,
+                  "comment": "TYPE_HOME"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 330,
+                  "time": 7.133333333333334,
+                  "comment": "IPAD_SETTLED"
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": 330,
+                  "props": {
+                    "duration": 8,
+                    "workAreaStart": 0,
+                    "workAreaDuration": 8
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": 356,
+                  "props": {
+                    "duration": 4,
+                    "workAreaStart": 0,
+                    "workAreaDuration": 4
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 356,
+                  "layer": "all",
+                  "props": {
+                    "outPoint": 4
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": 373,
+                  "props": {
+                    "duration": 4.1,
+                    "workAreaStart": 0,
+                    "workAreaDuration": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 373,
+                  "layer": "all",
+                  "props": {
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": 389,
+                  "props": {
+                    "duration": 4,
+                    "workAreaStart": 0,
+                    "workAreaDuration": 4
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 389,
+                  "layer": "all",
+                  "props": {
+                    "outPoint": 4
+                  }
+                }
+              },
+              {
+                "operation": "layer.replace_source",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DEVICE_IPHONE",
+                  "item": 373,
+                  "fixExpressions": false
+                }
+              },
+              {
+                "operation": "layer.replace_source",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_DEVICE_IPAD",
+                  "item": 356,
+                  "fixExpressions": false
+                }
+              },
+              {
+                "operation": "layer.replace_source",
+                "args": {
+                  "comp": 356,
+                  "layer": "SCREEN_iPad10_VIDEO_SOURCE",
+                  "item": 389,
+                  "fixExpressions": false
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_UNDERLINE",
+                  "props": {
+                    "startTime": 3,
+                    "inPoint": 4.1,
+                    "outPoint": 8
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_IN_HOUSE",
+                  "props": {
+                    "startTime": 3,
+                    "inPoint": 4.1,
+                    "outPoint": 8
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_BUILT",
+                  "props": {
+                    "startTime": 3,
+                    "inPoint": 4.1,
+                    "outPoint": 8
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_CORE",
+                  "props": {
+                    "startTime": 3,
+                    "inPoint": 4.1,
+                    "outPoint": 8
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "props": {
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "props": {
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "props": {
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "props": {
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DEVICE_IPHONE",
+                  "props": {
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_BG_IVORY",
+                  "props": {
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_BG_CHARCOAL_WIPE",
+                  "props": {
+                    "inPoint": 3.7,
+                    "outPoint": 8
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.shift",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_BG_CHARCOAL_WIPE",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "pivot": 0.8,
+                  "scale": 1.3333333333333333,
+                  "offset": 2.9
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    764.5947265625,
+                    560
+                  ]
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_Staggered_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Position 3D"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_Staggered_Back",
+                    "Selectors",
+                    "Letter_Back_Amount",
+                    "Amount"
+                  ],
+                  "expression": "textIndex === 1 ? 100 : 0;"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_Staggered_Back",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "expression": "var end=thisComp.marker.key('M_SETTLED').time;\nvar duration=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;\nvar u=Math.max(0,Math.min(1,(time-end+duration)/duration));\nvar c=1.70158;var e=1+(c+1)*Math.pow(u-1,3)+c*Math.pow(u-1,2);\n[0,620*(1-e),0];"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators"
+                  ],
+                  "matchName": "ADBE Text Animator",
+                  "name": "V004_e1_Back"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e1_Back",
+                    "Selectors"
+                  ],
+                  "matchName": "ADBE Text Expressible Selector",
+                  "name": "Letter_Back_Amount"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e1_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Position 3D"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e1_Back",
+                    "Selectors",
+                    "Letter_Back_Amount",
+                    "Amount"
+                  ],
+                  "expression": "textIndex === 2 ? 100 : 0;"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e1_Back",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "expression": "var end=thisComp.marker.key('E1_SETTLED').time;\nvar duration=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;\nvar u=Math.max(0,Math.min(1,(time-end+duration)/duration));\nvar c=1.70158;var e=1+(c+1)*Math.pow(u-1,3)+c*Math.pow(u-1,2);\n[0,460*(1-e),0];"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators"
+                  ],
+                  "matchName": "ADBE Text Animator",
+                  "name": "V004_e2_Back"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e2_Back",
+                    "Selectors"
+                  ],
+                  "matchName": "ADBE Text Expressible Selector",
+                  "name": "Letter_Back_Amount"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e2_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Position 3D"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e2_Back",
+                    "Selectors",
+                    "Letter_Back_Amount",
+                    "Amount"
+                  ],
+                  "expression": "textIndex === 3 ? 100 : 0;"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e2_Back",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "expression": "var end=thisComp.marker.key('E2_SETTLED').time;\nvar duration=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;\nvar u=Math.max(0,Math.min(1,(time-end+duration)/duration));\nvar c=1.70158;var e=1+(c+1)*Math.pow(u-1,3)+c*Math.pow(u-1,2);\n[0,330*(1-e),0];"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators"
+                  ],
+                  "matchName": "ADBE Text Animator",
+                  "name": "V004_t_Back"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_t_Back",
+                    "Selectors"
+                  ],
+                  "matchName": "ADBE Text Expressible Selector",
+                  "name": "Letter_Back_Amount"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_t_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Position 3D"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_t_Back",
+                    "Selectors",
+                    "Letter_Back_Amount",
+                    "Amount"
+                  ],
+                  "expression": "textIndex === 4 ? 100 : 0;"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_t_Back",
+                    "Properties",
+                    "ADBE Text Position 3D"
+                  ],
+                  "expression": "var end=thisComp.marker.key('T_SETTLED').time;\nvar duration=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;\nvar u=Math.max(0,Math.min(1,(time-end+duration)/duration));\nvar c=1.70158;var e=1+(c+1)*Math.pow(u-1,3)+c*Math.pow(u-1,2);\n[0,230*(1-e),0];"
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "property": [
+                    "Contents",
+                    "Arc",
+                    "Contents",
+                    "Trim Paths 1",
+                    "End"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "property": [
+                    "Contents",
+                    "Arc",
+                    "Contents",
+                    "Trim Paths 1",
+                    "End"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "property": [
+                    "Contents",
+                    "Arc",
+                    "Contents",
+                    "Trim Paths 1",
+                    "End"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Anchor Point"
+                  ],
+                  "value": [
+                    675,
+                    494
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "props": {
+                    "inPoint": 0.8
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var a=thisComp.marker.key('M_SETTLED').time;var b=thisComp.marker.key('ARC_FULL').time;var u=Math.max(0,Math.min(1,(time-a)/(b-a)));var e=1-Math.pow(1-u,5);\n[815+(675-815)*e,511+(494-511)*e];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "expression": "var a=thisComp.marker.key('M_SETTLED').time;var b=thisComp.marker.key('ARC_FULL').time;var u=Math.max(0,Math.min(1,(time-a)/(b-a)));var e=1-Math.pow(1-u,5);\nvar s=27+73*e;[s,s];"
+                }
+              },
+              {
+                "operation": "expression.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ]
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "props": {
+                    "inPoint": 1.7
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var a=thisComp.marker.key('ARC_FULL').time;var b=thisComp.marker.key('C01_SETTLED').time;var u=Math.max(0,Math.min(1,(time-a)/(b-a)));var e=u<0.5?2*u*u:1-Math.pow(-2*u+2,2)/2;\nvar L=thisComp.layer('C01_ARC');var p=L.content('Arc').content('Path 1').path.pointOnPath(e);L.toComp(p);"
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 3
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    1373.48754882812,
+                    492
+                  ]
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "keyIndex": 3
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "value": [
+                    100,
+                    100
+                  ]
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "keyIndex": 3
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "props": {
+                    "inPoint": 1.3
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var a=thisComp.marker.key('T_SETTLED').time;var b=thisComp.marker.key('C01_SETTLED').time;var u=Math.max(0,Math.min(1,(time-a)/(b-a)));var e=u<0.5?2*u*u:1-Math.pow(-2*u+2,2)/2;\n[2720+(1373.48754882812-2720)*e,492];"
+                }
+              },
+              {
+                "operation": "layer.create_null",
+                "args": {
+                  "comp": 330,
+                  "name": "C02_TYPE_RECOIL_CTRL"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Anchor Point"
+                  ],
+                  "value": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "props": {
+                    "outPoint": 8
+                  }
+                }
+              },
+              {
+                "operation": "effect.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "matchName": "ADBE Slider Control",
+                  "name": "Text Push px"
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Effects",
+                    "Text Push px"
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_UNDERLINE",
+                  "parentLayer": "C02_TYPE_RECOIL_CTRL",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_CORE",
+                  "parentLayer": "C02_TYPE_RECOIL_CTRL",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_BUILT",
+                  "parentLayer": "C02_TYPE_RECOIL_CTRL",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.set_parent",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_IN_HOUSE",
+                  "parentLayer": "C02_TYPE_RECOIL_CTRL",
+                  "jump": true
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_DEVICE_IPAD",
+                  "props": {
+                    "startTime": 4.1,
+                    "inPoint": 5.166666666666667,
+                    "outPoint": 8
+                  }
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_DEVICE_IPAD",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_DEVICE_IPAD",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_DEVICE_IPAD",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_DEVICE_IPAD",
+                  "toIndex": 4
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 4
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 3
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "keyIndex": 4
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "keyIndex": 3
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "value": [
+                    100,
+                    100,
+                    100
+                  ]
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Y"
+                  ],
+                  "keyIndex": 4
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Y"
+                  ],
+                  "keyIndex": 3
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Y"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Y"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Y"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "keyIndex": 4
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "keyIndex": 3
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Rotate Z"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "layer.set_enabled",
+                "args": {
+                  "comp": 356,
+                  "layer": "SCREEN_iPad10_VIDEO_SOURCE",
+                  "enabled": false
+                }
+              },
+              {
+                "operation": "comp.info",
+                "args": {
+                  "comp": 330
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 120000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "numMarkers": 1,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 2,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 3,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 4,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 5,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 6,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 7,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 8,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 9,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 10,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 11,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 12,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 13,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 14,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 15,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "name": "TITAN_TwoScenes_8s_v004",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "name": "TITAN_DEVICE_iPad_VIDEO_v004",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 5,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_VIEW",
+                  "warnings": []
+                },
+                {
+                  "name": "DEVICE_iPad_ENVIRONMENT",
+                  "warnings": []
+                },
+                {
+                  "name": "DEVICE_iPad10_MODEL",
+                  "warnings": []
+                },
+                {
+                  "name": "DEVICE_iPad_CAMERA",
+                  "warnings": []
+                },
+                {
+                  "name": "SCREEN_iPad10_VIDEO_SOURCE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "TITAN_DEVICE_iPhone_v004",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 4,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone_VIEW",
+                  "warnings": []
+                },
+                {
+                  "name": "DEVICE_iPhone_ENVIRONMENT",
+                  "warnings": []
+                },
+                {
+                  "name": "DEVICE_iPhone_CAMERA",
+                  "warnings": []
+                },
+                {
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "SCREEN_iPad10_HADES_VIDEO_v004",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 2,
+              "layers": [
+                {
+                  "name": "HADES_OPENING_VIDEO",
+                  "warnings": []
+                },
+                {
+                  "name": "SCREEN_FIT_BLACK",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "layer": "C01_DEVICE_IPHONE",
+              "source": "TITAN_DEVICE_iPhone_v004"
+            },
+            {
+              "ok": true,
+              "layer": "C02_DEVICE_IPAD",
+              "source": "TITAN_DEVICE_iPad_VIDEO_v004"
+            },
+            {
+              "ok": true,
+              "layer": "SCREEN_iPad10_VIDEO_SOURCE",
+              "source": "SCREEN_iPad10_HADES_VIDEO_v004"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_UNDERLINE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_TXT_IN_HOUSE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_TXT_BUILT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_TXT_CORE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DOT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_ARC",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_TITAN",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_MEET",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DEVICE_IPHONE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_BG_IVORY",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_BG_CHARCOAL_WIPE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 2,
+              "firstKeyTime": 3.7,
+              "lastKeyTime": 4.1
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_MEET",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_MEET",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Text Position 3D",
+              "propertyIndex": 2
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "V004_e1_Back",
+              "matchName": "ADBE Text Animator",
+              "propertyIndex": 2
+            },
+            {
+              "ok": true,
+              "name": "Letter_Back_Amount",
+              "matchName": "ADBE Text Expressible Selector",
+              "propertyIndex": 1
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Text Position 3D",
+              "propertyIndex": 2
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "V004_e2_Back",
+              "matchName": "ADBE Text Animator",
+              "propertyIndex": 3
+            },
+            {
+              "ok": true,
+              "name": "Letter_Back_Amount",
+              "matchName": "ADBE Text Expressible Selector",
+              "propertyIndex": 1
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Text Position 3D",
+              "propertyIndex": 2
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "V004_t_Back",
+              "matchName": "ADBE Text Animator",
+              "propertyIndex": 4
+            },
+            {
+              "ok": true,
+              "name": "Letter_Back_Amount",
+              "matchName": "ADBE Text Expressible Selector",
+              "propertyIndex": 1
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Text Position 3D",
+              "propertyIndex": 2
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_ARC",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_ARC",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_ARC",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Scale",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": false
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DOT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DOT",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DOT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "numKeys": 2
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_TITAN",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 2
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_TITAN",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 2
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_TITAN",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_TITAN",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_TITAN",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "C02_TYPE_RECOIL_CTRL"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_TYPE_RECOIL_CTRL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_TYPE_RECOIL_CTRL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_TYPE_RECOIL_CTRL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "effectIndex": 1,
+              "name": "Text Push px",
+              "matchName": "ADBE Slider Control"
+            },
+            {
+              "ok": true,
+              "path": [
+                "Effects",
+                "Text Push px"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Slider",
+                  "matchName": "ADBE Slider Control-0001",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Compositing Options",
+                  "matchName": "ADBE Effect Built In Params",
+                  "isGroup": true,
+                  "numChildren": 3
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 1,
+                "name": "C02_TYPE_RECOIL_CTRL"
+              }
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 1,
+                "name": "C02_TYPE_RECOIL_CTRL"
+              }
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 1,
+                "name": "C02_TYPE_RECOIL_CTRL"
+              }
+            },
+            {
+              "ok": true,
+              "parent": {
+                "index": 1,
+                "name": "C02_TYPE_RECOIL_CTRL"
+              }
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_DEVICE_IPAD",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_DEVICE_IPAD",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "fromIndex": 8,
+              "newIndex": 4,
+              "name": "C02_DEVICE_IPAD"
+            },
+            {
+              "ok": true,
+              "numKeys": 3
+            },
+            {
+              "ok": true,
+              "numKeys": 2
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_VIEW",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 3
+            },
+            {
+              "ok": true,
+              "numKeys": 2
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_VIEW",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 3
+            },
+            {
+              "ok": true,
+              "numKeys": 2
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_VIEW",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "numKeys": 3
+            },
+            {
+              "ok": true,
+              "numKeys": 2
+            },
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_VIEW",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "updated": 1
+            },
+            {
+              "id": 330,
+              "name": "TITAN_TwoScenes_8s_v004",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 8,
+              "layerCount": 15,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ],
+              "ok": true,
+              "found": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 8,
+              "pixelAspect": 1,
+              "shutterAngle": 180,
+              "shutterPhase": 0,
+              "motionBlur": false,
+              "layers": [
+                {
+                  "index": 1,
+                  "id": 404,
+                  "name": "C02_TYPE_RECOIL_CTRL",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 8,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 100,
+                  "height": 100,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 403,
+                  "sourceName": "Null 3"
+                },
+                {
+                  "index": 2,
+                  "id": 345,
+                  "name": "REF_CUT_01",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 96,
+                  "sourceName": "REF_CUT_01"
+                },
+                {
+                  "index": 3,
+                  "id": 344,
+                  "name": "REF_CUT_02",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 97,
+                  "sourceName": "REF_CUT_02"
+                },
+                {
+                  "index": 4,
+                  "id": 339,
+                  "name": "C02_DEVICE_IPAD",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 5.16666666666667,
+                  "outPoint": 8,
+                  "startTime": 4.1,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 356,
+                  "sourceName": "TITAN_DEVICE_iPad_VIDEO_v004"
+                },
+                {
+                  "index": 5,
+                  "id": 343,
+                  "name": "C02_UNDERLINE",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 8
+                },
+                {
+                  "index": 6,
+                  "id": 342,
+                  "name": "C02_TXT_IN_HOUSE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 1,
+                  "text": "in-house",
+                  "fontSize": 162.171752929688,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 7,
+                  "id": 341,
+                  "name": "C02_TXT_BUILT",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 1,
+                  "text": "Built",
+                  "fontSize": 190.702789306641,
+                  "font": "Pretendard-Bold",
+                  "fillColor": [
+                    0.98038995265961,
+                    0.52941000461578,
+                    0.12157000601292
+                  ]
+                },
+                {
+                  "index": 8,
+                  "id": 340,
+                  "name": "C02_TXT_CORE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 1,
+                  "text": "Core systems",
+                  "fontSize": 121.411140441895,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 9,
+                  "id": 338,
+                  "name": "C02_BG_CHARCOAL_WIPE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 3.7,
+                  "outPoint": 8,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 106,
+                  "sourceName": "C02_BG_CHARCOAL_WIPE"
+                },
+                {
+                  "index": 10,
+                  "id": 337,
+                  "name": "C01_DOT",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.7,
+                  "outPoint": 5.8,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 11,
+                  "id": 336,
+                  "name": "C01_ARC",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0.8,
+                  "outPoint": 4.9,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 12,
+                  "id": 335,
+                  "name": "C01_TXT_TITAN",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.3,
+                  "outPoint": 5.4,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "TITAN",
+                  "fontSize": 190.739944458008,
+                  "font": "Pretendard-SemiBold",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 13,
+                  "id": 334,
+                  "name": "C01_TXT_MEET",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Meet",
+                  "fontSize": 137.912460327148,
+                  "font": "Pretendard-Regular",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 14,
+                  "id": 333,
+                  "name": "C01_DEVICE_IPHONE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 373,
+                  "sourceName": "TITAN_DEVICE_iPhone_v004"
+                },
+                {
+                  "index": 15,
+                  "id": 332,
+                  "name": "C01_BG_IVORY",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 100,
+                  "sourceName": "C01_BG_IVORY"
+                }
+              ]
+            }
+          ],
+          "count": 131,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 1025
+      }
+    }
+  ]
+}

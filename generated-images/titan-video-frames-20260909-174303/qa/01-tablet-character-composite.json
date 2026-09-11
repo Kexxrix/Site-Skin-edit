@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-09-09T08:59:39.376485+00:00",
+  "method": "Original screenshot projected into the existing tablet display with an inverse homography and a mask derived from the gray screen. No generated UI, added text, recoloring, or background edits.",
+  "plate": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\results\\01-tablet-plate.png",
+    "sha256": "c0b22d9c57708dcd4d65db5c73ff4146e25db54b30db1ce24316d15bdafeeb87",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "source": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\sources\\cat-village-tablet-character.png",
+    "sha256": "c79fae62e6db327ae789b698b31c9ba3fe7d346bea7432472d14cf90458727b9",
+    "size": [
+      1200,
+      900
+    ]
+  },
+  "output": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-video-frames-20260909-174303\\derived\\01-tablet-start-character.png",
+    "sha256": "cb5c83431bfc59f36b8e7b34ab54af24bc618925bf1761068a852b64b81ec549",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "screen_quad_tl_tr_br_bl": [
+    [
+      783.079491951782,
+      201.1411781929929
+    ],
+    [
+      1490.0510997513468,
+      169.1648565174499
+    ],
+    [
+      1468.2549578961598,
+      690.6085682778582
+    ],
+    [
+      751.5182012341646,
+      671.422000352771
+    ]
+  ],
+  "screen_mask_pixels": 353864,
+  "screen_mask_bounds": [
+    753,
+    170,
+    1489,
+    690
+  ],
+  "outside_screen_mask_changed_pixels": 0,
+  "plate_and_source_hashes_preserved": true,
+  "qa": {
+    "png_readable": true,
+    "rounded_screen_mask": true,
+    "bezel_and_background_preserved": true,
+    "source_content_regenerated": false,
+    "source_color_adjustment": false,
+    "visual_review": "pass",
+    "visual_notes": "Large original CAT VILLAGE cat is visible at the right, original logo at left and original game cards below; rounded screen corners, bezel, camera and background remain intact."
+  },
+  "capture": {
+    "url": "https://titan-solution-t01.pages.dev/",
+    "viewport": [
+      1200,
+      900
+    ],
+    "active_menu": "recommended",
+    "engine": "Headless Chrome ANGLE/SwiftShader",
+    "dom_css_or_ui_changes": false,
+    "wait_after_load_ms": 3500
+  }
+}

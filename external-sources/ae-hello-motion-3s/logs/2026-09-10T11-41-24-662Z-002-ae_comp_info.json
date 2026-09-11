@@ -1,0 +1,114 @@
+{
+  "request": {
+    "name": "ae_comp_info",
+    "arguments": {
+      "nameOrId": "Hello_World_Stretch_3s"
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"id\": 32,\n    \"name\": \"Hello_World_Stretch_3s\",\n    \"type\": \"CompItem\",\n    \"parentFolderId\": 0,\n    \"parentFolderName\": \"Root\",\n    \"label\": 15,\n    \"comment\": \"\",\n    \"width\": 1920,\n    \"height\": 1080,\n    \"frameRate\": 30,\n    \"duration\": 3,\n    \"layerCount\": 3,\n    \"bgColor\": [\n      0.16078431372549,\n      0.16078431372549,\n      0.16078431372549\n    ],\n    \"ok\": true,\n    \"found\": true,\n    \"workAreaStart\": 0,\n    \"workAreaDuration\": 3,\n    \"pixelAspect\": 1,\n    \"shutterAngle\": 180,\n    \"shutterPhase\": 0,\n    \"motionBlur\": false,\n    \"layers\": [\n      {\n        \"index\": 1,\n        \"id\": 35,\n        \"name\": \"Hello World - Source Outlines\",\n        \"type\": \"ShapeLayer\",\n        \"enabled\": true,\n        \"solo\": false,\n        \"shy\": false,\n        \"locked\": false,\n        \"inPoint\": 0,\n        \"outPoint\": 3,\n        \"startTime\": 0,\n        \"stretch\": 100,\n        \"parentIndex\": null,\n        \"label\": 8\n      },\n      {\n        \"index\": 2,\n        \"id\": 34,\n        \"name\": \"Hello World - Source\",\n        \"type\": \"TextLayer\",\n        \"enabled\": false,\n        \"solo\": false,\n        \"shy\": false,\n        \"locked\": false,\n        \"inPoint\": 0,\n        \"outPoint\": 3,\n        \"startTime\": 0,\n        \"stretch\": 100,\n        \"parentIndex\": null,\n        \"label\": 1,\n        \"text\": \"Hello World\",\n        \"fontSize\": 160,\n        \"font\": \"Karantina-Bold\",\n        \"fillColor\": [\n          1,\n          1,\n          1\n        ]\n      },\n      {\n        \"index\": 3,\n        \"id\": 47,\n        \"name\": \"Gray Radial Background\",\n        \"type\": \"AVLayer\",\n        \"enabled\": true,\n        \"solo\": false,\n        \"shy\": false,\n        \"locked\": false,\n        \"inPoint\": 0,\n        \"outPoint\": 3,\n        \"startTime\": 0,\n        \"stretch\": 100,\n        \"parentIndex\": null,\n        \"label\": 1,\n        \"width\": 1920,\n        \"height\": 1080,\n        \"hasVideo\": true,\n        \"hasAudio\": false,\n        \"threeDLayer\": false,\n        \"sourceId\": 46,\n        \"sourceName\": \"Gray Radial Background\"\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 379\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "id": 32,
+        "name": "Hello_World_Stretch_3s",
+        "type": "CompItem",
+        "parentFolderId": 0,
+        "parentFolderName": "Root",
+        "label": 15,
+        "comment": "",
+        "width": 1920,
+        "height": 1080,
+        "frameRate": 30,
+        "duration": 3,
+        "layerCount": 3,
+        "bgColor": [
+          0.16078431372549,
+          0.16078431372549,
+          0.16078431372549
+        ],
+        "ok": true,
+        "found": true,
+        "workAreaStart": 0,
+        "workAreaDuration": 3,
+        "pixelAspect": 1,
+        "shutterAngle": 180,
+        "shutterPhase": 0,
+        "motionBlur": false,
+        "layers": [
+          {
+            "index": 1,
+            "id": 35,
+            "name": "Hello World - Source Outlines",
+            "type": "ShapeLayer",
+            "enabled": true,
+            "solo": false,
+            "shy": false,
+            "locked": false,
+            "inPoint": 0,
+            "outPoint": 3,
+            "startTime": 0,
+            "stretch": 100,
+            "parentIndex": null,
+            "label": 8
+          },
+          {
+            "index": 2,
+            "id": 34,
+            "name": "Hello World - Source",
+            "type": "TextLayer",
+            "enabled": false,
+            "solo": false,
+            "shy": false,
+            "locked": false,
+            "inPoint": 0,
+            "outPoint": 3,
+            "startTime": 0,
+            "stretch": 100,
+            "parentIndex": null,
+            "label": 1,
+            "text": "Hello World",
+            "fontSize": 160,
+            "font": "Karantina-Bold",
+            "fillColor": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "index": 3,
+            "id": 47,
+            "name": "Gray Radial Background",
+            "type": "AVLayer",
+            "enabled": true,
+            "solo": false,
+            "shy": false,
+            "locked": false,
+            "inPoint": 0,
+            "outPoint": 3,
+            "startTime": 0,
+            "stretch": 100,
+            "parentIndex": null,
+            "label": 1,
+            "width": 1920,
+            "height": 1080,
+            "hasVideo": true,
+            "hasAudio": false,
+            "threeDLayer": false,
+            "sourceId": 46,
+            "sourceName": "Gray Radial Background"
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 379
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "timestamp": "2026-09-11T06-27-57-124Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "viewer"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "viewer",
+        "operations": [
+          {
+            "name": "viewer.get_state",
+            "description": "Read the active viewer's state: type, zoom, exposure, channels.",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "viewer.set_options",
+            "description": "Set active-viewer view options: zoom (1 = 100%), exposure (stops), checkerboard, guide/ruler visibility and lock/snap (AE 16.1+), fast-preview mode, and the displayed channels.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "zoom",
+                "type": "number",
+                "required": false,
+                "description": "Zoom factor (1 = 100%)"
+              },
+              {
+                "name": "exposure",
+                "type": "number",
+                "required": false,
+                "description": "Exposure in stops"
+              },
+              {
+                "name": "checkerboards",
+                "type": "boolean",
+                "required": false,
+                "description": "Show transparency checkerboard"
+              },
+              {
+                "name": "guidesVisibility",
+                "type": "boolean",
+                "required": false,
+                "description": "Show guides (AE 16.1+)"
+              },
+              {
+                "name": "guidesLocked",
+                "type": "boolean",
+                "required": false,
+                "description": "Lock guides (AE 16.1+)"
+              },
+              {
+                "name": "guidesSnap",
+                "type": "boolean",
+                "required": false,
+                "description": "Snap to guides (AE 16.1+)"
+              },
+              {
+                "name": "rulers",
+                "type": "boolean",
+                "required": false,
+                "description": "Show rulers (AE 16.1+)"
+              },
+              {
+                "name": "maximized",
+                "type": "boolean",
+                "required": false,
+                "description": "Maximize the viewer panel"
+              },
+              {
+                "name": "fastPreview",
+                "type": "string",
+                "required": false,
+                "description": "off|adaptiveResolution|draft|fastDraft|wireframe"
+              },
+              {
+                "name": "channels",
+                "type": "string",
+                "required": false,
+                "description": "rgb|red|green|blue|alpha|alphaBoundary|alphaOverlay|rgbStraight"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "timeline"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "timeline",
+        "operations": [
+          {
+            "name": "timeline.set_time",
+            "description": "Set the current time indicator (CTI) in a composition.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": true,
+                "description": "Time in seconds"
+              }
+            ]
+          },
+          {
+            "name": "timeline.set_active_comp",
+            "description": "Set the active (visible in UI) composition. Opens it in the viewer.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "timeline.select_layers",
+            "description": "Select (or deselect) layers in a comp by index.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "indices",
+                "type": "array",
+                "required": true,
+                "description": "Array of 1-based layer indices to select"
+              },
+              {
+                "name": "deselectOthers",
+                "type": "boolean",
+                "required": false,
+                "description": "Deselect all other layers first (default true)",
+                "default": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "item"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "item",
+        "operations": [
+          {
+            "name": "folder.create",
+            "description": "Create a folder in the project panel, optionally inside another folder.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "Folder name"
+              },
+              {
+                "name": "parent",
+                "type": "any",
+                "required": false,
+                "description": "Parent folder id or name (default: project root)"
+              }
+            ]
+          },
+          {
+            "name": "item.move_to_folder",
+            "description": "Move a project item (comp, footage, or folder) into a folder. Pass folder=null for the project root.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "item",
+                "type": "any",
+                "required": true,
+                "description": "Item id (number) or name (string)"
+              },
+              {
+                "name": "folder",
+                "type": "any",
+                "required": false,
+                "description": "Target folder id or name — null for project root",
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "name": "item.set_props",
+            "description": "Set project-item properties: name, label color (0-16), comment, selected. Works on comps, footage, and folders.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "item",
+                "type": "any",
+                "required": true,
+                "description": "Item id (number) or name (string)"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "required": false,
+                "description": "New name"
+              },
+              {
+                "name": "label",
+                "type": "number",
+                "required": false,
+                "description": "Label color index (0-16)"
+              },
+              {
+                "name": "comment",
+                "type": "string",
+                "required": false,
+                "description": "Comment text"
+              },
+              {
+                "name": "selected",
+                "type": "boolean",
+                "required": false,
+                "description": "Select/deselect in project panel"
+              }
+            ]
+          },
+          {
+            "name": "item.list",
+            "description": "List project items, optionally filtered by folder, type, or name substring. Lighter than ae_project_info for targeted lookups.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "folder",
+                "type": "any",
+                "required": false,
+                "description": "Only items directly inside this folder (id or name)"
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "required": false,
+                "description": "CompItem|FootageItem|FolderItem"
+              },
+              {
+                "name": "nameContains",
+                "type": "string",
+                "required": false,
+                "description": "Case-insensitive substring match on item name"
+              },
+              {
+                "name": "limit",
+                "type": "number",
+                "required": false,
+                "description": "Max results (default 200)"
+              }
+            ]
+          },
+          {
+            "name": "item.usages",
+            "description": "Reverse lookup: list every comp that uses a footage item or comp (AVItem.usedIn), with the layer indices that reference it.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "item",
+                "type": "any",
+                "required": true,
+                "description": "Item id (number) or name (string)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

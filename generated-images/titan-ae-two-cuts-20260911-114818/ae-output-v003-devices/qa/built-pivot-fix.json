@@ -1,0 +1,934 @@
+{
+  "reason": "Built centered anchor changed 3013 settled edge pixels (max channel difference 13). Restore original baseline pivot and corresponding position keys; preserve the specified word-scale motion. TITAN center pivot remains pixel-identical.",
+  "ops": [
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "anchorPoint": [
+          11.5231790542603,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "keyframe.set_batch",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "times": [
+          1.4333333333333333,
+          1.6333333333333333,
+          1.8
+        ],
+        "values": [
+          [
+            635,
+            710,
+            0
+          ],
+          [
+            670,
+            623,
+            0
+          ],
+          [
+            670,
+            630,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "operation": "keyframe.set_easing",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "keyIndex": 1,
+        "inSpeed": 0,
+        "outSpeed": 1406.6449445400215,
+        "inInfluence": 33.333333333333336,
+        "outInfluence": 33.333333333333336
+      }
+    },
+    {
+      "operation": "keyframe.set_spatial",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "keyIndex": 1,
+        "inTangent": [
+          0,
+          0,
+          0
+        ],
+        "outTangent": [
+          0,
+          0,
+          0
+        ],
+        "continuous": false,
+        "autoBezier": false
+      }
+    },
+    {
+      "operation": "keyframe.set_easing",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "keyIndex": 2,
+        "inSpeed": 0,
+        "outSpeed": 126,
+        "inInfluence": 33.333333333333336,
+        "outInfluence": 33.333333333333336
+      }
+    },
+    {
+      "operation": "keyframe.set_spatial",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "keyIndex": 2,
+        "inTangent": [
+          0,
+          0,
+          0
+        ],
+        "outTangent": [
+          0,
+          0,
+          0
+        ],
+        "continuous": false,
+        "autoBezier": false
+      }
+    },
+    {
+      "operation": "keyframe.set_easing",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "keyIndex": 3,
+        "inSpeed": 0,
+        "outSpeed": 0,
+        "inInfluence": 33.333333333333336,
+        "outInfluence": 33.333333333333336
+      }
+    },
+    {
+      "operation": "keyframe.set_spatial",
+      "args": {
+        "comp": 127,
+        "layer": "C02_TXT_BUILT",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "keyIndex": 3,
+        "inTangent": [
+          0,
+          0,
+          0
+        ],
+        "outTangent": [
+          0,
+          0,
+          0
+        ],
+        "continuous": false,
+        "autoBezier": false
+      }
+    }
+  ],
+  "result": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TXT_BUILT",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "added": 3,
+          "numKeys": 3
+        },
+        {
+          "ok": true,
+          "keyIndex": 1,
+          "interpolation": "applied"
+        },
+        {
+          "ok": true,
+          "keyIndex": 1
+        },
+        {
+          "ok": true,
+          "keyIndex": 2,
+          "interpolation": "applied"
+        },
+        {
+          "ok": true,
+          "keyIndex": 2
+        },
+        {
+          "ok": true,
+          "keyIndex": 3,
+          "interpolation": "applied"
+        },
+        {
+          "ok": true,
+          "keyIndex": 3
+        }
+      ],
+      "count": 8,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 18,
+        "dirty": true,
+        "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v003-devices/TITAN-TwoCuts-Devices-Kinetic-3s-v003.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 371
+  },
+  "finalMotionPlans": [
+    {
+      "comp": 127,
+      "layer": "C01_TXT_MEET",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        0,
+        6
+      ],
+      "values": [
+        [
+          764.5947265625,
+          596,
+          0
+        ],
+        [
+          764.5947265625,
+          560,
+          0
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_TXT_MEET",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        0,
+        3
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_TXT_TITAN",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        3,
+        9,
+        14
+      ],
+      "values": [
+        [
+          1443.4875322896987,
+          555.9999990491194,
+          0
+        ],
+        [
+          1369.4875322896987,
+          486.9999990491195,
+          0
+        ],
+        [
+          1373.4875322896987,
+          491.9999990491195,
+          0
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_TXT_TITAN",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Scale"
+      ],
+      "frames": [
+        3,
+        9,
+        14
+      ],
+      "values": [
+        [
+          90,
+          90,
+          100
+        ],
+        [
+          104,
+          104,
+          100
+        ],
+        [
+          100,
+          100,
+          100
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_TXT_TITAN",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Rotate Z"
+      ],
+      "frames": [
+        3,
+        9,
+        14
+      ],
+      "values": [
+        -6,
+        0.8,
+        0
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_TXT_TITAN",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        3,
+        5
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_CORE",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        34,
+        40
+      ],
+      "values": [
+        [
+          670,
+          472,
+          0
+        ],
+        [
+          670,
+          440,
+          0
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_CORE",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        34,
+        37
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_BUILT",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        43,
+        49,
+        54
+      ],
+      "values": [
+        [
+          635,
+          710,
+          0
+        ],
+        [
+          670,
+          623,
+          0
+        ],
+        [
+          670,
+          630,
+          0
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_BUILT",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Scale"
+      ],
+      "frames": [
+        43,
+        49,
+        54
+      ],
+      "values": [
+        [
+          88,
+          88,
+          100
+        ],
+        [
+          106,
+          106,
+          100
+        ],
+        [
+          100,
+          100,
+          100
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_BUILT",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        43,
+        45
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_IN_HOUSE",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        55,
+        64
+      ],
+      "values": [
+        [
+          1223.27294921875,
+          630,
+          0
+        ],
+        [
+          1103.27294921875,
+          630,
+          0
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_IN_HOUSE",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        55,
+        57
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_ARC",
+      "property": [
+        "ADBE Root Vectors Group",
+        "Arc",
+        "ADBE Vectors Group",
+        "ADBE Vector Filter - Trim",
+        "ADBE Vector Trim End"
+      ],
+      "frames": [
+        0,
+        14
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_UNDERLINE",
+      "property": [
+        "ADBE Root Vectors Group",
+        "Underline",
+        "ADBE Vectors Group",
+        "ADBE Vector Filter - Trim",
+        "ADBE Vector Trim End"
+      ],
+      "frames": [
+        46,
+        54
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_DOT",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        0,
+        14
+      ],
+      "values": [
+        [
+          474.808929443359,
+          197.204544067383,
+          0
+        ],
+        [
+          385.371917724609,
+          283.572875976562,
+          0
+        ]
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_DOT",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        0,
+        4
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 151,
+      "layer": "DEVICE_iPhone_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        0,
+        14
+      ],
+      "values": [
+        [
+          10,
+          4.5,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 151,
+      "layer": "DEVICE_iPhone_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Rotate Y"
+      ],
+      "frames": [
+        0,
+        14
+      ],
+      "values": [
+        -22,
+        -10
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 151,
+      "layer": "DEVICE_iPhone_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Rotate Z"
+      ],
+      "frames": [
+        0,
+        14
+      ],
+      "values": [
+        9,
+        3
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 151,
+      "layer": "DEVICE_iPhone_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Scale"
+      ],
+      "frames": [
+        0,
+        14
+      ],
+      "values": [
+        [
+          94,
+          94,
+          94
+        ],
+        [
+          100,
+          100,
+          100
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 163,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Position"
+      ],
+      "frames": [
+        34,
+        54,
+        55,
+        64
+      ],
+      "values": [
+        [
+          14,
+          3,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 163,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Rotate Y"
+      ],
+      "frames": [
+        34,
+        54,
+        55,
+        64
+      ],
+      "values": [
+        -30,
+        -18,
+        -18,
+        -18
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 163,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Rotate Z"
+      ],
+      "frames": [
+        34,
+        54,
+        55,
+        64
+      ],
+      "values": [
+        -7,
+        -3,
+        -3,
+        -3
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 163,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Scale"
+      ],
+      "frames": [
+        34,
+        54,
+        55,
+        64
+      ],
+      "values": [
+        [
+          94,
+          94,
+          94
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        [
+          100,
+          100,
+          100
+        ]
+      ],
+      "curve": "out"
+    },
+    {
+      "comp": 127,
+      "layer": "C01_DEVICE_IPHONE",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        0,
+        4
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_DEVICE_IPAD",
+      "property": [
+        "ADBE Transform Group",
+        "ADBE Opacity"
+      ],
+      "frames": [
+        34,
+        40
+      ],
+      "values": [
+        0,
+        100
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_BUILT",
+      "property": [
+        "ADBE Effect Parade",
+        "Built Short Directional Blur",
+        "ADBE Motion Blur-0002"
+      ],
+      "frames": [
+        43,
+        45,
+        49,
+        54
+      ],
+      "values": [
+        14,
+        10,
+        0,
+        0
+      ],
+      "curve": "linear"
+    },
+    {
+      "comp": 127,
+      "layer": "C02_TXT_IN_HOUSE",
+      "property": [
+        "ADBE Effect Parade",
+        "in-house Short Directional Blur",
+        "ADBE Motion Blur-0002"
+      ],
+      "frames": [
+        55,
+        57,
+        61,
+        64
+      ],
+      "values": [
+        14,
+        9,
+        0,
+        0
+      ],
+      "curve": "linear"
+    }
+  ],
+  "settles": {
+    "C02_TXT_IN_HOUSE": [
+      1103.27294921875,
+      630,
+      0
+    ],
+    "C02_TXT_BUILT": [
+      670,
+      630,
+      0
+    ],
+    "C02_TXT_CORE": [
+      670,
+      440,
+      0
+    ],
+    "C01_TXT_TITAN": [
+      1373.4875322896987,
+      491.9999990491195,
+      0
+    ],
+    "C01_TXT_MEET": [
+      764.5947265625,
+      560,
+      0
+    ]
+  }
+}

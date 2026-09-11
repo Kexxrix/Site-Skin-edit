@@ -1,0 +1,31 @@
+{
+  "source": "D:/WebDL/grok-b37baa65-cf0f-41f5-a80d-7c3c7e4d800d (1).mp4",
+  "reference_prompt": "prompts/02-grok-partner-earnings.txt",
+  "actual_prompt_submission_verified": false,
+  "metadata": {"duration_seconds": 6.041667, "fps": 24, "frames": 145, "width": 1456, "height": 624, "bytes": 2491669, "codec": "h264", "audio_streams": 0},
+  "verdict": "The exact two-line text is readable in clear samples and the abstract objects genuinely move. The main text remains near its centered layout; this is not evidence of a complete exit/reveal. Late ring passes partially occlude the subline.",
+  "exact_text": ["PARTNER EARNINGS", "AUTO-CALCULATED & RECORDED"],
+  "text_findings": [
+    "The original exact lines are visible at 0 s and are again clear by the 2.75 s sample, with the hyphen and ampersand preserved. Full-size checks at 3.0 and 5.25 s confirm the exact spelling and two-line layout.",
+    "The centered main text remains in all inspected samples. Its position and size are broadly stable; the opening contains horizontal trails rather than a clearly observed large opposing departure of both lines.",
+    "At 1.25-2 s the lower line dims and the ring/glass and bright glyph-like fragments pass in front. The intact underlying text is still present. These fragments are not identifiable as a stable replacement word; they depart from an intact-word-unit motion description.",
+    "No persistent substituted, missing or duplicated word is seen in the resolved main text. This is a sampled visual finding, not every-frame spelling certification.",
+    "The ring crosses RECORDED in late samples, notably 3.5, 4.25 and 4.5 s. The full-size final 6.0 s frame shows the ring partly occluding the bottom/right of the last D. Partial occlusion is distinct from an actual spelling substitution."
+  ],
+  "motion_findings": [
+    "The blue ribbon curls from the upper left into a loop, the silver ring rotates through large foreground orbits, and the glass panel turns and shifts at the right.",
+    "These object movements continue through the latter half; the entire frame is not static.",
+    "No complete blank frame or complete title occlusion is observed among the 13 half-second samples or the 9 targeted additional samples. In particular there is no observed sustained 1-2 s complete title disappearance. Unsampled brief frames were not exhaustively excluded."
+  ],
+  "criteria_separation": {
+    "against_written_prompt_if_it_was_used": "Object motion and resolved spelling are present. Intact word-group travel and a final reading section clear of foreground objects are only partly met. Actual prompt entry is unconfirmed.",
+    "later_added_required_exit_rule": "A complete opening exit or total foreground cover followed by re-entry is not demonstrated in sampled frames. This rule was added after the written prompt and must not be retroactively described as a failure of that prompt."
+  },
+  "editing_proposals": [
+    {"in_seconds": 3.0, "out_seconds": 5.75, "duration_seconds": 2.75, "purpose": "A continuous latter-section candidate retaining active graphics and readable main text, if brief partial occlusion of RECORDED is acceptable. Not a continuously unobstructed reading section and not an exit/reveal example."},
+    {"in_seconds": 4.75, "out_seconds": 5.75, "duration_seconds": 1.0, "purpose": "Shorter clean-reading candidate supported by quarter-second samples, with moving graphics. The precise cut boundary would need timed playback review."}
+  ],
+  "verification_scope": "13 frames at 0.5 s spacing over 0-6 s, plus 9 targeted quarter-offset frames. Contact sheets and selected 1456x624 stills reviewed, including 4.75 and final 6.0 s. No native timed playback, no audio listening, no all-frame visual certification.",
+  "source_preservation": "Source was only read; no video editing, movement, generation or cuts were performed. Only this QA folder received files.",
+  "evidence": ["contact-01.jpg", "contact-02.jpg", "detail-contact.jpg", "sample-004.jpg", "sample-007.jpg", "detail-06.png", "detail-08.png"]
+}

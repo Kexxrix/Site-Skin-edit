@@ -1,0 +1,296 @@
+.solutions {
+  background: #0a0a0a;
+  color: #fff;
+  border-bottom: 1px solid rgb(218 218 218 / 15%);
+  scroll-margin-top: 100px;
+}
+
+.container {
+  width: calc(100% - 48px);
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 80px;
+}
+
+.headingRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: end;
+  gap: 64px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(218 218 218 / 15%);
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.eyebrow > span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fa871f;
+}
+
+.title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  word-break: keep-all;
+}
+
+.title > span {
+  color: #fa871f;
+}
+
+.description {
+  margin: 0;
+  color: #e0d9d9;
+  font-size: 16px;
+  line-height: 24px;
+  word-break: keep-all;
+}
+
+.description > span {
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.adoptionNote {
+  margin: 24px 0 0;
+  color: #e0d9d9;
+  font-size: 16px;
+  line-height: 26px;
+  word-break: keep-all;
+}
+
+.adoptionNote strong {
+  color: #fa871f;
+  font-weight: 600;
+}
+
+.cardReveal {
+  min-width: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 28px;
+  border: 1px solid rgb(218 218 218 / 15%);
+  border-radius: 15px;
+  background: #141414;
+  transition: border-color 200ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  border-color: rgb(250 135 31 / 55%);
+}
+
+.cardLead {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fa871f;
+  color: #fff;
+}
+
+.cardCopy h3 {
+  margin: 0;
+  color: #fa871f;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+.scope {
+  margin: 6px 0 0;
+  color: #e0d9d9;
+  font-size: 14px;
+  line-height: 22px;
+  word-break: keep-all;
+}
+
+.cardDescription {
+  margin: 16px 0 0;
+  color: #e0d9d9;
+  font-size: 16px;
+  line-height: 26px;
+  word-break: keep-all;
+}
+
+.feature {
+  margin: 0 0 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(218 218 218 / 15%);
+  word-break: keep-all;
+}
+
+.feature dt {
+  margin: 0 0 8px;
+  color: #a9a9a9;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.feature dd {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.consultButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 52px;
+  margin-top: auto;
+  padding: 12px 24px;
+  border: 1px solid rgb(218 218 218 / 15%);
+  border-radius: 50px;
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
+
+.consultButton > svg {
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+}
+
+.consultButton:hover,
+.consultButton:focus-visible {
+  background: #fa871f;
+  border-color: #fa871f;
+}
+
+.consultButton:hover > svg,
+.consultButton:focus-visible > svg {
+  transform: rotate(45deg);
+}
+
+.consultButton:focus-visible {
+  outline: 2px solid #fa871f;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1023px) {
+  .headingRow {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .cardLead {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-block: 60px;
+  }
+
+  .headingRow {
+    justify-items: center;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: clamp(30px, 6vw, 40px);
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  .adoptionNote {
+    margin-top: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .cardLead {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .cardCopy h3 {
+    font-size: 22px;
+  }
+
+  .consultButton {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .consultButton,
+  .consultButton > svg {
+    transition: none;
+  }
+
+  .consultButton:hover > svg,
+  .consultButton:focus-visible > svg {
+    transform: none;
+  }
+}

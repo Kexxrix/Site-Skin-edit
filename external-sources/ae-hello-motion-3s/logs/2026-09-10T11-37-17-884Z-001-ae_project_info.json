@@ -1,0 +1,76 @@
+{
+  "request": {
+    "name": "ae_project_info",
+    "arguments": {}
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\",\n    \"dirty\": true,\n    \"numItems\": 3,\n    \"bitsPerChannel\": 8,\n    \"timeDisplayType\": \"2013\",\n    \"activeItem\": null,\n    \"items\": [\n      {\n        \"id\": 1,\n        \"name\": \"Codex_Hello_World_1920x1080\",\n        \"type\": \"CompItem\",\n        \"parentFolderId\": 0,\n        \"parentFolderName\": \"Root\",\n        \"label\": 15,\n        \"comment\": \"\",\n        \"width\": 1920,\n        \"height\": 1080,\n        \"frameRate\": 30,\n        \"duration\": 5,\n        \"layerCount\": 2,\n        \"bgColor\": [\n          0,\n          0,\n          0\n        ]\n      },\n      {\n        \"id\": 29,\n        \"name\": \"Solids\",\n        \"type\": \"FolderItem\",\n        \"parentFolderId\": 0,\n        \"parentFolderName\": \"Root\",\n        \"label\": 2,\n        \"comment\": \"\"\n      },\n      {\n        \"id\": 30,\n        \"name\": \"Dark Gray Solid 1\",\n        \"type\": \"FootageItem\",\n        \"parentFolderId\": 29,\n        \"parentFolderName\": \"Solids\",\n        \"label\": 1,\n        \"comment\": \"\",\n        \"width\": 1920,\n        \"height\": 1080,\n        \"duration\": 0,\n        \"sourceKind\": \"solid\",\n        \"color\": [\n          0.1294117718935,\n          0.1294117718935,\n          0.1294117718935\n        ]\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 384\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep",
+        "dirty": true,
+        "numItems": 3,
+        "bitsPerChannel": 8,
+        "timeDisplayType": "2013",
+        "activeItem": null,
+        "items": [
+          {
+            "id": 1,
+            "name": "Codex_Hello_World_1920x1080",
+            "type": "CompItem",
+            "parentFolderId": 0,
+            "parentFolderName": "Root",
+            "label": 15,
+            "comment": "",
+            "width": 1920,
+            "height": 1080,
+            "frameRate": 30,
+            "duration": 5,
+            "layerCount": 2,
+            "bgColor": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": 29,
+            "name": "Solids",
+            "type": "FolderItem",
+            "parentFolderId": 0,
+            "parentFolderName": "Root",
+            "label": 2,
+            "comment": ""
+          },
+          {
+            "id": 30,
+            "name": "Dark Gray Solid 1",
+            "type": "FootageItem",
+            "parentFolderId": 29,
+            "parentFolderName": "Solids",
+            "label": 1,
+            "comment": "",
+            "width": 1920,
+            "height": 1080,
+            "duration": 0,
+            "sourceKind": "solid",
+            "color": [
+              0.1294117718935,
+              0.1294117718935,
+              0.1294117718935
+            ]
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 384
+    },
+    "isError": false
+  }
+}

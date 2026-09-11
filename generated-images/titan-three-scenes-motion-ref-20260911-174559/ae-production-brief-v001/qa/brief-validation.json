@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-11T09:18:03.558Z",
+  "scope": "source metadata and production brief; no AE motion/render validation",
+  "checks": [
+    {
+      "name": "original_storyboard_16_beats",
+      "passed": true,
+      "evidence": 16
+    },
+    {
+      "name": "original_beats_contiguous",
+      "passed": true,
+      "evidence": [
+        [
+          0,
+          39
+        ],
+        [
+          39,
+          66
+        ],
+        [
+          66,
+          93
+        ],
+        [
+          93,
+          114
+        ],
+        [
+          114,
+          171
+        ],
+        [
+          171,
+          228
+        ],
+        [
+          228,
+          258
+        ],
+        [
+          258,
+          279
+        ],
+        [
+          279,
+          315
+        ],
+        [
+          315,
+          336
+        ],
+        [
+          336,
+          381
+        ],
+        [
+          381,
+          420
+        ],
+        [
+          420,
+          456
+        ],
+        [
+          456,
+          480
+        ],
+        [
+          480,
+          531
+        ],
+        [
+          531,
+          600
+        ]
+      ]
+    },
+    {
+      "name": "master_600_frames_20_seconds",
+      "passed": true,
+      "evidence": "600 / 30 = 20"
+    },
+    {
+      "name": "current_scenes_171_frames_5_7_seconds",
+      "passed": true,
+      "evidence": "39 + 75 + 57 = 171; 171 / 30 = 5.7"
+    },
+    {
+      "name": "remaining_time_preserved",
+      "passed": true,
+      "evidence": "600 - 171 = 429; 429 / 30 = 14.3"
+    },
+    {
+      "name": "CAT_entrance_before_fill_outline",
+      "passed": true,
+      "evidence": "114 < 122; 124 < 132 < 135 < 138"
+    },
+    {
+      "name": "outline_read_window_33_frames",
+      "passed": true,
+      "evidence": "33 / 30 = 1.1 seconds"
+    },
+    {
+      "name": "selected_video_range_within_source",
+      "passed": true,
+      "evidence": "2.0-3.9 within 24.233333..."
+    },
+    {
+      "name": "source_video_hash_unchanged",
+      "passed": true,
+      "evidence": "2325be94b6e1e857824d219a2bf9b6cbb14c4b447658ce34bf79a9ecbd70e6f0"
+    },
+    {
+      "name": "managed_model_hashes_match",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/source/iPad10.blend",
+          "expected_sha256": "e7f2018331c7b0ee780447a8b496d49b7f146be7295ce355472e65b1e53e443a",
+          "actual_sha256": "e7f2018331c7b0ee780447a8b496d49b7f146be7295ce355472e65b1e53e443a",
+          "matches": true
+        },
+        {
+          "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/exports/iPad10.glb",
+          "expected_sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+          "actual_sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "name": "screen_material_and_uv_exist",
+      "passed": true,
+      "evidence": "GLB JSON static inspection"
+    },
+    {
+      "name": "source_segment_decodes_without_error",
+      "passed": true,
+      "evidence": "ffmpeg -v error -nostdin -ss 2 -i <specified MP4> -t 1.9 -map 0:v:0 -an -f null -"
+    },
+    {
+      "name": "utf8_text_no_replacement_character_WORK-INSTRUCTIONS.ko.md",
+      "passed": true,
+      "evidence": 27531
+    },
+    {
+      "name": "utf8_text_no_replacement_character_MOTION-REFERENCE.ko.md",
+      "passed": true,
+      "evidence": 9438
+    },
+    {
+      "name": "all_local_document_links_resolve",
+      "passed": true,
+      "evidence": 26
+    },
+    {
+      "name": "new_aep_and_render_not_claimed",
+      "passed": true,
+      "evidence": "plan fields separated from actual null values"
+    }
+  ],
+  "links": [
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "timeline-plan.json",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results/01-meet-titan.png",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results/02-built-in-house.png",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results/03-cat-village-outline-arrival.png",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/exports/iPad10.glb",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/source/iPad10.blend",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/device-models/README.ko.md",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/TEMP/아이패드.mp4",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-korean-sequence-20260910-190140/english-storyboard-v2.md",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/motion-language-reference-review-20260911.md",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/free-motion-resources-research-20260911.md",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "source-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/RESULT.ko.md",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/ae-beta-client.mjs",
+      "exists": true
+    },
+    {
+      "document": "WORK-INSTRUCTIONS.ko.md",
+      "target": "qa/brief-validation.json",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "ae-production-brief-v001/WORK-INSTRUCTIONS.ko.md",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "results/01-meet-titan.png",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "prompts/01-meet-titan.txt",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "results/02-built-in-house.png",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "prompts/02-built-in-house.txt",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "results/03-cat-village-outline-arrival.png",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "prompts/03-cat-village-outline-arrival.txt",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "../titan-ae-two-cuts-20260911-114818/free-motion-resources-research-20260911.md",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "run.json",
+      "exists": true
+    },
+    {
+      "document": "MOTION-REFERENCE.ko.md",
+      "target": "qa/generation-review.md",
+      "exists": true
+    }
+  ],
+  "all_passed": true,
+  "actual_ae_duration_verified": false,
+  "actual_mp4_duration_verified": false,
+  "task_dispatched": false
+}

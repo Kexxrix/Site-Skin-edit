@@ -1,0 +1,14 @@
+{"write":true,"compact":true,"calls":[
+{"name":"ae_do","args":{"operation":"batch.run","args":{"stopOnError":true,"ops":[
+{"operation":"comp.info","args":{"comp":"TITAN_MASTER_20S"}},
+{"operation":"comp.info","args":{"comp":"DEVICE_iPad10_3D"}},
+{"operation":"property.list","args":{"comp":"TITAN_MASTER_20S","layer":"S01_Meet","property":["Text","Animators"]}},
+{"operation":"property.list","args":{"comp":"TITAN_MASTER_20S","layer":"S03_CAT_Fill","property":["Text","Animators","Slide Up By Word","Selectors","Range Selector 1"]}},
+{"operation":"layer.bounds","args":{"comp":"TITAN_MASTER_20S","layer":"S03_CAT_Outline","time":5}},
+{"operation":"layer.bounds","args":{"comp":"TITAN_MASTER_20S","layer":"S02_Built","time":3.4}},
+{"operation":"property.list","args":{"comp":"DEVICE_iPad10_3D","layer":"iPad10_MODEL","property":[]}}
+]}}},
+{"name":"ae_render_frame","args":{"compNameOrId":"DEVICE_iPad10_3D","time":4.6,"outPath":"E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/initial-device.png"}},
+{"name":"ae_render_frame","args":{"compNameOrId":"SCREEN_iPad10_CAT_VIDEO_CONTAIN","time":3.8,"outPath":"E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/screen-source-start.png"}},
+{"name":"ae_catalog","args":{"category":"mask"}}
+]}

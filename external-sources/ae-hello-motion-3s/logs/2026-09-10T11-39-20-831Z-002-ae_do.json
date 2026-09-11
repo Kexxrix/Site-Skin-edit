@@ -1,0 +1,181 @@
+{
+  "request": {
+    "name": "ae_do",
+    "arguments": {
+      "operation": "batch.run",
+      "args": {
+        "ops": [
+          {
+            "operation": "comp.duplicate",
+            "args": {
+              "comp": 1,
+              "newName": "Hello_World_Stretch_3s"
+            }
+          },
+          {
+            "operation": "comp.set_props",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "props": {
+                "duration": 3,
+                "frameRate": 30,
+                "workAreaStart": 0,
+                "workAreaDuration": 3,
+                "bgColor": [
+                  0.16,
+                  0.16,
+                  0.16
+                ]
+              }
+            }
+          },
+          {
+            "operation": "layer.set_props",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "layer": "all",
+              "props": {
+                "outPoint": 3
+              }
+            }
+          },
+          {
+            "operation": "layer.create_solid",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "name": "Gray Radial Background",
+              "color": [
+                0.16,
+                0.16,
+                0.16
+              ]
+            }
+          },
+          {
+            "operation": "effect.add",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "layer": "Gray Radial Background",
+              "matchName": "ADBE Ramp"
+            }
+          },
+          {
+            "operation": "layer.move",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "layer": "Gray Radial Background",
+              "toIndex": 3
+            }
+          },
+          {
+            "operation": "timeline.set_active_comp",
+            "args": {
+              "comp": "Hello_World_Stretch_3s"
+            }
+          },
+          {
+            "operation": "timeline.set_time",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "time": 0
+            }
+          }
+        ],
+        "stopOnError": true
+      }
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"ok\": true,\n    \"error\": null,\n    \"results\": [\n      {\n        \"ok\": true,\n        \"newCompId\": 32,\n        \"newCompName\": \"Hello_World_Stretch_3s\"\n      },\n      {\n        \"ok\": true,\n        \"name\": \"Hello_World_Stretch_3s\",\n        \"warnings\": []\n      },\n      {\n        \"ok\": true,\n        \"count\": 2,\n        \"layers\": [\n          {\n            \"name\": \"Hello World - Source Outlines\",\n            \"warnings\": []\n          },\n          {\n            \"name\": \"Hello World - Source\",\n            \"warnings\": []\n          }\n        ]\n      },\n      {\n        \"ok\": true,\n        \"index\": 1,\n        \"name\": \"Gray Radial Background\"\n      },\n      {\n        \"ok\": true,\n        \"effectIndex\": 1,\n        \"name\": \"Gradient Ramp\",\n        \"matchName\": \"ADBE Ramp\"\n      },\n      {\n        \"ok\": true,\n        \"fromIndex\": 1,\n        \"newIndex\": 3,\n        \"name\": \"Gray Radial Background\"\n      },\n      {\n        \"ok\": true,\n        \"name\": \"Hello_World_Stretch_3s\"\n      },\n      {\n        \"ok\": true,\n        \"time\": 0\n      }\n    ],\n    \"count\": 8,\n    \"failed\": 0\n  },\n  \"context\": {\n    \"project\": {\n      \"numItems\": 5,\n      \"dirty\": true,\n      \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\"\n    },\n    \"activeComp\": {\n      \"id\": 32,\n      \"name\": \"Hello_World_Stretch_3s\",\n      \"width\": 1920,\n      \"height\": 1080,\n      \"fps\": 30,\n      \"duration\": 3,\n      \"numLayers\": 3\n    },\n    \"selectedLayers\": [\n      {\n        \"index\": 3,\n        \"name\": \"Gray Radial Background\"\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 467\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "error": null,
+        "results": [
+          {
+            "ok": true,
+            "newCompId": 32,
+            "newCompName": "Hello_World_Stretch_3s"
+          },
+          {
+            "ok": true,
+            "name": "Hello_World_Stretch_3s",
+            "warnings": []
+          },
+          {
+            "ok": true,
+            "count": 2,
+            "layers": [
+              {
+                "name": "Hello World - Source Outlines",
+                "warnings": []
+              },
+              {
+                "name": "Hello World - Source",
+                "warnings": []
+              }
+            ]
+          },
+          {
+            "ok": true,
+            "index": 1,
+            "name": "Gray Radial Background"
+          },
+          {
+            "ok": true,
+            "effectIndex": 1,
+            "name": "Gradient Ramp",
+            "matchName": "ADBE Ramp"
+          },
+          {
+            "ok": true,
+            "fromIndex": 1,
+            "newIndex": 3,
+            "name": "Gray Radial Background"
+          },
+          {
+            "ok": true,
+            "name": "Hello_World_Stretch_3s"
+          },
+          {
+            "ok": true,
+            "time": 0
+          }
+        ],
+        "count": 8,
+        "failed": 0
+      },
+      "context": {
+        "project": {
+          "numItems": 5,
+          "dirty": true,
+          "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep"
+        },
+        "activeComp": {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30,
+          "duration": 3,
+          "numLayers": 3
+        },
+        "selectedLayers": [
+          {
+            "index": 3,
+            "name": "Gray Radial Background"
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 467
+    },
+    "isError": false
+  }
+}

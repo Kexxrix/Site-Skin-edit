@@ -1,0 +1,589 @@
+{
+  "ops": [
+    {
+      "operation": "layer.create_shape",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C02_UNDERLINE"
+      }
+    },
+    {
+      "operation": "shape.add_group",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "name": "Underline"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "anchorPoint": [
+          0,
+          0
+        ],
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "props": {
+          "inPoint": 1.1,
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "shape.add_path",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "groupIndex": 1,
+        "vertices": [
+          [
+            670,
+            676
+          ],
+          [
+            1058.272935222834,
+            676
+          ]
+        ],
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "closed": false
+      }
+    },
+    {
+      "operation": "shape.add_stroke",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "groupIndex": 1,
+        "color": [
+          0.9803921568627451,
+          0.5294117647058824,
+          0.12156862745098039,
+          1
+        ],
+        "width": 4
+      }
+    },
+    {
+      "operation": "shape.add_trim_paths",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "groupIndex": 1,
+        "start": 0,
+        "end": 100,
+        "offset": 0
+      }
+    },
+    {
+      "operation": "keyframe.set_batch",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "property": [
+          "ADBE Root Vectors Group",
+          "ADBE Vector Group",
+          "ADBE Vectors Group",
+          "ADBE Vector Filter - Trim",
+          "ADBE Vector Trim End"
+        ],
+        "times": [
+          1.5333333333333334,
+          1.8333333333333333
+        ],
+        "values": [
+          0,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "keyframe.set_easing",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "property": [
+          "ADBE Root Vectors Group",
+          "ADBE Vector Group",
+          "ADBE Vectors Group",
+          "ADBE Vector Filter - Trim",
+          "ADBE Vector Trim End"
+        ],
+        "keyIndex": 1,
+        "inSpeed": 1000,
+        "outSpeed": 1000,
+        "inInfluence": 33.333333333333336,
+        "outInfluence": 33.333333333333336
+      }
+    },
+    {
+      "operation": "keyframe.set_easing",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "property": [
+          "ADBE Root Vectors Group",
+          "ADBE Vector Group",
+          "ADBE Vectors Group",
+          "ADBE Vector Filter - Trim",
+          "ADBE Vector Trim End"
+        ],
+        "keyIndex": 2,
+        "inSpeed": 0,
+        "outSpeed": 0,
+        "inInfluence": 33.333333333333336,
+        "outInfluence": 33.333333333333336
+      }
+    },
+    {
+      "operation": "layer.move",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "toIndex": 3
+      }
+    },
+    {
+      "operation": "timeline.select_layers",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "indices": [],
+        "deselectOthers": true
+      }
+    },
+    {
+      "operation": "timeline.set_time",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "time": 0.6
+      }
+    },
+    {
+      "operation": "comp.info",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001"
+      }
+    }
+  ],
+  "result": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C02_UNDERLINE"
+        },
+        {
+          "ok": true,
+          "groupIndex": 1,
+          "name": "Underline"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_UNDERLINE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_UNDERLINE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "name": "Path 1"
+        },
+        {
+          "ok": true,
+          "name": "Stroke 1"
+        },
+        {
+          "ok": true,
+          "name": "Trim Paths 1"
+        },
+        {
+          "ok": true,
+          "added": 2,
+          "numKeys": 2
+        },
+        {
+          "ok": true,
+          "keyIndex": 1,
+          "interpolation": "applied"
+        },
+        {
+          "ok": true,
+          "keyIndex": 2,
+          "interpolation": "applied"
+        },
+        {
+          "ok": true,
+          "fromIndex": 1,
+          "newIndex": 3,
+          "name": "C02_UNDERLINE"
+        },
+        {
+          "ok": true,
+          "selected": 0
+        },
+        {
+          "ok": true,
+          "time": 0.6
+        },
+        {
+          "id": 84,
+          "name": "TITAN_TwoCuts_75x32_3s_v001",
+          "type": "CompItem",
+          "parentFolderId": 0,
+          "parentFolderName": "Root",
+          "label": 15,
+          "comment": "",
+          "width": 2400,
+          "height": 1024,
+          "frameRate": 30,
+          "duration": 3,
+          "layerCount": 12,
+          "bgColor": [
+            0.96078431372549,
+            0.95294117647059,
+            0.93333333333333
+          ],
+          "ok": true,
+          "found": true,
+          "workAreaStart": 0,
+          "workAreaDuration": 3,
+          "pixelAspect": 1,
+          "shutterAngle": 180,
+          "shutterPhase": 0,
+          "motionBlur": false,
+          "layers": [
+            {
+              "index": 1,
+              "id": 98,
+              "name": "REF_CUT_01",
+              "type": "AVLayer",
+              "enabled": false,
+              "solo": false,
+              "shy": false,
+              "locked": true,
+              "inPoint": 0,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 5,
+              "width": 1920,
+              "height": 819,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": false,
+              "sourceId": 96,
+              "sourceName": "REF_CUT_01"
+            },
+            {
+              "index": 2,
+              "id": 99,
+              "name": "REF_CUT_02",
+              "type": "AVLayer",
+              "enabled": false,
+              "solo": false,
+              "shy": false,
+              "locked": true,
+              "inPoint": 0,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 5,
+              "width": 1920,
+              "height": 819,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": false,
+              "sourceId": 97,
+              "sourceName": "REF_CUT_02"
+            },
+            {
+              "index": 3,
+              "id": 112,
+              "name": "C02_UNDERLINE",
+              "type": "ShapeLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 1.1,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 8
+            },
+            {
+              "index": 4,
+              "id": 110,
+              "name": "C02_TXT_IN_HOUSE",
+              "type": "TextLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 1.1,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "text": "in-house",
+              "fontSize": 162.171752929688,
+              "font": "Pretendard-Medium",
+              "fillColor": [
+                0.96077996492386,
+                0.95293992757797,
+                0.93332993984222
+              ]
+            },
+            {
+              "index": 5,
+              "id": 109,
+              "name": "C02_TXT_BUILT",
+              "type": "TextLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 1.1,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "text": "Built",
+              "fontSize": 190.702789306641,
+              "font": "Pretendard-Bold",
+              "fillColor": [
+                0.98038995265961,
+                0.52941000461578,
+                0.12157000601292
+              ]
+            },
+            {
+              "index": 6,
+              "id": 108,
+              "name": "C02_TXT_CORE",
+              "type": "TextLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 1.1,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "text": "Core systems",
+              "fontSize": 121.411140441895,
+              "font": "Pretendard-Medium",
+              "fillColor": [
+                0.96077996492386,
+                0.95293992757797,
+                0.93332993984222
+              ]
+            },
+            {
+              "index": 7,
+              "id": 107,
+              "name": "C02_BG_CHARCOAL_WIPE",
+              "type": "AVLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0.8,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "width": 2400,
+              "height": 1024,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": false,
+              "sourceId": 106,
+              "sourceName": "C02_BG_CHARCOAL_WIPE"
+            },
+            {
+              "index": 8,
+              "id": 105,
+              "name": "C01_DOT",
+              "type": "ShapeLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 1.1,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 8
+            },
+            {
+              "index": 9,
+              "id": 104,
+              "name": "C01_ARC",
+              "type": "ShapeLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 1.1,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 8
+            },
+            {
+              "index": 10,
+              "id": 103,
+              "name": "C01_TXT_TITAN",
+              "type": "TextLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 1.1,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "text": "TITAN",
+              "fontSize": 190.739944458008,
+              "font": "Pretendard-SemiBold",
+              "fillColor": [
+                0.14118000864983,
+                0.14902000129223,
+                0.1647099852562
+              ]
+            },
+            {
+              "index": 11,
+              "id": 102,
+              "name": "C01_TXT_MEET",
+              "type": "TextLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 1.1,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "text": "Meet",
+              "fontSize": 137.912460327148,
+              "font": "Pretendard-Regular",
+              "fillColor": [
+                0.14118000864983,
+                0.14902000129223,
+                0.1647099852562
+              ]
+            },
+            {
+              "index": 12,
+              "id": 101,
+              "name": "C01_BG_IVORY",
+              "type": "AVLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 1.1,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "width": 2400,
+              "height": 1024,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": false,
+              "sourceId": 100,
+              "sourceName": "C01_BG_IVORY"
+            }
+          ]
+        }
+      ],
+      "count": 14,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 10,
+        "dirty": true,
+        "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v001/TITAN-TwoCuts-3s-v001.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 468
+  }
+}

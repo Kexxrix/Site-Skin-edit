@@ -1,0 +1,774 @@
+{
+  "started": "2026-09-11T11:31:02.666Z",
+  "ended": "2026-09-11T11:31:11.689Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "layer.create_solid",
+                "args": {
+                  "comp": "SCREEN_iPhone17_VIDEO_CONTAIN",
+                  "name": "Contain_Dark_Padding_iPhone",
+                  "color": [
+                    0.06,
+                    0.065,
+                    0.07
+                  ]
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "SCREEN_iPhone17_VIDEO_CONTAIN",
+                  "sourceItemId": 90,
+                  "name": "iPhone_Original_24fps_100percent"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCREEN_iPhone17_VIDEO_CONTAIN",
+                  "layer": "iPhone_Original_24fps_100percent",
+                  "props": {
+                    "startTime": 4.7,
+                    "inPoint": 4.7,
+                    "outPoint": 20,
+                    "audioEnabled": false
+                  }
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCREEN_iPhone17_VIDEO_CONTAIN",
+                  "layer": "iPhone_Original_24fps_100percent",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "value": [
+                    363.2530120481928,
+                    363.2530120481928,
+                    100
+                  ]
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "props": {
+                    "motionBlur": true,
+                    "shutterAngle": 180,
+                    "shutterPhase": -90
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_renderer",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "renderer": "advanced3d"
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "sourceItemId": 91,
+                  "name": "SCREEN_MATERIAL_SOURCE_iPhone"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "layer": "SCREEN_MATERIAL_SOURCE_iPhone",
+                  "props": {
+                    "enabled": false,
+                    "audioEnabled": false
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "sourceItemId": 89,
+                  "name": "iPhone17_MODEL"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "layer": "iPhone17_MODEL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    682,
+                    512,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "layer": "iPhone17_MODEL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Scale"
+                  ],
+                  "value": [
+                    600,
+                    600,
+                    600
+                  ]
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "layer": "iPhone17_MODEL",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Orientation"
+                  ],
+                  "value": [
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.create_light",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "name": "Environment_iPhone_Soft_Studio",
+                  "lightType": "environment"
+                }
+              },
+              {
+                "operation": "layer.create_camera",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "name": "Camera_iPhone_Product"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "layer": "Camera_iPhone_Product",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    1200,
+                    512,
+                    -3333.33325195312
+                  ]
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "layer": "Camera_iPhone_Product",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Anchor Point"
+                  ],
+                  "value": [
+                    1200,
+                    512,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "props": {
+                    "motionBlur": true,
+                    "shutterAngle": 180,
+                    "shutterPhase": -90
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_solid",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "name": "S06_Ivory",
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ]
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "name": "S06_SPORTSBOOK_Outline",
+                  "text": "SPORTSBOOK"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "S06_SPORTSBOOK_Outline",
+                  "font": "Pretendard-Black",
+                  "fontSize": 390,
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.3,
+                    0.32,
+                    0.33
+                  ],
+                  "strokeWidth": 1.4,
+                  "tracking": -30
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "S06_SPORTSBOOK_Outline",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    245,
+                    608,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "sourceItemId": 103,
+                  "name": "S06_iPhone_REAL_3D"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "S06_iPhone_REAL_3D",
+                  "props": {
+                    "audioEnabled": false,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "name": "S06_Sportsbook",
+                  "text": "Sportsbook"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "S06_Sportsbook",
+                  "font": "Pretendard-ExtraBold",
+                  "fontSize": 267,
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "fillColor": [
+                    0.06,
+                    0.07,
+                    0.08
+                  ],
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "S06_Sportsbook",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    970,
+                    573,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": "SCENE06_SPORTSBOOK",
+                  "layer": "S06_Sportsbook",
+                  "time": 6.666666666666667
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 60000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "index": 1,
+              "name": "Contain_Dark_Padding_iPhone"
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "iPhone_Original_24fps_100percent"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "iPhone_Original_24fps_100percent",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "iPhone_Original_24fps_100percent",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "DEVICE_iPhone17_3D",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "renderer": "ADBE Calder",
+              "renderers": [
+                "ADBE Advanced 3d",
+                "ADBE Calder",
+                "ADBE Ernst"
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "SCREEN_MATERIAL_SOURCE_iPhone"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "SCREEN_MATERIAL_SOURCE_iPhone",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "iPhone17_MODEL"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "iPhone17_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "iPhone17_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "iPhone17_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "Environment_iPhone_Soft_Studio",
+              "lightType": "environment"
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "Camera_iPhone_Product"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "Camera_iPhone_Product",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "Camera_iPhone_Product",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "SCENE06_SPORTSBOOK",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S06_Ivory"
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S06_SPORTSBOOK_Outline",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S06_SPORTSBOOK_Outline",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S06_iPhone_REAL_3D"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S06_iPhone_REAL_3D",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S06_Sportsbook",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S06_Sportsbook",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "time": 6.66666666666667,
+              "layerSpace": {
+                "top": -192.794403076172,
+                "left": 8.6044921875,
+                "width": 1427.07147216797,
+                "height": 246.034698486328
+              },
+              "compSpace": {
+                "topLeft": [
+                  978.6044921875,
+                  380.205596923828
+                ],
+                "topRight": [
+                  2405.67602539062,
+                  380.205596923828
+                ],
+                "bottomLeft": [
+                  978.6044921875,
+                  626.240295410156
+                ],
+                "bottomRight": [
+                  2405.67602539062,
+                  626.240295410156
+                ]
+              }
+            }
+          ],
+          "count": 27,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 20,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 653
+      },
+      "elapsedMs": 662
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "SCENE06_SPORTSBOOK",
+          "time": 6.666666666666667,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/phone-initial-F200.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/phone-initial-F200.png",
+          "time": 6.66666666666667,
+          "compName": "SCENE06_SPORTSBOOK",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 360
+      },
+      "elapsedMs": 6752
+    },
+    {
+      "call": {
+        "name": "ae_layer_info",
+        "args": {
+          "compNameOrId": "DEVICE_iPhone17_3D",
+          "layerIndex": 3,
+          "includeProperties": true
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "index": 3,
+          "id": 131,
+          "name": "iPhone17_MODEL",
+          "type": "ThreeDModelLayer",
+          "enabled": true,
+          "solo": false,
+          "shy": false,
+          "locked": false,
+          "inPoint": 0,
+          "outPoint": 30,
+          "startTime": 0,
+          "stretch": 100,
+          "parentIndex": null,
+          "label": 14,
+          "parent": null,
+          "transformGroup": {
+            "name": "Transform",
+            "matchName": "ADBE Transform Group",
+            "properties": [
+              {
+                "name": "Anchor Point",
+                "matchName": "ADBE Anchor Point",
+                "propertyValueType": "ThreeD_SPATIAL",
+                "value": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "name": "Position",
+                "matchName": "ADBE Position",
+                "propertyValueType": "ThreeD_SPATIAL",
+                "value": [
+                  682,
+                  512,
+                  0
+                ]
+              },
+              {
+                "name": "X Position",
+                "matchName": "ADBE Position_0",
+                "propertyValueType": "OneD",
+                "value": 0
+              },
+              {
+                "name": "Y Position",
+                "matchName": "ADBE Position_1",
+                "propertyValueType": "OneD",
+                "value": 0
+              },
+              {
+                "name": "Z Position",
+                "matchName": "ADBE Position_2",
+                "propertyValueType": "OneD",
+                "value": 0
+              },
+              {
+                "name": "Scale",
+                "matchName": "ADBE Scale",
+                "propertyValueType": "ThreeD",
+                "value": [
+                  600,
+                  600,
+                  600
+                ]
+              },
+              {
+                "name": "Orientation",
+                "matchName": "ADBE Orientation",
+                "propertyValueType": "ThreeD_SPATIAL",
+                "value": [
+                  90,
+                  0,
+                  0
+                ]
+              },
+              {
+                "name": "X Rotation",
+                "matchName": "ADBE Rotate X",
+                "propertyValueType": "OneD",
+                "value": 0
+              },
+              {
+                "name": "Y Rotation",
+                "matchName": "ADBE Rotate Y",
+                "propertyValueType": "OneD",
+                "value": 0
+              },
+              {
+                "name": "Z Rotation",
+                "matchName": "ADBE Rotate Z",
+                "propertyValueType": "OneD",
+                "value": 0
+              },
+              {
+                "name": "Opacity",
+                "matchName": "ADBE Opacity",
+                "propertyValueType": "OneD",
+                "value": 100
+              },
+              {
+                "name": "Appears in Reflections",
+                "matchName": "ADBE Envir Appear in Reflect",
+                "propertyValueType": "OneD",
+                "value": 1
+              }
+            ],
+            "groups": []
+          },
+          "effectsGroup": null,
+          "masksGroup": null,
+          "ok": true,
+          "found": true
+        },
+        "logs": [],
+        "durationMs": 386
+      },
+      "elapsedMs": 409
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 932
+      },
+      "elapsedMs": 936
+    }
+  ]
+}

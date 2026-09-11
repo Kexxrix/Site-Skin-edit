@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8770/TITAN-TwoCuts-3s-v002.mp4",
+  "browser": "Codex In-app Browser",
+  "method": "Native video controls; replay from beginning and inspect the playing state and final rendered frame.",
+  "observedPlaying": {
+    "currentTime": 0.200639,
+    "duration": 3,
+    "paused": false,
+    "ended": false
+  },
+  "observedEnd": {
+    "currentTime": 3,
+    "duration": 3,
+    "paused": true,
+    "ended": true,
+    "readyState": 4,
+    "width": 2400,
+    "height": 1024
+  },
+  "consoleWarningsAndErrors": [],
+  "visualObservations": [
+    "Ivory Meet/TITAN entry visible during replay.",
+    "Final Core systems / Built in-house and orange underline visible at end."
+  ],
+  "limits": "Live screenshots sample the start and end. Timing and intermediate transition states are additionally checked through the 90 rendered frames and 67 property tests."
+}

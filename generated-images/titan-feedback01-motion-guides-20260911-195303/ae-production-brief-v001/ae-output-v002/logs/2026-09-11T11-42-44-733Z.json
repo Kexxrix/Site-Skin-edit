@@ -1,0 +1,134 @@
+{
+  "started": "2026-09-11T11:42:38.115Z",
+  "ended": "2026-09-11T11:42:44.733Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "props": {
+                    "motionBlurSamplesPerFrame": 64,
+                    "motionBlurAdaptiveSampleLimit": 256
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "props": {
+                    "motionBlurSamplesPerFrame": 64,
+                    "motionBlurAdaptiveSampleLimit": 256
+                  }
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "SCENE08_WHOLE_OVERLAY_180DEG",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "name": "SCENE08_SHIFT_NATIVE",
+              "warnings": []
+            }
+          ],
+          "count": 2,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "S08_WHOLE_SCENE_OVERLAY_CONTAINER"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 380
+      },
+      "elapsedMs": 388
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 8.533333333333333,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-refined-blur-F256.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-refined-blur-F256.png",
+          "time": 8.53333333333333,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 461
+      },
+      "elapsedMs": 2994
+    },
+    {
+      "call": {
+        "name": "ae_project_export_json",
+        "args": {
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/current-native-before-final-qa.json"
+        }
+      },
+      "response": {
+        "ok": true,
+        "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/current-native-before-final-qa.json",
+        "bytes": 1831538,
+        "itemCount": 27,
+        "durationMs": 2949
+      },
+      "elapsedMs": 2971
+    }
+  ]
+}

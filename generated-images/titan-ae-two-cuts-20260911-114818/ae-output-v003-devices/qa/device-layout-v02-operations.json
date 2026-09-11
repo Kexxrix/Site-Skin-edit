@@ -1,0 +1,570 @@
+{
+  "hypothesis": "Improve depth precision without changing source GLB by centering the 3D scene at origin and reducing world-space size/camera distance; separate axis alignment from camera-space yaw/roll using a 3D control null.",
+  "ops": [
+    {
+      "operation": "layer.create_null",
+      "args": {
+        "comp": 151,
+        "name": "DEVICE_iPhone_VIEW"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_VIEW",
+        "threeDLayer": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "layer.set_parent",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "parentLayer": "DEVICE_iPhone_VIEW",
+        "jump": true
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate X"
+        ],
+        "value": 90
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Y"
+        ],
+        "value": 0
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Z"
+        ],
+        "value": 0
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_VIEW",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Y"
+        ],
+        "value": -10
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_VIEW",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Z"
+        ],
+        "value": 3
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_CAMERA",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "value": [
+          0,
+          0,
+          -33.33333333
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_CAMERA",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Anchor Point"
+        ],
+        "value": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "timeline.select_layers",
+      "args": {
+        "comp": 151,
+        "indices": [],
+        "deselectOthers": true
+      }
+    },
+    {
+      "operation": "layer.create_null",
+      "args": {
+        "comp": 163,
+        "name": "DEVICE_iPad_VIEW"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_VIEW",
+        "threeDLayer": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "layer.set_parent",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "parentLayer": "DEVICE_iPad_VIEW",
+        "jump": true
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          6.8,
+          6.8,
+          6.8
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate X"
+        ],
+        "value": 90
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Y"
+        ],
+        "value": 0
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Z"
+        ],
+        "value": 0
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_VIEW",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Y"
+        ],
+        "value": -18
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_VIEW",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Z"
+        ],
+        "value": -3
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_CAMERA",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "value": [
+          0,
+          0,
+          -33.33333333
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_CAMERA",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Anchor Point"
+        ],
+        "value": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "timeline.select_layers",
+      "args": {
+        "comp": 163,
+        "indices": [],
+        "deselectOthers": true
+      }
+    }
+  ],
+  "result": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "index": 1,
+          "name": "DEVICE_iPhone_VIEW"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone_VIEW",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "parent": {
+            "index": 1,
+            "name": "DEVICE_iPhone_VIEW"
+          }
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone17_MODEL",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone17_MODEL",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone17_MODEL",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone17_MODEL",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone_VIEW",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone_VIEW",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone_CAMERA",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone_CAMERA",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "selected": 0
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "DEVICE_iPad_VIEW"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad_VIEW",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "parent": {
+            "index": 1,
+            "name": "DEVICE_iPad_VIEW"
+          }
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad10_MODEL",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad10_MODEL",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad10_MODEL",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad10_MODEL",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad_VIEW",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad_VIEW",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad_CAMERA",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad_CAMERA",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "selected": 0
+        }
+      ],
+      "count": 24,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 18,
+        "dirty": true,
+        "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v003-devices/TITAN-TwoCuts-Devices-Kinetic-3s-v003.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 368
+  },
+  "problems": []
+}

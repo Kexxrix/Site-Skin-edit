@@ -1,0 +1,85 @@
+{
+  "adobe": [
+    {
+      "source_file": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Straight In By Word.ffx",
+      "layer": "S07_Operations",
+      "comp": "SCENE07_OPERATIONS",
+      "success": true,
+      "evidence": "logs/2026-09-11T11-34-34-963Z.json"
+    },
+    {
+      "source_file": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Stretch In Each Word.ffx",
+      "layer": "S07_refined",
+      "comp": "SCENE07_OPERATIONS",
+      "success": true,
+      "evidence": "logs/2026-09-11T11-34-34-963Z.json"
+    },
+    {
+      "source_file": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Scale/Scale In By Word.ffx",
+      "layer": "S08_Bets",
+      "comp": "SCENE08_SHIFT_NATIVE",
+      "success": true,
+      "evidence": "logs/2026-09-11T11-40-51-109Z.json"
+    }
+  ],
+  "customization": {
+    "Operations": {
+      "frames": [
+        228,
+        232
+      ],
+      "animator": "Applied Straight In By Word; native 180px horizontal position, whole-word Amount 100 to 0, layer opacity 0 to 100",
+      "original_timing_removed": true
+    },
+    "refined": {
+      "frames": [
+        230,
+        234
+      ],
+      "animator": "Applied Stretch In Each Word; native horizontal Scale 138 to 100 percent, vertical 100 percent; layer opacity used because inactive preset animator opacity is not settable",
+      "font": "Pretendard-Black",
+      "fauxItalic": true,
+      "original_timing_removed": true
+    },
+    "Bets": {
+      "frames": [
+        279,
+        284
+      ],
+      "animator": "Applied Scale In By Word; native whole-word Scale 118 to 100 percent, layer Y +60 to 0; no rebound",
+      "original_timing_removed": true
+    }
+  },
+  "aftr": {
+    "url": "https://github.com/Arman-Luthra/aftr/blob/628397d700d6282fe2be4d42f4a388392250947a/panel/jsx/commands/text.jsx",
+    "commit": "628397d700d6282fe2be4d42f4a388392250947a",
+    "lines": [
+      152,
+      155
+    ],
+    "license": "MIT",
+    "implementation": "Native three one-word Text layers; position +80 and opacity 0; words-based range, easeHigh20/easeLow100. Adapted Offset sweep to a uniform Amount envelope per word to fit explicit 4-frame reveals and 1-frame stagger.",
+    "frames": [
+      [
+        261,
+        265
+      ],
+      [
+        262,
+        266
+      ],
+      [
+        263,
+        267
+      ]
+    ],
+    "evidence": "09-create-shift-overlay.mjs; qa/native-property-samples.json"
+  },
+  "auto_blocked": {
+    "implementation": "Native text layer mask path, left-to-right",
+    "frames": [
+      281,
+      287
+    ]
+  }
+}

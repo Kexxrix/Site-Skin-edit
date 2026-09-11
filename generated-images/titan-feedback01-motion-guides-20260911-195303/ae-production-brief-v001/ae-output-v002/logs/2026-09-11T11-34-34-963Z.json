@@ -1,0 +1,3615 @@
+{
+  "started": "2026-09-11T11:34:29.378Z",
+  "ended": "2026-09-11T11:34:34.963Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "props": {
+                    "motionBlur": true,
+                    "shutterAngle": 180,
+                    "shutterPhase": -90
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_Charcoal_Cover_Connected"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Charcoal_Cover_Connected",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Charcoal_Cover_Connected",
+                  "name": "Native_Plane"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Charcoal_Cover_Connected",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      2400,
+                      0
+                    ],
+                    [
+                      2400,
+                      1024
+                    ],
+                    [
+                      0,
+                      1024
+                    ]
+                  ],
+                  "closed": true
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Charcoal_Cover_Connected",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Charcoal_Cover_Connected",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Charcoal_Cover_Connected",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-222)/6,0,1);var q=u*u*u*(10+u*(-15+6*u));[2400*(1-q),0,0];"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_OPERATIONS_Upper_0",
+                  "text": "OPERATIONS"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_0",
+                  "font": "Pretendard-Black",
+                  "fontSize": 440,
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.67,
+                    0.69,
+                    0.69
+                  ],
+                  "strokeWidth": 1.45,
+                  "tracking": -35
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_0",
+                  "props": {
+                    "inPoint": 7.6,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_0",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=clamp(time*30,228,252);var period=sourceRectAtTime(time,false).width+80;[80+-1*period+-24*(f-228),258,0];"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_OPERATIONS_Upper_1",
+                  "text": "OPERATIONS"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_1",
+                  "font": "Pretendard-Black",
+                  "fontSize": 440,
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.67,
+                    0.69,
+                    0.69
+                  ],
+                  "strokeWidth": 1.45,
+                  "tracking": -35
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_1",
+                  "props": {
+                    "inPoint": 7.6,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_1",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=clamp(time*30,228,252);var period=sourceRectAtTime(time,false).width+80;[80+0*period+-24*(f-228),258,0];"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_OPERATIONS_Upper_2",
+                  "text": "OPERATIONS"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_2",
+                  "font": "Pretendard-Black",
+                  "fontSize": 440,
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.67,
+                    0.69,
+                    0.69
+                  ],
+                  "strokeWidth": 1.45,
+                  "tracking": -35
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_2",
+                  "props": {
+                    "inPoint": 7.6,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Upper_2",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=clamp(time*30,228,252);var period=sourceRectAtTime(time,false).width+80;[80+1*period+-24*(f-228),258,0];"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_OPERATIONS_Lower_0",
+                  "text": "OPERATIONS"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_0",
+                  "font": "Pretendard-Black",
+                  "fontSize": 440,
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.67,
+                    0.69,
+                    0.69
+                  ],
+                  "strokeWidth": 1.45,
+                  "tracking": -35
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_0",
+                  "props": {
+                    "inPoint": 7.6,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_0",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=clamp(time*30,228,252);var period=sourceRectAtTime(time,false).width+80;[80+-1*period+18*(f-228),1055,0];"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_OPERATIONS_Lower_1",
+                  "text": "OPERATIONS"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_1",
+                  "font": "Pretendard-Black",
+                  "fontSize": 440,
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.67,
+                    0.69,
+                    0.69
+                  ],
+                  "strokeWidth": 1.45,
+                  "tracking": -35
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_1",
+                  "props": {
+                    "inPoint": 7.6,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_1",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=clamp(time*30,228,252);var period=sourceRectAtTime(time,false).width+80;[80+0*period+18*(f-228),1055,0];"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_OPERATIONS_Lower_2",
+                  "text": "OPERATIONS"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_2",
+                  "font": "Pretendard-Black",
+                  "fontSize": 440,
+                  "applyFill": false,
+                  "applyStroke": true,
+                  "strokeColor": [
+                    0.67,
+                    0.69,
+                    0.69
+                  ],
+                  "strokeWidth": 1.45,
+                  "tracking": -35
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_2",
+                  "props": {
+                    "inPoint": 7.6,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_OPERATIONS_Lower_2",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var f=clamp(time*30,228,252);var period=sourceRectAtTime(time,false).width+80;[80+1*period+18*(f-228),1055,0];"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_Central_Charcoal_Plane"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Central_Charcoal_Plane",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Central_Charcoal_Plane",
+                  "name": "Native_Plane"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Central_Charcoal_Plane",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      548,
+                      217
+                    ],
+                    [
+                      1342,
+                      220
+                    ],
+                    [
+                      1332,
+                      255
+                    ],
+                    [
+                      2400,
+                      258
+                    ],
+                    [
+                      2400,
+                      480
+                    ],
+                    [
+                      2176,
+                      480
+                    ],
+                    [
+                      2089,
+                      638
+                    ],
+                    [
+                      1901,
+                      638
+                    ],
+                    [
+                      1849,
+                      735
+                    ],
+                    [
+                      0,
+                      735
+                    ],
+                    [
+                      0,
+                      400
+                    ],
+                    [
+                      449,
+                      400
+                    ]
+                  ],
+                  "closed": true
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Central_Charcoal_Plane",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Central_Charcoal_Plane",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Central_Charcoal_Plane",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-222)/12,0,1);var q=u*u*u*(10+u*(-15+6*u));[1600*(1-q),0,0];"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_Ivory_Upper_Plane"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Upper_Plane",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Upper_Plane",
+                  "name": "Native_Plane"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Upper_Plane",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      0,
+                      123
+                    ],
+                    [
+                      854,
+                      126
+                    ],
+                    [
+                      806,
+                      217
+                    ],
+                    [
+                      547,
+                      217
+                    ],
+                    [
+                      449,
+                      400
+                    ],
+                    [
+                      0,
+                      400
+                    ]
+                  ],
+                  "closed": true
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Upper_Plane",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Upper_Plane",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Upper_Plane",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-224)/10,0,1);var q=u*u*u*(10+u*(-15+6*u));[-900*(1-q),-110*(1-q),0];"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_Ivory_Right_Continuation"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Right_Continuation",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Right_Continuation",
+                  "name": "Native_Plane"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Right_Continuation",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      2176,
+                      480
+                    ],
+                    [
+                      2400,
+                      480
+                    ],
+                    [
+                      2400,
+                      667
+                    ],
+                    [
+                      1888,
+                      667
+                    ],
+                    [
+                      1901,
+                      638
+                    ],
+                    [
+                      2089,
+                      638
+                    ]
+                  ],
+                  "closed": true
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Right_Continuation",
+                  "groupIndex": 1,
+                  "color": [
+                    0.965,
+                    0.957,
+                    0.937,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Right_Continuation",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Ivory_Right_Continuation",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-224)/10,0,1);var q=u*u*u*(10+u*(-15+6*u));[600*(1-q),-110*(1-q),0];"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_Orange_Ribbon_Lower"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Lower",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Lower",
+                  "name": "Native_Plane"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Lower",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      1888,
+                      667
+                    ],
+                    [
+                      2400,
+                      667
+                    ],
+                    [
+                      2400,
+                      852
+                    ],
+                    [
+                      1518,
+                      848
+                    ],
+                    [
+                      1580,
+                      735
+                    ],
+                    [
+                      1849,
+                      735
+                    ]
+                  ],
+                  "closed": true
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Lower",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Lower",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Lower",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-222)/12,0,1);var q=u*u*u*(10+u*(-15+6*u));[650*(1-q),121*(1-q),0];"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_Orange_Ribbon_Thin_Continuation"
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Thin_Continuation",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Thin_Continuation",
+                  "name": "Native_Plane"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Thin_Continuation",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      0,
+                      734
+                    ],
+                    [
+                      1580,
+                      734
+                    ],
+                    [
+                      1580,
+                      738
+                    ],
+                    [
+                      0,
+                      738
+                    ]
+                  ],
+                  "closed": true
+                }
+              },
+              {
+                "operation": "shape.add_fill",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Thin_Continuation",
+                  "groupIndex": 1,
+                  "color": [
+                    1,
+                    0.47,
+                    0.04,
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Thin_Continuation",
+                  "props": {
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Orange_Ribbon_Thin_Continuation",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-222)/12,0,1);var q=u*u*u*(10+u*(-15+6*u));[2400*(1-q),118*(1-q),0];"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_Operations",
+                  "text": "Operations,"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Operations",
+                  "font": "Pretendard-ExtraBold",
+                  "fontSize": 210,
+                  "fillColor": [
+                    0.965,
+                    0.957,
+                    0.937
+                  ],
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "fauxItalic": false,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Operations",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    660,
+                    429,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Operations",
+                  "props": {
+                    "inPoint": 7.6,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "time": 7.6
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Operations",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Straight In By Word.ffx"
+                }
+              },
+              {
+                "operation": "layer.create_text",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "name": "S07_refined",
+                  "text": "refined"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_refined",
+                  "font": "Pretendard-Black",
+                  "fontSize": 332,
+                  "fillColor": [
+                    1,
+                    0.47,
+                    0.04
+                  ],
+                  "applyFill": true,
+                  "applyStroke": false,
+                  "fauxItalic": true,
+                  "tracking": -25
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_refined",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "value": [
+                    650,
+                    687,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_refined",
+                  "props": {
+                    "inPoint": 7.666666666666667,
+                    "motionBlur": true
+                  }
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "time": 7.666666666666667
+                }
+              },
+              {
+                "operation": "layer.apply_preset",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_refined",
+                  "path": "C:/Program Files/Adobe/Adobe After Effects (Beta)/Support Files/Presets/Text/Animate In/Stretch In Each Word.ffx"
+                }
+              },
+              {
+                "operation": "layer.create_footage",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "sourceItemId": 142,
+                  "name": "S07_OPERATIONS_FIXED_CONTAINER"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S07_OPERATIONS_FIXED_CONTAINER",
+                  "props": {
+                    "inPoint": 7.4,
+                    "outPoint": 8.666666666666666,
+                    "audioEnabled": false
+                  }
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 60000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "SCENE07_OPERATIONS",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_Charcoal_Cover_Connected"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Charcoal_Cover_Connected",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Plane"
+            },
+            {
+              "ok": true,
+              "name": "Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Charcoal_Cover_Connected",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_OPERATIONS_Upper_0",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_OPERATIONS_Upper_0",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_OPERATIONS_Upper_1",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_OPERATIONS_Upper_1",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_OPERATIONS_Upper_2",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_OPERATIONS_Upper_2",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_OPERATIONS_Lower_0",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_OPERATIONS_Lower_0",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_OPERATIONS_Lower_1",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_OPERATIONS_Lower_1",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_OPERATIONS_Lower_2",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_OPERATIONS_Lower_2",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_Central_Charcoal_Plane"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Central_Charcoal_Plane",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Plane"
+            },
+            {
+              "ok": true,
+              "name": "Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Central_Charcoal_Plane",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_Ivory_Upper_Plane"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Ivory_Upper_Plane",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Plane"
+            },
+            {
+              "ok": true,
+              "name": "Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Ivory_Upper_Plane",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_Ivory_Right_Continuation"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Ivory_Right_Continuation",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Plane"
+            },
+            {
+              "ok": true,
+              "name": "Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Ivory_Right_Continuation",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_Orange_Ribbon_Lower"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Orange_Ribbon_Lower",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Plane"
+            },
+            {
+              "ok": true,
+              "name": "Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Orange_Ribbon_Lower",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_Orange_Ribbon_Thin_Continuation"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Orange_Ribbon_Thin_Continuation",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Native_Plane"
+            },
+            {
+              "ok": true,
+              "name": "Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Fill 1"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Orange_Ribbon_Thin_Continuation",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_Operations",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Operations",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_Operations",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "time": 7.6
+            },
+            {
+              "ok": true,
+              "applied": "Straight In By Word.ffx",
+              "numEffects": 0
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_refined",
+              "boxText": false,
+              "vertical": false
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_refined",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_refined",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "time": 7.66666666666667
+            },
+            {
+              "ok": true,
+              "applied": "Stretch In Each Word.ffx",
+              "numEffects": 0
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S07_OPERATIONS_FIXED_CONTAINER"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S07_OPERATIONS_FIXED_CONTAINER",
+                  "warnings": []
+                }
+              ]
+            }
+          ],
+          "count": 81,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 22,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 103,
+            "name": "DEVICE_iPhone17_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPhone17_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 2344
+      },
+      "elapsedMs": 2352
+    },
+    {
+      "call": {
+        "name": "ae_layer_info",
+        "args": {
+          "compNameOrId": "SCENE07_OPERATIONS",
+          "layerIndex": [
+            1,
+            2
+          ],
+          "includeProperties": true
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "compName": "SCENE07_OPERATIONS",
+          "count": 2,
+          "missing": 0,
+          "layers": [
+            {
+              "index": 1,
+              "id": 167,
+              "name": "S07_refined",
+              "type": "TextLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 7.66666666666667,
+              "outPoint": 27.6666666666667,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "text": "refined",
+              "fontSize": 332,
+              "font": "Pretendard-Black",
+              "fillColor": [
+                1,
+                0.46999999880791,
+                0.03999999910593
+              ],
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      650,
+                      687,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "textGroup": {
+                "name": "Text",
+                "matchName": "ADBE Text Properties",
+                "properties": [
+                  {
+                    "name": "Source Text",
+                    "matchName": "ADBE Text Document",
+                    "propertyValueType": "TEXT_DOCUMENT",
+                    "value": {
+                      "__kind": "TextDocument",
+                      "text": "refined",
+                      "font": "Pretendard-Black",
+                      "fontFamily": "Pretendard",
+                      "fontStyle": "Black",
+                      "fontSize": 332,
+                      "fillColor": [
+                        1,
+                        0.46999999880791,
+                        0.03999999910593
+                      ],
+                      "strokeColor": null,
+                      "strokeWidth": 1,
+                      "justification": "7413",
+                      "tracking": -25,
+                      "leading": 398.400024414062,
+                      "baselineShift": 0,
+                      "applyFill": true,
+                      "applyStroke": false,
+                      "boxText": false,
+                      "boxTextSize": null,
+                      "boxTextPos": null
+                    }
+                  }
+                ],
+                "groups": [
+                  {
+                    "name": "Path Options",
+                    "matchName": "ADBE Text Path Options",
+                    "properties": [
+                      {
+                        "name": "Path",
+                        "matchName": "ADBE Text Path",
+                        "propertyValueType": "MASK_INDEX",
+                        "value": 0
+                      },
+                      {
+                        "name": "Reverse Path",
+                        "matchName": "ADBE Text Reverse Path",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      },
+                      {
+                        "name": "Perpendicular To Path",
+                        "matchName": "ADBE Text Perpendicular To Path",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      },
+                      {
+                        "name": "Force Alignment",
+                        "matchName": "ADBE Text Force Align Path",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      },
+                      {
+                        "name": "First Margin",
+                        "matchName": "ADBE Text First Margin",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      },
+                      {
+                        "name": "Last Margin",
+                        "matchName": "ADBE Text Last Margin",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      }
+                    ],
+                    "groups": []
+                  },
+                  {
+                    "name": "More Options",
+                    "matchName": "ADBE Text More Options",
+                    "properties": [
+                      {
+                        "name": "Anchor Point Grouping",
+                        "matchName": "ADBE Text Anchor Point Option",
+                        "propertyValueType": "OneD",
+                        "value": 2
+                      },
+                      {
+                        "name": "Grouping Alignment",
+                        "matchName": "ADBE Text Anchor Point Align",
+                        "propertyValueType": "TwoD",
+                        "value": [
+                          100,
+                          -25
+                        ]
+                      },
+                      {
+                        "name": "Fill & Stroke",
+                        "matchName": "ADBE Text Render Order",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      },
+                      {
+                        "name": "Inter-Character Blending",
+                        "matchName": "ADBE Text Character Blend Mode",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      },
+                      {
+                        "name": "Variable Font Spacing",
+                        "matchName": "ADBE Text Variable Font Spacing",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      }
+                    ],
+                    "groups": []
+                  },
+                  {
+                    "name": "Animators",
+                    "matchName": "ADBE Text Animators",
+                    "properties": [],
+                    "groups": [
+                      {
+                        "name": "Animator 1",
+                        "matchName": "ADBE Text Animator",
+                        "properties": [],
+                        "groups": [
+                          {
+                            "name": "Selectors",
+                            "matchName": "ADBE Text Selectors",
+                            "properties": [],
+                            "groups": [
+                              {
+                                "name": "Range Selector 1",
+                                "matchName": "ADBE Text Selector",
+                                "properties": [],
+                                "groups": []
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Properties",
+                            "matchName": "ADBE Text Animator Properties",
+                            "properties": [
+                              {
+                                "name": "Anchor Point",
+                                "matchName": "ADBE Text Anchor Point 3D",
+                                "propertyValueType": "ThreeD_SPATIAL",
+                                "value": [
+                                  0,
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "Position",
+                                "matchName": "ADBE Text Position 3D",
+                                "propertyValueType": "ThreeD_SPATIAL",
+                                "value": [
+                                  0,
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "Scale",
+                                "matchName": "ADBE Text Scale 3D",
+                                "propertyValueType": "ThreeD",
+                                "value": [
+                                  0,
+                                  0,
+                                  100
+                                ]
+                              },
+                              {
+                                "name": "Skew",
+                                "matchName": "ADBE Text Skew",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Skew Axis",
+                                "matchName": "ADBE Text Skew Axis",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "X Rotation",
+                                "matchName": "ADBE Text Rotation X",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Y Rotation",
+                                "matchName": "ADBE Text Rotation Y",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Rotation",
+                                "matchName": "ADBE Text Rotation",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Opacity",
+                                "matchName": "ADBE Text Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Fill Opacity",
+                                "matchName": "ADBE Text Fill Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Stroke Opacity",
+                                "matchName": "ADBE Text Stroke Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Fill Color",
+                                "matchName": "ADBE Text Fill Color",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Stroke Color",
+                                "matchName": "ADBE Text Stroke Color",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Fill Hue",
+                                "matchName": "ADBE Text Fill Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Hue",
+                                "matchName": "ADBE Text Stroke Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Fill Saturation",
+                                "matchName": "ADBE Text Fill Saturation",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Saturation",
+                                "matchName": "ADBE Text Stroke Saturation",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Fill Brightness",
+                                "matchName": "ADBE Text Fill Brightness",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Brightness",
+                                "matchName": "ADBE Text Stroke Brightness",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Color",
+                                "matchName": "ADBE 3DText Front RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Front Hue",
+                                "matchName": "ADBE 3DText Front Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Saturation",
+                                "matchName": "ADBE 3DText Front Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Brightness",
+                                "matchName": "ADBE 3DText Front Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Opacity",
+                                "matchName": "ADBE 3DText Front Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Ambient",
+                                "matchName": "ADBE 3DText Front Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Diffuse",
+                                "matchName": "ADBE 3DText Front Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Front Specular Intensity",
+                                "matchName": "ADBE 3DText Front Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Front Specular Shininess",
+                                "matchName": "ADBE 3DText Front Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Front Metal",
+                                "matchName": "ADBE 3DText Front Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Reflection Intensity",
+                                "matchName": "ADBE 3DText Front Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Reflection Sharpness",
+                                "matchName": "ADBE 3DText Front Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Reflection Rolloff",
+                                "matchName": "ADBE 3DText Front Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Transparency",
+                                "matchName": "ADBE 3DText Front Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Transparency Rolloff",
+                                "matchName": "ADBE 3DText Front XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Index of Refraction",
+                                "matchName": "ADBE 3DText Front IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Bevel Color",
+                                "matchName": "ADBE 3DText Bevel RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Bevel Hue",
+                                "matchName": "ADBE 3DText Bevel Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Saturation",
+                                "matchName": "ADBE 3DText Bevel Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Brightness",
+                                "matchName": "ADBE 3DText Bevel Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Opacity",
+                                "matchName": "ADBE 3DText Bevel Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Ambient",
+                                "matchName": "ADBE 3DText Bevel Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Diffuse",
+                                "matchName": "ADBE 3DText Bevel Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Bevel Specular Intensity",
+                                "matchName": "ADBE 3DText Bevel Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Bevel Specular Shininess",
+                                "matchName": "ADBE 3DText Bevel Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Bevel Metal",
+                                "matchName": "ADBE 3DText Bevel Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Reflection Intensity",
+                                "matchName": "ADBE 3DText Bevel Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Reflection Sharpness",
+                                "matchName": "ADBE 3DText Bevel Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Reflection Rolloff",
+                                "matchName": "ADBE 3DText Bevel Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Transparency",
+                                "matchName": "ADBE 3DText Bevel Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Transparency Rolloff",
+                                "matchName": "ADBE 3DText Bevel XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Index of Refraction",
+                                "matchName": "ADBE 3DText Bevel IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Side Color",
+                                "matchName": "ADBE 3DText Side RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Side Hue",
+                                "matchName": "ADBE 3DText Side Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Saturation",
+                                "matchName": "ADBE 3DText Side Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Brightness",
+                                "matchName": "ADBE 3DText Side Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Opacity",
+                                "matchName": "ADBE 3DText Side Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Ambient",
+                                "matchName": "ADBE 3DText Side Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Diffuse",
+                                "matchName": "ADBE 3DText Side Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Side Specular Intensity",
+                                "matchName": "ADBE 3DText Side Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Side Specular Shininess",
+                                "matchName": "ADBE 3DText Side Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Side Metal",
+                                "matchName": "ADBE 3DText Side Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Reflection Intensity",
+                                "matchName": "ADBE 3DText Side Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Reflection Sharpness",
+                                "matchName": "ADBE 3DText Side Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Reflection Rolloff",
+                                "matchName": "ADBE 3DText Side Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Transparency",
+                                "matchName": "ADBE 3DText Side Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Transparency Rolloff",
+                                "matchName": "ADBE 3DText Side XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Index of Refraction",
+                                "matchName": "ADBE 3DText Side IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Back Color",
+                                "matchName": "ADBE 3DText Back RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Back Hue",
+                                "matchName": "ADBE 3DText Back Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Saturation",
+                                "matchName": "ADBE 3DText Back Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Brightness",
+                                "matchName": "ADBE 3DText Back Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Opacity",
+                                "matchName": "ADBE 3DText Back Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Ambient",
+                                "matchName": "ADBE 3DText Back Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Diffuse",
+                                "matchName": "ADBE 3DText Back Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Back Specular Intensity",
+                                "matchName": "ADBE 3DText Back Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Back Specular Shininess",
+                                "matchName": "ADBE 3DText Back Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Back Metal",
+                                "matchName": "ADBE 3DText Back Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Reflection Intensity",
+                                "matchName": "ADBE 3DText Back Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Reflection Sharpness",
+                                "matchName": "ADBE 3DText Back Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Reflection Rolloff",
+                                "matchName": "ADBE 3DText Back Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Transparency",
+                                "matchName": "ADBE 3DText Back Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Transparency Rolloff",
+                                "matchName": "ADBE 3DText Back XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Index of Refraction",
+                                "matchName": "ADBE 3DText Back IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Bevel Depth",
+                                "matchName": "ADBE 3DText Bevel Depth",
+                                "propertyValueType": "OneD",
+                                "value": 2
+                              },
+                              {
+                                "name": "Extrusion Depth",
+                                "matchName": "ADBE 3DText Extrude Depth",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Width",
+                                "matchName": "ADBE Text Stroke Width",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Line Anchor",
+                                "matchName": "ADBE Text Line Anchor",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Tracking Type",
+                                "matchName": "ADBE Text Track Type",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Tracking Amount",
+                                "matchName": "ADBE Text Tracking Amount",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Character Alignment",
+                                "matchName": "ADBE Text Character Change Type",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Character Range",
+                                "matchName": "ADBE Text Character Range",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Character Value",
+                                "matchName": "ADBE Text Character Replace",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Character Offset",
+                                "matchName": "ADBE Text Character Offset",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Line Spacing",
+                                "matchName": "ADBE Text Line Spacing",
+                                "propertyValueType": "TwoD",
+                                "value": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "Blur",
+                                "matchName": "ADBE Text Blur",
+                                "propertyValueType": "TwoD",
+                                "value": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 1",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 2",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 3",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 4",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 5",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 6",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 7",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 8",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              }
+                            ],
+                            "groups": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 2,
+              "id": 166,
+              "name": "S07_Operations",
+              "type": "TextLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 7.6,
+              "outPoint": 27.6,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "text": "Operations,",
+              "fontSize": 210,
+              "font": "Pretendard-ExtraBold",
+              "fillColor": [
+                0.96499997377396,
+                0.95700001716614,
+                0.93699997663498
+              ],
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      660,
+                      429,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "textGroup": {
+                "name": "Text",
+                "matchName": "ADBE Text Properties",
+                "properties": [
+                  {
+                    "name": "Source Text",
+                    "matchName": "ADBE Text Document",
+                    "propertyValueType": "TEXT_DOCUMENT",
+                    "value": {
+                      "__kind": "TextDocument",
+                      "text": "Operations,",
+                      "font": "Pretendard-ExtraBold",
+                      "fontFamily": "Pretendard",
+                      "fontStyle": "ExtraBold",
+                      "fontSize": 210,
+                      "fillColor": [
+                        0.96499997377396,
+                        0.95700001716614,
+                        0.93699997663498
+                      ],
+                      "strokeColor": null,
+                      "strokeWidth": 1,
+                      "justification": "7413",
+                      "tracking": -25,
+                      "leading": 252.000015258789,
+                      "baselineShift": 0,
+                      "applyFill": true,
+                      "applyStroke": false,
+                      "boxText": false,
+                      "boxTextSize": null,
+                      "boxTextPos": null
+                    }
+                  }
+                ],
+                "groups": [
+                  {
+                    "name": "Path Options",
+                    "matchName": "ADBE Text Path Options",
+                    "properties": [
+                      {
+                        "name": "Path",
+                        "matchName": "ADBE Text Path",
+                        "propertyValueType": "MASK_INDEX",
+                        "value": 0
+                      },
+                      {
+                        "name": "Reverse Path",
+                        "matchName": "ADBE Text Reverse Path",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      },
+                      {
+                        "name": "Perpendicular To Path",
+                        "matchName": "ADBE Text Perpendicular To Path",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      },
+                      {
+                        "name": "Force Alignment",
+                        "matchName": "ADBE Text Force Align Path",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      },
+                      {
+                        "name": "First Margin",
+                        "matchName": "ADBE Text First Margin",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      },
+                      {
+                        "name": "Last Margin",
+                        "matchName": "ADBE Text Last Margin",
+                        "propertyValueType": "OneD",
+                        "value": 0
+                      }
+                    ],
+                    "groups": []
+                  },
+                  {
+                    "name": "More Options",
+                    "matchName": "ADBE Text More Options",
+                    "properties": [
+                      {
+                        "name": "Anchor Point Grouping",
+                        "matchName": "ADBE Text Anchor Point Option",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      },
+                      {
+                        "name": "Grouping Alignment",
+                        "matchName": "ADBE Text Anchor Point Align",
+                        "propertyValueType": "TwoD",
+                        "value": [
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "name": "Fill & Stroke",
+                        "matchName": "ADBE Text Render Order",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      },
+                      {
+                        "name": "Inter-Character Blending",
+                        "matchName": "ADBE Text Character Blend Mode",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      },
+                      {
+                        "name": "Variable Font Spacing",
+                        "matchName": "ADBE Text Variable Font Spacing",
+                        "propertyValueType": "OneD",
+                        "value": 1
+                      }
+                    ],
+                    "groups": []
+                  },
+                  {
+                    "name": "Animators",
+                    "matchName": "ADBE Text Animators",
+                    "properties": [],
+                    "groups": [
+                      {
+                        "name": "Animator 1",
+                        "matchName": "ADBE Text Animator",
+                        "properties": [],
+                        "groups": [
+                          {
+                            "name": "Selectors",
+                            "matchName": "ADBE Text Selectors",
+                            "properties": [],
+                            "groups": [
+                              {
+                                "name": "Range Selector 1",
+                                "matchName": "ADBE Text Selector",
+                                "properties": [],
+                                "groups": []
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Properties",
+                            "matchName": "ADBE Text Animator Properties",
+                            "properties": [
+                              {
+                                "name": "Anchor Point",
+                                "matchName": "ADBE Text Anchor Point 3D",
+                                "propertyValueType": "ThreeD_SPATIAL",
+                                "value": [
+                                  0,
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "Position",
+                                "matchName": "ADBE Text Position 3D",
+                                "propertyValueType": "ThreeD_SPATIAL",
+                                "value": [
+                                  617,
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "Scale",
+                                "matchName": "ADBE Text Scale 3D",
+                                "propertyValueType": "ThreeD",
+                                "value": [
+                                  100,
+                                  100,
+                                  100
+                                ]
+                              },
+                              {
+                                "name": "Skew",
+                                "matchName": "ADBE Text Skew",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Skew Axis",
+                                "matchName": "ADBE Text Skew Axis",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "X Rotation",
+                                "matchName": "ADBE Text Rotation X",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Y Rotation",
+                                "matchName": "ADBE Text Rotation Y",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Rotation",
+                                "matchName": "ADBE Text Rotation",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Opacity",
+                                "matchName": "ADBE Text Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Fill Opacity",
+                                "matchName": "ADBE Text Fill Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Stroke Opacity",
+                                "matchName": "ADBE Text Stroke Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Fill Color",
+                                "matchName": "ADBE Text Fill Color",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Stroke Color",
+                                "matchName": "ADBE Text Stroke Color",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Fill Hue",
+                                "matchName": "ADBE Text Fill Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Hue",
+                                "matchName": "ADBE Text Stroke Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Fill Saturation",
+                                "matchName": "ADBE Text Fill Saturation",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Saturation",
+                                "matchName": "ADBE Text Stroke Saturation",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Fill Brightness",
+                                "matchName": "ADBE Text Fill Brightness",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Brightness",
+                                "matchName": "ADBE Text Stroke Brightness",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Color",
+                                "matchName": "ADBE 3DText Front RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Front Hue",
+                                "matchName": "ADBE 3DText Front Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Saturation",
+                                "matchName": "ADBE 3DText Front Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Brightness",
+                                "matchName": "ADBE 3DText Front Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Opacity",
+                                "matchName": "ADBE 3DText Front Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Ambient",
+                                "matchName": "ADBE 3DText Front Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Diffuse",
+                                "matchName": "ADBE 3DText Front Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Front Specular Intensity",
+                                "matchName": "ADBE 3DText Front Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Front Specular Shininess",
+                                "matchName": "ADBE 3DText Front Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Front Metal",
+                                "matchName": "ADBE 3DText Front Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Reflection Intensity",
+                                "matchName": "ADBE 3DText Front Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Reflection Sharpness",
+                                "matchName": "ADBE 3DText Front Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Front Reflection Rolloff",
+                                "matchName": "ADBE 3DText Front Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Transparency",
+                                "matchName": "ADBE 3DText Front Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Transparency Rolloff",
+                                "matchName": "ADBE 3DText Front XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Front Index of Refraction",
+                                "matchName": "ADBE 3DText Front IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Bevel Color",
+                                "matchName": "ADBE 3DText Bevel RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Bevel Hue",
+                                "matchName": "ADBE 3DText Bevel Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Saturation",
+                                "matchName": "ADBE 3DText Bevel Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Brightness",
+                                "matchName": "ADBE 3DText Bevel Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Opacity",
+                                "matchName": "ADBE 3DText Bevel Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Ambient",
+                                "matchName": "ADBE 3DText Bevel Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Diffuse",
+                                "matchName": "ADBE 3DText Bevel Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Bevel Specular Intensity",
+                                "matchName": "ADBE 3DText Bevel Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Bevel Specular Shininess",
+                                "matchName": "ADBE 3DText Bevel Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Bevel Metal",
+                                "matchName": "ADBE 3DText Bevel Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Reflection Intensity",
+                                "matchName": "ADBE 3DText Bevel Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Reflection Sharpness",
+                                "matchName": "ADBE 3DText Bevel Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Bevel Reflection Rolloff",
+                                "matchName": "ADBE 3DText Bevel Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Transparency",
+                                "matchName": "ADBE 3DText Bevel Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Transparency Rolloff",
+                                "matchName": "ADBE 3DText Bevel XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Bevel Index of Refraction",
+                                "matchName": "ADBE 3DText Bevel IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Side Color",
+                                "matchName": "ADBE 3DText Side RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Side Hue",
+                                "matchName": "ADBE 3DText Side Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Saturation",
+                                "matchName": "ADBE 3DText Side Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Brightness",
+                                "matchName": "ADBE 3DText Side Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Opacity",
+                                "matchName": "ADBE 3DText Side Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Ambient",
+                                "matchName": "ADBE 3DText Side Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Diffuse",
+                                "matchName": "ADBE 3DText Side Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Side Specular Intensity",
+                                "matchName": "ADBE 3DText Side Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Side Specular Shininess",
+                                "matchName": "ADBE 3DText Side Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Side Metal",
+                                "matchName": "ADBE 3DText Side Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Reflection Intensity",
+                                "matchName": "ADBE 3DText Side Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Reflection Sharpness",
+                                "matchName": "ADBE 3DText Side Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Side Reflection Rolloff",
+                                "matchName": "ADBE 3DText Side Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Transparency",
+                                "matchName": "ADBE 3DText Side Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Transparency Rolloff",
+                                "matchName": "ADBE 3DText Side XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Side Index of Refraction",
+                                "matchName": "ADBE 3DText Side IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Back Color",
+                                "matchName": "ADBE 3DText Back RGB",
+                                "propertyValueType": "COLOR",
+                                "value": [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ]
+                              },
+                              {
+                                "name": "Back Hue",
+                                "matchName": "ADBE 3DText Back Hue",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Saturation",
+                                "matchName": "ADBE 3DText Back Sat",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Brightness",
+                                "matchName": "ADBE 3DText Back Bright",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Opacity",
+                                "matchName": "ADBE 3DText Back Opacity",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Ambient",
+                                "matchName": "ADBE 3DText Back Ambient",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Diffuse",
+                                "matchName": "ADBE 3DText Back Diffuse",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Back Specular Intensity",
+                                "matchName": "ADBE 3DText Back Specular",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Back Specular Shininess",
+                                "matchName": "ADBE 3DText Back Shininess",
+                                "propertyValueType": "OneD",
+                                "value": 5
+                              },
+                              {
+                                "name": "Back Metal",
+                                "matchName": "ADBE 3DText Back Metal",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Reflection Intensity",
+                                "matchName": "ADBE 3DText Back Reflection",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Reflection Sharpness",
+                                "matchName": "ADBE 3DText Back Gloss",
+                                "propertyValueType": "OneD",
+                                "value": 100
+                              },
+                              {
+                                "name": "Back Reflection Rolloff",
+                                "matchName": "ADBE 3DText Back Fresnel",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Transparency",
+                                "matchName": "ADBE 3DText Back Xparency",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Transparency Rolloff",
+                                "matchName": "ADBE 3DText Back XparRoll",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Back Index of Refraction",
+                                "matchName": "ADBE 3DText Back IOR",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Bevel Depth",
+                                "matchName": "ADBE 3DText Bevel Depth",
+                                "propertyValueType": "OneD",
+                                "value": 2
+                              },
+                              {
+                                "name": "Extrusion Depth",
+                                "matchName": "ADBE 3DText Extrude Depth",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Stroke Width",
+                                "matchName": "ADBE Text Stroke Width",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Line Anchor",
+                                "matchName": "ADBE Text Line Anchor",
+                                "propertyValueType": "OneD",
+                                "value": 50
+                              },
+                              {
+                                "name": "Tracking Type",
+                                "matchName": "ADBE Text Track Type",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Tracking Amount",
+                                "matchName": "ADBE Text Tracking Amount",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Character Alignment",
+                                "matchName": "ADBE Text Character Change Type",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Character Range",
+                                "matchName": "ADBE Text Character Range",
+                                "propertyValueType": "OneD",
+                                "value": 1
+                              },
+                              {
+                                "name": "Character Value",
+                                "matchName": "ADBE Text Character Replace",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Character Offset",
+                                "matchName": "ADBE Text Character Offset",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "Line Spacing",
+                                "matchName": "ADBE Text Line Spacing",
+                                "propertyValueType": "TwoD",
+                                "value": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "Blur",
+                                "matchName": "ADBE Text Blur",
+                                "propertyValueType": "TwoD",
+                                "value": [
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 1",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 2",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 3",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 4",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 5",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 6",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 7",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              },
+                              {
+                                "name": "",
+                                "matchName": "ADBE Text VF Axis 8",
+                                "propertyValueType": "OneD",
+                                "value": 0
+                              }
+                            ],
+                            "groups": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ok": true,
+              "found": true
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 452
+      },
+      "elapsedMs": 456
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "SCENE07_OPERATIONS",
+          "time": 8.066666666666666,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/operations-initial-F242.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/operations-initial-F242.png",
+          "time": 8.06666666666667,
+          "compName": "SCENE07_OPERATIONS",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 346
+      },
+      "elapsedMs": 973
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 1568
+      },
+      "elapsedMs": 1570
+    }
+  ]
+}

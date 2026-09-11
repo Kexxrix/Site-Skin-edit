@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-11T09:18:03.419Z",
+  "status": "brief_inputs_checked_no_ae_execution",
+  "inputs": [
+    {
+      "role": "scene_01_layout",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results/01-meet-titan.png",
+      "bytes": 951999,
+      "sha256": "79f770482c76ad70ae667ae1558df446e3476355fcf8d29c78b6bce61c233ee0",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "scene_02_layout",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results/02-built-in-house.png",
+      "bytes": 1014268,
+      "sha256": "d8886b98474a1227e65e07ea1b97177a33a4af0b53a206edb0cc0924f5ce59ce",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "scene_03_outline_arrival_layout",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results/03-cat-village-outline-arrival.png",
+      "bytes": 1638387,
+      "sha256": "b259c9f36390e41f6ad1ac67acb92e4aa3b4012d4195af755df26df0884edfbf",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "ipad_device_glb",
+      "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/exports/iPad10.glb",
+      "bytes": 1714248,
+      "sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "ipad_editable_source_not_modified",
+      "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/source/iPad10.blend",
+      "bytes": 377836,
+      "sha256": "e7f2018331c7b0ee780447a8b496d49b7f146be7295ce355472e65b1e53e443a",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "ipad_model_manifest",
+      "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/manifest.json",
+      "bytes": 2299,
+      "sha256": "4b50c3f688fd8f327b3e291dd81359e75da5af651e61f1d77665f3007df6c716",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "ipad_model_management_readme",
+      "path": "E:/codexwork/Site-Skin-edit/device-models/README.ko.md",
+      "bytes": 4973,
+      "sha256": "7e8b353f79c10e25a13fc0cec35b83eab9015d3881f9b221876e31b9cc2ad012",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "ipad_screen_video",
+      "path": "E:/codexwork/Site-Skin-edit/TEMP/아이패드.mp4",
+      "bytes": 37848077,
+      "sha256": "2325be94b6e1e857824d219a2bf9b6cbb14c4b447658ce34bf79a9ecbd70e6f0",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "original_full_storyboard",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-korean-sequence-20260910-190140/english-storyboard-v2.md",
+      "bytes": 13773,
+      "sha256": "6e62cbe0d48464e4acdd47dc6a02f5d6a363a49decf0cad39f2a238b4ea1165a",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "motion_language_research",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/motion-language-reference-review-20260911.md",
+      "bytes": 18787,
+      "sha256": "42cbdfe880ce9bd1910503b5427f6506656ca4c3ef20320a13700fc6987c977f",
+      "operation": "read_only",
+      "exists": true
+    },
+    {
+      "role": "preset_research",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/free-motion-resources-research-20260911.md",
+      "bytes": 16710,
+      "sha256": "cf6d15c23908a6a22cf39137d6face88e61d134643de5afe928bd81705822b80",
+      "operation": "read_only",
+      "exists": true
+    }
+  ],
+  "model_hash_checks": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/source/iPad10.blend",
+      "expected_sha256": "e7f2018331c7b0ee780447a8b496d49b7f146be7295ce355472e65b1e53e443a",
+      "actual_sha256": "e7f2018331c7b0ee780447a8b496d49b7f146be7295ce355472e65b1e53e443a",
+      "matches": true
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/exports/iPad10.glb",
+      "expected_sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+      "actual_sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+      "matches": true
+    }
+  ],
+  "model_static_inspection": {
+    "glb_version": 2,
+    "bytes": 1714248,
+    "screen_node": "iPad10.Screen",
+    "screen_mesh": "iPad10.Screen.Mesh",
+    "screen_material": "iPad10.SCREEN",
+    "has_uv": true,
+    "screen_dimensions_ratio": [
+      2360,
+      1640
+    ],
+    "screen_ratio": 1.4390243902439024,
+    "node_extras": {
+      "screen_width_mm": 227.06060606060603,
+      "screen_height_mm": 157.78787878787878,
+      "image_aspect_ratio": 1.4390243902439024,
+      "screen_coordinates": "Local +Z faces viewer, +Y is top. UV origin is bottom-left. Rounded corners crop only the corners of a full rectangular image."
+    },
+    "embedded_images": 0,
+    "material_placeholder": "Neutral grey; no screen image assigned.",
+    "ae_import_verified_in_this_work": false
+  },
+  "video": {
+    "probe_file": "qa/ipad-source-ffprobe.json",
+    "sha256": "2325be94b6e1e857824d219a2bf9b6cbb14c4b447658ce34bf79a9ecbd70e6f0",
+    "source_duration_from_frame_count": 24.233333333333334,
+    "source_used_seconds": [
+      2,
+      3.9
+    ],
+    "source_speed": 1,
+    "output_audio": false
+  },
+  "mapping": {
+    "mode": "contain",
+    "screen_comp_width": 2360,
+    "screen_comp_height": 1640,
+    "source_scale": 1.2291666666666667,
+    "content_height": 1327.5,
+    "top_padding": 156.25,
+    "bottom_padding": 156.25,
+    "source_file_modified": false,
+    "ae_mapping_verified": false
+  },
+  "samples": [
+    {
+      "seconds": 0,
+      "file": "ipad-source-0000.png",
+      "note": "Fullscreen exit notice in Korean is visible; do not start source here",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/qa/ipad-source-0000.png",
+      "bytes": 2230271,
+      "sha256": "584f05fe81e7a525faa5a3a8a3b848032abec4b5618c3b8bb64a1adfe5a973cb",
+      "use": "source inspection, not a new generated image"
+    },
+    {
+      "seconds": 1.9,
+      "file": "ipad-source-0190.png",
+      "note": "CAT VILLAGE product UI; fullscreen notice absent in sample",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/qa/ipad-source-0190.png",
+      "bytes": 2344899,
+      "sha256": "8bc6ee5760edb55eaf1f2963af24eaf99b96a4a748f75b996bbbbd500a1624fd",
+      "use": "source inspection, not a new generated image"
+    },
+    {
+      "seconds": 2,
+      "file": "ipad-source-0200.png",
+      "note": "Chosen source start; fullscreen notice absent in sample",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/qa/ipad-source-0200.png",
+      "bytes": 2345473,
+      "sha256": "eb7c7642bae40ffbd6756079aafe0e5b138772b0527ea8062daa74370eebdebf",
+      "use": "source inspection, not a new generated image"
+    },
+    {
+      "seconds": 2.95,
+      "file": "ipad-source-0295.png",
+      "note": "Actual live-casino page transition; fullscreen notice absent in sample",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/qa/ipad-source-0295.png",
+      "bytes": 2515069,
+      "sha256": "a1fd1ed2f710f25a35e192d9356e9dde10a698fb7af2bf0db479a6d083a50f6e",
+      "use": "source inspection, not a new generated image"
+    },
+    {
+      "seconds": 3.9,
+      "file": "ipad-source-0390.png",
+      "note": "Source end boundary sample; live-casino view; notice absent",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/qa/ipad-source-0390.png",
+      "bytes": 2645147,
+      "sha256": "7ee883d506cd7b8d2b535cf8da11359a4c05257d74e800ff8ca926387971d237",
+      "use": "source inspection, not a new generated image"
+    },
+    {
+      "seconds": 12,
+      "file": "ipad-source-1200.png",
+      "note": "Different source point inspected; page transition visible; outside selected range",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/qa/ipad-source-1200.png",
+      "bytes": 2265891,
+      "sha256": "95c798081845dc3fd0701d14af2e154b80d004b038f0d08d1175234d5146cf9a",
+      "use": "source inspection, not a new generated image"
+    }
+  ],
+  "selected_segment_decode": {
+    "source": "E:/codexwork/Site-Skin-edit/TEMP/아이패드.mp4",
+    "start_seconds": 2,
+    "duration_seconds": 1.9,
+    "video_only": true,
+    "command": "ffmpeg -v error -nostdin -ss 2 -i <specified MP4> -t 1.9 -map 0:v:0 -an -f null -",
+    "passed": true,
+    "stderr": ""
+  },
+  "source_files_modified": false,
+  "existing_aep_files_modified": false,
+  "task_dispatched": false
+}

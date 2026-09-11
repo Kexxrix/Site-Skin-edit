@@ -1,0 +1,81 @@
+{
+  "started": "2026-09-11T11:40:36.797Z",
+  "ended": "2026-09-11T11:40:37.427Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "comp.create",
+                "args": {
+                  "name": "SCENE08_SHIFT_NATIVE",
+                  "width": 2400,
+                  "height": 1024,
+                  "fps": 30,
+                  "duration": 20
+                }
+              },
+              {
+                "operation": "comp.create",
+                "args": {
+                  "name": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "width": 2400,
+                  "height": 1024,
+                  "fps": 30,
+                  "duration": 20
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "id": 171,
+              "name": "SCENE08_SHIFT_NATIVE"
+            },
+            {
+              "ok": true,
+              "id": 183,
+              "name": "SCENE08_WHOLE_OVERLAY_180DEG"
+            }
+          ],
+          "count": 2,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 25,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 91,
+            "name": "SCREEN_iPhone17_VIDEO_CONTAIN",
+            "width": 1206,
+            "height": 2622,
+            "fps": 24,
+            "duration": 20,
+            "numLayers": 3
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 383
+      },
+      "elapsedMs": 391
+    }
+  ]
+}

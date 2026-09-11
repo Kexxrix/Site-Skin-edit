@@ -1,0 +1,568 @@
+{
+  "timestamp": "2026-09-11T09-47-27-455Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "expression"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "expression",
+        "operations": [
+          {
+            "name": "expression.set",
+            "description": "Apply an expression to a property.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path"
+              },
+              {
+                "name": "expression",
+                "type": "string",
+                "required": true,
+                "description": "Expression code string"
+              }
+            ]
+          },
+          {
+            "name": "expression.disable_all",
+            "description": "Disable all expressions in a comp (all layers, all properties). Returns a manifest that can be used to re-enable them later via expression.restore_all. Manifest paths use numeric property indices; manifests produced by older versions of this operation (matchName-based paths) are not compatible.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "expression.restore_all",
+            "description": "Re-enable expressions from a manifest produced by expression.disable_all. Optionally transform the expressions before restoring (e.g. replace content variable). Only manifests in the current format (numeric property-index paths) are supported; manifests from older versions are not compatible.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "manifest",
+                "type": "array",
+                "required": true,
+                "description": "Manifest array from expression.disable_all"
+              },
+              {
+                "name": "replacements",
+                "type": "object",
+                "required": false,
+                "description": "Optional string replacements to apply to each expression before restoring, e.g. { \"old\": \"new\" }"
+              }
+            ]
+          },
+          {
+            "name": "expression.remove",
+            "description": "Remove (disable) the expression on a property.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "render"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "render",
+        "operations": [
+          {
+            "name": "render.add_to_queue",
+            "description": "Add a composition to the render queue. Optionally set output path.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "outputPath",
+                "type": "string",
+                "required": false,
+                "description": "Output file path (optional, sets on the first output module)"
+              }
+            ]
+          },
+          {
+            "name": "render.start",
+            "description": "Start rendering the render queue. Blocks until complete.",
+            "readOnly": false,
+            "params": []
+          },
+          {
+            "name": "render.clear_queue",
+            "description": "Remove all items from the render queue.",
+            "readOnly": false,
+            "params": []
+          },
+          {
+            "name": "render.set_output",
+            "description": "Configure a render-queue item: render/output templates, output path, time span, render flag, skipFrames, logType, postRenderAction. Discover template names with render.list_templates; raw settings via render.get_settings / render.set_settings.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "renderTemplate",
+                "type": "string",
+                "required": false,
+                "description": "Render settings template name (e.g. \"Best Settings\", \"Draft Settings\")"
+              },
+              {
+                "name": "outputTemplate",
+                "type": "string",
+                "required": false,
+                "description": "Output module template name (e.g. \"Lossless\", \"High Quality\")"
+              },
+              {
+                "name": "outputPath",
+                "type": "string",
+                "required": false,
+                "description": "Output file path"
+              },
+              {
+                "name": "timeSpanStart",
+                "type": "number",
+                "required": false,
+                "description": "Render span start in seconds (comp time)"
+              },
+              {
+                "name": "timeSpanDuration",
+                "type": "number",
+                "required": false,
+                "description": "Render span duration in seconds"
+              },
+              {
+                "name": "outputModuleIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based output module index (default 1)",
+                "default": 1
+              },
+              {
+                "name": "render",
+                "type": "boolean",
+                "required": false,
+                "description": "Whether this item renders when the queue starts (the Render checkbox)"
+              },
+              {
+                "name": "skipFrames",
+                "type": "number",
+                "required": false,
+                "description": "Render every Nth frame (0 = every frame)"
+              },
+              {
+                "name": "logType",
+                "type": "string",
+                "required": false,
+                "description": "errorsOnly|errorsAndSettings|errorsAndPerFrameInfo"
+              },
+              {
+                "name": "postRenderAction",
+                "type": "string",
+                "required": false,
+                "description": "none|import|importAndReplaceUsage|setProxy (on the output module)"
+              },
+              {
+                "name": "includeSourceXMP",
+                "type": "boolean",
+                "required": false,
+                "description": "Embed source-footage XMP metadata in the output"
+              },
+              {
+                "name": "queueItemNotify",
+                "type": "boolean",
+                "required": false,
+                "description": "Per-item Notify checkbox (AE 22.0+)"
+              },
+              {
+                "name": "queueNotify",
+                "type": "boolean",
+                "required": false,
+                "description": "QUEUE-WIDE Notify checkbox (RenderQueue.queueNotify, AE 22.0+)"
+              }
+            ]
+          },
+          {
+            "name": "render.get_settings",
+            "description": "Read the raw render settings of a queue item and the settings of each of its output modules (getSettings, AE 13.0+). format 'settable' returns only keys accepted by render.set_settings / render.set_om_settings.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "format",
+                "type": "string",
+                "required": false,
+                "description": "settable|all (default settable)",
+                "default": "settable"
+              }
+            ]
+          },
+          {
+            "name": "render.set_settings",
+            "description": "Set raw render settings on a queue item (RenderQueueItem.setSettings, AE 13.0+), e.g. { \"Quality\": \"Best\", \"Resolution\": \"Half\" }. Discover valid keys/values with render.get_settings.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "settings",
+                "type": "object",
+                "required": true,
+                "description": "Key/value map from render.get_settings format 'settable'"
+              }
+            ]
+          },
+          {
+            "name": "render.set_om_settings",
+            "description": "Set raw output-module settings on a queue item (OutputModule.setSettings, AE 13.0+), e.g. { \"Format\": \"QuickTime\", \"Channels\": \"RGB + Alpha\" }. Discover valid keys/values with render.get_settings.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "outputModuleIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based output module index (default 1)",
+                "default": 1
+              },
+              {
+                "name": "settings",
+                "type": "object",
+                "required": true,
+                "description": "Key/value map from render.get_settings format 'settable'"
+              }
+            ]
+          },
+          {
+            "name": "render.remove_item",
+            "description": "Remove ONE item from the render queue by its 1-based index (render.clear_queue removes all).",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": true,
+                "description": "1-based queue item index (explicit — no default for a destructive op)"
+              }
+            ]
+          },
+          {
+            "name": "render.duplicate_item",
+            "description": "Duplicate a render-queue item (RenderQueueItem.duplicate) — e.g. to render the same comp with a second settings/output combination.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              }
+            ]
+          },
+          {
+            "name": "render.list_templates",
+            "description": "List available render-settings templates and output-module templates. The render queue must have at least one item (templates are read from a queue item).",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "render.status",
+            "description": "Report the render queue state: per-item status, time spans, and output paths.",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "render.queue_in_ame",
+            "description": "Send the render queue to Adobe Media Encoder (for H.264/HEVC etc.). Requires AME installed. renderImmediately=true starts the AME queue.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "renderImmediately",
+                "type": "boolean",
+                "required": false,
+                "description": "Start rendering in AME right away (default false)",
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "render.save_template",
+            "description": "Save a queue item's current render settings, or an output module's current settings, as a named template (saveAsTemplate) for reuse via render.set_output.",
+            "readOnly": false,
+            "appConfig": true,
+            "params": [
+              {
+                "name": "type",
+                "type": "string",
+                "required": true,
+                "description": "render (RenderQueueItem settings) | output (OutputModule settings)"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "Template name to save under"
+              },
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "outputModuleIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based output module index (type=output only, default 1)",
+                "default": 1
+              },
+              {
+                "name": "confirm",
+                "type": "boolean",
+                "required": true,
+                "description": "Must be true. This operation changes the user's After Effects APPLICATION configuration (it persists beyond the project) — set it only when the user explicitly requested this change, never as a side effect of other work."
+              }
+            ]
+          },
+          {
+            "name": "render.frame",
+            "description": "Render one frame to PNG (raw saveFrameToPng). As the LAST child of a batch.run, one call mutates and hands back visual proof. outPath must be absolute; raise ae_do's timeoutMs for slow renders. CAUTION: in color-managed projects (project.get_settings workingSpace != 'None') this writes raw working-space values that look dark/wrong — use the ae_render_frame TOOL there, which converts to display sRGB.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": true,
+                "description": "Time in seconds to render"
+              },
+              {
+                "name": "outPath",
+                "type": "string",
+                "required": true,
+                "description": "Absolute path for the PNG (parent directories are created)"
+              },
+              {
+                "name": "useDisplayStartTime",
+                "type": "boolean",
+                "required": false,
+                "description": "Interpret `time` relative to comp.displayStartTime (default false)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.list",
+          "args": {
+            "comp": "TITAN_MASTER_20S",
+            "layer": "S03_CAT_Fill",
+            "property": [
+              "Text",
+              "Animators",
+              "Slide Up By Word",
+              "Selectors",
+              "Range Selector 1",
+              "Advanced"
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "path": [
+            "Text",
+            "Animators",
+            "Slide Up By Word",
+            "Selectors",
+            "Range Selector 1",
+            "Advanced"
+          ],
+          "children": [
+            {
+              "index": 1,
+              "name": "Units",
+              "matchName": "ADBE Text Range Units",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 2,
+              "name": "Based On",
+              "matchName": "ADBE Text Range Type2",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 3,
+              "name": "Mode",
+              "matchName": "ADBE Text Selector Mode",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 4,
+              "name": "Amount",
+              "matchName": "ADBE Text Selector Max Amount",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 5,
+              "name": "Shape",
+              "matchName": "ADBE Text Range Shape",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 6,
+              "name": "Smoothness",
+              "matchName": "ADBE Text Selector Smoothness",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 7,
+              "name": "Ease High",
+              "matchName": "ADBE Text Levels Max Ease",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 8,
+              "name": "Ease Low",
+              "matchName": "ADBE Text Levels Min Ease",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 9,
+              "name": "Randomize Order",
+              "matchName": "ADBE Text Randomize Order",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 10,
+              "name": "Random Seed",
+              "matchName": "ADBE Text Random Seed",
+              "isGroup": false,
+              "numChildren": 0
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 377
+      }
+    }
+  ]
+}

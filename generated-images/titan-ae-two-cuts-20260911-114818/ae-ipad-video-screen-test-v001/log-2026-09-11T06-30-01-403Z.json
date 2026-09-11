@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-09-11T06-30-01-403Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "layer.set_enabled",
+          "args": {
+            "comp": "TITAN_DEVICE_iPad_3D_v003",
+            "layer": "SCREEN_iPad10_VIDEO_SOURCE",
+            "enabled": false
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "updated": 1
+        },
+        "context": {
+          "project": {
+            "numItems": 21,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+          },
+          "activeComp": {
+            "id": 163,
+            "name": "TITAN_DEVICE_iPad_3D_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 5
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "DEVICE_iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 385
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project",
+        "args": {}
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+        },
+        "logs": [],
+        "durationMs": 1304
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "run_id": "titan-one-shot-20260909-181515",
+  "request": "Regenerate the two-device starting image with real website screenshots inserted, for the user to try one continuous video shot.",
+  "interpretation": "The last two-device image is the requested current image. Earlier approximately four-second trial duration retained.",
+  "method": "Codex built-in image edit with three actual local references; no code compositing after generation.",
+  "output": {
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-82476a77-3283-458d-9ba7-75d5a016f34e.png",
+    "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-one-shot-20260909-181515\\results\\01-products-with-sites.png",
+    "sha256": "a720801bf6e5f5a5fbae61c41b49e3c03b52201f0556c8e00a07e3f8d8f44ce4",
+    "bytes": 1868447,
+    "action": "moved_this_generated_output_only",
+    "source_residue": false,
+    "format": "PNG",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "image_prompt": "prompts/01-image-edit.txt",
+  "exact_tool_request": "prompts/01-image-request.json",
+  "grok_prompt": "prompts/01-grok-one-shot.txt",
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/results/04-products-plate.png",
+      "sha256": "e5f3523554375072c2f2fd4462ab8943e461b591cf95840b00aa31867b1f77be",
+      "role": "edit target with blank devices"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/sources/cat-village-tablet-character.png",
+      "sha256": "c79fae62e6db327ae789b698b31c9ba3fe7d346bea7432472d14cf90458727b9",
+      "role": "actual CAT VILLAGE tablet screenshot"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/sources/cobalt-phone-tall.png",
+      "sha256": "0680923415c81ad9ef9f4e3f8da96de60380a313b16f644121b28f162f366bc2",
+      "role": "actual COBALT desktop-detail crop for phone"
+    }
+  ],
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "tool_failed": 0,
+    "skipped": 0,
+    "selected_for_video_trial": 1,
+    "user_accepted": 0,
+    "site_adopted": 0
+  },
+  "status": "video_trial_candidate_with_ui_fidelity_differences",
+  "qa": {
+    "checked_at": "2026-09-09T09:19:25.656218+00:00",
+    "readable": true,
+    "format": "PNG",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "a720801bf6e5f5a5fbae61c41b49e3c03b52201f0556c8e00a07e3f8d8f44ce4",
+    "move_hash_match": true,
+    "source_residue": false,
+    "reference_files_preserved": true,
+    "visual_review": "Both site screens present; hardware and light read naturally. Devices are larger than the supplied edit target and the phone base is lower. Some fine UI typography differs from the source. Suitable as a one-shot video trial candidate, not certified as an exact UI reproduction.",
+    "exact_ui_fidelity": false,
+    "video_generated_or_tested": false
+  },
+  "previous_code_composite_preserved": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/derived/04-products-start.png",
+  "site_changed": false
+}

@@ -1,0 +1,168 @@
+{
+  "request": {
+    "name": "ae_do",
+    "arguments": {
+      "operation": "property.get",
+      "args": {
+        "comp": "Hello_World_Stretch_3s",
+        "layer": "Hello World - Source Outlines",
+        "property": [
+          "ADBE Root Vectors Group",
+          5,
+          "ADBE Vectors Group",
+          1,
+          "ADBE Vector Shape"
+        ]
+      }
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"ok\": true,\n    \"name\": \"Path\",\n    \"matchName\": \"ADBE Vector Shape\",\n    \"value\": {\n      \"__kind\": \"Shape\",\n      \"closed\": true,\n      \"vertices\": [\n        [\n          -59.0399322509766,\n          -20.8000030517578\n        ],\n        [\n          -59.8399353027344,\n          -20\n        ],\n        [\n          -67.8399353027344,\n          -20\n        ],\n        [\n          -68.6399383544922,\n          -20.8000030517578\n        ],\n        [\n          -68.6399383544922,\n          -57.9199981689453\n        ],\n        [\n          -67.8399353027344,\n          -58.7200012207031\n        ],\n        [\n          -59.8399353027344,\n          -58.7200012207031\n        ],\n        [\n          -59.0399322509766,\n          -57.9199981689453\n        ]\n      ],\n      \"inTangents\": [\n        [\n          0,\n          0\n        ],\n        [\n          0.53250122070312,\n          0\n        ],\n        [\n          0,\n          0\n        ],\n        [\n          0,\n          0.53500366210938\n        ],\n        [\n          0,\n          0\n        ],\n        [\n          -0.53500366210938,\n          0\n        ],\n        [\n          0,\n          0\n        ],\n        [\n          0,\n          -0.53250122070312\n        ]\n      ],\n      \"outTangents\": [\n        [\n          0,\n          0.53500366210938\n        ],\n        [\n          0,\n          0\n        ],\n        [\n          -0.53500366210938,\n          0\n        ],\n        [\n          0,\n          0\n        ],\n        [\n          0,\n          -0.53250122070312\n        ],\n        [\n          0,\n          0\n        ],\n        [\n          0.53250122070312,\n          0\n        ],\n        [\n          0,\n          0\n        ]\n      ]\n    },\n    \"numKeys\": 0,\n    \"hasExpression\": false\n  },\n  \"context\": {\n    \"project\": {\n      \"numItems\": 5,\n      \"dirty\": true,\n      \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\"\n    },\n    \"activeComp\": {\n      \"id\": 32,\n      \"name\": \"Hello_World_Stretch_3s\",\n      \"width\": 1920,\n      \"height\": 1080,\n      \"fps\": 30,\n      \"duration\": 3,\n      \"numLayers\": 3\n    },\n    \"selectedLayers\": [\n      {\n        \"index\": 3,\n        \"name\": \"Gray Radial Background\"\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 282\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "name": "Path",
+        "matchName": "ADBE Vector Shape",
+        "value": {
+          "__kind": "Shape",
+          "closed": true,
+          "vertices": [
+            [
+              -59.0399322509766,
+              -20.8000030517578
+            ],
+            [
+              -59.8399353027344,
+              -20
+            ],
+            [
+              -67.8399353027344,
+              -20
+            ],
+            [
+              -68.6399383544922,
+              -20.8000030517578
+            ],
+            [
+              -68.6399383544922,
+              -57.9199981689453
+            ],
+            [
+              -67.8399353027344,
+              -58.7200012207031
+            ],
+            [
+              -59.8399353027344,
+              -58.7200012207031
+            ],
+            [
+              -59.0399322509766,
+              -57.9199981689453
+            ]
+          ],
+          "inTangents": [
+            [
+              0,
+              0
+            ],
+            [
+              0.53250122070312,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0.53500366210938
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -0.53500366210938,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              -0.53250122070312
+            ]
+          ],
+          "outTangents": [
+            [
+              0,
+              0.53500366210938
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -0.53500366210938,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              -0.53250122070312
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0.53250122070312,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "numKeys": 0,
+        "hasExpression": false
+      },
+      "context": {
+        "project": {
+          "numItems": 5,
+          "dirty": true,
+          "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep"
+        },
+        "activeComp": {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30,
+          "duration": 3,
+          "numLayers": 3
+        },
+        "selectedLayers": [
+          {
+            "index": 3,
+            "name": "Gray Radial Background"
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 282
+    },
+    "isError": false
+  }
+}

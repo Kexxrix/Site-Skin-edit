@@ -1,0 +1,92 @@
+{
+  "request": {
+    "name": "ae_do",
+    "arguments": {
+      "operation": "batch.run",
+      "args": {
+        "ops": [
+          {
+            "operation": "timeline.set_active_comp",
+            "args": {
+              "comp": "Hello_World_Stretch_3s"
+            }
+          },
+          {
+            "operation": "timeline.set_time",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "time": 0
+            }
+          },
+          {
+            "operation": "timeline.select_layers",
+            "args": {
+              "comp": "Hello_World_Stretch_3s",
+              "indices": [
+                1
+              ],
+              "deselectOthers": true
+            }
+          }
+        ],
+        "stopOnError": true
+      }
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"ok\": true,\n    \"error\": null,\n    \"results\": [\n      {\n        \"ok\": true,\n        \"name\": \"Hello_World_Stretch_3s\"\n      },\n      {\n        \"ok\": true,\n        \"time\": 0\n      },\n      {\n        \"ok\": true,\n        \"selected\": 1\n      }\n    ],\n    \"count\": 3,\n    \"failed\": 0\n  },\n  \"context\": {\n    \"project\": {\n      \"numItems\": 5,\n      \"dirty\": true,\n      \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\"\n    },\n    \"activeComp\": {\n      \"id\": 32,\n      \"name\": \"Hello_World_Stretch_3s\",\n      \"width\": 1920,\n      \"height\": 1080,\n      \"fps\": 30,\n      \"duration\": 3,\n      \"numLayers\": 3\n    },\n    \"selectedLayers\": [\n      {\n        \"index\": 1,\n        \"name\": \"Hello World - Source Outlines\"\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 379\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "error": null,
+        "results": [
+          {
+            "ok": true,
+            "name": "Hello_World_Stretch_3s"
+          },
+          {
+            "ok": true,
+            "time": 0
+          },
+          {
+            "ok": true,
+            "selected": 1
+          }
+        ],
+        "count": 3,
+        "failed": 0
+      },
+      "context": {
+        "project": {
+          "numItems": 5,
+          "dirty": true,
+          "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep"
+        },
+        "activeComp": {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30,
+          "duration": 3,
+          "numLayers": 3
+        },
+        "selectedLayers": [
+          {
+            "index": 1,
+            "name": "Hello World - Source Outlines"
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 379
+    },
+    "isError": false
+  }
+}

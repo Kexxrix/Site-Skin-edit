@@ -1,0 +1,177 @@
+{
+  "timestamp": "2026-09-11T09-33-52-622Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "stopOnError": true,
+            "ops": [
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "Camera_Product",
+                  "position": [
+                    1200,
+                    512,
+                    -3333.3333333333
+                  ],
+                  "anchorPoint": [
+                    1200,
+                    512,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "Camera_Product",
+                  "property": [
+                    "Camera Options",
+                    "Zoom"
+                  ],
+                  "value": 3333.3333333333
+                }
+              },
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "layer": "iPad10_MODEL",
+                  "scale": [
+                    900,
+                    900,
+                    900
+                  ]
+                }
+              },
+              {
+                "operation": "timeline.set_active_comp",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D"
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "time": 4.6
+                }
+              },
+              {
+                "operation": "timeline.select_layers",
+                "args": {
+                  "comp": "DEVICE_iPad10_3D",
+                  "indices": [
+                    3
+                  ],
+                  "deselectOthers": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "Camera_Product",
+                  "warnings": [
+                    "anchorPoint: undefined is not an object (line 24)"
+                  ]
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "Camera_Product",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "iPad10_MODEL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "DEVICE_iPad10_3D"
+            },
+            {
+              "ok": true,
+              "time": 4.6
+            },
+            {
+              "ok": true,
+              "selected": 1
+            }
+          ],
+          "count": 6,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 376
+      }
+    },
+    {
+      "call": {
+        "name": "ae_project_export_json",
+        "args": {
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/pre-motion-native-export.json"
+        }
+      },
+      "response": {
+        "ok": true,
+        "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/pre-motion-native-export.json",
+        "bytes": 199723,
+        "itemCount": 12,
+        "durationMs": 653
+      }
+    }
+  ]
+}

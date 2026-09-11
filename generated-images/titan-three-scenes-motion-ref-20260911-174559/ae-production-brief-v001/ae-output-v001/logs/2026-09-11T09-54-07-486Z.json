@@ -1,0 +1,543 @@
+{
+  "timestamp": "2026-09-11T09-54-07-486Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "property": [
+                    "Contents",
+                    "Continuous_Path",
+                    "Contents",
+                    "Path 1",
+                    "Path"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}\nfunction mix(a,b,q){return [a[0]+(b[0]-a[0])*q,a[1]+(b[1]-a[1])*q];}\nfunction bez(t){var u=1-t;return [u*u*u*460+3*u*u*t*635+3*u*t*t*1060+t*t*t*1440,u*u*u*750+3*u*u*t*338+3*u*t*t*256+t*t*t*431];}\nvar pts=[];var i,t,q;\nif(f<44){var drawn=s(p(0,10)),m=s(p(31,44));for(i=0;i<=48;i++){t=i/48;pts.push(mix(bez(t*drawn),[708+1102*t,638],m));}}\nelse if(f<74){q=s(p(47,65));for(i=0;i<=48;i++){t=i/48;pts.push([708+1102*t*(1-q),638]);}}\nelse if(f<101){q=s(p(74,101));pts=[[708,638],[708+1102*q,638]];}\nelse if(f<108){q=s(p(101,108));pts=[[708,638],[1810,638],[1810,638-558*q]];}\nelse if(f<114){q=s(p(108,114));pts=[[708,638],[1810,638],[1810,80+80*q]];}\nelse if(f<124){q=s(p(114,124));pts=[[708,638],[1810,638],[1810,160],[1810-1432*q,160]];}\nelse if(f<131){q=s(p(124,131));pts=[[708,638],[1810,638],[1810,160],[378,160],[378,160+590*q]];}\nelse if(f<138){q=s(p(131,138));pts=[mix([708,638],[2500,160],q),mix([1810,638],[2500,160],q),mix([1810,160],[2500,160],q),[378,160],[378,750],[378+1662*q,750]];}\nelse{q=s(p(164,170));pts=[[2500,160],[378,160],[378,750],[2040,750],[2040+80*q,750+80*q*q]];}\ncreatePath(pts,[],[],false);"
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "name": "S01_Line_Continuation"
+                }
+              },
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Line_Continuation",
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "anchorPoint": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Line_Continuation",
+                  "name": "Continuation"
+                }
+              },
+              {
+                "operation": "shape.add_path",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Line_Continuation",
+                  "groupIndex": 1,
+                  "vertices": [
+                    [
+                      1440,
+                      431
+                    ],
+                    [
+                      2500,
+                      431
+                    ]
+                  ],
+                  "closed": false
+                }
+              },
+              {
+                "operation": "shape.add_stroke",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Line_Continuation",
+                  "groupIndex": 1,
+                  "color": [
+                    0.137,
+                    0.153,
+                    0.173,
+                    1
+                  ],
+                  "width": 3.2
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Line_Continuation",
+                  "property": [
+                    "Contents",
+                    "Continuation",
+                    "Contents",
+                    "Path 1",
+                    "Path"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}var e=thisComp.layer(\"SHARED_DOT_ENDPOINT\").transform.position;var x=e[0]+(2500-e[0])*s(p(1,10))*(1-s(p(31,44)));createPath([[e[0],e[1]],[x,e[1]]],[],[],false);"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Line_Continuation",
+                  "props": {
+                    "outPoint": 1.4666666666666666
+                  }
+                }
+              },
+              {
+                "operation": "layer.create_shape",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "name": "S02_Subtle_Frame"
+                }
+              },
+              {
+                "operation": "transform.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "position": [
+                    1230,
+                    485
+                  ]
+                }
+              },
+              {
+                "operation": "shape.add_group",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "name": "Frame"
+                }
+              },
+              {
+                "operation": "shape.add_rect",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "groupIndex": 1,
+                  "size": [
+                    1625,
+                    872
+                  ],
+                  "roundness": 25
+                }
+              },
+              {
+                "operation": "shape.add_stroke",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "groupIndex": 1,
+                  "color": [
+                    0.961,
+                    0.953,
+                    0.933,
+                    1
+                  ],
+                  "width": 2
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "property": [
+                    "Transform",
+                    "Opacity"
+                  ],
+                  "expression": "var f=time*30;function p(a,b){return Math.max(0,Math.min(1,(f-a)/(b-a)));}function s(x){return x*x*(3-2*x);}20*s(p(39,47))*(1-s(p(108,118)));"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "props": {
+                    "inPoint": 1.3,
+                    "outPoint": 3.933333333333333
+                  }
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "toIndex": 21
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 0
+                }
+              },
+              {
+                "operation": "render.set_output",
+                "args": {
+                  "queueIndex": 1,
+                  "renderTemplate": "Best Settings",
+                  "outputTemplate": "H.264 - Match Render Settings - 40 Mbps",
+                  "outputPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/review-pass1.mp4",
+                  "timeSpanStart": 0,
+                  "timeSpanDuration": 5.7,
+                  "skipFrames": 0,
+                  "logType": "errorsAndSettings"
+                }
+              },
+              {
+                "operation": "render.set_om_settings",
+                "args": {
+                  "queueIndex": 1,
+                  "settings": {
+                    "Output Audio": "Off"
+                  }
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 60000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "Path",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S01_Line_Continuation"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S01_Line_Continuation",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Continuation"
+            },
+            {
+              "ok": true,
+              "name": "Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Stroke 1"
+            },
+            {
+              "ok": true,
+              "name": "Path",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S01_Line_Continuation",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "S02_Subtle_Frame"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S02_Subtle_Frame",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "groupIndex": 1,
+              "name": "Frame"
+            },
+            {
+              "ok": true,
+              "name": "Rectangle Path 1"
+            },
+            {
+              "ok": true,
+              "name": "Stroke 1"
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S02_Subtle_Frame",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "fromIndex": 1,
+              "newIndex": 21,
+              "name": "S02_Subtle_Frame"
+            },
+            {
+              "ok": true,
+              "time": 0
+            },
+            {
+              "ok": true,
+              "queueIndex": 1,
+              "comp": "TITAN_MASTER_20S",
+              "timeSpanStart": 0,
+              "timeSpanDuration": 5.7,
+              "outputPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/review-pass1.mp4",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "queueIndex": 1,
+              "outputModuleIndex": 1,
+              "settings": {
+                "Crop": "false",
+                "Include Project Link": "true",
+                "Include Source XMP Metadata": "false",
+                "Output Audio": "Off",
+                "Output File Info": {
+                  "Full Flat Path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa\\review-pass1.mp4",
+                  "Base Path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\qa",
+                  "Subfolder Path": "",
+                  "File Name": "review-pass1.mp4",
+                  "File Template": "review-pass1.[fileExtension]"
+                },
+                "Post-Render Action": "None",
+                "Resize": "false",
+                "Video Output": "true"
+              }
+            }
+          ],
+          "count": 19,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": [
+            {
+              "index": 21,
+              "name": "S02_Subtle_Frame"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 643
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "logs": [],
+        "durationMs": 1034
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "project.open",
+          "args": {
+            "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep",
+            "save": false
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "numItems": 13,
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 1469
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.status"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendering": false,
+          "numItems": 1,
+          "canQueueInAME": true,
+          "items": [
+            {
+              "index": 1,
+              "comp": "TITAN_MASTER_20S",
+              "status": "QUEUED",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 5.7,
+              "elapsedSeconds": 0,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/review-pass1.mp4"
+              ]
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 348
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.start",
+          "timeoutMs": 600000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendered": 1
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 37410
+      }
+    }
+  ]
+}

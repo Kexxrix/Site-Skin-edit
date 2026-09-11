@@ -1,0 +1,124 @@
+{
+  "request": {
+    "name": "ae_do",
+    "arguments": {
+      "operation": "property.list",
+      "args": {
+        "comp": "Hello_World_Stretch_3s",
+        "layer": "Gray Radial Background",
+        "property": [
+          "ADBE Effect Parade",
+          "ADBE Ramp"
+        ]
+      }
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"ok\": true,\n    \"path\": [\n      \"ADBE Effect Parade\",\n      \"ADBE Ramp\"\n    ],\n    \"children\": [\n      {\n        \"index\": 1,\n        \"name\": \"Start of Ramp\",\n        \"matchName\": \"ADBE Ramp-0001\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 2,\n        \"name\": \"Start Color\",\n        \"matchName\": \"ADBE Ramp-0002\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 3,\n        \"name\": \"End of Ramp\",\n        \"matchName\": \"ADBE Ramp-0003\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 4,\n        \"name\": \"End Color\",\n        \"matchName\": \"ADBE Ramp-0004\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 5,\n        \"name\": \"Ramp Shape\",\n        \"matchName\": \"ADBE Ramp-0005\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 6,\n        \"name\": \"Ramp Scatter\",\n        \"matchName\": \"ADBE Ramp-0006\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 7,\n        \"name\": \"Blend With Original\",\n        \"matchName\": \"ADBE Ramp-0007\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 8,\n        \"name\": \"\",\n        \"matchName\": \"ADBE Ramp-0008\",\n        \"isGroup\": false,\n        \"numChildren\": 0\n      },\n      {\n        \"index\": 9,\n        \"name\": \"Compositing Options\",\n        \"matchName\": \"ADBE Effect Built In Params\",\n        \"isGroup\": true,\n        \"numChildren\": 3\n      }\n    ]\n  },\n  \"context\": {\n    \"project\": {\n      \"numItems\": 5,\n      \"dirty\": true,\n      \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\"\n    },\n    \"activeComp\": {\n      \"id\": 32,\n      \"name\": \"Hello_World_Stretch_3s\",\n      \"width\": 1920,\n      \"height\": 1080,\n      \"fps\": 30,\n      \"duration\": 3,\n      \"numLayers\": 3\n    },\n    \"selectedLayers\": [\n      {\n        \"index\": 3,\n        \"name\": \"Gray Radial Background\"\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 370\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "path": [
+          "ADBE Effect Parade",
+          "ADBE Ramp"
+        ],
+        "children": [
+          {
+            "index": 1,
+            "name": "Start of Ramp",
+            "matchName": "ADBE Ramp-0001",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 2,
+            "name": "Start Color",
+            "matchName": "ADBE Ramp-0002",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 3,
+            "name": "End of Ramp",
+            "matchName": "ADBE Ramp-0003",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 4,
+            "name": "End Color",
+            "matchName": "ADBE Ramp-0004",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 5,
+            "name": "Ramp Shape",
+            "matchName": "ADBE Ramp-0005",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 6,
+            "name": "Ramp Scatter",
+            "matchName": "ADBE Ramp-0006",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 7,
+            "name": "Blend With Original",
+            "matchName": "ADBE Ramp-0007",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 8,
+            "name": "",
+            "matchName": "ADBE Ramp-0008",
+            "isGroup": false,
+            "numChildren": 0
+          },
+          {
+            "index": 9,
+            "name": "Compositing Options",
+            "matchName": "ADBE Effect Built In Params",
+            "isGroup": true,
+            "numChildren": 3
+          }
+        ]
+      },
+      "context": {
+        "project": {
+          "numItems": 5,
+          "dirty": true,
+          "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep"
+        },
+        "activeComp": {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30,
+          "duration": 3,
+          "numLayers": 3
+        },
+        "selectedLayers": [
+          {
+            "index": 3,
+            "name": "Gray Radial Background"
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 370
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "started": "2026-09-11T11:32:07.348Z",
+  "ended": "2026-09-11T11:32:07.881Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "timeline.select_layers",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "indices": [
+                    3
+                  ]
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "DEVICE_iPhone17_3D",
+                  "time": 6.666666666666667
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "selected": 1
+            },
+            {
+              "ok": true,
+              "time": 6.66666666666667
+            }
+          ],
+          "count": 2,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 20,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 299
+      },
+      "elapsedMs": 306
+    }
+  ]
+}

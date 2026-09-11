@@ -1,0 +1,993 @@
+{
+  "timestamp": "2026-09-11T07-37-50-763Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_Staggered_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Opacity"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_Staggered_Back",
+                    "Properties",
+                    "Opacity"
+                  ],
+                  "expression": "var end=thisComp.marker.key('M_SETTLED').time;var d=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;time<end-d-0.00001?0:100;"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e1_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Opacity"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e1_Back",
+                    "Properties",
+                    "Opacity"
+                  ],
+                  "expression": "var end=thisComp.marker.key('E1_SETTLED').time;var d=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;time<end-d-0.00001?0:100;"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e2_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Opacity"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_e2_Back",
+                    "Properties",
+                    "Opacity"
+                  ],
+                  "expression": "var end=thisComp.marker.key('E2_SETTLED').time;var d=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;time<end-d-0.00001?0:100;"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_t_Back",
+                    "Properties"
+                  ],
+                  "matchName": "ADBE Text Opacity"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_t_Back",
+                    "Properties",
+                    "Opacity"
+                  ],
+                  "expression": "var end=thisComp.marker.key('T_SETTLED').time;var d=thisComp.marker.key('M_SETTLED').time-thisComp.marker.key('M_START').time;time<end-d-0.00001?0:100;"
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_ARC",
+                  "props": {
+                    "inPoint": 0.8,
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_DOT",
+                  "props": {
+                    "inPoint": 1.7,
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "props": {
+                    "inPoint": 1.3,
+                    "outPoint": 4.1
+                  }
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Effects",
+                    "Text Push px",
+                    "Slider"
+                  ],
+                  "value": 190
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "function at(n){return thisComp.marker.key(n).time;}\nfunction unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));}\nvar amount=effect('Text Push px')('Slider');var x=0;\nif(time>=at('CONTACT')&&time<at('PUSH_MAX')){var u=unit(at('CONTACT'),at('PUSH_MAX'));x=-amount*(1-Math.pow(1-u,5));}\nelse if(time>=at('PUSH_MAX')){var u=unit(at('PUSH_MAX'),at('TYPE_HOME'));var c=1.70158;var e=1+(c+1)*Math.pow(u-1,3)+c*Math.pow(u-1,2);x=-amount+amount*e;}\n[x,0];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var master=comp('TITAN_TwoScenes_8s_v004');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;}\nfunction unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));}\nvar x=65;\nif(time>=at('IPAD_ENTER')&&time<at('CONTACT')){var u=unit(at('IPAD_ENTER'),at('CONTACT'));x=65+(-8.3-65)*u*u;}\nelse if(time>=at('CONTACT')&&time<at('PUSH_MAX')){var u=unit(at('CONTACT'),at('PUSH_MAX'));x=-8.3-15*(1-Math.pow(1-u,5));}\nelse if(time>=at('PUSH_MAX')){var u=unit(at('PUSH_MAX'),at('IPAD_SETTLED'));x=-23.3+23.3*(1-Math.pow(1-u,3));}\n[x,0,0];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "Transform",
+                    "Y Rotation"
+                  ],
+                  "expression": "var master=comp('TITAN_TwoScenes_8s_v004');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;}\nfunction unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));}\nvar u=unit(at('PUSH_MAX'),at('IPAD_SETTLED'));-30*(1-Math.pow(1-u,3));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 356,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "Transform",
+                    "Z Rotation"
+                  ],
+                  "expression": "var master=comp('TITAN_TwoScenes_8s_v004');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;}\nfunction unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));}\nvar u=unit(at('PUSH_MAX'),at('IPAD_SETTLED'));-3*(1-Math.pow(1-u,3));"
+                }
+              },
+              {
+                "operation": "comp.info",
+                "args": {
+                  "comp": 330
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "Opacity",
+              "matchName": "ADBE Text Opacity",
+              "propertyIndex": 9
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "matchName": "ADBE Text Opacity",
+              "propertyIndex": 9
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "matchName": "ADBE Text Opacity",
+              "propertyIndex": 9
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "matchName": "ADBE Text Opacity",
+              "propertyIndex": 9
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_ARC",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DOT",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_TXT_TITAN",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_TYPE_RECOIL_CTRL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Y Rotation",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Z Rotation",
+              "expressionEnabled": true
+            },
+            {
+              "id": 330,
+              "name": "TITAN_TwoScenes_8s_v004",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 8,
+              "layerCount": 15,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ],
+              "ok": true,
+              "found": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 8,
+              "pixelAspect": 1,
+              "shutterAngle": 180,
+              "shutterPhase": 0,
+              "motionBlur": false,
+              "layers": [
+                {
+                  "index": 1,
+                  "id": 404,
+                  "name": "C02_TYPE_RECOIL_CTRL",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 8,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 100,
+                  "height": 100,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 403,
+                  "sourceName": "Null 3"
+                },
+                {
+                  "index": 2,
+                  "id": 345,
+                  "name": "REF_CUT_01",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 96,
+                  "sourceName": "REF_CUT_01"
+                },
+                {
+                  "index": 3,
+                  "id": 344,
+                  "name": "REF_CUT_02",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 97,
+                  "sourceName": "REF_CUT_02"
+                },
+                {
+                  "index": 4,
+                  "id": 339,
+                  "name": "C02_DEVICE_IPAD",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 5.16666666666667,
+                  "outPoint": 8,
+                  "startTime": 4.1,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 356,
+                  "sourceName": "TITAN_DEVICE_iPad_VIDEO_v004"
+                },
+                {
+                  "index": 5,
+                  "id": 343,
+                  "name": "C02_UNDERLINE",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 8
+                },
+                {
+                  "index": 6,
+                  "id": 342,
+                  "name": "C02_TXT_IN_HOUSE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 1,
+                  "text": "in-house",
+                  "fontSize": 162.171752929688,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 7,
+                  "id": 341,
+                  "name": "C02_TXT_BUILT",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 1,
+                  "text": "Built",
+                  "fontSize": 190.702789306641,
+                  "font": "Pretendard-Bold",
+                  "fillColor": [
+                    0.98038995265961,
+                    0.52941000461578,
+                    0.12157000601292
+                  ]
+                },
+                {
+                  "index": 8,
+                  "id": 340,
+                  "name": "C02_TXT_CORE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 4.1,
+                  "outPoint": 8,
+                  "startTime": 3,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 1,
+                  "text": "Core systems",
+                  "fontSize": 121.411140441895,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 9,
+                  "id": 338,
+                  "name": "C02_BG_CHARCOAL_WIPE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 3.7,
+                  "outPoint": 8,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 106,
+                  "sourceName": "C02_BG_CHARCOAL_WIPE"
+                },
+                {
+                  "index": 10,
+                  "id": 337,
+                  "name": "C01_DOT",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.7,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 11,
+                  "id": 336,
+                  "name": "C01_ARC",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0.8,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 12,
+                  "id": 335,
+                  "name": "C01_TXT_TITAN",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.3,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "TITAN",
+                  "fontSize": 190.739944458008,
+                  "font": "Pretendard-SemiBold",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 13,
+                  "id": 334,
+                  "name": "C01_TXT_MEET",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Meet",
+                  "fontSize": 137.912460327148,
+                  "font": "Pretendard-Regular",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 14,
+                  "id": 333,
+                  "name": "C01_DEVICE_IPHONE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 373,
+                  "sourceName": "TITAN_DEVICE_iPhone_v004"
+                },
+                {
+                  "index": 15,
+                  "id": 332,
+                  "name": "C01_BG_IVORY",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 4.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 100,
+                  "sourceName": "C01_BG_IVORY"
+                }
+              ]
+            }
+          ],
+          "count": 17,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 360
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project",
+        "args": {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\TITAN-TwoScene-v004-Working.aep"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+        },
+        "logs": [],
+        "durationMs": 1770
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 127,
+          "time": 0.6,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\baseline-c01.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/baseline-c01.png",
+          "time": 0.6,
+          "compName": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 363
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 127,
+          "time": 2.5,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\baseline-c02.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/baseline-c02.png",
+          "time": 2.5,
+          "compName": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 373
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 330,
+          "time": 0.4,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\first-meet-f012.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/first-meet-f012.png",
+          "time": 0.4,
+          "compName": "TITAN_TwoScenes_8s_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 469
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 330,
+          "time": 3.1,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\first-c01-settle.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/first-c01-settle.png",
+          "time": 3.1,
+          "compName": "TITAN_TwoScenes_8s_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 371
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 356,
+          "time": 1.5,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\first-ipad-front.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/first-ipad-front.png",
+          "time": 1.5,
+          "compName": "TITAN_DEVICE_iPad_VIDEO_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 356
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 330,
+          "time": 5.566666666666666,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\first-contact.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/first-contact.png",
+          "time": 5.56666666666667,
+          "compName": "TITAN_TwoScenes_8s_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 370
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 330,
+          "time": 5.8,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\first-push.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/first-push.png",
+          "time": 5.8,
+          "compName": "TITAN_TwoScenes_8s_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 381
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 330,
+          "time": 7.966666666666667,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\first-final.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/first-final.png",
+          "time": 7.96666666666667,
+          "compName": "TITAN_TwoScenes_8s_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 280
+      }
+    }
+  ]
+}

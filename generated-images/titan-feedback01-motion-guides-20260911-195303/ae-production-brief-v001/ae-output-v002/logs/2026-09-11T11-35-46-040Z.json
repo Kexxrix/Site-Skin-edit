@@ -1,0 +1,200 @@
+{
+  "started": "2026-09-11T11:35:45.417Z",
+  "ended": "2026-09-11T11:35:46.041Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Operations",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_refined",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "path": [
+                "ADBE Text Properties",
+                "ADBE Text Animators",
+                1,
+                "ADBE Text Selectors",
+                1
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Start",
+                  "matchName": "ADBE Text Percent Start",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "End",
+                  "matchName": "ADBE Text Percent End",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Offset",
+                  "matchName": "ADBE Text Percent Offset",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Start",
+                  "matchName": "ADBE Text Index Start",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "End",
+                  "matchName": "ADBE Text Index End",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Offset",
+                  "matchName": "ADBE Text Index Offset",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Advanced",
+                  "matchName": "ADBE Text Range Advanced",
+                  "isGroup": true,
+                  "numChildren": 10
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "path": [
+                "ADBE Text Properties",
+                "ADBE Text Animators",
+                1,
+                "ADBE Text Selectors",
+                1
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Start",
+                  "matchName": "ADBE Text Percent Start",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "End",
+                  "matchName": "ADBE Text Percent End",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Offset",
+                  "matchName": "ADBE Text Percent Offset",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Start",
+                  "matchName": "ADBE Text Index Start",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "End",
+                  "matchName": "ADBE Text Index End",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Offset",
+                  "matchName": "ADBE Text Index Offset",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Advanced",
+                  "matchName": "ADBE Text Range Advanced",
+                  "isGroup": true,
+                  "numChildren": 10
+                }
+              ]
+            }
+          ],
+          "count": 2,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 22,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 27
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 382
+      },
+      "elapsedMs": 389
+    }
+  ]
+}

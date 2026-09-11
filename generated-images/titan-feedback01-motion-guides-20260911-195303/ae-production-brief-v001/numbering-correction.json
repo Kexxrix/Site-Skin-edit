@@ -1,0 +1,43 @@
+{
+  "status": "final_ae_marker_numbering_corrected_paused",
+  "corrected_at": "2026-09-11T11:20:42.133118+00:00",
+  "latest_user_instruction": "AE 작업 마커 기준 06 Sportsbook부터이며 이번 가이드 이미지와 모션 지시는 06 07 08에 관한 것.",
+  "reference": {
+    "source_path": "C:/Users/User/AppData/Local/Temp/codex-clipboard-b1129b6a-cde9-47fc-a9dc-da11c42cb67c.png",
+    "preserved_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/qa/ae-marker-numbering-reference.png",
+    "sha256": "bc05fae1315c1fe460733c47e70f8f5303e0373c6a76a1e23560b496410c4229"
+  },
+  "numbering": {
+    "authority": "Latest user message and attached AE marker screenshot: 06 Sportsbook, 07 Operations/refined, 08 Sudden odds shift.",
+    "new_guide_markers": [
+      "06",
+      "07",
+      "08"
+    ],
+    "legacy_guide_aliases": {
+      "04": "06 Sportsbook",
+      "05": "07 Operations/refined",
+      "06": "08 Sudden odds shift/Bets auto-blocked"
+    },
+    "internal_key_policy": "s03/s04/s05/s06 and scene06 keys are retained legacy guide aliases. Official marker identity is scene_spans.ae_marker_number. Do not use internal keys to renumber AE markers.",
+    "existing_result_marker": {
+      "number": "09",
+      "copy": "Bets auto-blocked",
+      "frame": 279,
+      "preserve_existing_marker": true,
+      "scope_note": "Result event included in the third guide motion; not a renumbering of the three new guides to 07-09."
+    },
+    "previous_1_to_5_scene_count_not_reinferred": true,
+    "existing_layers_or_markers_renamed": false
+  },
+  "withdrawn_numbering": [
+    "guide-group numbering 4-6 as official scene numbers",
+    "incorrect inferred 7-9 numbering"
+  ],
+  "production_resume_authorized": false,
+  "content_timing_unchanged": true,
+  "review_frames": 315,
+  "review_seconds": 10.5,
+  "master_seconds": 20,
+  "native_project_modified_by_correction": false
+}

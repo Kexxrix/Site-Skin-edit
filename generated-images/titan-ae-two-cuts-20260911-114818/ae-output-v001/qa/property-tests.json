@@ -1,0 +1,1210 @@
+[
+  {
+    "name": "Meet start position",
+    "layer": "C01_TXT_MEET",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 0,
+    "expected": [
+      764.5947529636325,
+      584,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      764.5947265625,
+      584,
+      0
+    ],
+    "error": 0.000026401132458886423,
+    "pass": true
+  },
+  {
+    "name": "Meet end position",
+    "layer": "C01_TXT_MEET",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 5,
+    "expected": [
+      764.5947529636325,
+      560,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      764.5947265625,
+      560,
+      0
+    ],
+    "error": 0.000026401132458886423,
+    "pass": true
+  },
+  {
+    "name": "Meet mid position",
+    "layer": "C01_TXT_MEET",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 2.5,
+    "expected": [
+      764.5947529636325,
+      563,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      764.5947265625,
+      563.000019452384,
+      0
+    ],
+    "error": 0.000026401132458886423,
+    "pass": true
+  },
+  {
+    "name": "Meet start opacity",
+    "layer": "C01_TXT_MEET",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 0,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Meet mid opacity",
+    "layer": "C01_TXT_MEET",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 2.5,
+    "expected": 50,
+    "tolerance": 0.02,
+    "actual": 50,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Meet end opacity",
+    "layer": "C01_TXT_MEET",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 5,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Meet fixed scale",
+    "layer": "C01_TXT_MEET",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Scale"
+    ],
+    "frame": 5,
+    "expected": [
+      100,
+      100,
+      100
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      100,
+      100,
+      100
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "TITAN start position",
+    "layer": "C01_TXT_TITAN",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 3,
+    "expected": [
+      1111.5698308292774,
+      596,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      1111.56982421875,
+      596,
+      0
+    ],
+    "error": 0.000006610527407246991,
+    "pass": true
+  },
+  {
+    "name": "TITAN end position",
+    "layer": "C01_TXT_TITAN",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 10,
+    "expected": [
+      1111.5698308292774,
+      560,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      1111.56982421875,
+      560,
+      0
+    ],
+    "error": 0.000006610527407246991,
+    "pass": true
+  },
+  {
+    "name": "TITAN mid position",
+    "layer": "C01_TXT_TITAN",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 6.5,
+    "expected": [
+      1111.5698308292774,
+      564.5,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      1111.56982421875,
+      564.500029178576,
+      0
+    ],
+    "error": 0.000029178576028243697,
+    "pass": true
+  },
+  {
+    "name": "TITAN start opacity",
+    "layer": "C01_TXT_TITAN",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 3,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "TITAN mid opacity",
+    "layer": "C01_TXT_TITAN",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 6.5,
+    "expected": 50,
+    "tolerance": 0.02,
+    "actual": 50,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "TITAN end opacity",
+    "layer": "C01_TXT_TITAN",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 10,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "TITAN fixed scale",
+    "layer": "C01_TXT_TITAN",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Scale"
+    ],
+    "frame": 10,
+    "expected": [
+      100,
+      100,
+      100
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      100,
+      100,
+      100
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems start position",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 34,
+    "expected": [
+      670,
+      462,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      670,
+      462,
+      0
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems end position",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 40,
+    "expected": [
+      670,
+      440,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      670,
+      440,
+      0
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems mid position",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 37,
+    "expected": [
+      670,
+      442.75,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      670,
+      442.750017831352,
+      0
+    ],
+    "error": 0.0000178313520109441,
+    "pass": true
+  },
+  {
+    "name": "Core systems start opacity",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 34,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems mid opacity",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 37,
+    "expected": 50,
+    "tolerance": 0.02,
+    "actual": 50,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems end opacity",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 40,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems fixed scale",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Scale"
+    ],
+    "frame": 40,
+    "expected": [
+      100,
+      100,
+      100
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      100,
+      100,
+      100
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built start position",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 43,
+    "expected": [
+      670,
+      660,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      670,
+      660,
+      0
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built end position",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 49,
+    "expected": [
+      670,
+      630,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      670,
+      630,
+      0
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built mid position",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 46,
+    "expected": [
+      670,
+      633.75,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      670,
+      633.75002431548,
+      0
+    ],
+    "error": 0.000024315480004588608,
+    "pass": true
+  },
+  {
+    "name": "Built start opacity",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 43,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built mid opacity",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 46,
+    "expected": 50,
+    "tolerance": 0.02,
+    "actual": 50,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built end opacity",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 49,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built fixed scale",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Scale"
+    ],
+    "frame": 49,
+    "expected": [
+      100,
+      100,
+      100
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      100,
+      100,
+      100
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house start position",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 55,
+    "expected": [
+      1151.272935222834,
+      630,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      1151.27294921875,
+      630,
+      0
+    ],
+    "error": 0.000013995916106068762,
+    "pass": true
+  },
+  {
+    "name": "in-house end position",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 61,
+    "expected": [
+      1103.272935222834,
+      630,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      1103.27294921875,
+      630,
+      0
+    ],
+    "error": 0.000013995916106068762,
+    "pass": true
+  },
+  {
+    "name": "in-house mid position",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 58,
+    "expected": [
+      1109.272935222834,
+      630,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      1109.27298812352,
+      630,
+      0
+    ],
+    "error": 0.00005290068611429888,
+    "pass": true
+  },
+  {
+    "name": "in-house start opacity",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 55,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house mid opacity",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 58,
+    "expected": 50,
+    "tolerance": 0.02,
+    "actual": 50,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house end opacity",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 61,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house fixed scale",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Scale"
+    ],
+    "frame": 61,
+    "expected": [
+      100,
+      100,
+      100
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      100,
+      100,
+      100
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "wipe 0",
+    "layer": "C02_BG_CHARCOAL_WIPE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 24,
+    "expected": [
+      -1200,
+      512,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      -1200,
+      512,
+      0
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "wipe 0.25",
+    "layer": "C02_BG_CHARCOAL_WIPE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 26.25,
+    "expected": [
+      -825,
+      512,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      -825.00037616165,
+      512,
+      0
+    ],
+    "error": 0.0003761616500241871,
+    "pass": true
+  },
+  {
+    "name": "wipe 0.5",
+    "layer": "C02_BG_CHARCOAL_WIPE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 28.5,
+    "expected": [
+      0,
+      512,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      0.00497833472454,
+      512,
+      0
+    ],
+    "error": 0.00497833472454,
+    "pass": true
+  },
+  {
+    "name": "wipe 0.75",
+    "layer": "C02_BG_CHARCOAL_WIPE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 30.75,
+    "expected": [
+      825,
+      512,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      824.995973772695,
+      512,
+      0
+    ],
+    "error": 0.004026227304962049,
+    "pass": true
+  },
+  {
+    "name": "wipe 1",
+    "layer": "C02_BG_CHARCOAL_WIPE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 33,
+    "expected": [
+      1200,
+      512,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      1200,
+      512,
+      0
+    ],
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C01_ARC trim 0",
+    "layer": "C01_ARC",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 0,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C01_ARC trim 0.25",
+    "layer": "C01_ARC",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 2.5,
+    "expected": 57.8125,
+    "tolerance": 0.02,
+    "actual": 57.8125,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C01_ARC trim 0.5",
+    "layer": "C01_ARC",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 5,
+    "expected": 87.5,
+    "tolerance": 0.02,
+    "actual": 87.5,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C01_ARC trim 0.75",
+    "layer": "C01_ARC",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 7.5,
+    "expected": 98.4375,
+    "tolerance": 0.02,
+    "actual": 98.4375,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C01_ARC trim 1",
+    "layer": "C01_ARC",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 10,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C02_UNDERLINE trim 0",
+    "layer": "C02_UNDERLINE",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 46,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C02_UNDERLINE trim 0.25",
+    "layer": "C02_UNDERLINE",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 48.25,
+    "expected": 57.8125,
+    "tolerance": 0.02,
+    "actual": 57.8125,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C02_UNDERLINE trim 0.5",
+    "layer": "C02_UNDERLINE",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 50.5,
+    "expected": 87.5,
+    "tolerance": 0.02,
+    "actual": 87.5,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C02_UNDERLINE trim 0.75",
+    "layer": "C02_UNDERLINE",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 52.75,
+    "expected": 98.4375,
+    "tolerance": 0.02,
+    "actual": 98.4375,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "C02_UNDERLINE trim 1",
+    "layer": "C02_UNDERLINE",
+    "property": [
+      "ADBE Root Vectors Group",
+      "ADBE Vector Group",
+      "ADBE Vectors Group",
+      "ADBE Vector Filter - Trim",
+      "ADBE Vector Trim End"
+    ],
+    "frame": 55,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "dot arc 0",
+    "layer": "C01_DOT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 2,
+    "expected": [
+      474.8089405574727,
+      197.20454902529508,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      474.808940557473,
+      197.204549025295,
+      0
+    ],
+    "error": 3.410605131648481e-13,
+    "pass": true
+  },
+  {
+    "name": "dot arc 0.25",
+    "layer": "C01_DOT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 5,
+    "expected": [
+      419.38277389764596,
+      243.35316934032852,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      419.382773897646,
+      243.353169340329,
+      0
+    ],
+    "error": 4.831690603168681e-13,
+    "pass": true
+  },
+  {
+    "name": "dot arc 0.5",
+    "layer": "C01_DOT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 8,
+    "expected": [
+      394.8262798468358,
+      271.1397600837322,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      394.826279846836,
+      271.139760083732,
+      0
+    ],
+    "error": 1.7053025658242404e-13,
+    "pass": true
+  },
+  {
+    "name": "dot arc 0.75",
+    "layer": "C01_DOT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 11,
+    "expected": [
+      386.5239201128408,
+      281.99634122747466,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      386.523920112841,
+      281.996341227475,
+      0
+    ],
+    "error": 3.410605131648481e-13,
+    "pass": true
+  },
+  {
+    "name": "dot arc 1",
+    "layer": "C01_DOT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Position"
+    ],
+    "frame": 14,
+    "expected": [
+      385.37191601376884,
+      283.5728796792946,
+      0
+    ],
+    "tolerance": 0.02,
+    "actual": [
+      385.371916013769,
+      283.572879679295,
+      0
+    ],
+    "error": 3.979039320256561e-13,
+    "pass": true
+  },
+  {
+    "name": "Core systems invisible F33",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 33,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems held F61",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 61,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems held F75",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 75,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Core systems held F89",
+    "layer": "C02_TXT_CORE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 89,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built invisible F33",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 33,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built held F61",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 61,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built held F75",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 75,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "Built held F89",
+    "layer": "C02_TXT_BUILT",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 89,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house invisible F33",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 33,
+    "expected": 0,
+    "tolerance": 0.02,
+    "actual": 0,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house held F61",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 61,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house held F75",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 75,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  },
+  {
+    "name": "in-house held F89",
+    "layer": "C02_TXT_IN_HOUSE",
+    "property": [
+      "ADBE Transform Group",
+      "ADBE Opacity"
+    ],
+    "frame": 89,
+    "expected": 100,
+    "tolerance": 0.02,
+    "actual": 100,
+    "error": 0,
+    "pass": true
+  }
+]

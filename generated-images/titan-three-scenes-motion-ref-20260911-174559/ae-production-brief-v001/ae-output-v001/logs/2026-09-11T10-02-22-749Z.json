@@ -1,0 +1,219 @@
+{
+  "timestamp": "2026-09-11T10-02-22-749Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_version_info"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "app": {
+            "version": "27.0x43",
+            "buildName": "27.0x43",
+            "buildNumber": 43,
+            "language": "en_US",
+            "memoryInUse": 458286616,
+            "availableGPUs": 2
+          },
+          "capabilities": {
+            "saveFrameToPng": true,
+            "appEffects": true,
+            "bridgeTalk": true,
+            "socket": true
+          },
+          "project": {
+            "numItems": 13,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep",
+            "dirty": true
+          },
+          "server": {
+            "exportSchemaVersion": 2
+          }
+        },
+        "logs": [],
+        "durationMs": 454
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "font.list_missing"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "count": 0,
+          "fonts": []
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 448
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "footage.list_missing"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "count": 0,
+          "items": []
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 371
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "comp.list_renderers",
+          "args": {
+            "comp": "DEVICE_iPad10_3D"
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "renderer": "ADBE Calder",
+          "renderers": [
+            "ADBE Advanced 3d",
+            "ADBE Calder",
+            "ADBE Ernst"
+          ],
+          "friendlyNames": {
+            "classic3d": "ADBE Advanced 3d",
+            "advanced3d": "ADBE Calder",
+            "cinema4d": "ADBE Ernst"
+          }
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 368
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.status"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendering": false,
+          "numItems": 2,
+          "canQueueInAME": false,
+          "items": [
+            {
+              "index": 1,
+              "comp": "TITAN_MASTER_20S",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 5.7,
+              "elapsedSeconds": 37,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/review-pass1.mp4"
+              ]
+            },
+            {
+              "index": 2,
+              "comp": "TITAN_MASTER_20S",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 5.7,
+              "elapsedSeconds": 40,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Scenes01-03-v001.mp4"
+              ]
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 365
+      }
+    }
+  ]
+}

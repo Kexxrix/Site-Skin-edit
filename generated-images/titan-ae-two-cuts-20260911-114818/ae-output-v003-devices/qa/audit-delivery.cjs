@@ -1,0 +1,6 @@
+const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
+const out=path.dirname(__dirname),report=fs.readFileSync(path.join(out,'ORCHESTRATION-REPORT.md'),'utf8'),manifest=JSON.parse(fs.readFileSync(path.join(out,'manifest.json'),'utf8')),verification=JSON.parse(fs.readFileSync(path.join(__dirname,'verification.json'),'utf8'));
+const links=[...report.matchAll(/\]\(([^)]+)\)/g)].map(m=>m[1]).filter(l=>!/^https?:/.test(l)).map(l=>{const p=path.resolve(out,l);assert(fs.existsSync(p),p);return{link:l,exists:true};});
+const assets=manifest.finalFiles.map(f=>{const p=path.join(out,f.path),b=fs.readFileSync(p),h=crypto.createHash('sha256').update(b).digest('hex');assert.equal(b.length,f.bytes);assert.equal(h,f.sha256);return{path:f.path,bytes:b.length,sha256:h,match:true};});
+assert.equal(verification.status,'passed');assert.equal(manifest.status.userAccepted,false);assert.equal(manifest.frameCount,90);
+console.log(JSON.stringify({status:'passed',checkedLinks:links.length,links,assets,finalFrames:manifest.finalFullFrameDirectory,finalSelectedFrames:manifest.finalSelectedFrameDirectory,finalSourceProject:assets[0],verificationStatus:verification.status,userAccepted:false},null,2));

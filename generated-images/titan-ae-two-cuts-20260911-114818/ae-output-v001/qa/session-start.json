@@ -1,0 +1,117 @@
+{
+  "started": "2026-09-11",
+  "authorization": "User: 시작",
+  "initial": {
+    "ok": true,
+    "result": {
+      "project": {
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep",
+        "dirty": true,
+        "numItems": 5,
+        "bitsPerChannel": 8
+      },
+      "activeComp": {
+        "id": 32,
+        "name": "Hello_World_Stretch_3s",
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 3,
+        "bgColor": [
+          0.16078431372549,
+          0.16078431372549,
+          0.16078431372549
+        ]
+      },
+      "selectedLayers": [
+        {
+          "index": 1,
+          "name": "Hello World - Source Outlines"
+        }
+      ],
+      "helpers": [
+        "AE.findCompByNameOrId(nameOrId)",
+        "AE.findComps(nameOrIdOrPattern) — '*' glob supported",
+        "AE.findItemById(id)",
+        "AE.findItem(idOrName) — any project item",
+        "AE.findFolder(idOrName) — null/undefined = root folder",
+        "AE.findLayerInComp(comp, indexOrNameOrIdRef) — accepts { id: n } (stable Layer.id, AE 22+)",
+        "AE.findLayerById(comp, id)",
+        "AE.resolveLayers(comp, target) — index | name | { id: n } | 'selected' | 'all'",
+        "AE.snapshotKeys(prop) / AE.applyKeys(prop, keys) / AE.removeAllKeys(prop)",
+        "AE.serializeItemSummary(item)",
+        "AE.serializeLayerSummary(layer)",
+        "AE.serializeLayerFull(layer, opts)",
+        "AE.serializeTransform(layer)",
+        "AE.serializePropertyGroup(group, depth, maxDepth)",
+        "AE.serializeCompMarkers(comp)",
+        "AE.exportProject()",
+        "AE.importProject(doc, opts)",
+        "AE.safeGet(fn, fallback)",
+        "AE.valueToJson(val)"
+      ],
+      "es3Rules": [
+        "var only (no let/const)",
+        "function() {} only (no arrow =>)",
+        "string concat only (no template literals)",
+        "for(var i=0;i<n;i++) only (no for-of, no forEach/map/filter)",
+        "indexOf !== -1 (no includes/startsWith/endsWith)",
+        "log('msg') to push breadcrumbs",
+        "return <JSON-serializable> at end"
+      ],
+      "undoContract": [
+        "every ae_do / eval.run call is auto-wrapped in ONE undo group",
+        "one Ctrl+Z (or project.undo) reverts the entire call; batch.run = one call = one undo step",
+        "NEVER call app.beginUndoGroup/endUndoGroup in eval.run code — an unbalanced group corrupts undo for the session",
+        "undo/redo itself runs OUTSIDE the group: use project.undo (or command.execute 16/2035) as its own call — never inside batch.run, and never via eval.run",
+        "ae_save_project and files written to disk (rendered PNGs, exported JSON) are NOT undoable"
+      ],
+      "items": [
+        {
+          "id": 1,
+          "name": "Codex_Hello_World_1920x1080",
+          "type": "Folder"
+        },
+        {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "type": "Folder"
+        },
+        {
+          "id": 29,
+          "name": "Solids",
+          "type": "Folder"
+        },
+        {
+          "id": 30,
+          "name": "Dark Gray Solid 1",
+          "type": "Folder"
+        },
+        {
+          "id": 46,
+          "name": "Gray Radial Background",
+          "type": "Folder"
+        }
+      ]
+    },
+    "logs": [],
+    "durationMs": 437
+  },
+  "sourceHashes": {
+    "helloMotionAep": "20AC6F9D6F9A0CFDA77EE80CD13F0B57358574C25F3DDFF75C560DE3002E969E",
+    "guide01": "A0594109128E86AC5A63396CB8546A558F7A9F8BDA12D60A1A5EF4DED0F1A110",
+    "guide02": "1BABA08917515F2A902164BFA24ADFE296CB2200DDCDB91088E21B824516B2FC"
+  },
+  "preexistingQueue": {
+    "rendering": false,
+    "numItems": 0
+  },
+  "colorSettings": {
+    "bitsPerChannel": 8,
+    "workingSpace": "None",
+    "workingGamma": 2.4,
+    "expressionEngine": "javascript-1.0"
+  },
+  "policy": "Preserve current dirty project; append new comp only. Save As to new AEP. No eval.run."
+}

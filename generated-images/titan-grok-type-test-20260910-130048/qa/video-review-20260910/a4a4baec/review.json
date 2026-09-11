@@ -1,0 +1,26 @@
+{
+  "source": "D:/WebDL/grok-a4a4baec-5d67-4269-9fbb-dc9efc6a5f71.mp4",
+  "source_modified": false,
+  "prompt_mapping": "User clarified all supplied clips used our A prompt; evaluate A, not inferred A/B provenance.",
+  "metadata": {"duration_seconds": 6.041667, "frames": 145, "fps": 24, "width": 1456, "height": 624, "bytes": 1007167, "video_codec": "h264", "audio_streams": 0},
+  "verdict": "A motion concept partly rendered; strict A requirements failed.",
+  "observations": [
+    "The assembled word visibly translates left, disappears beyond the left edge, then returns. This is actual lateral motion, not a light sweep.",
+    "By about 0.667 s the leftward displacement is 126 px, approximately the first T width. Motion continues far beyond this instead of stopping.",
+    "Text is clipped around 1.0 s. Samples from 1.25 through 2.75 s show no text; all-frame neutral-bright text-region masks have zero pixels from frames 30 through 71, 1.25 through 2.958 s.",
+    "At 3.0 s only the rightmost N starts entering from the left. At 3.125 s the first T is still clipped. All letters are in frame at 3.167 s, but A and N visually merge during compressed re-entry around 3.167-3.25 s.",
+    "At 3.292 s all five separate letters read TITAN clearly. Return continues with spacing/width overshoot, settling near center around 3.75-3.83 s, later than the requested approximately 3 s.",
+    "On clear samples the spelling and left-to-right order remain TITAN. There is no observed extra word or duplicate letter. Their major recognizable letter forms remain, but the word is not one rigid unchanging graphic.",
+    "Approximate bright-text width: 655 px initially, 590 px at 3.208 s, 724 px at 3.417 s, 660 px at 3.75 s. This is a threshold-mask diagnostic, not a pixel-perfect glyph comparison.",
+    "The background gains additional glass panels and multiple rings and these objects move. This violates the stationary-object constraint. No clear global camera zoom or scene cut is visible in reviewed samples.",
+    "After approximately 3.83 s the word is readable and nearly stationary through 6 s, with slight frame-to-frame shape/edge variation; this static hold alone does not count as motion fidelity."
+  ],
+  "windows": {
+    "fully_compliant_2_to_3_second_left_and_return_window": null,
+    "partial_use_proposal": {"in_seconds": 3.291667, "out_seconds": 5.791667, "duration_seconds": 2.5, "description": "Readable TITAN with about half a second of return/settling motion followed by hold. Does not contain the full left-and-return action; word spacing changes and animated background remain."},
+    "readable_hold_only": {"in_seconds": 3.833333, "out_seconds": 6.0, "description": "Approximately 2.17 s of readable near-static word. Not evidence of successful A motion."}
+  },
+  "comparison_requested_by_parent": "The separately supplied 4760de93 contact sheet looks visually identical at corresponding sample times, including text trajectory and extra glass/ring placement. This is a visual similarity observation; source identity requires hashes or decoded-frame comparison.",
+  "verification_scope": "Original starting image and prompt A read. Video metadata inspected by ffprobe; 25 samples at 0.25 s spacing and denser return-action samples visually inspected using contact sheets and full-size stills. All 145 frames decoded for heuristic brightness/bounding-box metrics. Native timed playback was unavailable, so this is a sampled frame visual audit, not every-frame visual acceptance or audio-sync review.",
+  "evidence": ["contact-01.jpg", "contact-02.jpg", "contact-03.jpg", "detailed-contact-02.jpg", "detail-f077-3.208s.png", "detail-f079-3.292s.png", "all-frame-text-metrics.json"]
+}

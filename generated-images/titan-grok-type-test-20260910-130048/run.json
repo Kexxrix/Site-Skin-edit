@@ -1,0 +1,115 @@
+{
+  "run_id": "titan-grok-type-test-20260910-130048",
+  "theme": "TITAN typography motion feasibility test",
+  "brand_exact": "TITAN",
+  "requested_roles_and_counts": [
+    {
+      "role": "Grok motion test starting image",
+      "count": 1,
+      "count_basis": "bounded first diagnostic selected by agent from user's test proposal"
+    }
+  ],
+  "generation_route": "codex_builtin_imagegen",
+  "video_generation_route": "Grok user interface; not submitted in this run",
+  "output_directory": "E:/codexwork/Site-Skin-edit/generated-images/titan-grok-type-test-20260910-130048/results",
+  "editing_mode": "user",
+  "selection_authority": "agent selects diagnostic input only; final editing and adoption belong to user",
+  "shared_visual_rules": {
+    "user_requirements": [
+      "Research public Grok documentation first",
+      "Test motion before expanding production",
+      "Use diverse six-second candidates and extract 2–3 seconds per usable cut",
+      "User edits final twelve seconds",
+      "No automatic orange palette inheritance"
+    ],
+    "local_details_not_to_propagate": [
+      "single short word TITAN",
+      "cobalt ribbon, silver ring, glass rectangle",
+      "fixed background in A/B is an experimental control, not a production style restriction"
+    ]
+  },
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-four-scenes-retry-20260909-195824/qa/adopted-20260910/after-desktop.png",
+      "role": "brand spelling and wide slot context only",
+      "sha256": "2F5904BFB5B3F42C9A4C5995093CC50E6C5BA904FE1934A32AC2088A75DB6C31",
+      "visually_inspected": true,
+      "attached_to_generation": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "01",
+      "role": "typography motion test input",
+      "prompt": "prompts/01-start-image.txt",
+      "tool_output_path": "C:/Users/User/.codex/generated_images/01a084c3-735f-7fd2-8ef7-a044226bd7a3/exec-ee874048-db8a-4cbf-8d84-a1521b3b0380.png",
+      "final_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-grok-type-test-20260910-130048/results/01-titan-type-start.png",
+      "transfer": "moved current successful output only, no overwrite",
+      "sha256": "C420771EA81A477BBEDAB6120A749FF30482503A9F2942ECC47DA83913DA78D3",
+      "bytes": 1266407,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1916,
+      "height": 821,
+      "status": "selected_by_agent",
+      "qa_scope": "static input only",
+      "generated": true,
+      "qa_pass": true,
+      "accepted_by_user": false,
+      "adopted": false
+    }
+  ],
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "failed": 0,
+    "skipped": 0,
+    "qa_pass": 1,
+    "selected_by_agent": 1,
+    "accepted_by_user": 0,
+    "rejected": 0
+  },
+  "video_tests": [
+    {
+      "id": "A",
+      "prompt": "prompts/02-grok-a-word-motion.txt",
+      "status": "user_supplied_results_reviewed_partial_motion_inexact_A",
+      "requested_duration_seconds": 6,
+      "result": {
+        "user_confirmed_prompt": "A",
+        "provided_files": [
+          {
+            "path": "D:\\WebDL\\grok-4760de93-3788-46d6-ad84-b9fd0d42f5a2-720p.mp4",
+            "sha256": "15d06f7444c25049fad48572563ecdba7eea8e21d7a9b9cebc120a0e28dd0e74",
+            "bytes": 1238555
+          },
+          {
+            "path": "D:\\WebDL\\grok-02092da0-046b-4471-96e9-c6be496861be-720p.mp4",
+            "sha256": "df6b432127cbb4bc5b85693d23c9c6856a8e4b3338b1088262427261fae187d7",
+            "bytes": 901649
+          },
+          {
+            "path": "D:\\WebDL\\grok-a4a4baec-5d67-4269-9fbb-dc9efc6a5f71.mp4",
+            "sha256": "2b560a3547c34e55d84666d3c1f388e4d79da0f26cef5bc009e8f4e325b19a73",
+            "bytes": 1007167
+          }
+        ],
+        "review": "qa/video-review-20260910/README.md",
+        "motion_observed_in_files": 3,
+        "full_A_conditions_passed": 0,
+        "independent_generation_count": "unconfirmed; first and third are near-identical visually",
+        "user_accepted": false,
+        "edited_by_agent": false,
+        "adopted": false
+      }
+    },
+    {
+      "id": "B",
+      "prompt": "prompts/03-grok-b-letter-motion.txt",
+      "status": "not_submitted",
+      "requested_duration_seconds": 6,
+      "result": null
+    }
+  ],
+  "next_action": "User reviews A findings; no B result supplied. Diverse 6-second motion candidates remain a possible next test, with glyph preservation judged separately; final editing belongs to user."
+}

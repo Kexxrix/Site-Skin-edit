@@ -1,0 +1,235 @@
+{
+  "started": "2026-09-11T11:41:15.123Z",
+  "ended": "2026-09-11T11:41:15.770Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent Start"
+                  ],
+                  "time": 9.566666666666666
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent End"
+                  ],
+                  "time": 9.566666666666666
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent Offset"
+                  ],
+                  "time": 9.566666666666666
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "time": 9.566666666666666
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "time": 9.566666666666666
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_LEFT_Cell_4_SHIFT",
+                  "time": 9.566666666666666
+                }
+              }
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "Start",
+              "matchName": "ADBE Text Percent Start",
+              "value": 13.3198920360313,
+              "numKeys": 2,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "End",
+              "matchName": "ADBE Text Percent End",
+              "value": 100,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Offset",
+              "matchName": "ADBE Text Percent Offset",
+              "value": 0,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "time": 9.56666666666667,
+              "layerSpace": {
+                "top": -27.0671685473643,
+                "left": 263.077223533607,
+                "width": 77.6125857695685,
+                "height": 27.4494731878638
+              },
+              "compSpace": {
+                "topLeft": [
+                  813.077209472656,
+                  492.932830810547
+                ],
+                "topRight": [
+                  890.689819335938,
+                  492.932830810547
+                ],
+                "bottomLeft": [
+                  813.077209472656,
+                  520.38232421875
+                ],
+                "bottomRight": [
+                  890.689819335938,
+                  520.38232421875
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 9.56666666666667,
+              "layerSpace": {
+                "top": -174.688110351562,
+                "left": 5.921630859375,
+                "width": 1475.37103271484,
+                "height": 177.155456542969
+              },
+              "compSpace": {
+                "topLeft": [
+                  555.921630859375,
+                  531.311889648438
+                ],
+                "topRight": [
+                  2031.29272460938,
+                  531.311889648438
+                ],
+                "bottomLeft": [
+                  555.921630859375,
+                  708.467346191406
+                ],
+                "bottomRight": [
+                  2031.29272460938,
+                  708.467346191406
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 9.56666666666667,
+              "layerSpace": {
+                "top": -218.622924804688,
+                "left": -247.664337158203,
+                "width": 496.174865722656,
+                "height": 223.342041015625
+              },
+              "compSpace": {
+                "topLeft": [
+                  -42.6643371582031,
+                  85.3770751953125
+                ],
+                "topRight": [
+                  453.510528564453,
+                  85.3770751953125
+                ],
+                "bottomLeft": [
+                  -42.6643371582031,
+                  308.719116210938
+                ],
+                "bottomRight": [
+                  453.510528564453,
+                  308.719116210938
+                ]
+              }
+            }
+          ],
+          "count": 6,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 183,
+            "name": "SCENE08_WHOLE_OVERLAY_180DEG",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 1
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "S08_ALL_CONTENT_NATIVE_ZOOM"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 378
+      },
+      "elapsedMs": 386
+    }
+  ]
+}

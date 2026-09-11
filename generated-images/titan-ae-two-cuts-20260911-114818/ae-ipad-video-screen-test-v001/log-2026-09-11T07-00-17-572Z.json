@@ -1,0 +1,447 @@
+{
+  "timestamp": "2026-09-11T07-00-17-572Z",
+  "write": false,
+  "results": [
+    {
+      "call": {
+        "name": "ae_version_info",
+        "args": {}
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "app": {
+            "version": "27.0x43",
+            "buildName": "27.0x43",
+            "buildNumber": 43,
+            "language": "en_US",
+            "memoryInUse": 2557999931,
+            "availableGPUs": 2
+          },
+          "capabilities": {
+            "saveFrameToPng": true,
+            "appEffects": true,
+            "bridgeTalk": true,
+            "socket": true
+          },
+          "project": {
+            "numItems": 22,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep",
+            "dirty": true
+          },
+          "server": {
+            "exportSchemaVersion": 2
+          }
+        },
+        "logs": [],
+        "durationMs": 523
+      }
+    },
+    {
+      "call": {
+        "name": "ae_project_info",
+        "args": {}
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep",
+          "dirty": true,
+          "numItems": 22,
+          "bitsPerChannel": 8,
+          "timeDisplayType": "2013",
+          "activeItem": {
+            "id": 163,
+            "name": "TITAN_DEVICE_iPad_3D_v003",
+            "typeName": "FolderItem"
+          },
+          "items": [
+            {
+              "id": 1,
+              "name": "Codex_Hello_World_1920x1080",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 5,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 32,
+              "name": "Hello_World_Stretch_3s",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 3,
+              "bgColor": [
+                0.16078431372549,
+                0.16078431372549,
+                0.16078431372549
+              ]
+            },
+            {
+              "id": 175,
+              "name": "iPad10.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPad10.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 114,
+              "name": "iPhone17",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 941,
+              "height": 1672,
+              "frameRate": 24,
+              "duration": 30,
+              "layerCount": 1,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 113,
+              "name": "iPhone17.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPhone17.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 277,
+              "name": "QA_iPad_VIDEO_Front_Oblique_Back_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 96,
+              "name": "REF_CUT_01",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/01-meet-titan.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 97,
+              "name": "REF_CUT_02",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/02-built-in-house.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 261,
+              "name": "SCREEN_iPad10_HADES_VIDEO_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 29,
+              "name": "Solids",
+              "type": "FolderItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 2,
+              "comment": ""
+            },
+            {
+              "id": 100,
+              "name": "C01_BG_IVORY",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.96078431606293,
+                0.95294117927551,
+                0.93333333730698
+              ]
+            },
+            {
+              "id": 106,
+              "name": "C02_BG_CHARCOAL_WIPE",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.14117647707462,
+                0.14901961386204,
+                0.16470588743687
+              ]
+            },
+            {
+              "id": 30,
+              "name": "Dark Gray Solid 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.1294117718935,
+                0.1294117718935,
+                0.1294117718935
+              ]
+            },
+            {
+              "id": 46,
+              "name": "Gray Radial Background",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.15999999642372,
+                0.15999999642372,
+                0.15999999642372
+              ]
+            },
+            {
+              "id": 184,
+              "name": "Null 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 186,
+              "name": "Null 2",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 273,
+              "name": "SCREEN_FIT_BLACK",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 163,
+              "name": "TITAN_DEVICE_iPad_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 151,
+              "name": "TITAN_DEVICE_iPhone_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 4,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 84,
+              "name": "TITAN_TwoCuts_75x32_3s_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 12,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 127,
+              "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 14,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 200,
+              "name": "하데스오프닝.mp4",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 14.4166666666667,
+              "sourceKind": "file",
+              "file": "E:/하데스오프닝.mp4",
+              "missingFootagePath": null
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 436
+      }
+    }
+  ]
+}

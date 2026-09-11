@@ -1,0 +1,255 @@
+{
+  "started": "2026-09-11T11:46:00.239Z",
+  "ended": "2026-09-11T11:47:09.950Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "render.add_to_queue",
+                "args": {
+                  "comp": "TITAN_MASTER_20S"
+                }
+              },
+              {
+                "operation": "render.set_output",
+                "args": {
+                  "renderTemplate": "Best Settings",
+                  "outputTemplate": "H.264 - Match Render Settings - 40 Mbps",
+                  "outputPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Review-v002.mp4",
+                  "timeSpanStart": 0,
+                  "timeSpanDuration": 10.5,
+                  "skipFrames": 0,
+                  "logType": "errorsAndSettings"
+                }
+              },
+              {
+                "operation": "render.set_om_settings",
+                "args": {
+                  "settings": {
+                    "Output Audio": "Off"
+                  }
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "queueIndex": 3,
+              "compName": "TITAN_MASTER_20S"
+            },
+            {
+              "ok": true,
+              "queueIndex": 3,
+              "comp": "TITAN_MASTER_20S",
+              "timeSpanStart": 0,
+              "timeSpanDuration": 10.5,
+              "outputPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Review-v002.mp4",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "queueIndex": 3,
+              "outputModuleIndex": 1,
+              "settings": {
+                "Crop": "false",
+                "Include Project Link": "true",
+                "Include Source XMP Metadata": "false",
+                "Output Audio": "Off",
+                "Output File Info": {
+                  "Full Flat Path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-feedback01-motion-guides-20260911-195303\\ae-production-brief-v001\\ae-output-v002\\TITAN-Review-v002.mp4",
+                  "Base Path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-feedback01-motion-guides-20260911-195303\\ae-production-brief-v001\\ae-output-v002",
+                  "Subfolder Path": "",
+                  "File Name": "TITAN-Review-v002.mp4",
+                  "File Template": "TITAN-Review-v002.[fileExtension]"
+                },
+                "Post-Render Action": "None",
+                "Resize": "false",
+                "Video Output": "true"
+              }
+            }
+          ],
+          "count": 3,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 451
+      },
+      "elapsedMs": 457
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 2040
+      },
+      "elapsedMs": 2043
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.start",
+          "timeoutMs": 600000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendered": 3
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 64588
+      },
+      "elapsedMs": 64590
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 2056
+      },
+      "elapsedMs": 2059
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.status"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendering": false,
+          "numItems": 3,
+          "canQueueInAME": false,
+          "items": [
+            {
+              "index": 1,
+              "comp": "TITAN_MASTER_20S",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 5.7,
+              "elapsedSeconds": 37,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/review-pass1.mp4"
+              ]
+            },
+            {
+              "index": 2,
+              "comp": "TITAN_MASTER_20S",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 5.7,
+              "elapsedSeconds": 40,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Scenes01-03-v001.mp4"
+              ]
+            },
+            {
+              "index": 3,
+              "comp": "TITAN_MASTER_20S",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 10.5,
+              "elapsedSeconds": 64,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Review-v002.mp4"
+              ]
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 343
+      },
+      "elapsedMs": 346
+    }
+  ]
+}

@@ -1,0 +1,649 @@
+{
+  "timestamp": "2026-09-11T07-53-44-289Z",
+  "write": false,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 5.533333333333333
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 5.566666666666666
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 5.8
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 7
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 7.133333333333334
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 405,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 5.533333333333333
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 405,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 5.566666666666666
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 405,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 5.8
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 405,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 7
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": 405,
+                  "layer": "C02_TYPE_RECOIL_CTRL",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "time": 7.133333333333334
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 127,
+                  "layer": "C01_TXT_MEET",
+                  "time": 0.6
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 127,
+                  "layer": "C01_TXT_TITAN",
+                  "time": 0.6
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_MEET",
+                  "time": 3.1
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 330,
+                  "layer": "C01_TXT_TITAN",
+                  "time": 3.1
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 127,
+                  "layer": "C02_TXT_CORE",
+                  "time": 2.5
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 127,
+                  "layer": "C02_TXT_BUILT",
+                  "time": 2.5
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 127,
+                  "layer": "C02_TXT_IN_HOUSE",
+                  "time": 2.5
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_CORE",
+                  "time": 7.5
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_BUILT",
+                  "time": 7.5
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": 330,
+                  "layer": "C02_TXT_IN_HOUSE",
+                  "time": 7.5
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                -190,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                -260,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "matchName": "ADBE Position",
+              "value": [
+                0,
+                0,
+                0
+              ],
+              "numKeys": 0,
+              "hasExpression": true
+            },
+            {
+              "ok": true,
+              "time": 0.6,
+              "layerSpace": {
+                "top": -98.3333350550383,
+                "left": 10.8333335230127,
+                "width": 301.975077865645,
+                "height": 100.000001750886
+              },
+              "compSpace": {
+                "topLeft": [
+                  764.5947265625,
+                  461.666656494141
+                ],
+                "topRight": [
+                  1066.56982421875,
+                  461.666656494141
+                ],
+                "bottomLeft": [
+                  764.5947265625,
+                  561.666687011719
+                ],
+                "bottomRight": [
+                  1066.56982421875,
+                  561.666687011719
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 0.6,
+              "layerSpace": {
+                "top": -136.000001901761,
+                "left": 6.53107353765517,
+                "width": 523.83541620709,
+                "height": 136.000001901761
+              },
+              "compSpace": {
+                "topLeft": [
+                  1111.56982421875,
+                  424
+                ],
+                "topRight": [
+                  1635.4052734375,
+                  424
+                ],
+                "bottomLeft": [
+                  1111.56982421875,
+                  560
+                ],
+                "bottomRight": [
+                  1635.4052734375,
+                  560
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 3.1,
+              "layerSpace": {
+                "top": -98.3333350550383,
+                "left": 10.8333335230127,
+                "width": 301.975077865645,
+                "height": 100.000001750886
+              },
+              "compSpace": {
+                "topLeft": [
+                  764.5947265625,
+                  461.666656494141
+                ],
+                "topRight": [
+                  1066.56982421875,
+                  461.666656494141
+                ],
+                "bottomLeft": [
+                  764.5947265625,
+                  561.666687011719
+                ],
+                "bottomRight": [
+                  1066.56982421875,
+                  561.666687011719
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 3.1,
+              "layerSpace": {
+                "top": -136.000001901761,
+                "left": 6.53107353765517,
+                "width": 523.83541620709,
+                "height": 136.000001901761
+              },
+              "compSpace": {
+                "topLeft": [
+                  1111.56982421875,
+                  424
+                ],
+                "topRight": [
+                  1635.4052734375,
+                  424
+                ],
+                "bottomLeft": [
+                  1111.56982421875,
+                  560
+                ],
+                "bottomRight": [
+                  1635.4052734375,
+                  560
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 2.5,
+              "layerSpace": {
+                "top": -87.6681211546529,
+                "left": 5.86899555847049,
+                "width": 748.621297517791,
+                "height": 111.999998574145
+              },
+              "compSpace": {
+                "topLeft": [
+                  670,
+                  352.331878662109
+                ],
+                "topRight": [
+                  1418.62133789062,
+                  352.331878662109
+                ],
+                "bottomLeft": [
+                  670,
+                  464.331878662109
+                ],
+                "bottomRight": [
+                  1418.62133789062,
+                  464.331878662109
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 2.5,
+              "layerSpace": {
+                "top": -143.46357602533,
+                "left": 11.5231787972152,
+                "width": 388.272935222834,
+                "height": 144.999999864958
+              },
+              "compSpace": {
+                "topLeft": [
+                  670,
+                  486.536437988281
+                ],
+                "topRight": [
+                  1058.27294921875,
+                  486.536437988281
+                ],
+                "bottomLeft": [
+                  670,
+                  631.536437988281
+                ],
+                "bottomRight": [
+                  1058.27294921875,
+                  631.536437988281
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 2.5,
+              "layerSpace": {
+                "top": -120.203477025032,
+                "left": 8.0026771388948,
+                "width": 639.174292713404,
+                "height": 121.999996382743
+              },
+              "compSpace": {
+                "topLeft": [
+                  1103.27294921875,
+                  509.796508789062
+                ],
+                "topRight": [
+                  1742.447265625,
+                  509.796508789062
+                ],
+                "bottomLeft": [
+                  1103.27294921875,
+                  631.796508789062
+                ],
+                "bottomRight": [
+                  1742.447265625,
+                  631.796508789062
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 7.5,
+              "layerSpace": {
+                "top": -87.6681211546529,
+                "left": 5.86899555847049,
+                "width": 748.621297517791,
+                "height": 111.999998574145
+              },
+              "compSpace": {
+                "topLeft": [
+                  670,
+                  352.331878662109
+                ],
+                "topRight": [
+                  1418.62133789062,
+                  352.331878662109
+                ],
+                "bottomLeft": [
+                  670,
+                  464.331878662109
+                ],
+                "bottomRight": [
+                  1418.62133789062,
+                  464.331878662109
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 7.5,
+              "layerSpace": {
+                "top": -143.46357602533,
+                "left": 11.5231787972152,
+                "width": 388.272935222834,
+                "height": 144.999999864958
+              },
+              "compSpace": {
+                "topLeft": [
+                  670,
+                  486.536437988281
+                ],
+                "topRight": [
+                  1058.27294921875,
+                  486.536437988281
+                ],
+                "bottomLeft": [
+                  670,
+                  631.536437988281
+                ],
+                "bottomRight": [
+                  1058.27294921875,
+                  631.536437988281
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 7.5,
+              "layerSpace": {
+                "top": -120.203477025032,
+                "left": 8.0026771388948,
+                "width": 639.174292713404,
+                "height": 121.999996382743
+              },
+              "compSpace": {
+                "topLeft": [
+                  1103.27294921875,
+                  509.796508789062
+                ],
+                "topRight": [
+                  1742.447265625,
+                  509.796508789062
+                ],
+                "bottomLeft": [
+                  1103.27294921875,
+                  631.796508789062
+                ],
+                "bottomRight": [
+                  1742.447265625,
+                  631.796508789062
+                ]
+              }
+            }
+          ],
+          "count": 20,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Final.aep"
+          },
+          "activeComp": {
+            "id": 433,
+            "name": "QA_PLAYBACK_Review01_8s_30fps",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 1
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 567
+      }
+    }
+  ]
+}

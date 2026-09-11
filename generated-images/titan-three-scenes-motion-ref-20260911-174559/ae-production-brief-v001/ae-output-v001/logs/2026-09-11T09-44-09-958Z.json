@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-09-11T09-44-09-958Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "transform.set",
+          "args": {
+            "comp": "DEVICE_iPad10_3D",
+            "layer": "iPad10_MODEL",
+            "position": [
+              1200,
+              512,
+              0
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "iPad10_MODEL",
+              "warnings": []
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 473
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "logs": [],
+        "durationMs": 739
+      }
+    }
+  ]
+}

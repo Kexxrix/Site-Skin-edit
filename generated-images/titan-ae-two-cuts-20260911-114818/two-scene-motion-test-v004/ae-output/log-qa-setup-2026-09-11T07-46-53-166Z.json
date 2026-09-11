@@ -1,0 +1,305 @@
+{
+  "timestamp": "2026-09-11T07-46-53-166Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_save_project",
+        "args": {
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+        },
+        "logs": [],
+        "durationMs": 2053
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "comp.duplicate",
+          "args": {
+            "comp": 330,
+            "newName": "QA_v004_TextPush_260px_NotAdopted"
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "newCompId": 405,
+          "newCompName": "QA_v004_TextPush_260px_NotAdopted"
+        },
+        "context": {
+          "project": {
+            "numItems": 28,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 330,
+            "name": "TITAN_TwoScenes_8s_v004",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 15
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "C02_TYPE_RECOIL_CTRL"
+            },
+            {
+              "index": 4,
+              "name": "C02_DEVICE_IPAD"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 449
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.set",
+          "args": {
+            "comp": "QA_v004_TextPush_260px_NotAdopted",
+            "layer": "C02_TYPE_RECOIL_CTRL",
+            "property": [
+              "Effects",
+              "Text Push px",
+              "Slider"
+            ],
+            "value": 260
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TYPE_RECOIL_CTRL",
+              "ok": true
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 28,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 330,
+            "name": "TITAN_TwoScenes_8s_v004",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 15
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "C02_TYPE_RECOIL_CTRL"
+            },
+            {
+              "index": 4,
+              "name": "C02_DEVICE_IPAD"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 375
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "project.import_file",
+          "args": {
+            "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-01.mp4",
+            "name": "QA_PLAYBACK_Review01_MP4"
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "id": 432,
+          "name": "QA_PLAYBACK_Review01_MP4",
+          "width": 2400,
+          "height": 1024,
+          "duration": 8
+        },
+        "context": {
+          "project": {
+            "numItems": 29,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 330,
+            "name": "TITAN_TwoScenes_8s_v004",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 15
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "C02_TYPE_RECOIL_CTRL"
+            },
+            {
+              "index": 4,
+              "name": "C02_DEVICE_IPAD"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 558
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "comp.create",
+          "args": {
+            "name": "QA_PLAYBACK_Review01_8s_30fps",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "id": 433,
+          "name": "QA_PLAYBACK_Review01_8s_30fps"
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 330,
+            "name": "TITAN_TwoScenes_8s_v004",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 15
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "C02_TYPE_RECOIL_CTRL"
+            },
+            {
+              "index": 4,
+              "name": "C02_DEVICE_IPAD"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 548
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "timeline"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "timeline",
+        "operations": [
+          {
+            "name": "timeline.set_time",
+            "description": "Set the current time indicator (CTI) in a composition.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": true,
+                "description": "Time in seconds"
+              }
+            ]
+          },
+          {
+            "name": "timeline.set_active_comp",
+            "description": "Set the active (visible in UI) composition. Opens it in the viewer.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "timeline.select_layers",
+            "description": "Select (or deselect) layers in a comp by index.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "indices",
+                "type": "array",
+                "required": true,
+                "description": "Array of 1-based layer indices to select"
+              },
+              {
+                "name": "deselectOthers",
+                "type": "boolean",
+                "required": false,
+                "description": "Deselect all other layers first (default true)",
+                "default": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

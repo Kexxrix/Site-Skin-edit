@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "sent_at_utc": "2026-09-11T09:22:29Z",
+  "authorization": "User explicitly requested transfer to the existing AE task and starting production.",
+  "target": {
+    "title": "애프터이팩트 모션그래픽 작업",
+    "thread_id": "01a08e67-bb59-7c63-a4ec-e879119b7530",
+    "host_id": "local"
+  },
+  "source_task": {
+    "title": "이미지와 영상 제작",
+    "thread_id": "01a084c3-735f-7fd2-8ef7-a044226bd7a3",
+    "host_id": "local"
+  },
+  "status": "dispatched_target_active",
+  "instruction_file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/WORK-INSTRUCTIONS.ko.md",
+  "prompt": "사용자가 지금 이 작업에 지시서를 넘겨 실제 제작을 진행하라고 명시적으로 요청했습니다. 아래 지시서를 끝까지 읽고, 계획만 반환하거나 시작 승인을 다시 묻지 말고 새 AEP 제작·렌더·검증까지 진행해 주세요. 문서에 적힌 '작성 단계 미전달·미실행'은 전달 전 기록이며, 이번 메시지로 제작을 시작합니다.\n\n지시서:\nE:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/WORK-INSTRUCTIONS.ko.md\n\n같은 폴더의 timeline-plan.json, source-manifest.json과 연결된 새 참조 이미지 3장, 모션 연구·프리셋 조사도 확인해 주세요. 본 제작 지시서가 과거 테스트 지시보다 우선합니다.\n\n핵심 조건:\n- 지금까지의 AEP·영상은 기능 시험입니다. 기존 AEP를 Save As하거나 기존 컴프를 복제·가져와 시작하지 말고, 빈 새 프로젝트에서 새 AEP를 만들어 처음부터 구성합니다. 기존 파일과 미저장 사용자 작업은 먼저 별도로 보존합니다.\n- 전체 콘티는 20초 / 600프레임이며, 이번 제작은 01 Meet TITAN → 02 Core systems / Built in-house → 03 CAT VILLAGE / Casino Slot, 원래 시간표의 0–5.7초 / 171프레임입니다. 2400×1024, 75:32, 30fps, 무음. 시험용 두 씬 8초 타이밍을 사용하지 않습니다. 나머지 14.3초는 후속 구간으로 유지하고 Sportsbook 시작점을 F171에 둡니다. 미제작 검은 뒷부분을 붙인 20초 영상을 완성본으로 제출하지 않습니다.\n- iPad는 E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/exports/iPad10.glb를 새로 가져옵니다. iPad10.SCREEN에 E:/codexwork/Site-Skin-edit/TEMP/아이패드.mp4를 실제 영상 소스로 매핑합니다. 하데스 영상·기존 정지 캡처를 재사용하지 않습니다. 지정 영상은 24.233333초 / 1920×1080 / 60fps입니다. 전체화면 안내를 피하도록 원본 2.000초부터 정상 속도로 사용하며, 모델 화면과 영상의 비율 차이는 지시서의 contain 배치로 처리합니다.\n- 1→2는 같은 도트·선의 위치와 속도를 연결합니다. 2→3은 02 밑줄 → 프레임 → CAT 레터링 자체 등장(F114–F124) → Fill 정착 → 뒤에서 회전·접근하는 iPad → 정면 도착 F135를 중심으로 Fill→Outline(F132–F138) → 화면을 읽는 구간으로 만듭니다. 3씬 시작부터 완성된 Fill 문구가 준비되어 있는 구성은 안 됩니다. PNG 03은 도착 후 구도입니다.\n- 설치 프리셋 또는 조사한 공개 텍스트 모션 정의를 실제 적용·조정하고 사용 파일/정의·시점·변경 내역을 기록합니다. 가독성과 전환을 정상 1배속으로 보고 보완합니다.\n- 지시서의 새 출력 폴더에서 새 AEP, 정확히 5.700초인 MP4, 실제 시간표, 프레임 수·영상 매핑·전환 검증, 저장 후 재열기 결과, 남은 문제를 제출합니다. 기존 결과를 덮어쓰지 않습니다.\n\n완료하거나 사용자 판단이 필요한 문제가 확인되면 원래 작업 '이미지와 영상 제작' (task ID 01a084c3-735f-7fd2-8ef7-a044226bd7a3, host local)에 결과를 회신해 주세요. 정상 진행 중에는 제작을 계속하고, 최종 채택과 기술 검증 완료는 구분해서 보고해 주세요.",
+  "dispatch_response": [
+    {
+      "threadId": "01a08e67-bb59-7c63-a4ec-e879119b7530"
+    }
+  ],
+  "observed_start": [
+    {
+      "timedOut": true,
+      "wake": null,
+      "polls": [
+        {
+          "schemaVersion": 1,
+          "cursor": "97ea0890-efe7-4d92-9238-70884bb98c32:5",
+          "revision": 5,
+          "changed": true,
+          "thread": {
+            "id": "01a08e67-bb59-7c63-a4ec-e879119b7530",
+            "hostId": "local",
+            "status": {
+              "type": "active",
+              "activeFlags": []
+            }
+          },
+          "latestTurn": {
+            "id": "01a08fc6-8be7-7652-8c96-ebbbeda58e4d",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": 1789118549,
+            "completedAt": null,
+            "durationMs": null
+          },
+          "latestAssistantMessageId": null,
+          "latestAssistantMessage": null,
+          "latestToolMarkerId": null,
+          "latestToolMarker": null
+        }
+      ]
+    }
+  ],
+  "aep_creation_verified": false,
+  "render_creation_verified": false,
+  "completion_verified": false,
+  "note": "The brief and its QA record describe the pre-dispatch writing stage. This receipt records the subsequent authorized dispatch; production has not been reported complete."
+}

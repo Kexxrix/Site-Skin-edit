@@ -1,0 +1,4 @@
+import {run} from './ae-client.mjs';
+const M='TITAN_MASTER_20S',D='DEVICE_iPad10_3D',root=new URL('./qa/',import.meta.url).pathname.replace(/^\//,'');
+const ops=[{operation:'property.set',args:{comp:D,layer:'iPad10_MODEL',property:['Transform','Orientation'],value:[-90,0,0]}},{operation:'transform.set',args:{comp:D,layer:'iPad10_MODEL',scale:[850,850,850]}}];
+await run({write:true,compact:true,calls:[{name:'ae_do',args:{operation:'batch.run',args:{ops,stopOnError:true}}},{name:'ae_render_frame',args:{compNameOrId:D,time:4.6,outPath:root+'axis-minus90.png'}},{name:'ae_do',args:{operation:'property.set',args:{comp:D,layer:'iPad10_MODEL',property:['Transform','Orientation'],value:[90,0,0]}}},{name:'ae_render_frame',args:{compNameOrId:D,time:4.6,outPath:root+'axis-plus90.png'}},{name:'ae_layer_info',args:{compNameOrId:D,layerIndex:[1,2,3]}}]});

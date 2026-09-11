@@ -1,0 +1,276 @@
+{
+  "started": "2026-09-11T11:30:34.450Z",
+  "ended": "2026-09-11T11:30:35.441Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "project.import_file",
+                "args": {
+                  "path": "E:/codexwork/Site-Skin-edit/device-models/iPhone17/v001/exports/iPhone17.glb",
+                  "name": "SOURCE_iPhone17_v001_GLB"
+                }
+              },
+              {
+                "operation": "project.import_file",
+                "args": {
+                  "path": "E:/codexwork/Site-Skin-edit/TEMP/아이폰.mp4",
+                  "name": "SOURCE_iPhone_NATIVE_24FPS"
+                }
+              },
+              {
+                "operation": "comp.create",
+                "args": {
+                  "name": "SCREEN_iPhone17_VIDEO_CONTAIN",
+                  "width": 1206,
+                  "height": 2622,
+                  "fps": 24,
+                  "duration": 20
+                }
+              },
+              {
+                "operation": "comp.create",
+                "args": {
+                  "name": "DEVICE_iPhone17_3D",
+                  "width": 2400,
+                  "height": 1024,
+                  "fps": 30,
+                  "duration": 20
+                }
+              },
+              {
+                "operation": "comp.create",
+                "args": {
+                  "name": "SCENE06_SPORTSBOOK",
+                  "width": 2400,
+                  "height": 1024,
+                  "fps": 30,
+                  "duration": 20
+                }
+              },
+              {
+                "operation": "font.list",
+                "args": {
+                  "familyContains": "Pretendard",
+                  "limit": 40
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 60000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "id": 89,
+              "name": "SOURCE_iPhone17_v001_GLB",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30
+            },
+            {
+              "ok": true,
+              "id": 90,
+              "name": "SOURCE_iPhone_NATIVE_24FPS",
+              "width": 332,
+              "height": 720,
+              "duration": 15.8333333333333
+            },
+            {
+              "ok": true,
+              "id": 91,
+              "name": "SCREEN_iPhone17_VIDEO_CONTAIN"
+            },
+            {
+              "ok": true,
+              "id": 103,
+              "name": "DEVICE_iPhone17_3D"
+            },
+            {
+              "ok": true,
+              "id": 115,
+              "name": "SCENE06_SPORTSBOOK"
+            },
+            {
+              "ok": true,
+              "total": 27,
+              "returned": 27,
+              "fonts": [
+                {
+                  "postScriptName": "Pretendard-Thin",
+                  "familyName": "Pretendard",
+                  "styleName": "Thin"
+                },
+                {
+                  "postScriptName": "Pretendard-ExtraLight",
+                  "familyName": "Pretendard",
+                  "styleName": "ExtraLight"
+                },
+                {
+                  "postScriptName": "Pretendard-Light",
+                  "familyName": "Pretendard",
+                  "styleName": "Light"
+                },
+                {
+                  "postScriptName": "Pretendard-Regular",
+                  "familyName": "Pretendard",
+                  "styleName": "Regular"
+                },
+                {
+                  "postScriptName": "Pretendard-Medium",
+                  "familyName": "Pretendard",
+                  "styleName": "Medium"
+                },
+                {
+                  "postScriptName": "Pretendard-SemiBold",
+                  "familyName": "Pretendard",
+                  "styleName": "SemiBold"
+                },
+                {
+                  "postScriptName": "Pretendard-Bold",
+                  "familyName": "Pretendard",
+                  "styleName": "Bold"
+                },
+                {
+                  "postScriptName": "Pretendard-ExtraBold",
+                  "familyName": "Pretendard",
+                  "styleName": "ExtraBold"
+                },
+                {
+                  "postScriptName": "Pretendard-Black",
+                  "familyName": "Pretendard",
+                  "styleName": "Black"
+                },
+                {
+                  "postScriptName": "PretendardJP-Thin",
+                  "familyName": "Pretendard JP",
+                  "styleName": "Thin"
+                },
+                {
+                  "postScriptName": "PretendardJP-ExtraLight",
+                  "familyName": "Pretendard JP",
+                  "styleName": "ExtraLight"
+                },
+                {
+                  "postScriptName": "PretendardJP-Light",
+                  "familyName": "Pretendard JP",
+                  "styleName": "Light"
+                },
+                {
+                  "postScriptName": "PretendardJP-Regular",
+                  "familyName": "Pretendard JP",
+                  "styleName": "Regular"
+                },
+                {
+                  "postScriptName": "PretendardJP-Medium",
+                  "familyName": "Pretendard JP",
+                  "styleName": "Medium"
+                },
+                {
+                  "postScriptName": "PretendardJP-SemiBold",
+                  "familyName": "Pretendard JP",
+                  "styleName": "SemiBold"
+                },
+                {
+                  "postScriptName": "PretendardJP-Bold",
+                  "familyName": "Pretendard JP",
+                  "styleName": "Bold"
+                },
+                {
+                  "postScriptName": "PretendardJP-ExtraBold",
+                  "familyName": "Pretendard JP",
+                  "styleName": "ExtraBold"
+                },
+                {
+                  "postScriptName": "PretendardJP-Black",
+                  "familyName": "Pretendard JP",
+                  "styleName": "Black"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-Thin",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "Thin"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-ExtraLight",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "ExtraLight"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-Light",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "Light"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-Regular",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "Regular"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-Medium",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "Medium"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-SemiBold",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "SemiBold"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-Bold",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "Bold"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-ExtraBold",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "ExtraBold"
+                },
+                {
+                  "postScriptName": "PretendardJPVariable-Black",
+                  "familyName": "Pretendard JP Variable",
+                  "styleName": "Black"
+                }
+              ]
+            }
+          ],
+          "count": 6,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 18,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 746
+      },
+      "elapsedMs": 754
+    }
+  ]
+}

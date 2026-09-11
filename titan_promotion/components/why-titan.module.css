@@ -1,0 +1,199 @@
+/* Dizora About Us: split heading with three open columns for Titan's strengths. */
+.whyTitan {
+  background: #111;
+  color: #fff;
+  scroll-margin-top: 100px;
+}
+
+.container {
+  width: calc(100% - 48px);
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 80px;
+}
+
+.headingRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: end;
+  gap: 64px;
+}
+
+.headingRow > * {
+  min-width: 0;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.eyebrow > span {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fa871f;
+}
+
+.title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  word-break: keep-all;
+}
+
+.title > span {
+  color: #fa871f;
+}
+
+.introduction {
+  margin: 0;
+  color: #e0d9d9;
+  font-size: 16px;
+  line-height: 26px;
+  word-break: keep-all;
+}
+
+.strengthList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  margin: 56px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.strength {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  align-items: start;
+  gap: 20px;
+  min-width: 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fa871f;
+  color: #fff;
+}
+
+.strength h3 {
+  margin: 0 0 12px;
+  color: #fa871f;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.strength p {
+  margin: 0;
+  color: #e0d9d9;
+  font-size: 16px;
+  line-height: 26px;
+  word-break: keep-all;
+}
+
+@media (max-width: 1199px) {
+  .headingRow,
+  .strengthList {
+    gap: 40px;
+  }
+
+  .strength h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding-block: 60px;
+  }
+
+  .headingRow {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .introduction {
+    max-width: 650px;
+  }
+
+  .strengthList {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+  }
+
+  .strength {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .strength h3 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-block: 48px;
+  }
+
+  .headingRow {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .eyebrow {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: clamp(30px, 6vw, 40px);
+  }
+
+  .strengthList {
+    margin-top: 32px;
+  }
+
+  .strength {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .strength h3 {
+    font-size: 19px;
+  }
+
+  .strength p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}

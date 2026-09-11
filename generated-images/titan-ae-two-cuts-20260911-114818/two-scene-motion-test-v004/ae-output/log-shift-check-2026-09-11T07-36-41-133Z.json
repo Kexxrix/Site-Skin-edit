@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-09-11T07-36-41-133Z",
+  "write": false,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.get",
+          "args": {
+            "comp": 330,
+            "layer": "C02_TXT_BUILT",
+            "property": [
+              "Transform",
+              "Position"
+            ],
+            "time": 4.7
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "name": "Position",
+          "matchName": "ADBE Position",
+          "value": [
+            670,
+            628.487905341379,
+            0
+          ],
+          "numKeys": 3,
+          "hasExpression": false
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 448
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.get",
+          "args": {
+            "comp": 330,
+            "layer": "C01_TXT_MEET",
+            "property": [
+              "Text",
+              "Animators",
+              "V004_Staggered_Back",
+              "Properties",
+              "ADBE Text Position 3D"
+            ],
+            "time": 0.4
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "name": "Position",
+          "matchName": "ADBE Text Position 3D",
+          "value": [
+            0,
+            -54.37245,
+            0
+          ],
+          "numKeys": 0,
+          "hasExpression": true
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 281
+      }
+    }
+  ]
+}

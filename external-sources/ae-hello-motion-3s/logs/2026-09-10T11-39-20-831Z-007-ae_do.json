@@ -1,0 +1,98 @@
+{
+  "request": {
+    "name": "ae_do",
+    "arguments": {
+      "operation": "property.list",
+      "args": {
+        "comp": "Hello_World_Stretch_3s",
+        "layer": "Hello World - Source Outlines",
+        "property": [
+          "ADBE Root Vectors Group",
+          2,
+          "ADBE Vectors Group"
+        ]
+      }
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"ok\": true,\n    \"path\": [\n      \"ADBE Root Vectors Group\",\n      2,\n      \"ADBE Vectors Group\"\n    ],\n    \"children\": [\n      {\n        \"index\": 1,\n        \"name\": \"e\",\n        \"matchName\": \"ADBE Vector Shape - Group\",\n        \"isGroup\": true,\n        \"numChildren\": 2\n      },\n      {\n        \"index\": 2,\n        \"name\": \"e\",\n        \"matchName\": \"ADBE Vector Shape - Group\",\n        \"isGroup\": true,\n        \"numChildren\": 2\n      },\n      {\n        \"index\": 3,\n        \"name\": \"Merge Paths 1\",\n        \"matchName\": \"ADBE Vector Filter - Merge\",\n        \"isGroup\": true,\n        \"numChildren\": 1\n      },\n      {\n        \"index\": 4,\n        \"name\": \"Stroke 1\",\n        \"matchName\": \"ADBE Vector Graphic - Stroke\",\n        \"isGroup\": true,\n        \"numChildren\": 11\n      },\n      {\n        \"index\": 5,\n        \"name\": \"Fill 1\",\n        \"matchName\": \"ADBE Vector Graphic - Fill\",\n        \"isGroup\": true,\n        \"numChildren\": 5\n      }\n    ]\n  },\n  \"context\": {\n    \"project\": {\n      \"numItems\": 5,\n      \"dirty\": true,\n      \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\"\n    },\n    \"activeComp\": {\n      \"id\": 32,\n      \"name\": \"Hello_World_Stretch_3s\",\n      \"width\": 1920,\n      \"height\": 1080,\n      \"fps\": 30,\n      \"duration\": 3,\n      \"numLayers\": 3\n    },\n    \"selectedLayers\": [\n      {\n        \"index\": 3,\n        \"name\": \"Gray Radial Background\"\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 277\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "path": [
+          "ADBE Root Vectors Group",
+          2,
+          "ADBE Vectors Group"
+        ],
+        "children": [
+          {
+            "index": 1,
+            "name": "e",
+            "matchName": "ADBE Vector Shape - Group",
+            "isGroup": true,
+            "numChildren": 2
+          },
+          {
+            "index": 2,
+            "name": "e",
+            "matchName": "ADBE Vector Shape - Group",
+            "isGroup": true,
+            "numChildren": 2
+          },
+          {
+            "index": 3,
+            "name": "Merge Paths 1",
+            "matchName": "ADBE Vector Filter - Merge",
+            "isGroup": true,
+            "numChildren": 1
+          },
+          {
+            "index": 4,
+            "name": "Stroke 1",
+            "matchName": "ADBE Vector Graphic - Stroke",
+            "isGroup": true,
+            "numChildren": 11
+          },
+          {
+            "index": 5,
+            "name": "Fill 1",
+            "matchName": "ADBE Vector Graphic - Fill",
+            "isGroup": true,
+            "numChildren": 5
+          }
+        ]
+      },
+      "context": {
+        "project": {
+          "numItems": 5,
+          "dirty": true,
+          "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep"
+        },
+        "activeComp": {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30,
+          "duration": 3,
+          "numLayers": 3
+        },
+        "selectedLayers": [
+          {
+            "index": 3,
+            "name": "Gray Radial Background"
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 277
+    },
+    "isError": false
+  }
+}

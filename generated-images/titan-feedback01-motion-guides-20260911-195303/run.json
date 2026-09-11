@@ -1,0 +1,93 @@
+{
+  "run_id": "titan-feedback01-motion-guides-20260911-195303",
+  "theme": "TITAN feedback refinement / scene 04 guide and precise scene 03–06 motion design",
+  "generation_route": "codex_builtin",
+  "output_directory": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/results",
+  "user_scope": "Incorporate annotated feedback and the user's clarified enlarged-scene06-overlay zoom-out technique. Do not treat the existing Built image as new scene-05 copy or a request to change scene 02.",
+  "assets": [
+    {
+      "role": "scene04_revised_guide",
+      "root": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-feedback01-motion-guides-20260911-195303",
+      "original_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-761d48d9-2c7a-4411-9565-2c8fd4d67109.png",
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-feedback01-motion-guides-20260911-195303\\results\\04-sportsbook-no-repeated-arc-v002.png",
+      "storage_action": "move",
+      "sha256_before": "2C8094455DB1BB17D7F03B894EE9B05A7EA650ACBC2F799393A8AAE6FA7BCD44",
+      "sha256_after": "2C8094455DB1BB17D7F03B894EE9B05A7EA650ACBC2F799393A8AAE6FA7BCD44",
+      "sha256_match": true,
+      "width": 1920,
+      "height": 819,
+      "actual_format_guid": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+      "readable": true,
+      "bytes": 1162284,
+      "format": "PNG",
+      "generated": true,
+      "qa_pass": true,
+      "qa_scope": "Static guide arc removal, composition and main copy only",
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "prompt_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/prompts/04-sportsbook-no-repeated-arc.txt",
+      "reference_order": [
+        "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/results/04-sportsbook-scroll-arrival.png",
+        "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/sources/iphone-video-01s.png"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/results/04-sportsbook-scroll-arrival.png",
+      "sha256": "453EA651B238307022F8F5AAB7D1CBBDDA5ED881B3AFF2C00623F04BEFFC7AEF",
+      "role": "Scene04 edit target; preserve except remove repeated arc."
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/sources/iphone-video-01s.png",
+      "sha256": "B4CE202424560555E7CBD492537656AAA9F84D47080E09407356F05F952D5D1C",
+      "role": "Supporting actual phone screen content."
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/sources/feedback01.png",
+      "original_path": "E:/피드백01.png",
+      "sha256": "EEDC63D276E852EA55766FE97356E150E24C8497DBDB482699DB3B9412D431E9",
+      "storage_action": "copy",
+      "role": "User annotations; scene02 image confirmed to be repetition example only."
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/sources/feedback02-scene-to-tile.png",
+      "original_path": "C:/Users/User/AppData/Local/Temp/codex-clipboard-b95363da-7b43-411e-ae28-d48e75413748.png",
+      "sha256": "3595A7BEF8E035C8EF6580A7EDE60527694429F7BB4DFCBA47F1F1C00482E483",
+      "storage_action": "copy",
+      "role": "Visual transition idea clarified by the subsequent overlay instruction."
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/sources/feedback03-enlarged-scene06-overlay.png",
+      "original_path": "C:/Users/User/AppData/Local/Temp/codex-clipboard-3a5d7c9e-a800-4930-bfbc-c99c8b9c6ee9.png",
+      "sha256": "5C25907283FED5DBE2BD2BC3CA07E0FB63E89BBF777A65BA87D5314046B52E21",
+      "storage_action": "copy",
+      "role": "Latest explicit enlarged scene06 overlay and eased motion-blurred zoom-out."
+    }
+  ],
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "failed": 0,
+    "skipped": 0,
+    "qa_pass": 1,
+    "selected_by_agent": 1,
+    "accepted_by_user": 0,
+    "rejected": 0,
+    "adopted": 0
+  },
+  "motion_status": "Planned, geometry verified; no new AE project edits, rendering or task dispatch.",
+  "motion_plan": "motion-plan.json",
+  "readme": "MOTION-DESIGN.ko.md",
+  "verification": "qa/design-validation.json",
+  "image_review": "qa/generation-review.md",
+  "scope_preserved": {
+    "existing_scene02": true,
+    "existing_aep": true,
+    "existing_mp4": true,
+    "previous_guides": true,
+    "original_feedback_images": true
+  },
+  "next_action": "Use this latest plan as the concrete direction for any subsequent AE implementation; actual motion quality remains unverified."
+}

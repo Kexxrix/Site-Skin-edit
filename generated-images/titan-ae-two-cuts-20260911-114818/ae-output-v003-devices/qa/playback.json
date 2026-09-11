@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8771/TITAN-TwoCuts-Devices-Kinetic-3s-v003.mp4",
+  "browser": "Codex In-app Browser",
+  "finalMp4Sha256": "4805902bab7d12460cda2066c9ec7e9984b910e0c2fda6bfa63de8965da78c0c",
+  "http": {
+    "status": 200,
+    "bytes": 195745,
+    "contentType": "video/mp4",
+    "sha256": "4805902bab7d12460cda2066c9ec7e9984b910e0c2fda6bfa63de8965da78c0c"
+  },
+  "observedPlaying": {
+    "currentTime": 0.184624,
+    "duration": 3,
+    "paused": false,
+    "ended": false
+  },
+  "observedTransition": {
+    "currentTime": 0.962236,
+    "duration": 3,
+    "paused": false,
+    "ended": false
+  },
+  "observedEnd": {
+    "currentTime": 3,
+    "duration": 3,
+    "paused": true,
+    "ended": true,
+    "readyState": 4,
+    "width": 2400,
+    "height": 1024
+  },
+  "consoleWarningsAndErrors": [],
+  "previousComparison": {
+    "url": "http://127.0.0.1:8770/TITAN-TwoCuts-3s-v002.mp4",
+    "observedPlaying": {
+      "currentTime": 0.214467,
+      "duration": 3,
+      "paused": false,
+      "ended": false
+    },
+    "observedEnd": {
+      "currentTime": 3,
+      "duration": 3,
+      "paused": true,
+      "ended": true
+    }
+  },
+  "visualObservations": [
+    "v002 showed short upward word movement plus a continuing TITAN opacity fade near F06; v003 showed the full TITAN word already opaque, rotated, and overshooting while the phone settled.",
+    "TITAN and Built actions are differentiated: diagonal/rotation/scale versus upward scale emphasis without rotation.",
+    "Grey device screens, phone Dynamic Island and bezel, and tablet corners / metallic outline were visible.",
+    "Charcoal wipe covered the first cut including the phone, and the final second cut kept the underline and native text crisp."
+  ],
+  "limits": "Browser screenshots sampled actual playing/transition/end states, not every display refresh. The timing, complete 90-frame sequence, hold hashes, and spacing were additionally checked offline. Visual review is not user aesthetic approval."
+}

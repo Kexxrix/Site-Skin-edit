@@ -1,0 +1,288 @@
+{
+  "timestamp": "2026-09-11T09-36-54-231Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.list",
+          "args": {
+            "comp": "DEVICE_iPad10_3D",
+            "layer": "iPad10_MODEL",
+            "property": [
+              "ADBE3D Material Parade",
+              "iPad10.SCREEN"
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "path": [
+            "ADBE3D Material Parade",
+            "iPad10.SCREEN"
+          ],
+          "children": [
+            {
+              "index": 1,
+              "name": "Projection Mode",
+              "matchName": "ADBE3D Material Projection",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 2,
+              "name": "Uniform Tiling",
+              "matchName": "ADBE3D Uniform Tiling",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 3,
+              "name": "Randomize Offset",
+              "matchName": "ADBE3D Mat Rand Offset",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 4,
+              "name": "Randomize Offset Seed",
+              "matchName": "ADBE3D Mat Rand Offset Seed",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 5,
+              "name": "Texture Offset",
+              "matchName": "ADBE3D Material Texturre Offset",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 6,
+              "name": "Rotation",
+              "matchName": "ADBE3D Material Rotation",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 7,
+              "name": "Scale",
+              "matchName": "ADBE3D Material Scale",
+              "isGroup": false,
+              "numChildren": 0
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 376
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "logs": [],
+        "durationMs": 736
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "project.open",
+          "args": {
+            "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep",
+            "save": false
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "numItems": 12,
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 1112
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "DEVICE_iPad10_3D",
+          "time": 3.8,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/mapped-reopened-source-start.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/mapped-reopened-source-start.png",
+          "time": 3.8,
+          "compName": "DEVICE_iPad10_3D",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 369
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.list",
+          "args": {
+            "comp": "DEVICE_iPad10_3D",
+            "layer": "iPad10_MODEL",
+            "property": [
+              "ADBE3D Material Parade",
+              "iPad10.SCREEN"
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "path": [
+            "ADBE3D Material Parade",
+            "iPad10.SCREEN"
+          ],
+          "children": [
+            {
+              "index": 1,
+              "name": "Projection Mode",
+              "matchName": "ADBE3D Material Projection",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 2,
+              "name": "Uniform Tiling",
+              "matchName": "ADBE3D Uniform Tiling",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 3,
+              "name": "Randomize Offset",
+              "matchName": "ADBE3D Mat Rand Offset",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 4,
+              "name": "Randomize Offset Seed",
+              "matchName": "ADBE3D Mat Rand Offset Seed",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 5,
+              "name": "Texture Offset",
+              "matchName": "ADBE3D Material Texturre Offset",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 6,
+              "name": "Rotation",
+              "matchName": "ADBE3D Material Rotation",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 7,
+              "name": "Scale",
+              "matchName": "ADBE3D Material Scale",
+              "isGroup": false,
+              "numChildren": 0
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 371
+      }
+    }
+  ]
+}

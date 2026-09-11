@@ -1,0 +1,596 @@
+- main:
+  - navigation "HARDWAY 포탈":
+    - img "HARDWAY"
+    - generic: POWERED BY HARDWAY
+    - link "← HARDWAY로 돌아가기":
+      - /url: /mockups
+  - button "C COBALT":
+    - generic: C
+    - generic: COBALT
+  - navigation "주요 서비스":
+    - button "국내외 스포츠"
+    - button "E스포츠"
+    - button "실시간 스포츠": 실시간 스포츠
+    - button "카지노"
+    - button "슬롯"
+    - button "미니게임"
+    - button "이벤트 NEW":
+      - text: 이벤트
+      - emphasis: NEW
+  - button "로그인"
+  - button "회원가입"
+  - generic: 공지
+  - strong: 실시간 스포츠 배당은 경기 상황에 따라 변경될 수 있습니다.
+  - button "이벤트"
+  - button "출석체크"
+  - button "고객센터"
+  - complementary "서비스 바로가기":
+    - generic: 빠른 서비스
+    - generic: 24시간 운영
+    - button "충전"
+    - button "환전"
+    - button "고객센터"
+    - generic: 서비스 메뉴
+    - button "스포츠"
+    - button "인플레이"
+    - button "카지노"
+    - button "슬롯"
+    - button "미니게임"
+    - button "이벤트"
+    - generic: 국내 스포츠 검색
+    - textbox "국내 스포츠 검색":
+      - /placeholder: 리그 또는 팀 검색
+    - generic: ⌕
+    - generic: 해외 스포츠 검색
+    - textbox "해외 스포츠 검색":
+      - /placeholder: 리그 또는 팀 검색
+    - generic: ⌕
+    - generic: 인기 스포츠
+    - list:
+      - button "축 축구 124 ›":
+        - generic: 축
+        - generic: 축구
+        - emphasis: "124"
+        - generic: ›
+      - button "야 야구 42 ›":
+        - generic: 야
+        - generic: 야구
+        - emphasis: "42"
+        - generic: ›
+      - button "농 농구 31 ›":
+        - generic: 농
+        - generic: 농구
+        - emphasis: "31"
+        - generic: ›
+      - button "배 배구 18 ›":
+        - generic: 배
+        - generic: 배구
+        - emphasis: "18"
+        - generic: ›
+      - button "e E스포츠 15 ›":
+        - generic: e
+        - generic: E스포츠
+        - emphasis: "15"
+        - generic: ›
+    - generic: 최신 인기 경기
+    - button "LIVE · 7회말 삼성 라이온즈 vs 키움 히어로즈":
+      - generic: LIVE · 7회말
+      - strong: 삼성 라이온즈 vs 키움 히어로즈
+    - button "LIVE · 62분 울산 HD vs 전북 현대":
+      - generic: LIVE · 62분
+      - strong: 울산 HD vs 전북 현대
+    - button "18:30 · KBO LG 트윈스 vs 두산 베어스":
+      - generic: 18:30 · KBO
+      - strong: LG 트윈스 vs 두산 베어스
+    - button "라이브 카지노 LIVE CASINO 라이브 테이블 입장":
+      - img "라이브 카지노"
+      - generic: LIVE CASINO
+      - strong: 라이브 테이블 입장
+    - button "미니게임 MINI GAME 즉시 게임 입장":
+      - img "미니게임"
+      - generic: MINI GAME
+      - strong: 즉시 게임 입장
+    - button "충전"
+    - button "환전"
+    - button "페이백"
+    - button "쪽지"
+    - button "고객센터"
+    - button "베팅내역"
+  - region "진행 중인 이벤트":
+    - img "실시간 스포츠 적중 이벤트"
+    - generic: 진행 중인 이벤트 · 08.01 - 08.31
+    - heading "실시간 스포츠 적중 이벤트" [level=1]
+    - paragraph:
+      - text: 신규회원 첫 충전 보너스
+      - strong: 최대 ₩30,000
+    - button "자세히 보기 →"
+    - generic: LIVE
+    - strong: 진행 중
+    - generic: 참여 가능
+  - region "콘텐츠 바로가기":
+    - heading "콘텐츠 바로가기" [level=2]
+    - button "전체보기 ›"
+    - button "SPORTS 경기 214 국내외 스포츠 축구 · 야구 · 농구":
+      - generic: SPORTS
+      - generic: 경기 214
+      - strong: 국내외 스포츠
+      - generic: 축구 · 야구 · 농구
+    - button "LIVE 진행 38 실시간 스포츠 진행 중인 경기 38개":
+      - generic: LIVE
+      - generic: 진행 38
+      - strong: 실시간 스포츠
+      - generic: 진행 중인 경기 38개
+    - button "E-SPORTS 인기 E스포츠 리그별 인기 경기":
+      - generic: E-SPORTS
+      - generic: 인기
+      - strong: E스포츠
+      - generic: 리그별 인기 경기
+    - button "CASINO LIVE 라이브 카지노 바카라 · 블랙잭 · 룰렛":
+      - generic: CASINO
+      - generic: LIVE
+      - strong: 라이브 카지노
+      - generic: 바카라 · 블랙잭 · 룰렛
+    - button "SLOT NEW 슬롯 게임 신규 게임 전체보기":
+      - generic: SLOT
+      - generic: NEW
+      - strong: 슬롯 게임
+      - generic: 신규 게임 전체보기
+  - heading "실시간 스포츠" [level=2]
+  - paragraph: 진행 중인 경기 3개
+  - button "전체보기 ›"
+  - article:
+    - time: 오늘 18:30
+    - generic: KBO
+    - generic "선택 가능한 12개 마켓":
+      - text: "12"
+      - generic: 경기
+    - strong: 삼성 라이온즈
+    - generic: 7회말
+    - generic: "3"
+    - generic: ":"
+    - generic: "2"
+    - strong: 키움 히어로즈
+    - button "삼성 라이온즈 대 키움 히어로즈 삼성 라이온즈 1.84 배당 선택":
+      - generic: 삼성 라이온즈
+      - strong:
+        - text: "1.84"
+        - emphasis: ▲
+    - button "삼성 라이온즈 대 키움 히어로즈 키움 히어로즈 2.06 배당 선택":
+      - strong: "2.06"
+      - generic: 키움 히어로즈
+    - button "삼성 라이온즈 대 키움 히어로즈 오버 1.91 배당 선택":
+      - generic: 오버
+      - strong: "1.91"
+    - generic: 경기 언더/오버
+    - generic: "8.5"
+    - button "삼성 라이온즈 대 키움 히어로즈 언더 1.87 배당 선택":
+      - strong: "1.87"
+      - generic: 언더
+    - button "삼성 라이온즈 대 키움 히어로즈 삼성 라이온즈 1.72 배당 선택":
+      - generic: 삼성 라이온즈
+      - strong:
+        - text: "1.72"
+        - emphasis: ▼
+    - generic: 런 아시안핸디캡
+    - generic: H +1.5
+    - button "삼성 라이온즈 대 키움 히어로즈 키움 히어로즈 2.03 배당 선택" [disabled]:
+      - strong: "2.03"
+      - generic: 키움 히어로즈
+  - article:
+    - time: 오늘 19:00
+    - generic: K리그1
+    - generic "선택 가능한 18개 마켓":
+      - text: "18"
+      - generic: 경기
+    - strong: 울산 HD
+    - generic: 62분
+    - generic: "1"
+    - generic: ":"
+    - generic: "1"
+    - strong: 전북 현대
+    - button "울산 HD 대 전북 현대 울산 HD 2.06 배당 선택":
+      - generic: 울산 HD
+      - strong:
+        - text: "2.06"
+        - emphasis: ▼
+    - button "울산 HD 대 전북 현대 전북 현대 2.82 배당 선택":
+      - strong:
+        - text: "2.82"
+        - emphasis: ▲
+      - generic: 전북 현대
+    - button "울산 HD 대 전북 현대 오버 2.14 배당 선택" [disabled]:
+      - generic: 오버
+      - strong: "2.14"
+    - generic: 경기 언더/오버
+    - generic: "2.5"
+    - button "울산 HD 대 전북 현대 언더 1.68 배당 선택":
+      - strong:
+        - text: "1.68"
+        - emphasis: ▲
+      - generic: 언더
+    - button "울산 HD 대 전북 현대 울산 HD 2.18 배당 선택":
+      - generic: 울산 HD
+      - strong: "2.18"
+    - generic: 아시안핸디캡
+    - generic: H -0.5
+    - button "울산 HD 대 전북 현대 전북 현대 1.71 배당 선택":
+      - strong:
+        - text: "1.71"
+        - emphasis: ▼
+      - generic: 전북 현대
+  - article:
+    - time: 오늘 19:00
+    - generic: KBL
+    - generic "선택 가능한 9개 마켓":
+      - text: "9"
+      - generic: 경기
+    - strong: 서울 SK
+    - generic: 3쿼터 06:18
+    - generic: "68"
+    - generic: ":"
+    - generic: "66"
+    - strong: 안양 정관장
+    - button "서울 SK 대 안양 정관장 서울 SK 1.56 배당 선택":
+      - generic: 서울 SK
+      - strong:
+        - text: "1.56"
+        - emphasis: ▲
+    - button "서울 SK 대 안양 정관장 안양 정관장 2.43 배당 선택" [disabled]:
+      - strong: "2.43"
+      - generic: 안양 정관장
+    - button "서울 SK 대 안양 정관장 오버 1.79 배당 선택":
+      - generic: 오버
+      - strong:
+        - text: "1.79"
+        - emphasis: ▼
+    - generic: 경기 언더/오버
+    - generic: "158.5"
+    - button "서울 SK 대 안양 정관장 언더 1.92 배당 선택":
+      - strong: "1.92"
+      - generic: 언더
+    - button "서울 SK 대 안양 정관장 서울 SK 1.87 배당 선택":
+      - generic: 서울 SK
+      - strong: "1.87"
+    - generic: 포인트 아시안핸디캡
+    - generic: H -3.5
+    - button "서울 SK 대 안양 정관장 안양 정관장 1.88 배당 선택":
+      - strong:
+        - text: "1.88"
+        - emphasis: ▼
+      - generic: 안양 정관장
+  - heading "마감임박" [level=2]
+  - paragraph: 마감 전 주요 경기 3개 · 빠른 배당 선택
+  - button "전체보기 ›"
+  - article:
+    - time: 오늘 18:30
+    - generic: KBO
+    - generic "선택 가능한 21개 마켓":
+      - text: "21"
+      - generic: 경기
+    - strong: LG 트윈스
+    - generic: 마감 12분 전
+    - generic: "-"
+    - generic: ":"
+    - generic: "-"
+    - strong: 두산 베어스
+    - button "LG 트윈스 대 두산 베어스 LG 트윈스 1.71 배당 선택":
+      - generic: LG 트윈스
+      - strong:
+        - text: "1.71"
+        - emphasis: ▼
+    - button "LG 트윈스 대 두산 베어스 두산 베어스 2.14 배당 선택":
+      - strong: "2.14"
+      - generic: 두산 베어스
+    - button "LG 트윈스 대 두산 베어스 오버 1.96 배당 선택":
+      - generic: 오버
+      - strong: "1.96"
+    - generic: 경기 언더/오버
+    - generic: "7.5"
+    - button "LG 트윈스 대 두산 베어스 언더 1.83 배당 선택" [disabled]:
+      - strong:
+        - text: "1.83"
+        - emphasis: ▲
+      - generic: 언더
+    - button "LG 트윈스 대 두산 베어스 LG 트윈스 1.95 배당 선택":
+      - generic: LG 트윈스
+      - strong: "1.95"
+    - generic: 런 아시안핸디캡
+    - generic: H -1.5
+    - button "LG 트윈스 대 두산 베어스 두산 베어스 1.78 배당 선택":
+      - strong: "1.78"
+      - generic: 두산 베어스
+  - article:
+    - time: 오늘 19:30
+    - generic: K리그1
+    - generic "선택 가능한 16개 마켓":
+      - text: "16"
+      - generic: 경기
+    - strong: 포항 스틸러스
+    - generic: 마감 24분 전
+    - generic: "-"
+    - generic: ":"
+    - generic: "-"
+    - strong: FC 서울
+    - button "포항 스틸러스 대 FC 서울 포항 스틸러스 2.18 배당 선택":
+      - generic: 포항 스틸러스
+      - strong: "2.18"
+    - button "포항 스틸러스 대 FC 서울 FC 서울 2.82 배당 선택":
+      - strong: "2.82"
+      - generic: FC 서울
+    - button "포항 스틸러스 대 FC 서울 오버 1.93 배당 선택":
+      - generic: 오버
+      - strong:
+        - text: "1.93"
+        - emphasis: ▼
+    - generic: 경기 언더/오버
+    - generic: "2.5"
+    - button "포항 스틸러스 대 FC 서울 언더 1.84 배당 선택":
+      - strong: "1.84"
+      - generic: 언더
+    - button "포항 스틸러스 대 FC 서울 포항 스틸러스 1.96 배당 선택":
+      - generic: 포항 스틸러스
+      - strong: "1.96"
+    - generic: 아시안핸디캡
+    - generic: H -0.5
+    - button "포항 스틸러스 대 FC 서울 FC 서울 1.85 배당 선택":
+      - strong: "1.85"
+      - generic: FC 서울
+  - article:
+    - time: 오늘 20:00
+    - generic: 프리미어리그
+    - generic "선택 가능한 27개 마켓":
+      - text: "27"
+      - generic: 경기
+    - strong: 맨체스터 시티
+    - generic: 마감 38분 전
+    - generic: "-"
+    - generic: ":"
+    - generic: "-"
+    - strong: 첼시
+    - button "맨체스터 시티 대 첼시 맨체스터 시티 1.62 배당 선택":
+      - generic: 맨체스터 시티
+      - strong:
+        - text: "1.62"
+        - emphasis: ▲
+    - button "맨체스터 시티 대 첼시 첼시 2.36 배당 선택":
+      - strong: "2.36"
+      - generic: 첼시
+    - button "맨체스터 시티 대 첼시 오버 1.93 배당 선택":
+      - generic: 오버
+      - strong: "1.93"
+    - generic: 경기 언더/오버
+    - generic: "2.5"
+    - button "맨체스터 시티 대 첼시 언더 1.85 배당 선택":
+      - strong: "1.85"
+      - generic: 언더
+    - button "맨체스터 시티 대 첼시 맨체스터 시티 1.86 배당 선택" [disabled]:
+      - generic: 맨체스터 시티
+      - strong:
+        - text: "1.86"
+        - emphasis: ▼
+    - generic: 아시안핸디캡
+    - generic: H -1.0
+    - button "맨체스터 시티 대 첼시 첼시 1.99 배당 선택":
+      - strong: "1.99"
+      - generic: 첼시
+  - heading "인기 경기" [level=2]
+  - paragraph: 회원이 많이 선택한 경기 3개
+  - button "전체보기 ›"
+  - article:
+    - time: 내일 18:30
+    - generic: KBO
+    - generic "선택 가능한 14개 마켓":
+      - text: "14"
+      - generic: 경기
+    - strong: 한화 이글스
+    - generic: 인기 1위
+    - generic: "-"
+    - generic: ":"
+    - generic: "-"
+    - strong: 롯데 자이언츠
+    - button "한화 이글스 대 롯데 자이언츠 한화 이글스 1.88 배당 선택":
+      - generic: 한화 이글스
+      - strong: "1.88"
+    - button "한화 이글스 대 롯데 자이언츠 롯데 자이언츠 2.02 배당 선택":
+      - strong: "2.02"
+      - generic: 롯데 자이언츠
+    - button "한화 이글스 대 롯데 자이언츠 오버 1.86 배당 선택" [disabled]:
+      - generic: 오버
+      - strong: "1.86"
+    - generic: 경기 언더/오버
+    - generic: "8.5"
+    - button "한화 이글스 대 롯데 자이언츠 언더 1.92 배당 선택":
+      - strong: "1.92"
+      - generic: 언더
+    - button "한화 이글스 대 롯데 자이언츠 한화 이글스 1.69 배당 선택":
+      - generic: 한화 이글스
+      - strong:
+        - text: "1.69"
+        - emphasis: ▲
+    - generic: 런 아시안핸디캡
+    - generic: H +1.5
+    - button "한화 이글스 대 롯데 자이언츠 롯데 자이언츠 2.01 배당 선택":
+      - strong: "2.01"
+      - generic: 롯데 자이언츠
+  - article:
+    - time: 내일 19:00
+    - generic: K리그1
+    - generic "선택 가능한 11개 마켓":
+      - text: "11"
+      - generic: 경기
+    - strong: 수원 FC
+    - generic: 인기 2위
+    - generic: "-"
+    - generic: ":"
+    - generic: "-"
+    - strong: 강원 FC
+    - button "수원 FC 대 강원 FC 수원 FC 2.22 배당 선택":
+      - generic: 수원 FC
+      - strong: "2.22"
+    - button "수원 FC 대 강원 FC 강원 FC 2.51 배당 선택":
+      - strong: "2.51"
+      - generic: 강원 FC
+    - button "수원 FC 대 강원 FC 오버 1.94 배당 선택":
+      - generic: 오버
+      - strong: "1.94"
+    - generic: 경기 언더/오버
+    - generic: "2.5"
+    - button "수원 FC 대 강원 FC 언더 1.74 배당 선택" [disabled]:
+      - strong:
+        - text: "1.74"
+        - emphasis: ▼
+      - generic: 언더
+    - button "수원 FC 대 강원 FC 수원 FC 1.89 배당 선택":
+      - generic: 수원 FC
+      - strong: "1.89"
+    - generic: 아시안핸디캡
+    - generic: H -0.5
+    - button "수원 FC 대 강원 FC 강원 FC 1.98 배당 선택":
+      - strong: "1.98"
+      - generic: 강원 FC
+  - article:
+    - time: 내일 11:00
+    - generic: NBA
+    - generic "선택 가능한 24개 마켓":
+      - text: "24"
+      - generic: 경기
+    - strong: LA 레이커스
+    - generic: 인기 3위
+    - generic: "-"
+    - generic: ":"
+    - generic: "-"
+    - strong: 골든스테이트
+    - button "LA 레이커스 대 골든스테이트 LA 레이커스 1.74 배당 선택":
+      - generic: LA 레이커스
+      - strong:
+        - text: "1.74"
+        - emphasis: ▲
+    - button "LA 레이커스 대 골든스테이트 골든스테이트 2.26 배당 선택":
+      - strong: "2.26"
+      - generic: 골든스테이트
+    - button "LA 레이커스 대 골든스테이트 오버 1.82 배당 선택" [disabled]:
+      - generic: 오버
+      - strong: "1.82"
+    - generic: 경기 언더/오버
+    - generic: "228.5"
+    - button "LA 레이커스 대 골든스테이트 언더 1.88 배당 선택":
+      - strong: "1.88"
+      - generic: 언더
+    - button "LA 레이커스 대 골든스테이트 LA 레이커스 1.90 배당 선택":
+      - generic: LA 레이커스
+      - strong: "1.90"
+    - generic: 아시안핸디캡
+    - generic: H -2.5
+    - button "LA 레이커스 대 골든스테이트 골든스테이트 1.86 배당 선택":
+      - strong: "1.86"
+      - generic: 골든스테이트
+  - region "라이브 카지노":
+    - heading "라이브 카지노" [level=2]
+    - paragraph: 제공사별 라이브 테이블
+    - button "전체보기 ›"
+    - button "라이브 바카라 LIVE Evolution Gaming 로고 Evolution Gaming 현재 접속 1,842명 게임 입장":
+      - generic: 라이브 바카라
+      - emphasis: LIVE
+      - img "Evolution Gaming 로고"
+      - strong: Evolution Gaming
+      - generic: 현재 접속 1,842명
+      - emphasis: 게임 입장
+    - button "라이브 블랙잭 LIVE Pragmatic Play 로고 Pragmatic Play 테이블 24개 운영 중 게임 입장":
+      - generic: 라이브 블랙잭
+      - emphasis: LIVE
+      - img "Pragmatic Play 로고"
+      - strong: Pragmatic Play
+      - generic: 테이블 24개 운영 중
+      - emphasis: 게임 입장
+    - button "라이브 룰렛 LIVE Dream Gaming 로고 Dream Gaming 테이블 16개 운영 중 게임 입장":
+      - generic: 라이브 룰렛
+      - emphasis: LIVE
+      - img "Dream Gaming 로고"
+      - strong: Dream Gaming
+      - generic: 테이블 16개 운영 중
+      - emphasis: 게임 입장
+    - button "라이브 카지노 NEW Playtech Live 로고 Playtech Live 신규 테이블 입장 게임 입장":
+      - generic: 라이브 카지노
+      - emphasis: NEW
+      - img "Playtech Live 로고"
+      - strong: Playtech Live
+      - generic: 신규 테이블 입장
+      - emphasis: 게임 입장
+  - region "슬롯 게임":
+    - heading "슬롯 게임" [level=2]
+    - paragraph: 신규 게임 · 인기 슬롯
+    - button "전체보기 ›"
+    - button "신규 슬롯 NEW Pragmatic Play 로고 Pragmatic Play 인기 게임 12종 게임 입장":
+      - generic: 신규 슬롯
+      - emphasis: NEW
+      - img "Pragmatic Play 로고"
+      - strong: Pragmatic Play
+      - generic: 인기 게임 12종
+      - emphasis: 게임 입장
+    - button "인기 슬롯 POPULAR NetEnt 로고 NetEnt 오늘의 추천 게임 게임 입장":
+      - generic: 인기 슬롯
+      - emphasis: POPULAR
+      - img "NetEnt 로고"
+      - strong: NetEnt
+      - generic: 오늘의 추천 게임
+      - emphasis: 게임 입장
+    - button "슬롯 게임 JACKPOT Habanero 로고 Habanero 잭팟 누적 진행 중 게임 입장":
+      - generic: 슬롯 게임
+      - emphasis: JACKPOT
+      - img "Habanero 로고"
+      - strong: Habanero
+      - generic: 잭팟 누적 진행 중
+      - emphasis: 게임 입장
+    - button "신규 게임 NEW PG Soft 로고 PG Soft 무료 체험 가능 게임 입장":
+      - generic: 신규 게임
+      - emphasis: NEW
+      - img "PG Soft 로고"
+      - strong: PG Soft
+      - generic: 무료 체험 가능
+      - emphasis: 게임 입장
+  - complementary "계정 서비스 및 베팅 패널":
+    - generic: 회원 서비스
+    - strong: 로그인 후 이용하세요
+    - button "로그인"
+    - button "충전"
+    - button "환전"
+    - button "베팅내역"
+    - button "접힌 베팅슬립":
+      - generic: 베팅슬립
+      - strong: 0 선택
+      - generic: 예상 적중금
+      - strong: ₩0
+      - generic: 펼치기 ›
+    - button "신규회원 보너스 신규회원 혜택 첫 충전 보너스 자세히 보기 ›":
+      - img "신규회원 보너스"
+      - generic: 신규회원 혜택
+      - strong: 첫 충전 보너스
+      - emphasis: 자세히 보기 ›
+    - button "24시간 고객센터 1:1 문의 · 공지사항 고객센터 ›":
+      - generic: 24시간 고객센터
+      - strong: 1:1 문의 · 공지사항
+      - generic: 고객센터 ›
+  - generic: 공식 파트너
+  - strong: 안전한 게임 환경을 위한 제휴 서비스
+  - img "Asia Gaming"
+  - img "Big Time Gaming"
+  - img "Blueprint Gaming"
+  - img "GameArt"
+  - img "Galaxsys"
+  - img "Greentube"
+  - img "Hacksaw Gaming"
+  - img "JDB"
+  - img "Jili"
+  - img "LiveBet"
+  - img "Microgaming"
+  - img "Nolimit City"
+  - img "Novomatic"
+  - img "Play'n GO"
+  - img "Quickspin"
+  - img "Skywind"
+  - generic: C
+  - strong: COBALT
+  - paragraph: 스포츠 · 카지노 · 슬롯 · 미니게임 · 이벤트 · 고객센터
+  - button "이용약관"
+  - button "개인정보처리방침"
+  - button "고객센터"

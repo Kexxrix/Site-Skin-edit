@@ -1,0 +1,14 @@
+import {run,outDir} from './ae-client.mjs';
+const main=458,ipad=485,ops=[];
+const op=(operation,args)=>ops.push({operation,args});
+const expr=(comp,layer,property,expression)=>op('expression.set',{comp,layer,property,expression});
+op('layer.set_props',{comp:main,layer:'C01_DEVICE_IPHONE',props:{enabled:false}});
+op('layer.replace_source',{comp:main,layer:'C02_DEVICE_IPAD',item:ipad,fixExpressions:false});
+op('marker.add_comp',{comp:main,time:180/30,comment:'IPAD_ROTATE_START'});
+op('marker.add_comp',{comp:main,time:204/30,comment:'IPAD_RETREAT_END'});
+const clock=`var master=comp('TITAN_TwoScenes_8s_v004_R02');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;} function unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));} `;
+expr(ipad,'DEVICE_iPad_VIEW',['Transform','Position'],clock+`var x=65;if(time>=at('IPAD_ENTER')&&time<at('CONTACT')){var u=unit(at('IPAD_ENTER'),at('CONTACT'));x=65+(-17.5-65)*u*u;}else if(time>=at('CONTACT')&&time<at('PUSH_MAX')){var u=unit(at('CONTACT'),at('PUSH_MAX'));x=-17.5-15*(1-Math.pow(1-u,5));}else if(time>=at('PUSH_MAX')){var u=unit(at('PUSH_MAX'),at('IPAD_RETREAT_END'));x=-32.5+22.5*(1-Math.pow(1-u,3));}[x,0,0];`);
+expr(ipad,'DEVICE_iPad_VIEW',['Transform','Y Rotation'],clock+`var u=unit(at('IPAD_ROTATE_START'),at('IPAD_SETTLED'));35*(1-Math.pow(1-u,3));`);
+op('expression.remove',{comp:ipad,layer:'DEVICE_iPad_VIEW',property:['Transform','Z Rotation']});
+op('property.set',{comp:ipad,layer:'DEVICE_iPad_VIEW',property:['Transform','Z Rotation'],value:0});
+await run({write:true,label:'review02-revise',calls:[{name:'ae_do',args:{operation:'batch.run',args:{ops,stopOnError:true}}},{name:'ae_save_project',args:{path:outDir+'TITAN-TwoScene-v004-review-02-Working.aep'}},...[[main,3.1,'r02-c01-settle'],[main,167/30,'r02-contact'],[main,174/30,'r02-pushmax'],[main,180/30,'r02-recoil-front'],[main,190/30,'r02-midrotate'],[main,239/30,'r02-final']].map(([compNameOrId,time,name])=>({name:'ae_render_frame',args:{compNameOrId,time,outPath:outDir+name+'.png'}}))]});

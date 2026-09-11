@@ -1,0 +1,170 @@
+{
+  "version": "v0.1",
+  "checkedAt": "2026-09-09T12:29:19.0547695+09:00",
+  "status": "passed",
+  "method": "PowerShell: strict UTF-8 decode, Markdown local links, role ID references, observed URL and geometry comparison, DNA rule references, System.Drawing PNG decoding, file-scope inspection; display dimensions rounded to two decimal places with midpoint away from zero, matching the documented table format; fit and position compared.",
+  "checks": [
+    {
+      "check": "document_utf8",
+      "file": "00_INDEX.md",
+      "pass": true,
+      "bytes": 8728
+    },
+    {
+      "check": "document_utf8",
+      "file": "01_WORK_RULES.md",
+      "pass": true,
+      "bytes": 23992
+    },
+    {
+      "check": "document_utf8",
+      "file": "02_REFERENCE_AUDIT.md",
+      "pass": true,
+      "bytes": 43388
+    },
+    {
+      "check": "document_utf8",
+      "file": "03_THEME_TEMPLATE.md",
+      "pass": true,
+      "bytes": 17065
+    },
+    {
+      "check": "local_markdown_links",
+      "checked": 62,
+      "pass": true
+    },
+    {
+      "check": "resource_registry_and_geometry",
+      "resourceIds": 42,
+      "areaIds": 17,
+      "uiIds": 14,
+      "observedImageUrls": 42,
+      "policyCounts": {
+        "조건부 교체": 9,
+        "보존": 24,
+        "교체 후보": 9
+      },
+      "pass": true
+    },
+    {
+      "check": "image_decode",
+      "count": 13,
+      "pass": true
+    },
+    {
+      "check": "scope",
+      "documents": [
+        "00_INDEX.md",
+        "01_WORK_RULES.md",
+        "02_REFERENCE_AUDIT.md",
+        "03_THEME_TEMPLATE.md"
+      ],
+      "filesOutsideEvidenceSubtree": 0,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "images": [
+    {
+      "file": "01-desktop-1828.png",
+      "width": 1828,
+      "height": 960,
+      "bytes": 223098,
+      "sha256": "0476F9377986FC447ED5EAB1CEA849053FBE20E07DFA413CD4FF180137B2639B"
+    },
+    {
+      "file": "02-desktop-full.png",
+      "width": 1920,
+      "height": 2565,
+      "bytes": 597036,
+      "sha256": "D1ED00B56D356321F09BB3D845CD2EE765A16635DD5597092DD82E6054E83562"
+    },
+    {
+      "file": "02-desktop-top.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 218814,
+      "sha256": "53B4A3E49CECCA8EDE847C4CD33062A00432C51F34C70742C19AF864F79F4B2F"
+    },
+    {
+      "file": "04-slip-collapsed.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 204705,
+      "sha256": "563BE6900239AC31FCC7A932D589AFE0D1CBCEB6FB0237D8E6A3FEF08081C628"
+    },
+    {
+      "file": "05-login-panel.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 218306,
+      "sha256": "F71EC99D05E6EC2D8BCFE3369A78E003DE779F853D2AF2A32EC65936BE77B5E4"
+    },
+    {
+      "file": "06-search-focus.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 219017,
+      "sha256": "78C845D171AA088D8EA98D6303844D9AA7431A162A70CCC1FC8ACE87453A8D03"
+    },
+    {
+      "file": "07-casino-menu.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 218473,
+      "sha256": "F334D802406456D89F83B81064EF6C67ECAFF58436EF55FDCFF17D5ED407B057"
+    },
+    {
+      "file": "08-catalog-footer.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 248604,
+      "sha256": "4EB39319EBBCD951C00A26D875409AC53AB660D71AFAFC50107A3B387375F639"
+    },
+    {
+      "file": "09-mobile-390.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 40601,
+      "sha256": "C5CFAF88C7BD208227686277761826781C471D4F77E956DE8C9253EB5BC01058"
+    },
+    {
+      "file": "11-quick-hover.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 218731,
+      "sha256": "15CC9BBFE6407F6FFEA45402F56D8ECF8A6DCC71DF2DF252CFD72FD5BC563EF8"
+    },
+    {
+      "file": "12-quick-focus.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 219208,
+      "sha256": "327ADF7C984A82F309DCB0607EC2E793587C63AFC25F6A5FE61171039B6156C2"
+    },
+    {
+      "file": "observed-event-hero-158-767.png",
+      "width": 1208,
+      "height": 258,
+      "bytes": 577355,
+      "sha256": "819E01EC469248ED5214CC911632645D2AEA2CCDE04457EF494D2756188D8631"
+    },
+    {
+      "file": "observed-stadium-city-fixed.png",
+      "width": 1920,
+      "height": 1084,
+      "bytes": 1272511,
+      "sha256": "7FBDD218FF10C23560728A61AD62F58F05518F63970D0A1A47C3776CF689D261"
+    }
+  ],
+  "manualReview": [
+    "Desktop, full-page, lower catalog/footer, mobile, collapsed panel and keyboard-focus screenshots inspected.",
+    "Observed facts, proposals and unknowns kept separate; source/API/framework not inferred.",
+    "All four documents reviewed for scope, source intake, DNA-to-resource linkage, approval locks and local edits."
+  ],
+  "limitations": [
+    "No application build or tests: workspace contained no application source; changes are documentation and observation evidence only.",
+    "No image generation, theme application, service code changes, deployment, real authentication or transactions performed.",
+    "Visual approval of a future theme and actual original-site behavior are unverified."
+  ]
+}

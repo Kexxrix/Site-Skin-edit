@@ -1,0 +1,375 @@
+{
+  "timestamp": "2026-09-11T09-59-28-395Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Line_Continuation",
+                  "toIndex": 9
+                }
+              },
+              {
+                "operation": "layer.move",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S02_Subtle_Frame",
+                  "toIndex": 19
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Outline",
+                  "props": {
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Outline",
+                  "props": {
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_Casino_Fill",
+                  "props": {
+                    "outPoint": 5.7
+                  }
+                }
+              },
+              {
+                "operation": "shape.add_rounded_corners",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "SHARED_LINE_01_to_03",
+                  "groupIndex": 1,
+                  "radius": 24
+                }
+              },
+              {
+                "operation": "timeline.set_time",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "time": 5.166666666666667
+                }
+              },
+              {
+                "operation": "render.add_to_queue",
+                "args": {
+                  "comp": "TITAN_MASTER_20S"
+                }
+              },
+              {
+                "operation": "render.set_output",
+                "args": {
+                  "queueIndex": 2,
+                  "renderTemplate": "Best Settings",
+                  "outputTemplate": "H.264 - Match Render Settings - 40 Mbps",
+                  "outputPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Scenes01-03-v001.mp4",
+                  "timeSpanStart": 0,
+                  "timeSpanDuration": 5.7,
+                  "skipFrames": 0,
+                  "logType": "errorsAndSettings"
+                }
+              },
+              {
+                "operation": "render.set_om_settings",
+                "args": {
+                  "queueIndex": 2,
+                  "settings": {
+                    "Output Audio": "Off"
+                  }
+                }
+              }
+            ],
+            "stopOnError": true
+          },
+          "timeoutMs": 60000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "fromIndex": 1,
+              "newIndex": 9,
+              "name": "S01_Line_Continuation"
+            },
+            {
+              "ok": true,
+              "fromIndex": 21,
+              "newIndex": 19,
+              "name": "S02_Subtle_Frame"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S03_CAT_Outline",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S03_Casino_Outline",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S03_Casino_Fill",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Round Corners 1"
+            },
+            {
+              "ok": true,
+              "time": 5.16666666666667
+            },
+            {
+              "ok": true,
+              "queueIndex": 2,
+              "compName": "TITAN_MASTER_20S"
+            },
+            {
+              "ok": true,
+              "queueIndex": 2,
+              "comp": "TITAN_MASTER_20S",
+              "timeSpanStart": 0,
+              "timeSpanDuration": 5.7,
+              "outputPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Scenes01-03-v001.mp4",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "queueIndex": 2,
+              "outputModuleIndex": 1,
+              "settings": {
+                "Crop": "false",
+                "Include Project Link": "true",
+                "Include Source XMP Metadata": "false",
+                "Output Audio": "Off",
+                "Output File Info": {
+                  "Full Flat Path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001\\TITAN-Scenes01-03-v001.mp4",
+                  "Base Path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-three-scenes-motion-ref-20260911-174559\\ae-production-brief-v001\\ae-output-v001",
+                  "Subfolder Path": "",
+                  "File Name": "TITAN-Scenes01-03-v001.mp4",
+                  "File Template": "TITAN-Scenes01-03-v001.[fileExtension]"
+                },
+                "Post-Render Action": "None",
+                "Resize": "false",
+                "Video Output": "true"
+              }
+            }
+          ],
+          "count": 10,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 454
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "logs": [],
+        "durationMs": 1186
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "project.open",
+          "args": {
+            "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep",
+            "save": false
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "numItems": 13,
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 1198
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 5.166666666666667,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/final-reopened-F155.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/final-reopened-F155.png",
+          "time": 5.16666666666667,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 456
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.start",
+          "timeoutMs": 600000
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendered": 2
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 24
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 39791
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+        },
+        "logs": [],
+        "durationMs": 932
+      }
+    },
+    {
+      "call": {
+        "name": "ae_project_export_json",
+        "args": {
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/final-native-project.json"
+        }
+      },
+      "response": {
+        "ok": true,
+        "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/final-native-project.json",
+        "bytes": 539250,
+        "itemCount": 13,
+        "durationMs": 1191
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "status": "applied_and_verified_locally",
+  "preview_url": "http://127.0.0.1:3000/",
+  "assets": [
+    {
+      "source": "D:\\WebDL\\ChatGPT Image 2026년 9월 9일 오후 07_24_25 (1).png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-user-20260909\\01-development-review.png",
+      "url": "/assets/hero-team-user-20260909/01-development-review.png",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "sha256": "ecbf6fd9e8854ee5859c13aabfc9ffc4b484355ded6dfc8b32fe57e30c8e4ad5",
+      "bytes": 1764493,
+      "format": "PNG",
+      "display_order": 1,
+      "object_position": "50% 50%",
+      "storage_action": "copied_without_modification",
+      "user_selected": true,
+      "adopted_local_preview": true,
+      "generated_by_this_task": false,
+      "source_prompt": "Not supplied; images provided by user from another chat."
+    },
+    {
+      "source": "D:\\WebDL\\ChatGPT Image 2026년 9월 9일 오후 07_24_26 (4).png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-user-20260909\\02-team-review.png",
+      "url": "/assets/hero-team-user-20260909/02-team-review.png",
+      "dimensions": [
+        1161,
+        1355
+      ],
+      "sha256": "3ef75c51323e1fed252896d2f38ce0c48f53307572d3153888673bc7a819204f",
+      "bytes": 1808141,
+      "format": "PNG",
+      "display_order": 2,
+      "object_position": "50% 50%",
+      "storage_action": "copied_without_modification",
+      "user_selected": true,
+      "adopted_local_preview": true,
+      "generated_by_this_task": false,
+      "source_prompt": "Not supplied; images provided by user from another chat."
+    },
+    {
+      "source": "D:\\WebDL\\ChatGPT Image 2026년 9월 9일 오후 07_24_26 (3).png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-user-20260909\\03-group-review.png",
+      "url": "/assets/hero-team-user-20260909/03-group-review.png",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "sha256": "7fb7564b7ea287eebde23cd9300e2938e91c86f278ac82353b035e5e918a2c84",
+      "bytes": 1832618,
+      "format": "PNG",
+      "display_order": 3,
+      "object_position": "90% 50%",
+      "storage_action": "copied_without_modification",
+      "user_selected": true,
+      "adopted_local_preview": true,
+      "generated_by_this_task": false,
+      "source_prompt": "Not supplied; images provided by user from another chat."
+    },
+    {
+      "source": "D:\\WebDL\\ChatGPT Image 2026년 9월 9일 오후 07_24_26 (2).png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-user-20260909\\04-monitor-review.png",
+      "url": "/assets/hero-team-user-20260909/04-monitor-review.png",
+      "dimensions": [
+        1266,
+        1242
+      ],
+      "sha256": "f01992137858c2d75fc640139ce3a1d49aed5ffb8f920bcf2d991baef0491ae1",
+      "bytes": 1875557,
+      "format": "PNG",
+      "display_order": 4,
+      "object_position": "60% 50%",
+      "storage_action": "copied_without_modification",
+      "user_selected": true,
+      "adopted_local_preview": true,
+      "generated_by_this_task": false,
+      "source_prompt": "Not supplied; images provided by user from another chat."
+    }
+  ],
+  "sequence": "User attachment order: filenames ending (1), (4), (3), (2).",
+  "timing": {
+    "seconds_between_photos": 5,
+    "dissolve_seconds": 0.8,
+    "loop_seconds": 20,
+    "unchanged": true
+  },
+  "accessibility": {
+    "description": "개발팀이 코드를 함께 검토하고 협업하는 연출 사진",
+    "reduced_motion": "First image remains static",
+    "mobile": "Existing hidden state retained"
+  },
+  "verification": {
+    "checks": {
+      "pageIdentity": true,
+      "allFourDecoded": true,
+      "mediaLayoutPreserved": true,
+      "sceneOrderCorrect": true,
+      "completeLoop": true,
+      "smoothDissolve": true,
+      "noBlankDuringLoop": true,
+      "noOverflowOrOverlay": true,
+      "mobileHidden": true,
+      "reducedMotionStatic": true,
+      "interaction": true,
+      "noAppErrors": true,
+      "servedAssetsMatch": true
+    },
+    "source_and_copy_sha_match": true,
+    "existing_files_changed": [
+      "components/hero.tsx"
+    ],
+    "new_asset_files": [
+      "public/assets/hero-team-user-20260909/01-development-review.png",
+      "public/assets/hero-team-user-20260909/02-team-review.png",
+      "public/assets/hero-team-user-20260909/03-group-review.png",
+      "public/assets/hero-team-user-20260909/04-monitor-review.png"
+    ],
+    "typecheck": "tsc --noEmit --incremental false passed",
+    "diff_check": "git diff --check passed; line-ending warnings only",
+    "browser_qa_path": "C:\\Users\\User\\AppData\\Local\\Temp\\titan-user-photos-20260909-192711",
+    "visual_review": "Root inspected actual desktop/mobile and current user preview; independent reviewer inspected all four actual 1024px crops.",
+    "crop_note": "At narrow widths, faces remain visible; some left pointing fingertips/background are cropped in images 1-3 under the preserved cover layout.",
+    "server_note": "Server initially served previous image list despite on-disk change. Restarted only this verified Next dev server; fresh HTTP page and browser subsequently returned new assets.",
+    "console_notes": [
+      {
+        "type": "warning",
+        "text": "Allow attribute will take precedence over 'allowfullscreen'."
+      },
+      {
+        "type": "warning",
+        "text": "The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127"
+      }
+    ]
+  },
+  "preserved": [
+    "All four user-provided original files",
+    "Previous site photo assets",
+    "Existing hero photo layout and animation CSS",
+    "Left video and other site sections"
+  ],
+  "counts": {
+    "provided": 4,
+    "copied": 4,
+    "applied": 4,
+    "failed": 0
+  },
+  "deployment": "Local preview only; no commit, push or deployment"
+}

@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-09-11T06-29-39-635Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "layer.set_enabled",
+          "args": {
+            "comp": "TITAN_DEVICE_iPad_3D_v003",
+            "layer": "SCREEN_iPad10_VIDEO_SOURCE",
+            "enabled": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "updated": 1
+        },
+        "context": {
+          "project": {
+            "numItems": 21,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+          },
+          "activeComp": {
+            "id": 163,
+            "name": "TITAN_DEVICE_iPad_3D_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 5
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "DEVICE_iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 477
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_DEVICE_iPad_3D_v003",
+          "time": 2.3,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/source-visible-ipad-2.3.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/source-visible-ipad-2.3.png",
+          "time": 2.3,
+          "compName": "TITAN_DEVICE_iPad_3D_v003",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 369
+      }
+    }
+  ]
+}

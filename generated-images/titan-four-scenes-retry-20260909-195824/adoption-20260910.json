@@ -1,0 +1,137 @@
+{
+  "status": "applied_and_verified_locally",
+  "recorded_at": "2026-09-10T02:50:38.182101+00:00",
+  "user_request": "생성된 이미지를 적용하고 피드백 해",
+  "user_acceptance_scope": "Explicit request to apply these four generated images to the local site; not a claim of blanket aesthetic endorsement",
+  "preview_url": "http://127.0.0.1:3000/",
+  "assets": [
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-four-scenes-retry-20260909-195824\\results\\01-development-planning.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-generated-20260910\\01-development-planning.png",
+      "url": "/assets/hero-team-generated-20260910/01-development-planning.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "40f50084647470a609faffa839e3c859c501f238db228d4bc2ff0ebcf1bb0393",
+      "bytes": 1785512,
+      "format": "PNG",
+      "position": "20% 50%"
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-four-scenes-retry-20260909-195824\\results\\02-customer-support.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-generated-20260910\\02-customer-support.png",
+      "url": "/assets/hero-team-generated-20260910/02-customer-support.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "f3e6df9f8acbaeed54322c1b6d85f8ee9d28bcee1dab3b4a384042b7c587486d",
+      "bytes": 1759109,
+      "format": "PNG",
+      "position": "50% 50%"
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-four-scenes-retry-20260909-195824\\results\\03-technical-meeting.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-generated-20260910\\03-technical-meeting.png",
+      "url": "/assets/hero-team-generated-20260910/03-technical-meeting.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "eeda92b4bf04a581badd16eaa885322d9d717632d768eea6c75cb05f665bad1c",
+      "bytes": 1767950,
+      "format": "PNG",
+      "position": "70% 50%"
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-four-scenes-retry-20260909-195824\\results\\04-idea-meeting.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\titan_promotion\\public\\assets\\hero-team-generated-20260910\\04-idea-meeting.png",
+      "url": "/assets/hero-team-generated-20260910/04-idea-meeting.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "1f3dc00b7fa989e478bd72feb4ae8c4eb62d082a4b7b529ad8aa109f49f3bdac",
+      "bytes": 1792402,
+      "format": "PNG",
+      "position": "50% 50%"
+    }
+  ],
+  "app_changes": {
+    "changed_existing": [
+      "components/hero.tsx"
+    ],
+    "added": [
+      "public/assets/hero-team-generated-20260910/01-development-planning.png",
+      "public/assets/hero-team-generated-20260910/02-customer-support.png",
+      "public/assets/hero-team-generated-20260910/03-technical-meeting.png",
+      "public/assets/hero-team-generated-20260910/04-idea-meeting.png"
+    ],
+    "removed": [],
+    "before_file_count": 63,
+    "after_file_count": 67
+  },
+  "preserved": {
+    "all_source_images": true,
+    "previous_site_images": true,
+    "hero_css": true,
+    "video_url_and_media_layout": true,
+    "five_second_interval_800ms_dissolve_20_second_loop": true,
+    "mobile_hidden_and_reduced_motion": true
+  },
+  "verification": {
+    "typecheck": {
+      "command": "node_modules/.bin/tsc.cmd --noEmit --incremental false",
+      "exit_code": 0
+    },
+    "diff_check": {
+      "command": "git -c safe.directory=E:/codexwork/Site-Skin-edit/titan_promotion diff --check",
+      "exit_code": 0
+    },
+    "browser": {
+      "pageIdentity": true,
+      "allFourDecoded": true,
+      "mediaLayoutPreserved": true,
+      "sceneOrderCorrect": true,
+      "completeLoop": true,
+      "smoothDissolve": true,
+      "noBlankDuringLoop": true,
+      "noOverflowOrOverlay": true,
+      "mobileHidden": true,
+      "reducedMotionStatic": true,
+      "interaction": true,
+      "noAppErrors": true,
+      "servedAssetsMatch": true,
+      "objectPositionsCorrect": true,
+      "twentySecondDuration": true,
+      "eightHundredMsDissolve": true
+    },
+    "browser_evidence": "C:\\Users\\User\\AppData\\Local\\Temp\\titan-generated-photos-adopt-20260910-114511\\verification.json",
+    "screenshots_directory": "C:\\Users\\User\\AppData\\Local\\Temp\\titan-generated-photos-adopt-20260910-114511",
+    "served_png_source_hashes_match": true,
+    "page_errors": [],
+    "local_request_failures": [],
+    "console_warnings": [
+      {
+        "type": "warning",
+        "text": "Allow attribute will take precedence over 'allowfullscreen'."
+      },
+      {
+        "type": "warning",
+        "text": "The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127"
+      }
+    ]
+  },
+  "visual_feedback": {
+    "purpose": "Four distinct work situations are visible at actual size",
+    "crop": "01 uses 20% to retain pointing hand and code; 03 uses 70% to retain board; 02 and 04 centered",
+    "aesthetic_strength": "Readable faces and gestures against dark site, consistent editorial photographs",
+    "limits": [
+      "Similar glass office, wardrobe and cast appearance cause repetition across the set",
+      "02 microphone hand gesture retains conventional support-advertising staging",
+      "03 and 04 have dense information at small display size; edge attendees partially cropped"
+    ]
+  },
+  "public_deployment_performed": false
+}

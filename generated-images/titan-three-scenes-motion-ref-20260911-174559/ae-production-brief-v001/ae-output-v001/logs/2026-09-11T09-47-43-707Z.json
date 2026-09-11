@@ -1,0 +1,943 @@
+{
+  "timestamp": "2026-09-11T09-47-43-707Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "Advanced",
+                    "ADBE Text Range Type2"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "Advanced",
+                    "ADBE Text Range Shape"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Selectors",
+                    "Range Selector 1",
+                    "Advanced",
+                    "ADBE Text Selector Smoothness"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "Advanced",
+                    "ADBE Text Range Type2"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "Advanced",
+                    "ADBE Text Range Shape"
+                  ]
+                }
+              },
+              {
+                "operation": "property.get",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S03_CAT_Fill",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Slide Up By Word",
+                    "Selectors",
+                    "Range Selector 1",
+                    "Advanced",
+                    "ADBE Text Selector Smoothness"
+                  ]
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "TITAN_MASTER_20S",
+                  "layer": "S01_Meet",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "Animator 1",
+                    "Properties"
+                  ]
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "Based On",
+              "matchName": "ADBE Text Range Type2",
+              "value": 1,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Shape",
+              "matchName": "ADBE Text Range Shape",
+              "value": 2,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Smoothness",
+              "matchName": "ADBE Text Selector Smoothness",
+              "value": 100,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Based On",
+              "matchName": "ADBE Text Range Type2",
+              "value": 3,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Shape",
+              "matchName": "ADBE Text Range Shape",
+              "value": 2,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "name": "Smoothness",
+              "matchName": "ADBE Text Selector Smoothness",
+              "value": 100,
+              "numKeys": 0,
+              "hasExpression": false
+            },
+            {
+              "ok": true,
+              "path": [
+                "Text",
+                "Animators",
+                "Animator 1",
+                "Properties"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Anchor Point",
+                  "matchName": "ADBE Text Anchor Point 3D",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Position",
+                  "matchName": "ADBE Text Position 3D",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Scale",
+                  "matchName": "ADBE Text Scale 3D",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Skew",
+                  "matchName": "ADBE Text Skew",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "Skew Axis",
+                  "matchName": "ADBE Text Skew Axis",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "X Rotation",
+                  "matchName": "ADBE Text Rotation X",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Y Rotation",
+                  "matchName": "ADBE Text Rotation Y",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 8,
+                  "name": "Z Rotation",
+                  "matchName": "ADBE Text Rotation",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 9,
+                  "name": "Opacity",
+                  "matchName": "ADBE Text Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 10,
+                  "name": "Fill Opacity",
+                  "matchName": "ADBE Text Fill Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 11,
+                  "name": "Stroke Opacity",
+                  "matchName": "ADBE Text Stroke Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 12,
+                  "name": "Fill Color",
+                  "matchName": "ADBE Text Fill Color",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 13,
+                  "name": "Stroke Color",
+                  "matchName": "ADBE Text Stroke Color",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 14,
+                  "name": "Fill Hue",
+                  "matchName": "ADBE Text Fill Hue",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 15,
+                  "name": "Stroke Hue",
+                  "matchName": "ADBE Text Stroke Hue",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 16,
+                  "name": "Fill Saturation",
+                  "matchName": "ADBE Text Fill Saturation",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 17,
+                  "name": "Stroke Saturation",
+                  "matchName": "ADBE Text Stroke Saturation",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 18,
+                  "name": "Fill Brightness",
+                  "matchName": "ADBE Text Fill Brightness",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 19,
+                  "name": "Stroke Brightness",
+                  "matchName": "ADBE Text Stroke Brightness",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 20,
+                  "name": "Front Color",
+                  "matchName": "ADBE 3DText Front RGB",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 21,
+                  "name": "Front Hue",
+                  "matchName": "ADBE 3DText Front Hue",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 22,
+                  "name": "Front Saturation",
+                  "matchName": "ADBE 3DText Front Sat",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 23,
+                  "name": "Front Brightness",
+                  "matchName": "ADBE 3DText Front Bright",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 24,
+                  "name": "Front Opacity",
+                  "matchName": "ADBE 3DText Front Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 25,
+                  "name": "Front Ambient",
+                  "matchName": "ADBE 3DText Front Ambient",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 26,
+                  "name": "Front Diffuse",
+                  "matchName": "ADBE 3DText Front Diffuse",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 27,
+                  "name": "Front Specular Intensity",
+                  "matchName": "ADBE 3DText Front Specular",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 28,
+                  "name": "Front Specular Shininess",
+                  "matchName": "ADBE 3DText Front Shininess",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 29,
+                  "name": "Front Metal",
+                  "matchName": "ADBE 3DText Front Metal",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 30,
+                  "name": "Front Reflection Intensity",
+                  "matchName": "ADBE 3DText Front Reflection",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 31,
+                  "name": "Front Reflection Sharpness",
+                  "matchName": "ADBE 3DText Front Gloss",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 32,
+                  "name": "Front Reflection Rolloff",
+                  "matchName": "ADBE 3DText Front Fresnel",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 33,
+                  "name": "Front Transparency",
+                  "matchName": "ADBE 3DText Front Xparency",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 34,
+                  "name": "Front Transparency Rolloff",
+                  "matchName": "ADBE 3DText Front XparRoll",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 35,
+                  "name": "Front Index of Refraction",
+                  "matchName": "ADBE 3DText Front IOR",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 36,
+                  "name": "Bevel Color",
+                  "matchName": "ADBE 3DText Bevel RGB",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 37,
+                  "name": "Bevel Hue",
+                  "matchName": "ADBE 3DText Bevel Hue",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 38,
+                  "name": "Bevel Saturation",
+                  "matchName": "ADBE 3DText Bevel Sat",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 39,
+                  "name": "Bevel Brightness",
+                  "matchName": "ADBE 3DText Bevel Bright",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 40,
+                  "name": "Bevel Opacity",
+                  "matchName": "ADBE 3DText Bevel Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 41,
+                  "name": "Bevel Ambient",
+                  "matchName": "ADBE 3DText Bevel Ambient",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 42,
+                  "name": "Bevel Diffuse",
+                  "matchName": "ADBE 3DText Bevel Diffuse",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 43,
+                  "name": "Bevel Specular Intensity",
+                  "matchName": "ADBE 3DText Bevel Specular",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 44,
+                  "name": "Bevel Specular Shininess",
+                  "matchName": "ADBE 3DText Bevel Shininess",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 45,
+                  "name": "Bevel Metal",
+                  "matchName": "ADBE 3DText Bevel Metal",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 46,
+                  "name": "Bevel Reflection Intensity",
+                  "matchName": "ADBE 3DText Bevel Reflection",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 47,
+                  "name": "Bevel Reflection Sharpness",
+                  "matchName": "ADBE 3DText Bevel Gloss",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 48,
+                  "name": "Bevel Reflection Rolloff",
+                  "matchName": "ADBE 3DText Bevel Fresnel",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 49,
+                  "name": "Bevel Transparency",
+                  "matchName": "ADBE 3DText Bevel Xparency",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 50,
+                  "name": "Bevel Transparency Rolloff",
+                  "matchName": "ADBE 3DText Bevel XparRoll",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 51,
+                  "name": "Bevel Index of Refraction",
+                  "matchName": "ADBE 3DText Bevel IOR",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 52,
+                  "name": "Side Color",
+                  "matchName": "ADBE 3DText Side RGB",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 53,
+                  "name": "Side Hue",
+                  "matchName": "ADBE 3DText Side Hue",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 54,
+                  "name": "Side Saturation",
+                  "matchName": "ADBE 3DText Side Sat",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 55,
+                  "name": "Side Brightness",
+                  "matchName": "ADBE 3DText Side Bright",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 56,
+                  "name": "Side Opacity",
+                  "matchName": "ADBE 3DText Side Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 57,
+                  "name": "Side Ambient",
+                  "matchName": "ADBE 3DText Side Ambient",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 58,
+                  "name": "Side Diffuse",
+                  "matchName": "ADBE 3DText Side Diffuse",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 59,
+                  "name": "Side Specular Intensity",
+                  "matchName": "ADBE 3DText Side Specular",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 60,
+                  "name": "Side Specular Shininess",
+                  "matchName": "ADBE 3DText Side Shininess",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 61,
+                  "name": "Side Metal",
+                  "matchName": "ADBE 3DText Side Metal",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 62,
+                  "name": "Side Reflection Intensity",
+                  "matchName": "ADBE 3DText Side Reflection",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 63,
+                  "name": "Side Reflection Sharpness",
+                  "matchName": "ADBE 3DText Side Gloss",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 64,
+                  "name": "Side Reflection Rolloff",
+                  "matchName": "ADBE 3DText Side Fresnel",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 65,
+                  "name": "Side Transparency",
+                  "matchName": "ADBE 3DText Side Xparency",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 66,
+                  "name": "Side Transparency Rolloff",
+                  "matchName": "ADBE 3DText Side XparRoll",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 67,
+                  "name": "Side Index of Refraction",
+                  "matchName": "ADBE 3DText Side IOR",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 68,
+                  "name": "Back Color",
+                  "matchName": "ADBE 3DText Back RGB",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 69,
+                  "name": "Back Hue",
+                  "matchName": "ADBE 3DText Back Hue",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 70,
+                  "name": "Back Saturation",
+                  "matchName": "ADBE 3DText Back Sat",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 71,
+                  "name": "Back Brightness",
+                  "matchName": "ADBE 3DText Back Bright",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 72,
+                  "name": "Back Opacity",
+                  "matchName": "ADBE 3DText Back Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 73,
+                  "name": "Back Ambient",
+                  "matchName": "ADBE 3DText Back Ambient",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 74,
+                  "name": "Back Diffuse",
+                  "matchName": "ADBE 3DText Back Diffuse",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 75,
+                  "name": "Back Specular Intensity",
+                  "matchName": "ADBE 3DText Back Specular",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 76,
+                  "name": "Back Specular Shininess",
+                  "matchName": "ADBE 3DText Back Shininess",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 77,
+                  "name": "Back Metal",
+                  "matchName": "ADBE 3DText Back Metal",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 78,
+                  "name": "Back Reflection Intensity",
+                  "matchName": "ADBE 3DText Back Reflection",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 79,
+                  "name": "Back Reflection Sharpness",
+                  "matchName": "ADBE 3DText Back Gloss",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 80,
+                  "name": "Back Reflection Rolloff",
+                  "matchName": "ADBE 3DText Back Fresnel",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 81,
+                  "name": "Back Transparency",
+                  "matchName": "ADBE 3DText Back Xparency",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 82,
+                  "name": "Back Transparency Rolloff",
+                  "matchName": "ADBE 3DText Back XparRoll",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 83,
+                  "name": "Back Index of Refraction",
+                  "matchName": "ADBE 3DText Back IOR",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 84,
+                  "name": "Bevel Depth",
+                  "matchName": "ADBE 3DText Bevel Depth",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 85,
+                  "name": "Extrusion Depth",
+                  "matchName": "ADBE 3DText Extrude Depth",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 86,
+                  "name": "Stroke Width",
+                  "matchName": "ADBE Text Stroke Width",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 87,
+                  "name": "Line Anchor",
+                  "matchName": "ADBE Text Line Anchor",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 88,
+                  "name": "Tracking Type",
+                  "matchName": "ADBE Text Track Type",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 89,
+                  "name": "Tracking Amount",
+                  "matchName": "ADBE Text Tracking Amount",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 90,
+                  "name": "Character Alignment",
+                  "matchName": "ADBE Text Character Change Type",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 91,
+                  "name": "Character Range",
+                  "matchName": "ADBE Text Character Range",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 92,
+                  "name": "Character Value",
+                  "matchName": "ADBE Text Character Replace",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 93,
+                  "name": "Character Offset",
+                  "matchName": "ADBE Text Character Offset",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 94,
+                  "name": "Line Spacing",
+                  "matchName": "ADBE Text Line Spacing",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 95,
+                  "name": "Blur",
+                  "matchName": "ADBE Text Blur",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 96,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 1",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 97,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 2",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 98,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 3",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 99,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 4",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 100,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 5",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 101,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 6",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 102,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 7",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 103,
+                  "name": "",
+                  "matchName": "ADBE Text VF Axis 8",
+                  "isGroup": false,
+                  "numChildren": 0
+                }
+              ]
+            }
+          ],
+          "count": 7,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 12,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 13,
+            "name": "DEVICE_iPad10_3D",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 4
+          },
+          "selectedLayers": [
+            {
+              "index": 3,
+              "name": "iPad10_MODEL"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 378
+      }
+    }
+  ]
+}

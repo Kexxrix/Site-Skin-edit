@@ -1,0 +1,807 @@
+{
+  "timestamp": "2026-09-11T09-27-56-325Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_version_info"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "app": {
+            "version": "27.0x43",
+            "buildName": "27.0x43",
+            "buildNumber": 43,
+            "language": "en_US",
+            "memoryInUse": 1780098974,
+            "availableGPUs": 2
+          },
+          "capabilities": {
+            "saveFrameToPng": true,
+            "appEffects": true,
+            "bridgeTalk": true,
+            "socket": true
+          },
+          "project": {
+            "numItems": 32,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02.aep",
+            "dirty": true
+          },
+          "server": {
+            "exportSchemaVersion": 2
+          }
+        },
+        "logs": [],
+        "durationMs": 465
+      }
+    },
+    {
+      "call": {
+        "name": "ae_project_info"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02.aep",
+          "dirty": true,
+          "numItems": 32,
+          "bitsPerChannel": 8,
+          "timeDisplayType": "2013",
+          "activeItem": {
+            "id": 458,
+            "name": "TITAN_TwoScenes_8s_v004_R02",
+            "typeName": "FolderItem"
+          },
+          "items": [
+            {
+              "id": 1,
+              "name": "Codex_Hello_World_1920x1080",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 5,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 32,
+              "name": "Hello_World_Stretch_3s",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 3,
+              "bgColor": [
+                0.16078431372549,
+                0.16078431372549,
+                0.16078431372549
+              ]
+            },
+            {
+              "id": 175,
+              "name": "iPad10.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPad10.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 114,
+              "name": "iPhone17",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 941,
+              "height": 1672,
+              "frameRate": 24,
+              "duration": 30,
+              "layerCount": 1,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 113,
+              "name": "iPhone17.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPhone17.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 277,
+              "name": "QA_iPad_VIDEO_Front_Oblique_Back_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 433,
+              "name": "QA_PLAYBACK_Review01_8s_30fps",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 8,
+              "layerCount": 1,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 432,
+              "name": "QA_PLAYBACK_Review01_MP4",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 8,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-01.mp4",
+              "missingFootagePath": null
+            },
+            {
+              "id": 405,
+              "name": "QA_v004_TextPush_260px_NotAdopted",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 8,
+              "layerCount": 15,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 96,
+              "name": "REF_CUT_01",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/01-meet-titan.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 97,
+              "name": "REF_CUT_02",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/02-built-in-house.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 261,
+              "name": "SCREEN_iPad10_HADES_VIDEO_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 389,
+              "name": "SCREEN_iPad10_HADES_VIDEO_v004",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "frameRate": 30,
+              "duration": 4,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 29,
+              "name": "Solids",
+              "type": "FolderItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 2,
+              "comment": ""
+            },
+            {
+              "id": 100,
+              "name": "C01_BG_IVORY",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.96078431606293,
+                0.95294117927551,
+                0.93333333730698
+              ]
+            },
+            {
+              "id": 106,
+              "name": "C02_BG_CHARCOAL_WIPE",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.14117647707462,
+                0.14901961386204,
+                0.16470588743687
+              ]
+            },
+            {
+              "id": 30,
+              "name": "Dark Gray Solid 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.1294117718935,
+                0.1294117718935,
+                0.1294117718935
+              ]
+            },
+            {
+              "id": 46,
+              "name": "Gray Radial Background",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.15999999642372,
+                0.15999999642372,
+                0.15999999642372
+              ]
+            },
+            {
+              "id": 184,
+              "name": "Null 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 186,
+              "name": "Null 2",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 403,
+              "name": "Null 3",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 273,
+              "name": "SCREEN_FIT_BLACK",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 163,
+              "name": "TITAN_DEVICE_iPad_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 356,
+              "name": "TITAN_DEVICE_iPad_VIDEO_v004",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 4,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 485,
+              "name": "TITAN_DEVICE_iPad_VIDEO_v004_R02",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 4,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 151,
+              "name": "TITAN_DEVICE_iPhone_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 4,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 373,
+              "name": "TITAN_DEVICE_iPhone_v004",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 4.1,
+              "layerCount": 4,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 84,
+              "name": "TITAN_TwoCuts_75x32_3s_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 12,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 127,
+              "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 14,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 330,
+              "name": "TITAN_TwoScenes_8s_v004",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 8,
+              "layerCount": 15,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 458,
+              "name": "TITAN_TwoScenes_8s_v004_R02",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 8,
+              "layerCount": 15,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 200,
+              "name": "하데스오프닝.mp4",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 14.4166666666667,
+              "sourceKind": "file",
+              "file": "E:/하데스오프닝.mp4",
+              "missingFootagePath": null
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 469
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "project"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "project",
+        "operations": [
+          {
+            "name": "project.find_layers",
+            "description": "Search layers by name pattern and/or type across one or all comps.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": false,
+                "description": "Restrict to one comp (name or id). Omit to search all."
+              },
+              {
+                "name": "namePattern",
+                "type": "string",
+                "required": false,
+                "description": "Case-insensitive substring match on layer name"
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "required": false,
+                "description": "AVLayer|TextLayer|ShapeLayer|CameraLayer|LightLayer|ThreeDModelLayer|ParametricMeshLayer"
+              },
+              {
+                "name": "limit",
+                "type": "number",
+                "required": false,
+                "description": "Max results (default 100)",
+                "default": 100
+              }
+            ]
+          },
+          {
+            "name": "project.list_effects",
+            "description": "List available effect matchNames in the running AE. Uses app.effects if available, otherwise a curated list.",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "project.get_settings",
+            "description": "Read project-wide settings: color depth, expression engine, working color space, time display. Pass includeColorProfiles=true to list installed color profile names.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "includeColorProfiles",
+                "type": "boolean",
+                "required": false,
+                "description": "Also return installed color profile names (default false)",
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "project.parse_swatch",
+            "description": "Parse an Adobe swatch file (.ase) and return its colors (app.parseSwatchFile) - feed brand palettes to fills, solids, and text colors.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "path",
+                "type": "string",
+                "required": true,
+                "description": "Absolute path to the .ase file"
+              }
+            ]
+          },
+          {
+            "name": "project.get_xmp",
+            "description": "Read the project's XMP metadata packet (Project.xmpPacket) as an RDF/XML string.",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "project.get_tool",
+            "description": "Read the active tool in the Tools panel (Project.toolType, AE 14.0+).",
+            "readOnly": true,
+            "params": []
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "text"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "text",
+        "operations": [
+          {
+            "name": "text.measure",
+            "description": "Measure a text layer's composed layout: line/paragraph counts and character spans, per-line baselines (baselineLocs), box overflow. Range data needs AE 24.3+; missing fields come back null.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "comp"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "comp",
+        "operations": [
+          {
+            "name": "comp.list_renderers",
+            "description": "List the comp's available 3D renderer matchNames, the current one, and the friendly-name mapping used by comp.set_renderer.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "comp.list_guides",
+            "description": "List all guides on a comp with orientation and position (AE 16.1+).",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "comp.info",
+            "description": "Comp details + per-layer summaries (same payload as ae_comp_info). As a batch.run child, lets the same call verify what a preceding mutation did.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

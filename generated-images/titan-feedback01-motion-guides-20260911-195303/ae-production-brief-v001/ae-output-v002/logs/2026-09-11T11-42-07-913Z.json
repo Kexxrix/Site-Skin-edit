@@ -1,0 +1,623 @@
+{
+  "started": "2026-09-11T11:41:55.017Z",
+  "ended": "2026-09-11T11:42:07.913Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent Start"
+                  ],
+                  "keyIndex": 2
+                }
+              },
+              {
+                "operation": "keyframe.remove",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent Start"
+                  ],
+                  "keyIndex": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent Start"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent End"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Percent Offset"
+                  ],
+                  "value": 0
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Range Type2"
+                  ],
+                  "value": 3
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Range Shape"
+                  ],
+                  "value": 1
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Selector Smoothness"
+                  ],
+                  "value": 100
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Animator Properties",
+                    "ADBE Text Scale 3D"
+                  ],
+                  "value": [
+                    118,
+                    118,
+                    100
+                  ]
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Text Properties",
+                    "ADBE Text Animators",
+                    1,
+                    "ADBE Text Selectors",
+                    1,
+                    "ADBE Text Range Advanced",
+                    "ADBE Text Selector Max Amount"
+                  ],
+                  "expression": "var u=clamp((time*30-279)/5,0,1);var q=u*u*u*(10+u*(-15+6*u));100*(1-q);"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_Bets",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Position"
+                  ],
+                  "expression": "var u=clamp((time*30-279)/5,0,1);var q=u*u*u*(10+u*(-15+6*u));[550,520+60*(1-q),0];"
+                }
+              },
+              {
+                "operation": "text.set_style",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "fontSize": 223
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "layer": "S08_auto-blocked",
+                  "property": [
+                    "ADBE Mask Parade",
+                    1,
+                    "ADBE Mask Shape"
+                  ],
+                  "expression": "var u=clamp((time*30-281)/6,0,1);var q=u*u*u*(10+u*(-15+6*u));var r=sourceRectAtTime(time,false);var right=-10+(r.left+r.width+20)*q;createPath([[-10,-300],[right,-300],[right,50],[-10,50]],[],[],true);"
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE08_SHIFT_NATIVE",
+                  "props": {
+                    "shutterAngle": 180,
+                    "shutterPhase": 0
+                  }
+                }
+              },
+              {
+                "operation": "comp.set_props",
+                "args": {
+                  "comp": "SCENE08_WHOLE_OVERLAY_180DEG",
+                  "props": {
+                    "shutterAngle": 180,
+                    "shutterPhase": 0
+                  }
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "numKeys": 1
+            },
+            {
+              "ok": true,
+              "numKeys": 0
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "S08_Bets",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "name": "Amount",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "name": "Mask Path",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "SCENE08_SHIFT_NATIVE",
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "name": "SCENE08_WHOLE_OVERLAY_180DEG",
+              "warnings": []
+            }
+          ],
+          "count": 15,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "S08_WHOLE_SCENE_OVERLAY_CONTAINER"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 481
+      },
+      "elapsedMs": 494
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 1862
+      },
+      "elapsedMs": 1865
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 8.4,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F252.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F252.png",
+          "time": 8.4,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 374
+      },
+      "elapsedMs": 1825
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 8.533333333333333,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F256.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F256.png",
+          "time": 8.53333333333333,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 374
+      },
+      "elapsedMs": 1797
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 8.666666666666666,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F260.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F260.png",
+          "time": 8.66666666666667,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 362
+      },
+      "elapsedMs": 1052
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 8.9,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F267.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F267.png",
+          "time": 8.9,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 365
+      },
+      "elapsedMs": 2094
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 9.3,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F279.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F279.png",
+          "time": 9.3,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 375
+      },
+      "elapsedMs": 1115
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 9.466666666666667,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F284.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F284.png",
+          "time": 9.46666666666667,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 294
+      },
+      "elapsedMs": 1281
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "TITAN_MASTER_20S",
+          "time": 9.566666666666666,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F287.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/shift-customized-F287.png",
+          "time": 9.56666666666667,
+          "compName": "TITAN_MASTER_20S",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 366
+      },
+      "elapsedMs": 1038
+    }
+  ]
+}

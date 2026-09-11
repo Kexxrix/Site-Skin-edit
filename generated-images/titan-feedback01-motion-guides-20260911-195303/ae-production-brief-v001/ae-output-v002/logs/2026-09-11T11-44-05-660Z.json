@@ -1,0 +1,101 @@
+{
+  "started": "2026-09-11T11:44:04.845Z",
+  "ended": "2026-09-11T11:44:05.661Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "project.import_file",
+                "args": {
+                  "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/results/04-sportsbook-no-repeated-arc-v002.png",
+                  "name": "GUIDE_06_SPORTSBOOK_FINAL"
+                }
+              },
+              {
+                "operation": "project.import_file",
+                "args": {
+                  "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/results/05-operations-refined-snap.png",
+                  "name": "GUIDE_07_OPERATIONS_FINAL"
+                }
+              },
+              {
+                "operation": "project.import_file",
+                "args": {
+                  "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/results/06-bets-auto-blocked-stop.png",
+                  "name": "GUIDE_08_AUTO_BLOCKED_FINAL"
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "id": 252,
+              "name": "GUIDE_06_SPORTSBOOK_FINAL",
+              "width": 1920,
+              "height": 819,
+              "duration": 0
+            },
+            {
+              "ok": true,
+              "id": 253,
+              "name": "GUIDE_07_OPERATIONS_FINAL",
+              "width": 1920,
+              "height": 819,
+              "duration": 0
+            },
+            {
+              "ok": true,
+              "id": 254,
+              "name": "GUIDE_08_AUTO_BLOCKED_FINAL",
+              "width": 1920,
+              "height": 819,
+              "duration": 0
+            }
+          ],
+          "count": 3,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 30,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 28
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "S08_WHOLE_SCENE_OVERLAY_CONTAINER"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 553
+      },
+      "elapsedMs": 561
+    }
+  ]
+}

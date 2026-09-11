@@ -1,0 +1,38 @@
+{
+  "source_video": "D:/WebDL/grok-244d3381-4c2d-4e30-a5f2-f8b3bf1088b0-720p.mp4",
+  "intent_reference": "E:/codexwork/Site-Skin-edit/generated-images/titan-furin-wide-20260909-183213/prompts/02-grok-ratio-test.txt",
+  "video": {
+    "width": 1456,
+    "height": 624,
+    "aspect_ratio": "7:3 (21:9)",
+    "ratio": 2.3333333333333335,
+    "fps": 24,
+    "frames": 145,
+    "duration_seconds": 6.041667,
+    "bytes": 5040126
+  },
+  "checks": {
+    "non_16_9_output_confirmed": true,
+    "exact_75_32_ratio": false,
+    "whole_tablet_visible_in_sampled_frames": true,
+    "actual_chrome_937_5_by_400_video_preview": "whole tablet remains visible at 0,4,6 seconds",
+    "exact_four_second_duration": false,
+    "stop_camera_at_3_2_seconds": false,
+    "screen_text_pixel_fidelity": "not established by this review",
+    "audio_audition": "not performed"
+  },
+  "motion_evidence": "frame-motion.json",
+  "browser_evidence": "browser-video-proof.json",
+  "postproduction_plan": {
+    "source": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/SHOTLIST.md",
+    "scene_one_caption": "핵심 시스템 직접 개발",
+    "intended_placement": "Left side, two lines, around 0.3-3.8 seconds in a four-second edit",
+    "current_composition_issue": "The left area shrinks during the move and contains a vase, leaves, books and bowl. A large title may overlap the tablet late in the shot; a smaller two-line treatment and local contrast adjustment need a separate compositing preview.",
+    "text_actually_added": false
+  },
+  "scope": {
+    "video_modified": false,
+    "site_modified": false,
+    "new_generation": false
+  }
+}

@@ -1,0 +1,114 @@
+/* Titan Solution wireframe — layout only. Grayscale, system fonts, no theme or decoration. */
+/* All rules scoped under .wf so the wireframe stays isolated from app theme tokens. */
+
+.wf {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+  color: #111;
+  background: #fff;
+  font-family: Arial, "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.wf * { box-sizing: border-box; }
+.wf header,
+.wf section,
+.wf footer { padding: 28px 0; }
+.wf header,
+.wf section { border-bottom: 1px solid #ccc; }
+.wf h1 { margin: 0 0 16px; font-size: 2rem; line-height: 1.4; }
+.wf h2 { margin: 0 0 16px; font-size: 1.5rem; }
+.wf h3 { margin: 0 0 8px; font-size: 1.125rem; }
+.wf p { margin: 0 0 16px; }
+.wf figure { margin: 0; }
+.wf img { display: block; max-width: 100%; height: auto; }
+.wf a { color: inherit; }
+.wf button,
+.wf input,
+.wf select { font: inherit; }
+.wf button,
+.wf summary { cursor: pointer; }
+.wf button { padding: 4px 10px; }
+.wf :focus-visible { outline: 2px solid #111; outline-offset: 4px; }
+.wf [hidden] { display: none !important; }
+
+.wf .skip-link { position: absolute; top: -100px; }
+.wf .skip-link:focus { top: 4px; background: #fff; }
+
+.wf .header-row,
+.wf nav,
+.wf .actions,
+.wf .filters { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; }
+.wf .header-row { justify-content: space-between; }
+.wf .brand { font-weight: bold; }
+.wf .eyebrow,
+.wf small { font-size: 0.875rem; }
+.wf .eyebrow { margin-bottom: 8px; }
+
+.wf .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 32px; align-items: start; }
+.wf .hero-copy { grid-column: 1; }
+.wf .hero figure { grid-column: 2; grid-row: 1 / span 2; }
+.wf .hero .actions { grid-column: 1; }
+.wf .hero img { width: 100%; }
+
+.wf .portfolio-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 24px; }
+.wf .demo img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
+.wf .demo h3 { margin-top: 10px; }
+.wf .demo p { margin-bottom: 6px; }
+.wf .demo small { display: block; margin-bottom: 8px; }
+.wf .demo .image-error { padding: 20px 0; }
+
+.wf details { margin-top: 24px; }
+.wf summary { text-decoration: underline; }
+.wf .filters { margin: 20px 0; }
+.wf .filters button[aria-pressed="true"] { font-weight: bold; text-decoration: underline; }
+
+.wf .two-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; }
+.wf .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin: 0 0 28px; }
+.wf .metrics div { display: flex; flex-direction: column; }
+.wf .metrics dt { font-size: 1.5rem; font-weight: bold; }
+.wf .metrics dd { margin: 0; }
+
+.wf .labels { display: flex; flex-wrap: wrap; gap: 12px 30px; padding: 0; list-style-position: inside; }
+.wf .platform-labels { list-style: none; }
+
+.wf .form-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; margin: 20px 0; }
+.wf .field { display: grid; gap: 6px; }
+.wf .field input,
+.wf .field select { width: 100%; min-width: 0; padding: 6px; }
+.wf .consent { display: block; margin-bottom: 16px; }
+.wf .form-note,
+.wf .form-status { margin-top: 14px; }
+.wf .form-status:empty { display: none; }
+
+.wf .menu-toggle { display: none; }
+
+@media (max-width: 720px) {
+  .wf { padding: 0 16px; }
+  .wf header,
+  .wf section,
+  .wf footer { padding: 24px 0; }
+  .wf h1 { font-size: 1.5rem; }
+  .wf h2 { font-size: 1.25rem; }
+  .wf .hero,
+  .wf .two-columns,
+  .wf .form-fields { grid-template-columns: 1fr; }
+  .wf .hero-copy,
+  .wf .hero figure,
+  .wf .hero .actions { grid-column: 1; grid-row: auto; }
+  .wf .hero figure { max-width: 360px; }
+  .wf .hero { gap: 16px; }
+  .wf .portfolio-grid { grid-template-columns: 1fr; gap: 28px; }
+  .wf .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wf nav { width: 100%; align-items: flex-start; flex-direction: column; }
+  .wf .menu-toggle { display: inline-block; }
+  .wf nav:not(.is-open) { display: none; }
+  .wf nav .nav-demo { order: -1; }
+  .wf input,
+  .wf select,
+  .wf button { min-height: 40px; }
+  .wf input[type="checkbox"] { min-height: auto; }
+}

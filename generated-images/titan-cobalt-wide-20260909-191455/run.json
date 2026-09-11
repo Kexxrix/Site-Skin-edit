@@ -1,0 +1,102 @@
+{
+  "run_id": "titan-cobalt-wide-20260909-191455",
+  "theme": "Titan video scene 02 - COBALT operational control",
+  "brand_exact": null,
+  "requested_roles_and_counts": [
+    {
+      "role": "21:9 second-scene starting image",
+      "count": 1
+    }
+  ],
+  "character_use": "none",
+  "generation_route": "codex_builtin",
+  "output_directory": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-cobalt-wide-20260909-191455",
+  "editing_mode": "built-in image edit with reference inputs; no post-generation image editing",
+  "selection_authority": "user requested generation; agent selected one trial candidate; user acceptance pending",
+  "shared_visual_rules": {
+    "user_requirements": [
+      "Same wide ratio as supplied 1456x624 video",
+      "Existing second scene",
+      "English added caption, following current sequence",
+      "Project-local archive"
+    ],
+    "inferred_from_selected_references": [
+      "Left diagonal phone, top-down camera",
+      "COBALT screenshot on phone",
+      "Bold black right-side caption"
+    ],
+    "local_details_not_to_propagate": [
+      "Scene 01 tablet and fantasy characters"
+    ]
+  },
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/derived/02-phone-start.png",
+      "sha256": "07d46a991ced4fcdb149adedd42cf81d13d2c1fee90dde378d4380a5b08dafb1",
+      "role": "Scene 02 device and overhead composition",
+      "unchanged": true
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-video-frames-20260909-174303/sources/cobalt-phone-tall.png",
+      "sha256": "0680923415c81ad9ef9f4e3f8da96de60380a313b16f644121b28f162f366bc2",
+      "role": "Actual COBALT sports-list screenshot, approved desktop-detail crop",
+      "unchanged": true
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-furin-caption-20260909-185424/results/01-furin-tablet-english-caption.png",
+      "sha256": "fc7386b5d5d6b3d664f98f1f94c066e7e53044d21ef8df5cde80153a6fcac219",
+      "role": "English typography and bright photographic treatment only",
+      "unchanged": true
+    }
+  ],
+  "assets": [
+    {
+      "role": "scene-02-start",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-cobalt-wide-20260909-191455\\results\\02-cobalt-phone-wide-english.png",
+      "source_tool_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-37e00930-22a0-4727-bae8-8eefa760c573.png",
+      "prompt": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-cobalt-wide-20260909-191455\\prompts\\01-cobalt-wide-image.txt",
+      "request": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-cobalt-wide-20260909-191455\\prompts\\01-image-request.json",
+      "storage_action": "moved_this_generated_output_only",
+      "sha256": "1f847c8aec5a9e01f36cee2fcbbb2c23cbcbf1f94a2e2a2f52fa94dd504ffce9",
+      "bytes": 2781909,
+      "format": "PNG",
+      "dimensions": [
+        1916,
+        821
+      ],
+      "aspect_ratio": 2.3337393422655297,
+      "requested_aspect_ratio": "21:9 (7:3)",
+      "relative_ratio_error_percent": 0.01740038280840953,
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "qa": {
+        "phone_all_four_corners_visible": true,
+        "phone_top_bottom_visible_at_page_size": true,
+        "caption_exact": "OPERATIONAL CONTROL\nREFINED IN PRACTICE",
+        "caption_readable_at_page_size": true,
+        "caption_phone_overlap": false,
+        "original_diagonal_overhead_composition_retained": true,
+        "ui_exact_copy": false,
+        "ui_note": "Three-section navy COBALT match-list structure retained. Generated display is not certified pixel-exact; tiny Korean lettering and UI details are redrawn. Original supplied captures remain unchanged.",
+        "margin_note": "Phone is fully visible, but generated top/bottom margins are smaller than the 13 percent requested in the image prompt. Do not infer safety for a large camera zoom.",
+        "grok_video_tested": false,
+        "site_modified": false
+      }
+    }
+  ],
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "failed": 0,
+    "skipped": 0,
+    "qa_pass": 1,
+    "selected_by_agent": 1,
+    "accepted_by_user": 0,
+    "adopted": 0,
+    "rejected": 0
+  },
+  "next_action": "User may attach this first frame to Grok. No video generation or site application performed."
+}

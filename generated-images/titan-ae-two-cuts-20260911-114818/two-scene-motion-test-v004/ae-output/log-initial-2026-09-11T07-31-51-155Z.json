@@ -1,0 +1,1166 @@
+{
+  "timestamp": "2026-09-11T07-31-51-155Z",
+  "write": false,
+  "results": [
+    {
+      "call": {
+        "name": "ae_version_info"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "app": {
+            "version": "27.0x43",
+            "buildName": "27.0x43",
+            "buildNumber": 43,
+            "language": "en_US",
+            "memoryInUse": 2682702779,
+            "availableGPUs": 2
+          },
+          "capabilities": {
+            "saveFrameToPng": true,
+            "appEffects": true,
+            "bridgeTalk": true,
+            "socket": true
+          },
+          "project": {
+            "numItems": 22,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep",
+            "dirty": true
+          },
+          "server": {
+            "exportSchemaVersion": 2
+          }
+        },
+        "logs": [],
+        "durationMs": 479
+      }
+    },
+    {
+      "call": {
+        "name": "ae_project_info"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep",
+          "dirty": true,
+          "numItems": 22,
+          "bitsPerChannel": 8,
+          "timeDisplayType": "2013",
+          "activeItem": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "typeName": "FolderItem"
+          },
+          "items": [
+            {
+              "id": 1,
+              "name": "Codex_Hello_World_1920x1080",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 5,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 32,
+              "name": "Hello_World_Stretch_3s",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 3,
+              "bgColor": [
+                0.16078431372549,
+                0.16078431372549,
+                0.16078431372549
+              ]
+            },
+            {
+              "id": 175,
+              "name": "iPad10.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPad10.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 114,
+              "name": "iPhone17",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 941,
+              "height": 1672,
+              "frameRate": 24,
+              "duration": 30,
+              "layerCount": 1,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 113,
+              "name": "iPhone17.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPhone17.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 277,
+              "name": "QA_iPad_VIDEO_Front_Oblique_Back_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 96,
+              "name": "REF_CUT_01",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/01-meet-titan.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 97,
+              "name": "REF_CUT_02",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/02-built-in-house.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 261,
+              "name": "SCREEN_iPad10_HADES_VIDEO_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 29,
+              "name": "Solids",
+              "type": "FolderItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 2,
+              "comment": ""
+            },
+            {
+              "id": 100,
+              "name": "C01_BG_IVORY",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.96078431606293,
+                0.95294117927551,
+                0.93333333730698
+              ]
+            },
+            {
+              "id": 106,
+              "name": "C02_BG_CHARCOAL_WIPE",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.14117647707462,
+                0.14901961386204,
+                0.16470588743687
+              ]
+            },
+            {
+              "id": 30,
+              "name": "Dark Gray Solid 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.1294117718935,
+                0.1294117718935,
+                0.1294117718935
+              ]
+            },
+            {
+              "id": 46,
+              "name": "Gray Radial Background",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.15999999642372,
+                0.15999999642372,
+                0.15999999642372
+              ]
+            },
+            {
+              "id": 184,
+              "name": "Null 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 186,
+              "name": "Null 2",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 273,
+              "name": "SCREEN_FIT_BLACK",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 163,
+              "name": "TITAN_DEVICE_iPad_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 151,
+              "name": "TITAN_DEVICE_iPhone_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 4,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 84,
+              "name": "TITAN_TwoCuts_75x32_3s_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 12,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 127,
+              "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 14,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 200,
+              "name": "하데스오프닝.mp4",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 14.4166666666667,
+              "sourceKind": "file",
+              "file": "E:/하데스오프닝.mp4",
+              "missingFootagePath": null
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 357
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.status",
+          "args": {}
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "rendering": false,
+          "numItems": 2,
+          "canQueueInAME": false,
+          "items": [
+            {
+              "index": 1,
+              "comp": "TITAN_DEVICE_iPad_3D_v003",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 3,
+              "elapsedSeconds": 2,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/iPad-VideoScreen-Test-3s.mp4"
+              ]
+            },
+            {
+              "index": 2,
+              "comp": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "status": "DONE",
+              "render": true,
+              "timeSpanStart": 0,
+              "timeSpanDuration": 3,
+              "elapsedSeconds": 20,
+              "outputs": [
+                "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-Preview-3s.mp4"
+              ]
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 22,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 372
+      }
+    },
+    {
+      "call": {
+        "name": "ae_comp_info",
+        "args": {
+          "nameOrId": [
+            127,
+            163,
+            151,
+            261
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "count": 4,
+          "missing": 0,
+          "comps": [
+            {
+              "id": 127,
+              "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 14,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ],
+              "ok": true,
+              "found": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 3,
+              "pixelAspect": 1,
+              "shutterAngle": 180,
+              "shutterPhase": 0,
+              "motionBlur": false,
+              "layers": [
+                {
+                  "index": 1,
+                  "id": 140,
+                  "name": "REF_CUT_01",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 96,
+                  "sourceName": "REF_CUT_01"
+                },
+                {
+                  "index": 2,
+                  "id": 139,
+                  "name": "REF_CUT_02",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 97,
+                  "sourceName": "REF_CUT_02"
+                },
+                {
+                  "index": 3,
+                  "id": 138,
+                  "name": "C02_UNDERLINE",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 4,
+                  "id": 137,
+                  "name": "C02_TXT_IN_HOUSE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "in-house",
+                  "fontSize": 162.171752929688,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 5,
+                  "id": 136,
+                  "name": "C02_TXT_BUILT",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Built",
+                  "fontSize": 190.702789306641,
+                  "font": "Pretendard-Bold",
+                  "fillColor": [
+                    0.98038995265961,
+                    0.52941000461578,
+                    0.12157000601292
+                  ]
+                },
+                {
+                  "index": 6,
+                  "id": 135,
+                  "name": "C02_TXT_CORE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Core systems",
+                  "fontSize": 121.411140441895,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 7,
+                  "id": 183,
+                  "name": "C02_DEVICE_IPAD",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 163,
+                  "sourceName": "TITAN_DEVICE_iPad_3D_v003"
+                },
+                {
+                  "index": 8,
+                  "id": 134,
+                  "name": "C02_BG_CHARCOAL_WIPE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0.8,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 106,
+                  "sourceName": "C02_BG_CHARCOAL_WIPE"
+                },
+                {
+                  "index": 9,
+                  "id": 133,
+                  "name": "C01_DOT",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 10,
+                  "id": 132,
+                  "name": "C01_ARC",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 11,
+                  "id": 131,
+                  "name": "C01_TXT_TITAN",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "TITAN",
+                  "fontSize": 190.739944458008,
+                  "font": "Pretendard-SemiBold",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 12,
+                  "id": 130,
+                  "name": "C01_TXT_MEET",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Meet",
+                  "fontSize": 137.912460327148,
+                  "font": "Pretendard-Regular",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 13,
+                  "id": 182,
+                  "name": "C01_DEVICE_IPHONE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 151,
+                  "sourceName": "TITAN_DEVICE_iPhone_3D_v003"
+                },
+                {
+                  "index": 14,
+                  "id": 129,
+                  "name": "C01_BG_IVORY",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 100,
+                  "sourceName": "C01_BG_IVORY"
+                }
+              ]
+            },
+            {
+              "id": 163,
+              "name": "TITAN_DEVICE_iPad_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ],
+              "ok": true,
+              "found": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 3,
+              "pixelAspect": 1,
+              "shutterAngle": 180,
+              "shutterPhase": 0,
+              "motionBlur": false,
+              "layers": [
+                {
+                  "index": 1,
+                  "id": 187,
+                  "name": "DEVICE_iPad_VIEW",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 100,
+                  "height": 100,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": true,
+                  "sourceId": 186,
+                  "sourceName": "Null 2"
+                },
+                {
+                  "index": 2,
+                  "id": 181,
+                  "name": "DEVICE_iPad_ENVIRONMENT",
+                  "type": "LightLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 6
+                },
+                {
+                  "index": 3,
+                  "id": 179,
+                  "name": "DEVICE_iPad10_MODEL",
+                  "type": "ThreeDModelLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 3
+                },
+                {
+                  "index": 4,
+                  "id": 178,
+                  "name": "DEVICE_iPad_CAMERA",
+                  "type": "CameraLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 4
+                },
+                {
+                  "index": 5,
+                  "id": 276,
+                  "name": "SCREEN_iPad10_VIDEO_SOURCE",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2360,
+                  "height": 1640,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 261,
+                  "sourceName": "SCREEN_iPad10_HADES_VIDEO_v001"
+                }
+              ]
+            },
+            {
+              "id": 151,
+              "name": "TITAN_DEVICE_iPhone_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 4,
+              "bgColor": [
+                0,
+                0,
+                0
+              ],
+              "ok": true,
+              "found": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 3,
+              "pixelAspect": 1,
+              "shutterAngle": 180,
+              "shutterPhase": 0,
+              "motionBlur": false,
+              "layers": [
+                {
+                  "index": 1,
+                  "id": 185,
+                  "name": "DEVICE_iPhone_VIEW",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 100,
+                  "height": 100,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": true,
+                  "sourceId": 184,
+                  "sourceName": "Null 1"
+                },
+                {
+                  "index": 2,
+                  "id": 180,
+                  "name": "DEVICE_iPhone_ENVIRONMENT",
+                  "type": "LightLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 6
+                },
+                {
+                  "index": 3,
+                  "id": 177,
+                  "name": "DEVICE_iPhone_CAMERA",
+                  "type": "CameraLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 4
+                },
+                {
+                  "index": 4,
+                  "id": 176,
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "type": "ThreeDModelLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": 1,
+                  "label": 3
+                }
+              ]
+            },
+            {
+              "id": 261,
+              "name": "SCREEN_iPad10_HADES_VIDEO_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ],
+              "ok": true,
+              "found": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 3,
+              "pixelAspect": 1,
+              "shutterAngle": 180,
+              "shutterPhase": 0,
+              "motionBlur": false,
+              "layers": [
+                {
+                  "index": 1,
+                  "id": 275,
+                  "name": "HADES_OPENING_VIDEO",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 14.4166666666667,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 3,
+                  "width": 1920,
+                  "height": 1080,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 200,
+                  "sourceName": "하데스오프닝.mp4"
+                },
+                {
+                  "index": 2,
+                  "id": 274,
+                  "name": "SCREEN_FIT_BLACK",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2360,
+                  "height": 1640,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 273,
+                  "sourceName": "SCREEN_FIT_BLACK"
+                }
+              ]
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 284
+      }
+    }
+  ]
+}

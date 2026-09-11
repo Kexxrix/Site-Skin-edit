@@ -1,0 +1,28 @@
+{
+  "source": "D:/WebDL/grok-2d598645-f0f6-42c3-a166-a6377a05f670-720p.mp4",
+  "prompt": "02-grok-c-aggressive.txt",
+  "source_operations": "Read-only; no edit, move, cut or generation.",
+  "metadata": {"duration_seconds": 6.041667, "width": 1456, "height": 624, "fps": 24, "video_frames": 145, "video_codec": "h264", "audio_codec": "aac", "bytes": 3832029},
+  "verdict": "The intended energetic letter/object motion and final title recovery are present. Shortening/reframing the awkward transitions is a practical option; temporary blur, separation and occlusion are permitted by C and are not blanket failures.",
+  "observations": [
+    "Both title rows initially move strongly toward the left in sampled frames; the requested TITAN-left / SOLUTION-right opposition is not clearly realized.",
+    "Around 0.667-1.0 s a second readable TITAN coexists with departing fragments and a separate extra T. At 0.75 and 0.833 s the top visually reads T TITAN. This is an extra-copy artifact, not merely a foreground object covering a correct word.",
+    "At 1.25-2.0 s the full title reads TITAN / SOLUTION while the ribbon curls, multiple ring arcs sweep and the glass panel rotates through the foreground.",
+    "During roughly 2.25-3.75 s letters separate, rotate into depth and reassemble amid strong object motion. Unreadable fragments in this phase are principally intended transitions; these sampled frames cannot establish a one-to-one identity for every rotating glyph.",
+    "At 3.917-4.0 s the top I is still tilted like a slash while the other letters settle. This is a rotation/settling awkwardness, not a confirmed substitution with a slash character.",
+    "By the 4.083 s dense sample all 13 letters are recognizable as TITAN / SOLUTION. From the 4.25 s sample through 6.0 s samples the complete title is clearly recovered.",
+    "The final 5-6 s reading beat succeeds in sampled frames. The title settles while ribbon, ring and panel motion continue toward the image edges. The final scene is not a pixel-perfect replica of the starting plate, which is not required by the present use case."
+  ],
+  "suggested_windows": [
+    {"in_seconds": 3.5, "out_seconds": 6.0, "duration_seconds": 2.5, "priority": "energy-first", "note": "About 0.6 s of visible letter reassembly, followed by readable title plus continuing background motion. Brief unreadable transition remains intentionally."},
+    {"in_seconds": 3.75, "out_seconds": 6.0, "duration_seconds": 2.25, "priority": "cleaner proposal", "note": "Shorter awkward assembly lead-in, then roughly 1.9 s of readable title with moving objects. Does not preserve the initial opposing-row stunt."},
+    {"in_seconds": 4.0, "out_seconds": 6.0, "duration_seconds": 2.0, "priority": "conservative proposal", "note": "At its first frame the I remains slightly tilted; it straightens by about 4.083 s. Strong background motion remains, but little typography motion is retained."}
+  ],
+  "minimal_prompt_refinements": [
+    "Specify exactly 13 existing letter objects, five in TITAN and eight in SOLUTION, with no new incoming copy while outgoing letters are still visible.",
+    "Compress the most scattered letter phase to roughly 0.5-0.8 s while retaining aggressive ribbon/ring/panel motion, rather than making the whole scene static.",
+    "Make all letters face front and complete their snap into the title in one coordinated reading beat; avoid leaving I edge-on after the other letters have resolved."
+  ],
+  "scope": "Frame-based visual assessment: 25 samples at 0.25 s spacing, 12 targeted dense frames, and full-size checks at 0.75, 4.083 and 6.0 s. No native timed playback or audio listening; no audio-sync or all-frame visual guarantee.",
+  "evidence": ["contact-01.jpg", "contact-02.jpg", "contact-03.jpg", "detail-contact.jpg", "detail-02.png", "detail-10.png", "sample-025.jpg"]
+}

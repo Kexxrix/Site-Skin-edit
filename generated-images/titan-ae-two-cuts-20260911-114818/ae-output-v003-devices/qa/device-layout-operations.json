@@ -1,0 +1,1101 @@
+{
+  "ops": [
+    {
+      "operation": "layer.create_light",
+      "args": {
+        "comp": 151,
+        "name": "DEVICE_iPhone_ENVIRONMENT",
+        "lightType": "environment"
+      }
+    },
+    {
+      "operation": "layer.create_light",
+      "args": {
+        "comp": 163,
+        "name": "DEVICE_iPad_ENVIRONMENT",
+        "lightType": "environment"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_CAMERA",
+        "position": [
+          1200,
+          512,
+          -3333.33333325
+        ],
+        "anchorPoint": [
+          1200,
+          512,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_CAMERA",
+        "position": [
+          1200,
+          512,
+          -3333.33333325
+        ],
+        "anchorPoint": [
+          1200,
+          512,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_CAMERA",
+        "property": [
+          "ADBE Camera Options Group",
+          "ADBE Camera Depth of Field"
+        ],
+        "value": 0
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_CAMERA",
+        "property": [
+          "ADBE Camera Options Group",
+          "ADBE Camera Depth of Field"
+        ],
+        "value": 0
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "position": [
+          1200,
+          512,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          520,
+          520,
+          520
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "position": [
+          1200,
+          512,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          350,
+          350,
+          350
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Orientation"
+        ],
+        "value": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate X"
+        ],
+        "value": 90
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Y"
+        ],
+        "value": -10
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Z"
+        ],
+        "value": 3
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "props": {
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Orientation"
+        ],
+        "value": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate X"
+        ],
+        "value": 90
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Y"
+        ],
+        "value": -18
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Rotate Z"
+        ],
+        "value": -3
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "props": {
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "layer.create_footage",
+      "args": {
+        "comp": 127,
+        "sourceItemId": 151,
+        "name": "C01_DEVICE_IPHONE"
+      }
+    },
+    {
+      "operation": "layer.create_footage",
+      "args": {
+        "comp": 127,
+        "sourceItemId": 163,
+        "name": "C02_DEVICE_IPAD"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 127,
+        "layer": "C01_DEVICE_IPHONE",
+        "position": [
+          2080,
+          512
+        ],
+        "scale": [
+          100,
+          100
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 127,
+        "layer": "C02_DEVICE_IPAD",
+        "position": [
+          2290,
+          512
+        ],
+        "scale": [
+          100,
+          100
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": 127,
+        "layer": "C01_DEVICE_IPHONE",
+        "props": {
+          "outPoint": 1.1,
+          "collapseTransformation": false
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": 127,
+        "layer": "C02_DEVICE_IPAD",
+        "props": {
+          "inPoint": 1.1,
+          "collapseTransformation": false
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": 127,
+        "layer": "C02_DEVICE_IPAD",
+        "props": {
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "layer.move",
+      "args": {
+        "comp": 127,
+        "layer": "C01_DEVICE_IPHONE",
+        "toIndex": 13
+      }
+    },
+    {
+      "operation": "layer.move",
+      "args": {
+        "comp": 127,
+        "layer": "C02_DEVICE_IPAD",
+        "toIndex": 7
+      }
+    },
+    {
+      "operation": "property.list",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_ENVIRONMENT",
+        "property": [
+          "ADBE Light Options Group"
+        ]
+      }
+    },
+    {
+      "operation": "comp.info",
+      "args": {
+        "comp": 127
+      }
+    },
+    {
+      "operation": "timeline.select_layers",
+      "args": {
+        "comp": 127,
+        "layers": []
+      }
+    }
+  ],
+  "result": {
+    "ok": false,
+    "error": {
+      "code": "OPERATION_FAILED",
+      "message": "batch.run: 1 of 30 operations failed",
+      "retryable": false,
+      "hint": "Inspect details.result.results — each entry matches the input order and carries its own error.",
+      "details": {
+        "operation": "batch.run",
+        "result": {
+          "ok": false,
+          "error": "1 of 30 operations failed",
+          "results": [
+            {
+              "ok": true,
+              "index": 1,
+              "name": "DEVICE_iPhone_ENVIRONMENT",
+              "lightType": "environment"
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "DEVICE_iPad_ENVIRONMENT",
+              "lightType": "environment"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone_CAMERA",
+                  "warnings": [
+                    "anchorPoint: undefined is not an object (line 96)"
+                  ]
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_CAMERA",
+                  "warnings": [
+                    "anchorPoint: undefined is not an object (line 128)"
+                  ]
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone_CAMERA",
+                  "ok": false,
+                  "error": "After Effects error: Can not “set value” with this"
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_CAMERA",
+                  "ok": false,
+                  "error": "After Effects error: Can not “set value” with this"
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad10_MODEL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPhone17_MODEL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad10_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad10_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad10_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad10_MODEL",
+                  "ok": true
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad10_MODEL",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "C01_DEVICE_IPHONE"
+            },
+            {
+              "ok": true,
+              "index": 1,
+              "name": "C02_DEVICE_IPAD"
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DEVICE_IPHONE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_DEVICE_IPAD",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DEVICE_IPHONE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_DEVICE_IPAD",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C02_DEVICE_IPAD",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "fromIndex": 2,
+              "newIndex": 13,
+              "name": "C01_DEVICE_IPHONE"
+            },
+            {
+              "ok": true,
+              "fromIndex": 1,
+              "newIndex": 7,
+              "name": "C02_DEVICE_IPAD"
+            },
+            {
+              "ok": true,
+              "path": [
+                "ADBE Light Options Group"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Source",
+                  "matchName": "ADBE Light Env Atom",
+                  "isGroup": true,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Background Visible",
+                  "matchName": "ADBE Light Backgd Visible",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 3,
+                  "name": "Background Opacity",
+                  "matchName": "ADBE Light Backgd Opacity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 4,
+                  "name": "Background Blur",
+                  "matchName": "ADBE Light Backgd Blur",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 5,
+                  "name": "Intensity",
+                  "matchName": "ADBE Light Intensity",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 6,
+                  "name": "Color",
+                  "matchName": "ADBE Light Color",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 7,
+                  "name": "Cone Angle",
+                  "matchName": "ADBE Light Cone Angle",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 8,
+                  "name": "Cone Feather",
+                  "matchName": "ADBE Light Cone Feather 2",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 9,
+                  "name": "Falloff",
+                  "matchName": "ADBE Light Falloff Type",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 10,
+                  "name": "Radius",
+                  "matchName": "ADBE Light Falloff Start",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 11,
+                  "name": "Falloff Distance",
+                  "matchName": "ADBE Light Falloff Distance",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 12,
+                  "name": "Casts Shadows",
+                  "matchName": "ADBE Casts Shadows",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 13,
+                  "name": "Shadow Darkness",
+                  "matchName": "ADBE Light Shadow Darkness",
+                  "isGroup": false,
+                  "numChildren": 0
+                },
+                {
+                  "index": 14,
+                  "name": "Shadow Diffusion",
+                  "matchName": "ADBE Light Shadow Diffusion",
+                  "isGroup": false,
+                  "numChildren": 0
+                }
+              ]
+            },
+            {
+              "id": 127,
+              "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 14,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ],
+              "ok": true,
+              "found": true,
+              "workAreaStart": 0,
+              "workAreaDuration": 3,
+              "pixelAspect": 1,
+              "shutterAngle": 180,
+              "shutterPhase": 0,
+              "motionBlur": false,
+              "layers": [
+                {
+                  "index": 1,
+                  "id": 140,
+                  "name": "REF_CUT_01",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 96,
+                  "sourceName": "REF_CUT_01"
+                },
+                {
+                  "index": 2,
+                  "id": 139,
+                  "name": "REF_CUT_02",
+                  "type": "AVLayer",
+                  "enabled": false,
+                  "solo": false,
+                  "shy": false,
+                  "locked": true,
+                  "inPoint": 0,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 5,
+                  "width": 1920,
+                  "height": 819,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 97,
+                  "sourceName": "REF_CUT_02"
+                },
+                {
+                  "index": 3,
+                  "id": 138,
+                  "name": "C02_UNDERLINE",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 4,
+                  "id": 137,
+                  "name": "C02_TXT_IN_HOUSE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "in-house",
+                  "fontSize": 162.171752929688,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 5,
+                  "id": 136,
+                  "name": "C02_TXT_BUILT",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Built",
+                  "fontSize": 190.702789306641,
+                  "font": "Pretendard-Bold",
+                  "fillColor": [
+                    0.98038995265961,
+                    0.52941000461578,
+                    0.12157000601292
+                  ]
+                },
+                {
+                  "index": 6,
+                  "id": 135,
+                  "name": "C02_TXT_CORE",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Core systems",
+                  "fontSize": 121.411140441895,
+                  "font": "Pretendard-Medium",
+                  "fillColor": [
+                    0.96077996492386,
+                    0.95293992757797,
+                    0.93332993984222
+                  ]
+                },
+                {
+                  "index": 7,
+                  "id": 183,
+                  "name": "C02_DEVICE_IPAD",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 1.1,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 163,
+                  "sourceName": "TITAN_DEVICE_iPad_3D_v003"
+                },
+                {
+                  "index": 8,
+                  "id": 134,
+                  "name": "C02_BG_CHARCOAL_WIPE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0.8,
+                  "outPoint": 3,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 106,
+                  "sourceName": "C02_BG_CHARCOAL_WIPE"
+                },
+                {
+                  "index": 9,
+                  "id": 133,
+                  "name": "C01_DOT",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 10,
+                  "id": 132,
+                  "name": "C01_ARC",
+                  "type": "ShapeLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 8
+                },
+                {
+                  "index": 11,
+                  "id": 131,
+                  "name": "C01_TXT_TITAN",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "TITAN",
+                  "fontSize": 190.739944458008,
+                  "font": "Pretendard-SemiBold",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 12,
+                  "id": 130,
+                  "name": "C01_TXT_MEET",
+                  "type": "TextLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "text": "Meet",
+                  "fontSize": 137.912460327148,
+                  "font": "Pretendard-Regular",
+                  "fillColor": [
+                    0.14118000864983,
+                    0.14902000129223,
+                    0.1647099852562
+                  ]
+                },
+                {
+                  "index": 13,
+                  "id": 182,
+                  "name": "C01_DEVICE_IPHONE",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 15,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 151,
+                  "sourceName": "TITAN_DEVICE_iPhone_3D_v003"
+                },
+                {
+                  "index": 14,
+                  "id": 129,
+                  "name": "C01_BG_IVORY",
+                  "type": "AVLayer",
+                  "enabled": true,
+                  "solo": false,
+                  "shy": false,
+                  "locked": false,
+                  "inPoint": 0,
+                  "outPoint": 1.1,
+                  "startTime": 0,
+                  "stretch": 100,
+                  "parentIndex": null,
+                  "label": 1,
+                  "width": 2400,
+                  "height": 1024,
+                  "hasVideo": true,
+                  "hasAudio": false,
+                  "threeDLayer": false,
+                  "sourceId": 100,
+                  "sourceName": "C01_BG_IVORY"
+                }
+              ]
+            },
+            {
+              "ok": false,
+              "error": "invalid arguments for 'timeline.select_layers': indices — missing required parameter (array) — Array of 1-based layer indices to select; layers — unknown parameter (this operation accepts: comp, indices, deselectOthers) (expects comp: any (required), indices: array (required), deselectOthers: boolean (optional))",
+              "index": 29
+            }
+          ],
+          "count": 30,
+          "failed": 1
+        },
+        "context": {
+          "project": {
+            "numItems": 16,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v003-devices/TITAN-TwoCuts-Devices-Kinetic-3s-v003.aep"
+          },
+          "activeComp": {
+            "id": 84,
+            "name": "TITAN_TwoCuts_75x32_3s_v001",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 12
+          },
+          "selectedLayers": []
+        }
+      },
+      "durationMs": 375
+    }
+  }
+}

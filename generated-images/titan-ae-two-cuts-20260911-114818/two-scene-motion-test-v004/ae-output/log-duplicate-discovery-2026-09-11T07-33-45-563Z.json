@@ -1,0 +1,818 @@
+{
+  "timestamp": "2026-09-11T07-33-45-563Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "stopOnError": true,
+            "ops": [
+              {
+                "operation": "comp.duplicate",
+                "args": {
+                  "comp": 127,
+                  "newName": "TITAN_TwoScenes_8s_v004"
+                }
+              },
+              {
+                "operation": "comp.duplicate",
+                "args": {
+                  "comp": 163,
+                  "newName": "TITAN_DEVICE_iPad_VIDEO_v004"
+                }
+              },
+              {
+                "operation": "comp.duplicate",
+                "args": {
+                  "comp": 151,
+                  "newName": "TITAN_DEVICE_iPhone_v004"
+                }
+              },
+              {
+                "operation": "comp.duplicate",
+                "args": {
+                  "comp": 261,
+                  "newName": "SCREEN_iPad10_HADES_VIDEO_v004"
+                }
+              },
+              {
+                "operation": "property.add",
+                "args": {
+                  "comp": "TITAN_TwoScenes_8s_v004",
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators"
+                  ],
+                  "matchName": "ADBE Text Animator",
+                  "name": "V004_Staggered_Back"
+                }
+              },
+              {
+                "operation": "property.list",
+                "args": {
+                  "comp": "TITAN_TwoScenes_8s_v004",
+                  "layer": "C01_TXT_MEET",
+                  "property": [
+                    "Text",
+                    "Animators",
+                    "V004_Staggered_Back"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "newCompId": 330,
+              "newCompName": "TITAN_TwoScenes_8s_v004"
+            },
+            {
+              "ok": true,
+              "newCompId": 356,
+              "newCompName": "TITAN_DEVICE_iPad_VIDEO_v004"
+            },
+            {
+              "ok": true,
+              "newCompId": 373,
+              "newCompName": "TITAN_DEVICE_iPhone_v004"
+            },
+            {
+              "ok": true,
+              "newCompId": 389,
+              "newCompName": "SCREEN_iPad10_HADES_VIDEO_v004"
+            },
+            {
+              "ok": true,
+              "name": "V004_Staggered_Back",
+              "matchName": "ADBE Text Animator",
+              "propertyIndex": 1
+            },
+            {
+              "ok": true,
+              "path": [
+                "Text",
+                "Animators",
+                "V004_Staggered_Back"
+              ],
+              "children": [
+                {
+                  "index": 1,
+                  "name": "Selectors",
+                  "matchName": "ADBE Text Selectors",
+                  "isGroup": true,
+                  "numChildren": 0
+                },
+                {
+                  "index": 2,
+                  "name": "Properties",
+                  "matchName": "ADBE Text Animator Properties",
+                  "isGroup": true,
+                  "numChildren": 103
+                }
+              ]
+            }
+          ],
+          "count": 6,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 26,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 460
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "marker"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "marker",
+        "operations": [
+          {
+            "name": "marker.add_comp",
+            "description": "Add a marker to a composition at a given time.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": true,
+                "description": "Time in seconds"
+              },
+              {
+                "name": "comment",
+                "type": "string",
+                "required": false,
+                "description": "Marker comment text",
+                "default": ""
+              },
+              {
+                "name": "label",
+                "type": "number",
+                "required": false,
+                "description": "Label color index (0-16)"
+              },
+              {
+                "name": "duration",
+                "type": "number",
+                "required": false,
+                "description": "Marker duration in seconds"
+              },
+              {
+                "name": "chapter",
+                "type": "string",
+                "required": false,
+                "description": "Chapter link text"
+              },
+              {
+                "name": "url",
+                "type": "string",
+                "required": false,
+                "description": "Web link URL"
+              },
+              {
+                "name": "frameTarget",
+                "type": "string",
+                "required": false,
+                "description": "Web link frame target (used with url)"
+              },
+              {
+                "name": "cuePointName",
+                "type": "string",
+                "required": false,
+                "description": "Flash Video cue point name"
+              },
+              {
+                "name": "eventCuePoint",
+                "type": "boolean",
+                "required": false,
+                "description": "true = event cue point, false = navigation cue point"
+              },
+              {
+                "name": "params",
+                "type": "object",
+                "required": false,
+                "description": "Cue point key/value parameters, e.g. { \"speaker\": \"A\" } (values stringified)"
+              },
+              {
+                "name": "protectedRegion",
+                "type": "boolean",
+                "required": false,
+                "description": "Protected-region flag (comp markers only)"
+              }
+            ]
+          },
+          {
+            "name": "marker.add_layer",
+            "description": "Add a marker to a layer at a given time.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": true,
+                "description": "Time in seconds"
+              },
+              {
+                "name": "comment",
+                "type": "string",
+                "required": false,
+                "description": "Marker comment text",
+                "default": ""
+              },
+              {
+                "name": "label",
+                "type": "number",
+                "required": false,
+                "description": "Label color index (0-16)"
+              },
+              {
+                "name": "duration",
+                "type": "number",
+                "required": false,
+                "description": "Marker duration in seconds"
+              },
+              {
+                "name": "chapter",
+                "type": "string",
+                "required": false,
+                "description": "Chapter link text"
+              },
+              {
+                "name": "url",
+                "type": "string",
+                "required": false,
+                "description": "Web link URL"
+              },
+              {
+                "name": "frameTarget",
+                "type": "string",
+                "required": false,
+                "description": "Web link frame target (used with url)"
+              },
+              {
+                "name": "cuePointName",
+                "type": "string",
+                "required": false,
+                "description": "Flash Video cue point name"
+              },
+              {
+                "name": "eventCuePoint",
+                "type": "boolean",
+                "required": false,
+                "description": "true = event cue point, false = navigation cue point"
+              },
+              {
+                "name": "params",
+                "type": "object",
+                "required": false,
+                "description": "Cue point key/value parameters, e.g. { \"speaker\": \"A\" } (values stringified)"
+              },
+              {
+                "name": "protectedRegion",
+                "type": "boolean",
+                "required": false,
+                "description": "Protected-region flag (comp markers only)"
+              }
+            ]
+          },
+          {
+            "name": "marker.remove",
+            "description": "Remove a marker from a comp (default) or a layer (pass layer). Target by keyIndex or nearest time.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": false,
+                "description": "Layer index or name — omit for comp markers"
+              },
+              {
+                "name": "keyIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based marker index"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": false,
+                "description": "Remove the marker nearest to this time (used when keyIndex omitted)"
+              }
+            ]
+          },
+          {
+            "name": "marker.update",
+            "description": "Update fields of an existing marker on a comp (default) or a layer (pass layer). Target by keyIndex or nearest time. Only the passed fields change.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": false,
+                "description": "Layer index or name — omit for comp markers"
+              },
+              {
+                "name": "keyIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based marker index"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": false,
+                "description": "Update the marker nearest to this time (used when keyIndex omitted)"
+              },
+              {
+                "name": "comment",
+                "type": "string",
+                "required": false,
+                "description": "New comment"
+              },
+              {
+                "name": "label",
+                "type": "number",
+                "required": false,
+                "description": "Label color index (0-16)"
+              },
+              {
+                "name": "duration",
+                "type": "number",
+                "required": false,
+                "description": "Marker duration in seconds"
+              },
+              {
+                "name": "chapter",
+                "type": "string",
+                "required": false,
+                "description": "Chapter link text"
+              },
+              {
+                "name": "url",
+                "type": "string",
+                "required": false,
+                "description": "Web link URL"
+              },
+              {
+                "name": "frameTarget",
+                "type": "string",
+                "required": false,
+                "description": "Web link frame target (used with url)"
+              },
+              {
+                "name": "cuePointName",
+                "type": "string",
+                "required": false,
+                "description": "Flash Video cue point name"
+              },
+              {
+                "name": "eventCuePoint",
+                "type": "boolean",
+                "required": false,
+                "description": "true = event cue point, false = navigation cue point"
+              },
+              {
+                "name": "params",
+                "type": "object",
+                "required": false,
+                "description": "Cue point key/value parameters, e.g. { \"speaker\": \"A\" } (values stringified)"
+              },
+              {
+                "name": "protectedRegion",
+                "type": "boolean",
+                "required": false,
+                "description": "Protected-region flag (comp markers only)"
+              }
+            ]
+          },
+          {
+            "name": "marker.list",
+            "description": "List all markers on a comp (default) or a layer (pass layer).",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": false,
+                "description": "Layer index or name — omit for comp markers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "effect"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "effect",
+        "operations": [
+          {
+            "name": "effect.add",
+            "description": "Add an effect to a layer by matchName. Use ae_do project.list_effects (or effect.list_on_layer on a reference layer) to find matchNames.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "matchName",
+                "type": "string",
+                "required": true,
+                "description": "Effect matchName (e.g. 'ADBE Gaussian Blur 2')"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "required": false,
+                "description": "Custom display name for the effect"
+              }
+            ]
+          },
+          {
+            "name": "effect.remove",
+            "description": "Remove an effect by its 1-based index within the layer's Effects group.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "effectIndex",
+                "type": "number",
+                "required": true,
+                "description": "1-based effect index"
+              }
+            ]
+          },
+          {
+            "name": "effect.list_on_layer",
+            "description": "List all effects currently applied to a layer with their matchNames and properties.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              }
+            ]
+          },
+          {
+            "name": "effect.set_property",
+            "description": "Set a property value on an effect. Property path is relative to the effect (e.g. ['Blurriness'] for Gaussian Blur).",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "effectIndex",
+                "type": "number",
+                "required": true,
+                "description": "1-based effect index"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path within the effect"
+              },
+              {
+                "name": "value",
+                "type": "any",
+                "required": true,
+                "description": "Value to set"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": false,
+                "description": "If set, creates a keyframe at this time"
+              }
+            ]
+          },
+          {
+            "name": "effect.move",
+            "description": "Reorder an effect within a layer's effect stack (PropertyBase.moveTo). Effect order changes the render result.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "effectIndex",
+                "type": "number",
+                "required": true,
+                "description": "1-based index of the effect to move"
+              },
+              {
+                "name": "toIndex",
+                "type": "number",
+                "required": true,
+                "description": "1-based target position in the stack"
+              }
+            ]
+          },
+          {
+            "name": "effect.set_dropdown_items",
+            "description": "Set the menu items of a Dropdown Menu Control effect (Property.setPropertyParameters, AE 17.0.1+) — the key API for MOGRT dropdowns. Item strings must be unique; \"-\" inserts a separator. AE re-creates the control (references from earlier calls become invalid); this op preserves the effect's display name across that re-creation.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "effect",
+                "type": "any",
+                "required": true,
+                "description": "1-based effect index or effect name (a Dropdown Menu Control)"
+              },
+              {
+                "name": "items",
+                "type": "array",
+                "required": true,
+                "description": "Menu item strings, e.g. [\"Red\", \"Green\", \"-\", \"Custom\"]"
+              }
+            ]
+          },
+          {
+            "name": "effect.get_dropdown_items",
+            "description": "Read a Dropdown Menu Control's items (Property.propertyParameters, AE 26.0+), current 1-based selection, and its text (valueText).",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "effect",
+                "type": "any",
+                "required": true,
+                "description": "1-based effect index or effect name (a Dropdown Menu Control)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "layer.bounds",
+          "args": {
+            "comp": 127,
+            "layer": "C01_TXT_MEET",
+            "time": 0.6
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "time": 0.6,
+          "layerSpace": {
+            "top": -98.3333350550383,
+            "left": 10.8333335230127,
+            "width": 301.975077865645,
+            "height": 100.000001750886
+          },
+          "compSpace": {
+            "topLeft": [
+              764.5947265625,
+              461.666656494141
+            ],
+            "topRight": [
+              1066.56982421875,
+              461.666656494141
+            ],
+            "bottomLeft": [
+              764.5947265625,
+              561.666687011719
+            ],
+            "bottomRight": [
+              1066.56982421875,
+              561.666687011719
+            ]
+          }
+        },
+        "context": {
+          "project": {
+            "numItems": 26,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 361
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "layer.bounds",
+          "args": {
+            "comp": 127,
+            "layer": "C02_TXT_IN_HOUSE",
+            "time": 2.5
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "time": 2.5,
+          "layerSpace": {
+            "top": -120.203477025032,
+            "left": 8.0026771388948,
+            "width": 639.174292713404,
+            "height": 121.999996382743
+          },
+          "compSpace": {
+            "topLeft": [
+              1103.27294921875,
+              509.796508789062
+            ],
+            "topRight": [
+              1742.447265625,
+              509.796508789062
+            ],
+            "bottomLeft": [
+              1103.27294921875,
+              631.796508789062
+            ],
+            "bottomRight": [
+              1742.447265625,
+              631.796508789062
+            ]
+          }
+        },
+        "context": {
+          "project": {
+            "numItems": 26,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 284
+      }
+    }
+  ]
+}

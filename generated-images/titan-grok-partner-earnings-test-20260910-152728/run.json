@@ -1,0 +1,195 @@
+{
+  "run_id": "titan-grok-partner-earnings-test-20260910-152728",
+  "role": "scene 04 longest-copy typography starting frame and Grok test prompt",
+  "status": "gravity_magnet_v4_reviewed_core_intent_failed_v3_baseline_retained",
+  "user_request": "Test PARTNER EARNINGS / AUTO-CALCULATED & RECORDED first; generate image and prompt",
+  "generation_route": "codex_builtin_imagegen",
+  "video_route": "User supplied two earlier Grok MP4 files and one each for V2, V3 and V4; agent did not submit generation; exact submitted prompts unconfirmed",
+  "exact_text_lines": [
+    "PARTNER EARNINGS",
+    "AUTO-CALCULATED & RECORDED"
+  ],
+  "requested_aspect": "21:9 inherited from current wide typography tests",
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-grok-type-stress-20260910-144248/results/01-titan-solution-start.png",
+      "sha256": "8B4708CEB0F6A480AA00E71A0D40A144489BFFB7078285C403D5B5332DCDFBCE",
+      "role": "style and composition reference; existing title replaced",
+      "visually_inspected": true,
+      "attached_to_generation": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "01",
+      "prompt": "prompts/01-start-image.txt",
+      "tool_output_path": "C:/Users/User/.codex/generated_images/01a084c3-735f-7fd2-8ef7-a044226bd7a3/exec-4f4ffd8a-58f9-4dc8-87a3-d7ea82d71b60.png",
+      "final_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-grok-partner-earnings-test-20260910-152728/results/01-partner-earnings-start.png",
+      "transfer": "moved only this successful new output without overwriting, following current project storage rule",
+      "sha256": "5CECDBD21AF8A308DD7031FA11BDAAD3E7E01BD82FFC6352EF0E8D1935BAFB10",
+      "bytes": 1245904,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1916,
+      "height": 821,
+      "status": "selected_by_agent",
+      "qa_pass": true,
+      "qa_scope": "static typography test input; not a generated video result",
+      "accepted_by_user": false,
+      "adopted": false
+    }
+  ],
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "failed": 0,
+    "skipped": 0,
+    "qa_pass": 1,
+    "selected_by_agent": 1,
+    "accepted_by_user": 0,
+    "rejected": 0
+  },
+  "video_test": {
+    "prompt": "prompts/02-grok-partner-earnings.txt",
+    "requested_duration_seconds": 6,
+    "planned_reading_section_seconds": [
+      3,
+      6
+    ],
+    "status": "two_user_files_reviewed_partial_intent_match",
+    "review": "qa/video-review-20260910/README.md",
+    "source_records": "qa/video-review-20260910/sources.json",
+    "provided_file_count": 2,
+    "independent_generation_count": "unconfirmed; highly similar video content, do not count as two independent successes",
+    "observed_successes": [
+      "Exact long two-line text, hyphen and ampersand visible in clear frames",
+      "Ribbon curling, ring orbiting and glass panel rotation",
+      "Graphic movement continues in later frames"
+    ],
+    "observed_limitations": [
+      "Main text remains centrally visible while streaks and letter-like pieces move in front",
+      "Intact word-group exit and return not demonstrated",
+      "Ring intermittently obscures RECORDED after 3 seconds and on the last frame",
+      "No complete title disappearance or full-screen cover observed; this requirement was added after the comparison prompt"
+    ],
+    "editing_candidates": [
+      {
+        "approximate_range_seconds": [3, 5.75],
+        "condition": "Accept intermittent lower-line occlusion; not a clean entrance"
+      },
+      {
+        "approximate_range_seconds": [4.8, 5.75],
+        "condition": "Shorter roughly one-second region with less occlusion; final cut and retiming not performed"
+      }
+    ],
+    "final_asset_selected": false,
+    "edited_by_agent": false,
+    "adopted": false,
+    "design_changes_from_C": [
+      "long exact two-line copy",
+      "word-group motion instead of letter disassembly",
+      "earlier resolution around 3 seconds",
+      "visible peripheral motion during readable ending"
+    ],
+    "causal_limit": "Several conditions change together; this is a feasibility test, not a controlled single-variable comparison"
+  },
+  "next_video_test": {
+    "id": "partner-earnings-wipe-v2",
+    "prompt": "prompts/03-grok-partner-earnings-wipe-v2.txt",
+    "starting_image": "results/01-partner-earnings-start.png",
+    "same_image_explicitly_requested": true,
+    "status": "user_result_reviewed_core_blackout_reentry_verified_detailed_motion_partial",
+    "requested_duration_seconds": 6,
+    "planned_complete_blackout_seconds": [1.3, 2.0],
+    "planned_editable_section_seconds": [2.0, 6.0],
+    "planned_entrance_seconds": [2.0, 3.0],
+    "planned_reading_section_seconds": [3.0, 6.0],
+    "changes": [
+      "Mandatory full-frame opaque black wipe and clean blackout before reveal",
+      "Original title enters as one intact two-line block without a stationary duplicate",
+      "Ring confined below the lower line during reading; other graphics near upper edges",
+      "No letter fragments or ghost-title effects"
+    ],
+    "timing_status": "planned fields preserve requested targets; actual timings recorded in result review",
+    "basis": "qa/video-review-20260910/README.md",
+    "review": "qa/video-review-wipe-v2-20260910/README.md",
+    "result_record": "qa/video-review-wipe-v2-20260910/review.json",
+    "provided_file_count": 1,
+    "observed_complete_blackout_seconds": [0.875, 2.291667],
+    "observed_complete_blackout_frame_count": 34,
+    "observed_complete_blackout_duration_seconds": 1.416667,
+    "reading_candidate_seconds_approximate": [4.25, 6.0],
+    "observed_successes": ["Complete blackout verified across all pixels before reappearance", "Exact text restored in later samples with continuing graphic motion"],
+    "observed_limitations": ["Lower-line letters scatter and duplicate during reentry", "Single intact block entrance not achieved", "Reading settles later than the 3-second target", "Graphics not fully separated from the text region"],
+    "opening_review_correction": "The original first frame is present, but the prompt starts covering immediately without an initial visible hold; this missed the user's intended opening and was omitted in the first review",
+    "normal_speed_playback_reviewed": false,
+    "accepted_by_user": false,
+    "adopted": false,
+    "edited_by_agent": false
+  },
+  "offscreen_v3_test": {
+    "id": "partner-earnings-offscreen-v3",
+    "prompt": "prompts/04-grok-partner-earnings-offscreen-v3.txt",
+    "starting_image": "results/01-partner-earnings-start.png",
+    "status": "user_result_reviewed_workflow_accepted_direction_precision_unverified",
+    "requested_duration_seconds": 6,
+    "planned_visible_opening_seconds": [0.0, 0.6],
+    "planned_physical_exit_seconds": [0.6, 1.6],
+    "planned_empty_background_seconds": [1.6, 1.9],
+    "planned_physical_return_seconds": [1.9, 3.0],
+    "planned_reading_seconds": [3.0, 6.0],
+    "changes": ["Explicit visible hold of the supplied first image before motion", "Original title block and all foreground shapes physically leave through the left edge, then return from that edge", "Stationary original background with unchanged brightness throughout; no blackout, mask, fade or opacity transition", "Single intact title instance; no letter disassembly or duplication"],
+    "user_hypothesis": "Beginning with an immediate blackout may contribute to unstable motion graphics",
+    "hypothesis_status": "unconfirmed; the supplied video actually contains the original image at frame zero before an immediate wipe",
+    "causal_limit": "Opening hold, transition method and motion path change together; improvement would not isolate blackout as the cause",
+    "basis": "qa/video-review-wipe-v2-20260910/README.md",
+    "timing_status": "planned fields preserve requested targets; actual sampled timings are in the V3 review",
+    "video_generation_submitted_by_agent": false,
+    "review": "qa/video-review-offscreen-v3-20260910/README.md",
+    "result_record": "qa/video-review-offscreen-v3-20260910/review.json",
+    "provided_file_count": 1,
+    "workflow_accepted_by_user": true,
+    "user_feedback": "This method is easier to edit and more natural; detailed entrance-direction control for graphic elements and images needs further research",
+    "approval_scope": "Production method; not final video selection, edited sequence or site deployment",
+    "empty_background_sample_seconds": 2.25,
+    "observed_direction": "Title, ribbon and ring broadly exit left and reenter from the left; glass moves right on return but exact left-edge crossing is not established",
+    "direction_precision_status": "Per-object paths, individual image-layer directions, exact timings and repeatability remain unverified",
+    "final_asset_selected": false,
+    "site_adopted": false,
+    "edited_by_agent": false
+  },
+  "gravity_magnet_v4_test": {
+    "id": "partner-earnings-gravity-magnet-v4",
+    "prompt": "prompts/05-grok-partner-earnings-gravity-magnet-v4.txt",
+    "starting_image": "results/01-partner-earnings-start.png",
+    "status": "user_result_reviewed_core_motion_intent_failed",
+    "requested_duration_seconds": 6,
+    "user_request": "Increase motion complexity: individual letters tumble down out of frame and return independently to their original positions as if magnetically attracted; graphic elements spread upward out of frame and return from above",
+    "planned_visible_opening_seconds": [0, 0.6],
+    "planned_opposing_exit_seconds": [0.6, 1.7],
+    "planned_empty_background_seconds": [1.7, 2.0],
+    "planned_magnetic_return_seconds": [2.0, 3.5],
+    "planned_reading_seconds": [3.5, 6.0],
+    "planned_reading_duration_seconds": 2.5,
+    "text_motion": "Every intact character, including hyphen and ampersand, independently cascades downward beyond the bottom edge, then rises from below on its own magnetically attracted path to its original slot",
+    "graphic_motion": "Ribbon toward upper-left, ring toward upper-middle, glass toward upper-right, all beyond the top edge; return from above on inward downward arcs",
+    "retained_constraints": ["Visible original composition before motion", "Original background color and brightness throughout; no blackout or opacity transition", "Complete foreground exit before return", "No extra glyph copies or stationary completed title", "Exact original two-line text restored before the reading section"],
+    "overridden_prior_constraint": "V3 one-block title movement is replaced by mandatory independent character movement at the user's explicit request; each glyph itself remains intact",
+    "test_scope": "More demanding expression and opposing-direction feasibility; several motion properties change together, not a single-variable experiment",
+    "basis": "qa/video-review-offscreen-v3-20260910/README.md",
+    "timing_status": "planned fields preserve requested targets; actual observed behavior is recorded in the V4 review",
+    "video_generation_submitted_by_agent": false,
+    "new_starting_image_generated": false,
+    "provided_file_count": 1,
+    "review": "qa/video-review-gravity-magnet-v4-20260910/README.md",
+    "result_record": "qa/video-review-gravity-magnet-v4-20260910/review.json",
+    "user_rejected_for_motion_intent": true,
+    "user_liked_background_action": true,
+    "observed_successes": ["Visible original opening", "Expressive graphic motion", "Exact late title"],
+    "observed_failures": ["Central gray title remains while additional characters fall", "No clear empty original background", "Independent magnetic return not demonstrated; central title brightens instead", "Graphics do not all exit through the top", "Glass panel multiplies into a fan"],
+    "accepted_as_character_animation_method": false,
+    "final_asset_selected": false,
+    "site_adopted": false
+  },
+  "next_action": "Keep accepted V3 as the production baseline. If further boundary testing is requested, hold other conditions fixed and change title motion granularity from whole block to separate lines, word groups and characters. Current records do not support universal impossibility or exact per-element control. No new prompt, generation or edit created during the V4 review."
+}

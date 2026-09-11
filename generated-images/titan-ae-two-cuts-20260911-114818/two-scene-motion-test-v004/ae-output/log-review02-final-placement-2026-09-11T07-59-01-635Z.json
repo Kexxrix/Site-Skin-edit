@@ -1,0 +1,1173 @@
+{
+  "timestamp": "2026-09-11T07-59-01-635Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "expression.set",
+          "args": {
+            "comp": 485,
+            "layer": "DEVICE_iPad_VIEW",
+            "property": [
+              "Transform",
+              "Position"
+            ],
+            "expression": "var master=comp('TITAN_TwoScenes_8s_v004_R02');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;}function unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));}var x=65;if(time>=at('IPAD_ENTER')&&time<at('CONTACT')){var u=unit(at('IPAD_ENTER'),at('CONTACT'));x=65+(-17.5-65)*u*u;}else if(time>=at('CONTACT')&&time<at('PUSH_MAX')){var u=unit(at('CONTACT'),at('PUSH_MAX'));x=-17.5-15*(1-Math.pow(1-u,5));}else if(time>=at('PUSH_MAX')){var u=unit(at('PUSH_MAX'),at('IPAD_RETREAT_END'));x=-32.5+22.5*(1-Math.pow(1-u,3));}[x,0,0];"
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "name": "Position",
+          "expressionEnabled": true
+        },
+        "context": {
+          "project": {
+            "numItems": 32,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep"
+          },
+          "activeComp": {
+            "id": 433,
+            "name": "QA_PLAYBACK_Review01_8s_30fps",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 1
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 474
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 458,
+          "time": 7.966666666666667,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-final-calibrated.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-final-calibrated.png",
+          "time": 7.96666666666667,
+          "compName": "TITAN_TwoScenes_8s_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 377
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 485,
+          "time": 3.866666666666667,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-native-final.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-native-final.png",
+          "time": 3.86666666666667,
+          "compName": "TITAN_DEVICE_iPad_VIDEO_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 381
+      }
+    },
+    {
+      "call": {
+        "name": "ae_layer_info",
+        "args": {
+          "compNameOrId": 485,
+          "layerIndex": "all"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "compName": "TITAN_DEVICE_iPad_VIDEO_v004_R02",
+          "count": 5,
+          "missing": 0,
+          "layers": [
+            {
+              "index": 1,
+              "id": 491,
+              "name": "DEVICE_iPad_VIEW",
+              "type": "AVLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 4,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "width": 100,
+              "height": 100,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": true,
+              "sourceId": 186,
+              "sourceName": "Null 2",
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      65,
+                      0,
+                      0
+                    ],
+                    "expression": "var master=comp('TITAN_TwoScenes_8s_v004_R02');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;}function unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));}var x=65;if(time>=at('IPAD_ENTER')&&time<at('CONTACT')){var u=unit(at('IPAD_ENTER'),at('CONTACT'));x=65+(-17.5-65)*u*u;}else if(time>=at('CONTACT')&&time<at('PUSH_MAX')){var u=unit(at('CONTACT'),at('PUSH_MAX'));x=-17.5-15*(1-Math.pow(1-u,5));}else if(time>=at('PUSH_MAX')){var u=unit(at('PUSH_MAX'),at('IPAD_RETREAT_END'));x=-32.5+22.5*(1-Math.pow(1-u,3));}[x,0,0];"
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0,
+                    "expression": "var master=comp('TITAN_TwoScenes_8s_v004_R02');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;} function unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));} var u=unit(at('IPAD_ROTATE_START'),at('IPAD_SETTLED'));35*(1-Math.pow(1-u,3));"
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "materialOptionsGroup": {
+                "name": "Material Options",
+                "matchName": "ADBE Material Options Group",
+                "properties": [
+                  {
+                    "name": "Casts Shadows",
+                    "matchName": "ADBE Casts Shadows",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Light Transmission",
+                    "matchName": "ADBE Light Transmission",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Accepts Shadows",
+                    "matchName": "ADBE Accepts Shadows",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Accepts Lights",
+                    "matchName": "ADBE Accepts Lights",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Shadow Color",
+                    "matchName": "ADBE Shadow Color",
+                    "propertyValueType": "COLOR",
+                    "value": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Appears in Reflections",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Ambient",
+                    "matchName": "ADBE Ambient Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Diffuse",
+                    "matchName": "ADBE Diffuse Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 50
+                  },
+                  {
+                    "name": "Specular Intensity",
+                    "matchName": "ADBE Specular Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 50
+                  },
+                  {
+                    "name": "Specular Shininess",
+                    "matchName": "ADBE Shininess Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 5
+                  },
+                  {
+                    "name": "Metal",
+                    "matchName": "ADBE Metal Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Reflection Intensity",
+                    "matchName": "ADBE Reflection Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Reflection Sharpness",
+                    "matchName": "ADBE Glossiness Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Reflection Rolloff",
+                    "matchName": "ADBE Fresnel Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Transparency",
+                    "matchName": "ADBE Transparency Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Transparency Rolloff",
+                    "matchName": "ADBE Transp Rolloff",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Index of Refraction",
+                    "matchName": "ADBE Index of Refraction",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "timeRemapEnabled": false,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 2,
+              "id": 490,
+              "name": "DEVICE_iPad_ENVIRONMENT",
+              "type": "LightLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 4,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 6,
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Point of Interest",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      1200,
+                      512,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      -1666.666666625
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 3,
+              "id": 489,
+              "name": "DEVICE_iPad10_MODEL",
+              "type": "ThreeDModelLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 4,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": 1,
+              "label": 3,
+              "parent": {
+                "index": 1,
+                "name": "DEVICE_iPad_VIEW"
+              },
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      66,
+                      66,
+                      66
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 90
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 4,
+              "id": 488,
+              "name": "DEVICE_iPad_CAMERA",
+              "type": "CameraLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 4,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 4,
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Point of Interest",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      -333.333343505859
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 5,
+              "id": 487,
+              "name": "SCREEN_iPad10_VIDEO_SOURCE",
+              "type": "AVLayer",
+              "enabled": false,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 4,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 15,
+              "width": 2360,
+              "height": 1640,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": false,
+              "sourceId": 389,
+              "sourceName": "SCREEN_iPad10_HADES_VIDEO_v004",
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      1180,
+                      820,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      1200,
+                      512,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "timeRemapEnabled": false,
+              "ok": true,
+              "found": true
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 352
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "render"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "render",
+        "operations": [
+          {
+            "name": "render.add_to_queue",
+            "description": "Add a composition to the render queue. Optionally set output path.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "outputPath",
+                "type": "string",
+                "required": false,
+                "description": "Output file path (optional, sets on the first output module)"
+              }
+            ]
+          },
+          {
+            "name": "render.start",
+            "description": "Start rendering the render queue. Blocks until complete.",
+            "readOnly": false,
+            "params": []
+          },
+          {
+            "name": "render.clear_queue",
+            "description": "Remove all items from the render queue.",
+            "readOnly": false,
+            "params": []
+          },
+          {
+            "name": "render.set_output",
+            "description": "Configure a render-queue item: render/output templates, output path, time span, render flag, skipFrames, logType, postRenderAction. Discover template names with render.list_templates; raw settings via render.get_settings / render.set_settings.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "renderTemplate",
+                "type": "string",
+                "required": false,
+                "description": "Render settings template name (e.g. \"Best Settings\", \"Draft Settings\")"
+              },
+              {
+                "name": "outputTemplate",
+                "type": "string",
+                "required": false,
+                "description": "Output module template name (e.g. \"Lossless\", \"High Quality\")"
+              },
+              {
+                "name": "outputPath",
+                "type": "string",
+                "required": false,
+                "description": "Output file path"
+              },
+              {
+                "name": "timeSpanStart",
+                "type": "number",
+                "required": false,
+                "description": "Render span start in seconds (comp time)"
+              },
+              {
+                "name": "timeSpanDuration",
+                "type": "number",
+                "required": false,
+                "description": "Render span duration in seconds"
+              },
+              {
+                "name": "outputModuleIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based output module index (default 1)",
+                "default": 1
+              },
+              {
+                "name": "render",
+                "type": "boolean",
+                "required": false,
+                "description": "Whether this item renders when the queue starts (the Render checkbox)"
+              },
+              {
+                "name": "skipFrames",
+                "type": "number",
+                "required": false,
+                "description": "Render every Nth frame (0 = every frame)"
+              },
+              {
+                "name": "logType",
+                "type": "string",
+                "required": false,
+                "description": "errorsOnly|errorsAndSettings|errorsAndPerFrameInfo"
+              },
+              {
+                "name": "postRenderAction",
+                "type": "string",
+                "required": false,
+                "description": "none|import|importAndReplaceUsage|setProxy (on the output module)"
+              },
+              {
+                "name": "includeSourceXMP",
+                "type": "boolean",
+                "required": false,
+                "description": "Embed source-footage XMP metadata in the output"
+              },
+              {
+                "name": "queueItemNotify",
+                "type": "boolean",
+                "required": false,
+                "description": "Per-item Notify checkbox (AE 22.0+)"
+              },
+              {
+                "name": "queueNotify",
+                "type": "boolean",
+                "required": false,
+                "description": "QUEUE-WIDE Notify checkbox (RenderQueue.queueNotify, AE 22.0+)"
+              }
+            ]
+          },
+          {
+            "name": "render.get_settings",
+            "description": "Read the raw render settings of a queue item and the settings of each of its output modules (getSettings, AE 13.0+). format 'settable' returns only keys accepted by render.set_settings / render.set_om_settings.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "format",
+                "type": "string",
+                "required": false,
+                "description": "settable|all (default settable)",
+                "default": "settable"
+              }
+            ]
+          },
+          {
+            "name": "render.set_settings",
+            "description": "Set raw render settings on a queue item (RenderQueueItem.setSettings, AE 13.0+), e.g. { \"Quality\": \"Best\", \"Resolution\": \"Half\" }. Discover valid keys/values with render.get_settings.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "settings",
+                "type": "object",
+                "required": true,
+                "description": "Key/value map from render.get_settings format 'settable'"
+              }
+            ]
+          },
+          {
+            "name": "render.set_om_settings",
+            "description": "Set raw output-module settings on a queue item (OutputModule.setSettings, AE 13.0+), e.g. { \"Format\": \"QuickTime\", \"Channels\": \"RGB + Alpha\" }. Discover valid keys/values with render.get_settings.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "outputModuleIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based output module index (default 1)",
+                "default": 1
+              },
+              {
+                "name": "settings",
+                "type": "object",
+                "required": true,
+                "description": "Key/value map from render.get_settings format 'settable'"
+              }
+            ]
+          },
+          {
+            "name": "render.remove_item",
+            "description": "Remove ONE item from the render queue by its 1-based index (render.clear_queue removes all).",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": true,
+                "description": "1-based queue item index (explicit — no default for a destructive op)"
+              }
+            ]
+          },
+          {
+            "name": "render.duplicate_item",
+            "description": "Duplicate a render-queue item (RenderQueueItem.duplicate) — e.g. to render the same comp with a second settings/output combination.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              }
+            ]
+          },
+          {
+            "name": "render.list_templates",
+            "description": "List available render-settings templates and output-module templates. The render queue must have at least one item (templates are read from a queue item).",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "render.status",
+            "description": "Report the render queue state: per-item status, time spans, and output paths.",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "render.queue_in_ame",
+            "description": "Send the render queue to Adobe Media Encoder (for H.264/HEVC etc.). Requires AME installed. renderImmediately=true starts the AME queue.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "renderImmediately",
+                "type": "boolean",
+                "required": false,
+                "description": "Start rendering in AME right away (default false)",
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "render.save_template",
+            "description": "Save a queue item's current render settings, or an output module's current settings, as a named template (saveAsTemplate) for reuse via render.set_output.",
+            "readOnly": false,
+            "appConfig": true,
+            "params": [
+              {
+                "name": "type",
+                "type": "string",
+                "required": true,
+                "description": "render (RenderQueueItem settings) | output (OutputModule settings)"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "Template name to save under"
+              },
+              {
+                "name": "queueIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based queue item index (default: last item)"
+              },
+              {
+                "name": "outputModuleIndex",
+                "type": "number",
+                "required": false,
+                "description": "1-based output module index (type=output only, default 1)",
+                "default": 1
+              },
+              {
+                "name": "confirm",
+                "type": "boolean",
+                "required": true,
+                "description": "Must be true. This operation changes the user's After Effects APPLICATION configuration (it persists beyond the project) — set it only when the user explicitly requested this change, never as a side effect of other work."
+              }
+            ]
+          },
+          {
+            "name": "render.frame",
+            "description": "Render one frame to PNG (raw saveFrameToPng). As the LAST child of a batch.run, one call mutates and hands back visual proof. outPath must be absolute; raise ae_do's timeoutMs for slow renders. CAUTION: in color-managed projects (project.get_settings workingSpace != 'None') this writes raw working-space values that look dark/wrong — use the ae_render_frame TOOL there, which converts to display sRGB.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": true,
+                "description": "Time in seconds to render"
+              },
+              {
+                "name": "outPath",
+                "type": "string",
+                "required": true,
+                "description": "Absolute path for the PNG (parent directories are created)"
+              },
+              {
+                "name": "useDisplayStartTime",
+                "type": "boolean",
+                "required": false,
+                "description": "Interpret `time` relative to comp.displayStartTime (default false)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

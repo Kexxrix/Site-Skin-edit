@@ -1,0 +1,23 @@
+{
+  "review_id": "partner-earnings-gravity-magnet-v4-20260910",
+  "source": "D:/WebDL/grok-513719c9-eef2-49ab-b390-8f14fd3528ac.mp4",
+  "source_sha256": "20051479C2D3367D495616AE053D12514F9376AEE4AE9094A881F5430A6E06EA",
+  "source_bytes": 2021299,
+  "comparison_prompt": "../../prompts/05-grok-partner-earnings-gravity-magnet-v4.txt",
+  "submission_provenance": "User-supplied follow-up result; exact Grok submission and settings not independently inspected",
+  "video": {"width": 1456, "height": 624, "fps": 24, "frames": 145, "duration_seconds": 6.041667, "audio_streams": 0},
+  "status": "reviewed_core_motion_intent_failed",
+  "user_rejected_for_motion_intent": true,
+  "user_liked_background_action": true,
+  "observed_successes": ["Complete initial composition is visible", "Expressive ribbon, ring and multiplied-panel motion", "Exact late two-line title is readable"],
+  "observed_failures": ["Central title remains gray while additional characters fall in front", "No original-background-only empty stage in reviewed samples", "Independent magnetic return of original characters to their own slots not demonstrated", "Original central title brightens again while falling characters disappear", "Original graphic elements do not all completely leave through the top", "Panel count changes into a multi-panel fan"],
+  "comparison_inference": "Broad motion appearance has successful examples; exact per-element identity, number, path, timing and reassembly are unreliable in the reviewed tests. This is not a universal impossibility or an account of model internals.",
+  "blackout_hypothesis_update": "Similar retained-title and duplicate-character behavior occurs without blackout; eliminating blackout alone is not supported as a sufficient fix",
+  "verification": {"visual_samples": 25, "sample_step_seconds": 0.25, "native_key_frames_reviewed": true, "all_characters_tracked_each_frame": false, "normal_speed_playback_reviewed_by_agent": false, "retiming_reviewed": false, "contact_sheet": "contact.png"},
+  "workflow_baseline": "User-approved V3 physical exit and reentry remains the baseline",
+  "accepted_as_character_animation_method": false,
+  "final_asset_selected": false,
+  "site_adopted": false,
+  "new_generation_submitted": false,
+  "original_edited_or_moved": false
+}

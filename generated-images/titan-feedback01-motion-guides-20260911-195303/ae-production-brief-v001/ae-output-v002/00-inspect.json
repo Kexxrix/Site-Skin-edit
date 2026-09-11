@@ -1,0 +1,11 @@
+{
+  "write": false,
+  "schemas": ["ae_do", "ae_render_frame", "ae_project_export_json"],
+  "calls": [
+    {"name":"ae_version_info"},
+    {"name":"ae_project_info"},
+    {"name":"ae_catalog","args":{"category":"project"}},
+    {"name":"ae_catalog","args":{"category":"comp"}},
+    {"name":"ae_catalog","args":{"category":"marker"}}
+  ]
+}

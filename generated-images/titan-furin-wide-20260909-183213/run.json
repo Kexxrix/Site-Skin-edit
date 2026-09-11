@@ -1,0 +1,74 @@
+{
+  "run_id": "titan-furin-wide-20260909-183213",
+  "status": "ultrawide_first_frame_ready_for_grok_ratio_test",
+  "user_request": "Create a tablet start image at the actual wide desktop hero ratio using the Furin Kasan thumbnail instead of CAT VILLAGE; explicitly require a four-second video in the prompt.",
+  "output": {
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-378e3ad0-7fb6-43e6-83b4-df0eb311130a.png",
+    "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-furin-wide-20260909-183213\\results\\01-furin-tablet-wide.png",
+    "sha256": "2ebafe21ca31c7a4dfe4e97440819ce4e489824e66b53884153a7d159f18d311",
+    "bytes": 2068884,
+    "action": "moved_this_generated_output_only",
+    "source_residue": false,
+    "format": "PNG",
+    "size": [
+      1919,
+      820
+    ]
+  },
+  "reference": {
+    "path": "E:/codexwork/Site-Skin-edit/titan_promotion/public/assets/fire.webp",
+    "sha256": "5092cc3641227084e07be4e7a467f85d3638cfbb24bac369a046e3780ee3f70d",
+    "data_label": "風林花山",
+    "source": "Existing local portfolio thumbnail, not a fresh site capture"
+  },
+  "image_prompt": "prompts/01-wide-tablet-image.txt",
+  "image_request": "prompts/01-wide-tablet-request.json",
+  "grok_prompt": "prompts/02-grok-ratio-test.txt",
+  "image_generation_method": "Codex built-in reference-image generation",
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "failed": 0,
+    "skipped": 0,
+    "selected_for_ratio_test": 1,
+    "user_accepted": 0,
+    "site_adopted": 0
+  },
+  "layout_evidence": "qa/page-ratio.json",
+  "browser_evidence": "qa/framing-proof.png",
+  "qa": {
+    "verified_at": "2026-09-09T09:39:37.690999+00:00",
+    "png_readable": true,
+    "size": [
+      1919,
+      820
+    ],
+    "bytes": 2068884,
+    "sha256": "2ebafe21ca31c7a4dfe4e97440819ce4e489824e66b53884153a7d159f18d311",
+    "input_sha256_preserved": "5092cc3641227084e07be4e7a467f85d3638cfbb24bac369a046e3780ee3f70d",
+    "move_hash_verified": true,
+    "source_residue": false,
+    "target_ratio": "75:32",
+    "actual_ratio": 2.3402439024390245,
+    "ratio_error_percent": 0.1495934959349559,
+    "ratio_formula": "abs((1919/820)-(75/32))/(75/32)*100",
+    "image_resized_or_cropped": false,
+    "visual_checks": {
+      "whole_tablet_visible": true,
+      "screen_and_all_four_bezel_corners_visible": true,
+      "top_and_bottom_space": "approximately 19 percent each",
+      "tablet_height": "approximately 62 percent of full image height",
+      "source_major_contents": "Furin Kasan logo, three characters in source order, seven game cards and bottom navigation retained",
+      "exact_screenshot_reproduction": false,
+      "minor_differences": "Small labels, logo strokes, character/clothing and card details were redrawn; decorative book wording was added to the environment.",
+      "actual_desktop_937_5_by_400": "whole tablet and display visible",
+      "35_percent_centered_enlargement": "whole tablet and display still visible in separate browser QA simulation"
+    },
+    "independent_visual_review": true,
+    "grok_prompt_duration_seconds": 4,
+    "actual_video_generated": false,
+    "grok_non_16_9_video_support_verified": false,
+    "site_modified": false
+  },
+  "scope_note": "Only still-image creation and prompt preparation. No video generation, live site changes, resizing or cropping of original output."
+}

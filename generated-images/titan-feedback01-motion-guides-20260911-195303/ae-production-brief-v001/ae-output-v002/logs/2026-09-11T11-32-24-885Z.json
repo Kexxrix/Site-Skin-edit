@@ -1,0 +1,261 @@
+{
+  "started": "2026-09-11T11:32:24.665Z",
+  "ended": "2026-09-11T11:32:24.885Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "viewer"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "viewer",
+        "operations": [
+          {
+            "name": "viewer.get_state",
+            "description": "Read the active viewer's state: type, zoom, exposure, channels.",
+            "readOnly": true,
+            "params": []
+          },
+          {
+            "name": "viewer.set_options",
+            "description": "Set active-viewer view options: zoom (1 = 100%), exposure (stops), checkerboard, guide/ruler visibility and lock/snap (AE 16.1+), fast-preview mode, and the displayed channels.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "zoom",
+                "type": "number",
+                "required": false,
+                "description": "Zoom factor (1 = 100%)"
+              },
+              {
+                "name": "exposure",
+                "type": "number",
+                "required": false,
+                "description": "Exposure in stops"
+              },
+              {
+                "name": "checkerboards",
+                "type": "boolean",
+                "required": false,
+                "description": "Show transparency checkerboard"
+              },
+              {
+                "name": "guidesVisibility",
+                "type": "boolean",
+                "required": false,
+                "description": "Show guides (AE 16.1+)"
+              },
+              {
+                "name": "guidesLocked",
+                "type": "boolean",
+                "required": false,
+                "description": "Lock guides (AE 16.1+)"
+              },
+              {
+                "name": "guidesSnap",
+                "type": "boolean",
+                "required": false,
+                "description": "Snap to guides (AE 16.1+)"
+              },
+              {
+                "name": "rulers",
+                "type": "boolean",
+                "required": false,
+                "description": "Show rulers (AE 16.1+)"
+              },
+              {
+                "name": "maximized",
+                "type": "boolean",
+                "required": false,
+                "description": "Maximize the viewer panel"
+              },
+              {
+                "name": "fastPreview",
+                "type": "string",
+                "required": false,
+                "description": "off|adaptiveResolution|draft|fastDraft|wireframe"
+              },
+              {
+                "name": "channels",
+                "type": "string",
+                "required": false,
+                "description": "rgb|red|green|blue|alpha|alphaBoundary|alphaOverlay|rgbStraight"
+              }
+            ]
+          }
+        ]
+      },
+      "elapsedMs": 4
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "layer"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "layer",
+        "operations": [
+          {
+            "name": "layer.list_guides",
+            "description": "List a layer's Layer-panel ruler guides with orientation and position (AE 16.1+).",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              }
+            ]
+          },
+          {
+            "name": "layer.bounds",
+            "description": "Measure a layer's rendered bounds via sourceRectAtTime — essential for aligning/fitting text and shape layers. Returns layer-space rect and, when the host supports it, comp-space corners.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": false,
+                "description": "Time in seconds (default: current comp time)"
+              },
+              {
+                "name": "includeExtents",
+                "type": "boolean",
+                "required": false,
+                "description": "Include pixel extents beyond the layer edges (default false)",
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "layer.convert_point",
+            "description": "Convert a point between layer source space and comp space (sourcePointToComp / compPointToSource, AE 13.2+; designed for text layers — evaluates at the first character at the given time).",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "direction",
+                "type": "string",
+                "required": true,
+                "description": "sourceToComp|compToSource"
+              },
+              {
+                "name": "point",
+                "type": "array",
+                "required": true,
+                "description": "[x, y] point to convert"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": false,
+                "description": "Evaluate at this time (default: current comp time)"
+              }
+            ]
+          },
+          {
+            "name": "layer.calculate_transform",
+            "description": "Calculate the transform that maps a 3D layer onto three corner points (AVLayer.calculateTransformFromPoints) - corner-pin style placement in 3D space. Calculation-only: returns anchorPoint/position/x-y-zRotation/scale without touching the layer — apply them with property.set / layer.set_props.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name (3D layer)"
+              },
+              {
+                "name": "topLeft",
+                "type": "array",
+                "required": true,
+                "description": "[x,y,z] world point for the layer's top-left"
+              },
+              {
+                "name": "topRight",
+                "type": "array",
+                "required": true,
+                "description": "[x,y,z] world point for the top-right"
+              },
+              {
+                "name": "bottomLeft",
+                "type": "array",
+                "required": true,
+                "description": "[x,y,z] world point for the bottom-left. The scripting guide names this pointBottomRight, but the implementation expects the bottom-left (the guide's own example passes bl): a true bottom-right returns the same placement with zScale skewed by sin(corner angle) — verified on AE 26.3."
+              }
+            ]
+          },
+          {
+            "name": "layer.info",
+            "description": "Full layer info incl. property trees and keyframes (same payload as ae_layer_info). Layer by 1-based index or name. includeProperties=false for the cheap summary.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index or layer name"
+              },
+              {
+                "name": "includeProperties",
+                "type": "boolean",
+                "required": false,
+                "description": "Walk the full property tree (default true)",
+                "default": true
+              }
+            ]
+          }
+        ]
+      },
+      "elapsedMs": 1
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "node": {
+    "extras": {
+      "screen_width_mm": 66.59217391304348,
+      "screen_height_mm": 144.78,
+      "image_aspect_ratio": 0.459954233409611,
+      "screen_coordinates": "Local +Z faces viewer, +Y is top. UV origin is bottom-left. Rounded corners crop only the corners of a full rectangular image."
+    },
+    "mesh": 30,
+    "name": "iPhone17.Screen"
+  },
+  "mesh_name": "iPhone17.Screen.Mesh",
+  "primitives": [
+    {
+      "material_index": 9,
+      "material": {
+        "doubleSided": true,
+        "emissiveFactor": [
+          0.006799999919533728,
+          0.006799999919533728,
+          0.006799999919533728
+        ],
+        "extensions": {
+          "KHR_materials_clearcoat": {
+            "clearcoatFactor": 0.14000000059604645,
+            "clearcoatRoughnessFactor": 0.11999999731779099
+          }
+        },
+        "extras": {
+          "mapping_instructions": "Load an image into SCREEN_IMAGE_REPLACE_HERE. Connect its Color to Base Color and Emission Color. Adjust Emission Strength for a lit display.",
+          "placeholder": "Neutral grey; no screen image assigned."
+        },
+        "name": "iPhone17.SCREEN",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.08500000089406967,
+            0.08500000089406967,
+            0.08500000089406967,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.23999999463558197
+        }
+      },
+      "attributes": {
+        "POSITION": 88,
+        "NORMAL": 89,
+        "TEXCOORD_0": 90
+      },
+      "position_accessor": {
+        "bufferView": 88,
+        "componentType": 5126,
+        "count": 133,
+        "max": [
+          0.03329608589410782,
+          0.003980000037699938,
+          0.07238999754190445
+        ],
+        "min": [
+          -0.03329608589410782,
+          0.003980000037699938,
+          -0.07238999754190445
+        ],
+        "type": "VEC3"
+      }
+    }
+  ],
+  "embedded_images": 0,
+  "target_size": [
+    1206,
+    2622
+  ],
+  "ae_mapping_performed": false
+}

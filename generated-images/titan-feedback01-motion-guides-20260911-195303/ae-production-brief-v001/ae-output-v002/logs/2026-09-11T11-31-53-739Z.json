@@ -1,0 +1,46 @@
+{
+  "started": "2026-09-11T11:31:53.508Z",
+  "ended": "2026-09-11T11:31:53.739Z",
+  "write": false,
+  "records": [
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "ui"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "UNKNOWN_CATEGORY",
+          "message": "no operations in category 'ui'",
+          "retryable": false,
+          "hint": "Available categories: batch, command, comp, effect, egp, font, footage, item, layer, marker, pref, project, property, render, text, viewer",
+          "details": {
+            "category": "ui",
+            "availableCategories": [
+              "batch",
+              "command",
+              "comp",
+              "effect",
+              "egp",
+              "font",
+              "footage",
+              "item",
+              "layer",
+              "marker",
+              "pref",
+              "project",
+              "property",
+              "render",
+              "text",
+              "viewer"
+            ]
+          }
+        }
+      },
+      "elapsedMs": 5
+    }
+  ]
+}

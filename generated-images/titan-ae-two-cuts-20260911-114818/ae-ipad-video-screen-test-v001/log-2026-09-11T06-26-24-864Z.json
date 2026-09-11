@@ -1,0 +1,809 @@
+{
+  "timestamp": "2026-09-11T06-26-24-864Z",
+  "write": true,
+  "results": [
+    {
+      "schemas": [
+        {
+          "name": "ae_render_frame",
+          "title": "Render frame",
+          "description": "Render a single frame to PNG. Use to visually verify edits. The agent's 'eyes' — pair with mutations for a visual feedback loop. Headless and deterministic. In color-managed projects (workingSpace != None) the capture applies AE's own display transform via a transient OCIO Display Transform adjustment layer, and the PNG comes back viewer-accurate and sRGB-tagged. Where that layer cannot be used — read-only mode, an AE without the OCIO effect, or a failed capture calibration — the result falls back to a pure-math ACES conversion or to raw values with an explicit colorWarning; check colorPipeline / colorWarning on the response.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "compNameOrId": {
+                "description": "Composition name or numeric item id.",
+                "type": [
+                  "string",
+                  "number"
+                ]
+              },
+              "time": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Time in seconds to render."
+              },
+              "outPath": {
+                "type": "string",
+                "description": "Absolute path to write the PNG. Parent directory is created if missing."
+              },
+              "useDisplayStartTime": {
+                "description": "If true, `time` is interpreted relative to comp.displayStartTime. Default false.",
+                "type": "boolean"
+              },
+              "colorManaged": {
+                "description": "'auto' (default): detect the working space and return a viewer-accurate, 8-bit sRGB-tagged PNG. 'off': raw legacy output (16-bit, untagged, working-space values — dark/wrong-looking in color-managed projects).",
+                "type": "string",
+                "enum": [
+                  "auto",
+                  "off"
+                ]
+              }
+            },
+            "required": [
+              "compNameOrId",
+              "time",
+              "outPath"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "annotations": {
+            "destructiveHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "ae_save_project",
+          "title": "Save project",
+          "description": "Save the project. Pass `path` for Save As.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "description": "Optional absolute path to save the project to (Save As). If omitted, save to the existing path — errors if the project has never been saved.",
+                "type": "string"
+              }
+            },
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "annotations": {
+            "destructiveHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        }
+      ]
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "comp"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "comp",
+        "operations": [
+          {
+            "name": "comp.create",
+            "description": "Create a new composition.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "Composition name"
+              },
+              {
+                "name": "width",
+                "type": "number",
+                "required": true,
+                "description": "Width in px"
+              },
+              {
+                "name": "height",
+                "type": "number",
+                "required": true,
+                "description": "Height in px"
+              },
+              {
+                "name": "fps",
+                "type": "number",
+                "required": true,
+                "description": "Frame rate"
+              },
+              {
+                "name": "duration",
+                "type": "number",
+                "required": true,
+                "description": "Duration in seconds"
+              },
+              {
+                "name": "bgColor",
+                "type": "array",
+                "required": false,
+                "description": "[r,g,b] 0-1"
+              }
+            ]
+          },
+          {
+            "name": "comp.set_label",
+            "description": "Set label color on comps. Can target by name, id, or pattern (e.g. 'review_id_*').",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name/id, or pattern with '*' wildcard"
+              },
+              {
+                "name": "label",
+                "type": "number",
+                "required": true,
+                "description": "Label index (0=None, 1=Red, 2=Yellow, 3=Aqua, 4=Pink, 5=Lavender, 6=Peach, 7=Sea Foam, 8=Blue, 9=Green, 10=Purple, 11=Orange, 12=Brown, 13=Fuchsia, 14=Cyan, 15=Sandstone, 16=Dark Green)"
+              }
+            ]
+          },
+          {
+            "name": "comp.set_props",
+            "description": "Set composition properties (bgColor, workAreaStart, workAreaDuration, shutterAngle, motionBlur, etc.).",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "props",
+                "type": "object",
+                "required": true,
+                "description": "Object with keys to set"
+              }
+            ]
+          },
+          {
+            "name": "comp.set_renderer",
+            "description": "Switch a comp's 3D renderer: classic3d | advanced3d | cinema4d (or a raw matchName from comp.list_renderers). Advanced 3D is required for 3D model layers, parametric meshes, and environment lights to render.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "renderer",
+                "type": "string",
+                "required": true,
+                "description": "classic3d|advanced3d|cinema4d, or an exact renderer matchName"
+              }
+            ]
+          },
+          {
+            "name": "comp.list_renderers",
+            "description": "List the comp's available 3D renderer matchNames, the current one, and the friendly-name mapping used by comp.set_renderer.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "comp.set_work_area",
+            "description": "Set the work area start and duration on a composition.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "start",
+                "type": "number",
+                "required": true,
+                "description": "Work area start in seconds"
+              },
+              {
+                "name": "duration",
+                "type": "number",
+                "required": true,
+                "description": "Work area duration in seconds"
+              }
+            ]
+          },
+          {
+            "name": "comp.add_guide",
+            "description": "Add a horizontal or vertical guide line to a comp (AE 16.1+).",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "orientation",
+                "type": "string",
+                "required": true,
+                "description": "horizontal|vertical"
+              },
+              {
+                "name": "position",
+                "type": "number",
+                "required": true,
+                "description": "Position in px (y for horizontal, x for vertical)"
+              }
+            ]
+          },
+          {
+            "name": "comp.remove_guide",
+            "description": "Remove a guide from a comp by its 0-based index (see comp.list_guides).",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "guideIndex",
+                "type": "number",
+                "required": true,
+                "description": "0-based guide index"
+              }
+            ]
+          },
+          {
+            "name": "comp.set_guide",
+            "description": "Move an existing guide to a new position (Item.setGuide). Orientation cannot be changed after creation — remove and re-add instead.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "guideIndex",
+                "type": "number",
+                "required": true,
+                "description": "0-based guide index"
+              },
+              {
+                "name": "position",
+                "type": "number",
+                "required": true,
+                "description": "New position in px (y for horizontal, x for vertical)"
+              }
+            ]
+          },
+          {
+            "name": "comp.list_guides",
+            "description": "List all guides on a comp with orientation and position (AE 16.1+).",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "comp.delete",
+            "description": "Delete a composition from the project.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          },
+          {
+            "name": "comp.precompose",
+            "description": "Pre-compose selected layers into a new nested composition.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Source comp name or id"
+              },
+              {
+                "name": "layerIndices",
+                "type": "array",
+                "required": true,
+                "description": "Array of 1-based layer indices to precompose"
+              },
+              {
+                "name": "newName",
+                "type": "string",
+                "required": true,
+                "description": "Name for the new comp"
+              },
+              {
+                "name": "moveAll",
+                "type": "boolean",
+                "required": false,
+                "description": "Move all attributes into new comp (default true)",
+                "default": true
+              }
+            ]
+          },
+          {
+            "name": "comp.duplicate",
+            "description": "Duplicate a composition.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id to duplicate"
+              },
+              {
+                "name": "newName",
+                "type": "string",
+                "required": false,
+                "description": "Name for the duplicate"
+              }
+            ]
+          },
+          {
+            "name": "comp.info",
+            "description": "Comp details + per-layer summaries (same payload as ae_comp_info). As a batch.run child, lets the same call verify what a preceding mutation did.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_catalog",
+        "args": {
+          "category": "property"
+        }
+      },
+      "response": {
+        "ok": true,
+        "category": "property",
+        "operations": [
+          {
+            "name": "property.set",
+            "description": "Set any layer property by path. layer can be index, name, 'selected', or 'all'.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "Layer index, name, 'selected', or 'all'"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path, e.g. [\"Transform\",\"Position\"]"
+              },
+              {
+                "name": "value",
+                "type": "any",
+                "required": true,
+                "description": "Value to set"
+              }
+            ]
+          },
+          {
+            "name": "property.get",
+            "description": "Get the current value of any layer property by path.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path"
+              },
+              {
+                "name": "time",
+                "type": "number",
+                "required": false,
+                "description": "If set, get value at this time (for animated properties)"
+              }
+            ]
+          },
+          {
+            "name": "property.list",
+            "description": "List child properties/groups at a given path. Useful for discovering what's inside a property group.",
+            "readOnly": true,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path to a group. Use [] for the layer root."
+              }
+            ]
+          },
+          {
+            "name": "property.add",
+            "description": "Add a property to an indexed group by matchName (PropertyGroup.addProperty). Unlocks text animators ('ADBE Text Animator' on [\"Text\",\"Animators\"]), layer styles, shape contents, etc. Use property.list to discover group paths.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Path to the group to add into, e.g. [\"Text\",\"Animators\"]. Use [] for layer root."
+              },
+              {
+                "name": "matchName",
+                "type": "string",
+                "required": true,
+                "description": "Match name (or display name) of the property to add, e.g. \"ADBE Text Animator\". NOTE: adding to an indexed group re-creates it, invalidating prior property references."
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "required": false,
+                "description": "Rename the new property"
+              }
+            ]
+          },
+          {
+            "name": "property.remove",
+            "description": "Remove a property or group by path (Property.remove). Works on members of indexed groups: effects, masks, shape contents, text animators, layer styles.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Path to the property to remove"
+              }
+            ]
+          },
+          {
+            "name": "property.separate_dimensions",
+            "description": "Separate (or rejoin) the dimensions of a multi-dimensional property such as Position. When separated, animate the followers (e.g. X Position) individually.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path (e.g. Position)"
+              },
+              {
+                "name": "separated",
+                "type": "boolean",
+                "required": true,
+                "description": "true=separate, false=rejoin"
+              }
+            ]
+          },
+          {
+            "name": "property.move",
+            "description": "Reorder a property within its parent INDEXED group (PropertyBase.moveTo): masks, shape contents, text animators. For effects use effect.move.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Path to the property to move (a member of an indexed group)"
+              },
+              {
+                "name": "toIndex",
+                "type": "number",
+                "required": true,
+                "description": "1-based target position within the parent group"
+              }
+            ]
+          },
+          {
+            "name": "property.select",
+            "description": "Select or deselect a property in the timeline (PropertyBase.selected) - stages it for UI-side actions and makes it visible with the U-shortcut workflow.",
+            "readOnly": false,
+            "params": [
+              {
+                "name": "comp",
+                "type": "any",
+                "required": true,
+                "description": "Comp name or id"
+              },
+              {
+                "name": "layer",
+                "type": "any",
+                "required": true,
+                "description": "1-based layer index, or the layer name"
+              },
+              {
+                "name": "property",
+                "type": "array",
+                "required": true,
+                "description": "Property path"
+              },
+              {
+                "name": "selected",
+                "type": "boolean",
+                "required": false,
+                "description": "true=select, false=deselect (default true)",
+                "default": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "property.list",
+          "args": {
+            "comp": "TITAN_DEVICE_iPad_3D_v003",
+            "layer": "DEVICE_iPad10_MODEL",
+            "property": []
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "path": [],
+          "children": [
+            {
+              "index": 1,
+              "name": "Marker",
+              "matchName": "ADBE Marker",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 2,
+              "name": "Time Remap",
+              "matchName": "ADBE Time Remapping",
+              "isGroup": false,
+              "numChildren": 0
+            },
+            {
+              "index": 3,
+              "name": "Motion Trackers",
+              "matchName": "ADBE MTrackers",
+              "isGroup": true,
+              "numChildren": 0
+            },
+            {
+              "index": 4,
+              "name": "Animation Options",
+              "matchName": "ADBE ModelAnimOptionsSGrp",
+              "isGroup": true,
+              "numChildren": 2
+            },
+            {
+              "index": 5,
+              "name": "Masks",
+              "matchName": "ADBE Mask Parade",
+              "isGroup": true,
+              "numChildren": 0
+            },
+            {
+              "index": 6,
+              "name": "Effects",
+              "matchName": "ADBE Effect Parade",
+              "isGroup": true,
+              "numChildren": 0
+            },
+            {
+              "index": 7,
+              "name": "Transform",
+              "matchName": "ADBE Transform Group",
+              "isGroup": true,
+              "numChildren": 12
+            },
+            {
+              "index": 8,
+              "name": "Layer Styles",
+              "matchName": "ADBE Layer Styles",
+              "isGroup": true,
+              "numChildren": 11
+            },
+            {
+              "index": 9,
+              "name": "Geometry Options",
+              "matchName": "ADBE Extrsn Options Group",
+              "isGroup": true,
+              "numChildren": 5
+            },
+            {
+              "index": 10,
+              "name": "Material Options",
+              "matchName": "ADBE Material Options Group",
+              "isGroup": true,
+              "numChildren": 17
+            },
+            {
+              "index": 11,
+              "name": "Compositing Options",
+              "matchName": "ADBE Compositing Options Group",
+              "isGroup": true,
+              "numChildren": 5
+            },
+            {
+              "index": 12,
+              "name": "Audio",
+              "matchName": "ADBE Audio Group",
+              "isGroup": true,
+              "numChildren": 1
+            },
+            {
+              "index": 13,
+              "name": "Sets",
+              "matchName": "ADBE Layer Sets",
+              "isGroup": true,
+              "numChildren": 0
+            },
+            {
+              "index": 14,
+              "name": "Material Assignment",
+              "matchName": "ADBE3D Material Parade",
+              "isGroup": true,
+              "numChildren": 10
+            },
+            {
+              "index": 15,
+              "name": "Geometry Options",
+              "matchName": "ADBE Plane Options Group",
+              "isGroup": true,
+              "numChildren": 2
+            },
+            {
+              "index": 16,
+              "name": "Essential Properties",
+              "matchName": "ADBE Layer Overrides",
+              "isGroup": true,
+              "numChildren": 0
+            },
+            {
+              "index": 17,
+              "name": "Replace Source",
+              "matchName": "ADBE Source Options Group",
+              "isGroup": true,
+              "numChildren": 1
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 19,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-beta-check-20260911-145456/TITAN-TwoCuts-Devices-Kinetic-3s-v003-Beta27-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 289
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+.contact {
+  position: fixed;
+  left: calc(24px + env(safe-area-inset-left, 0px));
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  height: 48px;
+  padding-inline: 16px 19px;
+  border: 1px solid #ffab57;
+  border-radius: 50px;
+  background: #fa871f;
+  color: #fff;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 24%);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.icon {
+  flex-shrink: 0;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  .contact {
+    left: calc(16px + env(safe-area-inset-left, 0px));
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    height: 44px;
+    padding-inline: 13px 16px;
+    font-size: 14px;
+  }
+}

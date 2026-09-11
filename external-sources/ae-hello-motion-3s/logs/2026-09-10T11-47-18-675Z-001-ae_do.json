@@ -1,0 +1,64 @@
+{
+  "request": {
+    "name": "ae_do",
+    "arguments": {
+      "operation": "property.set",
+      "args": {
+        "comp": "Hello_World_Stretch_3s",
+        "layer": "Gray Radial Background",
+        "property": [
+          "ADBE Effect Parade",
+          "ADBE Ramp",
+          "ADBE Ramp-0006"
+        ],
+        "value": 32
+      }
+    }
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"result\": {\n    \"ok\": true,\n    \"count\": 1,\n    \"layers\": [\n      {\n        \"name\": \"Gray Radial Background\",\n        \"ok\": true\n      }\n    ]\n  },\n  \"context\": {\n    \"project\": {\n      \"numItems\": 5,\n      \"dirty\": true,\n      \"file\": \"C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep\"\n    },\n    \"activeComp\": {\n      \"id\": 32,\n      \"name\": \"Hello_World_Stretch_3s\",\n      \"width\": 1920,\n      \"height\": 1080,\n      \"fps\": 30,\n      \"duration\": 3,\n      \"numLayers\": 3\n    },\n    \"selectedLayers\": [\n      {\n        \"index\": 3,\n        \"name\": \"Gray Radial Background\"\n      }\n    ]\n  },\n  \"logs\": [],\n  \"durationMs\": 388\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "count": 1,
+        "layers": [
+          {
+            "name": "Gray Radial Background",
+            "ok": true
+          }
+        ]
+      },
+      "context": {
+        "project": {
+          "numItems": 5,
+          "dirty": true,
+          "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-mcp-test/Hello-World-MCP-Test.aep"
+        },
+        "activeComp": {
+          "id": 32,
+          "name": "Hello_World_Stretch_3s",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30,
+          "duration": 3,
+          "numLayers": 3
+        },
+        "selectedLayers": [
+          {
+            "index": 3,
+            "name": "Gray Radial Background"
+          }
+        ]
+      },
+      "logs": [],
+      "durationMs": 388
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "notes": "v02 close camera clipped devices. Increase camera distance and model scale equally by 10; retain centered scene and parent-based yaw/roll.",
+  "ops": [
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone17_MODEL",
+        "scale": [
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_CAMERA",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "value": [
+          0,
+          0,
+          -333.3333333
+        ]
+      }
+    },
+    {
+      "operation": "property.get",
+      "args": {
+        "comp": 151,
+        "layer": "DEVICE_iPhone_VIEW",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ]
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad10_MODEL",
+        "scale": [
+          68,
+          68,
+          68
+        ]
+      }
+    },
+    {
+      "operation": "property.set",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_CAMERA",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ],
+        "value": [
+          0,
+          0,
+          -333.3333333
+        ]
+      }
+    },
+    {
+      "operation": "property.get",
+      "args": {
+        "comp": 163,
+        "layer": "DEVICE_iPad_VIEW",
+        "property": [
+          "ADBE Transform Group",
+          "ADBE Position"
+        ]
+      }
+    }
+  ],
+  "result": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone17_MODEL",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPhone_CAMERA",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "name": "Position",
+          "matchName": "ADBE Position",
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad10_MODEL",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "DEVICE_iPad_CAMERA",
+              "ok": true
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "name": "Position",
+          "matchName": "ADBE Position",
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "numKeys": 0,
+          "hasExpression": false
+        }
+      ],
+      "count": 6,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 18,
+        "dirty": true,
+        "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v003-devices/TITAN-TwoCuts-Devices-Kinetic-3s-v003.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 380
+  }
+}

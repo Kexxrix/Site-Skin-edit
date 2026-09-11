@@ -1,0 +1,21 @@
+{
+  "source": "D:/WebDL/grok-dd1fd015-0a9b-496f-a748-f95391bdd7b5.mp4",
+  "prompt": "../../prompts/02-grok-caption-six-seconds.txt",
+  "verdict": "Partial compliance. English caption and wide framing succeeded; screen-locked typography, static UI, pure axial motion, and requested hold periods did not fully succeed.",
+  "video": {"width":1456,"height":624,"duration_seconds":6.041667,"fps":24,"frames":145,"audio_streams":0},
+  "checks": {
+    "english_caption": "CORE SYSTEMS / BUILT IN-HOUSE remains correctly spelled and legible in sampled frames.",
+    "screen_locked_caption": "Fail: measured headline left bound moves from x69 to x43, a 26px leftward shift. Approximate headline bounds also expand from 460x107 to 467x110.",
+    "tablet_framing": "All corners and full screen remain visible in sampled source frames and actual Chrome video at matching 937.5x400 display size; measured minimum caption-device gap remains about 32 source pixels.",
+    "camera_movement": "Approximate dark-bezel width grows from 697px to 769px, (769/697-1)*100 = 10.33 percent across the full clip. Changing background alignment and device perspective differ from pure axial push-in.",
+    "hold_timing": "Fail: width already grows 697 to 703px during 0-0.5s, and continues 753 to 769px during 4.5-6s.",
+    "four_second_edit_window": "0.5-4.5s gives 4.0 seconds; approximate width grows 703 to 753px, (753/703-1)*100 = 7.11 percent. Device and headline remain separate. This does not cure title drift or changing UI details.",
+    "ui_preservation": "Three main characters and seven game cards retained. Faces, hair, clothing contours and fine UI details change across frames, so unchanged static screen content fails.",
+    "ratio": "Wide 7:3 retained; not exact source 1918:820. Relative difference about 0.2433 percent. No observed device crop at page display ratio.",
+    "silent": "Pass: no audio stream.",
+    "no_cuts_or_new_text": "No scene cuts, title duplication or additional English wording observed in sampled frames."
+  },
+  "verification": "Read-only ffprobe and complete 145-frame ffmpeg decode; all-frame threshold position tracking; 11 source frames visually reviewed, including exact 0,0.5,4.5,6s; independent second visual reviewer; actual MP4 decoded in Chrome at 937.5x400 CSS object-fit:cover.",
+  "limitations": "Bounds are approximate dark-pixel silhouettes, not exact hardware segmentation. Fine UI text is too small for a claim of exact preservation. Visual inspection used sampled frames, not continuous viewing of every frame.",
+  "changes": "Only QA scripts, extracted frames and reports were added in this review directory. Source video, generated start image, prompt and website unchanged. No trim or caption edit performed."
+}

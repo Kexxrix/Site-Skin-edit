@@ -1,0 +1,266 @@
+{
+  "result": "Screen-only animated video material works in After Effects Beta 27.0x43.",
+  "testedRangeSeconds": [
+    0,
+    3
+  ],
+  "fullOriginalVideoTested": false,
+  "originalVideoDurationSeconds": 14.4166666666667,
+  "fit": {
+    "precomp": [
+      2360,
+      1640
+    ],
+    "source": [
+      1920,
+      1080
+    ],
+    "scalePercentFormula": "2360 / 1920 * 100",
+    "scalePercent": 122.916666666667,
+    "crop": false,
+    "sourceInterpretationFpsUnchanged": 24
+  },
+  "preservedExposedLayerStateAndKeyframes": {
+    "TITAN_TwoCuts_Devices_Kinetic_3s_v003": true,
+    "TITAN_DEVICE_iPhone_3D_v003": true,
+    "DEVICE_iPad_VIEW": true,
+    "DEVICE_iPad_ENVIRONMENT": true,
+    "DEVICE_iPad10_MODEL": true,
+    "DEVICE_iPad_CAMERA": true,
+    "projectSettingsExcludingPathAndItemCount": true
+  },
+  "comparisonNormalization": "Animated properties' current evaluated value is omitted; all reported keyframes and other fields are compared. Project file and item count are expected to differ.",
+  "pixelComparison": {
+    "method": "Baseline midgray connected screen region seeded at (1200,512), expanded 3 px for edge antialiasing.",
+    "changedPixels": 393980,
+    "changedOutsideScreenMask": 339,
+    "outsideScreenPixelsWithDeltaOver2": 22,
+    "outsideScreenMaximumChannelDelta": 9,
+    "note": "Not pixel-identical outside the screen; small render differences remain. No outside-screen material edits were issued."
+  },
+  "videos": [
+    {
+      "file": "iPad-VideoScreen-Test-3s.mp4",
+      "bytes": 4557157,
+      "sha256": "096ea0918bedb1d420ef3857593d828b37db382526deb60de14e0dbfb5a2a7d7",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.4d4032",
+            "width": 2400,
+            "height": 1024,
+            "coded_width": 2400,
+            "coded_height": 1024,
+            "has_b_frames": 0,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "75:32",
+            "pix_fmt": "yuv420p",
+            "level": 50,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/30000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 90000,
+            "duration": "3.000000",
+            "bit_rate": "12121765",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "90",
+            "extradata_size": 36,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-11T06:34:20.000000Z",
+              "language": "eng",
+              "handler_name": "\u001fMainconcept Video Media Handler",
+              "encoder": "AVC Coding"
+            }
+          }
+        ],
+        "format": {
+          "filename": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\ae-ipad-video-screen-test-v001\\iPad-VideoScreen-Test-3s.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "3.000000",
+          "size": "4557157",
+          "bit_rate": "12152418",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "mp42",
+            "minor_version": "0",
+            "compatible_brands": "mp42mp41",
+            "creation_time": "2026-09-11T06:34:20.000000Z"
+          }
+        }
+      },
+      "fullDecodeExitCode": 0,
+      "fullDecodeErrors": ""
+    },
+    {
+      "file": "TITAN-iPad-VideoScreen-Preview-3s.mp4",
+      "bytes": 3778108,
+      "sha256": "2e67cde05a44e41c048a0b8868d32509347000e95bf1647f404092d8b72d4863",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.4d4032",
+            "width": 2400,
+            "height": 1024,
+            "coded_width": 2400,
+            "coded_height": 1024,
+            "has_b_frames": 0,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "75:32",
+            "pix_fmt": "yuv420p",
+            "level": 50,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/30000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 90000,
+            "duration": "3.000000",
+            "bit_rate": "10044301",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "90",
+            "extradata_size": 36,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-11T06:34:40.000000Z",
+              "language": "eng",
+              "handler_name": "\u001fMainconcept Video Media Handler",
+              "encoder": "AVC Coding"
+            }
+          }
+        ],
+        "format": {
+          "filename": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\ae-ipad-video-screen-test-v001\\TITAN-iPad-VideoScreen-Preview-3s.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "3.000000",
+          "size": "3778108",
+          "bit_rate": "10074954",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "mp42",
+            "minor_version": "0",
+            "compatible_brands": "mp42mp41",
+            "creation_time": "2026-09-11T06:34:40.000000Z"
+          }
+        }
+      },
+      "fullDecodeExitCode": 0,
+      "fullDecodeErrors": ""
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "E:\\하데스오프닝.mp4",
+      "bytes": 30543267,
+      "sha256": "0094db62f209e67bdea46a261273fdc4e4b6bc31a424fe8da4c32abaa6dfee3f"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\Codex\\2026-09-07\\new-chat\\work\\device-mockup-blender-20260911\\exports\\iPad10.glb",
+      "bytes": 1714248,
+      "sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f"
+    }
+  ],
+  "aePreviewPlayback": "Observed live frame 9 door scene, then frame 85 character face; stopped after verification.",
+  "visualReview": {
+    "outputMp4Frames": [
+      "output-ipad-0.2.png",
+      "output-ipad-2.2.png",
+      "output-ipad-2.9.png",
+      "output-main-2.8.png"
+    ],
+    "orientationFrames": [
+      "qa-front-0.5.png",
+      "qa-oblique-1.8.png",
+      "qa-back-2.9.png"
+    ],
+    "source2DLayerEnabled": false,
+    "backOcclusion": "Screen video not visible through the rear body",
+    "sourceOrientation": "Upright, not mirrored; Fit letterboxing retained"
+  },
+  "reopen": {
+    "frame": "final-reopened-ipad-2.9.png",
+    "pixelEqualToPreReopen": true
+  },
+  "limitations": [
+    "Initial material assignment stayed gray until the saved AEP was reopened; underlying cause not proven.",
+    "Only the first 3 seconds were tested; the original footage and source frame rate were not changed.",
+    "Browser file-URL playback was blocked, so no browser workaround was attempted. MP4s were fully decoded and extracted frames visually reviewed; AE composition playback was observed live.",
+    "The AEP references external GLB, PNG, and MP4 files and is not a self-contained collected project."
+  ]
+}

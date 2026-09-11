@@ -1,0 +1,49 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    "project skill installation and idempotence, spaces and Korean paths",
+    "static offline font install, font hashes, Adobe embeds, relative URLs and idempotence",
+    "edited typography rejected before any write",
+    "JSX entry detection and local-only font mode",
+    "ambiguous entry and escaped entry refused, explicit entry supported",
+    "invalid HTML refusal leaves target unchanged",
+    "alpha residue detection, explicit mask/crop preserves RGB, overwrite rejected",
+    "3-slice original reconstruction, end-cap pixel preservation, export and collision refusal",
+    "skill conflict rejected with no writes to either skill",
+    "16 local document links and 11 historical prompt hashes"
+  ],
+  "new_images_generated": 0,
+  "production_projects_modified": 0,
+  "plugin_validation": "passed with bundled validator",
+  "skill_validation": {
+    "site-font-setup": "passed",
+    "theme-image-pipeline": "passed"
+  },
+  "browser_validation": {
+    "mode": "isolated static HTML with skills installed locally",
+    "actual_ui_fonts": "PretendardJP-Regular and PretendardJP-ExtraBold custom glyphs verified through CSS.getPlatformFontsForNode",
+    "adobe": "Three samples rendered custom webfonts; DINCondensedWeb identified; Japanese and Korean kits expose obfuscated internal family names",
+    "console_errors_or_warnings": 0,
+    "horizontal_overflow": false,
+    "visual": "Korean, Latin, digits, weights, form inheritance and wrapping inspected",
+    "evidence": [
+      "validation/font-platform.json",
+      "validation/font-proof-desktop.png"
+    ],
+    "scope": "current Chromium desktop; other engines not tested"
+  },
+  "unchanged": [
+    "existing sites",
+    "original skills",
+    "global Codex configuration",
+    "personal marketplace"
+  ],
+  "limitations": [
+    "No new image generation for this packaging task; references describe previous accepted experiments",
+    "Native image generation availability required",
+    "Semantic masks still need tool selection and visual review",
+    "9-slice not included",
+    "Automatic font installation supports static HTML and index.html plus JS/TS entry, not Next.js directly"
+  ]
+}

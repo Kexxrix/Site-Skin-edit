@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import { createHash } from 'node:crypto';
+import { root } from './ae-client.mjs';
+const manifest = JSON.parse(fs.readFileSync(new URL('../source-manifest.json',root),'utf8'));
+const hash = p => createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const assets = manifest.assets.map(a=>({...a, actual_bytes:fs.statSync(a.path).size, actual_sha256:hash(a.path)}));
+for (const a of assets) if(a.bytes!==a.actual_bytes || a.sha256!==a.actual_sha256) throw new Error('Input changed: '+a.role);
+for (const dir of ['qa','logs','sources']) fs.mkdirSync(new URL(dir+'/',root),{recursive:true});
+const base=assets.find(a=>a.role==='base_aep');
+const preserved=new URL('sources/PRESERVED-BASE-CURRENT-BEFORE-APPEND.aep',root);
+fs.copyFileSync(base.path,preserved,fs.constants.COPYFILE_EXCL);
+if(hash(preserved)!==base.sha256) throw new Error('Preservation copy mismatch');
+fs.writeFileSync(new URL('qa/source-preflight.json',root),JSON.stringify({checked_at:new Date().toISOString(),assets,all_match:true,base_preserved_copy:decodeURIComponent(preserved.pathname.replace(/^\//,'')),base_copy_sha256:hash(preserved),historical_difference:manifest.base_aep_discrepancy,numbering:{official:['06','07','08'],preserve_existing_result_marker09:true},direct_ui_intervals:[]},null,2),{flag:'wx'});
+console.log(JSON.stringify({all_match:true,count:assets.length,base_copy_sha256:hash(preserved)}));

@@ -1,0 +1,312 @@
+/*
+ * Closing section. Carries the weight the standalone CTA band used to hold,
+ * so the heading gets the glow and the form is the page's focal control.
+ * No bottom hairline — this section runs straight into the footer.
+ */
+
+.contact {
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: clip;
+  scroll-margin-top: 100px;
+}
+
+.container {
+  width: calc(100% - 48px);
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 80px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  align-items: start;
+  gap: 64px;
+}
+
+/* ── heading ─────────────────────────────────────────────────────────── */
+
+.intro {
+  position: relative;
+}
+
+.glow {
+  position: absolute;
+  top: -140px;
+  left: -80px;
+  width: 520px;
+  height: 320px;
+  border-radius: 9999px;
+  background: radial-gradient(closest-side, #fa871f, transparent);
+  filter: blur(64px);
+  opacity: 0.26;
+  pointer-events: none;
+}
+
+.eyebrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.eyebrow > span {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fa871f;
+}
+
+.title {
+  position: relative;
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  word-break: keep-all;
+}
+
+.title > span {
+  color: #fa871f;
+}
+
+.description {
+  position: relative;
+  margin: 20px 0 0;
+  color: #d3cccc;
+  font-size: 16px;
+  line-height: 26px;
+  word-break: keep-all;
+}
+
+/* ── form card ───────────────────────────────────────────────────────── */
+
+.card {
+  min-width: 0;
+  border: 1px solid rgb(218 218 218 / 15%);
+  border-radius: 15px;
+  background: #1c1c1c;
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.fieldWide {
+  grid-column: 1 / -1;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+}
+
+.fieldHint {
+  margin: 0;
+  color: #d3cccc;
+  font-size: 13px;
+  line-height: 21px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.input {
+  width: 100%;
+  height: 52px;
+  padding-inline: 16px;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 12px;
+  background: #141414;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.input::placeholder {
+  color: rgb(255 255 255 / 35%);
+}
+
+.input:focus {
+  border-color: #fa871f;
+  box-shadow: 0 0 0 3px rgb(250 135 31 / 20%);
+}
+
+.textarea {
+  height: auto;
+  min-height: 148px;
+  padding-block: 14px;
+  resize: vertical;
+}
+
+select.input {
+  appearance: none;
+  padding-right: 44px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-opacity='0.55' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.input option {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  color: #d3cccc;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  accent-color: #fa871f;
+  cursor: pointer;
+}
+
+.submit {
+  margin-top: 24px;
+}
+
+.note {
+  margin: 16px 0 0;
+  color: rgb(255 255 255 / 45%);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* ── submitted state ─────────────────────────────────────────────────── */
+
+.success {
+  display: flex;
+  min-height: 420px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.successIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgb(250 135 31 / 40%);
+  border-radius: 50%;
+  background: rgb(250 135 31 / 12%);
+  color: #fa871f;
+}
+
+.successTitle {
+  margin: 20px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.successNote {
+  margin: 10px 0 0;
+  color: #d3cccc;
+  font-size: 14px;
+  line-height: 22px;
+  word-break: keep-all;
+}
+
+.reset {
+  margin-top: 24px;
+}
+
+/* ── responsive ──────────────────────────────────────────────────────── */
+
+@media (max-width: 1199px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .card {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .description {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-block: 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .submit,
+  .reset {
+    width: 100%;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .input {
+    transition: none;
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "timestamp": "2026-09-11T08-07-20-350Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "layer.create_footage",
+          "args": {
+            "comp": 503,
+            "sourceItemId": 502,
+            "name": "Review02_Actual_MP4"
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "index": 1,
+          "name": "Review02_Actual_MP4"
+        },
+        "context": {
+          "project": {
+            "numItems": 34,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02.aep"
+          },
+          "activeComp": {
+            "id": 458,
+            "name": "TITAN_TwoScenes_8s_v004_R02",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 15
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 369
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "comp.set_work_area",
+          "args": {
+            "comp": 503,
+            "start": 0,
+            "duration": 8
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "workAreaStart": 0,
+          "workAreaDuration": 8
+        },
+        "context": {
+          "project": {
+            "numItems": 34,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02.aep"
+          },
+          "activeComp": {
+            "id": 458,
+            "name": "TITAN_TwoScenes_8s_v004_R02",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 15
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 469
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "timeline.set_active_comp",
+          "args": {
+            "comp": 503
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "name": "QA_PLAYBACK_Review02_8s_30fps"
+        },
+        "context": {
+          "project": {
+            "numItems": 34,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02.aep"
+          },
+          "activeComp": {
+            "id": 503,
+            "name": "QA_PLAYBACK_Review02_8s_30fps",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 1
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "Review02_Actual_MP4"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 563
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "timeline.set_time",
+          "args": {
+            "comp": 503,
+            "time": 0
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "time": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 34,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02.aep"
+          },
+          "activeComp": {
+            "id": 503,
+            "name": "QA_PLAYBACK_Review02_8s_30fps",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 1
+          },
+          "selectedLayers": [
+            {
+              "index": 1,
+              "name": "Review02_Actual_MP4"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 366
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project",
+        "args": {
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-QA-Playback.aep"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-QA-Playback.aep"
+        },
+        "logs": [],
+        "durationMs": 1776
+      }
+    }
+  ]
+}

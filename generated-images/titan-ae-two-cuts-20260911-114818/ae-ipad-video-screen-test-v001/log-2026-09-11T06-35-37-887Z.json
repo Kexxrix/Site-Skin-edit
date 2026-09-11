@@ -1,0 +1,1334 @@
+{
+  "timestamp": "2026-09-11T06-35-37-887Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_layer_info",
+        "args": {
+          "compNameOrId": "TITAN_DEVICE_iPad_3D_v003",
+          "layerIndex": "all",
+          "includeProperties": true
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "compName": "TITAN_DEVICE_iPad_3D_v003",
+          "count": 5,
+          "missing": 0,
+          "layers": [
+            {
+              "index": 1,
+              "id": 187,
+              "name": "DEVICE_iPad_VIEW",
+              "type": "AVLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 1,
+              "width": 100,
+              "height": 100,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": true,
+              "sourceId": 186,
+              "sourceName": "Null 2",
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "keyframes": [
+                      {
+                        "time": 1.13333333333333,
+                        "value": [
+                          14,
+                          3,
+                          0
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.8,
+                        "value": [
+                          8,
+                          0,
+                          0
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.83333333333333,
+                        "value": [
+                          8,
+                          0,
+                          0
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 2.13333333333333,
+                        "value": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      }
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ],
+                    "keyframes": [
+                      {
+                        "time": 1.13333333333333,
+                        "value": [
+                          94,
+                          94,
+                          94
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.8,
+                        "value": [
+                          100,
+                          100,
+                          100
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.83333333333333,
+                        "value": [
+                          100,
+                          100,
+                          100
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 2.13333333333333,
+                        "value": [
+                          100,
+                          100,
+                          100
+                        ],
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": -18,
+                    "keyframes": [
+                      {
+                        "time": 1.13333333333333,
+                        "value": -30,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.8,
+                        "value": -18,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.83333333333333,
+                        "value": -18,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 2.13333333333333,
+                        "value": -18,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": -3,
+                    "keyframes": [
+                      {
+                        "time": 1.13333333333333,
+                        "value": -7,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.8,
+                        "value": -3,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 1.83333333333333,
+                        "value": -3,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      },
+                      {
+                        "time": 2.13333333333333,
+                        "value": -3,
+                        "inInterp": 6613,
+                        "outInterp": 6613
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "materialOptionsGroup": {
+                "name": "Material Options",
+                "matchName": "ADBE Material Options Group",
+                "properties": [
+                  {
+                    "name": "Casts Shadows",
+                    "matchName": "ADBE Casts Shadows",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Light Transmission",
+                    "matchName": "ADBE Light Transmission",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Accepts Shadows",
+                    "matchName": "ADBE Accepts Shadows",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Accepts Lights",
+                    "matchName": "ADBE Accepts Lights",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Shadow Color",
+                    "matchName": "ADBE Shadow Color",
+                    "propertyValueType": "COLOR",
+                    "value": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Appears in Reflections",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  },
+                  {
+                    "name": "Ambient",
+                    "matchName": "ADBE Ambient Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Diffuse",
+                    "matchName": "ADBE Diffuse Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 50
+                  },
+                  {
+                    "name": "Specular Intensity",
+                    "matchName": "ADBE Specular Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 50
+                  },
+                  {
+                    "name": "Specular Shininess",
+                    "matchName": "ADBE Shininess Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 5
+                  },
+                  {
+                    "name": "Metal",
+                    "matchName": "ADBE Metal Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Reflection Intensity",
+                    "matchName": "ADBE Reflection Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Reflection Sharpness",
+                    "matchName": "ADBE Glossiness Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Reflection Rolloff",
+                    "matchName": "ADBE Fresnel Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Transparency",
+                    "matchName": "ADBE Transparency Coefficient",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Transparency Rolloff",
+                    "matchName": "ADBE Transp Rolloff",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Index of Refraction",
+                    "matchName": "ADBE Index of Refraction",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "timeRemapEnabled": false,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 2,
+              "id": 181,
+              "name": "DEVICE_iPad_ENVIRONMENT",
+              "type": "LightLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 6,
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Point of Interest",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      1200,
+                      512,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      -1666.666666625
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 3,
+              "id": 179,
+              "name": "DEVICE_iPad10_MODEL",
+              "type": "ThreeDModelLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": 1,
+              "label": 3,
+              "parent": {
+                "index": 1,
+                "name": "DEVICE_iPad_VIEW"
+              },
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      66,
+                      66,
+                      66
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 90
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 4,
+              "id": 178,
+              "name": "DEVICE_iPad_CAMERA",
+              "type": "CameraLayer",
+              "enabled": true,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 4,
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Point of Interest",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      -333.333343505859
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "ok": true,
+              "found": true
+            },
+            {
+              "index": 5,
+              "id": 276,
+              "name": "SCREEN_iPad10_VIDEO_SOURCE",
+              "type": "AVLayer",
+              "enabled": false,
+              "solo": false,
+              "shy": false,
+              "locked": false,
+              "inPoint": 0,
+              "outPoint": 3,
+              "startTime": 0,
+              "stretch": 100,
+              "parentIndex": null,
+              "label": 15,
+              "width": 2360,
+              "height": 1640,
+              "hasVideo": true,
+              "hasAudio": false,
+              "threeDLayer": false,
+              "sourceId": 261,
+              "sourceName": "SCREEN_iPad10_HADES_VIDEO_v001",
+              "parent": null,
+              "transformGroup": {
+                "name": "Transform",
+                "matchName": "ADBE Transform Group",
+                "properties": [
+                  {
+                    "name": "Anchor Point",
+                    "matchName": "ADBE Anchor Point",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      1180,
+                      820,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "Position",
+                    "matchName": "ADBE Position",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      1200,
+                      512,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Position",
+                    "matchName": "ADBE Position_0",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Position",
+                    "matchName": "ADBE Position_1",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Z Position",
+                    "matchName": "ADBE Position_2",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Scale",
+                    "matchName": "ADBE Scale",
+                    "propertyValueType": "ThreeD",
+                    "value": [
+                      100,
+                      100,
+                      100
+                    ]
+                  },
+                  {
+                    "name": "Orientation",
+                    "matchName": "ADBE Orientation",
+                    "propertyValueType": "ThreeD_SPATIAL",
+                    "value": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "name": "X Rotation",
+                    "matchName": "ADBE Rotate X",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Y Rotation",
+                    "matchName": "ADBE Rotate Y",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Rotation",
+                    "matchName": "ADBE Rotate Z",
+                    "propertyValueType": "OneD",
+                    "value": 0
+                  },
+                  {
+                    "name": "Opacity",
+                    "matchName": "ADBE Opacity",
+                    "propertyValueType": "OneD",
+                    "value": 100
+                  },
+                  {
+                    "name": "Appears in Reflections",
+                    "matchName": "ADBE Envir Appear in Reflect",
+                    "propertyValueType": "OneD",
+                    "value": 1
+                  }
+                ],
+                "groups": []
+              },
+              "effectsGroup": null,
+              "masksGroup": null,
+              "timeRemapEnabled": false,
+              "ok": true,
+              "found": true
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 380
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "project.get_settings",
+          "args": {}
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep",
+          "numItems": 22,
+          "bitsPerChannel": 8,
+          "expressionEngine": "javascript-1.0",
+          "workingSpace": "None",
+          "workingGamma": 2.4,
+          "linearBlending": false,
+          "framesUseFeetFrames": false,
+          "transparencyGridThumbnails": false,
+          "gpuAccelType": "1813",
+          "timeDisplayType": "frames",
+          "linearizeWorkingSpace": false,
+          "compensateForSceneReferredProfiles": true,
+          "displayStartFrame": 0,
+          "feetFramesFilmType": "mm35",
+          "footageTimecodeDisplayStartType": "useSourceMedia"
+        },
+        "context": {
+          "project": {
+            "numItems": 22,
+            "dirty": false,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 357
+      }
+    },
+    {
+      "call": {
+        "name": "ae_project_info",
+        "args": {}
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/TITAN-iPad-VideoScreen-v001.aep",
+          "dirty": false,
+          "numItems": 22,
+          "bitsPerChannel": 8,
+          "timeDisplayType": "2013",
+          "activeItem": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "typeName": "FolderItem"
+          },
+          "items": [
+            {
+              "id": 1,
+              "name": "Codex_Hello_World_1920x1080",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 5,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 32,
+              "name": "Hello_World_Stretch_3s",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 3,
+              "bgColor": [
+                0.16078431372549,
+                0.16078431372549,
+                0.16078431372549
+              ]
+            },
+            {
+              "id": 175,
+              "name": "iPad10.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPad10.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 114,
+              "name": "iPhone17",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 941,
+              "height": 1672,
+              "frameRate": 24,
+              "duration": 30,
+              "layerCount": 1,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 113,
+              "name": "iPhone17.glb",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 30,
+              "sourceKind": "file",
+              "file": "C:/Users/User/Documents/Codex/2026-09-07/new-chat/work/device-mockup-blender-20260911/exports/iPhone17.glb",
+              "missingFootagePath": null
+            },
+            {
+              "id": 277,
+              "name": "QA_iPad_VIDEO_Front_Oblique_Back_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 96,
+              "name": "REF_CUT_01",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/01-meet-titan.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 97,
+              "name": "REF_CUT_02",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 5,
+              "comment": "",
+              "width": 1920,
+              "height": 819,
+              "duration": 0,
+              "sourceKind": "file",
+              "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/results/02-built-in-house.png",
+              "missingFootagePath": null
+            },
+            {
+              "id": 261,
+              "name": "SCREEN_iPad10_HADES_VIDEO_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 2,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 29,
+              "name": "Solids",
+              "type": "FolderItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 2,
+              "comment": ""
+            },
+            {
+              "id": 100,
+              "name": "C01_BG_IVORY",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.96078431606293,
+                0.95294117927551,
+                0.93333333730698
+              ]
+            },
+            {
+              "id": 106,
+              "name": "C02_BG_CHARCOAL_WIPE",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.14117647707462,
+                0.14901961386204,
+                0.16470588743687
+              ]
+            },
+            {
+              "id": 30,
+              "name": "Dark Gray Solid 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.1294117718935,
+                0.1294117718935,
+                0.1294117718935
+              ]
+            },
+            {
+              "id": 46,
+              "name": "Gray Radial Background",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0.15999999642372,
+                0.15999999642372,
+                0.15999999642372
+              ]
+            },
+            {
+              "id": 184,
+              "name": "Null 1",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 186,
+              "name": "Null 2",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 100,
+              "height": 100,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "id": 273,
+              "name": "SCREEN_FIT_BLACK",
+              "type": "FootageItem",
+              "parentFolderId": 29,
+              "parentFolderName": "Solids",
+              "label": 1,
+              "comment": "",
+              "width": 2360,
+              "height": 1640,
+              "duration": 0,
+              "sourceKind": "solid",
+              "color": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 163,
+              "name": "TITAN_DEVICE_iPad_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 5,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 151,
+              "name": "TITAN_DEVICE_iPhone_3D_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 4,
+              "bgColor": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 84,
+              "name": "TITAN_TwoCuts_75x32_3s_v001",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 12,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 127,
+              "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+              "type": "CompItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 15,
+              "comment": "",
+              "width": 2400,
+              "height": 1024,
+              "frameRate": 30,
+              "duration": 3,
+              "layerCount": 14,
+              "bgColor": [
+                0.96078431372549,
+                0.95294117647059,
+                0.93333333333333
+              ]
+            },
+            {
+              "id": 200,
+              "name": "하데스오프닝.mp4",
+              "type": "FootageItem",
+              "parentFolderId": 0,
+              "parentFolderName": "Root",
+              "label": 3,
+              "comment": "",
+              "width": 1920,
+              "height": 1080,
+              "duration": 14.4166666666667,
+              "sourceKind": "file",
+              "file": "E:/하데스오프닝.mp4",
+              "missingFootagePath": null
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 350
+      }
+    }
+  ]
+}

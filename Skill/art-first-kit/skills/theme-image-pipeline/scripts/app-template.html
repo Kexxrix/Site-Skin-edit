@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>패널 크기 조절 · 3슬라이스</title>
+<style>
+  :root { color-scheme: dark; font-family: "Segoe UI", "Malgun Gothic", sans-serif; background:#17191e; color:#e9ecf2; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:28px; }
+  header { max-width:1400px; margin:0 auto 24px; }
+  h1 { font-size:26px; margin:0 0 8px; letter-spacing:-.7px; }
+  p { color:#aeb6c6; line-height:1.6; margin:0; font-size:14px; }
+  main { max-width:1400px; margin:auto; display:grid; grid-template-columns:270px minmax(0,1fr); gap:24px; }
+  aside, section { background:#20242c; border:1px solid #383e49; border-radius:12px; padding:20px; }
+  aside { align-self:start; }
+  h2 { font-size:16px; margin:0 0 16px; }
+  label { display:block; font-size:13px; color:#c5cbd7; margin:0 0 7px; }
+  input, button, select { font:inherit; border-radius:6px; border:1px solid #4a5261; padding:9px 10px; background:#14171d; color:#f3f5f9; }
+  input[type=number], select { width:100%; }
+  input[type=file] { max-width:100%; font-size:11px; padding:8px 4px; }
+  input:focus-visible,button:focus-visible,select:focus-visible { outline:2px solid #8bdcc7; outline-offset:3px; }
+  button { cursor:pointer; }
+  button:hover { border-color:#98a5ba; }
+  button:disabled { opacity:.4; cursor:not-allowed; }
+  .field { margin-bottom:16px; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .presets { display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 20px; }
+  .presets button { font-size:12px; padding:7px 10px; }
+  #save { background:#c8f0e5; color:#122b25; width:100%; font-weight:600; margin-top:10px; }
+  .small { font-size:12px; margin:10px 0; }
+  .workspace { display:flex; flex-direction:column; gap:20px; min-width:0; }
+  .stage { min-height:250px; padding:28px 18px; display:flex; align-items:center; justify-content:center; overflow:auto; border-radius:6px; }
+  .checker { background-color:#393e48; background-image:conic-gradient(#484e59 25%,transparent 0 50%,#484e59 0 75%,transparent 0); background-size:24px 24px; }
+  .light { background:#eceae6; } .dark { background:#101219; }
+  canvas { display:block; max-width:100%; height:auto; object-fit:contain; }
+  .source-wrap { position:relative; margin:16px 0 12px; }
+  #source { width:100%; display:block; }
+  .guide { position:absolute; top:0; bottom:0; border-left:2px solid #80e0cb; pointer-events:none; }
+  .legend { display:flex; justify-content:space-between; gap:12px; font-size:12px; color:#aeb6c6; }
+  #status { font-size:13px; margin:12px 0 0; color:#b5e7d9; }
+  #error { color:#ffb1b1; min-height:18px; font-size:12px; margin-top:10px; }
+  #filename { overflow-wrap:anywhere; }
+  .heading-row { display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
+  #size { font-size:13px; color:#b5e7d9; }
+  @media(max-width:780px) { body{padding:16px;} main{grid-template-columns:1fr;} aside{order:2;} .stage{min-height:180px;} .heading-row{flex-wrap:wrap;} }
+</style>
+<header><h1>패널 크기 조절</h1><p>양 끝 장식의 비율을 유지하고 가운데 길이만 조절합니다. 결과는 투명 PNG로 저장됩니다.</p></header>
+<main>
+  <aside aria-label="패널 설정">
+    <h2>크기와 분할 위치</h2>
+    <div class="row">
+      <div class="field"><label for="width">출력 폭 (px)</label><input id="width" type="number" min="1" max="8192" step="1"></div>
+      <div class="field"><label for="height">출력 높이 (px)</label><input id="height" type="number" min="1" max="4096" step="1"></div>
+    </div>
+    <div class="presets"><button id="ratio4">4:1</button><button id="ratio5">5:1</button><button id="original">원본 크기</button></div>
+    <div class="row">
+      <div class="field"><label for="left">왼쪽 보존 폭 (원본 px)</label><input id="left" type="number" min="1" step="1"></div>
+      <div class="field"><label for="right">오른쪽 보존 폭 (원본 px)</label><input id="right" type="number" min="1" step="1"></div>
+    </div>
+    <p class="small">분할선을 장식이 끝나는 위치에 둡니다. 높이를 바꾸면 양 끝도 같은 비율로 확대·축소됩니다.</p>
+    <div class="field"><label for="background">미리보기 배경</label><select id="background"><option value="checker">투명 체크</option><option value="light">밝은 배경</option><option value="dark">어두운 배경</option></select></div>
+    <button id="save" disabled>투명 PNG 저장</button>
+    <div id="error" role="alert"></div>
+    <hr style="border:0;border-top:1px solid #383e49;margin:20px 0">
+    <label for="upload">다른 패널 불러오기</label><input id="upload" type="file" accept="image/png,image/webp">
+    <p class="small">먼저 투명 여백을 크롭한 이미지를 사용하세요. 파일은 이 브라우저 안에서만 처리됩니다.</p>
+  </aside>
+  <div class="workspace">
+    <section aria-label="조절한 패널">
+      <div class="heading-row"><h2>결과 미리보기</h2><output id="size"></output></div>
+      <div id="stage" class="stage checker"><canvas id="result" aria-label="크기를 조절한 패널"></canvas></div>
+      <p id="status" role="status">이미지를 불러오는 중입니다.</p>
+    </section>
+    <section aria-label="원본과 분할선">
+      <h2>원본 · 세 영역으로 분할</h2><p id="filename" class="small"></p>
+      <div class="source-wrap checker"><img id="source" alt="분할 기준 원본 패널"><span id="guide-left" class="guide"></span><span id="guide-right" class="guide"></span></div>
+      <div class="legend"><span>왼쪽 장식 보존</span><span>가운데 폭 조절</span><span>오른쪽 장식 보존</span></div>
+      <p class="small">가운데의 무늬는 폭에 따라 압축·확대됩니다. 좁힐 수 있는 최소 폭은 양 끝 장식을 합친 폭보다 커야 합니다.</p>
+    </section>
+  </div>
+</main>
+<script>
+const config = __PANEL_CONFIG__;
+const byId = id => document.getElementById(id);
+const source = byId('source'), canvas = byId('result');
+const fields = ['width','height','left','right'];
+fields.forEach(id => byId(id).value = config[id]);
+let ready = false;
+
+function render() {
+  byId('save').disabled = true;
+  byId('error').textContent = '';
+  if (!ready) return;
+  const [w,h,l,r] = fields.map(id => Number(byId(id).value));
+  const sw=source.naturalWidth, sh=source.naturalHeight;
+  let error='';
+  if (![w,h,l,r].every(v=>Number.isInteger(v)&&v>0)) error='크기와 보존 폭에 양의 정수를 입력하세요.';
+  else if (l+r>=sw) error='보존 폭의 합은 원본 폭보다 작아야 합니다.';
+  else if(w>8192||h>4096||w*h>16777216) error='출력은 폭 8192, 높이 4096, 총 1,600만 픽셀 이내로 설정하세요.';
+  const dl=Math.round(l*h/sh), dr=Math.round(r*h/sh);
+  if(!error && (dl<1||dr<1)) error='양 끝을 보존하기에는 높이가 너무 작습니다.';
+  if(!error && w<=dl+dr) error=`현재 높이에서 최소 폭은 ${dl+dr+1}px입니다.`;
+  if(error) { byId('error').textContent=error; byId('status').textContent='설정값을 확인하세요. 이전 미리보기는 저장되지 않습니다.'; return; }
+  canvas.width=w; canvas.height=h;
+  const ctx=canvas.getContext('2d');
+  ctx.imageSmoothingEnabled=true; ctx.imageSmoothingQuality='high';
+  ctx.drawImage(source,0,0,l,sh,0,0,dl,h);
+  ctx.drawImage(source,l,0,sw-l-r,sh,dl,0,w-dl-dr,h);
+  ctx.drawImage(source,sw-r,0,r,sh,w-dr,0,dr,h);
+  byId('guide-left').style.left=`${l/sw*100}%`;
+  byId('guide-right').style.left=`${(sw-r)/sw*100}%`;
+  byId('size').textContent=`${w} × ${h} px · ${(w/h).toFixed(2)}:1`;
+  byId('status').textContent=`왼쪽 ${dl}px + 가운데 ${w-dl-dr}px + 오른쪽 ${dr}px · 저장 파일에는 배경과 분할선이 포함되지 않습니다.`;
+  byId('save').disabled=false;
+}
+fields.forEach(id=>byId(id).addEventListener('input',render));
+byId('ratio4').onclick=()=>{byId('width').value=4*Number(byId('height').value);render();};
+byId('ratio5').onclick=()=>{byId('width').value=5*Number(byId('height').value);render();};
+byId('original').onclick=()=>{byId('width').value=source.naturalWidth;byId('height').value=source.naturalHeight;render();};
+byId('background').onchange=event=>byId('stage').className='stage '+event.target.value;
+source.onload=()=>{ready=true;byId('filename').textContent=`${config.name} · ${source.naturalWidth} × ${source.naturalHeight}`;render();};
+source.onerror=()=>{ready=false;byId('save').disabled=true;byId('error').textContent='이미지를 읽을 수 없습니다. PNG 또는 WebP 파일을 확인하세요.';};
+byId('upload').onchange=event=>{
+  const file=event.target.files[0]; if(!file)return;
+  ready=false; byId('save').disabled=true;
+  const reader=new FileReader();
+  reader.onload=()=>{config.name=file.name;source.src=reader.result;};
+  reader.onerror=()=>{byId('error').textContent='파일을 읽지 못했습니다.';};
+  reader.readAsDataURL(file);
+};
+byId('save').onclick=()=>{
+  if(byId('save').disabled)return;
+  const exportWidth=canvas.width, exportHeight=canvas.height;
+  canvas.toBlob(blob=>{
+    if(!blob){byId('error').textContent='PNG 저장에 실패했습니다.';return;}
+    const url=URL.createObjectURL(blob), a=document.createElement('a');
+    a.href=url; a.download=`panel-${exportWidth}x${exportHeight}.png`;
+    document.body.append(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),60000);
+  },'image/png');
+};
+source.src=config.source;
+</script>
+</html>

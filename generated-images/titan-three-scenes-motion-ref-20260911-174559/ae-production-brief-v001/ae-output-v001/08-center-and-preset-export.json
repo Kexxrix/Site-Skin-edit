@@ -1,0 +1,11 @@
+{"write":true,"compact":true,"calls":[
+{"name":"ae_do","args":{"operation":"batch.run","args":{"stopOnError":true,"ops":[
+{"operation":"transform.set","args":{"comp":"DEVICE_iPad10_3D","layer":"Camera_Product","position":[1200,512,-3333.3333333333],"anchorPoint":[1200,512,0]}},
+{"operation":"property.set","args":{"comp":"DEVICE_iPad10_3D","layer":"Camera_Product","property":["Camera Options","Zoom"],"value":3333.3333333333}},
+{"operation":"transform.set","args":{"comp":"DEVICE_iPad10_3D","layer":"iPad10_MODEL","scale":[900,900,900]}},
+{"operation":"timeline.set_active_comp","args":{"comp":"DEVICE_iPad10_3D"}},
+{"operation":"timeline.set_time","args":{"comp":"DEVICE_iPad10_3D","time":4.6}},
+{"operation":"timeline.select_layers","args":{"comp":"DEVICE_iPad10_3D","indices":[3],"deselectOthers":true}}
+]}}},
+{"name":"ae_project_export_json","args":{"outPath":"E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/pre-motion-native-export.json"}}
+]}

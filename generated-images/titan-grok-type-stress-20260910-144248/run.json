@@ -1,0 +1,120 @@
+{
+  "run_id": "titan-grok-type-stress-20260910-144248",
+  "theme": "TITAN SOLUTION aggressive motion exploration",
+  "brand_exact": "TITAN SOLUTION",
+  "requested_roles_and_counts": [
+    {
+      "role": "two-line typography stress-test starting image",
+      "count": 1
+    }
+  ],
+  "generation_route": "codex_builtin_imagegen",
+  "video_generation_route": "Grok user interface; C not submitted by agent",
+  "output_directory": "E:/codexwork/Site-Skin-edit/generated-images/titan-grok-type-stress-20260910-144248/results",
+  "editing_mode": "user",
+  "selection_authority": "agent selects experiment input; user handles Grok execution and final editing",
+  "shared_visual_rules": {
+    "user_requirements": [
+      "TITAN SOLUTION longer text",
+      "Text and background elements move faster and more aggressively",
+      "Explore expression limits"
+    ],
+    "test_design_choices": [
+      "Two centered lines TITAN / SOLUTION",
+      "Six-second clip",
+      "Opposing word travel, individual letter separation and reassembly",
+      "Foreground occlusion, offscreen travel and motion blur are permitted intentionally",
+      "Final short reading beat",
+      "Centered camera to emphasize actual typography/object motion"
+    ],
+    "not_generalized": [
+      "C intentionally supersedes A's always-visible word and fixed-background requirements",
+      "Multiple factors increase at once; do not assert one cause for a failure"
+    ]
+  },
+  "references": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-grok-type-test-20260910-130048/results/01-titan-type-start.png",
+      "role": "preserve previous test visual style and background; change central title",
+      "sha256": "C420771EA81A477BBEDAB6120A749FF30482503A9F2942ECC47DA83913DA78D3",
+      "visually_inspected": true,
+      "attached_to_generation": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "01",
+      "prompt": "prompts/01-start-image.txt",
+      "tool_output_path": "C:/Users/User/.codex/generated_images/01a084c3-735f-7fd2-8ef7-a044226bd7a3/exec-093e3ab5-3e97-4b91-ae4e-839eb9256833.png",
+      "final_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-grok-type-stress-20260910-144248/results/01-titan-solution-start.png",
+      "transfer": "moved only this successful new output without overwriting",
+      "sha256": "8B4708CEB0F6A480AA00E71A0D40A144489BFFB7078285C403D5B5332DCDFBCE",
+      "bytes": 1231213,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1915,
+      "height": 821,
+      "status": "selected_by_agent",
+      "qa_scope": "static typography test input only",
+      "qa_pass": true,
+      "accepted_by_user": false,
+      "adopted": false
+    }
+  ],
+  "counts": {
+    "attempted": 1,
+    "generated": 1,
+    "failed": 0,
+    "skipped": 0,
+    "qa_pass": 1,
+    "selected_by_agent": 1,
+    "accepted_by_user": 0,
+    "rejected": 0
+  },
+  "video_tests": [
+    {
+      "id": "C",
+      "prompt": "prompts/02-grok-c-aggressive.txt",
+      "status": "user_supplied_C_reviewed_usable_editing_direction",
+      "requested_duration_seconds": 6,
+      "result": {
+        "provided_files": [
+          {
+            "path": "D:\\WebDL\\grok-ed03c639-9cf5-4289-8e03-7cb02274dc15.mp4",
+            "sha256": "73d00c740c493acf4deda746966529e93156ee9cdfd60a3dc12b2a332507a0ca",
+            "bytes": 3333267
+          },
+          {
+            "path": "D:\\WebDL\\grok-2d598645-f0f6-42c3-a166-a6377a05f670-720p.mp4",
+            "sha256": "30e6fb130d9345933861d92db35eebadaf62ce4cc520b21fd829d19f1cb96edc",
+            "bytes": 3832029
+          }
+        ],
+        "review": "qa/video-review-20260910/README.md",
+        "observed": [
+          "large typography motion",
+          "letter separation and reassembly",
+          "large ribbon ring and glass motion",
+          "exact title recovered in later inspected frames"
+        ],
+        "independent_generation_count": "unconfirmed; files visually nearly identical",
+        "strict_prompt_compliance": "not complete; timings and glyph integrity vary during motion",
+        "editing_candidates_seconds": [
+          [
+            3.5,
+            6.0
+          ],
+          [
+            4.0,
+            6.0
+          ]
+        ],
+        "user_feedback": "Better than expected; usable after prompt refinement and trimming",
+        "final_asset_selected": false,
+        "edited_by_agent": false,
+        "adopted": false
+      }
+    }
+  ],
+  "next_action": "Continue this typography/abstract-graphics generation direction if requested; refine glyph integrity, shorten disassembly and clear foreground objects from resolved text. New refinements remain untested. Final editing belongs to user."
+}

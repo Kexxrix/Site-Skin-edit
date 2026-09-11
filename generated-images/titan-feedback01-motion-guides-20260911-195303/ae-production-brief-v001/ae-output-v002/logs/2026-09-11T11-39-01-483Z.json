@@ -1,0 +1,248 @@
+{
+  "started": "2026-09-11T11:38:57.973Z",
+  "ended": "2026-09-11T11:39:01.483Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Operations",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "expression": "var u=clamp((time*30-228)/4,0,1);100*u*u*u*(10+u*(-15+6*u));"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_refined",
+                  "property": [
+                    "ADBE Transform Group",
+                    "ADBE Opacity"
+                  ],
+                  "expression": "var u=clamp((time*30-230)/4,0,1);100*u*u*u*(10+u*(-15+6*u));"
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Opacity",
+              "expressionEnabled": true
+            }
+          ],
+          "count": 2,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 23,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 91,
+            "name": "SCREEN_iPhone17_VIDEO_CONTAIN",
+            "width": 1206,
+            "height": 2622,
+            "fps": 24,
+            "duration": 20,
+            "numLayers": 3
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 461
+      },
+      "elapsedMs": 470
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": "SCENE07_OPERATIONS",
+          "time": 8.066666666666666,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/operations-customized-F242.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/qa/operations-customized-F242.png",
+          "time": 8.06666666666667,
+          "compName": "SCENE07_OPERATIONS",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 466
+      },
+      "elapsedMs": 1101
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_Operations",
+                  "time": 8.066666666666666
+                }
+              },
+              {
+                "operation": "layer.bounds",
+                "args": {
+                  "comp": "SCENE07_OPERATIONS",
+                  "layer": "S07_refined",
+                  "time": 8.066666666666666
+                }
+              }
+            ]
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "time": 8.06666666666667,
+              "layerSpace": {
+                "top": -159.0380859375,
+                "left": 9.305419921875,
+                "width": 1103.82055664062,
+                "height": 203.02734375
+              },
+              "compSpace": {
+                "topLeft": [
+                  669.305419921875,
+                  269.9619140625
+                ],
+                "topRight": [
+                  1773.1259765625,
+                  269.9619140625
+                ],
+                "bottomLeft": [
+                  669.305419921875,
+                  472.9892578125
+                ],
+                "bottomRight": [
+                  1773.1259765625,
+                  472.9892578125
+                ]
+              }
+            },
+            {
+              "ok": true,
+              "time": 8.06666666666667,
+              "layerSpace": {
+                "top": -253.437744140625,
+                "left": 16.717529296875,
+                "width": 1124.94104003906,
+                "height": 256.78125
+              },
+              "compSpace": {
+                "topLeft": [
+                  666.717529296875,
+                  433.562255859375
+                ],
+                "topRight": [
+                  1791.65856933594,
+                  433.562255859375
+                ],
+                "bottomLeft": [
+                  666.717529296875,
+                  690.343505859375
+                ],
+                "bottomRight": [
+                  1791.65856933594,
+                  690.343505859375
+                ]
+              }
+            }
+          ],
+          "count": 2,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 23,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+          },
+          "activeComp": {
+            "id": 91,
+            "name": "SCREEN_iPhone17_VIDEO_CONTAIN",
+            "width": 1206,
+            "height": 2622,
+            "fps": 24,
+            "duration": 20,
+            "numLayers": 3
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 381
+      },
+      "elapsedMs": 384
+    },
+    {
+      "call": {
+        "name": "ae_save_project"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep"
+        },
+        "logs": [],
+        "durationMs": 1307
+      },
+      "elapsedMs": 1310
+    }
+  ]
+}

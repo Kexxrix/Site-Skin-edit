@@ -1,0 +1,11 @@
+import {spawnSync} from 'node:child_process';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+const frames=[0,5,12,15,24,30,39,50,51,61,72,82,93,110,116,123,124,130,144,154,155,160,166,167,168,170,174,185,198,210,214,225,239];
+const root=fileURLToPath(new URL('.',import.meta.url));
+await mkdir(new URL('./review-01-frames/',import.meta.url),{recursive:false});
+const expression=frames.map(n=>`eq(n,${n})`).join('+');
+const result=spawnSync('ffmpeg',['-v','error','-i',root+'TITAN-TwoScene-v004-review-01.mp4','-vf',`select=${expression.replaceAll(',',String.fromCharCode(92)+',')}`,'-fps_mode','vfr','-start_number','0',root+'review-01-frames/frame-%03d.png'],{encoding:'utf8'});
+if(result.status!==0)throw Error(result.stderr);
+await writeFile(new URL('./review-01-frames/index.json',import.meta.url),JSON.stringify(frames.map((frame,index)=>({file:`frame-${String(index).padStart(3,'0')}.png`,frame,time:frame/30})),null,2),{flag:'wx'});
+console.log(JSON.stringify({count:frames.length,frames,decodeExitCode:result.status}));

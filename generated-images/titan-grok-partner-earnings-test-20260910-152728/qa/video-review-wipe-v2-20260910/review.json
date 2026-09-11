@@ -1,0 +1,23 @@
+{
+  "review_id": "partner-earnings-wipe-v2-20260910",
+  "source_path": "D:/WebDL/grok-ba08ecc8-52f4-4422-b14f-5527715f84d2.mp4",
+  "source_sha256": "80E315939BAF59CB7579CAD61E44B752F25AFF04DBDD7B9867F70C43536C9770",
+  "source_bytes": 1271865,
+  "comparison_prompt": "../../prompts/03-grok-partner-earnings-wipe-v2.txt",
+  "submission_provenance": "User supplied this as the follow-up result; exact Grok submission and settings not independently inspected",
+  "status": "core_blackout_reentry_verified_detailed_motion_partial",
+  "video": {"width": 1456, "height": 624, "fps": 24, "frames": 145, "duration_seconds": 6.041667, "audio_streams": 0},
+  "blackout": {"method": "every full-frame RGB channel equals zero", "first_frame_zero_based": 21, "last_frame_zero_based": 54, "start_seconds_inclusive": 0.875, "end_seconds_exclusive": 2.291667, "frames": 34, "duration_seconds": 1.416667},
+  "observed_successes": ["Whole image is completely hidden before reappearance", "Fresh post-blackout appearance demonstrated", "Exact two-line text restored in late samples", "Peripheral graphics keep moving"],
+  "observed_limitations": ["Lower-line letters scatter during entrance", "Lower line is visibly duplicated at 3.5 and 3.75 seconds", "Slight ampersand duplication remains at the 4.0-second sample", "Planned intact one-block entrance is not achieved", "Planned 3.0-second reading start is not achieved", "Ring is not entirely below the lower line; shapes overlap the text region even where lettering remains legible"],
+  "editing_candidates": [
+    {"start_seconds_approximate": 2.25, "end_seconds_approximate": 6.0, "condition": "Includes verified black boundary and reentry, but also scattered and duplicated lower-line text"},
+    {"start_seconds_approximate": 4.25, "end_seconds_approximate": 6.0, "duration_seconds_approximate": 1.75, "condition": "Later readable composition in sampled frames; excludes most entrance and is not a normal-speed playback approval"}
+  ],
+  "verification": {"numerically_analyzed_frames": 145, "visual_sample_count": 25, "visual_sample_step_seconds": 0.25, "native_key_frames_reviewed": true, "normal_speed_playback_reviewed": false, "retiming_reviewed": false, "metrics": "metrics/blackout-metrics.json", "contact_sheet": "contact.png"},
+  "independent_repeatability": "not established by one supplied video",
+  "accepted_by_user": false,
+  "adopted": false,
+  "edited_by_agent": false,
+  "generated_by_agent": false
+}

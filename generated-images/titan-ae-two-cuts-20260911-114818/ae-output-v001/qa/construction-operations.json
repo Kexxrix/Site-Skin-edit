@@ -1,0 +1,1827 @@
+{
+  "initial": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "id": 84,
+          "name": "TITAN_TwoCuts_75x32_3s_v001"
+        },
+        {
+          "ok": true,
+          "name": "TITAN_TwoCuts_75x32_3s_v001",
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "id": 96,
+          "name": "REF_CUT_01",
+          "width": 1920,
+          "height": 819,
+          "duration": 0
+        },
+        {
+          "ok": true,
+          "id": 97,
+          "name": "REF_CUT_02",
+          "width": 1920,
+          "height": 819,
+          "duration": 0
+        }
+      ],
+      "count": 4,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 8,
+        "dirty": true,
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep"
+      },
+      "activeComp": {
+        "id": 32,
+        "name": "Hello_World_Stretch_3s",
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 3
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 278
+  },
+  "createOps": [
+    {
+      "operation": "layer.create_footage",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "sourceItemId": 96,
+        "name": "REF_CUT_01"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "REF_CUT_01",
+        "position": [
+          1200,
+          512
+        ],
+        "scale": [
+          125,
+          125
+        ]
+      }
+    },
+    {
+      "operation": "layer.set_guide",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "REF_CUT_01",
+        "guide": true
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "REF_CUT_01",
+        "props": {
+          "enabled": false,
+          "locked": true
+        }
+      }
+    },
+    {
+      "operation": "layer.create_footage",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "sourceItemId": 97,
+        "name": "REF_CUT_02"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "REF_CUT_02",
+        "position": [
+          1200,
+          512
+        ],
+        "scale": [
+          125,
+          125
+        ]
+      }
+    },
+    {
+      "operation": "layer.set_guide",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "REF_CUT_02",
+        "guide": true
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "REF_CUT_02",
+        "props": {
+          "enabled": false,
+          "locked": true
+        }
+      }
+    },
+    {
+      "operation": "layer.create_solid",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C01_BG_IVORY",
+        "color": [
+          0.9607843137254902,
+          0.9529411764705882,
+          0.9333333333333333
+        ],
+        "width": 2400,
+        "height": 1024
+      }
+    },
+    {
+      "operation": "layer.create_text",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C01_TXT_MEET",
+        "text": "Meet"
+      }
+    },
+    {
+      "operation": "layer.create_text",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C01_TXT_TITAN",
+        "text": "TITAN"
+      }
+    },
+    {
+      "operation": "layer.create_shape",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C01_ARC"
+      }
+    },
+    {
+      "operation": "shape.add_group",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_ARC",
+        "name": "Arc"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_ARC",
+        "anchorPoint": [
+          0,
+          0
+        ],
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "layer.create_shape",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C01_DOT"
+      }
+    },
+    {
+      "operation": "shape.add_group",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_DOT",
+        "name": "Dot"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_DOT",
+        "anchorPoint": [
+          0,
+          0
+        ],
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "layer.create_solid",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C02_BG_CHARCOAL_WIPE",
+        "color": [
+          0.1411764705882353,
+          0.14901960784313725,
+          0.16470588235294117
+        ],
+        "width": 2400,
+        "height": 1024
+      }
+    },
+    {
+      "operation": "layer.create_text",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C02_TXT_CORE",
+        "text": "Core systems"
+      }
+    },
+    {
+      "operation": "layer.create_text",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C02_TXT_BUILT",
+        "text": "Built"
+      }
+    },
+    {
+      "operation": "layer.create_text",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C02_TXT_IN_HOUSE",
+        "text": "in-house"
+      }
+    },
+    {
+      "operation": "layer.create_shape",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "name": "C02_UNDERLINE"
+      }
+    },
+    {
+      "operation": "shape.add_group",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "name": "Underline"
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "anchorPoint": [
+          0,
+          0
+        ],
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "operation": "text.set_style",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_MEET",
+        "font": "Pretendard-Regular",
+        "fontSize": 100,
+        "fillColor": [
+          0.1411764705882353,
+          0.14901960784313725,
+          0.16470588235294117
+        ],
+        "tracking": 0,
+        "justification": "left",
+        "applyFill": true,
+        "applyStroke": false,
+        "fauxBold": false,
+        "fauxItalic": false,
+        "horizontalScale": 1,
+        "verticalScale": 1,
+        "baselineShift": 0
+      }
+    },
+    {
+      "operation": "layer.bounds",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_MEET",
+        "time": 0
+      }
+    },
+    {
+      "operation": "text.set_style",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_TITAN",
+        "font": "Pretendard-SemiBold",
+        "fontSize": 100,
+        "fillColor": [
+          0.1411764705882353,
+          0.14901960784313725,
+          0.16470588235294117
+        ],
+        "tracking": 0,
+        "justification": "left",
+        "applyFill": true,
+        "applyStroke": false,
+        "fauxBold": false,
+        "fauxItalic": false,
+        "horizontalScale": 1,
+        "verticalScale": 1,
+        "baselineShift": 0
+      }
+    },
+    {
+      "operation": "layer.bounds",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_TITAN",
+        "time": 0
+      }
+    },
+    {
+      "operation": "text.set_style",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_CORE",
+        "font": "Pretendard-Medium",
+        "fontSize": 100,
+        "fillColor": [
+          0.9607843137254902,
+          0.9529411764705882,
+          0.9333333333333333
+        ],
+        "tracking": 0,
+        "justification": "left",
+        "applyFill": true,
+        "applyStroke": false,
+        "fauxBold": false,
+        "fauxItalic": false,
+        "horizontalScale": 1,
+        "verticalScale": 1,
+        "baselineShift": 0
+      }
+    },
+    {
+      "operation": "layer.bounds",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_CORE",
+        "time": 0
+      }
+    },
+    {
+      "operation": "text.set_style",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_BUILT",
+        "font": "Pretendard-Bold",
+        "fontSize": 100,
+        "fillColor": [
+          0.9803921568627451,
+          0.5294117647058824,
+          0.12156862745098039
+        ],
+        "tracking": 0,
+        "justification": "left",
+        "applyFill": true,
+        "applyStroke": false,
+        "fauxBold": false,
+        "fauxItalic": false,
+        "horizontalScale": 1,
+        "verticalScale": 1,
+        "baselineShift": 0
+      }
+    },
+    {
+      "operation": "layer.bounds",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_BUILT",
+        "time": 0
+      }
+    },
+    {
+      "operation": "text.set_style",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_IN_HOUSE",
+        "font": "Pretendard-Medium",
+        "fontSize": 100,
+        "fillColor": [
+          0.9607843137254902,
+          0.9529411764705882,
+          0.9333333333333333
+        ],
+        "tracking": 0,
+        "justification": "left",
+        "applyFill": true,
+        "applyStroke": false,
+        "fauxBold": false,
+        "fauxItalic": false,
+        "horizontalScale": 1,
+        "verticalScale": 1,
+        "baselineShift": 0
+      }
+    },
+    {
+      "operation": "layer.bounds",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_IN_HOUSE",
+        "time": 0
+      }
+    }
+  ],
+  "createResponse": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "index": 1,
+          "name": "REF_CUT_01"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_01",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "updated": 1
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_01",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "REF_CUT_02"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_02",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "updated": 1
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_02",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C01_BG_IVORY"
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C01_TXT_MEET",
+          "boxText": false,
+          "vertical": false
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C01_TXT_TITAN",
+          "boxText": false,
+          "vertical": false
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C01_ARC"
+        },
+        {
+          "ok": true,
+          "groupIndex": 1,
+          "name": "Arc"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_ARC",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C01_DOT"
+        },
+        {
+          "ok": true,
+          "groupIndex": 1,
+          "name": "Dot"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_DOT",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C02_BG_CHARCOAL_WIPE"
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C02_TXT_CORE",
+          "boxText": false,
+          "vertical": false
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C02_TXT_BUILT",
+          "boxText": false,
+          "vertical": false
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C02_TXT_IN_HOUSE",
+          "boxText": false,
+          "vertical": false
+        },
+        {
+          "ok": true,
+          "index": 1,
+          "name": "C02_UNDERLINE"
+        },
+        {
+          "ok": true,
+          "groupIndex": 1,
+          "name": "Underline"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_UNDERLINE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -71.30126953125,
+            "left": 7.855224609375,
+            "width": 218.96142578125,
+            "height": 72.509765625
+          },
+          "compSpace": {
+            "topLeft": [
+              1207.85522460938,
+              440.69873046875
+            ],
+            "topRight": [
+              1426.81665039062,
+              440.69873046875
+            ],
+            "bottomLeft": [
+              1207.85522460938,
+              513.20849609375
+            ],
+            "bottomRight": [
+              1426.81665039062,
+              513.20849609375
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -71.30126953125,
+            "left": 3.424072265625,
+            "width": 274.63330078125,
+            "height": 71.30126953125
+          },
+          "compSpace": {
+            "topLeft": [
+              1203.42407226562,
+              440.69873046875
+            ],
+            "topRight": [
+              1478.05737304688,
+              440.69873046875
+            ],
+            "bottomLeft": [
+              1203.42407226562,
+              512
+            ],
+            "bottomRight": [
+              1478.05737304688,
+              512
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -72.2076416015625,
+            "left": 4.833984375,
+            "width": 616.600219726562,
+            "height": 92.24853515625
+          },
+          "compSpace": {
+            "topLeft": [
+              1204.833984375,
+              439.792358398438
+            ],
+            "topRight": [
+              1821.43420410156,
+              439.792358398438
+            ],
+            "bottomLeft": [
+              1204.833984375,
+              532.040893554688
+            ],
+            "bottomRight": [
+              1821.43420410156,
+              532.040893554688
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -75.2288818359375,
+            "left": 6.04248046875,
+            "width": 203.60107421875,
+            "height": 76.0345458984375
+          },
+          "compSpace": {
+            "topLeft": [
+              1206.04248046875,
+              436.771118164062
+            ],
+            "topRight": [
+              1409.6435546875,
+              436.771118164062
+            ],
+            "bottomLeft": [
+              1206.04248046875,
+              512.8056640625
+            ],
+            "bottomRight": [
+              1409.6435546875,
+              512.8056640625
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -74.12109375,
+            "left": 4.9346923828125,
+            "width": 394.134185791016,
+            "height": 75.2288818359375
+          },
+          "compSpace": {
+            "topLeft": [
+              1204.93469238281,
+              437.87890625
+            ],
+            "topRight": [
+              1599.06884765625,
+              437.87890625
+            ],
+            "bottomLeft": [
+              1204.93469238281,
+              513.107788085938
+            ],
+            "bottomRight": [
+              1599.06884765625,
+              513.107788085938
+            ]
+          }
+        }
+      ],
+      "count": 34,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 10,
+        "dirty": true,
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep"
+      },
+      "activeComp": {
+        "id": 32,
+        "name": "Hello_World_Stretch_3s",
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 3
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 633
+  },
+  "layoutOps": [
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_MEET",
+        "anchorPoint": [
+          10.8333335230127,
+          0
+        ],
+        "position": [
+          764.5947529636325,
+          560
+        ],
+        "scale": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_TITAN",
+        "anchorPoint": [
+          6.53107353765517,
+          0
+        ],
+        "position": [
+          1111.5698308292774,
+          560
+        ],
+        "scale": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_CORE",
+        "anchorPoint": [
+          5.86899555847049,
+          0
+        ],
+        "position": [
+          670,
+          440
+        ],
+        "scale": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_BUILT",
+        "anchorPoint": [
+          11.5231787972152,
+          0
+        ],
+        "position": [
+          670,
+          630
+        ],
+        "scale": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_IN_HOUSE",
+        "anchorPoint": [
+          8.0026771388948,
+          0
+        ],
+        "position": [
+          1103.272935222834,
+          630
+        ],
+        "scale": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_BG_IVORY",
+        "props": {
+          "outPoint": 1.1
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_MEET",
+        "props": {
+          "outPoint": 1.1
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_TXT_TITAN",
+        "props": {
+          "outPoint": 1.1
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_ARC",
+        "props": {
+          "outPoint": 1.1
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_DOT",
+        "props": {
+          "outPoint": 1.1
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_BG_CHARCOAL_WIPE",
+        "props": {
+          "inPoint": 1.1,
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_CORE",
+        "props": {
+          "inPoint": 1.1,
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_BUILT",
+        "props": {
+          "inPoint": 1.1,
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_TXT_IN_HOUSE",
+        "props": {
+          "inPoint": 1.1,
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "layer.set_props",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "props": {
+          "inPoint": 1.1,
+          "outPoint": 3
+        }
+      }
+    },
+    {
+      "operation": "shape.add_path",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_ARC",
+        "groupIndex": 1,
+        "vertices": [
+          [
+            914.5487570764712,
+            227.9541524790929
+          ],
+          [
+            532.2478333247618,
+            165.69249337012565
+          ],
+          [
+            317.05452513401195,
+            487.75203849545255
+          ],
+          [
+            520.8770273426306,
+            817.1255317972502
+          ],
+          [
+            905.1179642677813,
+            768.2439106365939
+          ]
+        ],
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            128.62735197864455,
+            -55.92876439877041
+          ],
+          [
+            2.4478841554496467,
+            -140.23918934225478
+          ],
+          [
+            -126.59710994250415,
+            -60.38372395287333
+          ],
+          [
+            -107.44581622138044,
+            90.15774476290228
+          ]
+        ],
+        "outTangents": [
+          [
+            -104.23390321716938,
+            -93.85262800968896
+          ],
+          [
+            -128.62735197864455,
+            55.92876439877041
+          ],
+          [
+            -2.4478841554496467,
+            140.23918934225478
+          ],
+          [
+            126.59710994250415,
+            60.38372395287333
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "closed": false
+      }
+    },
+    {
+      "operation": "shape.add_stroke",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_ARC",
+        "groupIndex": 1,
+        "color": [
+          0.1411764705882353,
+          0.14901960784313725,
+          0.16470588235294117,
+          1
+        ],
+        "width": 3
+      }
+    },
+    {
+      "operation": "shape.add_trim_paths",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_ARC",
+        "groupIndex": 1,
+        "start": 0,
+        "end": 100,
+        "offset": 0
+      }
+    },
+    {
+      "operation": "shape.add_ellipse",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_DOT",
+        "groupIndex": 1,
+        "size": [
+          30,
+          30
+        ]
+      }
+    },
+    {
+      "operation": "shape.add_fill",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_DOT",
+        "groupIndex": 1,
+        "color": [
+          0.9803921568627451,
+          0.5294117647058824,
+          0.12156862745098039,
+          1
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "operation": "transform.set",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_DOT",
+        "position": [
+          385.37191601376884,
+          283.5728796792946
+        ]
+      }
+    },
+    {
+      "operation": "shape.add_path",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "groupIndex": 1,
+        "vertices": [
+          [
+            670,
+            676
+          ],
+          [
+            1058.272935222834,
+            676
+          ]
+        ],
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "closed": false
+      }
+    },
+    {
+      "operation": "shape.add_stroke",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "groupIndex": 1,
+        "color": [
+          0.9803921568627451,
+          0.5294117647058824,
+          0.12156862745098039,
+          1
+        ],
+        "width": 4
+      }
+    },
+    {
+      "operation": "shape.add_trim_paths",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "groupIndex": 1,
+        "start": 0,
+        "end": 100,
+        "offset": 0
+      }
+    },
+    {
+      "operation": "timeline.set_active_comp",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001"
+      }
+    },
+    {
+      "operation": "timeline.set_time",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "time": 0.6
+      }
+    },
+    {
+      "operation": "property.list",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C01_ARC",
+        "property": [
+          "ADBE Root Vectors Group",
+          "ADBE Vector Group",
+          "ADBE Vectors Group"
+        ]
+      }
+    },
+    {
+      "operation": "property.list",
+      "args": {
+        "comp": "TITAN_TwoCuts_75x32_3s_v001",
+        "layer": "C02_UNDERLINE",
+        "property": [
+          "ADBE Root Vectors Group",
+          "ADBE Vector Group",
+          "ADBE Vectors Group"
+        ]
+      }
+    }
+  ],
+  "layoutResponse": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_TXT_MEET",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_TXT_TITAN",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TXT_CORE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TXT_BUILT",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TXT_IN_HOUSE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_BG_IVORY",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_TXT_MEET",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_TXT_TITAN",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_ARC",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_DOT",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_BG_CHARCOAL_WIPE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TXT_CORE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TXT_BUILT",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_TXT_IN_HOUSE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C02_UNDERLINE",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "name": "Path 1"
+        },
+        {
+          "ok": true,
+          "name": "Stroke 1"
+        },
+        {
+          "ok": true,
+          "name": "Trim Paths 1"
+        },
+        {
+          "ok": true,
+          "name": "Ellipse Path 1"
+        },
+        {
+          "ok": true,
+          "name": "Fill 1"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "C01_DOT",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "name": "Path 1"
+        },
+        {
+          "ok": true,
+          "name": "Stroke 1"
+        },
+        {
+          "ok": true,
+          "name": "Trim Paths 1"
+        },
+        {
+          "ok": true,
+          "name": "TITAN_TwoCuts_75x32_3s_v001"
+        },
+        {
+          "ok": true,
+          "time": 0.6
+        },
+        {
+          "ok": true,
+          "path": [
+            "ADBE Root Vectors Group",
+            "ADBE Vector Group",
+            "ADBE Vectors Group"
+          ],
+          "children": [
+            {
+              "index": 1,
+              "name": "Path 1",
+              "matchName": "ADBE Vector Shape - Group",
+              "isGroup": true,
+              "numChildren": 2
+            },
+            {
+              "index": 2,
+              "name": "Stroke 1",
+              "matchName": "ADBE Vector Graphic - Stroke",
+              "isGroup": true,
+              "numChildren": 11
+            },
+            {
+              "index": 3,
+              "name": "Trim Paths 1",
+              "matchName": "ADBE Vector Filter - Trim",
+              "isGroup": true,
+              "numChildren": 4
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "path": [
+            "ADBE Root Vectors Group",
+            "ADBE Vector Group",
+            "ADBE Vectors Group"
+          ],
+          "children": [
+            {
+              "index": 1,
+              "name": "Path 1",
+              "matchName": "ADBE Vector Shape - Group",
+              "isGroup": true,
+              "numChildren": 2
+            },
+            {
+              "index": 2,
+              "name": "Stroke 1",
+              "matchName": "ADBE Vector Graphic - Stroke",
+              "isGroup": true,
+              "numChildren": 11
+            },
+            {
+              "index": 3,
+              "name": "Trim Paths 1",
+              "matchName": "ADBE Vector Filter - Trim",
+              "isGroup": true,
+              "numChildren": 4
+            }
+          ]
+        }
+      ],
+      "count": 28,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 10,
+        "dirty": true,
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": [
+        {
+          "index": 1,
+          "name": "C02_UNDERLINE"
+        }
+      ]
+    },
+    "logs": [],
+    "durationMs": 460
+  },
+  "sizing": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -98.3333350550383,
+            "left": 10.8333335230127,
+            "width": 301.975077865645,
+            "height": 100.000001750886
+          },
+          "compSpace": {
+            "topLeft": [
+              1210.83337402344,
+              413.666656494141
+            ],
+            "topRight": [
+              1512.80834960938,
+              413.666656494141
+            ],
+            "bottomLeft": [
+              1210.83337402344,
+              513.666687011719
+            ],
+            "bottomRight": [
+              1512.80834960938,
+              513.666687011719
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -136.000001901761,
+            "left": 6.53107353765517,
+            "width": 523.83541620709,
+            "height": 136.000001901761
+          },
+          "compSpace": {
+            "topLeft": [
+              1206.53112792969,
+              376
+            ],
+            "topRight": [
+              1730.36645507812,
+              376
+            ],
+            "bottomLeft": [
+              1206.53112792969,
+              512
+            ],
+            "bottomRight": [
+              1730.36645507812,
+              512
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -87.6681211546529,
+            "left": 5.86899555847049,
+            "width": 748.621297517791,
+            "height": 111.999998574145
+          },
+          "compSpace": {
+            "topLeft": [
+              1205.86901855469,
+              424.331878662109
+            ],
+            "topRight": [
+              1954.490234375,
+              424.331878662109
+            ],
+            "bottomLeft": [
+              1205.86901855469,
+              536.331848144531
+            ],
+            "bottomRight": [
+              1954.490234375,
+              536.331848144531
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -143.46357602533,
+            "left": 11.5231787972152,
+            "width": 388.272935222834,
+            "height": 144.999999864958
+          },
+          "compSpace": {
+            "topLeft": [
+              1211.52319335938,
+              368.536437988281
+            ],
+            "topRight": [
+              1599.79614257812,
+              368.536437988281
+            ],
+            "bottomLeft": [
+              1211.52319335938,
+              513.536437988281
+            ],
+            "bottomRight": [
+              1599.79614257812,
+              513.536437988281
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "warnings": []
+        },
+        {
+          "ok": true,
+          "time": 0,
+          "layerSpace": {
+            "top": -120.203477025032,
+            "left": 8.0026771388948,
+            "width": 639.174292713404,
+            "height": 121.999996382743
+          },
+          "compSpace": {
+            "topLeft": [
+              1208.00268554688,
+              391.796508789062
+            ],
+            "topRight": [
+              1847.17700195312,
+              391.796508789062
+            ],
+            "bottomLeft": [
+              1208.00268554688,
+              513.796508789062
+            ],
+            "bottomRight": [
+              1847.17700195312,
+              513.796508789062
+            ]
+          }
+        }
+      ],
+      "count": 10,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 10,
+        "dirty": true,
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep"
+      },
+      "activeComp": {
+        "id": 32,
+        "name": "Hello_World_Stretch_3s",
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 3
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 379
+  },
+  "guideOrder": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_02",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "fromIndex": 11,
+          "newIndex": 1,
+          "name": "REF_CUT_02"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_02",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_01",
+              "warnings": []
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "fromIndex": 12,
+          "newIndex": 1,
+          "name": "REF_CUT_01"
+        },
+        {
+          "ok": true,
+          "count": 1,
+          "layers": [
+            {
+              "name": "REF_CUT_01",
+              "warnings": []
+            }
+          ]
+        }
+      ],
+      "count": 6,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 10,
+        "dirty": true,
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": [
+        {
+          "index": 3,
+          "name": "C02_UNDERLINE"
+        }
+      ]
+    },
+    "logs": [],
+    "durationMs": 275
+  }
+}

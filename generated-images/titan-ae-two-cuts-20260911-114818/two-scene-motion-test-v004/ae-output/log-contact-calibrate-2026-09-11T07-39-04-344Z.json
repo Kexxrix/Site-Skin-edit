@@ -1,0 +1,142 @@
+{
+  "timestamp": "2026-09-11T07-39-04-344Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "expression.set",
+          "args": {
+            "comp": 356,
+            "layer": "DEVICE_iPad_VIEW",
+            "property": [
+              "Transform",
+              "Position"
+            ],
+            "expression": "var master=comp('TITAN_TwoScenes_8s_v004');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;} function unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));} var x=65;if(time>=at('IPAD_ENTER')&&time<at('CONTACT')){var u=unit(at('IPAD_ENTER'),at('CONTACT'));x=65+(-17.5-65)*u*u;} else if(time>=at('CONTACT')&&time<at('PUSH_MAX')){var u=unit(at('CONTACT'),at('PUSH_MAX'));x=-17.5-15*(1-Math.pow(1-u,5));} else if(time>=at('PUSH_MAX')){var u=unit(at('PUSH_MAX'),at('IPAD_SETTLED'));x=-32.5+32.5*(1-Math.pow(1-u,3));} [x,0,0];"
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "name": "Position",
+          "expressionEnabled": true
+        },
+        "context": {
+          "project": {
+            "numItems": 27,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep"
+          },
+          "activeComp": {
+            "id": 127,
+            "name": "TITAN_TwoCuts_Devices_Kinetic_3s_v003",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 3,
+            "numLayers": 14
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 474
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 330,
+          "time": 5.566666666666667,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/calibrated-contact.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/calibrated-contact.png",
+          "time": 5.56666666666667,
+          "compName": "TITAN_TwoScenes_8s_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 360
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 330,
+          "time": 5.6,
+          "outPath": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/calibrated-contact-next.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/calibrated-contact-next.png",
+          "time": 5.6,
+          "compName": "TITAN_TwoScenes_8s_v004",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 286
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.list_templates",
+          "args": {
+            "rqIndex": 1
+          }
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": {
+          "code": "INVALID_ARGS",
+          "message": "invalid arguments for 'render.list_templates': rqIndex — unknown parameter (this operation accepts: no parameters)",
+          "retryable": false,
+          "hint": "ae_catalog({ category: 'render' }) returns the full parameter reference.",
+          "details": {
+            "operation": "render.list_templates",
+            "issues": [
+              {
+                "path": "rqIndex",
+                "message": "unknown parameter (this operation accepts: no parameters)"
+              }
+            ],
+            "expected": []
+          }
+        }
+      }
+    }
+  ]
+}

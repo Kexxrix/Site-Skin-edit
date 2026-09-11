@@ -1,0 +1,5 @@
+const sharp=require('C:/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const path=require('path');const out=path.dirname(__dirname);
+(async()=>{for(const f of [18,75]){const n=String(f).padStart(3,'0');const a=await sharp(path.join(out,'render-frames-v02/TITAN-v003-'+n+'.png')).ensureAlpha().raw().toBuffer();
+ for(const reference of ['../ae-output-v002/frames/frame-'+n+'.png','qa/layout-v04-'+(f===18?'018':'019')+'.png']){const b=await sharp(path.join(out,reference)).ensureAlpha().raw().toBuffer();let count=0,max=0,minX=2400,maxX=-1,minY=1024,maxY=-1,gt1=0;const hist={};for(let y=0;y<1024;y++)for(let x=0;x<1800;x++){const i=(y*2400+x)*4;let delta=0;for(let c=0;c<4;c++)delta=Math.max(delta,Math.abs(a[i+c]-b[i+c]));if(delta){count++;minX=Math.min(minX,x);maxX=Math.max(maxX,x);minY=Math.min(minY,y);maxY=Math.max(maxY,y);max=Math.max(max,delta);hist[delta]=(hist[delta]||0)+1;if(delta>1)gt1++;}}console.log(JSON.stringify({frame:f,reference,changed:count,maxDelta:max,gt1,bounds:[minX,minY,maxX,maxY],hist}));}
+}})();

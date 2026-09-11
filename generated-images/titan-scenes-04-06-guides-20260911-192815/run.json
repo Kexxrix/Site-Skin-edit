@@ -1,0 +1,280 @@
+{
+  "run_id": "titan-scenes-04-06-guides-20260911-192815",
+  "theme": "Titan Solution / next three After Effects motion-film scene guides",
+  "brand_exact": "Titan Solution",
+  "requested_roles_and_counts": [
+    {
+      "scene": "scene-04",
+      "role": "Sportsbook",
+      "count": 1
+    },
+    {
+      "scene": "scene-05",
+      "role": "Operations, refined",
+      "count": 1
+    },
+    {
+      "scene": "scene-06",
+      "role": "Sudden odds shift / Bets auto-blocked",
+      "count": 1
+    }
+  ],
+  "character_use": "none",
+  "generation_route": "codex_builtin",
+  "output_directory": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/results",
+  "editing_mode": "agent",
+  "selection_authority": "User requested guide generation for scenes 04-06. Agent selects reviewable stills within that scope; user acceptance and production adoption remain pending.",
+  "scope": {
+    "deliverable": "Three independent still guide images",
+    "new_ae_video_created": false,
+    "ae_thread_dispatch": false,
+    "existing_scenes_01_03_modified": false
+  },
+  "user_requirements": [
+    "Create a separate guide image for each of new scenes 04, 05, 06.",
+    "Scene 03 to 04: orange dot/line proceeds down and the viewport scrolls downward.",
+    "Tighter, faster transitions; alternate clean plain backgrounds with backgrounds containing substantial graphic action.",
+    "Scenes 05 and 06 must have large-scale visual action; a small slider or fine zigzag alone is insufficient.",
+    "Continue the existing wide English-copy film."
+  ],
+  "shared_visual_rules": {
+    "user_requirements": [
+      "Maintain continuity with the provisionally passed first three scenes while making scenes 05 and 06 more active."
+    ],
+    "inferred_from_selected_references": [
+      "Warm ivory, charcoal and vivid orange; strong filled and outline contemporary sans typography.",
+      "Scene 06 uses the planned periwinkle context with a large calm blocked area."
+    ],
+    "local_details_not_to_propagate": [
+      "CAT VILLAGE tablet content belongs only to the preceding scene.",
+      "The phone-screen black-and-gold colors do not become the entire film palette.",
+      "Do not copy the scene-05 slanted-strip composition into scene-06."
+    ]
+  },
+  "references": [
+    {
+      "id": "current-scene-03-F170",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/final-F170.png",
+      "sha256": "C55DA88EA10677B23C30F95C05281A6F3D6C46F67DC376D551EBF576CCAE655F",
+      "role": "Existing provisionally passed scene-03 ending; palette, typography and down-scroll continuity only.",
+      "accepted_by_user": "provisionally_passed_for_continuation",
+      "used_in": [
+        "scene-04"
+      ]
+    },
+    {
+      "id": "iphone-video-01s",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/sources/iphone-video-01s.png",
+      "sha256": "B4CE202424560555E7CBD492537656AAA9F84D47080E09407356F05F952D5D1C",
+      "role": "Supporting real sportsbook screen frame extracted at 1.0 second.",
+      "source_video": {
+        "path": "E:/codexwork/Site-Skin-edit/TEMP/아이폰.mp4",
+        "bytes": 1628145,
+        "sha256": "7FA79EA9F754B58033ED1EC48DD0035ABFF701609D8312A866BBA27A27F7B99F"
+      },
+      "source_video_probe": "sources/iphone-video-probe.json",
+      "selection_basis": "Agent selected available TEMP portrait recording for this guide; not a new user approval of the production source.",
+      "used_in": [
+        "scene-04"
+      ]
+    },
+    {
+      "id": "earlier-scene-02-style",
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/results/02-built-in-house.png",
+      "sha256": "D8886B98474A1227E65E07EA1B97177A33A4AF0B53A206EDB0CC0924F5CE59CE",
+      "role": "Earlier typographic guide; palette and typography only, not its static composition.",
+      "used_in": [
+        "scene-05"
+      ]
+    },
+    {
+      "id": "scene-04",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-scenes-04-06-guides-20260911-192815\\results\\04-sportsbook-scroll-arrival.png",
+      "sha256": "453EA651B238307022F8F5AAB7D1CBBDDA5ED881B3AFF2C00623F04BEFFC7AEF",
+      "role": "Agent-selected guide style input; no user acceptance implied.",
+      "used_in": [
+        "scene-05"
+      ]
+    },
+    {
+      "id": "scene-05",
+      "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-scenes-04-06-guides-20260911-192815\\results\\05-operations-refined-snap.png",
+      "sha256": "6DB204F1A54FD79F3461F2CB16066305D9492E81FD176EBA6B0F15A7DB7FC9D5",
+      "role": "Agent-selected graphic scale and typography input; scene-06 palette and composition are different.",
+      "used_in": [
+        "scene-06"
+      ]
+    }
+  ],
+  "canvas": {
+    "production_canvas": {
+      "width": 2400,
+      "height": 1024
+    },
+    "prompt_requested_width": 2400,
+    "prompt_requested_height": 1024,
+    "actual_generated_width": 1920,
+    "actual_generated_height": 819,
+    "exact_prompt_size_met": false,
+    "requested_aspect": "75:32",
+    "actual_aspect": "640:273",
+    "relative_aspect_error_percent": 0.024420024420024333,
+    "post_generation_resize_crop_or_reencode": false,
+    "size_note": "User requested scene guides, not a new exact-pixel export. Preserve native tool output; these are not 2400x1024 rendered AE frames."
+  },
+  "timeline_context": {
+    "existing_first_three_end_seconds": 5.7,
+    "existing_last_frame": 170,
+    "new_segment_duration_seconds": 4.8,
+    "new_segment_frames": 144,
+    "total_through_scene06_seconds": 10.5,
+    "total_through_scene06_frames": 315,
+    "original_whole_film_seconds": 20,
+    "original_whole_film_frames": 600,
+    "fps": 30,
+    "animated_timing_verified_this_run": false
+  },
+  "assets": [
+    {
+      "id": "scene-04",
+      "title": "Sportsbook",
+      "time": {
+        "start_seconds": 5.7,
+        "end_seconds": 7.6,
+        "start_frame": 171,
+        "end_frame_exclusive": 228,
+        "fps": 30
+      },
+      "prompt": "04-sportsbook.txt",
+      "reference_order": [
+        "current-scene-03-F170",
+        "iphone-video-01s"
+      ],
+      "pose": "Down-scroll arrival: portrait phone, large Sportsbook text, line from top to lower-right dot.",
+      "caveats": [
+        "Generated phone-screen content is illustrative. Several small labels and numerals were re-synthesized; composite the original source recording for real screen fidelity.",
+        "Fast 0.3-second scroll is a motion proposal, not validated by this still."
+      ],
+      "prompt_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/prompts/04-sportsbook.txt",
+      "prompt_sha256": "4EC4A2D8FEDBAEC88CFDD515A2BC2569C5C257A7538DE38A44F48E33376639BD",
+      "prompt_text": "Use case: ads-marketing.\nAsset type: one wide scene-04 visual guide for a fast After Effects brand motion film. Generate ONE finished standalone image, not a storyboard, collage or multi-frame sheet. Canvas 2400 x 1024, aspect ratio 75:32.\n\nReference image 1: the current film's scene-03 ending frame. Use ONLY its warm ivory, charcoal, vivid orange, crisp contemporary typography and fine line/dot visual language. This new frame is the next section reached by scrolling DOWN: the old scene has moved UP and is gone. Do not copy its landscape tablet, cat game, CAT VILLAGE text or Casino Slot text.\nReference image 2: supporting screen content. It is an actual portrait sportsbook recording frame. Use this black-and-gold VALORA interface inside the ONE upright phone, retaining the visible UI's overall content and hierarchy. Do not turn the black-and-gold interface into the background palette.\n\nMake a polished, restrained product reveal on a clean warm ivory field. A full, front-facing, thin black portrait iPhone stands on the left around 29% of canvas width, vertically centered, about 84% of canvas height. Preserve its realistic tall proportions, rounded corners and complete silhouette, with comfortable margins above and below. Its screen contains reference 2. No hands, pedestal, tabletop or scenery. Very subtle edge separation only; it should feel composited for motion graphics.\n\nAt center-right, set the exact word \"Sportsbook\" on one generous line in large, heavy charcoal contemporary sans serif, at a size that fills the right half elegantly without cropping. A much larger, very faint outline repetition of \"SPORTSBOOK\" may pass behind the title and extend to the right edge, but the filled foreground word remains fully readable. Give the phone and title deliberate negative space rather than filling the screen with extra content.\n\nThe continuity motif is one fine orange vertical line entering from the TOP near the right edge, making a smooth short turn toward a solid orange dot around the lower-right of the composition. It must read as the continuation of a downward journey from the previous scene. A partial charcoal arc may barely enter from the lower-left edge. Keep the background mostly plain: this is a brief clean pause between much denser motion scenes.\n\nOnly new display copy: \"Sportsbook\"; optional decorative \"SPORTSBOOK\". Existing small screen UI is allowed. No scene numbers, timing labels, arrows, captions, motion blur, trails, extra phones, casino tablet, cards, charts or new marketing claims. This is a single arrival key pose, not an attempt to show multiple moments at once.",
+      "original_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-02f43d55-c1ba-45cb-bc77-16e8d97e64ee.png",
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-scenes-04-06-guides-20260911-192815\\results\\04-sportsbook-scroll-arrival.png",
+      "storage_action": "move",
+      "sha256_before": "453EA651B238307022F8F5AAB7D1CBBDDA5ED881B3AFF2C00623F04BEFFC7AEF",
+      "sha256_after": "453EA651B238307022F8F5AAB7D1CBBDDA5ED881B3AFF2C00623F04BEFFC7AEF",
+      "sha256_match": true,
+      "bytes": 1197811,
+      "width": 1920,
+      "height": 819,
+      "raw_format": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+      "readable": true,
+      "format": "PNG",
+      "generated": true,
+      "qa_pass": true,
+      "qa_scope": "Single-frame visual guide composition and exact main copy; does not validate motion, timing, native text layers or actual phone UI pixel fidelity.",
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "attempts": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "Operations, refined",
+      "time": {
+        "start_seconds": 7.6,
+        "end_seconds": 8.6,
+        "start_frame": 228,
+        "end_frame_exclusive": 258,
+        "fps": 30
+      },
+      "prompt": "05-operations-refined.txt",
+      "reference_order": [
+        "earlier-scene-02-style",
+        "scene-04"
+      ],
+      "pose": "Large cropped outline typography and broad contrasting strips around a readable Operations, / refined foreground.",
+      "caveats": [
+        "This still shows the near-aligned key pose. Multi-direction panel entry, snap timing and readability within 1.0 second require an animated check."
+      ],
+      "prompt_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/prompts/05-operations-refined.txt",
+      "prompt_sha256": "AAA3385CD6B5FB30E437189A2892584DD59F86B0DC0DEC92ACA8F82AFB82B368",
+      "prompt_text": "Use case: ads-marketing.\nAsset type: one scene-05 visual guide for a fast After Effects motion film. ONE standalone finished keyframe, full bleed 2400 x 1024, aspect ratio 75:32. No collage, no storyboard panels.\n\nReference 1 is the earlier \"Core Systems / Built in-house\" scene: inherit charcoal, ivory, vivid orange, very large filled and outline sans-serif typography, and a precise graphic finish. Do NOT repeat its copy, its minimal thin rectangular frame or its quiet composition.\nReference 2 is the preceding Sportsbook guide: inherit the same film's typographic weight and visual polish only. Do NOT include a phone, sportsbook UI, the word Sportsbook, the long orange path or the ivory product backdrop.\n\nShow the energetic key pose of an \"operations becoming refined\" sequence. The WHOLE background participates in the action: three BROAD cropped typographic strips and large flat rectangular planes sweep from different directions and snap into alignment. Render their strongest nearly aligned pose as a single composition. These are large 2D graphic masks and typography that can be built in After Effects, not physical machinery or a 3D room.\n\nUse a deep charcoal ground. Across the upper and lower background, enormous thin-outline \"OPERATIONS\" lettering runs beyond the frame edges, partly interrupted by the broad graphic planes. An off-white broad strip enters from the left in the upper half, a charcoal slab defines the central reading area, and an orange-edged broad lower strip enters from the opposite side. Keep a few strong stepped ends and offset joints visible near the outer edges to give the frame direction and scale. These planes should occupy most of the background, with a controlled alternation of light and dark areas. Dense, purposeful graphic action; no scattered tiny decoration.\n\nThe precise foreground copy is \"Operations,\" on the upper line, large warm-white bold clean sans serif, then \"refined\" substantially larger on the lower line in vivid orange italic sans serif. Both lines are fully readable, uncropped, with clear margins. The italic lower word supplies a decisive forward thrust. Foreground copy belongs to one coherent aligned layout despite the powerful offset background. Permit a few cropped outline repetitions using ONLY the same word OPERATIONS behind it, never competing in contrast.\n\nThe visual point is a large messy-to-precise spatial snap, not a small slider changing position. Convey momentum through big contrasting forms, sharp masks, asymmetric offsets and scale. Keep all main letterforms crisp; don't put streaks or blur over the message. Do not depict multiple time states.\n\nExact display text: \"Operations,\" and \"refined\". Preserve the comma and lowercase refined. Optional background text: \"OPERATIONS\" only.\nAvoid: phones, tablets, casino imagery, charts, dashboards, sliders, little status badges, lock or shield icons, extra claims, extra captions, scene numbers, arrows, glow, particles, lens flares, gradients, extruded metal letters or irrelevant objects.",
+      "original_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-73dd7053-1755-4bf4-a1c3-a727806e4465.png",
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-scenes-04-06-guides-20260911-192815\\results\\05-operations-refined-snap.png",
+      "storage_action": "move",
+      "sha256_before": "6DB204F1A54FD79F3461F2CB16066305D9492E81FD176EBA6B0F15A7DB7FC9D5",
+      "sha256_after": "6DB204F1A54FD79F3461F2CB16066305D9492E81FD176EBA6B0F15A7DB7FC9D5",
+      "sha256_match": true,
+      "bytes": 1170918,
+      "width": 1920,
+      "height": 819,
+      "raw_format": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+      "readable": true,
+      "format": "PNG",
+      "generated": true,
+      "qa_pass": true,
+      "qa_scope": "Single-frame visual guide composition and exact main copy; does not validate motion, timing, native text layers or actual phone UI pixel fidelity.",
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "attempts": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "Sudden odds shift / Bets auto-blocked",
+      "time": {
+        "start_seconds": 8.6,
+        "end_seconds": 10.5,
+        "start_frame": 258,
+        "end_frame_exclusive": 315,
+        "fps": 30
+      },
+      "prompt": "06-bets-auto-blocked.txt",
+      "reference_order": [
+        "scene-05"
+      ],
+      "pose": "Periwinkle central blocking field; large result text; cropped SHIFT bands end at strong vertical boundaries.",
+      "caveats": [
+        "This is the after-stop pose. Irregular motion, shutter closure and the abrupt common stop are not visible or validated in a single still.",
+        "Condition and result remain one scene: condition 8.6-9.3 s, result 9.3-10.5 s."
+      ],
+      "prompt_path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/prompts/06-bets-auto-blocked.txt",
+      "prompt_sha256": "4B6D39254F05921C7D2EF1D509A7352E980F4D4A6B89133682CC7D55D2FD75AB",
+      "prompt_text": "Use case: ads-marketing.\nAsset type: one scene-06 visual guide for an After Effects motion film. Create ONE standalone keyframe, full bleed 2400 x 1024, aspect ratio 75:32, not a storyboard or collage.\n\nReference image 1: the previous Operations/refined guide. Inherit its professional flat motion-graphics craft, very bold contemporary typography, large graphic scale and crisp masks. This scene has a DIFFERENT composition and a periwinkle background. Do not reuse the Operations/refined text, its italic typography, its slanted strip shape or its charcoal-heavy background formula.\n\nStory intent: sudden shifts are instantly blocked. Before this key pose, large graphic strips race across the screen at irregular speeds. At this key pose, TWO LARGE RECTANGULAR SHUTTER PLANES have snapped into place and arrested that motion. Capture the powerful AFTER-STOP impact pose. The viewer should see large interrupted forms and a sudden area of calm, not a tiny bent line or a lock icon.\n\nMake a vivid flat periwinkle-blue field, approximately #939BF2, with a bold uncluttered central message. At the outer LEFT and RIGHT edges, a few extremely broad charcoal, ivory and restrained orange horizontal typographic strips are staggered at different heights. The strips carry only cropped fragments of the outlined word \"SHIFT\". Their motion is visually CUT OFF at two strong straight vertical mask boundaries, around the left and right quarter-lines. These boundaries belong to large solid periwinkle shutter planes which have closed over the moving strips and meet to create a clean central field. Use narrow charcoal seam edges and a small orange contact accent to make the blocking geometry tangible. No open gap between the shutter planes, no physical door hardware. The large central quiet area occupies roughly two thirds of the image; the arrested graphic fragments remain only at the periphery. Keep it clean, graphic and immediately legible.\n\nIn the central quiet area set \"Sudden odds shift\" relatively small, charcoal, at the upper left of the main text block. Beneath it, use enormous heavyweight charcoal upright sans-serif text on two lines:\n\"Bets\"\n\"auto-blocked\"\nThe result text is the visual hero, wide and imposing, fully visible with generous safety margins. The hyphen in auto-blocked must be present. Use the same strong font family as the reference, but UPRIGHT, not italic. No other foreground copy. Some bold scale difference between the huge result and the small triggering condition.\n\nThe composition should feel like a forceful freeze after a fast graphic burst: a clean protected message, clipped-off outer strips, hard stops and clear scale. Flat 2D layers that can actually be reconstructed with typography, solid planes, masks and position animation in After Effects. No 3D perspective, no soft illustrated machinery. Crisp still frame, without fake motion trails.\n\nExact text: \"Sudden odds shift\", \"Bets\", \"auto-blocked\". Optional peripheral outline fragment text: \"SHIFT\" only.\nAvoid: a chart as the main idea, fine zigzag lines, sliders, stock padlock or shield, traffic lights, badges, phone mockups, sportsbook screens, arbitrary betting metrics, arrows, scene numbers, timing labels, Korean copy, marketing sublines, confetti, particles, glow, gradients, photo textures or a split before/after comparison.",
+      "original_path": "C:\\Users\\User\\.codex\\generated_images\\01a084c3-735f-7fd2-8ef7-a044226bd7a3\\exec-2b17f4c0-aaf9-48e3-9256-07bf72f1a744.png",
+      "final_path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-scenes-04-06-guides-20260911-192815\\results\\06-bets-auto-blocked-stop.png",
+      "storage_action": "move",
+      "sha256_before": "C5037E1DC999FA6A8180DDC2770926A50E97753FB45C208D9A1EF7C676B7DE87",
+      "sha256_after": "C5037E1DC999FA6A8180DDC2770926A50E97753FB45C208D9A1EF7C676B7DE87",
+      "sha256_match": true,
+      "bytes": 1129032,
+      "width": 1920,
+      "height": 819,
+      "raw_format": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+      "readable": true,
+      "format": "PNG",
+      "generated": true,
+      "qa_pass": true,
+      "qa_scope": "Single-frame visual guide composition and exact main copy; does not validate motion, timing, native text layers or actual phone UI pixel fidelity.",
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "attempts": 1
+    }
+  ],
+  "counts": {
+    "attempted": 3,
+    "generated": 3,
+    "failed": 0,
+    "skipped": 0,
+    "qa_pass": 3,
+    "selected_by_agent": 3,
+    "accepted_by_user": 0,
+    "rejected": 0,
+    "adopted": 0
+  },
+  "qa_report": "qa/generation-review.md",
+  "guide_readme": "GUIDE.md",
+  "next_action": "Present the three generated guide images for review. AE production and dynamic timing verification have not been performed in this guide-only run."
+}

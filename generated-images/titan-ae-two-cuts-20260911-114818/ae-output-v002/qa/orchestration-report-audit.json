@@ -1,0 +1,218 @@
+{
+  "checkedAt": "2026-09-11T12:48:51+09:00",
+  "status": "passed",
+  "files": [
+    {
+      "name": "compare-F18-meet-titan.png",
+      "absolutePath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\ae-output-v002\\compare-F18-meet-titan.png",
+      "bytes": 51845,
+      "sha256": "5df92015f47597c9e6f3c1d9203fd8ae6ee6725c6ac71259f58f47cdf37b2383",
+      "matchesManifest": true
+    },
+    {
+      "name": "compare-F75-built-in-house.png",
+      "absolutePath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\ae-output-v002\\compare-F75-built-in-house.png",
+      "bytes": 54811,
+      "sha256": "fe4e14d9a73c6d73ddc9f43c09e26f4f45ba0707acb5e9d010877c48d25bdd63",
+      "matchesManifest": true
+    },
+    {
+      "name": "TITAN-TwoCuts-3s-v002.aep",
+      "absolutePath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\ae-output-v002\\TITAN-TwoCuts-3s-v002.aep",
+      "bytes": 543077,
+      "sha256": "aba719d9c019852dd25fb6b9b8bfcc4ec2cd2fbffab86a82c7e9a0345d94cf74",
+      "matchesManifest": true
+    },
+    {
+      "name": "TITAN-TwoCuts-3s-v002.mp4",
+      "absolutePath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\ae-output-v002\\TITAN-TwoCuts-3s-v002.mp4",
+      "bytes": 78821,
+      "sha256": "81582752c0dd79bea2fcc33d10a9ddfff4ab2ad838d118ab830e6d8e0f67d371",
+      "matchesManifest": true
+    }
+  ],
+  "records": [
+    {
+      "path": "README.md",
+      "bytes": 5895,
+      "readable": true
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 5442,
+      "readable": true
+    },
+    {
+      "path": "qa/verification.json",
+      "bytes": 28097,
+      "readable": true
+    },
+    {
+      "path": "qa/property-tests.json",
+      "bytes": 21627,
+      "readable": true
+    },
+    {
+      "path": "qa/text-layout.json",
+      "bytes": 2665,
+      "readable": true
+    },
+    {
+      "path": "qa/fonts.json",
+      "bytes": 4131,
+      "readable": true
+    },
+    {
+      "path": "qa/project-before.json",
+      "bytes": 777384,
+      "readable": true
+    },
+    {
+      "path": "qa/project-after.json",
+      "bytes": 931644,
+      "readable": true
+    },
+    {
+      "path": "qa/background-render.json",
+      "bytes": 3216,
+      "readable": true
+    },
+    {
+      "path": "qa/aerender-retry-stdout.log",
+      "bytes": 4587,
+      "readable": true
+    },
+    {
+      "path": "qa/aerender-retry-stderr.log",
+      "bytes": 0,
+      "readable": true
+    },
+    {
+      "path": "qa/media-probe.json",
+      "bytes": 522,
+      "readable": true
+    },
+    {
+      "path": "qa/playback.json",
+      "bytes": 893,
+      "readable": true
+    },
+    {
+      "path": "qa/recovery-session.json",
+      "bytes": 1055,
+      "readable": true
+    },
+    {
+      "path": "qa/recovery-operations.json",
+      "bytes": 14735,
+      "readable": true
+    },
+    {
+      "path": "qa/live-delivery.json",
+      "bytes": 15591,
+      "readable": true
+    },
+    {
+      "path": "qa/verify.mjs",
+      "bytes": 6826,
+      "readable": true
+    }
+  ],
+  "frames": 90,
+  "freshFrameAudit": {
+    "exitCode": 0,
+    "status": "passed",
+    "comp": {
+      "name": "TITAN_TwoCuts_75x32_3s_v001",
+      "width": 2400,
+      "height": 1024,
+      "fps": 30,
+      "duration": 3,
+      "frames": 90,
+      "pixelAspect": 1
+    },
+    "layerCounts": {
+      "text": 5,
+      "shape": 3,
+      "solid": 2,
+      "disabledReferences": 2
+    },
+    "propertyTests": {
+      "total": 67,
+      "passed": 67,
+      "maxError": 0.00497833472454
+    },
+    "preservation": [
+      {
+        "id": 1,
+        "name": "Codex_Hello_World_1920x1080",
+        "unchanged": true
+      },
+      {
+        "id": 32,
+        "name": "Hello_World_Stretch_3s",
+        "unchanged": true
+      },
+      {
+        "id": 29,
+        "name": "Solids",
+        "unchanged": true
+      },
+      {
+        "id": 30,
+        "name": "Dark Gray Solid 1",
+        "unchanged": true
+      },
+      {
+        "id": 46,
+        "name": "Gray Radial Background",
+        "unchanged": true
+      }
+    ],
+    "originalFiles": [
+      {
+        "file": "C:/Users/User/Documents/Codex/2026-08-06/d/ae-hello-motion-3s/Hello-World-Stretch-3s.aep",
+        "sha256": "20ac6f9d6f9a0cfda77ee80cd13f0b57358574c25f3ddff75c560de3002e969e",
+        "unchanged": true
+      },
+      {
+        "file": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\01-meet-titan.png",
+        "sha256": "a0594109128e86ac5a63396cb8546a558f7a9f8bda12d60a1a5ef4ded0f1a110",
+        "unchanged": true
+      },
+      {
+        "file": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\results\\02-built-in-house.png",
+        "sha256": "1baba08917515f2a902164bfa24adfe296cb2200ddcdb91088e21b824516b2fc",
+        "unchanged": true
+      }
+    ],
+    "frameCount": 90,
+    "allFramesOpaque": true,
+    "cut1Hold": "F14-F24 identical pixels",
+    "cut2Hold": "F61-F89 identical pixels",
+    "F00": "uniform #F5F3EE",
+    "F33": "uniform #24262A",
+    "renderErrors": 0,
+    "colorWarnings": 0,
+    "renderRoute": "isolated aerender from saved AEP",
+    "cut1EveryFrameChecked": true
+  },
+  "ffprobeRechecked": {
+    "exitCode": 0,
+    "width": 2400,
+    "height": 1024,
+    "fps": "30/1",
+    "duration": "3.000000",
+    "frames": 90,
+    "pixelFormat": "yuv420p",
+    "sampleAspect": "1:1",
+    "displayAspect": "75:32",
+    "audioStreams": 0
+  },
+  "fullDecodeRechecked": {
+    "exitCode": 0,
+    "errorOutput": ""
+  },
+  "liveAEReadThisReportTurn": false,
+  "browserReplayedThisReportTurn": false
+}

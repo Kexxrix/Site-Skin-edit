@@ -1,0 +1,214 @@
+/*
+ * Fixed rather than sticky: the hero reserves its own 160px of top padding
+ * for the reference layout, so the bar must stay out of the document flow.
+ * Transparent over the hero, solid once the page scrolls under it.
+ */
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  padding-top: 30px;
+  padding-bottom: 0;
+  color: #fff;
+  transition:
+    padding 220ms ease,
+    background-color 220ms ease,
+    border-color 220ms ease;
+}
+
+.scrolled {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(218 218 218 / 12%);
+  background: rgb(10 10 10 / 92%);
+  backdrop-filter: blur(12px);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: calc(100% - 48px);
+  max-width: 1280px;
+  height: 60px;
+  margin-inline: auto;
+}
+
+.logo {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.8px;
+  white-space: nowrap;
+}
+
+.logoAccent {
+  color: #fa871f;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+  transition: color 180ms ease;
+}
+
+.navLink:hover,
+.mobileLink:hover {
+  color: #fa871f;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 52px;
+  padding: 8px 8px 6px 25px;
+  border-radius: 50px;
+  background: #fa871f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+  transition: background-color 180ms ease;
+}
+
+.cta:hover {
+  background: #e9740c;
+}
+
+.ctaArrow {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  color: #fa871f;
+  transition: transform 180ms ease;
+}
+
+.cta:hover .ctaArrow {
+  transform: rotate(45deg);
+}
+
+.menuToggle,
+.mobileNav {
+  display: none;
+}
+
+.logo:focus-visible,
+.navLink:focus-visible,
+.cta:focus-visible,
+.menuToggle:focus-visible,
+.mobileLink:focus-visible,
+.mobileCta:focus-visible {
+  outline: 2px solid #fa871f;
+  outline-offset: 5px;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    padding-top: 20px;
+  }
+
+  /* Re-stated after .header so the scrolled bar still compacts here. */
+  .scrolled {
+    padding-top: 10px;
+  }
+
+  .nav,
+  .desktopCta {
+    display: none;
+  }
+
+  .menuToggle {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid rgb(255 255 255 / 30%);
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobileNav {
+    display: block;
+    width: calc(100% - 48px);
+    margin: 16px auto 0;
+    padding: 14px;
+    border: 1px solid rgb(255 255 255 / 12%);
+    border-radius: 20px;
+    background: #1c1c1c;
+    box-shadow: 0 20px 45px rgb(0 0 0 / 30%);
+  }
+
+  .mobileLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileLink {
+    padding: 12px 14px;
+    font-size: 16px;
+    line-height: 24px;
+    transition: color 180ms ease;
+  }
+
+  .mobileCta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #fa871f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 599px) {
+  .row,
+  .mobileNav {
+    width: calc(100% - 40px);
+  }
+
+  .logo {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .navLink,
+  .cta,
+  .ctaArrow,
+  .mobileLink {
+    transition: none;
+  }
+}

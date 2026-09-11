@@ -1,0 +1,385 @@
+{
+  "timestamp": "2026-09-11T07-58-00-245Z",
+  "write": true,
+  "results": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "batch.run",
+          "args": {
+            "ops": [
+              {
+                "operation": "layer.set_props",
+                "args": {
+                  "comp": 458,
+                  "layer": "C01_DEVICE_IPHONE",
+                  "props": {
+                    "enabled": false
+                  }
+                }
+              },
+              {
+                "operation": "layer.replace_source",
+                "args": {
+                  "comp": 458,
+                  "layer": "C02_DEVICE_IPAD",
+                  "item": 485,
+                  "fixExpressions": false
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 458,
+                  "time": 6,
+                  "comment": "IPAD_ROTATE_START"
+                }
+              },
+              {
+                "operation": "marker.add_comp",
+                "args": {
+                  "comp": 458,
+                  "time": 6.8,
+                  "comment": "IPAD_RETREAT_END"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 485,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "Transform",
+                    "Position"
+                  ],
+                  "expression": "var master=comp('TITAN_TwoScenes_8s_v004_R02');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;} function unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));} var x=65;if(time>=at('IPAD_ENTER')&&time<at('CONTACT')){var u=unit(at('IPAD_ENTER'),at('CONTACT'));x=65+(-17.5-65)*u*u;}else if(time>=at('CONTACT')&&time<at('PUSH_MAX')){var u=unit(at('CONTACT'),at('PUSH_MAX'));x=-17.5-15*(1-Math.pow(1-u,5));}else if(time>=at('PUSH_MAX')){var u=unit(at('PUSH_MAX'),at('IPAD_RETREAT_END'));x=-32.5+32.5*(1-Math.pow(1-u,3));}[x,0,0];"
+                }
+              },
+              {
+                "operation": "expression.set",
+                "args": {
+                  "comp": 485,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "Transform",
+                    "Y Rotation"
+                  ],
+                  "expression": "var master=comp('TITAN_TwoScenes_8s_v004_R02');function at(n){return master.marker.key(n).time-master.marker.key('C02_BG_READY').time;} function unit(a,b){return Math.max(0,Math.min(1,(time-a)/(b-a)));} var u=unit(at('IPAD_ROTATE_START'),at('IPAD_SETTLED'));35*(1-Math.pow(1-u,3));"
+                }
+              },
+              {
+                "operation": "expression.remove",
+                "args": {
+                  "comp": 485,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "Transform",
+                    "Z Rotation"
+                  ]
+                }
+              },
+              {
+                "operation": "property.set",
+                "args": {
+                  "comp": 485,
+                  "layer": "DEVICE_iPad_VIEW",
+                  "property": [
+                    "Transform",
+                    "Z Rotation"
+                  ],
+                  "value": 0
+                }
+              }
+            ],
+            "stopOnError": true
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "error": null,
+          "results": [
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "C01_DEVICE_IPHONE",
+                  "warnings": []
+                }
+              ]
+            },
+            {
+              "ok": true,
+              "layer": "C02_DEVICE_IPAD",
+              "source": "TITAN_DEVICE_iPad_VIDEO_v004_R02"
+            },
+            {
+              "ok": true,
+              "numMarkers": 16,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "numMarkers": 17,
+              "warnings": []
+            },
+            {
+              "ok": true,
+              "name": "Position",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Y Rotation",
+              "expressionEnabled": true
+            },
+            {
+              "ok": true,
+              "name": "Z Rotation",
+              "expressionEnabled": false
+            },
+            {
+              "ok": true,
+              "count": 1,
+              "layers": [
+                {
+                  "name": "DEVICE_iPad_VIEW",
+                  "ok": true
+                }
+              ]
+            }
+          ],
+          "count": 8,
+          "failed": 0
+        },
+        "context": {
+          "project": {
+            "numItems": 32,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-before-review02.aep"
+          },
+          "activeComp": {
+            "id": 433,
+            "name": "QA_PLAYBACK_Review01_8s_30fps",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 8,
+            "numLayers": 1
+          },
+          "selectedLayers": []
+        },
+        "logs": [],
+        "durationMs": 376
+      }
+    },
+    {
+      "call": {
+        "name": "ae_save_project",
+        "args": {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\TITAN-TwoScene-v004-review-02-Working.aep"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "saved": true,
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep"
+        },
+        "logs": [],
+        "durationMs": 2316
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 458,
+          "time": 3.1,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\r02-c01-settle.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-c01-settle.png",
+          "time": 3.1,
+          "compName": "TITAN_TwoScenes_8s_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 367
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 458,
+          "time": 5.566666666666666,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\r02-contact.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-contact.png",
+          "time": 5.56666666666667,
+          "compName": "TITAN_TwoScenes_8s_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 371
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 458,
+          "time": 5.8,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\r02-pushmax.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-pushmax.png",
+          "time": 5.8,
+          "compName": "TITAN_TwoScenes_8s_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 452
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 458,
+          "time": 6,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\r02-recoil-front.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-recoil-front.png",
+          "time": 6,
+          "compName": "TITAN_TwoScenes_8s_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 378
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 458,
+          "time": 6.333333333333333,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\r02-midrotate.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-midrotate.png",
+          "time": 6.33333333333333,
+          "compName": "TITAN_TwoScenes_8s_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 364
+      }
+    },
+    {
+      "call": {
+        "name": "ae_render_frame",
+        "args": {
+          "compNameOrId": 458,
+          "time": 7.966666666666667,
+          "outPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\titan-ae-two-cuts-20260911-114818\\two-scene-motion-test-v004\\ae-output\\r02-final.png"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "writtenTo": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/r02-final.png",
+          "time": 7.96666666666667,
+          "compName": "TITAN_TwoScenes_8s_v004_R02",
+          "size": [
+            2400,
+            1024
+          ],
+          "captureKind": "direct",
+          "workingSpace": "None",
+          "bitsPerChannel": 8,
+          "projectFile": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/TITAN-TwoScene-v004-review-02-Working.aep",
+          "method": "native",
+          "colorPipeline": "untagged 16-bit → 8-bit sRGB-tagged (values unchanged)"
+        },
+        "logs": [],
+        "durationMs": 360
+      }
+    }
+  ]
+}

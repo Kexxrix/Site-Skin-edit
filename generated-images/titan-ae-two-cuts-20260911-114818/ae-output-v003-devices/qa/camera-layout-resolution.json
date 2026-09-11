@@ -1,0 +1,155 @@
+{
+  "readback": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "name": "Position",
+          "matchName": "ADBE Position",
+          "value": [
+            1200,
+            512,
+            -3333.33325195312
+          ],
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "name": "Point of Interest",
+          "matchName": "ADBE Anchor Point",
+          "value": [
+            1200,
+            512,
+            0
+          ],
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "name": "Depth of Field",
+          "matchName": "ADBE Camera Depth of Field",
+          "value": 0,
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "name": "Background Visible",
+          "matchName": "ADBE Light Backgd Visible",
+          "value": 0,
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "name": "Intensity",
+          "matchName": "ADBE Light Intensity",
+          "value": 100,
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "name": "Position",
+          "matchName": "ADBE Position",
+          "value": [
+            1200,
+            512,
+            -3333.33325195312
+          ],
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "name": "Point of Interest",
+          "matchName": "ADBE Anchor Point",
+          "value": [
+            1200,
+            512,
+            0
+          ],
+          "numKeys": 0,
+          "hasExpression": false
+        },
+        {
+          "ok": true,
+          "name": "Background Visible",
+          "matchName": "ADBE Light Backgd Visible",
+          "value": 0,
+          "numKeys": 0,
+          "hasExpression": false
+        }
+      ],
+      "count": 8,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 16,
+        "dirty": true,
+        "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v003-devices/TITAN-TwoCuts-Devices-Kinetic-3s-v003.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 376
+  },
+  "selection": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "error": null,
+      "results": [
+        {
+          "ok": true,
+          "selected": 0
+        }
+      ],
+      "count": 1,
+      "failed": 0
+    },
+    "context": {
+      "project": {
+        "numItems": 16,
+        "dirty": true,
+        "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-ae-two-cuts-20260911-114818/ae-output-v003-devices/TITAN-TwoCuts-Devices-Kinetic-3s-v003.aep"
+      },
+      "activeComp": {
+        "id": 84,
+        "name": "TITAN_TwoCuts_75x32_3s_v001",
+        "width": 2400,
+        "height": 1024,
+        "fps": 30,
+        "duration": 3,
+        "numLayers": 12
+      },
+      "selectedLayers": []
+    },
+    "logs": [],
+    "durationMs": 384
+  },
+  "notes": [
+    "Camera transform helper anchorPoint is unsupported, but existing Point of Interest readback already equals intended [1200,512,0]. Camera position changes succeeded.",
+    "Advanced 3D DOF setter rejected the value; readback is already zero. No DOF was enabled.",
+    "Selection argument was corrected to indices; original failed batch is retained."
+  ],
+  "retainedDefaults": {
+    "environmentIntensity": 100,
+    "environmentBackgroundVisible": 0
+  }
+}

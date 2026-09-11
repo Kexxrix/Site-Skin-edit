@@ -1,0 +1,199 @@
+{
+  "timestamp": "2026-09-11T09-52-25-512Z",
+  "write": true,
+  "records": [
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.add_to_queue",
+          "args": {
+            "comp": "TITAN_MASTER_20S"
+          }
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "queueIndex": 1,
+          "compName": "TITAN_MASTER_20S"
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 22
+          },
+          "selectedLayers": [
+            {
+              "index": 9,
+              "name": "OUTER_ARC_Ivory_Scenes"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 379
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.list_templates"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "renderTemplates": [
+            "Best Settings",
+            "Current Settings",
+            "DV Settings",
+            "Draft Settings",
+            "Multi-Machine Settings",
+            "_HIDDEN X-Factor"
+          ],
+          "outputTemplates": [
+            "AIFF 48kHz",
+            "Alpha Only",
+            "H.264 - Match Render Settings -  5 Mbps",
+            "H.264 - Match Render Settings - 15 Mbps",
+            "H.264 - Match Render Settings - 40 Mbps",
+            "High Quality",
+            "High Quality with Alpha",
+            "Lossless",
+            "Lossless with Alpha",
+            "Multi-Machine Sequence",
+            "Photoshop",
+            "TIFF Sequence with Alpha",
+            "_HIDDEN X-Factor 16",
+            "_HIDDEN X-Factor 16 Premul",
+            "_HIDDEN X-Factor 32",
+            "_HIDDEN X-Factor 32 Premul",
+            "_HIDDEN X-Factor 8",
+            "_HIDDEN X-Factor 8 Premul"
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 22
+          },
+          "selectedLayers": [
+            {
+              "index": 9,
+              "name": "OUTER_ARC_Ivory_Scenes"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 384
+      }
+    },
+    {
+      "call": {
+        "name": "ae_do",
+        "args": {
+          "operation": "render.get_settings"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ok": true,
+          "queueIndex": 1,
+          "comp": "TITAN_MASTER_20S",
+          "renderSettings": {
+            "Color Depth": "Current Settings",
+            "Disk Cache": "Read Only",
+            "Effects": "Current Settings",
+            "Field Render": "Off",
+            "Frame Blending": "On for Checked Layers",
+            "Frame Rate": "Use comp's frame rate",
+            "Guide Layers": "All Off",
+            "Motion Blur": "On for Checked Layers",
+            "Proxy Use": "Use No Proxies",
+            "Quality": "Best",
+            "Resolution": "Full",
+            "Solo Switches": "Current Settings",
+            "Time Span": "Work Area Only",
+            "Time Span Duration": "5.7",
+            "Time Span End": "5.7",
+            "Time Span Start": "0.0",
+            "Use this frame rate": "30.0"
+          },
+          "outputModules": [
+            {
+              "index": 1,
+              "name": "H.264 - Match Render Settings - 15 Mbps",
+              "settings": {
+                "Audio Bit Depth": "16 Bit",
+                "Audio Channels": "Stereo",
+                "Audio Sample Rate": "48.000 kHz",
+                "Crop": "false",
+                "Include Project Link": "true",
+                "Include Source XMP Metadata": "false",
+                "Output Audio": "Auto",
+                "Output File Info": {
+                  "Full Flat Path": "",
+                  "Base Path": "",
+                  "Subfolder Path": "",
+                  "File Name": "",
+                  "File Template": ""
+                },
+                "Post-Render Action": "None",
+                "Resize": "false",
+                "Video Output": "true"
+              }
+            }
+          ]
+        },
+        "context": {
+          "project": {
+            "numItems": 13,
+            "dirty": true,
+            "file": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep"
+          },
+          "activeComp": {
+            "id": 1,
+            "name": "TITAN_MASTER_20S",
+            "width": 2400,
+            "height": 1024,
+            "fps": 30,
+            "duration": 20,
+            "numLayers": 22
+          },
+          "selectedLayers": [
+            {
+              "index": 9,
+              "name": "OUTER_ARC_Ivory_Scenes"
+            }
+          ]
+        },
+        "logs": [],
+        "durationMs": 455
+      }
+    }
+  ]
+}

@@ -1,0 +1,1485 @@
+{
+  "method": "Live Beta property.get(time) reads; independent JavaScript reference easing and dense cubic arc-length integration. No frame-time rounding.",
+  "normalizedTolerance": 0.0001,
+  "backPeakU": 0.5801025079151212,
+  "cases": [
+    {
+      "name": "M",
+      "comp": 330,
+      "layer": "C01_TXT_MEET",
+      "property": [
+        "Text",
+        "Animators",
+        "V004_Staggered_Back",
+        "Properties",
+        "ADBE Text Position 3D"
+      ],
+      "frames": [
+        0,
+        24
+      ],
+      "curve": "easeOutBack",
+      "start": 620,
+      "end": 0,
+      "axis": 1,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 0,
+          "globalTime": 0,
+          "expected": 2.220446049250313e-16,
+          "requestIndex": 0,
+          "actualValue": [
+            0,
+            620,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 0.25,
+          "time": 0.2,
+          "globalTime": 0.2,
+          "expected": 0.8174096875000002,
+          "requestIndex": 1,
+          "actualValue": [
+            0,
+            113.20599375,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.8174096875,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 0.5,
+          "time": 0.4,
+          "globalTime": 0.4,
+          "expected": 1.0876975,
+          "requestIndex": 2,
+          "actualValue": [
+            0,
+            -54.37245,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0876975,
+          "error": 0
+        },
+        {
+          "u": 0.5801025079151212,
+          "time": 0.46408200633209695,
+          "globalTime": 0.46408200633209695,
+          "expected": 1.100004070842896,
+          "requestIndex": 3,
+          "actualValue": [
+            0,
+            -62.0025236420579,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.100004070390416,
+          "error": 4.524800534255746e-10
+        },
+        {
+          "u": 0.75,
+          "time": 0.6,
+          "globalTime": 0.6,
+          "expected": 1.0641365625,
+          "requestIndex": 4,
+          "actualValue": [
+            0,
+            -39.7646687499999,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0641365624999999,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 1,
+          "time": 0.8,
+          "globalTime": 0.8,
+          "expected": 1,
+          "requestIndex": 5,
+          "actualValue": [
+            0,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 4.524800534255746e-10,
+      "pass": true
+    },
+    {
+      "name": "e1",
+      "comp": 330,
+      "layer": "C01_TXT_MEET",
+      "property": [
+        "Text",
+        "Animators",
+        "V004_e1_Back",
+        "Properties",
+        "ADBE Text Position 3D"
+      ],
+      "frames": [
+        5,
+        29
+      ],
+      "curve": "easeOutBack",
+      "start": 460,
+      "end": 0,
+      "axis": 1,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 0.16666666666666666,
+          "globalTime": 0.16666666666666666,
+          "expected": 2.220446049250313e-16,
+          "requestIndex": 6,
+          "actualValue": [
+            0,
+            460,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 0.25,
+          "time": 0.36666666666666664,
+          "globalTime": 0.36666666666666664,
+          "expected": 0.8174096875000002,
+          "requestIndex": 7,
+          "actualValue": [
+            0,
+            83.9915437499999,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.8174096875000002,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 0.5666666666666667,
+          "globalTime": 0.5666666666666667,
+          "expected": 1.0876975,
+          "requestIndex": 8,
+          "actualValue": [
+            0,
+            -40.34085,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0876975,
+          "error": 0
+        },
+        {
+          "u": 0.5801025079151212,
+          "time": 0.6307486729987636,
+          "globalTime": 0.6307486729987636,
+          "expected": 1.100004070842896,
+          "requestIndex": 9,
+          "actualValue": [
+            0,
+            -46.0018723795913,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.100004070390416,
+          "error": 4.524800534255746e-10
+        },
+        {
+          "u": 0.75,
+          "time": 0.7666666666666667,
+          "globalTime": 0.7666666666666667,
+          "expected": 1.0641365625,
+          "requestIndex": 10,
+          "actualValue": [
+            0,
+            -29.50281875,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0641365625,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 0.9666666666666667,
+          "globalTime": 0.9666666666666667,
+          "expected": 1,
+          "requestIndex": 11,
+          "actualValue": [
+            0,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 4.524800534255746e-10,
+      "pass": true
+    },
+    {
+      "name": "e2",
+      "comp": 330,
+      "layer": "C01_TXT_MEET",
+      "property": [
+        "Text",
+        "Animators",
+        "V004_e2_Back",
+        "Properties",
+        "ADBE Text Position 3D"
+      ],
+      "frames": [
+        10,
+        34
+      ],
+      "curve": "easeOutBack",
+      "start": 330,
+      "end": 0,
+      "axis": 1,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 0.3333333333333333,
+          "globalTime": 0.3333333333333333,
+          "expected": 2.220446049250313e-16,
+          "requestIndex": 12,
+          "actualValue": [
+            0,
+            330,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 0.25,
+          "time": 0.5333333333333333,
+          "globalTime": 0.5333333333333333,
+          "expected": 0.8174096875000002,
+          "requestIndex": 13,
+          "actualValue": [
+            0,
+            60.2548031249999,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.8174096875000003,
+          "error": 1.1102230246251565e-16
+        },
+        {
+          "u": 0.5,
+          "time": 0.7333333333333333,
+          "globalTime": 0.7333333333333333,
+          "expected": 1.0876975,
+          "requestIndex": 14,
+          "actualValue": [
+            0,
+            -28.940175,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0876975,
+          "error": 0
+        },
+        {
+          "u": 0.5801025079151212,
+          "time": 0.7974153396654303,
+          "globalTime": 0.7974153396654303,
+          "expected": 1.100004070842896,
+          "requestIndex": 15,
+          "actualValue": [
+            0,
+            -33.0013432288373,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.1000040703904161,
+          "error": 4.524798313809697e-10
+        },
+        {
+          "u": 0.75,
+          "time": 0.9333333333333333,
+          "globalTime": 0.9333333333333333,
+          "expected": 1.0641365625,
+          "requestIndex": 16,
+          "actualValue": [
+            0,
+            -21.165065625,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0641365625,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 1.1333333333333333,
+          "globalTime": 1.1333333333333333,
+          "expected": 1,
+          "requestIndex": 17,
+          "actualValue": [
+            0,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 4.524798313809697e-10,
+      "pass": true
+    },
+    {
+      "name": "t",
+      "comp": 330,
+      "layer": "C01_TXT_MEET",
+      "property": [
+        "Text",
+        "Animators",
+        "V004_t_Back",
+        "Properties",
+        "ADBE Text Position 3D"
+      ],
+      "frames": [
+        15,
+        39
+      ],
+      "curve": "easeOutBack",
+      "start": 230,
+      "end": 0,
+      "axis": 1,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 0.5,
+          "globalTime": 0.5,
+          "expected": 2.220446049250313e-16,
+          "requestIndex": 18,
+          "actualValue": [
+            0,
+            230,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 0.25,
+          "time": 0.7,
+          "globalTime": 0.7,
+          "expected": 0.8174096875000002,
+          "requestIndex": 19,
+          "actualValue": [
+            0,
+            41.995771875,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.8174096875,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 0.5,
+          "time": 0.9,
+          "globalTime": 0.9,
+          "expected": 1.0876975,
+          "requestIndex": 20,
+          "actualValue": [
+            0,
+            -20.170425,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0876975,
+          "error": 0
+        },
+        {
+          "u": 0.5801025079151212,
+          "time": 0.964082006332097,
+          "globalTime": 0.964082006332097,
+          "expected": 1.100004070842896,
+          "requestIndex": 21,
+          "actualValue": [
+            0,
+            -23.0009361897957,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.1000040703904161,
+          "error": 4.524798313809697e-10
+        },
+        {
+          "u": 0.75,
+          "time": 1.1,
+          "globalTime": 1.1,
+          "expected": 1.0641365625,
+          "requestIndex": 22,
+          "actualValue": [
+            0,
+            -14.751409375,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0641365625,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 1.3,
+          "globalTime": 1.3,
+          "expected": 1,
+          "requestIndex": 23,
+          "actualValue": [
+            0,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 4.524798313809697e-10,
+      "pass": true
+    },
+    {
+      "name": "arc-scale",
+      "comp": 330,
+      "layer": "C01_ARC",
+      "property": [
+        "Transform",
+        "Scale"
+      ],
+      "frames": [
+        24,
+        51
+      ],
+      "curve": "easeOutQuint",
+      "start": 27,
+      "end": 100,
+      "axis": 0,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 0.8,
+          "globalTime": 0.8,
+          "expected": 0,
+          "requestIndex": 24,
+          "actualValue": [
+            27,
+            27,
+            100
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 0
+        },
+        {
+          "u": 0.25,
+          "time": 1.025,
+          "globalTime": 1.025,
+          "expected": 0.7626953125,
+          "requestIndex": 25,
+          "actualValue": [
+            82.6767578125,
+            82.6767578125,
+            100
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.7626953125,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 1.25,
+          "globalTime": 1.25,
+          "expected": 0.96875,
+          "requestIndex": 26,
+          "actualValue": [
+            97.71875,
+            97.71875,
+            100
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.96875,
+          "error": 0
+        },
+        {
+          "u": 0.75,
+          "time": 1.475,
+          "globalTime": 1.475,
+          "expected": 0.9990234375,
+          "requestIndex": 27,
+          "actualValue": [
+            99.9287109375,
+            99.9287109375,
+            100
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.9990234375,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 1.7,
+          "globalTime": 1.7,
+          "expected": 1,
+          "requestIndex": 28,
+          "actualValue": [
+            100,
+            100,
+            100
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 0,
+      "pass": true
+    },
+    {
+      "name": "arc-center-x",
+      "comp": 330,
+      "layer": "C01_ARC",
+      "property": [
+        "Transform",
+        "Position"
+      ],
+      "frames": [
+        24,
+        51
+      ],
+      "curve": "easeOutQuint",
+      "start": 815,
+      "end": 675,
+      "axis": 0,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 0.8,
+          "globalTime": 0.8,
+          "expected": 0,
+          "requestIndex": 29,
+          "actualValue": [
+            815,
+            511,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 0
+        },
+        {
+          "u": 0.25,
+          "time": 1.025,
+          "globalTime": 1.025,
+          "expected": 0.7626953125,
+          "requestIndex": 30,
+          "actualValue": [
+            708.22265625,
+            498.0341796875,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.7626953125,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 1.25,
+          "globalTime": 1.25,
+          "expected": 0.96875,
+          "requestIndex": 31,
+          "actualValue": [
+            679.375,
+            494.53125,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.96875,
+          "error": 0
+        },
+        {
+          "u": 0.75,
+          "time": 1.475,
+          "globalTime": 1.475,
+          "expected": 0.9990234375,
+          "requestIndex": 32,
+          "actualValue": [
+            675.13671875,
+            494.0166015625,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.9990234375,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 1.7,
+          "globalTime": 1.7,
+          "expected": 1,
+          "requestIndex": 33,
+          "actualValue": [
+            675,
+            494,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 0,
+      "pass": true
+    },
+    {
+      "name": "TITAN-horizontal",
+      "comp": 330,
+      "layer": "C01_TXT_TITAN",
+      "property": [
+        "Transform",
+        "Position"
+      ],
+      "frames": [
+        39,
+        93
+      ],
+      "curve": "easeInOutQuad",
+      "start": 2720,
+      "end": 1373.48754882812,
+      "axis": 0,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 1.3,
+          "globalTime": 1.3,
+          "expected": 0,
+          "requestIndex": 34,
+          "actualValue": [
+            2720,
+            492,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 0
+        },
+        {
+          "u": 0.25,
+          "time": 1.75,
+          "globalTime": 1.75,
+          "expected": 0.125,
+          "requestIndex": 35,
+          "actualValue": [
+            2551.68594360352,
+            492,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.12499999999999616,
+          "error": 3.8441472227646045e-15
+        },
+        {
+          "u": 0.5,
+          "time": 2.2,
+          "globalTime": 2.2,
+          "expected": 0.5,
+          "requestIndex": 36,
+          "actualValue": [
+            2046.74377441406,
+            492,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.5,
+          "error": 0
+        },
+        {
+          "u": 0.75,
+          "time": 2.65,
+          "globalTime": 2.65,
+          "expected": 0.875,
+          "requestIndex": 37,
+          "actualValue": [
+            1541.80160522461,
+            492,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.8749999999999962,
+          "error": 3.774758283725532e-15
+        },
+        {
+          "u": 1,
+          "time": 3.1,
+          "globalTime": 3.1,
+          "expected": 1,
+          "requestIndex": 38,
+          "actualValue": [
+            1373.48754882812,
+            492,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 3.8441472227646045e-15,
+      "pass": true
+    },
+    {
+      "name": "type-push",
+      "comp": 330,
+      "layer": "C02_TYPE_RECOIL_CTRL",
+      "property": [
+        "Transform",
+        "Position"
+      ],
+      "frames": [
+        167,
+        174
+      ],
+      "curve": "easeOutQuint",
+      "start": 0,
+      "end": -190,
+      "axis": 0,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 5.566666666666666,
+          "globalTime": 5.566666666666666,
+          "expected": 0,
+          "requestIndex": 39,
+          "actualValue": [
+            0,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 0
+        },
+        {
+          "u": 0.25,
+          "time": 5.625,
+          "globalTime": 5.625,
+          "expected": 0.7626953125,
+          "requestIndex": 40,
+          "actualValue": [
+            -144.912109375,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.7626953125,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 5.683333333333334,
+          "globalTime": 5.683333333333334,
+          "expected": 0.96875,
+          "requestIndex": 41,
+          "actualValue": [
+            -184.0625,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.96875,
+          "error": 0
+        },
+        {
+          "u": 0.75,
+          "time": 5.741666666666666,
+          "globalTime": 5.741666666666666,
+          "expected": 0.9990234375,
+          "requestIndex": 42,
+          "actualValue": [
+            -189.814453125,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.9990234375,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 5.8,
+          "globalTime": 5.8,
+          "expected": 1,
+          "requestIndex": 43,
+          "actualValue": [
+            -190,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 0,
+      "pass": true
+    },
+    {
+      "name": "type-return",
+      "comp": 330,
+      "layer": "C02_TYPE_RECOIL_CTRL",
+      "property": [
+        "Transform",
+        "Position"
+      ],
+      "frames": [
+        174,
+        210
+      ],
+      "curve": "easeOutBack",
+      "start": -190,
+      "end": 0,
+      "axis": 0,
+      "localOffset": 0,
+      "samples": [
+        {
+          "u": 0,
+          "time": 5.8,
+          "globalTime": 5.8,
+          "expected": 2.220446049250313e-16,
+          "requestIndex": 44,
+          "actualValue": [
+            -190,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 2.220446049250313e-16
+        },
+        {
+          "u": 0.25,
+          "time": 6.1,
+          "globalTime": 6.1,
+          "expected": 0.8174096875000002,
+          "requestIndex": 45,
+          "actualValue": [
+            -34.6921593750001,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.8174096874999994,
+          "error": 7.771561172376096e-16
+        },
+        {
+          "u": 0.5,
+          "time": 6.4,
+          "globalTime": 6.4,
+          "expected": 1.0876975,
+          "requestIndex": 46,
+          "actualValue": [
+            16.662525,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0876975,
+          "error": 0
+        },
+        {
+          "u": 0.5801025079151212,
+          "time": 6.496123009498145,
+          "globalTime": 6.496123009498145,
+          "expected": 1.100004070842896,
+          "requestIndex": 47,
+          "actualValue": [
+            19.0007734577163,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.1000040708300858,
+          "error": 1.2810197347334906e-11
+        },
+        {
+          "u": 0.75,
+          "time": 6.7,
+          "globalTime": 6.7,
+          "expected": 1.0641365625,
+          "requestIndex": 48,
+          "actualValue": [
+            12.185946875,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1.0641365625,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 7,
+          "globalTime": 7,
+          "expected": 1,
+          "requestIndex": 49,
+          "actualValue": [
+            0,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 1.2810197347334906e-11,
+      "pass": true
+    },
+    {
+      "name": "ipad-enter",
+      "comp": 356,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "Transform",
+        "Position"
+      ],
+      "frames": [
+        155,
+        167
+      ],
+      "curve": "easeInQuad",
+      "start": 65,
+      "end": -17.5,
+      "axis": 0,
+      "localOffset": 4.1,
+      "samples": [
+        {
+          "u": 0,
+          "time": 1.0666666666666673,
+          "globalTime": 5.166666666666667,
+          "expected": 0,
+          "requestIndex": 50,
+          "actualValue": [
+            65,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 0
+        },
+        {
+          "u": 0.25,
+          "time": 1.166666666666667,
+          "globalTime": 5.266666666666667,
+          "expected": 0.0625,
+          "requestIndex": 51,
+          "actualValue": [
+            59.84375,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.0625,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 1.2666666666666666,
+          "globalTime": 5.366666666666666,
+          "expected": 0.25,
+          "requestIndex": 52,
+          "actualValue": [
+            44.3750000000001,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.2499999999999988,
+          "error": 1.1934897514720433e-15
+        },
+        {
+          "u": 0.75,
+          "time": 1.3666666666666671,
+          "globalTime": 5.466666666666667,
+          "expected": 0.5625,
+          "requestIndex": 53,
+          "actualValue": [
+            18.5937500000001,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.5624999999999988,
+          "error": 1.2212453270876722e-15
+        },
+        {
+          "u": 1,
+          "time": 1.4666666666666668,
+          "globalTime": 5.566666666666666,
+          "expected": 1,
+          "requestIndex": 54,
+          "actualValue": [
+            -17.4999999999999,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.9999999999999988,
+          "error": 1.2212453270876722e-15
+        }
+      ],
+      "maxNormalizedError": 1.2212453270876722e-15,
+      "pass": true
+    },
+    {
+      "name": "ipad-contact-advance",
+      "comp": 356,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "Transform",
+        "Position"
+      ],
+      "frames": [
+        167,
+        174
+      ],
+      "curve": "easeOutQuint",
+      "start": -17.5,
+      "end": -32.5,
+      "axis": 0,
+      "localOffset": 4.1,
+      "samples": [
+        {
+          "u": 0,
+          "time": 1.4666666666666668,
+          "globalTime": 5.566666666666666,
+          "expected": 0,
+          "requestIndex": 55,
+          "actualValue": [
+            -17.4999999999999,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": -6.631732200427602e-15,
+          "error": 6.631732200427602e-15
+        },
+        {
+          "u": 0.25,
+          "time": 1.5250000000000004,
+          "globalTime": 5.625,
+          "expected": 0.7626953125,
+          "requestIndex": 56,
+          "actualValue": [
+            -28.9404296875,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.7626953125,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 1.583333333333334,
+          "globalTime": 5.683333333333334,
+          "expected": 0.96875,
+          "requestIndex": 57,
+          "actualValue": [
+            -32.03125,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.96875,
+          "error": 0
+        },
+        {
+          "u": 0.75,
+          "time": 1.6416666666666666,
+          "globalTime": 5.741666666666666,
+          "expected": 0.9990234375,
+          "requestIndex": 58,
+          "actualValue": [
+            -32.4853515625,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.9990234375,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 1.7000000000000002,
+          "globalTime": 5.8,
+          "expected": 1,
+          "requestIndex": 59,
+          "actualValue": [
+            -32.5,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 6.631732200427602e-15,
+      "pass": true
+    },
+    {
+      "name": "ipad-retreat",
+      "comp": 356,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "Transform",
+        "Position"
+      ],
+      "frames": [
+        174,
+        214
+      ],
+      "curve": "easeOutCubic",
+      "start": -32.5,
+      "end": 0,
+      "axis": 0,
+      "localOffset": 4.1,
+      "samples": [
+        {
+          "u": 0,
+          "time": 1.7000000000000002,
+          "globalTime": 5.8,
+          "expected": 0,
+          "requestIndex": 60,
+          "actualValue": [
+            -32.5,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 0
+        },
+        {
+          "u": 0.25,
+          "time": 2.033333333333334,
+          "globalTime": 6.133333333333334,
+          "expected": 0.578125,
+          "requestIndex": 61,
+          "actualValue": [
+            -13.7109375,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.578125,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 2.366666666666667,
+          "globalTime": 6.466666666666667,
+          "expected": 0.875,
+          "requestIndex": 62,
+          "actualValue": [
+            -4.06250000000001,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.8749999999999997,
+          "error": 3.3306690738754696e-16
+        },
+        {
+          "u": 0.75,
+          "time": 2.7,
+          "globalTime": 6.8,
+          "expected": 0.984375,
+          "requestIndex": 63,
+          "actualValue": [
+            -0.5078125,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 0.984375,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 3.033333333333334,
+          "globalTime": 7.133333333333334,
+          "expected": 1,
+          "requestIndex": 64,
+          "actualValue": [
+            0,
+            0,
+            0
+          ],
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 3.3306690738754696e-16,
+      "pass": true
+    },
+    {
+      "name": "ipad-real-y-rotation",
+      "comp": 356,
+      "layer": "DEVICE_iPad_VIEW",
+      "property": [
+        "Transform",
+        "Y Rotation"
+      ],
+      "frames": [
+        174,
+        214
+      ],
+      "curve": "easeOutCubic",
+      "start": 0,
+      "end": -30,
+      "axis": null,
+      "localOffset": 4.1,
+      "samples": [
+        {
+          "u": 0,
+          "time": 1.7000000000000002,
+          "globalTime": 5.8,
+          "expected": 0,
+          "requestIndex": 65,
+          "actualValue": 0,
+          "hasExpression": true,
+          "actualNormalized": 0,
+          "error": 0
+        },
+        {
+          "u": 0.25,
+          "time": 2.033333333333334,
+          "globalTime": 6.133333333333334,
+          "expected": 0.578125,
+          "requestIndex": 66,
+          "actualValue": -17.34375,
+          "hasExpression": true,
+          "actualNormalized": 0.578125,
+          "error": 0
+        },
+        {
+          "u": 0.5,
+          "time": 2.366666666666667,
+          "globalTime": 6.466666666666667,
+          "expected": 0.875,
+          "requestIndex": 67,
+          "actualValue": -26.25,
+          "hasExpression": true,
+          "actualNormalized": 0.875,
+          "error": 0
+        },
+        {
+          "u": 0.75,
+          "time": 2.7,
+          "globalTime": 6.8,
+          "expected": 0.984375,
+          "requestIndex": 68,
+          "actualValue": -29.53125,
+          "hasExpression": true,
+          "actualNormalized": 0.984375,
+          "error": 0
+        },
+        {
+          "u": 1,
+          "time": 3.033333333333334,
+          "globalTime": 7.133333333333334,
+          "expected": 1,
+          "requestIndex": 69,
+          "actualValue": -30,
+          "hasExpression": true,
+          "actualNormalized": 1,
+          "error": 0
+        }
+      ],
+      "maxNormalizedError": 0,
+      "pass": true
+    }
+  ],
+  "dot": {
+    "curve": "easeInOutQuad",
+    "frames": [
+      51,
+      93
+    ],
+    "samples": [
+      {
+        "u": 0,
+        "time": 1.7,
+        "expected": 0,
+        "requestIndex": 70,
+        "actualValue": [
+          914.548767088626,
+          227.954147337771,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 0.000011339985613552936,
+        "actualArcLengthProgress": 6.237441617704778e-9,
+        "normalizedError": 6.237441617704778e-9
+      },
+      {
+        "u": 0.125,
+        "time": 1.875,
+        "expected": 0.03125,
+        "requestIndex": 71,
+        "actualValue": [
+          874.22358001729,
+          196.54183429741,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 0.000012526898442759968,
+        "actualArcLengthProgress": 0.03125039545390244,
+        "normalizedError": 3.954539024367265e-7
+      },
+      {
+        "u": 0.25,
+        "time": 2.05,
+        "expected": 0.125,
+        "requestIndex": 72,
+        "actualValue": [
+          732.544725889018,
+          140.65511397638,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 0.000009463194850690539,
+        "actualArcLengthProgress": 0.1250006911596581,
+        "normalizedError": 6.91159658089413e-7
+      },
+      {
+        "u": 0.375,
+        "time": 2.225,
+        "expected": 0.28125,
+        "requestIndex": 73,
+        "actualValue": [
+          486.941251842774,
+          189.360366622081,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 0.000012800927840292486,
+        "actualArcLengthProgress": 0.281250389178464,
+        "normalizedError": 3.891784640108753e-7
+      },
+      {
+        "u": 0.5,
+        "time": 2.4,
+        "expected": 0.5,
+        "requestIndex": 74,
+        "actualValue": [
+          317.054504394531,
+          487.752075195312,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 0,
+        "actualArcLengthProgress": 0.5000000175212237,
+        "normalizedError": 1.752122369413911e-8
+      },
+      {
+        "u": 0.625,
+        "time": 2.575,
+        "expected": 0.71875,
+        "requestIndex": 75,
+        "actualValue": [
+          476.425926500957,
+          791.89215783842,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 3.883485407196358e-7,
+        "actualArcLengthProgress": 0.7187509856465157,
+        "normalizedError": 9.856465157387362e-7
+      },
+      {
+        "u": 0.75,
+        "time": 2.75,
+        "expected": 0.875,
+        "requestIndex": 76,
+        "actualValue": [
+          720.180358468203,
+          849.13762426466,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 5.026463566995531e-8,
+        "actualArcLengthProgress": 0.8750006876537888,
+        "normalizedError": 6.876537888000911e-7
+      },
+      {
+        "u": 0.875,
+        "time": 2.925,
+        "expected": 0.96875,
+        "requestIndex": 77,
+        "actualValue": [
+          863.723002319424,
+          798.228558841136,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 3.8797676947221535e-7,
+        "actualArcLengthProgress": 0.9687509868736949,
+        "normalizedError": 9.868736948748236e-7
+      },
+      {
+        "u": 1,
+        "time": 3.1,
+        "expected": 1,
+        "requestIndex": 78,
+        "actualValue": [
+          905.117980957031,
+          768.243896484375,
+          0
+        ],
+        "hasExpression": true,
+        "pathDistancePixels": 0,
+        "actualArcLengthProgress": 1,
+        "normalizedError": 0
+      }
+    ],
+    "totalArcLengthPixels": 1637.0831245397005,
+    "geometryTolerancePixels": 0.1,
+    "maxPathDistancePixels": 0.000012800927840292486,
+    "maxNormalizedError": 9.868736948748236e-7,
+    "pass": true
+  },
+  "allPassed": true
+}
