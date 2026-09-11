@@ -46,7 +46,7 @@
 | iPad 영상 재질 | [RESULT](../../generated-images/titan-ae-two-cuts-20260911-114818/ae-ipad-video-screen-test-v001/RESULT.ko.md) | 정면·사선·뒷면, 재열기, 기기 단독/전체 MP4 |
 | 두 씬 8초 v004 | [RESULT](../../generated-images/titan-ae-two-cuts-20260911-114818/two-scene-motion-test-v004/ae-output/RESULT.ko.md) | review-01/02, TIMELINE, VISUAL-REVIEW, USER-ACCEPTANCE |
 | 첫 5.7초 본 제작 | [RESULT](../../generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/RESULT.ko.md) | actual-timeline, preset-usage, verification, QA, 00–17 실행 기록 |
-| 현재 06/07/08 확장 | [최신 지시서](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/WORK-INSTRUCTIONS.ko.md) | source-manifest, timeline-plan, 번호 정정·재개 기록, 진행 중 ae-output-v002 |
+| 최신 06/07/08 확장 | [10.5초 결과 보고](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/RESULT.ko.md) | 최신 지시서, source-manifest, 번호 정정·재개 기록, actual-timeline, verification, preset-usage, AEP·MP4·4종 전환 시트 |
 
 생성된 guide·reference 이미지와 실제 AE 렌더를 구분하십시오. `qa`에는 실패 상태·중간 비교·최종 검사 자료가 함께 있으며, 해당 보고서가 어느 파일을 최종으로 판정했는지 확인해야 합니다. 이름에 `PRESERVED`가 있는 AEP는 원본 보존용이며 자동으로 제작 기준으로 선택하지 않습니다.
 

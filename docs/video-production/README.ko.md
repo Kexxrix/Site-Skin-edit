@@ -19,7 +19,7 @@
 | 최신 06·07·08 지시서 | [WORK-INSTRUCTIONS](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/WORK-INSTRUCTIONS.ko.md) | 제작 실행의 구체 기준 |
 | 프레임별 계획 | [timeline-plan.json](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/timeline-plan.json) | 공식 마커 매핑과 레거시 내부 키 설명 포함 |
 | 일시 정지 이후 재개 | [execution-status.json](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/execution-status.json), [재개 전달 기록](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/resume-dispatch.json) | 이전 중단 기록보다 최신 지시가 우선 |
-| 현재 작업 중 자료 | [ae-output-v002](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002) | 백업 시점의 저장본. 최종 완료·검수와 구분 |
+| 최신 10.5초 검토본 | [v002 결과 보고](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/RESULT.ko.md) | 06/07/08 추가 제작·기술 검증 완료. 사용자 최종 모션·미감 승인 대기 |
 | 실제 모델 | [device-models](../../device-models/README.ko.md) | 관리된 iPhone17·iPad10 원본·내보내기·해시 |
 
 ## 상태를 읽는 규칙
@@ -31,3 +31,5 @@
 - **진행 중:** 현재 저장된 AEP와 스크립트가 있어도 완성 렌더·QA 보고가 없다면 완료로 취급하지 않습니다.
 
 새 작업은 이 저장소를 읽고 분석·연구 결과를 작성하는 역할입니다. 제작 변경은 원래 작업에 의견을 되돌리고 최신 사용자 지시와 합의한 뒤 수행합니다. 백업 과정은 AE 프로젝트를 열거나 재저장하지 않습니다.
+
+백업 준비 중에는 v002가 진행 중이었지만 업로드 과정에서 완료 보고가 도착했습니다. 최신 결과 보고와 검증 파일까지 추가 반영했습니다. 지시 전달 당시의 `execution-status.json`은 실행 이력이고, 제작 결과는 그 이후 작성된 v002 `RESULT.ko.md`와 `verification.json`을 우선 확인하십시오.

@@ -1,5 +1,5 @@
 {
-  "recorded_at_utc": "2026-09-11T11:54:04.294490+00:00",
+  "recorded_at_utc": "2026-09-11T11:59:06.163451+00:00",
   "requested_repository": "https://github.com/Kexxrix/Site-Skin-edit",
   "source_workspace": "E:/codexwork/Site-Skin-edit",
   "backup_checkout": "E:/codexwork/Site-Skin-edit-backups/20260911-203900/repository",
@@ -53,8 +53,25 @@
     "review_target_frames": 315,
     "review_target_duration_seconds": 10.5,
     "fps": 30,
-    "status_at_snapshot": "in_progress_final_approval_not_claimed",
-    "native_outputs_included_as_saved_disk_files": true
+    "status_at_snapshot": "completed",
+    "native_outputs_included_as_saved_disk_files": true,
+    "technical_verification": "passed within documented scope",
+    "user_aesthetic_approval": "pending",
+    "site_adoption": "not performed",
+    "verification_document": "generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/verification.json",
+    "deliverables": {
+      "aep": {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+        "bytes": 2593413,
+        "sha256": "3ad3a9441b7b740ce350d5568de4aeeec83fe354a2eebb836b470ce0ce641e5f"
+      },
+      "mp4": {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Review-v002.mp4",
+        "bytes": 25345120,
+        "sha256": "7e44a13bcedc938cc1430bbf58a6b7f89e42974fb8d294e6e717a5d4884a70b0"
+      }
+    },
+    "verification_scope": "Producer report and archived QA; backup operator independently matched AEP/MP4 byte sizes and SHA-256, without repeating AE/render/playback tests."
   },
   "limits": [
     "Not an atomic snapshot of all files at one instant.",

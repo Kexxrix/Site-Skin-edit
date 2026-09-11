@@ -1,0 +1,419 @@
+{
+  "checked_at": "2026-09-11T11:54:46.270Z",
+  "production": "completed",
+  "technical_verification": "passed within documented scope",
+  "user_aesthetic_approval": "pending",
+  "site_adoption": "not performed",
+  "deliverables": {
+    "aep": {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Production-v002.aep",
+      "bytes": 2593413,
+      "sha256": "3ad3a9441b7b740ce350d5568de4aeeec83fe354a2eebb836b470ce0ce641e5f"
+    },
+    "mp4": {
+      "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/TITAN-Review-v002.mp4",
+      "bytes": 25345120,
+      "sha256": "7e44a13bcedc938cc1430bbf58a6b7f89e42974fb8d294e6e717a5d4884a70b0"
+    }
+  },
+  "media": {
+    "passed": true,
+    "width": 2400,
+    "height": 1024,
+    "codec": "h264",
+    "fps": "30/1",
+    "declared_frames": 315,
+    "decoded_frames": 315,
+    "duration": 10.5,
+    "audio_stream_count": 0,
+    "whole_file_decode_exit_code": 0,
+    "evidence": "qa/final-media-probe.json"
+  },
+  "ae": {
+    "version": "27.0x43 (Beta)",
+    "saved_and_reopened": true,
+    "master": {
+      "width": 2400,
+      "height": 1024,
+      "fps": 30,
+      "duration": 20,
+      "workAreaStart": 0,
+      "workAreaDuration": 10.5,
+      "shutterAngle": 120,
+      "shutterPhase": -60
+    },
+    "missing_footage": 0,
+    "missing_fonts": 0,
+    "native_frame_count": 42,
+    "property_time_evaluation_count": 91,
+    "expression_check_scope": "91 requested property/time evaluations succeeded. The connector does not expose every expressionError field; protected authored-expression comparison, native render checks and explicit sampled values are separate evidence.",
+    "serialized_project_evidence": "qa/final-native-project.json",
+    "note": "Serialized composition contents were exported after reopen and before final render-queue item addition; only the render queue changed afterward."
+  },
+  "preservation": {
+    "input_count": 19,
+    "all_input_bytes_and_sha256_unchanged": true,
+    "inputs": [
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Production-Scenes01-03-v001.aep",
+        "expected_bytes": 846583,
+        "expected_sha256": "7e44100ab29f9356942e9bace32e9dd3f7721280356319c64ed9a2383d9152f7",
+        "bytes": 846583,
+        "sha256": "7e44100ab29f9356942e9bace32e9dd3f7721280356319c64ed9a2383d9152f7",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/TITAN-Scenes01-03-v001.mp4",
+        "expected_bytes": 13196761,
+        "expected_sha256": "4d0b6baeecfb7239ce2ba77634552c71db88f7966ef765b0e708d97bc3863b66",
+        "bytes": 13196761,
+        "sha256": "4d0b6baeecfb7239ce2ba77634552c71db88f7966ef765b0e708d97bc3863b66",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/RESULT.ko.md",
+        "expected_bytes": 8335,
+        "expected_sha256": "8d98f0354451c11addb013b5987cd441c20f64ab3285802519ad39ee25632973",
+        "bytes": 8335,
+        "sha256": "8d98f0354451c11addb013b5987cd441c20f64ab3285802519ad39ee25632973",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/actual-timeline.json",
+        "expected_bytes": 6880,
+        "expected_sha256": "58e22cb927a9827621f41e4e7529612ba0084fbd5625abd17887209762409518",
+        "bytes": 6880,
+        "sha256": "58e22cb927a9827621f41e4e7529612ba0084fbd5625abd17887209762409518",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/MOTION-DESIGN.ko.md",
+        "expected_bytes": 10873,
+        "expected_sha256": "2f33c98eba9e276180f630f2739051e36cbcbb0adb93514d58698d54abb89e04",
+        "bytes": 10873,
+        "sha256": "2f33c98eba9e276180f630f2739051e36cbcbb0adb93514d58698d54abb89e04",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/motion-plan.json",
+        "expected_bytes": 21495,
+        "expected_sha256": "5f31f02985dcd200f073cee4087ef6a585e25ccc2d3edc8247db74f36a29ca60",
+        "bytes": 21495,
+        "sha256": "5f31f02985dcd200f073cee4087ef6a585e25ccc2d3edc8247db74f36a29ca60",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/results/04-sportsbook-no-repeated-arc-v002.png",
+        "expected_bytes": 1162284,
+        "expected_sha256": "2c8094455db1bb17d7f03b894ee9b05a7ea650acbc2f799393a8aae6fa7bcd44",
+        "bytes": 1162284,
+        "sha256": "2c8094455db1bb17d7f03b894ee9b05a7ea650acbc2f799393a8aae6fa7bcd44",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/results/05-operations-refined-snap.png",
+        "expected_bytes": 1170918,
+        "expected_sha256": "6db204f1a54fd79f3461f2cb16066305d9492e81fd176eba6b0f15a7db7fc9d5",
+        "bytes": 1170918,
+        "sha256": "6db204f1a54fd79f3461f2cb16066305d9492e81fd176eba6b0f15a7db7fc9d5",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-scenes-04-06-guides-20260911-192815/results/06-bets-auto-blocked-stop.png",
+        "expected_bytes": 1129032,
+        "expected_sha256": "c5037e1dc999fa6a8180ddc2770926a50e97753fb45c208d9a1ef7c676b7de87",
+        "bytes": 1129032,
+        "sha256": "c5037e1dc999fa6a8180ddc2770926a50e97753fb45c208d9a1ef7c676b7de87",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/sources/feedback01.png",
+        "expected_bytes": 5888770,
+        "expected_sha256": "eedc63d276e852ea55766fe97356e150e24c8497dbdb482699db3b9412d431e9",
+        "bytes": 5888770,
+        "sha256": "eedc63d276e852ea55766fe97356e150e24c8497dbdb482699db3b9412d431e9",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/sources/feedback03-enlarged-scene06-overlay.png",
+        "expected_bytes": 767708,
+        "expected_sha256": "5c25907283fed5dbe2bd2bc3ca07e0fb63e89bbf777a65ba87d5314046b52e21",
+        "bytes": 767708,
+        "sha256": "5c25907283fed5dbe2bd2bc3ca07e0fb63e89bbf777a65ba87d5314046b52e21",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/device-models/iPhone17/v001/exports/iPhone17.glb",
+        "expected_bytes": 1080912,
+        "expected_sha256": "9bbe83574181e3fdf7185a2e6d542a11a62364078d19fa4bac70c492dcf5a1e5",
+        "bytes": 1080912,
+        "sha256": "9bbe83574181e3fdf7185a2e6d542a11a62364078d19fa4bac70c492dcf5a1e5",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/device-models/iPhone17/v001/source/iPhone17.blend",
+        "expected_bytes": 289820,
+        "expected_sha256": "1bec4222969b58f30ccf672451c981fb7ac3068170f172e8fca058c74e958c4c",
+        "bytes": 289820,
+        "sha256": "1bec4222969b58f30ccf672451c981fb7ac3068170f172e8fca058c74e958c4c",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/device-models/iPhone17/v001/manifest.json",
+        "expected_bytes": 2294,
+        "expected_sha256": "a070ca7bdcc05d81e53ebb2130b202e35ebadacbb38a387649b02dd611c5be05",
+        "bytes": 2294,
+        "sha256": "a070ca7bdcc05d81e53ebb2130b202e35ebadacbb38a387649b02dd611c5be05",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/TEMP/아이폰.mp4",
+        "expected_bytes": 1628145,
+        "expected_sha256": "7fa79ea9f754b58033ed1ec48dd0035abff701609d8312a866bba27a27f7b99f",
+        "bytes": 1628145,
+        "sha256": "7fa79ea9f754b58033ed1ec48dd0035abff701609d8312a866bba27a27f7b99f",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/TEMP/아이패드.mp4",
+        "expected_bytes": 37848077,
+        "expected_sha256": "2325be94b6e1e857824d219a2bf9b6cbb14c4b447658ce34bf79a9ecbd70e6f0",
+        "bytes": 37848077,
+        "sha256": "2325be94b6e1e857824d219a2bf9b6cbb14c4b447658ce34bf79a9ecbd70e6f0",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/device-models/iPad10/v001/exports/iPad10.glb",
+        "expected_bytes": 1714248,
+        "expected_sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+        "bytes": 1714248,
+        "sha256": "00a76f4a442cd98cd67c588786ed2d56236d9283ba3c704d410c9bd3d41dec8f",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-feedback01-motion-guides-20260911-195303/qa/actual-scene03-F170.png",
+        "expected_bytes": 1070729,
+        "expected_sha256": "c55da88ea10677b23c30f95c05281a6f3d6c46f67dc376d551ebf576ccae655f",
+        "bytes": 1070729,
+        "sha256": "c55da88ea10677b23c30f95c05281a6f3d6c46f67dc376d551ebf576ccae655f",
+        "unchanged": true
+      },
+      {
+        "path": "E:/codexwork/Site-Skin-edit/generated-images/titan-three-scenes-motion-ref-20260911-174559/ae-production-brief-v001/ae-output-v001/qa/final-native-project.json",
+        "expected_bytes": 539250,
+        "expected_sha256": "25e10a40aba5bace52f3dd956d70c3dd3d145578465c1d74d8eacedfe16b0e67",
+        "bytes": 539250,
+        "sha256": "25e10a40aba5bace52f3dd956d70c3dd3d145578465c1d74d8eacedfe16b0e67",
+        "unchanged": true
+      }
+    ],
+    "original_markers_unchanged": true,
+    "protected_frames": [
+      {
+        "frame": 0,
+        "identical": true,
+        "changed_channels": 0,
+        "mae": 0,
+        "max_channel_difference": 0,
+        "difference_bbox": null
+      },
+      {
+        "frame": 39,
+        "identical": true,
+        "changed_channels": 0,
+        "mae": 0,
+        "max_channel_difference": 0,
+        "difference_bbox": null
+      },
+      {
+        "frame": 70,
+        "identical": true,
+        "changed_channels": 0,
+        "mae": 0,
+        "max_channel_difference": 0,
+        "difference_bbox": null
+      },
+      {
+        "frame": 100,
+        "identical": true,
+        "changed_channels": 0,
+        "mae": 0,
+        "max_channel_difference": 0,
+        "difference_bbox": null
+      },
+      {
+        "frame": 114,
+        "identical": false,
+        "changed_channels": 81,
+        "mae": 0.00005628797743055556,
+        "max_channel_difference": 13,
+        "difference_bbox": [
+          1089,
+          387,
+          1396,
+          747
+        ]
+      },
+      {
+        "frame": 124,
+        "identical": false,
+        "changed_channels": 336,
+        "mae": 0.00020263671875,
+        "max_channel_difference": 15,
+        "difference_bbox": [
+          726,
+          175,
+          1686,
+          884
+        ]
+      },
+      {
+        "frame": 135,
+        "identical": false,
+        "changed_channels": 247,
+        "mae": 0.00014539930555555554,
+        "max_channel_difference": 15,
+        "difference_bbox": [
+          625,
+          116,
+          1206,
+          907
+        ]
+      },
+      {
+        "frame": 155,
+        "identical": false,
+        "changed_channels": 273,
+        "mae": 0.00017808702256944445,
+        "max_channel_difference": 33,
+        "difference_bbox": [
+          625,
+          115,
+          1774,
+          908
+        ]
+      },
+      {
+        "frame": 163,
+        "identical": false,
+        "changed_channels": 273,
+        "mae": 0.0001691351996527778,
+        "max_channel_difference": 33,
+        "difference_bbox": [
+          631,
+          115,
+          1774,
+          899
+        ]
+      }
+    ],
+    "authored_original_item_diff_count": 31,
+    "authored_diff_review": "All 31 differences are allowed CAT/shared-line parenting and out-points, F164+ endpoint extension, and F220+ dot-to-ribbon sizing. Existing non-master items have no authored differences.",
+    "native_pixel_note": "F0/39/70/100 are exact. F114/124/135/155/163 have only 81-336 changed RGB channels, MAE <= 0.000203 on the iPad area. This is not a claim of bit-identical protected 3D rendering. No unexplained visible change was found; tiny differences are consistent with native 3D rendering variability.",
+    "historical_aep_note": "The older report hash differed from the supplied current file. Current disk, preserved unsaved snapshot and historical serialized authored content had no differences after excluding time-evaluated animated values. Binary change cause is not proven."
+  },
+  "mask": [
+    {
+      "frame": 182,
+      "outside_mask": {
+        "identical": true,
+        "changed_channels": 0,
+        "mae": 0,
+        "max_channel_difference": 0,
+        "difference_bbox": null
+      },
+      "remaining_bright_red_pixels": 0
+    },
+    {
+      "frame": 219,
+      "outside_mask": {
+        "identical": true,
+        "changed_channels": 0,
+        "mae": 0,
+        "max_channel_difference": 0,
+        "difference_bbox": null
+      },
+      "remaining_bright_red_pixels": 0
+    }
+  ],
+  "rail_hold_pixel_comparisons": [
+    {
+      "compared_to_frame": 279,
+      "frame": 280,
+      "identical": true,
+      "changed_channels": 0,
+      "mae": 0,
+      "max_channel_difference": 0,
+      "difference_bbox": null
+    },
+    {
+      "compared_to_frame": 279,
+      "frame": 287,
+      "identical": true,
+      "changed_channels": 0,
+      "mae": 0,
+      "max_channel_difference": 0,
+      "difference_bbox": null
+    },
+    {
+      "compared_to_frame": 279,
+      "frame": 314,
+      "identical": true,
+      "changed_channels": 0,
+      "mae": 0,
+      "max_channel_difference": 0,
+      "difference_bbox": null
+    }
+  ],
+  "result_hold_287_to_314": {
+    "identical": true,
+    "changed_channels": 0,
+    "mae": 0,
+    "max_channel_difference": 0,
+    "difference_bbox": null
+  },
+  "playback": {
+    "method": "Local HTML video player, normal-speed replay button, start-to-ended without seek or rate adjustment",
+    "url": "http://127.0.0.1:49246/",
+    "observed_times_seconds": [
+      0.001,
+      3.99,
+      8.778,
+      10.5
+    ],
+    "ended": true,
+    "paused_at_end": true,
+    "playback_rate": 1,
+    "duration_seconds": 10.5,
+    "current_time_at_end": 10.5,
+    "video_width": 2400,
+    "video_height": 1024,
+    "media_error": null,
+    "visual_review": "Boundary contact sheets and native frames also inspected; this is not user aesthetic approval."
+  },
+  "visual_review": {
+    "contact_sheets": [
+      "qa/cat_to_sportsbook-sheet.png",
+      "qa/sportsbook_to_operations-sheet.png",
+      "qa/whole_scene_overlay-sheet.png",
+      "qa/rails_stop_and_result-sheet.png"
+    ],
+    "reviewed": true,
+    "findings": [
+      "Shared endpoint remains continuous across the CAT-to-Sportsbook scroll.",
+      "Actual phone screen changes between F182 and F219; red recording dot is covered.",
+      "Operations foreground is readable in its short F234-250 hold; pace remains a user-review decision.",
+      "The previous scene stays full size while the entire incoming scene zooms from 600% to 100%; F252 and F260 are sharp and intermediate motion is blurred.",
+      "Both rail pixel regions hold from F279; the complete F287/F314 result images are RGB-identical."
+    ]
+  },
+  "departures_and_limitations": [
+    "Anchor y205 was recalculated to y251 for the actual reverse-phased native cell as permitted by the brief; initial focused tile is ivory.",
+    "Preset timings were customized; refined uses layer opacity because its inactive preset animator opacity was not writable.",
+    "aftr wordReveal was adapted to separate native word layers and Amount envelopes rather than copied as an exact Offset sweep.",
+    "Phone source is only 332x720; the model physical camera island still overlays the source status-island boundary. No AI upscale or source/UI reconstruction was done.",
+    "No exhaustive connector expressionError enumeration is available; 91 scoped property/time evaluations, structural checks and actual renders are the evidence.",
+    "The AEP uses local source paths, not a collected portable project.",
+    "The planned F315-600 tail is intentionally not built."
+  ]
+}

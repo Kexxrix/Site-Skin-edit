@@ -112,10 +112,22 @@ review-01에서 review-02로 가면서 첫 장면의 iPhone을 숨기고 iPad의
 
 근거: [최신 모션 설계](../../generated-images/titan-feedback01-motion-guides-20260911-195303/MOTION-DESIGN.ko.md), [실행 지시서](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/WORK-INSTRUCTIONS.ko.md), [번호 정정](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/numbering-correction.json), [재개 전달](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/resume-dispatch.json).
 
-## 11. 백업 시점의 진행 중 작업
+## 11. 백업 준비 중의 진행 상황
 
-최신 AEP의 바이트가 과거 결과 보고와 다르다는 것을 발견해 원본 덮어쓰기나 원인 추정을 하지 않고 현재본·미저장본·네이티브 기준 상태를 보존하도록 지시했습니다. 새로운 `ae-output-v002`에서 06 실제 iPhone, 07 타이포·패널, 08 전체 오버레이·릴 제작을 이어가고 있습니다.
+최신 AEP의 바이트가 과거 결과 보고와 다르다는 것을 발견해 원본 덮어쓰기나 원인 추정을 하지 않고 현재본·미저장본·네이티브 기준 상태를 보존하도록 지시했습니다. 새로운 `ae-output-v002`에서 06 실제 iPhone, 07 타이포·패널, 08 전체 오버레이·릴 제작을 이어갔습니다.
 
 담당 작업은 iPhone 화면 재질의 마지막 선택을 사용자가 완료했고, F182/F219와 저장·재열기 후 연결을 확인했다고 보고했습니다. 후속 사용자 지시로 `SCREEN_iPhone17_VIDEO_CONTAIN` 내부의 작은 검정 원형 마스크로 녹화 붉은 점을 숨겼으며 원본 영상은 보존했다고 보고했습니다. 이는 담당 작업의 진행 보고로 확인한 내용입니다. 해당 샘플 검사가 전체 10.5초 최종 렌더 검증을 대체하지 않습니다.
 
 백업용 체크아웃은 현재 AE 제작 폴더와 분리합니다. 파일을 읽어 복사하고 전후 해시를 비교하며 AE를 열거나 재저장하지 않습니다. 새 GPT 작업의 감사·연구는 [인계문](AUDIT-HANDOFF.ko.md)에 따라 진행할 수 있고, 제안은 원래 작업으로 되돌립니다. 제작 중 파일의 최종 상태는 [CURRENT-STATE](CURRENT-STATE.ko.md)와 백업 manifest를 함께 읽어야 합니다.
+
+## 12. 업로드 중 수신한 v002 완료 보고
+
+06·07·08 추가 제작과 315프레임/10.500초 검토 출력이 완료됐습니다. 담당 작업의 [최종 결과](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/RESULT.ko.md), [실제 타임라인](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/actual-timeline.json), [검증](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/verification.json), [프리셋 사용](../../generated-images/titan-feedback01-motion-guides-20260911-195303/ae-production-brief-v001/ae-output-v002/preset-usage.json)과 전환 시트를 추가 보존했습니다. 백업 작업에서는 현재 AEP·MP4의 실제 SHA-256이 완료 보고와 일치함을 확인했습니다. 정상 속도 재생이나 AE 렌더 검사를 이 작업에서 다시 수행했다고 주장하지 않습니다.
+
+실제 08 레일 셀 위치에 맞춰 Anchor는 초기 (210,205)에서 (210,251)로 재계산했습니다. 07 컨테이너는 고정하고 08 전체를 600→100%로 복원하는 사용자 의도는 유지했습니다. 새 오버레이/레일 컴프에 Shutter Phase 0을 적용해 F279 첫 정지 프레임에 이전 모션블러가 남지 않도록 했으며 기존 마스터 설정은 보존했습니다. 실제 레일 이동량은 5×14 + 6×36 + 6×60 = 646px입니다.
+
+보고서는 F279와 F280/F287/F314 양 레일 영역 차이 0, F287/F314 완성 화면 전체 RGB 차이 0을 기록합니다. 입력 19개 해시와 기존 마커 16개를 보존했고, 보호 프레임 4개는 픽셀 일치했습니다. iPad가 포함된 나머지 5개 보호 프레임에는 극소 3D 픽셀 차이가 있어 전체 비트 동일성으로 바꾸어 기록하지 않습니다. 지정 속성/시간 평가 91개는 성공했지만 전수 expressionError 열거는 도구가 제공하지 않습니다.
+
+후속 제작의 aftr wordReveal 사용은 공개 속성 구성을 바탕으로 한 네이티브 이식·조정입니다. aftr 패널을 설치했거나 원래 Offset 동작을 그대로 사용했다고 주장하지 않습니다. 실제 Adobe 프리셋 적용, 단축·조정과 구현 차이를 프리셋 원장에 보존했습니다.
+
+최신 상태는 **10.5초 구간 제작·범위 내 기술 검증 완료 / 사용자 최종 모션·미감 승인 대기**입니다. 07 읽기 구간·08 속도감, 아이폰 원본의 작은 UI 화질과 카메라 섬 경계 일부 겹침이 남은 검토 항목입니다. 전체 마스터 후속 9.5초와 사이트 채택은 수행하지 않았습니다. 최초 백업 커밋 이후 도착한 이 결과·검증·문서 갱신을 추가 커밋으로 보존합니다.
