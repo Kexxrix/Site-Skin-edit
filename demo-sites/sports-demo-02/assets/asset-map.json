@@ -1,0 +1,478 @@
+{
+  "schema_version": 1,
+  "package": "SIRIUS_MVP_R1",
+  "prepared_on": "2026-09-18",
+  "artifact_type": "implementation_handoff_not_application_source",
+  "site_implementation_status": "not_started",
+  "operating_documents": [
+    "AGENTS.md",
+    "STATE.md",
+    "DESIGN_SPEC.md",
+    "DECISIONS.md"
+  ],
+  "image_processing": "Byte-identical copies with safe filenames; no cropping, recoloring, flattening or regeneration.",
+  "branding_notes": {
+    "symbol_placement": "Header: symbol immediately left of wordmark; no sidebar emblem panel.",
+    "wordmark_transparent_bottom_rows": 116,
+    "wordmark_visible_bbox_height": 588,
+    "wordmark_css_rule": "Preserve full visible artwork; original file unchanged. A 1741:588 CSS viewport can exclude only the fully transparent bottom rows."
+  },
+  "display_defaults_not_approved_dimensions": {
+    "header_symbol_px": [
+      36,
+      36
+    ],
+    "header_wordmark_visible_height_px": 42,
+    "sports_menu_slot_px": [
+      24,
+      24
+    ],
+    "sports_group_slot_px": [
+      20,
+      20
+    ]
+  },
+  "source_dependencies_not_bundled": [
+    {
+      "kind": "latest_app_source",
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-01/site",
+      "action": "Read latest source; clone application into separate SIRIUS project; preserve MERCURY."
+    },
+    {
+      "kind": "collected_team_league_flag_assets_and_metadata",
+      "path": "E:/codexwork/Site-Skin-edit/TEMP/Sports-Images",
+      "action": "Reuse collected assets; package needed files in SIRIUS public assets, not absolute E: URLs."
+    },
+    {
+      "kind": "fixture_and_market_data",
+      "location": "latest MERCURY source / collected sources metadata",
+      "expected_floor_unique_events": 60,
+      "last_observed_displayed_total": 77,
+      "action": "Verify local dataset; preserve current unique fixtures and market IDs."
+    },
+    {
+      "kind": "fonts",
+      "location": "latest MERCURY source",
+      "families": [
+        "Pretendard JP",
+        "Heisei Mincho Std",
+        "Omnigothic",
+        "DIN Condensed"
+      ],
+      "action": "Reuse actual font files/loaders; font-preset.png is a reference only."
+    },
+    {
+      "kind": "right_banner_and_existing_auxiliary_assets",
+      "location": "latest MERCURY source",
+      "action": "Reuse existing source asset; do not assume bundled left-banner photo is the right-banner photo."
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/branding/sirius-symbol.png",
+      "role": "approved_header_symbol_left_of_wordmark",
+      "original_filename": "ChatGPT Image 2026년 9월 18일 오후 12_18_24.png",
+      "bytes": 349237,
+      "sha256": "511d72e507ff9907a74f951ba3a808566f90dee7834885d37f931961e0b84874",
+      "format": "PNG",
+      "width": 640,
+      "height": 640,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        22,
+        16,
+        640,
+        640
+      ],
+      "fully_transparent_pixels": 234640,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "assets/branding/sirius-wordmark.png",
+      "role": "approved_header_wordmark_right_of_symbol",
+      "original_filename": "ChatGPT Image 2026년 9월 18일 오후 12_05_23.png",
+      "bytes": 603611,
+      "sha256": "3f9e53949f5e671a2185580ef77e7673d1bb80b0d76b44caedfffb662aac4825",
+      "format": "PNG",
+      "width": 1741,
+      "height": 704,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        1741,
+        588
+      ],
+      "fully_transparent_pixels": 730485,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "assets/sports-icons/ice-hockey.png",
+      "role": "approved_reused_sport_icon:아이스하키",
+      "original_filename": "image_Sports_[##]_0000_Layer-8.png",
+      "bytes": 82946,
+      "sha256": "c0f799fc91339b44e4a0429ad5c43e94b86636a31552642992afee6a462c8f08",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        254,
+        231
+      ],
+      "fully_transparent_pixels": 39766,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "ice-hockey",
+      "previous_project_filename": "mercury-ice-hockey.png"
+    },
+    {
+      "path": "assets/sports-icons/esports.png",
+      "role": "approved_reused_sport_icon:E스포츠",
+      "original_filename": "image_Sports_[##]_0001_Layer-7.png",
+      "bytes": 75670,
+      "sha256": "6f836f4b7a33b7f7e1d37f72f16b4feac44c5d77e07d3a51fd3aae202a181a5e",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        2,
+        44,
+        254,
+        214
+      ],
+      "fully_transparent_pixels": 38036,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "esports",
+      "previous_project_filename": "mercury-esports.png"
+    },
+    {
+      "path": "assets/sports-icons/american-football.png",
+      "role": "approved_reused_sport_icon:미식축구",
+      "original_filename": "image_Sports_[##]_0002_Layer-6.png",
+      "bytes": 98580,
+      "sha256": "e0f8d80ec2fd68089e116bec0d37e7c284ebd101be445d4494606dd3058a9703",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        10,
+        9,
+        248,
+        256
+      ],
+      "fully_transparent_pixels": 31312,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "american-football",
+      "previous_project_filename": "mercury-american-football.png"
+    },
+    {
+      "path": "assets/sports-icons/tennis.png",
+      "role": "approved_reused_sport_icon:테니스",
+      "original_filename": "image_Sports_[##]_0003_Layer-5.png",
+      "bytes": 135573,
+      "sha256": "2ecefa4b9a2d1f1dc42577225ae4c4644c73b9551db1b8eebfe0c876e4b82574",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        8,
+        256,
+        254
+      ],
+      "fully_transparent_pixels": 18224,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "tennis",
+      "previous_project_filename": "mercury-tennis.png"
+    },
+    {
+      "path": "assets/sports-icons/volleyball.png",
+      "role": "approved_reused_sport_icon:배구",
+      "original_filename": "image_Sports_[##]_0004_Layer-4.png",
+      "bytes": 118865,
+      "sha256": "57d3491922f2e828e2470b95ba614ab9c8458b8942f06e0654a7a097d7548f2a",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        6,
+        8,
+        254,
+        251
+      ],
+      "fully_transparent_pixels": 20321,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "volleyball",
+      "previous_project_filename": "mercury-volleyball.png"
+    },
+    {
+      "path": "assets/sports-icons/baseball.png",
+      "role": "approved_reused_sport_icon:야구",
+      "original_filename": "image_Sports_[##]_0005_Layer-3.png",
+      "bytes": 132507,
+      "sha256": "7c12c667b6c3864e38399f3e8f2749153ed55525ffaceeaae8350e772f1d49b4",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        8,
+        5,
+        251,
+        256
+      ],
+      "fully_transparent_pixels": 18899,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "baseball",
+      "previous_project_filename": "mercury-baseball.png"
+    },
+    {
+      "path": "assets/sports-icons/basketball.png",
+      "role": "approved_reused_sport_icon:농구",
+      "original_filename": "image_Sports_[##]_0006_Layer-2.png",
+      "bytes": 127654,
+      "sha256": "115fdfbf991648a20918aeea3ed65302ef6aded97dbfcbf9fa18daf226ba3afc",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        4,
+        0,
+        256,
+        254
+      ],
+      "fully_transparent_pixels": 19871,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "basketball",
+      "previous_project_filename": "mercury-basketball.png"
+    },
+    {
+      "path": "assets/sports-icons/soccer.png",
+      "role": "approved_reused_sport_icon:축구",
+      "original_filename": "image_Sports_[##]_0007_Layer-1.png",
+      "bytes": 115608,
+      "sha256": "073f109264e5dbdf4b3f09b05f823a6cee69a355ec15ef0fae579b765bce3fad",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        6,
+        8,
+        251,
+        251
+      ],
+      "fully_transparent_pixels": 20535,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "soccer",
+      "previous_project_filename": "mercury-soccer.png"
+    },
+    {
+      "path": "assets/banners/slots-woman.png",
+      "role": "existing_left_banner_photo_fallback_prefer_current_source_asset",
+      "original_filename": "mercury-slots-woman.png",
+      "bytes": 3258365,
+      "sha256": "82957c0e5197bd2d3a2983bd260c8284632507f821251c8b76918dd0b2e600a6",
+      "format": "PNG",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/william-hill-color-reference.png",
+      "role": "primary_palette_material_reference",
+      "original_filename": "572c1758-f154-450e-b2cf-1e5704b2b478.png",
+      "bytes": 618635,
+      "sha256": "3fd7a980a6873f32ed8e5826fed0080cc9d13c7954505bcd907f676caaef16ee",
+      "format": "PNG",
+      "width": 1680,
+      "height": 822,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        1680,
+        822
+      ],
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/asian-market-columns-reference.png",
+      "role": "market_column_reference",
+      "original_filename": "9199722a-f9e2-4da1-b5d5-7b4f5f9db3c4.png",
+      "bytes": 111269,
+      "sha256": "602ef8f73b085ddc95083f774318bacccd2bd10617cb0a43690fcf31a64518d1",
+      "format": "PNG",
+      "width": 1323,
+      "height": 766,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        1323,
+        766
+      ],
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/bwin-layout-reference.png",
+      "role": "highest_priority_central_composition_reference_ignore_jerseys",
+      "original_filename": "2c745fd6-ac23-437f-a145-ea1d702f02f4.png",
+      "bytes": 367606,
+      "sha256": "d17f63166cce88fed6e8dbf52d833c61a0dc47c72f7157da8e845869464c292c",
+      "format": "PNG",
+      "width": 1917,
+      "height": 969,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        1917,
+        969
+      ],
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/mercury-r8-initial-20260918.jpg",
+      "role": "historical_partial_baseline_not_sirius_target",
+      "original_filename": "mercury-r8-initial-20260918.jpg",
+      "bytes": 160201,
+      "sha256": "188a29a3a387ef1cd7f7610c25129593a90f21c94425f4760d21b2587caa7fce",
+      "format": "JPEG",
+      "width": 1363,
+      "height": 936,
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "alpha_bbox_xyxy": null,
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/mercury-r8-left-banner-20260918.jpg",
+      "role": "historical_left_banner_composition",
+      "original_filename": "mercury-r8-left-banner-20260918.jpg",
+      "bytes": 162498,
+      "sha256": "65288fb17a3f681f4722b34c7aa2513f2a13c56433d0ae239909cd414e265fe8",
+      "format": "JPEG",
+      "width": 1363,
+      "height": 936,
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "alpha_bbox_xyxy": null,
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/mercury-r8-right-visible-20260918.jpg",
+      "role": "historical_right_banner_partial_capture",
+      "original_filename": "mercury-r8-right-visible-20260918.jpg",
+      "bytes": 152732,
+      "sha256": "0e70da30f8bf6e4f43d63706871b46a157af46e0f5fd0320c6c7c4a8c4b7486b",
+      "format": "JPEG",
+      "width": 1363,
+      "height": 936,
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "alpha_bbox_xyxy": null,
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/font-preset.png",
+      "role": "font_role_reference_not_font_file",
+      "original_filename": "font-preset.png",
+      "bytes": 19911,
+      "sha256": "8892ea3b6d9814ee20f35b337f7225d2b280bbff9740362abe8065a0cfb7314e",
+      "format": "PNG",
+      "width": 302,
+      "height": 180,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        302,
+        180
+      ],
+      "fully_transparent_pixels": 0,
+      "bytes_unchanged_from_source": true
+    }
+  ]
+}

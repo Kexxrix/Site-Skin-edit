@@ -1,0 +1,86 @@
+[
+  {
+    "disabled": true,
+    "invalid": "true",
+    "message": "숫자로 된 정수 금액만 입력해 주세요.",
+    "potential": "₩ 0",
+    "total": "2.870",
+    "value": "abc"
+  },
+  {
+    "disabled": true,
+    "invalid": "true",
+    "message": "숫자로 된 정수 금액만 입력해 주세요.",
+    "potential": "₩ 0",
+    "total": "2.870",
+    "value": "-1000"
+  },
+  {
+    "disabled": true,
+    "invalid": "true",
+    "message": "숫자로 된 정수 금액만 입력해 주세요.",
+    "potential": "₩ 0",
+    "total": "2.870",
+    "value": "1000.5"
+  },
+  {
+    "disabled": true,
+    "invalid": "true",
+    "message": "최소 1,000원을 입력해 주세요.",
+    "potential": "₩ 0",
+    "total": "2.870",
+    "value": "999"
+  },
+  {
+    "disabled": true,
+    "invalid": "true",
+    "message": "한 번에 최대 100,000원까지 가능합니다.",
+    "potential": "₩ 0",
+    "total": "2.870",
+    "value": "100001"
+  },
+  {
+    "disabled": true,
+    "invalid": "true",
+    "message": "한 번에 최대 100,000원까지 가능합니다.",
+    "potential": "₩ 0",
+    "total": "2.870",
+    "value": "9007199254740992"
+  },
+  {
+    "disabled": false,
+    "invalid": "false",
+    "message": "최소 1,000원 · 최대 100,000원",
+    "potential": "₩ 2,870",
+    "total": "2.870",
+    "value": "1000"
+  },
+  {
+    "disabled": false,
+    "invalid": "false",
+    "message": "최소 1,000원 · 최대 100,000원",
+    "potential": "₩ 287,040",
+    "total": "2.870",
+    "value": "100000"
+  },
+  {
+    "button": "+5천",
+    "potential": "₩ 14,352",
+    "value": "5000"
+  },
+  {
+    "button": "+1만",
+    "potential": "₩ 43,056",
+    "value": "15000"
+  },
+  {
+    "button": "+5만",
+    "potential": "₩ 186,576",
+    "value": "65000"
+  },
+  {
+    "button": "MAX",
+    "potential": "₩ 287,040",
+    "value": "100000"
+  }
+]

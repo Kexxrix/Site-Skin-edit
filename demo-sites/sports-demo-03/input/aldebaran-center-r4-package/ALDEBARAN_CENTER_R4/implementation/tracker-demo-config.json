@@ -1,0 +1,166 @@
+{
+  "schema": "aldebaran-local-tracker-demo-v1",
+  "purpose": "defaults and rules for missing tracker-only data; not a replacement fixture dataset",
+  "external_live_feed": false,
+  "seed": "stable existing match.id plus sport key",
+  "canonical_sports": [
+    "soccer",
+    "basketball",
+    "baseball",
+    "american-football",
+    "ice-hockey",
+    "volleyball",
+    "tennis",
+    "esports"
+  ],
+  "adapter_note": "Map these keys to actual local sport IDs. Preserve authoritative team/league/logo/time/score/market fields.",
+  "missing_scores_policy": {
+    "existing_score_priority": true,
+    "scheduled": "keep unknown score and show scheduled status",
+    "live_or_finished_missing": "create one deterministic, sport-and-period-appropriate demo pair in the shared match adapter, not separately in UI components",
+    "live_examples": {
+      "soccer": [
+        1,
+        1
+      ],
+      "baseball": [
+        3,
+        2
+      ],
+      "basketball": [
+        68,
+        66
+      ],
+      "american-football": [
+        17,
+        14
+      ],
+      "ice-hockey": [
+        2,
+        1
+      ]
+    },
+    "finished_examples": {
+      "soccer": [
+        2,
+        1
+      ],
+      "baseball": [
+        5,
+        3
+      ],
+      "basketball": [
+        108,
+        102
+      ],
+      "american-football": [
+        27,
+        24
+      ],
+      "ice-hockey": [
+        3,
+        2
+      ]
+    },
+    "examples_only": "Use current phase/period to choose plausible totals; do not force these scores onto existing valid matches."
+  },
+  "football_scene": {
+    "interval_ms": 4000,
+    "viewbox": [
+      100,
+      64
+    ],
+    "ball_bounds": {
+      "x": [
+        6,
+        94
+      ],
+      "y": [
+        7,
+        57
+      ]
+    },
+    "enabled_when": "selected match is LIVE, tracker tab is match, and document is visible",
+    "disable_motion_when": "prefers-reduced-motion; retain a readable static state",
+    "cleanup": "clear interval on match change, hidden tab, non-match tracker tab, status change or unmount",
+    "phase_label_substitution": "Insert actual selected team name for attacking_side.",
+    "phases": [
+      {
+        "id": "home-build",
+        "attacking_side": "home",
+        "label_suffix": "공격 전개",
+        "x": 44,
+        "y": 24,
+        "direction": "right"
+      },
+      {
+        "id": "home-wide",
+        "attacking_side": "home",
+        "label_suffix": "측면 공격",
+        "x": 67,
+        "y": 15,
+        "direction": "right"
+      },
+      {
+        "id": "away-possession",
+        "attacking_side": "away",
+        "label_suffix": "볼 점유",
+        "x": 65,
+        "y": 39,
+        "direction": "left"
+      },
+      {
+        "id": "away-counter",
+        "attacking_side": "away",
+        "label_suffix": "역습 전개",
+        "x": 38,
+        "y": 36,
+        "direction": "left"
+      }
+    ],
+    "does_not_change_score": true
+  },
+  "football_stats_rules": [
+    "home possession plus away possession equals 100",
+    "shots >= shots on target >= goals for each side",
+    "counts are non-negative and stable for the match",
+    "show home and away labels in addition to color"
+  ],
+  "football_event_rules": [
+    "derive current period and elapsed time from the same match adapter used by the card",
+    "event timestamps do not exceed current elapsed time",
+    "goal event totals equal the current home and away score",
+    "0-0 may have attempts/corners/cards but no goal events",
+    "do not reuse another match player names; omit unprovided player names"
+  ],
+  "additional_market_rules": [
+    "reuse existing market values first",
+    "new demo values are stable by fixture/market/line/outcome key",
+    "preserve exact existing numeric precision when formatting",
+    "include no-goal outcome for first-scoring-team market",
+    "unavailable or closed market obeys existing disabled/action guards"
+  ],
+  "non_football_view": {
+    "baseball": [
+      "inning/top-bottom",
+      "score",
+      "hits/errors if available"
+    ],
+    "basketball": [
+      "quarter/time",
+      "three-digit capable score",
+      "shooting/rebounds if available"
+    ],
+    "ice-hockey": [
+      "period/time",
+      "score",
+      "shots if available"
+    ],
+    "american-football": [
+      "quarter/time",
+      "score",
+      "possession/downs if available"
+    ],
+    "other": "derive period/scoring units from existing sport data; do not display soccer pitch"
+  }
+}

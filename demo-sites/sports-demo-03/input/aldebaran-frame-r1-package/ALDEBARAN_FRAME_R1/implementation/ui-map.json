@@ -1,0 +1,114 @@
+{
+  "schema": "aldebaran-frame-ui-map-v1",
+  "status": "integration-contract-not-an-applied-patch",
+  "source_app": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-01/site/",
+  "target_app_default": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/",
+  "root_class": "aldebaran-site",
+  "css_import_order": [
+    "existing app CSS",
+    "styles/aldebaran.tokens.css",
+    "styles/aldebaran.surfaces.css"
+  ],
+  "mapping": [
+    {
+      "existing_role": "header",
+      "attribute": "data-ab-surface",
+      "value": "header"
+    },
+    {
+      "existing_role": "notice",
+      "attribute": "data-ab-surface",
+      "value": "notice"
+    },
+    {
+      "existing_role": "quick service/search/account/slip/support panel",
+      "attribute": "data-ab-surface",
+      "value": "panel"
+    },
+    {
+      "existing_role": "existing panel heading or raised subarea",
+      "attribute": "data-ab-surface",
+      "value": "raised"
+    },
+    {
+      "existing_role": "empty sports main",
+      "attribute": "data-ab-surface",
+      "value": "empty-center"
+    },
+    {
+      "existing_role": "join/deposit/main CTA",
+      "attribute": "data-ab-control",
+      "value": "primary"
+    },
+    {
+      "existing_role": "login/withdraw/support/amount step/reset",
+      "attribute": "data-ab-control",
+      "value": "secondary"
+    },
+    {
+      "existing_role": "navigation/sport filter",
+      "attributes": {
+        "data-ab-nav": "",
+        "data-active": "true only for active item"
+      }
+    },
+    {
+      "existing_role": "search/amount input",
+      "attribute": "data-ab-input",
+      "value": ""
+    },
+    {
+      "existing_role": "existing emphasized total or account number",
+      "attribute": "data-ab-number",
+      "value": ""
+    },
+    {
+      "existing_role": "secondary text",
+      "attribute": "data-ab-text",
+      "value": "muted"
+    },
+    {
+      "existing_role": "existing inline UI icon",
+      "attribute": "data-ab-ui-icon",
+      "value": ""
+    },
+    {
+      "existing_role": "only a reused gold sport PNG without local white master",
+      "attribute": "data-ab-sport-icon",
+      "value": "neutralized"
+    }
+  ],
+  "brand": {
+    "wrapper_class": "ab-brand",
+    "emblem_class": "ab-brand__emblem",
+    "wordmark_class": "ab-brand__wordmark",
+    "emblem_src": "/assets/branding/aldebaran-emblem.png",
+    "wordmark_src": "/assets/branding/aldebaran-wordmark.png",
+    "wordmark_alt": "ALDEBARAN",
+    "emblem_alt": "",
+    "keep_existing_link_target_and_handler": true
+  },
+  "central_contract": {
+    "render_children": false,
+    "accessible_name": "스포츠 콘텐츠",
+    "preserve_outer_column_and_scroll_ref": true,
+    "mount_tracker": false,
+    "mount_fixture_cards": false,
+    "visible_placeholder": false,
+    "remove_central_only_effects": true,
+    "keep_data_and_logic_for_next_phase": true
+  },
+  "storage": {
+    "namespace": "aldebaran",
+    "derive_keys_from_source": true,
+    "do_not_read_or_migrate_other_site_keys": true,
+    "do_not_delete_other_site_storage": true
+  },
+  "cautions": [
+    "Inspect actual selectors and map attributes; this is not a blind replacement stylesheet.",
+    "Replace remaining hardcoded gold, pseudo-element shine, gradients and text-fill styles only in the cloned app.",
+    "CSS aria-disabled styling does not disable actions; retain native disabled and existing event guards.",
+    "No changes to shell dimensions, controls order, handlers, amounts or rounding.",
+    "Do not copy MERCURY/SIRIUS hosting bindings or deployment identifiers."
+  ]
+}

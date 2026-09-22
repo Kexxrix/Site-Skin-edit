@@ -1,0 +1,160 @@
+{
+  "status": "completed-awaiting-user-feedback",
+  "sitePath": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site",
+  "publicUrl": "https://aldebaran.kexxadrix.chatgpt.site",
+  "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+  "commit": "1f46b8a2daab755bfcad99d258e7c970a3177c19",
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_5bc4085716808191857fa382ec722d8a",
+  "versionNumber": 2,
+  "deploymentId": "appgdep_6ab0fd087e1c81919d7561e095b2f5b5",
+  "deploymentStatus": "succeeded",
+  "succeededAt": "2026-09-21T09:47:07.548955+00:00",
+  "succeededAtKst": "2026-09-21 18:47:07 KST",
+  "screenshotPath": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r2/public/aldebaran-r2-initial-1920x912.jpg",
+  "screenshotsSaved": 1,
+  "archiveStorage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_0000000078488206b7489ba6e1ce2089",
+    "content_hash": "sha256:40640f8a7e730c605a447a59ceef150a3f31ec2058a43af01f5aa3c1b6c8401c",
+    "size_bytes": 26880000,
+    "file_count": 250
+  },
+  "changedSummary": [
+    "Rearranged only existing Header function into left brand spanning two rows, upper-right notice/account and lower-right seven-menu navigation.",
+    "Moved existing notice control; removed legacy separate notice row and header rail.",
+    "Preserved original menu state/handlers, notice handler, guest/member account branches and brand destination.",
+    "Added scoped supplied R2 CSS with one total-height variable controlling flex allocation; solid orange active menu, dark text, gray hover."
+  ],
+  "actualDimensions": {
+    "viewport": [
+      1920,
+      912
+    ],
+    "header": [
+      1920,
+      104
+    ],
+    "brand": [
+      344,
+      104
+    ],
+    "utilityRow": [
+      1576,
+      46
+    ],
+    "navRow": [
+      1576,
+      58
+    ],
+    "emblem": [
+      44,
+      44
+    ],
+    "wordmark": [
+      248,
+      27.015625
+    ],
+    "menus": {
+      "count": 7,
+      "button": [
+        180,
+        42
+      ],
+      "gap": 8
+    },
+    "columns": [
+      {
+        "name": "left",
+        "x": 12,
+        "y": 116,
+        "width": 272,
+        "height": 784
+      },
+      {
+        "name": "center",
+        "x": 296,
+        "y": 116,
+        "width": 1280,
+        "height": 784
+      },
+      {
+        "name": "right",
+        "x": 1588,
+        "y": 116,
+        "width": 320,
+        "height": 784
+      }
+    ],
+    "noticeCount": 1,
+    "legacyNoticeRows": 0,
+    "mainChildren": 0
+  },
+  "verification": [
+    "Build and typecheck passed.",
+    "1920 width/current 912 height local screenshot and DOM: centered unclipped logos, original aspect ratios, seven menus, one notice, no old notice strip.",
+    "Sports menu switch and return to live sports preserved nonempty query and stake values.",
+    "Moved notice opened original notice dialog.",
+    "Existing local demo account login/logout branches worked and were restored to guest; no real authentication or transaction.",
+    "Local browser warn/error logs empty.",
+    "Same PUBLIC Site deployment succeeded; new public first screen confirmed through native AX and screenshot, exactly one accepted screenshot saved.",
+    "MERCURY/SIRIUS HEAD, dirty state and 1842 file hashes preserved; ALDEBARAN page outside Header unchanged."
+  ],
+  "notChanged": [
+    "MERCURY/SIRIUS apps, documents and live deployments",
+    "ALDEBARAN rail horizontal geometry/style/content, banners, logo bytes, fonts, palette, storage key, datasets, calculation/motion modules and empty center",
+    "Root four operating documents"
+  ],
+  "notVerified": [
+    "Mobile",
+    "Full login/session matrix",
+    "Full slip/calculation/transaction regression",
+    "Tracker, central cards and full motion",
+    "Public exact DOM measurements: browser bridge returned null; native AX/screenshot used for public check."
+  ],
+  "remainingIssues": [],
+  "visualAcceptance": "Pending user feedback",
+  "startHead": "676aeaafceeb820d23b5af2b23f8e4179daee380",
+  "startDirty": "",
+  "finalDirty": "",
+  "changedFiles": [
+    "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/aldebaran-header-r2.css",
+    "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/layout.tsx",
+    "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/page.tsx"
+  ],
+  "pageOutsideHeaderUnchanged": true,
+  "protection": {
+    "mercury": {
+      "head": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+      "dirty": "?? tsconfig.tsbuildinfo",
+      "changed": [],
+      "added": [],
+      "headUnchanged": true,
+      "dirtyUnchanged": true
+    },
+    "sirius": {
+      "head": "9c424b8e4e8c480848f1ec47bf5139c6d5987738",
+      "dirty": "?? .agents/\n?? .impeccable/\n?? DESIGN.md\n?? PRODUCT.md",
+      "changed": [],
+      "added": [],
+      "headUnchanged": true,
+      "dirtyUnchanged": true
+    }
+  },
+  "screenshot": {
+    "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r2/public/aldebaran-r2-initial-1920x912.jpg",
+    "bytes": 86558,
+    "sha256": "82eb7ec724ec206a69d53262f21f6b7e45d0a4cbd6a33c1d5159622d0c98371d",
+    "width": 1920,
+    "height": 912
+  },
+  "checks": {
+    "build": {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    "typecheck": {
+      "command": "tsc --noEmit --incremental false",
+      "exitCode": 0
+    }
+  }
+}

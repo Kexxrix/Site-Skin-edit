@@ -1,0 +1,41 @@
+{
+  "audit": "SIRIUS R1 Q07 focused correction recheck",
+  "sourceId": "efad70506a3fcfac90ceb67d6b16ceedd5acc8086cc0e06f1eab705c7f4546a2",
+  "commit": "4e48de6df3b5810e0afbb668804244f1264c0230",
+  "url": "http://127.0.0.1:5287/",
+  "viewport": {
+    "width": 1920,
+    "height": 940
+  },
+  "verdict": "Q07-P2-01 CLOSED; Q01-Q11 PASS; Q12 PENDING",
+  "changedFiles": [
+    "app/page.tsx",
+    "app/globals.css"
+  ],
+  "unchangedManifestFiles": 274,
+  "beforeAfterMismatches": [],
+  "findingClosed": "Q07-P2-01",
+  "observed": "Final confirmation shows under8.5 at1.87 with extra innings, home result1.56 with extra innings, and away handicap+0.5 at2.03 with regulation90minutes. No conflicting home handicap line is inserted.",
+  "calculation": {
+    "potentialFormula": "floor(10000 * 5.921916) = 59219",
+    "stake": 10000,
+    "formula": "1.87 * 1.56 * 2.03 = 5.921916",
+    "actualPotential": "59,219",
+    "display": "5.922"
+  },
+  "scroll": "Existing240px confirmation list scrolls20px for3items; bottom rule fully readable after actual wheel. No inaccessible content.",
+  "evidence": [
+    "selected-before-confirm.json",
+    "corrected-confirmation.json",
+    "corrected-confirmation-original.jpg",
+    "confirmation-list-overflow.json",
+    "confirmation-list-scrolled.json",
+    "corrected-confirmation-scrolled-original.jpg",
+    "console.json",
+    "source-before.json",
+    "source-after.json"
+  ],
+  "reuse": "Previous independent SIRIUS full-0c8f4e1c audit retained for unchanged inputs/behavior. No MERCURY PASS inherited.",
+  "cleanup": "Selections cleared; logged out; original local test history preserved; no second receipt created; own tab closed; viewport reset.",
+  "next": "Deploy this exact corrected source to separate SIRIUS project, then direct independent Q12 public verification."
+}

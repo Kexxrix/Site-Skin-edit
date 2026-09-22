@@ -1,0 +1,49 @@
+코드 연결 메모 — 현지 구현자용
+
+이 TSX/CSS는 실측 치수와 스크롤 틀을 전달하는 시작 코드이며 전체 앱이 아니다.
+새 프로젝트를 만들지 말고 최신 ALDEBARAN 앱의 기존 상태·데이터·핸들러에 연결한다.
+
+1. 루트
+body 또는 실제 페이지 최상위 요소의 aldebaran-site 클래스를 확인한다.
+기존 body/main의 세로 overflow, max-width, header height, grid 규칙을 교체한다.
+CSS는 기존 reset 뒤에 한 번 연결한다. 새 클래스만 추가하고 기존 폭 규칙을 남겨 충돌시키지 않는다.
+
+2. AldebaranWogShell 슬롯
+gnb: ab5-gnb 안에 brand-slot / menu / 빈 여유칸 / auth의 네 자식.
+notice: ab5-marquee > ab5-marquee-track, ab5-notice-links의 두 형제.
+leftRail: quick, search-card, sports-summary, latest의 네 rail-card.
+sportTabs: ab5-sport-tabs 안에 여섯 ab5-sport-tab. 그리드는 여덟 칸.
+leagueList: ab5-league마다 league-head와 접을 수 있는 event-list.
+matchHeading: ab5-match-title 제목과 ab5-match-start 시간.
+marketTabs: 다섯 button, 활성 상태는 aria-pressed.
+markets: ab5-market-group마다 market-head와 접을 수 있는 market-rows.
+rightRail: user, slip, banner-stack의 세 rail-card.
+사진이나 종목 배경은 asset-map에 따라 기존 자산을 연결한다.
+
+3. 카드 내부
+ab5-card의 직접 자식은 card-meta(24), card-inspect(38), primary-markets(116).
+card-inspect는 홈팀/중앙 점수/원정팀을 담는 독립 button이다.
+card-meta 안의 market-open과 아래 배당 button은 그 button 밖에 둔다.
+primary-markets의 행은 result에 row-two 또는 row-three, 핸디·언오버에 row-three.
+상세의 기준점 행에만 row-line(가변/74/가변)을 쓴다.
+ab5-odd-label과 ab5-odd-value를 별도 자식으로 두어 긴 라벨만 말줄임한다.
+원정측 reverse는 DOM 순서도 value → label이어야 한다.
+
+4. 접기와 스크롤
+ab5-collapse > 패딩 없는 div > 실제 event-list/market-rows 순서로 감싼다.
+직접 자식에 padding을 주면 닫힐 때 잔여 높이가 생길 수 있다.
+닫힌 wrapper에는 inert와 aria-hidden을 연결하고 제목 버튼에는 aria-expanded/aria-controls를 지정한다.
+listRef와 marketsRef를 기존 ref에 연결한다. 경기 변경 시 marketsRef만 scrollTo({top:0}).
+배당 선택이나 같은 경기 클릭으로 ref가 걸린 DOM을 remount하지 않는다.
+상세 마켓 스크롤을 body/document 스크롤로 대체하지 않는다.
+
+5. 데이터와 메뉴
+behavior-contract.json을 따라 기존 fixture/market/selection ID와 슬립 함수를 재사용한다.
+카운트는 화면 데이터에서 계산한다. 값이 없는 경우 0/빈 결과/잠김 상태를 명확하게 표현한다.
+새 서비스 버튼은 기존 기능 또는 내용 있는 로컬 데모 보기로 연결한다.
+기존 설치된 아이콘/폰트/사진을 재사용하고 패키지 추가 설치는 기본 범위에 넣지 않는다.
+
+6. 완료 범위
+이 자료의 CSS/TSX는 현재 Windows 앱에서 컴파일·렌더 검증되지 않았다.
+실제 앱 연결 후 기존 빌드와 STATE의 짧은 변경 확인을 수행한다.
+별도 QA 스레드·Jev·광범위 폴리싱은 실행하지 않는다.

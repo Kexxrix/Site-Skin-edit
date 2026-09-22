@@ -1,0 +1,114 @@
+{
+  "completedAt": "2026-09-17T11:09:45.801Z",
+  "status": "R8 implemented, independently audited, deployed and public-smoke verified",
+  "projectId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+  "url": "https://mercury.kexxadrix.chatgpt.site",
+  "version": 7,
+  "versionId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_bb786aed744081919387ea6f40afdc0d",
+  "deploymentId": "appgdep_6aabc89f9d148191929b8459794090b2",
+  "deploymentSucceededAt": "2026-09-17T11:02:21.625339+00:00",
+  "commit": "e5f4552d2e2011163365d1ccdd602d3bef7a7f3f",
+  "sourceId": "ceb450e890ee845d811c719d597eae0c80e0e6185f9013c19ba2f7c2574715e3",
+  "sourceFiles": 272,
+  "changedFiles": [
+    "app/demo-data.ts",
+    "app/globals.css",
+    "app/page.tsx",
+    "app/live-snapshots.json",
+    "public/banners/r8/mercury-slots-woman.png",
+    "public/sports/r8/mercury-american-football.png",
+    "public/sports/r8/mercury-baseball.png",
+    "public/sports/r8/mercury-basketball.png",
+    "public/sports/r8/mercury-esports.png",
+    "public/sports/r8/mercury-ice-hockey.png",
+    "public/sports/r8/mercury-soccer.png",
+    "public/sports/r8/mercury-tennis.png",
+    "public/sports/r8/mercury-volleyball.png"
+  ],
+  "checks": {
+    "dataAssertions": 642,
+    "selfBrowserAssertions": 60,
+    "typecheck": "PASS",
+    "changedSourceLint": "PASS",
+    "build": "PASS",
+    "independentAudit": "A/B/C PASS,53/53,0 findings",
+    "independentEvidence": "../audit/ceb450e8/audit-result.json",
+    "publicAnonymousHttp": true,
+    "publicAssets": 9,
+    "publicCss": {
+      "name": "index.BRM1po-v.css",
+      "sha256": "341f9bffc483d7cca33a4303fddc6047e6e8eb64bb641f5f07b8913385872df4"
+    },
+    "publicBrowserPassed": 15,
+    "publicPrematureAssertionResolved": 1,
+    "publicConsoleWarningsErrors": 0
+  },
+  "snapshots": {
+    "count": 3,
+    "sport": "MLB",
+    "state": "Stopped historical play snapshots, not current network feed or replay",
+    "scores": [
+      "1:1",
+      "6:3",
+      "5:1"
+    ],
+    "stage": "7회초"
+  },
+  "retained": {
+    "fixtures": 77,
+    "sections": [
+      26,
+      26,
+      25
+    ],
+    "firstEach": 6,
+    "expandBatch": 6,
+    "teamLeaguePresentation": true,
+    "fontRuntime": true,
+    "sourceAssets": true,
+    "publicHistory": "No new receipts or account mutations; existing history retained."
+  },
+  "runtime": {
+    "temporary5277": "stopped",
+    "existing5276": "preserved,::1 PID45756",
+    "other3000": "untouched",
+    "git": "tracked clean; pre-existing untracked tsconfig.tsbuildinfo preserved",
+    "browser": "public IAB8 retained; implementation9 closed; viewport/motion overrides reset"
+  },
+  "screenshots": [
+    {
+      "file": "public-banners-1920.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 940,
+      "bytes": 239597,
+      "sha256": "9e5681d810735809699c14f249408232583d0fc9314d11865ab177e7c4a1429e"
+    },
+    {
+      "file": "public-more-selection-1920.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 940,
+      "bytes": 229552,
+      "sha256": "77f83dbaec3a46a9a17fdfc80cbbd35c4418d9e3c936f8b8fdf7f4f3cbcc6e8c"
+    },
+    {
+      "file": "public-final-original-1920.png",
+      "format": "PNG",
+      "width": 1920,
+      "height": 940,
+      "bytes": 351895,
+      "sha256": "0386070353df11cbe5e8b1fe76695df1d3fcb76f6c0ce1c767a792bd81672d16"
+    }
+  ],
+  "limits": [
+    "User final design approval remains separate.",
+    "MLB-only3 progress snapshots; two-sport preference waived in D27.",
+    "No current live feed or external transaction backend added.",
+    "Existing fixed1920 layout; mobile outside scope.",
+    "Heisei Japanese glyph use N/A without Japanese copy.",
+    "Full repository lint and whole-network zero-error claim not made.",
+    "Early JPG scroll/viewport/paint captures excluded; final original PNG verified1920x940.",
+    "Public modal locator CDP timeouts recovered by AX clicks; one immediate DOM-count assertion resolved after normal exit transition. No product fix required."
+  ]
+}

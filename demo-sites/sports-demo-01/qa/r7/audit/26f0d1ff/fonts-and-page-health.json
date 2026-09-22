@@ -1,0 +1,806 @@
+{
+  "platformFonts": [
+    {
+      "selector": ".section-title h2",
+      "fonts": [
+        {
+          "familyName": "Pretendard JP ExtraBold",
+          "glyphCount": 7,
+          "isCustomFont": true,
+          "postScriptName": "PretendardJP-ExtraBold"
+        }
+      ]
+    },
+    {
+      "selector": ".section-kicker",
+      "fonts": [
+        {
+          "familyName": "18ec39ab21aa655fb79750b2c46149f5ca1d34b4e4bc43f8a0a68c9bfff6ff00",
+          "glyphCount": 11,
+          "isCustomFont": true,
+          "postScriptName": "OTS-derived-font"
+        }
+      ]
+    },
+    {
+      "selector": ".score strong",
+      "fonts": [
+        {
+          "familyName": "DIN Condensed Web",
+          "glyphCount": 1,
+          "isCustomFont": true,
+          "postScriptName": "DINCondensedWeb"
+        }
+      ]
+    },
+    {
+      "selector": ".matchup-team strong",
+      "fonts": [
+        {
+          "familyName": "Pretendard JP",
+          "glyphCount": 8,
+          "isCustomFont": true,
+          "postScriptName": "PretendardJP-Bold"
+        }
+      ]
+    },
+    {
+      "selector": ".odd strong",
+      "fonts": [
+        {
+          "familyName": "Pretendard JP ExtraBold",
+          "glyphCount": 4,
+          "isCustomFont": true,
+          "postScriptName": "PretendardJP-ExtraBold"
+        }
+      ]
+    }
+  ],
+  "health": {
+    "bg": {
+      "body": "rgb(5, 5, 5)",
+      "card": "rgb(20, 20, 20)"
+    },
+    "fonts": [
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "20px",
+        "text": "실시간 스포츠"
+      },
+      {
+        "family": "omnigothic, \"Pretendard JP\", sans-serif",
+        "size": "15px",
+        "text": "LIVE SPORTS"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "16px",
+        "text": "탬파베이 레이스"
+      },
+      {
+        "family": "din-condensed, \"Arial Narrow\", sans-serif",
+        "size": "30px",
+        "text": "2"
+      },
+      {
+        "family": "din-condensed, \"Arial Narrow\", sans-serif",
+        "size": "30px",
+        "text": "1"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "16px",
+        "text": "애슬레틱스"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "18px",
+        "text": "1.84"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "18px",
+        "text": "2.10"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "18px",
+        "text": "1.91"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "18px",
+        "text": "1.87"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "18px",
+        "text": "1.78"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "18px",
+        "text": "2.03"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "16px",
+        "text": "토론토 랩터스"
+      },
+      {
+        "family": "din-condensed, \"Arial Narrow\", sans-serif",
+        "size": "30px",
+        "text": "–"
+      },
+      {
+        "family": "din-condensed, \"Arial Narrow\", sans-serif",
+        "size": "30px",
+        "text": "–"
+      },
+      {
+        "family": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "size": "16px",
+        "text": "마이애미 히트"
+      }
+    ],
+    "icons": [
+      "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-codex-favicon-badge%3D%22codex-favicon-badge%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cimage%20href%3D%22data%3Aimage%2Fbmp%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADHUlEQVR4nMSXb0gTYRzHv3czneWf2WRTjE3zz6ZSUsPU%2FlgURVBJUi8kSDDoTdLrgl5Eb6KE6kVEL%2B1NUG8SNCJfFPZXSxdEmNs0Zso0xa01%2F8wZdt3v6obntrvtSvaB4%2B4eHp7vZ7%2Fnee52KeAx5mYeBaO5yF9WMgx0WEM4Dn7%2BNAhu%2BdrUzOxjxqDXHWc16EAS%2BLWMRk1GZlo7A2YTkgHLFbLgmHKo5FCdSThUw2ez%2FJxnQwUNe4swOhEQDrpWA2WnQAUU6Bj9DtdXv6St84UbicIiQaKF07WTb1NTiYQEooWLOFVKxC0gF%2F4vEkyeQcfJdbhztQUH9mwJ3w8Ne9B45kZEv907LLh5pRlZGenCfXAxhPOX7uH1e6fc8MoV6O7uweW2%2B5jxBRCYC2Kz2YDmk%2FUR%2FXZVW8Lhz159QtPZNuRol5SGlxcQy%2F6wy44xjxeDjnGkpa5DzfbiiL5VlWb0DriEa%2BpLU%2BEa8%2BNYfZE6gWhz7hiZEKpgLSlASVFeuJ3Kn65NxfiEVzJGPBJsvOHE5JQfnkkfcvWZ2GkrC7dT%2Bfvsw5hfCEWMRRLDMhJsvOEiHU%2F6hbM4DVSJWlsp3vTHXmwOGQmJwOkjVsWt9tbuwox3FtXbSoTSUyWCi0uKqz2WhERgyO2DEiPub%2Fxa8Agrnkq%2FtcKEp88%2FQi0SgYHP07AW5qDMLP%2Bf5N2HLwgt%2FUR9XTn0ORlCVZSgcUtNOnS9dMcWIOiFQp0tqyRolecb%2F7SJ01BsNmIhGBKqoiY8qoAoYVkhQXNdkL9RWGyEOA1UBaqGiKlALzkrhROyj2LaEScaD6LGZpW0tz%2FoEbbk4f1VOHXuNi60NqClaZ%2BkDz0vbt19hDm%2FL2a4ooAoQXvZKbMzoqH0y0UU3wXh6eCP%2Fx0el4AoUcYPGI9EIuFxCxA0oJJEouEJCayUsEaRUBOesIAoUbpKQm04obgLYkHPdHq2E2rDCZb%2FVvsBFVCgrcKA9doU1eGUzRgN2b38p1ktkgAHro%2FllpnrSBKUrZkPLjo2pK%2Bz87Nh5tuy%2BM8lLdaQv5%2Fndj69ddob6PwNAAD%2F%2Fx44S9QAAAAGSURBVAMAXih%2Bl3Q5VjgAAAAASUVORK5CYII%3D%22%20width%3D%2232%22%20height%3D%2232%22%20opacity%3D%220.3%22%20%2F%3E%3Cpath%20d%3D%22M3.04536%204.45259C2.7582%203.60299%203.60299%202.7582%204.45259%203.04536L14.1828%206.33403C15.1637%206.66558%2015.0872%208.08006%2014.0715%208.39045L10.2994%209.54319C9.93919%209.65327%209.65327%209.93919%209.54319%2010.2994L8.39046%2014.0715C8.08007%2015.0872%206.66558%2015.1637%206.33404%2014.1828L3.04536%204.45259Z%22%20fill%3D%22black%22%20stroke%3D%22white%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%20paint-order%3D%22stroke%20fill%22%20transform%3D%22translate(-2%20-2)%20scale(2.1)%22%20%2F%3E%3C%2Fsvg%3E"
+    ],
+    "overflow": [
+      {
+        "cls": "shell",
+        "cw": 1920,
+        "overflow": "visible",
+        "sw": 1920
+      },
+      {
+        "cls": "workspace",
+        "cw": 1920,
+        "overflow": "visible",
+        "sw": 1920
+      },
+      {
+        "cls": "scroll-column left-column",
+        "cw": 272,
+        "overflow": "auto",
+        "sw": 272
+      },
+      {
+        "cls": "scroll-column center-column",
+        "cw": 1280,
+        "overflow": "auto",
+        "sw": 1280
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "match-card",
+        "cw": 417,
+        "overflow": "visible",
+        "sw": 417
+      },
+      {
+        "cls": "scroll-column right-column",
+        "cw": 320,
+        "overflow": "auto",
+        "sw": 320
+      },
+      {
+        "cls": "slip-list",
+        "cw": 318,
+        "overflow": "auto",
+        "sw": 318
+      }
+    ],
+    "styles": [
+      "http://127.0.0.1:5277/_next/static/css/index.BnWv4cQU.css",
+      "https://use.typekit.net/aqm4sxy.css"
+    ]
+  },
+  "resources": [
+    {
+      "name": "http://127.0.0.1:5277/branding/mercury-emblem.png",
+      "type": "link",
+      "status": 200,
+      "duration": 222.09999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/branding/mercury-wordmark.png",
+      "type": "link",
+      "status": 200,
+      "duration": 170.90000000596046
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/soccer.png",
+      "type": "img",
+      "status": 200,
+      "duration": 90.69999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/basketball.png",
+      "type": "img",
+      "status": 200,
+      "duration": 98.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/baseball.png",
+      "type": "img",
+      "status": 200,
+      "duration": 103.2999999821186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/american-football.png",
+      "type": "img",
+      "status": 200,
+      "duration": 106.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/ice-hockey.png",
+      "type": "img",
+      "status": 200,
+      "duration": 113
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/volleyball.png",
+      "type": "link",
+      "status": 200,
+      "duration": 121.09999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/tennis.png",
+      "type": "link",
+      "status": 200,
+      "duration": 119.09999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/sports/mdi/esports.png",
+      "type": "link",
+      "status": 200,
+      "duration": 119.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/baseball/mlb.png",
+      "type": "img",
+      "status": 200,
+      "duration": 120.90000000596046
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/mlb/athletics.png",
+      "type": "img",
+      "status": 200,
+      "duration": 131.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/basketball/nba.png",
+      "type": "img",
+      "status": 200,
+      "duration": 187.09999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/mlb/tampa-bay-rays.png",
+      "type": "img",
+      "status": 200,
+      "duration": 190
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/hockey/nhl.png",
+      "type": "img",
+      "status": 200,
+      "duration": 133.30000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/nba/toronto-raptors.png",
+      "type": "img",
+      "status": 200,
+      "duration": 136.90000000596046
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/nba/miami-heat.png",
+      "type": "img",
+      "status": 200,
+      "duration": 154.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/nhl/toronto-maple-leafs.png",
+      "type": "img",
+      "status": 200,
+      "duration": 190.09999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/_next/static/css/index.BnWv4cQU.css",
+      "type": "link",
+      "status": 200,
+      "duration": 75.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/_next/static/chunks/index-ComJaxpb.js",
+      "type": "other",
+      "status": 200,
+      "duration": 106.40000000596046
+    },
+    {
+      "name": "https://use.typekit.net/aqm4sxy.css",
+      "type": "link",
+      "status": 0,
+      "duration": 47.79999998211861
+    },
+    {
+      "name": "http://127.0.0.1:5277/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+      "type": "script",
+      "status": 200,
+      "duration": 72.19999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/_next/static/chunks/layout-segment-context-BaeLhibn.js",
+      "type": "other",
+      "status": 200,
+      "duration": 72.89999997615814
+    },
+    {
+      "name": "http://127.0.0.1:5277/_next/static/chunks/framework-D_rUT4EX.js",
+      "type": "script",
+      "status": 200,
+      "duration": 86.19999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/_next/static/chunks/page-Bn3PkgWZ.js",
+      "type": "other",
+      "status": 200,
+      "duration": 105.09999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/toronto-blue-jays.png",
+      "type": "img",
+      "status": 200,
+      "duration": 138.69999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/nhl/montreal-canadiens.png",
+      "type": "img",
+      "status": 200,
+      "duration": 145.19999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/chicago-white-sox.png",
+      "type": "img",
+      "status": 200,
+      "duration": 151
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/cleveland-guardians.png",
+      "type": "img",
+      "status": 200,
+      "duration": 189.2999999821186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/detroit-tigers.png",
+      "type": "img",
+      "status": 200,
+      "duration": 134.2000000178814
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/pittsburgh-pirates.png",
+      "type": "img",
+      "status": 200,
+      "duration": 147.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/milwaukee-brewers.png",
+      "type": "img",
+      "status": 200,
+      "duration": 124.30000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/basketball/wnba.png",
+      "type": "img",
+      "status": 200,
+      "duration": 140.60000002384186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/wnba/atlanta-dream.png",
+      "type": "img",
+      "status": 200,
+      "duration": 207
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/wnba/connecticut-sun.png",
+      "type": "img",
+      "status": 200,
+      "duration": 215.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/soccer/bundesliga.png",
+      "type": "img",
+      "status": 200,
+      "duration": 182.2999999821186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/football/nfl.png",
+      "type": "img",
+      "status": 200,
+      "duration": 194.09999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/nfl/buffalo-bills.png",
+      "type": "img",
+      "status": 200,
+      "duration": 224.19999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/nfl/detroit-lions.png",
+      "type": "img",
+      "status": 200,
+      "duration": 229
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/bundesliga/bayern-munich.png",
+      "type": "img",
+      "status": 200,
+      "duration": 231.7999999821186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/bundesliga/1-fc-union-berlin.png",
+      "type": "img",
+      "status": 200,
+      "duration": 236.40000000596046
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/st-louis-cardinals.png",
+      "type": "img",
+      "status": 200,
+      "duration": 240.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/san-francisco-giants.png",
+      "type": "img",
+      "status": 200,
+      "duration": 243.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/washington-nationals.png",
+      "type": "img",
+      "status": 200,
+      "duration": 249.30000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/philadelphia-phillies.png",
+      "type": "img",
+      "status": 200,
+      "duration": 256.59999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/soccer/premier-league.png",
+      "type": "img",
+      "status": 200,
+      "duration": 259
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/premier-league/brentford.png",
+      "type": "img",
+      "status": 200,
+      "duration": 263.59999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/premier-league/chelsea.png",
+      "type": "img",
+      "status": 200,
+      "duration": 266.7000000178814
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/soccer/mls.png",
+      "type": "img",
+      "status": 200,
+      "duration": 270.59999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/mls/new-york-city-fc.png",
+      "type": "img",
+      "status": 200,
+      "duration": 272.59999999403954
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/mls/red-bull-new-york.png",
+      "type": "img",
+      "status": 200,
+      "duration": 278.90000000596046
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/leagues/soccer/ligue-1.png",
+      "type": "img",
+      "status": 200,
+      "duration": 281.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/ligue-1/as-monaco.png",
+      "type": "img",
+      "status": 200,
+      "duration": 284.30000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r6/teams/ligue-1/lens.png",
+      "type": "img",
+      "status": 200,
+      "duration": 293.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/minnesota-twins.png",
+      "type": "img",
+      "status": 200,
+      "duration": 295.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/new-york-yankees.png",
+      "type": "img",
+      "status": 200,
+      "duration": 316.60000002384186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/cincinnati-reds.png",
+      "type": "img",
+      "status": 200,
+      "duration": 316.90000000596046
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/los-angeles-dodgers.png",
+      "type": "img",
+      "status": 200,
+      "duration": 324.2999999821186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/new-york-mets.png",
+      "type": "img",
+      "status": 200,
+      "duration": 326.7999999821186
+    },
+    {
+      "name": "http://127.0.0.1:5277/sports/r7/teams/mlb/baltimore-orioles.png",
+      "type": "img",
+      "status": 200,
+      "duration": 329.2999999821186
+    },
+    {
+      "name": "https://use.typekit.net/aqm4sxy.css",
+      "type": "other",
+      "status": 0,
+      "duration": 297
+    },
+    {
+      "name": "http://127.0.0.1:5277/fonts/pretendard-jp/PretendardJP-Bold.woff2",
+      "type": "css",
+      "status": 200,
+      "duration": 214.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/fonts/pretendard-jp/PretendardJP-Medium.woff2",
+      "type": "css",
+      "status": 200,
+      "duration": 210.5
+    },
+    {
+      "name": "http://127.0.0.1:5277/fonts/pretendard-jp/PretendardJP-Regular.woff2",
+      "type": "css",
+      "status": 200,
+      "duration": 209.69999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/fonts/pretendard-jp/PretendardJP-ExtraBold.woff2",
+      "type": "css",
+      "status": 200,
+      "duration": 213.90000000596046
+    },
+    {
+      "name": "https://use.typekit.net/hyf2mwn.js",
+      "type": "script",
+      "status": 0,
+      "duration": 49.400000005960464
+    },
+    {
+      "name": "https://use.typekit.net/gig5kam.js",
+      "type": "script",
+      "status": 0,
+      "duration": 49.80000001192093
+    },
+    {
+      "name": "https://p.typekit.net/p.gif?s=1&k=gig5kam&ht=tk&h=127.0.0.1&f=46492.46493.46494.46495.46496&a=31451633&js=1.12.0&app=typekit&e=js&_=1789633533434",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 115.89999997615814
+    },
+    {
+      "name": "https://use.typekit.net/af/fe7db7/00000000000000007735e3b4/31/m?features=ALL&v=4&chunks=1.5&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 5.200000017881393
+    },
+    {
+      "name": "https://use.typekit.net/af/4ad12d/00000000000000007735e3b8/31/m?features=ALL&v=4&chunks=1.5&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 6.299999982118607
+    },
+    {
+      "name": "https://use.typekit.net/af/b87911/00000000000000007735e3b7/31/m?features=ALL&v=4&chunks=1.5&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 7.9000000059604645
+    },
+    {
+      "name": "https://use.typekit.net/af/ed8058/00000000000000007735e3b9/31/m?features=ALL&v=4&chunks=1.5&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 8.200000017881393
+    },
+    {
+      "name": "https://use.typekit.net/af/a6eda3/00000000000000007735e3ba/31/m?features=ALL&v=4&chunks=1.5&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 13.699999988079071
+    },
+    {
+      "name": "https://use.typekit.net/gig5kam.js",
+      "type": "other",
+      "status": 0,
+      "duration": 171.19999998807907
+    },
+    {
+      "name": "https://p.typekit.net/p.gif?s=1&k=hyf2mwn&ht=tk&h=127.0.0.1&f=25377.25378.25379.25380&a=31451633&js=1.12.0&app=typekit&e=js&_=1789633533509",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 39.599999994039536
+    },
+    {
+      "name": "https://use.typekit.net/af/830c95/00000000000000007735a671/31/m?features=ALL&v=4&chunks=63.132.134.147&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 198
+    },
+    {
+      "name": "https://use.typekit.net/af/9a98a0/00000000000000007735a679/31/m?features=ALL&v=4&chunks=63.132.134.147&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 493.40000000596046
+    },
+    {
+      "name": "https://use.typekit.net/af/f48220/00000000000000007735a678/31/m?features=ALL&v=4&chunks=63.132.134.147&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 329.59999999403954
+    },
+    {
+      "name": "https://use.typekit.net/af/ac3ef9/00000000000000007735a67c/31/m?features=ALL&v=4&chunks=127.260.262.275&order=0",
+      "type": "xmlhttprequest",
+      "status": 200,
+      "duration": 231.5
+    },
+    {
+      "name": "https://use.typekit.net/hyf2mwn.js",
+      "type": "other",
+      "status": 0,
+      "duration": 129.69999998807907
+    },
+    {
+      "name": "http://127.0.0.1:5277/favicon.svg",
+      "type": "other",
+      "status": 200,
+      "duration": 10.399999976158142
+    },
+    {
+      "name": "http://127.0.0.1:5277/favicon.ico",
+      "type": "other",
+      "status": 404,
+      "duration": 22.400000005960464
+    },
+    {
+      "name": "http://127.0.0.1:5277/favicon.ico",
+      "type": "other",
+      "status": 404,
+      "duration": 32
+    },
+    {
+      "name": "http://127.0.0.1:5277/favicon.svg",
+      "type": "other",
+      "status": 200,
+      "duration": 19.400000005960464
+    }
+  ]
+}

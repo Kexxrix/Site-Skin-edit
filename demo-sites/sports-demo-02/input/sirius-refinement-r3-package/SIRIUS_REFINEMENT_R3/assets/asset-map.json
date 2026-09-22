@@ -1,0 +1,486 @@
+{
+  "schema_version": 3,
+  "package": "SIRIUS_REFINEMENT_R3",
+  "prepared_on": "2026-09-18",
+  "artifact_type": "implementation_handoff_not_application_source",
+  "status": "r3_user_approved_instructions_ready_not_implemented_or_deployed_here",
+  "target_public_url": "https://sirius.kexxadrix.chatgpt.site/",
+  "target_project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "protected_public_url": "https://mercury.kexxadrix.chatgpt.site/",
+  "operating_documents": [
+    "AGENTS.md",
+    "STATE.md",
+    "DESIGN_SPEC.md",
+    "DECISIONS.md"
+  ],
+  "baseline": {
+    "public_version": "v2",
+    "commit": "23f81f8a4c90fb9ea57b06336c809e6e12d840e3",
+    "deployment_id": "appgdep_6aacdb55cb2881919d7ce5e5455fc16a",
+    "source": "user supplied R2 completion and STATE(3).md; verify against current local source before editing"
+  },
+  "scope": [
+    "H1_header_brand_enlarge",
+    "H2_active_menu_gold_text_gradient",
+    "H3_header_account_button_design",
+    "C01_market_group_spacing_only",
+    "C02_team_score_proximity",
+    "C03_odds_button_height",
+    "C04_stable_display_counts_and_fixture_detail",
+    "C05_height_accordion",
+    "C06_smooth_central_scroll_to_top"
+  ],
+  "workflow": {
+    "independent_qa_thread": "do_not_assign_until_user_explicitly_restarts",
+    "steps": [
+      "implement",
+      "brief_implementer_error_check",
+      "update_existing_public_site",
+      "user_visual_feedback"
+    ],
+    "no_qa_pass_gate": true
+  },
+  "excluded_until_user_next_instruction": [
+    "rail_reordering_or_new_banners",
+    "sitewide_button_restyle",
+    "future_site_creation",
+    "new_live_feed_or_transaction_backend",
+    "mobile_relayout"
+  ],
+  "implementation_defaults_not_exact_user_dimensions": {
+    "header_upper_height_px": 84,
+    "header_lower_height_px": 50,
+    "header_total_height_px": 134,
+    "symbol_px": 48,
+    "wordmark_visible_height_px": 51,
+    "brand_gap_px": 12,
+    "menu_font_px": 17,
+    "active_text_gradient": [
+      "#FFF2BF",
+      "#EFCE79",
+      "#C7973C"
+    ],
+    "header_account_button_height_px": 36,
+    "header_account_button_min_width_px": 76,
+    "header_account_button_radius_px": 3,
+    "header_account_button_border_px": 1,
+    "header_account_button_gap_px": 8,
+    "market_inner_gap_px": [
+      4,
+      6
+    ],
+    "market_outer_gap_px": [
+      16,
+      20
+    ],
+    "odds_button_height_px": [
+      44,
+      48
+    ],
+    "row_height_start_px": 88,
+    "accordion_duration_ms": 200,
+    "accordion_duration_range_ms": [
+      180,
+      240
+    ],
+    "initial_matches_per_section": 6,
+    "more_increment": 6,
+    "scroll_to_top_duration_ms": 400,
+    "scroll_to_top_max_duration_ms": 500,
+    "scroll_to_top_behavior": "central container only; ease out; cancel on user scroll; reduced-motion instant",
+    "scroll_to_top_threshold": "central.scrollTop >= central.clientHeight",
+    "scroll_to_top_button_size_px": [
+      36,
+      40
+    ],
+    "display_additional_market_count": {
+      "field_example": "displayAdditionalMarketCount",
+      "stable_per_fixture_id": true,
+      "not_real_market_array_length": true,
+      "soccer_range": [
+        24,
+        180
+      ],
+      "baseball_range": [
+        12,
+        76
+      ],
+      "basketball_range_proposed_not_user_specific": [
+        24,
+        128
+      ],
+      "other_sports_range": [
+        1,
+        9
+      ]
+    }
+  },
+  "branding_notes": {
+    "symbol_placement": "Immediately left of wordmark; group centered in upper header row.",
+    "wordmark_transparent_bottom_rows": 116,
+    "wordmark_visible_bbox_height": 588,
+    "wordmark_css_rule": "1741:588 CSS viewport may exclude only fully transparent bottom rows; keep original file unchanged."
+  },
+  "source_dependencies_not_bundled": [
+    {
+      "kind": "existing_application_source",
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site/",
+      "action": "continue current Sirius; do not create new application or reclone Mercury"
+    },
+    {
+      "kind": "existing_data_and_assets",
+      "items": [
+        "fixture JSON and IDs",
+        "actual market data",
+        "team logos",
+        "league logos",
+        "flags",
+        "fonts",
+        "banner images",
+        "hosting credentials"
+      ],
+      "action": "reuse current local Sirius source"
+    }
+  ],
+  "archive": "history/previous-records.json is historical input only; its QA and R2 instructions are superseded",
+  "image_processing": "All 17 PNGs copied byte-for-byte; no editing or generation.",
+  "assets": [
+    {
+      "path": "assets/branding/sirius-symbol.png",
+      "role": "approved_header_symbol_left_of_wordmark",
+      "original_filename": "ChatGPT Image 2026년 9월 18일 오후 12_18_24.png",
+      "bytes": 349237,
+      "sha256": "511d72e507ff9907a74f951ba3a808566f90dee7834885d37f931961e0b84874",
+      "format": "PNG",
+      "width": 640,
+      "height": 640,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        22,
+        16,
+        640,
+        640
+      ],
+      "fully_transparent_pixels": 234640,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "assets/branding/sirius-wordmark.png",
+      "role": "approved_header_wordmark_right_of_symbol",
+      "original_filename": "ChatGPT Image 2026년 9월 18일 오후 12_05_23.png",
+      "bytes": 603611,
+      "sha256": "3f9e53949f5e671a2185580ef77e7673d1bb80b0d76b44caedfffb662aac4825",
+      "format": "PNG",
+      "width": 1741,
+      "height": 704,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        1741,
+        588
+      ],
+      "fully_transparent_pixels": 730485,
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "assets/sports-icons/ice-hockey.png",
+      "role": "approved_reused_sport_icon:아이스하키",
+      "original_filename": "image_Sports_[##]_0000_Layer-8.png",
+      "bytes": 82946,
+      "sha256": "c0f799fc91339b44e4a0429ad5c43e94b86636a31552642992afee6a462c8f08",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        254,
+        231
+      ],
+      "fully_transparent_pixels": 39766,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "ice-hockey",
+      "previous_project_filename": "mercury-ice-hockey.png"
+    },
+    {
+      "path": "assets/sports-icons/esports.png",
+      "role": "approved_reused_sport_icon:E스포츠",
+      "original_filename": "image_Sports_[##]_0001_Layer-7.png",
+      "bytes": 75670,
+      "sha256": "6f836f4b7a33b7f7e1d37f72f16b4feac44c5d77e07d3a51fd3aae202a181a5e",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        2,
+        44,
+        254,
+        214
+      ],
+      "fully_transparent_pixels": 38036,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "esports",
+      "previous_project_filename": "mercury-esports.png"
+    },
+    {
+      "path": "assets/sports-icons/american-football.png",
+      "role": "approved_reused_sport_icon:미식축구",
+      "original_filename": "image_Sports_[##]_0002_Layer-6.png",
+      "bytes": 98580,
+      "sha256": "e0f8d80ec2fd68089e116bec0d37e7c284ebd101be445d4494606dd3058a9703",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        10,
+        9,
+        248,
+        256
+      ],
+      "fully_transparent_pixels": 31312,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "american-football",
+      "previous_project_filename": "mercury-american-football.png"
+    },
+    {
+      "path": "assets/sports-icons/tennis.png",
+      "role": "approved_reused_sport_icon:테니스",
+      "original_filename": "image_Sports_[##]_0003_Layer-5.png",
+      "bytes": 135573,
+      "sha256": "2ecefa4b9a2d1f1dc42577225ae4c4644c73b9551db1b8eebfe0c876e4b82574",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        8,
+        256,
+        254
+      ],
+      "fully_transparent_pixels": 18224,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "tennis",
+      "previous_project_filename": "mercury-tennis.png"
+    },
+    {
+      "path": "assets/sports-icons/volleyball.png",
+      "role": "approved_reused_sport_icon:배구",
+      "original_filename": "image_Sports_[##]_0004_Layer-4.png",
+      "bytes": 118865,
+      "sha256": "57d3491922f2e828e2470b95ba614ab9c8458b8942f06e0654a7a097d7548f2a",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        6,
+        8,
+        254,
+        251
+      ],
+      "fully_transparent_pixels": 20321,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "volleyball",
+      "previous_project_filename": "mercury-volleyball.png"
+    },
+    {
+      "path": "assets/sports-icons/baseball.png",
+      "role": "approved_reused_sport_icon:야구",
+      "original_filename": "image_Sports_[##]_0005_Layer-3.png",
+      "bytes": 132507,
+      "sha256": "7c12c667b6c3864e38399f3e8f2749153ed55525ffaceeaae8350e772f1d49b4",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        8,
+        5,
+        251,
+        256
+      ],
+      "fully_transparent_pixels": 18899,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "baseball",
+      "previous_project_filename": "mercury-baseball.png"
+    },
+    {
+      "path": "assets/sports-icons/basketball.png",
+      "role": "approved_reused_sport_icon:농구",
+      "original_filename": "image_Sports_[##]_0006_Layer-2.png",
+      "bytes": 127654,
+      "sha256": "115fdfbf991648a20918aeea3ed65302ef6aded97dbfcbf9fa18daf226ba3afc",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        4,
+        0,
+        256,
+        254
+      ],
+      "fully_transparent_pixels": 19871,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "basketball",
+      "previous_project_filename": "mercury-basketball.png"
+    },
+    {
+      "path": "assets/sports-icons/soccer.png",
+      "role": "approved_reused_sport_icon:축구",
+      "original_filename": "image_Sports_[##]_0007_Layer-1.png",
+      "bytes": 115608,
+      "sha256": "073f109264e5dbdf4b3f09b05f823a6cee69a355ec15ef0fae579b765bce3fad",
+      "format": "PNG",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_xyxy": [
+        6,
+        8,
+        251,
+        251
+      ],
+      "fully_transparent_pixels": 20535,
+      "bytes_unchanged_from_source": true,
+      "sport_key": "soccer",
+      "previous_project_filename": "mercury-soccer.png"
+    },
+    {
+      "path": "references/header-gold-reference.png",
+      "role": "gold_palette_reference; active_menu_gradient_is_on_text_per_user",
+      "source_path_at_preparation": "upload/ed77537d-29f0-4d4b-bc46-78eb0ff01b9d.png",
+      "source_library_file_id": "libfile_0db334ea3b988191af6d66011ac229a7",
+      "bytes": 1973,
+      "sha256": "21d0b8d61080c3df8429cb98234a578ce7267beff990fcd93a65fb48b4b8b95e",
+      "format": "PNG",
+      "width": 57,
+      "height": 58,
+      "mode": "RGBA",
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/header-account-buttons-reference.png",
+      "role": "navy_outline_login_and_light_gold_join",
+      "source_path_at_preparation": "upload/673236bf-67e3-474c-af3e-a8e17b022288.png",
+      "source_library_file_id": "libfile_20b5b3990a0c81918b42f7acf9ccdf75",
+      "bytes": 1495,
+      "sha256": "25585da78745395151dc21424a7f338e1feae12b0bbe0c7ca3cdd4c9ab0a213d",
+      "format": "PNG",
+      "width": 142,
+      "height": 46,
+      "mode": "RGBA",
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/central-current-feedback.png",
+      "role": "historical_central_problem_reference_not_target_brightness",
+      "source_path_at_preparation": "SIRIUS_HEADER_R2/references/central-current-feedback.png",
+      "source_library_file_id": "libfile_53cae816a2dc81919e66b9185bc3997d",
+      "bytes": 124241,
+      "sha256": "89888b55eb701b747961d7a54c5b7685118520e027f23ea00186cad6cae2dfca",
+      "format": "PNG",
+      "width": 1278,
+      "height": 656,
+      "mode": "RGBA",
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/market-group-spacing-reference.png",
+      "role": "market_group_spacing_only",
+      "source_path_at_preparation": "SIRIUS_HEADER_R2/references/market-group-spacing-reference.png",
+      "source_library_file_id": "libfile_72a3091ca7b0819191bafb7ed00a39fe",
+      "bytes": 86942,
+      "sha256": "adb00780a690843de69025bf178169b35d21c1da1da5cd7c96e9fc19d2a7b9c5",
+      "format": "PNG",
+      "width": 1112,
+      "height": 631,
+      "mode": "RGBA",
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/team-score-proximity-reference.png",
+      "role": "team_and_score_proximity",
+      "source_path_at_preparation": "SIRIUS_HEADER_R2/references/team-score-proximity-reference.png",
+      "source_library_file_id": "libfile_ffa3ed2956888191b6b819e434783292",
+      "bytes": 8323,
+      "sha256": "f08ff077249d307618dd5dd15724855b3ccd8ca51a074c0c9afc777e14fcb0f4",
+      "format": "PNG",
+      "width": 336,
+      "height": 89,
+      "mode": "RGB",
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/back-to-top-reference.png",
+      "role": "central_viewport_bottom_right_button_position",
+      "source_path_at_preparation": "SIRIUS_HEADER_R2/references/back-to-top-reference.png",
+      "source_library_file_id": "libfile_78814b9a1dc88191a0efd3f8212538c1",
+      "bytes": 221311,
+      "sha256": "bf73ac89a7bccdacf16e54f873a201e70547f5c533b369f6cf77e2a866fdcc52",
+      "format": "PNG",
+      "width": 1002,
+      "height": 826,
+      "mode": "RGBA",
+      "bytes_unchanged_from_source": true
+    },
+    {
+      "path": "references/sirius-darker-tone-reference.png",
+      "role": "preserve_r2_darkness_not_a_new_darkening_instruction",
+      "source_path_at_preparation": "SIRIUS_HEADER_R2/references/sirius-darker-tone-reference.png",
+      "source_library_file_id": "libfile_a4f18f23a6dc81919bd91d818815afb3",
+      "bytes": 397609,
+      "sha256": "e3a9db95af49011f1230a4c272b23a5b1bc48584e63bbdf1c1cc1bc27e1fd252",
+      "format": "PNG",
+      "width": 1919,
+      "height": 943,
+      "mode": "RGB",
+      "bytes_unchanged_from_source": true
+    }
+  ]
+}

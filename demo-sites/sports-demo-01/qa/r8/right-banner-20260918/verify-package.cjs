@@ -1,0 +1,12 @@
+const fs=require('node:fs'),cp=require('node:child_process'),crypto=require('node:crypto');
+const root=process.cwd(),qa=root+'/../qa/r8/right-banner-20260918',archive=qa+'/site-v8.tar.gz';
+const entries=cp.execFileSync('tar',['-tzf',archive],{encoding:'utf8'}).trim().split(/\r?\n/);
+const required=['dist/.openai/hosting.json','dist/server/index.js','dist/client/banners/r8/mercury-event-woman.png'];
+for(const p of required) if(!entries.includes(p)) throw Error('Missing '+p);
+if(entries.some(p=>p.includes('/.wrangler/'))) throw Error('Preview cache in archive');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const relative='public/banners/r8/mercury-event-woman.png',asset=fs.readFileSync(root+'/'+relative);
+const archived=cp.execFileSync('tar',['-xOf',archive,'dist/client/banners/r8/mercury-event-woman.png'],{maxBuffer:10e6});
+if(sha(asset)!==sha(archived)) throw Error('Archive image mismatch');
+const report={checkedAt:new Date().toISOString(),build:'npm run build via official npm-cli.js: PASS',diffCheck:'PASS',commit:cp.execFileSync('git',['-c','safe.directory='+root.replaceAll('\\','/'),'rev-parse','--verify','HEAD'],{encoding:'utf8'}).trim(),source:'D:/WebDL/ChatGPT Image 2026년 9월 17일 오후 06_46_00 (9).png',copy:relative,image:{sha256:sha(asset),bytes:asset.length,width:asset.readUInt32BE(16),height:asset.readUInt32BE(20),archivedSha256:sha(archived)},archive:{path:archive,sha256:sha(fs.readFileSync(archive)),entries:entries.length,requiredFilesPresent:true,previewCacheAbsent:true},toolingNote:'Sites 0.1.65 disappeared from plugin cache during this run. Used available official bundled 0.1.57 package-site.sh via Git Bash; build and source unchanged.'};
+fs.writeFileSync(qa+'/technical-checks.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));

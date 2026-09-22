@@ -1,4 +1,6 @@
-# Site-Skin-edit — TITAN 제작 자료
+# Site-Skin-edit — 스포츠 사이트와 TITAN 제작 자료
+
+**2026-09-22 업데이트: [완료된 스포츠 사이트 3개](demo-sites/README.ko.md)를 추가했습니다.** MERCURY v9, SIRIUS v8, ALDEBARAN v6의 최신 소스·자산·운영 문서와 작업 기록은 각 `demo-sites/` 폴더에서 확인할 수 있습니다. 파일별 무결성 기록은 [사이트 백업 명세](backup/site-snapshots/20260922/source-files.json)에 있습니다. 아래 TITAN 영상 자료와 기존 기록은 보존합니다.
 
 이 저장소는 `E:/codexwork/Site-Skin-edit`에서 진행 중인 사이트·TITAN 영상 제작 자료의 백업입니다. 영상의 원본, 가이드 이미지, 실제 프롬프트, AE 프로젝트와 제작 스크립트, 출력 영상, 실패·수정·검증 기록을 함께 보존합니다.
 

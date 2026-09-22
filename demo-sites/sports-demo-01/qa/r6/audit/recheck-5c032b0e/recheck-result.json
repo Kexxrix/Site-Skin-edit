@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "stage": "F01-focused-independent-recheck",
+  "auditorThreadId": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "source": {
+    "url": "http://127.0.0.1:5276/",
+    "sourceId": "5c032b0e58bc18e815edc64b3c50d661da28cdd016da1f4d433064904938764b",
+    "previousSourceId": "1a3f550fdfd5fdfe99a6e4747e329e4536d86c01eae22806d9901269896bc790",
+    "changedFiles": [
+      "site/app/globals.css"
+    ],
+    "change": "Only two gold active/data-pressed selectors added to existing pressed rule; declaration values unchanged.",
+    "cssSha256": "6b49affce2d6657fb093ecfa5b2ddcef386230ef334f071948c4c754a0ecbd7e",
+    "startHash": "source-verification-before.json",
+    "endHash": "source-verification-after.json",
+    "hashResult": "129/129 matched both times, only CSS differs from previous frozen version."
+  },
+  "observation": {
+    "startedAtKST": "2026-09-17T12:54:46+09:00",
+    "completedAtKST": "2026-09-17T13:00:26+09:00",
+    "DOM": {
+      "width": 1920,
+      "height": 940,
+      "dpr": 1,
+      "visualScale": 1,
+      "cdpZoom": 1
+    },
+    "raster": "Original tool captures01-11 are1920x703 with scaled content;12 is native1920x940. Comparative states are visible, exact geometry is measured in DOM.",
+    "test": "hover→actual held left mouse-down→release. Separate early and settled samples; held settled observations were taken several seconds after60ms transition."
+  },
+  "finding": {
+    "id": "F01",
+    "q": "Q07",
+    "priority": "P2",
+    "status": "해소",
+    "result": "서비스·헤더 회원가입·슬립·확인모달 골드 CTA 모두 hover 외광20px에서 pressed inset0 3px8px + inset0 1px로 바뀌며 외광0. x/y/width/height 동일, transform/translate none.",
+    "scope": "four representative gold CTA families, direct UI pointer states; shared selector verified in frozen source.",
+    "keyboardLimit": "data-pressed selector added in source; keyboard held state was not separately retested in this focused pointer recheck."
+  },
+  "checks": [
+    {
+      "label": "service",
+      "hover": {
+        "label": "service",
+        "phase": "hover-pointer-settled",
+        "active": false,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 259,
+          "height": 94,
+          "left": 25,
+          "right": 144,
+          "top": 165,
+          "width": 119,
+          "x": 25,
+          "y": 165
+        },
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "text": "충전\n가상 잔액 채우기",
+        "time": "2026-09-17T03:57:45.017Z",
+        "transform": "none",
+        "transition": "0.16s, 0.16s, 0.16s, 0.16s",
+        "translate": "none"
+      },
+      "pressed": {
+        "label": "service",
+        "phase": "pressed-pointer-settled",
+        "active": true,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 259,
+          "height": 94,
+          "left": 25,
+          "right": 144,
+          "top": 165,
+          "width": 119,
+          "x": 25,
+          "y": 165
+        },
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "text": "충전\n가상 잔액 채우기",
+        "time": "2026-09-17T03:57:50.774Z",
+        "transform": "none",
+        "transition": "0.06s",
+        "translate": "none"
+      },
+      "rectUnchanged": true,
+      "heldActive": true,
+      "insetOnly": true,
+      "noTransform": true
+    },
+    {
+      "label": "header-signup",
+      "hover": {
+        "label": "header-signup",
+        "phase": "hover-settled",
+        "active": false,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 51.5,
+          "height": 37,
+          "left": 1832,
+          "right": 1908,
+          "top": 14.5,
+          "width": 76,
+          "x": 1832,
+          "y": 14.5
+        },
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "text": "회원가입",
+        "time": "2026-09-17T03:55:52.298Z",
+        "transform": "none",
+        "transition": "0.16s, 0.16s, 0.16s, 0.16s",
+        "translate": "none"
+      },
+      "pressed": {
+        "label": "header-signup",
+        "phase": "pressed-settled",
+        "active": true,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 51.5,
+          "height": 37,
+          "left": 1832,
+          "right": 1908,
+          "top": 14.5,
+          "width": 76,
+          "x": 1832,
+          "y": 14.5
+        },
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "text": "회원가입",
+        "time": "2026-09-17T03:56:05.640Z",
+        "transform": "none",
+        "transition": "0.06s",
+        "translate": "none"
+      },
+      "rectUnchanged": true,
+      "heldActive": true,
+      "insetOnly": true,
+      "noTransform": true
+    },
+    {
+      "label": "slip",
+      "hover": {
+        "label": "slip",
+        "phase": "hover-settled",
+        "active": false,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 717,
+          "height": 42,
+          "left": 1601,
+          "right": 1895,
+          "top": 675,
+          "width": 294,
+          "x": 1601,
+          "y": 675
+        },
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "text": "선택 체험하기",
+        "time": "2026-09-17T03:57:00.852Z",
+        "transform": "none",
+        "transition": "0.16s, 0.16s, 0.16s, 0.16s",
+        "translate": "none"
+      },
+      "pressed": {
+        "label": "slip",
+        "phase": "pressed-settled",
+        "active": true,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 717,
+          "height": 42,
+          "left": 1601,
+          "right": 1895,
+          "top": 675,
+          "width": 294,
+          "x": 1601,
+          "y": 675
+        },
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "text": "선택 체험하기",
+        "time": "2026-09-17T03:57:09.406Z",
+        "transform": "none",
+        "transition": "0.06s",
+        "translate": "none"
+      },
+      "rectUnchanged": true,
+      "heldActive": true,
+      "insetOnly": true,
+      "noTransform": true
+    },
+    {
+      "label": "confirmation",
+      "hover": {
+        "label": "confirmation",
+        "phase": "hover-settled",
+        "active": false,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 666.375,
+          "height": 36,
+          "left": 707,
+          "right": 1213,
+          "top": 630.375,
+          "width": 506,
+          "x": 707,
+          "y": 630.375
+        },
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "text": "확인하고 체험내역 저장",
+        "time": "2026-09-17T03:57:20.773Z",
+        "transform": "none",
+        "transition": "0.16s, 0.16s, 0.16s, 0.16s",
+        "translate": "none"
+      },
+      "pressed": {
+        "label": "confirmation",
+        "phase": "pressed-settled",
+        "active": true,
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+        "disabled": false,
+        "hover": true,
+        "pressed": false,
+        "rect": {
+          "bottom": 666.375,
+          "height": 36,
+          "left": 707,
+          "right": 1213,
+          "top": 630.375,
+          "width": 506,
+          "x": 707,
+          "y": 630.375
+        },
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "text": "확인하고 체험내역 저장",
+        "time": "2026-09-17T03:57:30.534Z",
+        "transform": "none",
+        "transition": "0.06s",
+        "translate": "none"
+      },
+      "rectUnchanged": true,
+      "heldActive": true,
+      "insetOnly": true,
+      "noTransform": true
+    }
+  ],
+  "releaseResults": [
+    "service opens virtual recharge dialog",
+    "signup opens demo login dialog",
+    "slip opens confirmation dialog",
+    "confirmation stores local demo receipt and returns completion dialog"
+  ],
+  "reusedEvidence": {
+    "fullAudit": "../full-1a3f550f/full-audit.json",
+    "q01throughQ10": "All previous passing observations reused; Q07 F01 updated to pass. No second full functional/test suite.",
+    "wog": "../initial-20260917/initial-audit.json, direct12:00–12:07KST baseline unchanged",
+    "technical": "Implementer reran build for one-line CSS patch. Auditor independently checked new manifest and direct UI; did not rerun unchanged math/type/lint."
+  },
+  "finalVerdict": {
+    "A": "통과",
+    "B": "통과",
+    "C": "통과",
+    "A_label": "사양 준수",
+    "B_label": "관찰한 WOG 정렬·재질·위계·상태의 품질 기준 대비 완성도",
+    "C_label": "로컬 데모 기능",
+    "qResults": [
+      {
+        "id": "Q01",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q02",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q03",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q04",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q05",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q06",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q07",
+        "status": "통과",
+        "evidence": "This focused correction plus prior Q07 states"
+      },
+      {
+        "id": "Q08",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q09",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      },
+      {
+        "id": "Q10",
+        "status": "통과",
+        "evidence": "Reused full-audit evidence"
+      }
+    ],
+    "openFindings": [],
+    "userDesignApproved": false,
+    "publicDeploymentVerified": false
+  },
+  "localTestState": {
+    "extraReceipt": "This focused confirmation added one local demo record for1000KRW; no personal information or real transaction.",
+    "end": "GUEST, virtual balance1000000,0selected,stakeempty,no dialog,mouse released,temporary viewport reset.",
+    "receipts": "Prior full audit record retained; no existing records removed."
+  },
+  "evidenceHandling": {
+    "captureManifest": "capture-manifest.json",
+    "states": "button-state-observations.json",
+    "captures": 12,
+    "alteredImages": false,
+    "limitations": [
+      "tool-scaled raster recorded separately from DOM dimensions",
+      "native pressed screenshot command timed out; existing comparative original captures and settled DOM evidence retained",
+      "no public deployment or subjective user design approval claim"
+    ],
+    "auditorSourceEdits": false,
+    "sitesConnectorCalled": false,
+    "additionalMD": false
+  }
+}

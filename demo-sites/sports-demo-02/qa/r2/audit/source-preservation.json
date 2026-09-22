@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-09-18T15:43:27.3588844+09:00",
+  "baseline": "efad70506a3fcfac90ceb67d6b16ceedd5acc8086cc0e06f1eab705c7f4546a2",
+  "sourceId": "3d0a5a774bb470bd4850d49da973733bde4d1e97660d1f257af180005eeadbf7",
+  "commit": "23f81f8a4c90fb9ea57b06336c809e6e12d840e3",
+  "manifestFileCount": 276,
+  "unchangedManifestEntries": 273,
+  "changedFiles": [
+    {
+      "file": "app/globals.css",
+      "expected": "163b7859b0da36d4f1581ee5a971a665ad65dfd76c6b922c6dee371d5900b154",
+      "actual": "163b7859b0da36d4f1581ee5a971a665ad65dfd76c6b922c6dee371d5900b154",
+      "matches": true
+    },
+    {
+      "file": "app/match-list.css",
+      "expected": "c8a18745994d22788e88c319d123e98593446ad295f859d3fddb28f0b3e3842e",
+      "actual": "c8a18745994d22788e88c319d123e98593446ad295f859d3fddb28f0b3e3842e",
+      "matches": true
+    },
+    {
+      "file": "app/page.tsx",
+      "expected": "463665f9f2d05f42ddc8493629df250b469d81775f405a470df165965502fd5b",
+      "actual": "463665f9f2d05f42ddc8493629df250b469d81775f405a470df165965502fd5b",
+      "matches": true
+    }
+  ],
+  "independentGitDiffFiles": [
+    "app/globals.css",
+    "app/match-list.css",
+    "app/page.tsx"
+  ],
+  "workingTreeReadback": "git status --short empty",
+  "gitOwnershipHandling": "command-local safe.directory used; no global Git configuration changed",
+  "sourceEditsByAuditor": [],
+  "buildEvidence": "Implementation ready.json reports build/typecheck passed; auditor did not repeat build without source changes"
+}

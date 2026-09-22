@@ -1,0 +1,30 @@
+{
+  "finding": "F02",
+  "previousSourceId": "5c032b0e58bc18e815edc64b3c50d661da28cdd016da1f4d433064904938764b",
+  "sourceId": "a3bef90ec3c36b3d9568fb5466a4a82336667b7335aae7ee8ec7e2b2f88ee1be",
+  "changedFiles": [
+    {
+      "path": "components/ui/button.tsx",
+      "bytes": 3205,
+      "sha256": "6b062ccdcd36ee264e786f32a4a1a630ef4d80ab2ba13ab4de20065888b0b4f9"
+    }
+  ],
+  "change": "Remove active:not-aria-[haspopup]:translate-y-px from shared Button base class. No declaration or functional changes.",
+  "cause": "Production CSS omitted translate:none!important while retaining Tailwind active movement utility; actual public v4 deltaY=1 confirmed.",
+  "build": "passed",
+  "changedFileLint": "passed",
+  "productionPreview": "http://127.0.0.1:5277/",
+  "builtCss": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-01\\site\\dist\\client\\_next\\static\\css\\index.Bl8uWmul.css",
+      "sha256": "3404ef1c4d91998626dfad990838bfffb020ec788fc76c336ef1521d0fa9b166"
+    }
+  ],
+  "evidence": [
+    "F02-production-checks.json",
+    "F02-public-v4-defect.jpg",
+    "F02-production-service.jpg",
+    "F02-production-modal.jpg"
+  ],
+  "state": "Ready for independent production F02 check"
+}

@@ -1,0 +1,77 @@
+{
+  "at": "2026-09-21T09:10:53.087Z",
+  "protection": {
+    "source": {
+      "head": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+      "dirty": "?? tsconfig.tsbuildinfo",
+      "changed": [],
+      "added": [],
+      "unchanged": true
+    },
+    "protectedSirius": {
+      "head": "9c424b8e4e8c480848f1ec47bf5139c6d5987738",
+      "dirty": "?? .agents/\n?? .impeccable/\n?? DESIGN.md\n?? PRODUCT.md",
+      "changed": [],
+      "added": [],
+      "unchanged": true
+    }
+  },
+  "changedFiles": [
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/demo-data.ts",
+    "app/aldebaran-frame.css",
+    "app/aldebaran.tokens.css",
+    "app/aldebaran.surfaces.css",
+    "public/assets/branding/aldebaran-emblem.png",
+    "public/assets/branding/aldebaran-wordmark.png",
+    ".gitignore",
+    ".openai/hosting.json"
+  ],
+  "retained": [
+    {
+      "path": "app/match-motion.tsx",
+      "sha256": "727e3dfd455f6232d18fd8b22a1a5e576930e1cd6675ac57be4afa7f50a17100",
+      "unchanged": true
+    },
+    {
+      "path": "app/motion.css",
+      "sha256": "d3198e07daeeee288c44d536a537983c16f993628c4c9b41bc316f2bbcd8052f",
+      "unchanged": true
+    },
+    {
+      "path": "app/typography.css",
+      "sha256": "bf83591b25272ff9247648134d88d513dac71c40148f7b6cb3c954bc377a88c2",
+      "unchanged": true
+    },
+    {
+      "path": "app/match-records.json",
+      "sha256": "b662a76a48e9c6f25d4add889dd375045ba97a548f67a2c0cc23126d7f21dd6d",
+      "unchanged": true
+    },
+    {
+      "path": "app/live-snapshots.json",
+      "sha256": "3141ebfef3b639a34058cc9bc9e81e92c547b25876dc4e7be83a0a6a18768301",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "4995cbbd54b3038468bb9393a0413ffcd6927ce1a040c53e23544c7ec71f68dd",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5f8432502c671cadd84edb7f89d5d5477d695171a556b91c2b550e6a2de8d49b",
+      "unchanged": true
+    }
+  ],
+  "onlyDataChangeIsStorageKey": true,
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0
+  },
+  "typecheck": {
+    "command": "tsc --noEmit --incremental false",
+    "exitCode": 0
+  }
+}

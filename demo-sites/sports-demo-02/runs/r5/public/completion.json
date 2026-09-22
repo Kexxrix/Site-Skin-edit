@@ -1,0 +1,83 @@
+{
+  "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "url": "https://sirius.kexxadrix.chatgpt.site",
+  "sourceCommit": "c2ee2a17209a81f7d6279af4a6ef9b0c0f39d1a4",
+  "version": {
+    "id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_9196dcb030b081919f1ad66ea492576b",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "version_number": 5,
+    "source": {
+      "commit_sha": "c2ee2a17209a81f7d6279af4a6ef9b0c0f39d1a4"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000ebe48206b00a8a80be3f606e",
+      "content_hash": "sha256:74b99c86aef8bd0c40e65b47ef17bfde5f2d9a4d9a9ad47f37e1396634bf5f84",
+      "size_bytes": 28487680,
+      "file_count": 258
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6aad0522f3a48191860aae35ba428fdb",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "title": "SIRIUS",
+    "version_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_9196dcb030b081919f1ad66ea492576b",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://sirius.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aacb6c2a38881918bd8a324fa9c5b54",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-18T09:32:35.633817+00:00"
+  },
+  "implementation": "../implementation/changes.json",
+  "localObservation": "../implementation/basic-observation.json",
+  "screenshot": "sirius-r5-default-1920x940.jpg",
+  "publicObservation": "basic-observation.json",
+  "completedScope": [
+    "61 fixture / 122 missing score cells filled in presentation only",
+    "DIN 20/400 odds, default gold and numeric flex width fixed",
+    "7 original PNGs with identical SHA-256",
+    "single 272x153 banner immediately after quick service"
+  ],
+  "sourceDataAndLogicPreserved": true,
+  "protectedProjectsUntouched": true,
+  "operatingMarkdownOwner": "01a0a8e7-acda-7ab0-a42a-44beb1b41e50",
+  "next": "Await user feedback",
+  "finalSourceStatus": "clean",
+  "capture": {
+    "path": "../runs/r5/public/sirius-r5-default-1920x940.jpg",
+    "bytes": 206707,
+    "sha256": "b6ed353c603daba70ddbc9280bc7f2e68035d3fa7c273b61e96fd29884976abd",
+    "format": "JPEG",
+    "dimensions": [
+      1920,
+      940
+    ]
+  },
+  "cleanup": {
+    "previewPort5287": "stopped",
+    "temporaryWorkerCache": "moved outside deploy artifact",
+    "viewport": "reset",
+    "publicTab": "retained"
+  },
+  "publicBasicObservation": {
+    "url": "https://sirius.kexxadrix.chatgpt.site/",
+    "viewport": [
+      1920,
+      940
+    ],
+    "method": "native accessibility and rendered screenshot after PUBLIC navigation",
+    "defaultAll77": true,
+    "score112": true,
+    "score108": true,
+    "bannerBeforeSearch": true,
+    "slotCTA": true,
+    "observed": "Gold condensed odds, new gold sport icons, left banner face right/copy left and 112:108 visible. Header, 3-column layout and right rail retained.",
+    "measurementBoundary": "Detailed numeric layout and actual platform font checked locally; no repeat PUBLIC DOM audit.",
+    "remaining": "No issue observed in basic PUBLIC screen; user visual feedback pending."
+  }
+}

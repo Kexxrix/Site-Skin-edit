@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "stage": "full-frozen-source-audit-before-correction",
+  "auditor": {
+    "threadId": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+    "role": "independent read-only quality auditor"
+  },
+  "source": {
+    "url": "http://127.0.0.1:5276/",
+    "sourceId": "1a3f550fdfd5fdfe99a6e4747e329e4536d86c01eae22806d9901269896bc790",
+    "baseCommit": "76a2e2d5f8c443e25af832bd5e32754bb23c4ecd",
+    "fileCount": 129,
+    "startHashEvidence": "source-verification-before.json",
+    "endHashEvidence": "source-verification-after.json",
+    "hashResult": "All 129 manifest files matched at start and end.",
+    "publicDeployment": "Not part of this local audit; public URL remains supplied v3."
+  },
+  "observation": {
+    "startedAt": "2026-09-17T12:31:46+09:00",
+    "directChecksCompletedAt": "2026-09-17T12:48:49+09:00",
+    "browser": "Chrome extension, isolated audit tab",
+    "primary": {
+      "width": 1920,
+      "height": 940,
+      "dpr": 1,
+      "scale": 1
+    },
+    "wide": {
+      "width": 2560,
+      "height": 940,
+      "dpr": 1,
+      "scale": 1
+    },
+    "condition": "Explicit test viewport, not user monitor measurement"
+  },
+  "overall": {
+    "A": "수정 필요",
+    "B": "수정 필요",
+    "C": "통과",
+    "A_scope": "사양 준수. Q07 F01만 미달.",
+    "B_scope": "기존 직접 관찰한 WOG의 정렬·재질·위계·상태 완성도 기준. 색상·외형 유사도 평가가 아님. 골드 CTA 눌림 표현만 수정 필요.",
+    "C_scope": "실제 거래 없는 로컬 데모 기능의 직접 조작 범위.",
+    "fullAuditPerformed": true,
+    "correctionRecheckComplete": false,
+    "userDesignApproved": false,
+    "publicReleaseApproved": false
+  },
+  "wogBaseline": {
+    "reusedFrom": "../initial-20260917/initial-audit.json",
+    "observedWindowKST": "2026-09-17 12:00–12:07",
+    "newWogClaims": false,
+    "criteria": "일관된 카드 높이/기준선, 같은 바닥면의 경기 정보, 기능별 패널 위계, 버튼 안에 집중된 상태 표현",
+    "limits": "WOG 배당 클릭은 선택 변화를 확인하지 못했으므로 WOG 기능 정상의 근거로 사용하지 않음."
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "A": "통과",
+      "B": "통과",
+      "C": "해당 없음",
+      "finding": "기본 카드·좌우 패널·헤더가 중립 블랙/그레이로 일관됨. 골드가 제목선·CTA·선택, 아이보리가 정보에 배분됨. 초기 청회색/갈색 면 혼재 해소.",
+      "evidence": [
+        "01-initial-1920.jpg",
+        "09-center-lower-settled.jpg",
+        "geometry-initial.json"
+      ]
+    },
+    {
+      "id": "Q02",
+      "A": "통과",
+      "B": "통과",
+      "C": "통과",
+      "finding": "원형 심볼이 레터링 바로 왼쪽에 결합. 별도 심볼 사이드 패널 없음. 원본 비율 contain 슬롯48×48/196×58 및 이미지 로드 확인. 홈 링크 존재.",
+      "evidence": [
+        "01-initial-1920.jpg",
+        "geometry-initial.json",
+        "source-verification-before.json"
+      ]
+    },
+    {
+      "id": "Q03",
+      "A": "통과",
+      "B": "통과",
+      "C": "해당 없음",
+      "finding": "활성 탭 bottom66과 공통 레일 y66 높이2가 연결됨. 제목판도 공통 하단선과 연속되어 중복된 하단 밝은 반사 해소. 실제 pressed에서도 같은 rect 유지.",
+      "evidence": [
+        "17-header-pressed.jpg",
+        "fonts-and-details.json",
+        "states-effects-fonts.json"
+      ]
+    },
+    {
+      "id": "Q04",
+      "A": "통과",
+      "B": "통과",
+      "C": "해당 없음",
+      "finding": "팀·상태·점수가 동일 카드 면에 있고 score/market-reference 별도 배경·테두리·그림자 없음. 마켓 설명은 기본 커서이며 입체 배당 버튼과 구분됨.",
+      "evidence": [
+        "01-initial-1920.jpg",
+        "05-odds-focus.jpg",
+        "fonts-and-details.json"
+      ]
+    },
+    {
+      "id": "Q05",
+      "A": "통과",
+      "B": "통과",
+      "C": "통과",
+      "finding": "실제 수집 9경기가3/3/3으로 구성되고 모든 카드 높이284px, 열 폭 약418.67px. 하단 두 분류까지 같은 정보 구조/재질/기준선. 가상 대진/알파벳 배지 잔존 없음.",
+      "evidence": [
+        "01-initial-1920.jpg",
+        "09-center-lower-settled.jpg",
+        "geometry-initial.json",
+        "../../coordination/selected-data-check.json"
+      ]
+    },
+    {
+      "id": "Q06",
+      "A": "통과",
+      "B": "통과",
+      "C": "통과",
+      "finding": "빠른 서비스·검색/종목행·계정·입력/요약 슬립·지원/배너가 역할별 표면과 위계를 가짐. 선택9개 때 내부목록216px/scrollHeight917로 스크롤되고 입력/요약 접근 유지. 골드 상태 결함은 Q07에서 별도 반영.",
+      "evidence": [
+        "01-initial-1920.jpg",
+        "10-side-panels-lower.jpg",
+        "13-nine-picks-lower.jpg",
+        "interaction-observations.json"
+      ]
+    },
+    {
+      "id": "Q07",
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "통과",
+      "finding": "배당 base/hover/pressed/selected/focus/disabled와 헤더 pressed는 실제 조작 통과. 위치/크기 이동 없음. 골드 서비스 CTA는 실제 :active=true에서도 hover shadow가 우선하여 눌림 깊이와 외광 감소가 보이지 않음(F01).",
+      "evidence": [
+        "05-odds-focus.jpg",
+        "17-header-pressed.jpg",
+        "21-gold-pressed-defect.jpg",
+        "finding-F01.json",
+        "states-effects-fonts.json",
+        "motion-frames.json"
+      ],
+      "motion": "실제 연속 CDP changed-frame 관찰에서 레일의 좁은 광택만 진행되고 큰 면 광막·카드 이동은 관찰되지 않음. reduced motion에서 animation none, 해제 후 rail-glint 복구. 일정 FPS 영상이 아니므로 프레임 완전성/모든 장기 모션 품질까지 주장하지 않음."
+    },
+    {
+      "id": "Q08",
+      "A": "통과",
+      "B": "통과",
+      "C": "통과",
+      "finding": "원본 이미지 46개 DOM 인스턴스 모두 complete/naturalWidth 양수. 팀명 Pretendard JP Bold, 패널제목 ExtraBold, 점수 DIN Condensed 실제 platform glyph 확인. 영문 eyebrow는 로드된 Omnigothic CSS와 Adobe custom subset 실제 glyph(플랫폼명은 해시) 대응. Heisei 로드는 확인, 일본어 본문 없어 실제 glyph 사용은 해당 없음. 수집 대진/로고 대응은 별도 coordinator9건 검증 재사용.",
+      "evidence": [
+        "fonts-and-details.json",
+        "states-effects-fonts.json",
+        "scroll-wide-health.json",
+        "../../coordination/selected-data-check.json"
+      ],
+      "limitation": "표본 문자열의 실제 글리프를 확인했으며 모든 가능한 글자·OS 조합을 검증한 것은 아님."
+    },
+    {
+      "id": "Q09",
+      "A": "통과",
+      "B": "통과",
+      "C": "통과",
+      "finding": "1920에서 열272/1280/320px 및 본문816px. 2560에서 header x320 width1920, 같은 카드 폭/높이 유지. 각 열 wheel 및 Home/PageDown 실제 이동 확인. left530/center323/right203 끝값이 서로 독립적으로 유지되며 scrollbar-width none.",
+      "evidence": [
+        "23-wide-2560.jpg",
+        "geometry-initial.json",
+        "scroll-wide-health.json"
+      ],
+      "limitation": "작은 화면은 고정1920 셸 사양의 수평 overflow이며 별도 모바일 재설계를 평가하지 않음."
+    },
+    {
+      "id": "Q10",
+      "A": "통과",
+      "B": "통과",
+      "C": "통과",
+      "finding": "팀/리그 검색·종목복합필터·0결과/초기화, 선택·동일경기교체·재클릭해제·잠금·9개선택·개별/전체삭제, 가상로그인/로그아웃·금액검증/MAX/추가·확인/저장·새로고침내역 유지, 충전/환전/문의/공지/가이드/출처/다른메뉴 안내와 배너 이동을 직접 확인.",
+      "evidence": [
+        "05-odds-focus.jpg",
+        "12-two-pick-calculation.jpg",
+        "13-nine-picks-lower.jpg",
+        "14-confirmation.jpg",
+        "16-history-after-reload.jpg",
+        "22-source-dialog.jpg",
+        "24-no-results-settled.jpg",
+        "interaction-observations.json"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "q": "Q07",
+      "priority": "P2",
+      "status": "수정 필요",
+      "details": "finding-F01.json",
+      "minimumFix": "골드 CTA의 active/data-pressed 선택자 우선순위를 hover 이상으로 설정; 동일 rect를 유지하며 inset 눌림과 외광 감소 확인."
+    }
+  ],
+  "initialFindingsDisposition": [
+    {
+      "id": "I01",
+      "status": "해소"
+    },
+    {
+      "id": "I02",
+      "status": "해소"
+    },
+    {
+      "id": "I03",
+      "status": "해소"
+    },
+    {
+      "id": "I04",
+      "status": "해소"
+    },
+    {
+      "id": "I05",
+      "status": "해소"
+    },
+    {
+      "id": "I06",
+      "status": "해소"
+    },
+    {
+      "id": "I07",
+      "status": "기존 배당1px 이동 해소. 별도 골드 F01 신규 발견."
+    },
+    {
+      "id": "I08",
+      "status": "해소"
+    }
+  ],
+  "functionalBoundaries": {
+    "calculation": "1.84 × 1.56 = 2.8704; 10,000 × 2.8704 = 28,704원. 표시배당2.870으로 먼저 반올림해 지급액을 계산하지 않음.",
+    "amountCases": [
+      "empty via keyboard -> invalid",
+      "abc / -1000 / 1e3 / 1000.5 -> invalid integer",
+      "0 / 999 -> below minimum",
+      "1000 / 100000 -> valid",
+      "100001 -> above maximum",
+      "MAX100000 and +5000 at max remains100000"
+    ],
+    "localSideEffects": "감사 브라우저 local demo 내역1건 저장. 개인정보/실제 거래/외부 전송 없음. 가상충전으로 잔액1000000 복구 후 로그아웃. 감사 종료 시 한 선택이 남아 있음."
+  },
+  "reusedTechnicalEvidence": {
+    "source": "../../implementation/technical-checks.json",
+    "results": "Implementer typecheck/build passed,17 math tests passed, changed app lint0. Full repository lint19 pre-existing common component/hook errors.",
+    "auditorReran": false,
+    "reason": "Same input passing checks reused per instruction. Independent browser interaction and start/end SHA256 performed."
+  },
+  "limits": [
+    "사용자 디자인 승인 별도",
+    "공개 R6 배포 검증은 진행 담당 범위이며 이번 로컬 감사에 포함되지 않음",
+    "2026.09.16 정적 수집본, 현재 경기/배당의 실시간 진실성을 주장하지 않음",
+    "Heisei 실제 일본어 glyph N/A",
+    "연속 캡처는 changed-frame29장, 약5.863초 샘플 구간. 상수 FPS 영상이 아님"
+  ],
+  "evidenceHandling": {
+    "onlyJSONAndOriginalCaptures": true,
+    "sourceSpecDeploymentChangedByAuditor": false,
+    "sitesConnectorCalled": false,
+    "additionalMD": false,
+    "sourceFreezeReleasedAfterEndHash": true,
+    "captureManifest": "capture-manifest.json",
+    "timingArtifacts": "02,07,08 are excluded from their intended state proof;06 is auxiliary due capture timing uncertainty. No images resized or recompressed."
+  }
+}

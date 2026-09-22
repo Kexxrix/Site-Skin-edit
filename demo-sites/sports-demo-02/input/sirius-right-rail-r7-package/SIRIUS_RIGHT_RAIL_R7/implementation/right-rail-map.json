@@ -1,0 +1,137 @@
+{
+  "revision": "SIRIUS_RIGHT_RAIL_R7",
+  "status": "implementation_handoff_not_applied",
+  "date": "2026-09-18",
+  "target": {
+    "app_path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site/",
+    "public_url": "https://sirius.kexxadrix.chatgpt.site/",
+    "existing_root": "aside.scroll-column.right-column[aria-label='계정 및 베팅슬립']",
+    "add_root_class": "sirius-right-r7",
+    "width_px": 320,
+    "preserve_independent_scroll": true,
+    "order": ["account", "betslip", "support", "existing_event_banner"]
+  },
+  "integration": {
+    "css_file": "sirius-right-rail-r7.css",
+    "method": "현지 최신 JSX/상태/핸들러를 유지하고 필요한 클래스와 마크업만 추가한 뒤 오른쪽 범위 CSS를 병합한다.",
+    "tokens": "현재 왼쪽 R6 공유 토큰이 있으면 참고 CSS의 같은 값 대신 재사용한다. 전역 토큰 값 자체는 변경하지 않는다.",
+    "existing_conflicts": "현지 오른쪽의 기존 고정 높이·최소 높이·직선 제목 바·상단 골드 선이 남으면 해당 규칙만 범위 안에서 정리한다. 기존 슬립 목록 스크롤은 유지한다.",
+    "not_a_replacement_component": true,
+    "no_new_state_or_calculation": true
+  },
+  "observed_baseline": {
+    "left_panel_radius_px": 12,
+    "left_panel_padding_px": 12,
+    "left_panel_border": "#2B3D5F",
+    "left_panel_surface": "linear-gradient(160deg, #111F3C, #09142D 75%)",
+    "right_width_px": 320,
+    "right_gap_px": 12,
+    "account_and_slip_radius_px": 5,
+    "support_and_banner_radius_px": 4,
+    "right_banner_size_px": [320, 220]
+  },
+  "proposed_start_values": {
+    "rail_gap_px": 14,
+    "panel_radius_px": 12,
+    "panel_padding_px": 12,
+    "panel_border": "1px solid #2B3D5F",
+    "panel_surface": "linear-gradient(160deg, #111F3C, #09142D 75%)",
+    "button_radius_px": 7,
+    "card_and_menu_radius_px": 8,
+    "heading_font_px": 16,
+    "slip_heading_font_px": 18,
+    "heading_weight": 600,
+    "account_action_height_px": 38,
+    "amount_input_height_px": 44,
+    "amount_input_radius_px": 999,
+    "amount_input_font_px": 24,
+    "amount_placeholder_font_px": 18,
+    "quick_amount_height_px": 34,
+    "submit_height_px": 44,
+    "gold_gradient": ["#FCE1A4", "#D7B96C"],
+    "gold_button_text": "#101A34",
+    "hover_transition_ms": 140,
+    "reduce_motion": "prefers-reduced-motion에서는 새 전환을 해제한다."
+  },
+  "existing_dom_connections": [
+    {"selector": ".account-panel, .slip, .support-panel", "purpose": "동일한 12px 패널·표면·패딩"},
+    {"selector": ".panel-heading h2", "purpose": "사각 제목 바 대신 패널 안 타이틀 위계"},
+    {"selector": ".account-chip", "purpose": "현재 GUEST/회원 상태를 캡슐 표시; 상태 문자열 유지"},
+    {"selector": ".account-body, .account-identity, .avatar", "purpose": "기존 계정 정보·로그인 접근 유지"},
+    {"selector": ".wallet .num", "purpose": "실제 잔액을 DIN 28px로 표시; 값·통화 유지"},
+    {"selector": ".account-actions > button", "purpose": "3열 독립 버튼; 충전/환전/내역 핸들러 유지"},
+    {"selector": ".slip-actions, .count-badge, .icon-button", "purpose": "선택 수 캡슐과 제거 버튼; disabled·접근성 이름 유지"},
+    {"selector": ".slip-type", "purpose": "현재 단일/다중 모드는 12px; 기존 BET SLIP 자식 표시는 10–11px로 조정"},
+    {"selector": ".slip-list, .slip-item", "purpose": "선택 항목 8px 카드·간격; 기존 목록 스크롤 유지"},
+    {"selector": ".slip-item-top, .slip-teams, .slip-pick .num", "purpose": "리그·팀·선택·배당 위계; 긴 이름 줄바꿈, 배당 정밀도 유지"},
+    {"selector": ".slip-totals, .stake-label, .stake-input", "purpose": "기존 라벨과 input/MAX 연결 유지; 금액 입력 프레임 캡슐"},
+    {"selector": ".stake-input input", "purpose": "입력 숫자 DIN, placeholder UI 폰트; type/입력 처리 변경 없음"},
+    {"selector": ".stake-input .text-button", "purpose": "기존 MAX를 28px 소형 캡슐 버튼으로"},
+    {"selector": ".stake-quick, .stake-hint", "purpose": "기존 4개 증액/초기화·한도/오류 유지"},
+    {"selector": ".total-line, .total-line.payout", "purpose": "합계/당첨금 DIN 위계; 긴 값은 라벨과 별도 줄로 배치 가능"},
+    {"selector": ".submit-slip, .slip-footnote", "purpose": "실제 활성일 때만 골드; 기존 인증/검증/비활성/안내 유지"},
+    {"selector": ".support-title, .support-links", "purpose": "제목 16px·둥근 메뉴 행; 현재 문의/공지 동작 유지"}
+  ],
+  "minimal_markup_changes": [
+    {"class": "sirius-right-r7", "attach_to": "기존 오른쪽 aside 루트"},
+    {"class": "sr7-deposit", "attach_to": "기존 계정 충전 버튼"},
+    {"class": "sr7-withdraw", "attach_to": "기존 계정 환전 버튼"},
+    {"class": "sr7-empty", "attach_to": "기존 빈 슬립 안내 래퍼; 현지 클래스 확인 후 추가"},
+    {"class": "sr7-market-note", "attach_to": "기존 마켓·정규/연장·정산 조건 설명; 텍스트와 조건 보존"},
+    {"class": "sr7-reset", "attach_to": "기존 베팅 금액 초기화 버튼"},
+    {
+      "attribute": "data-invalid",
+      "attach_to": ".stake-input",
+      "binding": "현지 기존 금액 오류 상태가 true일 때 문자열 true, 나머지는 생략 또는 false. 기존 input aria-invalid가 있으면 CSS :has 규칙으로도 연결됨.",
+      "no_new_validation_rules": true
+    }
+  ],
+  "event_banner": {
+    "existing_root": ".photo-banner.photo-banner-right",
+    "image_src": "/banners/r8/mercury-event-woman.png",
+    "observed_natural_size_px": [1672, 941],
+    "copy_or_generate_new_asset": false,
+    "target_ratio": "16/9",
+    "target_size_at_320_px": [320, 180],
+    "image_fit": "cover",
+    "image_position": "50% 50%",
+    "eyebrow": "SIRIUS EVENTS",
+    "title_lines": ["당신의 밤을", "더 특별하게."],
+    "accessible_name": "이벤트 보기",
+    "classes": {
+      "single_interactive_root": "sr7-event-banner",
+      "img": "sr7-event-photo",
+      "copy_span": "sr7-event-copy",
+      "eyebrow_span": "sr7-event-eyebrow",
+      "title_span": "sr7-event-title"
+    },
+    "action": "현재 내부 이벤트 보기 버튼의 기존 핸들러를 바깥 하나의 버튼으로 이동한다. 기존 흐름이 경로 이동이면 같은 경로의 링크를 사용한다. 임의 경로/새 이벤트/새 안내 문구를 만들지 않는다.",
+    "markup": "기존 내부 CTA와 중복 클릭 요소를 제거한다. button이면 img와 span 기반의 유효한 내용만 넣고 h2/div/중첩 button을 넣지 않는다. 현재 사진의 적절한 대체 텍스트를 보존한다.",
+    "appearance": "CSS 하단 남색 그라데이션·얇은 경계·8px 반경. 원본 이미지 편집 없음. 얼굴을 가리지 않게 현지 화면에서 위치를 짧게 확인한다."
+  },
+  "reuse_assets": {
+    "ui_font": "현재 로드된 Pretendard 계열과 기존 폴백",
+    "numbers_font": "현재 로드된 din-condensed 400",
+    "icons": "현재 계정/티켓/휴지통/화살표/헤드폰 아이콘",
+    "photo": "/banners/r8/mercury-event-woman.png",
+    "no_download_or_asset_generation": true
+  },
+  "preserve": [
+    "기존 계정·인증 상태와 충전/환전/내역 핸들러",
+    "경기 선택/개별 제거/전체 제거 및 중앙 선택 상태 연동",
+    "단일/다중 정책·마켓/기준점/정산·잠금/오류 정보",
+    "실제 input 문자열 처리·type·라벨·최소/최대 검증",
+    "기존 MAX·증액·초기화·잔액/한도 처리",
+    "총 배당·당첨금 계산·소수점·통화·쉼표",
+    "활성/비활성 조건·확인창·확정·저장·이력",
+    "기존 문의/공지/이벤트 동작",
+    "오른쪽 폭·순서·독립 스크롤과 기존 슬립 목록 스크롤",
+    "SIRIUS 왼쪽 R6·헤더·중앙 경기 목록·승인된 모션 및 MERCURY"
+  ],
+  "delivery": {
+    "independent_qa_thread": false,
+    "workflow": "현지 구현 → 통상 빌드와 변경 부분의 짧은 기본 확인 → 기존 SIRIUS 공개 반영 → 사용자 피드백",
+    "basic_check": "빈/선택 슬립, 금액/오류/비활성, 긴 텍스트와 숫자, 기존 이벤트 클릭, 하단 스크롤을 대표 사례로 확인한다. 실제 베팅 제출을 확인 목적으로 새로 실행하지 않는다.",
+    "status_record": "실제 현지 변경·빌드·배포 ID만 STATE에 간단히 기록한다. 준비 자료로 현지 완료 이력을 덮어쓰지 않는다."
+  }
+}

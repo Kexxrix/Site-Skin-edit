@@ -1,0 +1,231 @@
+{
+  "auditVersion": "R7 independent targeted correction recheck",
+  "status": "complete_pass",
+  "auditorTask": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "sourceId": "3cb5e2b2fc738a6973592b8b4f050227d27872d2739732a6366edf87fed59702",
+  "baselineSourceId": "26f0d1ff56324d8cc2554aa38239d3bdf3da6acf8b8aa418d48ad03dff13d007",
+  "url": "http://127.0.0.1:5277/",
+  "start": "2026-09-17T17:44:58.9577762+09:00",
+  "end": "2026-09-17T17:52:21.1952158+09:00",
+  "sourceFreeze": {
+    "beforeCount": 262,
+    "afterCount": 262,
+    "mismatches": [],
+    "changedFiles": [
+      "app/globals.css",
+      "app/logo-presentation.json"
+    ],
+    "unchangedFiles": 260,
+    "exactDeltaIndependentlyVerified": {
+      "globals.css": {
+        "oneRuleMatched": true,
+        "reversingOnlyImportantRestoresOriginalHash": true
+      },
+      "logo-presentation.json": {
+        "oneJetsBackingMatched": true,
+        "reversingOnlyJetsBackingRestoresOriginalHash": true
+      }
+    },
+    "allPngBytesUnchanged": true,
+    "servedCss": {
+      "url": "http://127.0.0.1:5277/_next/static/css/index.WjcoLJFK.css",
+      "sha256": "6becef993ee5d2aed10d45abf3dfe17ea667ba6ea863db870dfc9b44aa0e5d92",
+      "expected": "6becef993ee5d2aed10d45abf3dfe17ea667ba6ea863db870dfc9b44aa0e5d92",
+      "bytes": 186530
+    }
+  },
+  "verdicts": {
+    "A_specification": "pass within stated R7 scope; R7-F01 and R7-F02 closed",
+    "B_finishComparedWithWOG": "pass under the observed finish/hierarchy/material/control-state baseline, combining unchanged full-audit evidence and this correction recheck",
+    "C_functions": "pass within local simulated scope; previous full function audit reused with targeted smoke pass",
+    "userDesignApproval": "separate; not claimed"
+  },
+  "R7": {
+    "R7-01": "pass",
+    "R7-02": "pass",
+    "R7-03": "pass",
+    "R7-04": "pass",
+    "R7-05": "pass",
+    "R7-06": "pass",
+    "R7-07": "pass",
+    "R7-08": "pass"
+  },
+  "Q": {
+    "Q01": "pass",
+    "Q02": "pass",
+    "Q03": "pass",
+    "Q04": "pass",
+    "Q05": "pass",
+    "Q06": "pass",
+    "Q07": "pass",
+    "Q08": "pass",
+    "Q09": "pass",
+    "Q10": "pass"
+  },
+  "findings": [
+    {
+      "id": "R7-F01",
+      "status": "closed_verified",
+      "verification": "NY Jets alone receives ivory circular backing; dark green full artwork now identifiable. Winnipeg Jets unchanged. Both contain and aspect ratio preserved; original PNG SHA256 unchanged.",
+      "evidence": [
+        "02-jets-fixed.jpg",
+        "03-jets-full-card.jpg",
+        "jets-readability.json",
+        "independent-delta-and-css.json"
+      ]
+    },
+    {
+      "id": "R7-F02",
+      "status": "closed_verified",
+      "verification": "Six settled controls have active=true and focus-visible=true simultaneously, ivory2px outline and inset pressed shadow, x/y/width/height delta0, transform:none and translate:none. Confirm modal sampled after entrance animation.",
+      "controls": [
+        {
+          "label": "service-gold",
+          "active": true,
+          "focusVisible": true,
+          "inset": true,
+          "outline": "rgb(245, 238, 223) solid 2px",
+          "rectDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "transform": "none",
+          "translate": "none",
+          "pass": true
+        },
+        {
+          "label": "service-normal",
+          "active": true,
+          "focusVisible": true,
+          "inset": true,
+          "outline": "rgb(245, 238, 223) solid 2px",
+          "rectDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "transform": "none",
+          "translate": "none",
+          "pass": true
+        },
+        {
+          "label": "odd-normal",
+          "active": true,
+          "focusVisible": true,
+          "inset": true,
+          "outline": "rgb(245, 238, 223) solid 2px",
+          "rectDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0.0,
+            "height": 0
+          },
+          "transform": "none",
+          "translate": "none",
+          "pass": true
+        },
+        {
+          "label": "odd-selected",
+          "active": true,
+          "focusVisible": true,
+          "inset": true,
+          "outline": "rgb(245, 238, 223) solid 2px",
+          "rectDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0.0,
+            "height": 0
+          },
+          "transform": "none",
+          "translate": "none",
+          "pass": true
+        },
+        {
+          "label": "slip-cta",
+          "active": true,
+          "focusVisible": true,
+          "inset": true,
+          "outline": "rgb(245, 238, 223) solid 2px",
+          "rectDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "transform": "none",
+          "translate": "none",
+          "pass": true
+        },
+        {
+          "label": "confirm-cta",
+          "active": true,
+          "focusVisible": true,
+          "inset": true,
+          "outline": "rgb(245, 238, 223) solid 2px",
+          "rectDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "transform": "none",
+          "translate": "none",
+          "pass": true
+        }
+      ],
+      "evidence": [
+        "button-states.json",
+        "button-assertions.json",
+        "04-service-gold-focus-held.jpg",
+        "05-service-normal-focus-held.jpg",
+        "06-odd-normal-focus-held.jpg",
+        "07-odd-selected-focus-held.jpg",
+        "08-slip-focus-held.jpg",
+        "09-confirm-focus-held.jpg"
+      ]
+    }
+  ],
+  "regressions": {
+    "ordinaryStates": "Gold/normal service and normal/selected odd base states, gold service and normal odd hover remain distinct. Disabled lock is unchanged on hover and Tab skips it.",
+    "initialLayout": "Actual1920x940; root940/windowY0; initial6/6/6.",
+    "expansion": "Keyboard action6/6/6 to12/6/6; pick and side-column scroll retained; root940/windowY0. Center scroll0->264 sampled around locator focus+Enter, so this smoke does not independently assert center-scroll preservation. The original full-audit focused-button expansion evidence remains applicable because all expansion code is byte-identical.",
+    "pageHealth": "Final106 image elements loaded with zero broken images, no captured console warnings/errors, no examined prohibited body/title/aria copy.",
+    "cleanup": "Confirmation canceled, no new submission; guest/no picks/balance1000000 left. Viewport reset and owned audit tab closed."
+  },
+  "reusedEvidence": {
+    "fullAudit": "../26f0d1ff/audit-result.json",
+    "fullAuditSha256": "3882ca849b8b6fb4155fb630126deb3959004077b81fa95b5d3436d3ed1a060b",
+    "reason": "All260 other source files unchanged; exact reverse transformations reproduce original hashes for the only2 edited files. Fixture data, application behavior, source assets and geometry rules unchanged.",
+    "coverage": "77 unique fixtures and full77-card visual walkthrough, all12 expansion steps,9 filters, complete local account/slip/calculation/dialog/history tests, normal/reduced motion, typography and2560 layout from full audit retained.",
+    "WOG": {
+      "baseline": "qa/r6/audit/initial-20260917/initial-audit.json",
+      "directObservationTimeKST": "2026-09-17 12:00-12:07",
+      "reuseAuthorized": true,
+      "purpose": "Finish/hierarchy/material/control-state baseline only; no palette/style/code copying; WOG odds selection outcome not asserted."
+    }
+  },
+  "limits": [
+    "User visual approval is separate from auditor pass.",
+    "Auditor tested local production; public v5 was untouched and public deployment verification belongs to the coordinator/implementer.",
+    "Full-project19 pre-existing lint errors outside changed files remain; prior matching build/typecheck/changed-lint evidence reused, fixed build supported by actual new served CSS and live rendered tests.",
+    "No Japanese copy, so actual Heisei Japanese glyph rendering remains not applicable.",
+    "Prior full-audit favicon.ico404/canceled requests and truncated network-event buffer remain documented; this focused recheck does not claim a globally error-free network.",
+    "Fixed1920 desktop scope; mobile outside scope."
+  ],
+  "ownership": {
+    "created": "JSON and10 original1920x940 JPEG captures only under qa/r7/audit/3cb5e2b2",
+    "notChanged": [
+      "source code",
+      "specifications",
+      "operating documentation",
+      "original assets",
+      "Sites configuration",
+      "public deployment",
+      "other task files"
+    ]
+  },
+  "next": "Coordinator may proceed with the authorized publication flow using this exact audited frozen source; deployment remains outside auditor ownership."
+}

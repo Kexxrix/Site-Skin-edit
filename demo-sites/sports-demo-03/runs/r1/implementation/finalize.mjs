@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const root='E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03';
+const file=root+'/runs/r1/public/completion.json';
+const c=JSON.parse(fs.readFileSync(file));
+const baseline=JSON.parse(fs.readFileSync(root+'/runs/r1/implementation/baseline.json'));
+const changes=JSON.parse(fs.readFileSync(root+'/runs/r1/implementation/changes-and-preservation.json'));
+const screenshot=fs.readFileSync(c.screenshotPath);
+c.source={head:baseline.source.head,dirty:baseline.source.dirty,path:baseline.source.root+'/site'};
+c.protection=changes.protection;
+c.changedFiles=changes.changedFiles.map(p=>c.sitePath+'/'+p);
+c.screenshot={path:c.screenshotPath,bytes:screenshot.length,sha256:crypto.createHash('sha256').update(screenshot).digest('hex'),width:1920,height:940};
+c.localGitStatus=execFileSync('git',['-c',`safe.directory=${c.sitePath}`,'-C',c.sitePath,'status','--porcelain'],{encoding:'utf8'}).trim();
+if(c.localGitStatus)throw Error('Unexpected local modifications');
+fs.writeFileSync(file,JSON.stringify(c,null,2)+'\n');
+console.log(JSON.stringify({completion:file,url:c.publicUrl,commit:c.commit,clean:!c.localGitStatus,screenshot:c.screenshot}));

@@ -1,0 +1,140 @@
+{
+  "package": "ALDEBARAN_R6_PREMATCH_MODES",
+  "kind": "incremental-handoff-not-deployed",
+  "target": "demo-sites/sports-demo-03/site",
+  "baseline": "current completed ALDEBARAN R5 implementation; read actual local source",
+  "initial_mode": "european",
+  "gnb": {
+    "enabled": [
+      "domestic",
+      "european"
+    ],
+    "disabled_but_visible": [
+      "esports",
+      "inplay",
+      "casino",
+      "slots",
+      "minigame",
+      "virtual",
+      "community",
+      "results"
+    ],
+    "new_selected_and_hover_design": "deferred",
+    "outside_gnb_services": "preserve"
+  },
+  "odds": {
+    "display_fraction_digits": 2,
+    "rounding": "nearest, not truncation",
+    "scope": [
+      "basic markets",
+      "detailed markets",
+      "slip selections",
+      "total odds",
+      "odds limits"
+    ],
+    "keep_raw_values_for_math": true,
+    "excluded": [
+      "handicap line",
+      "totals line",
+      "money",
+      "counts"
+    ],
+    "examples": {
+      "3.243": "3.24",
+      "3.246": "3.25",
+      "3.2": "3.20",
+      "2": "2.00"
+    }
+  },
+  "card": {
+    "fixture_scope": "prematch only in these sports views",
+    "center_label": "VS",
+    "show_score": false,
+    "show_live": false,
+    "show_home_glyph": false,
+    "team_order": [
+      "home emblem",
+      "home name",
+      "VS",
+      "away name",
+      "away emblem"
+    ],
+    "team_font_px_start": 15,
+    "emblem_px": 28,
+    "emblem_gap_px": 8,
+    "vs_column_px_start": 56,
+    "existing_card_height_px": 228,
+    "existing_team_row_px": 38,
+    "emblem_source": "existing team asset mapping",
+    "long_name": "ellipsis on name only"
+  },
+  "modes": {
+    "european": {
+      "columns": [
+        "matches",
+        "detailed markets"
+      ],
+      "central_scrollers": 2,
+      "scroll": "independent",
+      "detail_entry": true
+    },
+    "domestic": {
+      "columns": [
+        "match cards",
+        "match cards"
+      ],
+      "central_scrollers": 1,
+      "scroll": "one real common overflow container, not synchronized columns",
+      "detail_entry": false,
+      "detail_panel": false,
+      "repeat_same_fixture": false,
+      "order": "row-major within league",
+      "league_heading": "shared across both card columns",
+      "sport_controls": "once outside common list scroller",
+      "geometry_example": {
+        "central_inner_width": 1226,
+        "panel_border_each": 1,
+        "list_padding_each": 10,
+        "card_width": 587,
+        "card_gap": 30
+      }
+    }
+  },
+  "state": {
+    "selection_ids": "reuse unchanged",
+    "bet_slip_and_amount": "preserve across modes",
+    "scroll_offsets": [
+      "domestic list",
+      "european list",
+      "european details"
+    ],
+    "mode_restore": true,
+    "first_domestic_visit": "top",
+    "top_button": "active list scroller with existing smooth motion"
+  },
+  "logo": {
+    "reported_issue": "partially clipped",
+    "cause": "not diagnosed",
+    "approved_file": "assets/branding/aldebaran-wordmark.png",
+    "natural_size": [
+      1101,
+      120
+    ],
+    "fix": "actual image/container cause, preserve whole lettering and aspect ratio"
+  },
+  "preserve": [
+    "1920 fixed desktop",
+    "matte charcoal/orange theme",
+    "outer frame and rails",
+    "existing motion",
+    "MERCURY",
+    "SIRIUS"
+  ],
+  "verification": "one existing build plus changed-flow spot checks; no separate QA/Jev",
+  "not_performed_by_package_author": [
+    "current website reinspection",
+    "local implementation",
+    "application build",
+    "deployment"
+  ]
+}

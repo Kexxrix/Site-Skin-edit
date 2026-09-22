@@ -1,0 +1,12 @@
+:root {
+  --card-hover-shine: 0.32;
+  --hover-duration: 220ms;
+  --idle-animation: none;
+  --idle-duration: 2400ms;
+}
+.live-dot { animation: var(--idle-animation) var(--idle-duration) ease-in-out infinite; }
+@keyframes live-breathe {
+  0%, 100% { opacity: 0.45; box-shadow: 0 0 3px #e3b75660; }
+  50% { opacity: 1; box-shadow: 0 0 10px #f4cf72d9; }
+}
+

@@ -1,0 +1,132 @@
+{
+  "package": "ALDEBARAN_WOG_LAYOUT_R5",
+  "version_kind": "handoff-not-deployed",
+  "reference": "https://wog-1000.com/sports/european/",
+  "observed_viewport": [
+    1363,
+    936
+  ],
+  "uploaded_reference_pixels": [
+    1916,
+    941
+  ],
+  "target": {
+    "width": 1920,
+    "height": "100dvh; 1080 for initial capture",
+    "responsive": false,
+    "shell_centered_above_1920": true,
+    "narrow_window": "horizontal overflow, no scaling",
+    "gnb": {
+      "height": 62,
+      "columns": [
+        360,
+        1200,
+        40,
+        320
+      ],
+      "menu_count": 10,
+      "menu_width": 120
+    },
+    "notice": {
+      "height": 36,
+      "padding_x": 18,
+      "gap": 28,
+      "links": 5
+    },
+    "body": {
+      "padding": [
+        7,
+        8,
+        8,
+        8
+      ],
+      "columns": [
+        320,
+        1244,
+        320
+      ],
+      "gap": 10,
+      "x": [
+        8,
+        338,
+        1592
+      ],
+      "y": 105
+    },
+    "center": {
+      "outer_width": 1244,
+      "bottom_padding": 3,
+      "surface_border": 1,
+      "surface_padding": 8,
+      "grid_width": 1226,
+      "panels": [
+        609,
+        609
+      ],
+      "gap": 8,
+      "x": [
+        347,
+        964
+      ],
+      "y": 114,
+      "height_at_1080": 946
+    },
+    "card": {
+      "width": 587,
+      "height": 228,
+      "padding": 12,
+      "gap": 12,
+      "border": 1,
+      "radius": 4,
+      "meta_height": 24,
+      "team_height": 38,
+      "score_column": 120,
+      "primary_rows": 3,
+      "odds_height": 36,
+      "odds_gap": 4
+    },
+    "detail": {
+      "header_padding": 10,
+      "single_line_header_height_approx": 39,
+      "tabs_bar_height": 49,
+      "tab_height": 32,
+      "group_header_height": 34,
+      "odds_height": 34,
+      "line_box_width": 74,
+      "group_gap": 8
+    }
+  },
+  "scrollers": {
+    "leftRail": {
+      "scroll": true,
+      "persistent_header": false
+    },
+    "leagueList": {
+      "scroll": true,
+      "persistent_header": "sportTabs"
+    },
+    "marketList": {
+      "scroll": true,
+      "persistent_header": [
+        "matchHeading",
+        "marketTabs"
+      ]
+    },
+    "rightRail": {
+      "scroll": true,
+      "persistent_header": false
+    },
+    "body": {
+      "vertical_scroll": false
+    }
+  },
+  "supersedes": [
+    "old 272/1280/320 body",
+    "old 632/16/632 central split",
+    "old 104px asymmetric header",
+    "shared center scroller",
+    "tracker-first central view",
+    "football-only temporary proposal"
+  ],
+  "basis": "CSS desktop rules + computed component metrics; 1920 dimensions calculated, not directly observed in cloud viewport"
+}

@@ -1,0 +1,78 @@
+/* R3.1: observed LIVE classes remain .ab-header2.
+   Integrate after current header rules; avoid changing the body frame.
+   This reference has not been built against the actual Windows app. */
+
+/* 1. Center the wordmark in the brand block itself (6px left at current sizes). */
+.aldebaran-site .ab-header2__brand {
+  padding: 0;
+}
+
+/* 2. One continuous neutral divider, including both column gaps and end margin.
+   Retain the old 1px border geometry so button centers do not shift. */
+.aldebaran-site .ab-header2__nav,
+.aldebaran-site .ab-header2__account {
+  border-top-color: transparent;
+}
+.aldebaran-site .ab-header2::before {
+  content: "";
+  grid-column: brand-end / -1;
+  grid-row: 2;
+  align-self: start;
+  justify-self: stretch;
+  position: relative;
+  z-index: 1;
+  height: 1px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--abh-border, var(--ab-border, #383838));
+  pointer-events: none;
+}
+
+/* 3. Small matte tab details. All geometry, state and handlers stay unchanged. */
+.aldebaran-site .ab-header2__item {
+  position: relative;
+  border-radius: 0;
+  clip-path: polygon(
+    0 0, calc(100% - 6px) 0, 100% 6px,
+    100% 100%, 6px 100%, 0 calc(100% - 6px)
+  );
+  text-decoration: none;
+  transition: color 140ms ease, background-color 140ms ease, border-color 140ms ease;
+}
+.aldebaran-site .ab-header2__item[aria-pressed="true"] {
+  border-color: #ff9560;
+}
+.aldebaran-site .ab-header2__item:not([aria-pressed="true"])::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 12px);
+  bottom: 5px;
+  width: 24px;
+  height: 2px;
+  background: var(--abh-accent, var(--ab-accent, #ff641f));
+  opacity: 0;
+  transform: scaleX(.6);
+  transition: opacity 140ms ease, transform 140ms ease;
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .aldebaran-site .ab-header2__item:not([aria-pressed="true"]):not(:disabled):hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.aldebaran-site .ab-header2__item:not([aria-pressed="true"]):not(:disabled):focus-visible {
+  background: var(--ab-control, #353535);
+}
+.aldebaran-site .ab-header2__item:not([aria-pressed="true"]):not(:disabled):focus-visible::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .aldebaran-site .ab-header2__item,
+  .aldebaran-site .ab-header2__item::after {
+    transition: none;
+  }
+}

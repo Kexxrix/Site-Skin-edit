@@ -1,0 +1,57 @@
+{
+  "data_source": "reuse current ALDEBARAN fixtures, logos, markets and bet-slip state",
+  "source_credentials_included": false,
+  "render_demo_account": "current demo auth/session; keep current balance; never copy reference account",
+  "ids": {
+    "fixture": "existing stable fixture id",
+    "market": "fixture + period + type + line",
+    "selection": "market + outcome; same across left and right"
+  },
+  "counts": {
+    "sport": "derive from actual filtered fixtures; no hard-coded reference 55",
+    "league": "derive from actual fixtures",
+    "additional_markets": "count available market groups in selected fixture model",
+    "folder": "derive from current slip"
+  },
+  "events": {
+    "inspect_different_match": "preserve list scroll; update detail; reset only detail scroll; keep slip",
+    "inspect_same_match": "keep both scroll offsets",
+    "toggle_odds": "existing single slip action; no scroll reset; reflect both panels",
+    "filter_change": "retain selected fixture if visible; otherwise select first result; empty list clears detail",
+    "league_collapse": "180ms accordion; collapse only that group",
+    "market_collapse": "180ms accordion; collapse only that group",
+    "slip_keep": "use existing persistence mechanism and ALDEBARAN namespace",
+    "delete_all": "clear current slip via existing handler",
+    "quick_amount": "use existing max/balance policy; format thousands separators",
+    "notice_marquee": "CSS 38sec, pause hover/focus, reduced-motion static"
+  },
+  "destinations": {
+    "existing_feature": "reuse actual in-app destination or modal",
+    "sports_modes": "use current fixtures and selected category; domestic/european/inplay filter changes must be real",
+    "casino_slots": "existing local preview/lobby if available; otherwise content-filled modal with existing category images and at least representative item cards",
+    "notice_event": "title/date/list/detail demo records, not one-line preparing message",
+    "attendance": "local monthly calendar and visibly persisted daily check-in state",
+    "support": "local inquiry form/view and support information; no fabricated external contact",
+    "rules": "readable sectioned demo terms/help content; no external submission",
+    "community": "local sample post list with readable detail",
+    "results": "finished fixtures scoreboard from same data",
+    "profile": "existing local demo profile panel",
+    "deposit_withdraw_payback_bonus": "existing demo modal/state or locally scoped demo explanation/form; no new payment or transfer API",
+    "messages_history": "local demo messages and existing demo selections/history",
+    "anonymous_join": "local demo account flow; no real identity collection",
+    "banner_support_channel": "configured approved URL if one exists; otherwise local support/notice view"
+  },
+  "preserve": [
+    "existing ALDEBARAN state namespace",
+    "team/league assets",
+    "existing safe demo transaction boundary",
+    "MERCURY and SIRIUS"
+  ],
+  "unverified_reference_behavior": [
+    "complete logged-out flow",
+    "all header dropdowns",
+    "financial and bet submission",
+    "all empty/error/hover states"
+  ],
+  "verification": "one existing build plus a few changed flows; no QA thread or Jev"
+}

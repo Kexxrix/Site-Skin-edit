@@ -1,0 +1,125 @@
+{
+  "audit": "SIRIUS R1 S02 intermediate central-row structure",
+  "observedFrom": "2026-09-18T13:03:36.997698+09:00",
+  "observedUntil": "2026-09-18T13:09:10.9553217+09:00",
+  "target": "http://localhost:5286/",
+  "viewport": {
+    "height": 940,
+    "width": 1920
+  },
+  "verdict": "PASS_WITHIN_BOUNDED_S02_SCOPE",
+  "blockingFindings": [],
+  "sourceIdentity": {
+    "pageSha256": "a62d4dc67b0223ff2df4cf3ea49c6c3b9d6e857ef32cf669a2c9c6093085eadf",
+    "fiveManifestFilesUnchanged": true,
+    "fullSourceFreeze": false
+  },
+  "checks": [
+    {
+      "id": "S02-01",
+      "evidence": [
+        "initial-1920-original.png",
+        "initial-geometry.json"
+      ],
+      "result": "PASS",
+      "finding": "Direct original screenshot shows continuous full-width rows with stacked teams and team-aligned scores. All initial 18 rows measure 1256 by 88 CSS pixels."
+    },
+    {
+      "id": "S02-02",
+      "evidence": [
+        "initial-geometry.json"
+      ],
+      "result": "PASS",
+      "finding": "Shared row columns measure 96/324/264/228/228/76 with 8px gaps; all initial row market starts are x744/1016/1252/1488. Header column geometry matches."
+    },
+    {
+      "id": "S02-03",
+      "evidence": [
+        "initial-geometry.json",
+        "three-way-selected-1920-original.png"
+      ],
+      "result": "PASS",
+      "finding": "Two-way result markets use 2 equal cells without draw; soccer results use 3 approximately equal cells. Odds button height 38px; 2.125 odds remain legible."
+    },
+    {
+      "id": "S02-04",
+      "evidence": [
+        "initial-geometry.json",
+        "initial-1920-original.png"
+      ],
+      "result": "PASS",
+      "finding": "Team and time surfaces are flat information areas; team areas contain no buttons. Extra market dash is noninteractive. Every observed name retains a full-name title. All actual initial names fit; no clipped-name runtime case occurred."
+    },
+    {
+      "id": "S02-05",
+      "evidence": [
+        "mapping-handicap.json",
+        "mapping-total.json",
+        "mapping-three-way.json",
+        "initial-geometry.json"
+      ],
+      "result": "PASS",
+      "finding": "Visual result/handicap/total order preserves original market indices 0/2/1. Actual clicks: Tampa home handicap -1.5 at1.78 -> correct slip; Tampa under8.5 at1.87 replaces same-match pick; Brentford draw3.50 adds correct result slip. First Tampa locked away handicap is disabled."
+    },
+    {
+      "id": "S02-06",
+      "evidence": [
+        "collapsed.json",
+        "more-while-collapsed.json",
+        "reopened.json",
+        "initial-geometry.json"
+      ],
+      "result": "PASS",
+      "finding": "Initial section counts are6/6/6. Collapse sets aria-expanded=false, hidden=true and removes match article from accessibility tree while selection remains. Live +6 while collapsed yields12 loaded, other sections remain6; MLB header4/6 ->6/6 and original4 IDs preserved followed by2 additional. Reopening shows6 actual MLB rows. No group count inflation."
+    },
+    {
+      "id": "S02-07",
+      "evidence": [
+        "console.json",
+        "initial-geometry.json"
+      ],
+      "result": "PASS",
+      "finding": "No captured console warning/error; no broken or incomplete image among initial rendered DOM images; original screenshots visually reviewed."
+    }
+  ],
+  "nonBlockingObservations": [
+    {
+      "id": "S02-N01",
+      "finding": "Handicap button accessible name includes group home line plus pick line, e.g. Brentford handicap home -0.5 away +0.5 2.03. Actual displayed pick and slip mapping are correct. This is recorded as redundant wording rather than a confirmed mapping defect."
+    }
+  ],
+  "excludedKnownIntermediateState": [
+    "Outer MERCURY black/gold skin and branding/title are intentionally unfinished at S02.",
+    "Preliminary central blue appearance is not full SIRIUS skin approval."
+  ],
+  "notExecuted": [
+    "Full SIRIUS Q01-Q12 audit",
+    "2560 layout and all rail/modal/banner visuals",
+    "Font glyph/native selection evidence",
+    "All77 match data/provenance review",
+    "Search/filter reset and hidden/not-yet-loaded match search",
+    "Refresh state reset",
+    "Long-name actual overflow/ellipsis case because current initial names all fit",
+    "All account and wagering simulation flows",
+    "Public SIRIUS URL audit"
+  ],
+  "preservation": {
+    "temporaryViewportReset": true,
+    "sourceEdits": false,
+    "priorMercuryPassInherited": false,
+    "deployment": false,
+    "testSelectionsCleared": true,
+    "operatingDocumentEdits": false,
+    "gitActions": false,
+    "outputBoundary": "qa/r1/audit/s02-a62d4dc6",
+    "ownAuditTabClosed": true
+  },
+  "handoff": {
+    "sourceHoldReleased": true,
+    "fullSiriusPass": false,
+    "sentTo": [
+      "01a0a97b-1268-7cf3-8aad-ba460ecf4f98",
+      "01a0a8e7-acda-7ab0-a42a-44beb1b41e50"
+    ]
+  }
+}

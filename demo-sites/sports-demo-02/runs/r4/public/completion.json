@@ -1,0 +1,69 @@
+{
+  "status": "R4 공개 반영 / 사용자 피드백 대기",
+  "url": "https://sirius.kexxadrix.chatgpt.site",
+  "projectId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "version": 4,
+  "versionId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_47ddab6b6e688191b9f90dd222dea00d",
+  "commit": "b84f893a8b7867dc211e56495bd415b06cf95ffc",
+  "deploymentId": "appgdep_6aacfa1340d88191a160c67b4ef580c1",
+  "deploymentStatus": "succeeded",
+  "deployedAt": "2026-09-18T08:45:27.729650+00:00",
+  "audience": "existing public unchanged",
+  "changedFiles": [
+    "app/globals.css",
+    "app/match-list.css",
+    "public/assets/header/BG_sirius_header.png"
+  ],
+  "changes": "../implementation/changes.json",
+  "localObservation": "../implementation/basic-observation.json",
+  "publicObservation": "basic-observation.json",
+  "capture": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\runs\\r4\\public\\sirius-r4-default-1920x940.jpg",
+    "bytes": 198570,
+    "sha256": "A19491B45331E1D8E9662848AAC75FA3F211B3F1FCFEF100563CA5B398887BF6",
+    "localConsole": [],
+    "publicConsole": [],
+    "previewListeners": []
+  },
+  "archive": {
+    "path": "sirius-header-bg-r4.tar.gz",
+    "bytes": 26127624,
+    "sha256": "6B6E6908C034D0185CFDC4425308DC7DFD5A56069B1E9FB91D97AF79E5641394",
+    "entries": 306,
+    "storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000062f482118fc5847416fa5531",
+      "content_hash": "sha256:c2644fca3460e515166ccb817d3ffa65e06ea78317ec314c3b6ab99054ac47e4",
+      "size_bytes": 28047360,
+      "file_count": 251
+    }
+  },
+  "preservation": {
+    "unchangedHashes": {
+      "page": "AF5DE601B25C253A2E6BED657620002753A512535D51A56471A442538751FD96",
+      "motion": "727E3DFD455F6232D18FD8B22A1A5E576930E1CD6675AC57BE4AFA7F50A17100",
+      "displayMetadata": "FA676476073FB3E9F5D279BBCA83DD9534203290297BF413C851EA5DA1770167"
+    },
+    "siriusGitStatus": [],
+    "mercuryHead": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+    "mercuryGitStatus": [
+      "?? tsconfig.tsbuildinfo"
+    ],
+    "mercuryWritesAndDeployments": "none",
+    "otherProjectsAndPort3000": "not modified"
+  },
+  "cleanup": {
+    "temporaryPreview5287": "stopped",
+    "localCache": "../implementation/local-preview-cache",
+    "viewport": "reset",
+    "publicTab": "12 retained",
+    "credential": "cleared from execution store"
+  },
+  "remaining": [
+    "No implementation error found in the two requested areas during short checks.",
+    "Public rendered screenshot and accessibility snapshot confirmed the updated screen. The public DOM bridge did not expose app nodes; public computed-style measurements are not claimed.",
+    "Accepted motion and unrelated features were preserved, not re-audited.",
+    "Design acceptance awaits user feedback."
+  ],
+  "independentQA": "사용자 지시로 미실시"
+}

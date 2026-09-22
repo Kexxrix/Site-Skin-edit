@@ -1,0 +1,72 @@
+{
+  "package": "ALDEBARAN_HEADER_R2",
+  "date": "2026-09-21",
+  "kind": "implementation-input",
+  "chosen_direction": "option-1-asymmetric-header",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3294,
+      "sha256": "fa0ec367aeb88f0bf2dd115474d413b1e6ee0220850ac37fbe69cf866fe1d65a"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 1263,
+      "sha256": "a5632c4e95b1ada7422462f3e489bb69d87bbbdd9132bccfba0b8d481351b223"
+    },
+    {
+      "path": "DESIGN_SPEC.md",
+      "bytes": 6160,
+      "sha256": "ed9a5229e6592f31327488b213e20b51a1b908d290cd3d9b0d2db2f46ef70c88"
+    },
+    {
+      "path": "START_HERE.txt",
+      "bytes": 2891,
+      "sha256": "d9a57e0eafba5ed61a30b41bb801a6401d477b6f5942dec1331bac606501b4c2"
+    },
+    {
+      "path": "STATE.md",
+      "bytes": 3676,
+      "sha256": "1e41f1dd65235eab3420ae49054a710d2cb9e5e8aa5444b526a6d403857345ee"
+    },
+    {
+      "path": "assets/asset-map.json",
+      "bytes": 1565,
+      "sha256": "e9fa811726b28af9457688656f9a157ffbc68c4118b9ced5eb719bd5c8a8dafb"
+    },
+    {
+      "path": "assets/branding/aldebaran-emblem.png",
+      "bytes": 127347,
+      "sha256": "37d5d27c1e9d5230015dcd534560660e439157fd41d9ce2e639dee132d924da1"
+    },
+    {
+      "path": "assets/branding/aldebaran-wordmark.png",
+      "bytes": 189173,
+      "sha256": "7f028493deee645c26ab2a71a5cc226ee009ff214a3397fdaae9c7ac4bfb10fa"
+    },
+    {
+      "path": "implementation/AldebaranHeaderR2.tsx",
+      "bytes": 2013,
+      "sha256": "d5ba93f2466988933c2183c92256f65ab113acc354a7c3c379f33d1fb6f9dc59"
+    },
+    {
+      "path": "implementation/integration-map.json",
+      "bytes": 3347,
+      "sha256": "dffb19e2431cf262b759ff0eaefc1b0904f3cbc48136932b68a529d8ea72be2b"
+    },
+    {
+      "path": "styles/aldebaran-header-r2.css",
+      "bytes": 5020,
+      "sha256": "db3cbaa0cef929f77fb47cf28831d3985baef682e3f3190a1f150bc27b3e297d"
+    }
+  ],
+  "checks": {
+    "approved_images_byte_identical": true,
+    "json_parse": "passed",
+    "layout_arithmetic": "passed",
+    "windows_app_build": "not run",
+    "tsx_integration": "not run",
+    "browser_render": "not run",
+    "public_deploy": "not run"
+  }
+}

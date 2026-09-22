@@ -1,0 +1,228 @@
+/* Reference styles: map --ab-number-font to the EXISTING local numeric font.
+   No font download or font installation is required. Keep current theme tokens. */
+.aldebaran-site .ab-center4 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.aldebaran-site .ab-center4__list,
+.aldebaran-site .ab-center4__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  /* Use the existing common scroller; no independent overflow-y here. */
+}
+.aldebaran-site .ab-match4 {
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--ab-border, #383838);
+  border-radius: 5px;
+  background: var(--ab-panel, #242424);
+  box-sizing: border-box;
+}
+.aldebaran-site .ab-match4[data-tracker-selected="true"] {
+  border-color: var(--ab-accent, #ff641f);
+}
+.aldebaran-site .ab-match4__inspect {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ab-text, #f5f4f4);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.aldebaran-site .ab-match4__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: var(--ab-muted, #b7b7b7);
+  font-size: 11px;
+  line-height: 18px;
+}
+.aldebaran-site .ab-match4__league {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.aldebaran-site .ab-match4__league img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.aldebaran-site .ab-match4__league-name,
+.aldebaran-site .ab-match4__name {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.aldebaran-site .ab-match4__time,
+.aldebaran-site .ab-match4__status {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.aldebaran-site .ab-match4__status[data-status="live"] {
+  color: var(--ab-accent, #ff641f);
+}
+.aldebaran-site .ab-match4__teams {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 88px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 58px;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.aldebaran-site .ab-match4__team {
+  display: grid;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.aldebaran-site .ab-match4__team--home { grid-template-columns: 36px minmax(0, 1fr); }
+.aldebaran-site .ab-match4__team--away { grid-template-columns: minmax(0, 1fr) 36px; text-align: right; }
+.aldebaran-site .ab-match4__team img { width: 36px; height: 36px; object-fit: contain; }
+.aldebaran-site .ab-match4__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-width: 0;
+}
+.aldebaran-site .ab-match4__vs {
+  color: var(--ab-accent, #ff641f);
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+}
+.aldebaran-site .ab-match4__score {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  color: var(--ab-score, #ff641f);
+  font-family: var(--ab-number-font, inherit);
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  text-align: center;
+}
+.aldebaran-site .ab-match4__scheduled { font-size: 11px; color: var(--ab-muted, #b7b7b7); }
+.aldebaran-site .ab-match4__odds {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 8px;
+  margin-top: 6px;
+  min-width: 0;
+}
+.aldebaran-site .ab-odd4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+  min-height: 46px;
+  padding: 6px 10px;
+  border: 1px solid var(--ab-border, #383838);
+  border-radius: 4px;
+  background: var(--ab-input, #191919);
+  color: var(--ab-text, #f5f4f4);
+  font: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+.aldebaran-site .ab-odd4__label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  line-height: 16px;
+}
+.aldebaran-site .ab-odd4__value {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  color: var(--ab-odds, #ff641f);
+  font-family: var(--ab-number-font, inherit);
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.aldebaran-site .ab-odd4[aria-pressed="true"] {
+  border-color: var(--ab-accent, #ff641f);
+  background: var(--ab-accent, #ff641f);
+  color: var(--ab-on-accent, #171717);
+}
+.aldebaran-site .ab-odd4[aria-pressed="true"] .ab-odd4__value { color: inherit; }
+@media (hover: hover) {
+  .aldebaran-site .ab-odd4:not(:disabled):not([aria-pressed="true"]):hover { background: var(--ab-control, #353535); }
+}
+.aldebaran-site .ab-odd4:disabled { opacity: .45; cursor: default; }
+.aldebaran-site .ab-center4 button:focus-visible { outline: 2px solid var(--ab-accent, #ff641f); outline-offset: 2px; }
+.aldebaran-site .ab-odd4[aria-pressed="true"]:focus-visible { outline-color: var(--ab-text, #f5f4f4); }
+
+/* Apply these classes to actual tracker/market components after integration. */
+.aldebaran-site .ab-tracker4,
+.aldebaran-site .ab-market4 {
+  min-width: 0;
+  border: 1px solid var(--ab-border, #383838);
+  border-radius: 5px;
+  background: var(--ab-panel, #242424);
+  box-sizing: border-box;
+}
+.aldebaran-site .ab-market4 { padding: 12px; }
+.aldebaran-site .ab-market4__title { margin: 0 0 10px; font-size: 13px; color: var(--ab-text, #f5f4f4); }
+.aldebaran-site .ab-market4__selections {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 8px;
+  min-width: 0;
+}
+.aldebaran-site .ab-pitch4 { position: relative; min-width: 0; background: #23432d; }
+.aldebaran-site .ab-pitch4 svg { display: block; width: 100%; height: auto; }
+.aldebaran-site .ab-pitch4__ball { transition: transform 600ms ease-in-out; }
+.aldebaran-site .ab-pitch4__phase {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(100% - 32px);
+  padding: 5px 10px;
+  border: 1px solid var(--ab-border, #383838);
+  border-radius: 4px;
+  background: #191919;
+  color: #f5f4f4;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .aldebaran-site .ab-pitch4__ball,
+  .aldebaran-site .ab-odd4 { transition: none; }
+}

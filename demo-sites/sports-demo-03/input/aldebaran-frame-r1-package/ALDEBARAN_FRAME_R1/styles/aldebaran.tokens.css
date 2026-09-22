@@ -1,0 +1,27 @@
+/* ALDEBARAN FRAME R1. Apply only to the new app root/body. */
+.aldebaran-site {
+  color-scheme: dark;
+  --ab-bg: #141515;
+  --ab-header: #1d1d1d;
+  --ab-deep: #181919;
+  --ab-panel: #242424;
+  --ab-raised: #2c2c2c;
+  --ab-control: #353535;
+  --ab-control-hover: #414141;
+  --ab-input: #191919;
+  --ab-border: #383838;
+  --ab-text: #f5f4f4;
+  --ab-muted: #b7b7b7;
+  --ab-disabled: #797979;
+  --ab-accent: #ff641f;
+  --ab-accent-hover: #ff793d;
+  --ab-accent-pressed: #eb5515;
+  --ab-on-accent: #171717;
+  --ab-score: var(--ab-accent);
+  --ab-odds: var(--ab-accent);
+  --ab-panel-radius: 6px;
+  --ab-control-radius: 4px;
+  --ab-ui-duration: 140ms;
+  background-color: var(--ab-bg);
+  color: var(--ab-text);
+}

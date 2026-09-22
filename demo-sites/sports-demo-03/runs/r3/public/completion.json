@@ -1,0 +1,368 @@
+{
+  "task": "ALDEBARAN HEADER R3",
+  "completedAt": "2026-09-21T10:45:34.3749197+00:00",
+  "status": "deployed-and-first-screen-verified-awaiting-user-feedback",
+  "siteRoot": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site",
+  "start": {
+    "dirty": "",
+    "head": "1f46b8a2daab755bfcad99d258e7c970a3177c19"
+  },
+  "end": {
+    "sourcePush": "succeeded",
+    "dirty": "",
+    "head": "f036dc20bdf5d9ddbd00e809690261e49345d3b1"
+  },
+  "changedFiles": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/page.tsx",
+      "change": "Header wordmark only, notice text only, existing account branch moved beside menu; unused Bell import removed; other body code unchanged"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/aldebaran-header-r2.css",
+      "change": "Existing stylesheet retained; shared grid tracks align wordmark/divider, 28px notice, seven menu buttons and right account controls; header remains 104px"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/globals.css",
+      "change": "Existing body dimensions represented by shared CSS variables: edge12 gap12 center1280; left272 right320 unchanged"
+    }
+  ],
+  "validation": {
+    "public": {
+      "method": "Native browser accessibility snapshot and visual screenshot; public DOM geometry was not queried.",
+      "savedScreenshotCount": 1,
+      "exactGeometryEvidence": "Local readback only; public screen visually checked at requested viewport",
+      "result": "Passed: wordmark only over left rail; full-height orange header divider; slim notice; seven menus including event fully visible in central track; right-aligned guest account controls; unchanged body rails and blank center.",
+      "evidence": "public/first-screen.json"
+    },
+    "local": {
+      "restored": {
+        "active": "실시간 스포츠",
+        "headerAccount": "로그인회원가입",
+        "mainChildren": 0,
+        "query": "",
+        "stake": ""
+      },
+      "account": {
+        "accountRowY": 28,
+        "headerAccount": "회원로그아웃",
+        "mainChildren": 0,
+        "sideAccount": "ALDEBARAN 회원"
+      },
+      "evidence": "implementation/basic-observation.json",
+      "menuSwitch": {
+        "active": "스포츠",
+        "mainChildren": 0
+      },
+      "notice": {
+        "active": "실시간 스포츠",
+        "dialog": "공지사항원하는 종목과 리그를 선택해 경기를 확인하세요."
+      },
+      "viewport": [
+        1920,
+        912
+      ],
+      "logs": [],
+      "measurements": {
+        "accountControls": [
+          {
+            "bottom": 85.5,
+            "height": 38,
+            "label": "로그인",
+            "right": 1825.59375,
+            "width": 62.3125,
+            "x": 1763.28125,
+            "y": 47.5
+          },
+          {
+            "bottom": 85.5,
+            "height": 38,
+            "label": "회원가입",
+            "right": 1908,
+            "width": 74.40625,
+            "x": 1833.59375,
+            "y": 47.5
+          }
+        ],
+        "headerEmblems": 0,
+        "line": {
+          "bottom": "0px",
+          "height": "104px",
+          "right": "0px",
+          "top": "0px",
+          "width": "1px"
+        },
+        "logo": {
+          "filter": "none",
+          "natural": [
+            1101,
+            120
+          ]
+        },
+        "mainChildren": 0,
+        "menus": [
+          {
+            "bottom": 87.5,
+            "height": 42,
+            "label": "스포츠",
+            "right": 480.5625,
+            "width": 172.5625,
+            "x": 308,
+            "y": 45.5
+          },
+          {
+            "bottom": 87.5,
+            "height": 42,
+            "label": "실시간 스포츠",
+            "right": 661.140625,
+            "width": 172.578125,
+            "x": 488.5625,
+            "y": 45.5
+          },
+          {
+            "bottom": 87.5,
+            "height": 42,
+            "label": "E스포츠",
+            "right": 841.703125,
+            "width": 172.5625,
+            "x": 669.140625,
+            "y": 45.5
+          },
+          {
+            "bottom": 87.5,
+            "height": 42,
+            "label": "카지노",
+            "right": 1022.28125,
+            "width": 172.578125,
+            "x": 849.703125,
+            "y": 45.5
+          },
+          {
+            "bottom": 87.5,
+            "height": 42,
+            "label": "슬롯",
+            "right": 1202.84375,
+            "width": 172.5625,
+            "x": 1030.28125,
+            "y": 45.5
+          },
+          {
+            "bottom": 87.5,
+            "height": 42,
+            "label": "미니게임",
+            "right": 1383.421875,
+            "width": 172.578125,
+            "x": 1210.84375,
+            "y": 45.5
+          },
+          {
+            "bottom": 87.5,
+            "height": 42,
+            "label": "이벤트",
+            "right": 1563.984375,
+            "width": 172.5625,
+            "x": 1391.421875,
+            "y": 45.5
+          }
+        ],
+        "navOverflow": "visible",
+        "noticeCount": 1,
+        "noticeFont": "12px",
+        "noticeIcons": 0,
+        "rects": [
+          {
+            "bottom": 104,
+            "class": "ab-header2",
+            "height": 104,
+            "right": 1920,
+            "width": 1920,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "bottom": 104,
+            "class": "ab-header2__brand",
+            "height": 104,
+            "right": 284,
+            "width": 284,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "bottom": 63.765625,
+            "class": "ab-header2__wordmark",
+            "height": 23.53125,
+            "right": 256,
+            "width": 216,
+            "x": 40,
+            "y": 40.234375
+          },
+          {
+            "bottom": 28,
+            "class": "ab-header2__notice",
+            "height": 28,
+            "right": 1576,
+            "width": 1280,
+            "x": 296,
+            "y": 0
+          },
+          {
+            "bottom": 104,
+            "class": "ab-header2__nav",
+            "height": 76,
+            "right": 1576,
+            "width": 1280,
+            "x": 296,
+            "y": 28
+          },
+          {
+            "bottom": 104,
+            "class": "ab-header2__account",
+            "height": 76,
+            "right": 1908,
+            "width": 320,
+            "x": 1588,
+            "y": 28
+          },
+          {
+            "bottom": 900,
+            "class": "scroll-column left-column",
+            "height": 784,
+            "right": 284,
+            "width": 272,
+            "x": 12,
+            "y": 116
+          },
+          {
+            "bottom": 900,
+            "class": "center-frame",
+            "height": 784,
+            "right": 1576,
+            "width": 1280,
+            "x": 296,
+            "y": 116
+          },
+          {
+            "bottom": 900,
+            "class": "scroll-column right-column",
+            "height": 784,
+            "right": 1908,
+            "width": 320,
+            "x": 1588,
+            "y": 116
+          }
+        ],
+        "viewport": [
+          1920,
+          912
+        ]
+      },
+      "eventHover": {
+        "background": "rgba(53, 53, 53, 0.882)",
+        "center": {
+          "right": 1576,
+          "x": 296
+        },
+        "contained": true,
+        "event": {
+          "height": 42,
+          "right": 1563.984375,
+          "width": 172.5625,
+          "x": 1391.421875,
+          "y": 45.5
+        },
+        "hovered": true
+      }
+    },
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "exitCode": 0,
+      "evidence": "Completed before interruption; resumed without source changes or repeated checks; silent success had no log file"
+    },
+    "build": {
+      "command": "node \"C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js\" run build",
+      "reusedOnResume": true,
+      "exitCode": 0,
+      "log": "implementation/build.log"
+    }
+  },
+  "preservation": {
+    "protectedDeployments": "Neither MERCURY nor SIRIUS redeployed",
+    "evidence": "implementation/preservation.json",
+    "protectedFileHashCount": 1842,
+    "observedAt": "2026-09-21T10:36:02.164Z",
+    "aldebaranChangedFiles": [
+      "app/page.tsx",
+      "app/globals.css",
+      "app/aldebaran-header-r2.css"
+    ],
+    "aldebaranAddedFiles": [],
+    "mercury": {
+      "head": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+      "dirty": "?? tsconfig.tsbuildinfo",
+      "changed": [],
+      "added": [],
+      "headUnchanged": true,
+      "dirtyUnchanged": true
+    },
+    "sirius": {
+      "head": "9c424b8e4e8c480848f1ec47bf5139c6d5987738",
+      "dirty": "?? .agents/\n?? .impeccable/\n?? DESIGN.md\n?? PRODUCT.md",
+      "changed": [],
+      "added": [],
+      "headUnchanged": true,
+      "dirtyUnchanged": true
+    },
+    "unchanged": [
+      "body geometry and blank center",
+      "existing font and image bytes",
+      "wordmark source and favicon",
+      "existing menu and account handlers",
+      "data and storage behavior",
+      "coordinator-owned AGENTS/STATE/DESIGN_SPEC/DECISIONS"
+    ]
+  },
+  "publication": {
+    "successUTC": "2026-09-21T19:43:49.369351+09:00",
+    "commitSha": "f036dc20bdf5d9ddbd00e809690261e49345d3b1",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "successKST": "2026-09-21T19:43:49.0000000+09:00",
+    "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_f49c675bd16c8191a9bd8fe265b14a12",
+    "deploymentId": "appgdep_6ab10a4e1ff08191ad6ba7b60b2f0e4c",
+    "status": "succeeded",
+    "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "versionNumber": 3,
+    "nativeReceipt": "public/publication.json",
+    "access": "public"
+  },
+  "screenshot": {
+    "source": "Native browser screenshot; no image editing",
+    "bytes": 83921,
+    "width": 1920,
+    "format": "JPEG",
+    "sha256": "741BA06A717596AE025C792138FE271406D5B60A737735AC83BC815AAC148CE7",
+    "height": 912,
+    "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r3\\public\\aldebaran-r3-initial-1920x912.jpg"
+  },
+  "archive": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r3\\public\\aldebaran-header-r3.tar.gz",
+    "validation": "Package helper exited0; readable tar; worker entry and matching hosting manifest present; no git/node_modules/wrangler/env directories",
+    "bytes": 25040466,
+    "nativeArchiveNormalization": "Connector may normalize archive; native receipt records its separate hash and byte count",
+    "sha256": "1CB28CAC38F4305C877669C451A9AC3BD5D0EF2002E10D631856538D961CE9C7"
+  },
+  "handoff": {
+    "openInCodexSkipped": "Delegated background task; existing Site tab reused",
+    "ownedLocalServerStopped": true,
+    "deliverableMarked": true,
+    "viewportOverrideReset": true,
+    "existingTabId": "13"
+  },
+  "boundaries": {
+    "nextCycleStarted": false,
+    "noAdditionalSourceChangesOnResume": true,
+    "userVisualApproval": "pending",
+    "noMobileOrFullRegression": true,
+    "authentication": "Existing local demo session only; no real authentication or financial transactions",
+    "noNewTestsDependenciesFontsImages": true
+  }
+}

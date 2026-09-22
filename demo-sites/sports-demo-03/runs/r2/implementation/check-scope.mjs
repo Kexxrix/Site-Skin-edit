@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+const site='E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site';
+const dir=site+'/../runs/r2/implementation';
+const baseline=JSON.parse(fs.readFileSync(dir+'/baseline.json'));
+const git=(...args)=>execFileSync('git',['-c',`safe.directory=${site}`,'-C',site,...args],{encoding:'utf8'}).trim();
+const oldPage=git('show',baseline.aldebaran.head+':app/page.tsx');
+const newPage=fs.readFileSync(site+'/app/page.tsx','utf8').replaceAll('\r\n','\n').trim();
+const omitHeader=s=>s.replace(/function Header\([\s\S]*?(?=function PhotoBanner\()/,'');
+const result={startHead:baseline.aldebaran.head,startDirty:baseline.aldebaran.dirty,commit:git('rev-parse','--verify','HEAD'),dirty:git('status','--porcelain'),changedFiles:git('diff','--name-only',baseline.aldebaran.head,'HEAD').split('\n'),pageOutsideHeaderUnchanged:omitHeader(oldPage)===omitHeader(newPage),build:{command:'npm run build',exitCode:0},typecheck:{command:'tsc --noEmit --incremental false',exitCode:0}};
+fs.writeFileSync(dir+'/scope-and-checks.json',JSON.stringify(result,null,2));
+console.log(JSON.stringify(result));
+if(!result.pageOutsideHeaderUnchanged||result.dirty)process.exitCode=1;

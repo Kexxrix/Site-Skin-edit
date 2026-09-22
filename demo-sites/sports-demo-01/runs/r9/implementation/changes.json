@@ -1,0 +1,95 @@
+{
+  "scope": "MERCURY MOTION R9",
+  "startingCommit": "4f582b7ef30721b9f6f23fa62e845f63d7569a2c",
+  "commit": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+  "changedFiles": [
+    "app/page.tsx",
+    "app/globals.css",
+    "app/match-motion.tsx"
+  ],
+  "reference": {
+    "project": "sports-demo-02/site",
+    "head": "0bdff8e9d67df19e4ae004e9ceb79715143fadc6",
+    "files": [
+      "app/page.tsx",
+      "app/match-motion.tsx",
+      "app/match-list.css"
+    ],
+    "motionModuleCopiedExactly": true,
+    "sourceAndCopySha256": "727E3DFD455F6232D18FD8B22A1A5E576930E1CD6675AC57BE4AFA7F50A17100"
+  },
+  "motion": {
+    "accordion": {
+      "durationMs": 200,
+      "easing": "ease-out",
+      "height": "measured content height; returns to natural height",
+      "increment": 6,
+      "initialAndCollapsed": 6,
+      "guard": "busy until height transition finishes",
+      "collapseAnchor": "remaining more controls; focus restored with preventScroll"
+    },
+    "topReturn": {
+      "durationMs": 400,
+      "easing": "scrollTop = start * (1 - progress)^3",
+      "threshold": "scrollTop >= clientHeight with overflow",
+      "interruption": [
+        "wheel",
+        "touchstart",
+        "scroll keys"
+      ],
+      "repeatGuard": true,
+      "keyboardFocus": "central main after completion",
+      "reducedMotion": "immediate, reused from SIRIUS"
+    }
+  },
+  "adaptation": {
+    "cardGrid": "original 3 columns and 12px gaps retained",
+    "cardHeightPx": 284,
+    "bottomReservePx": 50,
+    "reason": "keep the 36px top button outside scrolling cards without changing card widths",
+    "button": {
+      "sizePx": 36,
+      "rightPx": 12,
+      "bottomPx": 14,
+      "surface": "#141414",
+      "border": "#806b3d",
+      "arrow": "existing MERCURY gold-light"
+    },
+    "centerHeightAt1920x940": 766
+  },
+  "checks": {
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "exitCode": 0
+    },
+    "types": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "exitCode": 0
+    },
+    "localObservation": "basic-observation.json",
+    "observed": [
+      "6/6/6 initial cards; live 6 -> 12 -> 6 with other sections unchanged",
+      "Second expansion preserved central scrollTop 289",
+      "Selected record-401816943-0-0 and stake 10000 retained",
+      "With live expanded to 12, central 959 -> 0; button hidden and main focused",
+      "Left/right scroll retained at 0/18",
+      "Top button rectangle began at center viewport bottom, outside card controls"
+    ],
+    "unverified": [
+      "No exhaustive fixture/filter audit",
+      "Reduced-motion and wheel/touch cancellation branches were read and copied, not separately exercised"
+    ]
+  },
+  "preservation": {
+    "siriusHeadAfter": "0bdff8e9d67df19e4ae004e9ceb79715143fadc6",
+    "siriusGitStatusAfter": [],
+    "siriusDeployments": "none requested",
+    "mercuryGitStatusAfter": [
+      "?? tsconfig.tsbuildinfo"
+    ],
+    "existingTsbuildinfoSha256": "CDFB9B8DA2935431333BCBEF72742BFC1B8CA54AFC857B2131B1B292A324AFB7",
+    "dataAssetsFontsDependencies": "unchanged by source commit",
+    "otherProjectsAndPort3000": "not modified"
+  },
+  "independentQA": "사용자 지시로 미실시"
+}

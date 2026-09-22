@@ -1,0 +1,96 @@
+{
+  "audit": "SIRIUS R1 independent public Q12 audit",
+  "auditorThread": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "verdict": "PASS",
+  "url": "https://sirius.kexxadrix.chatgpt.site/",
+  "commit": "4e48de6df3b5810e0afbb668804244f1264c0230",
+  "sourceId": "efad70506a3fcfac90ceb67d6b16ceedd5acc8086cc0e06f1eab705c7f4546a2",
+  "projectId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "versionId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_222236bb2fa4819194e707c6f3ecd81b",
+  "versionNumber": 1,
+  "deploymentId": "appgdep_6aacc08a8d48819189a3f05cd616bde6",
+  "accessMode": "public",
+  "observedFrom": "2026-09-18T04:41:19.158Z",
+  "observedUntil": "2026-09-18T13:44:58.3030280+09:00",
+  "directBrowserOpened": true,
+  "checks": [
+    {
+      "evidence": [
+        "initial-1920.json",
+        "initial-1920-exact-original.png",
+        "public-health.json"
+      ],
+      "finding": "Direct fresh Chrome navigation to new SIRIUS public URL; HTTP200; SIRIUS title/visible branding; guest initial state; no old visible brand or developer exposition.",
+      "result": "PASS",
+      "id": "Q12-01"
+    },
+    {
+      "evidence": [
+        "initial-1920.json",
+        "more-live-12.json",
+        "public-search.json"
+      ],
+      "finding": "Actual1920x940 fullwidth rows, initial6/6/6,26/26/25 totals. Live more grows12 while othersections remain6. Search Tottenham returns correct hidden fixture and reset returnsinitial6.",
+      "result": "PASS",
+      "id": "Q12-02"
+    },
+    {
+      "evidence": [
+        "public-slip.json",
+        "public-confirmation.json",
+        "public-confirmation-original.png"
+      ],
+      "finding": "Public under8.5 at1.87 plus home1.56 syncs row/slip and confirms corrected threshold/rules.1.87x1.56=2.9172 ->2.917,10000->29172. Confirmation opened and closed; no public receipt submitted.",
+      "result": "PASS",
+      "id": "Q12-03"
+    },
+    {
+      "evidence": [
+        "public-2560-bottom.json",
+        "public-2560-bottom-original.png",
+        "public-rails-bottom.json"
+      ],
+      "finding": "2560viewport keeps1920shell atx320 and272/1280/320 columns;height816. Both lower banners match supplied/latest imagery, editable layered appearance and clear faces.",
+      "result": "PASS",
+      "id": "Q12-04"
+    },
+    {
+      "evidence": [
+        "actual-fonts.json",
+        "public-health.json"
+      ],
+      "finding": "Public native glyphs use PretendardJP, DINCondensedWeb and same custom OTS glyph font under loaded Omnigothic as validated local.143observed resource entries with no HTTP400+; no broken images and no captured warning/error.",
+      "result": "PASS",
+      "id": "Q12-05"
+    },
+    {
+      "supportingImplementationRecords": [
+        "../../public/deployment.json",
+        "../../public/archive-validation.json",
+        "../../public/anonymous-http.json"
+      ],
+      "evidence": [
+        "deployment-intake.json",
+        "final-source-preservation.json"
+      ],
+      "finding": "Deployment record links v1 to reviewed4e48de6/efad7050. Packaging report records250files matching validatedbuild; implementer anonymous17asset/CSS hash verification supports linkage. Auditor directly observed correctedpublicbehavior and verified currentSIRIUS276sourcefiles plus protectedMERCURY273files have noSHA differences.",
+      "result": "PASS",
+      "id": "Q12-06"
+    }
+  ],
+  "openFindings": [],
+  "closedFinding": "Q07-P2-01",
+  "inheritedLocalEvidence": "../full-0c8f4e1c/full-audit.json and ../recheck-efad7050/recheck-report.json",
+  "captureNote": "initial-1920-original.jpg is preserved but excluded from fullframe proof because native API clipped to905x940 despite DOM1920. initial-1920-exact-original.png is the direct1920x940 fullframe proof; no image was edited.",
+  "cleanup": {
+    "ownAuditTabClosed": true,
+    "newPublicReceiptCreated": false,
+    "publicBalanceChanged": false,
+    "loggedOut": true,
+    "viewportReset": true,
+    "selectionsCleared": true,
+    "userTabsPreserved": true
+  },
+  "sourceOrDeploymentChangedByAuditor": false,
+  "remainingRisks": "None found within specified audit scope. User visual acceptance remains separate."
+}

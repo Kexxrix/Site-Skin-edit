@@ -1,0 +1,133 @@
+{
+  "schema": "aldebaran-header-integration-v2",
+  "status": "reference-files-not-applied-to-live-app",
+  "target": "existing ALDEBARAN app only",
+  "app_path_default": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/",
+  "public_url": "https://aldebaran.kexxadrix.chatgpt.site/",
+  "new_project_registration": false,
+  "reference_files": {
+    "component": "implementation/AldebaranHeaderR3.tsx",
+    "stylesheet": "styles/aldebaran-header-r3.css"
+  },
+  "implementation_choice": "Prefer a minimal edit to the current header. The reference component is optional; preserve current actual handlers and state.",
+  "fixed_requirements": [
+    "wordmark only, modest scale, centered inside the left-rail-corresponding brand area",
+    "brand right edge and orange divider at left rail outer right edge",
+    "orange divider extends to header top and bottom, never into page body",
+    "thin notice row, text only, preserve existing notice action",
+    "all 7 navigation hit boxes and visual states fit inside central content width",
+    "existing account controls move to row 2 above right rail; preserve auth state branches",
+    "body coordinates and fixed desktop shell stay unchanged"
+  ],
+  "css_variable_mapping": {
+    "--ab-frame-edge": "existing body outer horizontal padding",
+    "--ab-frame-left": "existing body left rail width",
+    "--ab-frame-center": "existing body central content width",
+    "--ab-frame-right": "existing body right rail width",
+    "--ab-frame-gap": "existing body column gap",
+    "--ab-header-total-height": "current total header height, shared with existing shell offsets"
+  },
+  "reference_defaults_not_user_approved_pixels": {
+    "shell_width": 1920,
+    "edge": 12,
+    "left": 272,
+    "center": 1280,
+    "right": 320,
+    "gap": 12,
+    "header_height": 104,
+    "notice_height": 28,
+    "menu_row_height": 76,
+    "wordmark_width": 216,
+    "menu_button_height": 42,
+    "account_button_height": 38,
+    "vertical_divider_width": 1
+  },
+  "reference_geometry": {
+    "coordinates": "relative to the fixed shell, not browser viewport",
+    "left_rail": [
+      12,
+      284
+    ],
+    "center": [
+      296,
+      1576
+    ],
+    "right_rail": [
+      1588,
+      1908
+    ],
+    "brand_outer": [
+      0,
+      284
+    ],
+    "wordmark_center_x": 148,
+    "divider_right_edge_x": 284
+  },
+  "controlled_props": {
+    "items": "Reuse existing 7 IDs/labels/onSelect handlers; preserve order and any existing label content.",
+    "activeItemId": "Read current app selection; no independent header state.",
+    "notice": "Reuse existing clickable root and handler; text-only visual content; add notice classes.",
+    "accountActions": "Reuse existing guest/authenticated branch and handlers; remove old upper-row instance.",
+    "brandHref": "Preserve current brand navigation destination.",
+    "onBrandClick": "Preserve current optional brand handler."
+  },
+  "class_mapping": {
+    "existing_notice_control": "ab-header3__notice-control",
+    "existing_notice_label": "ab-header3__notice-label",
+    "existing_notice_message": "ab-header3__notice-text",
+    "existing_optional_account_wrapper": "ab-header3__account-group",
+    "existing_account_buttons_or_links": "ab-header3__account-control (in addition to current color and behavior classes)"
+  },
+  "menu_order": [
+    "스포츠",
+    "실시간 스포츠",
+    "E스포츠",
+    "카지노",
+    "슬롯",
+    "미니게임",
+    "이벤트"
+  ],
+  "remove_or_replace_r2_rules": [
+    "344px independent brand track",
+    "emblem element inside header",
+    "248px wordmark start size",
+    "top:24px/bottom:24px orange divider insets",
+    "46px notice+account row and 58px nav row",
+    "account actions inside upper utility row",
+    "nav spanning whole right remainder",
+    "R2 flex min-width/max-width/padding rules when conflicting with new central grid",
+    "old duplicate notice/header nodes or extra shell spacers"
+  ],
+  "integration_notes": [
+    "Connect variables to actual existing body values; never resize the body to these fallbacks.",
+    "Replace header-only rules. Avoid stacking R2 and R3 cascade fixes or broad global button rules.",
+    "Keep the existing position/sticky/scroll strategy; do not add JS positioning listeners.",
+    "Do not treat screenshot guide lines as visible UI except the explicitly requested left divider.",
+    "Preserve existing accepted palette/font/account button styling.",
+    "Keep center empty and all existing rail functionality unchanged."
+  ],
+  "verification": {
+    "independent_qa": false,
+    "jev": false,
+    "new_test_suite": false,
+    "existing_build_once": true,
+    "brief_changed_header_check": true,
+    "initial_public_screenshot": 1,
+    "full_site_regression": false,
+    "actual_authentication_or_transaction": false
+  },
+  "completion_report": [
+    "changed files and visible changes",
+    "actual basic check results and limitations",
+    "existing public URL and actual deployment identifiers",
+    "one initial screen with header and upper rails"
+  ],
+  "protected": [
+    "MERCURY",
+    "SIRIUS",
+    "ALDEBARAN body frame",
+    "ALDEBARAN rails and banners",
+    "existing data and storage",
+    "blank central area"
+  ]
+}

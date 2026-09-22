@@ -1,0 +1,67 @@
+{
+  "revision": "R6",
+  "rail_width_px": 272,
+  "aspect_ratio": [
+    16,
+    9
+  ],
+  "banner_height_at_272_px": 153,
+  "banner_gap_px": 10,
+  "stack_height_at_272_px": 479,
+  "placement": [
+    "quick-service",
+    "banner-stack",
+    "match-search-and-sports",
+    "existing-remainder"
+  ],
+  "interaction": "one full-area interactive element per banner; reuse existing menu behavior",
+  "banner_count": 3,
+  "internal_cta_button": false,
+  "banners": [
+    {
+      "order": 1,
+      "destination_key": "slots",
+      "image_url": "/banners/sirius-r6/slots.png",
+      "eyebrow": "SIRIUS SLOTS",
+      "title": "슬롯 게임",
+      "description": "새로운 즐거움을 만나보세요",
+      "accessible_name": "슬롯 게임 열기",
+      "image_position": "50% 50%",
+      "copy_position": "bottom-left",
+      "route": null
+    },
+    {
+      "order": 2,
+      "destination_key": "casino",
+      "image_url": "/banners/sirius-r6/casino.png",
+      "eyebrow": "LIVE CASINO",
+      "title": "라이브 카지노",
+      "description": "테이블의 열기를 가까이",
+      "accessible_name": "라이브 카지노 열기",
+      "image_position": "50% 50%",
+      "copy_position": "bottom-left",
+      "route": null
+    },
+    {
+      "order": 3,
+      "destination_key": "events",
+      "image_url": "/banners/sirius-r6/events.png",
+      "eyebrow": "SIRIUS EVENTS",
+      "title": "이벤트",
+      "description": "시리우스의 소식을 만나보세요",
+      "accessible_name": "이벤트 열기",
+      "image_position": "50% 50%",
+      "copy_position": "bottom-left",
+      "route": null
+    }
+  ],
+  "route_resolution": "route=null means resolve current app menu action; do not deploy blank links or invent routes. Connect onOpen(destination) to existing handlers.",
+  "typography": {
+    "font": "reuse existing Pretendard family",
+    "eyebrow_px": 10,
+    "title_px": 20,
+    "description_px": 11
+  },
+  "image_edits": false,
+  "selection_status": "planning starting selection; not yet user-reviewed as deployed R6"
+}

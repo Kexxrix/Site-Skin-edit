@@ -1,0 +1,80 @@
+{
+  "status": "complete",
+  "completedAt": "2026-09-18T02:13:40.164Z",
+  "url": "https://mercury.kexxadrix.chatgpt.site",
+  "changedFiles": [
+    "site/app/page.tsx",
+    "site/public/banners/r8/mercury-event-woman.png"
+  ],
+  "change": "Right PhotoBanner image path only; new original PNG copied byte-for-byte.",
+  "source": "D:/WebDL/ChatGPT Image 2026년 9월 17일 오후 06_46_00 (9).png",
+  "asset": {
+    "path": "public/banners/r8/mercury-event-woman.png",
+    "sourceSha256": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99",
+    "copySha256": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99",
+    "publicSha256": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99",
+    "bytes": 2109408,
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "crop": {
+    "objectFit": "cover",
+    "objectPosition": "30% 50%",
+    "changed": false
+  },
+  "public": {
+    "version": 8,
+    "versionId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_17d5048ffa688191ba833e48df9e071a",
+    "deploymentId": "appgdep_6aac9dbf8c4c8191afe647721163929d",
+    "commit": "4f582b7ef30721b9f6f23fa62e845f63d7569a2c",
+    "status": "succeeded",
+    "publishedAt": "2026-09-18T02:11:32.085635+00:00",
+    "access": "public"
+  },
+  "verification": {
+    "build": "PASS",
+    "diffCheck": "PASS",
+    "package": "PASS",
+    "localBanner": "PASS",
+    "localEventCTA": "PASS",
+    "anonymousPublicPage": "HTTP 200",
+    "anonymousPublicImage": "HTTP 200; original SHA-256 match",
+    "publicBannerVisual": "PASS",
+    "publicCaptureDimensions": [
+      1920,
+      940
+    ]
+  },
+  "capture": {
+    "path": "qa/r8/right-banner-20260918/public-banner-verified.jpg",
+    "format": "JPEG",
+    "width": 1920,
+    "height": 940,
+    "sha256": "92d72083b0009ee56980f78fd2eb606b978350af22c07577abf3272bcd94c548"
+  },
+  "preserved": {
+    "leftImageSha256": "82957c0e5197bd2d3a2983bd260c8284632507f821251c8b76918dd0b2e600a6",
+    "copyCTAFrameCSS": true,
+    "otherSource": true,
+    "coordinatorDocs": "Not edited",
+    "preExistingUntracked": "tsconfig.tsbuildinfo"
+  },
+  "unverified": [
+    "Unchanged whole-site regression and 77-fixture audit intentionally not repeated.",
+    "Event CTA interaction checked on local production build; public page verified visually and by anonymous asset/source readback."
+  ],
+  "remainingRisks": [],
+  "excludedCaptures": [
+    {
+      "path": "local-right-banner.png",
+      "reason": "CDP clip ignored origin; contains top-left page, not banner; excluded from evidence."
+    },
+    {
+      "path": "public-right-banner-screen.png",
+      "reason": "Captured transient partial paint; no right panel visible. Excluded from evidence."
+    }
+  ],
+  "toolingNote": "Sites 0.1.65 disappeared from plugin cache during this run. Used available official bundled 0.1.57 package-site.sh via Git Bash; build and source unchanged."
+}

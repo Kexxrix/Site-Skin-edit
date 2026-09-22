@@ -1,0 +1,89 @@
+{
+  "package": "ALDEBARAN_CENTER_R4",
+  "date": "2026-09-21",
+  "scope": "pending header R3.1 corrections plus first central sports UI implementation handoff",
+  "status": "prepared; not applied to actual app",
+  "latest_uploaded_layout_image_used": false,
+  "latest_uploaded_layout_image_included": false,
+  "tracker_reference": "official Sportradar demo, observed via page DOM and browser screenshot",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 3853,
+      "sha256": "f9b4c748f4ff0f8a0540fb0b9318a3c7b1b7a6674d0ff1de6039b27e9952719f"
+    },
+    {
+      "path": "DECISIONS.md",
+      "size_bytes": 1440,
+      "sha256": "1d9e3083c1dee3296a95b67ed21a43a98d1a9b04dbb756a2a051356a04b671d4"
+    },
+    {
+      "path": "DESIGN_SPEC.md",
+      "size_bytes": 10131,
+      "sha256": "cffa56a61b1d950b4037250ec95efef44af042bbd3781aa8bb199083a82199a6"
+    },
+    {
+      "path": "START_HERE.txt",
+      "size_bytes": 4723,
+      "sha256": "165a66610b02083f14c4c207ef70ddf2aad5cb24e65a351ce307571afea80be6"
+    },
+    {
+      "path": "STATE.md",
+      "size_bytes": 4041,
+      "sha256": "b4e4d8b7b4d84c25f0ead8a3fbfc527615def92b1ee767033a8f40f9f19c7218"
+    },
+    {
+      "path": "implementation/AldebaranCenterR4.tsx",
+      "size_bytes": 4073,
+      "sha256": "3eaf4ec21c0834c7688d4f098f64bd481f6c660c6595cfefa83719ef336694ae"
+    },
+    {
+      "path": "implementation/FootballPitchR4.tsx",
+      "size_bytes": 2152,
+      "sha256": "66c4e7f61e88cec05c5a28d1e4ed5097dad73c0fd8017b0c6e3f0abe607e203b"
+    },
+    {
+      "path": "implementation/integration-map.json",
+      "size_bytes": 6352,
+      "sha256": "c4e22bf2e42638940e9a3e7e6de6b54c2a76cd88d7f0bece844ac00591ad0f18"
+    },
+    {
+      "path": "implementation/reference-sources.json",
+      "size_bytes": 1439,
+      "sha256": "56b59d2964fd0c5e94a59eb71179f3ac04fa1dba24f73cda548ae4779236ee50"
+    },
+    {
+      "path": "implementation/tracker-demo-config.json",
+      "size_bytes": 4458,
+      "sha256": "4b2a04da4d0580b12f0ce61c443e449430b34753202199e9311ab8b1ea28d35a"
+    },
+    {
+      "path": "styles/aldebaran-center-r4.css",
+      "size_bytes": 6420,
+      "sha256": "0964b290915be16e821858ae3ecebea3dfbaa31e536b55db350cb4d8ad6e96ba"
+    },
+    {
+      "path": "styles/aldebaran-header-r3-1.patch.css",
+      "size_bytes": 2354,
+      "sha256": "0d0a8787e06db84fbe31a99624eccd198633c93abd9484ed13618a6ed7429d85"
+    }
+  ],
+  "checks": {
+    "json_parse": "passed",
+    "reference_paths": "passed",
+    "equal_column_calculation": "(1280 - 16) / 2 = 632",
+    "header_patch_bytes": "matches previous R3.1 patch",
+    "uploaded_mockup_exclusion": "passed; no raster images packaged",
+    "typescript_css_compile": "not run; reference files require current app integration",
+    "actual_app_build": "not run",
+    "app_interaction_tests": "not run",
+    "deployment": "not run",
+    "independent_qa_or_jev": "excluded"
+  },
+  "limitations": [
+    "Partial integration references, not a standalone working app.",
+    "Implementer must complete tracker views/tabs, market panels, and current-app data/handler adapters.",
+    "Current Windows source and latest operational records are authoritative.",
+    "No external live feed or actual wagering integration included."
+  ]
+}

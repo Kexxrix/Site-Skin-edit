@@ -1,0 +1,82 @@
+{
+  "at": "2026-09-21T18:39:07.8894343+09:00",
+  "archive": "D:/WebDL/ALDEBARAN_HEADER_R2.zip",
+  "sha256": "916C9D287F141223616224CB1E011C45412159DCE34BB7654AB996F60FF9F049",
+  "input": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/input/aldebaran-header-r2-package/ALDEBARAN_HEADER_R2",
+  "manifest_checks": [
+    {
+      "path": "AGENTS.md",
+      "hash": "fa0ec367aeb88f0bf2dd115474d413b1e6ee0220850ac37fbe69cf866fe1d65a",
+      "matches": true
+    },
+    {
+      "path": "DECISIONS.md",
+      "hash": "a5632c4e95b1ada7422462f3e489bb69d87bbbdd9132bccfba0b8d481351b223",
+      "matches": true
+    },
+    {
+      "path": "DESIGN_SPEC.md",
+      "hash": "ed9a5229e6592f31327488b213e20b51a1b908d290cd3d9b0d2db2f46ef70c88",
+      "matches": true
+    },
+    {
+      "path": "START_HERE.txt",
+      "hash": "d9a57e0eafba5ed61a30b41bb801a6401d477b6f5942dec1331bac606501b4c2",
+      "matches": true
+    },
+    {
+      "path": "STATE.md",
+      "hash": "1e41f1dd65235eab3420ae49054a710d2cb9e5e8aa5444b526a6d403857345ee",
+      "matches": true
+    },
+    {
+      "path": "assets/asset-map.json",
+      "hash": "e9fa811726b28af9457688656f9a157ffbc68c4118b9ced5eb719bd5c8a8dafb",
+      "matches": true
+    },
+    {
+      "path": "assets/branding/aldebaran-emblem.png",
+      "hash": "37d5d27c1e9d5230015dcd534560660e439157fd41d9ce2e639dee132d924da1",
+      "matches": true
+    },
+    {
+      "path": "assets/branding/aldebaran-wordmark.png",
+      "hash": "7f028493deee645c26ab2a71a5cc226ee009ff214a3397fdaae9c7ac4bfb10fa",
+      "matches": true
+    },
+    {
+      "path": "implementation/AldebaranHeaderR2.tsx",
+      "hash": "d5ba93f2466988933c2183c92256f65ab113acc354a7c3c379f33d1fb6f9dc59",
+      "matches": true
+    },
+    {
+      "path": "implementation/integration-map.json",
+      "hash": "dffb19e2431cf262b759ff0eaefc1b0904f3cbc48136932b68a529d8ea72be2b",
+      "matches": true
+    },
+    {
+      "path": "styles/aldebaran-header-r2.css",
+      "hash": "db3cbaa0cef929f77fb47cf28831d3985baef682e3f3190a1f150bc27b3e297d",
+      "matches": true
+    }
+  ],
+  "existing_brand_checks": [
+    {
+      "path": "public/assets/branding/aldebaran-wordmark.png",
+      "existing_matches": true
+    },
+    {
+      "path": "public/assets/branding/aldebaran-emblem.png",
+      "existing_matches": true
+    }
+  ],
+  "merged_docs": [
+    "AGENTS.md",
+    "STATE.md",
+    "DESIGN_SPEC.md",
+    "DECISIONS.md"
+  ],
+  "old_records_preserved": true,
+  "scope": "R2 option 1 asymmetric header only; existing project/address",
+  "public_project": "appgprj_6ab0f3255cdc819180a427bf6d0846f4"
+}

@@ -1,0 +1,151 @@
+{
+  "checkedAt": "2026-09-17T03:23:42.548Z",
+  "sourceSha256": "2252b61a234e2624430f689cce50d8cfa8344831affe640efeca542c002aaad0",
+  "count": 17,
+  "results": [
+    {
+      "name": "empty selections",
+      "actual": {
+        "odds": "0.000",
+        "potential": "0"
+      },
+      "expected": {
+        "odds": "0.000",
+        "potential": "0"
+      },
+      "passed": true
+    },
+    {
+      "name": "single selection",
+      "actual": {
+        "odds": "1.840",
+        "potential": "18400"
+      },
+      "expected": {
+        "odds": "1.840",
+        "potential": "18400"
+      },
+      "passed": true
+    },
+    {
+      "name": "10000 * 1.84 * 1.56, final display rounding only",
+      "actual": {
+        "odds": "2.870",
+        "potential": "28704"
+      },
+      "expected": {
+        "odds": "2.870",
+        "potential": "28704"
+      },
+      "passed": true
+    },
+    {
+      "name": "three decimal odds preserve precision and truncate won",
+      "actual": {
+        "odds": "6.100",
+        "potential": "61002"
+      },
+      "expected": {
+        "odds": "6.100",
+        "potential": "61002"
+      },
+      "passed": true
+    },
+    {
+      "name": "three decimal display",
+      "actual": "2.125",
+      "expected": "2.125",
+      "passed": true
+    },
+    {
+      "name": "invalid stake \"\"",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "invalid stake \"abc\"",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "invalid stake \"-1000\"",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "invalid stake \"1000.5\"",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "invalid stake \"999\"",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "invalid stake \"100001\"",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "invalid stake \"9007199254740992\"",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "minimum",
+      "actual": {
+        "value": 1000,
+        "error": ""
+      },
+      "expected": {
+        "value": 1000,
+        "error": ""
+      },
+      "passed": true
+    },
+    {
+      "name": "maximum",
+      "actual": {
+        "value": 100000,
+        "error": ""
+      },
+      "expected": {
+        "value": 100000,
+        "error": ""
+      },
+      "passed": true
+    },
+    {
+      "name": "exact available balance",
+      "actual": {
+        "value": 1500,
+        "error": ""
+      },
+      "expected": {
+        "value": 1500,
+        "error": ""
+      },
+      "passed": true
+    },
+    {
+      "name": "exceeds available balance",
+      "actual": "가상 잔액보다 큰 금액입니다.",
+      "expected": "가상 잔액보다 큰 금액입니다.",
+      "passed": true
+    },
+    {
+      "name": "zero balance rejected",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ]
+}

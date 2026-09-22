@@ -1,0 +1,93 @@
+{
+  "at": "2026-09-21T11:34:15.935Z",
+  "count": 77,
+  "originalMatchFieldsAndThreeMarketsUnchanged": true,
+  "originalSelectionIdsUnchanged": true,
+  "live": [
+    {
+      "id": "record-401816943",
+      "sport": "baseball",
+      "score": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "id": "record-401816960",
+      "sport": "baseball",
+      "score": [
+        "6",
+        "3"
+      ]
+    },
+    {
+      "id": "record-401816961",
+      "sport": "baseball",
+      "score": [
+        "5",
+        "1"
+      ]
+    }
+  ],
+  "footballLive": 0,
+  "extras": 64,
+  "statsNonnegative": true,
+  "syntheticFootballPureDataProbe": {
+    "scope": "One in-memory calculation only; no fixture file, no rendered live feed",
+    "score": [
+      "0",
+      "3"
+    ],
+    "minute": 63,
+    "valid": true,
+    "events": [
+      {
+        "side": "away",
+        "time": 15,
+        "label": "골",
+        "kind": "goal"
+      },
+      {
+        "side": "away",
+        "time": 26,
+        "label": "경고",
+        "kind": "card"
+      },
+      {
+        "side": "away",
+        "time": 31,
+        "label": "골",
+        "kind": "goal"
+      },
+      {
+        "side": "away",
+        "time": 47,
+        "label": "골",
+        "kind": "goal"
+      }
+    ],
+    "stats": [
+      {
+        "label": "점유율",
+        "home": 44,
+        "away": 56,
+        "unit": "%"
+      },
+      {
+        "label": "슈팅",
+        "home": 5,
+        "away": 10
+      },
+      {
+        "label": "유효 슈팅",
+        "home": 2,
+        "away": 7
+      },
+      {
+        "label": "코너킥",
+        "home": 3,
+        "away": 5
+      }
+    ]
+  }
+}

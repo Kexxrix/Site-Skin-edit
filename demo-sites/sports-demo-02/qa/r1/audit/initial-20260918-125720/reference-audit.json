@@ -1,0 +1,127 @@
+{
+  "stage": "SIRIUS R1 reference observation and audit preparation",
+  "status": "prepared_waiting_for_S02_URL_and_source",
+  "auditorTask": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "completedAt": "2026-09-18T12:59:35.928691+09:00",
+  "implementationVerdict": "Not assessed. No SIRIUS source/version or rendered S02 URL received.",
+  "documents": "Read AGENTS -> STATE -> DESIGN_SPEC -> DECISIONS. Hashes in intake.json.",
+  "references": [
+    {
+      "file": "references/bwin-layout-reference.png",
+      "directlyViewed": true,
+      "observed": "A continuous full-width list; paired team lines at left, upper shared market labels and equal-width odds groups at stable x positions, thin separators, compact repeat rhythm.",
+      "applies": "Central hierarchy, continuous row rhythm, alignment and distinction between information and controls.",
+      "excluded": "Uniform artwork, bwin branding, black/yellow palette, horizontal league tabs, media/mini-games and cookie UI."
+    },
+    {
+      "file": "references/asian-market-columns-reference.png",
+      "directlyViewed": true,
+      "observed": "League heading with match count; time/status, stacked home/away with aligned scores, result, handicap, total and extra columns. Football has3 result buttons; baseball/basketball2 fill the same result region.",
+      "applies": "Shared column starts for headers and all sports; team/score baseline, semantic outcome/handicap/total mapping; league count and collapse.",
+      "excluded": "Layout-switcher modes, fictional extra-market counts and source screenshot data as fixtures."
+    },
+    {
+      "file": "references/william-hill-color-reference.png",
+      "directlyViewed": true,
+      "observed": "Deep blue header and outer rails, white primary text, muted blue-grey secondary text, limited light champagne-gold controls. Provided image also contains large white content/advertising planes.",
+      "applies": "Deep blue surface separation, white text and restrained gold material.",
+      "excluded": "Large white center panels, William Hill brand, ads and complete page layout."
+    }
+  ],
+  "WOG": {
+    "directlyOpened": true,
+    "url": "https://wog-1000.com/",
+    "title": "Way Of Glory",
+    "time": "2026-09-18T03:57:51.343Z",
+    "viewport": {
+      "dpr": 1,
+      "height": 937,
+      "scale": 1,
+      "width": 2560
+    },
+    "screenshotFiles": [
+      "wog-initial-original.jpg",
+      "wog-service-hover-original.jpg"
+    ],
+    "observed": "Dense but clearly separated rails, restrained thin borders, readable service labels, localized glossy button reflection, photo faces above lower captions and visible button hover feedback.",
+    "hover": {
+      "actual": true,
+      "baselineY": 114,
+      "hoverY": 115,
+      "transform": "matrix(1, 0, 0, 1, 0, 1)",
+      "shadowChanged": true
+    },
+    "scope": "Finish reference only. Its white rails, navy/gold graphics,3-column cards, values and1px hover movement are not SIRIUS requirements. No backend/source authenticity inference.",
+    "tabClosed": true,
+    "viewportChanged": false
+  },
+  "S02_plan": {
+    "flow": "SIRIUS preview loads -> inspect full-width rows in3 sections -> compare shared headers/columns for2-way,3-way and long names -> collapse/expand a league and add6 matches -> verify counts, stable mapping and preserved selection.",
+    "checks": [
+      "One full-width row per fixture; no3-column card grid or nested heavy boxes.",
+      "Time/status, stacked teams/scores, result, handicap, U/O and extra cells align with shared header starts across leagues.",
+      "Long names stay within the team column with full-name tooltip; scores share team baselines.",
+      "League headers and shared market headers identify groups; visible versus full counts are clear.",
+      "Initial6 each and additional6 operate on match count before grouping; collapse does not inflate the count.",
+      "2-way does not invent a draw; handicap sign/home-away and U/O direction/line/price retain original market/outcome IDs.",
+      "No fabricated extra-market counts; no click surface on informational score/market labels."
+    ],
+    "verdictBoundary": "Short structural feedback only; unfinished skin is not judged as the complete design."
+  },
+  "fullAuditPlan": {
+    "Q01 separation": "Not yet executed on SIRIUS",
+    "Q02 row hierarchy": "Not yet executed on SIRIUS",
+    "Q03 column alignment": "Not yet executed on SIRIUS",
+    "Q04 blue material": "Not yet executed on SIRIUS",
+    "Q05 brand/assets": "Not yet executed on SIRIUS",
+    "Q06 fixtures/expansion": "Not yet executed on SIRIUS",
+    "Q07 functions": "Not yet executed on SIRIUS",
+    "Q08 states/motion": "Not yet executed on SIRIUS",
+    "Q09 full-page consistency": "Not yet executed on SIRIUS",
+    "Q10 screen/fonts": "Not yet executed on SIRIUS",
+    "Q11 provenance": "Not yet executed on SIRIUS",
+    "Q12 public URL": "Not yet executed on SIRIUS"
+  },
+  "fullAuditRequirements": [
+    "Fresh SIRIUS full audit; MERCURY PASS not inherited.",
+    "Actual1920 and2560 pixels/viewport/DPR plus fixed1920 shell and3 independent scroll columns.",
+    "All8 sport PNGs and provided brand originals, real font glyphs, palettes, both banners and all modal states.",
+    "Full selection/replacement/remove/locked/input/precision/account/history/search/filter/group/expansion flows on SIRIUS.",
+    "Evidence before/after corrections tied to frozen source/version; same-input passed checks may be reused within SIRIUS with mapping.",
+    "Separate SIRIUS public URL directly opened after deployment; public source/assets and core actions verified."
+  ],
+  "acceptedScope": [
+    "NHL/league presentation and current team names remain accepted; only actual regressions can become findings.",
+    "No mobile redesign, extra game/media/transaction backend, new image generation or external-brand replication.",
+    "Start values are implementation defaults, not independent proof or immutable pixel targets."
+  ],
+  "ownership": {
+    "written": "Only JSON and original screenshots in this audit folder",
+    "unchanged": [
+      "SIRIUS source",
+      "four operating documents",
+      "MERCURY source/public version",
+      "input/reference originals",
+      "Sites/Git/deployment",
+      "other servers/user tabs"
+    ]
+  },
+  "imageValidation": [
+    {
+      "file": "wog-initial-original.jpg",
+      "format": "JPEG",
+      "width": 2560,
+      "height": 937,
+      "sha256": "87de4cd4a6626b938c185b647c0fcd0bb1550ed1108e6fed215013cc5a979a4b",
+      "readable": true
+    },
+    {
+      "file": "wog-service-hover-original.jpg",
+      "format": "JPEG",
+      "width": 2560,
+      "height": 937,
+      "sha256": "08cc71e872f93a5395f86de5fdd6932480d60c95070a7bac0c6e4b0208f4c81a",
+      "readable": true
+    }
+  ]
+}

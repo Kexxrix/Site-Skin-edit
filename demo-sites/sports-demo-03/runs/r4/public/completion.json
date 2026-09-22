@@ -1,0 +1,331 @@
+{
+  "task": "ALDEBARAN CENTER R4 and HEADER R3.1",
+  "completedAt": "2026-09-21T11:39:38.5847851+00:00",
+  "status": "deployed-basic-verification-passed-awaiting-user-feedback",
+  "siteRoot": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site",
+  "start": {
+    "headerR31": "not previously applied",
+    "head": "f036dc20bdf5d9ddbd00e809690261e49345d3b1",
+    "publicVersion": 3,
+    "dirty": ""
+  },
+  "end": {
+    "head": "2da6c55d2395beb2ae0046c8421aa4d3b4ddef08",
+    "sourcePush": "succeeded",
+    "dirty": ""
+  },
+  "changedFiles": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/page.tsx",
+      "change": "Mount central list/detail, one inspected match ID with filtered fallback; preserve slip action and section expansion; reuse BackToTop; move existing logo renderer and replace unused old cards"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/layout.tsx",
+      "change": "Import R4 central stylesheet"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/demo-data.ts",
+      "change": "Append two stable football markets with semantic IDs and availability; preserve all original match fields, first three markets and IDs"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/aldebaran-header-r2.css",
+      "change": "R3.1 missing changes only: brand padding0, continuous parent notice divider, small clipped corners/border and hover/focus accent"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/aldebaran-center-r4.tsx",
+      "change": "Shared horizontal teams/scores, sibling inspect/odds buttons, own SVG tracker and three functional tabs, selected-match detail filters and markets, preserved logo presentation renderer"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/aldebaran-center-r4.css",
+      "change": "Equal632px columns/gap16, matte charcoal/orange surfaces, original DIN token, clipping-safe names and scores; existing common scroller"
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/app/tracker-demo.ts",
+      "change": "Fixture-ID deterministic missing tracker statistics/events and extra football odds; authoritative scores/state preserved"
+    }
+  ],
+  "dataScope": {
+    "evidence": "implementation/data-connection.json",
+    "scheduledMatches": "Remain scheduled with unknown scores and waiting statistics",
+    "liveFootballCount": 0,
+    "originalSelectionIdsUnchanged": true,
+    "footballMatches": 32,
+    "extraMarketPanels": 64,
+    "live": [
+      {
+        "id": "record-401816943",
+        "sport": "baseball",
+        "score": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "id": "record-401816960",
+        "sport": "baseball",
+        "score": [
+          "6",
+          "3"
+        ]
+      },
+      {
+        "id": "record-401816961",
+        "sport": "baseball",
+        "score": [
+          "5",
+          "1"
+        ]
+      }
+    ],
+    "firstSelection": "record-401816943, LIVE baseball fallback; no current LIVE football in dataset",
+    "extras": "Two per soccer match: first-half result and first-scoring-team including no goal",
+    "actualFeed": false,
+    "sourceFilesUnmodified": true,
+    "count": 77,
+    "sourceFiles": [
+      "app/match-records.json",
+      "app/live-snapshots.json",
+      "app/sport-menu.json",
+      "app/logo-presentation.json"
+    ],
+    "originalMatchFieldsAndThreeMarketsUnchanged": true
+  },
+  "tracker": {
+    "providerApiIframeOrCapture": false,
+    "nonFootball": "Sport-specific score/state/statistics; no stale football pitch",
+    "reference": "implementation/reference-observation.json",
+    "latestUploadedLayoutImageUsed": false,
+    "limitations": [
+      "Original football fixtures are scheduled; real-fixture LIVE football movement not exercised",
+      "Hidden-page/reduced-motion lifecycle reviewed in source, not browser-emulated",
+      "Non-football detailed field animations are excluded"
+    ],
+    "scoreMutation": false,
+    "footballDataCheck": {
+      "scope": "One in-memory calculation only; no fixture file, no rendered live feed",
+      "score": [
+        "0",
+        "3"
+      ],
+      "minute": 63,
+      "valid": true,
+      "events": [
+        {
+          "side": "away",
+          "time": 15,
+          "label": "골",
+          "kind": "goal"
+        },
+        {
+          "side": "away",
+          "time": 26,
+          "label": "경고",
+          "kind": "card"
+        },
+        {
+          "side": "away",
+          "time": 31,
+          "label": "골",
+          "kind": "goal"
+        },
+        {
+          "side": "away",
+          "time": 47,
+          "label": "골",
+          "kind": "goal"
+        }
+      ],
+      "stats": [
+        {
+          "label": "점유율",
+          "home": 44,
+          "away": 56,
+          "unit": "%"
+        },
+        {
+          "label": "슈팅",
+          "home": 5,
+          "away": 10
+        },
+        {
+          "label": "유효 슈팅",
+          "home": 2,
+          "away": 7
+        },
+        {
+          "label": "코너킥",
+          "home": 3,
+          "away": 5
+        }
+      ]
+    },
+    "tabs": [
+      "match",
+      "statistics",
+      "timeline"
+    ],
+    "statsEvents": "Supplemental deterministic demo only, no unprovided player names",
+    "implementation": "Own React/SVG/CSS; official Sportradar demo inspected once for scoreboard/event lanes/pitch/tabs only",
+    "motion": "4000ms bounded four-phase local loop only while LIVE, match tab, document visible and reduced-motion disabled; effect cleanup on match/status/tab change and unmount"
+  },
+  "validation": {
+    "local": {
+      "originalRails": [
+        272,
+        1280,
+        320
+      ],
+      "viewport": [
+        1920,
+        912
+      ],
+      "nestedButtons": 0,
+      "firstMarketBottomBaseball": 785,
+      "columns": [
+        632,
+        632
+      ],
+      "restored": {
+        "query": "",
+        "scrollTop": 0,
+        "selected": 0,
+        "sport": "전체 스포츠77",
+        "temporaryText": false,
+        "tracker": "record-401816943"
+      },
+      "verified": [
+        "left odds mirror selected state on right",
+        "right detailed odds enter existing slip",
+        "switch match updates card/score/stats/markets and preserves other slip selections",
+        "original 2.125 precision and new special market selection",
+        "soccer scheduled SVG/three tabs/market filters",
+        "basketball scheduled view has no football field",
+        "filter retains valid match and empty result clears both list and tracker",
+        "actual original 0:3 score shown in card and tracker",
+        "MORE12/collapse6/BackToTop with same tracker selection",
+        "LIVE baseball phase changes while score remains6:3; statistics tab pauses phases",
+        "no app warning/error console entries"
+      ],
+      "firstMarketBottomFootball": 830.5,
+      "logoCenterX": 142,
+      "gap": 16,
+      "evidence": "implementation/basic-observation.json"
+    },
+    "public": {
+      "evidence": "public/first-screen.json",
+      "result": "PASS: loaded team/league logos, headerR3.1, equal columns, same default match/score, first market visible, original rails and guest empty slip",
+      "savedScreenshots": 1,
+      "method": "Native accessibility and actual screenshot, not assumed public DOM geometry"
+    },
+    "data": {
+      "syntheticFootballEventsConsistent": true,
+      "stableOriginalFields": true,
+      "nonnegativeStats": true
+    },
+    "temporaryDisplay": {
+      "beforeSha256": "689B74BBDC7A35395A4F3A6C861B1A2A706C05788781A486A1A87E77D7247A25",
+      "score": "108:102",
+      "before": "Tracker109.375px score exceeded96px center",
+      "sourceRestored": true,
+      "names": "Long names ellipsized with full title",
+      "scope": "One-off TeamRow prop substitution only; no fixture file, public data or saved data changed",
+      "fix": "Tracker center120px; card center96px retained",
+      "after": "All checked score boxes fit; card94.34375px, tracker109.375px",
+      "afterSha256": "689B74BBDC7A35395A4F3A6C861B1A2A706C05788781A486A1A87E77D7247A25",
+      "evidence": "implementation/temporary-display.json and basic-observation.json"
+    },
+    "build": {
+      "command": "node \"C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js\" run build",
+      "log": "implementation/build.log",
+      "exitCode": 0,
+      "finalBuildCount": 1
+    },
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "log": "implementation/typecheck.log",
+      "exitCode": 0
+    }
+  },
+  "fixesDuringVerification": [
+    "Use unsigned seed shifts to prevent negative supplemental stats",
+    "Widen only tracker score slot to120px for three-digit scores",
+    "Neutral bars for unavailable or zero totals"
+  ],
+  "preservation": {
+    "evidence": "implementation/preservation.json",
+    "notChanged": [
+      "outer rails and frame geometry",
+      "existing storage namespace/account/slip/calculation behavior",
+      "fonts, logos, photos, banners, favicon",
+      "existing match motion implementation",
+      "MERCURY and SIRIUS source/deployments",
+      "coordinator-owned operating MDs"
+    ],
+    "protectedHashes": 1842,
+    "existingMatchFixtureFilesAndAssetBytesUnchanged": true,
+    "at": "2026-09-21T11:33:13.398Z",
+    "sirius": {
+      "head": "9c424b8e4e8c480848f1ec47bf5139c6d5987738",
+      "dirty": "?? .agents/\n?? .impeccable/\n?? DESIGN.md\n?? PRODUCT.md",
+      "changed": [],
+      "added": [],
+      "headUnchanged": true,
+      "dirtyUnchanged": true
+    },
+    "noDependenciesPluginsFontsImagesOrTestSuitesAdded": true,
+    "mercury": {
+      "head": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+      "dirty": "?? tsconfig.tsbuildinfo",
+      "changed": [],
+      "added": [],
+      "headUnchanged": true,
+      "dirtyUnchanged": true
+    }
+  },
+  "publication": {
+    "status": "succeeded",
+    "access": "public",
+    "versionNumber": 4,
+    "successKST": "2026-09-21T20:37:15.0000000+09:00",
+    "successUTC": "2026-09-21T20:37:15.146097+09:00",
+    "receipt": "public/publication.json",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "deploymentId": "appgdep_6ab116da5c3081918b6b19b31fa3a645",
+    "commitSha": "2da6c55d2395beb2ae0046c8421aa4d3b4ddef08",
+    "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_6e57aa7f95ec8191bfaedd85dbf1f7d8",
+    "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4"
+  },
+  "capture": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r4\\public\\aldebaran-r4-initial-1920x912.jpg",
+    "width": 1920,
+    "height": 912,
+    "bytes": 158036,
+    "sha256": "79A6F6599D6B4D42F1E4B4B401FAF623B10F3B04A9584E1422EBAB1F386071B3"
+  },
+  "archive": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r4\\public\\aldebaran-center-r4.tar.gz",
+    "bytes": 25058094,
+    "sha256": "CC072A7BDE9C37019A0D7EEC2A98DB5013768746E4724AA260967FC9AC952152",
+    "entries": 305,
+    "requiredFiles": true,
+    "excludedFilesAbsent": true
+  },
+  "handoff": {
+    "ownedPort5287Stopped": true,
+    "openInCodexSkipped": "Delegated background implementation task",
+    "deliverableMarked": true,
+    "viewportReset": true,
+    "tabId": "15",
+    "browserRecovery": "Initial dev server bound IPv6; restarted own server with correct hostname. Original tab13 stuck on internal connection-error URL; native navigation/close were policy blocked, so documented fresh-tab recovery used tab15. No change to browser safety settings."
+  },
+  "unverified": [
+    "Real authentication, betting or financial transactions",
+    "Full slip/session regression",
+    "Mobile/responsive redesign",
+    "Real sports feed",
+    "All-sport field animation",
+    "Public precise DOM dimensions",
+    "User visual approval"
+  ],
+  "nextAction": "Wait for user feedback; no next cycle started"
+}

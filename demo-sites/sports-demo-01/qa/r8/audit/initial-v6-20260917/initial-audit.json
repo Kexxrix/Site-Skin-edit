@@ -1,0 +1,195 @@
+{
+  "stage": "R8 initial direction audit only",
+  "status": "initial_observation_complete_waiting_for_R8_frozen_build",
+  "auditorTask": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "start": "2026-09-17T10:14:17.281Z",
+  "end": "2026-09-17T19:18:32.135387+09:00",
+  "targetFlow": "Public v6 loads -> inspect initial six live-section cards, services, sport rows and both scrolled banner slots -> establish R8 direction without modifying source or running full R8 acceptance.",
+  "browser": "CUA Chrome extension; no external Playwright fallback",
+  "page": {
+    "url": "https://mercury.kexxadrix.chatgpt.site/",
+    "title": "MERCURY · 스포츠",
+    "version": "R7 public v6 as assigned by coordinator",
+    "localHeadIndependentlyRead": "8b821074dffb0c51b5119210e6ac082177928b59",
+    "browserSourceBinding": "CSS filename matches known v6; no full public-source hash attestation in this initial direction audit",
+    "css": [
+      "https://mercury.kexxadrix.chatgpt.site/_next/static/css/index.WjcoLJFK.css",
+      "https://use.typekit.net/aqm4sxy.css"
+    ],
+    "viewport": {
+      "dpr": 1,
+      "height": 940,
+      "scale": 1,
+      "width": 1920
+    },
+    "rootHeight": 940,
+    "windowY": 0
+  },
+  "documentsRead": [
+    {
+      "file": "AGENTS.md",
+      "sha256": "a6b62ec8c6b102902d69ff81c6c074f3d1eb87c080520538ddf8a7a05017ec86"
+    },
+    {
+      "file": "STATE.md",
+      "sha256": "782aa7356e473b5bf66327659c40b73030ea618742e98551193f01198b09c493"
+    },
+    {
+      "file": "DESIGN_SPEC.md",
+      "sha256": "b9a67dafc7328d38f410791a8439b6f76c70697812b744afb8b54265441c4455"
+    },
+    {
+      "file": "DECISIONS.md",
+      "sha256": "312c22416fcd0832b60f94858a53c8e6683dcd2b22dadbd446b4e69bf4b2e8fa"
+    }
+  ],
+  "input": {
+    "packageFileCount": 42,
+    "assetCount": 11,
+    "matchingAssetHashes": 11,
+    "originalsModified": false,
+    "originalPhotosProvided": 1,
+    "originalSportIcons": 8,
+    "newImageGenerationPerformed": false
+  },
+  "initialGaps": [
+    {
+      "id": "R8-I01",
+      "criteria": [
+        "R8-01",
+        "Q11"
+      ],
+      "location": "#live first6 cards",
+      "observed": "0 in-progress,4 FINAL,2 scheduled. No LIVE stage/score distinction in first screen.",
+      "minimalDirection": "Use actual in-progress source snapshots with fixture/team/time/stage/score provenance; prioritize the documented3+ target where supported. Keep static snapshot values static unless timestamped replay is available. Do not relabel finals as LIVE.",
+      "evidence": [
+        "mercury-v6-initial-1920.jpg",
+        "public-v6-initial.json"
+      ],
+      "recheck": "Fresh frozen production first6 and source-backed live record chain, normal and reduced motion."
+    },
+    {
+      "id": "R8-I02",
+      "criteria": [
+        "R8-02",
+        "Q06",
+        "Q07"
+      ],
+      "location": "left quick-service charge/withdraw",
+      "observed": "Both119x64px with flex-direction:column and21px glyphs.",
+      "minimalDirection": "Preserve two columns and existing actions; use one horizontal icon-label row starting119x36px/icon14-16px, without large circular icon support. Recheck metal edge/hover/focus+pressed without movement.",
+      "evidence": [
+        "mercury-v6-initial-1920.jpg",
+        "public-v6-initial.json"
+      ],
+      "recheck": "Actual rendered size and center alignment, enabled action, ordinary and focused pressed state."
+    },
+    {
+      "id": "R8-I03",
+      "criteria": [
+        "R8-03",
+        "Q08"
+      ],
+      "location": "left8 sport rows and card sport glyphs",
+      "observed": "Existing monochrome sport icons remain, including zero-match volleyball/tennis/esports rows.",
+      "minimalDirection": "Map the8 supplied RGBA originals to all sport displays, retain metallic colors and uncropped outer silhouette. Remove old tint/circular masking from sport slots only. Keep existing accepted team/league artwork.",
+      "evidence": [
+        "mercury-v6-initial-1920.jpg",
+        "public-v6-side-banner-slots.json",
+        "input-asset-verification.json"
+      ],
+      "recheck": "All8 navigation states including0-match rows, all rendered card mappings, source/destination hashes and CSS alpha/filter/clip behavior."
+    },
+    {
+      "id": "R8-I04",
+      "criteria": [
+        "R8-04",
+        "Q06",
+        "Q10"
+      ],
+      "location": "left promo box and right banner below support",
+      "observed": "Both remain text-only legacy compositions. Provided1672x941 photo has been visually inspected; one source photo only.",
+      "minimalDirection": "Implement independent photo/crop, left DOM copy, real CTA and CSS frame layers. Protect face on right in each actual crop. Left slots CTA and right event CTA reuse existing menu actions. Test both, not only first left sample.",
+      "evidence": [
+        "mercury-v6-side-banner-slots.jpg",
+        "public-v6-banner-slots.json",
+        "input-asset-verification.json"
+      ],
+      "recheck": "Default/hover/focus/pressed at actual272/320 sidebar widths, face/eyes/nose/mouth unclipped and free from text/CTA/dark overlay, editable DOM structure and CTA parity."
+    }
+  ],
+  "acceptedExcluded": {
+    "NHLAndOtherLeaguePresentation": "User accepted; no optical-size/contrast/style re-rejection. New broken path/mapping/crop regression only.",
+    "teamNameLanguage": "User accepted; no translation or polish task.",
+    "O01_O02": "Closed by user acceptance, not reopened."
+  },
+  "WOG": {
+    "directAdditionalVisit": true,
+    "url": "https://wog-1000.com/",
+    "initialViewport": {
+      "width": 1398,
+      "height": 911,
+      "dpr": 1,
+      "scale": 1
+    },
+    "directObservations": [
+      "Small service links use a compact horizontal icon-label row with consistent cell gaps and localized face/edge reflection.",
+      "Portrait promo thumbnails keep faces above the bottom labels, framed within narrow slots; this supports face/copy separation as a finish criterion.",
+      "Service hover changes material visibly but also shifts1px; MERCURY no-movement lock remains authoritative and this WOG behavior must not be copied."
+    ],
+    "reusedSameDayEvidence": "Project-relative qa/r6/audit/initial-20260917/initial-audit.json; direct12:00-12:07KST card/panel/control baseline",
+    "evidence": [
+      "wog-r8-baseline.jpg",
+      "wog-r8-service-hover.jpg",
+      "wog-r8-observations.json"
+    ],
+    "limits": [
+      "WOG appearance/palette/assets/code not copied.",
+      "No WOG cash-flow or betting action performed.",
+      "WOG data is visual reference only, not provenance for MERCURY live fixtures.",
+      "Banner-hover attempt did not verify hover:true after viewport geometry changed. The named wog-r8-banner-hover.jpg is2560x937 and is excluded from hover or fixed-viewport proof. Initial1398x911 screenshot supports static portrait/copy composition only.",
+      "WOG photo/video component structure does not replace MERCURY explicit editable DOM banner requirement."
+    ]
+  },
+  "preservationForFullAudit": [
+    "1920 fixed shell and actual height, independent columns and hidden scrollbars, plus2560 width check",
+    "77 unique fixtures, stable identifiers,6-at-a-time expansion/search/filter and slip preservation",
+    "selection/replace/remove, stake bounds/MAX/exact calculation, local account/dialog/history and CTA actions",
+    "existing F01/F02 pressed/focus and zero-translation fixes",
+    "neutral palette, original branding, header/title seams, flat score plane, assigned fonts",
+    "no visitor demo/trial/virtual/collection explanations in body/title/aria/dialogs"
+  ],
+  "verdicts": {
+    "A_R8Specification": "pending frozen R8 build;4 expected change gaps directly confirmed on v6",
+    "B_WOGFinish": "comparison baseline established;R8 finish not yet audited",
+    "C_R8Functions": "not fully tested at this initial stage;priorR7 functional result does not become R8 PASS",
+    "userDesignApproval": "not claimed"
+  },
+  "initialChecks": {
+    "pageIdentity": "pass",
+    "meaningfulRender": "pass",
+    "frameworkOverlay": "none observed",
+    "loadedImages": 82,
+    "brokenImages": [],
+    "consoleErrorsWarnings": [],
+    "interaction": "Left and right sidebar scrolls reveal their complete banner slots while central first-screen cards remain; WOG service hover directly verified."
+  },
+  "evidenceScope": {
+    "jsonAndOriginalScreenshotsOnly": true,
+    "sourceSpecDeploymentEdits": false,
+    "sourceFrozenForFullAudit": false,
+    "fullR8AuditPerformed": false
+  },
+  "browserRelease": {
+    "timestamp": "2026-09-17T10:16:19.741Z",
+    "closedOwnedTabs": [
+      "1821400824",
+      "1821400829"
+    ],
+    "viewportReset": true,
+    "userTabsUntouched": true,
+    "localhost3000Untouched": true,
+    "browserReturned": true
+  },
+  "next": "Wait for implementer frozen sourceId+manifest+productionURL; then directly audit Q01-Q11 and A/B/C, send concrete evidence/minimal fixes and recheck changed states."
+}

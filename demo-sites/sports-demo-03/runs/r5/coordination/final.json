@@ -1,0 +1,113 @@
+{
+  "at": "2026-09-22T13:22:04.6895552+09:00",
+  "status": "deployed-limited-verification-passed-awaiting-user-feedback",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "publicVersion": 5,
+  "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_cb5f3333a81881919fb804a83b033d60",
+  "deploymentId": "appgdep_6ab20161f73c8191971759d1f74bf3a1",
+  "deploymentStatus": "succeeded",
+  "access": "public",
+  "commit": "e8ad227b0536d1852627e3be79e3c24b857571e0",
+  "clean": true,
+  "successUTC": "2026-09-22T04:17:55.091016Z",
+  "successKST": "2026-09-22T13:17:55.091016+09:00",
+  "sourceOwner": "01a0a97b-1268-7cf3-8aad-ba460ecf4f98",
+  "sourceChangedFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "app/demo-data.ts",
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/wog-market-data.ts",
+    "app/wog-service-views.tsx"
+  ],
+  "sourceSummary": "runs/r5/public/completion.json",
+  "publicationReceipt": "runs/r5/public/publication.json",
+  "publicCapture": {
+    "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r5/public/aldebaran-r5-initial-1920x1080.jpg",
+    "bytes": 194243,
+    "sha256": "e18c1d9bb1ade67a77da25c3bbc590d19915113c6ce96210df2131d06350c8bd",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site/",
+    "capturedAt": "2026-09-22T04:19:49.831Z",
+    "requestedViewport": [
+      1920,
+      1080
+    ],
+    "format": "JPEG",
+    "savedScreenshots": 1,
+    "visualObservation": {
+      "r5Header": true,
+      "oldR4HeaderAbsent": true,
+      "photosVisible": true,
+      "defaultMatch": "record-401816943",
+      "defaultScore": "1 : 1",
+      "largeTrackerAbsent": true
+    },
+    "cacheNote": "Initial existing public tab showed its cached R4 document. A cache-busting URL showed R5; one Page.reload(ignoreCache:true) then confirmed the canonical root URL shows R5. No persistent browser setting changed.",
+    "actualPixels": [
+      1920,
+      1080
+    ]
+  },
+  "publicCaptureHashMatches": true,
+  "savedPublicImageCount": 1,
+  "coordinatorViewedProvidedReference": true,
+  "coordinatorViewedSavedPublicCapture": true,
+  "coordinatorNewBrowserCaptures": 0,
+  "coordinatorAppRetests": 0,
+  "build": {
+    "command": "npm run build",
+    "runs": 1,
+    "exit": 0
+  },
+  "typecheck": {
+    "command": "tsc --noEmit --incremental false",
+    "runs": 1,
+    "exit": 0,
+    "buildIncludesTypecheck": false
+  },
+  "incomplete": [],
+  "unverified": [
+    "Real bet submission",
+    "Authentication and financial regression",
+    "Every menu state",
+    "Attendance and support persistence after reload",
+    "Slip keep persistence after reload",
+    "Mobile or full visual audit"
+  ],
+  "preserved": {
+    "originalMatches": 77,
+    "originalFieldsAndMarkets": true,
+    "originalPolicy": true,
+    "sourceInputs": true,
+    "mercurySiriusTrackedFiles": 567,
+    "mercurySiriusChanged": 0,
+    "originalAssets": true,
+    "operatingFourDocuments": "Owned by coordinator; not edited"
+  },
+  "operatingDocuments": [
+    {
+      "file": "AGENTS.md",
+      "priorExactTextPreserved": true,
+      "sha256": "D704A46F6FC7092ABB438734D5AC2841158DD8245F8DF7194633123F87F57C94"
+    },
+    {
+      "file": "STATE.md",
+      "priorExactTextPreserved": true,
+      "sha256": "6D68A6728699FDB3938EEF1C1EEF3C43A11E1C369F488247AF62F90B7C2D9669"
+    },
+    {
+      "file": "DESIGN_SPEC.md",
+      "priorExactTextPreserved": true,
+      "sha256": "7C5A6D66598055DAB9306530FA69B3E151FECE2F07E209FD7000829529DDBF80"
+    },
+    {
+      "file": "DECISIONS.md",
+      "priorExactTextPreserved": true,
+      "sha256": "84CE28CA2DE4A8FD4470DE0097A106D9F4B91A6FD2B325F8AEC421E193DC3306"
+    }
+  ],
+  "remainingJudgement": "User visual feedback",
+  "nextAction": "Wait for user feedback; no next cycle"
+}

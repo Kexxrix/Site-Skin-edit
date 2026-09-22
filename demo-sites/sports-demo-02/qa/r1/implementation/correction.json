@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-18T04:36:58.488Z",
+  "finding": "Q07-P2-01",
+  "beforeSourceId": "0c8f4e1c9bf30f8768319e4d4aa5c7360e125ab1047d1be39321bb476a379811",
+  "sourceId": "efad70506a3fcfac90ceb67d6b16ceedd5acc8086cc0e06f1eab705c7f4546a2",
+  "commit": "4e48de6df3b5810e0afbb668804244f1264c0230",
+  "changedFiles": [
+    "app/globals.css",
+    "app/page.tsx"
+  ],
+  "change": "Confirmation displays total market threshold and all settlement rules; handicap selected pick label remains authoritative.",
+  "checks": {
+    "build": "PASS",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "diffCheck": "PASS",
+    "frozenSourceFiles": 276,
+    "gitClean": true,
+    "allOtherTrackedFilesByteIdentical": true
+  },
+  "recheck": "PASS: Q07-P2-01 CLOSED; independent report ../audit/recheck-efad7050/recheck-report.json"
+}

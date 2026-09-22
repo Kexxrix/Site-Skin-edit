@@ -1,0 +1,203 @@
+{
+  "schema": "sirius-header-r2-independent-audit-v1",
+  "stage": "R2 공개 반영 확인 완료 / 사용자 피드백 대기",
+  "startedAt": "2026-09-18T15:24:58.9889215+09:00",
+  "completedAt": "2026-09-18T15:45:53.6362410+09:00",
+  "publicUrl": "https://sirius.kexxadrix.chatgpt.site/",
+  "commit": "23f81f8a4c90fb9ea57b06336c809e6e12d840e3",
+  "sourceId": "3d0a5a774bb470bd4850d49da973733bde4d1e97660d1f257af180005eeadbf7",
+  "projectId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "versionId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_9589d699c5648191bf8ac017fac4b9b9",
+  "versionNumber": 2,
+  "deploymentId": "appgdep_6aacdb55cb2881919d7ce5e5455fc16a",
+  "deploymentReportedStatus": "succeeded",
+  "deploymentMetadataSource": "../public/deployment.json",
+  "independentVerification": "실제 로컬 동결본과 동일 공개 URL을 직접 조작/관찰. 배포 ID는 구현 담당자가 보관한 도구 응답 기록에서 연결함.",
+  "scope": "HEADER R2 H01-H06 구현/기능/잘림의 간소화 확인. 전체 디자인 점수나 사용자 미감 승인 아님.",
+  "auditorWriteBoundary": "qa/r2/audit/ JSON 및 도구 원본 캡처만",
+  "checks": [
+    {
+      "id": "H01",
+      "status": "반영",
+      "verified": "기하학적 브랜드 중앙 x=960. 상단56+하단44=100px, 상단 공지/계정, 하단7메뉴. 기존 별도 공지바0개. 심볼32px/레터링 표시높이33.984px/그룹140.656px.",
+      "evidence": [
+        "observations.json",
+        "public-base-1920-verified-original.png"
+      ]
+    },
+    {
+      "id": "H02",
+      "status": "반영",
+      "verified": "분리 트리거·공유 필터 양방향 동기화·전체스포츠·검색/슬립 유지·같은트리거/바깥클릭/Escape 닫힘. Escape 초점반환, Enter열기, Tab이동과 이탈, Space선택. 공지/기존7메뉴와 계정동작 보존. 모달/계정 전환 시 패널 닫힘.",
+      "evidence": [
+        "functional-observations.json",
+        "public-menu-checks.json"
+      ]
+    },
+    {
+      "id": "H03",
+      "status": "반영",
+      "verified": "1920x940에서 열 너비272/1280/320, 본문 y112/높이816 유지. 탐색680x165 x416/y100, 기본/열림 간 본문좌표와스크롤 불변. 활성선2px/180ms, 스포츠 x416폭112 및 실시간 x560폭144. 로그인/로그아웃 중앙960 불변. 모달은 화면 안에 표시되고 탐색은 정리됨.",
+      "evidence": [
+        "observations.json",
+        "functional-observations.json",
+        "public-explorer-1920-original.png"
+      ]
+    },
+    {
+      "id": "H04",
+      "status": "반영",
+      "verified": "before/darker PNG 직접 열람. 실제 깊은남색 바탕 rgb(6,14,45), 패널 rgb(9,19,50), 배당버튼 rgb(24,41,78)→rgb(18,32,62)로 면 구분. 흰문자/골드/사진/로고 확인. 실제 이미지 및 주요부모 filter none. 원본 자산/데이터/폰트 변경없음은 baseline와동결본 Git/manifest 비교로 확인.",
+      "evidence": [
+        "intake.json",
+        "observations.json",
+        "source-preservation.json",
+        "public-health.json"
+      ]
+    },
+    {
+      "id": "H05",
+      "status": "반영",
+      "verified": "대표 검색/종목필터, 실시간6→12와 나머지6/6유지. 같은경기 선택교체/재클릭해제. 1.84×1.56=2.8704, 표시2.870; 10000×2.8704=28704. 좌측 scrollTop352 시 중앙/우측0, 우측237 시 좌측352/중앙0으로 독립스크롤 확인. 실제 제출/새영수증 없음.",
+      "evidence": [
+        "functional-observations.json",
+        "cleanup.json"
+      ]
+    },
+    {
+      "id": "H06",
+      "status": "반영",
+      "verified": "동일 SIRIUS 공개 URL에 새2단헤더/종목탐색/어두운면이 반영된 실제화면 확인. 공개 기본/열림 원본1920x940,DPR1,scale1 확보. 구현담당 배포기록의 동일프로젝트 v2/동결 source3d0a5a77와 연결. 공개 계정/메뉴/레일은 로컬에서 남은 항목만 확인.",
+      "evidence": [
+        "public-base-1920-verified-original.png",
+        "public-explorer-1920-original.png",
+        "public-health.json",
+        "../public/deployment.json"
+      ]
+    }
+  ],
+  "confirmedBlockingFindings": [],
+  "findingCount": 0,
+  "codeFixesRequested": [],
+  "rechecks": [
+    {
+      "type": "capture-environment",
+      "issue": "첫 공개 관찰에서 감사자 조작 밖 viewport/메뉴/행수가 달라짐. 원인 확인되지 않음.",
+      "excluded": "public-base-1920-original.png",
+      "resolution": "원본보존/검수제외 후 담당자 조율, 재로드, 실제1920x940 재설정. 기본과열림을 한정재확인.",
+      "result": "검수에 사용할 실제1920x940 전체 캡처2개 확보",
+      "applicationDefect": false
+    }
+  ],
+  "toolObservations": [
+    "일부 빠른 닫힘 관찰의 panel=true는 종료 애니메이션 중 DOM이 남은 표본이며 후속 settled 관찰에서 제거됨.",
+    "빈문자열 fill 호출 후 검색값이 유지되어 UI Ctrl+A/Backspace로 지웠고 결과77기준으로 복원됨. 앱결함으로 판정하지 않음.",
+    "닫힌 로컬 탭을 참조한 관찰 helper 호출1회 실패. 공개 대상 핸들을 명시하여 복구, 해당 호출은 화면증거를 생성하지 않음."
+  ],
+  "viewport": {
+    "width": 1920,
+    "height": 940,
+    "devicePixelRatio": 1,
+    "visualViewportScale": 1
+  },
+  "screenshots": [
+    {
+      "file": "local-base-1920-original.png",
+      "bytes": 318674,
+      "sha256": "e53b1eaa04dbc40344c25d6599809f1fa1769c02fb82fca79b8b026f95446b74",
+      "width": 1920,
+      "height": 940,
+      "isPng": true,
+      "writtenAt": "2026-09-18T15:32:26+09:00",
+      "originalUnedited": true,
+      "included": true,
+      "renderedViewport": "1920x940",
+      "devicePixelRatio": 1,
+      "visualViewportScale": 1,
+      "exclusion": null
+    },
+    {
+      "file": "local-explorer-1920-original.png",
+      "bytes": 334528,
+      "sha256": "e08fae2671edca94b5d76b52da247ddb2c16a73b6eebac2adb9ef263264eae36",
+      "width": 1920,
+      "height": 940,
+      "isPng": true,
+      "writtenAt": "2026-09-18T15:32:40+09:00",
+      "originalUnedited": true,
+      "included": true,
+      "renderedViewport": "1920x940",
+      "devicePixelRatio": 1,
+      "visualViewportScale": 1,
+      "exclusion": null
+    },
+    {
+      "file": "public-base-1920-original.png",
+      "bytes": 273257,
+      "sha256": "6c2dcfb57a09bc43132923b392cadbb950631708df6026280609e955a379c22e",
+      "width": 1920,
+      "height": 940,
+      "isPng": true,
+      "writtenAt": "2026-09-18T15:36:52+09:00",
+      "originalUnedited": true,
+      "included": false,
+      "renderedViewport": "2560x937",
+      "devicePixelRatio": 1,
+      "visualViewportScale": 1,
+      "exclusion": "Viewport and page state changed outside auditor actions. Cause unconfirmed. 1920x940 clip of 2560x937 rendering; excluded and retained. Rechecked after coordination, reload, and explicit viewport."
+    },
+    {
+      "file": "public-base-1920-verified-original.png",
+      "bytes": 324099,
+      "sha256": "5d4bbb28c4c1caa0289e240be375ae8ce81e1fe94970aa1f685b6408923e66a5",
+      "width": 1920,
+      "height": 940,
+      "isPng": true,
+      "writtenAt": "2026-09-18T15:38:58+09:00",
+      "originalUnedited": true,
+      "included": true,
+      "renderedViewport": "1920x940",
+      "devicePixelRatio": 1,
+      "visualViewportScale": 1,
+      "exclusion": null
+    },
+    {
+      "file": "public-explorer-1920-original.png",
+      "bytes": 339009,
+      "sha256": "61d03cf007ddc79b8bd14d50f747c363ae692ca0152fa67cff49cc4f03cf3ceb",
+      "width": 1920,
+      "height": 940,
+      "isPng": true,
+      "writtenAt": "2026-09-18T15:39:26+09:00",
+      "originalUnedited": true,
+      "included": true,
+      "renderedViewport": "1920x940",
+      "devicePixelRatio": 1,
+      "visualViewportScale": 1,
+      "exclusion": null
+    }
+  ],
+  "recordCounts": {
+    "geometry": 5,
+    "functional": 29,
+    "includedScreenshots": 4,
+    "excludedScreenshots": 1
+  },
+  "unverified": [
+    "사용자의 최종 미감 승인: 피드백 대기",
+    "모바일/다른브라우저/다른DPR 전체 재검사: 이번 범위 제외",
+    "77경기 전체 회귀/WOG 동등성/전체사이트 완료 판정: 이번 범위 제외"
+  ],
+  "auxiliaryEvidence": [
+    "../implementation/ready.json의 자체 build/typecheck 통과 보고는 보조증거이며 독립 실행한 것으로 주장하지 않음."
+  ],
+  "remainingRisks": "요청된 간소화 범위에서 실제 사용을 막는 결함 없음. 위 미검증 범위 및 사용자 디자인 평가는 별도.",
+  "notChanged": [
+    "site 소스와 배포는 감사자가 변경하지 않음",
+    "운영 문서4개 변경없음",
+    "레일 재구축/신규이미지/다음단계 작업 없음",
+    "이전 검수 기록과 제외 캡처 보존"
+  ],
+  "cleanup": "cleanup.json",
+  "nextAction": "사용자 피드백 대기. 추가검사/수정/레일작업 자동진행하지 않음"
+}

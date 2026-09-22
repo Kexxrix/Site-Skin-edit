@@ -1,0 +1,88 @@
+{
+  "scope": "SIRIUS REFINEMENT R3 H1-H3 C01-C06",
+  "source": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site",
+  "startingCommit": "23f81f8a4c90fb9ea57b06336c809e6e12d840e3",
+  "commit": "0bdff8e9d67df19e4ae004e9ceb79715143fadc6",
+  "changedFiles": [
+    "app/page.tsx",
+    "app/globals.css",
+    "app/match-list.css",
+    "app/match-motion.tsx",
+    "app/match-presentation.ts"
+  ],
+  "implementedValues": {
+    "headerRows": [
+      84,
+      50
+    ],
+    "headerTotal": 134,
+    "brandSymbol": 48,
+    "wordmarkVisibleHeight": 51,
+    "brandGap": 12,
+    "headerAccountHeight": 36,
+    "marketGap": 18,
+    "pickGap": 4,
+    "teamGroupWidth": 224,
+    "scoreWidth": 40,
+    "oddHeight": 46,
+    "rowHeight": 88,
+    "accordionMs": 200,
+    "topScrollMs": 400,
+    "topScrollEasing": "cubic ease-out",
+    "backToTopSize": 36
+  },
+  "build": {
+    "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+    "exitCode": 0,
+    "finalBuildAfter": "CSS scope precedence and team group width adjustment"
+  },
+  "types": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+    "exitCode": 0
+  },
+  "shortLocalObservations": [
+    "Initial 6/6/6 rows",
+    "Live section 6 to 12 to 6; other sections stayed at 6",
+    "Coordinate more-button activation preserved central scrollTop 459",
+    "Collapse returned focus to remaining more-button and kept it visible",
+    "NBA detail opened same fixture record-401902644; existing home pick joined slip; list restored expanded 12 rows, origin focus and scrollTop 385",
+    "NBA extra types were disabled; no invented odds",
+    "MLB league collapse measured zero height",
+    "Top return preserved list/selection and left/right scroll; final public keyboard return reached zero, hid button and focused central region"
+  ],
+  "displayCount": {
+    "provenance": "r3-approved-display-only",
+    "field": "displayAdditionalMarketCount",
+    "key": "fixture ID / deterministic FNV-derived value",
+    "ranges": {
+      "soccer": [
+        24,
+        180
+      ],
+      "baseball": [
+        12,
+        76
+      ],
+      "basketball": [
+        24,
+        128
+      ],
+      "others": [
+        1,
+        9
+      ]
+    },
+    "basketballRange": "implementation default, not an exact user-specified range"
+  },
+  "limitations": [
+    "Only original three markets have selectable odds. Additional sport-specific types lack data and remain disabled.",
+    "Short changed-function checks only. Reduced-motion and every fixture combination were not separately exercised.",
+    "No independent QA by user instruction; no QA task/agent requested."
+  ],
+  "preserved": [
+    "77-fixture source records, original market arrays/counts, scores and odds",
+    "Rails, banners, images, fonts, dependencies and hosting project/audience",
+    "MERCURY source/site and port 3000",
+    "Parent-owned operating documents and R1/R2 history"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "scope": "SIRIUS R4 B01/N01 only",
+  "startingCommit": "0bdff8e9d67df19e4ae004e9ceb79715143fadc6",
+  "startingUncommittedChanges": [],
+  "commit": "b84f893a8b7867dc211e56495bd415b06cf95ffc",
+  "changedFiles": [
+    "app/globals.css",
+    "app/match-list.css",
+    "public/assets/header/BG_sirius_header.png"
+  ],
+  "header": {
+    "source": "input/sirius-header-bg-r4-package/SIRIUS_HEADER_BG_R4/assets/header/BG_sirius_header.png",
+    "destination": "site/public/assets/header/BG_sirius_header.png",
+    "bytes": 407977,
+    "dimensions": [
+      1920,
+      199
+    ],
+    "originalAndCopySha256": "7BCF3107C87BF7636CC606C974ACA5CB6F6B3210AEAE214634FD2B5E23951EB4",
+    "placement": "single background on .topbar",
+    "size": "cover",
+    "position": "center center",
+    "repeat": "no-repeat",
+    "fallback": "#060a2a",
+    "rows": [
+      84,
+      50
+    ],
+    "totalHeight": 134,
+    "childBackgrounds": "transparent",
+    "overflow": "visible unchanged",
+    "cropAt1920": "32.5px top and bottom; original bytes unchanged",
+    "positionAdjustment": "none"
+  },
+  "spacing": {
+    "additionalColumn": {
+      "before": 104,
+      "after": 56,
+      "reclaimed": 48,
+      "alignment": "right edge of row content"
+    },
+    "redistribution": "24px to each of the two market gaps",
+    "actualGroupGaps": [
+      42,
+      42
+    ],
+    "baseGridGap": 18,
+    "leadingPaddingOnHandicapAndTotal": 24,
+    "groupContentWidths": [
+      250,
+      214,
+      214
+    ],
+    "insideButtonGap": 4,
+    "buttonHeight": 46,
+    "twoWayResultButtonWidth": 123,
+    "handicapAndTotalButtonWidth": 105,
+    "threeWayButtonWidth": "80.65625-80.671875px due to pixel rounding",
+    "rowWidth": 1256,
+    "rowHeight": 88,
+    "teamWidth": 224,
+    "scoreWidth": 40
+  },
+  "checks": {
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "exitCode": 0
+    },
+    "types": "not rerun; only CSS and a PNG changed",
+    "localObservation": "basic-observation.json",
+    "observed": [
+      "Header image rendered continuously across both rows",
+      "Popover opened below header at y=134 with independent opaque navy background; soccer filter selected",
+      "Main sports menu and local login/logout worked",
+      "Shared title/row grid aligned for two-way and three-way markets; no central horizontal overflow",
+      "Existing +1, +100, +115, +168 and other displayed counts fit the 56px button"
+    ],
+    "notRepeated": [
+      "Accepted motion behavior",
+      "Whole-site regression/independent QA"
+    ]
+  },
+  "preservation": {
+    "unchangedHashes": {
+      "page": "AF5DE601B25C253A2E6BED657620002753A512535D51A56471A442538751FD96",
+      "motion": "727E3DFD455F6232D18FD8B22A1A5E576930E1CD6675AC57BE4AFA7F50A17100",
+      "displayMetadata": "FA676476073FB3E9F5D279BBCA83DD9534203290297BF413C851EA5DA1770167"
+    },
+    "siriusGitStatus": [],
+    "mercuryHead": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+    "mercuryGitStatus": [
+      "?? tsconfig.tsbuildinfo"
+    ],
+    "mercuryWritesAndDeployments": "none",
+    "otherProjectsAndPort3000": "not modified"
+  },
+  "independentQA": "사용자 지시로 미실시"
+}

@@ -1,0 +1,272 @@
+{
+  "count": 53,
+  "passed": 53,
+  "failed": [],
+  "checks": [
+    {
+      "id": "source-272-frozen",
+      "passed": true,
+      "evidence": "source-verification-before.json + source-verification-after.json"
+    },
+    {
+      "id": "production-css-matches-build",
+      "passed": true,
+      "evidence": "asset-data-build-verification.json"
+    },
+    {
+      "id": "77-distinct-fixtures",
+      "passed": true,
+      "evidence": "all-77-cards.json + asset-data-build-verification.json"
+    },
+    {
+      "id": "live-expansion-1",
+      "passed": true,
+      "evidence": "functional-flow.json: live-expand-1-before/after"
+    },
+    {
+      "id": "live-expansion-2",
+      "passed": true,
+      "evidence": "functional-flow.json: live-expand-2-before/after"
+    },
+    {
+      "id": "live-expansion-3",
+      "passed": true,
+      "evidence": "functional-flow.json: live-expand-3-before/after"
+    },
+    {
+      "id": "live-expansion-4",
+      "passed": true,
+      "evidence": "functional-flow.json: live-expand-4-before/after"
+    },
+    {
+      "id": "soon-expansion-1",
+      "passed": true,
+      "evidence": "functional-flow.json: soon-expand-1-before/after"
+    },
+    {
+      "id": "soon-expansion-2",
+      "passed": true,
+      "evidence": "functional-flow.json: soon-expand-2-before/after"
+    },
+    {
+      "id": "soon-expansion-3",
+      "passed": true,
+      "evidence": "functional-flow.json: soon-expand-3-before/after"
+    },
+    {
+      "id": "soon-expansion-4",
+      "passed": true,
+      "evidence": "functional-flow.json: soon-expand-4-before/after"
+    },
+    {
+      "id": "popular-expansion-1",
+      "passed": true,
+      "evidence": "functional-flow.json: popular-expand-1-before/after"
+    },
+    {
+      "id": "popular-expansion-2",
+      "passed": true,
+      "evidence": "functional-flow.json: popular-expand-2-before/after"
+    },
+    {
+      "id": "popular-expansion-3",
+      "passed": true,
+      "evidence": "functional-flow.json: popular-expand-3-before/after"
+    },
+    {
+      "id": "popular-expansion-4",
+      "passed": true,
+      "evidence": "functional-flow.json: popular-expand-4-before/after"
+    },
+    {
+      "id": "new-images-byte-identical",
+      "passed": true,
+      "evidence": "asset-data-build-verification.json"
+    },
+    {
+      "id": "eight-icons-RGBA-preserved",
+      "passed": true,
+      "evidence": "file-validation.json"
+    },
+    {
+      "id": "new-eight-menu-icons",
+      "passed": true,
+      "evidence": "initial-geometry.json + 01-initial-1920.jpg"
+    },
+    {
+      "id": "all-card-icons-correct-sport",
+      "passed": true,
+      "evidence": "all-77-cards.json"
+    },
+    {
+      "id": "all-expanded-images-healthy",
+      "passed": true,
+      "evidence": "all-77-cards.json"
+    },
+    {
+      "id": "uniform-card-height",
+      "passed": true,
+      "evidence": "all-77-cards.json"
+    },
+    {
+      "id": "banner-left-held-focus-stable",
+      "passed": true,
+      "evidence": "button-states.json: banner-left"
+    },
+    {
+      "id": "banner-right-held-focus-stable",
+      "passed": true,
+      "evidence": "button-states.json: banner-right"
+    },
+    {
+      "id": "service-charge-held-focus-stable",
+      "passed": true,
+      "evidence": "button-states.json: service-charge"
+    },
+    {
+      "id": "service-withdraw-keyboard-held-focus-stable",
+      "passed": true,
+      "evidence": "button-states.json: service-withdraw-keyboard"
+    },
+    {
+      "id": "left-banner-final-held-focus-stable",
+      "passed": true,
+      "evidence": "button-states.json: left-banner-final"
+    },
+    {
+      "id": "horizontal-36-service",
+      "passed": true,
+      "evidence": "initial-geometry.json"
+    },
+    {
+      "id": "left-banner-slots-header-parity",
+      "passed": true,
+      "evidence": "dialogs-and-copy.json"
+    },
+    {
+      "id": "right-banner-events-header-parity",
+      "passed": true,
+      "evidence": "dialogs-and-copy.json"
+    },
+    {
+      "id": "three-live-values-static",
+      "passed": true,
+      "evidence": "motion.json"
+    },
+    {
+      "id": "normal-dot-only-animation",
+      "passed": true,
+      "evidence": "motion.json"
+    },
+    {
+      "id": "reduced-motion-dot-stopped",
+      "passed": true,
+      "evidence": "motion.json"
+    },
+    {
+      "id": "progress-home-away-source-map",
+      "passed": true,
+      "evidence": "asset-data-build-verification.json + progress-source-independent.json"
+    },
+    {
+      "id": "three-source-live-first",
+      "passed": true,
+      "evidence": "all-77-cards.json + 01-initial-1920.jpg"
+    },
+    {
+      "id": "filter-축구 32",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "filter-농구 06",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "filter-야구 16",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "filter-미식축구 16",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "filter-아이스하키 07",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "filter-배구 00",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "filter-테니스 00",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "filter-E스포츠 00",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "hidden-search-finds-Le-Mans",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "exact-two-price-payout",
+      "passed": true,
+      "evidence": "10000 * 1.84 * 1.56 = 28704"
+    },
+    {
+      "id": "exact-three-price-payout",
+      "passed": true,
+      "evidence": "10000 * 1.84 * 1.56 * 2.125 = 60996"
+    },
+    {
+      "id": "local-receipt-reload",
+      "passed": true,
+      "evidence": "functional-flow.json + dialogs-and-copy.json"
+    },
+    {
+      "id": "local-cancel-no-charge",
+      "passed": true,
+      "evidence": "functional-flow.json"
+    },
+    {
+      "id": "guest-balance-restored",
+      "passed": true,
+      "evidence": "functional-flow.json + final wide screenshot"
+    },
+    {
+      "id": "no-prohibited-exposed-copy",
+      "passed": true,
+      "evidence": "functional-flow.json + dialogs-and-copy.json + final-browser-health.json"
+    },
+    {
+      "id": "actual-2560-fixed-1920",
+      "passed": true,
+      "evidence": "wide-geometry.json + file-validation.json + 16-wide-2560-original.png"
+    },
+    {
+      "id": "actual-1920-original",
+      "passed": true,
+      "evidence": "file-validation.json + 17-banners-1920-original.png"
+    },
+    {
+      "id": "three-independent-hidden-scrollbars",
+      "passed": true,
+      "evidence": "wide-geometry.json + all12 expansion zero scroll deltas"
+    },
+    {
+      "id": "final-fonts-images-console",
+      "passed": true,
+      "evidence": "final-browser-health.json; observed sample only"
+    }
+  ]
+}

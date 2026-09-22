@@ -1,0 +1,221 @@
+/* Integration reference, not a compiled patch for the current app.
+   Map --ab-frame-* to the EXISTING BODY frame values before applying.
+   Fallbacks describe the known 1920px frame; do not resize the body to fit these.
+   Preserve the current header total height and connect any existing offsets.
+   Remove conflicting R2 header rules; do not stack two header implementations. */
+.aldebaran-site .ab-header3 {
+  --abh-edge: var(--ab-frame-edge, 12px);
+  --abh-left: var(--ab-frame-left, 272px);
+  --abh-center: var(--ab-frame-center, 1280px);
+  --abh-right: var(--ab-frame-right, 320px);
+  --abh-gap: var(--ab-frame-gap, 12px);
+  --abh-total-height: var(--ab-header-total-height, 104px);
+  --abh-notice-height: 28px;
+  --abh-logo-width: 216px;
+  --abh-accent: var(--ab-accent, #ff641f);
+  --abh-text: var(--ab-text, #f5f4f4);
+  --abh-border: var(--ab-border, #383838);
+  display: grid;
+  grid-template-columns:
+    [brand-start] calc(var(--abh-edge) + var(--abh-left))
+    [brand-end] var(--abh-gap)
+    [center-start] var(--abh-center)
+    [center-end] var(--abh-gap)
+    [right-start] var(--abh-right)
+    [right-end] var(--abh-edge) [shell-end];
+  grid-template-rows:
+    var(--abh-notice-height)
+    calc(var(--abh-total-height) - var(--abh-notice-height));
+  position: relative;
+  width: 100%;
+  height: var(--abh-total-height);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--ab-header, #1d1d1d);
+  color: var(--abh-text);
+  box-shadow: none;
+}
+
+.aldebaran-site .ab-header3__brand {
+  grid-column: brand-start / brand-end;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 0;
+  box-sizing: border-box;
+  /* Center inside the rail-corresponding width, excluding the outer edge. */
+  padding: 0 0 0 var(--abh-edge);
+  background: var(--ab-panel, #242424);
+  color: inherit;
+  text-decoration: none;
+}
+.aldebaran-site .ab-header3__brand::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: var(--abh-accent);
+  pointer-events: none;
+}
+.aldebaran-site .ab-header3__wordmark {
+  display: block;
+  width: var(--abh-logo-width);
+  max-width: calc(100% - 48px);
+  height: auto;
+  object-fit: contain;
+  flex: 0 1 auto;
+}
+
+.aldebaran-site .ab-header3__notice {
+  grid-column: center-start / center-end;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0 12px;
+  color: var(--ab-muted, #b7b7b7);
+  font-size: 12px;
+  line-height: 18px;
+}
+/* Add these classes to the existing control and its text nodes.
+   Keep its actual event handler. Do not pass a second nested button. */
+.aldebaran-site .ab-header3__notice-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.aldebaran-site .ab-header3__notice-label {
+  flex: 0 0 auto;
+  color: var(--abh-accent);
+}
+.aldebaran-site .ab-header3__notice-text {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.aldebaran-site .ab-header3__nav {
+  grid-column: center-start / center-end;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 12px;
+  border-top: 1px solid var(--abh-border);
+}
+.aldebaran-site .ab-header3__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: 42px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--abh-text);
+  box-shadow: none;
+  text-shadow: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 140ms ease, background-color 140ms ease;
+}
+.aldebaran-site .ab-header3__item[aria-pressed="true"] {
+  background: var(--abh-accent);
+  color: var(--ab-on-accent, #171717);
+}
+@media (hover: hover) {
+  .aldebaran-site .ab-header3__item:not(:disabled):hover {
+    background: var(--ab-control, #353535);
+  }
+  .aldebaran-site .ab-header3__item[aria-pressed="true"]:not(:disabled):hover {
+    background: var(--ab-accent-hover, #ff793d);
+  }
+}
+.aldebaran-site .ab-header3__item[aria-pressed="true"]:not(:disabled):active {
+  background: var(--ab-accent-pressed, #eb5515);
+}
+.aldebaran-site .ab-header3__item:disabled {
+  color: var(--ab-disabled, #797979);
+  background: transparent;
+  cursor: default;
+}
+
+.aldebaran-site .ab-header3__account {
+  grid-column: right-start / right-end;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--abh-border);
+  white-space: nowrap;
+}
+/* If the reused auth branch has a wrapper, apply __account-group to it. */
+.aldebaran-site .ab-header3__account-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+}
+/* Add to existing account controls; preserve their color/hover/handler classes. */
+.aldebaran-site .ab-header3__account-control {
+  flex: 0 0 auto;
+  height: 38px;
+  min-height: 0;
+  box-sizing: border-box;
+  margin: 0;
+  white-space: nowrap;
+}
+.aldebaran-site .ab-header3 :is(a, button):focus-visible {
+  outline: 2px solid var(--abh-accent);
+  outline-offset: -3px;
+}
+.aldebaran-site .ab-header3__item[aria-pressed="true"]:focus-visible {
+  outline-color: var(--ab-on-accent, #171717);
+}
+@media (prefers-reduced-motion: reduce) {
+  .aldebaran-site .ab-header3__item { transition: none; }
+}

@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-09-17T01:58:29.412Z",
+  "site": {
+    "id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+    "title": "MERCURY",
+    "url": "https://mercury.kexxadrix.chatgpt.site",
+    "version": 2,
+    "access_mode": "public",
+    "current_user_role": "owner",
+    "status": "active"
+  },
+  "commit": "76a2e2d5f8c443e25af832bd5e32754bb23c4ecd",
+  "version": {
+    "id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_827239a719e481918590317f8a9d3cfe",
+    "project_id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+    "version_number": 3,
+    "source": {
+      "commit_sha": "76a2e2d5f8c443e25af832bd5e32754bb23c4ecd"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000061a08206a8b898dd90ea2e02",
+      "content_hash": "sha256:2dc05e109436d3f40cdf83d72b22d0c5773b1e6f554bf09d9b33ecdf0a4d9559",
+      "size_bytes": 15503360,
+      "file_count": 71
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6aab48da5f688191bacf09342ad23a49",
+    "project_id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+    "title": "MERCURY",
+    "version_id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_827239a719e481918590317f8a9d3cfe",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://mercury.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aaa650f4aa4819189a2ee84f523fb9c",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-17T01:56:57.522365+00:00"
+  },
+  "sourceChangesDuringPublish": [],
+  "scope": "Publish already verified R5 step-01 only",
+  "build": "Reused successful 2026-09-16 build and self-QA after 16 source/asset/config hashes matched",
+  "packaging": {
+    "wrapper": "Failed because PATH bash resolved to unconfigured Windows WSL",
+    "fallback": "Official package-site.sh run with installed Git Bash; exit 0",
+    "archive": "mercury-step-01.tar.gz",
+    "buildInfoExcluded": true
+  },
+  "verification": {
+    "anonymousHttpStatus": 200,
+    "allSixAssetsStatus": 200,
+    "representativeMatchCount": 1,
+    "allSixImagesLoaded": true,
+    "fullPublicRegression": "not performed",
+    "independentWogAudit": "not performed",
+    "overallMvp": "not complete",
+    "designApproval": "not claimed"
+  },
+  "audience": "public preserved",
+  "operatingMarkdownChanged": false,
+  "usage": {
+    "P0": 16,
+    "stopAtApproximately": 36,
+    "accountWide": true,
+    "projectTokens": null,
+    "checkpoints": [
+      {
+        "checkpoint": "deploy-start",
+        "checkedAt": "2026-09-17T01:53:25.207Z",
+        "limitId": "codex",
+        "usedPercent": 25,
+        "windowDurationMins": 10080,
+        "resetsAt": 1790133887
+      },
+      {
+        "checkpoint": "before-public-deploy",
+        "checkedAt": "2026-09-17T01:56:32.767Z",
+        "limitId": "codex",
+        "usedPercent": 25,
+        "windowDurationMins": 10080,
+        "resetsAt": 1790133887
+      },
+      {
+        "checkpoint": "deploy-complete",
+        "checkedAt": "2026-09-17T01:58:29.412Z",
+        "limitId": "codex",
+        "usedPercent": 25,
+        "windowDurationMins": 10080,
+        "resetsAt": 1790133887
+      }
+    ]
+  },
+  "evidence": [
+    "source-verification.json",
+    "archive-verification.json",
+    "http-verification.json",
+    "browser-verification.json",
+    "public-browser.jpg"
+  ]
+}

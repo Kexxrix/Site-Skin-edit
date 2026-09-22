@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const root='E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r2';
+const p=root+'/public/completion.json';
+const c=JSON.parse(fs.readFileSync(p));
+const scope=JSON.parse(fs.readFileSync(root+'/implementation/scope-and-checks.json'));
+const protection=JSON.parse(fs.readFileSync(root+'/implementation/preservation.json'));
+const bytes=fs.readFileSync(c.screenshotPath);
+c.startHead=scope.startHead;c.startDirty=scope.startDirty;c.finalDirty=scope.dirty;
+c.changedFiles=scope.changedFiles.map(p=>c.sitePath+'/'+p);
+c.pageOutsideHeaderUnchanged=scope.pageOutsideHeaderUnchanged;
+c.protection={mercury:protection.mercury,sirius:protection.sirius};
+c.screenshot={path:c.screenshotPath,bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),width:1920,height:912};
+c.checks={build:scope.build,typecheck:scope.typecheck};
+fs.writeFileSync(p,JSON.stringify(c,null,2)+'\n');
+console.log(JSON.stringify({completion:p,url:c.publicUrl,version:c.versionNumber,commit:c.commit,screenshot:c.screenshot}));

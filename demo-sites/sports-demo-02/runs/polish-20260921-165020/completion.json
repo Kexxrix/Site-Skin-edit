@@ -1,0 +1,161 @@
+{
+  "task": "SIRIUS Impeccable polish + Jev one-pass test",
+  "taskId": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "startedAt": "2026-09-21T07:50:20Z",
+  "completedAt": "2026-09-21T08:06:50Z",
+  "elapsedSeconds": 990,
+  "timingScope": "Full task elapsed time including current-state reading, browser setup, polish, verification, remote deployment, documentation and cleanup; not pure CSS editing time.",
+  "baselineCommit": "15dca2f2728380ae77b6288f99adf8ac68f6e400",
+  "sourceCommit": "9c424b8e4e8c480848f1ec47bf5139c6d5987738",
+  "changedSourceFiles": [
+    "site/app/match-list.css"
+  ],
+  "changedOperatingDocuments": [
+    "AGENTS.md",
+    "STATE.md",
+    "DESIGN_SPEC.md",
+    "DECISIONS.md"
+  ],
+  "change": {
+    "selector": ".section-block>.section-title .section-kicker",
+    "intent": "Make the existing English section label secondary to the Korean heading.",
+    "before": {
+      "fontSize": 13,
+      "lineHeight": 19.5,
+      "letterSpacing": 0.4,
+      "headingGap": 10
+    },
+    "after": {
+      "fontSize": 11,
+      "lineHeight": 16,
+      "letterSpacing": 0.6,
+      "marginLeft": 4,
+      "headingGap": 14
+    },
+    "scope": "Only one component-scoped CSS rule; no functional source changes."
+  },
+  "screenshots": {
+    "conditions": {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "dpr": 1,
+      "scale": 1,
+      "state": "guest, empty slip, all sports, top, initial odds"
+    },
+    "before": {
+      "file": "before-1920x1080.jpg",
+      "sha256": "2f67ceacb954a59f55e09d5277f0031439f0c0db2ecaa813b6942f42d1922c55"
+    },
+    "after": {
+      "file": "after-initial-1920x1080.jpg",
+      "sha256": "20c46a5dfe5ae247a3b9d570ebc60d99c3a67456c97778b817e4799c43fdccc9"
+    },
+    "format": "JPEG",
+    "excluded": [
+      {
+        "file": "excluded-after-odds-timer-1920x1080.jpg",
+        "reason": "Existing odds timer advanced; replaced with a freshly reloaded initial-state comparison."
+      },
+      {
+        "file": "excluded-public-clip.jpg",
+        "reason": "IAB capture ignored clip origin; wrong area. Not used as title evidence. Full public render subsequently viewed without saving another full screenshot."
+      }
+    ]
+  },
+  "verification": {
+    "build": {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "warnings": "Existing vinext route classification unknown and plugin-timing notices; build succeeded."
+    },
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "exitCode": 0
+    },
+    "diffCheck": 0,
+    "smoke": "Local league collapse/reopen, odds selection/removal, 1000 * 1.84 = 1840, input reset completed; see smoke.json.",
+    "public": "Public title rendered and 11px/16px/0.6px/4px styles confirmed; no public errors observed. See public-observation.json.",
+    "localConsole": "Initial Vite dependency optimization at 07:57:53 emitted React hook errors before the polish edit. Later reload and smoke succeeded; see local-console.json.",
+    "actualBetSubmitted": false
+  },
+  "jev": {
+    "invocations": 1,
+    "apiBatchCalls": 9,
+    "questions": 105,
+    "relations": 25,
+    "screened": 17,
+    "candidates": 0,
+    "review": 8,
+    "status": "review_required",
+    "selector": "#live .title-plate",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "state": "initial",
+    "summary": "E:/codexwork/Site-Skin-edit/qa-tools/jev/handoffs/2026-09-21T07-59-57-102Z-5c508c2f/orchestration-summary.json",
+    "model": "jev-1.13.0",
+    "elapsedMs": 1628,
+    "totalElapsedMs": 5164,
+    "inputTokens": 141339,
+    "outputTokens": 4290,
+    "rechecks": 0,
+    "interpretation": "Intentional 19/11px hierarchy and 10/14px gaps; optical/group judgments remain unverified. No confirmed defect warrants another change. Existing pending six were not revisited. Local snapshot only, not a public-version certification."
+  },
+  "codex": {
+    "taskTokens": null,
+    "taskCost": null,
+    "accountWeeklyUsedPercent": {
+      "start": 19,
+      "end": 20
+    },
+    "note": "Account-wide meter, not task-specific consumption. No task attribution or savings estimate.",
+    "savings": null
+  },
+  "version": {
+    "id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_6c7bc5bdd634819199f7dbaa3325c019",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "version_number": 8,
+    "source": {
+      "commit_sha": "9c424b8e4e8c480848f1ec47bf5139c6d5987738"
+    },
+    "archive_storage": null,
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ab0e46e9134819186f6c66994da624b",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "title": "SIRIUS",
+    "version_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_6c7bc5bdd634819199f7dbaa3325c019",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://sirius.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aacb6c2a38881918bd8a324fa9c5b54",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-21T08:03:22.892626+00:00"
+  },
+  "publication": {
+    "sameProject": true,
+    "samePublicUrl": true,
+    "archiveProvided": false,
+    "reason": "Catalogued Sites hosting packaging helper no longer present in installed filesystem paths; used documented Sites remote-build fallback after exact source push."
+  },
+  "notChanged": "Header, left/right rails, horizontal match rows, odds/scores/DIN, assets, state logic, auth/storage, approved motion, dependencies, other sites and servers. Existing untracked skill/context files preserved.",
+  "unverified": [
+    "User aesthetic acceptance",
+    "Hover, login, persistence, error states and other viewports were not re-tested in this pass",
+    "Jev optical/group review items remain unverified"
+  ],
+  "cleanup": {
+    "ownedPreviewPort5290": "stopped; confirmed no listener on port 5290",
+    "viewport": "reset",
+    "publicTab": "retained",
+    "otherServers": "untouched"
+  },
+  "next": "One pass complete. Await user visual feedback. Separate QA thread remains stopped; no automatic polish, pending-item resolution or next design work."
+}

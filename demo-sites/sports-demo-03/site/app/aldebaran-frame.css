@@ -1,0 +1,66 @@
+/* ALDEBARAN skin adapters retain the MERCURY frame and control geometry. */
+.aldebaran-site {
+  --background: var(--ab-bg); --foreground: var(--ab-text);
+  --card: var(--ab-panel); --card-foreground: var(--ab-text);
+  --popover: var(--ab-panel); --popover-foreground: var(--ab-text);
+  --primary: var(--ab-accent); --primary-foreground: var(--ab-on-accent);
+  --secondary: var(--ab-control); --secondary-foreground: var(--ab-text);
+  --muted: var(--ab-deep); --muted-foreground: var(--ab-muted);
+  --accent: var(--ab-raised); --accent-foreground: var(--ab-accent);
+  --border: var(--ab-border); --input: var(--ab-border); --ring: var(--ab-accent);
+  --sidebar: var(--ab-panel); --sidebar-foreground: var(--ab-text);
+  --gold: var(--ab-accent); --gold-light: var(--ab-accent);
+  --gold-shadow: var(--ab-accent-pressed); --ivory: var(--ab-text);
+}
+.aldebaran-site .primary-nav button {
+  color: var(--ab-text);
+  transition: color var(--ab-ui-duration), border-color var(--ab-ui-duration), background-color var(--ab-ui-duration);
+}
+.aldebaran-site .primary-nav button:is(:hover, :active, [aria-pressed=true]) {
+  color: var(--ab-accent); border-color: var(--ab-accent);
+  background: var(--ab-raised); box-shadow: none;
+}
+.aldebaran-site .header-rail {background: var(--ab-border); box-shadow: none;}
+.aldebaran-site .header-rail::after {content: none; animation: none;}
+.aldebaran-site .nav-dot {box-shadow: none;}
+.aldebaran-site .noticebar {color: var(--ab-muted);}
+.aldebaran-site :is(.noticebar svg, .panel-heading>svg, .customer-button svg:first-child, .all-sport-icon) {color: var(--ab-text);}
+.aldebaran-site :is(.eyebrow, .account-panel .panel-heading h2) {color: var(--ab-text);}
+.aldebaran-site .btn:is(:active, [data-pressed]):not(:disabled) {box-shadow: none;}
+.aldebaran-site .btn.gold:is(:active, [data-pressed]):not(:disabled) {background: var(--ab-accent-pressed); box-shadow: none;}
+.aldebaran-site :is(.icon-button, .support-links button, .account-actions button) {color: var(--ab-text);}
+.aldebaran-site .icon-button:disabled {color: var(--ab-disabled);}
+.aldebaran-site .text-button {color: var(--ab-text);}
+.aldebaran-site .text-button:hover:not(:disabled) {color: var(--ab-accent);}
+.aldebaran-site .text-button:disabled {color: var(--ab-disabled);}
+.aldebaran-site :is(.search-box, .stake-input):focus-within {border-color: var(--ab-accent); box-shadow: none;}
+.aldebaran-site :is(.search-box input, .stake-input input) {background: transparent;}
+.aldebaran-site .sport-menu button[aria-pressed=true] {background: var(--ab-raised); box-shadow: none;}
+.aldebaran-site .sport-menu button[aria-pressed=true] small {background: var(--ab-accent); color: var(--ab-on-accent);}
+.aldebaran-site .sport-menu button:hover {background: var(--ab-control);}
+.aldebaran-site .sport-menu button small {color: var(--ab-muted);}
+.aldebaran-site .photo-banner {border-color: var(--ab-border); box-shadow: none;}
+.aldebaran-site .banner-copy .eyebrow {color: var(--ab-accent);}
+.aldebaran-site .banner-frame, .aldebaran-site .photo-banner:hover .banner-frame {box-shadow: none;}
+.aldebaran-site .banner-copy {text-shadow: none;}
+.aldebaran-site .support-links button {border-color: var(--ab-border);}
+.aldebaran-site .support-links button svg:first-child {color: var(--ab-text);}
+.aldebaran-site .support-links button:hover {color: var(--ab-accent);}
+.aldebaran-site .left-footer strong {color: var(--ab-muted);}
+.aldebaran-site .avatar {background: var(--ab-raised); border-color: var(--ab-border); color: var(--ab-text);}
+.aldebaran-site .account-actions button {background: var(--ab-raised); border-color: var(--ab-border);}
+.aldebaran-site .account-actions button svg {color: inherit;}
+.aldebaran-site .account-actions button:hover {background: var(--ab-control-hover); color: var(--ab-accent);}
+.aldebaran-site .slip .panel-heading {border-color: var(--ab-border);}
+.aldebaran-site .count-badge {border-color: var(--ab-border); color: var(--ab-accent);}
+.aldebaran-site .slip-type>span:first-child {color: var(--ab-text);}
+.aldebaran-site .slip-list {background: var(--ab-deep);}
+.aldebaran-site .slip-totals {border-color: var(--ab-border);}
+.aldebaran-site .empty-slip>svg {color: var(--ab-muted);}
+.aldebaran-site :is(.empty-slip p, .stake-hint, .slip-footnote, .wallet>span, .slip-type, .account-chip, .dialog-copy) {color: var(--ab-muted);}
+.aldebaran-site .stake-hint.invalid {color: var(--destructive);}
+.aldebaran-site .support-title {background: var(--ab-raised); border-color: var(--ab-border);}
+.aldebaran-site .support-title>svg {color: var(--ab-text);}
+.aldebaran-site .demo-dialog {border-color: var(--ab-border); box-shadow: none;}
+.aldebaran-site .demo-dialog::before {content: none;}
+.aldebaran-site .dialog-total {background: var(--ab-deep); border-color: var(--ab-border);}

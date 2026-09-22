@@ -1,0 +1,36 @@
+{
+  "id": "F01",
+  "q": "Q07",
+  "priority": "P2",
+  "sourceId": "1a3f550fdfd5fdfe99a6e4747e329e4536d86c01eae22806d9901269896bc790",
+  "location": "빠른 서비스 충전 및 동일 .btn.gold CTA",
+  "observation": "실제 mouse-down에서 :active=true임에도 hover와 같은 밝은 윗면과 20px outer glow 유지. 눌림 inset 표현이 적용되지 않음.",
+  "reproduction": "1920x940 DPR1, 충전 버튼 hover 후 left mouse-down 유지",
+  "evidence": {
+    "active": true,
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(255, 240, 197), rgb(243, 204, 114) 46%, rgb(217, 173, 67)) repeat scroll 0% 0% / auto padding-box border-box",
+    "dataPressed": false,
+    "hover": true,
+    "rect": {
+      "bottom": 259,
+      "height": 94,
+      "left": 25,
+      "right": 144,
+      "top": 165,
+      "width": 119,
+      "x": 25,
+      "y": 165
+    },
+    "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+    "transition": "0.06s"
+  },
+  "screenshot": "21-gold-pressed-defect.jpg",
+  "cssEvidence": {
+    "file": "site/app/globals.css",
+    "hoverLine": 69,
+    "pressedLine": 70,
+    "cause": ".btn.gold:hover:not(:disabled) specificity 0,4,0 exceeds .btn:active:not(:disabled) / .btn[data-pressed]:not(:disabled) 0,3,0"
+  },
+  "direction": "골드 CTA의 :active/[data-pressed] 규칙이 hover보다 우선하게 최소 수정. 위치/크기 유지하며 외광 감소+inset 눌림 재확인.",
+  "otherChecks": "기능/배당 선택 및 눌림/헤더 눌림/정확계산/내역은 별도 통과 관찰. 전체 보고 진행 중."
+}

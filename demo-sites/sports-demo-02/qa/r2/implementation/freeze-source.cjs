@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),crypto=require('node:crypto');
+const root=process.cwd(),qa=__dirname,hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+const git=args=>cp.execFileSync('git',['-c','safe.directory='+root.replaceAll('\\','/'),...args],{encoding:'utf8'}).trim();
+if(git(['status','--porcelain']))throw Error('Working tree is not clean');
+const baseline=JSON.parse(fs.readFileSync(qa+'/../../r1/implementation/source-efad7050.json'));
+const files=git(['ls-files','-z']).split('\0').filter(Boolean).map(file=>{const b=fs.readFileSync(file);return {file,bytes:b.length,sha256:hash(b)};});
+const changes=files.filter(f=>baseline.files.find(b=>b.file===f.file)?.sha256!==f.sha256).map(f=>f.file);
+if(JSON.stringify(changes)!==JSON.stringify(['app/globals.css','app/match-list.css','app/page.tsx']))throw Error('Unexpected changed files');
+const sourceId=hash(JSON.stringify(files)),commit=git(['rev-parse','--verify','HEAD']);
+const manifest={sourceId,commit,createdAt:new Date().toISOString(),root,files};
+fs.writeFileSync(qa+'/source-'+sourceId.slice(0,8)+'.json',JSON.stringify(manifest,null,2));
+const before=JSON.parse(fs.readFileSync(qa+'/before.json')),after=JSON.parse(fs.readFileSync(qa+'/after.json'));
+const sameColumns=JSON.stringify(before.columns)===JSON.stringify(after.columns);
+if(!sameColumns||after.header.height!==100||after.brandRow.height!==56||after.menuRow.height!==44)throw Error('Header/workspace geometry mismatch');
+const ready={stage:'SIRIUS HEADER R2 basic checks complete',checkedAt:new Date().toISOString(),sourceId,commit,sourceManifest:'source-'+sourceId.slice(0,8)+'.json',url:'http://127.0.0.1:5287/',publicUrl:'https://sirius.kexxadrix.chatgpt.site/',projectId:JSON.parse(fs.readFileSync('.openai/hosting.json')).project_id,changedFiles:changes,checks:{build:'PASS using existing npm-cli fallback after installed build helper Windows npm resolution error',typecheck:'PASS',diffWhitespace:'PASS',H01:'Reflected: geometric center960, notice/account upper56, grouped7menus lower44, oldnotice removed',H02:'Checked: independent trigger, shared filter, query/slip preserved, outside/Escape/same-trigger closure, Tab/Enter/Space/no focus trap, account/menu/modal flow',H03:'Checked:100px total, unchanged272/1280/320 columns and816height, panel680x165 at416,100, no layout shift, active underline180ms/2px',H04:'Reflected: darker navy surfaces and separated buttons, text/gold retained, no image filtering',H05:'Checked representative soccer/reset/+6/select/replace/remove/calculation and independent rail scroll',H06:'Awaiting public update'},preservation:{unchangedTrackedFiles:files.length-changes.length,assetsDataFontsLockAndHostingByteIdentical:true,columnsSameAsBefore:sameColumns},values:{brandRow:56,menuRow:44,totalHeader:100,symbol:32,wordmarkWidth:100.67,wordmarkVisibleHeight:33.984375,brandGap:8,navGroupGap:40,activeLinePx:2,activeLineMs:180,explorerWidth:680,palette:after.colors},captures:['before-1920.jpg','after-1920.jpg','explore-open-1920.jpg'],viewport:{width:1920,height:940,dpr:1,zoom:'100% viewport/CSS ratio'},scope:'H01-H06 implementation/function/clipping only. No WOG or design approval gate. No rail redesign or new images.',notVerified:['Mobile redesign out of scope','User visual acceptance pending'],blocked:[]};
+fs.writeFileSync(qa+'/ready.json',JSON.stringify(ready,null,2));
+console.log(JSON.stringify({sourceId,commit,files:files.length,changes,columnsSameAsBefore:sameColumns}));

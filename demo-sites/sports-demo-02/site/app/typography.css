@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Pretendard JP";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/pretendard-jp/PretendardJP-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard JP";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/pretendard-jp/PretendardJP-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard JP";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/pretendard-jp/PretendardJP-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard JP";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/pretendard-jp/PretendardJP-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard JP";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/pretendard-jp/PretendardJP-Black.woff2") format("woff2");
+}
+
+:root {
+  --font-ui: "Pretendard JP", "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --font-heisei-mincho: "heisei-mincho-std", "Yu Mincho", serif;
+  --font-omni-gothic: "omnigothic", "Pretendard JP", sans-serif;
+  --font-score: "din-condensed", "Arial Narrow", sans-serif;
+  font-family: var(--font-ui);
+  font-synthesis: none;
+}
+
+html,
+body,
+#root {
+  font-family: var(--font-ui);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+[lang="ja"] {
+  font-family: var(--font-heisei-mincho);
+}

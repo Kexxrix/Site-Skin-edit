@@ -1,0 +1,272 @@
+{
+  "header": [
+    {
+      "id": "domestic",
+      "label": "국내형 스포츠",
+      "icon_role": "sports"
+    },
+    {
+      "id": "european",
+      "label": "해외형 스포츠",
+      "icon_role": "sports",
+      "badge": "NEW"
+    },
+    {
+      "id": "esports",
+      "label": "E 스포츠",
+      "icon_role": "gamepad"
+    },
+    {
+      "id": "inplay",
+      "label": "인플레이",
+      "icon_role": "live",
+      "badge": "LIVE"
+    },
+    {
+      "id": "casino",
+      "label": "카지노",
+      "icon_role": "casino"
+    },
+    {
+      "id": "slots",
+      "label": "슬롯",
+      "icon_role": "slots"
+    },
+    {
+      "id": "minigame",
+      "label": "미니게임",
+      "icon_role": "gamepad"
+    },
+    {
+      "id": "virtual",
+      "label": "가상 스포츠",
+      "icon_role": "sports"
+    },
+    {
+      "id": "community",
+      "label": "자유게시판",
+      "icon_role": "message"
+    },
+    {
+      "id": "results",
+      "label": "경기결과",
+      "icon_role": "trophy"
+    }
+  ],
+  "notice_links": [
+    {
+      "id": "notice",
+      "label": "공지사항",
+      "icon": "send"
+    },
+    {
+      "id": "event",
+      "label": "이벤트게시판",
+      "icon": "gift"
+    },
+    {
+      "id": "attendance",
+      "label": "출석체크",
+      "icon": "calendar"
+    },
+    {
+      "id": "support",
+      "label": "고객센터",
+      "icon": "headphones"
+    },
+    {
+      "id": "rules",
+      "label": "이용규정",
+      "icon": "info"
+    }
+  ],
+  "left": [
+    {
+      "id": "quick",
+      "height": 320,
+      "rows": [
+        [
+          "충전",
+          "환전",
+          "고객센터"
+        ],
+        [
+          "국내형 스포츠",
+          "해외형 스포츠",
+          "E스포츠"
+        ],
+        [
+          "인플레이",
+          "카지노",
+          "슬롯"
+        ],
+        [
+          "이벤트",
+          "출석부",
+          "공지사항"
+        ]
+      ],
+      "images": [
+        {
+          "role": "casino",
+          "span": 2,
+          "size": [
+            200,
+            116
+          ]
+        },
+        {
+          "role": "slots",
+          "span": 1,
+          "size": [
+            98,
+            116
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "height": 102,
+      "fields": [
+        "해외형 스포츠 검색 (국가/리그명/팀명)",
+        "국내형 스포츠 검색 (국가/리그명/팀명)"
+      ]
+    },
+    {
+      "id": "sports-summary",
+      "base_height": 307,
+      "sports": [
+        "soccer",
+        "basketball",
+        "baseball",
+        "volleyball",
+        "ice-hockey"
+      ],
+      "nested": [
+        "country",
+        "league"
+      ]
+    },
+    {
+      "id": "latest-games",
+      "base_height": 307,
+      "count": 5
+    }
+  ],
+  "center_left": {
+    "sports": [
+      "all",
+      "soccer",
+      "basketball",
+      "baseball",
+      "volleyball",
+      "ice-hockey"
+    ],
+    "grid_slots": 8,
+    "league_grouping": true,
+    "basic_markets": [
+      "result",
+      "handicap",
+      "totals"
+    ]
+  },
+  "center_right": {
+    "heading": [
+      "home",
+      "away",
+      "start_time",
+      "live_score_when_applicable"
+    ],
+    "filters": [
+      "all",
+      "result",
+      "handicap",
+      "totals",
+      "other"
+    ],
+    "minimum_valid_market_groups_for_featured_match": 8,
+    "tracker_mounted": false
+  },
+  "right": {
+    "account": [
+      "level",
+      "nickname",
+      "edit-profile",
+      "balance",
+      "bonus-conversion",
+      "today-winnings"
+    ],
+    "actions": [
+      "deposit",
+      "withdraw",
+      "payback",
+      "messages",
+      "support",
+      "bet-history"
+    ],
+    "slip": [
+      "persist-toggle",
+      "delete-all",
+      "folder-count",
+      "empty-or-selections",
+      "amount",
+      "reset",
+      "quick-amounts",
+      "total-odds",
+      "potential-return",
+      "min-odds",
+      "max-odds",
+      "min-stake",
+      "max-stake",
+      "max-return",
+      "submit-demo"
+    ],
+    "quick_amounts": [
+      5000,
+      10000,
+      50000,
+      100000,
+      1000000,
+      "MAX"
+    ],
+    "banners": [
+      {
+        "id": "support",
+        "title": "텔레그램 고객센터",
+        "description": "문의 및 제휴 안내",
+        "icon": "headphones"
+      },
+      {
+        "id": "channel",
+        "title": "텔레그램 공식채널",
+        "description": "이벤트 및 공지 안내",
+        "icon": "megaphone"
+      },
+      {
+        "id": "brand-guide",
+        "title": "ALDEBARAN 이용안내",
+        "description": "서비스 이용 방법",
+        "icon": "compass"
+      },
+      {
+        "id": "live-guide",
+        "title": "실시간 중계 안내",
+        "description": "경기 중계 일정 확인",
+        "icon": "monitor"
+      },
+      {
+        "id": "lineups",
+        "title": "스포츠 라인업",
+        "description": "경기별 선수 정보",
+        "icon": "users"
+      },
+      {
+        "id": "age-policy",
+        "title": "미성년자 이용불가",
+        "description": "만 19세 이상 이용",
+        "icon": "19"
+      }
+    ]
+  }
+}

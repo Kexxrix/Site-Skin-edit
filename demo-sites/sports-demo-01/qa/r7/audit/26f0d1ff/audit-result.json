@@ -1,0 +1,172 @@
+{
+  "auditVersion": "R7 full independent production audit",
+  "status": "complete_requires_two_targeted_fixes",
+  "auditorTask": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "url": "http://127.0.0.1:5277/",
+  "sourceId": "26f0d1ff56324d8cc2554aa38239d3bdf3da6acf8b8aa418d48ad03dff13d007",
+  "baseCommit": "48a02462ffa0a98e8dc3b60fcf54286b1ac21783",
+  "start": "2026-09-17T17:05:28.9989089+09:00",
+  "end": "2026-09-17T08:35:17.893839+00:00",
+  "sourceFreeze": {
+    "beforeCount": 262,
+    "afterCount": 262,
+    "mismatches": [],
+    "servedCssVerified": {
+      "url": "http://127.0.0.1:5277/_next/static/css/index.BnWv4cQU.css",
+      "status": 200,
+      "sha256": "45f889a08afea96f0d4ab3159cb6a6a8c3db2c257fa5db3628887da98fb71ee8",
+      "matchesImplementation": true
+    }
+  },
+  "verdicts": {
+    "A_specification": "requires_fix: R7-F01 and R7-F02",
+    "B_finishComparedWithWOG": "requires_fix: isolated readability and pressed-state defects; otherwise aligned information hierarchy, material separation, seams and control finishing meet the observed baseline",
+    "C_functions": "pass within local simulated scope",
+    "userDesignApproval": "separate; not claimed"
+  },
+  "R7": {
+    "R7-01": "pass",
+    "R7-02": "pass",
+    "R7-03": "pass",
+    "R7-04": "requires_fix R7-F01",
+    "R7-05": "pass",
+    "R7-06": "pass",
+    "R7-07": "pass",
+    "R7-08": "pass"
+  },
+  "Q": [
+    {
+      "id": "Q01",
+      "status": "pass",
+      "observation": "Neutral black surfaces, gold action accents and ivory text remain distinct; no WOG palette or blue/gray base imported."
+    },
+    {
+      "id": "Q02",
+      "status": "pass",
+      "observation": "Both original images reduced: symbol36x36 at y16, wordmark144x42 at y13; header68 and brand272 retained. Contain and full art preserve proportions."
+    },
+    {
+      "id": "Q03",
+      "status": "pass",
+      "observation": "Header active-tab bottom y66 meets rail y66..68; section plate ends158 and section rule158..160. Original1100x180 header capture inspected; no double line/gap."
+    },
+    {
+      "id": "Q04",
+      "status": "pass",
+      "observation": "Team/status/score share flat card plane. Score and market-reference have no border/background/shadow; odds retain distinct depth."
+    },
+    {
+      "id": "Q05",
+      "status": "pass",
+      "observation": "77 unique fixtures, 26/26/25. All12 expansion actions and all77 complete card views inspected. Initial6 per section, +6 then2/2/1, old IDs retained, all-more removed, other counts/scroll/slip retained."
+    },
+    {
+      "id": "Q06",
+      "status": "pass",
+      "observation": "Compact64px service tiles, searchable sport navigation, account, betslip, lighter support list and promotional panel maintain different visual roles."
+    },
+    {
+      "id": "Q07",
+      "status": "requires_fix",
+      "observation": "Ordinary base/hover/pressed/selected/disabled and locked exclusion work; F02 original1px motion absent. Focus-visible plus pressed loses inset: R7-F02."
+    },
+    {
+      "id": "Q08",
+      "status": "requires_fix",
+      "observation": "77-card source alpha bounds and rendered boxes agree: regular sport/league artwork~20px, puck/NHL~15px, maximum paired center difference0.0078px. Full logos preserved. Actual Pretendard and DIN custom glyphs verified; English kicker custom Adobe font loaded. Jets readability exception: R7-F01."
+    },
+    {
+      "id": "Q09",
+      "status": "pass",
+      "observation": "1920x940: shell1920, header68, columns272/1280/320 by816. At2560 shellx320 width1920. All77 bottom scroll7427/root940/windowY0; hidden scrollbars and no horizontal overflow. No scaling inferred from failed screenshot."
+    },
+    {
+      "id": "Q10",
+      "status": "pass",
+      "observation": "All9 sport filters, hidden LeMans search/reset, login/signup/logout, local charge/withdraw, pick/toggle/replace/locked/remove/clear, stake/error/quick/MAX, exact totals, confirmation/cancel/receipt/history/persistence and informational dialogs verified. No prohibited explanatory copy in examined rendered/title/aria states."
+    }
+  ],
+  "findings": [
+    {
+      "id": "R7-F01",
+      "priority": "P2",
+      "criteria": [
+        "R7-04",
+        "Q08"
+      ],
+      "state": "confirmed_requires_fix",
+      "location": "popular record-401872936 home team New York Jets",
+      "asset": "/sports/r7/teams/nfl/new-york-jets.png",
+      "problem": "The dark green logo loses its identifiable form on the black card because this individual asset has no backing.",
+      "evidence": [
+        "07-jets-logo-legibility.jpg",
+        "walk-15.jpg",
+        "all77-card-geometry.json"
+      ],
+      "minimalCorrection": "Enable circular backing for this asset only; preserve PNG bytes, proportions, full artwork and other assets.",
+      "recheck": "Search Jets on the production build, visually verify New York Jets and neighboring Winnipeg Jets, compare original asset hash."
+    },
+    {
+      "id": "R7-F02",
+      "priority": "P2",
+      "criteria": [
+        "Q07",
+        "F01 pressed-shadow regression"
+      ],
+      "state": "confirmed_requires_fix",
+      "location": "site/app/globals.css:73; .submit-slip and confirmation .btn.gold with :focus-visible and :active simultaneously",
+      "problem": "The focus-visible box-shadow !important overrides the inset pressed shadow. Active and focus-visible were both true after settling, but computed shadow remained only 0 0 0 2px rgb(23,23,23).",
+      "evidence": [
+        "button-states.json",
+        "13-focused-submit-held.jpg",
+        "14-confirm-focused-held.jpg"
+      ],
+      "minimalCorrection": "Preserve the keyboard focus outline and combine it with the intended inset active/pressed shadow. Cover both .btn and .odd without introducing movement.",
+      "recheck": "Production pointer press with keyboard focus retained: service, normal/selected odd, slip CTA and modal CTA. Assert active=true, focus-visible=true, inset shadow present, unchanged rect/transform/translate; ordinary hover/selected/disabled unaffected."
+    }
+  ],
+  "coverage": {
+    "completeCardsObserved": 77,
+    "uniqueFixtureCount": 77,
+    "expandedImagesLoaded": 318,
+    "brokenImages": 0,
+    "screenshotFiles": 40,
+    "sourceFiles": 262,
+    "sportFilterStates": 9,
+    "artworkCenterMaxDifferencePx": 0.0078,
+    "calculationExamples": [
+      "10000 * 1.84 * 1.56 = 28704; odds display2.870",
+      "10000 * 1.84 * 1.56 * 2.125 = 60996; odds display6.100"
+    ],
+    "motion": "Direct expansion interaction plus original CDP changed-frame samples and settled geometry. Normal grid transition220ms; reduced-motion emulation gives transition:none and stable12/6/6, windowY0. Not a frame-rate benchmark."
+  },
+  "WOG": {
+    "baseline": "qa/r6/audit/initial-20260917/initial-audit.json",
+    "directObservationTimeKST": "2026-09-17 12:00-12:07",
+    "reuseAuthorized": true,
+    "purpose": "Finish/hierarchy/material/control-state baseline only; no palette/style/code copying; WOG odds selection outcome not asserted."
+  },
+  "limits": [
+    "User acceptance of visual taste is separate.",
+    "Local production build tested; public v5 deployment unchanged by auditor.",
+    "Japanese copy absent; actual Heisei Japanese glyph rendering not applicable.",
+    "Existing full-project19 lint errors outside changed files retained; changed-source lint/build/typecheck/math20 reused from matching implementation evidence.",
+    "Network capture contains favicon.ico404 requests and two navigation-canceled requests; no console errors and no broken displayed images. Browser adds a Codex favicon badge; exact source of favicon.ico probes not established. No blanket zero-network-error claim.",
+    "Raw CDP capture buffer was truncated for earlier events; resource timing, loaded-image checks and live behavior supply complementary evidence.",
+    "40 original JPEG captures include04-all77-bottom.jpg at1920x703 with capture-scale mismatch, excluded from visual/layout verdict.05-all77-bottom-stable.jpg and06-wide2560-all77.jpg are accepted full-size evidence.",
+    "An immediate focus probe sampled a transient focus sentinel; settled Tab cycle close->charge->close and Escape restoration verified in focus-trap-recheck.json.",
+    "No destructive storage manipulation. One local test receipt persists; balance restored1000000 and guest state left."
+  ],
+  "ownership": {
+    "changed": "Only JSON and original captures under qa/r7/audit/26f0d1ff",
+    "untouched": [
+      "site source",
+      "working specifications",
+      "Sites deployment",
+      "public version",
+      "original assets",
+      "other task files"
+    ]
+  },
+  "next": "Implement only the two findings, rebuild production, provide new frozen source manifest. Auditor will recheck changes and necessary affected states, reusing unchanged passed evidence."
+}

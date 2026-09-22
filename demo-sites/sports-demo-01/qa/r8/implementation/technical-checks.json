@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-09-17T10:32:41.777Z",
+  "dataRegression": {
+    "command": "node qa/r8/implementation/verify-data.cjs",
+    "passed": true,
+    "assertions": 642
+  },
+  "typecheck": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit",
+    "exitCode": 0
+  },
+  "changedSourceLint": {
+    "command": "node node_modules/oxlint/bin/oxlint app/page.tsx app/demo-data.ts",
+    "exitCode": 0
+  },
+  "whitespace": {
+    "command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --check",
+    "exitCode": 0
+  },
+  "build": {
+    "helperAttempt": "Sites0.1.65 build-site.mjs",
+    "helperResult": "Windows npm.cmd shim resolved npm-prefix.js/npm-cli.js under site/node_modules and failed before build; no dependency/source changes made for workaround",
+    "fallback": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+    "exitCode": 0,
+    "preview": "http://127.0.0.1:5277/",
+    "session": 30573
+  },
+  "assetIntegrity": {
+    "providedImagesCopied": 9,
+    "sourceDestinationShaMatch": true,
+    "originalsPreserved": true
+  },
+  "sourcePreservation": {
+    "matchRecords": true,
+    "leagueAndTeamPresentation": true,
+    "fonts": true,
+    "buttonPrimitive": true,
+    "existingMarketsByFixture": 77
+  },
+  "browser": {
+    "evidence": "browser-checks.json",
+    "assertions": 60,
+    "consoleWarningsErrorsObserved": 0,
+    "networkNote": "No failures in observed event sample; buffer truncated, so not claiming complete network coverage. All expanded77 fixture images complete and healthy."
+  },
+  "notRun": "Full-repository lint, which had19 unrelated baseline errors at R7; only changed TypeScript sources linted."
+}

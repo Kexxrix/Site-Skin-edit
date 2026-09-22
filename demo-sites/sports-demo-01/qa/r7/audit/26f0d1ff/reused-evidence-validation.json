@@ -1,0 +1,70 @@
+{
+  "basis": "Coordinator evidence reused only after current frozen file hashes matched. UI inspected independently.",
+  "recordsFileHash": "b662a76a48e9c6f25d4add889dd375045ba97a548f67a2c0cc23126d7f21dd6d",
+  "coordinatorRecordHash": "b662a76a48e9c6f25d4add889dd375045ba97a548f67a2c0cc23126d7f21dd6d",
+  "recordsCount": 77,
+  "uniqueFixtures": 77,
+  "sectionCounts": {
+    "live": 26,
+    "soon": 26,
+    "popular": 25
+  },
+  "duplicates": 0,
+  "failedRecords": [],
+  "assetsCount": 164,
+  "uniqueAssetTargets": 164,
+  "failedAssets": [],
+  "references": [
+    "qa/r7/coordination/selected-records-check.json",
+    "qa/r7/coordination/asset-preservation-check.json"
+  ],
+  "technicalEvidenceReused": {
+    "checkedAt": "2026-09-17T08:03:45.208Z",
+    "sourceId": "26f0d1ff56324d8cc2554aa38239d3bdf3da6acf8b8aa418d48ad03dff13d007",
+    "build": {
+      "command": "npm run build",
+      "result": "passed",
+      "note": "Final build after section containing-block fix. One prior build attempt hit an owned running Wrangler file lock; stopped preview then rebuilt successfully."
+    },
+    "typecheck": {
+      "command": "npx tsc --noEmit --incremental false",
+      "result": "passed"
+    },
+    "lint": {
+      "command": "npx oxlint app/page.tsx app/demo-data.ts app/layout.tsx components/ui/button.tsx",
+      "result": "passed, no findings"
+    },
+    "calculation": 20,
+    "css": [
+      {
+        "file": "index.BnWv4cQU.css",
+        "sha256": "45f889a08afea96f0d4ab3159cb6a6a8c3db2c257fa5db3628887da98fb71ee8"
+      }
+    ],
+    "existingProtectedFiles": [
+      {
+        "file": "app/typography.css",
+        "sha256": "bf83591b25272ff9247648134d88d513dac71c40148f7b6cb3c954bc377a88c2"
+      },
+      {
+        "file": "app/motion.css",
+        "sha256": "d3198e07daeeee288c44d536a537983c16f993628c4c9b41bc316f2bbcd8052f"
+      },
+      {
+        "file": "components/ui/button.tsx",
+        "sha256": "6b062ccdcd36ee264e786f32a4a1a630ef4d80ab2ba13ab4de20065888b0b4f9"
+      }
+    ],
+    "brand": [
+      {
+        "file": "public/branding/mercury-emblem.png",
+        "sha256": "27b16050d02334472ce7ddde4fa67f1c86704c908a59bded09bd4b64abc64ed6"
+      },
+      {
+        "file": "public/branding/mercury-wordmark.png",
+        "sha256": "d96816caea9378536e77bd964ddd6b39739bfcade5d64b5995856935d14277e6"
+      }
+    ],
+    "dataSource": "Actual ESPN fixtures matched by IDs; snapshots retained internally; existing asset bytes copied without edits."
+  }
+}

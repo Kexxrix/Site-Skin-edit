@@ -1,0 +1,4583 @@
+[
+  {
+    "step": "empty",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1219,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 547,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [],
+      "slip": "베팅슬립0단일 선택BET SLIP선택한 배당이 없습니다경기의 배당을 선택하면이곳에 선택 내역이 표시됩니다.베팅 금액 KRW+5천+1만초기화총 배당0.00예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "selected-first",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "removed-first",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1219,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 547,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [],
+      "slip": "베팅슬립0단일 선택BET SLIP선택한 배당이 없습니다경기의 배당을 선택하면이곳에 선택 내역이 표시됩니다.베팅 금액 KRW+5천+1만초기화총 배당0.00예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "locked-click",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1219,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 547,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [],
+      "slip": "베팅슬립0단일 선택BET SLIP선택한 배당이 없습니다경기의 배당을 선택하면이곳에 선택 내역이 표시됩니다.베팅 금액 KRW+5천+1만초기화총 배당0.00예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "A-before",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "shine": {
+      "hover": true,
+      "opacity": "0.32"
+    }
+  },
+  {
+    "step": "A-after",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "shine": {
+      "hover": true,
+      "opacity": "0.9"
+    }
+  },
+  {
+    "step": "B-before",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "title": {
+      "border": "rgb(147, 112, 58)",
+      "decoration": "1"
+    }
+  },
+  {
+    "step": "B-after",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "title": {
+      "border": "rgb(240, 217, 158)",
+      "decoration": "0"
+    }
+  },
+  {
+    "step": "C-on-before",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "live-breathe",
+      "opacity": "0.856678",
+      "shadow": "rgba(242, 204, 110, 0.725) 0px 0px 8.1759px 0px"
+    }
+  },
+  {
+    "step": "C-off-before-click",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "none",
+      "opacity": "1",
+      "shadow": "rgb(242, 199, 97) 0px 0px 8px 0px"
+    }
+  },
+  {
+    "step": "C-off-selected-second",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0",
+        "live-2-0-0"
+      ],
+      "slip": "베팅슬립2조합 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함베팅 금액 KRW+5천+1만초기화총 배당2.870예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "none",
+      "opacity": "1",
+      "shadow": "rgb(242, 199, 97) 0px 0px 8px 0px"
+    }
+  },
+  {
+    "step": "C-off-restored",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "none",
+      "opacity": "1",
+      "shadow": "rgb(242, 199, 97) 0px 0px 8px 0px"
+    }
+  },
+  {
+    "step": "C-on-restored",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "live-breathe",
+      "opacity": "0.893687",
+      "shadow": "rgba(242, 205, 111, 0.76) 0px 0px 8.64692px 0px"
+    }
+  },
+  {
+    "step": "C-on-selected-second",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0",
+        "live-2-0-0"
+      ],
+      "slip": "베팅슬립2조합 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함베팅 금액 KRW+5천+1만초기화총 배당2.870예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "live-breathe",
+      "opacity": "0.529959",
+      "shadow": "rgba(232, 190, 94, 0.447) 0px 0px 4.01766px 0px"
+    }
+  },
+  {
+    "step": "C-on-final",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "live-breathe",
+      "opacity": "0.457304",
+      "shadow": "rgba(228, 184, 87, 0.384) 0px 0px 3.09295px 0px"
+    }
+  },
+  {
+    "step": "scroll-baseline",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "left-end",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 379
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "left-end-extra-wheel",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 379
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "center-end",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 1044
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": -932
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": -814
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": -814
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": -814
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": -336
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": -218
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 260
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 378
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "center-end-extra-wheel",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 1044
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 62
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": -932
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": -814
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": -814
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": -814
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": -336
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": -218
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 260
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 378
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 282.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "right-end",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 370
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": -25.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "right-end-extra-wheel",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 370
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": -25.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "scroll-restored",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "multi-selection-three",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0",
+        "live-2-0-0",
+        "live-3-0-0"
+      ],
+      "slip": "베팅슬립3조합 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함유럽 클럽 챔피언십노스런던 인터내셔널 유나이티드vs 웨스트브리지 애슬레틱 클럽홈2.125승무패베팅 금액 KRW+5천+1만초기화총 배당6.100예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "nested-slip-end",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0",
+        "live-2-0-0",
+        "live-3-0-0"
+      ],
+      "slip": "베팅슬립3조합 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함유럽 클럽 챔피언십노스런던 인터내셔널 유나이티드vs 웨스트브리지 애슬레틱 클럽홈2.125승무패베팅 금액 KRW+5천+1만초기화총 배당6.100예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "slipList": {
+      "clientHeight": 270,
+      "scrollHeight": 412,
+      "scrollTop": 141
+    }
+  },
+  {
+    "step": "nested-slip-end-extra-wheel",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0",
+        "live-2-0-0",
+        "live-3-0-0"
+      ],
+      "slip": "베팅슬립3조합 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함유럽 클럽 챔피언십노스런던 인터내셔널 유나이티드vs 웨스트브리지 애슬레틱 클럽홈2.125승무패베팅 금액 KRW+5천+1만초기화총 배당6.100예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "slipList": {
+      "clientHeight": 270,
+      "scrollHeight": 412,
+      "scrollTop": 141
+    }
+  },
+  {
+    "step": "same-match-replacement",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-2",
+        "live-2-0-0",
+        "live-3-0-0"
+      ],
+      "slip": "베팅슬립3조합 선택BET SLIP코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함유럽 클럽 챔피언십노스런던 인터내셔널 유나이티드vs 웨스트브리지 애슬레틱 클럽홈2.125승무패K리그 1서울 유나이티드vs 부산 애슬레틱원정4.10승무패베팅 금액 KRW+5천+1만초기화총 배당13.591예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "keyboard-toggle-off",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-2-0-0",
+        "live-3-0-0"
+      ],
+      "slip": "베팅슬립2조합 선택BET SLIP코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함유럽 클럽 챔피언십노스런던 인터내셔널 유나이티드vs 웨스트브리지 애슬레틱 클럽홈2.125승무패베팅 금액 KRW+5천+1만초기화총 배당3.315예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "keyboard-toggle-on",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1318,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 646,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0",
+        "live-2-0-0",
+        "live-3-0-0"
+      ],
+      "slip": "베팅슬립3조합 선택BET SLIP코리아 농구 리그인천 블랙팔콘스vs 대전 골든나이츠홈1.56승패 · 연장 포함유럽 클럽 챔피언십노스런던 인터내셔널 유나이티드vs 웨스트브리지 애슬레틱 클럽홈2.125승무패K리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당6.100예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "clear-all",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1219,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 547,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [],
+      "slip": "베팅슬립0단일 선택BET SLIP선택한 배당이 없습니다경기의 배당을 선택하면이곳에 선택 내역이 표시됩니다.베팅 금액 KRW+5천+1만초기화총 배당0.00예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  },
+  {
+    "step": "C-final-normalized",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1186,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 513.1875,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [
+        "live-1-0-0"
+      ],
+      "slip": "베팅슬립1단일 선택BET SLIPK리그 1서울 유나이티드vs 부산 애슬레틱홈1.84승무패베팅 금액 KRW+5천+1만초기화총 배당1.840예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    },
+    "idle": {
+      "animation": "live-breathe",
+      "opacity": "0.787524",
+      "shadow": "rgba(240, 202, 108, 0.667) 0px 0px 7.29576px 0px"
+    }
+  },
+  {
+    "step": "final-empty",
+    "data": {
+      "columns": [
+        {
+          "clientHeight": 816,
+          "name": "스포츠 바로가기",
+          "scrollHeight": 1195,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "스포츠 경기 목록",
+          "scrollHeight": 1860,
+          "scrollTop": 0
+        },
+        {
+          "clientHeight": 816,
+          "name": "계정 및 베팅슬립",
+          "scrollHeight": 1219,
+          "scrollTop": 0
+        }
+      ],
+      "fonts": [
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BODY"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        },
+        {
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "tag": "BUTTON"
+        }
+      ],
+      "frames": [
+        {
+          "class": "topbar",
+          "h": 68,
+          "w": 1920,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 112
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 722.328125,
+          "y": 230
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.34375,
+          "x": 1148.65625,
+          "y": 230
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 708
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 826
+        },
+        {
+          "class": "section-title",
+          "h": 68,
+          "w": 1267,
+          "x": 296,
+          "y": 1304
+        },
+        {
+          "class": "match-card",
+          "h": 450,
+          "w": 414.328125,
+          "x": 296,
+          "y": 1422
+        },
+        {
+          "class": "panel slip",
+          "h": 547,
+          "w": 306,
+          "x": 1588,
+          "y": 344.5
+        }
+      ],
+      "images": 0,
+      "selected": [],
+      "slip": "베팅슬립0단일 선택BET SLIP선택한 배당이 없습니다경기의 배당을 선택하면이곳에 선택 내역이 표시됩니다.베팅 금액 KRW+5천+1만초기화총 배당0.00예상 적중금₩ 0 베팅하기금액 입력과 실제 베팅은 제공하지 않습니다.",
+      "videos": 0,
+      "viewport": [
+        1920,
+        940
+      ]
+    }
+  }
+]

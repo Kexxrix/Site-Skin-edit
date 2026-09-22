@@ -1,0 +1,46 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const site='E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site';
+const input='E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/input/aldebaran-frame-r1-package/ALDEBARAN_FRAME_R1';
+const read=p=>fs.readFileSync(path.join(site,p),'utf8');
+const write=(p,s)=>fs.writeFileSync(path.join(site,p),s);
+let page=read('app/page.tsx');
+function replace(a,b){if(!page.includes(a))throw Error(`Missing source: ${a.slice(0,80)}`);page=page.replace(a,b);}
+replace("import { BackToTop, HeightAccordion }", "import { HeightAccordion }");
+replace('<header className="topbar">','<header className="topbar" data-ab-surface="header">');
+replace('<a href="#live" className="brand" aria-label="MERCURY 스포츠 홈"><img className="brand-symbol" src="/branding/mercury-emblem.png" width="1138" height="1100" alt=""/><img className="brand-wordmark" src="/branding/mercury-wordmark.png" width="1798" height="526" alt="MERCURY"/></a>', '<a href="#live" className="brand ab-brand" aria-label="ALDEBARAN 스포츠 홈"><img className="ab-brand__emblem" src="/assets/branding/aldebaran-emblem.png" width="400" height="400" alt=""/><img className="ab-brand__wordmark" src="/assets/branding/aldebaran-wordmark.png" width="1101" height="120" alt="ALDEBARAN"/></a>');
+replace('<div className="noticebar">','<div className="noticebar" data-ab-surface="notice">');
+replace('<section className={`panel ${className}`}>','<section className={`panel ${className}`} data-ab-surface="panel">');
+replace('<div className="panel-heading">','<div className="panel-heading" data-ab-surface="raised">');
+replace('<button key={label} aria-pressed={active===label}', '<button key={label} data-ab-nav="" data-active={active===label} aria-pressed={active===label}');
+replace('<button key={item.id} aria-pressed={sport===item.id}', '<button key={item.id} data-ab-nav="" data-active={sport===item.id} aria-pressed={sport===item.id}');
+replace('<img src={src} alt={alt} style=', '<img src={src} alt={alt} data-ab-sport-icon={variant===\'menu\'||variant===\'sport\'?\'neutralized\':undefined} style=');
+page=page.replace(/<Button className="([^"]+)"/g,(_,cls)=>`<Button className="${cls}" data-ab-control="${cls.split(' ').includes('gold')?'primary':'secondary'}"`);
+page=page.replace(/<Input /g,'<Input data-ab-input="" ');
+page=page.replaceAll('<div className="search-box">','<div className="search-box" data-ab-input="">');
+page=page.replaceAll('<div className="stake-input">','<div className="stake-input" data-ab-input="">');
+page=page.replaceAll('<section className="support-panel">','<section className="support-panel" data-ab-surface="panel">');
+page=page.replaceAll('className="num"','className="num" data-ab-number=""');
+page=page.replaceAll('className="demo-dialog"','className="demo-dialog" data-ab-surface="panel"');
+page=page.replaceAll('MERCURY','ALDEBARAN');
+const start=page.indexOf('<main ref={centerRef}');
+const end=page.indexOf('<aside className="scroll-column right-column"',start);
+if(start<0||end<0)throw Error('Central boundaries missing');
+page=page.slice(0,start)+'<main id="live" ref={centerRef} className="scroll-column center-column" data-ab-surface="empty-center" aria-label="스포츠 콘텐츠" tabIndex={0}/></div>'+page.slice(end);
+write('app/page.tsx',page);
+write('app/demo-data.ts',read('app/demo-data.ts').replace("storageKey:'mercury-demo-r6-v1'","storageKey:'aldebaran-frame-r1-v1'"));
+write('app/layout.tsx',read('app/layout.tsx').replace("import './globals.css';", "import './globals.css';\nimport './aldebaran.tokens.css';\nimport './aldebaran.surfaces.css';\nimport './aldebaran-frame.css';").replaceAll('MERCURY','ALDEBARAN').replace("description: 'ALDEBARAN 스포츠 — 종목과 리그별 경기 일정, 대진, 배당을 확인하세요.'","description: 'ALDEBARAN 스포츠'").replace("'/favicon.svg'","'/assets/branding/aldebaran-emblem.png'").replace('<body>','<body className="aldebaran-site">'));
+for(const file of ['aldebaran.tokens.css','aldebaran.surfaces.css'])fs.copyFileSync(path.join(input,'styles',file),path.join(site,'app',file));
+fs.mkdirSync(path.join(site,'public/assets/branding'),{recursive:true});
+const logos={};
+for(const file of ['aldebaran-emblem.png','aldebaran-wordmark.png']){
+ const source=fs.readFileSync(path.join(input,'assets/branding',file));
+ fs.writeFileSync(path.join(site,'public/assets/branding',file),source);
+ const destination=fs.readFileSync(path.join(site,'public/assets/branding',file));
+ const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+ if(hash(source)!==hash(destination))throw Error('Logo copy mismatch');
+ logos[file]={sha256:hash(destination),bytes:destination.length,width:destination.readUInt32BE(16),height:destination.readUInt32BE(20)};
+}
+fs.writeFileSync(path.join(site,'../runs/r1/implementation/logo-copy.json'),JSON.stringify(logos,null,2));
+console.log(JSON.stringify({implemented:true,logos,centralChildren:0,storageKey:'aldebaran-frame-r1-v1'}));

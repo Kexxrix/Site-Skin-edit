@@ -1,0 +1,283 @@
+/* R6 왼쪽 레일 전용 시작 CSS. 현지 디자인 토큰/DOM에 맞춰 병합합니다.
+ * 루트만 추가해서 기존 레이아웃을 덮어쓰지 말고 대응 클래스도 연결하세요.
+ * 기존 레일 폭/높이/overflow와 페이지 컬럼은 현지 코드를 유지합니다.
+ */
+.sirius-left-r6 {
+  --sr6-bg: #09142d;
+  --sr6-surface: #101f3d;
+  --sr6-border: #2b3d5f;
+  --sr6-text: #f5f7fc;
+  --sr6-muted: #9caecb;
+  --sr6-gold-light: #fce1a4;
+  --sr6-gold-deep: #d7b96c;
+  --sr6-ink: #101a34;
+  --sr6-ui-font: "Pretendard Variable", Pretendard, sans-serif;
+  --sr6-numeric-font: din-condensed, "Arial Narrow", sans-serif;
+  font-family: var(--sr6-ui-font);
+  color: var(--sr6-text);
+  min-height: 0;
+}
+.sirius-left-r6 .sr6-section {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 12px;
+  border: 1px solid var(--sr6-border);
+  border-radius: 12px;
+  background: linear-gradient(160deg, #111f3c, var(--sr6-bg) 75%);
+}
+.sirius-left-r6 .sr6-service-heading,
+.sirius-left-r6 .sr6-search-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+.sirius-left-r6 .sr6-service-title {
+  margin: 0;
+  font: 600 16px/24px var(--sr6-ui-font);
+}
+.sirius-left-r6 .sr6-service-caption {
+  color: #c8b886;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .06em;
+}
+.sirius-left-r6 .sr6-service-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.sirius-left-r6 .sr6-action {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 0;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #9e8d62;
+  border-radius: 7px;
+  background: linear-gradient(#142543, #0a1630);
+  color: #f2ecd9;
+  font: 600 14px/1 var(--sr6-ui-font);
+  cursor: pointer;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+.sirius-left-r6 .sr6-action[data-variant="primary"] {
+  color: var(--sr6-ink);
+  background: linear-gradient(var(--sr6-gold-light), var(--sr6-gold-deep));
+  border-color: #ddc483;
+  box-shadow: inset 0 1px 0 #fff3c680;
+}
+.sirius-left-r6 .sr6-action:hover:not(:disabled) {
+  border-color: var(--sr6-gold-light);
+  box-shadow: inset 0 0 0 1px #fce1a433;
+}
+.sirius-left-r6 .sr6-action:disabled { opacity: .45; cursor: default; }
+.sirius-left-r6 .sr6-support {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 36px;
+  margin-top: 8px;
+  padding: 0 10px;
+  border: 1px solid #2b3d5f;
+  border-radius: 7px;
+  background: #0b1832;
+  color: #cdd8ed;
+  font: 500 13px/1 var(--sr6-ui-font);
+  text-align: left;
+  cursor: pointer;
+}
+.sirius-left-r6 .sr6-support-end { margin-left: auto; color: var(--sr6-muted); }
+.sirius-left-r6 .sr6-search-title {
+  margin: 0;
+  font: 600 18px/24px var(--sr6-ui-font);
+  letter-spacing: -.02em;
+}
+.sirius-left-r6 .sr6-reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 24px;
+  padding: 2px 0;
+  border: 0;
+  background: transparent;
+  color: var(--sr6-muted);
+  font: 500 12px/20px var(--sr6-ui-font);
+  cursor: pointer;
+}
+.sirius-left-r6 .sr6-search-field {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid #344767;
+  border-radius: 999px;
+  background: #071127;
+  color: var(--sr6-muted);
+}
+.sirius-left-r6 .sr6-search-field:focus-within {
+  border-color: var(--sr6-gold-deep);
+  box-shadow: 0 0 0 2px #d7b96c1c;
+}
+.sirius-left-r6 .sr6-search-icon { flex: 0 0 16px; width: 16px; height: 16px; }
+.sirius-left-r6 .sr6-search-input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--sr6-text);
+  font: 400 14px/1.4 var(--sr6-ui-font);
+}
+.sirius-left-r6 .sr6-search-input::placeholder { color: #8c9ebe; opacity: 1; }
+.sirius-left-r6 .sr6-sport-list { display: grid; gap: 3px; margin-top: 12px; }
+.sirius-left-r6 .sr6-sport {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 9px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: #c3cce0;
+  font: 500 15px/20px var(--sr6-ui-font);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+.sirius-left-r6 .sr6-sport[data-all="true"] {
+  height: 44px;
+  margin-bottom: 5px;
+  border-radius: 9px;
+  background: #13213c;
+}
+.sirius-left-r6 .sr6-sport:hover { background-color: #152644; }
+.sirius-left-r6 .sr6-sport[data-selected="true"] {
+  border-color: #d7b96c59;
+  background: linear-gradient(105deg, #203257, #12203c);
+  color: var(--sr6-gold-light);
+  font-weight: 600;
+}
+.sirius-left-r6 .sr6-sport-icon {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.sirius-left-r6 .sr6-sport-name { min-width: 0; white-space: nowrap; }
+.sirius-left-r6 .sr6-sport-count {
+  flex-shrink: 0;
+  min-width: 28px;
+  margin-left: auto;
+  color: #8d9fbf;
+  font: 400 17px/22px var(--sr6-numeric-font);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.sirius-left-r6 .sr6-sport[data-all="true"] .sr6-sport-count {
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #0b1730;
+  text-align: center;
+}
+.sirius-left-r6 .sr6-sport[data-selected="true"] .sr6-sport-count {
+  color: var(--sr6-gold-light);
+}
+.sirius-left-r6 .sr6-banner-stack {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  flex-shrink: 0;
+  width: 100%;
+}
+.sirius-left-r6 .sr6-banner {
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  background: #071127;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+}
+.sirius-left-r6 .sr6-banner-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: filter 140ms ease;
+}
+.sirius-left-r6 .sr6-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, #06102800 28%, #06102825 47%, #061028e8 100%);
+  pointer-events: none;
+}
+.sirius-left-r6 .sr6-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #d7b96c59;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.sirius-left-r6 .sr6-banner:hover::after { border-color: #e5cd91b3; }
+.sirius-left-r6 .sr6-banner:hover .sr6-banner-image { filter: brightness(1.035); }
+.sirius-left-r6 .sr6-banner-copy {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  display: grid;
+  gap: 2px;
+  pointer-events: none;
+  text-shadow: 0 1px 5px #050b1b80;
+}
+.sirius-left-r6 .sr6-banner-eyebrow {
+  color: var(--sr6-gold-light);
+  font: 600 10px/12px var(--sr6-ui-font);
+  letter-spacing: .07em;
+}
+.sirius-left-r6 .sr6-banner-title {
+  color: #fff;
+  font: 600 20px/25px var(--sr6-ui-font);
+  letter-spacing: -.025em;
+}
+.sirius-left-r6 .sr6-banner-description {
+  color: #ece8de;
+  font: 400 11px/15px var(--sr6-ui-font);
+}
+.sirius-left-r6 :is(.sr6-action, .sr6-support, .sr6-reset, .sr6-sport, .sr6-banner):focus-visible {
+  outline: 2px solid var(--sr6-gold-light);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sirius-left-r6 :is(.sr6-action, .sr6-sport, .sr6-banner-image) { transition: none; }
+}

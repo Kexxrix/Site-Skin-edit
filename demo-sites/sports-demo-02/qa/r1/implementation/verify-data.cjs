@@ -1,0 +1,22 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),Module=require('node:module');
+const root=path.resolve(__dirname,'../../../site'),old='E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-01/site';
+const ts=require(root+'/node_modules/typescript');
+const load=r=>{const filename=r+'/app/demo-data.ts',source=fs.readFileSync(filename,'utf8'),output=ts.transpileModule(source,{compilerOptions:{esModuleInterop:true,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,m={exports:{}};new Function('require','module','exports',output)(Module.createRequire(filename),m,m.exports);return m.exports;};
+const current=load(root),original=load(old),checks=[];
+function check(name,condition,details){checks.push({name,pass:!!condition,details});if(!condition)throw Error(name);}
+const sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+check('77 unique fixture IDs preserved',current.matches.length===77&&new Set(current.matches.map(m=>m.id)).size===77&&JSON.stringify(current.matches.map(m=>m.id).sort())===JSON.stringify(original.matches.map(m=>m.id).sort()));
+check('Section counts preserved',JSON.stringify(current.sections.map(s=>current.matches.filter(m=>m.section===s.id).length))==='[26,26,25]');
+check('Existing markets, picks, prices, locks and IDs preserved',current.matches.every(m=>JSON.stringify(m.markets)===JSON.stringify(original.matches.find(o=>o.id===m.id).markets)));
+check('Source states, scores and teams preserved',current.matches.every(m=>{const old=original.matches.find(o=>o.id===m.id);return ['state','completed','score','home','away','leagueKey','section'].every(k=>JSON.stringify(m[k])===JSON.stringify(old[k]));}));
+check('Separate SIRIUS storage key',current.DEMO.storageKey==='sirius-sports-r1-v1'&&current.DEMO.storageKey!==original.DEMO.storageKey);
+check('Lockfile unchanged',sha(root+'/package-lock.json')===sha(old+'/package-lock.json'));
+check('Existing font CSS and files preserved',sha(root+'/app/typography.css')===sha(old+'/app/typography.css')&&fs.readdirSync(root+'/public/fonts/pretendard-jp').every(f=>sha(root+'/public/fonts/pretendard-jp/'+f)===sha(old+'/public/fonts/pretendard-jp/'+f)));
+const assetPaths=new Set(current.matches.flatMap(m=>[m.home.logo,m.away.logo,m.leagueLogo,m.sportLogo]).concat(current.sportMenu.map(m=>m.logo).filter(Boolean)));
+check('Every referenced sports asset exists', [...assetPaths].every(p=>fs.existsSync(root+'/public'+p)),{paths:assetPaths.size});
+const one=current.matches.find(m=>m.markets[0].picks[0].price===1.84),two=current.matches.find(m=>m.markets[0].picks[0].price===1.56);
+const selection=[one,two].map(m=>({id:m.id+'-0-0',matchId:m.id,marketIndex:0,pickIndex:0}));
+check('Exact decimal odds/payout preserved',JSON.stringify(current.totalsFor(selection,10000))===JSON.stringify({odds:'2.870',potential:'28704'}));
+check('Stake validation preserved',!!current.validateStake('999',1000000).error&&!!current.validateStake('100001',1000000).error&&!!current.validateStake('1.5',1000000).error&&current.validateStake('10000',1000000).value===10000);
+check('New project ID only',JSON.parse(fs.readFileSync(root+'/.openai/hosting.json')).project_id==='appgprj_6aacb6c2a38881918bd8a324fa9c5b54');
+const report={checkedAt:new Date().toISOString(),checks,passed:checks.length};fs.writeFileSync(__dirname+'/data-checks.json',JSON.stringify(report,null,2));console.log(JSON.stringify({passed:checks.length,fixtures:77,sections:[26,26,25],assets:assetPaths.size}));

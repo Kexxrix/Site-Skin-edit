@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "stage": "initial-observation-only",
+  "auditor": {
+    "threadId": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+    "role": "MERCURY R6 independent quality auditor"
+  },
+  "observation": {
+    "firstMeasuredAt": "2026-09-17T12:00:49.953+09:00",
+    "completedAt": "2026-09-17T03:07:34.720Z",
+    "primary": {
+      "width": 1920,
+      "height": 940,
+      "dpr": 1,
+      "visualViewportScale": 1,
+      "cdpZoom": 1,
+      "condition": "explicit test viewport, not user monitor measurement"
+    },
+    "secondary": {
+      "width": 2560,
+      "height": 940,
+      "dpr": 1
+    },
+    "browser": "Chrome extension dedicated audit session",
+    "wogURL": "https://wog-1000.com/",
+    "mercuryURL": "https://mercury.kexxadrix.chatgpt.site/",
+    "version": {
+      "providedLabel": "public v3",
+      "providedSourceCommit": "76a2e2d5f8c443e25af832bd5e32754bb23c4ecd",
+      "providedDeploymentId": "appgdep_6aab48da5f688191bacf09342ad23a49",
+      "verification": "Public screen directly observed and matches supplied v3 feedback; source-to-deployment identity not independently attested by browser.",
+      "publicScripts": [
+        "https://mercury.kexxadrix.chatgpt.site/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+        "https://mercury.kexxadrix.chatgpt.site/_next/static/chunks/framework-D_rUT4EX.js",
+        "https://use.typekit.net/hyf2mwn.js",
+        "https://use.typekit.net/gig5kam.js",
+        "https://mercury.kexxadrix.chatgpt.site/_next/static/chunks/index-Dw6v7It6.js"
+      ]
+    }
+  },
+  "overall": {
+    "A": "수정 필요",
+    "B": "수정 필요",
+    "C": "수정 필요",
+    "fullR6AuditComplete": false,
+    "userDesignApproved": false
+  },
+  "wog": {
+    "directlyObserved": [
+      "전체 기본 화면과 중앙 스크롤 후 카드 목록",
+      "헤더 인플레이 hover",
+      "충전 빠른 서비스 hover",
+      "첫 경기 배당 hover와 mouse-down/up",
+      "축구 목록 펼침 후 스페인 하위 행 표시",
+      "우측 빈 슬립과 비활성 베팅 실행 버튼"
+    ],
+    "visualBaseline": [
+      "빠른 서비스의 동일 셀 간격과 금속 윗면/하단 경계가 통일됨; hover가 해당 버튼 내부에 집중됨.",
+      "동일 분류의 카드 세 개가 같은 높이와 점수/배당 기준선을 공유함.",
+      "팀과 상태/점수가 하나의 경기 바닥면에서 읽히고, 버튼은 배당 행에서 구분됨.",
+      "서비스, 검색, 종목 목록, 슬립 입력과 요약이 역할에 따라 분리됨."
+    ],
+    "limitations": [
+      "첫 경기 배당을 눌렀으나 선택/슬립 변화를 관찰하지 못함; WOG 기능 정상의 증거로 사용하지 않음.",
+      "WOG 팔레트, 레이아웃, 자산, 외형, 코드의 복제 근거로 사용하지 않음.",
+      "정지 캡처와 포인터 상태 조작으로 장시간 모션의 완성도를 통과시키지 않음."
+    ],
+    "evidence": [
+      "wog-initial.jpg",
+      "wog-service-hover-detail.jpg",
+      "wog-odds-hover.jpg",
+      "wog-odds-pressed.jpg",
+      "wog-odds-click-no-selection.jpg",
+      "wog-sport-expanded.jpg",
+      "wog-center-scrolled.jpg"
+    ]
+  },
+  "findings": [
+    {
+      "id": "I01",
+      "q": [
+        "Q01"
+      ],
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "미확인",
+      "location": "헤더·대표 카드·나머지 카드·좌우 패널",
+      "observation": "대표 카드 바닥은 rgb(18,21,26) 청회색이며 기존 카드와 패널은 갈색 그라데이션. 전체가 중립 블랙/그레이로 통일되지 않음.",
+      "direction": "기본 면과 기본 버튼·그림자를 중립 계열로 일관되게 정리하고 골드/아이보리를 역할별 강조로 사용.",
+      "evidence": [
+        "mercury-v3-initial-1920x940.jpg",
+        "measurements.json"
+      ],
+      "recheck": "R6 전체 검수판 대기"
+    },
+    {
+      "id": "I02",
+      "q": [
+        "Q02"
+      ],
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "미확인",
+      "location": "헤더 브랜드와 좌측 상단",
+      "observation": "헤더에는 레터링만 있고 원형 심볼이 좌측 독립 패널을 차지함.",
+      "direction": "원형 심볼을 레터링 바로 왼쪽에 원본 비율로 결합하고 좌측 전용 패널을 제거.",
+      "evidence": [
+        "mercury-v3-initial-1920x940.jpg"
+      ],
+      "recheck": "대기"
+    },
+    {
+      "id": "I03",
+      "q": [
+        "Q03"
+      ],
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "미확인",
+      "location": "실시간 스포츠 활성 헤더 탭 하단",
+      "observation": "탭 bottom=66, 헤더 2px 레일은 y66~68. 탭에 별도 하단 inset 2px 밝은 반사가 있어 공통 레일과 중복된 밝은 띠로 읽힘. 큰 틈보다 재질/중복 반사가 문제.",
+      "direction": "활성 탭 내부 하단 반사와 공통 레일을 한 기준으로 통일. 좌상우 윤곽과 실제 레일의 접합을 상세 캡처로 재확인.",
+      "evidence": [
+        "mercury-v3-header-junction.jpg",
+        "measurements.json"
+      ],
+      "recheck": "대기"
+    },
+    {
+      "id": "I04",
+      "q": [
+        "Q04"
+      ],
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "미확인",
+      "location": "첫 MLB 카드 점수와 마켓 설명",
+      "observation": "FINAL·스코어·HOME/AWAY가 독립 테두리/어두운 박스 안에 있고, 마켓 설명도 배당 버튼과 유사한 칸으로 처리됨. WOG에서 관찰한 한 면 위 경기 정보보다 비클릭 정보가 조작부처럼 분절됨.",
+      "direction": "점수/상태와 마켓 설명의 별도 면·테두리·깊이를 없애고 팀과 같은 카드 면 위에 정렬. 배당 버튼에 조작 깊이를 집중.",
+      "evidence": [
+        "mercury-v3-card-detail.jpg",
+        "wog-initial.jpg"
+      ],
+      "recheck": "대기"
+    },
+    {
+      "id": "I05",
+      "q": [
+        "Q05",
+        "Q08"
+      ],
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "미확인",
+      "location": "세 분류 카드 전체",
+      "observation": "첫 카드 268px와 기존 카드 450px 혼재. 분류별 3/1/1개이며 후반 두 분류 오른쪽 두 칸은 공백. 4개 가상 대진과 알파벳 원형 배지가 남아 있음.",
+      "direction": "세 분류 모두 실제 자료/로고로 일관된 카드 높이와 경기 정보 구조를 완성. 기본 화면은 각 세 경기의 밀도를 확보.",
+      "evidence": [
+        "mercury-v3-initial-1920x940.jpg",
+        "mercury-v3-center-scrolled.jpg",
+        "measurements.json",
+        "wog-center-scrolled.jpg"
+      ],
+      "recheck": "대기"
+    },
+    {
+      "id": "I06",
+      "q": [
+        "Q06"
+      ],
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "미확인",
+      "location": "빠른 서비스·종목·계정·슬립",
+      "observation": "갈색 프레임 패널이 반복되며 종목은 동일 원형 선 아이콘이 반복됨. 우측 계정 높이 220.5px, 빈 슬립 높이 547px로 계정/입력/안내 위계가 과도하게 길어짐. 서비스의 충전 강조와 환전 보조 구분 자체는 있음.",
+      "direction": "기능별 표면/제목/행/입력/요약의 역할을 구분하고 종목 원본 이미지 적용. 계정과 빈 슬립을 압축하되 모든 컨트롤 접근성을 유지.",
+      "evidence": [
+        "mercury-v3-initial-1920x940.jpg",
+        "wog-service-hover-detail.jpg",
+        "measurements.json"
+      ],
+      "recheck": "대기"
+    },
+    {
+      "id": "I07",
+      "q": [
+        "Q07"
+      ],
+      "A": "수정 필요",
+      "B": "수정 필요",
+      "C": "통과(관찰한 대표 선택 상태만)",
+      "location": "첫 MLB 홈 1.84 배당",
+      "observation": "hover rect y287→mouse-down y288로 1px 이동. 눌림 내부 음영은 존재. selected 골드 면/체크, 미선택 버튼의 밝은 focus 윤곽, 잠금 비활성은 실제 확인됨.",
+      "direction": "눌림 때 위치/크기는 유지하고 내부 음영으로만 상태를 표현. 모든 대표 서비스·헤더·배당에 같은 검사를 확장.",
+      "evidence": [
+        "mercury-v3-odds-hover.jpg",
+        "mercury-v3-odds-pressed.jpg",
+        "mercury-v3-odds-selected.jpg",
+        "mercury-v3-odds-focus.jpg",
+        "mercury-v3-locked-click.jpg",
+        "measurements.json"
+      ],
+      "recheck": "대기"
+    },
+    {
+      "id": "I08",
+      "q": [
+        "Q10"
+      ],
+      "A": "수정 필요",
+      "B": "미확인",
+      "C": "수정 필요",
+      "location": "검색·종목 필터·계정·금액",
+      "observation": "검색과 금액 입력/빠른 추가는 disabled. 축구 클릭은 '종목 필터는 현재 체험에서 제공하지 않습니다', 로그인 클릭은 '계정 기능은 현재 체험에서 제공하지 않습니다' 안내만 표시. 선택 후에도 금액 입력은 비활성.",
+      "direction": "R6 로컬 데모 검색/필터/가상 계정/금액/계산/실행·내역을 구현하고 실제 거래 없이 시험 가능하게 완성.",
+      "evidence": [
+        "mercury-v3-sport-filter-attempt.jpg",
+        "mercury-v3-login-response.jpg",
+        "mercury-v3-odds-selected.jpg",
+        "measurements.json"
+      ],
+      "recheck": "대기"
+    }
+  ],
+  "preservedChecks": [
+    {
+      "q": "Q07/Q10",
+      "result": "대표 경기 선택 1.84→동일 경기 원정 2.10 교체→잠금 클릭 시 불변→재클릭 해제 확인",
+      "scope": "대표 MLB 경기만"
+    },
+    {
+      "q": "Q09",
+      "result": "1920×940에서 열 폭 272/1280/320, 본문 816. 2560×940에서 헤더 x320 폭1920와 동일 카드 폭 약418.67 유지.",
+      "scope": "초기 v3 측정"
+    },
+    {
+      "q": "Q09",
+      "result": "중앙 wheel 스크롤 top0→840 동안 좌우 top0 유지, 스크롤바 노출 없음.",
+      "scope": "좌·우 각각 실제 wheel/keyboard 전체 검사는 이번 초기 단계에서 하지 않음."
+    },
+    {
+      "q": "Q08",
+      "result": "관찰한 공개 페이지 이미지 naturalWidth/complete 오류 없음.",
+      "scope": "실제 모든 폰트 글리프·weight 및 원본 hash 대응은 미확인"
+    }
+  ],
+  "unverified": [
+    "전체 R6 구현본 Q01~Q10 감사 및 수정본 재확인",
+    "전체 버튼군의 hover/pressed/selected/disabled/focus와 정상속도 모션",
+    "실제 렌더 글리프·weight 증명",
+    "좌우 열 각각 키보드/휠 스크롤",
+    "데모 금액 유효성·MAX·계산·내역(현재 비활성)",
+    "공개 배포와 소스 commit의 독립적 일치 검증",
+    "사용자 디자인 승인"
+  ],
+  "evidenceHandling": {
+    "onlyJSONAndOriginalScreenshots": true,
+    "sourceOrSpecOrDeploymentEdited": false,
+    "sitesConnectorCalled": false,
+    "screenshotFormat": "JPEG as returned by browser tool; no resizing or recompression",
+    "excludedEvidence": [
+      {
+        "file": "mercury-v3-wide-transition-stale-1920x940.jpg",
+        "reason": "Viewport changed to2560 in DOM but capture remained prior1920 surface; excluded from width proof. Replaced by mercury-v3-2560x940-verified.jpg (native2560x940)."
+      }
+    ],
+    "rawMeasurements": "measurements.json",
+    "captureManifest": "capture-manifest.json"
+  }
+}

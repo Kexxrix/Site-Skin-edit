@@ -1,0 +1,97 @@
+{
+  "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "url": "https://sirius.kexxadrix.chatgpt.site",
+  "sourceCommit": "19a83512decc4971540f59192735ad2e449ba78b",
+  "version": {
+    "id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_eea7eb8b67748191ae1ab1117596a961",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "version_number": 6,
+    "source": {
+      "commit_sha": "19a83512decc4971540f59192735ad2e449ba78b"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000738c81f589712faf8e68e9d7",
+      "content_hash": "sha256:d11fda95b1d10d83f26c6958c922f1688685632790c8e6d7ee6a6e8bae8e2c02",
+      "size_bytes": 38133760,
+      "file_count": 261
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6aad13637cf0819190d105ee12e9b348",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "title": "SIRIUS",
+    "version_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_eea7eb8b67748191ae1ab1117596a961",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://sirius.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aacb6c2a38881918bd8a324fa9c5b54",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-18T10:33:32.018156+00:00"
+  },
+  "implementation": "../implementation/changes.json",
+  "localObservation": "../implementation/basic-observation.json",
+  "screenshot": "sirius-r6-default-1920x940.jpg",
+  "publicObservation": "basic-observation.json",
+  "operatingMarkdownOwner": "01a0a8e7-acda-7ab0-a42a-44beb1b41e50",
+  "next": "Await user feedback; no right-rail work",
+  "finalSourceStatus": "clean",
+  "capture": {
+    "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/runs/r6/public/sirius-r6-default-1920x940.jpg",
+    "bytes": 223359,
+    "sha256": "caacfaddd75141dfbd2b026cbb4ea5a382af3b44209bb61fece500021ff2571c",
+    "format": "JPEG",
+    "dimensions": [
+      1920,
+      940
+    ]
+  },
+  "cleanup": {
+    "ownedPreviewPort5287": "stopped",
+    "workerCache": "moved outside artifact into implementation/preview-worker-cache",
+    "viewport": "reset",
+    "publicTab": "retained",
+    "otherServers": "not touched"
+  },
+  "publicBasicObservation": {
+    "url": "https://sirius.kexxadrix.chatgpt.site/",
+    "viewport": [
+      1920,
+      940
+    ],
+    "method": "Native accessibility tree and rendered PUBLIC screenshot",
+    "bannerNames": [
+      {
+        "name": "슬롯 게임 열기",
+        "observed": true
+      },
+      {
+        "name": "라이브 카지노 열기",
+        "observed": true
+      },
+      {
+        "name": "이벤트 열기",
+        "observed": true
+      }
+    ],
+    "defaultAll77": true,
+    "orderConfirmed": "quick service, 3 banners, search and sports",
+    "visual": "All 3 designated photos rendered; face areas visible above bottom-left copy; service restyle and capsule search visible; header/center/right retain prior layout.",
+    "loadingNote": "Casino/events lazy images were pending in first capture and visibly loaded in final capture.",
+    "measurementBoundary": "Dimensions and actions measured locally; PUBLIC basic rendered observation only.",
+    "remaining": "No issue observed in requested basic checks; user visual feedback pending."
+  },
+  "changedFiles": [
+    "app/page.tsx",
+    "app/layout.tsx",
+    "app/sirius-left-banners.tsx",
+    "app/sirius-left-rail.css",
+    "public/banners/sirius-r6/slots.png",
+    "public/banners/sirius-r6/casino.png",
+    "public/banners/sirius-r6/events.png"
+  ]
+}

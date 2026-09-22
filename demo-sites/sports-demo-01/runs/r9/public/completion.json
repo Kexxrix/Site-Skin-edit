@@ -1,0 +1,77 @@
+{
+  "status": "R9 공개 반영 / 사용자 피드백 대기",
+  "url": "https://mercury.kexxadrix.chatgpt.site",
+  "projectId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+  "version": 9,
+  "versionId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_6d96e4e250d8819199b109ed50dbc0a5",
+  "commit": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+  "deploymentId": "appgdep_6aacf25b1d4081919370dcd266e580e7",
+  "deploymentStatus": "succeeded",
+  "deployedAt": "2026-09-18T08:12:28.292721+00:00",
+  "audience": "existing public unchanged",
+  "changedFiles": [
+    "app/page.tsx",
+    "app/globals.css",
+    "app/match-motion.tsx"
+  ],
+  "changes": "../implementation/changes.json",
+  "localObservation": "../implementation/basic-observation.json",
+  "publicObservation": "basic-observation.json",
+  "capture": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-01\\runs\\r9\\public\\mercury-r9-default-1920x940.jpg",
+    "bytes": 219778,
+    "sha256": "CD2A5A6B017969F66B0690E8A08E3ED8AF04C01E88E0FCC86B59ECFC33337781",
+    "renderedArticles": 18,
+    "console": [],
+    "previewListeners": []
+  },
+  "archive": {
+    "path": "mercury-motion-r9.tar.gz",
+    "bytes": 24753537,
+    "sha256": "C929EC678B84DFFA1CB6F7619083D089A33CD9EA67F094E04AF211296A4F95CE",
+    "entries": 301,
+    "storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000055bc8206a6dbc92af49ee839",
+      "content_hash": "sha256:1443440435f96a4026392258ab38763be09d0fd205d1934c376285b59e95f784",
+      "size_bytes": 26552320,
+      "file_count": 248
+    }
+  },
+  "reference": {
+    "project": "sports-demo-02/site",
+    "head": "0bdff8e9d67df19e4ae004e9ceb79715143fadc6",
+    "files": [
+      "app/page.tsx",
+      "app/match-motion.tsx",
+      "app/match-list.css"
+    ],
+    "motionModuleCopiedExactly": true,
+    "sourceAndCopySha256": "727E3DFD455F6232D18FD8B22A1A5E576930E1CD6675AC57BE4AFA7F50A17100"
+  },
+  "preservation": {
+    "siriusHeadAfter": "0bdff8e9d67df19e4ae004e9ceb79715143fadc6",
+    "siriusGitStatusAfter": [],
+    "siriusDeployments": "none requested",
+    "mercuryGitStatusAfter": [
+      "?? tsconfig.tsbuildinfo"
+    ],
+    "existingTsbuildinfoSha256": "CDFB9B8DA2935431333BCBEF72742BFC1B8CA54AFC857B2131B1B292A324AFB7",
+    "dataAssetsFontsDependencies": "unchanged by source commit",
+    "otherProjectsAndPort3000": "not modified"
+  },
+  "cleanup": {
+    "temporaryServer5287": "stopped",
+    "localCache": "../implementation/local-preview-cache",
+    "browserViewport": "reset",
+    "publicTab": "3 retained",
+    "credential": "cleared from execution store"
+  },
+  "remaining": [
+    "No implementation error found in the requested short checks.",
+    "Public screenshot and accessibility snapshot displayed R9; DOM evaluate bridge did not expose application nodes, so public computed-style measurements are not claimed.",
+    "Reduced-motion and input cancellation were preserved in source but not separately exercised.",
+    "Design acceptance remains with the user."
+  ],
+  "independentQA": "사용자 지시로 미실시"
+}

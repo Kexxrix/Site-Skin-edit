@@ -1,0 +1,227 @@
+{
+  "audit": "SIRIUS R1 independent full local audit",
+  "auditorThread": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "sourceId": "0c8f4e1c9bf30f8768319e4d4aa5c7360e125ab1047d1be39321bb476a379811",
+  "commit": "c81d5e1e57d7bbe0fe1aa42d2e5531a78a371d67",
+  "url": "http://127.0.0.1:5287/",
+  "observedDate": "2026-09-18",
+  "initialObservedAt": "2026-09-18T04:14:07.858Z",
+  "endObservedAt": "2026-09-18T13:32:46.4475297+09:00",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 940,
+      "scale": 1,
+      "dpr": 1
+    },
+    {
+      "width": 2560,
+      "height": 940,
+      "scale": 1,
+      "dpr": 1
+    }
+  ],
+  "verdict": "CORRECTION_REQUIRED_Q07; Q12_PENDING_PUBLIC_DEPLOYMENT",
+  "findings": [
+    {
+      "location": "Final selection confirmation dialog, app/page.tsx confirm-picks",
+      "expected": "Final confirmation preserves selection threshold and rule, with handicap home/away line unambiguous.",
+      "recheck": "Pending revised source and production URL",
+      "evidence": [
+        "ou-confirmation.json",
+        "ou-confirmation-original.png"
+      ],
+      "priority": 2,
+      "id": "Q07-P2-01",
+      "actual": "Confirmation shows over/under - under at1.87 but omits8.5 and settlement rule. Row and slip contain8.5 and extra innings included.",
+      "status": "OPEN_FIX_PREPARED_BY_IMPLEMENTER",
+      "trigger": "Select Tampa Bay under8.5 at1.87, local login, valid stake10000, open Bet",
+      "direction": "Append market.line for total market only and display market.rule for all confirmation picks. Do not duplicate handicap home market line over the away pick line."
+    }
+  ],
+  "checks": [
+    {
+      "id": "Q01",
+      "evidence": [
+        "source-before.json",
+        "source-after.json",
+        "separation-data.json",
+        "asset-data-preservation.json"
+      ],
+      "finding": "276manifest files match before/after. Separate project ID appgprj_6aacb6c2a38881918bd8a324fa9c5b54; original MERCURY273file baseline has no differences at audit read. Root symlink check found none; new storage namespace sirius-sports-r1-v1. Public independence belongs to Q12.",
+      "result": "PASS_LOCAL_SEPARATION"
+    },
+    {
+      "id": "Q02",
+      "evidence": [
+        "initial-1920-original.png",
+        "all-expanded-central-original.png",
+        "soccer-filter-original.png",
+        "all-77-rows.json"
+      ],
+      "finding": "Continuous full-width rows grouped by league. Shared league-level market headers. Flat team/time/score information distinct from action buttons. No3-column card layout.",
+      "result": "PASS"
+    },
+    {
+      "id": "Q03",
+      "evidence": [
+        "all-77-rows.json",
+        "all-row-data-checks.json",
+        "initial-1920-original.png",
+        "soccer-filter-original.png"
+      ],
+      "finding": "All77rows are1256x88, common96/324/264/228/228/76columns.2-way and3-way inner cells remain aligned; score shares each team line. All actual names fit and preserve full-name titles, so forced overflow case is not applicable to observed dataset.",
+      "result": "PASS_CURRENT_DATA"
+    },
+    {
+      "id": "Q04",
+      "evidence": [
+        "initial-1920-original.png",
+        "initial-2560-original.png",
+        "style-brand-font-resources.json",
+        "odds-states.json"
+      ],
+      "finding": "Deep blue dominant surfaces throughout, white text, champagne gold highlights. Gold selected state remains during hover. No residual outer black MERCURY skin in audited surfaces.",
+      "result": "PASS"
+    },
+    {
+      "id": "Q05",
+      "evidence": [
+        "asset-data-preservation.json",
+        "style-brand-font-resources.json",
+        "initial-1920.json",
+        "initial-1920-original.png"
+      ],
+      "finding": "Supplied symbol and wordmark plus8PNG sport icons are SHA-identical. Symbol36x36 left of wordmark; wordmark CSS viewport excludes only transparent bottom. Visible star/orbits and header margins preserved. Current accepted league/team presentation not re-litigated.",
+      "result": "PASS"
+    },
+    {
+      "id": "Q06",
+      "evidence": [
+        "expansion-sequence.json",
+        "all-77-rows.json",
+        "search-filter.json",
+        "not-yet-loaded-search.json",
+        "collapsed-match-search.json",
+        "after-refresh.json"
+      ],
+      "finding": "Actual77unique IDs,26/26/25. Eachsection6->12->18->24->26/26/25, correct remaining counts and independent changes. Collapsed group appends eligible rows and retains selection. Hidden/not-yet-loaded fixture and league searches work; filter/reset returns6 each; refresh returns6 each.",
+      "result": "PASS"
+    },
+    {
+      "id": "Q07",
+      "evidence": [
+        "selection-and-login.json",
+        "stake-validation.json",
+        "quick-amounts.json",
+        "three-way-and-removal.json",
+        "odds-states.json",
+        "ou-confirmation.json",
+        "local-receipt.json",
+        "history-created.json",
+        "history-after-refresh.json",
+        "charge-complete.json",
+        "logged-out-cleanup.json"
+      ],
+      "finding": "Selection/replacement/reclick/lock/removal,2/3-way mappings, exact calculation, invalid amount guards, local login/confirmation/receipt/history/refresh/charge/logout passed. Confirmation threshold/rule omission is the single open P2 finding.1.84x1.56=2.8704 -> display2.870 and stake10000 payout28704. Local receipt tested1.56x1.87=2.9172 -> display2.917 payout29172.",
+      "result": "CORRECTION_REQUIRED"
+    },
+    {
+      "id": "Q08",
+      "evidence": [
+        "odds-states.json",
+        "selected-and-keyboard-focus-original.png",
+        "selected-held-settled-original.png",
+        "reduced-motion.json"
+      ],
+      "finding": "Actual mouse hover/held/release and keyboardTab show distinct states, stable rect and no transform movement. Selected hover retains dark text/gold/check. Pressed settled state adds inset shadow. Disabled real click produces no selection. Reduced motion disables live animation. Immediate transition snapshots are diagnostic only; settled observations decide verdict.",
+      "result": "PASS"
+    },
+    {
+      "id": "Q09",
+      "evidence": [
+        "initial-1920-original.png",
+        "both-rails-bottom-original.jpg",
+        "banner-layers.json",
+        "left-banner-action.json",
+        "right-banner-action.json",
+        "charge-dialog-original.png",
+        "withdraw-dialog-original.png",
+        "support-dialog-original.png",
+        "notice-dialog-original.png",
+        "info-menu-dialogs.json",
+        "guide-picks.json",
+        "guide-calculation.json",
+        "history-created-original.png"
+      ],
+      "finding": "Servicebuttons119x36 with16pxicons. Header,rails,input,slip,all existing popup families and below-fold banners share blue/gold design. Banner photos/copy/CTA/frame are separate DOM layers with faces clear. Banner/menu/guide actions connect. No visible oldbrand or prohibited developer exposition observed.",
+      "result": "PASS"
+    },
+    {
+      "id": "Q10",
+      "evidence": [
+        "initial-1920.json",
+        "initial-2560.json",
+        "initial-2560-original.png",
+        "independent-scroll.json",
+        "actual-platform-fonts.json",
+        "font-loading.json"
+      ],
+      "finding": "1920layout header68,workspace top112,height816,columns272/1280/320.2560shell stays1920 atx320 with samecolumns. Eachcolumn keyboard/wheel scroll changes independently; hidden scrollbars. Native font glyphs identify PretendardJP and DINCondensedWeb, Omnigothic loaded plus custom OTS-rendered glyphs for its heading. NoJapanese content: Heisei visual role N/A.",
+      "result": "PASS"
+    },
+    {
+      "id": "Q11",
+      "evidence": [
+        "progress-source-proof.json",
+        "all-row-data-checks.json",
+        "asset-data-preservation.json"
+      ],
+      "finding": "All77rendered names/states/scores match preserved records with documented snapshot overlay. Three archival in-progress snapshots match sourceSHA,playID,inning,score,wallclock; originaleventpost, currentFeedfalse, stoppedSnapshottrue explicitly retained internally. No invented time/score changes. Three similar7thinnings originate in selected sourceplays.",
+      "result": "PASS_STATIC_PROVENANCE"
+    },
+    {
+      "id": "Q12",
+      "evidence": [],
+      "finding": "Await new SIRIUS deployment. Will directly open and independently verify public URL after correction.",
+      "result": "NOT_EXECUTED"
+    }
+  ],
+  "referenceObservation": {
+    "priorMercuryPassInherited": false,
+    "wogDirectObserved": true,
+    "evidence": "../initial-20260918-125720/reference-audit.json",
+    "referencesRoles": "bwin central hierarchy; Asian market columns; WilliamHill palette; WOG finish only",
+    "completed": true
+  },
+  "health": {
+    "consoleWarningOrErrorCount": 0,
+    "cachedImages": "Two resource entries decoded0 but HTTP200 and actual natural dimensions confirmed",
+    "rawCdpEventBuffer": "Truncated after navigation; not used to claim complete transport-log coverage",
+    "navigationStatus": 200,
+    "observedResourceHttp400PlusCount": 0,
+    "resourceTimingEntriesAfterRefresh": 84,
+    "brokenImageCountAll77": 0
+  },
+  "toolNotes": [
+    "A few Playwright dialog clicks timed out; current AX readback and native AX click completed correctly. These are not counted as app failures.",
+    "Two later CDP screenshots timed out; original browser screenshot captured instead and saved without edits.",
+    "Early immediate scroll reads preceded animation settling; final labeled settled snapshots demonstrate independent movement."
+  ],
+  "sourceMutationsByAuditor": [],
+  "outputBoundary": "qa/r1/audit/full-0c8f4e1c: JSON and original screenshots only",
+  "cleanup": {
+    "ownLocalAuditTabClosed": true,
+    "testSelectionsEmpty": true,
+    "balanceRestored": 1000000,
+    "reducedMotionOverrideCleared": true,
+    "localTestHistoryRecordsPreserved": 1,
+    "loggedOut": true,
+    "viewportOverrideReset": true
+  },
+  "awaiting": [
+    "Minimal Q07 confirmation information fix",
+    "Focused correction recheck",
+    "Separate public Q12 audit"
+  ]
+}

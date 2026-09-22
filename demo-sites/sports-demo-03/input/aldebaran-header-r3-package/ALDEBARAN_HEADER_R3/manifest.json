@@ -1,0 +1,100 @@
+{
+  "package": "ALDEBARAN_HEADER_R3",
+  "date": "2026-09-21",
+  "purpose": "implementation handoff for header alignment corrections",
+  "status": "prepared, not applied to actual app",
+  "supersedes": "conflicting header layout rules in ALDEBARAN_HEADER_R2; preserves unrelated approved behavior and actual execution history",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 3108,
+      "sha256": "4a20e63b4c28b70120ba28e1d00153b62ce71b04acebd90e87789238a91eb50c"
+    },
+    {
+      "path": "DECISIONS.md",
+      "size_bytes": 1790,
+      "sha256": "695929a3c47d816fc8ec090a9d856e7c9cc36a50545fef0eb8176299a65baa04"
+    },
+    {
+      "path": "DESIGN_SPEC.md",
+      "size_bytes": 7496,
+      "sha256": "d50d35e8c43168f8dcf164861c6c03f506ae89bacb426556f1d9953dd485a7d9"
+    },
+    {
+      "path": "START_HERE.txt",
+      "size_bytes": 4175,
+      "sha256": "e2376a6043a173ac992567fa4685d8d6eb0f334864a1cca21bf4ba64997e80d8"
+    },
+    {
+      "path": "STATE.md",
+      "size_bytes": 3777,
+      "sha256": "35f2b8efc629a893c630408eed07c312210c3dcfdb9179fc8cc7d28128441103"
+    },
+    {
+      "path": "assets/asset-map.json",
+      "size_bytes": 2449,
+      "sha256": "7afb5f1f5049439b26bd456f0c5588925ea28034ef7c2beed90294f0bad6ccb0"
+    },
+    {
+      "path": "assets/branding/aldebaran-wordmark.png",
+      "size_bytes": 189173,
+      "sha256": "7f028493deee645c26ab2a71a5cc226ee009ff214a3397fdaae9c7ac4bfb10fa"
+    },
+    {
+      "path": "implementation/AldebaranHeaderR3.tsx",
+      "size_bytes": 1805,
+      "sha256": "7ea2ab957a6cde78b0563ed78a22d4a7b597efd2f64bdcf9e9b7f1fefcde5a23"
+    },
+    {
+      "path": "implementation/integration-map.json",
+      "size_bytes": 5219,
+      "sha256": "7f9ab01ebfb6b389ab6c2dce50933738713cd2c9d9433f3e9851959559df067b"
+    },
+    {
+      "path": "references/01-r2-header-before.png",
+      "size_bytes": 29501,
+      "sha256": "c93255fb22174e12fc9ddb2dcb35de6e52434783664fca9c6ebd797a556e049e"
+    },
+    {
+      "path": "references/02-left-rail-alignment.png",
+      "size_bytes": 24464,
+      "sha256": "3524ce4acd0820c78f2e9384059e80c8a2d887f7416bd8933aa938c707fc1de4"
+    },
+    {
+      "path": "references/03-right-before.png",
+      "size_bytes": 4556,
+      "sha256": "52c9644eb42431f4b1e56812e8569ca2594b2bb394adc0fc3355392f0aad7ad2"
+    },
+    {
+      "path": "references/04-right-placement-target.png",
+      "size_bytes": 31431,
+      "sha256": "e5d26b37a704408a54b704718d54c110822c6edff7fbc401bd8c6b14d86f4273"
+    },
+    {
+      "path": "references/05-body-grid-guide.png",
+      "size_bytes": 224369,
+      "sha256": "9ef40b4086a2f02f87e64047f02478c08febed4aae14da6efade5ae119dc68f8"
+    },
+    {
+      "path": "styles/aldebaran-header-r3.css",
+      "size_bytes": 6005,
+      "sha256": "8e210342cede917bd4a7af7e58788263c77259ac69c5cbbe6c9fc8b297e963e8"
+    }
+  ],
+  "checks": {
+    "json_parse": "passed",
+    "included_file_paths": "passed",
+    "original_image_bytes_and_hashes": "passed (6 files)",
+    "reference_geometry_arithmetic": "passed",
+    "typescript_or_css_parser": "not run; parsers unavailable in this preparation workspace",
+    "actual_app_build": "not run; actual Windows source not edited",
+    "browser_render_of_example": "not run",
+    "deployment": "not run",
+    "independent_qa_or_jev": "not run, excluded by user workflow"
+  },
+  "limitations": [
+    "CSS and TSX are integration references; adapt to current actual app.",
+    "Pixel dimensions are starting values, not user-approved final dimensions.",
+    "Merge document deltas into latest local records, do not overwrite newer history."
+  ]
+}

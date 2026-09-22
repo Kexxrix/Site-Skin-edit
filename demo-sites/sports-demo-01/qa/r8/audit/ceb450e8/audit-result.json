@@ -1,0 +1,212 @@
+{
+  "auditVersion": "MERCURY R8 independent production-preview audit",
+  "status": "complete_pass",
+  "auditorTask": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "url": "http://127.0.0.1:5277/",
+  "sourceId": "ceb450e890ee845d811c719d597eae0c80e0e6185f9013c19ba2f7c2574715e3",
+  "baseCommit": "8b821074dffb0c51b5119210e6ac082177928b59",
+  "start": "2026-09-17T19:33:38.6996963+09:00",
+  "end": "2026-09-17T19:57:37.234461+09:00",
+  "scope": "R8-00 through R8-05 audit portion and Q01-Q11; production preview only. Implementation and public deployment remain implementer-owned.",
+  "verdicts": {
+    "A_specification": "PASS against current R8 working specification and documented D27 default",
+    "B_finishComparedWithDirectWOGObservation": "PASS for hierarchy, compact horizontal service controls, restrained metallic material, photographic banner readability and independent states; no visual-copy claim",
+    "C_functions": "PASS within the existing local simulated scope using direct R8 impact tests and explicitly mapped unchanged R7 evidence",
+    "userDesignApproval": "Separate; not claimed",
+    "publicDeployment": "Not performed or audited by this task; no claim that public v7 is live"
+  },
+  "R8": {
+    "R8-00": {
+      "status": "accepted_scope_preserved",
+      "detail": "Existing NHL/league logo size and mixed team naming accepted by user; assets/presentation unchanged and O01/O02 not reopened."
+    },
+    "R8-01": {
+      "status": "pass",
+      "detail": "First three cards show authentic top-of-seventh-inning home/away scores 1:1,6:3,5:1 and LIVE. Fresh ESPN responses independently matched stored raw hashes; event/play/time/team identity checked. D27 explicitly allows stopped historical MLB snapshots and no second sport. No fabricated score, current-feed or replay claim."
+    },
+    "R8-02": {
+      "status": "pass",
+      "detail": "Charge/withdraw119x36, horizontal16px icon +6px gap +label. Actual dialogs and focused/held state verified with unchanged box and inset pressure."
+    },
+    "R8-03": {
+      "status": "pass",
+      "detail": "All eight supplied256RGBA sport PNGs copied byte-for-byte. Eight menu mappings including zero-count sports and77 cards checked; 24px menu/22px card display with no filter or circular crop. Existing team/league files preserved."
+    },
+    "R8-04": {
+      "status": "pass",
+      "detail": "Left272x240 and right320x220 reuse supplied1672x941 photo. Right-side face unobscured, DOMcopy/realCTA/shade/frame separate and variables independent. Left/right crop40%/30%, CTAheader parity verified. ActualCTA36px;34px was a starting default, no blocking mismatch."
+    },
+    "R8-05": {
+      "status": "audit_complete_deployment_pending",
+      "detail": "Independent audit complete with no open findings. Unchanged evidence reused by named criteria. Frozen production source may proceed through implementer-owned same-address deployment and public smoke verification."
+    }
+  },
+  "Q": {
+    "Q01": {
+      "status": "pass",
+      "evidence": [
+        "01-initial-1920.jpg",
+        "16-wide-2560-original.png",
+        "17-banners-1920-original.png"
+      ],
+      "detail": "Neutral black planes, controlled gold edges/buttons, ivory information; no new tinted base panels."
+    },
+    "Q02": {
+      "status": "pass",
+      "evidence": [
+        "initial-geometry.json",
+        "16-wide-2560-original.png",
+        "reused-evidence.json"
+      ],
+      "detail": "Emblem36x36 and wordmark144x42 at original aspect fit; original files/spacing retained."
+    },
+    "Q03": {
+      "status": "pass",
+      "evidence": [
+        "initial-geometry.json",
+        "16-wide-2560-original.png"
+      ],
+      "detail": "Active tab ends at header rail y66,2px rail; section title continuous2px seam."
+    },
+    "Q04": {
+      "status": "pass",
+      "evidence": [
+        "initial-geometry.json",
+        "all-77-cards.json",
+        "17-banners-1920-original.png"
+      ],
+      "detail": "Live score/status remain flat information; market-reference is non-button and no score card introduced."
+    },
+    "Q05": {
+      "status": "pass",
+      "evidence": [
+        "functional-flow.json",
+        "all-77-cards.json",
+        "assertions.json"
+      ],
+      "detail": "77unique;26/26/25;initial6each;all12 additions+6 then2/2/1;existing prefixes andother sections preserved;3column scroll deltas all0;hiddenLeMans search/picks maintained."
+    },
+    "Q06": {
+      "status": "pass",
+      "evidence": [
+        "initial-geometry.json",
+        "banner-states.json",
+        "dialogs-and-copy.json",
+        "17-banners-1920-original.png"
+      ],
+      "detail": "Horizontal service buttons andbothphoto banners pass structure/readability/CTA requirements."
+    },
+    "Q07": {
+      "status": "pass",
+      "evidence": [
+        "button-states.json",
+        "07-service-charge-focus-held.jpg",
+        "11-service-withdraw-held-settled.jpg",
+        "18-left-banner-held-original.png",
+        "reused-evidence.json"
+      ],
+      "detail": "New control hover, focus-visible, held inset and no movement verified; same baseline odds/input states reused with currentselection/disabled smoke."
+    },
+    "Q08": {
+      "status": "pass",
+      "evidence": [
+        "asset-data-build-verification.json",
+        "file-validation.json",
+        "initial-geometry.json",
+        "all-77-cards.json",
+        "reused-evidence.json"
+      ],
+      "detail": "EighticonsRGBA/sourcehash/mapping/display pass; fonts loaded; existingfont andlogo evidence retained."
+    },
+    "Q09": {
+      "status": "pass",
+      "evidence": [
+        "wide-geometry.json",
+        "16-wide-2560-original.png",
+        "17-banners-1920-original.png",
+        "functional-flow.json"
+      ],
+      "detail": "Actual2560x940 capture with centered1920shell atx320;actual1920x940 capture;272/1280/320 independent scroll columns with hiddenbars andbodyheight940."
+    },
+    "Q10": {
+      "status": "pass",
+      "evidence": [
+        "functional-flow.json",
+        "dialogs-and-copy.json",
+        "final-browser-health.json",
+        "reused-evidence.json"
+      ],
+      "detail": "Directfilters/search/login/signup/logout/charge/withdraw/guide/notice/newbanner/menu/precisecalculation/confirm-cancel/receipt/history/reload tested. R7 unchangedreplacement/deletion/boundary/1:1support evidence reused. No prohibitedvisitorcopy inobservedstates orlabels."
+    },
+    "Q11": {
+      "status": "pass_under_D27",
+      "evidence": [
+        "progress-source-independent.json",
+        "asset-data-build-verification.json",
+        "motion.json",
+        "10-reduced-motion.jpg",
+        "01-initial-1920.jpg"
+      ],
+      "detail": "AuthenticstoppedMLB snapshots;scoreandstatusconstant. Only4pxLIVE dotbreathe2.4s;card/score do notblink. Reducedmotion:none/opacity1;normalrestored."
+    }
+  },
+  "findings": [],
+  "coverage": {
+    "independentAssertions": 53,
+    "assertionsPassed": 53,
+    "uniqueFixtures": 77,
+    "expandedCardImages": 308,
+    "brokenExpandedImages": 0,
+    "newSourceAssetsHashMatched": 9,
+    "sportsFilterStates": 9,
+    "expansionActions": 12,
+    "directFunctionStates": 44,
+    "directDialogSnapshots": 21,
+    "originalScreenshots": 18,
+    "sourceFilesFrozen": 272,
+    "sourceIdRecalculatedMatches": true,
+    "servedCSSSHA256": "341f9bffc483d7cca33a4303fddc6047e6e8eb64bb641f5f07b8913385872df4",
+    "warningErrorLogsObserved": 0
+  },
+  "implementationTechnicalEvidence": {
+    "file": "../../implementation/technical-checks.json",
+    "distinction": "Reviewed implementer results; not rerun during read-only audit",
+    "dataAssertions": 642,
+    "typecheckExit": 0,
+    "changedSourceLintExit": 0,
+    "diffCheckExit": 0,
+    "buildExit": 0,
+    "fullRepoLint": "Not rerun;19 unrelated R7 baseline errors retained"
+  },
+  "evidenceLimits": [
+    "03-left-banner-focus-held.jpg has a partial-paint issue in unrelated center numbers and is excluded from whole-page legibility proof. Same left held state recaptured as18-left-banner-held-original.png with no source changes and normal labels/numbers.",
+    "13-hockey-filter.jpg is a stale football raster despite current hockey DOM; excluded.14/15 are1827x936 originals and excluded from1920 layout proof; usable only for their observed local content. Exact1920/2560 PNGs16-18 were captured directly through supported CDP without resizing or editing.",
+    "08-service-withdraw-focus-held.jpg sampled pointer focus:false; actualkeyboardTab focused+held settled verified separately in11 andbutton-states.json.09 isbeforetransitionsettlement and not the authoritative pressure-style proof.",
+    "First2motion samples useda selectorwith0cards;only later sampleswith3matchedcards support static-value proof.",
+    "No fresh full-network-trace completeness claim. Currentimages/fonts/CSS loaded and capturedconsolewarn/error sample is empty; implementation networkbuffer wastruncated.",
+    "Unchanged R7 font glyph/boundary/locked/removal/focus-trap evidence reused, not represented as newly executedR8 tests. Heisei Japanese glyph proof remainsN/A because thepage hasnoJapanesecopy.",
+    "D27 snapshots are historical stoppedframes, not current real-timefeed; publicv7deployment and finaluserdesignapproval remain separate.",
+    "One local R8 test receipt was added; priorR7receipt retained. Balance restored1000000 and gueststate restored. No external wagering,transfer,accountor transaction occurred."
+  ],
+  "ownership": {
+    "written": "OnlyJSONandoriginalscreenshots underqa/r8/audit/ceb450e8",
+    "untouched": [
+      "site source",
+      "working specifications",
+      "original/input assets",
+      "Git state",
+      "Sites deployment",
+      "user tabs",
+      "localhost:3000"
+    ],
+    "browserReturned": {
+      "at": "2026-09-17T10:52:23.634Z",
+      "ownedTabClosed": "1821400840",
+      "viewportReset": true,
+      "mouseReleased": true,
+      "reducedMotionOverrideRestored": true,
+      "userTabsAndPort3000Untouched": true
+    }
+  },
+  "next": "No blocking correction requested. Implementer may deploy this frozen source to the existing publicaddress under existing authorization, then verify thepublicversion/CSS,newLIVEcards,new8icons,services,bothbanners/CTAandconsole/images. Do not reopen useracceptedleague/teamoptics."
+}

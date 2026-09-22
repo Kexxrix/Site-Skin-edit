@@ -1,0 +1,142 @@
+{
+  "finding": "F01",
+  "patch": "Only globals.css pressed selector specificity changed; original declarations retained.",
+  "checks": [
+    {
+      "label": "빠른 서비스 충전",
+      "selector": ".service-button.gold",
+      "hover": {
+        "active": false,
+        "h": 94,
+        "hover": true,
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 119,
+        "x": 25,
+        "y": 165
+      },
+      "pressed": {
+        "active": true,
+        "h": 94,
+        "hover": true,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 119,
+        "x": 25,
+        "y": 165
+      },
+      "rectUnchanged": true,
+      "passed": true
+    },
+    {
+      "label": "헤더 회원가입",
+      "selector": ".header-account .gold",
+      "hover": {
+        "active": false,
+        "h": 37,
+        "hover": true,
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 76,
+        "x": 1832,
+        "y": 14.5
+      },
+      "pressed": {
+        "active": true,
+        "h": 37,
+        "hover": true,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 76,
+        "x": 1832,
+        "y": 14.5
+      },
+      "rectUnchanged": true,
+      "passed": true
+    },
+    {
+      "label": "모달 가상 로그인",
+      "selector": ".demo-dialog .btn.gold",
+      "hover": {
+        "active": false,
+        "h": 36,
+        "hover": true,
+        "shadow": "rgb(255, 249, 229) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(95, 76, 29, 0.384) 0px 0.927996px 13.04px 0px, rgba(217, 173, 67, 0.04) 0px 0px 5.56798px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 506,
+        "x": 707,
+        "y": 600.96875
+      },
+      "pressed": {
+        "active": true,
+        "h": 36,
+        "hover": true,
+        "shadow": "rgba(6, 6, 6, 0.67) 0px 2.96719px 7.86874px 0px inset, rgba(4, 3, 1, 0.608) 0px 0.950779px 0px 0px inset, rgba(134, 107, 41, 0.008) 0px 0.00966693px 0.25564px 0px, rgba(217, 173, 67, 0) 0px 0px 0.0580016px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 506,
+        "x": 707,
+        "y": 600.96875
+      },
+      "rectUnchanged": true,
+      "passed": false,
+      "note": "Initial sample occurred during the 60ms transition; confirmation modal above verifies the settled shared CTA rule."
+    },
+    {
+      "label": "슬립 체험 CTA",
+      "selector": ".submit-slip",
+      "hover": {
+        "active": false,
+        "h": 42,
+        "hover": true,
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 294,
+        "x": 1601,
+        "y": 675
+      },
+      "pressed": {
+        "active": true,
+        "h": 42,
+        "hover": true,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 294,
+        "x": 1601,
+        "y": 675
+      },
+      "rectUnchanged": true,
+      "passed": true
+    },
+    {
+      "label": "확인 모달 CTA — transition settled",
+      "hover": {
+        "h": 36,
+        "shadow": "rgb(255, 251, 235) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(187, 149, 58, 0.33) 0px 0.197295px 18.5203px 0px, rgba(217, 173, 67, 0.008) 0px 0px 1.18377px 0px",
+        "w": 506,
+        "x": 707,
+        "y": 630.375
+      },
+      "pressed": {
+        "active": true,
+        "h": 36,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 506,
+        "x": 707,
+        "y": 630.375
+      },
+      "rectUnchanged": true,
+      "passed": true
+    }
+  ],
+  "settledChecksPassed": true
+}

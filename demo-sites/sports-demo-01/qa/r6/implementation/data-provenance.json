@@ -1,0 +1,366 @@
+{
+  "checkedAt": "2026-09-17T03:07:19.119Z",
+  "note": "Only selected stored scoreboards and mapped logos used; statuses describe Sep 16 collection, not current live state. Extra ESPN browsing was not adopted.",
+  "games": [
+    {
+      "id": "record-401816943",
+      "sourceEventId": "401816943",
+      "section": "live",
+      "sport": "baseball",
+      "league": "MLB",
+      "leagueKey": "mlb",
+      "home": {
+        "id": "30",
+        "name": "탬파베이 레이스",
+        "originalName": "Tampa Bay Rays",
+        "logo": "/sports/r6/teams/mlb/tampa-bay-rays.png"
+      },
+      "away": {
+        "id": "11",
+        "name": "애슬레틱스",
+        "originalName": "Athletics",
+        "logo": "/sports/r6/teams/mlb/athletics.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/baseball/mlb.png",
+      "sportLogo": "/sports/r6/sports/mdi/baseball.png",
+      "state": "post",
+      "completed": true,
+      "statusCode": "STATUS_FINAL",
+      "statusDetail": "Final",
+      "score": [
+        "2",
+        "1"
+      ],
+      "startUtc": "2026-09-15T22:40Z",
+      "timeLabel": "09.16 07:40",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/mlb/game/_/gameId/401816943/athletics-rays",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:50.000Z",
+      "sourceSha256": "1f901910ffb812303a46c6ef09368c5749bcb787b2d07cf4556c19d7d005b02d",
+      "sourceFile": "metadata/sources/espn-mlb-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-401902644",
+      "sourceEventId": "401902644",
+      "section": "live",
+      "sport": "basketball",
+      "league": "NBA 프리시즌",
+      "leagueKey": "nba",
+      "home": {
+        "id": "28",
+        "name": "토론토 랩터스",
+        "originalName": "Toronto Raptors",
+        "logo": "/sports/r6/teams/nba/toronto-raptors.png"
+      },
+      "away": {
+        "id": "14",
+        "name": "마이애미 히트",
+        "originalName": "Miami Heat",
+        "logo": "/sports/r6/teams/nba/miami-heat.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/basketball/nba.png",
+      "sportLogo": "/sports/r6/sports/mdi/basketball.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, October 3rd at 7:00 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-10-03T23:00Z",
+      "timeLabel": "10.04 08:00",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/nba/game/_/gameId/401902644/heat-raptors",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:50.000Z",
+      "sourceSha256": "b5ae19496394928ddef84fe3d2c8ef27a49ff53bc0b14756c01159b735eeef87",
+      "sourceFile": "metadata/sources/espn-nba-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-401881922",
+      "sourceEventId": "401881922",
+      "section": "live",
+      "sport": "hockey",
+      "league": "NHL 프리시즌",
+      "leagueKey": "nhl",
+      "home": {
+        "id": "21",
+        "name": "토론토 메이플리프스",
+        "originalName": "Toronto Maple Leafs",
+        "logo": "/sports/r6/teams/nhl/toronto-maple-leafs.png"
+      },
+      "away": {
+        "id": "10",
+        "name": "몬트리올 캐네이디언스",
+        "originalName": "Montreal Canadiens",
+        "logo": "/sports/r6/teams/nhl/montreal-canadiens.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/hockey/nhl.png",
+      "sportLogo": "/sports/r6/sports/mdi/ice-hockey.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, September 19th at 7:00 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-09-19T23:00Z",
+      "timeLabel": "09.20 08:00",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/nhl/game/_/gameId/401881922/canadiens-maple-leafs",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:50.000Z",
+      "sourceSha256": "9b0cb869b70411e477ee54e358e092b49ac7ad7037de59fd08b4f49d00407e8d",
+      "sourceFile": "metadata/sources/espn-nhl-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-401857190",
+      "sourceEventId": "401857190",
+      "section": "soon",
+      "sport": "basketball",
+      "league": "WNBA",
+      "leagueKey": "wnba",
+      "home": {
+        "id": "20",
+        "name": "애틀랜타 드림",
+        "originalName": "Atlanta Dream",
+        "logo": "/sports/r6/teams/wnba/atlanta-dream.png"
+      },
+      "away": {
+        "id": "18",
+        "name": "코네티컷 선",
+        "originalName": "Connecticut Sun",
+        "logo": "/sports/r6/teams/wnba/connecticut-sun.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/basketball/wnba.png",
+      "sportLogo": "/sports/r6/sports/mdi/basketball.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Thu, September 17th at 7:30 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-09-17T23:30Z",
+      "timeLabel": "09.18 08:30",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/wnba/game/_/gameId/401857190/sun-dream",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:50.000Z",
+      "sourceSha256": "4e89dda45395a1736d9be40ff28bc2cd4bf9f175e6c6eb4bc148001f9ff91cba",
+      "sourceFile": "metadata/sources/espn-wnba-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-401872932",
+      "sourceEventId": "401872932",
+      "section": "soon",
+      "sport": "american-football",
+      "league": "NFL",
+      "leagueKey": "nfl",
+      "home": {
+        "id": "2",
+        "name": "버펄로 빌스",
+        "originalName": "Buffalo Bills",
+        "logo": "/sports/r6/teams/nfl/buffalo-bills.png"
+      },
+      "away": {
+        "id": "8",
+        "name": "디트로이트 라이언스",
+        "originalName": "Detroit Lions",
+        "logo": "/sports/r6/teams/nfl/detroit-lions.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/football/nfl.png",
+      "sportLogo": "/sports/r6/sports/mdi/american-football.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Thu, September 17th at 8:15 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-09-18T00:15Z",
+      "timeLabel": "09.18 09:15",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/nfl/game/_/gameId/401872932/lions-bills",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:50.000Z",
+      "sourceSha256": "721b4d39a05bc4233a64da07e4323070d200de98c59435c79b7b13e702149731",
+      "sourceFile": "metadata/sources/espn-nfl-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-401884790",
+      "sourceEventId": "401884790",
+      "section": "soon",
+      "sport": "soccer",
+      "league": "분데스리가",
+      "leagueKey": "bundesliga",
+      "home": {
+        "id": "132",
+        "name": "바이에른 뮌헨",
+        "originalName": "Bayern Munich",
+        "logo": "/sports/r6/teams/bundesliga/bayern-munich.png"
+      },
+      "away": {
+        "id": "598",
+        "name": "우니온 베를린",
+        "originalName": "1. FC Union Berlin",
+        "logo": "/sports/r6/teams/bundesliga/1-fc-union-berlin.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/soccer/bundesliga.png",
+      "sportLogo": "/sports/r6/sports/mdi/soccer.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Fri, September 18th at 2:30 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-09-18T18:30Z",
+      "timeLabel": "09.19 03:30",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/soccer/match/_/gameId/401884790/1-fc-union-berlin-bayern-munich",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:52.000Z",
+      "sourceSha256": "c1ace8a34eaf92028f481631de1e78a2b7ee29de81ef5be481357323af5d5051",
+      "sourceFile": "metadata/sources/espn-bundesliga-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-401879275",
+      "sourceEventId": "401879275",
+      "section": "popular",
+      "sport": "soccer",
+      "league": "프리미어리그",
+      "leagueKey": "premier-league",
+      "home": {
+        "id": "337",
+        "name": "브렌트퍼드",
+        "originalName": "Brentford",
+        "logo": "/sports/r6/teams/premier-league/brentford.png"
+      },
+      "away": {
+        "id": "363",
+        "name": "첼시",
+        "originalName": "Chelsea",
+        "logo": "/sports/r6/teams/premier-league/chelsea.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/soccer/premier-league.png",
+      "sportLogo": "/sports/r6/sports/mdi/soccer.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Fri, September 18th at 3:00 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-09-18T19:00Z",
+      "timeLabel": "09.19 04:00",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/soccer/match/_/gameId/401879275/chelsea-brentford",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:52.000Z",
+      "sourceSha256": "800373a4db35a77fb589abd140f92a36ef4f3a43cfcc4f65fc1802d5a7246ccb",
+      "sourceFile": "metadata/sources/espn-premier-league-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-761815",
+      "sourceEventId": "761815",
+      "section": "popular",
+      "sport": "soccer",
+      "league": "MLS",
+      "leagueKey": "mls",
+      "home": {
+        "id": "17606",
+        "name": "뉴욕 시티 FC",
+        "originalName": "New York City FC",
+        "logo": "/sports/r6/teams/mls/new-york-city-fc.png"
+      },
+      "away": {
+        "id": "190",
+        "name": "뉴욕 레드불스",
+        "originalName": "Red Bull New York",
+        "logo": "/sports/r6/teams/mls/red-bull-new-york.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/soccer/mls.png",
+      "sportLogo": "/sports/r6/sports/mdi/soccer.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Fri, September 18th at 7:30 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-09-18T23:30Z",
+      "timeLabel": "09.19 08:30",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/soccer/match/_/gameId/761815/red-bull-new-york-new-york-city-fc",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:52.000Z",
+      "sourceSha256": "819a2b67b63b393bb969032bac819711a11d4027365698891563a6fccce00956",
+      "sourceFile": "metadata/sources/espn-mls-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    },
+    {
+      "id": "record-401876453",
+      "sourceEventId": "401876453",
+      "section": "popular",
+      "sport": "soccer",
+      "league": "리그 1",
+      "leagueKey": "ligue-1",
+      "home": {
+        "id": "174",
+        "name": "AS 모나코",
+        "originalName": "AS Monaco",
+        "logo": "/sports/r6/teams/ligue-1/as-monaco.png"
+      },
+      "away": {
+        "id": "175",
+        "name": "RC 랑스",
+        "originalName": "Lens",
+        "logo": "/sports/r6/teams/ligue-1/lens.png"
+      },
+      "leagueLogo": "/sports/r6/leagues/soccer/ligue-1.png",
+      "sportLogo": "/sports/r6/sports/mdi/soccer.png",
+      "state": "pre",
+      "completed": false,
+      "statusCode": "STATUS_SCHEDULED",
+      "statusDetail": "Fri, September 18th at 2:45 PM EDT",
+      "score": [
+        "–",
+        "–"
+      ],
+      "startUtc": "2026-09-18T18:45Z",
+      "timeLabel": "09.19 03:45",
+      "timeZone": "Asia/Seoul",
+      "sourceUrl": "https://www.espn.com/soccer/match/_/gameId/401876453/lens-as-monaco",
+      "sourceCollectedDate": "2026-09-16",
+      "sourceFileMtimeUtc": "2026-09-16T11:02:54.000Z",
+      "sourceSha256": "d52a93929e666734dcc1da18d6de86d61164a220920bd7cef5f29d3ea29f6da2",
+      "sourceFile": "metadata/sources/espn-ligue-1-scoreboard.json",
+      "sourceMode": "static-collection",
+      "oddsMode": "demo"
+    }
+  ]
+}

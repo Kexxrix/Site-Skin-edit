@@ -1,0 +1,168 @@
+{
+  "completedAt": "2026-09-18T06:47:41.461Z",
+  "status": "HEADER_AND_TONE_R2_PUBLIC_UPDATED_AWAITING_USER_FEEDBACK",
+  "url": "https://sirius.kexxadrix.chatgpt.site",
+  "projectId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "version": 2,
+  "versionId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_9589d699c5648191bf8ac017fac4b9b9",
+  "deploymentId": "appgdep_6aacdb55cb2881919d7ce5e5455fc16a",
+  "access": "public",
+  "commit": "23f81f8a4c90fb9ea57b06336c809e6e12d840e3",
+  "sourceId": "3d0a5a774bb470bd4850d49da973733bde4d1e97660d1f257af180005eeadbf7",
+  "sourceManifest": "qa/r2/implementation/source-3d0a5a77.json",
+  "changedFiles": [
+    "app/globals.css",
+    "app/match-list.css",
+    "app/page.tsx"
+  ],
+  "implemented": [
+    "Centered supplied brand in56px upper row with notice left and existing account controls right",
+    "44px lower row with seven existing menu actions in3groups and2px180ms gold active indicator",
+    "Separate sports disclosure trigger and680px nonmodal exploration panel reusing the same setSport state as the left rail",
+    "Darker navy surfaces/buttons/borders while retaining white/gold text, images, fonts and all body geometry"
+  ],
+  "values": {
+    "brandRow": 56,
+    "menuRow": 44,
+    "totalHeader": 100,
+    "symbol": 32,
+    "wordmarkWidth": 100.67,
+    "wordmarkVisibleHeight": 33.984375,
+    "brandGap": 8,
+    "navGroupGap": 40,
+    "activeLinePx": 2,
+    "activeLineMs": 180,
+    "explorerWidth": 680,
+    "palette": {
+      "body": "rgb(6, 14, 45)",
+      "button": "linear-gradient(rgb(24, 41, 78), rgb(18, 32, 62))",
+      "list": "rgb(12, 24, 60)",
+      "panel": "rgb(9, 19, 50)"
+    }
+  },
+  "verification": {
+    "owner": {
+      "build": "PASS using existing npm-cli fallback after installed build helper Windows npm resolution error",
+      "typecheck": "PASS",
+      "diffWhitespace": "PASS",
+      "H01": "Reflected: geometric center960, notice/account upper56, grouped7menus lower44, oldnotice removed",
+      "H02": "Checked: independent trigger, shared filter, query/slip preserved, outside/Escape/same-trigger closure, Tab/Enter/Space/no focus trap, account/menu/modal flow",
+      "H03": "Checked:100px total, unchanged272/1280/320 columns and816height, panel680x165 at416,100, no layout shift, active underline180ms/2px",
+      "H04": "Reflected: darker navy surfaces and separated buttons, text/gold retained, no image filtering",
+      "H05": "Checked representative soccer/reset/+6/select/replace/remove/calculation and independent rail scroll",
+      "H06": "REFLECTED_AND_CHECKED on same public SIRIUS URL"
+    },
+    "public": {
+      "status": "REFLECTED_AND_CHECKED",
+      "http": 200,
+      "initialRows": [
+        6,
+        6,
+        6
+      ],
+      "navMenus": 7,
+      "headerHeight": 100,
+      "panelRect": {
+        "bottom": 265,
+        "height": 165,
+        "left": 416,
+        "right": 1096,
+        "top": 100,
+        "width": 680,
+        "x": 416,
+        "y": 100
+      },
+      "assetAndCssHashes": "17 assets and1CSS match validated build",
+      "consoleWarningsAndErrors": 0,
+      "settledImages": {
+        "check": "Settled image health after filter remount",
+        "completeBroken": [],
+        "pending": [],
+        "total": 70,
+        "note": "Earlier immediate reset read combined pending loads with broken images; settled complete/naturalWidth read is decisive."
+      }
+    },
+    "independent": {
+      "threadId": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+      "report": "qa/r2/audit/final-audit.json",
+      "result": "R2 공개 반영 확인 완료 / 사용자 피드백 대기",
+      "checks": [
+        {
+          "id": "H01",
+          "status": "반영"
+        },
+        {
+          "id": "H02",
+          "status": "반영"
+        },
+        {
+          "id": "H03",
+          "status": "반영"
+        },
+        {
+          "id": "H04",
+          "status": "반영"
+        },
+        {
+          "id": "H05",
+          "status": "반영"
+        },
+        {
+          "id": "H06",
+          "status": "반영"
+        }
+      ],
+      "confirmedBlockingFindings": 0
+    },
+    "gitClean": true,
+    "sourceManifestFileCount": 276,
+    "archiveFileCount": 250
+  },
+  "preserved": {
+    "unchangedTrackedFiles": 273,
+    "assetsDataFontsLockAndHostingByteIdentical": true,
+    "columnsSameAsBefore": true
+  },
+  "evidence": {
+    "beforeAfter": "qa/r2/implementation/before.json and after.json",
+    "localCaptures": [
+      "qa/r2/implementation/before-1920.jpg",
+      "qa/r2/implementation/after-1920.jpg",
+      "qa/r2/implementation/explore-open-1920.jpg"
+    ],
+    "publicCaptures": [
+      "qa/r2/public/initial-1920.jpg",
+      "qa/r2/public/explore-open-1920.jpg"
+    ],
+    "captureManifests": [
+      "qa/r2/implementation/capture-manifest.json",
+      "qa/r2/public/capture-manifest.json"
+    ],
+    "interactions": "qa/r2/implementation/interaction-checks.json",
+    "publicInteractions": "qa/r2/public/interaction-health.json",
+    "http": "qa/r2/public/anonymous-http.json",
+    "deployment": "qa/r2/public/deployment.json"
+  },
+  "verificationLimits": [
+    "Checks limited to H01-H06 implementation, interaction, clipping and representative regression; no WOG/design-equivalence or full77-row re-audit.",
+    "Mobile redesign, new account/payment backend and real-time data refresh excluded.",
+    "User header design acceptance remains pending."
+  ],
+  "methodObservation": "Owner Node anonymous fetch and actual IAB public page passed. Coordinator separately observed a Cloudflare JavaScript challenge for PowerShell HTTP later; that method did not verify page HTML. No bypass or extra redesign performed.",
+  "recoveries": [
+    "Installed0.1.65 build wrapper resolved npm incorrectly on Windows; existing npm-cli invoked successfully without dependency/source changes.",
+    "Installed packaging wrapper selected unavailable WSL bash; the same0.1.65 package-site.sh completed under existing Git Bash.",
+    "Immediate filter-remount image read included pending loads; settled image read showed pending0 and broken0."
+  ],
+  "cleanup": {
+    "ownProductionPreview5287Stopped": true,
+    "port3000PreservedPid": 27744,
+    "viewportReset": true,
+    "publicTabRetained": true,
+    "publicFilterReset": true,
+    "publicSelectionsOrReceiptsCreatedByOwner": false,
+    "openInCodexSkipped": "Delegated background Site owner; coordinator performs foreground handoff."
+  },
+  "next": "Await user feedback. Do not begin rail restructuring, additional sites or autonomous aesthetic revisions.",
+  "operatingDocumentsEditedByImplementer": false
+}

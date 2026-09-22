@@ -1,5 +1,13 @@
 # 백업 범위와 검증 기록
 
+## 2026-09-22 스포츠 사이트 추가
+
+MERCURY·SIRIUS·ALDEBARAN의 최신 디스크 파일은 [site-snapshots/20260922/summary.json](site-snapshots/20260922/summary.json)과 [source-files.json](site-snapshots/20260922/source-files.json)에 별도 기록합니다. 각 원본 폴더와 원래 Git 상태를 보존하고, 중첩 Git 저장소를 일반 파일로 복사했습니다. [제외 목록](site-snapshots/20260922/excluded.json)과 [내용 검사](site-snapshots/20260922/content-scan.json)도 같은 폴더에 있습니다.
+
+아래 기존 `source-files.json`, `repository-files.json`, `summary.json`은 2026-09-11 영상 백업 당시 범위의 기록으로 유지합니다. 새 사이트 파일은 위 날짜별 명세를 참조하십시오. 이번 작업에서 애플리케이션 소스·공개 배포 상태는 변경하지 않았습니다.
+
+## 2026-09-11 영상 제작 자료 백업
+
 이 체크아웃은 진행 중인 `E:/codexwork/Site-Skin-edit`의 디스크 파일을 읽어 별도 위치에 복사한 자료입니다. 원래 작업 폴더의 Git 상태·AE 메모리·소스 미디어는 백업 과정에서 변경하지 않습니다. 새 이력 문서는 원래 작업의 `docs/video-production`과 루트 README에 작성했습니다.
 
 | 파일 | 의미 |

@@ -1,0 +1,241 @@
+{
+  "finding": "F02",
+  "checkedAt": "2026-09-17T04:11:04.260Z",
+  "method": "Built worker via npm start (wrangler dev --config dist/server/wrangler.json --port 5277), not Vite dev.",
+  "checks": [
+    {
+      "label": "Public v4 defect",
+      "url": "https://mercury.kexxadrix.chatgpt.site/",
+      "selector": ".service-button.gold",
+      "hover": {
+        "active": false,
+        "h": 94,
+        "selected": null,
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 119,
+        "x": 25,
+        "y": 165
+      },
+      "pressed": {
+        "active": true,
+        "h": 94,
+        "selected": null,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "0px 1px",
+        "w": 119,
+        "x": 25,
+        "y": 166
+      },
+      "rectUnchanged": false,
+      "deltaY": 1
+    },
+    {
+      "label": "Production build gold service",
+      "url": "http://127.0.0.1:5277/",
+      "selector": ".service-button.gold",
+      "hover": {
+        "active": false,
+        "h": 94,
+        "selected": null,
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 119,
+        "x": 25,
+        "y": 165
+      },
+      "pressed": {
+        "active": true,
+        "h": 94,
+        "selected": null,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 119,
+        "x": 25,
+        "y": 165
+      },
+      "rectUnchanged": true,
+      "deltaY": 0
+    },
+    {
+      "label": "Production build neutral service",
+      "url": "http://127.0.0.1:5277/",
+      "selector": ".service-button:not(.gold)",
+      "hover": {
+        "active": false,
+        "h": 94,
+        "selected": null,
+        "shadow": "rgba(255, 230, 163, 0.3) 0px 1px 0px 0px inset, rgb(8, 8, 8) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.17) 0px 0px 12px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 119,
+        "x": 152,
+        "y": 165
+      },
+      "pressed": {
+        "active": true,
+        "h": 94,
+        "selected": null,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 119,
+        "x": 152,
+        "y": 165
+      },
+      "rectUnchanged": true,
+      "deltaY": 0
+    },
+    {
+      "label": "Production build header signup",
+      "url": "http://127.0.0.1:5277/",
+      "selector": ".header-account .gold",
+      "hover": {
+        "active": false,
+        "h": 37,
+        "selected": null,
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 76,
+        "x": 1832,
+        "y": 14.5
+      },
+      "pressed": {
+        "active": true,
+        "h": 37,
+        "selected": null,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 76,
+        "x": 1832,
+        "y": 14.5
+      },
+      "rectUnchanged": true,
+      "deltaY": 0
+    },
+    {
+      "label": "Production build unselected odd",
+      "url": "http://127.0.0.1:5277/",
+      "selector": "[data-pick=\"record-401816943-0-0\"]",
+      "hover": {
+        "active": false,
+        "h": 42,
+        "selected": "false",
+        "shadow": "rgba(255, 230, 163, 0.42) 0px 1px 0px 0px inset, rgb(8, 8, 8) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.23) 0px 0px 9px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 152.328125,
+        "x": 309,
+        "y": 303
+      },
+      "pressed": {
+        "active": true,
+        "h": 42,
+        "selected": "false",
+        "shadow": "rgba(0, 0, 0, 0.733) 0px 3px 7px 0px inset, rgba(0, 0, 0, 0.533) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 152.328125,
+        "x": 309,
+        "y": 303
+      },
+      "rectUnchanged": true,
+      "deltaY": 0
+    },
+    {
+      "label": "Production build selected odd",
+      "url": "http://127.0.0.1:5277/",
+      "selector": "[data-pick=\"record-401816943-0-0\"]",
+      "hover": {
+        "active": false,
+        "h": 42,
+        "selected": "true",
+        "shadow": "rgb(255, 250, 240) 0px 1px 0px 0px inset, rgb(120, 81, 28) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.376) 0px 0px 10px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 152.328125,
+        "x": 309,
+        "y": 303
+      },
+      "pressed": {
+        "active": true,
+        "h": 42,
+        "selected": "true",
+        "shadow": "rgba(120, 81, 28, 0.667) 0px 3px 7px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 152.328125,
+        "x": 309,
+        "y": 303
+      },
+      "rectUnchanged": true,
+      "deltaY": 0
+    },
+    {
+      "label": "Production build slip CTA",
+      "url": "http://127.0.0.1:5277/",
+      "selector": ".submit-slip",
+      "hover": {
+        "active": false,
+        "h": 42,
+        "selected": null,
+        "shadow": "rgb(255, 251, 237) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(217, 173, 67, 0.314) 0px 0px 20px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 294,
+        "x": 1601,
+        "y": 675
+      },
+      "pressed": {
+        "active": true,
+        "h": 42,
+        "selected": null,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 294,
+        "x": 1601,
+        "y": 675
+      },
+      "rectUnchanged": true,
+      "deltaY": 0
+    },
+    {
+      "label": "Production build confirmation CTA",
+      "url": "http://127.0.0.1:5277/",
+      "selector": ".demo-dialog .btn.gold",
+      "hover": {
+        "active": false,
+        "h": 36,
+        "selected": null,
+        "shadow": "rgb(255, 249, 229) 0px 1px 0px 0px inset, rgb(147, 100, 30) 0px -2px 0px 0px inset, rgba(95, 76, 29, 0.384) 0px 0.925048px 13.0621px 0px, rgba(217, 173, 67, 0.04) 0px 0px 5.55028px 0px",
+        "transform": "none",
+        "translate": "none",
+        "w": 506,
+        "x": 707,
+        "y": 630.375
+      },
+      "pressed": {
+        "active": true,
+        "h": 36,
+        "selected": null,
+        "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+        "transform": "none",
+        "translate": "none",
+        "w": 506,
+        "x": 707,
+        "y": 630.375
+      },
+      "rectUnchanged": true,
+      "deltaY": 0
+    }
+  ],
+  "allCorrectedRectsUnchanged": true,
+  "logs": []
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "stage": "R7-initial-public-v5-observation-and-audit-scope",
+  "auditorThreadId": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "authority": {
+    "documents": [
+      "AGENTS.md",
+      "STATE.md",
+      "DESIGN_SPEC.md",
+      "DECISIONS.md"
+    ],
+    "set": "MVP R7",
+    "readOnlySource": true,
+    "allowedOutputs": "qa/r7/audit JSON and original images only",
+    "userDecision": "All demo/experience/virtual/collection explanations hidden from all visitor UI; no reinsert recommendation."
+  },
+  "observation": {
+    "url": "https://mercury.kexxadrix.chatgpt.site/",
+    "firstMeasuredAt": "2026-09-17T07:35:00.829Z",
+    "completedAt": "2026-09-17T07:36:05.264Z",
+    "viewport": {
+      "dpr": 1,
+      "height": 940,
+      "scale": 1,
+      "width": 1920
+    },
+    "browser": "Chrome extension dedicated R7 audit tab, closed after initial observation; temporary viewport reset",
+    "providedVersion": {
+      "label": "public v5",
+      "commit": "48a02462ffa0a98e8dc3b60fcf54286b1ac21783",
+      "sourceId": "a3bef90ec3c36b3d9568fb5466a4a82336667b7335aae7ee8ec7e2b2f88ee1be",
+      "identity": "From R7 STATE/coordinator; current public DOM and stylesheet URL observed, deployment source identity not independently attested."
+    },
+    "stylesheets": [
+      "https://mercury.kexxadrix.chatgpt.site/_next/static/css/index.Bl8uWmul.css",
+      "https://use.typekit.net/aqm4sxy.css"
+    ]
+  },
+  "initialVerdict": {
+    "A": "수정 필요",
+    "B": "미확인",
+    "C": "수정 필요",
+    "A_scope": "Current v5 does not yet meet requested R7 changes.",
+    "B_scope": "R7 completed design not yet supplied. Existing directly observed WOG baseline retained, no new WOG comparison made in this short initial pass.",
+    "C_scope": "Requested60+ list/independent6-item expansion absent. Prior core-function evidence retained; full regression not repeated at initial stage.",
+    "fullR7AuditComplete": false,
+    "userDesignApproved": false
+  },
+  "initialItems": [
+    {
+      "id": "R7-01",
+      "q": [
+        "Q05",
+        "Q10"
+      ],
+      "observed": "Second section title and accessible name remain 마감임박; CLOSING SOON shown.",
+      "status": "R7 미적용",
+      "target": "국내형 스포츠 including related labels. No Korea-only fixture restriction."
+    },
+    {
+      "id": "R7-02",
+      "q": [
+        "Q06"
+      ],
+      "observed": "Two service buttons119×94px, icon+label+explanatory second line.",
+      "status": "R7 미적용",
+      "target": "Keep2columns; compress height/padding and remove explanatory sublabels.64px is starting value, not rigid approval dimension."
+    },
+    {
+      "id": "R7-03",
+      "q": [
+        "Q10"
+      ],
+      "observed": "NOTICE collection/no-refresh, SPORTS DEMO, footer SPORTS EXPERIENCE/browser-storage statements, account/slip/support labels, source buttons and login explanation still visible. aria-label includes 가상 로그인 and 체험내역 열기; document title includes 스포츠 데모01.",
+      "status": "R7 미적용",
+      "target": "Inspect visible and accessible names, tooltip/title, page title, every modal/toast/history and all3column ends. Ordinary service terms; no demo explanation exception."
+    },
+    {
+      "id": "R7-04",
+      "q": [
+        "Q08"
+      ],
+      "observed": "Sport logos have ivory22px rounded-square background/radius3/padding3; team32px ivory radius3/padding2. League28×20 ivory radius2/padding1.",
+      "status": "R7 미적용",
+      "target": "Circular display slots/support for non-league where applicable; retain complete uncut original and league shape; remove unnecessary ivory selectively."
+    },
+    {
+      "id": "R7-05",
+      "q": [
+        "Q08"
+      ],
+      "observed": "Sport box22px and league20px centered in22px meta row; actual symbol heights visibly differ, matching the basketball/WNBA rejected reference. Equal boxes alone cannot prove visible artwork alignment.",
+      "status": "R7 미적용",
+      "target": "Review visible opaque artwork height and optical center, transparent padding and original ratios; no crop/stretch/blanket removal of white artwork."
+    },
+    {
+      "id": "R7-06",
+      "q": [
+        "Q05",
+        "Q08"
+      ],
+      "observed": "Public page/counts show9 matches,3 per section. Current in-progress R7 data not inspected or certified.",
+      "status": "R7 미적용",
+      "target": "At least60 unique actual fixture IDs across categories, provenance and home/away/team/league/logo/time/status mapping.72 is suggested starting total, not ceiling."
+    },
+    {
+      "id": "R7-07",
+      "q": [
+        "Q05",
+        "Q09",
+        "Q10"
+      ],
+      "observed": "Each section3cards at284px high, no 더보기 button in DOM.",
+      "status": "R7 미적용",
+      "target": "Each initial6→12→18… independently;finalremainder;button disappears at end; following sections shift down; no nested scroll/pagination/replacement; preserve scroll and slip."
+    },
+    {
+      "id": "R7-08",
+      "q": [
+        "Q02",
+        "Q03"
+      ],
+      "observed": "Header68px; emblem48×48 atx22/y10, wordmark196×58 atx78/y5. Both contain; wordmark top/bottom slot space only5px.",
+      "status": "R7 미적용",
+      "target": "Shrink both images, retain68header/272brand/menu positions and original proportions, add visual top/bottom room.36×36/144×42 are starting slots."
+    }
+  ],
+  "auditScope": {
+    "entryGate": [
+      "Coordinator provides frozen built-production URL, sourceId, file hashes and implementation evidence.",
+      "Record same start/end source hashes; do not confuse dev preview pass with production pass."
+    ],
+    "R7ListAndData": [
+      "Count full unique fixture set>=60 with no duplicate cross-category padding; check metadata and asset IDs; reuse supplied source evidence where valid.",
+      "Initially exactly6 per category unless result count<6. Counts must show total matching data, not visible count.",
+      "Each section multiple +6 clicks, final partial batch where existing data permits, end button removed, other-section count unchanged.",
+      "Keep existing visible-card position and sidebar scroll. Next section moves down; no new nested central scroll.",
+      "Search matches not yet expanded; filter resets visible count to6; preselected slip remains after expansion/filter/search.",
+      "More button semantics, section-specific accessible name, aria-controls, keyboard activation, hidden cards absent from early tab order, addition announcement."
+    ],
+    "copyStates": [
+      "Guest/default, login/member/logout, empty/one/many slip, valid/invalid money, confirmation/completion/history.",
+      "Charge/withdraw/support/notice/guide/other menu/signup panels, banner actions, toasts, tooltip/title/aria names.",
+      "Left/center/right bottom, source/data explanatory controls removed, no invisible focus stops or residual whitespace.",
+      "Inspect old persisted history records as well as newly created records if the implementation reuses existing local storage."
+    ],
+    "visualStates": [
+      "1920actual viewport/DPR/zoom and2560fixed shell, whole page andlower content; all3independent wheel/keyboard scroll.",
+      "Brand shrink/header menu unchanged; compressed2columnservice; Q03seams/Q04flat information/Q01neutral palette.",
+      "Sport/team circular support and league exception; real visible artwork alignment and identification over background, base/hover/selected.",
+      "Fonts actual glyph/weight in changed representative content; no Japanese text means Heisei glyph N/A.",
+      "F01gold inset/reduced outer glow and F02production no1px movement, base/hover/held/selected/disabled/focus includingnewMore.",
+      "Expansion and effects observed in motion and reduced-motion; static screenshots alone do not prove motion quality."
+    ],
+    "functionalRegression": [
+      "Selection/reclick/replace/lock/card-slip sync and individual/clear deletion.",
+      "Amount integer/empty/invalid/min/max/quickadd/MAX/reset; original precision calculation and history persistence.",
+      "Local account/services only; no external transactions or backend expansion."
+    ],
+    "exit": [
+      "Specific located defects to implementer and coordinator; focused correction rechecks.",
+      "A specification, B WOG finish baseline, C functionality separated. User aesthetic acceptance separate.",
+      "Coordinator-owned public rollout then changes verified on actual public version."
+    ]
+  },
+  "wog": {
+    "reuse": "../../../r6/audit/initial-20260917/initial-audit.json",
+    "directWindow": "2026-09-17 12:00–12:07KST",
+    "criteria": "Alignment, consistent card baseline/material, same-plane match information, differentiated side-control hierarchy, localized button states.",
+    "limits": "No copying palette/layout/assets/code. Prior WOG odds click did not produce selection; do not treat it as functional proof. No new WOG claims during initial R7 pass.",
+    "freshSupplement": "Only if a needed quality comparison is absent from existing direct evidence."
+  },
+  "referencesReviewed": [
+    "input/mercury-mvp-r7-package/MERCURY_MVP_R7/references/feedback-icon-height.png",
+    "input/mercury-mvp-r7-package/MERCURY_MVP_R7/references/feedback-demo-copy-left-footer.png",
+    "input/mercury-mvp-r7-package/MERCURY_MVP_R7/references/feedback-demo-copy-data-footer.png",
+    "input/mercury-mvp-r7-package/MERCURY_MVP_R7/references/feedback-demo-copy-support.png"
+  ],
+  "evidence": {
+    "base": "base-observations.json",
+    "details": "detail-observations.json",
+    "captures": [
+      "01-v5-initial-1920.jpg",
+      "02-v5-login-copy.jpg",
+      "03-v5-lower-columns.jpg"
+    ],
+    "manifest": "capture-manifest.json",
+    "sourceSpecDeploymentChanged": false,
+    "existingR6Preserved": true,
+    "userTabsAnd3000Untouched": true,
+    "loginSubmitted": false,
+    "recordsCreated": false
+  },
+  "next": "Initial preparation complete. Await coordinator audit-ready production URL/sourceId for whole R7 audit; no budget or representative-card stop rule."
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "aldebaran-r3-assets-v1",
+  "image_generation": false,
+  "image_editing": false,
+  "emblem": "remove header rendering only; do not delete original asset",
+  "files": [
+    {
+      "file": "assets/branding/aldebaran-wordmark.png",
+      "original": "ALDEBARAN_HEADER_R2/assets/branding/aldebaran-wordmark.png",
+      "target": "public/assets/branding/aldebaran-wordmark.png",
+      "dimensions": [
+        1101,
+        120
+      ],
+      "sha256": "7f028493deee645c26ab2a71a5cc226ee009ff214a3397fdaae9c7ac4bfb10fa",
+      "byte_identical": true,
+      "action": "reuse existing approved PNG, no editing"
+    },
+    {
+      "file": "references/01-r2-header-before.png",
+      "original_upload_name": "9282fbc2-99d4-48ad-86ed-9567c62c487c.png",
+      "role": "before",
+      "dimensions": [
+        1914,
+        105
+      ],
+      "sha256": "c93255fb22174e12fc9ddb2dcb35de6e52434783664fca9c6ebd797a556e049e",
+      "byte_identical": true
+    },
+    {
+      "file": "references/02-left-rail-alignment.png",
+      "original_upload_name": "ffebe89a-feab-4111-83d7-ccc592a4bbac.png",
+      "role": "alignment only; remove emblem and make divider full height per latest text",
+      "dimensions": [
+        229,
+        368
+      ],
+      "sha256": "3524ce4acd0820c78f2e9384059e80c8a2d887f7416bd8933aa938c707fc1de4",
+      "byte_identical": true
+    },
+    {
+      "file": "references/03-right-before.png",
+      "original_upload_name": "8025361f-0b6f-4984-9223-5cc19a5e9535.png",
+      "role": "before",
+      "dimensions": [
+        551,
+        100
+      ],
+      "sha256": "52c9644eb42431f4b1e56812e8569ca2594b2bb394adc0fc3355392f0aad7ad2",
+      "byte_identical": true
+    },
+    {
+      "file": "references/04-right-placement-target.png",
+      "original_upload_name": "b399da82-beec-4b34-b46d-75b2a83a3582.png",
+      "role": "account actions in lower menu row above right rail",
+      "dimensions": [
+        534,
+        268
+      ],
+      "sha256": "e5d26b37a704408a54b704718d54c110822c6edff7fbc401bd8c6b14d86f4273",
+      "byte_identical": true
+    },
+    {
+      "file": "references/05-body-grid-guide.png",
+      "original_upload_name": "f493fd1d-0251-4d28-bccc-43ecfb01d6b8.png",
+      "role": "alignment guide, not new UI orange border lines",
+      "dimensions": [
+        1744,
+        877
+      ],
+      "sha256": "9ef40b4086a2f02f87e64047f02478c08febed4aae14da6efade5ae119dc68f8",
+      "byte_identical": true
+    }
+  ]
+}

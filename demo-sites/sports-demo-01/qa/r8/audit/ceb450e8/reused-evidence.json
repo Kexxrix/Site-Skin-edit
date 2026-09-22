@@ -1,0 +1,66 @@
+{
+  "sources": [
+    {
+      "path": "qa/r7/audit/26f0d1ff/audit-result.json",
+      "bytes": 9006,
+      "sha256": "3882ca849b8b6fb4155fb630126deb3959004077b81fa95b5d3436d3ed1a060b"
+    },
+    {
+      "path": "qa/r7/audit/3cb5e2b2/recheck-result.json",
+      "bytes": 9052,
+      "sha256": "78e9214ded9d34ffa1b77515136fea7a7c135252c860ad040633da1cf30c51f8"
+    },
+    {
+      "path": "qa/r7/audit/26f0d1ff/functions.json",
+      "bytes": 8924,
+      "sha256": "8abfd86899c9b94dcfe18766ca371e94746f4396718ca53491ed85a7e520629b"
+    },
+    {
+      "path": "qa/r7/audit/26f0d1ff/stake-validation.json",
+      "bytes": 1863,
+      "sha256": "5ed98c086dcc2179ccad4e8a381a7a669da1652faf2a8eb7d0f486e367534376"
+    },
+    {
+      "path": "qa/r7/audit/26f0d1ff/fonts-and-page-health.json",
+      "bytes": 23640,
+      "sha256": "bf8bd263d8b04abb7e3431f260ff9ba60f34d6cedcf43424f0431f6105e7a8a1"
+    },
+    {
+      "path": "qa/r7/audit/26f0d1ff/focus-trap-recheck.json",
+      "bytes": 2902,
+      "sha256": "ca3bf123de6f1d5ffc2743b7645de6a1c668a124e111678d5b758753c4261481"
+    },
+    {
+      "path": "qa/r7/audit/26f0d1ff/independent-artwork-bounds.json",
+      "bytes": 181576,
+      "sha256": "48cc01362073ba81e16d83f85cc7ca4a59147bc57ed734e2d6afbb164c6ef6e1"
+    },
+    {
+      "path": "qa/r8/audit/initial-v6-20260917/initial-audit.json",
+      "bytes": 9129,
+      "sha256": "0d1875764a065e80a7bae3a8f9d3702ab5a21011f2833d0bcc646ee706735400"
+    }
+  ],
+  "mapping": [
+    {
+      "criteria": "Q02/Q03/Q04 and existing icon geometry",
+      "basis": "Current 1920/2560 visual and initial geometry checks; accepted existing league/team presentation and original files byte-identical. No O01/O02 reopening."
+    },
+    {
+      "criteria": "Q07 existing odds selected/locked/focus and modal focus trap",
+      "basis": "R7 direct full-state audit plus closed R7-F02 correction; button primitive and existing state rules retained; current selected slip, disabled submit, service/banner focused+held directly verified."
+    },
+    {
+      "criteria": "Q08 existing fonts and team/league assets",
+      "basis": "Same font files, imports, loading strategy and typography rules; current font set loaded and actual screenshots legible; R7 platform-font glyph proof reused. Eight new sport icons directly audited."
+    },
+    {
+      "criteria": "Q10 same-match replacement/toggle-off/delete-all/stake boundary/MAX/increment tests",
+      "basis": "Unchanged Account/Slip bodies and unchanged toggle/confirm/validation bodies reviewed in diff; same per-fixture market tuples, locked input and validation constants. R7 functions/stake-validation evidence reused. R8 sort/filter/search/calculation/receipt/reload/banner routing directly retested."
+    },
+    {
+      "criteria": "B WOG finish reference",
+      "basis": "Current R8 initial direct WOG observation reused; no further WOG visit needed. WOG hover movement is excluded from Mercury requirements."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "included": [
+    {
+      "file": "assets/branding/aldebaran-wordmark.png",
+      "role": "approved unchanged wordmark"
+    },
+    {
+      "file": "reference/wog-user-wide.png",
+      "role": "layout reference only; not a site background"
+    }
+  ],
+  "reuse_local": [
+    {
+      "role": "casino left 200x116 / slot left 98x116",
+      "source": "existing approved ALDEBARAN or shared unbranded source images",
+      "treatment": "object-fit cover, same slot dimensions, HTML label"
+    },
+    {
+      "role": "sports tabs 24px / sidebar 22px",
+      "source": "current sport icon mapping",
+      "treatment": "off-white or original category icon as appropriate, orange active accent"
+    },
+    {
+      "role": "league flags 18px",
+      "source": "current flag mapping",
+      "treatment": "contain, keep original colors"
+    },
+    {
+      "role": "card sport motif",
+      "source": "existing sports photo or sport image",
+      "treatment": "subdued charcoal overlay/watermark, no new generated image"
+    },
+    {
+      "role": "right banner six 306x60.63",
+      "source": "HTML text + existing icon set / approved image",
+      "treatment": "matte charcoal and orange, no WOG brand or invented contact"
+    }
+  ],
+  "do_not_copy": [
+    "WOG logo",
+    "reference login data",
+    "cookies/session data",
+    "WOG API requests",
+    "unapproved external contact links"
+  ],
+  "new_image_generation": false,
+  "hotlinking_required": false
+}

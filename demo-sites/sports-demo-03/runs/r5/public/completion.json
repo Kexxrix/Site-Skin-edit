@@ -1,0 +1,256 @@
+{
+  "status": "deployed-limited-verification-passed-awaiting-user-feedback",
+  "completedAt": "2026-09-22T04:20:31.672Z",
+  "package": "ALDEBARAN_WOG_LAYOUT_R5",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "publicVersion": 5,
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_cb5f3333a81881919fb804a83b033d60",
+  "deploymentId": "appgdep_6ab20161f73c8191971759d1f74bf3a1",
+  "deploymentStatus": "succeeded",
+  "deployedAt": "2026-09-22T04:17:55.091016+00:00",
+  "commit": "e8ad227b0536d1852627e3be79e3c24b857571e0",
+  "remoteHead": "e8ad227b0536d1852627e3be79e3c24b857571e0",
+  "clean": true,
+  "changedFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "app/demo-data.ts",
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/wog-market-data.ts",
+    "app/wog-service-views.tsx"
+  ],
+  "completed": [
+    "Fixed 1920 shell; header 62+36; body320/1244/320; inner609/8/609",
+    "Header10, notice5, left quick12/photos2/search2/sport-country-league tree/popular5",
+    "League cards with three basic odds rows; selected match heading and five filters; 8 or10 market groups with multiple lines",
+    "Four independent scrollers; fixed controls; different fixture resets only detail; same fixture and odds preserve positions",
+    "Account six services; original slip transaction/calculation path; stable selection IDs and optional namespaced slip persistence; six banners",
+    "Content-filled local lobbies, records and readable detail, attendance, support, profile and financial demo explanations",
+    "Same PUBLIC address updated; one public1920x1080 capture saved"
+  ],
+  "incomplete": [],
+  "unverified": [
+    "Real bet submission",
+    "Authentication and financial regression",
+    "Every menu state",
+    "Attendance and support persistence after reload",
+    "Slip keep persistence after reload",
+    "Mobile or full visual audit"
+  ],
+  "verification": {
+    "build": {
+      "command": "npm run build",
+      "runs": 1,
+      "exit": 0
+    },
+    "typecheck": {
+      "command": "tsc --noEmit --incremental false",
+      "runs": 1,
+      "exit": 0,
+      "buildIncludesTypecheck": false
+    },
+    "localGeometry": {
+      "brokenImages": [],
+      "card": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 228,
+        "width": 587,
+        "x": 358,
+        "y": 273
+      },
+      "center": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 967,
+        "width": 1244,
+        "x": 338,
+        "y": 105
+      },
+      "counts": {
+        "banners": 6,
+        "cards": 77,
+        "groups": 10,
+        "header": 10,
+        "notice": 5,
+        "photos": 2,
+        "quick": 12,
+        "tabs": 6
+      },
+      "detailOdd": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 34,
+        "width": 280.5,
+        "x": 986,
+        "y": 255
+      },
+      "gnb": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 62,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "header": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 98,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "left": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 967,
+        "width": 320,
+        "x": 8,
+        "y": 105
+      },
+      "nestedButtons": 0,
+      "notice": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 36,
+        "width": 1920,
+        "x": 0,
+        "y": 62
+      },
+      "odd": {
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "height": 36,
+        "width": 278.5,
+        "x": 371,
+        "y": 372
+      },
+      "panes": [
+        {
+          "h": 946,
+          "w": 609,
+          "x": 347,
+          "y": 114
+        },
+        {
+          "h": 946,
+          "w": 609,
+          "x": 964,
+          "y": 114
+        }
+      ],
+      "scrollers": [
+        {
+          "content": 1068,
+          "height": 967,
+          "label": "스포츠 바로가기",
+          "top": 0
+        },
+        {
+          "content": 18642,
+          "height": 840,
+          "label": "리그별 경기 목록",
+          "top": 0
+        },
+        {
+          "content": 1335,
+          "height": 855,
+          "label": "세부 마켓 목록",
+          "top": 0
+        },
+        {
+          "content": 1482,
+          "height": 967,
+          "label": "계정과 베팅슬립",
+          "top": 0
+        }
+      ],
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "interactions": "See implementation/basic-observation.json",
+    "data": "See implementation/data-connection.json",
+    "console": [],
+    "public": "Native succeeded response plus actual R5 canonical-root browser image after cache refresh"
+  },
+  "preserved": {
+    "originalMatches": 77,
+    "originalFieldsAndMarkets": true,
+    "originalPolicy": true,
+    "sourceInputs": true,
+    "mercurySiriusTrackedFiles": 567,
+    "mercurySiriusChanged": 0,
+    "originalAssets": true,
+    "operatingFourDocuments": "Owned by coordinator; not edited"
+  },
+  "capture": {
+    "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r5/public/aldebaran-r5-initial-1920x1080.jpg",
+    "bytes": 194243,
+    "sha256": "e18c1d9bb1ade67a77da25c3bbc590d19915113c6ce96210df2131d06350c8bd",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site/",
+    "capturedAt": "2026-09-22T04:19:49.831Z",
+    "requestedViewport": [
+      1920,
+      1080
+    ],
+    "format": "JPEG",
+    "savedScreenshots": 1,
+    "visualObservation": {
+      "r5Header": true,
+      "oldR4HeaderAbsent": true,
+      "photosVisible": true,
+      "defaultMatch": "record-401816943",
+      "defaultScore": "1 : 1",
+      "largeTrackerAbsent": true
+    },
+    "cacheNote": "Initial existing public tab showed its cached R4 document. A cache-busting URL showed R5; one Page.reload(ignoreCache:true) then confirmed the canonical root URL shows R5. No persistent browser setting changed.",
+    "actualPixels": [
+      1920,
+      1080
+    ]
+  },
+  "archive": {
+    "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r5\\public\\aldebaran-wog-layout-r5.tar.gz",
+    "sha256": "2c38ce9a0fc1df84d75742af5a7f0cd4b7e6bc30d2f5bea9acc6af73e72aed93",
+    "bytes": 25088621,
+    "entries": 318,
+    "worker": true,
+    "project": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "forbidden": [],
+    "preparedWith": "Bundled Sites 0.1.57 prepare-site-build.cjs; checked fresh project-local staging; native tar. 0.1.70 disappeared after successful source-open.",
+    "build": {
+      "command": "npm run build",
+      "runs": 1,
+      "exit": 0
+    },
+    "typecheck": {
+      "command": "tsc --noEmit --incremental false",
+      "runs": 1,
+      "exit": 0,
+      "buildIncludesTypecheck": false
+    }
+  },
+  "limitations": [
+    "Local demo schedules and prices; no live feed or real transactions",
+    "Visual acceptance remains with the user",
+    "Cache refresh may be required in an already-open v4 tab"
+  ],
+  "toolingRecovery": {
+    "sourceOpen": "Sites0.1.70 native workflow succeeded before edits",
+    "publication": "0.1.70 path disappeared during this turn; existing bundled0.1.57 prepare-site-build + validated fresh staging + native tar; normal source commit/push via hidden stdin credential; native save/deploy",
+    "newInstall": false,
+    "newSite": false
+  },
+  "handoff": {
+    "coordinator": "01a0a8e7-acda-7ab0-a42a-44beb1b41e50",
+    "retainedBrowserTab": "15",
+    "viewportReset": true,
+    "localServerStopped": true,
+    "openInCodex": "Skipped in delegated background task",
+    "nextAction": "Wait for user feedback"
+  }
+}

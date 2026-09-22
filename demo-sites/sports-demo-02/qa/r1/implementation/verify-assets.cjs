@@ -1,0 +1,12 @@
+const fs=require('node:fs'),crypto=require('node:crypto');
+const root=process.cwd(),qa='../qa/r1/implementation';const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const supplied=['sirius-symbol.png','sirius-wordmark.png'].map(name=>({name,sourceSha:hash('../assets/branding/'+name),copySha:hash('public/branding/'+name),buildSha:hash('dist/client/branding/'+name)}));
+const banners=['mercury-slots-woman.png','mercury-event-woman.png'].map(name=>({name,sha:hash('public/banners/r8/'+name),buildSha:hash('dist/client/banners/r8/'+name)}));
+if(supplied.some(x=>x.sourceSha!==x.copySha||x.copySha!==x.buildSha)||banners.some(x=>x.sha!==x.buildSha))throw Error('Asset hash mismatch');
+const ready=JSON.parse(fs.readFileSync(qa+'/full-audit-ready.json','utf8'));
+const manifest=JSON.parse(fs.readFileSync(qa+'/'+ready.sourceManifest,'utf8'));
+const changed=manifest.files.filter(f=>hash(f.file)!==f.sha256).map(f=>f.file);if(changed.length)throw Error('Frozen source changed');
+const progress=JSON.parse(fs.readFileSync('app/live-snapshots.json'));
+const snapshots=Object.entries(progress).map(([id,item])=>({id,sourceFile:item.sourceFile,sha256:hash('../'+item.sourceFile),expectedSha256:item.sourceSha256,wallclock:item.progressSource.wallclock,staticSnapshot:item.progressSource.stoppedSnapshot}));
+if(snapshots.some(x=>x.sha256!==x.expectedSha256))throw Error('Source evidence mismatch');
+const result={checkedAt:new Date().toISOString(),supplied,banners,snapshots,frozenSourceUnchanged:true,sourceId:manifest.sourceId,projectId:JSON.parse(fs.readFileSync('.openai/hosting.json')).project_id};fs.writeFileSync(qa+'/asset-build-checks.json',JSON.stringify(result,null,2));console.log(JSON.stringify({supplied:supplied.length,banners:banners.length,progressSources:snapshots.length,frozenSourceUnchanged:true}));

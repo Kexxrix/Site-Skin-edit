@@ -1,0 +1,60 @@
+'use client';
+
+// oxlint-disable jsx-a11y/no-noninteractive-tabindex -- The three independent scroll regions must be keyboard-focusable.
+
+import { useState, type ReactNode } from 'react';
+import { Activity, ArrowDownToLine, ArrowUpFromLine, Bell, ChevronRight, CircleDot, Clock3, Headphones, LockKeyhole, Radio, Search, ShieldCheck, Ticket, Trash2, Trophy, UserRound, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Empty, EmptyDescription, EmptyTitle } from '@/components/ui/empty';
+import { Sidebar, SidebarProvider } from '@/components/ui/sidebar';
+import { matches, sections, priceText, type Match, type Selection } from './demo-data';
+
+type Notice = (message:string) => void;
+function Panel({title,extra,children,className=''}:{title?:string;extra?:ReactNode;children:ReactNode;className?:string}) {
+  return <section className={`panel ${className}`}>{title && <div className="panel-heading"><h2>{title}</h2>{extra}</div>}{children}</section>;
+}
+function Header({notify}:{notify:Notice}) {
+  const [active,setActive] = useState('실시간 스포츠');
+  return <><header className="topbar"><div className="wordmark" aria-label="COBALT"><div className="brand-glyph"><span>C</span></div><div><div className="brand-name">COBALT</div><div className="brand-caption">THE SPORTING CLUB</div></div></div>
+    <nav className="primary-nav" aria-label="주요 카테고리">{['스포츠','실시간 스포츠','E스포츠','카지노','슬롯','미니게임','이벤트'].map(label=><button key={label} aria-pressed={active===label} onClick={()=>{setActive(label);if(label!=='실시간 스포츠')notify(`${label} 메뉴입니다. 현재는 스포츠 디자인 체험 화면을 제공합니다.`);}}>{label==='실시간 스포츠'&&<span className="nav-dot"/>}{label}</button>)}</nav>
+    <div className="header-account"><Button className="btn" onClick={()=>notify('계정 기능은 현재 체험에서 제공하지 않습니다.')}>로그인</Button><Button className="btn gold" onClick={()=>notify('회원가입 없이 배당 선택을 체험하실 수 있습니다.')}>회원가입</Button></div></header>
+    <div className="noticebar"><span><Bell/><b>NOTICE</b> 가상 경기와 배당으로 자유롭게 체험해 보세요.</span><span>SPORTS DESIGN DEMO <b>·</b> 실제 거래 없음</span></div></>;
+}
+function LeftColumn({notify}:{notify:Notice}) {
+  return <aside className="scroll-column left-column" aria-label="스포츠 바로가기" tabIndex={0}>
+    <Panel title="빠른 서비스" extra={<span className="eyebrow">QUICK</span>}><div className="quick-body"><Button className="btn gold" onClick={()=>notify('충전은 지원하지 않는 디자인 데모입니다.')}><ArrowDownToLine/>충전</Button><Button className="btn" onClick={()=>notify('환전은 지원하지 않는 디자인 데모입니다.')}><ArrowUpFromLine/>환전</Button><Button className="btn" onClick={()=>notify('문의 기능은 현재 체험에서 제공하지 않습니다.')}><Headphones/> 고객센터</Button></div></Panel>
+    <Panel><div className="search-wrap"><label className="search-label" htmlFor="match-search">경기 찾기</label><div className="search-box"><Input id="match-search" placeholder="팀 또는 리그 검색" disabled/><Search/></div></div><SidebarProvider className="!min-h-0 !block"><Sidebar collapsible="none" className="sport-nav"><nav className="sport-menu" aria-label="스포츠 종목">{[['전체 스포츠','05',Trophy],['축구','03',CircleDot],['농구','01',CircleDot],['야구','01',CircleDot],['배구','00',CircleDot],['테니스','00',CircleDot],['E스포츠','00',Activity]].map(([label,count,Icon],i)=><button key={String(label)} className={i===0?'active':''} onClick={()=>notify(`${String(label)} · 종목 필터는 현재 체험에서 제공하지 않습니다.`)}><Icon/><span>{String(label)}</span><small>{String(count)}</small><ChevronRight/></button>)}</nav></Sidebar></SidebarProvider></Panel>
+    <Panel className="promo"><div className="eyebrow">EVERY MOMENT COUNTS</div><h2>경기의 순간을<br/><em>더 깊이.</em></h2><p>시작을 기다리는 설렘부터<br/>마지막 휘슬의 여운까지.</p><Button className="btn gold" onClick={()=>document.getElementById('live')?.scrollIntoView({block:'start',behavior:'smooth'})}>실시간 경기 보기 <ChevronRight/></Button><div className="promo-footer">COBALT SPORTS CLUB</div></Panel>
+    <Panel title="스포츠 가이드" extra={<ShieldCheck/>}><div className="support-links"><button onClick={()=>notify('배당 버튼을 누르면 슬립에 담깁니다. 다시 누르거나 슬립의 ×로 제거하세요.')}>배당 선택 안내 <ChevronRight/></button><button onClick={()=>notify('골드 버튼은 선택된 배당입니다. 잠금 표시가 있는 배당은 선택할 수 없습니다.')}>마켓 이용 안내 <ChevronRight/></button></div></Panel>
+    <div className="left-footer"><strong>COBALT</strong>스포츠를 즐기는 또 하나의 시선.<br/>가상 데이터 기반 디자인 체험입니다.</div>
+  </aside>;
+}
+function SectionTitle({section}:{section:typeof sections[number]}) {
+  const Icon=section.id==='live'?Radio:section.id==='soon'?Clock3:Trophy;
+  return <><div className="section-title"><div className="title-group"><span className="title-icon"><Icon/></span><h2>{section.title}</h2>{section.id==='live'&&<span className="live-badge"><span className="live-dot"/>LIVE</span>}</div><div className="title-right">{section.caption}<span>·</span><strong className="num">{String(section.matchIds.length).padStart(2,'0')}</strong>경기</div></div><div className="section-subbar"><span className="subbar-name"><CircleDot/> 전체 종목</span><span>{section.english}</span></div></>;
+}
+function BettingCard({match,selected,toggle}:{match:Match;selected:Selection[];toggle:(match:Match,m:number,p:number)=>void}) {
+  return <article className="match-card" aria-label={`${match.home} 대 ${match.away}`} data-match={match.id}><div className="card-top"><CircleDot/>{match.league}<span className="market-count">{match.markets.length} 마켓</span></div><div className="match-status"><i/>{match.state}</div><div className="teams"><div className="team-name"><span className="team-code">{match.codes[0]}</span><span>{match.home}</span></div><strong className="score num">{match.score[0]}</strong><div className="team-name"><span className="team-code">{match.codes[1]}</span><span>{match.away}</span></div><strong className="score num">{match.score[1]}</strong></div>
+    {match.markets.map((market,m)=><div className="market" key={market.name}><div className="market-label"><span>{market.name}</span><span className="line">{market.line}</span></div><div className={`odds-row ${market.picks.length===3?'three':''}`}>{market.picks.map((pick,p)=>{const id=`${match.id}-${m}-${p}`;return <Button key={id} className="odd" data-pick={id} aria-label={`${match.home} ${market.name} ${pick.label} ${priceText(pick.price)}${pick.locked?' 잠김':''}`} aria-pressed={selected.some(s=>s.id===id)} disabled={pick.locked} onClick={()=>toggle(match,m,p)}><span>{pick.label}</span><span className="odd-value">{pick.locked?<LockKeyhole aria-label="잠김"/>:pick.trend&&<span className="trend" aria-label={pick.trend==='up'?'배당 상승':'배당 하락'}>{pick.trend==='up'?'▲':'▼'}</span>}<strong className="num">{priceText(pick.price)}</strong></span></Button>;})}</div></div>)}
+    <div className="card-bottom"><span>{match.id.startsWith('live')?'IN PLAY':'PRE MATCH'}</span><span>가상 경기</span></div></article>;
+}
+function Slip({selected,remove,clear}:{selected:Selection[];remove:(id:string)=>void;clear:()=>void}) {
+  const combined=selected.reduce((n,s)=>{const match=matches.find(m=>m.id===s.matchId)!;return n*match.markets[s.marketIndex].picks[s.pickIndex].price;},1);
+  return <Panel className="slip" title="베팅슬립" extra={<div style={{display:'flex',alignItems:'center',gap:12}}><span className="count-badge num" aria-label={`${selected.length}개 선택`}>{selected.length}</span><button className="icon-button" aria-label="선택 전체 제거" disabled={!selected.length} onClick={clear}><Trash2/></button></div>}>
+    <div className="slip-type"><span>{selected.length>1?'조합 선택':'단일 선택'}</span><span className="muted">BET SLIP</span></div><div className="slip-list" aria-live="polite">{!selected.length?<Empty className="empty-slip"><Ticket/><EmptyTitle>선택한 배당이 없습니다</EmptyTitle><EmptyDescription>경기의 배당을 선택하면<br/>이곳에 선택 내역이 표시됩니다.</EmptyDescription></Empty>:selected.map(s=>{const match=matches.find(m=>m.id===s.matchId)!;const market=match.markets[s.marketIndex];const pick=market.picks[s.pickIndex];return <div className="slip-item" key={s.id} data-selection={s.id}><div className="slip-item-top"><span>{match.league}</span><button className="icon-button" aria-label={`${match.home} 선택 제거`} onClick={()=>remove(s.id)}><X/></button></div><div className="slip-teams">{match.home}<br/><span className="muted">vs</span> {match.away}</div><div className="slip-pick"><span>{pick.label}</span><strong className="num">{priceText(pick.price)}</strong></div><small className="slip-market">{market.name}{market.line&&` · 기준 ${market.line}`}</small></div>;})}</div>
+    <div className="slip-totals"><label className="stake-label" htmlFor="stake">베팅 금액 <span>KRW</span></label><Input id="stake" className="stake" value="0" disabled/><div className="stake-quick"><Button className="btn" disabled>+5천</Button><Button className="btn" disabled>+1만</Button><Button className="btn" disabled>초기화</Button></div><div className="total-line"><span>총 배당</span><strong className="num">{selected.length?combined.toFixed(3):'0.00'}</strong></div><div className="total-line payout"><span>예상 적중금</span><strong className="num">₩ 0</strong></div><Button className="btn submit-slip" disabled><LockKeyhole/> 베팅하기</Button><div className="slip-footnote">금액 입력과 실제 베팅은 제공하지 않습니다.</div></div>
+  </Panel>;
+}
+export default function Page() {
+  const [selected,setSelected]=useState<Selection[]>([]);
+  const [notice,setNotice]=useState('');
+  const toggle=(match:Match,m:number,p:number)=>{if(match.markets[m].picks[p].locked)return;const id=`${match.id}-${m}-${p}`;setSelected(prev=>prev.some(s=>s.id===id)?prev.filter(s=>s.id!==id):[...prev.filter(s=>s.matchId!==match.id),{id,matchId:match.id,marketIndex:m,pickIndex:p}]);};
+  return <div className="shell"><Header notify={setNotice}/><div className="workspace"><LeftColumn notify={setNotice}/><main className="scroll-column center-column" aria-label="스포츠 경기 목록" tabIndex={0}>{sections.map(section=><section key={section.id} id={section.id} className="section-block" aria-label={section.title}><SectionTitle section={section}/><div className="card-grid">{section.matchIds.map(id=><BettingCard key={id} match={matches.find(m=>m.id===id)!} selected={selected} toggle={toggle}/>)}</div></section>)}<p className="demo-note">모든 팀·경기·배당은 가상의 예시입니다. 한 경기에서는 하나의 배당을 선택할 수 있습니다.</p></main>
+    <aside className="scroll-column right-column" aria-label="계정 및 베팅슬립" tabIndex={0}><Panel title="MY ACCOUNT" extra={<span className="eyebrow">GUEST</span>}><div className="account-body"><div className="account-identity"><div className="avatar"><UserRound/></div><div><strong>방문자님, 환영합니다</strong><small>로그인 없이 둘러보세요</small></div></div><div className="wallet"><span>보유 금액</span><strong className="num">₩ 0</strong></div><div className="account-actions"><Button className="btn" onClick={()=>setNotice('충전은 지원하지 않는 디자인 데모입니다.')}>충전</Button><Button className="btn" onClick={()=>setNotice('환전은 지원하지 않는 디자인 데모입니다.')}>환전</Button><Button className="btn" onClick={()=>setNotice('저장된 베팅내역이 없습니다. 실제 거래는 제공하지 않습니다.')}>베팅내역</Button></div></div></Panel><Slip selected={selected} remove={id=>setSelected(prev=>prev.filter(s=>s.id!==id))} clear={()=>setSelected([])}/><Panel title="도움이 필요하신가요?" extra={<Headphones/>}><div className="support-links"><button onClick={()=>setNotice('문의 기능은 현재 체험에서 제공하지 않습니다.')}>1:1 문의 <ChevronRight/></button><button onClick={()=>setNotice('안내: 이 화면은 가상 데이터를 사용하는 스포츠 디자인 데모입니다.')}>공지사항 <ChevronRight/></button></div></Panel><Panel className="mini-event"><div className="eyebrow">MATCHDAY SPECIAL</div><h2>매치데이,<br/>함께하는 즐거움.</h2><p>좋아하는 팀과 함께하는 오늘.</p><Button className="btn" onClick={()=>setNotice('이벤트는 디자인 예시이며 실제 참여 및 보상은 제공하지 않습니다.')}>이벤트 안내 <ChevronRight/></Button></Panel><p className="demo-note">COBALT · SPORTS DESIGN DEMO<br/>가상 데이터 · 실제 거래 없음</p></aside></div>
+    {notice&&<output className="inline-notice"><span>{notice}</span><button aria-label="안내 닫기" onClick={()=>setNotice('')}><X/></button></output>}
+  </div>;
+}
+
+
+

@@ -1,0 +1,256 @@
+{
+  "viewport": [
+    1920,
+    940
+  ],
+  "empty": {
+    "accountButtons": [
+      {
+        "height": 38,
+        "text": "충전",
+        "width": 92.65625
+      },
+      {
+        "height": 38,
+        "text": "환전",
+        "width": 92.671875
+      },
+      {
+        "height": 38,
+        "text": "베팅내역",
+        "width": 92.65625
+      }
+    ],
+    "balance": {
+      "font": "din-condensed, \"Arial Narrow\", sans-serif",
+      "size": "28px",
+      "text": "₩ 1,000,000"
+    },
+    "empty": true,
+    "event": {
+      "height": 180,
+      "image": "/banners/r8/mercury-event-woman.png",
+      "nested": 0,
+      "tag": "BUTTON",
+      "width": 320
+    },
+    "gap": "14px",
+    "order": [
+      "panel account-panel",
+      "panel slip",
+      "support-panel",
+      "sr7-event-banner"
+    ],
+    "panels": [
+      {
+        "background": "linear-gradient(160deg, rgb(17, 31, 60), rgb(9, 20, 45) 75%)",
+        "border": "rgb(43, 61, 95)",
+        "class": "panel account-panel",
+        "padding": "12px",
+        "radius": "12px"
+      },
+      {
+        "background": "linear-gradient(160deg, rgb(17, 31, 60), rgb(9, 20, 45) 75%)",
+        "border": "rgb(43, 61, 95)",
+        "class": "panel slip",
+        "padding": "12px",
+        "radius": "12px"
+      },
+      {
+        "background": "linear-gradient(160deg, rgb(17, 31, 60), rgb(9, 20, 45) 75%)",
+        "border": "rgb(43, 61, 95)",
+        "class": "support-panel",
+        "padding": "12px",
+        "radius": "12px"
+      }
+    ],
+    "quick": [
+      {
+        "height": 34,
+        "text": "+5천"
+      },
+      {
+        "height": 34,
+        "text": "+1만"
+      },
+      {
+        "height": 34,
+        "text": "+5만"
+      },
+      {
+        "height": 34,
+        "text": "초기화"
+      }
+    ],
+    "scroll": {
+      "listMax": "216px",
+      "listOverflow": "auto",
+      "railOverflow": "auto"
+    },
+    "stake": {
+      "font": "din-condensed, \"Arial Narrow\", sans-serif",
+      "height": 44,
+      "inputType": "text",
+      "radius": "999px",
+      "size": "24px",
+      "width": 294
+    },
+    "submit": {
+      "bg": "rgb(11, 23, 48)",
+      "disabled": true,
+      "height": 44,
+      "width": 294
+    },
+    "width": 320
+  },
+  "single": {
+    "central": "true",
+    "count": "1",
+    "disabled": true,
+    "item": "MLB탬파베이 레이스vs애슬레틱스홈1.84승패 · 연장 포함",
+    "mode": "단일 선택BET SLIP",
+    "reason": "로그인 후 이용할 수 있습니다.",
+    "total": "1.840"
+  },
+  "multi": {
+    "count": "3",
+    "disabled": true,
+    "items": [
+      {
+        "odds": "1.84",
+        "oddsWidth": 29.484375,
+        "scrollWidth": 292,
+        "teamsHeight": 21,
+        "text": "MLB탬파베이 레이스vs애슬레틱스홈1.84승패 · 연장 포함",
+        "width": 294
+      },
+      {
+        "odds": "2.125",
+        "oddsWidth": 37.84375,
+        "scrollWidth": 292,
+        "teamsHeight": 21,
+        "text": "MLSKansas CityvsPhiladelphia원정2.125승무패 · 정규시간 90분",
+        "width": 294
+      },
+      {
+        "odds": "1.82",
+        "oddsWidth": 29.484375,
+        "scrollWidth": 292,
+        "teamsHeight": 21,
+        "text": "NHL 프리시즌토론토 메이플리프스vs몬트리올 캐네이디언스홈1.82승패 · 연장 포함",
+        "width": 294
+      }
+    ],
+    "mode": "조합 선택BET SLIP",
+    "odds": "7.116",
+    "potential": "₩ 711,620",
+    "stake": "100000",
+    "sumScroll": 88,
+    "sumWidth": 87.84375
+  },
+  "loggedIn": {
+    "bg": "linear-gradient(110deg, rgb(220, 197, 139), rgb(255, 228, 160))",
+    "color": "rgb(16, 26, 52)",
+    "disabled": false,
+    "member": "회원",
+    "reason": "선택 내역과 금액을 확인해 주세요."
+  },
+  "invalid": {
+    "disabled": true,
+    "focusBorder": "rgb(239, 131, 145)",
+    "invalid": "true",
+    "message": "한 번에 최대 100,000원까지 가능합니다.",
+    "messageColor": "rgb(245, 140, 150)",
+    "value": "100001"
+  },
+  "amounts": [
+    {
+      "action": "+5천",
+      "value": "5000"
+    },
+    {
+      "action": "+1만",
+      "value": "15000"
+    },
+    {
+      "action": "+5만",
+      "value": "65000"
+    }
+  ],
+  "removal": {
+    "central": "false",
+    "count": "2"
+  },
+  "restored": {
+    "balance": "₩ 1,000,000",
+    "count": "0",
+    "disabled": true,
+    "empty": true,
+    "invalid": "false",
+    "member": "GUEST",
+    "stake": ""
+  },
+  "actions": [
+    {
+      "name": "충전",
+      "expected": "충전 후 보유 금액은",
+      "observed": true
+    },
+    {
+      "name": "환전",
+      "expected": "환전 안내",
+      "observed": true
+    },
+    {
+      "name": "베팅내역",
+      "actual": "베팅내역이 없습니다",
+      "observed": true
+    },
+    {
+      "name": "1:1 문의 안내",
+      "expected": "1:1 문의",
+      "observed": true
+    },
+    {
+      "name": "공지사항",
+      "expected": "원하는 종목과 리그를 선택해 경기를 확인하세요.",
+      "observed": true
+    },
+    {
+      "name": "이벤트 보기",
+      "expected": "이벤트 소식은 공지사항에서 확인하세요.",
+      "observed": true
+    }
+  ],
+  "bottom": {
+    "centerScroll": 0,
+    "event": {
+      "bottom": 928,
+      "copy": "SIRIUS EVENTS당신의 밤을더 특별하게.",
+      "height": 180,
+      "loaded": true,
+      "source": "/banners/r8/mercury-event-woman.png",
+      "width": 320
+    },
+    "max": 362,
+    "railBottom": 928,
+    "scroll": 362
+  },
+  "focus": {
+    "disabled": false,
+    "focused": "베팅하기",
+    "offset": "2px",
+    "outline": "rgb(252, 225, 164) solid 2px"
+  },
+  "console": [],
+  "submitted": false,
+  "visual": "Right panels and selected cards use navy rounded surfaces; full precision odds/amounts visible; existing event photo face is clear above lower-left copy.",
+  "limits": [
+    "Representative local states only; no actual betting/confirmation submission",
+    "Full/mobile/motion audit not repeated"
+  ],
+  "toolNotes": [
+    "Duplicate fixture labels resolved by observed fixture ID before selection",
+    "History empty text read as 베팅내역이 없습니다; initial expected wording corrected without app change"
+  ]
+}

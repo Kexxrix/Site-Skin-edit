@@ -1,0 +1,55 @@
+{
+  "status": "R3 공개 반영 / 사용자 피드백 대기",
+  "url": "https://sirius.kexxadrix.chatgpt.site",
+  "projectId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "versionNumber": 3,
+  "versionId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_f2598663e49481918d199510d7cfe013",
+  "commit": "0bdff8e9d67df19e4ae004e9ceb79715143fadc6",
+  "deploymentId": "appgdep_6aaceb56dc108191bd01bd17dd18d1c3",
+  "deploymentStatus": "succeeded",
+  "deployedAt": "2026-09-18T07:42:33.245115+00:00",
+  "access": "public unchanged",
+  "changedFiles": [
+    "app/page.tsx",
+    "app/globals.css",
+    "app/match-list.css",
+    "app/match-motion.tsx",
+    "app/match-presentation.ts"
+  ],
+  "implementation": "../implementation/changes.json",
+  "basicObservation": "basic-observation.json",
+  "screenshot": {
+    "screenshot": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\runs\\r3\\public\\sirius-r3-default-1920x940.jpg",
+    "bytes": 193214,
+    "sha256": "D371BD683EF69782DA370153E5D4BE49CC63F473C8901AD57CABC2D4A5324F89",
+    "console": [],
+    "gitStatus": [],
+    "previewListeners": []
+  },
+  "localArchive": {
+    "path": "sirius-refinement-r3.tar.gz",
+    "bytes": 25716294,
+    "sha256": "1175d08d9947e07e305cfa23089c2fdb1ad87e6db196827fcc26c87a425aed04"
+  },
+  "archiveStorage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_00000000545081fd99900f1025b2c11f",
+    "content_hash": "sha256:e291b08ebfcd5d68dbdbd513c70cec02c9cf1576b3f8705d8309bff8b63b159f",
+    "size_bytes": 27637760,
+    "file_count": 250
+  },
+  "remainingItems": [
+    "Only original three markets have selectable odds. Additional sport-specific types lack data and remain disabled.",
+    "Short changed-function checks only. Reduced-motion and every fixture combination were not separately exercised.",
+    "No independent QA by user instruction; no QA task/agent requested."
+  ],
+  "independentQA": "사용자 지시로 미실시",
+  "cleanup": {
+    "ownedPreview5287": "stopped",
+    "cache": "moved within runs/r3/implementation/local-preview-cache",
+    "browserViewport": "reset",
+    "publicTab": "12 retained",
+    "sourceCredential": "cleared from execution store"
+  },
+  "designApproval": "pending user feedback"
+}

@@ -1,0 +1,1542 @@
+{
+  "start": {
+    "startedAt": "2026-09-18T09:24:59.5024245Z",
+    "head": "b84f893a8b7867dc211e56495bd415b06cf95ffc",
+    "dirty": [],
+    "protectedHashes": [
+      {
+        "path": "app/match-records.json",
+        "sha256": "B662A76A48E9C6F25D4ADD889DD375045BA97A548F67A2C0CC23126D7F21DD6D"
+      },
+      {
+        "path": "app/live-snapshots.json",
+        "sha256": "C6C4F167DAFD1C5FF367BB5CA199F99C35AF250065C9210F333E53DFCCE5992A"
+      },
+      {
+        "path": "app/match-motion.tsx",
+        "sha256": "727E3DFD455F6232D18FD8B22A1A5E576930E1CD6675AC57BE4AFA7F50A17100"
+      },
+      {
+        "path": "app/typography.css",
+        "sha256": "BF83591B25272FF9247648134D88D513DAC71C40148F7B6CB3C954BC377A88C2"
+      },
+      {
+        "path": "app/layout.tsx",
+        "sha256": "A598355705DC7CA9918F72EC6DECC4106AFEFC62C20032BF7FBA717F5B086909"
+      },
+      {
+        "path": "public/assets/header/BG_sirius_header.png",
+        "sha256": "7BCF3107C87BF7636CC606C974ACA5CB6F6B3210AEAE214634FD2B5E23951EB4"
+      },
+      {
+        "path": "public/banners/r8/mercury-slots-woman.png",
+        "sha256": "82957C0E5197BD2D3A2983BD260C8284632507F821251C8B76918DD0B2E600A6"
+      },
+      {
+        "path": "public/banners/r8/mercury-event-woman.png",
+        "sha256": "D56425D3AA57A2EB11F067F87DFC5DB65496E4E511561F945A4B2EFC8E392B99"
+      }
+    ],
+    "mercuryHead": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+    "mercuryDirty": [
+      "?? tsconfig.tsbuildinfo"
+    ]
+  },
+  "files": [
+    "M app/demo-data.ts",
+    " M app/globals.css",
+    " M app/match-list.css",
+    " M app/match-presentation.ts",
+    " M app/page.tsx",
+    "?? app/display-score-templates.json",
+    "?? public/sports/sirius-r5/"
+  ],
+  "scores": {
+    "total": 77,
+    "filledMatches": 61,
+    "filledSides": 122,
+    "filledBySport": {
+      "basketball": 6,
+      "hockey": 7,
+      "american-football": 16,
+      "soccer": 32
+    },
+    "validMatchesPreserved": 16,
+    "zeroSidesPreserved": 1,
+    "oneSidedSyntheticChecks": "0/missing, missing/0 passed; valid 112/108 preserved",
+    "deterministic": true,
+    "sourceMutation": false,
+    "originalOddsPrecision": true,
+    "longestOdds": [
+      {
+        "id": "record-401879275",
+        "market": 0,
+        "pick": 2,
+        "text": "2.125"
+      },
+      {
+        "id": "record-401879269",
+        "market": 0,
+        "pick": 2,
+        "text": "2.125"
+      },
+      {
+        "id": "record-401879270",
+        "market": 0,
+        "pick": 2,
+        "text": "2.125"
+      }
+    ],
+    "basketball": [
+      {
+        "id": "record-401902644",
+        "home": "토론토 랩터스",
+        "score": [
+          "112",
+          "108"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401857190",
+        "home": "애틀랜타 드림",
+        "score": [
+          "28",
+          "24"
+        ],
+        "state": "in",
+        "status": "1Q 02:16",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401857191",
+        "home": "Sky",
+        "score": [
+          "112",
+          "108"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401857192",
+        "home": "Wings",
+        "score": [
+          "86",
+          "81"
+        ],
+        "state": "in",
+        "status": "3Q 01:32",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401857193",
+        "home": "Fire",
+        "score": [
+          "54",
+          "49"
+        ],
+        "state": "in",
+        "status": "2Q 00:48",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401857194",
+        "home": "Storm",
+        "score": [
+          "28",
+          "24"
+        ],
+        "state": "in",
+        "status": "1Q 02:16",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      }
+    ],
+    "fills": [
+      {
+        "id": "record-401902644",
+        "sport": "basketball",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "112",
+          "108"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401881922",
+        "sport": "hockey",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "1P 08:42",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401857190",
+        "sport": "basketball",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "28",
+          "24"
+        ],
+        "state": "in",
+        "status": "1Q 02:16",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401872932",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "27",
+          "24"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401884790",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "2",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 78분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401879275",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-761815",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401876453",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401872933",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "7",
+          "3"
+        ],
+        "state": "in",
+        "status": "1Q 03:18",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401872937",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "7",
+          "3"
+        ],
+        "state": "in",
+        "status": "1Q 03:18",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401872939",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "21",
+          "17"
+        ],
+        "state": "in",
+        "status": "3Q 04:12",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401872946",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "7",
+          "3"
+        ],
+        "state": "in",
+        "status": "1Q 03:18",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401872936",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "27",
+          "24"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401872935",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "21",
+          "17"
+        ],
+        "state": "in",
+        "status": "3Q 04:12",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401872938",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "14",
+          "10"
+        ],
+        "state": "in",
+        "status": "2Q 02:40",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401872934",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "14",
+          "10"
+        ],
+        "state": "in",
+        "status": "2Q 02:40",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401872940",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "21",
+          "17"
+        ],
+        "state": "in",
+        "status": "3Q 04:12",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401872941",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "14",
+          "10"
+        ],
+        "state": "in",
+        "status": "2Q 02:40",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401872944",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "21",
+          "17"
+        ],
+        "state": "in",
+        "status": "3Q 04:12",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401872943",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "27",
+          "24"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401872942",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "7",
+          "3"
+        ],
+        "state": "in",
+        "status": "1Q 03:18",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401872945",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "14",
+          "10"
+        ],
+        "state": "in",
+        "status": "2Q 02:40",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401872947",
+        "sport": "american-football",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "27",
+          "24"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401857191",
+        "sport": "basketball",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "112",
+          "108"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401857192",
+        "sport": "basketball",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "86",
+          "81"
+        ],
+        "state": "in",
+        "status": "3Q 01:32",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401857193",
+        "sport": "basketball",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "54",
+          "49"
+        ],
+        "state": "in",
+        "status": "2Q 00:48",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401857194",
+        "sport": "basketball",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "28",
+          "24"
+        ],
+        "state": "in",
+        "status": "1Q 02:16",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401881923",
+        "sport": "hockey",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "4",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401886427",
+        "sport": "hockey",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "4",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401878099",
+        "sport": "hockey",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "2",
+          "1"
+        ],
+        "state": "in",
+        "status": "2P 06:14",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401886258",
+        "sport": "hockey",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "4",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401879412",
+        "sport": "hockey",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "2",
+          "1"
+        ],
+        "state": "in",
+        "status": "2P 06:14",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401879652",
+        "sport": "hockey",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "4",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401879269",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401879274",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401878778",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401879271",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401879270",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-761818",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "2",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 78분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-761819",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-761816",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-761817",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-761822",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-761820",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-761821",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "2",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 78분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-761823",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-761824",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-761826",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-761827",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-761825",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "2",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 78분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-761828",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401884786",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401884787",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "2",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 78분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 2
+      },
+      {
+        "id": "record-401884785",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401884784",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401884789",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401876451",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401876457",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "1"
+        ],
+        "state": "in",
+        "status": "후반 61분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 1
+      },
+      {
+        "id": "record-401876455",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "0",
+          "2"
+        ],
+        "state": "post",
+        "status": "종료 · FINAL",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 3
+      },
+      {
+        "id": "record-401876454",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      },
+      {
+        "id": "record-401876450",
+        "sport": "soccer",
+        "originalScore": [
+          "–",
+          "–"
+        ],
+        "originalState": "pre",
+        "score": [
+          "1",
+          "0"
+        ],
+        "state": "in",
+        "status": "전반 32분",
+        "filledSides": [
+          0,
+          1
+        ],
+        "provenance": "r5-approved-display-only",
+        "templateIndex": 0
+      }
+    ]
+  },
+  "missingCause": "61 source/snapshot scheduled fixtures have en-dash scores; shared renderer printed supplied values directly.",
+  "oddsCause": "Flex-shrink default and min-width:0 on .odd-value allowed parent narrower than strong; source font 17/800 Pretendard. R5 sets DIN 20/400 and nonshrinking max-content number slot.",
+  "icons": [
+    {
+      "path": "public/sports/sirius-r5/soccer.png",
+      "sha256": "584FDFF7AE50F790F4CE33CA9B38539A7BA94A95D5A1B63C8669CC96ED5B2BC1",
+      "matches": true
+    },
+    {
+      "path": "public/sports/sirius-r5/basketball.png",
+      "sha256": "1A319F58E7B9F4BD1F6F20B82CC891BCA402310EAE7CB84EF6307E10F720B715",
+      "matches": true
+    },
+    {
+      "path": "public/sports/sirius-r5/baseball.png",
+      "sha256": "7C95240190B5BB0D553D226A3D6E33337FD9EE00FE3BC9919CCC130C3189E037",
+      "matches": true
+    },
+    {
+      "path": "public/sports/sirius-r5/american-football.png",
+      "sha256": "F350A540E8AAA0BFDB0B67B2E082F65A9AB925A96D9F47EFD7DAD64CE802779A",
+      "matches": true
+    },
+    {
+      "path": "public/sports/sirius-r5/ice-hockey.png",
+      "sha256": "EB504CD41E304A078C1D0147A33B753530B873AE0C4CB64F2EEE5208B3081D56",
+      "matches": true
+    },
+    {
+      "path": "public/sports/sirius-r5/volleyball.png",
+      "sha256": "24C8F2F89B8343581CCF723D29A1AC896BE203D98C862B94C5E6EDC98873AEB7",
+      "matches": true
+    },
+    {
+      "path": "public/sports/sirius-r5/tennis.png",
+      "sha256": "5229B9855E01219F1F57FD9BD39BE39726D0FB27BAAB4427FD2C6ED4D12F2A4A",
+      "matches": true
+    }
+  ],
+  "iconSites": [
+    "left menu",
+    "header explorer",
+    "center league sport",
+    "match detail"
+  ],
+  "preserved": {
+    "sourceHashes": true,
+    "originalScoreOddsStateLocksCalculations": true,
+    "extraCountAlgorithm": true,
+    "headerAndMotion": true,
+    "mercuryHeadAndDirty": true,
+    "otherProjectsAndPort3000": "not touched"
+  },
+  "checks": {
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "exit": 0
+    },
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "exit": 0
+    },
+    "briefBrowser": "basic-observation.json"
+  },
+  "cleanup": {
+    "ownedPreviewPort": 5287,
+    "stopped": true,
+    "cacheMoved": "preview-worker-cache"
+  },
+  "remaining": "No issue found in requested representative checks; full audit/mobile and motion re-audit not performed."
+}

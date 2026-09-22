@@ -1,0 +1,155 @@
+{
+  "schema": "aldebaran-center-integration-v1",
+  "status": "handoff-reference-not-applied",
+  "app_path_default": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/",
+  "public_url": "https://aldebaran.kexxadrix.chatgpt.site/",
+  "entry": "current main sports content node, inside existing middle column",
+  "supersedes": [
+    "active blank-center instruction",
+    "render_children:false for central content",
+    "mount_tracker:false for central content"
+  ],
+  "layout": {
+    "columns": "repeat(2,minmax(0,1fr))",
+    "gap_start_px": 16,
+    "center_width_observed_px": 1280,
+    "example_column_px": 632,
+    "calculation": "(1280 - 16) / 2 = 632",
+    "outer_rails": "preserve",
+    "desktop_shell": "existing fixed 1920px",
+    "scroller": "reuse current central shared scroll; no new independent column scrollbars",
+    "responsive_redesign": false
+  },
+  "reference_files": {
+    "layout_cards_odds": "implementation/AldebaranCenterR4.tsx",
+    "pitch": "implementation/FootballPitchR4.tsx",
+    "center_styles": "styles/aldebaran-center-r4.css",
+    "header_patch": "styles/aldebaran-header-r3-1.patch.css",
+    "tracker_demo_config": "implementation/tracker-demo-config.json"
+  },
+  "reference_completeness": {
+    "provided": [
+      "equal-column layout",
+      "controlled card template",
+      "controlled odds button",
+      "original football pitch vector",
+      "central CSS",
+      "header correction CSS",
+      "state and data contracts"
+    ],
+    "implementer_must_complete": [
+      "actual data adapters",
+      "scoreboard",
+      "timeline",
+      "tracker scene controller",
+      "tracker tabs and statistics",
+      "non-football state view",
+      "market filter and detail panels",
+      "existing slip/search/filter integration"
+    ]
+  },
+  "reuse": {
+    "matches": "current application data and visibility conditions; do not regenerate the full dataset",
+    "images": "existing team/league/flag/sport image mapping",
+    "active_sport": "current left rail filter state",
+    "query": "current match search state",
+    "selected_odds": "current slip state",
+    "toggle_selection": "current bet-slip action and existing per-match compatibility rules",
+    "amount_and_return": "existing calculator and limits",
+    "more_and_top": "existing approved behavior and motion",
+    "numeric_font": "map --ab-number-font to actual existing DIN/font token; no new font installation"
+  },
+  "state": {
+    "selectedTrackerMatchId": "one source for inspected match in card/tracker/details; separate from bet selection",
+    "trackerTab": "match/statistics/timeline",
+    "marketFilter": "all/result/handicap/totals/special, only populated categories",
+    "trackerScene": "current local scene derived from selected match, no stale timer across match changes"
+  },
+  "events": [
+    {
+      "event": "inspect-match",
+      "effect": "set tracker match ID; update scoreboard/timeline/stats/markets; preserve slip"
+    },
+    {
+      "event": "toggle-odds-left-or-right",
+      "effect": "call the same existing slip action with the same selection ID; reflect selected state in both places"
+    },
+    {
+      "event": "select-different-match",
+      "effect": "clear old tracker scene timer, use new match data, preserve other selections"
+    },
+    {
+      "event": "filter-or-query-change",
+      "effect": "keep inspected match if it remains visible, otherwise select first suitable visible match; empty means no stale tracker"
+    },
+    {
+      "event": "more",
+      "effect": "reuse current expansion flow and motion; do not reset selected match"
+    },
+    {
+      "event": "tracker-tab-change",
+      "effect": "switch real content without changing fixture/slip"
+    },
+    {
+      "event": "market-filter-change",
+      "effect": "filter the selected fixture actual markets without changing fixture/slip"
+    }
+  ],
+  "initial_state": "When no valid inspected match exists, prefer a visible LIVE soccer match and feature it first; otherwise first visible LIVE, otherwise first visible match. Do not silently change sport filter.",
+  "score_rules": [
+    "0 is a valid value; use explicit null checks",
+    "LIVE/finished scores must be available from source or stable demo adaptation",
+    "scheduled status stays scheduled; do not invent LIVE scores",
+    "keep 3-digit scores inside center column",
+    "scoreboard and card use same score fields",
+    "soccer events and stats must be consistent with goals/time"
+  ],
+  "market_identity": {
+    "existing_markets": "preserve current stable IDs and payload",
+    "new_detail_markets": "deterministic ID including fixture, sport, period, market type, line and outcome",
+    "left_right_duplicates": "same ID and same current value, not parallel new selections",
+    "compatibility": "retain existing conflict/max-selection rules"
+  },
+  "tracker": {
+    "source": "local demo derived from selected match",
+    "official_api": false,
+    "iframe": false,
+    "screenshot_as_widget": false,
+    "football": "scoreboard + event strip + SVG pitch + scene status + 3 functional tabs",
+    "other_sports": "correct scoreboard/status/statistics, no stale soccer field",
+    "live_motion": "controlled small scene loop only while LIVE and page visible; respect reduced-motion",
+    "score_mutation": "not required; never update tracker score alone"
+  },
+  "detailed_markets": {
+    "priority": "reuse existing market data first",
+    "football_minimum": [
+      "full-time result",
+      "handicap",
+      "totals"
+    ],
+    "football_demo_extras": [
+      "first-half result",
+      "first scoring team including no-goal option"
+    ],
+    "other_sports": "use sport-appropriate periods and labels; omit inapplicable markets"
+  },
+  "header": "apply only remaining R3.1 changes to actual .ab-header2; do not reapply old R3 layout",
+  "verification": {
+    "separate_qa": false,
+    "jev": false,
+    "new_test_suite": false,
+    "existing_build_once": true,
+    "representative_changed_flows": true,
+    "public_initial_screenshot": 1,
+    "actual_bet_submission": false
+  },
+  "protected": [
+    "MERCURY",
+    "SIRIUS",
+    "ALDEBARAN external rails and banners",
+    "existing storage namespace",
+    "existing account/slip behavior",
+    "current fixed body frame"
+  ],
+  "deployment": "update existing ALDEBARAN hosting only; record actual identifiers"
+}

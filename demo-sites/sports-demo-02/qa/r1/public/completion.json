@@ -1,0 +1,81 @@
+{
+  "completedAt": "2026-09-18T04:46:14.955Z",
+  "site": "SIRIUS",
+  "url": "https://sirius.kexxadrix.chatgpt.site",
+  "access": "public",
+  "projectId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "versionId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_222236bb2fa4819194e707c6f3ecd81b",
+  "version": 1,
+  "deploymentId": "appgdep_6aacc08a8d48819189a3f05cd616bde6",
+  "commit": "4e48de6df3b5810e0afbb668804244f1264c0230",
+  "sourceId": "efad70506a3fcfac90ceb67d6b16ceedd5acc8086cc0e06f1eab705c7f4546a2",
+  "sourceManifest": "source-efad7050.json",
+  "status": "COMPLETE_VALIDATED_PUBLIC",
+  "changedFilesRelativeToPreservedMercury": [
+    ".openai/hosting.json",
+    "app/demo-data.ts",
+    "app/globals.css",
+    "app/layout.tsx",
+    "app/live-snapshots.json",
+    "app/match-list.css",
+    "app/page.tsx",
+    "public/branding/sirius-symbol.png",
+    "public/branding/sirius-wordmark.png"
+  ],
+  "implemented": [
+    "League-grouped continuous full-width rows with shared result/handicap/total columns",
+    "Independent section +6 expansion and collapsible league groups",
+    "Blue/white/gold skin across header, rails, popups, inputs, buttons and banners",
+    "Supplied SIRIUS symbol left of wordmark, new title/favicon and isolated browser storage",
+    "Confirmation preserves O/U threshold and selected handicap threshold plus settlement rules"
+  ],
+  "checks": {
+    "build": "PASS",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "fixtureAndMarketPreservation": "77 unique fixtures; original IDs, market order, odds and lock rules preserved",
+    "localIndependent": "Q01-Q11 PASS after Q07-P2-01 correction",
+    "publicIndependentReport": "qa/r1/audit/public-v1-efad7050/public-audit.json",
+    "publicIndependentVerdict": "PASS",
+    "anonymousHttp": "PASS",
+    "publicAssetsAndCSS": "17 assets and 1 CSS match exact build SHA",
+    "archiveFilesVerified": 250,
+    "sourceFilesVerified": 276,
+    "gitClean": true
+  },
+  "evidence": {
+    "fullAudit": "qa/r1/audit/full-0c8f4e1c/full-audit.json",
+    "fixRecheck": "qa/r1/audit/recheck-efad7050/recheck-report.json",
+    "publicAudit": "qa/r1/audit/public-v1-efad7050/public-audit.json",
+    "http": "qa/r1/public/anonymous-http.json",
+    "browser": "qa/r1/public/browser-initial.json",
+    "browserHealth": "qa/r1/public/browser-health.json",
+    "capture": "qa/r1/public/public-initial.jpg",
+    "captureManifest": "qa/r1/public/capture-manifest.json",
+    "deployment": "qa/r1/public/deployment.json",
+    "archive": "qa/r1/public/archive-validation.json"
+  },
+  "preserved": [
+    "Original MERCURY source, deployment, audience, URL and port3000",
+    "Original 77-fixture data, fonts, 8 sport PNG icons, banner photos and local interaction logic",
+    "Coordinator-owned operating documents"
+  ],
+  "notAdded": [
+    "Real payment/backend integration",
+    "New generated assets",
+    "Mobile redesign",
+    "Live score feed"
+  ],
+  "cleanup": {
+    "ownPorts5286And5287Stopped": true,
+    "originalPort3000Pid": 27744,
+    "browserViewportReset": true,
+    "publicTabRetained": true,
+    "openInCodexSkipped": "Site implementation is a delegated background task; coordinator owns foreground handoff."
+  },
+  "remainingScopeLimits": [
+    "Historical stopped score snapshots remain intentionally static.",
+    "1920/2560 desktop layouts verified; no mobile layout claimed.",
+    "User aesthetic acceptance is separate from technical and independent audit completion."
+  ]
+}

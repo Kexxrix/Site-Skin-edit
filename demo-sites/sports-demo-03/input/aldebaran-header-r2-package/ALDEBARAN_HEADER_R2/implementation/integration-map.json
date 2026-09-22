@@ -1,0 +1,84 @@
+{
+  "schema": "aldebaran-header-integration-v1",
+  "status": "reference-implementation-not-applied-to-app",
+  "target": "existing ALDEBARAN app only",
+  "app_path_default": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/",
+  "public_url": "https://aldebaran.kexxadrix.chatgpt.site/",
+  "new_project_registration": false,
+  "site_copy_again": false,
+  "reference_files": {
+    "component": "implementation/AldebaranHeaderR2.tsx",
+    "stylesheet": "styles/aldebaran-header-r2.css"
+  },
+  "placement": {
+    "component": "existing component directory chosen after reading the app",
+    "stylesheet": "app-level CSS import alongside existing global styles",
+    "brand_assets": "public/assets/branding/"
+  },
+  "controlled_props": {
+    "items": "Reuse existing 7 menu IDs, labels and actions. onSelect calls original handlers.",
+    "activeItemId": "Read the existing app selection state. Do not create duplicate header state.",
+    "notice": "Pass the current notice control with its original click handler; apply notice classes below.",
+    "accountActions": "Pass existing guest/authenticated branch. Keep handlers, labels and visual button classes.",
+    "brandHref": "Preserve existing brand link destination.",
+    "onBrandClick": "Preserve existing optional brand click handler."
+  },
+  "menu_order": [
+    "스포츠",
+    "실시간 스포츠",
+    "E스포츠",
+    "카지노",
+    "슬롯",
+    "미니게임",
+    "이벤트"
+  ],
+  "notice_classes": {
+    "existing_clickable_root": "ab-header2__notice-control",
+    "existing_NOTICE_label": "ab-header2__notice-label",
+    "existing_message_text": "ab-header2__notice-text"
+  },
+  "layout": {
+    "header_height_px": 104,
+    "brand_width_px": 344,
+    "utility_row_px": 46,
+    "nav_row_px": 58,
+    "measurements_status": "implementation defaults, not user-approved exact pixels",
+    "shared_height_variable": "--ab-header-total-height",
+    "old_header_and_notice_rows": "replace both with one new header; no duplicated notice row or spacer",
+    "css_grid_parent": "If source uses grid, update rows to the single header height and original content area.",
+    "fixed_header_parent": "If source uses fixed/sticky offsets, update existing offsets to same height instead of layering a new layout system.",
+    "column_widths": "unchanged",
+    "left_rail_width": "unchanged",
+    "central_content": "remains empty"
+  },
+  "css_notes": [
+    "Use current accepted --ab-* tokens. Fallback values are R1 defaults only.",
+    "Scope header changes to .ab-header2; do not reapply the full R1 theme.",
+    "Replace old header-only active borders, pseudo-elements and notice positioning when they conflict.",
+    "Keep menu controls native buttons with original behavior. No new internal state.",
+    "Map existing active state to aria-pressed. No moving pill or new animation library."
+  ],
+  "verification": {
+    "independent_qa": false,
+    "jev": false,
+    "build_and_changed_header_check": true,
+    "screenshots": 1,
+    "full_bet_slip_regression": false
+  },
+  "protected": [
+    "MERCURY",
+    "SIRIUS",
+    "ALDEBARAN rails",
+    "ALDEBARAN banners",
+    "ALDEBARAN storage/data",
+    "ALDEBARAN blank center"
+  ],
+  "deferred": [
+    "central betting cards",
+    "match tracker",
+    "rail redesign",
+    "new images",
+    "json-render",
+    "global polish"
+  ]
+}

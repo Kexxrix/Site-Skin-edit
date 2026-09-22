@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "stage": "F02-built-production-focused-recheck",
+  "auditorThreadId": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+  "source": {
+    "url": "http://127.0.0.1:5277/",
+    "environment": "Built production Worker from dist/server/wrangler.json; not5276 dev server",
+    "sourceId": "a3bef90ec3c36b3d9568fb5466a4a82336667b7335aae7ee8ec7e2b2f88ee1be",
+    "previousSourceId": "5c032b0e58bc18e815edc64b3c50d661da28cdd016da1f4d433064904938764b",
+    "changedFiles": [
+      "components/ui/button.tsx"
+    ],
+    "change": "Removed only active:not-aria-[haspopup]:translate-y-px from shared Button base class, according to supplied delta; independent129-file SHA comparison confirms only that file changed.",
+    "fileSha256": "6b062ccdcd36ee264e786f32a4a1a630ef4d80ab2ba13ab4de20065888b0b4f9",
+    "browserStylesheet": "http://127.0.0.1:5277/_next/static/css/index.Bl8uWmul.css",
+    "builtCssSha256": "3404ef1c4d91998626dfad990838bfffb020ec788fc76c336ef1521d0fa9b166",
+    "start": "source-verification-before.json",
+    "end": "source-verification-after.json",
+    "integrity": "129/129 match start and end"
+  },
+  "observation": {
+    "startKST": "2026-09-17T13:12:43+09:00",
+    "endKST": "2026-09-17T13:14:48+09:00",
+    "viewport": {
+      "width": 1920,
+      "height": 940,
+      "dpr": 1,
+      "scale": 1
+    },
+    "screenshots": "3 original1920x940 JPEG captures, unmodified"
+  },
+  "finding": {
+    "id": "F02",
+    "q": "Q07",
+    "priority": "P2",
+    "publicV4Reproduction": "../F02-public-v4/finding-F02.json",
+    "status": "해소 - built production Worker",
+    "result": "서비스·일반 배당 both held active=true, translate/transform none, deltaY0, x/y/width/height unchanged. F01 inset shadow retained."
+  },
+  "checks": [
+    {
+      "label": "service",
+      "baseRect": {
+        "bottom": 259,
+        "height": 94,
+        "left": 25,
+        "right": 144,
+        "top": 165,
+        "width": 119,
+        "x": 25,
+        "y": 165
+      },
+      "pressedRect": {
+        "bottom": 259,
+        "height": 94,
+        "left": 25,
+        "right": 144,
+        "top": 165,
+        "width": 119,
+        "x": 25,
+        "y": 165
+      },
+      "deltaY": 0,
+      "sameRect": true,
+      "active": true,
+      "translate": "none",
+      "transform": "none",
+      "shadow": "rgba(0, 0, 0, 0.667) 0px 3px 8px 0px inset, rgba(0, 0, 0, 0.6) 0px 1px 0px 0px inset",
+      "movementUtilityAbsent": true
+    },
+    {
+      "label": "odds",
+      "baseRect": {
+        "bottom": 345,
+        "height": 42,
+        "left": 309,
+        "right": 461.328125,
+        "top": 303,
+        "width": 152.328125,
+        "x": 309,
+        "y": 303
+      },
+      "pressedRect": {
+        "bottom": 345,
+        "height": 42,
+        "left": 309,
+        "right": 461.328125,
+        "top": 303,
+        "width": 152.328125,
+        "x": 309,
+        "y": 303
+      },
+      "deltaY": 0,
+      "sameRect": true,
+      "active": true,
+      "translate": "none",
+      "transform": "none",
+      "shadow": "rgba(0, 0, 0, 0.733) 0px 3px 7px 0px inset, rgba(0, 0, 0, 0.533) 0px 1px 0px 0px inset",
+      "movementUtilityAbsent": true
+    }
+  ],
+  "release": {
+    "service": "Release opens virtual recharge dialog; close works.",
+    "odds": "Held-pointer release restores active=false and original rect/hover. No selection change from raw held CDP sequence. Separate normal browser click selects expected home1.84, clear action restores0.",
+    "end": {
+      "active": 0,
+      "dialogs": 0,
+      "selected": 0
+    }
+  },
+  "finalVerdict": {
+    "A": "통과",
+    "B": "통과",
+    "C": "통과",
+    "scope": "Previously accepted Q01–Q10 plus F01 evidence reused; F02 production-state regression now resolved on exact built source.",
+    "openFindings": [],
+    "publicV4": "still failed F02 until replaced; this result does not assert v5 is deployed",
+    "userDesignApproved": false
+  },
+  "reusedEvidence": [
+    "../full-1a3f550f/full-audit.json",
+    "../recheck-5c032b0e/recheck-result.json",
+    "../initial-20260917/initial-audit.json"
+  ],
+  "limits": [
+    "Only requested gold service and ordinary odds families rechecked. No full functional, motion, font, WOG re-run.",
+    "Public deployment verification remains coordinator follow-up; no Sites connector called."
+  ],
+  "evidence": {
+    "states": "button-state-observations.json",
+    "manifest": "capture-manifest.json",
+    "sourceEditedByAuditor": false,
+    "extraMD": false,
+    "receiptsCreated": false,
+    "viewportReset": true
+  }
+}

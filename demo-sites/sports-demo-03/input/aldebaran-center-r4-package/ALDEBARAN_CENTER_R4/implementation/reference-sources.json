@@ -1,0 +1,35 @@
+{
+  "schema": "aldebaran-r4-reference-sources-v1",
+  "primary_layout_source": "latest user-authored textual requirements and DESIGN_SPEC.md",
+  "latest_uploaded_mockup": {
+    "used": false,
+    "included": false,
+    "pixel_sampling": false,
+    "implementation_reference": false
+  },
+  "tracker_reference": {
+    "name": "Sportradar Live Match Tracker official demo",
+    "url": "https://widgets.sir.sportradar.com/live-match-tracker#layout:(colorTheme:(colors:(away:%23FF2BE9,background:%231A1A1A,base:%23F5F4F4,home:%2300FFD4,primary:%23FF7C00),formula:solid)),matches:(matchId:72055190,sportId:1,uniqueTournamentId:27464),settings:(layout:single,scoreboard:extended),sidebar:(selected:versions)",
+    "observed_date": "2026-09-21",
+    "observed_via": [
+      "official page text",
+      "browser DOM",
+      "browser viewport screenshot"
+    ],
+    "observed_structure": [
+      "extended scoreboard",
+      "home/away event timeline",
+      "top-down pitch",
+      "bottom navigation tabs"
+    ],
+    "observed_state": "selected reference match was ended; a live feed was not verified",
+    "usage": "visual structure reference only; local demo UI and data",
+    "provider_integration": false
+  },
+  "artwork": {
+    "new_raster_images": false,
+    "new_logo_or_banner": false,
+    "existing_team_league_flag_assets": "reuse current ALDEBARAN assets",
+    "pitch": "original SVG geometry included as implementation reference"
+  }
+}

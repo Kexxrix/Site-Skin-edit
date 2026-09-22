@@ -1,0 +1,62 @@
+{
+  "schema": "sirius-header-r2-independent-audit-intake-v1",
+  "recordedAt": "2026-09-18T15:24:58.9889215+09:00",
+  "scope": [
+    "H01 header structure",
+    "H02 explorer and keyboard",
+    "H03 geometry and overlay",
+    "H04 tone and original images",
+    "H05 representative preserved functions",
+    "H06 same public URL update"
+  ],
+  "writeBoundary": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\qa\\r2\\audit",
+  "baselineCommit": "4e48de6df3b5810e0afbb668804244f1264c0230",
+  "baselineSourceId": "efad70506a3fcfac90ceb67d6b16ceedd5acc8086cc0e06f1eab705c7f4546a2",
+  "publicUrl": "https://sirius.kexxadrix.chatgpt.site/",
+  "inputs": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\AGENTS.md",
+      "bytes": 5931,
+      "sha256": "719afe2a643729c60245d21a0e75d547a50408503979e0355bfc71c1d2330873"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\STATE.md",
+      "bytes": 11995,
+      "sha256": "5af33a9c8b85161c5ce3902d35f9f4c7862625f96594ef59a0a658f6498723ce"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\DESIGN_SPEC.md",
+      "bytes": 15539,
+      "sha256": "e6b7ac5d6aec079d0e7af454b2f86933bce5c6c1662e9052a10fc4981c75f62b"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\DECISIONS.md",
+      "bytes": 5987,
+      "sha256": "3bc346ddc910b756177a2aa05820651bb5601756b69fc7c50cb71639c49e1f5d"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\references\\sirius-before-tone.png",
+      "bytes": 404246,
+      "sha256": "f2bf2d272612e2b9e3e516be7c8f2336c7c8ab96d10a7f328a770c99b9be7ffe",
+      "width": 1919,
+      "height": 943
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\references\\sirius-darker-tone-reference.png",
+      "bytes": 397609,
+      "sha256": "e3a9db95af49011f1230a4c272b23a5b1bc48584e63bbdf1c1cc1bc27e1fd252",
+      "width": 1919,
+      "height": 943
+    }
+  ],
+  "referencesVisuallyViewed": true,
+  "referenceUse": "Before image establishes retained body arrangement; darker image is tone direction only, not exact pixel or header target.",
+  "status": "awaiting implementation freeze",
+  "excluded": [
+    "WOG revisit",
+    "exhaustive 77-match re-audit",
+    "aesthetic score or acceptance",
+    "rail restructuring",
+    "deployment changes"
+  ]
+}

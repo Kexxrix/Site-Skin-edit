@@ -1,0 +1,60 @@
+--- before/app/page.tsx
++++ published/app/page.tsx
+@@ -16,7 +16,7 @@
+ }
+ function Header({notify}:{notify:Notice}) {
+   const [active,setActive] = useState('실시간 스포츠');
+-  return <><header className="topbar"><div className="wordmark" aria-label="COBALT"><div className="brand-glyph"><span>C</span></div><div><div className="brand-name">COBALT</div><div className="brand-caption">THE SPORTING CLUB</div></div></div>
++  return <><header className="topbar"><div className="wordmark" aria-label="MERCURY"><div className="brand-glyph"><span>M</span></div><div><div className="brand-name">MERCURY</div><div className="brand-caption">THE SPORTING CLUB</div></div></div>
+     <nav className="primary-nav" aria-label="주요 카테고리">{['스포츠','실시간 스포츠','E스포츠','카지노','슬롯','미니게임','이벤트'].map(label=><button key={label} aria-pressed={active===label} onClick={()=>{setActive(label);if(label!=='실시간 스포츠')notify(`${label} 메뉴입니다. 현재는 스포츠 디자인 체험 화면을 제공합니다.`);}}>{label==='실시간 스포츠'&&<span className="nav-dot"/>}{label}</button>)}</nav>
+     <div className="header-account"><Button className="btn" onClick={()=>notify('계정 기능은 현재 체험에서 제공하지 않습니다.')}>로그인</Button><Button className="btn gold" onClick={()=>notify('회원가입 없이 배당 선택을 체험하실 수 있습니다.')}>회원가입</Button></div></header>
+     <div className="noticebar"><span><Bell/><b>NOTICE</b> 가상 경기와 배당으로 자유롭게 체험해 보세요.</span><span>SPORTS DESIGN DEMO <b>·</b> 실제 거래 없음</span></div></>;
+@@ -25,9 +25,9 @@
+   return <aside className="scroll-column left-column" aria-label="스포츠 바로가기" tabIndex={0}>
+     <Panel title="빠른 서비스" extra={<span className="eyebrow">QUICK</span>}><div className="quick-body"><Button className="btn gold" onClick={()=>notify('충전은 지원하지 않는 디자인 데모입니다.')}><ArrowDownToLine/>충전</Button><Button className="btn" onClick={()=>notify('환전은 지원하지 않는 디자인 데모입니다.')}><ArrowUpFromLine/>환전</Button><Button className="btn" onClick={()=>notify('문의 기능은 현재 체험에서 제공하지 않습니다.')}><Headphones/> 고객센터</Button></div></Panel>
+     <Panel><div className="search-wrap"><label className="search-label" htmlFor="match-search">경기 찾기</label><div className="search-box"><Input id="match-search" placeholder="팀 또는 리그 검색" disabled/><Search/></div></div><SidebarProvider className="!min-h-0 !block"><Sidebar collapsible="none" className="sport-nav"><nav className="sport-menu" aria-label="스포츠 종목">{[['전체 스포츠','05',Trophy],['축구','03',CircleDot],['농구','01',CircleDot],['야구','01',CircleDot],['배구','00',CircleDot],['테니스','00',CircleDot],['E스포츠','00',Activity]].map(([label,count,Icon],i)=><button key={String(label)} className={i===0?'active':''} onClick={()=>notify(`${String(label)} · 종목 필터는 현재 체험에서 제공하지 않습니다.`)}><Icon/><span>{String(label)}</span><small>{String(count)}</small><ChevronRight/></button>)}</nav></Sidebar></SidebarProvider></Panel>
+-    <Panel className="promo"><div className="eyebrow">EVERY MOMENT COUNTS</div><h2>경기의 순간을<br/><em>더 깊이.</em></h2><p>시작을 기다리는 설렘부터<br/>마지막 휘슬의 여운까지.</p><Button className="btn gold" onClick={()=>document.getElementById('live')?.scrollIntoView({block:'start',behavior:'smooth'})}>실시간 경기 보기 <ChevronRight/></Button><div className="promo-footer">COBALT SPORTS CLUB</div></Panel>
++    <Panel className="promo"><div className="eyebrow">EVERY MOMENT COUNTS</div><h2>경기의 순간을<br/><em>더 깊이.</em></h2><p>시작을 기다리는 설렘부터<br/>마지막 휘슬의 여운까지.</p><Button className="btn gold" onClick={()=>document.getElementById('live')?.scrollIntoView({block:'start',behavior:'smooth'})}>실시간 경기 보기 <ChevronRight/></Button><div className="promo-footer">MERCURY SPORTS CLUB</div></Panel>
+     <Panel title="스포츠 가이드" extra={<ShieldCheck/>}><div className="support-links"><button onClick={()=>notify('배당 버튼을 누르면 슬립에 담깁니다. 다시 누르거나 슬립의 ×로 제거하세요.')}>배당 선택 안내 <ChevronRight/></button><button onClick={()=>notify('골드 버튼은 선택된 배당입니다. 잠금 표시가 있는 배당은 선택할 수 없습니다.')}>마켓 이용 안내 <ChevronRight/></button></div></Panel>
+-    <div className="left-footer"><strong>COBALT</strong>스포츠를 즐기는 또 하나의 시선.<br/>가상 데이터 기반 디자인 체험입니다.</div>
++    <div className="left-footer"><strong>MERCURY</strong>스포츠를 즐기는 또 하나의 시선.<br/>가상 데이터 기반 디자인 체험입니다.</div>
+   </aside>;
+ }
+ function SectionTitle({section}:{section:typeof sections[number]}) {
+@@ -51,7 +51,7 @@
+   const [notice,setNotice]=useState('');
+   const toggle=(match:Match,m:number,p:number)=>{if(match.markets[m].picks[p].locked)return;const id=`${match.id}-${m}-${p}`;setSelected(prev=>prev.some(s=>s.id===id)?prev.filter(s=>s.id!==id):[...prev.filter(s=>s.matchId!==match.id),{id,matchId:match.id,marketIndex:m,pickIndex:p}]);};
+   return <div className="shell"><Header notify={setNotice}/><div className="workspace"><LeftColumn notify={setNotice}/><main className="scroll-column center-column" aria-label="스포츠 경기 목록" tabIndex={0}>{sections.map(section=><section key={section.id} id={section.id} className="section-block" aria-label={section.title}><SectionTitle section={section}/><div className="card-grid">{section.matchIds.map(id=><BettingCard key={id} match={matches.find(m=>m.id===id)!} selected={selected} toggle={toggle}/>)}</div></section>)}<p className="demo-note">모든 팀·경기·배당은 가상의 예시입니다. 한 경기에서는 하나의 배당을 선택할 수 있습니다.</p></main>
+-    <aside className="scroll-column right-column" aria-label="계정 및 베팅슬립" tabIndex={0}><Panel title="MY ACCOUNT" extra={<span className="eyebrow">GUEST</span>}><div className="account-body"><div className="account-identity"><div className="avatar"><UserRound/></div><div><strong>방문자님, 환영합니다</strong><small>로그인 없이 둘러보세요</small></div></div><div className="wallet"><span>보유 금액</span><strong className="num">₩ 0</strong></div><div className="account-actions"><Button className="btn" onClick={()=>setNotice('충전은 지원하지 않는 디자인 데모입니다.')}>충전</Button><Button className="btn" onClick={()=>setNotice('환전은 지원하지 않는 디자인 데모입니다.')}>환전</Button><Button className="btn" onClick={()=>setNotice('저장된 베팅내역이 없습니다. 실제 거래는 제공하지 않습니다.')}>베팅내역</Button></div></div></Panel><Slip selected={selected} remove={id=>setSelected(prev=>prev.filter(s=>s.id!==id))} clear={()=>setSelected([])}/><Panel title="도움이 필요하신가요?" extra={<Headphones/>}><div className="support-links"><button onClick={()=>setNotice('문의 기능은 현재 체험에서 제공하지 않습니다.')}>1:1 문의 <ChevronRight/></button><button onClick={()=>setNotice('안내: 이 화면은 가상 데이터를 사용하는 스포츠 디자인 데모입니다.')}>공지사항 <ChevronRight/></button></div></Panel><Panel className="mini-event"><div className="eyebrow">MATCHDAY SPECIAL</div><h2>매치데이,<br/>함께하는 즐거움.</h2><p>좋아하는 팀과 함께하는 오늘.</p><Button className="btn" onClick={()=>setNotice('이벤트는 디자인 예시이며 실제 참여 및 보상은 제공하지 않습니다.')}>이벤트 안내 <ChevronRight/></Button></Panel><p className="demo-note">COBALT · SPORTS DESIGN DEMO<br/>가상 데이터 · 실제 거래 없음</p></aside></div>
++    <aside className="scroll-column right-column" aria-label="계정 및 베팅슬립" tabIndex={0}><Panel title="MY ACCOUNT" extra={<span className="eyebrow">GUEST</span>}><div className="account-body"><div className="account-identity"><div className="avatar"><UserRound/></div><div><strong>방문자님, 환영합니다</strong><small>로그인 없이 둘러보세요</small></div></div><div className="wallet"><span>보유 금액</span><strong className="num">₩ 0</strong></div><div className="account-actions"><Button className="btn" onClick={()=>setNotice('충전은 지원하지 않는 디자인 데모입니다.')}>충전</Button><Button className="btn" onClick={()=>setNotice('환전은 지원하지 않는 디자인 데모입니다.')}>환전</Button><Button className="btn" onClick={()=>setNotice('저장된 베팅내역이 없습니다. 실제 거래는 제공하지 않습니다.')}>베팅내역</Button></div></div></Panel><Slip selected={selected} remove={id=>setSelected(prev=>prev.filter(s=>s.id!==id))} clear={()=>setSelected([])}/><Panel title="도움이 필요하신가요?" extra={<Headphones/>}><div className="support-links"><button onClick={()=>setNotice('문의 기능은 현재 체험에서 제공하지 않습니다.')}>1:1 문의 <ChevronRight/></button><button onClick={()=>setNotice('안내: 이 화면은 가상 데이터를 사용하는 스포츠 디자인 데모입니다.')}>공지사항 <ChevronRight/></button></div></Panel><Panel className="mini-event"><div className="eyebrow">MATCHDAY SPECIAL</div><h2>매치데이,<br/>함께하는 즐거움.</h2><p>좋아하는 팀과 함께하는 오늘.</p><Button className="btn" onClick={()=>setNotice('이벤트는 디자인 예시이며 실제 참여 및 보상은 제공하지 않습니다.')}>이벤트 안내 <ChevronRight/></Button></Panel><p className="demo-note">MERCURY · SPORTS DESIGN DEMO<br/>가상 데이터 · 실제 거래 없음</p></aside></div>
+     {notice&&<output className="inline-notice"><span>{notice}</span><button aria-label="안내 닫기" onClick={()=>setNotice('')}><X/></button></output>}
+   </div>;
+ }
+--- before/app/layout.tsx
++++ published/app/layout.tsx
+@@ -3,8 +3,9 @@
+ import './globals.css';
+ 
+ export const metadata: Metadata = {
+-  title: 'COBALT · 스포츠 데모 01',
+-  description: '가상 경기와 배당으로 체험하는 스포츠 디자인 데모. 실제 거래는 제공하지 않습니다.',
++  title: 'MERCURY · 스포츠 데모 01',
++  description: 'MERCURY · 가상 경기와 배당으로 체험하는 스포츠 디자인 데모. 실제 거래는 제공하지 않습니다.',
++  icons: { icon: '/favicon.svg' },
+ };
+ 
+ export default function RootLayout({
+--- before/public/favicon.svg
++++ published/public/favicon.svg
+@@ -1 +1 @@
+-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" rx="6" fill="#181610"/><path d="M24 5 43 24 24 43 5 24Z" fill="none" stroke="#c8a45c"/><text x="24" y="32" font-family="Georgia,serif" font-size="26" text-anchor="middle" fill="#f0d99e">C</text></svg>
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" rx="6" fill="#181610"/><path d="M24 5 43 24 24 43 5 24Z" fill="none" stroke="#c8a45c"/><text x="24" y="32" font-family="Georgia,serif" font-size="26" text-anchor="middle" fill="#f0d99e">M</text></svg>
+--- before/.openai/hosting.json
++++ published/.openai/hosting.json
+@@ -1,4 +1,5 @@
+ {
+   "d1": null,
+-  "r2": null
++  "r2": null,
++  "project_id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c"
+ }

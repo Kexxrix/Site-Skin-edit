@@ -1,0 +1,97 @@
+{
+  "completed_at": "2026-09-21T16:44:28.727325+09:00",
+  "status": "ready_for_scoped_use",
+  "scope": "handoff, skill recognition and PRODUCT schema only",
+  "package": "E:/codexwork/Site-Skin-edit/qa-tools/jev/packages/SIRIUS_IMPECCABLE_JEV_R8.zip",
+  "package_sha256": "A2F77AA03A669B47EB90FACFA759A4ED823CF5D5BBC88516E0E5215509B977F8",
+  "reused_existing_extraction": "E:/codexwork/Site-Skin-edit/qa-tools/jev/packages/SIRIUS_IMPECCABLE_JEV_R8",
+  "changed_files": [
+    "site/PRODUCT.md",
+    "AGENTS.md",
+    "STATE.md",
+    "DESIGN_SPEC.md",
+    "DECISIONS.md"
+  ],
+  "skill_discovery": [
+    {
+      "cwd": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site",
+      "skills": [
+        {
+          "name": "impeccable",
+          "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-02\\site\\.agents\\skills\\impeccable\\SKILL.md",
+          "enabled": true,
+          "scope": "repo"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "cwd": "E:/codexwork/Site-Skin-edit",
+      "skills": [],
+      "errors": []
+    }
+  ],
+  "skill_original_sha256": "38C2E839E130008B6DA814AB9C16F3FCBBEDFDF721A9638EEBD31A9E65341A7A",
+  "skill_original_preserved": true,
+  "product_body_preserved": true,
+  "product_change": "schema marker only",
+  "context_exit_code": 0,
+  "legacy_warning_present": false,
+  "config": {
+    "buildPath": "code",
+    "hook": {
+      "enabled": false
+    }
+  },
+  "config_sha_preserved": true,
+  "inherited_connection": {
+    "freshness": "historical_snapshot_only",
+    "omitted_issues": 0,
+    "questions": 139,
+    "candidates": 0,
+    "review_disposition": "unverified",
+    "relations": 33,
+    "screened": 27,
+    "review": 6
+  },
+  "execution_counts": {
+    "reinstall": 0,
+    "model_turns": 0,
+    "jev_api": 0,
+    "commit_push": 0,
+    "site_deploy": 0,
+    "changed_product_context_check": 1,
+    "five_design_commands": 0,
+    "site_build": 0,
+    "browser_capture": 0,
+    "connection_retest": 0,
+    "from_run_redelivery": 0
+  },
+  "failed_probe": {
+    "record": "skill-discovery.json",
+    "reason": "npm CLI config parser rejected existing map; current desktop binary used instead; global config unchanged"
+  },
+  "source_revision": "15dca2f2728380ae77b6288f99adf8ac68f6e400",
+  "limits": [
+    "Current open chat picker/hot reload not directly observed",
+    "Root cwd does not auto-discover nested site skill; use explicit skill path with site cwd",
+    "Only existing initial-state connection evidence inherited",
+    "No current public-to-source binding or global site approval"
+  ],
+  "official_codex_docs": [
+    "https://learn.chatgpt.com/docs/build-skills",
+    "https://learn.chatgpt.com/docs/app-server"
+  ],
+  "next": "Wait for explicit user work instruction; do not begin design or deployment",
+  "source_verification": {
+    "head": "15dca2f2728380ae77b6288f99adf8ac68f6e400",
+    "tracked_diff_exit": 0,
+    "untracked_paths": [
+      ".agents/",
+      ".impeccable/",
+      "DESIGN.md",
+      "PRODUCT.md"
+    ],
+    "status_matches_start": true
+  }
+}

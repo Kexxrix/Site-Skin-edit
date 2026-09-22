@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-09-17T19:23:20.7559061+09:00",
+  "checks": [
+    {
+      "fixture": "record-401816943",
+      "eventId": "401816943",
+      "sourceUrl": "https://site.web.api.espn.com/apis/site/v2/sports/baseball/mlb/summary?contentorigin=espn&event=401816943",
+      "collectedAt": "2026-09-17T10:20:04.011Z",
+      "shaMatches": true,
+      "eventMatches": true,
+      "homeIdMatches": true,
+      "awayIdMatches": true,
+      "sourceFinalState": "post",
+      "actualMidgamePlayId": "4018169431200000059",
+      "phase": "Top of the 7th inning",
+      "score": [
+        1,
+        1
+      ],
+      "playTime": "2026-09-16T00:13:51Z",
+      "mode": "actual historical play, fixed snapshot; not current live network"
+    },
+    {
+      "fixture": "record-401816960",
+      "eventId": "401816960",
+      "sourceUrl": "https://site.web.api.espn.com/apis/site/v2/sports/baseball/mlb/summary?contentorigin=espn&event=401816960",
+      "collectedAt": "2026-09-17T10:20:03.777Z",
+      "shaMatches": true,
+      "eventMatches": true,
+      "homeIdMatches": true,
+      "awayIdMatches": true,
+      "sourceFinalState": "post",
+      "actualMidgamePlayId": "4018169601200000059",
+      "phase": "Top of the 7th inning",
+      "score": [
+        6,
+        3
+      ],
+      "playTime": "2026-09-16T19:08:53Z",
+      "mode": "actual historical play, fixed snapshot; not current live network"
+    },
+    {
+      "fixture": "record-401816961",
+      "eventId": "401816961",
+      "sourceUrl": "https://site.web.api.espn.com/apis/site/v2/sports/baseball/mlb/summary?contentorigin=espn&event=401816961",
+      "collectedAt": "2026-09-17T10:20:03.765Z",
+      "shaMatches": true,
+      "eventMatches": true,
+      "homeIdMatches": true,
+      "awayIdMatches": true,
+      "sourceFinalState": "post",
+      "actualMidgamePlayId": "4018169611200000059",
+      "phase": "Top of the 7th inning",
+      "score": [
+        5,
+        1
+      ],
+      "playTime": "2026-09-16T20:59:54Z",
+      "mode": "actual historical play, fixed snapshot; not current live network"
+    }
+  ],
+  "purpose": "Independent coordinator source-to-fixture check before implementation freeze; final display mapping will be checked separately.",
+  "verificationNote": "Initial coordinator shell used a reserved variable; home-team check rerun with a task-specific variable. All final fields are actual comparisons."
+}

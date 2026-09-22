@@ -1,0 +1,383 @@
+{
+  "completedAt": "2026-09-17T09:08:14.429Z",
+  "status": "R7 implementation, independent audit, corrections, public deployment and public smoke complete",
+  "url": "https://mercury.kexxadrix.chatgpt.site/",
+  "versionNumber": 6,
+  "deployedAt": "2026-09-17T17:58:42.312771+09:00",
+  "commit": "8b821074dffb0c51b5119210e6ac082177928b59",
+  "projectId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+  "versionId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_1b2dcb237b288191a1b9e7fb4d3c99bc",
+  "deploymentId": "appgdep_6aababb6243c8191b908cb16fbe32d7e",
+  "sourceId": "3cb5e2b2fc738a6973592b8b4f050227d27872d2739732a6366edf87fed59702",
+  "sourceFiles": 262,
+  "changes": {
+    "files": [
+      "app/demo-data.ts",
+      "app/globals.css",
+      "app/layout.tsx",
+      "app/logo-presentation.json",
+      "app/match-records.json",
+      "app/page.tsx",
+      "public/sports/r7/teams/bundesliga/borussia-dortmund.png",
+      "public/sports/r7/teams/bundesliga/borussia-monchengladbach.png",
+      "public/sports/r7/teams/bundesliga/eintracht-frankfurt.png",
+      "public/sports/r7/teams/bundesliga/fc-augsburg.png",
+      "public/sports/r7/teams/bundesliga/fc-cologne.png",
+      "public/sports/r7/teams/bundesliga/hamburg-sv.png",
+      "public/sports/r7/teams/bundesliga/mainz.png",
+      "public/sports/r7/teams/bundesliga/sc-freiburg.png",
+      "public/sports/r7/teams/bundesliga/vfb-stuttgart.png",
+      "public/sports/r7/teams/bundesliga/werder-bremen.png",
+      "public/sports/r7/teams/ligue-1/angers.png",
+      "public/sports/r7/teams/ligue-1/le-havre-ac.png",
+      "public/sports/r7/teams/ligue-1/le-mans.png",
+      "public/sports/r7/teams/ligue-1/lorient.png",
+      "public/sports/r7/teams/ligue-1/lyon.png",
+      "public/sports/r7/teams/ligue-1/paris-fc.png",
+      "public/sports/r7/teams/ligue-1/stade-rennais.png",
+      "public/sports/r7/teams/ligue-1/strasbourg.png",
+      "public/sports/r7/teams/ligue-1/toulouse.png",
+      "public/sports/r7/teams/ligue-1/troyes.png",
+      "public/sports/r7/teams/mlb/arizona-diamondbacks.png",
+      "public/sports/r7/teams/mlb/atlanta-braves.png",
+      "public/sports/r7/teams/mlb/baltimore-orioles.png",
+      "public/sports/r7/teams/mlb/boston-red-sox.png",
+      "public/sports/r7/teams/mlb/chicago-cubs.png",
+      "public/sports/r7/teams/mlb/chicago-white-sox.png",
+      "public/sports/r7/teams/mlb/cincinnati-reds.png",
+      "public/sports/r7/teams/mlb/cleveland-guardians.png",
+      "public/sports/r7/teams/mlb/colorado-rockies.png",
+      "public/sports/r7/teams/mlb/detroit-tigers.png",
+      "public/sports/r7/teams/mlb/houston-astros.png",
+      "public/sports/r7/teams/mlb/kansas-city-royals.png",
+      "public/sports/r7/teams/mlb/los-angeles-angels.png",
+      "public/sports/r7/teams/mlb/los-angeles-dodgers.png",
+      "public/sports/r7/teams/mlb/miami-marlins.png",
+      "public/sports/r7/teams/mlb/milwaukee-brewers.png",
+      "public/sports/r7/teams/mlb/minnesota-twins.png",
+      "public/sports/r7/teams/mlb/new-york-mets.png",
+      "public/sports/r7/teams/mlb/new-york-yankees.png",
+      "public/sports/r7/teams/mlb/philadelphia-phillies.png",
+      "public/sports/r7/teams/mlb/pittsburgh-pirates.png",
+      "public/sports/r7/teams/mlb/san-diego-padres.png",
+      "public/sports/r7/teams/mlb/san-francisco-giants.png",
+      "public/sports/r7/teams/mlb/seattle-mariners.png",
+      "public/sports/r7/teams/mlb/st-louis-cardinals.png",
+      "public/sports/r7/teams/mlb/texas-rangers.png",
+      "public/sports/r7/teams/mlb/toronto-blue-jays.png",
+      "public/sports/r7/teams/mlb/washington-nationals.png",
+      "public/sports/r7/teams/mls/atlanta-united-fc.png",
+      "public/sports/r7/teams/mls/austin-fc.png",
+      "public/sports/r7/teams/mls/cf-montreal.png",
+      "public/sports/r7/teams/mls/charlotte-fc.png",
+      "public/sports/r7/teams/mls/chicago-fire-fc.png",
+      "public/sports/r7/teams/mls/colorado-rapids.png",
+      "public/sports/r7/teams/mls/columbus-crew.png",
+      "public/sports/r7/teams/mls/d-c-united.png",
+      "public/sports/r7/teams/mls/fc-cincinnati.png",
+      "public/sports/r7/teams/mls/fc-dallas.png",
+      "public/sports/r7/teams/mls/houston-dynamo-fc.png",
+      "public/sports/r7/teams/mls/la-galaxy.png",
+      "public/sports/r7/teams/mls/lafc.png",
+      "public/sports/r7/teams/mls/minnesota-united-fc.png",
+      "public/sports/r7/teams/mls/nashville-sc.png",
+      "public/sports/r7/teams/mls/new-england-revolution.png",
+      "public/sports/r7/teams/mls/orlando-city-sc.png",
+      "public/sports/r7/teams/mls/philadelphia-union.png",
+      "public/sports/r7/teams/mls/portland-timbers.png",
+      "public/sports/r7/teams/mls/real-salt-lake.png",
+      "public/sports/r7/teams/mls/san-jose-earthquakes.png",
+      "public/sports/r7/teams/mls/seattle-sounders-fc.png",
+      "public/sports/r7/teams/mls/sporting-kansas-city.png",
+      "public/sports/r7/teams/mls/st-louis-city-sc.png",
+      "public/sports/r7/teams/mls/toronto-fc.png",
+      "public/sports/r7/teams/mls/vancouver-whitecaps.png",
+      "public/sports/r7/teams/nfl/arizona-cardinals.png",
+      "public/sports/r7/teams/nfl/atlanta-falcons.png",
+      "public/sports/r7/teams/nfl/baltimore-ravens.png",
+      "public/sports/r7/teams/nfl/carolina-panthers.png",
+      "public/sports/r7/teams/nfl/chicago-bears.png",
+      "public/sports/r7/teams/nfl/cincinnati-bengals.png",
+      "public/sports/r7/teams/nfl/cleveland-browns.png",
+      "public/sports/r7/teams/nfl/dallas-cowboys.png",
+      "public/sports/r7/teams/nfl/denver-broncos.png",
+      "public/sports/r7/teams/nfl/green-bay-packers.png",
+      "public/sports/r7/teams/nfl/houston-texans.png",
+      "public/sports/r7/teams/nfl/indianapolis-colts.png",
+      "public/sports/r7/teams/nfl/jacksonville-jaguars.png",
+      "public/sports/r7/teams/nfl/kansas-city-chiefs.png",
+      "public/sports/r7/teams/nfl/las-vegas-raiders.png",
+      "public/sports/r7/teams/nfl/los-angeles-chargers.png",
+      "public/sports/r7/teams/nfl/los-angeles-rams.png",
+      "public/sports/r7/teams/nfl/miami-dolphins.png",
+      "public/sports/r7/teams/nfl/minnesota-vikings.png",
+      "public/sports/r7/teams/nfl/new-england-patriots.png",
+      "public/sports/r7/teams/nfl/new-orleans-saints.png",
+      "public/sports/r7/teams/nfl/new-york-giants.png",
+      "public/sports/r7/teams/nfl/new-york-jets.png",
+      "public/sports/r7/teams/nfl/philadelphia-eagles.png",
+      "public/sports/r7/teams/nfl/pittsburgh-steelers.png",
+      "public/sports/r7/teams/nfl/san-francisco-49ers.png",
+      "public/sports/r7/teams/nfl/seattle-seahawks.png",
+      "public/sports/r7/teams/nfl/tampa-bay-buccaneers.png",
+      "public/sports/r7/teams/nfl/tennessee-titans.png",
+      "public/sports/r7/teams/nfl/washington-commanders.png",
+      "public/sports/r7/teams/nhl/chicago-blackhawks.png",
+      "public/sports/r7/teams/nhl/dallas-stars.png",
+      "public/sports/r7/teams/nhl/edmonton-oilers.png",
+      "public/sports/r7/teams/nhl/los-angeles-kings.png",
+      "public/sports/r7/teams/nhl/minnesota-wild.png",
+      "public/sports/r7/teams/nhl/seattle-kraken.png",
+      "public/sports/r7/teams/nhl/st-louis-blues.png",
+      "public/sports/r7/teams/nhl/vancouver-canucks.png",
+      "public/sports/r7/teams/nhl/vegas-golden-knights.png",
+      "public/sports/r7/teams/nhl/winnipeg-jets.png",
+      "public/sports/r7/teams/premier-league/arsenal.png",
+      "public/sports/r7/teams/premier-league/aston-villa.png",
+      "public/sports/r7/teams/premier-league/brighton-hove-albion.png",
+      "public/sports/r7/teams/premier-league/coventry-city.png",
+      "public/sports/r7/teams/premier-league/everton.png",
+      "public/sports/r7/teams/premier-league/hull-city.png",
+      "public/sports/r7/teams/premier-league/ipswich-town.png",
+      "public/sports/r7/teams/premier-league/newcastle-united.png",
+      "public/sports/r7/teams/premier-league/nottingham-forest.png",
+      "public/sports/r7/teams/premier-league/tottenham-hotspur.png",
+      "public/sports/r7/teams/wnba/chicago-sky.png",
+      "public/sports/r7/teams/wnba/dallas-wings.png",
+      "public/sports/r7/teams/wnba/las-vegas-aces.png",
+      "public/sports/r7/teams/wnba/los-angeles-sparks.png",
+      "public/sports/r7/teams/wnba/phoenix-mercury.png",
+      "public/sports/r7/teams/wnba/portland-fire.png",
+      "public/sports/r7/teams/wnba/seattle-storm.png",
+      "public/sports/r7/teams/wnba/washington-mystics.png"
+    ],
+    "count": 138,
+    "summary": [
+      "R7-01 domestic sports labels",
+      "R7-02 compact64px service buttons",
+      "R7-03 ordinary visitor copy and metadata",
+      "R7-04 selective circular backing including Jets fix",
+      "R7-05 actual artwork alignment",
+      "R7-06 verified77 unique fixtures",
+      "R7-07 independent6-at-a-time expansion",
+      "R7-08 smaller header brand",
+      "R7-F02 focus outline and pressed inset coexist without movement"
+    ]
+  },
+  "verification": {
+    "technical": "Initial build/typecheck/changed-source lint and20 calculation assertions passed; targeted correction rebuild passed. Unchanged checks reused.",
+    "independent": {
+      "auditorTask": "01a0ad4e-4703-7e60-a0aa-b3da5b765769",
+      "verdicts": {
+        "A_specification": "pass within stated R7 scope; R7-F01 and R7-F02 closed",
+        "B_finishComparedWithWOG": "pass under the observed finish/hierarchy/material/control-state baseline, combining unchanged full-audit evidence and this correction recheck",
+        "C_functions": "pass within local simulated scope; previous full function audit reused with targeted smoke pass",
+        "userDesignApproval": "separate; not claimed"
+      },
+      "findings": [
+        {
+          "id": "R7-F01",
+          "status": "closed_verified"
+        },
+        {
+          "id": "R7-F02",
+          "status": "closed_verified"
+        }
+      ],
+      "fullAudit": "../audit/26f0d1ff/audit-result.json",
+      "recheck": "../audit/3cb5e2b2/recheck-result.json"
+    },
+    "public": {
+      "anonymousHttp": 200,
+      "cssSha256": "6becef993ee5d2aed10d45abf3dfe17ea667ba6ea863db870dfc9b44aa0e5d92",
+      "cssMatchesAudit": true,
+      "uniqueFixtures": 77,
+      "initial": [
+        6,
+        6,
+        6
+      ],
+      "finalExpanded": [
+        26,
+        26,
+        25
+      ],
+      "expansionSteps": 12,
+      "selectionRetained": true,
+      "hiddenFixtureSearch": "Le Mans PASS",
+      "fullListImages": {
+        "total": 318,
+        "pending": 0,
+        "failed": 0
+      },
+      "focusedPressedControls": 6,
+      "focusedPressedPass": true,
+      "consoleWarningsErrors": 0,
+      "finalGuest": true,
+      "prohibitedCopyFound": false
+    }
+  },
+  "screenshots": [
+    {
+      "path": "public-initial-1920.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 227796,
+      "sha256": "6eead7eb9a14d0fa4962d3566e2644545c21531236de282f68d59bb8b9751004"
+    },
+    {
+      "path": "public-expanded-bottom-1920.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 201120,
+      "sha256": "a28f7cd71c32bdba97a60e08dbdb5208d7e6d8161bca5a4fdcc84791a648074d"
+    },
+    {
+      "path": "public-jets-1920.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 150222,
+      "sha256": "057108052482615e0e0c40dd2d8327e207317ffe098e1f0c69c9dbc3eb6065e9"
+    },
+    {
+      "path": "public-focus-service-gold.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 207571,
+      "sha256": "5c05abb820b3bce67a04623e45f4f6b8bb67a495cfc14f0f3b28215de065af6c"
+    },
+    {
+      "path": "public-focus-service-normal.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 207735,
+      "sha256": "9fbffbfe79fe9786165fcde345c4e7db94c9a061ec73e3912a02473dd5788d28"
+    },
+    {
+      "path": "public-focus-odd-normal.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 230326,
+      "sha256": "445c79be15f3444801b7a8c1ec9639275ac50bf11f8e337e385cfba961f36838"
+    },
+    {
+      "path": "public-focus-odd-selected.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 229957,
+      "sha256": "37444cbc1e7fb88c60f1d4aafb4ec825afde007a0e7eaabe5ebd178d848a7813"
+    },
+    {
+      "path": "public-focus-submit-slip.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 228644,
+      "sha256": "507d239ecc104f1bfe7e53dc84726b5a78e24bffba8388bf9fea7746710bf9c7"
+    },
+    {
+      "path": "public-confirmation-1920.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 68162,
+      "sha256": "d858a8cef2f5c4e38ab5f115668a806e957c45183e76f2d0e5d8641d1685713d"
+    },
+    {
+      "path": "public-focus-confirm.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 69290,
+      "sha256": "d7b15236ce6cb53a19dcbb440e7f7e76cf6dff35ed53f6158583f605a6c9bc90"
+    },
+    {
+      "path": "public-final-1920.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 225886,
+      "sha256": "2cd3d40904c4c8d1fe52afc94037500abe9dc3cf972a8f34c472f0db5cfccb90"
+    },
+    {
+      "path": "public-final-settled-1920.jpg",
+      "format": "jpeg",
+      "width": 1920,
+      "height": 940,
+      "bytes": 227796,
+      "sha256": "6eead7eb9a14d0fa4962d3566e2644545c21531236de282f68d59bb8b9751004"
+    }
+  ],
+  "evidence": [
+    "source-and-package.json",
+    "deployment.json",
+    "anonymous-http.json",
+    "browser-smoke.json",
+    "capture-filenames.json"
+  ],
+  "cleanStatus": {
+    "tracked": "clean",
+    "untrackedPreserved": [
+      "tsconfig.tsbuildinfo"
+    ],
+    "raw": "?? tsconfig.tsbuildinfo"
+  },
+  "notChanged": [
+    "Original logo and branding bytes",
+    "Existing font runtime and roles",
+    "Dependencies/lockfile/architecture/Sites audience",
+    "TITAN3000/other projects/user WOG tab",
+    "Existing history and previous QA/archives"
+  ],
+  "remaining": {
+    "openR7Findings": [],
+    "userVisualAcceptance": "Pending and distinct from QA pass",
+    "preExistingLimitations": [
+      "19 full-repository lint findings outside changed source",
+      "No Japanese text: actual Heisei glyph use N/A",
+      "Prior audit favicon.ico404 probe; declared favicon.svg returns200 and displayed images all load. No globally zero-network-error claim.",
+      "Fixed1920 desktop; mobile and real authentication/payment/betting backend outside scope"
+    ]
+  },
+  "handoff": {
+    "publicTabId": "8",
+    "providerTabId": "browser-use:7b177dc4-2252-4060-b5b5-466a8982568e",
+    "markedDeliverable": true,
+    "foregroundOpenSkipped": "Delegated background owner task per Sites environment guidance",
+    "temporaryViewportRestored": true,
+    "productionPreviewStopped": true,
+    "ownedPreviewTabsClosed": [
+      "6",
+      "7"
+    ],
+    "oldErrorTabs": [
+      "1",
+      "5"
+    ],
+    "oldErrorTabLimit": "Tool data-URL restriction prevented control; retained without bypass",
+    "developmentServer": "Existing localhost:5276 server preserved; IPv4 binding unchanged",
+    "finalRuntimeStatus": {
+      "checkedAt": "2026-09-17T18:10:01.8512865+09:00",
+      "listeners": [
+        {
+          "LocalAddress": "::1",
+          "LocalPort": 5276,
+          "OwningProcess": 45756
+        }
+      ],
+      "production5277Stopped": true,
+      "development5276Listening": true,
+      "gitStatus": [
+        "?? tsconfig.tsbuildinfo"
+      ]
+    }
+  },
+  "next": "User design review; no additional work cycle started"
+}

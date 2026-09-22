@@ -1,0 +1,148 @@
+{
+  "start": {
+    "startedAt": "2026-09-18T11:10:48.676Z",
+    "head": "19a83512decc4971540f59192735ad2e449ba78b",
+    "dirty": "",
+    "protectedHashes": [
+      {
+        "path": "app/globals.css",
+        "sha256": "bf9437ea54903b244c24cf7b34499bd4b93c229c7adb63eba1fa2b194c35ac25"
+      },
+      {
+        "path": "app/typography.css",
+        "sha256": "bf83591b25272ff9247648134d88d513dac71c40148f7b6cb3c954bc377a88c2"
+      },
+      {
+        "path": "app/demo-data.ts",
+        "sha256": "3b952e9accddfeb4309dbdae1e03d791e6278e7b43ae6e35ee0749fca411f449"
+      },
+      {
+        "path": "app/match-list.css",
+        "sha256": "71c78c3d9ebf5d66946d4ab2f2ca4c3abc12948dc8a9ac1adaed84f7ed2d430d"
+      },
+      {
+        "path": "app/match-presentation.ts",
+        "sha256": "30f92b00756fd2f68c709dc4f47bb47266ea1debfa624827d2abcbd1ccec25b5"
+      },
+      {
+        "path": "app/display-score-templates.json",
+        "sha256": "721530c89a645902385a17834941ba256204b2e4512a53367d7efd4c22f35790"
+      },
+      {
+        "path": "app/match-records.json",
+        "sha256": "b662a76a48e9c6f25d4add889dd375045ba97a548f67a2c0cc23126d7f21dd6d"
+      },
+      {
+        "path": "app/live-snapshots.json",
+        "sha256": "c6c4f167dafd1c5ff367bb5ca199f99c35af250065c9210f333e53dfcce5992a"
+      },
+      {
+        "path": "app/match-motion.tsx",
+        "sha256": "727e3dfd455f6232d18fd8b22a1a5e576930e1cd6675ac57be4afa7f50a17100"
+      },
+      {
+        "path": "app/sirius-left-rail.css",
+        "sha256": "2fe334e2039c3ca177627b599dc995f8530635ae4fceb15eeb031ceeeed77834"
+      },
+      {
+        "path": "app/sirius-left-banners.tsx",
+        "sha256": "0f81a8acc03d7a86ae18ba955f099f30cd4732f5aabc22a6ad5c277496ccdc46"
+      },
+      {
+        "path": "public/assets/header/BG_sirius_header.png",
+        "sha256": "7bcf3107c87bf7636cc606c974aca5cb6f6b3210aeae214634fd2b5e23951eb4"
+      },
+      {
+        "path": "public/banners/r8/mercury-event-woman.png",
+        "sha256": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99"
+      },
+      {
+        "path": "public/sports/sirius-r5/soccer.png",
+        "sha256": "584fdff7ae50f790f4ce33ca9b38539a7ba94a95d5a1b63c8669cc96ed5b2bc1"
+      },
+      {
+        "path": "public/sports/sirius-r5/basketball.png",
+        "sha256": "1a319f58e7b9f4bd1f6f20b82cc891bca402310eae7cb84ef6307e10f720b715"
+      },
+      {
+        "path": "public/sports/sirius-r5/baseball.png",
+        "sha256": "7c95240190b5bb0d553d226a3d6e33337fd9ee00fe3bc9919ccc130c3189e037"
+      },
+      {
+        "path": "public/sports/sirius-r5/american-football.png",
+        "sha256": "f350a540e8aaa0bfdb0b67b2e082f65a9ab925a96d9f47efd7dad64ce802779a"
+      },
+      {
+        "path": "public/sports/sirius-r5/ice-hockey.png",
+        "sha256": "eb504cd41e304a078c1d0147a33b753530b873ae0c4cb64f2eee5208b3081d56"
+      },
+      {
+        "path": "public/sports/sirius-r5/volleyball.png",
+        "sha256": "24c8f2f89b8343581ccf723d29a1ac896be203d98c862b94c5e6edc98873aeb7"
+      },
+      {
+        "path": "public/sports/sirius-r5/tennis.png",
+        "sha256": "5229b9855e01219f1f57fd9bd39be39726d0fb27baab4427fd2c6ed4d12f2a4a"
+      },
+      {
+        "path": "public/banners/sirius-r6/slots.png",
+        "sha256": "f2e99ad635c60963e4b4a89f13b4fdff6b55b044fe880c0bbb253e16e5e88984"
+      },
+      {
+        "path": "public/banners/sirius-r6/casino.png",
+        "sha256": "f99b1182413e1373a503bf559a647b20c95012d1276f2a9c0ded9bd52f7505c5"
+      },
+      {
+        "path": "public/banners/sirius-r6/events.png",
+        "sha256": "9599b18216bad17573400fc775c457c4b5de93b43571cd129e17abb20edc50cc"
+      }
+    ],
+    "mercuryHead": "ba0e578207f39d8e59ef72859c0e50fecf4f067b",
+    "mercuryDirty": "?? tsconfig.tsbuildinfo",
+    "scope": "R01-R06; operating MD/input/coordination parent owned"
+  },
+  "files": [
+    "app/page.tsx",
+    "app/layout.tsx",
+    "app/sirius-right-rail.css"
+  ],
+  "changes": "Right-only panel/account/slip/stake/support styling and single whole-button existing event banner",
+  "tokens": {
+    "font": "var(--font-ui)",
+    "din": "var(--font-score)",
+    "gold": "var(--gold-light), var(--gold)",
+    "actionGradient": "existing header account-gold-start/account-gold-end",
+    "surface": "same literal 160deg #111f3c to #09142d as left; no global token edits"
+  },
+  "markup": "right root scope; account deposit/withdraw and stake reset classes; PhotoBanner img/span-only button; CSS import",
+  "preservation": {
+    "leftMarkup": true,
+    "pageStateAndHandlers": true,
+    "slip": true,
+    "account": true
+  },
+  "protected": {
+    "allBaselineHashes": true,
+    "mercuryHeadAndDirty": true,
+    "originalEventPhoto": true,
+    "newAssets": 0,
+    "newFonts": 0,
+    "operatingMarkdownInputCoordination": "not edited",
+    "otherProjectsAndPort3000": "not touched"
+  },
+  "checks": {
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "exit": 0,
+      "note": "Final rebuild after scoped gold focus specificity fix"
+    },
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "exit": 0,
+      "note": "Reused after CSS-only focus fix"
+    },
+    "browser": "basic-observation.json",
+    "actualBettingSubmission": false
+  },
+  "remaining": "No issue found in requested representative checks; user visual feedback pending; full/mobile/approved-motion audit not performed."
+}

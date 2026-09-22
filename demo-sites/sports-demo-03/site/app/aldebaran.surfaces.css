@@ -1,0 +1,112 @@
+/* Adapter: connect these attributes to existing MERCURY elements in ALDEBARAN.
+   Import after the source styles. Resolve remaining gold pseudo-elements locally.
+   This file intentionally does not define shell/column dimensions or reorder UI. */
+.aldebaran-site [data-ab-surface] {
+  background-image: none;
+  box-shadow: none;
+  border-color: var(--ab-border);
+}
+.aldebaran-site [data-ab-surface="header"] { background-color: var(--ab-header); }
+.aldebaran-site [data-ab-surface="notice"] { background-color: var(--ab-deep); }
+.aldebaran-site [data-ab-surface="panel"] {
+  background-color: var(--ab-panel);
+  border-radius: var(--ab-panel-radius);
+}
+.aldebaran-site [data-ab-surface="raised"] { background-color: var(--ab-raised); }
+.aldebaran-site [data-ab-surface="empty-center"] { background-color: var(--ab-bg); }
+
+.aldebaran-site [data-ab-control] {
+  color: var(--ab-text);
+  background: var(--ab-control);
+  border-color: var(--ab-border);
+  border-radius: var(--ab-control-radius);
+  box-shadow: none;
+  text-shadow: none;
+  transition: background-color var(--ab-ui-duration) ease,
+    color var(--ab-ui-duration) ease, border-color var(--ab-ui-duration) ease;
+}
+.aldebaran-site [data-ab-control="primary"],
+.aldebaran-site [data-ab-control][aria-pressed="true"] {
+  background: var(--ab-accent);
+  border-color: var(--ab-accent);
+  color: var(--ab-on-accent);
+}
+@media (hover: hover) {
+  .aldebaran-site [data-ab-control]:not(:disabled):not([aria-disabled="true"]):hover {
+    background-color: var(--ab-control-hover);
+  }
+  .aldebaran-site [data-ab-control="primary"]:not(:disabled):not([aria-disabled="true"]):hover,
+  .aldebaran-site [data-ab-control][aria-pressed="true"]:not(:disabled):not([aria-disabled="true"]):hover {
+    background-color: var(--ab-accent-hover);
+    border-color: var(--ab-accent-hover);
+  }
+}
+.aldebaran-site [data-ab-control="primary"]:not(:disabled):not([aria-disabled="true"]):active,
+.aldebaran-site [data-ab-control][aria-pressed="true"]:not(:disabled):not([aria-disabled="true"]):active {
+  background-color: var(--ab-accent-pressed);
+  border-color: var(--ab-accent-pressed);
+}
+.aldebaran-site [data-ab-control]:disabled,
+.aldebaran-site [data-ab-control][aria-disabled="true"] {
+  background: var(--ab-raised);
+  color: var(--ab-disabled);
+  border-color: var(--ab-border);
+  cursor: default;
+}
+.aldebaran-site [data-ab-nav] {
+  color: var(--ab-text);
+  text-shadow: none;
+  background-image: none;
+}
+.aldebaran-site [data-ab-nav][data-active="true"] {
+  color: var(--ab-accent);
+  border-color: var(--ab-accent);
+}
+.aldebaran-site [data-ab-input] {
+  background: var(--ab-input);
+  color: var(--ab-text);
+  border-color: var(--ab-border);
+  box-shadow: none;
+}
+.aldebaran-site [data-ab-input]::placeholder { color: var(--ab-muted); opacity: 1; }
+.aldebaran-site :is([data-ab-control], [data-ab-nav], [data-ab-input]):focus-visible {
+  outline: 2px solid var(--ab-accent);
+  outline-offset: 2px;
+}
+.aldebaran-site [data-ab-text="muted"] { color: var(--ab-muted); }
+.aldebaran-site [data-ab-text="accent"],
+.aldebaran-site [data-ab-number] { color: var(--ab-accent); }
+.aldebaran-site [data-ab-control="primary"] [data-ab-number],
+.aldebaran-site [data-ab-control][aria-pressed="true"] [data-ab-number],
+.aldebaran-site [data-ab-control]:disabled [data-ab-number],
+.aldebaran-site [data-ab-control][aria-disabled="true"] [data-ab-number] { color: inherit; }
+.aldebaran-site [data-ab-ui-icon] { color: inherit; }
+/* Only add this attribute to an existing GOLD SPORT PNG, never a team/brand/photo. */
+.aldebaran-site img[data-ab-sport-icon="neutralized"] { filter: grayscale(1); }
+
+.aldebaran-site .ab-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  min-width: 0;
+}
+.aldebaran-site .ab-brand__emblem {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  object-fit: contain;
+}
+.aldebaran-site .ab-brand__wordmark {
+  display: block;
+  width: 216px;
+  max-width: calc(100% - 44px);
+  height: auto;
+  min-width: 0;
+  flex: 0 1 216px;
+  object-fit: contain;
+}
+@media (prefers-reduced-motion: reduce) {
+  .aldebaran-site [data-ab-control] { transition: none; }
+}

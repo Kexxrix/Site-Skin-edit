@@ -1,0 +1,98 @@
+{
+  "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+  "url": "https://sirius.kexxadrix.chatgpt.site",
+  "sourceCommit": "15dca2f2728380ae77b6288f99adf8ac68f6e400",
+  "version": {
+    "id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_feb4c0e1aaa88191876530a97dd63cf8",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "version_number": 7,
+    "source": {
+      "commit_sha": "15dca2f2728380ae77b6288f99adf8ac68f6e400"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000b1448230b3ef4f2448d2ded6",
+      "content_hash": "sha256:430153d61cbe03a979b56c11d3156ef04526ef2999b2ce02644bdd206da87b58",
+      "size_bytes": 38164480,
+      "file_count": 261
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6aad1e81cf748191a2655ddc0633d053",
+    "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+    "title": "SIRIUS",
+    "version_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_feb4c0e1aaa88191876530a97dd63cf8",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://sirius.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aacb6c2a38881918bd8a324fa9c5b54",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-18T11:20:55.136904+00:00"
+  },
+  "implementation": "../implementation/changes.json",
+  "localObservation": "../implementation/basic-observation.json",
+  "screenshots": [
+    "sirius-r7-default-1920x940.jpg",
+    "sirius-r7-right-bottom.jpg"
+  ],
+  "publicObservation": "basic-observation.json",
+  "operatingMarkdownOwner": "01a0a8e7-acda-7ab0-a42a-44beb1b41e50",
+  "actualBettingSubmission": false,
+  "next": "Await user feedback; no further changes",
+  "finalSourceStatus": "clean",
+  "captures": [
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/runs/r7/public/sirius-r7-default-1920x940.jpg",
+      "bytes": 218726,
+      "sha256": "a6043ff7d69bf4807148eb6ec1708da392c256f5fe0630a6d1a4775405c0b96f",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        940
+      ]
+    },
+    {
+      "path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/runs/r7/public/sirius-r7-right-bottom.jpg",
+      "bytes": 226544,
+      "sha256": "18e95e2e91949adb112e78b3b6b402f49033983828eb0896ebcadd609264ca50",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        940
+      ]
+    }
+  ],
+  "cleanup": {
+    "ownedPreviewPort5287": "stopped",
+    "workerCache": "moved outside artifact into implementation/preview-worker-cache",
+    "viewport": "reset",
+    "publicTab": "retained at right rail top",
+    "otherServers": "not touched"
+  },
+  "publicBasicObservation": {
+    "url": "https://sirius.kexxadrix.chatgpt.site/",
+    "viewport": [
+      1920,
+      940
+    ],
+    "method": "Native accessibility tree and rendered PUBLIC default/bottom screenshots",
+    "guest": true,
+    "empty": true,
+    "disabledSubmit": true,
+    "eventButton": true,
+    "eventCopy": true,
+    "visual": "Right rounded navy account/slip, capsule amount input and DIN numbers visible. Bottom support and existing event photo visible. Left R6, header and center remain unchanged.",
+    "measurementBoundary": "Detailed dimensions, selection/amount/auth/error interactions checked locally; PUBLIC basic rendered observation only.",
+    "submitted": false,
+    "remaining": "No issue observed in requested checks; user visual feedback pending."
+  },
+  "changedFiles": [
+    "app/page.tsx",
+    "app/layout.tsx",
+    "app/sirius-right-rail.css"
+  ]
+}
