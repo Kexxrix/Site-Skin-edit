@@ -1,0 +1,112 @@
+{
+  "status": "completed_pending_user_visual_feedback",
+  "scope": "Post-R12 user alignment and interaction feedback; seven final items",
+  "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+  "sourceCommit": "74da3a356c7697d42641997a94025f0dccfef01b",
+  "baselineCommit": "c97d42c9630670780b26c2ba00541a4e7e69bd83",
+  "workingTreeClean": true,
+  "savedVersion": {
+    "id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_89a515dea4e08191bf2519a1b4b75bc7",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "version_number": 13,
+    "source": {
+      "commit_sha": "74da3a356c7697d42641997a94025f0dccfef01b"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000e874821197e6056f72764911",
+      "content_hash": "sha256:7094fa5aef0debd3eca26d40a1c8f0dfd7ecf00a69c9ea0f0f6541c48b817b8c",
+      "size_bytes": 29153280,
+      "file_count": 281
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ab33afd474081918dab9f113b0eac72",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_89a515dea4e08191bf2519a1b4b75bc7",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-23T02:36:02.949968+00:00"
+  },
+  "changedFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx"
+  ],
+  "checks": {
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "runs": 1,
+      "exitCode": 0
+    },
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "runs": 1,
+      "exitCode": 0
+    }
+  },
+  "publication": {
+    "workflow": "Existing R12 dist archive layout; native source credential/push/save/deploy",
+    "missingBundledHelper": "Sites plugin skill/script directory missing during execution; cause unknown",
+    "newDependencyInstalled": false,
+    "remoteBuildFallback": false,
+    "archive": "aldebaran-post-r12-alignment.tar.gz",
+    "archiveBytes": 26129272,
+    "archiveSHA256": "089678c8cadb75ad53877eb110dbb3aef470dc56ebc505577e3697bebf5e5cf5",
+    "pushed": true
+  },
+  "changes": {
+    "gapPx": 8,
+    "listPadding": "0 10px 10px",
+    "leagueHeaderHeight": 39,
+    "vsColor": "#797979",
+    "uiTextSelection": "disabled; editable exceptions preserved",
+    "cardInspection": "European nonbutton areas; existing keyboard and button paths preserved",
+    "additionalBetButton": {
+      "oldWidth": 54,
+      "oneDigitWidth": 27.359375,
+      "twoDigitWidth": 33.109375,
+      "height": 24
+    }
+  },
+  "evidence": {
+    "local": "evidence.json",
+    "public": "../public/browser-confirmation.json",
+    "publicImages": [
+      "../public/european-1920.jpg",
+      "../public/domestic-1920.jpg"
+    ],
+    "imageValidation": "../public/image-validation.json"
+  },
+  "preserved": [
+    "right market interior",
+    "R12 other colors/fonts/assets",
+    "data/odds/slip/storage/history",
+    "fixed 1920 layout",
+    "European independent and domestic shared scroll",
+    "other demos/GitHub backup/root coordination documents"
+  ],
+  "limitations": [
+    "Bounded checks only; no full regression suite or responsive breakpoints",
+    "Domestic has no existing inspected/detail behavior; preserved",
+    "Only existing search input selection/editing was exercised, not every editable field",
+    "No authentication/payment/bet submission",
+    "User visual approval pending"
+  ],
+  "warnings": [
+    "Existing chunk-size and plugin-timing build warnings",
+    "vinext route classification unknown"
+  ],
+  "tabId": "1",
+  "preview": {
+    "url": "http://localhost:5303/",
+    "leftRunning": true
+  }
+}

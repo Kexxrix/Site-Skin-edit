@@ -1,0 +1,103 @@
+{
+  "reference": {
+    "site": "ALDEBARAN",
+    "source": "6be8c176b374999501952d24520c8411b29b153f",
+    "immutable": true
+  },
+  "conditions": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zoom": 1,
+    "fonts": "loaded",
+    "sameBrowser": true
+  },
+  "geometryFromActualSource": {
+    "shellWidth": 1920,
+    "headerHeight": 98,
+    "mainHeaderHeight": 62,
+    "noticeHeight": 36,
+    "gnbColumns": [
+      360,
+      1200,
+      40,
+      320
+    ],
+    "primaryMenuCount": 10,
+    "primaryMenuItem": [
+      120,
+      62
+    ],
+    "bodyColumns": [
+      320,
+      1244,
+      320
+    ],
+    "bodyGap": 10,
+    "bodyPadding": [
+      7,
+      8,
+      8,
+      8
+    ],
+    "centerPanes": [
+      609,
+      609
+    ],
+    "centerGap": 8,
+    "centerMarginTop": 8,
+    "sportBarHeight": 42,
+    "sportTabHeight": 32,
+    "sportTabGap": 8,
+    "leftListPadding": [
+      0,
+      10,
+      10,
+      10
+    ],
+    "leagueHeaderHeight": 39,
+    "cardHeight": 228,
+    "cardPadding": 12,
+    "cardRadius": 4,
+    "cardGap": 8,
+    "oddsHeight": 36,
+    "oddsRadius": 4,
+    "marketHeaderHeight": 34,
+    "independentVerticalScroll": [
+      "left rail",
+      "match list",
+      "detail markets",
+      "right rail"
+    ],
+    "domesticReference": "Actual ALDEBARAN domestic view is full-width two-column list; its mode-specific exception must be reported clearly."
+  },
+  "colorRoles": {
+    "background": "#050505",
+    "headerSolid": "#0B0B0B",
+    "panel": "#141414",
+    "primaryText": "#F5F1E8",
+    "mutedText": "#B8B5AD",
+    "accent": "#D9AD43",
+    "accentLight": "#FFE6A3",
+    "odds": "#F5EEDF",
+    "selectedOnGold": "#171717",
+    "note": "Preserve other existing neutral and state colors; do not import ALDE orange/yellow/cyan."
+  },
+  "exceptions": [
+    "Original MERCURY brand aspect ratios and asset painted bounds",
+    "MERCURY actual names/counts/market row counts and resulting content scroll lengths",
+    "Header solid background with no video/image/gradient",
+    "Existing MERCURY session/data preserved"
+  ],
+  "acceptance": [
+    "Source component structure actually transplanted; original three-card-column renderer unmounted",
+    "Corresponding fixed layout dimensions equal at same viewport",
+    "Normal/hover/selected/disabled states use existing MERCURY color roles",
+    "77 unique matches preserved and UI counts agree",
+    "Select sport/match/filter/odds/betslip + empty/zero states",
+    "Search and source-specific market counts",
+    "Reference tracked hashes unchanged",
+    "No financial submissions in QA"
+  ]
+}

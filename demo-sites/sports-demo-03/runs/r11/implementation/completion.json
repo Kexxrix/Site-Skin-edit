@@ -1,0 +1,1051 @@
+{
+  "status": "complete",
+  "completedAt": "2026-09-22T10:41:26.756095+00:00",
+  "request": "ALDEBARAN_R11_HEADER_UI",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "access": "PUBLIC",
+  "baselineCommit": "9f32fe625a8f1f0441e4714382515c19af136d03",
+  "commit": "b7782ba699fdb4aaa9a59513bbc745bee8727f06",
+  "version": {
+    "id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_620ae816cf588191bfb88cd824f5629e",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "version_number": 11,
+    "source": {
+      "commit_sha": "b7782ba699fdb4aaa9a59513bbc745bee8727f06"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000003430822fbfdf3dce4aa7593e",
+      "content_hash": "sha256:fa9e408e4fa63b8e6886bfc1bc45c377589ff2e8e8df6a74e5a68be93173cb14",
+      "size_bytes": 29153280,
+      "file_count": 281
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ab259f62d3081918f06bb389c013214",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_620ae816cf588191bfb88cd824f5629e",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-22T10:35:58.706702+00:00"
+  },
+  "changedFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "public/banners/aldebaran/btn_image_casino.png",
+    "public/banners/aldebaran/btn_image_slot.png",
+    "public/media/aldebaran/bg_header_0.webm"
+  ],
+  "changes": [
+    "Exactly one rgba(0,0,0,0.4) gradient above each existing right banner background; text, geometry and actions retained.",
+    "Central top spacing reduced; tabs and badges fit content with equal horizontal padding; 20/14/12px and existing button heights retained.",
+    "One original 1920x62 WebM behind the menu row, muted autoplay loop playsinline, with original static logo/menu above a translucent diagonal plate. Reduced motion removes video and preserves fallback.",
+    "Latest supplied casino and slot PNGs replace the specified existing asset paths, retaining contain, outer boxes and actions."
+  ],
+  "implementationDecisions": {
+    "centralParentPaddingTop": {
+      "before": 8,
+      "after": 0
+    },
+    "sportbarPadding": {
+      "before": "8px 0",
+      "after": "0 0 8px"
+    },
+    "sportbarHeight": {
+      "before": 50,
+      "after": 42
+    },
+    "selectedTabTop": {
+      "before": 122,
+      "after": 106
+    },
+    "railTopPreserved": 105,
+    "buttonInlinePadding": 8,
+    "internalGap": 8,
+    "badgeInlinePadding": 4,
+    "buttonHeights": [
+      32,
+      34
+    ],
+    "badgeHeight": 21,
+    "countWidthsByDigits": [
+      15.859375,
+      23.703125,
+      31.5625
+    ],
+    "logoPlate": {
+      "alpha": 0.5,
+      "width": 260,
+      "diagonalInset": 32,
+      "underlineWidth": 228,
+      "underlineHeight": 1,
+      "minimumClearanceAfterLogoRight": 22
+    },
+    "logoBox": [
+      24,
+      21.078125,
+      182,
+      19.828125
+    ],
+    "note": "Spacing, padding/gap and logo plate values are implementation decisions, not exact user-specified values. Transparent border space retained."
+  },
+  "originalAssets": [
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r11-header-ui-package\\ALDEBARAN_R11_HEADER_UI\\assets\\header\\bg_header_0.webm",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\media\\aldebaran\\bg_header_0.webm",
+      "bytes": 357956,
+      "sha256": "6EDEDCA659B6713E21AB5B8D99DAA88DAE2383968D4B65AD1A9E586E837DE16E",
+      "previousSha256": null,
+      "expectedDimensions": [
+        1920,
+        62
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r11-header-ui-package\\ALDEBARAN_R11_HEADER_UI\\assets\\left-rail\\btn_image_casino.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\btn_image_casino.png",
+      "bytes": 53327,
+      "sha256": "F14FD48A9FF194AD28268C95A400CD433A211D941B550B8C89AFFC125FE706B3",
+      "previousSha256": "34EB1428D4C8A3AB51C1DAFBF1397C5901E15E251B576CC81C3374C9D542FDFB",
+      "expectedDimensions": [
+        200,
+        116
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r11-header-ui-package\\ALDEBARAN_R11_HEADER_UI\\assets\\left-rail\\btn_image_slot.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\btn_image_slot.png",
+      "bytes": 28762,
+      "sha256": "C559FDDC58E7B7D73E0AF9DDD546A02587CBB0456AA0F494ADB8B613C8BAEB71",
+      "previousSha256": "B576B31BAE29658915FC25F50D74D8BAA9DB08A4FCA0060607E7AADA60F213E9",
+      "expectedDimensions": [
+        97,
+        116
+      ],
+      "originalBytesUnchanged": true
+    }
+  ],
+  "archive": {
+    "archive": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\public\\aldebaran-r11.tar.gz",
+    "bytes": 26125151,
+    "sha256": "b62e9b357b27f08a10c422a405094f9dfc6e45b70d5eba381df98b57f6437bd4",
+    "fileCount": 340,
+    "assets": [
+      {
+        "file": "media/aldebaran/bg_header_0.webm",
+        "sha256": "6ededca659b6713e21ab5b8d99daa88dae2383968d4b65ad1a9e586e837de16e",
+        "bytes": 357956,
+        "passed": true
+      },
+      {
+        "file": "banners/aldebaran/btn_image_casino.png",
+        "sha256": "f14fd48a9ff194ad28268c95a400cd433a211d941b550b8c89affc125fe706b3",
+        "bytes": 53327,
+        "passed": true
+      },
+      {
+        "file": "banners/aldebaran/btn_image_slot.png",
+        "sha256": "c559fddc58e7b7d73e0af9ddd546a02587cbb0456aa0f494adb8b613c8baeb71",
+        "bytes": 28762,
+        "passed": true
+      }
+    ],
+    "temporaryPreviewAbsent": true,
+    "changedFiles": [
+      "app/aldebaran-wog-r5.css",
+      "app/aldebaran-wog-r5.tsx",
+      "public/banners/aldebaran/btn_image_casino.png",
+      "public/banners/aldebaran/btn_image_slot.png",
+      "public/media/aldebaran/bg_header_0.webm"
+    ],
+    "protectedDataSourceUnchanged": true,
+    "clean": true
+  },
+  "verification": {
+    "sourceChecks": {
+      "typecheck": {
+        "runs": 1,
+        "exit": 0
+      },
+      "build": {
+        "runs": 1,
+        "exit": 0
+      },
+      "diffCheck": {
+        "exit": 0
+      },
+      "tooling": "Reused installed absolute npm CLI and TAR_OPTIONS=--force-local from R10; no failed build or install."
+    },
+    "localUiEvidence": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\ui-verification.json",
+    "localRepresentativeFlow": {
+      "casinoOpened": true,
+      "slotsOpened": true,
+      "filter": {
+        "cards": 6,
+        "selected": "농구6"
+      },
+      "euroDetail": {
+        "mode": "european",
+        "scrolls": [
+          {
+            "top": 0,
+            "width": 607
+          },
+          {
+            "top": 258,
+            "width": 607
+          }
+        ]
+      },
+      "euroBoth": {
+        "mode": "european",
+        "scrolls": [
+          {
+            "top": 1080,
+            "width": 607
+          },
+          {
+            "top": 258,
+            "width": 607
+          }
+        ]
+      },
+      "domesticInitial": {
+        "mode": "domestic",
+        "scrolls": [
+          {
+            "top": 0,
+            "width": 1224
+          }
+        ]
+      },
+      "domesticLeft": {
+        "mode": "domestic",
+        "scrolls": [
+          {
+            "top": 1080,
+            "width": 1224
+          }
+        ]
+      },
+      "domesticRight": {
+        "mode": "domestic",
+        "scrolls": [
+          {
+            "top": 2160,
+            "width": 1224
+          }
+        ]
+      },
+      "euroRestored": {
+        "mode": "european",
+        "scrolls": [
+          {
+            "top": 1080,
+            "width": 607
+          },
+          {
+            "top": 258,
+            "width": 607
+          }
+        ]
+      },
+      "logoHome": {
+        "mode": "european",
+        "scrolls": [
+          {
+            "top": 0,
+            "width": 607
+          },
+          {
+            "top": 0,
+            "width": 607
+          }
+        ]
+      },
+      "reducedMotion": {
+        "fallback": "rgb(29, 29, 29)",
+        "logoVisible": true,
+        "videos": 0,
+        "modeAfterClick": "european"
+      }
+    },
+    "console": [],
+    "video": {
+      "samples": [
+        {
+          "at": 1790072800530,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 13.401184
+        },
+        {
+          "at": 1790072801553,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 14.4243
+        },
+        {
+          "at": 1790072802581,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 0.855652
+        },
+        {
+          "at": 1790072803593,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 1.866546
+        },
+        {
+          "at": 1790072804618,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 2.871081
+        },
+        {
+          "at": 1790072805634,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 3.887251
+        },
+        {
+          "at": 1790072806643,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 4.866319
+        },
+        {
+          "at": 1790072807671,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 5.883067
+        },
+        {
+          "at": 1790072808706,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 6.874942
+        },
+        {
+          "at": 1790072809760,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 7.883284
+        },
+        {
+          "at": 1790072810785,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 8.743162
+        },
+        {
+          "at": 1790072811804,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 9.775538
+        },
+        {
+          "at": 1790072812836,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 10.749375
+        },
+        {
+          "at": 1790072813851,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 11.766264
+        },
+        {
+          "at": 1790072814867,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 12.772776
+        },
+        {
+          "at": 1790072815890,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 13.803337
+        },
+        {
+          "at": 1790072816908,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 0.201032
+        },
+        {
+          "at": 1790072817932,
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 1.208308
+        }
+      ],
+      "advanced": true,
+      "actualLoopObserved": true,
+      "allMuted": true,
+      "allPlaying": true,
+      "reducedMotion": {
+        "fallback": "rgb(29, 29, 29)",
+        "logoVisible": true,
+        "videos": 0,
+        "modeAfterClick": "european"
+      },
+      "emulationRestored": true,
+      "normalVideoRestored": true
+    },
+    "countPreview": {
+      "rows": [
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 15.859375,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "축구0",
+          "width": 94.0625
+        },
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 15.859375,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "아이스하키0",
+          "width": 130.359375
+        },
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 15.859375,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "축구7",
+          "width": 94.0625
+        },
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 15.859375,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "아이스하키7",
+          "width": 130.359375
+        },
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 23.703125,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "축구32",
+          "width": 101.90625
+        },
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 23.703125,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "아이스하키32",
+          "width": 138.203125
+        },
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 31.5625,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "축구128",
+          "width": 109.765625
+        },
+        {
+          "badgeHeight": 21,
+          "badgeWidth": 31.5625,
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "height": 32,
+          "noHorizontalClip": true,
+          "padding": [
+            "8px",
+            "8px"
+          ],
+          "text": "아이스하키128",
+          "width": 146.0625
+        }
+      ],
+      "fixtureOnly": true
+    },
+    "temporaryLocalPreviewRemoved": true,
+    "productionDataNeverModifiedForCountPreview": true,
+    "public": {
+      "completedAt": "2026-09-22T10:38:54.381Z",
+      "scope": "Deployment reflection, requested 1920 mode captures, and public video time/muted confirmation; detailed local checks not repeated.",
+      "european": {
+        "mode": "european",
+        "video": {
+          "autoplay": true,
+          "box": [
+            0,
+            0,
+            1920,
+            62
+          ],
+          "controls": false,
+          "count": 1,
+          "dimensions": [
+            1920,
+            62
+          ],
+          "duration": 14.536,
+          "error": null,
+          "loop": true,
+          "muted": true,
+          "paused": false,
+          "pointerEvents": "none",
+          "readyState": 4,
+          "time": 0.865304
+        },
+        "header": [
+          0,
+          0,
+          1920,
+          98
+        ],
+        "notice": [
+          0,
+          62,
+          1920,
+          36
+        ],
+        "tabs": [
+          {
+            "background": "rgb(53, 53, 53)",
+            "border": "1px solid rgb(255, 100, 31)",
+            "box": [
+              347,
+              106,
+              101.90625,
+              34
+            ],
+            "color": "rgb(245, 244, 244)",
+            "count": {
+              "background": "rgb(255, 100, 31)",
+              "border": "0px solid rgb(23, 23, 23)",
+              "box": [
+                416.203125,
+                112.5,
+                23.703125,
+                21
+              ],
+              "color": "rgb(23, 23, 23)",
+              "font": "12px",
+              "gap": "normal",
+              "padding": "2px 4px"
+            },
+            "font": "16px",
+            "gap": "8px",
+            "icon": [
+              356,
+              113,
+              20,
+              20
+            ],
+            "label": {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                384,
+                114.5,
+                24.203125,
+                17
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "14px",
+              "gap": "normal",
+              "padding": "0px"
+            },
+            "padding": "4px 8px",
+            "text": "전체61"
+          },
+          {
+            "background": "rgb(53, 53, 53)",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "box": [
+              456.90625,
+              107,
+              101.90625,
+              32
+            ],
+            "color": "rgb(245, 244, 244)",
+            "count": {
+              "background": "rgb(72, 72, 72)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                526.109375,
+                112.5,
+                23.703125,
+                21
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "12px",
+              "gap": "normal",
+              "padding": "2px 4px"
+            },
+            "font": "16px",
+            "gap": "8px",
+            "icon": [
+              465.90625,
+              113,
+              20,
+              20
+            ],
+            "label": {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                493.90625,
+                114.5,
+                24.203125,
+                17
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "14px",
+              "gap": "normal",
+              "padding": "0px"
+            },
+            "padding": "4px 8px",
+            "text": "축구32"
+          },
+          {
+            "background": "rgb(53, 53, 53)",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "box": [
+              566.8125,
+              107,
+              94.0625,
+              32
+            ],
+            "color": "rgb(245, 244, 244)",
+            "count": {
+              "background": "rgb(72, 72, 72)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                636.015625,
+                112.5,
+                15.859375,
+                21
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "12px",
+              "gap": "normal",
+              "padding": "2px 4px"
+            },
+            "font": "16px",
+            "gap": "8px",
+            "icon": [
+              575.8125,
+              113,
+              20,
+              20
+            ],
+            "label": {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                603.8125,
+                114.5,
+                24.203125,
+                17
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "14px",
+              "gap": "normal",
+              "padding": "0px"
+            },
+            "padding": "4px 8px",
+            "text": "농구6"
+          },
+          {
+            "background": "rgb(53, 53, 53)",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "box": [
+              668.875,
+              107,
+              94.0625,
+              32
+            ],
+            "color": "rgb(245, 244, 244)",
+            "count": {
+              "background": "rgb(72, 72, 72)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                738.078125,
+                112.5,
+                15.859375,
+                21
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "12px",
+              "gap": "normal",
+              "padding": "2px 4px"
+            },
+            "font": "16px",
+            "gap": "8px",
+            "icon": [
+              677.875,
+              113,
+              20,
+              20
+            ],
+            "label": {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                705.875,
+                114.5,
+                24.203125,
+                17
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "14px",
+              "gap": "normal",
+              "padding": "0px"
+            },
+            "padding": "4px 8px",
+            "text": "야구0"
+          },
+          {
+            "background": "rgb(53, 53, 53)",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "box": [
+              770.9375,
+              107,
+              94.0625,
+              32
+            ],
+            "color": "rgb(245, 244, 244)",
+            "count": {
+              "background": "rgb(72, 72, 72)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                840.140625,
+                112.5,
+                15.859375,
+                21
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "12px",
+              "gap": "normal",
+              "padding": "2px 4px"
+            },
+            "font": "16px",
+            "gap": "8px",
+            "icon": [
+              779.9375,
+              113,
+              20,
+              20
+            ],
+            "label": {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                807.9375,
+                114.5,
+                24.203125,
+                17
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "14px",
+              "gap": "normal",
+              "padding": "0px"
+            },
+            "padding": "4px 8px",
+            "text": "배구0"
+          },
+          {
+            "background": "rgb(53, 53, 53)",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "box": [
+              873,
+              107,
+              130.359375,
+              32
+            ],
+            "color": "rgb(245, 244, 244)",
+            "count": {
+              "background": "rgb(72, 72, 72)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                978.5,
+                112.5,
+                15.859375,
+                21
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "12px",
+              "gap": "normal",
+              "padding": "2px 4px"
+            },
+            "font": "16px",
+            "gap": "8px",
+            "icon": [
+              882,
+              113,
+              20,
+              20
+            ],
+            "label": {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "0px solid rgb(245, 244, 244)",
+              "box": [
+                910,
+                114.5,
+                60.5,
+                17
+              ],
+              "color": "rgb(245, 244, 244)",
+              "font": "14px",
+              "gap": "normal",
+              "padding": "0px"
+            },
+            "padding": "4px 8px",
+            "text": "아이스하키7"
+          }
+        ],
+        "photos": [
+          {
+            "box": [
+              17,
+              300,
+              200,
+              116
+            ],
+            "fit": "contain",
+            "loaded": true,
+            "name": "카지노 둘러보기",
+            "src": "https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/btn_image_casino.png",
+            "text": ""
+          },
+          {
+            "box": [
+              221,
+              300,
+              98,
+              116
+            ],
+            "fit": "contain",
+            "loaded": true,
+            "name": "슬롯 둘러보기",
+            "src": "https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/btn_image_slot.png",
+            "text": ""
+          }
+        ],
+        "bannerLayers": [
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_01.png\")",
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_03.png\")",
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_04.png\")",
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_05.png\")",
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_06.png\")",
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_07.png\")"
+        ]
+      },
+      "domestic": {
+        "cards": 61,
+        "existingSlipCount": 2,
+        "mode": "domestic",
+        "scrollers": 1,
+        "video": {
+          "muted": true,
+          "paused": false,
+          "readyState": 4,
+          "time": 1.934109
+        }
+      },
+      "videoSamples": [
+        {
+          "at": 1790073480404,
+          "muted": true,
+          "paused": false,
+          "time": 9.787978
+        },
+        {
+          "at": 1790073481426,
+          "muted": true,
+          "paused": false,
+          "time": 10.810024
+        },
+        {
+          "at": 1790073482437,
+          "muted": true,
+          "paused": false,
+          "time": 11.821513
+        }
+      ],
+      "screenshots": [
+        "european-1920.png",
+        "domestic-1920.png"
+      ],
+      "captureMethod": "CDP Page.captureScreenshot; explicit full 1920x1080 clip resolved incomplete repaint in earlier screenshot surfaces. Both final images visually checked.",
+      "existingPublicStatePreserved": {
+        "authentication": true,
+        "keep": true,
+        "selectionCount": 2,
+        "stakeAndHistory": true
+      },
+      "remainingDetailedPublicChecks": "Not repeated by request",
+      "handoff": {
+        "tabId": "19",
+        "mode": "european",
+        "rightRail": "top",
+        "viewportReset": true,
+        "reducedMotionEmulationReset": true,
+        "foregroundHandoffSkipped": "Delegated implementation task"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\european-1920-final.jpg",
+        "bytes": 244590,
+        "format": "JPEG",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\domestic-1920-final.jpg",
+        "bytes": 218515,
+        "format": "JPEG",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\banners-six-1920.jpg",
+        "bytes": 267650,
+        "format": "JPEG",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\count-preview.jpg",
+        "bytes": 22127,
+        "format": "JPEG",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\public\\european-1920.png",
+        "bytes": 426955,
+        "format": "PNG",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\public\\domestic-1920.png",
+        "bytes": 396611,
+        "format": "PNG",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      }
+    ]
+  },
+  "preserved": [
+    "1920 layout, header98/menu62/notice36 and rails",
+    "Original wordmark bytes, position and 182x19.828 display size",
+    "R10 transparent central board, inner frames, 1px market accent and banner text alignment",
+    "Existing fixtures, odds, selection IDs, slip, history and authentication source",
+    "Sport icons, team emblems and card motifs",
+    "Original R10 inputs and evidence",
+    "MERCURY, SIRIUS, GitHub backup and coordinator operating documents",
+    "Existing localhost:5303 server and public user state"
+  ],
+  "notVerified": [
+    "Mobile or full regression audit",
+    "Real authentication, financial transactions or betting submissions",
+    "Physical audio listening; mute confirmed via browser media state",
+    "Frame-by-frame video quality or subjective design acceptance"
+  ],
+  "remainingRisks": [
+    "No unresolved defect found in the requested scope.",
+    "Existing build chunk-size/plugin-timing advisories remain outside scope.",
+    "Final visual approval belongs to the user."
+  ],
+  "captureNote": "Some initial captures had incomplete repaint. Final public CDP captures are complete and visually checked. Local browser screenshot API returns JPEG bytes despite the provisional PNG names; four current-run QA captures were renamed to correct .jpg extensions without changing bytes. No source workaround or extra build.",
+  "handoff": {
+    "tabId": "19",
+    "mode": "european",
+    "rightRail": "top",
+    "viewportReset": true,
+    "reducedMotionEmulationReset": true,
+    "foregroundHandoffSkipped": "Delegated implementation task"
+  },
+  "nextAction": "Report to coordinator and wait for user feedback without additional polishing."
+}

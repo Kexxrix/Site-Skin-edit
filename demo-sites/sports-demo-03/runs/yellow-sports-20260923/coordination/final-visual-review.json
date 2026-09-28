@@ -1,0 +1,26 @@
+{
+  "reviewer": "coordination-root",
+  "evidence": [
+    "implementation/hover-after.json",
+    "implementation/hover-final-1920.png",
+    "implementation/public-active-disabled-checks.json",
+    "implementation/public-final-1920.png"
+  ],
+  "checks": {
+    "hover_three_states_border_fcd73e": true,
+    "hover_inactive_count_gray_preserved": true,
+    "hover_border_width_1_and_height_32_preserved": true,
+    "local_hover_screenshot_opened": true,
+    "public_final_screenshot_opened": true,
+    "four_added_sports_visible_on_both_lists": true,
+    "public_bet_chip_and_submit_yellow_visible": true,
+    "public_amount_condition_evidence_reviewed": true,
+    "public_test_state_restored": true,
+    "actual_submit_or_transaction": false
+  },
+  "limits": [
+    "Root reviewed owner-captured screenshots and measurement evidence; root did not rerun browser interactions.",
+    "Public final screenshot has the right rail scrolled; LV appearance is supported by separate local screenshot and computed style evidence.",
+    "This is scoped technical and visual QA, not user visual approval or full-site regression."
+  ]
+}

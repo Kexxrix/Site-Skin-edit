@@ -1,0 +1,215 @@
+ALDEBARAN 및 3개 데모 사이트 — 작업 인계 현황 보고서
+작성 기준: 2026-09-22 / Asia/Seoul
+
+이 보고서는 현재 상태를 다음 작업 담당에게 전달하기 위한 자료입니다. 이 문서 자체는 추가 구현·QA·배포·GitHub 재업로드 지시가 아닙니다. 다음 사용자 지시가 오면 아래 최신 소스와 운영 기준에서 이어가세요.
+
+1. 가장 중요한 현재 상태
+
+- ALDEBARAN 최신 작업 소스와 Sites 공개 배포는 v8입니다.
+- GitHub 공개 저장소의 ALDEBARAN 스냅샷은 v6입니다. 이후 아이콘 교체 및 작은 수정(v7/v8)은 GitHub에 아직 재반영하지 않았습니다.
+- 현재 ALDEBARAN은 R6의 예정 경기·국내형/해외형 모드를 기반으로 v7/v8 후속 수정을 적용한 상태입니다. 과거 R5의 LIVE 야구 첫 화면이나 모든 GNB 메뉴 동작을 현재 요구로 되돌리지 마세요.
+- 한정된 확인 범위에서 보고된 미해결 결함은 없습니다. 전체 회귀나 최종 미감 승인까지 완료했다는 뜻은 아닙니다.
+
+2. 대상·담당·최신 식별자
+
+작업 루트:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/
+
+실제 앱 소스:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/
+
+공개 주소:
+https://aldebaran.kexxadrix.chatgpt.site/
+
+기존 구현 담당 작업:
+스포츠 데모 01 대표 UI 제작
+작업 ID: 01a0a97b-1268-7cf3-8aad-ba460ecf4f98
+
+조정 작업:
+데모 사이트 전체 오케스트레이션
+작업 ID: 01a0a8e7-acda-7ab0-a42a-44beb1b41e50
+
+ALDEBARAN Sites project:
+appgprj_6ab0f3255cdc819180a427bf6d0846f4
+
+현재 source commit:
+4759aae04293e80c9dc3c60658ab97297118dbb0
+
+현재 공개 버전: PUBLIC v8
+version ID:
+appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_ff9b85f5a3b08191804e17801c85be4a
+
+deployment ID:
+appgdep_6ab219a0a90081919448bd3a65b24055
+
+배포 결과: succeeded
+성공 시각: 2026-09-22 15:01:22 KST / 06:01:22 UTC
+
+작성 시 로컬 HEAD가 위 commit이며 작업 트리가 clean인 것을 다시 확인했습니다. Sites 원격 HEAD 일치 및 공개 화면 검증은 완료 당시 source/publication/public 기록을 근거로 합니다. 이번 보고서 작성 중 Sites 재배포나 브라우저 재검증은 하지 않았습니다.
+
+3. 현재 화면·기능 기준 — R6까지
+
+공통:
+- 1920 고정 화면과 ALDEBARAN 무광 차콜·주황·흰색 콘셉트를 유지합니다.
+- 헤더62px + 공지36px, 본문 좌320/중앙1244/우320의 R5 프레임을 사용합니다.
+- 원천77경기의 데이터·마켓·안정적인 선택ID를 보존합니다. 현재 두 스포츠 모드에 표시하는 대상은 state=pre이고 미종료인 예정61경기입니다.
+- 야구 예정 경기는0개이므로0을 표시합니다. 수집된 정적 데모 일정이며 실제 최신 일정·중계가 아닙니다.
+- 예정 경기는 VS로 표시합니다. 팀명15px, 기존 팀 엠블럼28px, VS 영역56px을 적용했고 홈 표식은 숨겼습니다.
+- 배당은 소수 둘째 자리까지 표시합니다. 계산과 새 내역 저장에는 반올림 전 원값을 사용하며, 기존 저장 내역을 소급 변경하지 않습니다.
+- 원본 레터링1101×120은 그대로이며 표시182×19.828입니다. 로고 끝 잘림은 브랜드 부모 대신 장식 pseudo-element에만 사선 clip을 적용해 수정했습니다.
+
+해외형:
+- 왼쪽 경기 목록과 오른쪽 상세 마켓을 유지합니다.
+- 중앙 scroller2개가 독립적으로 움직입니다. 종목바·선택 경기 제목·필터는 고정됩니다.
+- 경기 변경 시 왼쪽 위치를 유지하고 오른쪽 상세만 맨 위로 이동합니다.
+
+국내형:
+- 같은 카드 UI를 리그별 행 우선의2열로 표시합니다.
+- 중앙 전체가 실제 scroller1개로 움직입니다. 어느 열 위에서 스크롤해도 두 열이 함께 움직입니다.
+- 상세 마켓 패널·상세 진입 버튼은 없습니다. 상단 종목바는1개입니다.
+
+모드와 상태:
+- GNB에서 국내형/해외형 두 항목만 동작합니다. 나머지8항목은 표시를 유지하되 비활성입니다. 이를 누락 기능으로 판단해 임의 활성화하지 마세요.
+- 모드별 필터·스크롤·선택 경기 위치를 복원하며, 모드 전환으로 슬립이나 입력 금액을 초기화하지 않습니다.
+- R4 트래커와 기존 motion 소스는 남아 있지만 현재 기본 화면에 큰 트래커를 복원하지 않습니다.
+
+R6 배포: PUBLIC v6
+R6 source: 300cc605df9bb846cdeac5333dccb2aef2fec226
+
+4. R6 이후 적용된 수정
+
+4-1. 일반 종목 아이콘8종 — 공개 v7
+
+원본:
+D:/WebDL/종목아이콘/image_Sports_Aldebaran-01.png ~ image_Sports_Aldebaran-08.png
+
+복사 위치:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/public/sports/aldebaran/
+
+매핑:
+01 농구 / 02 축구 / 03 배구 / 04 야구 / 05 미식축구 / 06 아이스하키 / 07 E스포츠 / 08 테니스
+
+- 원본 이름·바이트를 유지하고 SHA-256 일치를 확인했습니다.
+- 일반 메뉴·종목 탭·최신 인기 경기용 sportIcons를 카드 배경용 match.sportLogo와 분리했습니다.
+- 카드 배경 이미지·145×145 크기·불투명도0.09, 팀 엠블럼, 기존 일반 아이콘 표시 크기와 배치는 유지했습니다.
+- E스포츠·테니스는 파일과 매핑만 준비했습니다. 새 종목 탭을 추가하지 않았습니다.
+- v7 source: 98d094c3cb537818b19f3493eabaefc2f2936bc6
+
+4-2. ALL 아이콘·슬립 토글·GNB — 공개 v8
+
+- 전체 종목 탭의 트로피를 원본 image_Sports_Aldebaran-09.png(ALL)로 교체했습니다. 원본256×256 투명PNG, 화면24×24입니다.
+- 슬립 유지 On 손잡이가 돌출되던 원인은 공용 Switch의 translate20px와 현지 transform24px의 중복 적용이었습니다. ALDEBARAN CSS에서 translate만 Off0/On24px로 적용했습니다.
+- On의 오른쪽·상하3px, Off의 왼쪽·상하3px 여백을 확인했습니다. 공용 Switch 구현과 슬립 상태 로직은 보존했습니다.
+- GNB 활성/hover 아이콘 표시와 활성 글자의 아래 이동을 제거했습니다. 대기·활성 글자는 y19px/높이24px으로 같습니다.
+- 활성 표현은 주황 글자 #ff641f와 하단2px 선입니다. NEW/LIVE 배지와 국내형/해외형 전환은 유지했습니다.
+- v8 source: 4759aae04293e80c9dc3c60658ab97297118dbb0
+
+이 두 후속 변경의 누적 소스 범위:
+- app/demo-data.ts
+- app/aldebaran-wog-r5.tsx
+- app/aldebaran-wog-r5.css
+- public/sports/aldebaran/image_Sports_Aldebaran-01.png ~ 09.png
+
+위 상대 경로는 모두 2항의 실제 앱 소스 루트 기준입니다. 운영 기록은 프로젝트 루트 STATE.md와 DECISIONS.md에 추가돼 있습니다.
+
+5. GitHub 동기화 상태
+
+저장소:
+https://github.com/Kexxrix/Site-Skin-edit
+
+공개 범위: PUBLIC
+기본 브랜치: main
+현재 GitHub main commit:
+53909c2afa3e8b0506171652ca10e0ed97da2bdc
+
+위 PUBLIC/main/원격 commit은 이번 보고서 작성 시 gh 읽기 전용 조회로 재확인했습니다.
+
+GitHub에 반영된3개 스냅샷:
+- MERCURY 공개 v9 / source ba0e578207f39d8e59ef72859c0e50fecf4f067b
+- SIRIUS 공개 v8 / source 9c424b8e4e8c480848f1ec47bf5139c6d5987738
+- ALDEBARAN 공개 v6 / source 300cc605df9bb846cdeac5333dccb2aef2fec226
+
+MERCURY/SIRIUS 공개 버전은 기존 인계 기록 기준이며 이번 작성에서 Sites를 새로 조회하지 않았습니다. 두 현지 HEAD는 위 source와 일치함을 확인했습니다.
+
+미동기화:
+ALDEBARAN v7/v8의 아이콘·ALL·토글·GNB 변경은 작업 소스와 Sites 공개 사이트에는 반영됐지만 GitHub 스냅샷에는 없습니다. GitHub 백업의 v6 파일로 최신 앱을 덮어쓰면 후속 수정이 사라집니다. GitHub 갱신 여부는 다음 명시적 작업 범위에 따라 판단하며 이번 보고서로 자동 실행하지 않습니다.
+
+GitHub 업데이트 당시 검증:
+새 sparse clone에서 소스2,318개와 전체 변경 경로2,325개를 바이트 수/SHA-256으로 비교했습니다. 원래3개 사이트의 작업 상태를 보존했습니다.
+
+GitHub 업로드 작업용 checkout:
+E:/codexwork/Site-Skin-edit-backups/20260911-203900/repository
+
+검증 기록:
+E:/codexwork/Site-Skin-edit-backups/20260922-143610-sites-update/post-upload-verification.json
+
+6. 확인한 내용과 한계
+
+완료 당시 확인:
+- v7/v8 각각 타입 검사와 기존 build1회씩 통과.
+- v7: 농구 필터6경기, 새 일반 아이콘 로딩, 기존 카드 배경 유지.
+- v8: 포인터 Off/키보드 Space On, 국내형·해외형 전환 뒤 GNB 글자 위치 유지.
+- 공개1920×1080에서 ALL 로딩, 토글 On 내부 배치, 활성 메뉴 색·위치·밑줄 확인.
+- 최종 공개 이미지 로드 오류0, 브라우저 console error/warn0.
+- 기존 공개 탭에 캐시가 남아 새로고침 후 최신 화면으로 검증.
+- R6에서 국내/해외 스크롤 구조·위치 복원·슬립/금액 유지·대표 선택/해제·예정 데이터·배당 표시를 확인.
+
+이번 보고서 작성에서 새로 확인:
+- 최신 STATE/DECISIONS, R6/v8 완료·배포·공개 관찰 기록.
+- ALDEBARAN/MERCURY/SIRIUS 및 GitHub 업로드 checkout의 현지 HEAD와 작업 상태.
+- GitHub PUBLIC 설정·기본 브랜치main·원격HEAD.
+
+이번 작성에서는 빌드·UI QA·전체 해시 비교·Sites 실시간 조회·재배포·GitHub 업로드를 재실행하지 않았습니다. 과거 성공 기록과 이번 재조회 결과를 혼동하지 마세요.
+
+미검증/사용자 판단:
+- 전체 인증·금융·서비스 회귀 및 실제 베팅/거래.
+- 모든 메뉴/저장 상태의 전체 회귀, 모바일.
+- 최종 미감 및 규격의 사용자 승인.
+- ALDEBARAN 규격의 MERCURY/SIRIUS 이식은 아직 대기이며 실행 지시가 아닙니다.
+
+7. 다른 사이트와 사용자 작업 보존
+
+MERCURY:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-01/site/
+HEAD ba0e578207f39d8e59ef72859c0e50fecf4f067b
+기존 미추적 파일: tsconfig.tsbuildinfo
+공개 주소: https://mercury.kexxadrix.chatgpt.site/
+
+SIRIUS:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site/
+HEAD 9c424b8e4e8c480848f1ec47bf5139c6d5987738
+기존 미추적 항목: .agents/ / .impeccable/ / DESIGN.md / PRODUCT.md
+공개 주소: https://sirius.kexxadrix.chatgpt.site/
+
+위 미추적 항목은 기존 상태이며 정리·삭제·커밋 대상으로 임의 처리하지 마세요. 이번 ALDEBARAN 후속 수정에서 두 사이트는 변경하지 않았다는 완료 기록이 있습니다.
+
+8. 다음 담당이 읽을 문서와 증거
+
+운영4문서:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/AGENTS.md
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/STATE.md
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/DESIGN_SPEC.md
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/DECISIONS.md
+
+주의: STATE 상단에는 보존된 R5/v5 이력이 보입니다. 최상단 R6 우선 적용 문구와 문서 하단의 R6 실제 결과, 종목 아이콘 교체(v7), ALL·토글·상단 메뉴 수정(v8)을 함께 읽어야 현재 상태가 됩니다. 이전 기록을 삭제하거나 상단의 과거 조건을 최신 구현보다 우선하지 마세요.
+
+R6 완료:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r6/public/completion.json
+
+일반8아이콘:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/icons-20260922/
+
+최종 v8:
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/all-icon-switch-20260922/source.json
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/all-icon-switch-20260922/publication.json
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/all-icon-switch-20260922/local.json
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/all-icon-switch-20260922/public.json
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/all-icon-switch-20260922/public.jpg
+
+9. 인계 후 운영 경계
+
+- 현재 단계는 다음 사용자 피드백 대기입니다. 이 보고서를 받았다는 이유만으로 구현·QA·재배포·GitHub 재업로드를 시작하지 마세요.
+- 새 변경 지시가 오면 최신 v8 소스에서 필요한 부분만 수정하세요. GitHub v6 또는 과거 R5 화면으로 되돌리지 마세요.
+- 통과한 동일 입력의 검증은 재사용하고, 실제 변경·실패·증거 부족이 있는 범위만 다시 확인하세요.
+- 별도 QA/Jev/전체 polish/새 설치/이미지 생성/다른 사이트 이식은 별도 요청 없이 시작하지 마세요.
+- 운영4문서의 과거 기록과 증거 경로를 보존하고, 완료·미완료·미검증을 구분해 보고하세요.

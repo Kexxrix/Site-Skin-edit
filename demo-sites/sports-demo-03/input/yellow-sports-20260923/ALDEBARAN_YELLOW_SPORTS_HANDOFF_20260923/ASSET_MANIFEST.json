@@ -1,0 +1,79 @@
+{
+  "package": "ALDEBARAN_YELLOW_SPORTS_HANDOFF_20260923",
+  "date": "2026-09-23",
+  "purpose": "Implementation handoff; original supplied icons, unchanged. No app code changes included.",
+  "yellow": "#FCD73E",
+  "yellow_foreground": "#171717",
+  "fit_status": "Not measured in the target app. Confirm at 1920 CSS px after fonts load; remove lowest-priority suffix if needed.",
+  "rail_target": "Existing 인기 스포츠 리스트 (left rail in the reference layout).",
+  "existing_counts": {
+    "soccer": 32,
+    "basketball": 6,
+    "baseball": 16,
+    "volleyball": 0,
+    "ice_hockey": 7
+  },
+  "expected_total_matches": 61,
+  "assets": [
+    {
+      "priority": 1,
+      "sport": "포뮬라1",
+      "logical_key_example": "formula1",
+      "file": "assets/image_Sports_Aldebaran-10.png",
+      "match_count": 0,
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "bytes": 16839,
+      "sha256": "ae7595e5d891b7b2dce67a3c801a3d75e3a0f813b6e8d97b45091abc2b1699c3"
+    },
+    {
+      "priority": 2,
+      "sport": "복싱",
+      "logical_key_example": "boxing",
+      "file": "assets/image_Sports_Aldebaran-11.png",
+      "match_count": 0,
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "bytes": 24003,
+      "sha256": "731094ddb4c5165b7626f976c8b6c36ef8f6e7fcb142aba762c1b35827f7d241"
+    },
+    {
+      "priority": 3,
+      "sport": "MMA",
+      "logical_key_example": "mma",
+      "file": "assets/image_Sports_Aldebaran-12.png",
+      "match_count": 0,
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "bytes": 22055,
+      "sha256": "105cbe40f9a2233c0a180bd2e2590a27be5499069be7dc0dd11f2444b63b71f3"
+    },
+    {
+      "priority": 4,
+      "sport": "모터스포츠",
+      "logical_key_example": "motorsports",
+      "file": "assets/image_Sports_Aldebaran-13.png",
+      "match_count": 0,
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "bytes": 33371,
+      "sha256": "7708d5cceb4aac56d035749fc95344d7f7a65cd52129eec01da639a1d928fabd"
+    },
+    {
+      "priority": 5,
+      "sport": "크리켓",
+      "logical_key_example": "cricket",
+      "file": "assets/image_Sports_Aldebaran-14.png",
+      "match_count": 0,
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "bytes": 19385,
+      "sha256": "dbd1a41f1458f0186c6f36704be0c5319edd18de35c79c1923beaefe354d8020"
+    }
+  ]
+}

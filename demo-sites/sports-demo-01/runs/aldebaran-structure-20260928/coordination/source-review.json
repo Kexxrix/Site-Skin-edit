@@ -1,0 +1,76 @@
+{
+  "at": "2026-09-28",
+  "stage": "Complete; verified local source published as PUBLIC v10",
+  "reviewedFiles": [
+    "app/page.tsx",
+    "app/mercury-sports.tsx",
+    "app/mercury-sports.css",
+    "app/mercury-market-view.ts",
+    "app/demo-data.ts"
+  ],
+  "confirmedFromSource": [
+    "Old three-section card renderer replaced by MercurySurface",
+    "Reference header, utility row, left rail, sportbar, list, detail and right rail are present",
+    "Default european list/detail; domestic follows reference two-column list",
+    "Adapter retains original market and pick indices while displaying result/handicap/totals order",
+    "Existing session storage key, balance/history restoration and integer-scaled totals remain",
+    "MERCURY original wordmark/emblem ratio attributes and asset paths retained",
+    "No imported ALDE orange/yellow/cyan literal found in transplanted stylesheet",
+    "Header has solid #0B0B0B and no video or header image"
+  ],
+  "explicitDifferences": [
+    "MERCURY sport count, data, live scores and three markets per match drive content",
+    "Existing league logos occupy league header icon slots; no new flag assets introduced",
+    "Existing MERCURY banners used in reference slots"
+  ],
+  "pending": [],
+  "renderedEvidenceViewed": [
+    "mercury-first-structure.png",
+    "mercury-final-european.png",
+    "aldebaran-reference.png"
+  ],
+  "comparisonConditions": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "fonts": "loaded",
+    "referenceAccountState": "signed in; left untouched",
+    "mercuryFinalAccountState": "guest"
+  },
+  "measuredSelectors": 38,
+  "measuredProperties": [
+    "x",
+    "y",
+    "width",
+    "height",
+    "padding",
+    "gap",
+    "radius",
+    "overflowY",
+    "fontSize",
+    "fontWeight"
+  ],
+  "remainingGeometryDifferences": [
+    {
+      "element": "brand",
+      "property": "gap",
+      "mercury": "8px",
+      "aldebaran": "normal"
+    }
+  ],
+  "correctionsVerified": [
+    "All sport icon slot corrected from 24 to 20 pixels, matching tab width",
+    "Reference screenshot tile artifact replaced by a full single-viewport screenshot"
+  ],
+  "buildAndTypecheck": "Passed per implementation/source-preservation.json",
+  "preservation": "Passed; see coordination/preservation-check.json and implementation/source-preservation.json",
+  "independentScroll": "Passed in implementation/scroll-qa.json; primary1920x1080 and supplementary1920x500 for detail overflow",
+  "deployment": {
+    "version": 10,
+    "commit": "af940990c2939a94ebdb89204c2e92ce881275c3",
+    "id": "appgdep_6ab9dd63e9508191bba9f0da7f9f8fa4",
+    "status": "succeeded",
+    "url": "https://mercury.kexxadrix.chatgpt.site"
+  }
+}

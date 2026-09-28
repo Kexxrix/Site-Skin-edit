@@ -1,0 +1,321 @@
+{
+  "status": "completed",
+  "task": "ALDEBARAN yellow UI and zero-fixture sports; scoped sport-tab hover follow-up",
+  "baseline": {
+    "publicVersion": 21,
+    "commit": "5b4a1476d757871932cd3378db8da9b9f266a6d0"
+  },
+  "publication": {
+    "source": {
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+      "commit_sha": "fd3356b6b2814b269c81e3bec3112ff999a1570b",
+      "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/yellow-sports-20260923/implementation/aldebaran-yellow-sports-final.tar.gz"
+    },
+    "version": {
+      "id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_324986d32fcc819190c5376d6e1b27eb",
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "version_number": 22,
+      "source": {
+        "commit_sha": "fd3356b6b2814b269c81e3bec3112ff999a1570b"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000299081fd9001b4770ee98f88",
+        "content_hash": "sha256:5084e8043353579a345afcc4443ae5655b68e66881ec0400074b6aaed7e54f10",
+        "size_bytes": 34846720,
+        "file_count": 291
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6ab3a88631f48191b53b76813ca4a2b6",
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "title": "ALDEBARAN · 스포츠",
+      "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_324986d32fcc819190c5376d6e1b27eb",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://aldebaran.kexxadrix.chatgpt.site",
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+      "failure_message": null,
+      "env_set_revision": 0,
+      "updated_at": "2026-09-23T10:23:25.339377+00:00"
+    }
+  },
+  "changedFiles": [
+    {
+      "path": "app/aldebaran-wog-r5.css",
+      "change": "LV/BET yellow; disabled submit opacity 1; selected sport border/count yellow; all sport-tab hover borders yellow; remove selected-only 34px override so all are 32px."
+    },
+    {
+      "path": "app/aldebaran-wog-r5.tsx",
+      "change": "Shared top/left list gains four sports; zero-fixture rows selectable; reuse common empty state with exact requested copy and clear detail."
+    },
+    {
+      "path": "public/sports/aldebaran/image_Sports_Aldebaran-10.png",
+      "change": "Original supplied PNG bytes copied without transformation."
+    },
+    {
+      "path": "public/sports/aldebaran/image_Sports_Aldebaran-11.png",
+      "change": "Original supplied PNG bytes copied without transformation."
+    },
+    {
+      "path": "public/sports/aldebaran/image_Sports_Aldebaran-12.png",
+      "change": "Original supplied PNG bytes copied without transformation."
+    },
+    {
+      "path": "public/sports/aldebaran/image_Sports_Aldebaran-13.png",
+      "change": "Original supplied PNG bytes copied without transformation."
+    }
+  ],
+  "sourceDiff": {
+    "files": 6,
+    "insertions": 15,
+    "deletions": 7,
+    "workingTreeClean": true
+  },
+  "changes": {
+    "chips": {
+      "ids": [
+        "LV.0",
+        "BET"
+      ],
+      "background": "#FCD73E",
+      "foreground": "#171717",
+      "geometryAndFontPreserved": true
+    },
+    "submit": {
+      "background": "#FCD73E",
+      "foreground": "#171717",
+      "disabledOpacity": 1,
+      "nativeDisabledPreserved": true,
+      "validationAndHintsPreserved": true,
+      "otherDisabledClearOpacity": 0.48
+    },
+    "sportTabs": {
+      "selectedBorder": "#FCD73E",
+      "selectedCountBackground": "#FCD73E",
+      "selectedCountForeground": "#171717",
+      "hoverBorder": "#FCD73E",
+      "hoverScope": "Only top sport tabs",
+      "unselectedHoverCountBackground": "#484848",
+      "background": "#353535",
+      "heightPx": 32,
+      "borderPx": 1,
+      "selectedHeightOverrideRemoved": "34px -> base 32px as explicitly approved"
+    },
+    "sports": {
+      "included": [
+        "formula1",
+        "boxing",
+        "mma",
+        "motorsports"
+      ],
+      "excluded": [
+        "cricket"
+      ],
+      "newFixtureCounts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "existingCounts": {
+        "soccer": 32,
+        "basketball": 6,
+        "baseball": 16,
+        "volleyball": 0,
+        "hockey": 7,
+        "total": 61
+      },
+      "sharedSurfaces": [
+        "top sport tabs",
+        "existing left popular sports list"
+      ],
+      "emptyCopy": "등록된 경기가 없습니다.",
+      "newRightList": false
+    },
+    "latestWhiteIconRequest": {
+      "status": "Already included in baseline; verified without additional source edits",
+      "buttons": [
+        "충전",
+        "환전",
+        "고객센터"
+      ],
+      "iconColor": "#FFFFFF",
+      "normalAndHoverConfirmed": true
+    }
+  },
+  "fit": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zoom": 1,
+    "devicePixelRatio": 1,
+    "fonts": "loaded",
+    "availablePx": 1226,
+    "gapPx": 8,
+    "initialAllFiveWidthPx": 1252.171875,
+    "initialOverflowPx": 26.171875,
+    "initialMeasureStage": "Before selected-only height correction; only all tab was 34px. Final evidence supersedes this.",
+    "removedSuffix": [
+      "cricket"
+    ],
+    "removedTabWidthPx": 106.171875,
+    "removedTrailingGapPx": 8,
+    "finalWidthPx": 1138,
+    "remainingPx": 88,
+    "calculation": "1252.171875 - (106.171875 + 8) = 1138; 1226 - 1138 = 88",
+    "noCompressionWrappingEllipsisClippingOrAddedScrolling": true,
+    "finalMeasureFile": "final-width.json"
+  },
+  "assets": {
+    "evidence": "asset-copies.json",
+    "allOriginalHashesMatched": true,
+    "adoptedCount": 4,
+    "retainedOriginalsCount": 5,
+    "cricketPublicTrialCopyRemoved": true,
+    "cricketIntakeOriginalPreserved": true,
+    "format": "256x256 RGBA PNG",
+    "topSlotPx": 20,
+    "leftSlotPx": 22,
+    "objectFit": "contain",
+    "visualCheck": "Horizontal F1 and vertical MMA remain centered and uncropped in existing slots; no offsets or image edits."
+  },
+  "verification": {
+    "reuse": "A-D local QA, original asset hash checks and width measurements reused; follow-up CSS affected only top sport-tab hover border.",
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "result": "passed in first workflow before hover-only CSS edit; reused"
+    },
+    "initialBuild": {
+      "command": "npm run build",
+      "result": "passed",
+      "source": "f23b3423f0411b26385dc5a56b9436f438ec522b",
+      "published": false
+    },
+    "finalBuild": {
+      "command": "npm run build",
+      "result": "passed",
+      "exitCode": 0,
+      "source": "fd3356b6b2814b269c81e3bec3112ff999a1570b"
+    },
+    "local": {
+      "result": "passed",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "topZeroSportsChecked": [
+        "formula1",
+        "boxing",
+        "mma",
+        "motorsports",
+        "volleyball"
+      ],
+      "leftZeroSportsChecked": [
+        "formula1",
+        "boxing",
+        "mma",
+        "motorsports"
+      ],
+      "domesticZeroSport": "formula1",
+      "emptyCards": 0,
+      "emptyMarkets": 0,
+      "emptyDetailId": "",
+      "slipAndStakePreserved": true,
+      "returnedBasketballCards": 6,
+      "returnedAllCards": 61,
+      "restored": true,
+      "disabledMouseAndKeyboardBlocked": true,
+      "disabledDefaultHoverActiveStylingPreserved": true,
+      "otherDisabledOpacityPreserved": true,
+      "consoleErrors": 0
+    },
+    "hover": {
+      "result": "passed",
+      "states": [
+        "selected all",
+        "unselected soccer",
+        "unselected new formula1"
+      ],
+      "border": "#FCD73E",
+      "thicknessPx": 1,
+      "boxBackgroundIconTextUnchanged": true,
+      "unselectedCountGray": true,
+      "evidence": "hover-after.json"
+    },
+    "public": {
+      "result": "passed",
+      "url": "https://aldebaran.kexxadrix.chatgpt.site",
+      "version": 22,
+      "viewport": [
+        1920,
+        1080
+      ],
+      "fonts": "loaded",
+      "existingAuthenticatedSessionUsed": true,
+      "emptySelectionDisabled": true,
+      "missingAmountDisabled": true,
+      "valid10000Enabled": true,
+      "aboveMax100001Disabled": true,
+      "allStatesSameYellowDarkForeground": true,
+      "submitClicks": 0,
+      "transactions": 0,
+      "accountBalanceKeepAndInputRestored": true,
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "temporaryQATabClosed": true,
+      "userPublicTabReloaded": false
+    },
+    "visualApproval": "Technical and rendered verification only; user aesthetic approval remains separate."
+  },
+  "warnings": [
+    "Existing large bundle warning",
+    "Existing plugin-timings warning",
+    "Existing vinext route classification warning"
+  ],
+  "notChanged": [
+    "Fixture data and 61-match counts",
+    "Odds and selection IDs",
+    "Bet validation/submission handlers",
+    "Other disabled controls",
+    "Other hover styles and left rail hover",
+    "Top tab text/icon/background and spacing",
+    "Original supplied files",
+    "MERCURY/SIRIUS and GitHub backup",
+    "Operating AGENTS/STATE/DESIGN_SPEC/DECISIONS"
+  ],
+  "remainingLimits": [
+    "Mobile and broad unrelated regression not run per scope",
+    "No actual wager submission, payment or account creation",
+    "Build output capture is an excerpt because the tool truncated routine build progress; successful exit and source/archive result are recorded"
+  ],
+  "evidence": [
+    "before.json",
+    "after-final.json",
+    "five-candidate-width.json",
+    "final-width.json",
+    "asset-copies.json",
+    "geometry-comparison.json",
+    "navigation-flow.json",
+    "disabled-and-domestic.json",
+    "disabled-styles.json",
+    "hover-before.json",
+    "hover-after.json",
+    "hover-final-1920.png",
+    "zero-sport-slip-preserved-1920.png",
+    "public-active-disabled-checks.json",
+    "public-final-state.json",
+    "public-console.json",
+    "public-final-1920.png",
+    "final-publication.json",
+    "final-source.diff",
+    "first-checks-build-output-excerpt.log",
+    "final-build-output-excerpt.log"
+  ]
+}
+

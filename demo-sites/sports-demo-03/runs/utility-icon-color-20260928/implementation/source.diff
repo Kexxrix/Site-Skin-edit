@@ -1,0 +1,13 @@
+diff --git a/app/aldebaran-wog-r5.css b/app/aldebaran-wog-r5.css
+index b9b3db1..3426ecb 100644
+--- a/app/aldebaran-wog-r5.css
++++ b/app/aldebaran-wog-r5.css
+@@ -57,7 +57,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ @keyframes ab5-notice-flow { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+ .ab5-notice-links { display: flex; flex: 0 0 auto; gap: 14px; height: 35px; align-items: center; }
+ .ab5-notice-links button { display: inline-flex; align-items: center; gap: 4px; height: 35px; padding: 0; border: 0; background: transparent; color: var(--ab5-text); opacity:1; font-size: 14px; font-weight: 600; line-height: 35px; white-space: nowrap; }
+-.ab5-notice-links svg { width: 12px; height: 12px; }
++.ab5-notice-links svg { width: 12px; height: 12px; color: var(--ab5-small-accent); }
+ .ab5-notice-links button:hover { color: var(--ab5-accent); }
+ .ab5-body { display: grid; grid-template-columns: 320px 1244px 320px; gap: 10px; padding: 7px 8px 8px; flex: 1 1 0; min-height: 0; overflow: hidden; }
+ .ab5-rail { width: 320px; min-width: 0; min-height: 0; }

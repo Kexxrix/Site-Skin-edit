@@ -1,0 +1,2788 @@
+{
+  "package": "ALDEBARAN_R15_POLISH_MARKETS",
+  "status": "complete_with_documented_limits",
+  "actual_commit": "7c7284fc8dd21b1e84f4bd8dc5fe7f53f9bc6b23",
+  "deployment_version": 17,
+  "deployment_id": "appgdep_6ab37b51a63c819182f809026a660a54",
+  "deployment_url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "deployment_status": "succeeded",
+  "task_results": [
+    {
+      "id": "R15-01",
+      "status": "passed",
+      "changed_files": [
+        "app/aldebaran-wog-r5.css"
+      ],
+      "evidence": [
+        "../public/final-measurements.json"
+      ],
+      "summary": "Slip submit uses #F1B000 with #171717 text; size and disabled behavior retained.",
+      "limitations": []
+    },
+    {
+      "id": "R15-02",
+      "status": "passed",
+      "changed_files": [
+        "app/demo-data.ts",
+        "app/prematch-r15.json",
+        "app/aldebaran-wog-r5.tsx"
+      ],
+      "evidence": [
+        "data-validation.json",
+        "empty-counts-flow.json",
+        "../public/final-measurements.json"
+      ],
+      "summary": "Actual 61 fixtures: soccer32 basketball6 baseball16 volleyball0 hockey7. Independent baseball IDs replace16 NFL fixtures.",
+      "limitations": []
+    },
+    {
+      "id": "R15-03",
+      "status": "passed",
+      "changed_files": [
+        "app/aldebaran-wog-r5.tsx",
+        "app/aldebaran-wog-r5.css"
+      ],
+      "evidence": [
+        "account-feedback.json",
+        "../public/final-measurements.json",
+        "../public/european-1920.png"
+      ],
+      "summary": "Account rows and 3x2 actions aligned. Latest direct feedback overrides initial14px/18px to12px text/16px icons. Button38px, gap4px, icon-label gap6px.",
+      "limitations": []
+    },
+    {
+      "id": "R15-04",
+      "status": "passed",
+      "changed_files": [
+        "app/aldebaran-wog-r5.css"
+      ],
+      "evidence": [
+        "font-weight-audit.json",
+        "font-baseline.json",
+        "font-after.json"
+      ],
+      "summary": "Central typography moved to next lower installed face; odds and N+ preserved. Minimum400 retained where no lower installed face exists.",
+      "limitations": []
+    },
+    {
+      "id": "R15-05",
+      "status": "passed",
+      "changed_files": [
+        "app/prematch-r15.json",
+        "app/demo-data.ts",
+        "app/wog-market-data.ts",
+        "app/aldebaran-wog-r5.tsx",
+        "app/aldebaran-wog-r5.css"
+      ],
+      "evidence": [
+        "data-validation.json",
+        "market-inventory.json",
+        "sport-summary.json",
+        "template-coverage.json",
+        "pricing-audit.json",
+        "ui-case-results.json",
+        "three-digit-multi-1920.png",
+        "visible-labels.json"
+      ],
+      "summary": "Canonical market array drives actual N+, grouping, detail filters and slip. Existing1664 selections/quotes preserved; compound labels retain both outcomes.",
+      "limitations": [
+        "No verified roster/starters:40 player templates excluded. No confirmed knockout fixture:qualification template excluded. NRFI/YRFI alias counted once."
+      ]
+    }
+  ],
+  "fixtures": {
+    "target_total": 61,
+    "actual_total": 61,
+    "actual_by_sport": {
+      "soccer": 32,
+      "basketball": 6,
+      "baseball": 16,
+      "hockey": 7,
+      "volleyball": 0
+    },
+    "inventory_rows": [
+      {
+        "fixtureId": "record-401902644",
+        "sport": "basketball",
+        "league": "NBA 프리시즌",
+        "profile": "standard",
+        "familyCount": 9,
+        "marketCount": 80,
+        "selectionCount": 168,
+        "displayedBadgeCount": 80,
+        "detailMarketCount": 80,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401881922",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "extended",
+        "familyCount": 23,
+        "marketCount": 79,
+        "selectionCount": 192,
+        "displayedBadgeCount": 79,
+        "detailMarketCount": 79,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857190",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "extended",
+        "familyCount": 9,
+        "marketCount": 115,
+        "selectionCount": 238,
+        "displayedBadgeCount": 115,
+        "detailMarketCount": 115,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884790",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 111,
+        "selectionCount": 276,
+        "displayedBadgeCount": 111,
+        "detailMarketCount": 111,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879275",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761815",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876453",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857191",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "compact",
+        "familyCount": 9,
+        "marketCount": 52,
+        "selectionCount": 112,
+        "displayedBadgeCount": 52,
+        "detailMarketCount": 52,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857192",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "standard",
+        "familyCount": 9,
+        "marketCount": 85,
+        "selectionCount": 178,
+        "displayedBadgeCount": 85,
+        "detailMarketCount": 85,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857193",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "extended",
+        "familyCount": 9,
+        "marketCount": 115,
+        "selectionCount": 238,
+        "displayedBadgeCount": 115,
+        "detailMarketCount": 115,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857194",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "compact",
+        "familyCount": 9,
+        "marketCount": 51,
+        "selectionCount": 110,
+        "displayedBadgeCount": 51,
+        "detailMarketCount": 51,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401881923",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "compact",
+        "familyCount": 23,
+        "marketCount": 52,
+        "selectionCount": 138,
+        "displayedBadgeCount": 52,
+        "detailMarketCount": 52,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401886427",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "extended",
+        "familyCount": 23,
+        "marketCount": 78,
+        "selectionCount": 190,
+        "displayedBadgeCount": 78,
+        "detailMarketCount": 78,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401878099",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "standard",
+        "familyCount": 23,
+        "marketCount": 64,
+        "selectionCount": 162,
+        "displayedBadgeCount": 64,
+        "detailMarketCount": 64,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401886258",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "extended",
+        "familyCount": 23,
+        "marketCount": 78,
+        "selectionCount": 190,
+        "displayedBadgeCount": 78,
+        "detailMarketCount": 78,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879412",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "compact",
+        "familyCount": 23,
+        "marketCount": 51,
+        "selectionCount": 136,
+        "displayedBadgeCount": 51,
+        "detailMarketCount": 51,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879652",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "standard",
+        "familyCount": 23,
+        "marketCount": 65,
+        "selectionCount": 164,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879269",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879274",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401878778",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 107,
+        "selectionCount": 268,
+        "displayedBadgeCount": 107,
+        "detailMarketCount": 107,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879271",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 68,
+        "selectionCount": 190,
+        "displayedBadgeCount": 68,
+        "detailMarketCount": 68,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879270",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 46,
+        "selectionCount": 145,
+        "displayedBadgeCount": 46,
+        "detailMarketCount": 46,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761818",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761819",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761816",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761817",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 49,
+        "selectionCount": 151,
+        "displayedBadgeCount": 49,
+        "detailMarketCount": 49,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761822",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761820",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 109,
+        "selectionCount": 272,
+        "displayedBadgeCount": 109,
+        "detailMarketCount": 109,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761821",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761823",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 108,
+        "selectionCount": 270,
+        "displayedBadgeCount": 108,
+        "detailMarketCount": 108,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761824",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 46,
+        "selectionCount": 145,
+        "displayedBadgeCount": 46,
+        "detailMarketCount": 46,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761826",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 109,
+        "selectionCount": 272,
+        "displayedBadgeCount": 109,
+        "detailMarketCount": 109,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761827",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761825",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761828",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884786",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884787",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884785",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884784",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 46,
+        "selectionCount": 145,
+        "displayedBadgeCount": 46,
+        "detailMarketCount": 46,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884789",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876451",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 111,
+        "selectionCount": 276,
+        "displayedBadgeCount": 111,
+        "detailMarketCount": 111,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876457",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 108,
+        "selectionCount": 270,
+        "displayedBadgeCount": 108,
+        "detailMarketCount": 108,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876455",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876454",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 108,
+        "selectionCount": 270,
+        "displayedBadgeCount": 108,
+        "detailMarketCount": 108,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876450",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-01",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 15,
+        "marketCount": 65,
+        "selectionCount": 156,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-02",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 14,
+        "marketCount": 102,
+        "selectionCount": 262,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-03",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-04",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 16,
+        "marketCount": 67,
+        "selectionCount": 190,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-05",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-06",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 11,
+        "marketCount": 25,
+        "selectionCount": 70,
+        "displayedBadgeCount": 25,
+        "detailMarketCount": 25,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-07",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 15,
+        "marketCount": 65,
+        "selectionCount": 156,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-08",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-09",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-10",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-11",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 16,
+        "marketCount": 67,
+        "selectionCount": 190,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-12",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-13",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 14,
+        "marketCount": 29,
+        "selectionCount": 110,
+        "displayedBadgeCount": 29,
+        "detailMarketCount": 29,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-14",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 15,
+        "marketCount": 65,
+        "selectionCount": 156,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-15",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-16",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      }
+    ]
+  },
+  "market_audit": {
+    "row_fields": [
+      "fixtureId",
+      "sport",
+      "league",
+      "profile",
+      "familyCount",
+      "marketCount",
+      "selectionCount",
+      "displayedBadgeCount",
+      "detailMarketCount",
+      "countMatches",
+      "playerMarketsPresent"
+    ],
+    "rows": [
+      {
+        "fixtureId": "record-401902644",
+        "sport": "basketball",
+        "league": "NBA 프리시즌",
+        "profile": "standard",
+        "familyCount": 9,
+        "marketCount": 80,
+        "selectionCount": 168,
+        "displayedBadgeCount": 80,
+        "detailMarketCount": 80,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401881922",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "extended",
+        "familyCount": 23,
+        "marketCount": 79,
+        "selectionCount": 192,
+        "displayedBadgeCount": 79,
+        "detailMarketCount": 79,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857190",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "extended",
+        "familyCount": 9,
+        "marketCount": 115,
+        "selectionCount": 238,
+        "displayedBadgeCount": 115,
+        "detailMarketCount": 115,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884790",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 111,
+        "selectionCount": 276,
+        "displayedBadgeCount": 111,
+        "detailMarketCount": 111,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879275",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761815",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876453",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857191",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "compact",
+        "familyCount": 9,
+        "marketCount": 52,
+        "selectionCount": 112,
+        "displayedBadgeCount": 52,
+        "detailMarketCount": 52,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857192",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "standard",
+        "familyCount": 9,
+        "marketCount": 85,
+        "selectionCount": 178,
+        "displayedBadgeCount": 85,
+        "detailMarketCount": 85,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857193",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "extended",
+        "familyCount": 9,
+        "marketCount": 115,
+        "selectionCount": 238,
+        "displayedBadgeCount": 115,
+        "detailMarketCount": 115,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401857194",
+        "sport": "basketball",
+        "league": "WNBA",
+        "profile": "compact",
+        "familyCount": 9,
+        "marketCount": 51,
+        "selectionCount": 110,
+        "displayedBadgeCount": 51,
+        "detailMarketCount": 51,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401881923",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "compact",
+        "familyCount": 23,
+        "marketCount": 52,
+        "selectionCount": 138,
+        "displayedBadgeCount": 52,
+        "detailMarketCount": 52,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401886427",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "extended",
+        "familyCount": 23,
+        "marketCount": 78,
+        "selectionCount": 190,
+        "displayedBadgeCount": 78,
+        "detailMarketCount": 78,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401878099",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "standard",
+        "familyCount": 23,
+        "marketCount": 64,
+        "selectionCount": 162,
+        "displayedBadgeCount": 64,
+        "detailMarketCount": 64,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401886258",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "extended",
+        "familyCount": 23,
+        "marketCount": 78,
+        "selectionCount": 190,
+        "displayedBadgeCount": 78,
+        "detailMarketCount": 78,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879412",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "compact",
+        "familyCount": 23,
+        "marketCount": 51,
+        "selectionCount": 136,
+        "displayedBadgeCount": 51,
+        "detailMarketCount": 51,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879652",
+        "sport": "hockey",
+        "league": "NHL 프리시즌",
+        "profile": "standard",
+        "familyCount": 23,
+        "marketCount": 65,
+        "selectionCount": 164,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879269",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879274",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401878778",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 107,
+        "selectionCount": 268,
+        "displayedBadgeCount": 107,
+        "detailMarketCount": 107,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879271",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 68,
+        "selectionCount": 190,
+        "displayedBadgeCount": 68,
+        "detailMarketCount": 68,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401879270",
+        "sport": "soccer",
+        "league": "프리미어리그",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 46,
+        "selectionCount": 145,
+        "displayedBadgeCount": 46,
+        "detailMarketCount": 46,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761818",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761819",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761816",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761817",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 49,
+        "selectionCount": 151,
+        "displayedBadgeCount": 49,
+        "detailMarketCount": 49,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761822",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761820",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 109,
+        "selectionCount": 272,
+        "displayedBadgeCount": 109,
+        "detailMarketCount": 109,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761821",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761823",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 108,
+        "selectionCount": 270,
+        "displayedBadgeCount": 108,
+        "detailMarketCount": 108,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761824",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 46,
+        "selectionCount": 145,
+        "displayedBadgeCount": 46,
+        "detailMarketCount": 46,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761826",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 109,
+        "selectionCount": 272,
+        "displayedBadgeCount": 109,
+        "detailMarketCount": 109,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761827",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761825",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-761828",
+        "sport": "soccer",
+        "league": "MLS",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884786",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884787",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884785",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884784",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 46,
+        "selectionCount": 145,
+        "displayedBadgeCount": 46,
+        "detailMarketCount": 46,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401884789",
+        "sport": "soccer",
+        "league": "분데스리가",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 110,
+        "selectionCount": 274,
+        "displayedBadgeCount": 110,
+        "detailMarketCount": 110,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876451",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 111,
+        "selectionCount": 276,
+        "displayedBadgeCount": 111,
+        "detailMarketCount": 111,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876457",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 108,
+        "selectionCount": 270,
+        "displayedBadgeCount": 108,
+        "detailMarketCount": 108,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876455",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "compact",
+        "familyCount": 18,
+        "marketCount": 47,
+        "selectionCount": 147,
+        "displayedBadgeCount": 47,
+        "detailMarketCount": 47,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876454",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "extended",
+        "familyCount": 26,
+        "marketCount": 108,
+        "selectionCount": 270,
+        "displayedBadgeCount": 108,
+        "detailMarketCount": 108,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "record-401876450",
+        "sport": "soccer",
+        "league": "리그 1",
+        "profile": "standard",
+        "familyCount": 22,
+        "marketCount": 67,
+        "selectionCount": 188,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-01",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 15,
+        "marketCount": 65,
+        "selectionCount": 156,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-02",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 14,
+        "marketCount": 102,
+        "selectionCount": 262,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-03",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-04",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 16,
+        "marketCount": 67,
+        "selectionCount": 190,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-05",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-06",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 11,
+        "marketCount": 25,
+        "selectionCount": 70,
+        "displayedBadgeCount": 25,
+        "detailMarketCount": 25,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-07",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 15,
+        "marketCount": 65,
+        "selectionCount": 156,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-08",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-09",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-10",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-11",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 16,
+        "marketCount": 67,
+        "selectionCount": 190,
+        "displayedBadgeCount": 67,
+        "detailMarketCount": 67,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-12",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-13",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 14,
+        "marketCount": 29,
+        "selectionCount": 110,
+        "displayedBadgeCount": 29,
+        "detailMarketCount": 29,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-14",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "standard",
+        "familyCount": 15,
+        "marketCount": 65,
+        "selectionCount": 156,
+        "displayedBadgeCount": 65,
+        "detailMarketCount": 65,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-15",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "extended",
+        "familyCount": 15,
+        "marketCount": 102,
+        "selectionCount": 234,
+        "displayedBadgeCount": 102,
+        "detailMarketCount": 102,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      },
+      {
+        "fixtureId": "aldebaran-r15-baseball-16",
+        "sport": "baseball",
+        "league": "MLB",
+        "profile": "compact",
+        "familyCount": 13,
+        "marketCount": 26,
+        "selectionCount": 74,
+        "displayedBadgeCount": 26,
+        "detailMarketCount": 26,
+        "countMatches": true,
+        "playerMarketsPresent": false
+      }
+    ],
+    "sport_summary_fields": [
+      "sport",
+      "fixtureCount",
+      "minMarkets",
+      "medianMarkets",
+      "maxMarkets",
+      "distinctMarketCounts"
+    ],
+    "sport_summaries": [
+      {
+        "sport": "soccer",
+        "fixtureCount": 32,
+        "minMarkets": 46,
+        "medianMarkets": 67.0,
+        "maxMarkets": 111,
+        "distinctMarketCounts": [
+          46,
+          47,
+          49,
+          67,
+          68,
+          107,
+          108,
+          109,
+          110,
+          111
+        ]
+      },
+      {
+        "sport": "basketball",
+        "fixtureCount": 6,
+        "minMarkets": 51,
+        "medianMarkets": 82.5,
+        "maxMarkets": 115,
+        "distinctMarketCounts": [
+          51,
+          52,
+          80,
+          85,
+          115
+        ]
+      },
+      {
+        "sport": "baseball",
+        "fixtureCount": 16,
+        "minMarkets": 25,
+        "medianMarkets": 65.0,
+        "maxMarkets": 102,
+        "distinctMarketCounts": [
+          25,
+          26,
+          29,
+          65,
+          67,
+          102
+        ]
+      },
+      {
+        "sport": "hockey",
+        "fixtureCount": 7,
+        "minMarkets": 51,
+        "medianMarkets": 65,
+        "maxMarkets": 79,
+        "distinctMarketCounts": [
+          51,
+          52,
+          64,
+          65,
+          78,
+          79
+        ]
+      }
+    ]
+  },
+  "template_coverage": {
+    "row_fields": [
+      "templateId",
+      "status",
+      "fixtureCount",
+      "reason_if_excluded"
+    ],
+    "rows": [
+      {
+        "templateId": "soccer.result_3way",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.double_chance",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.draw_no_bet",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.asian_handicap",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.european_handicap",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.total_goals",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.team_total_goals",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.btts",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.correct_score",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.exact_total_goals",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.goals_odd_even",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.half_full_result",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.first_team_to_score",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.team_clean_sheet",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.corners_total",
+        "status": "implemented",
+        "fixtureCount": 23,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.corners_handicap",
+        "status": "implemented",
+        "fixtureCount": 23,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.team_corners",
+        "status": "implemented",
+        "fixtureCount": 23,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.corners_most",
+        "status": "implemented",
+        "fixtureCount": 23,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.cards_total",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.team_cards",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.red_card",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.first_card_team",
+        "status": "implemented",
+        "fixtureCount": 32,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.match_shots",
+        "status": "implemented",
+        "fixtureCount": 13,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.team_shots",
+        "status": "implemented",
+        "fixtureCount": 13,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.match_shots_on_target",
+        "status": "implemented",
+        "fixtureCount": 13,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.team_shots_on_target",
+        "status": "implemented",
+        "fixtureCount": 13,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "soccer.player_anytime_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.player_first_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.player_last_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.player_multi_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.player_assist",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.player_shots",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.player_shots_on_target",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.player_card",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "soccer.to_qualify",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No knockout bracket metadata in these fixtures"
+      },
+      {
+        "templateId": "basketball.moneyline",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.spread",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.total_points",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.team_total_points",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.half_full_result",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.highest_scoring_half",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.highest_scoring_quarter",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.wire_to_wire",
+        "status": "implemented",
+        "fixtureCount": 6,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "basketball.player_points",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_rebounds",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_assists",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_threes",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_pra",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_pr",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_pa",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_ra",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_double_double",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_triple_double",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.player_quarter_points",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.first_points",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.first_field_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.first_rebound",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.first_assist",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "basketball.most_player_points",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.moneyline",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.run_line",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.total_runs",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.team_total_runs",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.inning_result",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.inning_total",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.first_inning_score",
+        "status": "alias_deduplicated",
+        "fixtureCount": 16,
+        "reason_if_excluded": "Represented once by baseball.inning_total / inning_1 / 0.5 (NRFI/YRFI alias)"
+      },
+      {
+        "templateId": "baseball.half_inning_total",
+        "status": "implemented",
+        "fixtureCount": 10,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.double_result",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.runs_odd_even",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.winning_margin",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.first_team_to_score",
+        "status": "implemented",
+        "fixtureCount": 14,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.last_team_to_score",
+        "status": "implemented",
+        "fixtureCount": 14,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.race_to_runs",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.highest_scoring_inning",
+        "status": "implemented",
+        "fixtureCount": 16,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.inning_correct_score",
+        "status": "implemented",
+        "fixtureCount": 4,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.team_most_hits",
+        "status": "implemented",
+        "fixtureCount": 10,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "baseball.pitcher_strikeouts",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.pitcher_strikeout_matchup",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.batter_hits",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.batter_home_runs",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.batter_rbi",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.batter_total_bases",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.batter_runs",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "baseball.batter_stolen_bases",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.moneyline",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.regulation_result",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.puck_line",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.total_goals",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.team_total_goals",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.period_result",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.period_handicap",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.period_total_goals",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.period_team_total",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.draw_no_bet",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.double_chance",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.puck_line_3way",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.total_3way",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.exact_total_goals",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.team_exact_goals",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.goals_odd_even",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.team_goals_odd_even",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.first_team_to_score",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.last_team_to_score",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.race_to_goals",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.most_periods_won",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.highest_scoring_period",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.tied_after_regulation",
+        "status": "implemented",
+        "fixtureCount": 7,
+        "reason_if_excluded": ""
+      },
+      {
+        "templateId": "ice_hockey.player_anytime_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.player_first_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.player_last_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.player_multi_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.player_period_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.player_shots_on_goal",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.player_points",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      },
+      {
+        "templateId": "ice_hockey.goalie_saves",
+        "status": "excluded",
+        "fixtureCount": 0,
+        "reason_if_excluded": "No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented"
+      }
+    ]
+  },
+  "font_weight_audit": {
+    "row_fields": [
+      "role",
+      "selector",
+      "beforeResolvedWeight",
+      "afterResolvedWeight",
+      "protected",
+      "exception"
+    ],
+    "rows": [
+      {
+        "role": ".ab5-league-head",
+        "selector": ".ab5-league-head",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 800,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "12px",
+        "sizeAfter": "12px"
+      },
+      {
+        "role": ".ab5-league-label small",
+        "selector": ".ab5-league-label small",
+        "beforeResolvedWeight": 500,
+        "afterResolvedWeight": 400,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "10px",
+        "sizeAfter": "10px"
+      },
+      {
+        "role": ".ab5-card-time",
+        "selector": ".ab5-card-time",
+        "beforeResolvedWeight": 800,
+        "afterResolvedWeight": 700,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "11px",
+        "sizeAfter": "11px"
+      },
+      {
+        "role": ".ab5-card-league",
+        "selector": ".ab5-card-league",
+        "beforeResolvedWeight": 800,
+        "afterResolvedWeight": 700,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "13px",
+        "sizeAfter": "13px"
+      },
+      {
+        "role": ".ab5-team",
+        "selector": ".ab5-team",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 800,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "15px",
+        "sizeAfter": "15px"
+      },
+      {
+        "role": ".ab5-score",
+        "selector": ".ab5-score",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 800,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "20px",
+        "sizeAfter": "20px"
+      },
+      {
+        "role": ".ab5-primary-markets .ab5-odd-label",
+        "selector": ".ab5-primary-markets .ab5-odd-label",
+        "beforeResolvedWeight": 850,
+        "afterResolvedWeight": 800,
+        "protected": false,
+        "exception": "850 resolves to installed 900; changed to next face 800",
+        "sizeBefore": "12px",
+        "sizeAfter": "12px"
+      },
+      {
+        "role": ".ab5-primary-markets .ab5-odd-value",
+        "selector": ".ab5-primary-markets .ab5-odd-value",
+        "beforeResolvedWeight": 950,
+        "afterResolvedWeight": 950,
+        "protected": true,
+        "exception": "950 declared / installed face 900; protected unchanged",
+        "sizeBefore": "14px",
+        "sizeAfter": "14px"
+      },
+      {
+        "role": ".ab5-market-name",
+        "selector": ".ab5-market-name",
+        "beforeResolvedWeight": 700,
+        "afterResolvedWeight": 500,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "11px",
+        "sizeAfter": "11px"
+      },
+      {
+        "role": ".ab5-market-line",
+        "selector": ".ab5-market-line",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 800,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "14px",
+        "sizeAfter": "14px"
+      },
+      {
+        "role": ".ab5-match-title",
+        "selector": ".ab5-match-title",
+        "beforeResolvedWeight": 800,
+        "afterResolvedWeight": 700,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "14px",
+        "sizeAfter": "14px"
+      },
+      {
+        "role": ".ab5-match-start",
+        "selector": ".ab5-match-start",
+        "beforeResolvedWeight": 700,
+        "afterResolvedWeight": 500,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "12px",
+        "sizeAfter": "12px"
+      },
+      {
+        "role": ".ab5-market-tabs button",
+        "selector": ".ab5-market-tabs button",
+        "beforeResolvedWeight": 800,
+        "afterResolvedWeight": 700,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "12px",
+        "sizeAfter": "12px"
+      },
+      {
+        "role": ".ab5-market-head",
+        "selector": ".ab5-market-head",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 800,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "12px",
+        "sizeAfter": "12px"
+      },
+      {
+        "role": ".ab5-market-head small",
+        "selector": ".ab5-market-head small",
+        "beforeResolvedWeight": 500,
+        "afterResolvedWeight": 400,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "10px",
+        "sizeAfter": "10px"
+      },
+      {
+        "role": ".ab5-market-rows .ab5-odd-label",
+        "selector": ".ab5-market-rows .ab5-odd-label",
+        "beforeResolvedWeight": 700,
+        "afterResolvedWeight": 500,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "12px",
+        "sizeAfter": "12px"
+      },
+      {
+        "role": ".ab5-market-rows .ab5-odd-value",
+        "selector": ".ab5-market-rows .ab5-odd-value",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 900,
+        "protected": true,
+        "exception": "",
+        "sizeBefore": "14px",
+        "sizeAfter": "14px"
+      },
+      {
+        "role": ".ab5-line-box",
+        "selector": ".ab5-line-box",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 800,
+        "protected": false,
+        "exception": "",
+        "sizeBefore": "13px",
+        "sizeAfter": "13px"
+      },
+      {
+        "role": ".ab5-data-note",
+        "selector": ".ab5-data-note",
+        "beforeResolvedWeight": 400,
+        "afterResolvedWeight": 400,
+        "protected": false,
+        "exception": "lowest loaded face 400 preserved",
+        "sizeBefore": "11px",
+        "sizeAfter": "11px"
+      },
+      {
+        "role": ".ab5-market-open__count",
+        "selector": ".ab5-market-open__count",
+        "beforeResolvedWeight": 700,
+        "afterResolvedWeight": 700,
+        "protected": true,
+        "exception": "",
+        "sizeBefore": "12px",
+        "sizeAfter": "12px"
+      },
+      {
+        "role": ".ab5-menu-item",
+        "selector": ".ab5-menu-item",
+        "beforeResolvedWeight": 900,
+        "afterResolvedWeight": 900,
+        "protected": true,
+        "exception": "",
+        "sizeBefore": "16px",
+        "sizeAfter": "16px"
+      },
+      {
+        "role": ".ab5-sport-label",
+        "selector": ".ab5-sport-label",
+        "beforeResolvedWeight": 700,
+        "afterResolvedWeight": 700,
+        "protected": true,
+        "exception": "",
+        "sizeBefore": "14px",
+        "sizeAfter": "14px"
+      },
+      {
+        "role": ".ab5-user-actions button",
+        "selector": ".ab5-user-actions button",
+        "beforeResolvedWeight": 600,
+        "afterResolvedWeight": 600,
+        "protected": true,
+        "exception": "",
+        "sizeBefore": "14px",
+        "sizeAfter": "12px"
+      }
+    ]
+  },
+  "checks": {
+    "fixture_counts": "passed",
+    "volleyball_empty": "passed",
+    "unique_ids": "passed",
+    "badge_matches_detail": "passed",
+    "aliases_deduplicated": "passed",
+    "odds_valid": "passed",
+    "slip_linkage": "passed",
+    "protected_weights": "passed",
+    "local_visual_1920": "passed",
+    "existing_build": "passed",
+    "typecheck": "passed",
+    "public_visual_1920": "passed",
+    "popup_button_styles": "passed",
+    "user_visible_word_removal": "passed",
+    "compound_selection_labels": "passed",
+    "public_console_errors": [],
+    "methods": [
+      "validate-data.py:61fixtures/4476markets/11485selections/1664legacy selections/1839 monotonic comparisons",
+      "validate-ui.py:23font roles/8representative fixtures/10selection paths/all61N+counts/empty-state retention",
+      "tsc --noEmit --incremental false",
+      "npm run build",
+      "Browser screenshot and computed styles at1920x1080; public European and domestic screens; popup button primary control base/hover/active/focus state image/shadow checks"
+    ]
+  },
+  "screenshots": [
+    "account-feedback-1920.png",
+    "three-digit-multi-1920.png",
+    "popup-button-1920.png",
+    "../public/european-1920.png",
+    "../public/domestic-1920.png",
+    "../public/popup-1920.png"
+  ],
+  "unverified": [
+    "No full mobile or unrelated-page regression requested or run.",
+    "No actual payment, settlement, wager submission or new account creation performed.",
+    "No user visual approval claimed."
+  ],
+  "completed_at": "2026-09-23T07:10:28.529839+00:00",
+  "user_followups": [
+    {
+      "request": "Account right alignment and smaller actions",
+      "result": "12px labels,16px icons,38px buttons; information/balance/conversion/actions share right1903px at1920 viewport."
+    },
+    {
+      "request": "Remove prohibited wording from all user-visible ALDEBARAN copy",
+      "result": "League shows MLB. Header, market footer, account/service dialogs, rules and tracker fallback copy revised. Internal IDs, storage keys and source provenance remain stable."
+    },
+    {
+      "request": "Remove WOG button overlay from popups",
+      "result": "Scoped dialog controls override legacy background-image and box-shadow in normal/hover/active/focus states; ALDEBARAN solid orange and existing interaction colors retained."
+    }
+  ],
+  "remaining_limits": [
+    "Static synthetic probability models and statistics; no live odds feed or verified player rosters.",
+    "Joint markets use deterministic24000-sample models and simplified overtime conventions; not a settlement engine.",
+    "Build passed with chunk-size warning over500kB, plugin timing advisory and unknown route classification notice."
+  ],
+  "not_changed": [
+    "Other sites and project operating4MD",
+    "GitHub backup repository",
+    "Existing account/storage IDs, selection rules, payment logic and original assets",
+    "Header/rails/sportbar typography except explicitly requested account action size"
+  ]
+}

@@ -1,0 +1,55 @@
+
+
+> sites-project@0.1.0 build
+> vinext build
+  vinext build  (Vite 8.0.13)[1/5] analyze client references...
+transforming (31) node_modules\react\react.react-server.jstransforming (114) node_modules\vinext\dist\shims\font-utils.jstransforming (169) node_modules\react-server-dom-webpack\server.edge.js                                                                                                                                                                                                                                                         ✓ 233 modules transformed.
+rendering chunks (1)...✓ built in 687ms
+[2/5] analyze server references...
+transforming (37) node_modules\vinext\dist\server\client-trace-metadata.jstransforming (56) app\page.tsxtransforming (109) node_modules\vinext\dist\client\window-next.jstransforming (145) node_modules\lucide-react\dist\esm\shared\src\utils\hasA11yPr                                                                                transforming (171) node_modules\@base-ui\react\internals\form-context\FormContex                                                                                transforming (232) node_modules\@base-ui\react\floating-ui-react\components\Floa                                                                                                                                                                transforming (254) node_modules\@base-ui\utils\useTimeout.mjs                                                                                                   ✓ 282 modules transformed.
+✓ built in 869ms
+[3/5] build rsc environment...
+transforming (13) node_modules\vinext\dist\utils\asset-prefix.js                                                                                                transforming (68) app\page.tsx                                                                                                                                  transforming (141) node_modules\react-server-dom-webpack\cjs\react-server-dom-we                                                                                transforming (195) node_modules\vinext\dist\server\bfcache-identity.js                                                                                ✓ 230 modules transformed.
+rendering chunks (35)...computing gzip size...
+✓ built in 1.80s
+[4/5] build client environment...
+transforming (47) node_modules\vinext\dist\server\headers.jstransforming (67) node_modules\vinext\dist\routing\utils.jstransforming (83) node_modules\vinext\dist\utils\compare.jstransforming (106) app\aldebaran-wog-r5.tsxtransforming (134) node_modules\vinext\dist\utils\middleware-request-headers.js transforming (138) app\match-records.jsontransforming (147) app\prematch-r15.jsontransforming (155) node_modules\lucide-react\dist\esm\icons\arrow-down-wide-narrtransforming (162) node_modules\lucide-react\dist\esm\icons\between-horizontal-s                                                                                                                                                                transforming (501) node_modules\lucide-react\dist\esm\icons\badge-swiss-franc.mj                                                                                transforming (741) node_modules\lucide-react\dist\esm\icons\clipboard-plus.mjs                                                                                  transforming (1025) node_modules\lucide-react\dist\esm\icons\joystick.mjs                                                                                       transforming (1350) node_modules\lucide-react\dist\esm\icons\radio-receiver.mjs                                                                                 transforming (1635) node_modules\lucide-react\dist\esm\icons\file-output.mjs                                                                                    transforming (1931) node_modules\@base-ui\react\dialog\trigger\DialogTrigger.mjs                                                                                transforming (1938) node_modules\@base-ui\react\dialog\store\DialogStore.mjs                                                                                    transforming (2027) node_modules\@base-ui\react\internals\noop.mjs                                                                                              ✓ 2075 modules transformed.
+rendering chunks (8)...computing gzip size...
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.     
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
+  - vinext:middleware-server-only (16%)
+  - vinext:css-data-url (15%)
+  - alias (13%)
+  - vinext:og-inline-fetch-assets (12%)
+  - rsc:virtual-client-package (11%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 5.62s
+[5/5] build ssr environment...
+transforming (42) node_modules\vinext\dist\server\app-rsc-embedded-chunks.js    transforming (45) node_modules\vinext\dist\server\next-error-digest.js          transforming (48) node_modules\react-dom\cjs\react-dom.production.js                                                                                            transforming (72) node_modules\vinext\dist\utils\number.js                                                                                                      transforming (122) node_modules\react-server-dom-webpack\cjs\react-server-dom-we                                                                                transforming (150) node_modules\lucide-react\dist\esm\defaultAttributes.mjs                                                                                     transforming (191) node_modules\@base-ui\react\internals\reason-parts.mjs                                                                                transforming (240) node_modules\@base-ui\react\internals\noop.mjs                                                                                ✓ 290 modules transformed.
+rendering chunks (9)...computing gzip size...
+✓ built in 1.66s
+
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis  
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+npm notice
+npm notice New minor version of npm available! 11.9.0 -> 11.20.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.20.0
+npm notice To update run: npm install -g npm@11.20.0
+npm notice
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/aldebaran-league-labels.tar.gz
+{"project_id":"appgprj_6ab0f3255cdc819180a427bf6d0846f4","checkout_path":"E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site","commit_sha":"e4fbe01d95406961af2a3ba56689c9ed948d134c","archive":"E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/aldebaran-league-labels.tar.gz"}
+

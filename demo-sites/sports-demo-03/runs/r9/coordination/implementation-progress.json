@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-22T16:16:59.3478596+09:00",
+  "source": "implementation owner callback",
+  "stage": "UI and snapshot integration saved; data validation passed; browser/build/deployment pending",
+  "fixtures": 61,
+  "markets": 1040,
+  "selections": 2176,
+  "stableSelectionIdsPreserved": 2176,
+  "sameEventChecks": 76,
+  "monotonicityChecks": 488,
+  "pushMarkets": 45,
+  "distinctBasicPriceSets": {
+    "totals": 54,
+    "result": 60,
+    "handicap": 57
+  },
+  "maxBasicPairRepeat": 2,
+  "modelNote": "Rare extreme existing WNBA lines use one lower fixture-wide margin recorded in modelInputs; no individual price cap",
+  "server": "Reuse existing5303/PID39172; do not terminate user-owned server",
+  "pending": [
+    "render and representative flow checks",
+    "final build",
+    "same PUBLIC deploy",
+    "domestic/european captures"
+  ]
+}

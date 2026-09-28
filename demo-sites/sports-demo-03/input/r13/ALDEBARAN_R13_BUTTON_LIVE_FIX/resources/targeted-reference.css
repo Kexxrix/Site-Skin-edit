@@ -1,0 +1,59 @@
+/* ALDEBARAN R13: integration reference, not a global stylesheet replacement.
+ * Existing button class was observed in the deployed DOM.
+ * New count/chevron/live classes below must be added only to the named targets.
+ * Merge into current scoped rules; preserve handlers, layout and focus styles.
+ */
+
+button.ab5-market-open {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: max-content;
+  min-width: 0;
+  height: 24px;
+  padding: 0 5px;
+  gap: 3px;
+  border: 1px solid #F1B000;
+  border-radius: 5px;
+  background-color: #F1B000;
+  color: #171717;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+button.ab5-market-open > .ab5-market-open__count {
+  display: block;
+  flex: none;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  color: inherit;
+}
+
+/* Inline the supplied SVG and give it this class. Do not keep lucide sizing. */
+button.ab5-market-open > svg.ab5-market-open__chevron {
+  display: block;
+  flex: none;
+  width: 6px;
+  height: 10px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.25px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Add this class ONLY to LIVE before the left-rail latest-games heading.
+ * Match the existing stylesheet's scope/specificity when integrating.
+ * No sizing, typography, radius, padding or layout changes here.
+ */
+.ab5-left-latest-live {
+  background-color: #F1B000;
+  color: #171717;
+  border-color: #F1B000;
+}

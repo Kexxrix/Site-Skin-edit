@@ -1,0 +1,113 @@
+{
+  "observedDate": "2026-09-22",
+  "observedUrl": "https://aldebaran.kexxadrix.chatgpt.site/",
+  "currentPublicDom": {
+    "prematchCards": 61,
+    "handicapPair": {
+      "home": "1.78",
+      "away": "2.03",
+      "occurrences": 61
+    },
+    "totalsPair": {
+      "under": "1.87",
+      "over": "1.91",
+      "occurrences": 61
+    },
+    "gnbDisabledOpacity": 0.48,
+    "banner": {
+      "selector": ".ab5-mini-banner",
+      "width": 306,
+      "height": 60.625,
+      "radius": 4,
+      "aspectRatio": "323/64",
+      "padding": "6px 12px"
+    }
+  },
+  "currentPublicExample": {
+    "home": "Toronto Raptors",
+    "away": "Miami Heat",
+    "baseHandicap": {
+      "line": -3.5,
+      "home": 1.78,
+      "away": 2.03
+    },
+    "alternateHandicap": [
+      {
+        "line": -4.5,
+        "home": 1.94,
+        "away": 1.95
+      },
+      {
+        "line": -2.5,
+        "home": 1.9,
+        "away": 1.97
+      }
+    ],
+    "baseTotals": {
+      "line": 218.5,
+      "under": 1.87,
+      "over": 1.91
+    },
+    "alternateTotals": [
+      {
+        "line": 217.5,
+        "under": 1.77,
+        "over": 2.08
+      },
+      {
+        "line": 219.5,
+        "under": 1.8,
+        "over": 2.05
+      }
+    ],
+    "conclusion": "같은 규칙에서 유리한 핸디캡과 낮은 오버 기준점이 기본 라인보다 더 높은 가격을 주는 역전 사례"
+  },
+  "sourceInspection": {
+    "version": "public GitHub v6 snapshot, not current v8 source",
+    "files": [
+      "demo-sites/sports-demo-03/site/app/demo-data.ts",
+      "demo-sites/sports-demo-03/site/app/wog-market-data.ts"
+    ],
+    "method": "public raw source read",
+    "basePrices": "9 fixed arrays; template chosen by index/sport/league",
+    "baseTotals": "over 1.91, under 1.87 constant",
+    "baseHandicap": "home 1.78, away 2.03 constant",
+    "expandedPrices": "matchId hash plus market key/line char code salt %19; prices from independent formulas",
+    "limitation": "현재 v8와 소스가 완전히 동일하다고 주장하지 않음. 반복과 역전 자체는 공개 DOM에서도 확인."
+  },
+  "figmaExtraction": {
+    "node": "180:166",
+    "linkOmittedAsRequested": true,
+    "sampleFrame": [
+      832,
+      34
+    ],
+    "sizing": "content based Auto Layout",
+    "sampleWidths": [
+      137,
+      135,
+      119,
+      120,
+      120,
+      161
+    ],
+    "gap": 8,
+    "usage": "측정 결과는 고정 폭이 아님. 실제 구현은 세 자리 숫자 최소 폭 보완."
+  },
+  "technicalSources": [
+    {
+      "url": "https://help.smarkets.com/hc/en-gb/articles/214058369-How-to-calculate-implied-probability-in-betting",
+      "supports": "decimal implied probability formula only"
+    },
+    {
+      "url": "https://the-odds-api.com/liveapi/guides/v4/",
+      "supports": "event/bookmaker/market/price/point/update-time API data structure; not actual prices for these demo fixtures"
+    }
+  ],
+  "researchLimits": [
+    "실제 v8 앱 소스 전체를 수정하거나 내려받지 않음",
+    "실제 제공사의 이61경기 가격을 수집한 결과가 아님",
+    "실제 팀 전력 분석을 수행하지 않음",
+    "통계적 축구 모형은 설명용 합성 예제이며 적합된 예측 모델이 아님"
+  ]
+}

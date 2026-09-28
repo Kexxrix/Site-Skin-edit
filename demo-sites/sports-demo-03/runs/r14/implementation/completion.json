@@ -1,0 +1,172 @@
+{
+  "revision": "R14 instruction package",
+  "status": "completed_pending_user_visual_feedback",
+  "baselineCommit": "0996e1cb909b69531064bed54911f3103ea0e47d",
+  "baselinePublicVersion": 14,
+  "source": {
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+    "commit_sha": "35a63c764301efe7eb334d70ba9cf6599297bd37",
+    "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r14/implementation/aldebaran-r14.tar.gz"
+  },
+  "publicVersion": 15,
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_5563cc9f51e881919d104a21fe7ad0ef",
+  "deployment": {
+    "id": "appgdep_6ab34ccbb5c08191b06649629311ca3c",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_5563cc9f51e881919d104a21fe7ad0ef",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-23T03:51:59.421833+00:00"
+  },
+  "workingTreeClean": true,
+  "changedFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "public/banners/aldebaran/r14/Banner_01.png",
+    "public/banners/aldebaran/r14/Banner_02.png",
+    "public/banners/aldebaran/r14/Banner_03.png",
+    "public/banners/aldebaran/r14/Banner_04.png",
+    "public/banners/aldebaran/r14/Banner_05.png",
+    "public/banners/aldebaran/r14/Banner_06.png"
+  ],
+  "changes": {
+    "additionalBetButton": {
+      "label": "String(existing dynamic market count)+'+' in one existing span",
+      "font": "existing family,12px/700/line12",
+      "letterSpacing": "authored0; browser computed style normal",
+      "gap": 0,
+      "padding": "0 5px",
+      "height": 24,
+      "radius": 5,
+      "contentWidth": true,
+      "minWidth": 0,
+      "bg": "#F1B000",
+      "fg": "#171717",
+      "oneDigit": {
+        "label": "8+",
+        "width": 27.5625
+      },
+      "twoDigit": {
+        "label": "10+",
+        "width": 33.390625
+      },
+      "opticalOffset": 0,
+      "opticalReason": "Actual 100% one/two-digit views appeared balanced; no extra offset applied",
+      "removed": "Only current button SVG and its now-unused chevron CSS",
+      "preserved": "Dynamic calculation, zero/exposure condition, aria exact count, handlers, keyboard, parent-card closest(button) exclusion"
+    },
+    "banners": {
+      "roles": [
+        "텔레그램 고객센터",
+        "텔레그램 공식채널",
+        "ALDEBARAN 이용안내",
+        "실시간 중계 안내",
+        "스포츠 라인업",
+        "미성년자 이용불가"
+      ],
+      "sourceSize": [
+        306,
+        61
+      ],
+      "newPublicDirectory": "public/banners/aldebaran/r14",
+      "copy": {
+        "attempted": 6,
+        "succeeded": 6,
+        "failed": 0,
+        "skipped": 0,
+        "sourceHashMatches": 6
+      },
+      "renderedSize": [
+        306,
+        60.625
+      ],
+      "aspectRatio": "323/64 preserved",
+      "fit": "cover preserved",
+      "gap": 4,
+      "radius": 4,
+      "overlay": {
+        "color": "#000000",
+        "opacity": 0.4,
+        "layers": 1
+      },
+      "extraDarkening": false,
+      "originalFilesRetained": true,
+      "geometryHtmlAndHandlers": "preserved"
+    }
+  },
+  "checks": {
+    "typecheck": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "runs": 1,
+      "exitCode": 0
+    },
+    "build": {
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "build"
+      ],
+      "runs": 1,
+      "exitCode": 0
+    },
+    "workflowExit": 0,
+    "diffCheck": "passed",
+    "localUI": "evidence.json",
+    "assets": "asset-copy.json",
+    "publicUI": "../public/browser-confirmation.json",
+    "images": "../public/image-validation.json"
+  },
+  "preserved": [
+    "Latest LIVE yellow chip",
+    "Header video/logo and left CASINO/SLOT assets",
+    "Earlier seven-item alignment/interactions and other palette/font rules",
+    "Current data/odds/selection/slip/storage",
+    "Banner text/layout/aria/links and existing removed-icon state",
+    "Common SVG/Chevron rules",
+    "Other demos/GitHub backup/root operating documents",
+    "Original user public tabs/input"
+  ],
+  "warnings": [
+    "Existing chunk-size warning",
+    "Existing plugin-timing warning",
+    "Existing vinext route classification unknown"
+  ],
+  "limits": [
+    "Only requested two areas and directly related interactions tested",
+    "No mobile/responsive/new route development",
+    "No broad previous tests, other apps/viewports, account/payment/bet submission",
+    "Zero-count handling preserved in source; no synthetic zero fixture",
+    "Banner destination handlers preserved in source; all destinations not reopened",
+    "User visual approval pending"
+  ],
+  "evidenceRoot": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r14",
+  "publicationWorkflow": "Existing official source/check/build/push/package followed by native save/deploy; no new dependency or plugin",
+  "browser": {
+    "tabId": "1",
+    "finalMode": "european",
+    "rightRailRestoredToTop": true,
+    "viewportOverrideReset": true,
+    "actualPublicViewport": "CDP confirmed1920x1080 scale1 zoom1",
+    "originalUserTabsUntouched": true
+  },
+  "preview": {
+    "url": "http://localhost:5303/",
+    "pid": 26384,
+    "leftRunning": true
+  },
+  "stopForFeedback": true
+}

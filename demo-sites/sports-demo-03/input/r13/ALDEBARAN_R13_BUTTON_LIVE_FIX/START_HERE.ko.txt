@@ -1,0 +1,36 @@
+ALDEBARAN R13 — 추가베팅 버튼 + 좌측 LIVE 칩, 정확히 2건
+작성일: 2026-09-23
+R13은 이번 작업지시 번호입니다. 이미 완료된 PUBLIC v13 배포 번호와 구분하세요.
+
+첨부 ZIP을 읽고 현재 ALDEBARAN에 아래 두 항목만 구현하세요.
+
+프로젝트: E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/
+앱: E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/
+공개 주소: https://aldebaran.kexxadrix.chatgpt.site/
+
+1. 노란 추가베팅 버튼의 숫자·화살표·간격 정리
+   - 높이 24px, 라운드 5px, 배경 #F1B000, 전경 #171717, 우측 정렬 유지.
+   - 숫자 11px / 굵기 700. 별도 span으로 감싸고 line-height 12px로 중앙 정렬.
+   - 기존 축소된 범용 ChevronRight 대신 동봉한 6×10px 전용 SVG를 inline으로 사용.
+   - SVG viewBox 0 0 6 10, path M1 1 L5 5 L1 9, 선 1.25px, round cap/join.
+   - 숫자와 SVG 간격 3px, 좌우 패딩 5px. 폭은 내용에 따라 증가.
+   - 기존 동적 마켓 수, aria-label, 클릭/키보드 동작과 부모 카드 클릭 분리 유지.
+
+2. 좌측 레일 ‘최신 인기 게임’ 제목 앞 LIVE 칩을 노란색으로 변경
+   - 배경 #F1B000, 글자 #171717.
+   - 첨부 left-latest-live-target.png의 주황 LIVE 칩 하나가 대상.
+   - 기존 크기·폰트·패딩·라운드·위치·제목·게임 목록은 유지.
+   - 헤더 NEW/LIVE는 이미 적용된 상태를 유지. 전체 칩/배지를 일괄 변경하지 않음.
+
+AGENTS.md → STATE.md → DESIGN_SPEC.md → DECISIONS.md를 읽으세요.
+이 네 파일은 현재 운영 문서에 병합할 추가 지시이며 전체 교체본이 아닙니다.
+resources/button-chevron-right.svg는 버튼 전용 벡터 원본입니다.
+resources/targeted-reference.css는 값과 선택 범위를 설명하는 통합 참고용 CSS입니다.
+references의 PNG 3장은 원본을 그대로 포함했습니다. 카드 전체를 재구현하지 마세요.
+
+현재 PUBLIC v13 이후 사용자 직접 수정사항까지 보존하고 두 부분만 최소 수정하세요.
+기존 로컬 미리보기에서 1920/100%로 두 부분만 확인하고 기존 build를 1회 수행하세요.
+기존 배포 흐름으로 같은 주소에 반영하고 실제 변경·검증·commit/배포 결과를 짧게 보고하세요.
+별도 대규모 QA, 새 플러그인/의존성, 이미지 생성, 다른 사이트 작업은 수행하지 마세요.
+
+이 ZIP은 작업지시 리소스입니다. 작성 과정에서 실제 앱을 수정하거나 배포하지 않았습니다.

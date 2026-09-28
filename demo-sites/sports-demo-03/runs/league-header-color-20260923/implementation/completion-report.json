@@ -1,0 +1,65 @@
+{
+  "status": "complete",
+  "changed_files": [
+    {
+      "path": "app/aldebaran-wog-r5.css",
+      "changes": ".ab5-league-label color #F1B000; only SPORTS/LIVE label inner text translated down 1px"
+    },
+    {
+      "path": "app/aldebaran-wog-r5.tsx",
+      "changes": "Wrap text in two left SPORTS/LIVE labels with span; no box/layout/other chip changes"
+    }
+  ],
+  "source": {
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+    "commit_sha": "e4fbe01d95406961af2a3ba56689c9ed948d134c",
+    "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/aldebaran-league-labels.tar.gz"
+  },
+  "version_number": 19,
+  "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_3294a99bb9408191834d35fb5f2bec27",
+  "deployment_id": "appgdep_6ab394fbd93c81919ecc456cada84362",
+  "deployment_status": "succeeded",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "deployed_at": "2026-09-23T09:00:03.329558+00:00",
+  "verification": {
+    "local_viewport": "1920x1080, zoom1, devicePixelRatio1",
+    "headers": "All 8 displayed headers across soccer/basketball/baseball/hockey #F1B000",
+    "preserved": "Count, SVG flag fills, arrow, parent background/separator, card league text and #FCD73E points identical",
+    "badges": "Originally flex center/center, padding0 6, line10.5; one-pixel optical text correction. Identical box rectangles, font10.5px/800, color and radius. Header NEW/LIVE, LV/BET untouched",
+    "accordion": "Collapsed once then restored expanded true",
+    "state": "Local empty selection/stake and keepfalse preserved; viewport override reset",
+    "typecheck": "tsc --noEmit --incremental false passed",
+    "build": "npm run build passed",
+    "git": "Clean checkout; 2 files, 4 insertions, 3 deletions"
+  },
+  "screenshots": {
+    "after": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/local-after-1920.png",
+    "baseline": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/baseline-v18-1920.png",
+    "baseline_note": "Immediate previous unchanged v18 whole-screen evidence reused; baseline metrics captured anew this task",
+    "excluded": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/badges-before.png; clip did not include labels, excluded from visual evidence"
+  },
+  "evidence": [
+    "before.json",
+    "after.json",
+    "badges-before.json",
+    "badges-after.json",
+    "qa.json",
+    "source.diff",
+    "build.log"
+  ],
+  "limits": [
+    "Volleyball fixture count 0, common selector coverage only",
+    "Only requested local surface QA; production deployment succeeded confirmed by Sites API; no new production browser regression"
+  ],
+  "not_changed": [
+    "Data and behaviors",
+    "Box sizes, spacing, fonts and other chips",
+    "Other sites",
+    "GitHub backup",
+    "Coordinator-owned documents"
+  ],
+  "warnings": [
+    "Existing large bundle/plugin timing/route-classification build warnings; nonblocking"
+  ]
+}

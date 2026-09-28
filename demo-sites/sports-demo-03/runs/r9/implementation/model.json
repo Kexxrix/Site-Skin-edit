@@ -1,0 +1,18 @@
+{
+  "datasetVersion": "aldebaran-prematch-r9-20260922",
+  "sourceKind": "synthetic-model",
+  "margin": 0.045,
+  "generator": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r9\\implementation\\build-snapshot.py",
+  "baselineSha256": "ec64a9fba99e64a35d08307c274e0603b54d06ead6223a1d65fed09629d2a738",
+  "snapshotSha256": "5eced5028e18b083fc951dce3dbe90e486089ba53a0a35d44399aa81639b605e",
+  "notes": [
+    "Explicit per-fixture editorial assumptions; not team analysis or provider odds.",
+    "All markets share the same full/period score distributions.",
+    "Soccer 90-minute Poisson; hockey regulation Poisson plus a winning goal; basketball joint score-margin/total normal plus tied-game resolution; NFL compound scoring events and OT/tie mixture.",
+    "Periods scale the same expected scoring and variance assumptions; OT resolution is a deliberately simplified synthetic scenario.",
+    "Integer pushes and quarter stake splits priced on exposed stake; no intermediate parlay rounding.",
+    "Market indices, key/line/outcome keys preserved from v8; no fallback for missing prematch fixtures."
+  ],
+  "fixtureCount": 61,
+  "marketCount": 1040
+}

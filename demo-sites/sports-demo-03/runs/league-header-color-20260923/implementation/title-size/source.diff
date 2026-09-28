@@ -1,0 +1,13 @@
+diff --git a/app/aldebaran-wog-r5.css b/app/aldebaran-wog-r5.css
+index 66d18ef..f34e355 100644
+--- a/app/aldebaran-wog-r5.css
++++ b/app/aldebaran-wog-r5.css
+@@ -215,7 +215,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-score {line-height:26px;}
+ .ab5-league-head>svg,.ab5-market-head>svg {width:12px;height:12px;transition:transform 200ms;}
+ .ab5-league-head>svg.is-closed,.ab5-market-head>svg.is-closed {transform:rotate(-90deg);}
+-.ab5-league-label {display:flex;align-items:center;gap:8px;color:#fcd73e;}
++.ab5-league-label {display:flex;align-items:center;gap:8px;color:#fcd73e;font-size:14px;}
+ .ab5-flag {width:18px;font-size:16px;line-height:18px;}
+ .ab5-league-label small,.ab5-market-head small {color:var(--ab5-muted);font-size:10px;margin-left:8px;font-weight: 400;}
+ .ab5-market-head>span {display:flex;align-items:center;}

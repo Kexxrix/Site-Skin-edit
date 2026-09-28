@@ -1,0 +1,1493 @@
+{
+  "schema_version": 1,
+  "researched_at": "2026-09-23",
+  "purpose": "ALDEBARAN additional market research and implementation handoff",
+  "status": "research_only_not_implemented",
+  "evidence_boundary": "Sources support market families. Scope combinations, template grouping, counts and prioritization are original demo design proposals; no claim that every operator or fixture offers every combination.",
+  "sources": {
+    "S01": {
+      "title": "bet365 — Soccer rules index",
+      "url": "https://help.bet365.com/s/en/sportsrules/soccer"
+    },
+    "S02": {
+      "title": "bet365 — Corners",
+      "url": "https://help.bet365.com/s/en/sportsrules/soccer/corner-markets"
+    },
+    "S03": {
+      "title": "bet365 — Asian corners",
+      "url": "https://help.bet365.com/s/en/sportsrules/soccer/asian-corners"
+    },
+    "S04": {
+      "title": "bet365 — Cards",
+      "url": "https://help.bet365.com/s/en/sportsrules/soccer/card-markets"
+    },
+    "S05": {
+      "title": "bet365 — Match/team/player statistics",
+      "url": "https://help.bet365.com/s/en/sportsrules/soccer/match-statistics"
+    },
+    "S06": {
+      "title": "DraftKings — NBA player props",
+      "url": "https://sportsbook.draftkings.com/page/nba-player-props"
+    },
+    "S07": {
+      "title": "DraftKings — MLB player props",
+      "url": "https://sportsbook.draftkings.com/page/mlb-player-props"
+    },
+    "S08": {
+      "title": "FanDuel — NHL guide",
+      "url": "https://www.fanduel.com/sports-betting-guide/how-to-bet-on-nhl"
+    },
+    "S09": {
+      "title": "FanDuel — Colorado house rules",
+      "url": "https://www.fanduel.com/fanduel-sportsbook-house-rules-co"
+    },
+    "S10": {
+      "title": "DraftKings — Massachusetts house rules, effective 2025-08-26, regulator-hosted PDF",
+      "url": "https://massgaming.com/wp-content/uploads/DraftKings-House-Rules-8.18.25.pdf"
+    },
+    "S11": {
+      "title": "FanDuel — Retail bet types / first five innings",
+      "url": "https://www.fanduel.com/sports-betting-retail-kiosk"
+    },
+    "S12": {
+      "title": "bet365 — Hockey rules",
+      "url": "https://help.bet365.com/s/en/sportsrules/ice-hockey"
+    },
+    "S13": {
+      "title": "FanDuel — First inning total 0.5 / NRFI naming example",
+      "url": "https://www.fanduel.com/research/3-best-mlb-nrfi-bets-on-tuesday-8-5-25"
+    },
+    "S14": {
+      "title": "DraftKings — NBA market overview",
+      "url": "https://sportsbook.draftkings.com/leagues/basketball/nba"
+    },
+    "S15": {
+      "title": "bet365 — Baseball team markets",
+      "url": "https://help.bet365.com/s/en/sportsrules/baseball/baseball-team"
+    }
+  },
+  "templates": [
+    {
+      "id": "soccer.result_3way",
+      "sport": "soccer",
+      "label_ko": "승무패",
+      "proposed_scopes": "전체·전반·후반",
+      "expansion": "구간",
+      "requires": "기본",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.double_chance",
+      "sport": "soccer",
+      "label_ko": "더블찬스",
+      "proposed_scopes": "전체·전반",
+      "expansion": "구간",
+      "requires": "기본",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.draw_no_bet",
+      "sport": "soccer",
+      "label_ko": "무승부 환불",
+      "proposed_scopes": "전체·전반",
+      "expansion": "구간",
+      "requires": "기본",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.asian_handicap",
+      "sport": "soccer",
+      "label_ko": "아시안 핸디캡",
+      "proposed_scopes": "전체·전반·후반",
+      "expansion": "구간×라인",
+      "requires": "기본",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.european_handicap",
+      "sport": "soccer",
+      "label_ko": "3방향 핸디캡",
+      "proposed_scopes": "전체",
+      "expansion": "라인",
+      "requires": "기본",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.total_goals",
+      "sport": "soccer",
+      "label_ko": "총 득점 언더·오버",
+      "proposed_scopes": "전체·전반·후반",
+      "expansion": "구간×라인",
+      "requires": "기본",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.team_total_goals",
+      "sport": "soccer",
+      "label_ko": "팀 득점 언더·오버",
+      "proposed_scopes": "전체·전반·후반",
+      "expansion": "구간×팀×라인",
+      "requires": "기본",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.btts",
+      "sport": "soccer",
+      "label_ko": "양팀 득점 여부",
+      "proposed_scopes": "전체·전반·후반",
+      "expansion": "구간",
+      "requires": "기본",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.correct_score",
+      "sport": "soccer",
+      "label_ko": "정확한 스코어",
+      "proposed_scopes": "전체·전반",
+      "expansion": "구간",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.exact_total_goals",
+      "sport": "soccer",
+      "label_ko": "정확한 총 득점",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 여러 선택지",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.goals_odd_even",
+      "sport": "soccer",
+      "label_ko": "총 득점 홀·짝",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "기본",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.half_full_result",
+      "sport": "soccer",
+      "label_ko": "전반·최종 결과",
+      "proposed_scopes": "전반+전체",
+      "expansion": "1개에 결과 조합",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.first_team_to_score",
+      "sport": "soccer",
+      "label_ko": "선제 득점 팀",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "무득점 선택지",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.team_clean_sheet",
+      "sport": "soccer",
+      "label_ko": "팀 무실점 여부",
+      "proposed_scopes": "전체",
+      "expansion": "팀",
+      "requires": "기본",
+      "evidence_sources": [
+        "S01"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.corners_total",
+      "sport": "soccer",
+      "label_ko": "코너 총합",
+      "proposed_scopes": "전체·전반·후반",
+      "expansion": "구간×라인",
+      "requires": "코너 지원",
+      "evidence_sources": [
+        "S02"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.corners_handicap",
+      "sport": "soccer",
+      "label_ko": "코너 핸디캡",
+      "proposed_scopes": "전체·전반",
+      "expansion": "구간×라인",
+      "requires": "코너 지원",
+      "evidence_sources": [
+        "S02",
+        "S03"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.team_corners",
+      "sport": "soccer",
+      "label_ko": "팀 코너 총합",
+      "proposed_scopes": "전체",
+      "expansion": "팀×라인",
+      "requires": "코너 지원",
+      "evidence_sources": [
+        "S02"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.corners_most",
+      "sport": "soccer",
+      "label_ko": "코너 우세 팀",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "코너 지원",
+      "evidence_sources": [
+        "S02"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.cards_total",
+      "sport": "soccer",
+      "label_ko": "카드 총합",
+      "proposed_scopes": "전체",
+      "expansion": "라인",
+      "requires": "카드 집계 규칙",
+      "evidence_sources": [
+        "S04"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.team_cards",
+      "sport": "soccer",
+      "label_ko": "팀 카드 총합",
+      "proposed_scopes": "전체",
+      "expansion": "팀×라인",
+      "requires": "카드 집계 규칙",
+      "evidence_sources": [
+        "S04"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.red_card",
+      "sport": "soccer",
+      "label_ko": "퇴장 발생 여부",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "카드 집계 규칙",
+      "evidence_sources": [
+        "S04"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.first_card_team",
+      "sport": "soccer",
+      "label_ko": "첫 카드 팀",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "무카드 선택지",
+      "evidence_sources": [
+        "S04"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.match_shots",
+      "sport": "soccer",
+      "label_ko": "전체 슈팅 총합",
+      "proposed_scopes": "전체",
+      "expansion": "라인",
+      "requires": "경기 통계 지원",
+      "evidence_sources": [
+        "S05"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.team_shots",
+      "sport": "soccer",
+      "label_ko": "팀 슈팅 총합",
+      "proposed_scopes": "전체",
+      "expansion": "팀×라인",
+      "requires": "팀 통계 지원",
+      "evidence_sources": [
+        "S05"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.match_shots_on_target",
+      "sport": "soccer",
+      "label_ko": "전체 유효슈팅 총합",
+      "proposed_scopes": "전체",
+      "expansion": "라인",
+      "requires": "경기 통계 지원",
+      "evidence_sources": [
+        "S05"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.team_shots_on_target",
+      "sport": "soccer",
+      "label_ko": "팀 유효슈팅 총합",
+      "proposed_scopes": "전체",
+      "expansion": "팀×라인",
+      "requires": "팀 통계 지원",
+      "evidence_sources": [
+        "S05"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_anytime_goal",
+      "sport": "soccer",
+      "label_ko": "선수 득점 여부",
+      "proposed_scopes": "전체",
+      "expansion": "선수",
+      "requires": "선수 명단",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_first_goal",
+      "sport": "soccer",
+      "label_ko": "첫 득점 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선수 명단·무득점",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_last_goal",
+      "sport": "soccer",
+      "label_ko": "마지막 득점 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선수 명단·무득점",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_multi_goal",
+      "sport": "soccer",
+      "label_ko": "선수 2골·3골 이상",
+      "proposed_scopes": "전체",
+      "expansion": "선수×기준",
+      "requires": "선수 명단",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_assist",
+      "sport": "soccer",
+      "label_ko": "선수 도움",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·통계",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_shots",
+      "sport": "soccer",
+      "label_ko": "선수 슈팅",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·통계",
+      "evidence_sources": [
+        "S05"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_shots_on_target",
+      "sport": "soccer",
+      "label_ko": "선수 유효슈팅",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·통계",
+      "evidence_sources": [
+        "S05"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.player_card",
+      "sport": "soccer",
+      "label_ko": "선수 카드 여부",
+      "proposed_scopes": "전체",
+      "expansion": "선수",
+      "requires": "선수 명단·집계 규칙",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "soccer.to_qualify",
+      "sport": "soccer",
+      "label_ko": "다음 라운드 진출",
+      "proposed_scopes": "해당 대진",
+      "expansion": "1",
+      "requires": "토너먼트 대진 정보",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.moneyline",
+      "sport": "basketball",
+      "label_ko": "승패",
+      "proposed_scopes": "전체·전반·후반·1~4쿼터",
+      "expansion": "구간",
+      "requires": "리그 경기 형식",
+      "evidence_sources": [
+        "S14",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.spread",
+      "sport": "basketball",
+      "label_ko": "핸디캡",
+      "proposed_scopes": "전체·전반·후반·1~4쿼터",
+      "expansion": "구간×라인",
+      "requires": "리그 경기 형식",
+      "evidence_sources": [
+        "S14",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.total_points",
+      "sport": "basketball",
+      "label_ko": "총 득점 언더·오버",
+      "proposed_scopes": "전체·전반·후반·1~4쿼터",
+      "expansion": "구간×라인",
+      "requires": "리그 경기 형식",
+      "evidence_sources": [
+        "S14",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.team_total_points",
+      "sport": "basketball",
+      "label_ko": "팀 득점 언더·오버",
+      "proposed_scopes": "전체·전반·후반·1~4쿼터",
+      "expansion": "구간×팀×라인",
+      "requires": "팀 단위 모델",
+      "evidence_sources": [
+        "S14",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.half_full_result",
+      "sport": "basketball",
+      "label_ko": "전반·최종 결과",
+      "proposed_scopes": "전반+전체",
+      "expansion": "1개에 결과 조합",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.highest_scoring_half",
+      "sport": "basketball",
+      "label_ko": "최다 득점 하프",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "동률 처리 명시",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.highest_scoring_quarter",
+      "sport": "basketball",
+      "label_ko": "최다 득점 쿼터",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "쿼터제·동률 처리",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.wire_to_wire",
+      "sport": "basketball",
+      "label_ko": "모든 구간 종료 시 리드",
+      "proposed_scopes": "전체",
+      "expansion": "팀",
+      "requires": "구간별 모델",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_points",
+      "sport": "basketball",
+      "label_ko": "선수 득점",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·모델",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_rebounds",
+      "sport": "basketball",
+      "label_ko": "선수 리바운드",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·모델",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_assists",
+      "sport": "basketball",
+      "label_ko": "선수 어시스트",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·모델",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_threes",
+      "sport": "basketball",
+      "label_ko": "선수 3점슛 성공",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·모델",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_pra",
+      "sport": "basketball",
+      "label_ko": "선수 득점+리바운드+어시스트",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·복합 통계",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_pr",
+      "sport": "basketball",
+      "label_ko": "선수 득점+리바운드",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·복합 통계",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_pa",
+      "sport": "basketball",
+      "label_ko": "선수 득점+어시스트",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·복합 통계",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_ra",
+      "sport": "basketball",
+      "label_ko": "선수 리바운드+어시스트",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·복합 통계",
+      "evidence_sources": [
+        "S06"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_double_double",
+      "sport": "basketball",
+      "label_ko": "선수 더블더블",
+      "proposed_scopes": "전체",
+      "expansion": "선수",
+      "requires": "선수 명단·복합 통계",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_triple_double",
+      "sport": "basketball",
+      "label_ko": "선수 트리플더블",
+      "proposed_scopes": "전체",
+      "expansion": "선수",
+      "requires": "선수 명단·복합 통계",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.player_quarter_points",
+      "sport": "basketball",
+      "label_ko": "선수 쿼터 득점",
+      "proposed_scopes": "선택 쿼터",
+      "expansion": "선수×쿼터×라인",
+      "requires": "선수 명단·출전 정보",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.first_points",
+      "sport": "basketball",
+      "label_ko": "첫 득점 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선발 명단",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.first_field_goal",
+      "sport": "basketball",
+      "label_ko": "첫 필드골 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선발 명단",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.first_rebound",
+      "sport": "basketball",
+      "label_ko": "첫 리바운드 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선발 명단",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.first_assist",
+      "sport": "basketball",
+      "label_ko": "첫 어시스트 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선발 명단",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "basketball.most_player_points",
+      "sport": "basketball",
+      "label_ko": "최다 득점 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선수 명단·동률 처리",
+      "evidence_sources": [
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.moneyline",
+      "sport": "baseball",
+      "label_ko": "승패",
+      "proposed_scopes": "전체·첫 3/5/7이닝",
+      "expansion": "구간",
+      "requires": "구간별 동점 규칙",
+      "evidence_sources": [
+        "S09",
+        "S11"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.run_line",
+      "sport": "baseball",
+      "label_ko": "런라인 핸디캡",
+      "proposed_scopes": "전체·첫 3/5/7이닝",
+      "expansion": "구간×라인",
+      "requires": "구간 모델",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.total_runs",
+      "sport": "baseball",
+      "label_ko": "총 득점 언더·오버",
+      "proposed_scopes": "전체·첫 3/5/7이닝",
+      "expansion": "구간×라인",
+      "requires": "구간 모델",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.team_total_runs",
+      "sport": "baseball",
+      "label_ko": "팀 득점 언더·오버",
+      "proposed_scopes": "전체·첫 5이닝",
+      "expansion": "구간×팀×라인",
+      "requires": "팀 단위 모델",
+      "evidence_sources": [
+        "S15"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.inning_result",
+      "sport": "baseball",
+      "label_ko": "이닝 승무패",
+      "proposed_scopes": "1~9이닝 중 지원 구간",
+      "expansion": "이닝",
+      "requires": "해당 이닝만 계산",
+      "evidence_sources": [
+        "S09",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.inning_total",
+      "sport": "baseball",
+      "label_ko": "이닝 득점 언더·오버",
+      "proposed_scopes": "지원 이닝",
+      "expansion": "이닝×라인",
+      "requires": "구간 모델",
+      "evidence_sources": [
+        "S09",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.first_inning_score",
+      "sport": "baseball",
+      "label_ko": "첫 이닝 득점 유무",
+      "proposed_scopes": "1이닝",
+      "expansion": "1",
+      "requires": "0.5 O/U와 중복 제외",
+      "evidence_sources": [
+        "S13"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.half_inning_total",
+      "sport": "baseball",
+      "label_ko": "초·말 득점 총합",
+      "proposed_scopes": "지원 이닝 초/말",
+      "expansion": "이닝×공격팀×라인",
+      "requires": "공격 순서·구간 모델",
+      "evidence_sources": [
+        "S09",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.double_result",
+      "sport": "baseball",
+      "label_ko": "5이닝·최종 결과",
+      "proposed_scopes": "첫 5이닝+전체",
+      "expansion": "1개에 결과 조합",
+      "requires": "구간별 동점 규칙",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.runs_odd_even",
+      "sport": "baseball",
+      "label_ko": "총 득점 홀·짝",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "기본",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.winning_margin",
+      "sport": "baseball",
+      "label_ko": "승리 점수차",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 구간 선택지",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.first_team_to_score",
+      "sport": "baseball",
+      "label_ko": "선제 득점 팀",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "무득점 처리",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.last_team_to_score",
+      "sport": "baseball",
+      "label_ko": "마지막 득점 팀",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "무득점 처리",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.race_to_runs",
+      "sport": "baseball",
+      "label_ko": "지정 득점 선착",
+      "proposed_scopes": "전체",
+      "expansion": "목표 점수",
+      "requires": "미달 선택지",
+      "evidence_sources": [
+        "S09",
+        "S10"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.highest_scoring_inning",
+      "sport": "baseball",
+      "label_ko": "최다 득점 이닝",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 이닝 선택지",
+      "requires": "동률·연장 처리",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.inning_correct_score",
+      "sport": "baseball",
+      "label_ko": "이닝 정확한 스코어",
+      "proposed_scopes": "지원 이닝",
+      "expansion": "이닝",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.team_most_hits",
+      "sport": "baseball",
+      "label_ko": "최다 안타 팀",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "안타 모델·동률 처리",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.pitcher_strikeouts",
+      "sport": "baseball",
+      "label_ko": "투수 탈삼진",
+      "proposed_scopes": "전체",
+      "expansion": "투수×라인",
+      "requires": "선발투수 정보",
+      "evidence_sources": [
+        "S07"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.pitcher_strikeout_matchup",
+      "sport": "baseball",
+      "label_ko": "투수 탈삼진 비교",
+      "proposed_scopes": "전체",
+      "expansion": "투수 조합",
+      "requires": "선발투수 정보",
+      "evidence_sources": [
+        "S07"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.batter_hits",
+      "sport": "baseball",
+      "label_ko": "타자 안타",
+      "proposed_scopes": "전체",
+      "expansion": "타자×라인",
+      "requires": "선발 타순",
+      "evidence_sources": [
+        "S07"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.batter_home_runs",
+      "sport": "baseball",
+      "label_ko": "타자 홈런",
+      "proposed_scopes": "전체",
+      "expansion": "타자×기준",
+      "requires": "선발 타순",
+      "evidence_sources": [
+        "S07"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.batter_rbi",
+      "sport": "baseball",
+      "label_ko": "타자 타점",
+      "proposed_scopes": "전체",
+      "expansion": "타자×라인",
+      "requires": "선발 타순",
+      "evidence_sources": [
+        "S07"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.batter_total_bases",
+      "sport": "baseball",
+      "label_ko": "타자 총 루타",
+      "proposed_scopes": "전체",
+      "expansion": "타자×라인",
+      "requires": "선발 타순",
+      "evidence_sources": [
+        "S07"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.batter_runs",
+      "sport": "baseball",
+      "label_ko": "타자 득점",
+      "proposed_scopes": "전체",
+      "expansion": "타자×라인",
+      "requires": "선발 타순",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "baseball.batter_stolen_bases",
+      "sport": "baseball",
+      "label_ko": "타자 도루",
+      "proposed_scopes": "전체",
+      "expansion": "타자×라인",
+      "requires": "선발 타순",
+      "evidence_sources": [
+        "S09"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.moneyline",
+      "sport": "ice_hockey",
+      "label_ko": "승패 — 연장·슛아웃 포함",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "정산 범위 명시",
+      "evidence_sources": [
+        "S08"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.regulation_result",
+      "sport": "ice_hockey",
+      "label_ko": "승무패 — 정규 60분",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "정산 범위 명시",
+      "evidence_sources": [
+        "S08"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.puck_line",
+      "sport": "ice_hockey",
+      "label_ko": "퍽라인 핸디캡",
+      "proposed_scopes": "전체",
+      "expansion": "라인",
+      "requires": "정산 범위 명시",
+      "evidence_sources": [
+        "S08"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.total_goals",
+      "sport": "ice_hockey",
+      "label_ko": "총 득점 언더·오버",
+      "proposed_scopes": "전체",
+      "expansion": "라인",
+      "requires": "정산 범위 명시",
+      "evidence_sources": [
+        "S08"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.team_total_goals",
+      "sport": "ice_hockey",
+      "label_ko": "팀 득점 언더·오버",
+      "proposed_scopes": "전체",
+      "expansion": "팀×라인",
+      "requires": "팀 모델·정산 범위",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.period_result",
+      "sport": "ice_hockey",
+      "label_ko": "피리어드 승무패",
+      "proposed_scopes": "1~3피리어드",
+      "expansion": "피리어드",
+      "requires": "구간별 동점 규칙",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.period_handicap",
+      "sport": "ice_hockey",
+      "label_ko": "피리어드 핸디캡",
+      "proposed_scopes": "1~3피리어드",
+      "expansion": "피리어드×라인",
+      "requires": "구간 모델",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.period_total_goals",
+      "sport": "ice_hockey",
+      "label_ko": "피리어드 총 득점",
+      "proposed_scopes": "1~3피리어드",
+      "expansion": "피리어드×라인",
+      "requires": "구간 모델",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.period_team_total",
+      "sport": "ice_hockey",
+      "label_ko": "피리어드 팀 득점",
+      "proposed_scopes": "지원 피리어드",
+      "expansion": "피리어드×팀×라인",
+      "requires": "구간·팀 모델",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.draw_no_bet",
+      "sport": "ice_hockey",
+      "label_ko": "정규시간 무승부 환불",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "아시안 0 중복 제외",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.double_chance",
+      "sport": "ice_hockey",
+      "label_ko": "정규시간 더블찬스",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "3방향 결과 모델",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.puck_line_3way",
+      "sport": "ice_hockey",
+      "label_ko": "정규시간 3방향 핸디캡",
+      "proposed_scopes": "정규시간",
+      "expansion": "라인",
+      "requires": "3방향 결과 모델",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.total_3way",
+      "sport": "ice_hockey",
+      "label_ko": "정규시간 3방향 총점",
+      "proposed_scopes": "정규시간",
+      "expansion": "정수 라인",
+      "requires": "미만·정확히·초과",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.exact_total_goals",
+      "sport": "ice_hockey",
+      "label_ko": "정확한 총 득점",
+      "proposed_scopes": "정규시간",
+      "expansion": "1개에 득점 선택지",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.team_exact_goals",
+      "sport": "ice_hockey",
+      "label_ko": "정확한 팀 득점",
+      "proposed_scopes": "정규시간",
+      "expansion": "팀",
+      "requires": "다중 선택지",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.goals_odd_even",
+      "sport": "ice_hockey",
+      "label_ko": "총 득점 홀·짝",
+      "proposed_scopes": "전체",
+      "expansion": "1",
+      "requires": "정산 범위 명시",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.team_goals_odd_even",
+      "sport": "ice_hockey",
+      "label_ko": "팀 득점 홀·짝",
+      "proposed_scopes": "전체",
+      "expansion": "팀",
+      "requires": "정산 범위 명시",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.first_team_to_score",
+      "sport": "ice_hockey",
+      "label_ko": "선제 득점 팀",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "무득점 선택지",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.last_team_to_score",
+      "sport": "ice_hockey",
+      "label_ko": "마지막 득점 팀",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "무득점 선택지",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.race_to_goals",
+      "sport": "ice_hockey",
+      "label_ko": "지정 득점 선착",
+      "proposed_scopes": "정규시간",
+      "expansion": "목표 득점",
+      "requires": "미달 선택지",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.most_periods_won",
+      "sport": "ice_hockey",
+      "label_ko": "최다 피리어드 승리 팀",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "동률 처리",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.highest_scoring_period",
+      "sport": "ice_hockey",
+      "label_ko": "최다 득점 피리어드",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "동률 처리",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.tied_after_regulation",
+      "sport": "ice_hockey",
+      "label_ko": "정규시간 무승부 여부",
+      "proposed_scopes": "정규시간",
+      "expansion": "1",
+      "requires": "정규시간 결과 모델",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.player_anytime_goal",
+      "sport": "ice_hockey",
+      "label_ko": "선수 득점 여부",
+      "proposed_scopes": "전체",
+      "expansion": "선수",
+      "requires": "선수 명단·출전 정보",
+      "evidence_sources": [
+        "S08",
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.player_first_goal",
+      "sport": "ice_hockey",
+      "label_ko": "첫 득점 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선수 명단·무득점",
+      "evidence_sources": [
+        "S08",
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.player_last_goal",
+      "sport": "ice_hockey",
+      "label_ko": "마지막 득점 선수",
+      "proposed_scopes": "전체",
+      "expansion": "1개에 선수 선택지",
+      "requires": "선수 명단·무득점",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.player_multi_goal",
+      "sport": "ice_hockey",
+      "label_ko": "선수 2골·3골 이상",
+      "proposed_scopes": "전체",
+      "expansion": "선수×기준",
+      "requires": "선수 명단·모델",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.player_period_goal",
+      "sport": "ice_hockey",
+      "label_ko": "선수 피리어드 득점",
+      "proposed_scopes": "1~3피리어드",
+      "expansion": "선수×피리어드",
+      "requires": "선수 명단·출전 정보",
+      "evidence_sources": [
+        "S12"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.player_shots_on_goal",
+      "sport": "ice_hockey",
+      "label_ko": "선수 유효슈팅",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·통계",
+      "evidence_sources": [
+        "S08"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.player_points",
+      "sport": "ice_hockey",
+      "label_ko": "선수 포인트 — 골+도움",
+      "proposed_scopes": "전체",
+      "expansion": "선수×라인",
+      "requires": "선수 명단·통계",
+      "evidence_sources": [
+        "S08"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    },
+    {
+      "id": "ice_hockey.goalie_saves",
+      "sport": "ice_hockey",
+      "label_ko": "골리 세이브",
+      "proposed_scopes": "전체",
+      "expansion": "골리×라인",
+      "requires": "선발 골리 정보",
+      "evidence_sources": [
+        "S08"
+      ],
+      "status": "proposed_demo_template_not_live_offer"
+    }
+  ],
+  "count_policy": {
+    "unit": "unique_renderable_market_instance",
+    "badge": "N+",
+    "meaning": "all available detailed market instances for this fixture, including preview markets once",
+    "not_counted": [
+      "outcome buttons",
+      "duplicate preview rendering",
+      "accordion headings",
+      "unsupported placeholder markets",
+      "live-only markets in prematch",
+      "known aliases of an already included market"
+    ],
+    "identity_fields": [
+      "fixtureId",
+      "canonicalType",
+      "period",
+      "settlementScope",
+      "subjectId",
+      "line",
+      "variant"
+    ],
+    "count_from": "the same normalized enabled market collection used to render all detail categories before the active UI filter",
+    "aliases": [
+      "draw_no_bet equals asian_handicap_0 for identical scope",
+      "NRFI/YRFI equals first_inning_total_0.5",
+      "player_2_plus equals player_over_1.5 for identical statistic and scope"
+    ],
+    "correct_score": "Multiple score outcomes form one market for a given period.",
+    "player_binary": "A separately priced player/statistic/threshold proposition forms one market; its yes/no or over/under choices are not separate markets."
+  }
+}

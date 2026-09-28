@@ -1,0 +1,233 @@
+{
+  "package": "ALDEBARAN_R15_POLISH_MARKETS",
+  "created_at": "2026-09-23",
+  "status": "handoff_ready_implementation_pending",
+  "project": {
+    "root": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/",
+    "app": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site/",
+    "latest_commit": null,
+    "latest_deployment_version": null,
+    "baseline": "user-confirmed R14 completion plus latest local changes"
+  },
+  "tasks": [
+    {
+      "id": "R15-01",
+      "name_ko": "베팅하기 노랑",
+      "scope": "bet_slip_submit_only",
+      "background": "#F1B000",
+      "foreground": "#171717",
+      "preserve": [
+        "geometry",
+        "font",
+        "icon",
+        "disabled behavior",
+        "action"
+      ]
+    },
+    {
+      "id": "R15-02",
+      "name_ko": "61경기 정합성",
+      "targets": {
+        "soccer": 32,
+        "basketball": 6,
+        "baseball": 16,
+        "volleyball": 0,
+        "ice_hockey": 7
+      },
+      "total": 61,
+      "baseball_calculation": "61 - (32 + 6 + 0 + 7) = 16",
+      "counters_source": "same actual active fixture collection",
+      "volleyball_empty_label": "경기 없음",
+      "replace_legacy_nfl_if_present": true,
+      "never_retag_nfl_as_baseball": true
+    },
+    {
+      "id": "R15-03",
+      "name_ko": "우측 계정 정리",
+      "reference": "references/05-account-panel-target.png",
+      "grid": [
+        3,
+        2
+      ],
+      "button_contents": "horizontal_icon_left_label_right",
+      "button_height_start_px": 38,
+      "button_gap_start_px": 4,
+      "icon_label_gap_start_px": 6,
+      "icon_size_start_px": 18,
+      "dimensions_are": "design_start_values_not_measured_CSS",
+      "actions": [
+        [
+          "충전",
+          "환전",
+          "페이백"
+        ],
+        [
+          "쪽지",
+          "고객센터",
+          "베팅내역"
+        ]
+      ],
+      "remove_ui": [
+        "금일 적중"
+      ],
+      "unbox_rows": [
+        "보유머니",
+        "보너스 전환"
+      ],
+      "preserve_live_account_values": true
+    },
+    {
+      "id": "R15-04",
+      "name_ko": "중앙 일반 텍스트 웨이트 감량",
+      "scope": [
+        "central_fixture_list",
+        "central_detail_header",
+        "central_detail_filters",
+        "central_detail_markets"
+      ],
+      "excluded_scopes": [
+        "header",
+        "side_rails",
+        "top_sport_toolbar"
+      ],
+      "protected_roles": [
+        "actual_decimal_odds_in_all_states",
+        "additional_market_N_plus_label"
+      ],
+      "affected_numeric_roles": [
+        "handicap_line",
+        "total_line",
+        "date_time",
+        "market_line_count",
+        "league_fixture_count"
+      ],
+      "rule": "next_lower_supported_weight_once_from_resolved_baseline",
+      "example_mapping": {
+        "900": 800,
+        "800": 700,
+        "700": 600,
+        "600": 500,
+        "500": 400,
+        "400": 300
+      },
+      "preserve": [
+        "font_family",
+        "font_size",
+        "color",
+        "line_height",
+        "spacing",
+        "position"
+      ],
+      "lowest_supported_weight": "preserve_and_report_exception"
+    },
+    {
+      "id": "R15-05",
+      "name_ko": "4종목 마켓 확장",
+      "catalog": "resources/market-catalog.json",
+      "plan": "resources/market-generation-plan.json",
+      "template_count": 115,
+      "templates_by_sport": {
+        "soccer": 35,
+        "basketball": 24,
+        "baseball": 25,
+        "ice_hockey": 31
+      },
+      "count_policy": {
+        "unit": "unique_renderable_market_instance",
+        "badge": "N+",
+        "meaning": "all available detailed market instances for this fixture, including preview markets once",
+        "not_counted": [
+          "outcome buttons",
+          "duplicate preview rendering",
+          "accordion headings",
+          "unsupported placeholder markets",
+          "live-only markets in prematch",
+          "known aliases of an already included market"
+        ],
+        "identity_fields": [
+          "fixtureId",
+          "canonicalType",
+          "period",
+          "settlementScope",
+          "subjectId",
+          "line",
+          "variant"
+        ],
+        "count_from": "the same normalized enabled market collection used to render all detail categories before the active UI filter",
+        "aliases": [
+          "draw_no_bet equals asian_handicap_0 for identical scope",
+          "NRFI/YRFI equals first_inning_total_0.5",
+          "player_2_plus equals player_over_1.5 for identical statistic and scope"
+        ],
+        "correct_score": "Multiple score outcomes form one market for a given period.",
+        "player_binary": "A separately priced player/statistic/threshold proposition forms one market; its yes/no or over/under choices are not separate markets."
+      },
+      "display_shape": "single text node/span String(N)+\"+\"",
+      "maximal_supported_expansion": true,
+      "unsupported_types": "exclude_from_display_and_count_and_report_reason",
+      "preserve_preview_rows": true,
+      "new_mobile_layout": false
+    }
+  ],
+  "colors": {
+    "brand_selected": "#FF641F",
+    "odds": "#50DCD9",
+    "line_value": "#B7B7B7",
+    "versus": "#797979",
+    "highlight": "#F1B000",
+    "highlight_text": "#171717",
+    "action_surface": "#353535",
+    "action_text": "#F5F4F4"
+  },
+  "preserve": {
+    "viewport_design_width": 1920,
+    "market_more_button": {
+      "height_px": 24,
+      "radius_px": 5,
+      "padding_x_px": 5,
+      "font_px": 12,
+      "font_weight": 700,
+      "width": "content",
+      "align": "right",
+      "label": "one string"
+    },
+    "header_video": true,
+    "r14_banners": true,
+    "banner_black_overlay_opacity": 0.4,
+    "market_accent_width_px": 1,
+    "internal_card_frames": true,
+    "existing_scroll_modes": true
+  },
+  "precedence": {
+    "replaces_old_restriction": "R14 market counts/data must remain unchanged",
+    "keeps_old_decision": "R14 N+ label appearance and all completed banner work"
+  },
+  "not_in_scope": [
+    "new site",
+    "other demos",
+    "redesign",
+    "mobile routes",
+    "new plugins/dependencies",
+    "Jev audit",
+    "real-money submissions",
+    "new settlement engine",
+    "SGP builder",
+    "fresh image generation"
+  ],
+  "verification": [
+    "61 fixture sum and every sport/league count",
+    "zero volleyball and no stale selected detail",
+    "unique fixture/market/selection IDs",
+    "same collection for N+ and detail",
+    "no alias/preview double count",
+    "valid rendered odds",
+    "two representative fixtures per sport where available",
+    "new outcome renderers and slip linkage",
+    "resolved weight before/after with odds and N+ protected",
+    "1920 visual check including 100+",
+    "existing required build/type checks",
+    "existing same-site deployment result"
+  ],
+  "completion_template": "resources/completion-report.template.json"
+}

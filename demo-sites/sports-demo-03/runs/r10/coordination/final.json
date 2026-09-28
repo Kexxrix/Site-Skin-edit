@@ -1,0 +1,109 @@
+{
+  "recordedAt": "2026-09-22T18:36:45.4699009+09:00",
+  "status": "complete-awaiting-user-feedback",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+  "version": 10,
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_146cf4bc79108191baa32e7c67a6aeac",
+  "deploymentId": "appgdep_6ab249de73508191a94c6a05b758ff00",
+  "deploymentStatus": "succeeded",
+  "commit": "9f32fe625a8f1f0441e4714382515c19af136d03",
+  "changedAppFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "public/banners/aldebaran/btn_image_casino.png",
+    "public/banners/aldebaran/btn_image_slot.png",
+    "public/banners/aldebaran/img_banner_03.png",
+    "public/banners/aldebaran/img_banner_04.png",
+    "public/banners/aldebaran/img_banner_05.png",
+    "public/banners/aldebaran/img_banner_06.png",
+    "public/banners/aldebaran/img_banner_07.png"
+  ],
+  "operatingDocs": [
+    {
+      "file": "AGENTS.md",
+      "previousExactTextPreserved": true,
+      "sha256": "933B4A807B02BD0E3929F8A1A1D767F8D1727896D64124155F35FB92EF4D8F02"
+    },
+    {
+      "file": "STATE.md",
+      "previousExactTextPreserved": true,
+      "sha256": "5A547A07828A0F7FA14553C4AAB2D39766416C235D96DDA83FF0377D779D5019"
+    },
+    {
+      "file": "DESIGN_SPEC.md",
+      "previousExactTextPreserved": true,
+      "sha256": "9B5628B9EE9EA4D4342EFE7487C5D25CB7F8AF3648D23F837A17467456F010BB"
+    },
+    {
+      "file": "DECISIONS.md",
+      "previousExactTextPreserved": true,
+      "sha256": "D45A4B276D87948F17EAA83EC1DE97F5C31C3F9F4589C8337248DC14A25EA2ED"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\public\\european-1920.jpg",
+      "bytes": 245498,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1B2BD5BDA731D44E76AB5D7068F1E76BDF296F4AC1139842B7570D7FD5420712",
+      "coordinatorViewed": true
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\public\\domestic-1920.jpg",
+      "bytes": 220510,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "50D6C8C0612D4DFD81269DF3AC266F09AFBBBC1DAA7DC76337EDDA79DC3F53F8",
+      "coordinatorViewed": true
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\public\\banners-six-1920.jpg",
+      "bytes": 242778,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "906E2C70D405436553E0BE66A2958D6B648F25762DC68056969BE40B6AE4B4A9",
+      "coordinatorViewed": true
+    }
+  ],
+  "implementationEvidence": "runs/r10/implementation/completion.json",
+  "publicationEvidence": "runs/r10/public/publication.json",
+  "browserEvidence": "runs/r10/public/browser-confirmation.json",
+  "implementationOwner": "01a0a97b-1268-7cf3-8aad-ba460ecf4f98",
+  "dataAndSlipUnchanged": true,
+  "newAssetsByteIdentical": 7,
+  "firstBannerPreserved": true,
+  "typecheck": {
+    "runs": 1,
+    "exit": 0,
+    "evidence": "First workflow proceeded past tsc to build; source unchanged since."
+  },
+  "build": {
+    "completedRuns": 1,
+    "exit": 0,
+    "evidence": "build.log"
+  },
+  "githubBackupUpdated": false,
+  "otherSitesChanged": false,
+  "rootReranSiteTests": false,
+  "newQaTask": false,
+  "remaining": [
+    "No unresolved defect found within the requested verification scope.",
+    "Existing build chunk-size warning remains; no unrelated optimization was requested.",
+    "Final visual acceptance remains with the user."
+  ],
+  "unverified": [
+    "Mobile and full regression audit",
+    "Real authentication, financial transactions or betting submission",
+    "Full public repetition of local detailed UI checks"
+  ],
+  "handoff": {
+    "tabId": "18",
+    "mode": "european",
+    "rightRail": "top",
+    "viewportOverrideReset": true,
+    "existingAuthenticationAndSlipStatePreserved": true
+  },
+  "next": "Wait for user feedback; no automatic next cycle"
+}

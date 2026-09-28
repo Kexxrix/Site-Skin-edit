@@ -1,0 +1,86 @@
+{
+  "revision": "R11",
+  "assets": [
+    {
+      "originalUploadName": "bg_header_0.webm",
+      "file": "assets/header/bg_header_0.webm",
+      "target": "menu-header-background",
+      "dimensionsPx": [
+        1920,
+        62
+      ],
+      "suggestedDestination": "site/public/media/aldebaran/bg_header_0.webm",
+      "bytes": 357956,
+      "sha256": "6ededca659b6713e21ab5b8d99daa88dae2383968d4b65ad1a9e586e837de16e",
+      "originalBytesUnchanged": true,
+      "instruction": "One video for the entire 62px menu header; muted autoplay loop playsinline."
+    },
+    {
+      "originalUploadName": "btn_image_casino(1).png",
+      "file": "assets/left-rail/btn_image_casino.png",
+      "target": "CASINO",
+      "dimensionsPx": [
+        200,
+        116
+      ],
+      "suggestedDestination": "site/public/banners/aldebaran/btn_image_casino.png",
+      "bytes": 53327,
+      "sha256": "f14fd48a9ff194ad28268c95a400cd433a211d941b550b8c89affc125fe706b3",
+      "originalBytesUnchanged": true,
+      "instruction": "Replace R10 image with this latest upload; preserve outer button box and accessible name; no visible HTML label; contain."
+    },
+    {
+      "originalUploadName": "btn_image_slot(1).png",
+      "file": "assets/left-rail/btn_image_slot.png",
+      "target": "SLOT",
+      "dimensionsPx": [
+        97,
+        116
+      ],
+      "suggestedDestination": "site/public/banners/aldebaran/btn_image_slot.png",
+      "bytes": 28762,
+      "sha256": "c559fddc58e7b7d73e0af9ddd546a02587cbb0456aa0f494adb8b613c8baeb71",
+      "originalBytesUnchanged": true,
+      "instruction": "Replace R10 image with this latest upload; preserve outer button box and accessible name; no visible HTML label; contain."
+    }
+  ],
+  "existingRightBannerImagesNotRepackaged": [
+    {
+      "target": "텔레그램 고객센터",
+      "existingFilename": "img_banner_01.png",
+      "overlay": "#000000 at 40%",
+      "preserveText": true
+    },
+    {
+      "target": "텔레그램 공식채널",
+      "existingFilename": "img_banner_03.png",
+      "overlay": "#000000 at 40%",
+      "preserveText": true
+    },
+    {
+      "target": "ALDEBARAN 이용안내",
+      "existingFilename": "img_banner_04.png",
+      "overlay": "#000000 at 40%",
+      "preserveText": true
+    },
+    {
+      "target": "실시간 중계 안내",
+      "existingFilename": "img_banner_05.png",
+      "overlay": "#000000 at 40%",
+      "preserveText": true
+    },
+    {
+      "target": "스포츠 라인업",
+      "existingFilename": "img_banner_06.png",
+      "overlay": "#000000 at 40%",
+      "preserveText": true
+    },
+    {
+      "target": "미성년자 이용불가",
+      "existingFilename": "img_banner_07.png",
+      "overlay": "#000000 at 40%",
+      "preserveText": true
+    }
+  ],
+  "destinationPolicy": "Use current existing asset paths when present; header destination is a proposed new path. Copy original bytes; map all src references consistently."
+}

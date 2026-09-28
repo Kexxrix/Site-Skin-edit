@@ -1,0 +1,55 @@
+Command: node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build
+Exit code: 0
+
+
+  vinext build  (Vite 8.0.13)
+
+[1/5] analyze client references...
+transforming...✓ 233 modules transformed.
+rendering chunks...
+✓ built in 1.75s
+[2/5] analyze server references...
+transforming...✓ 282 modules transformed.
+rendering chunks...
+✓ built in 533ms
+[3/5] build rsc environment...
+transforming...✓ 230 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.75s
+[4/5] build client environment...
+transforming...✓ 2075 modules transformed.
+rendering chunks...
+computing gzip size...
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
+  - vinext:css-data-url (36%)
+  - vinext:og-inline-fetch-assets (32%)
+  - alias (5%)
+  - vinext:validate-middleware-exports (4%)
+  - vinext:middleware-server-only (3%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 6.13s
+[5/5] build ssr environment...
+transforming...✓ 290 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.07s
+
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+

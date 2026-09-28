@@ -1,0 +1,32 @@
+{
+  "capturedAt": "2026-09-28",
+  "task": "Copy MERCURY PUBLIC v10 to the same Figma canvas as 195:2",
+  "captureId": "af377e20-8253-4b4e-ae7a-2b72b9a163a9",
+  "validation": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"page\":{\"id\":\"109:94\",\"name\":\"TITAN SOLUTION Title mov\"},\"mercury\":{\"id\":\"233:2\",\"name\":\"MERCURY · 스포츠 · PUBLIC v10 · 1920×1080\",\"x\":6106,\"y\":27028,\"width\":1920,\"height\":1080,\"counts\":{\"FRAME\":3874,\"TEXT\":2027,\"VECTOR\":88,\"RECTANGLE\":3},\"images\":194,\"missingFonts\":2027},\"reference\":{\"id\":\"195:2\",\"name\":\"Codex to Figma\",\"x\":3986,\"y\":27028,\"width\":1920,\"height\":1080,\"counts\":{\"FRAME\":3206,\"VECTOR\":426,\"TEXT\":1633,\"RECTANGLE\":8},\"images\":207,\"missingFonts\":1633},\"horizontalGap\":200,\"overlaps\":[],\"bodyChildren\":[{\"id\":\"233:112\",\"name\":\"Sidebar - 스포츠 바로가기\",\"x\":8,\"y\":7,\"width\":320,\"height\":967},{\"id\":\"233:354\",\"name\":\"Main Content - 해외형 스포츠\",\"x\":338,\"y\":7,\"width\":1244,\"height\":967},{\"id\":\"233:8094\",\"name\":\"Sidebar - 계정과 베팅슬립\",\"x\":1592,\"y\":7,\"width\":320,\"height\":967}],\"url\":\"https://www.figma.com/design/cQpTC1jE82WL3h6zdXNx2Q?node-id=233-2\"}"
+      }
+    ],
+    "isError": false
+  },
+  "fontValidation": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"frameId\":\"233:2\",\"textLayers\":2027,\"imageLayers\":194,\"fonts\":[{\"family\":\"Pretendard JP\",\"style\":\"Black\"},{\"family\":\"Pretendard JP\",\"style\":\"Medium\"},{\"family\":\"Pretendard JP\",\"style\":\"SemiBold\"},{\"family\":\"Pretendard JP\",\"style\":\"Bold\"},{\"family\":\"Pretendard JP\",\"style\":\"ExtraBold\"},{\"family\":\"Pretendard JP\",\"style\":\"Regular\"},{\"family\":\"DIN Condensed\",\"style\":\"Regular\"}],\"unavailableFonts\":[],\"missingAfterLoad\":[],\"size\":{\"width\":1920,\"height\":1080},\"position\":{\"x\":6106,\"y\":27028},\"pageId\":\"109:94\"}"
+      }
+    ],
+    "isError": false
+  },
+  "source": {
+    "root": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-01/site",
+    "commit": "af940990c2939a94ebdb89204c2e92ce881275c3",
+    "layoutSha256BeforeAndAfter": "E17B8B99F001027F1B3803EF48557FFE841260F56897B62E6C09E06318E32B28",
+    "trackedDiff": "empty",
+    "preExistingUntracked": "tsconfig.tsbuildinfo"
+  },
+  "scope": "Editable static design. Runtime web interactions are not implemented as Figma prototype actions.",
+  "note": "The first missingFonts query ran without loading fonts in its isolated API call and returned false positives. The subsequent fontValidation checks all used faces against the available inventory and loads them before querying missing fonts."
+}

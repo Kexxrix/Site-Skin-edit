@@ -1,0 +1,232 @@
+{
+  "status": "complete",
+  "completedAt": "2026-09-22T19:43:30.2682660+09:00",
+  "request": "ALDEBARAN_R11_HEADER_UI",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "access": "PUBLIC",
+  "baselineCommit": "9f32fe625a8f1f0441e4714382515c19af136d03",
+  "commit": "b7782ba699fdb4aaa9a59513bbc745bee8727f06",
+  "version": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_620ae816cf588191bfb88cd824f5629e",
+  "versionNumber": 11,
+  "deployment": {
+    "id": "appgdep_6ab259f62d3081918f06bb389c013214",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_620ae816cf588191bfb88cd824f5629e",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-22T19:35:58.706702+09:00"
+  },
+  "implementationOwner": {
+    "status": "idle",
+    "title": "스포츠 데모 01 대표 UI 제작",
+    "threadId": "01a0a97b-1268-7cf3-8aad-ba460ecf4f98",
+    "turn": "completed",
+    "record": "runs/r11/implementation/completion.json"
+  },
+  "changedSiteFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "public/banners/aldebaran/btn_image_casino.png",
+    "public/banners/aldebaran/btn_image_slot.png",
+    "public/media/aldebaran/bg_header_0.webm"
+  ],
+  "changes": [
+    "Exactly one rgba(0,0,0,0.4) gradient above each existing right banner background; text, geometry and actions retained.",
+    "Central top spacing reduced; tabs and badges fit content with equal horizontal padding; 20/14/12px and existing button heights retained.",
+    "One original 1920x62 WebM behind the menu row, muted autoplay loop playsinline, with original static logo/menu above a translucent diagonal plate. Reduced motion removes video and preserves fallback.",
+    "Latest supplied casino and slot PNGs replace the specified existing asset paths, retaining contain, outer boxes and actions."
+  ],
+  "sourceChecks": {
+    "typecheck": {
+      "runs": 1,
+      "exit": 0
+    },
+    "build": {
+      "runs": 1,
+      "exit": 0
+    },
+    "diffCheck": {
+      "exit": 0
+    },
+    "tooling": "Reused installed absolute npm CLI and TAR_OPTIONS=--force-local from R10; no failed build or install."
+  },
+  "originalAssets": [
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r11-header-ui-package\\ALDEBARAN_R11_HEADER_UI\\assets\\header\\bg_header_0.webm",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\media\\aldebaran\\bg_header_0.webm",
+      "bytes": 357956,
+      "sha256": "6EDEDCA659B6713E21AB5B8D99DAA88DAE2383968D4B65AD1A9E586E837DE16E",
+      "previousSha256": null,
+      "expectedDimensions": [
+        1920,
+        62
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r11-header-ui-package\\ALDEBARAN_R11_HEADER_UI\\assets\\left-rail\\btn_image_casino.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\btn_image_casino.png",
+      "bytes": 53327,
+      "sha256": "F14FD48A9FF194AD28268C95A400CD433A211D941B550B8C89AFFC125FE706B3",
+      "previousSha256": "34EB1428D4C8A3AB51C1DAFBF1397C5901E15E251B576CC81C3374C9D542FDFB",
+      "expectedDimensions": [
+        200,
+        116
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r11-header-ui-package\\ALDEBARAN_R11_HEADER_UI\\assets\\left-rail\\btn_image_slot.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\btn_image_slot.png",
+      "bytes": 28762,
+      "sha256": "C559FDDC58E7B7D73E0AF9DDD546A02587CBB0456AA0F494ADB8B613C8BAEB71",
+      "previousSha256": "B576B31BAE29658915FC25F50D74D8BAA9DB08A4FCA0060607E7AADA60F213E9",
+      "expectedDimensions": [
+        97,
+        116
+      ],
+      "originalBytesUnchanged": true
+    }
+  ],
+  "archiveClean": true,
+  "temporaryPreviewAbsent": true,
+  "protectedDataSourceUnchanged": true,
+  "preservedOperatingDocuments": [
+    {
+      "file": "AGENTS.md",
+      "previousFullTextPreserved": true,
+      "sha256": "675429A875B5EE21AC07A7084AE456E2B20D8F3CAE140CDC03D7A7F8AA47ACF2"
+    },
+    {
+      "file": "STATE.md",
+      "previousFullTextPreserved": true,
+      "sha256": "AA77FC5CB0E0AA65D9C68DA96B29C091369E31D049809D11D68E94B90475560F"
+    },
+    {
+      "file": "DESIGN_SPEC.md",
+      "previousFullTextPreserved": true,
+      "sha256": "9AFB7823DC30D4D5BE11F1E4D9CB987CD1D40A047377ACDBD6B9549B53B09D83"
+    },
+    {
+      "file": "DECISIONS.md",
+      "previousFullTextPreserved": true,
+      "sha256": "636AA9CDB5158D281D38D7EDD967E481B03385F88020E33929082BC2C687D5E3"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\european-1920-final.jpg",
+      "bytes": 244590,
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "FECB09A6D2BAE64852BA42ADBA05FB9ABC5C6FE74D664C1F4EEA4591BB8B6551",
+      "ownerVisuallyChecked": true,
+      "coordinatorVisuallyChecked": false
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\domestic-1920-final.jpg",
+      "bytes": 218515,
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "40715A3CCB1282942B63D45DD84EC6236EF567C1F54ED852A81FFC97AFB3358C",
+      "ownerVisuallyChecked": true,
+      "coordinatorVisuallyChecked": false
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\banners-six-1920.jpg",
+      "bytes": 267650,
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "6CAE1E35EFC07298A786B1D6EBB0E183B09C249E70E22375AC0A39A5F55C9A81",
+      "ownerVisuallyChecked": true,
+      "coordinatorVisuallyChecked": true
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\implementation\\count-preview.jpg",
+      "bytes": 22127,
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "83ADC26C2B17FA0F5F710B5D19B111B93E3DE7E297D57C709C810E0604320D67",
+      "ownerVisuallyChecked": true,
+      "coordinatorVisuallyChecked": false
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\public\\european-1920.png",
+      "bytes": 426955,
+      "format": "PNG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "F25AFE0A4721D658638A2AC909A44218B3719091406A13AC23667AB0B558F17E",
+      "ownerVisuallyChecked": true,
+      "coordinatorVisuallyChecked": true
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r11\\public\\domestic-1920.png",
+      "bytes": 396611,
+      "format": "PNG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4D71EF8178D45E1167507986DB0978601C7C6381CFD158C06AB87596B392E4F1",
+      "ownerVisuallyChecked": true,
+      "coordinatorVisuallyChecked": true
+    }
+  ],
+  "evidence": {
+    "public": "runs/r11/public/browser-confirmation.json",
+    "publication": "runs/r11/public/publication.json",
+    "temporaryCounts": "runs/r11/implementation/count-preview.json",
+    "localVideo": "runs/r11/implementation/video-verification.json",
+    "localUi": "runs/r11/implementation/ui-verification.json"
+  },
+  "coordinatorReview": "Reviewed saved final public domestic/european and local six-banner images; no duplicate browser/test/build run. Original four operating document bodies preserved.",
+  "preserved": [
+    "1920 layout, header98/menu62/notice36 and rails",
+    "Original wordmark bytes, position and 182x19.828 display size",
+    "R10 transparent central board, inner frames, 1px market accent and banner text alignment",
+    "Existing fixtures, odds, selection IDs, slip, history and authentication source",
+    "Sport icons, team emblems and card motifs",
+    "Original R10 inputs and evidence",
+    "MERCURY, SIRIUS, GitHub backup and coordinator operating documents",
+    "Existing localhost:5303 server and public user state"
+  ],
+  "notVerified": [
+    "Mobile or full regression audit",
+    "Real authentication, financial transactions or betting submissions",
+    "Physical audio listening; mute confirmed via browser media state",
+    "Frame-by-frame video quality or subjective design acceptance"
+  ],
+  "remainingRisks": [
+    "No unresolved defect found in the requested scope.",
+    "Existing build chunk-size/plugin-timing advisories remain outside scope.",
+    "Final visual approval belongs to the user."
+  ],
+  "browserHandoff": {
+    "requested": true,
+    "foregroundConfirmed": false,
+    "tabId": "19",
+    "result": "queued"
+  },
+  "nextAction": "Wait for user feedback. No automatic next cycle."
+}

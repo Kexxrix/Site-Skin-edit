@@ -1,0 +1,49 @@
+
+> sites-project@0.1.0 build
+> vinext build
+  vinext build  (Vite 8.0.13)[1/5] analyze client references...
+transforming (31) node_modules\react-server-dom-webpack\static.edge.jstransforming (84) node_modules\vinext\dist\utils\prerender-output-paths.js                                                                                      transforming (152) node_modules\vinext\dist\shims\internal\app-page-props-cache-                                                                                ✓ 233 modules transformed.
+✓ built in 655ms
+[2/5] analyze server references...
+transforming (69) node_modules\vinext\dist\utils\hash.jstransforming (111) app\live-snapshots.jsontransforming (166) node_modules\@base-ui\react\internals\labelable-provider\useL                                                                                transforming (229) node_modules\@base-ui\react\floating-ui-react\hooks\useListNa                                                                                transforming (252) node_modules\@base-ui\react\floating-ui-react\utils\composite                                                                                ✓ 282 modules transformed.
+✓ built in 618ms
+[3/5] build rsc environment...
+transforming (11) node_modules\vinext\dist\server\http-error-responses.js       transforming (68) app\aldebaran-wog-r5.tsxtransforming (141) node_modules\react-server-dom-webpack\cjs\react-server-dom-we                                                                                transforming (195) node_modules\vinext\dist\utils\compare.js                                                                                ✓ 230 modules transformed.
+rendering chunks (35)...computing gzip size...
+✓ built in 1.73s
+[4/5] build client environment...
+transforming (31) node_modules\vinext\dist\server\app-browser-history-controller                                                                                transforming (67) node_modules\vinext\dist\server\static-layout-client-reuse-pro                                                                                transforming (89) node_modules\vinext\dist\shims\internal\app-prefetch-fetch-que                                                                                transforming (130) node_modules\react-server-dom-webpack\cjs\react-server-dom-we                                                                                transforming (134) app\live-snapshots.json                                                                                                                      transforming (147) node_modules\@base-ui\react\button\Button.mjs                                                                                transforming (167) node_modules\@base-ui\react\internals\createBaseUIEventDetail                                                                                transforming (180) node_modules\@base-ui\react\internals\labelable-provider\useL                                                                                                                                                                transforming (192) node_modules\@base-ui\react\internals\form-context\FormContex                                                                                transforming (193) node_modules\@base-ui\react\dialog\portal\DialogPortalContext                                                                                transforming (198) node_modules\@base-ui\react\utils\useOpenInteractionType.mjs                                                                                 transforming (210) node_modules\lucide-react\dist\esm\icons\axis-3d.mjs                                                                                         transforming (452) node_modules\lucide-react\dist\esm\icons\square-arrow-out-dow                                                                                transforming (661) node_modules\lucide-react\dist\esm\icons\brush.mjs                                                                                           transforming (903) node_modules\lucide-react\dist\esm\icons\dessert.mjs                                                                                         transforming (1268) node_modules\lucide-react\dist\esm\icons\mail-plus.mjs                                                                                      transforming (1559) node_modules\lucide-react\dist\esm\icons\rewind.mjs         transforming (1566) node_modules\lucide-react\dist\esm\icons\rotate-cw-fading-cltransforming (1568) node_modules\lucide-react\dist\esm\icons\rotate-cw-square.mjtransforming (1569) node_modules\lucide-react\dist\esm\icons\route.mjs                                                                                          transforming (1982) node_modules\@base-ui\utils\safeReact.mjs                                                                                                                                                                                   transforming (2004) node_modules\@base-ui\react\floating-ui-react\hooks\useFloat                                                                                transforming (2064) node_modules\reselect\dist\reselect.mjs                     ✓ 2075 modules transformed.
+rendering chunks (8)...computing gzip size...
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.     
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
+  - vinext:css-data-url (14%)
+  - vinext:og-inline-fetch-assets (13%)
+  - vinext:middleware-server-only (12%)
+  - alias (12%)
+  - rsc:virtual-client-package (10%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 5.27s
+[5/5] build ssr environment...
+transforming (43) node_modules\vinext\dist\shims\internal\app-prefetch-fetch-que                                                                                transforming (76) node_modules\vinext\dist\utils\dev-error-recovery-event.js                                                                                    transforming (126) node_modules\@base-ui\react\switch\index.mjs                                                                                                 transforming (191) node_modules\@base-ui\react\internals\reason-parts.mjs                                                                                transforming (243) node_modules\@base-ui\react\internals\noop.mjs                                                                                ✓ 290 modules transformed.
+rendering chunks (9)...computing gzip size...
+✓ built in 1.28s
+
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis  
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r13/implementation/aldebaran-r13.tar.gz
+{"project_id":"appgprj_6ab0f3255cdc819180a427bf6d0846f4","checkout_path":"E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site","commit_sha":"0996e1cb909b69531064bed54911f3103ea0e47d","archive":"E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r13/implementation/aldebaran-r13.tar.gz"}
+

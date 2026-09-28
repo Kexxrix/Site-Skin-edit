@@ -1,0 +1,111 @@
+{
+  "revision": "R12",
+  "status": "completed_pending_user_visual_feedback",
+  "sourceCommit": "c97d42c9630670780b26c2ba00541a4e7e69bd83",
+  "baselineCommit": "b7782ba699fdb4aaa9a59513bbc745bee8727f06",
+  "workingTreeClean": true,
+  "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+  "publicVersion": 12,
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_21c6cd595d3081918039d13ca728360d",
+  "deployment": {
+    "id": "appgdep_6ab26be25548819186582fd6d9c3258e",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_21c6cd595d3081918039d13ca728360d",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-22T11:52:27.063534+00:00"
+  },
+  "changedFiles": [
+    "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\app\\aldebaran-wog-r5.css"
+  ],
+  "changes": {
+    "normalCentralDecimalOdds": "#50DCD9",
+    "handicapTotalThresholds": "#B7B7B7",
+    "headerNewLiveAndMoreBetFill": "#F1B000",
+    "darkForegroundPreserved": "#171717",
+    "brandAndSelectionPreserved": "#FF641F",
+    "sportbar": {
+      "background": "#191919",
+      "bottomRule": "inset 0 -1px 0 #383838",
+      "geometry": "unchanged"
+    },
+    "matchList": {
+      "background": "#191919",
+      "radiusPx": 8,
+      "visibleOuterBorder": false,
+      "bothModes": true
+    },
+    "detailMarket": {
+      "background": "transparent",
+      "outerBorder": "1px solid #383838",
+      "radiusPx": 8,
+      "existingGeometry": "unchanged",
+      "headerFilterDuplicateRule": "transparent while preserving existing 1px space"
+    }
+  },
+  "checks": {
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "runs": 1,
+      "exitCode": 0
+    },
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "runs": 1,
+      "exitCode": 0
+    },
+    "workflowExit": 0
+  },
+  "localUIEvidence": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r12\\implementation\\ui-verification.json",
+  "publicEvidence": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r12\\public\\browser-confirmation.json",
+  "screenshots": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r12\\public\\aldebaran-r12-european-1920.png",
+      "format": "PNG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 431527,
+      "sha256": "fae7c9c6299cc07bf8e11ef88eaf7865c7b65009fd5ec48a35c052ee66a0d8fa"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r12\\public\\aldebaran-r12-domestic-1920.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 220841,
+      "sha256": "c82a870bec455d8df74f9c577eb4d12ad6e408ef97fa63b5749fe8027f8c80c4"
+    }
+  ],
+  "preserved": [
+    "fixed 1920 layout and 20/14/12 sports tabs",
+    "European independent and domestic shared scrolling",
+    "all production assets and fonts including R11 header/video/banner/photos",
+    "fixtures/odds precision/selection IDs/slip/storage/history",
+    "original public tab and input state",
+    "MERCURY/SIRIUS and public GitHub backup"
+  ],
+  "warnings": [
+    "existing build chunk-size warning",
+    "existing plugin timing warning",
+    "vinext route classification remains unknown in build output"
+  ],
+  "limits": [
+    "bounded R12 checks only; no full regression suite",
+    "no authentication/account creation/payment/bet submission",
+    "visual acceptance remains with user"
+  ],
+  "captureHandling": "Full-page capture recovered partial repaint artifacts; final screenshots visually checked and file formats verified. No application code changed for capture handling.",
+  "preview": {
+    "url": "http://localhost:5303/",
+    "existingPid": 39172,
+    "leftRunning": true
+  },
+  "foregroundHandoff": "Skipped open_in_codex because this is delegated implementation; screenshots and same public URL reported to coordinator",
+  "stopForFeedback": true
+}

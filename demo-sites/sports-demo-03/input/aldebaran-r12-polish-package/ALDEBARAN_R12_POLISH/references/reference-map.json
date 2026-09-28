@@ -1,0 +1,57 @@
+{
+  "references": [
+    {
+      "file": "references/palette-approved.png",
+      "originalUploadName": "6cd92787-c08a-42be-8345-901e60052609.png",
+      "dimensionsPx": [
+        961,
+        508
+      ],
+      "purpose": "최종 배색 기준. NEW/LIVE 및 추가베팅 노랑, 실제 배당 청록, 기준값 회색.",
+      "sha256": "a25af37760fa275e4cff882d6fc05f94e465a7beb8b825ebfafd7a55140265d0"
+    },
+    {
+      "file": "references/sports-toolbar.png",
+      "originalUploadName": "b0198fbd-eefe-4100-abb4-86238f9c3da8.png",
+      "dimensionsPx": [
+        1240,
+        58
+      ],
+      "purpose": "종목 선택 바의 약한 차콜 배경 및 하단 구분선.",
+      "sha256": "b1c8c66845a5257c4d2d99c6277b8c5473cde0230cf54573c3844d46acc2ae4d"
+    },
+    {
+      "file": "references/match-list-surface.png",
+      "originalUploadName": "57a356b2-cbc7-4a67-9aab-3d866f408ba7.png",
+      "dimensionsPx": [
+        1382,
+        815
+      ],
+      "purpose": "좌측 경기 목록의 배경 면과 둥근 모서리. 사용자 명시 radius는 8 CSS px.",
+      "sha256": "b915a75651282ad1b50bee5d4ea231628ee9a0bbb8970fd60ca2f39779ed6e3b"
+    },
+    {
+      "file": "references/market-outline-detail.png",
+      "originalUploadName": "c9895c35-d534-4bb0-84d2-92eaa94d9a0b.png",
+      "dimensionsPx": [
+        1367,
+        880
+      ],
+      "purpose": "우측 전체 마켓 묶음의 외곽선 확대. 남아 있는 주황색 배당/기준값과 편집 도구 UI는 적용 대상이 아님.",
+      "sha256": "f20315db47fd34c759a6bd95df45d210a7a31015f9e8a8c5b3afcd6b76650596"
+    },
+    {
+      "file": "references/market-outline-overview.png",
+      "originalUploadName": "5038d4b3-f6ed-4b9d-85f4-ae67d612a882.png",
+      "dimensionsPx": [
+        623,
+        912
+      ],
+      "purpose": "경기 헤더, 필터, 여러 마켓을 하나의 세트로 묶는 구성. 배색은 palette-approved 및 문서 우선.",
+      "sha256": "d312af40f3ebc6a4ea74056f8e9da6dfe9573d64f9afc7fe83cd84b320625892"
+    }
+  ],
+  "priority": "written final color rules > palette-approved > per-region structure references",
+  "notProductionAssets": true,
+  "copyScreenshotDimensionsToCSS": false
+}

@@ -11,7 +11,7 @@ export function expandedMarkets(match: Match): Market[] {
   function add(key:string,name:string,category:Market['category'],labels:string[],line?:string,group=key,locked=match.completed){
     const salt=Array.from(key+(line??'')).reduce((n,c)=>n+c.charCodeAt(0),seed)%19;
     const values=labels.length===3?[1.68+salt*.035,3.2+salt*.06,2.6+salt*.075]:[1.68+salt*.017,2.14-salt*.013];
-    result.push({key,name,category,group,line,rule:'로컬 데모 · '+(key.startsWith(periodKey)?period:'전체 경기'),source:'local-demo',picks:labels.map((label,i)=>({label,key:labels.length===3?['home','draw','away'][i]:['first','second'][i],price:Number(values[i].toFixed(3)),locked}))});
+    result.push({key,name,category,group,line,rule:''+(key.startsWith(periodKey)?period:'전체 경기'),source:'local-demo',picks:labels.map((label,i)=>({label,key:labels.length===3?['home','draw','away'][i]:['first','second'][i],price:Number(values[i].toFixed(3)),locked}))});
   }
   const total=Number(match.markets[1].line),handicap=Number(match.markets[2].line?.match(/[\d.]+/)?.[0]??1.5);
   for(const offset of [-1,1]){
@@ -46,8 +46,8 @@ export function marketGroups(match:Match){
     if(current)current.rows.push(index);else groups.set(id,{id,name:index===1?'언더 / 오버':market.name,category,rows:[index]});
   });
   // The same result / handicap / totals order in cards and detail.
-  const priority:Record<string,number>={result:0,handicap:1,totals:2};
-  return [...groups.values()].sort((a,b)=>(priority[a.id]??3)-(priority[b.id]??3));
+  const priority=(rows:number[])=>rows.includes(0)?0:rows.includes(2)?1:rows.includes(1)?2:3;
+  return [...groups.values()].sort((a,b)=>priority(a.rows)-priority(b.rows));
 }
 
 const countries:Record<string,[string,string]>={mlb:['미국','🇺🇸'],nba:['미국','🇺🇸'],wnba:['미국','🇺🇸'],nfl:['미국','🇺🇸'],mls:['미국','🇺🇸'],nhl:['북미','🇺🇸'],bundesliga:['독일','🇩🇪'],'premier-league':['잉글랜드','🇬🇧'],'la-liga':['스페인','🇪🇸'],'serie-a':['이탈리아','🇮🇹'],'ligue-1':['프랑스','🇫🇷']};

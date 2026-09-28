@@ -1,0 +1,111 @@
+{
+  "package": "ALDEBARAN_R15_POLISH_MARKETS",
+  "status": "template_not_execution_result",
+  "actual_commit": null,
+  "deployment_version": null,
+  "deployment_id": null,
+  "deployment_url": "https://aldebaran.kexxadrix.chatgpt.site/",
+  "deployment_status": null,
+  "task_results": [
+    {
+      "id": "R15-01",
+      "status": "pending",
+      "changed_files": [],
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "R15-02",
+      "status": "pending",
+      "changed_files": [],
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "R15-03",
+      "status": "pending",
+      "changed_files": [],
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "R15-04",
+      "status": "pending",
+      "changed_files": [],
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "R15-05",
+      "status": "pending",
+      "changed_files": [],
+      "evidence": [],
+      "limitations": []
+    }
+  ],
+  "fixtures": {
+    "target_total": 61,
+    "actual_total": null,
+    "actual_by_sport": {},
+    "inventory_rows": []
+  },
+  "market_audit": {
+    "row_fields": [
+      "fixtureId",
+      "sport",
+      "league",
+      "profile",
+      "familyCount",
+      "marketCount",
+      "selectionCount",
+      "displayedBadgeCount",
+      "detailMarketCount",
+      "countMatches",
+      "playerMarketsPresent"
+    ],
+    "rows": [],
+    "sport_summary_fields": [
+      "sport",
+      "fixtureCount",
+      "minMarkets",
+      "medianMarkets",
+      "maxMarkets",
+      "distinctMarketCounts"
+    ],
+    "sport_summaries": []
+  },
+  "template_coverage": {
+    "row_fields": [
+      "templateId",
+      "status",
+      "fixtureCount",
+      "reason_if_excluded"
+    ],
+    "rows": []
+  },
+  "font_weight_audit": {
+    "row_fields": [
+      "role",
+      "selector",
+      "beforeResolvedWeight",
+      "afterResolvedWeight",
+      "protected",
+      "exception"
+    ],
+    "rows": []
+  },
+  "checks": {
+    "fixture_counts": null,
+    "volleyball_empty": null,
+    "unique_ids": null,
+    "badge_matches_detail": null,
+    "aliases_deduplicated": null,
+    "odds_valid": null,
+    "slip_linkage": null,
+    "protected_weights": null,
+    "local_visual_1920": null,
+    "existing_build": null
+  },
+  "screenshots": [],
+  "unverified": []
+}

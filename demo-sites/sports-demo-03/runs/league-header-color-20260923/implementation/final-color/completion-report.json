@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "source_commit": "14a1fd33b5c84912bd9d9ebc285557d4aa2632ab",
+  "baseline_commit": "e4fbe01d95406961af2a3ba56689c9ed948d134c",
+  "changed_files": [
+    "app/aldebaran-wog-r5.css"
+  ],
+  "diff": "Only .ab5-league-label color: #F1B000 -> #FCD73E; 1 file 1 insertion/1 deletion",
+  "version_number": 20,
+  "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_c36aba2231e48191b6fd78cdbc4875b9",
+  "deployment_id": "appgdep_6ab39700d1608191aae20877414a3842",
+  "deployment_status": "succeeded",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "updated_at": "2026-09-23T09:08:34.809129+00:00",
+  "verification": {
+    "local": "8 displayed league labels rgb(252,215,62); counts/flags/arrows/header separators/card league labels/yellow points identical",
+    "viewport": "1920x1080; reset after QA",
+    "state": "Preserved; no interaction tests added",
+    "build": "npm run build passed",
+    "typecheck": "Not rerun for CSS color-only change; preceding v19 typecheck unchanged",
+    "git": "clean"
+  },
+  "screenshot": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/final-color/local-after-1920.png",
+  "evidence": [
+    "before.json",
+    "after.json",
+    "qa.json",
+    "source.diff",
+    "build.log"
+  ],
+  "not_changed": "All other values including SPORTS/LIVE 1px text correction",
+  "limits": "Local changed-surface QA plus native deployment succeeded; no new public browser regression",
+  "warnings": "Existing bundle size/plugin timing/vinext route classification warnings nonblocking"
+}

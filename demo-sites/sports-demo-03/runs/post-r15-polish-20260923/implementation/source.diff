@@ -1,0 +1,116 @@
+diff --git a/app/aldebaran-wog-r5.css b/app/aldebaran-wog-r5.css
+index 9bd7507..e425435 100644
+--- a/app/aldebaran-wog-r5.css
++++ b/app/aldebaran-wog-r5.css
+@@ -13,7 +13,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+   --ab5-raised: #2c2c2c; --ab5-control: #353535; --ab5-hover: #414141;
+   --ab5-input: #191919; --ab5-line: #383838; --ab5-text: #f5f4f4;
+   --ab5-muted: #b7b7b7; --ab5-disabled: #797979; --ab5-accent: #ff641f;
+-  --ab5-on-accent: #171717; --ab5-odds: #50dcd9; --ab5-small-accent: #f1b000;
++  --ab5-on-accent: #ffffff; --ab5-on-yellow: #171717; --ab5-odds: #50dcd9; --ab5-small-accent: #fcd73e;
+   box-sizing: border-box; width: 1920px; min-width: 1920px; max-width: 1920px;
+   height: 100vh; height: 100dvh; margin-inline: auto; display: flex;
+   flex-direction: column; overflow: hidden; color: var(--ab5-text);
+@@ -43,7 +43,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-menu-item[aria-current="page"] { color: var(--ab5-accent); }
+ .ab5-shell .ab5-menu-item:disabled {color:var(--ab5-text);opacity:1;filter:none;}
+ .ab5-menu-item[aria-current="page"]::after { content: ""; position: absolute; bottom: 0; height: 2px; left: 16px; right: 16px; background: var(--ab5-accent); }
+-.ab5-menu-badge { position: absolute; right: 4px; top: 4px; min-width: 28px; height: 18px; padding: 0 3px; display: grid; place-items: center; background: var(--ab5-small-accent); color: var(--ab5-on-accent); border: 1px solid var(--ab5-small-accent); border-radius: 3px; font-size: 8px; font-weight: 900; line-height: 8px; }
++.ab5-menu-badge { position: absolute; right: 4px; top: 4px; min-width: 28px; height: 18px; padding: 0 3px; display: grid; place-items: center; background: var(--ab5-small-accent); color: var(--ab5-on-yellow); border: 1px solid var(--ab5-small-accent); border-radius: 3px; font-size: 8px; font-weight: 900; line-height: 8px; }
+ .ab5-menu-icon { display: none; }
+ .ab5-menu-label { position: relative; z-index: 1; }
+ .ab5-auth { display: flex; justify-content: flex-end; align-items: center; gap: 8px; padding: 8px; }
+@@ -89,7 +89,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-card-meta { height: 24px; flex: 0 0 24px; display: flex; justify-content: center; align-items: center; position: relative; }
+ .ab5-card-time { position: absolute; left: 0; font-size: 11px; font-weight: 700; line-height: 16.5px; }
+ .ab5-card-league { max-width: 55%; padding-inline: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; font-weight: 700; line-height: 19.5px; }
+-.ab5-market-open { position: absolute; right: 0; width: max-content; min-width: 0; height: 24px; padding: 0 5px; display: inline-flex; align-items: center; justify-content: center; gap: 0; border: 1px solid var(--ab5-small-accent); border-radius: 5px; background: var(--ab5-small-accent); color: var(--ab5-on-accent); font-size: 12px; font-weight: 700; line-height: 12px; letter-spacing: 0; white-space: nowrap; }
++.ab5-market-open { position: absolute; right: 0; width: max-content; min-width: 0; height: 24px; padding: 0 5px; display: inline-flex; align-items: center; justify-content: center; gap: 0; border: 1px solid var(--ab5-small-accent); border-radius: 5px; background: var(--ab5-small-accent); color: var(--ab5-on-yellow); font-size: 12px; font-weight: 700; line-height: 12px; letter-spacing: 0; white-space: nowrap; }
+ .ab5-market-open > .ab5-market-open__count { display: block; flex: none; font-family: inherit; font-size: 12px; font-weight: 700; line-height: 12px; letter-spacing: 0; color: inherit; }
+ .ab5-card-inspect { display: grid; grid-template-columns: minmax(0,1fr) 56px minmax(0,1fr); gap: 8px; align-items: center; height: 38px; flex: 0 0 38px; padding: 0; border: 0; background: transparent; color: inherit; width: 100%; }
+ .ab5-team { min-width: 0; display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; line-height: 22px; }
+@@ -137,6 +137,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-quick { height: 320px; display: grid; grid-template-columns: repeat(3,98px); grid-template-rows: repeat(4,minmax(0,1fr)) 116px; gap: 3px 4px; }
+ .ab5-quick-action { border: 1px solid var(--ab5-line); border-radius: 5px; display: flex; justify-content: center; align-items: center; gap: 6px; padding: 0 6px; background: var(--ab5-control); color: var(--ab5-text); font-size: 12px; font-weight: 700; line-height: 20px; }
+ .ab5-quick-action.primary { border-color: var(--ab5-accent); background: var(--ab5-accent); color: var(--ab5-on-accent); }
++.ab5-odd[aria-pressed="true"] svg { color: var(--ab5-on-yellow); }
+ .ab5-quick-action svg { width: 20px; height: 20px; }
+ .ab5-promo { height: 116px; position: relative; overflow: hidden; border: 1px solid var(--ab5-line); border-radius: 5px; }
+ .ab5-promo.wide { grid-column: span 2; }
+@@ -154,7 +155,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-sport-row img { width: 22px; height: 22px; object-fit: contain; }
+ .ab5-sport-subrow { height: 28px; padding-left: 30px; font-size: 12px; }
+ .ab5-latest { min-height: 307px; }
+-.ab5-latest .ab5-badge { background: var(--ab5-small-accent); color: var(--ab5-on-accent); }
++.ab5-sports-summary .ab5-badge, .ab5-latest .ab5-badge { background: var(--ab5-small-accent); color: var(--ab5-on-yellow); }
+ .ab5-latest .ab5-sidebar-title { height: 32px; padding-bottom: 7px; border-bottom: 1px solid var(--ab5-line); }
+ .ab5-latest-list { padding: 4px 8px 6px 9px; }
+ .ab5-latest-row { display: grid; grid-template-columns: 48px 8px minmax(0,1fr); gap: 10px; width: 100%; min-height: 50px; padding: 9px 0; border: 0; border-bottom: 1px solid var(--ab5-line); text-align: left; background: transparent; color: var(--ab5-text); font-size: 12px; font-weight: 600; line-height: 16px; }
+@@ -163,7 +164,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-small-action { min-width: 72px; height: 28px; padding: 0 8px; border: 1px solid var(--ab5-line); border-radius: 4px; background: var(--ab5-control); color: var(--ab5-text); font-size: 12px; font-weight: 600; }
+ .ab5-balances { height: 100px; display: grid; grid-template-rows: repeat(2,minmax(0,1fr)); gap: 0; }
+ .ab5-balance-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 0 0 10px; border: 0; border-radius: 0; background: transparent; font-size: 14px; }
+-.ab5-balance-value { color: var(--ab5-accent); font-size: 16px; font-weight: 800; line-height: 18px; }
++.ab5-balance-value { color: var(--ab5-small-accent); font-size: 16px; font-weight: 800; line-height: 18px; }
+ .ab5-user-actions { height: 88px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: 38px 38px; gap: 4px; padding-top: 8px; }
+ .ab5-user-actions button { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--ab5-line); border-radius: 5px; padding: 0 4px; background: var(--ab5-control); color: var(--ab5-text); font-size: 12px; font-weight: 600; line-height: 20px; white-space: nowrap; }
+ .ab5-user-actions svg { width: 16px; height: 16px; flex: 0 0 16px; color: var(--ab5-accent); }
+@@ -186,7 +187,7 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-slip-summary { height: 223px; flex: 0 0 223px; padding: 9px 12px; border: 1px solid var(--ab5-line); border-radius: 5px; background: var(--ab5-input); }
+ .ab5-summary-row { height: 29px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 2px; border-bottom: 1px solid var(--ab5-line); font-size: 12px; line-height: 16px; }
+ .ab5-summary-row:last-child { border: 0; }
+-.ab5-bet-submit { height: 40px; flex: 0 0 40px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid var(--ab5-small-accent); border-radius: 5px; background: var(--ab5-small-accent); color: var(--ab5-on-accent); font-size: 14px; font-weight: 700; }
++.ab5-bet-submit { height: 40px; flex: 0 0 40px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid var(--ab5-small-accent); border-radius: 5px; background: var(--ab5-small-accent); color: var(--ab5-on-yellow); font-size: 14px; font-weight: 700; }
+ .ab5-banner-stack { display: flex; flex-direction: column; gap: 4px; padding: 6px; }
+ .ab5-mini-banner { width: 306px; height: auto; aspect-ratio: 323/64; display: flex; align-items: center; justify-content: flex-start; gap: 10px; padding: 6px 12px; border: 1px solid var(--ab5-line); border-radius: 4px; background: var(--ab5-input); background-size:cover;background-position:center;background-repeat:no-repeat; }
+ .ab5-mini-banner>span {display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0;text-align:left;}
+@@ -205,8 +206,6 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-brand::after {content:"";position:absolute;left:0;bottom:0;width:228px;height:1px;background:var(--ab5-accent);pointer-events:none;}
+ .ab5-menu-item {padding-inline:4px;}
+ .ab5-auth-logout {display:inline-flex;align-items:center;justify-content:center;gap:6px;}
+-.ab5-card>div,.ab5-card>button {position:relative;z-index:1;}
+-.ab5-card-motif {position:absolute;width:145px;height:145px;right:15px;top:-30px;object-fit:contain;opacity:.09;pointer-events:none;}
+ .ab5-card-time {max-width:125px;}
+ .ab5-team-emblem {width:28px;height:28px;object-fit:contain;flex-shrink:0;}
+ .ab5-team-initials {display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--ab5-line);border-radius:50%;font-size:11px;}
+@@ -319,3 +318,6 @@ html:has(.ab5-shell) {overflow-x:auto;overflow-y:hidden;}
+ .ab5-market-head small { flex: 0 0 auto; }
+ .ab5-slip-market-rule { display: block; }
+ .ab5-center-grid .ab5-empty strong, .ab5-center-grid .ab5-empty .ab5-small-action { font-weight: 500; }
++
++.ab5-payout-value { color: var(--ab5-small-accent); }
++.aldebaran-site :is([data-ab-control="primary"], .ab5-service-primary) svg { color: #171717; }
+diff --git a/app/aldebaran-wog-r5.tsx b/app/aldebaran-wog-r5.tsx
+index 7a7a9cd..4b345ea 100644
+--- a/app/aldebaran-wog-r5.tsx
++++ b/app/aldebaran-wog-r5.tsx
+@@ -62,7 +62,6 @@ function TeamEmblem({team}:{team:Match['home']}){
+ function MatchCard({match,inspected,inspect,selected,toggle,detailEntry}:{match:Match;inspected:boolean;inspect:()=>void;selected:Selection[];toggle:Props['toggle'];detailEntry:boolean}){
+   const teams=<><span className="ab5-team"><TeamEmblem key={match.home.logo} team={match.home}/><span className="ab5-ellipsis" title={match.home.name}>{match.home.name}</span></span><span className="ab5-score-box"><span className="ab5-score">VS</span></span><span className="ab5-team"><span className="ab5-ellipsis" title={match.away.name}>{match.away.name}</span><TeamEmblem key={match.away.logo} team={match.away}/></span></>;
+   return <article className="ab5-card" data-match-id={match.id} data-inspected={detailEntry&&inspected} onClick={detailEntry?event=>{if(event.target instanceof Element&&!event.target.closest('button'))inspect();}:undefined}>
+-    <img className="ab5-card-motif" src={match.sportLogo} alt=""/>
+     <div className="ab5-card-meta"><time className="ab5-card-time" dateTime={match.startUtc}>{match.timeLabel}</time><span className="ab5-card-league">{match.league}</span>{detailEntry&&<button className="ab5-market-open" onClick={inspect} aria-label={`${match.home.name} 전체 마켓 ${match.markets.length}개 보기`}><span className="ab5-market-open__count">{String(match.markets.length)+'+'}</span></button>}</div>
+     {detailEntry?<button className="ab5-card-inspect" aria-label={`${match.home.name} 대 ${match.away.name} 경기 보기`} aria-pressed={inspected} onClick={inspect}>{teams}</button>:<div className="ab5-card-inspect">{teams}</div>}
+     <div className="ab5-primary-markets">{[0,2,1].map(index=><OddsRow key={index} match={match} index={index} selected={selected} toggle={toggle}/>)}</div>
+@@ -80,7 +79,7 @@ function Slip(props:Props&{mode:Mode}){
+     <div className="ab5-folder"><span>{props.mode==='domestic'?'국내형':'해외형'} 폴더선택</span><strong>{selected.length}폴더</strong></div>
+     {!selected.length?<div className="ab5-slip-empty"><Ticket/><strong>선택된 베팅내역이 없습니다</strong><small>경기를 선택하여 배팅을 시작하세요</small></div>:<div className="ab5-slip-selections" aria-live="polite">{selected.map(s=>{const match=matches.find(m=>m.id===s.matchId)!,market=match.markets[s.marketIndex],pick=market.picks[s.pickIndex];return <article key={s.id} className="ab5-slip-selection" data-selection={s.id}><div><span>{match.league}</span><button className="icon-button" aria-label={`${match.home.name} 선택 제거`} onClick={()=>remove(s.id)}><X/></button></div><strong>{match.home.name} vs {match.away.name}</strong><p>{market.name} {market.line}<small className="ab5-slip-market-rule">{market.rule}</small></p><div><span>{pick.label}</span><b>{priceText(pick.price)}</b></div></article>;})}</div>}
+     <section className="ab5-amount"><div className="ab5-amount-head"><label htmlFor="stake"><span className="ab5-badge">BET</span> 베팅 금액</label><button className="ab5-reset" onClick={()=>{setStake('');setStakeTouched(false);}}><RotateCcw/>초기화</button></div><div className="ab5-amount-input"><input id="stake" aria-label="베팅 금액" inputMode="numeric" autoComplete="off" value={/^\d+$/.test(stake)?moneyText(stake):stake} placeholder="0" onChange={e=>{setStake(e.target.value.replaceAll(',',''));setStakeTouched(true);}} aria-invalid={stakeTouched&&!!checked.error} aria-describedby="ab5-stake-hint"/><span>원</span></div><div className="ab5-amount-quick">{[5000,10000,50000,100000,1000000].map(v=><button key={v} onClick={()=>amount(v)}>+ {moneyText(v)}</button>)}<button onClick={()=>amount(DEMO.maxStake,true)}>MAX</button></div></section>
+-    <div className="ab5-slip-summary">{summary.map(([label,value])=><div className="ab5-summary-row" key={label}><span>{label}</span><strong data-total-odds={label==='총 배당'?'':undefined}>{value}</strong></div>)}</div>
++    <div className="ab5-slip-summary">{summary.map(([label,value])=><div className="ab5-summary-row" key={label}><span>{label}</span><strong data-total-odds={label==='총 배당'?'':undefined}>{label==='총 당첨금'?<><span className={selected.length>0&&checked.value>0?'ab5-payout-value':undefined}>{moneyText(total.potential)}</span> 원</>:value}</strong></div>)}</div>
+     <button className="ab5-bet-submit" disabled={!!reason} onClick={()=>open({kind:'confirm'})}><Ticket/>베팅하기</button><p className="ab5-slip-hint" id="ab5-stake-hint">{stakeTouched&&checked.error?checked.error:reason||'선택한 경기와 금액을 확인해 주세요.'}</p>
+   </section>;
+ }
+diff --git a/app/aldebaran.tokens.css b/app/aldebaran.tokens.css
+index d99b34e..84bedd4 100644
+--- a/app/aldebaran.tokens.css
++++ b/app/aldebaran.tokens.css
+@@ -16,7 +16,7 @@
+   --ab-accent: #ff641f;
+   --ab-accent-hover: #ff793d;
+   --ab-accent-pressed: #eb5515;
+-  --ab-on-accent: #171717;
++  --ab-on-accent: #ffffff;
+   --ab-score: var(--ab-accent);
+   --ab-odds: var(--ab-accent);
+   --ab-panel-radius: 6px;

@@ -1,0 +1,85 @@
+/* R11 설명용 예시. 실제 최신 클래스/레이어에 맞춰 필요한 규칙만 반영한다.
+   이 파일을 그대로 전역 import하지 않는다. 확정 사양은 DESIGN_SPEC.md가 우선이다. */
+
+/* 1. 우측 안내 배너: existing-banner-image 변수를 각 기존 원본 url로 연결한다.
+   이미 pseudo overlay 방식이면 아래 background 방식과 중복하지 않는다.
+   기존 geometry / border / radius / typography / text alignment는 보존한다. */
+.r11-ref-service-banner {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    var(--existing-banner-image);
+  /* background-size와 position은 현재 배너 원본 표시 방식을 유지한다. */
+}
+
+/* 2. 숫자는 내용만큼, 버튼도 내용만큼.
+   padding 8 / gap 8 / badge padding 4는 제안 시작값이며 사용자 확정값이 아니다.
+   현재 높이는 그대로 두고 줄어든 폰트에 맞춰 자동 높이가 줄지 않게 한다. */
+.r11-ref-sport-tab {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  width: max-content;
+  min-width: 0;
+  padding-inline: 8px;
+  gap: 8px;
+  white-space: nowrap;
+}
+.r11-ref-sport-tab__icon {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.r11-ref-sport-tab__name {
+  flex: 0 0 auto;
+  font-size: 14px;
+}
+.r11-ref-sport-tab__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0; /* 이전 3ch 또는 고정 badge width를 함께 제거 */
+  padding-inline: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+/* 상단 여백은 현재 종목바/부모의 실제 규칙에만 수정한다.
+   확대 스크린샷으로 임의 padding-top 수치를 강제하지 않는다. */
+
+/* 3. 영상: 메뉴 행에만 배치. 기존 1920x62 레이아웃 grid와 fallback 색은 유지한다. */
+.r11-ref-header-main {
+  position: relative;
+  isolation: isolate;
+}
+.r11-ref-header-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 컨테이너 자체가 1920x62이므로 원본 1:1 */
+  object-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+.r11-ref-header-content {
+  position: relative;
+  z-index: 1;
+  /* current menu grid를 유지한다. background가 영상을 가리면 해당 fill만 투명화. */
+}
+/* 로고 사선판은 독립 장식 요소에 현재 clip-path를 적용한다.
+   영상 위 반투명 검정, 그 위에 원본 로고. 하단선의 끝은 아래쪽 사선 꼭짓점.
+   판 alpha/폭/사선 길이는 DESIGN_SPEC의 시각 기준으로 조정하며 .4를 자동 상속하지 않는다.
+   로고와 부모 메뉴 전체를 clip-path로 자르지 않는다. */
+
+/* 4. 좌측 최신 이미지: 바깥 버튼 geometry는 보존. 추가 글자/overlay 없음. */
+.r11-ref-photo-button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

@@ -1,0 +1,122 @@
+{
+  "deployment": {
+    "id": "appgdep_6ab34ccbb5c08191b06649629311ca3c",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_5563cc9f51e881919d104a21fe7ad0ef",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-23T12:51:59.421833+09:00"
+  },
+  "images": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r14\\public\\plus-button-and-six-banners-1920.jpg",
+      "format": "Jpeg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 265011,
+      "sha256": "634521A99E2AB7D413DE2EEBA3B463B60390249D947F5E56093DD49EEC941934"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r14\\implementation\\one-digit-and-banners.jpg",
+      "format": "Jpeg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 265291,
+      "sha256": "A37391E4FBA403A282D4ACD4C966EA5C7B7A03B37D3FA41C5A65AA7254DB9428"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r14\\implementation\\two-digit-and-banners.jpg",
+      "format": "Jpeg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 256812,
+      "sha256": "F6214BC229AF6E8173256DDA18E248340BD6FDB4DDB9EAA6C353AD6F1B4A4F50"
+    }
+  ],
+  "rootReview": {
+    "source": "Only two requested areas; arrow-specific CSS removed, parent and handlers preserved",
+    "captureState": "Right rail scrolled down for six banners; restored by implementation owner",
+    "userVisualApproval": "pending",
+    "visual": "Viewed local1/2digit+sixbanners and final public1920 screenshot; single label and correct background roles visible, text readable"
+  },
+  "checks": {
+    "typecheck": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "runs": 1,
+      "exitCode": 0
+    },
+    "build": {
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "build"
+      ],
+      "runs": 1,
+      "exitCode": 0
+    },
+    "workflowExit": 0,
+    "diffCheck": "passed",
+    "localUI": "evidence.json",
+    "assets": "asset-copy.json",
+    "publicUI": "../public/browser-confirmation.json",
+    "images": "../public/image-validation.json"
+  },
+  "warnings": [
+    "Existing chunk-size warning",
+    "Existing plugin-timing warning",
+    "Existing vinext route classification unknown"
+  ],
+  "sourceFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "public/banners/aldebaran/r14/Banner_01.png",
+    "public/banners/aldebaran/r14/Banner_02.png",
+    "public/banners/aldebaran/r14/Banner_03.png",
+    "public/banners/aldebaran/r14/Banner_04.png",
+    "public/banners/aldebaran/r14/Banner_05.png",
+    "public/banners/aldebaran/r14/Banner_06.png"
+  ],
+  "nextAction": "wait for user feedback",
+  "revision": "R14",
+  "source": {
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+    "commit_sha": "35a63c764301efe7eb334d70ba9cf6599297bd37",
+    "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r14/implementation/aldebaran-r14.tar.gz"
+  },
+  "version": 15,
+  "scopeCount": 2,
+  "at": "2026-09-23T12:59:31.2810113+09:00",
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_5563cc9f51e881919d104a21fe7ad0ef",
+  "priorOperatingDocumentsPreserved": {
+    "AGENTS.md": true,
+    "DECISIONS.md": true,
+    "DESIGN_SPEC.md": true,
+    "STATE.md": true
+  },
+  "reportLocalLinkCount": 9,
+  "missingReportLinks": [],
+  "report": "CHANGE_REPORT_R14_20260923.ko.md",
+  "limits": [
+    "Only requested two areas and directly related interactions tested",
+    "No mobile/responsive/new route development",
+    "No broad previous tests, other apps/viewports, account/payment/bet submission",
+    "Zero-count handling preserved in source; no synthetic zero fixture",
+    "Banner destination handlers preserved in source; all destinations not reopened",
+    "User visual approval pending"
+  ],
+  "status": "completed_pending_user_visual_feedback"
+}

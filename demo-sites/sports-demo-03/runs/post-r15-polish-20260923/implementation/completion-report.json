@@ -1,0 +1,85 @@
+{
+  "status": "complete",
+  "publication": {
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "baseline_commit": "7c7284fc8dd21b1e84f4bd8dc5fe7f53f9bc6b23",
+    "commit_sha": "bc52561601bb131c515533028336afbc16c9de17",
+    "version_number": 18,
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_72727a3f7ec4819187cd673704c939c3",
+    "deployment_id": "appgdep_6ab38958e5d481919a0a6dbfedc6a45a",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "updated_at": "2026-09-23T08:10:23.363961+00:00",
+    "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/post-r15-polish-20260923/implementation/aldebaran-post-r15.tar.gz",
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000004a388230bfe1c40a5e7952e1",
+      "content_hash": "sha256:66df08ab1679e9b88ecf8f699ad38b374fa36a892dcc820c33a434a4209f0b6c",
+      "size_bytes": 34744320,
+      "file_count": 287
+    },
+    "audience": "PUBLIC"
+  },
+  "changed_files": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "app/aldebaran.tokens.css"
+  ],
+  "implemented": [
+    "Orange filled surface text #FFFFFF",
+    "Existing yellow surfaces and SPORTS badge #FCD73E with #171717 foreground",
+    "Balance and valid calculated payout numbers #FCD73E; units and initial zero unchanged",
+    "Card decorative image rendering and dedicated styles removed from shared renderer; assets preserved",
+    "Latest user exception: three left orange quick action icons #FFFFFF"
+  ],
+  "reverified_existing": [
+    "Popup background-image and box-shadow removal was already in baseline v17, preserved and verified on actual public selection confirmation popup; text now white"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "build": "passed",
+    "geometry": "No differences across baseline-captured dimensions, spacing and fonts",
+    "icons": "Only requested three quick icons changed",
+    "cards": {
+      "european": 61,
+      "domestic": 61,
+      "motif_count": 0,
+      "soccer": 32,
+      "basketball": 6,
+      "baseball": 16,
+      "hockey": 7,
+      "volleyball": 0
+    },
+    "selection": "Card/detail synchronized; deselected; cleared test amount",
+    "nPlus": "79/80 markets inspected and restored",
+    "calculation": "10000 × 1.56 = 15600; display 15,600 원 unchanged",
+    "payout_advance_delta_css_px": 0.015625,
+    "payout_delta_reason": "Number span splits inline shaping; no box/font/alignment changes or artificial compensation",
+    "popup": "Local charge default/hover/active/focus and public selection confirmation measured; no gradient/glow/pseudo overlay; no submission",
+    "browser": "CUA in-app browser DOM/CDP and actual 1920x1080 screenshots",
+    "console_errors": 0,
+    "public_state": "Existing public account, balance, keep, selections and stake preserved; only temporary test tab used",
+    "git": "clean"
+  },
+  "not_changed": [
+    "Data and calculations",
+    "Original assets",
+    "Font setup",
+    "Other sites",
+    "GitHub backup",
+    "Coordinator operating documents"
+  ],
+  "limits": [
+    "Volleyball has zero fixtures: empty state and shared renderer coverage only",
+    "No mobile, full regression, authentication creation, payment or wager submission"
+  ],
+  "nonblocking_build_warnings": [
+    "Existing >500kB bundle warning",
+    "Plugin timing warning",
+    "Vinext route static classification unknown"
+  ],
+  "evidence": {
+    "implementation": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/post-r15-polish-20260923/implementation",
+    "public": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/post-r15-polish-20260923/public"
+  }
+}

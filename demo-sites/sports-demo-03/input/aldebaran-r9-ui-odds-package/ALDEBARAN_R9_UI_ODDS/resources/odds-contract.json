@@ -1,0 +1,55 @@
+{
+  "purpose": "경기별 고정 합성 배당을 구성하고 화면 간 일치와 기준점 관계를 유지한다.",
+  "deliveryToImplementer": "현재 현지 matchId를 기준으로 노출되는 모든 예정 경기의 완전한 가격 자료를 작성한다. 이 파일과 축구 예제는 구현 참고자료이며61경기용 완성 데이터가 아니다.",
+  "dataFields": {
+    "datasetVersion": "string",
+    "sourceKind": "synthetic-model | verified-provider-snapshot",
+    "fixtureId": "현지 match.id",
+    "sport": "현지 종목 ID",
+    "rules": "full-time / overtime / period 및 환급 규칙",
+    "modelInputs": "합성 전력·득점 가정. 실제 전력 정보로 주장하지 않음",
+    "markets": "안정적인 key, line, period, outcomes(key,priceCents or canonical two-decimal price)",
+    "providerMetadata": "실제 수집일 경우에만 bookmaker, capturedAt, source URL/ID"
+  },
+  "workflow": [
+    "최신 현지 예정 경기 집합과 현재 마켓 key/line/selectionId를 읽는다.",
+    "종목과 규칙에 맞는 경기별 전력차·득점 프로파일을 정한다.",
+    "동일 경기의 모든 마켓을 같은 가정과 규칙에서 작성하고 기본/상세의 같은 선택은 공통 자료를 참조한다.",
+    "두 자리 원천 가격을 고정 JSON/TS 자료로 저장한다.",
+    "현지 adapter에서 stable IDs/배열 index를 보존하며 새 가격을 연결한다.",
+    "한 번의 자료 검증과 대표 선택 연동 확인 후 종료한다."
+  ],
+  "pricing": {
+    "decimalImpliedProbability": "1 / odds",
+    "noPushMutuallyExclusiveOutcomes": "odds_i = 1 / (p_i * (1 + m)), sum(p_i)=1",
+    "marginMeaning": "m은 이 합성 모델의 설정값. 실제 수익률 또는 모든 스포츠의 표준이 아님.",
+    "illustrationMargin": 0.045,
+    "pushAwareNote": "정수/쿼터 라인은 환급·분할 정산을 고려. 단순 1/p 공식을 전부에 사용하지 않음.",
+    "sameEvent": "동일 규칙·동일 사건의 중복 표시는 동일 가격 유지",
+    "rounding": "원천 선택 가격을 소수2자리로 확정. 결합 배당 계산의 중간 반올림은 추가하지 않음."
+  },
+  "modelGuidance": {
+    "soccer": "한 경기 홈/원정 득점표에서 승무패, 핸디, 총점, 팀 총점, 양팀 득점 도출. 예제는 독립 포아송/반점라인만 지원.",
+    "basketball": "리그에 맞는 총점·득점차와 연장 포함 여부를 반영. 쿼터 마켓은 해당 기간의 별도 가정 사용.",
+    "hockey": "정규시간3way와 연장포함2way를 구분. 낮은 득점과 퍽핸디를 반영.",
+    "american-football": "득점차·총점·연장/무승부 반환 조건을 반영. 축구 득점모델 재사용 금지.",
+    "baseball-volleyball": "현재 노출 여부를 확인. 대상이면 이닝/세트 구조에 맞게 작성. 없는 예정 경기를 숫자 채우려고 추가하지 않음."
+  },
+  "invariants": [
+    "선택 가격은 finite > 1, 두 자리 표시",
+    "같은 경기·마켓·line·outcome은 카드/상세/슬립에서 동일 가격",
+    "완전한 상호배타 무환급 세트의 역수 합은 설정한 여유분과 반올림 오차 범위에서 일치",
+    "총점 line 오름차순: over 가격 비감소, under 가격 비증가",
+    "홈 handicap이 유리해질수록 home 가격 비증가",
+    "모든 예정 fixtureId에 자료 존재, 누락에 기존 템플릿 쌍 fallback 금지",
+    "전체 경기에서 동일 가격쌍을 의도적으로 반복하지 않되 일부 중복은 허용",
+    "필터/모드/새로고침은 가격을 바꾸지 않음",
+    "가격 생성에서 경기ID hash/salt만으로 독립 마켓 가격을 결정하지 않음",
+    "과거 영수증과 사용자 입력금액/기존슬립유지 규칙 보존"
+  ],
+  "references": [
+    "https://help.smarkets.com/hc/en-gb/articles/214058369-How-to-calculate-implied-probability-in-betting",
+    "https://the-odds-api.com/liveapi/guides/v4/"
+  ],
+  "futureProviderOption": "동일 경기·사업자·시점의 실제 snapshot 세트. 이번에는 계정/API 키/구독/실시간 갱신을 추가하지 않음."
+}

@@ -1,0 +1,95 @@
+{
+  "status": "complete",
+  "completedAt": "2026-09-22T07:27:21.586008+00:00",
+  "projectId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "access": "public",
+  "sourceBaseline": "4759aae04293e80c9dc3c60658ab97297118dbb0",
+  "commit": "c566f060ec024b2178b873624e345029dea79a2a",
+  "version": 9,
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_fde4ce0432a481918e4c9c10bb7d89e6",
+  "deploymentId": "appgdep_6ab22dc4550c8191960ddeccddea19ff",
+  "deploymentStatus": "succeeded",
+  "changedFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "app/demo-data.ts",
+    "app/page.tsx",
+    "app/prematch-odds-r9.json",
+    "public/banners/aldebaran/img_banner_01.png"
+  ],
+  "completed": [
+    "GNB disabled eight labels white opacity1; disabled behavior retained; hover color removed; selected orange and underline retained.",
+    "Wordmark182px atx24 retained; decoration expanded to242px without shifting GNB grid.",
+    "Notice five utility controls bright white.",
+    "Common central1226px sportbar50px; six intrinsic-width tabs with icon/name/count; basic32px/selected34px; count minimum3ch; obsolete104px wrapper removed.",
+    "CASINO/SLOT black strips removed while original photos and text composition preserved.",
+    "First Telegram support exact original banner applied; headset removed; second channel unchanged.",
+    "Fixed synthetic snapshot61 fixtures1040 markets2176 stable selectionIDs, card/detail/slip same dataset; new selection/receipt metadata added and existing restoration policy preserved.",
+    "Typecheck PASS; existing build one successful run; scoped UI and data verification PASS; same PUBLIC deployment succeeded; domestic/european1920 screenshots recorded."
+  ],
+  "dataset": {
+    "sourceKind": "synthetic-model",
+    "datasetVersion": "aldebaran-prematch-r9-20260922",
+    "snapshotSha256": "5eced5028e18b083fc951dce3dbe90e486089ba53a0a35d44399aa81639b605e",
+    "modelEvidence": "model.json",
+    "generator": "build-snapshot.py",
+    "pricingAudit": "pricing-audit.json",
+    "validation": "data-validation.json",
+    "defaultMarginCeiling": 0.045,
+    "effectiveFixtureMargins": [
+      0.045,
+      0.01189975,
+      0.04254462,
+      0.00631549,
+      0.01159885,
+      0.02525585
+    ],
+    "marginPolicy": "One margin per fixture. For extreme preserved legacy lines, lower the whole fixture margin to keep all canonical prices greater than1 after cent rounding. No independent price caps.",
+    "limitation": "Hand-authored synthetic score/strength assumptions; not provider odds, observed team analysis, or an empirically fitted model. Period/OT scenarios are explicitly simplified."
+  },
+  "banner": {
+    "source": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/input/aldebaran-r9-ui-odds-package/ALDEBARAN_R9_UI_ODDS/assets/img_banner_01.png",
+    "sha256": "19e33f3146e6a2ba14e6120322d04e3ac1dc9ddc67518acdcc9cf19554710529",
+    "byteIdentical": true,
+    "evidence": "banner.json"
+  },
+  "verification": {
+    "typecheck": "typecheck-final.log; exit0; prior initial JSX typo corrected before this passing check.",
+    "build": "build.log; npm run build; one run exit0.",
+    "data": "data-validation.json passed;61fixture IDs/2176selection IDs;76 equivalent-event comparisons;488 monotonic comparisons;45push markets; maximum repeated basic set2.",
+    "ui": "ui-verification.json; changed-flow.json; independent European scroll, shared domestic scroll, mode restoration, basketball6/all61, price1.56 across card/detail/slip,5000 stake→7800 potential, keep reload.",
+    "browser": "../public/browser-verification.json; public61cards/R9dataset source, correct commonbar/panes, broken images0, consoleerror/warn0.",
+    "captures": [
+      "../public/european-1920.jpg",
+      "../public/domestic-1920.jpg"
+    ],
+    "bannerVisual": "banner-full.jpg; earlier banner.jpg clip did not show the requested banner and is not accepted banner evidence."
+  },
+  "held": [],
+  "unverified": [
+    "Broad regression/mobile/Jev outside R9 scope.",
+    "Authentication, funding/withdrawal and bet submission were not executed.",
+    "Existing receipt preservation checked by source diff; no transaction or receipt repricing test performed.",
+    "User visual acceptance pending."
+  ],
+  "warnings": [
+    "Build emitted chunk-size advisory above500kB; no unrelated code splitting introduced."
+  ],
+  "unchanged": [
+    "MERCURY/SIRIUS",
+    "GitHub backup",
+    "Operating AGENTS/STATE/DESIGN_SPEC/DECISIONS (coordinator-owned)",
+    "Existing icons01–09 and card motifs",
+    "77original records/61prematches; no invented baseball/volleyball",
+    "Existing public demo account state/history and receipt price strings",
+    "Existing local5303server left running"
+  ],
+  "handoff": {
+    "tabId": "18",
+    "mode": "european",
+    "viewportReset": true,
+    "openInCodexSkipped": "Delegated/background Site owner; per Sites hosting handoff rules.",
+    "next": "Wait for user feedback."
+  }
+}

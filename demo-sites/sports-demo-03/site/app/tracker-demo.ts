@@ -16,8 +16,8 @@ export function footballMinute(match:Match) {
 export function extraFootballMarkets(id:string):Market[] {
   const seed=fixtureSeed(id);
   return [
-    {key:'first-half-result',source:'local-demo',name:'전반 승무패',rule:'전반 45분 · 데모',picks:[{key:'home',label:'홈',price:(210+(seed%7)*10)/100},{key:'draw',label:'무',price:(205+(seed%5)*10)/100},{key:'away',label:'원정',price:(280+(seed%9)*10)/100}]},
-    {key:'first-scoring-team',source:'local-demo',name:'첫 득점 팀',rule:'정규시간 · 데모',picks:[{key:'home',label:'홈',price:(185+(seed%5)*10)/100},{key:'none',label:'득점 없음',price:8+(seed%9)/10},{key:'away',label:'원정',price:2.125}]},
+    {key:'first-half-result',source:'local-demo',name:'전반 승무패',rule:'전반 45분',picks:[{key:'home',label:'홈',price:(210+(seed%7)*10)/100},{key:'draw',label:'무',price:(205+(seed%5)*10)/100},{key:'away',label:'원정',price:(280+(seed%9)*10)/100}]},
+    {key:'first-scoring-team',source:'local-demo',name:'첫 득점 팀',rule:'정규시간',picks:[{key:'home',label:'홈',price:(185+(seed%5)*10)/100},{key:'none',label:'득점 없음',price:8+(seed%9)/10},{key:'away',label:'원정',price:2.125}]},
   ];
 }
 export type TrackerEvent={side:'home'|'away';time:number;label:string;kind:'goal'|'card'|'status'};

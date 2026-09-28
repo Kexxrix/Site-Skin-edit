@@ -1,0 +1,865 @@
+{
+  "status": "complete",
+  "completedAt": "2026-09-22T18:33:42.3929538+09:00",
+  "request": "ALDEBARAN_R10_UI_ASSETS",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "access": "PUBLIC",
+  "version": {
+    "id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_146cf4bc79108191baa32e7c67a6aeac",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "version_number": 10,
+    "source": {
+      "commit_sha": "9f32fe625a8f1f0441e4714382515c19af136d03"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000009538820685fd07c30a2cfc5b",
+      "content_hash": "sha256:451bce18f8d80a7b31b1c4c7bc0a1ecf0bef8fd178b0e79422dcb058922f9b2d",
+      "size_bytes": 28794880,
+      "file_count": 280
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ab249de73508191a94c6a05b758ff00",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_146cf4bc79108191baa32e7c67a6aeac",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-22T18:27:13.48652+09:00"
+  },
+  "baselineCommit": "c566f060ec024b2178b873624e345029dea79a2a",
+  "commit": "9f32fe625a8f1f0441e4714382515c19af136d03",
+  "changedFiles": [
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "public/banners/aldebaran/btn_image_casino.png",
+    "public/banners/aldebaran/btn_image_slot.png",
+    "public/banners/aldebaran/img_banner_03.png",
+    "public/banners/aldebaran/img_banner_04.png",
+    "public/banners/aldebaran/img_banner_05.png",
+    "public/banners/aldebaran/img_banner_06.png",
+    "public/banners/aldebaran/img_banner_07.png"
+  ],
+  "changes": [
+    "Right banners 03-07 use supplied original PNGs; first 01 preserved; duplicate icon/19 badge removed; existing copy/actions retained.",
+    "Casino and slot use complete supplied original PNGs with contain, existing 200x116/98x116 button boxes and accessible names/actions retained, duplicate HTML labels removed.",
+    "Six central tab outer boxes retained; only icon/name/count sizes changed to 20/14/12 CSS px, existing 35.71875px count badge width retained.",
+    "Central outside backboards made transparent with DOM/layout/border space/scroll geometry and inner frames preserved.",
+    "Market left accent 3px to 1px, left padding 10px to 12px, title coordinates retained in open and closed states.",
+    "All six banner title/subtitle gap 7px to 2px and combined text block vertically centered, font 17/11 and left padding 12px retained."
+  ],
+  "assumptions": [
+    "Banner gap 2px is an implementation choice from the package suggestion, not a user-fixed target.",
+    "Existing fixed 1920 shell and measured individual tab widths are retained."
+  ],
+  "comparison": {
+    "tabs": [
+      {
+        "name": "전체61",
+        "before": [
+          347,
+          122,
+          139.375,
+          34
+        ],
+        "after": [
+          347,
+          122,
+          139.375,
+          34
+        ],
+        "icon": 20,
+        "label": "14px",
+        "count": "12px",
+        "countWidth": 35.71875
+      },
+      {
+        "name": "축구32",
+        "before": [
+          494.375,
+          123,
+          137.375,
+          32
+        ],
+        "after": [
+          494.375,
+          123,
+          137.375,
+          32
+        ],
+        "icon": 20,
+        "label": "14px",
+        "count": "12px",
+        "countWidth": 35.71875
+      },
+      {
+        "name": "농구6",
+        "before": [
+          639.75,
+          123,
+          137.375,
+          32
+        ],
+        "after": [
+          639.75,
+          123,
+          137.375,
+          32
+        ],
+        "icon": 20,
+        "label": "14px",
+        "count": "12px",
+        "countWidth": 35.71875
+      },
+      {
+        "name": "야구0",
+        "before": [
+          785.125,
+          123,
+          137.375,
+          32
+        ],
+        "after": [
+          785.125,
+          123,
+          137.375,
+          32
+        ],
+        "icon": 20,
+        "label": "14px",
+        "count": "12px",
+        "countWidth": 35.71875
+      },
+      {
+        "name": "배구0",
+        "before": [
+          930.5,
+          123,
+          137.375,
+          32
+        ],
+        "after": [
+          930.5,
+          123,
+          137.375,
+          32
+        ],
+        "icon": 20,
+        "label": "14px",
+        "count": "12px",
+        "countWidth": 35.71875
+      },
+      {
+        "name": "아이스하키7",
+        "before": [
+          1075.875,
+          123,
+          178.859375,
+          32
+        ],
+        "after": [
+          1075.875,
+          123,
+          178.859375,
+          32
+        ],
+        "icon": 20,
+        "label": "14px",
+        "count": "12px",
+        "countWidth": 35.71875
+      }
+    ],
+    "outer": [
+      {
+        "class": "ab5-center-surface",
+        "before": [
+          338,
+          105,
+          1244,
+          964
+        ],
+        "after": [
+          338,
+          105,
+          1244,
+          964
+        ],
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "ab5-sportbar",
+        "before": [
+          347,
+          114,
+          1226,
+          50
+        ],
+        "after": [
+          347,
+          114,
+          1226,
+          50
+        ],
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgb(245, 244, 244)"
+      },
+      {
+        "class": "ab5-pane ab5-list-pane",
+        "before": [
+          347,
+          164,
+          609,
+          896
+        ],
+        "after": [
+          347,
+          164,
+          609,
+          896
+        ],
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "ab5-pane",
+        "before": [
+          964,
+          164,
+          609,
+          896
+        ],
+        "after": [
+          964,
+          164,
+          609,
+          896
+        ],
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "framesUnchanged": true,
+    "photos": [
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgb(56, 56, 56)",
+        "borderRadius": "5px",
+        "borderWidth": "1px",
+        "height": 116,
+        "image": {
+          "fit": "contain",
+          "height": 114,
+          "loaded": true,
+          "src": "/banners/aldebaran/btn_image_casino.png",
+          "width": 198,
+          "x": 18,
+          "y": 301
+        },
+        "name": "카지노 둘러보기",
+        "overflow": "hidden",
+        "padding": "0px",
+        "text": "",
+        "width": 200,
+        "x": 17,
+        "y": 300
+      },
+      {
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgb(56, 56, 56)",
+        "borderRadius": "5px",
+        "borderWidth": "1px",
+        "height": 116,
+        "image": {
+          "fit": "contain",
+          "height": 114,
+          "loaded": true,
+          "src": "/banners/aldebaran/btn_image_slot.png",
+          "width": 96,
+          "x": 222,
+          "y": 301
+        },
+        "name": "슬롯 둘러보기",
+        "overflow": "hidden",
+        "padding": "0px",
+        "text": "",
+        "width": 98,
+        "x": 221,
+        "y": 300
+      }
+    ],
+    "marketBefore": {
+      "borderLeft": "3px solid rgb(255, 100, 31)",
+      "height": 34,
+      "open": "true",
+      "padding": "0px 10px",
+      "pseudo": {
+        "background": "rgba(0, 0, 0, 0)",
+        "width": "auto"
+      },
+      "shadow": "none",
+      "text": "승패",
+      "title": {
+        "height": 18,
+        "width": 28.75,
+        "x": 989,
+        "y": 272.5
+      },
+      "width": 585,
+      "x": 976,
+      "y": 265
+    },
+    "marketAfter": {
+      "borderLeft": "1px solid rgb(255, 100, 31)",
+      "height": 34,
+      "open": "true",
+      "padding": "0px 10px 0px 12px",
+      "pseudo": {
+        "background": "rgba(0, 0, 0, 0)",
+        "width": "auto"
+      },
+      "shadow": "none",
+      "text": "승패",
+      "title": {
+        "height": 18,
+        "width": 28.75,
+        "x": 989,
+        "y": 272.5
+      },
+      "width": 585,
+      "x": 976,
+      "y": 265
+    },
+    "banners": [
+      {
+        "text": "텔레그램 고객센터문의 및 제휴 안내",
+        "size": [
+          306,
+          60.625
+        ],
+        "font": [
+          "17px",
+          "11px"
+        ],
+        "groupCenterError": 0,
+        "gap": 2,
+        "previousGap": 7,
+        "icons": 0,
+        "background": "url(\"http://localhost:5303/banners/aldebaran/img_banner_01.png\")"
+      },
+      {
+        "text": "텔레그램 공식채널이벤트 및 공지 안내",
+        "size": [
+          306,
+          60.625
+        ],
+        "font": [
+          "17px",
+          "11px"
+        ],
+        "groupCenterError": 0,
+        "gap": 2,
+        "previousGap": 7,
+        "icons": 0,
+        "background": "url(\"http://localhost:5303/banners/aldebaran/img_banner_03.png\")"
+      },
+      {
+        "text": "ALDEBARAN 이용안내서비스 이용 방법",
+        "size": [
+          306,
+          60.625
+        ],
+        "font": [
+          "17px",
+          "11px"
+        ],
+        "groupCenterError": 0,
+        "gap": 2,
+        "previousGap": 7,
+        "icons": 0,
+        "background": "url(\"http://localhost:5303/banners/aldebaran/img_banner_04.png\")"
+      },
+      {
+        "text": "실시간 중계 안내경기 중계 일정 확인",
+        "size": [
+          306,
+          60.625
+        ],
+        "font": [
+          "17px",
+          "11px"
+        ],
+        "groupCenterError": 0,
+        "gap": 2,
+        "previousGap": 7,
+        "icons": 0,
+        "background": "url(\"http://localhost:5303/banners/aldebaran/img_banner_05.png\")"
+      },
+      {
+        "text": "스포츠 라인업경기별 선수 정보",
+        "size": [
+          306,
+          60.625
+        ],
+        "font": [
+          "17px",
+          "11px"
+        ],
+        "groupCenterError": 0,
+        "gap": 2,
+        "previousGap": 7,
+        "icons": 0,
+        "background": "url(\"http://localhost:5303/banners/aldebaran/img_banner_06.png\")"
+      },
+      {
+        "text": "미성년자 이용불가만 19세 이상 이용",
+        "size": [
+          306,
+          60.625
+        ],
+        "font": [
+          "17px",
+          "11px"
+        ],
+        "groupCenterError": 0,
+        "gap": 2,
+        "previousGap": 7,
+        "icons": 0,
+        "background": "url(\"http://localhost:5303/banners/aldebaran/img_banner_07.png\")"
+      }
+    ]
+  },
+  "originalAssets": [
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r10-ui-assets-package\\ALDEBARAN_R10_UI_ASSETS\\assets\\banners\\img_banner_03.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\img_banner_03.png",
+      "sha256": "97AB2C4BEC2B215BF4B024CCF3A7DBEE8127F7A122B4543EF69DA6E5E5B63AF0",
+      "bytes": 38736,
+      "expectedDimensions": [
+        306,
+        61
+      ],
+      "byteIdentical": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r10-ui-assets-package\\ALDEBARAN_R10_UI_ASSETS\\assets\\banners\\img_banner_04.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\img_banner_04.png",
+      "sha256": "395D2804C9052CBA165FDDC579F9C64ACCB7513631B248C8F94BEFF871733F7D",
+      "bytes": 38537,
+      "expectedDimensions": [
+        306,
+        61
+      ],
+      "byteIdentical": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r10-ui-assets-package\\ALDEBARAN_R10_UI_ASSETS\\assets\\banners\\img_banner_05.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\img_banner_05.png",
+      "sha256": "BB2A3C3D61B940B1EBBA085C7D0CAC31CFC2F0BD8D6730E94E4F715F90D2E9C5",
+      "bytes": 35969,
+      "expectedDimensions": [
+        306,
+        61
+      ],
+      "byteIdentical": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r10-ui-assets-package\\ALDEBARAN_R10_UI_ASSETS\\assets\\banners\\img_banner_06.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\img_banner_06.png",
+      "sha256": "3E59690B7025659962BA5254E265F3637A701BB041A046E469F91A67F2B55B4D",
+      "bytes": 36240,
+      "expectedDimensions": [
+        306,
+        61
+      ],
+      "byteIdentical": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r10-ui-assets-package\\ALDEBARAN_R10_UI_ASSETS\\assets\\banners\\img_banner_07.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\img_banner_07.png",
+      "sha256": "666436F7D3F5E96BD6A8D6BBA6D7487CD0391EACE9598AFA7865C0CA5577818B",
+      "bytes": 32742,
+      "expectedDimensions": [
+        306,
+        61
+      ],
+      "byteIdentical": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r10-ui-assets-package\\ALDEBARAN_R10_UI_ASSETS\\assets\\left-rail\\btn_image_casino.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\btn_image_casino.png",
+      "sha256": "34EB1428D4C8A3AB51C1DAFBF1397C5901E15E251B576CC81C3374C9D542FDFB",
+      "bytes": 55118,
+      "expectedDimensions": [
+        200,
+        116
+      ],
+      "byteIdentical": true
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\input\\aldebaran-r10-ui-assets-package\\ALDEBARAN_R10_UI_ASSETS\\assets\\left-rail\\btn_image_slot.png",
+      "destination": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\public\\banners\\aldebaran\\btn_image_slot.png",
+      "sha256": "B576B31BAE29658915FC25F50D74D8BAA9DB08A4FCA0060607E7AADA60F213E9",
+      "bytes": 30088,
+      "expectedDimensions": [
+        97,
+        116
+      ],
+      "byteIdentical": true
+    }
+  ],
+  "archive": {
+    "archive": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\public\\aldebaran-r10.tar.gz",
+    "bytes": 25775410,
+    "sha256": "f199ce8a9fa94b05c83c30d585bae0e2c3493cfea893b969c27b59ec5dacab65",
+    "fileCount": 337,
+    "newAssetsHashAndDimensions": 7,
+    "firstBannerPreserved": true,
+    "changedFiles": [
+      "app/aldebaran-wog-r5.css",
+      "app/aldebaran-wog-r5.tsx",
+      "public/banners/aldebaran/btn_image_casino.png",
+      "public/banners/aldebaran/btn_image_slot.png",
+      "public/banners/aldebaran/img_banner_03.png",
+      "public/banners/aldebaran/img_banner_04.png",
+      "public/banners/aldebaran/img_banner_05.png",
+      "public/banners/aldebaran/img_banner_06.png",
+      "public/banners/aldebaran/img_banner_07.png"
+    ],
+    "protectedDataAndSlipSourceUnchanged": true,
+    "clean": true
+  },
+  "verification": {
+    "sourceChecks": {
+      "typecheck": {
+        "runs": 1,
+        "exit": 0,
+        "evidence": "First workflow proceeded past tsc to build; source unchanged since."
+      },
+      "build": {
+        "completedRuns": 1,
+        "exit": 0,
+        "evidence": "build.log"
+      },
+      "recoveredTooling": [
+        "Bundled Windows npm shim resolved relative module incorrectly; used existing absolute npm CLI.",
+        "Expired source credential renewed.",
+        "GNU tar interpreted Windows drive colon as remote; TAR_OPTIONS=--force-local repaired archive step without rebuilding."
+      ]
+    },
+    "viewport": {
+      "height": 1080,
+      "scale": 1,
+      "width": 1920
+    },
+    "representativeFlow": {
+      "casinoOpened": true,
+      "slotsOpened": true,
+      "filtered": {
+        "cards": 6,
+        "selected": "농구6"
+      },
+      "closed": {
+        "borderLeft": "1px solid rgb(255, 100, 31)",
+        "height": 34,
+        "open": "false",
+        "padding": "0px 10px 0px 12px",
+        "pseudo": {
+          "background": "rgba(0, 0, 0, 0)",
+          "width": "auto"
+        },
+        "shadow": "none",
+        "text": "승패",
+        "title": {
+          "height": 18,
+          "width": 28.75,
+          "x": 989,
+          "y": 272.5
+        },
+        "width": 585,
+        "x": 976,
+        "y": 265
+      },
+      "euroDetail": [
+        {
+          "class": "ab5-list-scroll ab5-scroll",
+          "height": 894,
+          "top": 0,
+          "width": 607,
+          "x": 348,
+          "y": 165
+        },
+        {
+          "class": "ab5-market-scroll ab5-scroll",
+          "height": 805,
+          "top": 270,
+          "width": 607,
+          "x": 965,
+          "y": 254
+        }
+      ],
+      "euroList": [
+        {
+          "class": "ab5-list-scroll ab5-scroll",
+          "height": 894,
+          "top": 270,
+          "width": 607,
+          "x": 348,
+          "y": 165
+        },
+        {
+          "class": "ab5-market-scroll ab5-scroll",
+          "height": 805,
+          "top": 270,
+          "width": 607,
+          "x": 965,
+          "y": 254
+        }
+      ],
+      "domesticInitial": [
+        {
+          "class": "ab5-list-scroll ab5-scroll",
+          "height": 894,
+          "top": 0,
+          "width": 1224,
+          "x": 348,
+          "y": 165
+        }
+      ],
+      "domesticLeft": [
+        {
+          "class": "ab5-list-scroll ab5-scroll",
+          "height": 894,
+          "top": 270,
+          "width": 1224,
+          "x": 348,
+          "y": 165
+        }
+      ],
+      "domesticRight": [
+        {
+          "class": "ab5-list-scroll ab5-scroll",
+          "height": 894,
+          "top": 540,
+          "width": 1224,
+          "x": 348,
+          "y": 165
+        }
+      ],
+      "euroRestored": [
+        {
+          "class": "ab5-list-scroll ab5-scroll",
+          "height": 894,
+          "top": 270,
+          "width": 607,
+          "x": 348,
+          "y": 165
+        },
+        {
+          "class": "ab5-market-scroll ab5-scroll",
+          "height": 805,
+          "top": 270,
+          "width": 607,
+          "x": 965,
+          "y": 254
+        }
+      ],
+      "bannerVisibility": [
+        {
+          "text": "텔레그램 고객센터문의 및 제휴 안내",
+          "y": 681.5,
+          "height": 60.625,
+          "visible": true
+        },
+        {
+          "text": "텔레그램 공식채널이벤트 및 공지 안내",
+          "y": 746.125,
+          "height": 60.625,
+          "visible": true
+        },
+        {
+          "text": "ALDEBARAN 이용안내서비스 이용 방법",
+          "y": 810.75,
+          "height": 60.625,
+          "visible": true
+        },
+        {
+          "text": "실시간 중계 안내경기 중계 일정 확인",
+          "y": 875.375,
+          "height": 60.625,
+          "visible": true
+        },
+        {
+          "text": "스포츠 라인업경기별 선수 정보",
+          "y": 940,
+          "height": 60.625,
+          "visible": true
+        },
+        {
+          "text": "미성년자 이용불가만 19세 이상 이용",
+          "y": 1004.625,
+          "height": 60.625,
+          "visible": true
+        }
+      ],
+      "bannerScrollMethod": "Focused right rail End key; coordinate wheel did not scroll this rail in this session."
+    },
+    "console": [],
+    "publicReflection": {
+      "bannerBackgrounds": [
+        "url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_01.png\")",
+        "url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_03.png\")",
+        "url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_04.png\")",
+        "url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_05.png\")",
+        "url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_06.png\")",
+        "url(\"https://aldebaran.kexxadrix.chatgpt.site/banners/aldebaran/img_banner_07.png\")"
+      ],
+      "mode": "european",
+      "outerBackground": "rgba(0, 0, 0, 0)",
+      "photoSources": [
+        {
+          "loaded": true,
+          "src": "/banners/aldebaran/btn_image_casino.png"
+        },
+        {
+          "loaded": true,
+          "src": "/banners/aldebaran/btn_image_slot.png"
+        }
+      ],
+      "title": "ALDEBARAN · 스포츠",
+      "viewport": {
+        "height": 1080,
+        "scale": 1,
+        "width": 1920
+      },
+      "banners": [
+        {
+          "bottom": 742.125,
+          "fullyVisible": true,
+          "text": "텔레그램 고객센터문의 및 제휴 안내",
+          "top": 681.5
+        },
+        {
+          "bottom": 806.75,
+          "fullyVisible": true,
+          "text": "텔레그램 공식채널이벤트 및 공지 안내",
+          "top": 746.125
+        },
+        {
+          "bottom": 871.375,
+          "fullyVisible": true,
+          "text": "ALDEBARAN 이용안내서비스 이용 방법",
+          "top": 810.75
+        },
+        {
+          "bottom": 936,
+          "fullyVisible": true,
+          "text": "실시간 중계 안내경기 중계 일정 확인",
+          "top": 875.375
+        },
+        {
+          "bottom": 1000.625,
+          "fullyVisible": true,
+          "text": "스포츠 라인업경기별 선수 정보",
+          "top": 940
+        },
+        {
+          "bottom": 1065.25,
+          "fullyVisible": true,
+          "text": "미성년자 이용불가만 19세 이상 이용",
+          "top": 1004.625
+        }
+      ],
+      "completedAt": "2026-09-22T09:32:31.299Z",
+      "scope": "Deployment reflection and requested screenshots only; local detailed checks not repeated",
+      "screenshots": [
+        "european-1920.jpg",
+        "domestic-1920.jpg",
+        "banners-six-1920.jpg"
+      ],
+      "handoff": {
+        "tabId": "18",
+        "mode": "european",
+        "rightRail": "top",
+        "viewportOverrideReset": true,
+        "existingAuthenticationAndSlipStatePreserved": true
+      }
+    },
+    "screenshots": [
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\implementation\\european-1920.jpg",
+        "bytes": 242726,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\implementation\\domestic-1920.jpg",
+        "bytes": 218087,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\implementation\\banners-six-1920.jpg",
+        "bytes": 272202,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\public\\european-1920.jpg",
+        "bytes": 245498,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\public\\domestic-1920.jpg",
+        "bytes": 220510,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r10\\public\\banners-six-1920.jpg",
+        "bytes": 242778,
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "cleanSourceConfirmed": true
+  },
+  "notChanged": [
+    "MERCURY and SIRIUS",
+    "GitHub backup",
+    "Operating AGENTS/STATE/DESIGN_SPEC/DECISIONS and coordination records owned by coordinator",
+    "R9 fixture/odds/selection/slip/history source",
+    "Existing fonts, sport icons, team emblems and card background motifs",
+    "Original image bytes and old assets",
+    "Casino/slot lobby photo exports",
+    "Existing localhost:5303 server",
+    "Existing public demo authentication and slip settings"
+  ],
+  "remainingRisks": [
+    "No unresolved defect found within the requested verification scope.",
+    "Existing build chunk-size warning remains; no unrelated optimization was requested.",
+    "Final visual acceptance remains with the user."
+  ],
+  "notVerified": [
+    "Mobile and full regression audit",
+    "Real authentication, financial transactions or betting submission",
+    "Full public repetition of local detailed UI checks"
+  ],
+  "handoff": {
+    "tabId": "18",
+    "mode": "european",
+    "rightRail": "top",
+    "viewportOverrideReset": true,
+    "existingAuthenticationAndSlipStatePreserved": true
+  },
+  "handoffNote": "Background implementation owner kept public tab18 as deliverable; no open_in_codex foreground navigation. Stop after coordinator report and wait for user feedback."
+}

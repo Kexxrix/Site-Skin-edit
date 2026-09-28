@@ -1,0 +1,172 @@
+{
+  "status": "completed",
+  "task": "ALDEBARAN utility menu icon color",
+  "date": "2026-09-28",
+  "baseline": {
+    "version": 22,
+    "commit_sha": "fd3356b6b2814b269c81e3bec3112ff999a1570b",
+    "sourceOpenedWithOfficialWorkflow": true,
+    "sourceAndPublicAudienceConfirmed": true,
+    "dirtyFilesBefore": []
+  },
+  "publication": {
+    "source": {
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+      "commit_sha": "6be8c176b374999501952d24520c8411b29b153f",
+      "verified_remote_sha": "6be8c176b374999501952d24520c8411b29b153f",
+      "css_sha256": "f53c9c0536646426d63e55bff59eda0eb0f0c96de4d2da93152a3524e1f21378",
+      "parent": "fd3356b6b2814b269c81e3bec3112ff999a1570b",
+      "working_tree_clean": true
+    },
+    "package": {
+      "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/utility-icon-color-20260928/implementation/aldebaran-utility-icon-color.tar.gz",
+      "requiredEntriesPresent": true,
+      "entries": 351,
+      "archiveSha256": "B74A087C4F0B7A8239F4B24C5B4A9580A26D69EA464CA35865FFBFB952724054",
+      "cssSha256": "F53C9C0536646426D63E55BFF59EDA0EB0F0C96DE4D2DA93152A3524E1F21378",
+      "gitAuthorConfigured": true
+    },
+    "version": {
+      "id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_b18020b377348191b72cf159dde3bda5",
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "version_number": 23,
+      "source": {
+        "commit_sha": "6be8c176b374999501952d24520c8411b29b153f"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000f9fc820683ed1f00530ab859",
+        "content_hash": "sha256:69ccc65e667e72c38c7c921730c8a0f2d0914ef3e62377a6958098175031de66",
+        "size_bytes": 34846720,
+        "file_count": 291
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6ab9cdcd29b88191901e97dcc6438c3e",
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "title": "ALDEBARAN · 스포츠",
+      "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_b18020b377348191b72cf159dde3bda5",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://aldebaran.kexxadrix.chatgpt.site",
+      "has_mcp": null,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+      "failure_message": null,
+      "env_set_revision": 0,
+      "updated_at": "2026-09-28T02:15:59.790903+00:00"
+    }
+  },
+  "changedFiles": [
+    {
+      "path": "app/aldebaran-wog-r5.css",
+      "line": 60,
+      "selector": ".ab5-notice-links svg",
+      "property": "color",
+      "addedValue": "var(--ab5-small-accent)",
+      "resolvedValue": "#FCD73E"
+    }
+  ],
+  "sourceDiff": {
+    "files": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "propertiesChanged": 1,
+    "tsxChanged": false
+  },
+  "verification": {
+    "localUrl": "http://localhost:5303/",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zoom": 1,
+    "devicePixelRatio": 1,
+    "fonts": "loaded",
+    "labels": [
+      "공지사항",
+      "이벤트게시판",
+      "출석체크",
+      "고객센터",
+      "이용규정"
+    ],
+    "defaultAndHoverIconColor": "rgb(252, 215, 62)",
+    "defaultAndHoverIconStroke": "rgb(252, 215, 62)",
+    "normalTextColorPreserved": "rgb(245, 244, 244)",
+    "hoverTextColorPreserved": "rgb(255, 100, 31)",
+    "iconSizePreserved": [
+      12,
+      12
+    ],
+    "iconTextGapPreserved": 4,
+    "navGapPreserved": 14,
+    "allFiveDefaultOtherPropertiesUnchanged": true,
+    "allFiveHoverOtherPropertiesUnchanged": true,
+    "navGeometryAndStyleUnchanged": true,
+    "visualCheck": "Passed one 1920x1080 actual rendered screenshot; top utility icons yellow, text and layout preserved",
+    "console": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "frameworkOverlay": false,
+    "interaction": "Pointer hover on each of the five target buttons, before and after, then pointer removed",
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "exitCode": 0,
+      "result": "passed",
+      "runs": 1
+    },
+    "deployment": {
+      "result": "succeeded",
+      "verification": "Native Sites terminal result with exact saved version and URL; no additional public browser regression"
+    },
+    "viewportOverrideReset": true,
+    "userPublicTabReloaded": false,
+    "menusClicked": false
+  },
+  "publishingRecovery": {
+    "issue": "Sites helper path disappeared after successful source opening; sites plugin directory absent",
+    "missingPath": "C:/Users/User/.codex/plugins/cache/openai-curated-remote/sites/0.1.71/scripts/site-workflow.mjs",
+    "unsuccessfulWorkflowLaunches": 1,
+    "resolution": "Used existing Git and tar with official Sites write credential and native save/deploy calls, as explicitly authorized by coordination",
+    "sourceProof": "Checked exact remote parent and local HEAD, clean index, sole approved CSS-property diff and packaged source SHA-256 before commit; non-force push; verified remote HEAD equals saved source SHA",
+    "artifactProof": "Successful npm build; same prior successful dist/server + dist/client + dist/.openai/hosting.json archive structure; required entries and hash checked; native archive validation/save accepted",
+    "credentialHandling": "Credential read from hidden stdin; ephemeral Git config environment; never written to files or command arguments",
+    "noReinstall": true,
+    "noNewDeploymentSystem": true
+  },
+  "warnings": [
+    "Existing bundle-size warning",
+    "Existing plugin timing warning",
+    "Existing route classification warning"
+  ],
+  "notChanged": [
+    "Utility menu text and existing text hover",
+    "Icon shape, size, position, gap and opacity",
+    "All other menus/panels/styles",
+    "TSX and event handlers",
+    "Data, assets, sports and slip logic",
+    "MERCURY/SIRIUS and GitHub backup",
+    "AGENTS/STATE/DESIGN_SPEC/DECISIONS"
+  ],
+  "limits": [
+    "No unrelated transaction, slip, sports, mobile or broad regression tests",
+    "No public browser reload/QA after deployment; native terminal publication verified",
+    "Sites helper installation remains absent; this release completed through verified native tools"
+  ],
+  "evidence": [
+    "before.json",
+    "after.json",
+    "comparison.json",
+    "console.json",
+    "after-1920.png",
+    "source.diff",
+    "final-source.diff",
+    "build.log",
+    "final-publication.json"
+  ],
+  "workingTreeClean": true
+}

@@ -1,33 +1,43 @@
 import records from './match-records.json';
 import sports from './sport-menu.json';
 import progressSnapshots from './live-snapshots.json';
+import fixedOdds from './prematch-r15.json';
+export type Pick = { label: string; price: number; priceCents?:number; locked?: boolean; key?:string };
+export type Market = { name: string; rule: string; line?: string; picks: Pick[]; key?:string; source?:'local-demo'; group?:string; category?:'result'|'handicap'|'totals'|'other'; canonicalId?:string; templateId?:string; period?:string; settlementScope?:string; subjectId?:string; status?:'active'; variant?:string };
+export type Match = typeof records[number] & { markets: Market[]; sourceKind?:string; datasetVersion?:string };
+export type Selection = { id: string; matchId: string; marketIndex: number; pickIndex: number; sourceKind?:string; datasetVersion?:string };
 
-export type Pick = { label: string; price: number; locked?: boolean };
-export type Market = { name: string; rule: string; line?: string; picks: Pick[] };
-export type Match = typeof records[number] & { markets: Market[] };
-export type Selection = { id: string; matchId: string; marketIndex: number; pickIndex: number };
-const sportImage = (sport:string) => `/sports/r8/mercury-${sport==='hockey'?'ice-hockey':sport}.png`;
-export const sportMenu = sports.map(s=>({...s,logo:s.logo?sportImage(s.id):null}));
-const prices = [[1.84,2.10],[1.56,2.43],[1.82,2.06],[1.08,8.20],[1.78,2.14],[1.32,4.80,7.10],[3.15,3.50,2.125],[2.15,3.45,3.10],[1.88,3.65,3.90]];
-const totals = ['8.5','218.5','5.5','169.5','48.5','3.5','2.5','2.5','2.5'];
-const handicaps = ['1.5','3.5','1.5','15.5','2.5','1.5','0.5','0.5','0.5'];
-export const matches: Match[] = records.map((record,i)=>{
-  const football = record.sport==='soccer';
-  const rule = football?'정규시간 90분':'연장 포함';
-  const template=i<9?i:football?5+(i%4):record.sport==='baseball'?0:record.leagueKey==='wnba'?3:record.sport==='basketball'?1:record.sport==='hockey'?2:4;
-  const snapshot=(progressSnapshots as Record<string,Partial<Match>>)[record.id];
-  return {...record,...snapshot,sportLogo:sportImage(record.sport),markets:[
-    {name:football?'승무패':'승패',rule:record.sport==='american-football'?'연장 포함 · 무승부 반환':rule,picks:football?[{label:'홈',price:prices[template][0]},{label:'무',price:prices[template][1]},{label:'원정',price:prices[template][2]}]:[{label:'홈',price:prices[template][0]},{label:'원정',price:prices[template][1]}]},
-    {name:'오버 / 언더',rule,line:totals[template],picks:[{label:'오버',price:1.91},{label:'언더',price:1.87}]},
-    {name:record.sport==='baseball'?'런 핸디캡':record.sport==='hockey'?'퍽 핸디캡':'핸디캡',rule,line:`홈 −${handicaps[template]}`,picks:[{label:`홈 −${handicaps[template]}`,price:1.78},{label:`원정 +${handicaps[template]}`,price:2.03,locked:i===0}]},
-  ]};
-}).sort((a,b)=>Number(b.state==='in')-Number(a.state==='in'));
-export const sections = [
-  {id:'live',title:'실시간 스포츠',english:'LIVE SPORTS'},
-  {id:'soon',title:'국내형 스포츠',english:'DOMESTIC SPORTS'},
-  {id:'popular',title:'인기경기',english:'POPULAR MATCH'},
+const sportImage=(sport:string)=>'/sports/r8/mercury-'+(sport==='hockey'?'ice-hockey':sport)+'.png';
+export const sportIcons:Record<string,string>=Object.fromEntries(sports.map(s=>[s.id,sportImage(s.id)]));
+Object.assign(sportIcons,{all:'/sports/polish/mercury-sport-all.png',formula1:'/sports/polish/mercury-sport-formula1.png',boxing:'/sports/polish/mercury-sport-boxing.png',mma:'/sports/polish/mercury-sport-mma.png',motorsports:'/sports/polish/mercury-sport-motorsport.png'});
+export const sportMenu=[
+  ...['all','soccer','basketball','baseball','volleyball','hockey'].map(id=>({...sports.find(s=>s.id===id)!,logo:sportIcons[id]})),
+  ...[['formula1','포뮬라1'],['boxing','복싱'],['mma','MMA'],['motorsports','모터스포츠']].map(([id,name])=>({id,name,logo:sportIcons[id]})),
 ];
-export const priceText = (n:number) => n.toFixed(Number(n.toFixed(2))===n?2:3);
+const fixedFixtures=fixedOdds.fixtures as Record<string,{sport:string;markets:Market[]}>;
+/** Same active prematch set and fixed markets as ALDEBARAN; original records remain intact. */
+export const matches:Match[]=[...records.filter(record=>record.sport!=='american-football'),...fixedOdds.baseballFixtures]
+  .map(record=>({...record,...(progressSnapshots as Record<string,Partial<Match>>)[record.id]} as Match))
+  .filter(record=>record.state==='pre'&&!record.completed)
+  .map(record=>{
+    const fixed=fixedFixtures[record.id];
+    if(!fixed||fixed.sport!==record.sport)throw new Error('Missing fixed prematch odds: '+record.id);
+    return {...record,sportLogo:sportImage(record.sport),sourceKind:fixedOdds.sourceKind,datasetVersion:fixedOdds.datasetVersion,markets:fixed.markets};
+  });
+const oddsFormatter=new Intl.NumberFormat('en-US',{useGrouping:false,minimumFractionDigits:2,maximumFractionDigits:2});
+export function priceText(value:number|string|bigint,denominator=BigInt(1)):string {
+  if(typeof value==='bigint') {
+    if(value<BigInt(0)||denominator<=BigInt(0))return '—';
+    const rounded=(value*BigInt(100)+denominator/BigInt(2))/denominator;
+    return `${rounded/BigInt(100)}.${String(rounded%BigInt(100)).padStart(2,'0')}`;
+  }
+  if(typeof value==='string') {
+    const decimal=value.match(/^(\d+)(?:\.(\d+))?$/);
+    return decimal?priceText(BigInt(decimal[1]+(decimal[2]??'')),BigInt(10)**BigInt(decimal[2]?.length??0)):'—';
+  }
+  return typeof value==='number'&&Number.isFinite(value)&&value>=0?oddsFormatter.format(value):'—';
+}
+export const selectionId=(match:Match,m:number,p:number)=>match.markets[m].key?`${match.id}:${match.sport}:${match.markets[m].key}:${match.markets[m].line??'none'}:${match.markets[m].picks[p].key}`:`${match.id}-${m}-${p}`;
 export const moneyText = (n:number|string) => Number(n).toLocaleString('ko-KR');
 export const DEMO = {initialBalance:1000000,minStake:1000,maxStake:100000,maxHistory:30,storageKey:'mercury-demo-r6-v1'};
 export type Receipt = {id:string;createdAt:string;stake:number;odds:string;potential:string;picks:{match:string;market:string;pick:string;price:string}[]};
@@ -44,7 +54,7 @@ export function totalsFor(selected:Selection[],stake:number) {
   const rounded=(numerator*BigInt(1000)+denominator/BigInt(2))/denominator;
   const odds=selected.length?`${rounded/BigInt(1000)}.${String(rounded%BigInt(1000)).padStart(3,'0')}`:'0.000';
   const potential=selected.length?(BigInt(stake)*numerator/denominator).toString():'0';
-  return {odds,potential};
+  return {odds,displayOdds:selected.length?priceText(numerator,denominator):priceText(0),potential};
 }
 
 export function validateStake(raw:string,balance:number) {

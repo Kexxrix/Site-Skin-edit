@@ -1,0 +1,266 @@
+{
+  "purpose": "Implementation selection plan; not a generated market feed or fixed badge count.",
+  "pipeline": [
+    "read current fixtures and supported market/price schema",
+    "build real 61-fixture demo inventory",
+    "assign reproducible fixture capability profiles",
+    "expand valid types x supported periods x subjects x modeled lines",
+    "price from coherent existing synthetic models",
+    "deduplicate canonical aliases and validate renderer support",
+    "derive badge/detail/filters/slip from same normalized collection",
+    "report actual per-fixture and per-type coverage"
+  ],
+  "profile_policy": {
+    "compact": "Use where event format or reliable support is limited. Preserve genuinely applicable types.",
+    "standard": "Fully implement common team and period markets appropriate to the sport.",
+    "extended": "Add supported advanced statistics, more meaningful alternate lines, and verified player markets.",
+    "assignment": "fixture metadata and explicitly recorded capabilities, with fixture-id/version based deterministic demo variation; not arbitrary target numbers",
+    "count_targets_are": "design ranges for rich examples, not universal quotas or observed site averages"
+  },
+  "sports": {
+    "soccer": {
+      "team_target": [
+        55,
+        100
+      ],
+      "player_target": [
+        100,
+        220
+      ],
+      "required": [
+        "soccer.result_3way",
+        "soccer.double_chance",
+        "soccer.draw_no_bet",
+        "soccer.asian_handicap",
+        "soccer.european_handicap",
+        "soccer.total_goals",
+        "soccer.team_total_goals",
+        "soccer.btts",
+        "soccer.correct_score",
+        "soccer.exact_total_goals",
+        "soccer.goals_odd_even",
+        "soccer.half_full_result",
+        "soccer.first_team_to_score",
+        "soccer.team_clean_sheet"
+      ],
+      "statistics": [
+        "soccer.corners_total",
+        "soccer.corners_handicap",
+        "soccer.team_corners",
+        "soccer.corners_most",
+        "soccer.cards_total",
+        "soccer.team_cards",
+        "soccer.red_card",
+        "soccer.first_card_team",
+        "soccer.match_shots",
+        "soccer.team_shots",
+        "soccer.match_shots_on_target",
+        "soccer.team_shots_on_target"
+      ],
+      "periods": [
+        "regulation",
+        "first_half",
+        "second_half"
+      ],
+      "line_rule": "game-specific modeled center; quarter/half/integer support only when renderer and refund semantics exist; no negative total-goals lines",
+      "specific": "to_qualify only with knockout context; use supported player templates with verified roster",
+      "player_template_ids": [
+        "soccer.player_anytime_goal",
+        "soccer.player_first_goal",
+        "soccer.player_last_goal",
+        "soccer.player_multi_goal",
+        "soccer.player_assist",
+        "soccer.player_shots",
+        "soccer.player_shots_on_target",
+        "soccer.player_card"
+      ]
+    },
+    "basketball": {
+      "team_target": [
+        60,
+        110
+      ],
+      "player_target": [
+        150,
+        300
+      ],
+      "required": [
+        "basketball.moneyline",
+        "basketball.spread",
+        "basketball.total_points",
+        "basketball.team_total_points",
+        "basketball.half_full_result",
+        "basketball.highest_scoring_half",
+        "basketball.highest_scoring_quarter"
+      ],
+      "statistics": [
+        "basketball.wire_to_wire"
+      ],
+      "periods": [
+        "full_game",
+        "first_half",
+        "second_half",
+        "quarter_1",
+        "quarter_2",
+        "quarter_3",
+        "quarter_4"
+      ],
+      "line_rule": "league-format dependent periods and per-game scoring model; varied alternate spread/total/team lines",
+      "specific": "OT scope stored per market; apply supported player templates and combined-stat models with verified roster",
+      "player_template_ids": [
+        "basketball.player_points",
+        "basketball.player_rebounds",
+        "basketball.player_assists",
+        "basketball.player_threes",
+        "basketball.player_pra",
+        "basketball.player_pr",
+        "basketball.player_pa",
+        "basketball.player_ra",
+        "basketball.player_double_double",
+        "basketball.player_triple_double",
+        "basketball.player_quarter_points",
+        "basketball.first_points",
+        "basketball.first_field_goal",
+        "basketball.first_rebound",
+        "basketball.first_assist",
+        "basketball.most_player_points"
+      ]
+    },
+    "baseball": {
+      "team_target": [
+        45,
+        90
+      ],
+      "player_target": [
+        100,
+        200
+      ],
+      "required": [
+        "baseball.moneyline",
+        "baseball.run_line",
+        "baseball.total_runs",
+        "baseball.team_total_runs",
+        "baseball.inning_result",
+        "baseball.inning_total",
+        "baseball.first_inning_score",
+        "baseball.double_result",
+        "baseball.runs_odd_even",
+        "baseball.winning_margin",
+        "baseball.first_team_to_score",
+        "baseball.last_team_to_score",
+        "baseball.race_to_runs"
+      ],
+      "statistics": [
+        "baseball.half_inning_total",
+        "baseball.highest_scoring_inning",
+        "baseball.inning_correct_score",
+        "baseball.team_most_hits"
+      ],
+      "periods": [
+        "full_game",
+        "first_3_innings",
+        "first_5_innings",
+        "first_7_innings",
+        "selected_single_innings",
+        "selected_half_innings"
+      ],
+      "line_rule": "per-game run model; group innings distinct from a single inning; dedupe first-inning 0.5 total and NRFI/YRFI",
+      "specific": "verified starter/batting roster required for pitcher/batter templates; no quarterback/quarter terminology",
+      "player_template_ids": [
+        "baseball.pitcher_strikeouts",
+        "baseball.pitcher_strikeout_matchup",
+        "baseball.batter_hits",
+        "baseball.batter_home_runs",
+        "baseball.batter_rbi",
+        "baseball.batter_total_bases",
+        "baseball.batter_runs",
+        "baseball.batter_stolen_bases"
+      ]
+    },
+    "ice_hockey": {
+      "team_target": [
+        40,
+        85
+      ],
+      "player_target": [
+        80,
+        160
+      ],
+      "required": [
+        "ice_hockey.moneyline",
+        "ice_hockey.regulation_result",
+        "ice_hockey.puck_line",
+        "ice_hockey.total_goals",
+        "ice_hockey.team_total_goals",
+        "ice_hockey.period_result",
+        "ice_hockey.period_handicap",
+        "ice_hockey.period_total_goals",
+        "ice_hockey.period_team_total",
+        "ice_hockey.draw_no_bet",
+        "ice_hockey.double_chance",
+        "ice_hockey.exact_total_goals",
+        "ice_hockey.team_exact_goals",
+        "ice_hockey.goals_odd_even",
+        "ice_hockey.team_goals_odd_even",
+        "ice_hockey.first_team_to_score",
+        "ice_hockey.last_team_to_score"
+      ],
+      "statistics": [
+        "ice_hockey.puck_line_3way",
+        "ice_hockey.total_3way",
+        "ice_hockey.race_to_goals",
+        "ice_hockey.most_periods_won",
+        "ice_hockey.highest_scoring_period",
+        "ice_hockey.tied_after_regulation"
+      ],
+      "periods": [
+        "full_game_with_OT_SO",
+        "regulation_60_minutes",
+        "period_1",
+        "period_2",
+        "period_3"
+      ],
+      "line_rule": "per-game goal model and supported alternate puck/total/team lines; exact settlement scope retained",
+      "specific": "player goals/points/shots need verified roster; saves need verified starting goalie",
+      "player_template_ids": [
+        "ice_hockey.player_anytime_goal",
+        "ice_hockey.player_first_goal",
+        "ice_hockey.player_last_goal",
+        "ice_hockey.player_multi_goal",
+        "ice_hockey.player_period_goal",
+        "ice_hockey.player_shots_on_goal",
+        "ice_hockey.player_points",
+        "ice_hockey.goalie_saves"
+      ]
+    }
+  },
+  "alias_notes": [
+    "draw_no_bet equals asian_handicap_0 for identical scope",
+    "NRFI/YRFI equals first_inning_total_0.5",
+    "player_2_plus equals player_over_1.5 for identical statistic and scope"
+  ],
+  "line_variation_guidance": {
+    "full_game_main_markets": [
+      3,
+      5,
+      7
+    ],
+    "subperiod_markets": [
+      1,
+      3
+    ],
+    "team_total_markets": [
+      1,
+      3
+    ],
+    "meaning": "Candidate line counts to choose from by fixture profile; every selected line needs a valid distinct modeled question and price. No forced padding."
+  },
+  "coverage_reporting": "For every catalog template, record implemented or excluded with reason; all eligible supported families should be considered within this batch. Do not declare research-only template files as completed UI.",
+  "data_constraints": [
+    "no invented real-player identities or false team affiliations",
+    "do not represent synthetic odds or fixtures as live-feed data",
+    "no missing player placeholders counted",
+    "no unsupported settled-scope assumptions",
+    "no live-only/futures/SGP combination inflation"
+  ]
+}

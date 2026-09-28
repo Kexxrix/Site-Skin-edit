@@ -1,0 +1,174 @@
+{
+  "status": "complete_pending_user_visual_feedback",
+  "completedAt": "2026-09-22T20:59:59.4889511+09:00",
+  "revision": "R12",
+  "ownerThread": "01a0a97b-1268-7cf3-8aad-ba460ecf4f98",
+  "ownerTitle": "스포츠 데모 01 대표 UI 제작",
+  "ownerCompletion": "runs/r12/implementation/completion.json",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "access": "public",
+  "baselineCommit": "b7782ba699fdb4aaa9a59513bbc745bee8727f06",
+  "sourceCommit": "c97d42c9630670780b26c2ba00541a4e7e69bd83",
+  "workingTreeClean": true,
+  "publicVersion": 12,
+  "versionId": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_21c6cd595d3081918039d13ca728360d",
+  "deployment": {
+    "id": "appgdep_6ab26be25548819186582fd6d9c3258e",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_21c6cd595d3081918039d13ca728360d",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-22T20:52:27.063534+09:00"
+  },
+  "changedSiteFiles": [
+    "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site\\app\\aldebaran-wog-r5.css"
+  ],
+  "changes": {
+    "normalCentralDecimalOdds": "#50DCD9",
+    "handicapTotalThresholds": "#B7B7B7",
+    "headerNewLiveAndMoreBetFill": "#F1B000",
+    "darkForegroundPreserved": "#171717",
+    "brandAndSelectionPreserved": "#FF641F",
+    "sportbar": {
+      "background": "#191919",
+      "bottomRule": "inset 0 -1px 0 #383838",
+      "geometry": "unchanged"
+    },
+    "matchList": {
+      "background": "#191919",
+      "radiusPx": 8,
+      "visibleOuterBorder": false,
+      "bothModes": true
+    },
+    "detailMarket": {
+      "background": "transparent",
+      "outerBorder": "1px solid #383838",
+      "radiusPx": 8,
+      "existingGeometry": "unchanged",
+      "headerFilterDuplicateRule": "transparent while preserving existing 1px space"
+    }
+  },
+  "checks": {
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "runs": 1,
+      "exitCode": 0
+    },
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "runs": 1,
+      "exitCode": 0
+    },
+    "workflowExit": 0
+  },
+  "screenshots": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r12\\public\\aldebaran-r12-european-1920.png",
+      "format": "PNG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 431527,
+      "sha256": "FAE7C9C6299CC07BF8E11EF88EAF7865C7B65009FD5EC48A35C052EE66A0D8FA",
+      "ownerVisualReview": true,
+      "coordinatorVisualReview": true
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r12\\public\\aldebaran-r12-domestic-1920.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 220841,
+      "sha256": "C82A870BEC455D8DF74F9C577EB4D12AD6E408EF97FA63B5749FE8027F8C80C4",
+      "ownerVisualReview": true,
+      "coordinatorVisualReview": true
+    }
+  ],
+  "operatingDocuments": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\AGENTS.md",
+      "previousFullTextPreserved": true,
+      "sha256": "23CDDD406AF707F45D44B0C18EED0494BDC0D209F98D89C035B82710297E055D"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\STATE.md",
+      "previousFullTextPreserved": true,
+      "sha256": "A4051010508A1B265574355F6CCD69C4C85AFE795082C7301CA2DDD87D807D10"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\DESIGN_SPEC.md",
+      "previousFullTextPreserved": true,
+      "sha256": "544EB0FB34073C60F7DBDAD13F5625607BFD621612EF3789C718C3CB2429A654"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\DECISIONS.md",
+      "previousFullTextPreserved": true,
+      "sha256": "E91AEF9D48DB5B242C1B6884F0DDE8D91AE32E741E0896794B3BCD9E8E379C1B"
+    }
+  ],
+  "publicConfirmation": {
+    "url": "https://aldebaran.kexxadrix.chatgpt.site/",
+    "reflection": {
+      "detailBorder": "1px solid rgb(56, 56, 56)",
+      "keep": "true",
+      "lineColor": "rgb(183, 183, 183)",
+      "listBackground": "rgb(25, 25, 25)",
+      "loggedIn": true,
+      "mode": "european",
+      "newChip": "rgb(241, 176, 0)",
+      "oddsColor": "rgb(80, 220, 217)",
+      "selected": [],
+      "stake": "",
+      "viewport": [
+        1920,
+        1080,
+        1
+      ]
+    },
+    "finalState": {
+      "keep": "true",
+      "loggedIn": true,
+      "selected": [],
+      "stake": ""
+    },
+    "originalPublicTabUntouched": true,
+    "publicActions": "mode navigation only; no selections, input, account or history actions",
+    "screenshots": [
+      "aldebaran-r12-european-1920.png",
+      "aldebaran-r12-domestic-1920.jpg"
+    ],
+    "captureNote": "Some CDP snapshots had partial repaint artifacts. European full repaint PNG and domestic fullPage JPEG were visually checked; no source changes were made for capture handling.",
+    "detailedLocalQARepeated": false
+  },
+  "preserved": [
+    "fixed 1920 layout and 20/14/12 sports tabs",
+    "European independent and domestic shared scrolling",
+    "all production assets and fonts including R11 header/video/banner/photos",
+    "fixtures/odds precision/selection IDs/slip/storage/history",
+    "original public tab and input state",
+    "MERCURY/SIRIUS and public GitHub backup"
+  ],
+  "warnings": [
+    "existing build chunk-size warning",
+    "existing plugin timing warning",
+    "vinext route classification remains unknown in build output"
+  ],
+  "limits": [
+    "bounded R12 checks only; no full regression suite",
+    "no authentication/account creation/payment/bet submission",
+    "visual acceptance remains with user"
+  ],
+  "coordinatorScope": "Root operating documents and saved evidence review only. No duplicate app edits, builds, or browser QA.",
+  "browserHandoff": {
+    "foregroundConfirmed": false,
+    "requested": true,
+    "result": "queued",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site/"
+  },
+  "nextAction": "Wait for user feedback. No automatic next polish."
+}

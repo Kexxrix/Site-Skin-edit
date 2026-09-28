@@ -45,7 +45,7 @@ export default function Page() {
       if(stored?.keep===true){
         setKeep(true);
         const ids=new Set(Array.isArray(stored.ids)?stored.ids:[]),restored:Selection[]=[];
-        for(const match of matches){if(match.completed)continue;let found=false;for(let m=0;m<match.markets.length&&!found;m++)for(let p=0;p<match.markets[m].picks.length;p++){const id=selectionId(match,m,p);if(ids.has(id)&&!match.markets[m].picks[p].locked){restored.push({id,matchId:match.id,marketIndex:m,pickIndex:p});found=true;break;}}}
+        for(const match of matches){if(match.completed)continue;let found=false;for(let m=0;m<match.markets.length&&!found;m++)for(let p=0;p<match.markets[m].picks.length;p++){const id=selectionId(match,m,p);if(ids.has(id)&&!match.markets[m].picks[p].locked){restored.push({id,matchId:match.id,marketIndex:m,pickIndex:p,sourceKind:match.sourceKind,datasetVersion:match.datasetVersion});found=true;break;}}}
         setSelected(restored);if(typeof stored.stake==='string')setStake(stored.stake);
       }
     } catch {setStorageError('저장된 슬립을 불러오지 못했습니다.');}
@@ -59,20 +59,20 @@ export default function Page() {
   },[session,ready]);
   useEffect(()=>{
     if(!ready)return;
-    try {localStorage.setItem(DEMO.storageKey+'-slip',JSON.stringify(keep?{keep,ids:selected.map(s=>s.id),stake}:{keep:false}));}
+    try {localStorage.setItem(DEMO.storageKey+'-slip',JSON.stringify(keep?{keep,ids:selected.map(s=>s.id),stake,selectionSources:selected.map(s=>({id:s.id,sourceKind:s.sourceKind,datasetVersion:s.datasetVersion}))}:{keep:false}));}
     catch {setStorageError('슬립을 저장하지 못했습니다.');}
   },[ready,keep,selected,stake]);
   function toggle(match:Match,m:number,p:number) {
     if(match.completed||match.markets[m].picks[p].locked)return;
     const id=selectionId(match,m,p);
-    setSelected(prev=>prev.some(s=>s.id===id)?prev.filter(s=>s.id!==id):[...prev.filter(s=>s.matchId!==match.id),{id,matchId:match.id,marketIndex:m,pickIndex:p}]);
+    setSelected(prev=>prev.some(s=>s.id===id)?prev.filter(s=>s.id!==id):[...prev.filter(s=>s.matchId!==match.id),{id,matchId:match.id,marketIndex:m,pickIndex:p,sourceKind:match.sourceKind,datasetVersion:match.datasetVersion}]);
   }
   function logout(){setSession(prev=>({...prev,loggedIn:false}));}
   const checked=validateStake(stake,session.balance);
   const total=totalsFor(selected,checked.value);
   function confirmExperience() {
     if(!session.loggedIn||!selected.length||checked.error)return;
-    const receipt:Receipt={id:crypto.randomUUID(),createdAt:new Date().toISOString(),stake:checked.value,odds:total.rawOdds,potential:total.potential,picks:selected.map(s=>{const match=matches.find(m=>m.id===s.matchId)!,market=match.markets[s.marketIndex],pick=market.picks[s.pickIndex];return {match:`${match.home.name} vs ${match.away.name}`,market:`${market.name} ${market.line||''} · ${market.rule}`,pick:pick.label,price:String(pick.price)};})};
+    const receipt:Receipt={id:crypto.randomUUID(),createdAt:new Date().toISOString(),stake:checked.value,odds:total.rawOdds,potential:total.potential,picks:selected.map(s=>{const match=matches.find(m=>m.id===s.matchId)!,market=match.markets[s.marketIndex],pick=market.picks[s.pickIndex];return {match:`${match.home.name} vs ${match.away.name}`,market:`${market.name} ${market.line||''} · ${market.rule}`,pick:pick.label,price:String(pick.price),sourceKind:match.sourceKind,datasetVersion:match.datasetVersion,fixtureId:match.id,selectionId:s.id};})};
     setSession(prev=>({...prev,balance:prev.balance-checked.value,history:[receipt,...prev.history].slice(0,DEMO.maxHistory)}));
     setSelected([]);setStake('');setStakeTouched(false);setOverlay({kind:'receipt',receipt});
   }

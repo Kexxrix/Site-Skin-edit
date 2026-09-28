@@ -1,0 +1,89 @@
+{
+  "revision": "R12",
+  "status": "handoff_ready_implementation_pending",
+  "baseline": {
+    "description": "latest local ALDEBARAN after user-reported R11 completion",
+    "commit": null,
+    "publicVersion": null,
+    "preserveLaterUserEdits": true,
+    "resetToEarlierVersion": false,
+    "screenshotsAreDeploymentEvidence": false
+  },
+  "changes": {
+    "R12-01": {
+      "brand": "#FF641F",
+      "normalActualOdds": "#50DCD9",
+      "marketLineValues": "#B7B7B7",
+      "chipsAndMoreMarketsFill": "#F1B000",
+      "preserveSelectedOddsLegibility": true,
+      "modifyOddsData": false,
+      "scope": "central match cards/detail market odds and specified header chips"
+    },
+    "R12-02": {
+      "scope": "shared central sports toolbar",
+      "background": "#191919",
+      "bottomRule": {
+        "widthPx": 1,
+        "color": "#383838"
+      },
+      "fullOuterBorder": false,
+      "preserveGeometryAndButtonSizing": true
+    },
+    "R12-03": {
+      "scope": "central match-list area including league headers and match cards",
+      "background": "#191919",
+      "radiusPx": 8,
+      "visibleOuterBorder": false,
+      "preserveInnerFrames": true,
+      "preserveScrollContainer": true
+    },
+    "R12-04": {
+      "scope": "central detail market set including match header, filters and all markets",
+      "background": "transparent",
+      "outerBorder": {
+        "widthPx": 1,
+        "color": "#383838",
+        "layers": 1
+      },
+      "preserveInnerCardBackgrounds": true,
+      "preserveHeaderAndFilterSurfaces": true,
+      "preserveExistingRadiusOrMatchHeader": true,
+      "preserveScrollContainer": true
+    }
+  },
+  "modePolicy": {
+    "overseas": "left match-list surface; right market outline; independent scrolling",
+    "domestic": "shared two-column match-list surface; common toolbar and palette; shared scrolling; no detail market"
+  },
+  "preserve": [
+    "fixed 1920 layout",
+    "current fonts and dimensions",
+    "20/14/12 px sports-tab contents",
+    "content-sized sports tabs",
+    "R11 header video/logo",
+    "right service banner 40% overlay",
+    "latest CASINO/SLOT assets",
+    "inner card frames",
+    "1px market orange accents",
+    "prematch VS and two-decimal odds",
+    "fixtures/selection IDs/slip/history",
+    "existing header active/disabled/no-hover behavior"
+  ],
+  "outOfScope": [
+    "new assets/dependencies/plugins",
+    "new animations/hover",
+    "odds model changes",
+    "WOG/Figma research",
+    "global redesign/automatic full polish",
+    "full QA/Jev",
+    "MERCURY/SIRIUS rollout",
+    "public GitHub backup sync"
+  ],
+  "completion": {
+    "build": "existing build once; rerun only for a failure",
+    "review": "changed surfaces and representative interactions only",
+    "deployment": "existing ALDEBARAN flow to same canonical URL",
+    "report": "domestic/overseas screenshots; actual commit/deployment; limitations",
+    "stopForUserFeedback": true
+  }
+}

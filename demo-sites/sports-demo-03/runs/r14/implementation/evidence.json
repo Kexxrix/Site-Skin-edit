@@ -1,0 +1,315 @@
+{
+  "scope": "Exactly R14 numeric-plus label and six right-rail banner sources",
+  "baselineCommit": "0996e1cb909b69531064bed54911f3103ea0e47d",
+  "baselinePublicVersion": 14,
+  "viewport": [
+    1920,
+    1080,
+    1
+  ],
+  "metrics": {
+    "oneDigit": {
+      "aria": "토론토 랩터스 상세 마켓 8개",
+      "bg": "rgb(241, 176, 0)",
+      "border": "1px solid rgb(241, 176, 0)",
+      "box": {
+        "cx": 918.21875,
+        "cy": 229,
+        "h": 24,
+        "w": 27.5625,
+        "x": 904.4375,
+        "y": 217
+      },
+      "children": 1,
+      "color": "rgb(23, 23, 23)",
+      "filter": "none",
+      "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "gap": "0px",
+      "label": "8+",
+      "letterSpacing": "normal",
+      "lineHeight": "12px",
+      "match": "record-401902644",
+      "minWidth": "0px",
+      "number": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgb(23, 23, 23)",
+        "box": {
+          "cx": 918.21875,
+          "cy": 229,
+          "h": 12,
+          "w": 15.5625,
+          "x": 910.4375,
+          "y": 223
+        },
+        "color": "rgb(23, 23, 23)",
+        "filter": "none",
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "gap": "normal",
+        "letterSpacing": "normal",
+        "lineHeight": "12px",
+        "opacity": "1",
+        "padding": "0px",
+        "radius": "0px",
+        "transform": "none"
+      },
+      "opacity": "1",
+      "overflow": false,
+      "padding": "0px 5px",
+      "radius": "5px",
+      "right": "0px",
+      "svgCount": 0,
+      "transform": "none"
+    },
+    "twoDigit": {
+      "aria": "바이에른 뮌헨 상세 마켓 10개",
+      "bg": "rgb(241, 176, 0)",
+      "border": "1px solid rgb(241, 176, 0)",
+      "box": {
+        "cx": 915.3046875,
+        "cy": 7285,
+        "h": 24,
+        "w": 33.390625,
+        "x": 898.609375,
+        "y": 7273
+      },
+      "children": 1,
+      "color": "rgb(23, 23, 23)",
+      "filter": "none",
+      "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "gap": "0px",
+      "label": "10+",
+      "letterSpacing": "normal",
+      "lineHeight": "12px",
+      "match": "record-401884790",
+      "minWidth": "0px",
+      "number": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "0px solid rgb(23, 23, 23)",
+        "box": {
+          "cx": 915.3046875,
+          "cy": 7285,
+          "h": 12,
+          "w": 21.390625,
+          "x": 904.609375,
+          "y": 7279
+        },
+        "color": "rgb(23, 23, 23)",
+        "filter": "none",
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "gap": "normal",
+        "letterSpacing": "normal",
+        "lineHeight": "12px",
+        "opacity": "1",
+        "padding": "0px",
+        "radius": "0px",
+        "transform": "none"
+      },
+      "opacity": "1",
+      "overflow": false,
+      "padding": "0px 5px",
+      "radius": "5px",
+      "right": "0px",
+      "svgCount": 0,
+      "transform": "none"
+    },
+    "allLabelsCorrect": true,
+    "contentWidthCorrect": true,
+    "bannerGeometryTextStylesUnchanged": true,
+    "bannerStackUnchanged": true,
+    "bannersMapped": true,
+    "singleOverlay": true,
+    "headerLeftAssetsUnchanged": true,
+    "liveUnchanged": true,
+    "letterSpacing": {
+      "authored": "0 on button and span",
+      "computed": [
+        "normal"
+      ],
+      "sourceVerified": true
+    }
+  },
+  "interactions": [
+    {
+      "target": "8+ single label",
+      "expected": "record-401881922",
+      "actual": {
+        "folder": "해외형 폴더선택0폴더",
+        "marked": [
+          "record-401881922"
+        ],
+        "marketScroll": 0,
+        "match": "record-401881922",
+        "selected": []
+      }
+    },
+    {
+      "target": "button padding",
+      "hit": {
+        "tag": "BUTTON",
+        "x": 907.4375,
+        "y": 229
+      },
+      "expected": "record-401902644",
+      "actual": {
+        "folder": "해외형 폴더선택0폴더",
+        "marked": [
+          "record-401902644"
+        ],
+        "marketScroll": 0,
+        "match": "record-401902644",
+        "selected": []
+      }
+    },
+    {
+      "target": "Enter",
+      "expected": "record-401881922",
+      "actual": {
+        "folder": "해외형 폴더선택0폴더",
+        "marked": [
+          "record-401881922"
+        ],
+        "marketScroll": 0,
+        "match": "record-401881922",
+        "selected": []
+      }
+    },
+    {
+      "target": "Space",
+      "expected": "record-401902644",
+      "actual": {
+        "folder": "해외형 폴더선택0폴더",
+        "marked": [
+          "record-401902644"
+        ],
+        "marketScroll": 0,
+        "match": "record-401902644",
+        "selected": []
+      }
+    },
+    {
+      "target": "10+ single label",
+      "expected": "record-401884790",
+      "actual": {
+        "folder": "해외형 폴더선택0폴더",
+        "marked": [
+          "record-401884790"
+        ],
+        "marketScroll": 0,
+        "match": "record-401884790",
+        "selected": []
+      }
+    }
+  ],
+  "parentButtonExclusion": "Unchanged closest(button) guard and existing handler; every checked click/keyboard action selected only expected detail match with no odds/slip changes",
+  "zeroCount": "Existing conditional/count calculation and zero handling unchanged; no zero fixture fabricated",
+  "labelVisualReview": {
+    "oneDigit": "8+ actual view checked",
+    "twoDigit": "10+ actual view checked",
+    "opticalOffsetPx": 0,
+    "reason": "Single text span at 100% appears balanced; no separate glyph offsets or extra label adjustment applied",
+    "font": "existing family;12px/700/line12;letter-spacing authored0"
+  },
+  "bannerReview": {
+    "roleOrder": [
+      "텔레그램 고객센터",
+      "텔레그램 공식채널",
+      "ALDEBARAN 이용안내",
+      "실시간 중계 안내",
+      "스포츠 라인업",
+      "미성년자 이용불가"
+    ],
+    "copyEvidence": "asset-copy.json",
+    "sourceDimensions": [
+      306,
+      61
+    ],
+    "renderedSize": [
+      306,
+      60.625
+    ],
+    "existingAspectRatio": "323/64",
+    "fit": "cover",
+    "originalBytesPreserved": true,
+    "singleBlackOverlayOpacity": 0.4,
+    "htmlTextAboveBackground": true,
+    "extraDarkening": false,
+    "originalFilesRetained": true
+  },
+  "domestic": {
+    "additionalButtonCount": 0,
+    "banners": [
+      {
+        "title": "텔레그램 고객센터",
+        "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"http://localhost:5303/banners/aldebaran/r14/Banner_01.png\")"
+      },
+      {
+        "title": "텔레그램 공식채널",
+        "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"http://localhost:5303/banners/aldebaran/r14/Banner_02.png\")"
+      },
+      {
+        "title": "ALDEBARAN 이용안내",
+        "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"http://localhost:5303/banners/aldebaran/r14/Banner_03.png\")"
+      },
+      {
+        "title": "실시간 중계 안내",
+        "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"http://localhost:5303/banners/aldebaran/r14/Banner_04.png\")"
+      },
+      {
+        "title": "스포츠 라인업",
+        "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"http://localhost:5303/banners/aldebaran/r14/Banner_05.png\")"
+      },
+      {
+        "title": "미성년자 이용불가",
+        "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(\"http://localhost:5303/banners/aldebaran/r14/Banner_06.png\")"
+      }
+    ],
+    "live": {
+      "bg": "rgb(241, 176, 0)",
+      "border": "0px solid rgb(23, 23, 23)",
+      "box": {
+        "cx": 34.3515625,
+        "cy": 879,
+        "h": 24,
+        "w": 34.703125,
+        "x": 17,
+        "y": 867
+      },
+      "color": "rgb(23, 23, 23)",
+      "filter": "none",
+      "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+      "fontSize": "10.5px",
+      "fontWeight": "800",
+      "gap": "normal",
+      "letterSpacing": "normal",
+      "lineHeight": "10.5px",
+      "opacity": "1",
+      "padding": "0px 6px",
+      "radius": "4px",
+      "transform": "none"
+    }
+  },
+  "mobile": "Future intent documented in input/operating documents; no mobile or route implementation",
+  "restored": {
+    "mode": "european",
+    "inspected": "record-401902644",
+    "rightScroll": "Home"
+  },
+  "screenshots": [
+    "one-digit-and-banners.jpg",
+    "two-digit-and-banners.jpg"
+  ],
+  "limits": [
+    "Only the two changed locations and directly related interactions",
+    "No prior scroll/seven-item/font/full regression suite",
+    "No other apps/viewports/account/payment/bet submission"
+  ],
+  "visualApproval": "pending user"
+}

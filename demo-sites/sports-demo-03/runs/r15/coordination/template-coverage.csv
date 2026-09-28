@@ -1,0 +1,116 @@
+﻿templateId,status,fixtureCount,reason_if_excluded
+soccer.result_3way,implemented,32,
+soccer.double_chance,implemented,32,
+soccer.draw_no_bet,implemented,32,
+soccer.asian_handicap,implemented,32,
+soccer.european_handicap,implemented,32,
+soccer.total_goals,implemented,32,
+soccer.team_total_goals,implemented,32,
+soccer.btts,implemented,32,
+soccer.correct_score,implemented,32,
+soccer.exact_total_goals,implemented,32,
+soccer.goals_odd_even,implemented,32,
+soccer.half_full_result,implemented,32,
+soccer.first_team_to_score,implemented,32,
+soccer.team_clean_sheet,implemented,32,
+soccer.corners_total,implemented,23,
+soccer.corners_handicap,implemented,23,
+soccer.team_corners,implemented,23,
+soccer.corners_most,implemented,23,
+soccer.cards_total,implemented,32,
+soccer.team_cards,implemented,32,
+soccer.red_card,implemented,32,
+soccer.first_card_team,implemented,32,
+soccer.match_shots,implemented,13,
+soccer.team_shots,implemented,13,
+soccer.match_shots_on_target,implemented,13,
+soccer.team_shots_on_target,implemented,13,
+soccer.player_anytime_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.player_first_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.player_last_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.player_multi_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.player_assist,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.player_shots,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.player_shots_on_target,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.player_card,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+soccer.to_qualify,excluded,0,No knockout bracket metadata in these fixtures
+basketball.moneyline,implemented,6,
+basketball.spread,implemented,6,
+basketball.total_points,implemented,6,
+basketball.team_total_points,implemented,6,
+basketball.half_full_result,implemented,6,
+basketball.highest_scoring_half,implemented,6,
+basketball.highest_scoring_quarter,implemented,6,
+basketball.wire_to_wire,implemented,6,
+basketball.player_points,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_rebounds,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_assists,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_threes,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_pra,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_pr,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_pa,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_ra,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_double_double,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_triple_double,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.player_quarter_points,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.first_points,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.first_field_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.first_rebound,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.first_assist,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+basketball.most_player_points,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.moneyline,implemented,16,
+baseball.run_line,implemented,16,
+baseball.total_runs,implemented,16,
+baseball.team_total_runs,implemented,16,
+baseball.inning_result,implemented,16,
+baseball.inning_total,implemented,16,
+baseball.first_inning_score,alias_deduplicated,16,Represented once by baseball.inning_total / inning_1 / 0.5 (NRFI/YRFI alias)
+baseball.half_inning_total,implemented,10,
+baseball.double_result,implemented,16,
+baseball.runs_odd_even,implemented,16,
+baseball.winning_margin,implemented,16,
+baseball.first_team_to_score,implemented,14,
+baseball.last_team_to_score,implemented,14,
+baseball.race_to_runs,implemented,16,
+baseball.highest_scoring_inning,implemented,16,
+baseball.inning_correct_score,implemented,4,
+baseball.team_most_hits,implemented,10,
+baseball.pitcher_strikeouts,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.pitcher_strikeout_matchup,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.batter_hits,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.batter_home_runs,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.batter_rbi,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.batter_total_bases,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.batter_runs,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+baseball.batter_stolen_bases,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.moneyline,implemented,7,
+ice_hockey.regulation_result,implemented,7,
+ice_hockey.puck_line,implemented,7,
+ice_hockey.total_goals,implemented,7,
+ice_hockey.team_total_goals,implemented,7,
+ice_hockey.period_result,implemented,7,
+ice_hockey.period_handicap,implemented,7,
+ice_hockey.period_total_goals,implemented,7,
+ice_hockey.period_team_total,implemented,7,
+ice_hockey.draw_no_bet,implemented,7,
+ice_hockey.double_chance,implemented,7,
+ice_hockey.puck_line_3way,implemented,7,
+ice_hockey.total_3way,implemented,7,
+ice_hockey.exact_total_goals,implemented,7,
+ice_hockey.team_exact_goals,implemented,7,
+ice_hockey.goals_odd_even,implemented,7,
+ice_hockey.team_goals_odd_even,implemented,7,
+ice_hockey.first_team_to_score,implemented,7,
+ice_hockey.last_team_to_score,implemented,7,
+ice_hockey.race_to_goals,implemented,7,
+ice_hockey.most_periods_won,implemented,7,
+ice_hockey.highest_scoring_period,implemented,7,
+ice_hockey.tied_after_regulation,implemented,7,
+ice_hockey.player_anytime_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.player_first_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.player_last_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.player_multi_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.player_period_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.player_shots_on_goal,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.player_points,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented
+ice_hockey.goalie_saves,excluded,0,No verified fixture roster / starting pitcher / starting goalie snapshot; player identities not invented

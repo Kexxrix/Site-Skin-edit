@@ -1,0 +1,60 @@
+/* R12 설명용 CSS. 실제 최신 컴포넌트 역할에 맞춰 필요한 규칙만 반영한다.
+   .r12-ref-*는 실제 소스 클래스명이 아니다. 파일을 그대로 전역 import하지 않는다. */
+.r12-ref-aldebaran-root {
+  --ab-brand: #ff641f;
+  --ab-odds: #50dcd9;
+  --ab-small-accent: #f1b000;
+  --ab-on-small-accent: #141515;
+  --ab-line-value: #b7b7b7;
+  --ab-area-surface: #191919;
+  --ab-soft-outline: #383838;
+}
+
+/* 일반 상태의 실제 배당에만. 선택된 주황 버튼의 기존 가독성 있는 전경은 보존. */
+.r12-ref-odds-button:not([aria-pressed="true"]) .r12-ref-odds-value {
+  color: var(--ab-odds);
+}
+/* 현지 선택 상태 표현이 다르면 실제 state class/attribute에 대응시킨다. */
+.r12-ref-market-line-value { color: var(--ab-line-value); }
+
+.r12-ref-header-chip,
+.r12-ref-more-markets-button {
+  background-color: var(--ab-small-accent);
+  color: var(--ab-on-small-accent);
+}
+/* 기존 SVG 화살표를 currentColor와 연결. 크기/동작은 유지. */
+
+/* 기존 하단선과 중복 적용하지 않는다. 이 예시는 높이를 늘리지 않는 방식이다. */
+.r12-ref-sports-toolbar {
+  background-color: var(--ab-area-surface);
+  box-shadow: inset 0 -1px 0 var(--ab-soft-outline);
+}
+
+/* 한 개의 경기 목록 wrapper에만. 내부 카드 background/border는 건드리지 않는다. */
+.r12-ref-match-list-area {
+  background-color: var(--ab-area-surface);
+  border-radius: 8px;
+  /* wrapper에 기존 장식 외곽선이 있으면 공간을 보존하며 투명화한다. */
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* 우측은 기존 header + filters + markets 공통 wrapper에 한 겹 외곽선을 그린다.
+   border를 선택하면 기존 폭/높이를 보존해야 한다. 아래는 geometry를 유지하는 예시.
+   기존 프레임/가상 요소를 재사용하는 것이 더 작게 수정된다면 그 방법을 우선한다. */
+.r12-ref-market-set {
+  background-color: transparent;
+  position: relative;
+  /* border-radius는 기존 경기 헤더 곡률에 맞춘다. */
+}
+.r12-ref-market-set::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--ab-soft-outline);
+  border-radius: inherit;
+  pointer-events: none;
+  /* 이 방식이 기존 scroll wrapper에서 함께 이동/클리핑되면
+     현재 비스크롤 부모 또는 기존 border 방식으로 적용한다.
+     새 스크롤 컨테이너나 전역 overflow 규칙은 추가하지 않는다. */
+}

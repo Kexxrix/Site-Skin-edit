@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "changed_files": [
+    "app/aldebaran-wog-r5.css"
+  ],
+  "diff": "Only add font-size:14px to .ab5-league-label; 1 file, 1 insertion/1 deletion",
+  "baseline_commit": "14a1fd33b5c84912bd9d9ebc285557d4aa2632ab",
+  "source_commit": "5b4a1476d757871932cd3378db8da9b9f266a6d0",
+  "version_number": 21,
+  "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_3485daacd1b08191b47a01c150c0c076",
+  "deployment_id": "appgdep_6ab3988efe2481919abf1ccc450a4f68",
+  "deployment_status": "succeeded",
+  "url": "https://aldebaran.kexxadrix.chatgpt.site",
+  "updated_at": "2026-09-23T09:15:16.430733+00:00",
+  "measurement": {
+    "before": "12px",
+    "target_selector": ".ab5-match-title",
+    "target_text": "토론토 랩터스 vs 마이애미 히트",
+    "target_font_size": "14px",
+    "after": "14px",
+    "all_displayed_league_headers": 8,
+    "all_match": true,
+    "header_height": "39px preserved",
+    "weight": "800 preserved",
+    "line_height": "18px preserved",
+    "color": "#FCD73E preserved",
+    "counts": "10px preserved; all measured properties identical",
+    "flags_arrows": "dimensions preserved; arrow styles identical",
+    "badge_correction": "SPORTS/LIVE 1px unchanged",
+    "target_unchanged": true,
+    "no_clipping": true
+  },
+  "verification": {
+    "local": "1920x1080 100% (zoom1/dpr1), actual rendered screenshot and computed metrics",
+    "build": "npm run build passed",
+    "typecheck": "Unchanged TS inputs; prior typecheck reused for CSS-only change",
+    "git": "clean",
+    "state": "No interactions; viewport restored"
+  },
+  "screenshot": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/title-size/local-after-1920.png",
+  "evidence": [
+    "before.json",
+    "after.json",
+    "qa.json",
+    "source.diff",
+    "build.log"
+  ],
+  "limits": "Only requested changed surface verified locally; deployment success verified by native Sites API. No new interactions or broad regression.",
+  "warnings": "Existing nonblocking bundle size/plugin timing/vinext classification warnings"
+}

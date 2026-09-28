@@ -1,0 +1,51 @@
+Warning: truncated output (original token count: 1422)
+Total output lines: 58
+
+
+
+> sites-project@0.1.0 build
+> vinext build
+  vinext build  (Vite 8.0.13)[1/5] analyze client references...
+transforming (20) virtual:vinext-rsc-entrytransforming (69) app\aldebaran-wog-r5.tsxtransforming (148) virtual:vite-rsc\server-referencestransforming (201) node_modules\vinext\dist\server\bfcache-identity.js✓ 233 modules transformed.
+✓ built in 758ms
+[2/5] analyze server references...
+transforming (64) node_modules\@vitejs\plugin-rsc\dist\core\ssr.jstransforming (142) node_modules\@base-ui\react\dialog\portal\DialogPortal.mjs                                                                                   transforming (157) node_modules\@base-ui\react\internals\use-button\index.mjs                                                                                   transforming (252) node_modules\@base-ui\utils\store\ReactStore.mjs             ✓ 282 modules transformed.
+✓ built in 498ms
+[3/5] build rsc environment...
+transforming (41) node_modules\vinext\dist\server\app-rsc-errors.js                                                                                             transforming (68) app\aldebaran-wog-r5.tsx                                                                                                                      transforming (144) node_modules\vinext\dist\server\app-page-head.js                                                                                             transforming (194) node_modules\vinext\dist\shims\unrecognized-action-error.js                                                                                ✓ 230 modules transformed.
+rendering chunks (35)...computing gzip size...
+✓ built in 1.28s
+[4/5] build client environment...
+transforming (63) node_modules\vinext\dist\routing\utils.jstransforming (83) node_modules\react\jsx-runtime.jstransforming (138) node_modules\@base-ui\react\button\index.mjstransforming (144) node_modules\scheduler\cjs\scheduler.production.jstransforming (146) app\prematch-r15.jsontransforming (149) node_modules\lucide-react\dist\esm\icons\fingerprint-pat…222 tokens truncated…[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.     
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
+  - vinext:css-data-url (15%)
+  - vinext:middleware-server-only (12%)
+  - alias (12%)
+  - vinext:og-inline-fetch-assets (12%)
+  - rsc:virtual-client-package (10%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 3.52s
+[5/5] build ssr environment...
+transforming (39) node_modules\vinext\dist\server\bfcache-identity.jstransforming (115) node_modules\lucide-react\dist\esm\createLucideIcon.mjstransforming (156) node_modules\@base-ui\react\internals\createBaseUIEventDetail                                                                                transforming (245) node_modules\@base-ui\utils\useOnMount.mjs                                                                                ✓ 290 modules transformed.
+rendering chunks (9)...computing gzip size...
+✓ built in 1.06s
+
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis  
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/title-size/aldebaran-title-size.tar.gz
+{"project_id":"appgprj_6ab0f3255cdc819180a427bf6d0846f4","checkout_path":"E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site","commit_sha":"5b4a1476d757871932cd3378db8da9b9f266a6d0","archive":"E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/league-header-color-20260923/implementation/title-size/aldebaran-title-size.tar.gz"}
+

@@ -1,0 +1,110 @@
+{
+  "revision": "ALDEBARAN_R9_INSTRUCTIONS",
+  "implementationStatus": "not-implemented",
+  "targetApp": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/site/",
+  "baseline": {
+    "reportedPublicVersion": 8,
+    "reportedSourceCommit": "4759aae04293e80c9dc3c60658ab97297118dbb0",
+    "publicGithubSnapshotVersion": 6,
+    "preserveLaterLocalEdits": true
+  },
+  "frame": {
+    "pageWidth": 1920,
+    "responsive": false,
+    "headerHeight": 62,
+    "noticeHeight": 36,
+    "rails": [
+      320,
+      1244,
+      320
+    ],
+    "centerInnerWidth": 1226,
+    "overseasColumns": [
+      609,
+      8,
+      609
+    ],
+    "overseasScrollContainers": 2,
+    "domesticScrollContainers": 1
+  },
+  "sportBar": {
+    "placement": "shared-center-top-row",
+    "placementBasis": "implementation decision to fit intrinsic-width buttons without changing column widths",
+    "originalFigmaSampleWidth": 832,
+    "originalFigmaWidthIsFixed": false,
+    "sizing": "intrinsic-content",
+    "grow": 0,
+    "shrink": 0,
+    "wrap": false,
+    "gap": 8,
+    "paddingX": 16,
+    "paddingY": 4,
+    "internalGap": 9,
+    "height": 32,
+    "selectedHeight": 34,
+    "rowContentHeight": 34,
+    "rowPaddingY": 8,
+    "radius": 4,
+    "iconSize": 24,
+    "fontSize": 16,
+    "fontWeight": 700,
+    "countFontSize": 14,
+    "countMinTextWidth": "3ch",
+    "countPaddingX": 4,
+    "countPaddingY": 2,
+    "countAlignment": "center",
+    "countSource": "current-prematch-data",
+    "decisionStatus": "trial implementation; user reviews actual view"
+  },
+  "telegram": {
+    "target": "first-support-banner-only",
+    "asset": "assets/img_banner_01.png",
+    "suggestedPublicPath": "public/banners/aldebaran/img_banner_01.png",
+    "sourceSize": [
+      306,
+      61
+    ],
+    "sourceSha256": "19e33f3146e6a2ba14e6120322d04e3ac1dc9ddc67518acdcc9cf19554710529",
+    "width": 306,
+    "existingAspectRatio": "323 / 64",
+    "observedHeight": 60.625,
+    "radius": 4,
+    "preserveText": true,
+    "removeSeparateHeadset": true,
+    "applyToSecondBanner": false
+  },
+  "casinoslot": {
+    "labels": [
+      "CASINO",
+      "SLOT"
+    ],
+    "removeBlackLabelBackground": true,
+    "preservePhotos": true,
+    "labelImageOptionalLater": true
+  },
+  "odds": {
+    "mode": "fixed-synthetic-per-fixture",
+    "newLiveProviderIntegration": false,
+    "newPaidSubscription": false,
+    "randomOnRender": false,
+    "displayDecimals": 2,
+    "keepStableSelectionIds": true,
+    "keepExistingBaseMarketIndices": {
+      "0": "result",
+      "1": "totals",
+      "2": "handicap"
+    },
+    "repriceSavedReceipts": false,
+    "contract": "resources/odds-contract.json"
+  },
+  "handoff": {
+    "mergeOperationalDocuments": true,
+    "replaceExistingDocuments": false,
+    "separateQaThread": false,
+    "jev": false,
+    "globalPolish": false,
+    "otherSites": false,
+    "publicGithubBackupSync": false,
+    "siteEditedWhilePreparingPackage": false
+  }
+}

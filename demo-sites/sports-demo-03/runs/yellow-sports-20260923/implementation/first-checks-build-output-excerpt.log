@@ -1,0 +1,53 @@
+Warning: truncated output (original token count: 1493)
+Total output lines: 58
+
+
+
+> sites-project@0.1.0 build
+> vinext build
+  vinext build  (Vite 8.0.13)[1/5] analyze client references...
+transforming (24) node_modules\vinext\dist\utils\middleware-request-headers.js  transforming (69) app\aldebaran-wog-r5.tsxtransforming (151) node_modules\vinext\dist\shims\internal\app-page-props-cache-                                                                                transforming (200) node_modules\vinext\dist\server\bfcache-identity.js✓ 233 modules transformed.
+✓ built in 778ms
+[2/5] analyze server references...
+transforming (57) app\page.tsxtransforming (130) node_modules\tailwind-merge\dist\bundle-mjs.mjstransforming (155) node_modules\@base-ui\react\internals\use-button\index.mjstransforming (235) node_modules\@base-ui\react\internals\noop.mjs✓ 282 modules transformed.
+✓ built in 490ms
+[3/5] build rsc environment...
+transforming (40) node_modules\vinext\dist\shims\headers.jstransforming (68) app\aldebaran-wog-r5.tsxtransforming (160) node_modules\react-server-dom-webpack\server.edge.jstransforming (197) node_modules\vinext\dist\server\bfcache-identity.js                                                                                          ✓ 230 modules transformed.
+rendering chunks (35)...computing gzip size...
+✓ built in 1.34s
+[4/5] build client environment...
+transforming (65) node_modules\vinext\dist\server\navigation-trace.jstransforming (97) node_modules\vinext\dist\shims\url-utils.js                                                                                                   transforming (132) node_modules\vinext\dist\utils\regex-safety.js                                                                                               transforming (134) app\live-snapshots.json                                                                                                                      transforming (170) app\prematch-r15.json                                                                                transforming (188) node_modules\@base-ui\react\internals\constants.mjs                                                                                          transforming (225) node_modules\lucide-react\dist\esm\icons\axis-3d.mjs                                                                                         transforming (765) node_modules\lucide-react\dist\esm\icons\chevrons-down.mjs                                                …93 tokens truncated…                transforming (1988) node_modules\@base-ui\react\dialog\root\useDialogRoot.mjs                                                                                   ✓ 2075 modules transformed.
+rendering chunks (8)...computing gzip size...
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.     
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
+  - alias (15%)
+  - vinext:css-data-url (15%)
+  - vinext:middleware-server-only (13%)
+  - rsc:virtual-client-package (11%)
+  - vinext:og-inline-fetch-assets (11%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 3.53s
+[5/5] build ssr environment...
+transforming (42) node_modules\vinext\dist\shims\internal\make-hanging-promise.j                                                                                transforming (116) app\sport-menu.json                                                                                                                          transforming (156) node_modules\@base-ui\react\internals\reasons.mjs                                                                                            transforming (260) node_modules\@base-ui\utils\store\StoreInspector.mjs         ✓ 290 modules transformed.
+rendering chunks (9)...computing gzip size...
+✓ built in 1.08s
+
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis  
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/yellow-sports-20260923/implementation/aldebaran-yellow-sports.tar.gz
+{"project_id":"appgprj_6ab0f3255cdc819180a427bf6d0846f4","checkout_path":"E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site","commit_sha":"f23b3423f0411b26385dc5a56b9436f438ec522b","archive":"E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/yellow-sports-20260923/implementation/aldebaran-yellow-sports.tar.gz"}
+

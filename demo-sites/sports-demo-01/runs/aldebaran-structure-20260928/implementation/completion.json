@@ -1,0 +1,72 @@
+{
+  "site": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+  "url": "https://mercury.kexxadrix.chatgpt.site",
+  "version": {
+    "id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_de4de7ceb30c81918e280fc74ad703fa",
+    "project_id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+    "version_number": 10,
+    "source": {
+      "commit_sha": "af940990c2939a94ebdb89204c2e92ce881275c3"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000494c82068c86a22fa0ba5633",
+      "content_hash": "sha256:973ad3632acac4d985561e158f65ad48e818e6de5c2ba042b18e94a588cb3a2e",
+      "size_bytes": 26613760,
+      "file_count": 248
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ab9dd63e9508191bba9f0da7f9f8fa4",
+    "project_id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+    "title": "MERCURY",
+    "version_id": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_de4de7ceb30c81918e280fc74ad703fa",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://mercury.kexxadrix.chatgpt.site",
+    "has_mcp": null,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aaa650f4aa4819189a2ee84f523fb9c",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-28T03:22:29.382142+00:00"
+  },
+  "verified": {
+    "buildExitCode": 0,
+    "typecheckExitCode": 0,
+    "diffCheckPassed": true,
+    "committedSourceMatchesBuild": true,
+    "referencePreservationEvidence": "../coordination/preservation-check.json",
+    "sourcePreservationEvidence": "source-preservation.json",
+    "geometryEvidence": "geometry-comparison.json",
+    "functionalEvidence": "functional-qa.json",
+    "independentScrollEvidence": "scroll-qa.json",
+    "visualEvidence": [
+      "mercury-final-european.png",
+      "mercury-domestic.png",
+      "aldebaran-reference.png"
+    ],
+    "untrackedTsbuildinfoPreserved": true,
+    "publicRender": {
+      "url": "https://mercury.kexxadrix.chatgpt.site/",
+      "fixtureCount": 77,
+      "defaultMode": "european",
+      "detailPresent": true,
+      "fontsLoaded": true,
+      "headerVideo": false,
+      "screenshot": "mercury-public-v10.png"
+    }
+  },
+  "intentionalExceptions": [
+    "Original MERCURY brand, palette, logo and assets; brand gap8px",
+    "Original77 fixtures and3 markets per fixture",
+    "Original league assets occupy reference flag slots",
+    "Solid original dark header with no video or decoration"
+  ],
+  "remainingLimitations": [
+    "Visual design acceptance remains with user",
+    "Fixed1920 layout; no responsive rearrangement requested"
+  ]
+}

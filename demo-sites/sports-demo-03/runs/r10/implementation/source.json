@@ -1,0 +1,30 @@
+{
+  "opened": {
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+    "commit_sha": "c566f060ec024b2178b873624e345029dea79a2a"
+  },
+  "published": {
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+    "commit_sha": "9f32fe625a8f1f0441e4714382515c19af136d03",
+    "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r10/public/aldebaran-r10.tar.gz"
+  },
+  "checks": {
+    "typecheck": {
+      "runs": 1,
+      "exit": 0,
+      "evidence": "First workflow proceeded past tsc to build; source unchanged since."
+    },
+    "build": {
+      "completedRuns": 1,
+      "exit": 0,
+      "evidence": "build.log"
+    },
+    "recoveredTooling": [
+      "Bundled Windows npm shim resolved relative module incorrectly; used existing absolute npm CLI.",
+      "Expired source credential renewed.",
+      "GNU tar interpreted Windows drive colon as remote; TAR_OPTIONS=--force-local repaired archive step without rebuilding."
+    ]
+  }
+}

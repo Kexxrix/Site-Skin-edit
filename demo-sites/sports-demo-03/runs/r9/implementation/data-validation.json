@@ -1,0 +1,48 @@
+{
+  "datasetVersion": "aldebaran-prematch-r9-20260922",
+  "fixtures": 61,
+  "markets": 1040,
+  "outcomes": 2176,
+  "stableSelectionIds": 2176,
+  "sportCounts": {
+    "basketball": 6,
+    "hockey": 7,
+    "american-football": 16,
+    "soccer": 32
+  },
+  "canonicalPriceRange": [
+    1.01,
+    77.09
+  ],
+  "baseMarkets": [
+    {
+      "index": 0,
+      "uniquePriceSets": 60,
+      "maxRepeatedSetCount": 2
+    },
+    {
+      "index": 1,
+      "uniquePriceSets": 54,
+      "maxRepeatedSetCount": 2
+    },
+    {
+      "index": 2,
+      "uniquePriceSets": 57,
+      "maxRepeatedSetCount": 2
+    }
+  ],
+  "equivalentEventComparisons": 76,
+  "monotonicComparisons": 488,
+  "pushMarkets": 45,
+  "pricingMargins": [
+    0.045,
+    0.01189975,
+    0.04254462,
+    0.00631549,
+    0.01159885,
+    0.02525585
+  ],
+  "maxRoundingError": 0.0044407651213509425,
+  "findings": [],
+  "passed": true
+}

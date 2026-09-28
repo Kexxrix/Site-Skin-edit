@@ -1,0 +1,54 @@
+{
+  "originalTrackedFiles": 277,
+  "changedTrackedFiles": [
+    "app/demo-data.ts",
+    "app/mercury-market-view.ts",
+    "app/mercury-sports.css",
+    "app/mercury-sports.tsx",
+    "app/page.tsx"
+  ],
+  "unexpectedChanges": [],
+  "ownedFileHashes": {
+    "app/demo-data.ts": "d78b19f656979ecd01add2efeb2add3413d67d6dd63f2ab5426ff32e4be8d40a",
+    "app/mercury-market-view.ts": "fb297a97fbf9f5f6a0a811877895f80410e6c4ab238684d79d68edeb1cfa2bb7",
+    "app/mercury-sports.css": "efa05ace94540b03c208eb89c4bf986379316082b42914fe44319bfd5a02d39b",
+    "app/mercury-sports.tsx": "b236e374b8845cc46efaf65c9297dfb5cfe07d57e6cfbdb733ff3763b4ae3350",
+    "app/page.tsx": "def7cc28c9592970fa7fd453440f8309682553cd46dee06321aa78db499d2589",
+    "app/prematch-r15.json": "56d9570569bd9a9f70ac8d95a7219def48b1d6db8f028e7f55822bc918813a6b",
+    "public/sports/polish/mercury-sport-all.png": "468c9ca7b4affca65d5fbebe2715b6c0c180474f6be07e0b81eae4a54bcc3312",
+    "public/sports/polish/mercury-sport-formula1.png": "c8dde58bd8fe01d9a2113153c4429df375bad9b37982023b81d27f174d770690",
+    "public/sports/polish/mercury-sport-boxing.png": "e25a046dcbe81ed660dff0a118ed7c14e55bb2760ddb8664be070d799716ba2e",
+    "public/sports/polish/mercury-sport-motorsport.png": "ff7834b10114c43e431b2615a740f2aca41e4b4475a71fda050576e3ae3a9d68",
+    "public/sports/polish/mercury-sport-mma.png": "f8f0f2d61a1b414105b4621ff3b564eff2f33eb1cc22d78d05ee4a7fc87fc37b"
+  },
+  "tsbuildinfoPreserved": true,
+  "originalUntrackedHash": "cdfb9b8da2935431333bcbef72742bfc1b8ca54afc857b2131b1b292a324afb7",
+  "referenceFixedDataSha": "3c255064e20d1bf24023c6e12895bdee5997e3d0ed0d84f97a8964dab13265b0",
+  "copiedDataSha": "56d9570569bd9a9f70ac8d95a7219def48b1d6db8f028e7f55822bc918813a6b",
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "warnings": [
+      "Client chunk exceeds500kB due to reference fixed-market dataset",
+      "vinext route static classification unknown"
+    ]
+  },
+  "typecheck": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+    "exitCode": 0
+  },
+  "referenceScreenshot": {
+    "path": "aldebaran-reference-verified-v23.png",
+    "reusedFrom": "../../aldebaran-structure-20260928/implementation/aldebaran-reference.png",
+    "version": 23,
+    "head": "6be8c176b374999501952d24520c8411b29b153f",
+    "reason": "Same reference source/state at1920; current CDP screenshot produced duplicated1280 tiles; current DOM geometry measured separately"
+  },
+  "originalCopiedDataSha": "3c255064e20d1bf24023c6e12895bdee5997e3d0ed0d84f97a8964dab13265b0",
+  "fixtureLineEndings": {
+    "source": "CRLF",
+    "committed": "LF",
+    "parsedDataIdentical": true,
+    "reason": "Git text normalization; no JSON values changed"
+  }
+}

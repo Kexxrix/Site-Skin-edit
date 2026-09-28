@@ -1,0 +1,48 @@
+Warning: truncated output (original token count: 1513)
+Total output lines: 58
+
+
+
+> sites-project@0.1.0 build
+> vinext build
+  vinext build  (Vite 8.0.13)[1/5] analyze client references...
+transforming (31) node_modules\react-server-dom-webpack\static.edge.jstransforming (82) node_modules\vinext\dist\server\cookie-utils.js                                                                                               transforming (152) node_modules\vinext\dist\server\html.js                                                                                                      transforming (200) node_modules\vinext\dist\utils\compare.js✓ 233 modules transformed.
+✓ built in 712ms
+[2/5] analyze server references...
+transforming (59) node_modules\vinext\dist\utils\record.jstransforming (131) node_modules\lucide-react\dist\esm\shared\src\utils\toCamelCa                                                                                transforming (154) app\prematch-r15.json                                                                                transforming (238) node_modules\@base-ui\react\internals\useAnimationsFinished.m                                                                                ✓ 282 modules transformed.
+✓ built in 507ms
+[3/5] build rsc environment...
+transforming (65) node_modules\vinext\dist\server\isr-cache.js                                                                                                  transforming (68) app\aldebaran-wog-r5.tsx                                                                                                                      transforming (190) node_modules\vinext\dist\server\client-reuse-manifest.js                                                                                     transforming (195) node_modules\vinext\dist\utils\compare.js                                                                                ✓ 230 modules transformed.
+rendering chunks (35)...computing gzip size...
+✓ built in 1.31s
+[4/5] build client environment...
+transforming (55) node_modules\vinext\dist\utils\redirect-digest.jstransforming (86) node_modules\vinext\dist\server\a…313 tokens truncated…ons.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.     
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
+  - vinext:css-data-url (15%)
+  - vinext:middleware-server-only (14%)
+  - vinext:og-inline-fetch-assets (13%)
+  - alias (11%)
+  - rsc:virtual-client-package (9%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 3.62s
+[5/5] build ssr environment...
+transforming (46) node_modules\vinext\dist\server\app-mounted-slots-header.js                                                                                   transforming (114) node_modules\vinext\dist\client\window-next.js                                                                                transforming (159) node_modules\@base-ui\react\internals\createBaseUIEventDetail                                                                                transforming (243) node_modules\@base-ui\utils\useOnMount.mjs                                                                                                   ✓ 290 modules transformed.
+rendering chunks (9)...computing gzip size...
+✓ built in 1.11s
+
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis  
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/yellow-sports-20260923/implementation/aldebaran-yellow-sports-final.tar.gz
+{"project_id":"appgprj_6ab0f3255cdc819180a427bf6d0846f4","checkout_path":"E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site","commit_sha":"fd3356b6b2814b269c81e3bec3112ff999a1570b","archive":"E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/yellow-sports-20260923/implementation/aldebaran-yellow-sports-final.tar.gz"}
+

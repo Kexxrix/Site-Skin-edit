@@ -1,0 +1,53 @@
+{
+  "source": {
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+    "commit_sha": "c97d42c9630670780b26c2ba00541a4e7e69bd83",
+    "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r12/implementation/aldebaran-r12.tar.gz"
+  },
+  "saved": {
+    "id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_21c6cd595d3081918039d13ca728360d",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "version_number": 12,
+    "source": {
+      "commit_sha": "c97d42c9630670780b26c2ba00541a4e7e69bd83"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000002a3c81f5b898a0b70a240b87",
+      "content_hash": "sha256:819fbc159a3c0f4ee4ca1f156866f63d84b1ad931621806a9b338ebaf65cff6d",
+      "size_bytes": 29153280,
+      "file_count": 281
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ab26be25548819186582fd6d9c3258e",
+    "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+    "title": "ALDEBARAN · 스포츠",
+    "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_21c6cd595d3081918039d13ca728360d",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran.kexxadrix.chatgpt.site",
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-22T11:52:27.063534+00:00"
+  },
+  "checks": {
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "runs": 1,
+      "exitCode": 0
+    },
+    "build": {
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build",
+      "runs": 1,
+      "exitCode": 0
+    },
+    "workflowExit": 0
+  },
+  "githubBackupUpdated": false
+}

@@ -1,0 +1,119 @@
+/*
+ * MERCURY Figma 243:4 — 2026-09-28 reference tokens.
+ * Integrate into the existing Mercury stylesheet after checking its selectors.
+ * This is not a tested drop-in patch. The .mc-ref-* classes are role examples.
+ * Static values below are read from Figma. State handling is implementation guidance.
+ * No new dependency, framework, global button override, or layout replacement is needed.
+ */
+.mc-figma-theme {
+  --mc-figma-page: #050505;
+  --mc-figma-header: #0b0b0b;
+  --mc-figma-underlay: #090909;
+  --mc-figma-panel: #141414;
+  --mc-figma-section-heading: #1c1c1c;
+  --mc-figma-control: #292929;
+  --mc-figma-border: #3b3b3b;
+  --mc-figma-gold: #ffcd55;
+  --mc-figma-gold-light: #ffe6a3;
+  --mc-figma-badge: #ff9124;
+  --mc-figma-market-badge-border: #ff5900;
+  --mc-figma-odds: #81ffff;
+  --mc-figma-text: #ffffff;
+  --mc-figma-text-on-bright: #171717;
+  --mc-figma-gradient-gold: linear-gradient(
+    180deg, #ffedc0 0%, #ffcd55 50%, #af800d 100%
+  );
+  --mc-figma-gradient-gray: linear-gradient(
+    0deg, #292929 0%, #585858 71.635%, #585858 100%
+  );
+}
+
+/* Figma 243:94; applies only to gold-role controls. */
+.mc-figma-theme .mc-ref-gold-button {
+  background-color: var(--mc-figma-gold);
+  background-image: var(--mc-figma-gradient-gold);
+  border: 1px solid var(--mc-figma-gold);
+  color: var(--mc-figma-text-on-bright);
+  border-radius: 5px;
+}
+
+/* Figma 243:379 / 243:5743; the geometry stays owned by existing components. */
+.mc-figma-theme .mc-ref-odds-button {
+  background-color: var(--mc-figma-control);
+  background-image: var(--mc-figma-gradient-gray);
+  border: 1px solid var(--mc-figma-border);
+  border-radius: 4px;
+  color: var(--mc-figma-text);
+}
+.mc-figma-theme .mc-ref-odds-value { color: var(--mc-figma-odds); }
+
+/* Selection/hover guidance, not an extracted Figma interaction specification.
+ * Map these selectors to the existing component's real selection state.
+ * Keep generic hover rules before selected rules, or scope them to unselected controls.
+ * Do not use a broad filter: brightness() that also changes text and icon colors.
+ */
+.mc-figma-theme .mc-ref-odds-button:not(:disabled):hover {
+  border-color: var(--mc-figma-gold-light);
+}
+.mc-figma-theme .mc-ref-odds-button[aria-pressed="true"],
+.mc-figma-theme .mc-ref-odds-button[aria-pressed="true"]:hover,
+.mc-figma-theme .mc-ref-odds-button[aria-pressed="true"]:focus-visible,
+.mc-figma-theme .mc-ref-odds-button[data-selected="true"],
+.mc-figma-theme .mc-ref-odds-button[data-selected="true"]:hover {
+  background-color: var(--mc-figma-gold);
+  background-image: var(--mc-figma-gradient-gold);
+  border-color: var(--mc-figma-gold);
+  color: var(--mc-figma-text-on-bright);
+}
+.mc-figma-theme .mc-ref-odds-button[aria-pressed="true"] .mc-ref-odds-value,
+.mc-figma-theme .mc-ref-odds-button[data-selected="true"] .mc-ref-odds-value {
+  color: var(--mc-figma-text-on-bright);
+}
+
+/* SPORTS / LIVE / LV / BET / NEW / count badges: Figma visual role. */
+.mc-figma-theme .mc-ref-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mc-figma-badge);
+  color: var(--mc-figma-text-on-bright);
+  border-radius: 4px;
+  line-height: 1;
+}
+
+/* Plain controls stay plain, as in Figma 243:110. */
+.mc-figma-theme .mc-ref-flat-button {
+  background: var(--mc-figma-control);
+  color: var(--mc-figma-text);
+  border: 1px solid var(--mc-figma-border);
+}
+
+/* Gold CTA remains visibly gold when disabled; do not change its disabled semantics. */
+.mc-figma-theme .mc-ref-bet-submit:disabled {
+  opacity: 1;
+  background-color: var(--mc-figma-gold);
+  background-image: var(--mc-figma-gradient-gold);
+  color: #000000;
+  cursor: not-allowed;
+}
+
+/* Baseline only: normalize each PNG's internal transparent padding optically. */
+.mc-figma-theme .mc-ref-sport-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  inline-size: 20px;
+  block-size: 20px;
+}
+.mc-figma-theme .mc-ref-sport-icon img {
+  display: block;
+  max-inline-size: 100%;
+  max-block-size: 100%;
+  object-fit: contain;
+}
+/* Left rail uses the reference 22px slot; do not stretch narrow/wide symbols. */
+.mc-figma-theme .mc-ref-sport-icon--rail {
+  inline-size: 22px;
+  block-size: 22px;
+}

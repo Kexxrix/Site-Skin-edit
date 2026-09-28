@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-28",
+  "target": "MERCURY",
+  "reference": "ALDEBARAN PUBLIC v23",
+  "scope": [
+    "Actual header and utility menus",
+    "Left services/search/sports/banners",
+    "Sport tabs",
+    "League match list and cards",
+    "Detail markets and filters",
+    "Account and betslip",
+    "Identical dimensions/alignment/scroll behaviour at 1920"
+  ],
+  "preserve": [
+    "MERCURY original brand and existing palette",
+    "MERCURY data, IDs, odds and stored state",
+    "Read-only ALDEBARAN and other sites"
+  ],
+  "exceptions": [
+    "MERCURY header uses existing solid dark color, no video/image/gradient",
+    "Logo original aspect ratio and existing MERCURY assets",
+    "Counts and market availability based only on MERCURY data"
+  ],
+  "acceptance": [
+    "No old three-column sports screen",
+    "Detail market present and correctly connected",
+    "Sport -> match -> market -> odds -> slip plus zero/empty/selected/disabled",
+    "Same viewport/zoom comparison; dimensions and independent scroll verified",
+    "Build and deploy to existing MERCURY public URL"
+  ],
+  "sourceOwner": "01a0a97b-1268-7cf3-8aad-ba460ecf4f98",
+  "coordinationOwns": "Four operating documents and evidence aggregation only",
+  "newIndependentAudit": false
+}

@@ -1,0 +1,46 @@
+/* R14 integration reference for the existing ALDEBARAN more-markets button.
+ * Replace the old number + SVG children with ONE span whose text is n + '+'.
+ * New label class below is proposed; connect it in the existing component.
+ * Merge these values into current scoped rules; preserve event/focus behavior.
+ */
+button.ab5-market-open {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: max-content;
+  min-width: 0;
+  height: 24px;
+  padding: 0 5px;
+  gap: 0;
+  border: 1px solid #F1B000;
+  border-radius: 5px;
+  background-color: #F1B000;
+  color: #171717;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+button.ab5-market-open > .ab5-market-open__label {
+  display: block;
+  flex: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Remove the button's unused chevron-only rules after checking their uses.
+ * Do not hide every SVG globally or change other controls.
+ * Banner task only changes image references; keep existing banner layer CSS.
+ */

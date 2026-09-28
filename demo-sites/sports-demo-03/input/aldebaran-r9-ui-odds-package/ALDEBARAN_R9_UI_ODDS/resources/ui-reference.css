@@ -1,0 +1,78 @@
+/* R9 참고용. 현지 최신 클래스에 필요한 부분만 병합한다. 통째로 import하지 않는다. */
+.ab9-sport-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding-block: 8px;
+  box-sizing: content-box;
+  /* 중앙 공통 행. 부모 두 열의 폭/위치/스크롤 규칙을 변경하지 않는다. */
+}
+.ab9-sport-tab {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+  width: max-content;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 4px 16px;
+  border: 0;
+  border-radius: 4px;
+  background: #353535;
+  color: #fff;
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.ab9-sport-tab[aria-pressed="true"] {
+  height: 34px;
+  border: 1px solid #ff641f;
+}
+.ab9-sport-icon { width: 24px; height: 24px; flex: 0 0 24px; object-fit: contain; opacity: .6; }
+.ab9-sport-tab[aria-pressed="true"] .ab9-sport-icon { opacity: 1; }
+.ab9-sport-count {
+  flex: 0 0 auto;
+  min-width: 3ch;
+  box-sizing: content-box;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: #484848;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  font-variant-numeric: tabular-nums;
+}
+.ab9-sport-tab[aria-pressed="true"] .ab9-sport-count { color: #000; background: #ff641f; }
+
+/* 非선택/disabled 메뉴 밝기와 hover 제거는 실제 GNB 범위로만 제한한다. */
+.ab9-gnb-item { color: #f5f4f4; opacity: 1; }
+.ab9-gnb-item:disabled, .ab9-gnb-item[aria-disabled="true"] { color: #f5f4f4; opacity: 1; filter: none; cursor: default; }
+.ab9-gnb-item:not([aria-current="page"]):hover { color: #f5f4f4; }
+.ab9-gnb-item[aria-current="page"] { color: #ff641f; }
+/* 기존 2px 선택 밑줄 유지. 기존 선택 이미지와 hover 배경/이동 규칙은 소스에서 제거. */
+.ab9-notice-utility { color: #f5f4f4; opacity: 1; }
+.ab9-notice-utility svg { color: inherit; opacity: 1; }
+
+.ab9-photo-button { position: relative; }
+.ab9-photo-label { background: transparent; border: 0; box-shadow: none; backdrop-filter: none; }
+/* 기존 검은 띠용 가상요소/오버레이를 제거하되 사진과 전체 클릭영역은 유지. */
+
+.ab9-telegram-support {
+  width: 306px;
+  height: auto;
+  aspect-ratio: 323 / 64;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-image: url('/banners/aldebaran/img_banner_01.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* 기존 문구/폰트/위치 유지. 첫 배너의 별도 헤드셋 요소만 제거. 아래 공식채널에는 이 클래스 미적용. */

@@ -1,0 +1,91 @@
+{
+  "revision": "R10",
+  "implementationStatus": "not_started",
+  "scope": "ALDEBARAN sports-demo-03 only",
+  "knownBaseline": {
+    "publicVersion": 9,
+    "commit": "c566f060ec024b2178b873624e345029dea79a2a",
+    "source": "User-provided STATE(7).md",
+    "preserveLaterLocalEdits": true,
+    "resetToBaseline": false
+  },
+  "changes": {
+    "R10-01": {
+      "newBannerBackgrounds": 5,
+      "assetMap": "asset-map.json",
+      "preserveExistingFirstBackground": true,
+      "removeSeparateIcons": true
+    },
+    "R10-02": {
+      "completePhotoImages": 2,
+      "removeVisibleLabels": true,
+      "preserveGeometryAndActions": true,
+      "fit": "contain"
+    },
+    "R10-03": {
+      "iconPx": [
+        20,
+        20
+      ],
+      "nameFontPx": 14,
+      "countFontPx": 12,
+      "units": "CSS px",
+      "preserveEachExistingButtonBox": true,
+      "equalizeWidths": false,
+      "preserveOneToThreeDigitCapacity": true,
+      "preserveCommonBarHeight": true,
+      "runtimeMeasurementAdded": false
+    },
+    "R10-04": {
+      "target": "outer central board only",
+      "background": "transparent",
+      "visibleOuterBorder": false,
+      "preserveBorderSpace": true,
+      "preserveInnerCardFrames": true,
+      "preserveLeftAndRightRailPanels": true,
+      "preserveDOMGeometryAndScroll": true
+    },
+    "R10-05": {
+      "target": "left orange accent of detail market sections",
+      "widthPx": 1,
+      "states": [
+        "open",
+        "closed"
+      ],
+      "preserveColorHeightAndTextPosition": true
+    },
+    "R10-06": {
+      "bannerCount": 6,
+      "textBlockVerticalAlignment": "center",
+      "horizontalAlignment": "left",
+      "reduceTitleSubtitleGap": true,
+      "suggestedGapPx": 2,
+      "gapValueIsUserSpecified": false,
+      "preserveFontSizesAndLeftInset": true
+    }
+  },
+  "preserve": [
+    "1920 fixed frame",
+    "domestic two-column shared scroll",
+    "overseas two-column independent scroll",
+    "current header",
+    "inner league/match/market frames except specified market accent",
+    "current odds/fixtures/selection IDs",
+    "slip and stored history"
+  ],
+  "outOfScope": [
+    "WOG/Figma research",
+    "new installations",
+    "image generation",
+    "new pricing or handicap lines",
+    "full QA/Jev/global polish",
+    "MERCURY/SIRIUS",
+    "public GitHub backup sync"
+  ],
+  "completion": {
+    "build": "existing build once; rerun only to resolve a failure",
+    "visualReview": "changed UI only",
+    "deployment": "existing ALDEBARAN flow to same canonical URL",
+    "stopAfterReport": true
+  }
+}

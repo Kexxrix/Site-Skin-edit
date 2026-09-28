@@ -1,0 +1,71 @@
+{
+  "at": "2026-09-22T19:34:05.4055176+09:00",
+  "status": "four scoped UI changes saved and local verification passed; build/typecheck/public handoff pending",
+  "source": "owner-produced assets/video evidence and local screenshot",
+  "assetCopies": 3,
+  "allOriginalBytesUnchanged": true,
+  "video": {
+    "advanced": true,
+    "actualLoopObserved": true,
+    "allMuted": true,
+    "allPlaying": true,
+    "sampleCount": 18,
+    "verificationMethod": "Browser media properties and timed currentTime samples, not a still-image claim"
+  },
+  "evidence": [
+    "runs/r11/implementation/assets.json",
+    "runs/r11/implementation/video-verification.json",
+    "runs/r11/implementation/european-1920.jpg"
+  ],
+  "pending": [
+    "existing build once",
+    "required typecheck once",
+    "same public deployment",
+    "requested public screenshots",
+    "final report"
+  ],
+  "ownerResult": {
+    "changedFiles": "two code files and three original media files",
+    "sportBar": {
+      "parentPaddingTop": 0,
+      "paddingTop": 0,
+      "paddingBottom": 8,
+      "height": 42,
+      "tabYBefore": 122,
+      "tabYAfter": 106,
+      "railY": 105,
+      "buttonInlinePadding": 8,
+      "gap": 8,
+      "badgeInlinePadding": 4
+    },
+    "logo": {
+      "width": 182,
+      "height": 19.828,
+      "x": 24,
+      "plateWidth": 260,
+      "plateBlackAlpha": 0.5,
+      "diagonal": 32,
+      "underlineWidth": 228,
+      "underlineHeight": 1,
+      "rightClearanceAtLowerEdge": 22
+    },
+    "banners": {
+      "count": 6,
+      "blackAlpha": 0.4,
+      "layers": 1,
+      "fonts": [
+        17,
+        11
+      ],
+      "gap": 2,
+      "height": 60.625,
+      "centerError": 0
+    },
+    "reducedMotion": "video absent/static background; menu functional; emulation removed and playback restored",
+    "temporaryCountPreview": "soccer/hockey 0/7/32/128 verified; site/public temporary HTML removed; production data never changed",
+    "flows": "casino/slot lounges, basketball6 filter, both scroll modes and restoration passed",
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "acceptedLocalScreenshots": "final PNG captures; initial domestic JPG repaint not accepted as final evidence"
+  }
+}

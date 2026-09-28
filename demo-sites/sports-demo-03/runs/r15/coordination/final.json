@@ -1,0 +1,122 @@
+{
+  "status": "complete_with_documented_limits",
+  "public_version": 17,
+  "source": "7c7284fc8dd21b1e84f4bd8dc5fe7f53f9bc6b23",
+  "native_publication": {
+    "source": {
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "checkout_path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\site",
+      "commit_sha": "7c7284fc8dd21b1e84f4bd8dc5fe7f53f9bc6b23",
+      "archive": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03/runs/r15/implementation/aldebaran-r15-final.tar.gz"
+    },
+    "version": {
+      "id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_dff080e010a48191b9d5e4a118225fca",
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "version_number": 17,
+      "source": {
+        "commit_sha": "7c7284fc8dd21b1e84f4bd8dc5fe7f53f9bc6b23"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000058148206aa4f5b93a2051f1c",
+        "content_hash": "sha256:9517e45877a93683e3d708e55351723bdf39891c2a9bcbd501583843c3f8f27b",
+        "size_bytes": 34744320,
+        "file_count": 287
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6ab37b51a63c819182f809026a660a54",
+      "project_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4",
+      "title": "ALDEBARAN · 스포츠",
+      "version_id": "appgprj_6ab0f3255cdc819180a427bf6d0846f4~appgver_dff080e010a48191b9d5e4a118225fca",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://aldebaran.kexxadrix.chatgpt.site",
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6ab0f3255cdc819180a427bf6d0846f4",
+      "failure_message": null,
+      "env_set_revision": 0,
+      "updated_at": "2026-09-23T07:10:28.529839+00:00"
+    },
+    "checks": {
+      "typecheck": "passed",
+      "build": "passed",
+      "buildCount": 2,
+      "rebuildReason": "User-visible copy and popup styling changed after first successful build; compound pick label defect corrected.",
+      "warnings": [
+        "minified chunk exceeds 500 kB",
+        "plugin timings",
+        "route static classification unknown"
+      ]
+    }
+  },
+  "source_files": [
+    "app/aldebaran-center-r4.tsx",
+    "app/aldebaran-wog-r5.css",
+    "app/aldebaran-wog-r5.tsx",
+    "app/demo-data.ts",
+    "app/prematch-r15.json",
+    "app/tracker-demo.ts",
+    "app/wog-market-data.ts",
+    "app/wog-service-views.tsx"
+  ],
+  "report": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\CHANGE_REPORT_R15_20260923.ko.md",
+  "images": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r15\\public\\european-1920.png",
+      "bytes": 461094,
+      "sha256": "95259a14d7d621f4b28d4728ad34ad623916f2012b0ecb22eaa21d45494a59cf",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "root_visually_reviewed": true
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r15\\public\\domestic-1920.png",
+      "bytes": 390740,
+      "sha256": "6b0a175c900cf3bf457bf6c47a29d94bafd96f22f69ca6895e89705eaf3151ac",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "root_visually_reviewed": true
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03\\runs\\r15\\public\\popup-1920.png",
+      "bytes": 334393,
+      "sha256": "6fa143c0723095d3e5f7acd8310f95e55ee59bb4fc4cefd785fa3446ee317625",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "root_visually_reviewed": true
+    }
+  ],
+  "previous_documents_preserved": {
+    "AGENTS.md": true,
+    "STATE.md": true,
+    "DESIGN_SPEC.md": true,
+    "DECISIONS.md": true
+  },
+  "report_links_missing": [],
+  "owner_thread": "01a0a97b-1268-7cf3-8aad-ba460ecf4f98",
+  "owner_status": "idle/completed",
+  "remaining_limits": [
+    "Static synthetic probability models and statistics; no live odds feed or verified player rosters.",
+    "Joint markets use deterministic24000-sample models and simplified overtime conventions; not a settlement engine.",
+    "Build passed with chunk-size warning over500kB, plugin timing advisory and unknown route classification notice."
+  ],
+  "unverified": [
+    "No full mobile or unrelated-page regression requested or run.",
+    "No actual payment, settlement, wager submission or new account creation performed.",
+    "No user visual approval claimed."
+  ],
+  "handoff_ui": "public URL and final report queued for root task",
+  "root_review": "Read final source diff, native result, checks, counts, fonts and three public screenshots. No additional app tests or source mutations by root. Original document text including original line endings verified."
+}

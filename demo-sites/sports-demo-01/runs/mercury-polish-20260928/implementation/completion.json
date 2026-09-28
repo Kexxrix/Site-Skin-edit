@@ -1,0 +1,1033 @@
+{
+  "task": "MERCURY_POLISH_20260928",
+  "status": "completed_published_verified",
+  "site": {
+    "projectId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+    "url": "https://mercury.kexxadrix.chatgpt.site",
+    "audience": "public",
+    "version": 11,
+    "versionId": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_84dad855b5b48191b4f6f24200dd7806",
+    "deploymentId": "appgdep_6aba126cd2688191b31dc2ebcb8b2ad2",
+    "deploymentStatus": "succeeded"
+  },
+  "source": {
+    "base": "af940990c2939a94ebdb89204c2e92ce881275c3",
+    "commit": "0d5e9e91b92974ebe72060da0925514eb516aea8",
+    "branch": "main",
+    "remoteHead": "0d5e9e91b92974ebe72060da0925514eb516aea8",
+    "remoteVerification": "Prior credential process completed non-force push and ls-remote equality assertion before index-stat refresh",
+    "exactBuildInputMatchesCommittedFiles": true,
+    "changedFiles": [
+      "app/demo-data.ts",
+      "app/mercury-market-view.ts",
+      "app/mercury-sports.css",
+      "app/mercury-sports.tsx",
+      "app/page.tsx",
+      "app/prematch-r15.json",
+      "public/sports/polish/mercury-sport-all.png",
+      "public/sports/polish/mercury-sport-formula1.png",
+      "public/sports/polish/mercury-sport-boxing.png",
+      "public/sports/polish/mercury-sport-motorsport.png",
+      "public/sports/polish/mercury-sport-mma.png"
+    ],
+    "fileHashes": {
+      "app/demo-data.ts": "d78b19f656979ecd01add2efeb2add3413d67d6dd63f2ab5426ff32e4be8d40a",
+      "app/mercury-market-view.ts": "fb297a97fbf9f5f6a0a811877895f80410e6c4ab238684d79d68edeb1cfa2bb7",
+      "app/mercury-sports.css": "efa05ace94540b03c208eb89c4bf986379316082b42914fe44319bfd5a02d39b",
+      "app/mercury-sports.tsx": "b236e374b8845cc46efaf65c9297dfb5cfe07d57e6cfbdb733ff3763b4ae3350",
+      "app/page.tsx": "def7cc28c9592970fa7fd453440f8309682553cd46dee06321aa78db499d2589",
+      "app/prematch-r15.json": "56d9570569bd9a9f70ac8d95a7219def48b1d6db8f028e7f55822bc918813a6b",
+      "public/sports/polish/mercury-sport-all.png": "468c9ca7b4affca65d5fbebe2715b6c0c180474f6be07e0b81eae4a54bcc3312",
+      "public/sports/polish/mercury-sport-formula1.png": "c8dde58bd8fe01d9a2113153c4429df375bad9b37982023b81d27f174d770690",
+      "public/sports/polish/mercury-sport-boxing.png": "e25a046dcbe81ed660dff0a118ed7c14e55bb2760ddb8664be070d799716ba2e",
+      "public/sports/polish/mercury-sport-motorsport.png": "ff7834b10114c43e431b2615a740f2aca41e4b4475a71fda050576e3ae3a9d68",
+      "public/sports/polish/mercury-sport-mma.png": "f8f0f2d61a1b414105b4621ff3b564eff2f33eb1cc22d78d05ee4a7fc87fc37b"
+    },
+    "status": "?? tsconfig.tsbuildinfo",
+    "originalUntrackedPreserved": true,
+    "buildRetry": "PASS after preserving Windows ENOTEMPTY remainder outside source",
+    "fixtureLineEndings": {
+      "source": "CRLF",
+      "committed": "LF",
+      "parsedDataIdentical": true,
+      "reason": "Git text normalization; no JSON values changed"
+    }
+  },
+  "changes": [
+    "ALDEBARAN 61 prematch fixtures with actual fixed markets, groups, filters, country flags, team logo slots, selection IDs and N+ counts",
+    "Figma 243:4 palette, gold and gray gradients, flat nonselected controls and selected hover contrast",
+    "Five supplied original PNG icons copied unchanged and optically centered with CSS",
+    "All ordinary cards display VS without status subline",
+    "Keep-slip persistence under existing MERCURY namespace with invalid selection filtering"
+  ],
+  "verification": {
+    "typecheck": "PASS --noEmit --incremental false",
+    "build": "PASS npm run build",
+    "diffCheck": "PASS",
+    "dataComparison": {
+      "passed": true,
+      "fixtureEquality": true,
+      "marketGroupEquality": true,
+      "selectionIdEquality": true,
+      "counts": {
+        "all": 61,
+        "soccer": 32,
+        "basketball": 6,
+        "baseball": 16,
+        "volleyball": 0,
+        "hockey": 7,
+        "formula1": 0,
+        "boxing": 0,
+        "mma": 0,
+        "motorsports": 0
+      },
+      "fixtures": [
+        {
+          "id": "record-401902644",
+          "sport": "basketball",
+          "home": "토론토 랩터스",
+          "away": "마이애미 히트",
+          "marketCount": 80,
+          "groupCount": 41,
+          "pickCount": 168
+        },
+        {
+          "id": "record-401881922",
+          "sport": "hockey",
+          "home": "토론토 메이플리프스",
+          "away": "몬트리올 캐네이디언스",
+          "marketCount": 79,
+          "groupCount": 38,
+          "pickCount": 192
+        },
+        {
+          "id": "record-401857190",
+          "sport": "basketball",
+          "home": "애틀랜타 드림",
+          "away": "코네티컷 선",
+          "marketCount": 115,
+          "groupCount": 41,
+          "pickCount": 238
+        },
+        {
+          "id": "record-401884790",
+          "sport": "soccer",
+          "home": "바이에른 뮌헨",
+          "away": "우니온 베를린",
+          "marketCount": 111,
+          "groupCount": 50,
+          "pickCount": 276
+        },
+        {
+          "id": "record-401879275",
+          "sport": "soccer",
+          "home": "브렌트퍼드",
+          "away": "첼시",
+          "marketCount": 110,
+          "groupCount": 50,
+          "pickCount": 274
+        },
+        {
+          "id": "record-761815",
+          "sport": "soccer",
+          "home": "뉴욕 시티 FC",
+          "away": "뉴욕 레드불스",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-401876453",
+          "sport": "soccer",
+          "home": "AS 모나코",
+          "away": "RC 랑스",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-401857191",
+          "sport": "basketball",
+          "home": "Sky",
+          "away": "Mystics",
+          "marketCount": 52,
+          "groupCount": 36,
+          "pickCount": 112
+        },
+        {
+          "id": "record-401857192",
+          "sport": "basketball",
+          "home": "Wings",
+          "away": "Sparks",
+          "marketCount": 85,
+          "groupCount": 41,
+          "pickCount": 178
+        },
+        {
+          "id": "record-401857193",
+          "sport": "basketball",
+          "home": "Fire",
+          "away": "Mercury",
+          "marketCount": 115,
+          "groupCount": 41,
+          "pickCount": 238
+        },
+        {
+          "id": "record-401857194",
+          "sport": "basketball",
+          "home": "Storm",
+          "away": "Aces",
+          "marketCount": 51,
+          "groupCount": 36,
+          "pickCount": 110
+        },
+        {
+          "id": "record-401881923",
+          "sport": "hockey",
+          "home": "몬트리올 캐네이디언스",
+          "away": "토론토 메이플리프스",
+          "marketCount": 52,
+          "groupCount": 38,
+          "pickCount": 138
+        },
+        {
+          "id": "record-401886427",
+          "sport": "hockey",
+          "home": "Blues",
+          "away": "Stars",
+          "marketCount": 78,
+          "groupCount": 38,
+          "pickCount": 190
+        },
+        {
+          "id": "record-401878099",
+          "sport": "hockey",
+          "home": "Oilers",
+          "away": "Jets",
+          "marketCount": 64,
+          "groupCount": 38,
+          "pickCount": 162
+        },
+        {
+          "id": "record-401886258",
+          "sport": "hockey",
+          "home": "Wild",
+          "away": "Blackhawks",
+          "marketCount": 78,
+          "groupCount": 38,
+          "pickCount": 190
+        },
+        {
+          "id": "record-401879412",
+          "sport": "hockey",
+          "home": "Kings",
+          "away": "Golden Knights",
+          "marketCount": 51,
+          "groupCount": 38,
+          "pickCount": 136
+        },
+        {
+          "id": "record-401879652",
+          "sport": "hockey",
+          "home": "Kraken",
+          "away": "Canucks",
+          "marketCount": 65,
+          "groupCount": 38,
+          "pickCount": 164
+        },
+        {
+          "id": "record-401879269",
+          "sport": "soccer",
+          "home": "Spurs",
+          "away": "Aston Villa",
+          "marketCount": 47,
+          "groupCount": 36,
+          "pickCount": 147
+        },
+        {
+          "id": "record-401879274",
+          "sport": "soccer",
+          "home": "Brighton",
+          "away": "Arsenal",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-401878778",
+          "sport": "soccer",
+          "home": "Everton",
+          "away": "Ipswich",
+          "marketCount": 107,
+          "groupCount": 50,
+          "pickCount": 268
+        },
+        {
+          "id": "record-401879271",
+          "sport": "soccer",
+          "home": "Newcastle",
+          "away": "Hull",
+          "marketCount": 68,
+          "groupCount": 41,
+          "pickCount": 190
+        },
+        {
+          "id": "record-401879270",
+          "sport": "soccer",
+          "home": "Nottm Forest",
+          "away": "Coventry",
+          "marketCount": 46,
+          "groupCount": 36,
+          "pickCount": 145
+        },
+        {
+          "id": "record-761818",
+          "sport": "soccer",
+          "home": "CF Montréal",
+          "away": "Columbus",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-761819",
+          "sport": "soccer",
+          "home": "D.C. United",
+          "away": "Charlotte",
+          "marketCount": 110,
+          "groupCount": 50,
+          "pickCount": 274
+        },
+        {
+          "id": "record-761816",
+          "sport": "soccer",
+          "home": "New England",
+          "away": "Orlando",
+          "marketCount": 110,
+          "groupCount": 50,
+          "pickCount": 274
+        },
+        {
+          "id": "record-761817",
+          "sport": "soccer",
+          "home": "San Jose",
+          "away": "LAFC",
+          "marketCount": 49,
+          "groupCount": 36,
+          "pickCount": 151
+        },
+        {
+          "id": "record-761822",
+          "sport": "soccer",
+          "home": "Dallas",
+          "away": "Austin",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-761820",
+          "sport": "soccer",
+          "home": "Houston",
+          "away": "Cincinnati",
+          "marketCount": 109,
+          "groupCount": 50,
+          "pickCount": 272
+        },
+        {
+          "id": "record-761821",
+          "sport": "soccer",
+          "home": "Minnesota",
+          "away": "LA Galaxy",
+          "marketCount": 47,
+          "groupCount": 36,
+          "pickCount": 147
+        },
+        {
+          "id": "record-761823",
+          "sport": "soccer",
+          "home": "Kansas City",
+          "away": "Philadelphia",
+          "marketCount": 108,
+          "groupCount": 50,
+          "pickCount": 270
+        },
+        {
+          "id": "record-761824",
+          "sport": "soccer",
+          "home": "St. Louis",
+          "away": "Toronto",
+          "marketCount": 46,
+          "groupCount": 36,
+          "pickCount": 145
+        },
+        {
+          "id": "record-761826",
+          "sport": "soccer",
+          "home": "Colorado",
+          "away": "Seattle",
+          "marketCount": 109,
+          "groupCount": 50,
+          "pickCount": 272
+        },
+        {
+          "id": "record-761827",
+          "sport": "soccer",
+          "home": "Nashville",
+          "away": "Chicago",
+          "marketCount": 47,
+          "groupCount": 36,
+          "pickCount": 147
+        },
+        {
+          "id": "record-761825",
+          "sport": "soccer",
+          "home": "Salt Lake",
+          "away": "Vancouver",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-761828",
+          "sport": "soccer",
+          "home": "Portland",
+          "away": "Atlanta",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-401884786",
+          "sport": "soccer",
+          "home": "Gladbach",
+          "away": "Mainz",
+          "marketCount": 110,
+          "groupCount": 50,
+          "pickCount": 274
+        },
+        {
+          "id": "record-401884787",
+          "sport": "soccer",
+          "home": "Frankfurt",
+          "away": "Freiburg",
+          "marketCount": 47,
+          "groupCount": 36,
+          "pickCount": 147
+        },
+        {
+          "id": "record-401884785",
+          "sport": "soccer",
+          "home": "Hamburg",
+          "away": "Cologne",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "record-401884784",
+          "sport": "soccer",
+          "home": "Bremen",
+          "away": "Augsburg",
+          "marketCount": 46,
+          "groupCount": 36,
+          "pickCount": 145
+        },
+        {
+          "id": "record-401884789",
+          "sport": "soccer",
+          "home": "Stuttgart",
+          "away": "Dortmund",
+          "marketCount": 110,
+          "groupCount": 50,
+          "pickCount": 274
+        },
+        {
+          "id": "record-401876451",
+          "sport": "soccer",
+          "home": "Paris FC",
+          "away": "Strasbourg",
+          "marketCount": 111,
+          "groupCount": 50,
+          "pickCount": 276
+        },
+        {
+          "id": "record-401876457",
+          "sport": "soccer",
+          "home": "Angers",
+          "away": "Troyes",
+          "marketCount": 108,
+          "groupCount": 50,
+          "pickCount": 270
+        },
+        {
+          "id": "record-401876455",
+          "sport": "soccer",
+          "home": "Le Mans",
+          "away": "Lorient",
+          "marketCount": 47,
+          "groupCount": 36,
+          "pickCount": 147
+        },
+        {
+          "id": "record-401876454",
+          "sport": "soccer",
+          "home": "Lyon",
+          "away": "Rennes",
+          "marketCount": 108,
+          "groupCount": 50,
+          "pickCount": 270
+        },
+        {
+          "id": "record-401876450",
+          "sport": "soccer",
+          "home": "Toulouse",
+          "away": "Le Havre AC",
+          "marketCount": 67,
+          "groupCount": 41,
+          "pickCount": 188
+        },
+        {
+          "id": "aldebaran-r15-baseball-01",
+          "sport": "baseball",
+          "home": "탬파베이 레이스",
+          "away": "애슬레틱스",
+          "marketCount": 65,
+          "groupCount": 44,
+          "pickCount": 156
+        },
+        {
+          "id": "aldebaran-r15-baseball-02",
+          "sport": "baseball",
+          "home": "Guardians",
+          "away": "White Sox",
+          "marketCount": 102,
+          "groupCount": 60,
+          "pickCount": 262
+        },
+        {
+          "id": "aldebaran-r15-baseball-03",
+          "sport": "baseball",
+          "home": "Cardinals",
+          "away": "Giants",
+          "marketCount": 26,
+          "groupCount": 21,
+          "pickCount": 74
+        },
+        {
+          "id": "aldebaran-r15-baseball-04",
+          "sport": "baseball",
+          "home": "Twins",
+          "away": "Yankees",
+          "marketCount": 67,
+          "groupCount": 46,
+          "pickCount": 190
+        },
+        {
+          "id": "aldebaran-r15-baseball-05",
+          "sport": "baseball",
+          "home": "Blue Jays",
+          "away": "Tigers",
+          "marketCount": 102,
+          "groupCount": 60,
+          "pickCount": 234
+        },
+        {
+          "id": "aldebaran-r15-baseball-06",
+          "sport": "baseball",
+          "home": "Reds",
+          "away": "Dodgers",
+          "marketCount": 25,
+          "groupCount": 19,
+          "pickCount": 70
+        },
+        {
+          "id": "aldebaran-r15-baseball-07",
+          "sport": "baseball",
+          "home": "Pirates",
+          "away": "Brewers",
+          "marketCount": 65,
+          "groupCount": 44,
+          "pickCount": 156
+        },
+        {
+          "id": "aldebaran-r15-baseball-08",
+          "sport": "baseball",
+          "home": "Nationals",
+          "away": "Phillies",
+          "marketCount": 102,
+          "groupCount": 60,
+          "pickCount": 234
+        },
+        {
+          "id": "aldebaran-r15-baseball-09",
+          "sport": "baseball",
+          "home": "Mets",
+          "away": "Orioles",
+          "marketCount": 26,
+          "groupCount": 21,
+          "pickCount": 74
+        },
+        {
+          "id": "aldebaran-r15-baseball-10",
+          "sport": "baseball",
+          "home": "Cubs",
+          "away": "Braves",
+          "marketCount": 26,
+          "groupCount": 21,
+          "pickCount": 74
+        },
+        {
+          "id": "aldebaran-r15-baseball-11",
+          "sport": "baseball",
+          "home": "Rangers",
+          "away": "Red Sox",
+          "marketCount": 67,
+          "groupCount": 46,
+          "pickCount": 190
+        },
+        {
+          "id": "aldebaran-r15-baseball-12",
+          "sport": "baseball",
+          "home": "Astros",
+          "away": "Royals",
+          "marketCount": 102,
+          "groupCount": 60,
+          "pickCount": 234
+        },
+        {
+          "id": "aldebaran-r15-baseball-13",
+          "sport": "baseball",
+          "home": "Rockies",
+          "away": "Padres",
+          "marketCount": 29,
+          "groupCount": 23,
+          "pickCount": 110
+        },
+        {
+          "id": "aldebaran-r15-baseball-14",
+          "sport": "baseball",
+          "home": "Angels",
+          "away": "Mariners",
+          "marketCount": 65,
+          "groupCount": 44,
+          "pickCount": 156
+        },
+        {
+          "id": "aldebaran-r15-baseball-15",
+          "sport": "baseball",
+          "home": "Diamondbacks",
+          "away": "Marlins",
+          "marketCount": 102,
+          "groupCount": 60,
+          "pickCount": 234
+        },
+        {
+          "id": "aldebaran-r15-baseball-16",
+          "sport": "baseball",
+          "home": "탬파베이 레이스",
+          "away": "애슬레틱스",
+          "marketCount": 26,
+          "groupCount": 21,
+          "pickCount": 74
+        }
+      ],
+      "uniqueSelections": 11485,
+      "allReferencedAssetsExist": true,
+      "excludedAmericanFootball": 16,
+      "originalRecordsPreserved": true,
+      "calc": {
+        "prices": [
+          1.56,
+          1.51
+        ],
+        "stake": 10000,
+        "totals": {
+          "odds": "2.356",
+          "displayOdds": "2.36",
+          "potential": "23556"
+        }
+      },
+      "storageKey": "mercury-demo-r6-v1"
+    },
+    "localFunctionalEvidenceEntries": 32,
+    "scrollSteps": [
+      {
+        "target": 2,
+        "before": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 0,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 0,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1406
+          }
+        ],
+        "after": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 0,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 650,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1406
+          }
+        ],
+        "passed": true
+      },
+      {
+        "target": 1,
+        "before": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 0,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 650,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1406
+          }
+        ],
+        "after": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 500,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 650,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1406
+          }
+        ],
+        "passed": true
+      },
+      {
+        "target": 0,
+        "before": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 500,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 650,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1406
+          }
+        ],
+        "after": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 182,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 500,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 650,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1406
+          }
+        ],
+        "passed": true
+      },
+      {
+        "target": 3,
+        "before": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 182,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 500,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 650,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 0,
+            "total": 1406
+          }
+        ],
+        "after": [
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 182,
+            "total": 1149
+          },
+          {
+            "class": "mc-list-scroll mc-scroll",
+            "client": 902,
+            "overflow": "auto",
+            "top": 500,
+            "total": 14830
+          },
+          {
+            "class": "mc-market-scroll mc-scroll",
+            "client": 813,
+            "overflow": "auto",
+            "top": 650,
+            "total": 6240
+          },
+          {
+            "class": "mc-rail mc-scroll",
+            "client": 967,
+            "overflow": "auto",
+            "top": 439,
+            "total": 1406
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "geometryDiffs": [],
+    "publicQA": {
+      "version": 11,
+      "health": {
+        "allVS": true,
+        "bodyFont": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "cards": 61,
+        "fontStatus": "loaded",
+        "imageErrors": [],
+        "leftSportCount": 9,
+        "overlay": false,
+        "scale": 1,
+        "scripts": [
+          "https://mercury.kexxadrix.chatgpt.site/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+          "https://mercury.kexxadrix.chatgpt.site/_next/static/chunks/framework-D_rUT4EX.js",
+          "https://use.typekit.net/hyf2mwn.js",
+          "https://use.typekit.net/gig5kam.js",
+          "https://mercury.kexxadrix.chatgpt.site/_next/static/chunks/index-Cq9wtxIp.js"
+        ],
+        "tabCount": 10,
+        "title": "MERCURY · 스포츠",
+        "unselectedOdds": [
+          "rgb(129, 255, 255)",
+          "rgb(129, 255, 255)",
+          "rgb(129, 255, 255)"
+        ],
+        "url": "https://mercury.kexxadrix.chatgpt.site/",
+        "viewport": [
+          1920,
+          1080
+        ]
+      },
+      "console": [],
+      "all61MarketCountsMatchReference": true,
+      "selectedHover": [
+        {
+          "background": "linear-gradient(rgb(255, 237, 192) 0%, rgb(255, 205, 85) 50%, rgb(175, 128, 13) 100%)",
+          "color": "rgb(23, 23, 23)",
+          "hover": true,
+          "oddsColor": "rgb(23, 23, 23)",
+          "pressed": "true"
+        },
+        {
+          "background": "linear-gradient(rgb(255, 237, 192) 0%, rgb(255, 205, 85) 50%, rgb(175, 128, 13) 100%)",
+          "color": "rgb(23, 23, 23)",
+          "hover": false,
+          "oddsColor": "rgb(23, 23, 23)",
+          "pressed": "true"
+        }
+      ],
+      "zeroCategory": {
+        "cards": 0,
+        "detail": "",
+        "empty": "등록된 경기가 없습니다.",
+        "groups": 0,
+        "markets": 0,
+        "selected": [],
+        "sport": "motorsports",
+        "vs": true
+      },
+      "domestic": {
+        "cards": 61,
+        "groups": 0,
+        "markets": 0,
+        "selected": [],
+        "sport": "all",
+        "vs": true
+      },
+      "accountUnchanged": true,
+      "slipStorage": {
+        "beforeAbsent": true,
+        "after": {
+          "keep": false
+        },
+        "explanation": "New keep-slip key initialized off; original account namespace unchanged"
+      },
+      "finalState": {
+        "cards": 61,
+        "detail": "record-401902644",
+        "groups": 41,
+        "markets": 80,
+        "note": "80개 마켓 · 41개 그룹",
+        "selected": [],
+        "sport": "all",
+        "vs": true
+      },
+      "screenshots": [
+        "mercury-public-final.png",
+        "mercury-public-domestic.png",
+        "mercury-public-selected-hover.png"
+      ],
+      "finalBetConfirmationPerformed": false
+    },
+    "publicBuildAssetPathsMatch": true,
+    "sourceCleanExceptOriginalUntracked": true
+  },
+  "preserved": [
+    "MERCURY branding, logo, photographs and existing gold icons",
+    "Original records, account balance/history and storage namespace",
+    "Original untracked tsconfig.tsbuildinfo SHA-256",
+    "ALDEBARAN and Figma read-only; coordinator owns preservation audit"
+  ],
+  "limitations": [
+    "No final betting confirmation executed as instructed",
+    "Browser technical and visual checks are not user aesthetic approval",
+    "Fixed market dataset causes client chunk warning above 500kB",
+    "Existing vinext static route classification reports unknown"
+  ],
+  "referenceScreenshot": {
+    "reused": "aldebaran-reference-verified-v23.png",
+    "sameSourceHead": "6be8c176b374999501952d24520c8411b29b153f",
+    "currentDOMMeasuredSeparately": true,
+    "failedCurrentCaptureQuarantined": "aldebaran-reference-failed-tiling.png"
+  },
+  "notes": [
+    "Fixture JSON CRLF normalized to LF for exact Git/build byte alignment; parsed values unchanged",
+    "New keep-slip key initialized to {keep:false}; original public account data unchanged",
+    "One Windows build-output cleanup ENOTEMPTY resolved by preserving remainder outside source; final rebuild passed"
+  ],
+  "finalScreenshot": "mercury-public-final.png",
+  "nextAction": "Stop and await user feedback"
+}

@@ -1,0 +1,111 @@
+{
+  "revision": "R11",
+  "implementationStatus": "not_started_in_this_handoff",
+  "baseline": {
+    "source": "Latest local ALDEBARAN after user-reported R10 completion and manual review",
+    "currentCommit": null,
+    "currentPublicVersion": null,
+    "resetToEarlierCommit": false,
+    "preserveLaterUserEdits": true,
+    "preworkFullAudit": false
+  },
+  "changes": {
+    "R11-01": {
+      "targets": "six right-rail service banners only",
+      "color": "#000000",
+      "alpha": 0.4,
+      "layerOrder": [
+        "existing image",
+        "one black overlay",
+        "existing HTML text"
+      ],
+      "modifySourcePixels": false,
+      "preserveTextAndGeometry": true
+    },
+    "R11-02": {
+      "targets": "shared central sports tabs, domestic and overseas",
+      "topSpacing": "reduce to marked reference guide; no exact user CSS value",
+      "equalReducedInlinePadding": true,
+      "width": "content",
+      "countBadgeWidth": "content",
+      "reserveThreeDigits": false,
+      "preserveExistingWidths": false,
+      "equalizeButtonWidths": false,
+      "iconPx": [
+        20,
+        20
+      ],
+      "nameFontPx": 14,
+      "countFontPx": 12,
+      "preserveExistingHeight": true,
+      "preserveFilterData": true,
+      "suggestedStartingPx": {
+        "buttonInlinePadding": 8,
+        "internalGap": 8,
+        "badgeInlinePadding": 4
+      },
+      "suggestedNumbersAreUserSpecified": false
+    },
+    "R11-03": {
+      "asset": "assets/header/bg_header_0.webm",
+      "scope": "1920x62 menu-header row only",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "playsinline": true,
+      "controls": false,
+      "pointerEvents": "none",
+      "videoInstanceCount": 1,
+      "sourceContainsAudioTrack": true,
+      "noticeRowUnchanged": true,
+      "logo": {
+        "useExistingWordmark": true,
+        "staticOverlay": true,
+        "plate": "translucent dark diagonal",
+        "plateAlpha": null,
+        "clearanceAfterFinalN": true,
+        "underline": "existing thin orange line ends at lower diagonal vertex"
+      },
+      "preserveMenuInteractions": true,
+      "reencode": false
+    },
+    "R11-04": {
+      "assets": [
+        "assets/left-rail/btn_image_casino.png",
+        "assets/left-rail/btn_image_slot.png"
+      ],
+      "useLatestUploadWithParenthesized1": true,
+      "replaceR10Assets": true,
+      "preserveButtonGeometryAndActions": true,
+      "fit": "contain",
+      "visibleHtmlLabels": false,
+      "newDarkOverlay": false
+    }
+  },
+  "preserve": [
+    "1920 fixed layout",
+    "outer central board transparent",
+    "inner card frames",
+    "1px market accent",
+    "banner text vertical centering",
+    "overseas independent scrolls",
+    "domestic shared scroll",
+    "current fixtures, odds, selection IDs, slip and history",
+    "header active orange text and underline; no new hover"
+  ],
+  "outOfScope": [
+    "WOG/Figma research",
+    "new plugins/dependencies",
+    "image generation",
+    "odds/pricing changes",
+    "MERCURY/SIRIUS rollout",
+    "full QA/Jev",
+    "public GitHub backup sync"
+  ],
+  "completion": {
+    "build": "existing build once; rerun only for an actual failure",
+    "review": "changed surfaces and representative existing interactions only",
+    "deployment": "existing ALDEBARAN workflow to the same canonical URL",
+    "report": "actual screenshots, video checks, commit/deployment identifiers and unverified items"
+  }
+}

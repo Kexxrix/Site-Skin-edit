@@ -1,0 +1,58 @@
+{
+  "revision": "R12",
+  "tokens": [
+    {
+      "name": "brand",
+      "value": "#FF641F",
+      "role": "브랜드/기존 선택 강조",
+      "source": "references/palette-approved.png",
+      "sourceType": "user PNG pixel sample",
+      "exactPixelOccurrenceCount": 14625
+    },
+    {
+      "name": "odds",
+      "value": "#50DCD9",
+      "role": "일반 상태 실제 배당",
+      "source": "references/palette-approved.png",
+      "sourceType": "user PNG pixel sample",
+      "exactPixelOccurrenceCount": 426
+    },
+    {
+      "name": "smallAccent",
+      "value": "#F1B000",
+      "role": "NEW/LIVE 및 추가베팅 면",
+      "source": "references/palette-approved.png",
+      "sourceType": "user PNG pixel sample",
+      "exactPixelOccurrenceCount": 1325
+    },
+    {
+      "name": "lineValue",
+      "value": "#B7B7B7",
+      "role": "핸디캡/득점 기준값",
+      "source": "references/match-list-surface.png",
+      "sourceType": "user PNG pixel sample",
+      "exactPixelOccurrenceCount": 2541
+    },
+    {
+      "name": "areaSurface",
+      "value": "#191919",
+      "role": "종목바 및 경기 목록 면",
+      "source": "references/sports-toolbar.png",
+      "sourceType": "user PNG pixel sample",
+      "exactPixelOccurrenceCount": 41228
+    },
+    {
+      "name": "softOutline",
+      "value": "#383838",
+      "role": "종목바 하단선 및 우측 전체 외곽선",
+      "source": "references/sports-toolbar.png",
+      "sourceType": "user PNG pixel sample",
+      "exactPixelOccurrenceCount": 1238
+    }
+  ],
+  "onSmallAccent": {
+    "value": "#141515",
+    "policy": "prefer existing dark foreground token; this is fallback"
+  },
+  "measurementLimit": "Values were read from PNG pixels, not Figma design styles or deployed computed CSS."
+}
