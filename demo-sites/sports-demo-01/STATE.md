@@ -1,3 +1,30 @@
+# 최신 완료 기준 — MERCURY 커스텀 디자인 PUBLIC v20 / 2026-09-29
+
+- 사용자 요청으로 현재 로컬 상태를 기존 공개 주소 https://mercury.kexxadrix.chatgpt.site 에 배포했다. 공개 범위는 public 유지.
+- 소스 커밋: `db9d15c3446a0c650ec84c6d3f655443a26fea4f`. 로컬 작업 브랜치 `mercury-variation`을 유지하고 Sites 원격 `main`에 같은 커밋을 반영했다.
+- 버전: `appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_77fa25b874c48191aedf87eb85310438` (v20). 배포: `appgdep_6abb92d88a488191a3018eaff931922c`, succeeded, 2026-09-29 19:29 KST.
+- 반영: 중앙 로고·카지노 원본 배경·블랙 메탈 메뉴 헤더, 국내형 축구 우선 정렬, 좌측 원본 이미지 버튼 4개(국내형→해외형→슬롯→카지노), 하단 흰색 16px 아이콘, 이미지 상단 흰색 하이라이트, 상단 3개·이미지 4개 버튼 호버.
+- 검증: 타입 검사와 빌드 통과. 공개 화면에서 최신 헤더·좌측 레일·국내형 분데스리가 우선·61경기·이미지 로딩을 확인했다. 기존 500kB 청크 및 vinext 경로 분류 unknown 경고는 남아 있다.
+- GitHub 백업 대상은 기존 `Kexxrix/Site-Skin-edit`의 `demo-sites/sports-demo-01`이며 위 소스와 운영 문서를 기준으로 한다. 다른 사이트·원본 에셋·기존 백업·미추적 `tsconfig.tsbuildinfo`는 보존한다.
+
+---
+
+# 최신 작업 기준 — MERCURY 로컬 기준 백업 / 2026-09-29
+
+**현재 작업: 기준 백업과 로컬 브랜치 준비만 완료한 뒤 다음 디자인 지시를 기다린다.**
+
+- 실제 시작 HEAD: dde4dbd16d2ae2d667926b7e87bf92f4383bd59c (마지막 이 스레드 배포 기록 PUBLIC v19). 과거 v15/v11은 이력이며 최신 복원 기준이 아니다.
+- 소스 내용 변경 없는 baseline 빈 커밋: a20e66994e751a4af7f6a7e2cd45935d43b3b1a9
+- 기준 태그: mercury-baseline-20260929. 후속 로컬 작업 브랜치: mercury-variation.
+- 작업 경로: E:\codexwork\Site-Skin-edit\demo-sites\sports-demo-01\site. 새 worktree 없이 같은 체크아웃을 사용한다.
+- 복원 ZIP: E:\codexwork\Site-Skin-edit-backups\20260929-153800-mercury-baseline\MERCURY-restore.zip. 소스·설정·잠금 파일·자산 296개, 운영 문서, Git bundle과 파일별 해시를 포함한다.
+- node_modules·캐시·임시 빌드 출력·작업 임시물은 백업에서 제외하고 기존 로컬 원본은 보존한다. 미추적 tsconfig.tsbuildinfo는 커밋하지 않는다. 현재 복원 대상에 .env/개인키 파일은 발견되지 않았다.
+- 이번 단계에는 디자인/기능/데이터 수정, 앱 실행·재검수·빌드, 원격 push·배포를 하지 않는다. ALDEBARAN과 공개 MERCURY는 변경하지 않는다.
+- 이후 순서: **디자인 지시 → 이 브랜치에서 로컬 수정 → 화면 확인 → MERCURY 배포**. 배포 단계 전 자동 게시나 원격 HEAD로 로컬 기준 덮어쓰기를 하지 않는다.
+- 백업 파일 일치·ZIP 무결성·bundle 복원 검증 결과는 같은 백업 폴더의 verification.json에 보관한다. 아래 기존 관측과 증거는 그대로 보존한다.
+
+---
+
 # 최신 작업 기준 — MERCURY POLISH / 2026-09-28
 
 **현재 상태: MERCURY POLISH 구현·로컬 검수·PUBLIC v11 배포·공개 핵심 확인 완료. 사용자 피드백 대기. 다음 사이클은 시작하지 않는다.**
