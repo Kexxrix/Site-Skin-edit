@@ -9,7 +9,18 @@ export type Selection = { id: string; matchId: string; marketIndex: number; pick
 
 const sportImage=(sport:string)=>'/sports/r8/mercury-'+(sport==='hockey'?'ice-hockey':sport)+'.png';
 export const sportIcons:Record<string,string>=Object.fromEntries(sports.map(s=>[s.id,sportImage(s.id)]));
-Object.assign(sportIcons,{all:'/sports/polish/mercury-sport-all.png',formula1:'/sports/polish/mercury-sport-formula1.png',boxing:'/sports/polish/mercury-sport-boxing.png',mma:'/sports/polish/mercury-sport-mma.png',motorsports:'/sports/polish/mercury-sport-motorsport.png'});
+Object.assign(sportIcons,{
+  all:'/sports/mercury-gold-20260930/image_Sports_Sirius_0000_Layer-18.png',
+  soccer:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-10.png',
+  basketball:'/sports/mercury-gold-20260930/image_Sports_Sirius_0006_Layer-11.png',
+  baseball:'/sports/mercury-gold-20260930/image_Sports_Sirius_0005_Layer-12.png',
+  volleyball:'/sports/mercury-gold-20260930/image_Sports_Sirius_0002_Layer-15.png',
+  hockey:'/sports/mercury-gold-20260930/image_Sports_Sirius_0003_Layer-14.png',
+  formula1:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-9.png',
+  boxing:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-8.png',
+  mma:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-7.png',
+  motorsports:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-6.png',
+});
 export const sportMenu=[
   ...['all','soccer','basketball','baseball','volleyball','hockey'].map(id=>({...sports.find(s=>s.id===id)!,logo:sportIcons[id]})),
   ...[['formula1','포뮬라1'],['boxing','복싱'],['mma','MMA'],['motorsports','모터스포츠']].map(([id,name])=>({id,name,logo:sportIcons[id]})),
@@ -22,7 +33,7 @@ export const matches:Match[]=[...records.filter(record=>record.sport!=='american
   .map(record=>{
     const fixed=fixedFixtures[record.id];
     if(!fixed||fixed.sport!==record.sport)throw new Error('Missing fixed prematch odds: '+record.id);
-    return {...record,sportLogo:sportImage(record.sport),sourceKind:fixedOdds.sourceKind,datasetVersion:fixedOdds.datasetVersion,markets:fixed.markets};
+    return {...record,sportLogo:sportIcons[record.sport],sourceKind:fixedOdds.sourceKind,datasetVersion:fixedOdds.datasetVersion,markets:fixed.markets};
   });
 const oddsFormatter=new Intl.NumberFormat('en-US',{useGrouping:false,minimumFractionDigits:2,maximumFractionDigits:2});
 export function priceText(value:number|string|bigint,denominator=BigInt(1)):string {

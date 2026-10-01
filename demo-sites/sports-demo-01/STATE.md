@@ -1,3 +1,79 @@
+# 최신 GitHub 백업 기준 — MERCURY v24 / 2026-10-01
+
+- 통합 저장소 `https://github.com/Kexxrix/Site-Skin-edit`의 MERCURY 백업 기준을 PUBLIC v24 / 소스 `8385d4bbc74394006db637e87466f4a171f6e02d` / `mercury-variation`으로 갱신했다. 현재 사이트 추적 파일 317개·기존 타입 선언 파일 1개와 운영 문서 5개, 총 323개를 원본 바이트 기준으로 대조한다.
+- 수집 범위·파일별 SHA-256·제외 목록·공개 배포 조회 결과는 통합 저장소의 `backup/site-snapshots/20261001-mercury-v24/`에 기록한다. 기존 입력·검수 이력과 다른 사이트 자료는 보존한다.
+- 앱 코드·디자인·동작 수정, 새 빌드/브라우저 QA, Sites 재배포 없이 GitHub 백업만 수행한다. `.git`, 의존성·캐시·임시 빌드·비밀정보·원본 세션 로그는 이번 수집에서 제외하며, 기준 태그·복원 ZIP·기존 미추적 `tsconfig.tsbuildinfo`를 유지한다.
+
+---
+
+# 최신 완료 기준 — 워드마크 v3 PUBLIC v24 / 2026-09-30
+
+- 사용자 요청대로 `D:/DesignAssets/MERCURY/01_원본수집/로고/mercury-wordmark_v3.png`를 원본 그대로 `site/public/branding/mercury-wordmark_v3.png`에 복사하고, `app/mercury-sports.tsx`의 이미지 경로 한 곳만 바꿨다. 기존 로고·배경·종목 아이콘과 CSS 크기·배치를 유지했다.
+- 로컬/공개 1920×1080에서 v3 로고 1798×526 원본, 표시 폭 248px·중심 x=960·위로 5px, 기존 배경 유지 및 화면 표시를 확인했다. 공개 이미지 SHA-256 `9B6DDE375A5312BA2B232E68B957560DF6DCE0427A30D17F008FCF3959E3C558`은 원본/로컬/빌드와 일치한다. 타입 검사·빌드 통과. 기존 빌드 경고와 앞서 기록한 기능 아이콘 사전 로딩 문제는 이번 수정 범위에 포함하지 않았다.
+- 소스 `8385d4bbc74394006db637e87466f4a171f6e02d`, `mercury-variation` 유지, Sites 원격 main 일치 확인. 버전 `appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_b5329190244c819187d9e1b9901cbaf1` (v24), 배포 `appgdep_6abce866ee6c8191aec45e69fb80713c`, succeeded, 2026-09-30 19:46 KST. 기존 공개 주소와 public 범위 유지.
+- 증거: `E:/codexwork/Site-Skin-edit-backups/20260930-mercury-v24-logo/`의 `local-logo-v3.png/json`, `public-logo-v3-full.png/json`, `mercury-v24-deploy.tar`. 빌드 정리 중 ENOTEMPTY가 발생한 dist 잔여물은 같은 폴더의 `build-cleanup-remainder`에 보존하고 다시 빌드했다. 설치된 Sites 보조 스크립트 경로가 없어 기존 소스 푸시 방식과 네이티브 tar로 패키징/필수 항목 검증 후 native Sites 도구로 저장·배포했다.
+- 추적 파일은 clean, 기존 미추적 `tsconfig.tsbuildinfo`의 바이트와 상태 보존. 이번 요청에서 추가 디자인 수정·통합 GitHub 백업·오케스트레이션 메시지는 수행하지 않았다.
+
+---
+
+# 최신 완료 기준 — 헤더·종목 아이콘 PUBLIC v23 / 2026-09-30
+
+- 사용자가 로컬 화면을 확인한 뒤 공개 반영과 오케스트레이션 업데이트를 요청했다. 아래 두 로컬 작업의 워드마크·헤더 배경 및 종목 아이콘 10개를 기존 공개 주소 `https://mercury.kexxadrix.chatgpt.site`에 배포했다. 기존 공개 범위 public을 유지했다.
+- 소스 커밋 `ca6e86783b601d724a6893982b730e5c9174eab6`, 작업 브랜치 `mercury-variation` 유지, Sites 원격 main 일치 확인. 앱 소스 3개와 PNG 12개가 포함됐으며 기존 자산·데이터·나머지 UI는 보존했다.
+- 버전 `appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_21c14b0e8ef48191ac0adc98d798345e` (v23), 배포 `appgdep_6abcb1fc32c081919c0f1512b6e3b0ce`, succeeded, 2026-09-30 15:54 KST.
+- 로컬 타입 검사·빌드·이미지/필터 검증은 동일 입력의 통과 결과를 재사용했다. 공개 1920×1080에서 새 워드마크·배경과 상단 종목 10개·왼쪽 9개, 기존 20/22px 크기, 워드마크 248px·중앙 x=960·위로 5px, 배경 center top / auto no-repeat, 전체 61경기 카운트를 확인했다. 교체 PNG 12개의 공개 HTTP 응답 SHA-256은 모두 원본과 일치하며, 실제 img 누락과 오류 화면은 없었다.
+- 공개 확인 중 기존 기능 아이콘 5개의 HTTP Link 사전 로딩 URL에 한글 인코딩이 깨져 404가 발생함을 확인했다. 실제 DOM 이미지 요청/표시는 정상이다. 이번 교체 자산 검증은 통과했지만 콘솔 무오류 검사는 통과로 기록하지 않았다. 해당 사전 로딩 문제와 기존 빌드 경고는 이번 승인 범위 밖으로 남겼다.
+- 배포 패키징의 Windows 드라이브 경로 오류는 TAR_OPTIONS=--force-local로 해당 단계만 다시 실행해 해결했다. 증거: `E:/codexwork/Site-Skin-edit-backups/20260930-mercury-v23-deploy/mercury-public-v23.png`, `mercury-public-v23-header.png`, `public-verification.json`, `mercury-v23-deploy.tar.gz`.
+- 이번에는 Sites 공개 반영만 수행했다. 통합 GitHub 백업 체크아웃에서 확인한 sports-demo-01 최신 백업은 여전히 v20 / `39058409d43d3f36fc5a894cd0618207c332bb43`이다. 미추적 `tsconfig.tsbuildinfo`의 바이트와 미추적 상태를 보존했다.
+
+---
+
+# 최신 로컬 작업 — 종목 아이콘 교체 / 2026-09-30 (미배포)
+
+- 사용자 지정 `D:/DesignAssets/MERCURY/02_작업중`의 PNG 12개를 시각적으로 대조했다. 현재 노출된 전체·축구·농구·야구·배구·아이스하키·포뮬라1·복싱·MMA·모터스포츠에 대응하는 10개를 `site/public/sports/mercury-gold-20260930/`로 원본 이름·바이트·256×256 크기·알파를 보존하여 복사했다. 시도 10 / 성공 10 / 실패 0 / 미사용 2(현재 메뉴에 없는 테니스·미식축구). 원본과 기존 자산은 보존했다.
+- `app/demo-data.ts`의 종목 아이콘 경로를 교체하고 최신 인기 게임도 같은 매핑을 사용하도록 연결했다. 상단 탭의 20px·왼쪽 목록의 22px 슬롯, 기존 CSS·메뉴 구성·데이터·이벤트 처리는 유지했다. 앞서 적용한 워드마크·배경 로컬 변경도 보존했다.
+- `tsc --noEmit --incremental false`, `npm run build` 통과. 로컬 `http://127.0.0.1:5276/`의 1920×1080에서 Playwright/Chrome으로 상단 10개·왼쪽 9개·최신 인기 게임 아이콘 로딩과 대응을 확인했다. HTTP 응답 SHA-256은 원본 10개와 모두 일치한다. 전체·상단·왼쪽 목록 캡처를 직접 검토했다.
+- 축구 선택 시 실제 카드 32개, 전체 복귀 시 61개 카운트를 확인했다. 누락 이미지·프레임워크 오류 화면·콘솔 경고/오류·런타임 오류는 없었다. 기존 빌드의 큰 청크·vinext 경로 분류 경고는 유지했다.
+- 증거와 원본 매핑: `E:/codexwork/Site-Skin-edit-backups/20260930-mercury-sport-icons-local/`의 `asset-mapping.json`, `verification.json`, `mercury-icons-local.png`, `mercury-icons-tabs.png`, `mercury-icons-sidebar.png`.
+- 배포·push·커밋하지 않았다. 공개 기준 v22 유지, 이번 변경은 `mercury-variation`의 미커밋 로컬 수정이며 사용자 최종 디자인 승인은 별도다.
+
+---
+
+# 최신 로컬 작업 — 워드마크·헤더 배경 교체 / 2026-09-30 (미배포)
+
+- 사용자 제공 `D:/DesignAssets/MERCURY/01_원본수집/로고/mercury-wordmark_v2.png`와 `D:/DesignAssets/MERCURY/01_원본수집/헤더배경/image_BG.png`를 `site/public/branding/mercury-wordmark_v2.png`, `site/public/branding/image_BG_v2.png`로 원본 바이트 그대로 복사했다. 이전 자산과 사용자 원본은 보존했다.
+- `app/mercury-sports.tsx`의 워드마크 경로와 `app/mercury-sports.css`의 배경 이미지 경로만 교체했다. 배경 `center top / auto no-repeat`, 헤더 본체 높이 100px, 워드마크 폭 248px·전체 폭 중앙·위로 5px 배치를 유지했다.
+- 타입 검사와 빌드, diff 공백 검사를 통과했다. Browser 플러그인 부재로 번들 Playwright와 설치된 Chrome을 사용해 `http://127.0.0.1:5276/`의 1920×1080 화면을 확인했다. 새 이미지 HTTP 응답의 SHA-256이 원본과 일치하며 누락 이미지·프레임워크 오류 화면·런타임 오류는 없었다. 국내형 전환 후 워드마크 클릭 시 해외형 복귀를 확인했다.
+- 로고 1798×526 원본 → 248×72.546875 표시, 중심 x=960, 수직 이동 약 -5px. 배경 1920×161 원본을 기존 방식대로 상단 100px에 표시한다. 헤더와 전체 화면 캡처를 직접 확인했다.
+- 콘솔에는 교체 대상과 무관한 충전·환전 아이콘 preload credentials 경고 2건이 관측되었다. 자동 검사의 무경고 조건은 실패했지만 요청된 이미지 교체·표시·홈 동작 검사는 통과했다. 기존 빌드의 큰 청크·vinext 경로 분류 경고도 유지했다.
+- 증거: `E:/codexwork/Site-Skin-edit-backups/20260930-mercury-header-local/mercury-header-local.png`, `mercury-header-detail.png`, `verification.json`.
+- 사용자 지시에 따라 배포·push·커밋하지 않았다. 공개 배포 기준은 아래 v22 그대로이며, 이번 변경은 `mercury-variation`의 미커밋 로컬 수정이다. 기존 미추적 `tsconfig.tsbuildinfo`의 바이트와 상태를 보존했다.
+
+---
+
+# 최신 완료 기준 — MERCURY 좌측 6개 배너·워드마크 PUBLIC v22 / 2026-09-30
+
+- `MERCURY_LeftRail_Update_20260930.zip` 기준으로 국내형→해외형→E-스포츠→인플레이→슬롯→카지노를 배치했다. 제공 PNG 5장은 원본 바이트를 그대로 복사하고 해시 일치를 확인했으며 해외형 이미지는 유지했다.
+- 배너 302×62px·간격 4px·기능 버튼 아래 8px 유지. HTML 라벨은 기존 골드 그라데이션, 24px/800, 왼쪽 12px·세로 중앙으로 조정했다. 기존 라운드·윤곽선·상단 반사광·호버와 기능 버튼 6개는 유지했다.
+- 별도 엠블럼 요소만 제거하고 기존 248px 워드마크를 헤더 중앙(x=960)에 배치, 위로 5px 이동했다. 원본 로고 파일·헤더 높이·배경·계정 버튼·메뉴·공지와 중앙·우측 영역은 유지했다.
+- 타입 검사·빌드 통과. 로컬 1920×1080에서 이미지·순서·문구 위치·간격·국내/해외 전환·신규/기존 안내 팝업·로고 홈 동작 확인. 공개 화면에서 이미지·6개 순서·치수·간격·겹침 없음·워드마크 정렬을 확인했다. E-스포츠·인플레이는 기존 준비 중 안내를 재사용하며 새 페이지·API·데이터는 추가하지 않았다.
+- 소스 `906cddca5d6a32d9d153e2e5b7bce6ad2dcaba86`, 브랜치 `mercury-variation` 유지, Sites main 원격 일치 확인. 버전 `appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_63ed59a8384c81919f171f7dcb6951c3` (v22).
+- 배포 `appgdep_6abc7fbaa5188191afea328a9e36898a`, succeeded, 2026-09-30 12:19 KST, https://mercury.kexxadrix.chatgpt.site . 기존 public 공개 범위 유지.
+- 결과 캡처: `E:/codexwork/Site-Skin-edit-backups/20260930-mercury-left-rail-v22/mercury-public-v22-verified.png`. 미추적 `tsconfig.tsbuildinfo`와 기존 원본·백업 보존. 기존 청크 크기·vinext 경로 분류 경고는 범위 밖으로 유지했다.
+
+---
+
+# 최신 완료 기준 — MERCURY 좌측 버튼 순서 PUBLIC v21 / 2026-09-29
+
+- 빠른 메뉴를 충전·환전·고객센터 → 이벤트·출석부·공지사항 → 국내형·해외형·슬롯·카지노 순서로 이동했다. 기능 버튼 두 줄 사이 4px, 둘째 줄과 첫 배너 사이 8px.
+- 앱 변경은 `app/mercury-sports.tsx`와 `app/mercury-sports.css`의 순서·간격뿐이다. 기존 크기·효과·클릭 처리 및 검색 이하의 코드와 다른 영역은 유지했다.
+- 타입 검사, 프로젝트 빌드, 로컬·공개 1920×1080 화면에서 순서·간격·크기 유지·겹침 없음 확인. 기존 빌드 경고는 유지하며 Windows 패키징은 네이티브 tar로 완료했다.
+- 소스 `af49ea1732d04e252382a75c5cb94be8578e5144`, 로컬 `mercury-variation` 유지, Sites 원격 main 반영. 버전 `appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_c6db9d3b0e1481919d80fa2d675f3309` (v21).
+- 배포 `appgdep_6abb9f54bffc819197587441146e8dc0`, succeeded, 2026-09-29 20:22 KST, https://mercury.kexxadrix.chatgpt.site . 공개 범위 public 유지.
+- 공개 캡처: `E:/codexwork/Site-Skin-edit-backups/20260929-mercury-rail-order-v21/mercury-public-v21.png`. 기존 미추적 `tsconfig.tsbuildinfo`는 바이트와 미추적 상태 모두 보존했다.
+
+---
+
 # 최신 완료 기준 — MERCURY 커스텀 디자인 PUBLIC v20 / 2026-09-29
 
 - 사용자 요청으로 현재 로컬 상태를 기존 공개 주소 https://mercury.kexxadrix.chatgpt.site 에 배포했다. 공개 범위는 public 유지.
