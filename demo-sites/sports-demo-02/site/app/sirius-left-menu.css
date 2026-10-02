@@ -1,0 +1,296 @@
+/* This scope affects only the left photo accordion; shared page geometry is untouched. */
+.sirius-site .sr-left .slm-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 320px;
+  max-width: 100%;
+  flex: 0 0 auto;
+  isolation: isolate;
+}
+
+.sirius-site .sr-left .slm-menu .slm-item {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 44px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #ccd6e5;
+  border-radius: 7px;
+  background: #173b61;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  box-shadow:
+    0 2px 4px #16395b15,
+    inset 0 1px 0 #fff5;
+  transition:
+    height 360ms cubic-bezier(0.22, 0.75, 0.24, 1),
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.sirius-site .sr-left .slm-menu .slm-item.is-expanded {
+  height: 116px;
+  border-color: #b79555;
+  box-shadow:
+    0 5px 10px #18365b1c,
+    inset 0 1px 0 #f5e0a3;
+}
+
+.sirius-site .sr-left .slm-menu .slm-item:focus-visible {
+  outline: 2px solid #2767ad;
+  outline-offset: 2px;
+}
+
+.sirius-site .sr-left .slm-menu .slm-scene,
+.sirius-site .sr-left .slm-menu .slm-photo,
+.sirius-site .sr-left .slm-menu .slm-shade,
+.sirius-site .sr-left .slm-menu .slm-effects {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sirius-site .sr-left .slm-menu .slm-photo {
+  object-fit: cover;
+  object-position: var(--slm-focal, 66%) 50%;
+  opacity: 1;
+  transition: opacity 360ms ease;
+}
+
+.sirius-site .sr-left .slm-menu .is-expanded .slm-photo {
+  opacity: 1;
+}
+.sirius-site .sr-left .slm-menu [data-slm-menu='european'] {
+  --slm-focal: 68%;
+}
+.sirius-site .sr-left .slm-menu [data-slm-menu='domestic'] {
+  --slm-focal: 67%;
+}
+.sirius-site .sr-left .slm-menu [data-slm-menu='esports'] {
+  --slm-focal: 72%;
+}
+.sirius-site .sr-left .slm-menu [data-slm-menu='inplay'] {
+  --slm-focal: 65%;
+}
+.sirius-site .sr-left .slm-menu [data-slm-menu='slots'] {
+  --slm-focal: 71%;
+}
+.sirius-site .sr-left .slm-menu [data-slm-menu='casino'] {
+  --slm-focal: 64%;
+}
+
+.sirius-site .sr-left .slm-menu .slm-shade {
+  background:
+    linear-gradient(90deg, #031522a6, #07152265 48%, #07152200 76%),
+    linear-gradient(0deg, #07162455, transparent 38%);
+  box-shadow:
+    inset 0 1px 0 #fff3,
+    inset 0 -1px 0 #f2dfad38;
+}
+
+.sirius-site .sr-left .slm-menu .slm-caption {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  bottom: 11px;
+  display: block;
+  max-width: 260px;
+  isolation: isolate;
+  pointer-events: none;
+  transition: bottom 360ms cubic-bezier(0.22, 0.75, 0.24, 1);
+}
+
+.sirius-site .sr-left .slm-menu .slm-caption::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -4px -18px -5px -14px;
+  border-radius: 5px;
+  background: linear-gradient(
+    90deg,
+    #05121af2 0%,
+    #05121ae8 65%,
+    #05121abb 85%,
+    #05121a00 100%
+  );
+  pointer-events: none;
+}
+
+.sirius-site .sr-left .slm-menu .slm-label {
+  position: relative;
+  display: block;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -0.025em;
+  color: #ffefc1;
+  background: linear-gradient(
+    176deg,
+    #fff8d7 5%,
+    #edcc79 35%,
+    #fff2b0 45%,
+    #bd8739 57%,
+    #ffe6a2 74%,
+    #dba954 92%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 0 #704824) drop-shadow(0 2px 2px #061524b3);
+  text-shadow: none;
+  pointer-events: none;
+  transition:
+    font-size 360ms ease,
+    line-height 360ms ease;
+}
+
+.sirius-site .sr-left .slm-menu .is-expanded .slm-caption {
+  bottom: 19px;
+}
+
+.sirius-site .sr-left .slm-menu .is-expanded .slm-label {
+  font-size: 23px;
+  line-height: 30px;
+  color: #ffdd87;
+  animation: slm-title-enter 480ms cubic-bezier(0.22, 0.75, 0.24, 1) both;
+}
+
+.sirius-site .sr-left .slm-menu .slm-marker {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff0c9;
+  text-shadow: 0 1px 3px #051525;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.sirius-site .sr-left .slm-menu .is-current .slm-marker {
+  color: #ffdc80;
+  opacity: 1;
+}
+.sirius-site .sr-left .slm-menu .slm-marker svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.75;
+}
+
+.sirius-site .sr-left .slm-menu .slm-sweep {
+  position: absolute;
+  top: -30%;
+  left: -65%;
+  width: 34%;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #fff7d320,
+    #fff5c940,
+    transparent
+  );
+  transform: skewX(-23deg);
+  mix-blend-mode: screen;
+  opacity: 0;
+  animation: slm-light-sweep 1050ms 120ms ease-out both;
+}
+
+.sirius-site .sr-left .slm-menu .slm-particle {
+  position: absolute;
+  left: var(--slm-particle-x);
+  top: var(--slm-particle-y);
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #ffedb6;
+  box-shadow: 0 0 4px 1px #fce09b75;
+  opacity: 0;
+  animation: slm-particle-rise 1450ms var(--slm-particle-delay) ease-out both;
+}
+
+@keyframes slm-title-enter {
+  from {
+    opacity: 0.95;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slm-light-sweep {
+  0% {
+    left: -65%;
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.85;
+  }
+  82% {
+    opacity: 0.65;
+  }
+  100% {
+    left: 135%;
+    opacity: 0;
+  }
+}
+
+@keyframes slm-particle-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  20% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sirius-site .sr-left .slm-menu .slm-item,
+  .sirius-site .sr-left .slm-menu .slm-photo,
+  .sirius-site .sr-left .slm-menu .slm-caption,
+  .sirius-site .sr-left .slm-menu .slm-label,
+  .sirius-site .sr-left .slm-menu .is-expanded .slm-label {
+    transition: none;
+    animation: none;
+  }
+  .sirius-site .sr-left .slm-menu .slm-effects {
+    display: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .sirius-site .sr-left .slm-menu .slm-caption::before {
+    background: Canvas;
+  }
+  .sirius-site .sr-left .slm-menu .slm-label {
+    background: none;
+    color: ButtonText;
+    -webkit-text-fill-color: ButtonText;
+    filter: none;
+  }
+  .sirius-site .sr-left .slm-menu .slm-item {
+    border: 1px solid ButtonText;
+  }
+  .sirius-site .sr-left .slm-menu .is-current {
+    border: 2px solid Highlight;
+  }
+}

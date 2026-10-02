@@ -1,3 +1,17 @@
+# 최신 운영 상태 — SIRIUS white 이관·공개 배포 완료 / 2026-10-02
+
+- 현재 앱 경로: `E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site`. 원본 Speedwagon 앱은 보존했으며 아래 과거 사본 경로·배포 금지·이전 헤더 규격은 당시 이력입니다.
+- 사용자 직접 요청: 두 완성본을 현재 Site-Skin-edit로 이관하고 화이트는 기존 SIRIUS, 딥블루는 신규 SIRIUS-2에 배포. 신규 SIRIUS-2도 기존 SIRIUS처럼 공개하도록 명시 확인했습니다.
+- 공개 URL: https://sirius.kexxadrix.chatgpt.site/ — PUBLIC v9, 배포 상태 `succeeded`.
+- 프로젝트 ID: `appgprj_6aacb6c2a38881918bd8a324fa9c5b54`. 이 값을 다른 스킨 앱에 복사하지 않습니다.
+- 현재 로컬 미리보기: `http://127.0.0.1:5392/` (현재 세션에서 실행). 원본 사본의 5292/5293 서버는 변경하지 않았습니다.
+- 승인된 소스·자산·CSS 순서를 그대로 이관했습니다. 추가 디자인 변경, 실제 서비스 연결, 다른 앱 수정은 포함하지 않았습니다.
+- 이 배포 작업은 완료했습니다. 이후 변경은 새 사용자 지시를 따릅니다. 과거 디자인 명령·별도 QA·배포 작업을 자동 재개하지 않습니다.
+
+---
+
+## 아래는 보존된 과거 기록
+
 # SIRIUS — R8 Impeccable + Jev 통합 운영
 
 ## 단회 polish 실사용 테스트 종료 — 2026-09-21

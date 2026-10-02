@@ -1,8 +1,28 @@
-# Site-Skin-edit — 스포츠 사이트와 TITAN 제작 자료
+# Site-Skin-edit — TITAN 제작 자료
 
-**2026-09-28 업데이트: MERCURY PUBLIC v15와 ALDEBARAN PUBLIC v23의 소스·자산·운영 문서·작업 기록을 갱신했습니다.** [스포츠 사이트 인덱스](demo-sites/README.ko.md)와 [이번 수집 명세](backup/site-snapshots/20260928-mercury-aldebaran/source-files.json)를 참고하십시오. SIRIUS와 TITAN 자료는 이전 백업 그대로 유지합니다.
+## 사이트 현재 현황 — 2026-10-02 인계 기준
 
-**2026-09-22 업데이트: [완료된 스포츠 사이트 3개](demo-sites/README.ko.md)를 추가했습니다.** MERCURY v9, SIRIUS v8, ALDEBARAN v6의 최신 소스·자산·운영 문서와 작업 기록은 각 `demo-sites/` 폴더에서 확인할 수 있습니다. 파일별 무결성 기록은 [사이트 백업 명세](backup/site-snapshots/20260922/source-files.json)에 있습니다. 아래 TITAN 영상 자료와 기존 기록은 보존합니다.
+| 사이트 | 공개 완료 기준 | 최신 운영 문서 |
+| --- | --- | --- |
+| [MERCURY](https://mercury.kexxadrix.chatgpt.site/) | PUBLIC v25 · 제공 PNG 20종 및 금색 버튼 3개의 검정 아이콘 복원 | [STATE](demo-sites/sports-demo-01/STATE.md) |
+| [SIRIUS](https://sirius.kexxadrix.chatgpt.site/) | PUBLIC v9 · 승인된 Speedwagon 화이트 앱 이관 | [STATE](demo-sites/sports-demo-02/STATE.md) |
+| [SIRIUS-2](https://sirius-2.kexxadrix.chatgpt.site/) | PUBLIC v1 · 승인된 Speedwagon 딥블루 앱을 별도 공개 사이트로 이관 | [STATE](demo-sites/sports-demo-02-deepblue/STATE.md) |
+
+세 사이트의 공개 배포는 완료 기록상 `succeeded`다. 앱 경로·소스 커밋·서로 다른 Sites 프로젝트 ID·검증 근거·남은 항목은 [사이트 목록과 인계 현황](demo-sites/README.ko.md)을 따른다. ALDEBARAN·TITAN과 기존 원본은 이번 이관에서 변경하지 않았다.
+
+**2026-10-02 통합 GitHub 백업 기준은 MERCURY v25·SIRIUS 화이트 v9·SIRIUS-2 딥블루 v1이다.** 세 앱의 소스·자산·설정·입력·검수 및 최신 관리 문서를 함께 보관한다. [파일별 수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261002-mercury-sirius-variants/source-files.json)와 [스냅샷 기록](https://github.com/Kexxrix/Site-Skin-edit/tree/main/backup/site-snapshots/20261002-mercury-sirius-variants)을 따른다. Sites 배포 소스 SHA와 통합 GitHub 커밋은 구분하며, 기존 v24 / `573c236` 기록은 아래 당시 이력으로 보존한다.
+
+이번 백업은 최신 사용자 지시에 따라 기존 저장소에 소스·문서·근거를 동기화하는 작업이다. 앱 코드·디자인·서버·공개 배포는 변경하지 않고 이미 통과한 빌드·브라우저 QA를 재사용한다. 기존 백업 체크아웃에 남아 있던 문서 3개는 스냅샷의 `prior-uncommitted-documents/`에 원문 그대로 보존했다.
+
+## 이전 MERCURY 기준 기록 — PUBLIC v24 / 2026-10-01
+
+[MERCURY 인덱스](demo-sites/sports-demo-01/INDEX.ko.md)와 [최신 STATE](demo-sites/sports-demo-01/STATE.md)에서 시작한다. 정적 헤더 배경·금색 종목 아이콘 10개는 PUBLIC v23, 워드마크 v3는 PUBLIC v24에 반영했다.
+
+- 앱 소스: `8385d4bbc74394006db637e87466f4a171f6e02d` / 작업 브랜치 `mercury-variation`.
+- GitHub 백업: `573c2367112bc11dd476faee25b64d806247f379` / [2026-10-01 수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/573c2367112bc11dd476faee25b64d806247f379/backup/site-snapshots/20261001-mercury-v24/source-files.json).
+- 백업 경로는 통합 저장소의 `backup/site-snapshots/20261001-mercury-v24/`다. 수집 당시 323개 파일 SHA-256 검증 기록과 이번 문서 갱신은 구분한다. 배포·기술 확인과 사용자 최종 디자인 수용도 별도 상태다.
+
+아래 TITAN 제작 자료 안내는 기존 기록으로 보존한다.
 
 이 저장소는 `E:/codexwork/Site-Skin-edit`에서 진행 중인 사이트·TITAN 영상 제작 자료의 백업입니다. 영상의 원본, 가이드 이미지, 실제 프롬프트, AE 프로젝트와 제작 스크립트, 출력 영상, 실패·수정·검증 기록을 함께 보존합니다.
 

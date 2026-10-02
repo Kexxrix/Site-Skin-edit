@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import './typography.css';
 import './globals.css';
-import './match-list.css';
-import './sirius-left-rail.css';
-import './sirius-right-rail.css';
+import './sirius-sports.css';
+import './sirius-white-skin.css';
+import './sirius-left-menu.css';
+import './sirius-left-refinement.css';
+import './sirius-visual-depth.css';
+import './sirius-right-banners.css';
 
 export const metadata: Metadata = {
   title: 'SIRIUS · 스포츠',

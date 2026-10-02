@@ -1,0 +1,247 @@
+{
+  "purpose": "사용자 승인된 화면용 예시 점수 자료. 실제 경기 결과나 실시간 피드가 아님. 이 설명은 내부 자료에만 둔다.",
+  "policy": {
+    "fill_missing_only": true,
+    "preserve_zero": true,
+    "stable_by_fixture_id": true,
+    "random_per_render": false,
+    "shared_by_list_and_detail": true,
+    "preserve_source_records": true,
+    "preserve_betting_eligibility": true
+  },
+  "integration": "키는 의미상 힌트다. 실제 앱 sport enum에 매핑한다. fixture ID는 현지 데이터의 기존 값을 사용하고 임의 ID를 만들지 않는다. 이미 유효한 점수는 유지한다. 점수 쌍과 경기 표시 상태/단위를 같이 사용한다.",
+  "templates": {
+    "soccer": {
+      "score_unit": "goals",
+      "variants": [
+        {
+          "home": 1,
+          "away": 0,
+          "display_state": "live",
+          "phase_label": "전반 32분"
+        },
+        {
+          "home": 1,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "후반 61분"
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "후반 78분"
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    },
+    "basketball": {
+      "score_unit": "points",
+      "variants": [
+        {
+          "home": 28,
+          "away": 24,
+          "display_state": "live",
+          "phase_label": "1Q 02:16"
+        },
+        {
+          "home": 54,
+          "away": 49,
+          "display_state": "live",
+          "phase_label": "2Q 00:48"
+        },
+        {
+          "home": 86,
+          "away": 81,
+          "display_state": "live",
+          "phase_label": "3Q 01:32"
+        },
+        {
+          "home": 112,
+          "away": 108,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    },
+    "baseball": {
+      "score_unit": "runs",
+      "variants": [
+        {
+          "home": 1,
+          "away": 0,
+          "display_state": "live",
+          "phase_label": "3회초"
+        },
+        {
+          "home": 3,
+          "away": 2,
+          "display_state": "live",
+          "phase_label": "5회말"
+        },
+        {
+          "home": 4,
+          "away": 6,
+          "display_state": "live",
+          "phase_label": "8회초"
+        },
+        {
+          "home": 5,
+          "away": 3,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    },
+    "american-football": {
+      "score_unit": "points",
+      "variants": [
+        {
+          "home": 7,
+          "away": 3,
+          "display_state": "live",
+          "phase_label": "1Q 03:18"
+        },
+        {
+          "home": 14,
+          "away": 10,
+          "display_state": "live",
+          "phase_label": "2Q 02:40"
+        },
+        {
+          "home": 21,
+          "away": 17,
+          "display_state": "live",
+          "phase_label": "3Q 04:12"
+        },
+        {
+          "home": 27,
+          "away": 24,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    },
+    "ice-hockey": {
+      "score_unit": "goals",
+      "variants": [
+        {
+          "home": 1,
+          "away": 0,
+          "display_state": "live",
+          "phase_label": "1P 08:42"
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "2P 06:14"
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "display_state": "live",
+          "phase_label": "3P 04:28"
+        },
+        {
+          "home": 4,
+          "away": 2,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    },
+    "volleyball": {
+      "score_unit": "sets",
+      "variants": [
+        {
+          "home": 1,
+          "away": 0,
+          "display_state": "live",
+          "phase_label": "2세트"
+        },
+        {
+          "home": 1,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "3세트"
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "4세트"
+        },
+        {
+          "home": 3,
+          "away": 1,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    },
+    "tennis": {
+      "score_unit": "sets",
+      "variants": [
+        {
+          "home": 1,
+          "away": 0,
+          "display_state": "live",
+          "phase_label": "2세트"
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "2세트"
+        },
+        {
+          "home": 1,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "3세트"
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    },
+    "esports": {
+      "score_unit": "series_maps",
+      "variants": [
+        {
+          "home": 1,
+          "away": 0,
+          "display_state": "live",
+          "phase_label": "2세트"
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "2세트"
+        },
+        {
+          "home": 1,
+          "away": 1,
+          "display_state": "live",
+          "phase_label": "3세트"
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "display_state": "final",
+          "phase_label": "종료"
+        }
+      ]
+    }
+  }
+}

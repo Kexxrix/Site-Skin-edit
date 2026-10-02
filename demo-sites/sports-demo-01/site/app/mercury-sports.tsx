@@ -22,9 +22,23 @@ const banners=[['support','텔레그램 고객센터','문의 및 제휴 안내'
 const sportTabs=sportMenu;
 const filters=[['all','전체'],['result','승무패'],['handicap','핸디캡'],['totals','언더·오버'],['other','기타']] as const;
 
-const uiIcons:Record<string,string>={deposit:'충전01',withdraw:'환전02',support:'고객센터02',payback:'이벤트01',event:'이벤트01',messages:'쪽지',attendance:'출석체크01',rules:'이용규정01',history:'초기화01',reset:'초기화01',ticket:'티켓01',notice:'공지사항01'};
+const uiIcons:Record<string,string>={
+  deposit:'/icons/sirius-20261001/imgi_8_deposit.png',
+  withdraw:'/icons/sirius-20261001/imgi_9_withdraw.png',
+  support:'/icons/sirius-20261001/imgi_6_support.png',
+  payback:'/icons/mercury-ui/Icon_Image_이벤트01.png',
+  event:'/icons/sirius-20261001/imgi_4_event.png',
+  messages:'/icons/sirius-20261001/imgi_142_messages.png',
+  attendance:'/icons/sirius-20261001/imgi_5_attendance.png',
+  rules:'/icons/sirius-20261001/imgi_7_rules.png',
+  history:'/icons/sirius-20261001/imgi_10_history.png',
+  reset:'/icons/sirius-20261001/imgi_143_reset.png',
+  ticket:'/icons/mercury-ui/Icon_Image_티켓01.png',
+  notice:'/icons/sirius-20261001/imgi_1_notice.png',
+};
+const maskedUiIcons:Record<string,string>={deposit:'/icons/mercury-ui/Icon_Image_충전01.png',withdraw:'/icons/mercury-ui/Icon_Image_환전02.png',support:'/icons/mercury-ui/Icon_Image_고객센터02.png'};
 function UiIcon({name,masked=false}:{name:string;masked?:boolean}){
-  const src='/icons/mercury-ui/Icon_Image_'+uiIcons[name]+'.png';
+  const src=masked?(maskedUiIcons[name]??uiIcons[name]):uiIcons[name];
   return masked?<span className="mc-ui-icon mc-ui-icon-mask" aria-hidden="true" style={{maskImage:'url("'+src+'")',WebkitMaskImage:'url("'+src+'")'}}/>:<img className="mc-ui-icon" src={src} alt=""/>;
 }
 

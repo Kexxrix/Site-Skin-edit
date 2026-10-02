@@ -1,0 +1,37 @@
+{
+  "captured_at_utc": "2026-10-02T09:20:53.714372+00:00",
+  "sites": [
+    {
+      "folder": "sports-demo-01",
+      "name": "MERCURY",
+      "version": 25,
+      "commit": "ef1becb38bbba0ae8803f7c84155bcbeeb57004e",
+      "branch": "mercury-variation",
+      "project": "appgprj_6aaa650f4aa4819189a2ee84f523fb9c",
+      "url": "https://mercury.kexxadrix.chatgpt.site/"
+    },
+    {
+      "folder": "sports-demo-02",
+      "name": "SIRIUS",
+      "version": 9,
+      "commit": "ace1c86197e3ea4f33e2da895ce66aa332a23523",
+      "branch": "main",
+      "project": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+      "url": "https://sirius.kexxadrix.chatgpt.site/"
+    },
+    {
+      "folder": "sports-demo-02-deepblue",
+      "name": "SIRIUS-2",
+      "version": 1,
+      "commit": "661434a56cd624f5abc75df00ca8716e8731ea65",
+      "branch": "main",
+      "project": "appgprj_6abf5bb41da081918c72164663b7ff62",
+      "url": "https://sirius-2.kexxadrix.chatgpt.site/"
+    }
+  ],
+  "evidence": [
+    "evidence/mercury-v25/deployment.json",
+    "evidence/sirius-two-variants/publication.json"
+  ],
+  "method": "Existing successful deployment and browser evidence reused. Current source HEAD/branch/hosting binding checked before backup. No new build/browser QA/deployment was performed."
+}

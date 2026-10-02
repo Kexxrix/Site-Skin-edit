@@ -149,7 +149,7 @@ html:has(.mc-shell) {overflow-x:auto;overflow-y:hidden;}
 .mc-quick-action.secondary { background: linear-gradient(180deg, #444444 0%, #353535 24%, #292929 72%, #242424 100%); box-shadow: inset 0 1px 0 #ffffff26, 0 1px 2px #00000066; }
 .mc-odd[aria-pressed="true"] svg { color: var(--mc-on-yellow); }
 .mc-quick-action .mc-ui-icon { width: 20px; height: 20px; }
-.mc-quick-action.secondary .mc-ui-icon { width: 16px; height: 16px; filter: brightness(0) invert(1); }
+.mc-quick-action.secondary .mc-ui-icon { width: 16px; height: 16px; }
 .mc-quick-action.secondary + .mc-quick-banner { margin-top: 4px; }
 .mc-quick-banner { grid-column: 1 / -1; display: flex; align-items: center; aspect-ratio: 302 / 62; padding: 0 12px; overflow: hidden; border: 0; border-radius: 5px; background-color: transparent; background-repeat: no-repeat; background-size: 100% 100%; background-position: center; box-shadow: inset 0 1px 0 #ffffffb3, inset 0 0 0 1px #c69b4f99, inset 0 5px 7px -2px #ffffff80; text-align: left; }
 .mc-quick-banner-label { color: transparent; background: var(--mc-quick-gold-gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 24px; font-weight: 800; line-height: 30px; filter: drop-shadow(0 1px 0 #000000) drop-shadow(0 1px 2px #000000bf); }
@@ -297,12 +297,7 @@ html:has(.mc-shell) {overflow-x:auto;overflow-y:hidden;}
 .mc-shell .mc-bet-submit:disabled {background:var(--mc-gold-gradient);border-color:var(--mc-line);color:#000000;opacity:1;cursor:not-allowed;}
 .mc-odd:disabled .mc-odd-value {color:var(--mc-disabled);}
 
-/* Keep native PNG bytes and normalize only their transparent padding in the icon slots. */
+/* Keep the supplied PNG colors and aspect ratio in the existing icon slots. */
 .mc-sport-icon {display:inline-flex;position:relative;align-items:center;justify-content:center;width:20px;height:20px;flex:0 0 20px;overflow:visible;}
 .mc-sport-row .mc-sport-icon {width:22px;height:22px;flex-basis:22px;}
-.mc-sport-icon img,.mc-sport-row .mc-sport-icon img {position:absolute;width:100%;height:100%;max-width:none;object-fit:contain;transform:translate(var(--icon-x,0%),var(--icon-y,0%)) scale(var(--icon-scale,1));}
-.mc-sport-icon[data-icon="all"] {--icon-scale:1.053498;--icon-x:0.205761%;--icon-y:2.880658%;}
-.mc-sport-icon[data-icon="formula1"] {--icon-scale:1.032258;--icon-x:-0.806452%;--icon-y:0.806452%;}
-.mc-sport-icon[data-icon="boxing"] {--icon-scale:1.015873;--icon-x:0.793651%;--icon-y:0.198413%;}
-.mc-sport-icon[data-icon="motorsports"] {--icon-scale:1.011858;--icon-x:-0.592885%;--icon-y:-0.790514%;}
-.mc-sport-icon[data-icon="mma"] {--icon-scale:1.011858;--icon-x:-3.952569%;--icon-y:0.197628%;}
+.mc-sport-icon img,.mc-sport-row .mc-sport-icon img {position:absolute;width:100%;height:100%;max-width:none;object-fit:contain;}

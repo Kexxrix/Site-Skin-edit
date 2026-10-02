@@ -10,16 +10,16 @@ export type Selection = { id: string; matchId: string; marketIndex: number; pick
 const sportImage=(sport:string)=>'/sports/r8/mercury-'+(sport==='hockey'?'ice-hockey':sport)+'.png';
 export const sportIcons:Record<string,string>=Object.fromEntries(sports.map(s=>[s.id,sportImage(s.id)]));
 Object.assign(sportIcons,{
-  all:'/sports/mercury-gold-20260930/image_Sports_Sirius_0000_Layer-18.png',
-  soccer:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-10.png',
-  basketball:'/sports/mercury-gold-20260930/image_Sports_Sirius_0006_Layer-11.png',
-  baseball:'/sports/mercury-gold-20260930/image_Sports_Sirius_0005_Layer-12.png',
-  volleyball:'/sports/mercury-gold-20260930/image_Sports_Sirius_0002_Layer-15.png',
-  hockey:'/sports/mercury-gold-20260930/image_Sports_Sirius_0003_Layer-14.png',
-  formula1:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-9.png',
-  boxing:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-8.png',
-  mma:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-7.png',
-  motorsports:'/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-6.png',
+  all:'/sports/sirius-20261001/imgi_23_all.png',
+  soccer:'/sports/sirius-20261001/imgi_11_soccer.png',
+  basketball:'/sports/sirius-20261001/imgi_12_basketball.png',
+  baseball:'/sports/sirius-20261001/imgi_13_baseball.png',
+  volleyball:'/sports/sirius-20261001/imgi_14_volleyball.png',
+  hockey:'/sports/sirius-20261001/imgi_15_hockey.png',
+  formula1:'/sports/sirius-20261001/imgi_16_formula1.png',
+  boxing:'/sports/sirius-20261001/imgi_17_boxing.png',
+  mma:'/sports/sirius-20261001/imgi_18_mma.png',
+  motorsports:'/sports/sirius-20261001/imgi_19_motorsports.png',
 });
 export const sportMenu=[
   ...['all','soccer','basketball','baseball','volleyball','hockey'].map(id=>({...sports.find(s=>s.id===id)!,logo:sportIcons[id]})),

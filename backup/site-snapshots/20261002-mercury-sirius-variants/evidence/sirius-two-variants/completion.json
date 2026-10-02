@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "publication": "publication.json",
+  "scope": "Import approved white and deepblue; publish existing SIRIUS and new public SIRIUS-2",
+  "source_app_preserved": true,
+  "protected_original_files": 62,
+  "operating_docs_updated": 8,
+  "qa": {
+    "local": "passed",
+    "public": "passed"
+  },
+  "not_tested": [
+    "real authentication",
+    "real financial transactions",
+    "live wagering"
+  ],
+  "build_warnings": [
+    "existing chunk size warning",
+    "existing vinext static route classification warning"
+  ]
+}

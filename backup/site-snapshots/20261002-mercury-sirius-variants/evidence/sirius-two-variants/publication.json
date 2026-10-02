@@ -1,0 +1,118 @@
+{
+  "sites": [
+    {
+      "id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+      "title": "SIRIUS",
+      "access_mode": "public",
+      "current_live_url": "https://sirius.kexxadrix.chatgpt.site",
+      "latest_version_number": 9,
+      "status": "active"
+    },
+    {
+      "id": "appgprj_6abf5bb41da081918c72164663b7ff62",
+      "title": "SIRIUS-2",
+      "access_mode": "public",
+      "current_live_url": "https://sirius-2.kexxadrix.chatgpt.site",
+      "latest_version_number": 1,
+      "status": "active"
+    }
+  ],
+  "white": {
+    "version": {
+      "id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_1d1c9e5d8b3481918d257e478d0669f5",
+      "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+      "version_number": 9,
+      "source": {
+        "commit_sha": "ace1c86197e3ea4f33e2da895ce66aa332a23523"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000921882068487aa679e2fdfbd",
+        "content_hash": "sha256:acf1e9cec440a0ae4da8f6a85612310c9a0ca53b9df669375dddc43374227b76",
+        "size_bytes": 71106560,
+        "file_count": 314
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6abf5f21c3c48191a1e9d0e10886217c",
+      "project_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54",
+      "title": "SIRIUS",
+      "version_id": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_1d1c9e5d8b3481918d257e478d0669f5",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://sirius.kexxadrix.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6aacb6c2a38881918bd8a324fa9c5b54",
+      "failure_message": null,
+      "env_set_revision": 0,
+      "updated_at": "2026-10-02T07:37:30.564400+00:00"
+    },
+    "public_qa": "passed",
+    "local_preview": "http://127.0.0.1:5392/",
+    "git_status": "?? .agents/\n?? .impeccable/\n?? DESIGN.md\n?? PRODUCT.md"
+  },
+  "deepblue": {
+    "version": {
+      "id": "appgprj_6abf5bb41da081918c72164663b7ff62~appgver_473485a36c848191916ed3b359023f2b",
+      "project_id": "appgprj_6abf5bb41da081918c72164663b7ff62",
+      "version_number": 1,
+      "source": {
+        "commit_sha": "661434a56cd624f5abc75df00ca8716e8731ea65"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000003a082119abd7ea7c99a2a50",
+        "content_hash": "sha256:c608ddb9612baef7afc8e5b89ab8385e25f5a467b424f14e9f0258039650ac9d",
+        "size_bytes": 71464960,
+        "file_count": 317
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6abf5f5ca628819185e645ea7eb14cfc",
+      "project_id": "appgprj_6abf5bb41da081918c72164663b7ff62",
+      "title": "SIRIUS-2",
+      "version_id": "appgprj_6abf5bb41da081918c72164663b7ff62~appgver_473485a36c848191916ed3b359023f2b",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://sirius-2.kexxadrix.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6abf5bb41da081918c72164663b7ff62",
+      "failure_message": null,
+      "env_set_revision": 0,
+      "updated_at": "2026-10-02T07:38:36.470829+00:00"
+    },
+    "public_qa": "passed",
+    "local_preview": "http://127.0.0.1:5393/",
+    "git_status": "?? DESIGN.md\n?? PRODUCT.md"
+  },
+  "rollback": {
+    "whiteVersionId": "appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_6c7bc5bdd634819199f7dbaa3325c019",
+    "whiteCommit": "9c424b8e4e8c480848f1ec47bf5139c6d5987738",
+    "whiteDeploymentId": "appgdep_6ab0e46e9134819186f6c66994da624b"
+  },
+  "localQA": {
+    "white": "passed",
+    "deepblue": "passed"
+  },
+  "publicQA": "passed",
+  "preservation": {
+    "white": {
+      "source_matches": true,
+      "target_matches": true
+    },
+    "deepblue": {
+      "source_matches": true,
+      "target_matches": true
+    },
+    "protected": {
+      "count": 62,
+      "unchanged": true
+    }
+  }
+}

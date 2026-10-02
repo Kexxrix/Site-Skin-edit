@@ -1,3 +1,44 @@
+# 최신 GitHub 백업 기준 — MERCURY PUBLIC v25 / 2026-10-02
+
+- 통합 저장소 `Kexxrix/Site-Skin-edit`의 공동 스냅샷 `backup/site-snapshots/20261002-mercury-sirius-variants/`에 현재 소스 `ef1becb38bbba0ae8803f7c84155bcbeeb57004e` / `mercury-variation`와 관련 운영·입력·검수 자료를 보관한다. [파일별 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261002-mercury-sirius-variants/source-files.json)와 [검증·제외·공개 배포 증거](https://github.com/Kexxrix/Site-Skin-edit/tree/main/backup/site-snapshots/20261002-mercury-sirius-variants)를 따른다.
+- 앱 코드·디자인·자산 원본·실행 서버·Sites 공개 배포는 변경하지 않았다. 앱의 Git HEAD와 기존 미추적 파일 상태를 보존하고 통합 백업 저장소에서만 커밋·일반 push한다. 기존 빌드·브라우저 QA는 재사용한다.
+- 통합 백업의 커밋은 GitHub 파일 이력으로 확인한다. 앱 소스 SHA와 같은 값으로 표시하지 않으며 자기 커밋 SHA를 본문에 넣는 순환 갱신은 하지 않는다. 원격 검증 기록은 `E:/codexwork/Site-Skin-edit-backups/20261002-sports-github/remote-verification.json`에 남긴다.
+- 의존성·캐시·빌드/배포 압축·비밀값·원시 세션 로그·설치된 로컬 도구 런타임은 제외한다. 적격 DESIGN/PRODUCT와 로컬 작업 설정, 원본 입력·QA 문서는 수집한다. 이전 날짜별 작업의 “GitHub 백업 안 함” 문구는 당시 이력이다.
+
+---
+
+# 최신 완료 기준 — 제공 아이콘·대비 보완 PUBLIC v25 / 2026-10-01
+
+- 사용자가 로컬 화면을 확인하고 배포를 승인했다. 스포츠·기능 PNG 20종 교체와 금색 빠른 메뉴의 충전·환전·고객센터 3개 기존 검정 아이콘 복원을 함께 기존 공개 주소 `https://mercury.kexxadrix.chatgpt.site`에 반영했다. public 범위 유지. 이 배포 단계에서 추가 디자인/동작 수정은 하지 않았다.
+- 소스 `ef1becb38bbba0ae8803f7c84155bcbeeb57004e`, `mercury-variation` 유지, Sites 원격 main 일치 확인. 소스 3개(`app/demo-data.ts`, `app/mercury-sports.tsx`, `app/mercury-sports.css`)와 새 PNG 20개, 총 23개 파일을 포함한다. 원본·이전 자산·로고 v3·배경 v2·배너·버튼 배치·경기 데이터는 보존했다.
+- 버전 `appgprj_6aaa650f4aa4819189a2ee84f523fb9c~appgver_13e64f0dacd881919a713b8e37109bcd` (v25), 배포 `appgdep_6abe161b21c08191b221826346369158`, succeeded, 2026-10-01 17:13:35 KST. 패키지 `mercury-v25-deploy.tar.gz` SHA-256 `ede94528e2a9d51256610a84fa1d307353aea02034c2969f08a6cae39cb4271b`.
+- 동일 소스의 타입/로컬 검증 결과를 재사용하고 최종 `npm run build`를 통과했다. Sites 빌드 보조 실행의 Windows npm 경로 오류가 있어 프로젝트 명령으로 빌드한 뒤, 동일 결과를 재사용해 표준 워크플로의 소스 저장·push·패키징 검증을 완료했다. 큰 청크/플러그인 처리 시간/정적 경로 분류 경고는 기존과 같다.
+- 공개 1920×1080 화면을 직접 확인했다. PNG 20개 HTTP 200·원본 SHA-256 일치, 상단 종목 10개·전체 61경기, 금색 버튼 3개의 기존 검정 마스크 및 다른 금색 아이콘 유지 확인. 이미지 누락 0·콘솔 오류/경고 0·실패 응답 0·프레임워크 오류 화면 없음. 고객센터 창 열기/닫기 정상. 이전 v23에서 기록했던 사전 로딩 404는 이번 공개 진입에서 재현되지 않았다.
+- 검증 증거는 `E:/codexwork/Site-Skin-edit-backups/20261001-mercury-v25-deploy/`의 `public-verification.json`, `public-v25.png`, `public-v25-buttons.png`, `deployment.json` 및 배포 패키지에 보관했다. 추적 소스는 clean, 기존 미추적 `tsconfig.tsbuildinfo` 바이트/상태 유지. 이번에는 Sites 배포만 수행했으며 통합 GitHub 백업과 오케스트레이션 메시지는 수행하지 않았다.
+
+---
+
+# 최신 로컬 보완 — 금색 버튼의 기존 아이콘 복원 / 2026-10-01
+
+- 사용자가 첨부한 빠른 메뉴 첫 줄처럼 금색 배경에서 구분이 어려운 아이콘을 기존 것으로 되돌리라고 지시했다. `app/mercury-sports.tsx`에서 충전·환전·고객센터의 금색 버튼 3개만 기존 `Icon_Image_충전01.png`, `Icon_Image_환전02.png`, `Icon_Image_고객센터02.png`와 검정 마스크 표시로 복원했다.
+- 어두운 배경의 동일 기능 아이콘, 스포츠 아이콘 및 나머지 새 PNG는 유지한다. 베팅하기는 이미 기존 검정 티켓 아이콘을 사용하므로 유지했다. 버튼 배경·치수·배치, 원본 PNG와 CSS는 이번 보완에서 변경하지 않았다.
+- 로컬 1920×1080 화면과 첫 줄 확대 캡처에서 3개 아이콘의 식별을 확인했다. 이전 교체 전 원본 상태와 해당 3개 아이콘의 이미지 경로·마스크·영역이 같고, 다른 UI 아이콘 17개는 직전 상태와 동일함을 DOM으로 확인했다. 기존 PNG HTTP 200, 이미지 누락 0, 콘솔 오류/경고 0, 프레임워크 오류 화면 없음. 충전·환전·고객센터 버튼을 각각 눌러 해당 창이 열리고 닫히는 것을 확인했으며 금액 실행은 하지 않았다.
+- 타입 검사 `node node_modules/typescript/bin/tsc --noEmit --incremental false` 및 `git diff --check` 통과. 이번 한 파일의 표시 보완은 타입·브라우저 검증으로 확인했고 전체 빌드는 재실행하지 않았다. 배포·커밋·push 없이 로컬 검토 상태를 유지한다.
+- 증거: `E:/codexwork/Site-Skin-edit-backups/20261001-mercury-sirius-icons-local/contrast-fix/`의 `primary-buttons.png`, `full.png`, `verification.json`. 아래 기록의 금색 첫 줄 버튼 대비 문제는 이번 보완으로 해결했다.
+
+---
+
+# 최신 로컬 작업 — SIRIUS 제공 아이콘 20종 교체 / 2026-10-01
+
+- 사용자 지정 `D:/WebDL/SIRIUS · 스포츠/`의 PNG 20개(스포츠 10종·기능 10종)를 원본 바이트·파일명·128×128 RGBA 그대로 각각 `site/public/sports/sirius-20261001/`, `site/public/icons/sirius-20261001/`에 복사했다. 시도 20·복사/적용 20·실패 0·제공 파일 제외 0. 대응 파일이 없는 페이백·티켓 및 나머지 SVG/팀/리그/배너 이미지는 기존 것을 유지한다. 기술 검증 통과와 사용자 시각 승인은 구분하며, 현재 로컬 검토 상태다.
+- `app/demo-data.ts`의 종목 이미지 경로 10개와 `app/mercury-sports.tsx`의 기능 아이콘 경로 10개를 교체했다. 새 PNG 금색이 그대로 보이도록 빠른 메뉴 첫 줄의 검정 마스크와 둘째 줄 흰색 필터, 이전 종목 PNG용 위치/배율 보정을 해제했다. 버튼·영역 치수·배치·데이터·기능과 기존 로고 v3·배경 v2는 유지했다. 원본과 이전 사이트 자산은 보존했다.
+- 로컬 `http://127.0.0.1:5276/`, 1920×1080, 설치된 Chrome/Playwright 1.62.1로 확인했다(Browser plugin not available). 교체 PNG 20개 HTTP 200·원본 SHA-256 일치, 실제 이미지 누락 0·콘솔 오류/경고 0·프레임워크 오류 화면 없음. 상단 종목 10개·왼쪽 9개·인기 경기 이미지, 기능 아이콘의 적용과 페이백/티켓 유지 확인. 변경 전후 버튼/아이콘 영역의 위치·크기는 동일하다. 축구 선택 32경기 → 전체 61 복귀, 금액 5000 입력 → 초기화 비움 동작 통과.
+- `node node_modules/typescript/bin/tsc --noEmit --incremental false`, `npm run build`, `git diff --check` 통과. 기존 큰 청크/플러그인 처리 시간/정적 경로 분류 경고는 유지된다. 실제 전체 화면과 종목 탭·계정·왼쪽 메뉴 캡처를 확인했다. 금색 첫 줄 버튼 위 금색 아이콘은 배경과 대비가 낮게 보이며, 제공 원본 색과 기존 버튼 배경을 유지한 상태로 사용자 검토 대상이다.
+- 배포·커밋·push·GitHub 백업은 수행하지 않았다. 로컬 기준 HEAD `8385d4bbc74394006db637e87466f4a171f6e02d`/`mercury-variation`, 기존 미추적 `tsconfig.tsbuildinfo` SHA-256 `CDFB9B8DA2935431333BCBEF72742BFC1B8CA54AFC857B2131B1B292A324AFB7` 유지. 현재 공개 배포 기준 v24와 통합 GitHub 백업은 이번 로컬 변경에 의해 갱신되지 않는다.
+- 증거: `E:/codexwork/Site-Skin-edit-backups/20261001-mercury-sirius-icons-local/`의 `source-assets.json`, `asset-mapping.json`, `before.json/png`, `after.json/png`, `sports-tabs.png`, `left-icons.png`, `account-icons.png`. 임시 검증 스크립트와 캡처는 사이트 소스 밖에 둔다.
+
+---
+
 # 최신 GitHub 백업 기준 — MERCURY v24 / 2026-10-01
 
 - 통합 저장소 `https://github.com/Kexxrix/Site-Skin-edit`의 MERCURY 백업 기준을 PUBLIC v24 / 소스 `8385d4bbc74394006db637e87466f4a171f6e02d` / `mercury-variation`으로 갱신했다. 현재 사이트 추적 파일 317개·기존 타입 선언 파일 1개와 운영 문서 5개, 총 323개를 원본 바이트 기준으로 대조한다.

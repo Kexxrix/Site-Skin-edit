@@ -1,0 +1,99 @@
+{
+  "status": "implementation_verified_frozen",
+  "completedAt": "2026-10-02T06:09:14.664Z",
+  "site": "E:/codexwork/Site-Skin-edit-Speedwagon/demo-sites/sports-demo-02-deepblue/site",
+  "previewUrl": "http://localhost:5293/",
+  "changes": [
+    "app/sirius-deepblue-skin.css",
+    "app/sirius-header-revision.css",
+    "app/sirius-sports.css"
+  ],
+  "headerHeight": 110,
+  "bodyStartY": 110,
+  "panelStartY": 117,
+  "availableBodyHeightDelta": 30,
+  "headerUiDimensionsFontsAndFunctionsPreserved": true,
+  "headerControlOverlaps": 0,
+  "symbolCount": 0,
+  "sportTabs": {
+    "count": 10,
+    "verticalCenterOffsetBefore": -4,
+    "verticalCenterOffsetAfter": 0,
+    "horizontalAlignment": {
+      "status": "original_left_alignment_preserved",
+      "beforeButtonGroupCenterX": 916,
+      "afterButtonGroupCenterX": 916,
+      "outerCaseCenterX": 960,
+      "rightUnusedSpace": 88,
+      "reason": "Reference horizontal red guide addresses vertical alignment within outlined case; full-strip reference and read-only MERCURY CSS retain left-aligned tabs. Parent instructed not to remove intentional horizontal space based only on measured44px."
+    },
+    "individualSizesSpacingFontsPreserved": true,
+    "iconsLabelsBadgesCenterTolerance": 0.5
+  },
+  "summary": {
+    "dimensions": [
+      302,
+      223
+    ],
+    "rowHeight": 29,
+    "layer": "same background, border, label/value color and13px/16/700 typography as adjacent min/max rows",
+    "positivePayoutColorInherited": true,
+    "states": [
+      "empty",
+      "selected-no-stake",
+      "single",
+      "double"
+    ]
+  },
+  "calculations": {
+    "single": [
+      "1.56",
+      "15,600"
+    ],
+    "double": [
+      "2.36",
+      "23,556"
+    ]
+  },
+  "protectedBannersAccordionProfile": true,
+  "guestSubmitDisabled": true,
+  "viewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1366,
+      900
+    ]
+  ],
+  "lintExit": 0,
+  "typeExit": 0,
+  "finalBuildExit": 0,
+  "cssParse": "passed",
+  "minimumHeaderPixelContrast": 5.903366643626952,
+  "minimumSummaryPixelContrast": 10.18342791765168,
+  "runtimeErrors": [],
+  "failedLocalResponses": [],
+  "frozenHashes": "frozen-source-hashes.json",
+  "frozenFiles": 347,
+  "frozenMismatches": 0,
+  "libraryScreenshot": {
+    "library_file_id": "libfile_d6aee8abe67c8191957b5b5d45c0c0db",
+    "file_name": "deepblue-final-1920.png",
+    "version": 1,
+    "metadataExit": 0
+  },
+  "referencePaths": [
+    "E:/codexwork/Site-Skin-edit-Speedwagon/TEMP/sirius-header-tabs-summary-20261002/reference/image(20261002-054755).png",
+    "E:/codexwork/Site-Skin-edit-Speedwagon/TEMP/sirius-header-tabs-summary-20261002/reference/image(20261002-054756).png",
+    "E:/codexwork/Site-Skin-edit-Speedwagon/TEMP/sirius-header-tabs-summary-20261002/reference/image(20261002-054757).png"
+  ],
+  "qaAcceptanceReference": "C:/Users/User/AppData/Local/Temp/sirius-header110-before-20261002-145128/acceptance.json",
+  "horizontalQaCriterionDisposition": "Parent follow-up asked to distinguish the measured horizontal44px from intended vertical centering and preserve intended horizontal space; reference and read-only MERCURY support retaining left alignment.",
+  "independentFinalQa": "pending_parent",
+  "userVisualApproval": "pending",
+  "noLoginAccountOrSubmit": true,
+  "noCommitPushDeploy": true,
+  "knownBuildWarnings": "Inherited large-chunk and static route-classification limitations; build succeeded."
+}

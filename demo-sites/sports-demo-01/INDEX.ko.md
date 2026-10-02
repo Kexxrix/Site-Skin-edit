@@ -1,5 +1,26 @@
 # MERCURY · 스포츠 데모 01
 
+## 현재 기준 — PUBLIC v25 / 2026-10-02 인계
+
+- 최신 완료 근거: [STATE.md](STATE.md) 맨 위의 제공 아이콘·대비 보완 PUBLIC v25 기록. 공개 주소는 [MERCURY](https://mercury.kexxadrix.chatgpt.site/)이며, 2026-10-01 17:13:35 KST 배포 succeeded.
+- 현재 앱 소스: `ef1becb38bbba0ae8803f7c84155bcbeeb57004e`, 작업 브랜치 `mercury-variation`. 제공 스포츠·기능 PNG 20종과 금색 빠른 메뉴 3개의 기존 검정 아이콘 복원을 반영했다. 로고 v3·배경 v2·배너·배치·경기 데이터는 보존했다.
+- 공개 검증 당시 원본 이미지 해시, 종목 10개·61경기, 고객센터 동작과 이미지/콘솔/HTTP 오류 없음이 확인됐다. 과거 v23 사전로딩 404는 v25 공개 진입에서 재현되지 않았으며, 이번 문서 갱신에서 브라우저 QA를 다시 실행한 것은 아니다. 기존 빌드 경고는 유지한다.
+- GitHub 현재 백업 기준은 **2026-10-02 / MERCURY v25·SIRIUS v9·SIRIUS-2 v1** 공동 스냅샷이다. [수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261002-mercury-sirius-variants/source-files.json)에 이 앱의 원본 경로·바이트·SHA-256을 기록한다. 기준 태그 `mercury-baseline-20260929`, 기존 복원 ZIP과 아래 v24 백업 이력은 보존한다.
+- 전체 사이트 목록·SIRIUS 두 스킨의 인계·백업 구분은 [데모 현황](../README.ko.md)을 따른다. 이미 갱신된 운영 문서 4종과 아래 과거 기록은 유지한다.
+
+## 이전 기준 기록 — PUBLIC v24 / 2026-10-01
+
+- 최신 상태와 완료 근거: [STATE.md](STATE.md)의 2026-10-01 백업 기록 및 2026-09-30 PUBLIC v24 완료 기록.
+- 공개 주소: [MERCURY](https://mercury.kexxadrix.chatgpt.site/). 정적 헤더 배경·금색 종목 아이콘 10개는 PUBLIC v23, 워드마크 v3는 PUBLIC v24에 반영했다.
+- 현재 앱 소스: `8385d4bbc74394006db637e87466f4a171f6e02d`. 로컬 작업 브랜치: `mercury-variation`. `main`의 2026-09-29 baseline은 이전 복원 기준이다.
+- GitHub 백업 기준: `573c2367112bc11dd476faee25b64d806247f379`. [2026-10-01 수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/573c2367112bc11dd476faee25b64d806247f379/backup/site-snapshots/20261001-mercury-v24/source-files.json), 경로 `backup/site-snapshots/20261001-mercury-v24/`.
+- 수집 당시 사이트 추적 파일 317개·타입 선언 1개·운영 문서 5개, 총 323개의 SHA-256 일치를 확인했다. 이번 진입 문서 갱신은 그 이후 변경이며 수집 명세는 당시 이력으로 유지한다.
+- 배포·기술 확인과 사용자 최종 디자인 수용은 구분한다. 기존 기능 아이콘 사전 로딩 URL의 한글 인코딩 404와 빌드 경고는 STATE의 잔여 기록을 따른다.
+
+## 초기 제작 기록 — 2026-09-16
+
+아래 R2 입력·초기 검수·최초 배포 내용은 작성 당시 이력이다. 현재 상태는 위 기준과 STATE를 따른다.
+
 - 신규 독립 데모 ID: `sports-demo-01`
 - 정식 명칭: **MERCURY** (2026-09-16 사용자 확정). 이전 검수의 COBALT는 임시 명칭이며 원본 지시서·과거 검수 이력에는 그대로 보존합니다.
 - 지시서: [SPORTS_DEMO_CYCLE_01.md](input/SPORTS_DEMO_CYCLE_01.md), R2 · 2026-09-16
@@ -9,7 +30,7 @@
 - 구현 위치: `E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-01/site/`
 - 검수 위치: `qa/`
 
-## 이번 범위와 상태
+## 초기 범위와 상태 — 2026-09-16
 
 이미지 없는 대표 UI, 배당 선택·슬립 반영·제거, 독립 스크롤, 소스 수정 통제 테스트 A/B/C의 제작·검증을 마쳤습니다. 조정 대화에서도 실제 페이지와 전후 캡처를 확인했으며 **사용자 1차 시각 검수 대기** 상태입니다.
 

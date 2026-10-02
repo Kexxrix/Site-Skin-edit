@@ -1,0 +1,71 @@
+/* User-corrected A composition: one continuous header, fixed central navigation, no enclosing cards. */
+.sr-shell > .sr-header.sr-header-revision {
+  --header-height:110px;height:110px;flex:0 0 110px;overflow:hidden;color:#173c76;background:#fff;border:0;
+  --sirius-header-art:url('/assets/header/sirius-20261001/header-grid-center-v01-1920x140.webp');
+}
+.sr-header-revision .sr-header-top {
+  height:110px;position:relative;isolation:isolate;padding:0;
+  background:#fff;
+  border-bottom:1px solid #d2deee;
+}
+.sr-header-revision .sr-header-top::before {
+  content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:var(--sirius-header-art);background-repeat:no-repeat;
+  background-size:1920px 140px;background-position:center top;
+  filter:none;opacity:1;mask-image:none;-webkit-mask-image:none;
+}
+.sr-header-revision .sr-brand {
+  position:absolute;left:24px;top:calc(50% - 48px);width:280px;height:96px;
+  display:flex;align-items:center;justify-content:center;gap:10px;padding:0;
+  background:none;border:0;border-radius:0;box-shadow:none;
+}
+.sr-header-revision .sr-brand-symbol {width:48px;height:48px!important;filter:none;}
+.sr-header-revision .sr-wordmark-crop {width:218px;height:90px;}
+.sr-header-revision .sr-wordmark-crop img {width:218px;filter:none;}
+.sr-header-revision .sr-header-utilities {
+  position:absolute;right:24px;top:5px;height:30px;
+  display:flex;justify-content:flex-end;align-items:center;gap:8px;
+  background:none;border:0;border-radius:0;box-shadow:none;padding:0;
+}
+.sr-header-revision .sr-header-utilities button {
+  display:inline-flex;align-items:center;justify-content:center;gap:5px;
+  height:30px;min-width:0;max-width:none;margin:0;padding:0 6px;
+  border:0;border-radius:0;background:none;color:#285188;font-size:12px;font-weight:600;
+  white-space:nowrap;box-shadow:none;
+}
+.sr-header-revision .sr-header-utilities .sr-ui-icon {width:16px;height:16px;filter:none;}
+.sr-header-revision .sr-header-news > span:first-of-type {color:inherit;font-weight:600;}
+.sr-header-revision .sr-header-utilities button:hover {background:none;color:#124080;text-decoration:underline;text-underline-offset:4px;}
+.sr-header-revision .sr-mainnav {
+  position:absolute;left:50%;top:calc(50% - 19.5px);transform:translateX(-50%);
+  width:1244px;height:44px;display:grid;grid-template-columns:repeat(10,minmax(0,1fr));
+  align-items:stretch;gap:4px;padding:0;background:none;border:0;box-shadow:none;
+}
+.sr-header-revision .sr-mainnav button {
+  width:100%;height:44px;min-width:0;display:flex;justify-content:center;align-items:center;
+  gap:5px;padding:0 4px;border:0;border-radius:4px;background:transparent;
+  color:#234b83;font-size:17px;font-weight:800;white-space:nowrap;box-shadow:none;
+}
+.sr-header-revision .sr-mainnav button svg {color:#2a5da3;width:16px;height:16px;}
+.sr-header-revision .sr-mainnav button[aria-current=page] {
+  color:#164b98;background:#e5effd;border:0;border-radius:4px 4px 0 0;
+  box-shadow:inset 0 -2px 0 #275ba5;
+}
+.sr-header-revision .sr-mainnav button[aria-current=page] svg {color:#164b98;}
+.sr-header-revision .sr-mainnav button:hover:not([aria-current=page]) {color:#173e7c;background:#edf3fc;border:0;}
+.sr-header-revision .sr-header-account {
+  position:absolute;right:24px;top:calc(50% - 16.5px);height:38px;max-width:296px;
+  display:flex;justify-content:flex-end;align-items:center;gap:8px;
+  color:#234b83;padding:0;background:none;border:0;border-radius:0;box-shadow:none;
+}
+.sr-header-revision .sr-header-account > span {max-width:154px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;}
+.sr-header-revision .sr-header-account button {
+  height:38px;min-width:96px;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:0 12px;border:1px solid #91afd6;border-radius:4px;background:#fff;color:#234b83;
+  font-size:12px;font-weight:700;box-shadow:none;
+}
+.sr-header-revision .sr-header-account .sr-signup {color:#fff;border-color:#2658a5;background:#2658a5;box-shadow:none;}
+.sr-header-revision .sr-header-account button:hover {border-color:#25559d;background:#eef4fc;color:#234b83;}
+.sr-header-revision .sr-header-account .sr-signup:hover {border-color:#173d77;background:#173d77;color:#fff;}
+.sr-header-revision :where(button,a):focus-visible {outline:2px solid #2555a9;outline-offset:-2px;}
+.sr-header-revision ::selection {background:#dce7f8;color:#1e3c68;}

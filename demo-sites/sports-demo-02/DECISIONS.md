@@ -1,3 +1,24 @@
+# 최신 운영 상태 — SIRIUS white 이관·공개 배포 완료 / 2026-10-02
+
+- 현재 앱 경로: `E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site`. 원본 Speedwagon 앱은 보존했으며 아래 과거 사본 경로·배포 금지·이전 헤더 규격은 당시 이력입니다.
+- 사용자 직접 요청: 두 완성본을 현재 Site-Skin-edit로 이관하고 화이트는 기존 SIRIUS, 딥블루는 신규 SIRIUS-2에 배포. 신규 SIRIUS-2도 기존 SIRIUS처럼 공개하도록 명시 확인했습니다.
+- 공개 URL: https://sirius.kexxadrix.chatgpt.site/ — PUBLIC v9, 배포 상태 `succeeded`.
+- 프로젝트 ID: `appgprj_6aacb6c2a38881918bd8a324fa9c5b54`. 이 값을 다른 스킨 앱에 복사하지 않습니다.
+- 두 앱은 독립 폴더와 독립 Site 프로젝트 ID로 운영합니다. 화이트 기존 SIRIUS ID를 유지했고 딥블루의 복사된 SIRIUS 연결은 신규 ID로 교체했습니다.
+- 기존 WHITE는 전체 파일 백업 후 검증된 4개 기존 파일과 61개 신규 파일을 적용했습니다. DEEPBLUE는 새 폴더에 원본 앱·의존 훅·빌드 구성을 이관했습니다.
+- Sites 배포에 필요한 앱 소스 commit/push만 수행했습니다. 기존 화이트의 설치 도구·문서는 추가 commit하지 않았고 다른 GitHub 저장소나 상위 저장소는 변경하지 않았습니다.
+- 배포 소스 commit: `ace1c86197e3ea4f33e2da895ce66aa332a23523` (Sites source main 원격 HEAD 일치 확인).
+- 버전 ID: `appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_1d1c9e5d8b3481918d257e478d0669f5`.
+- 배포 ID: `appgdep_6abf5f21c3c48191a1e9d0e10886217c`.
+- 배포 압축: `E:/codexwork/Site-Skin-edit-backups/20261002-sirius-two-variants/white-deploy-v3.tar`. 빌드된 `dist/`와 `.openai/hosting.json`만 포함합니다.
+- 검수·백업·이관·배포 증거: `E:/codexwork/Site-Skin-edit-backups/20261002-sirius-two-variants`. 공개 검수는 `public-white-verification.json`, 화면은 `public-white-1920.png`.
+- 초기 포장 시도 2회는 배포 전 archive validation에서 거절됐습니다(중복 hosting 경로, 지원되지 않는 entrypoint 경로). 최종 v3 압축에서 구조를 수정했고 소스 코드 재변경 없이 저장·배포 성공했습니다.
+- 수신 문서 원본은 `input/speedwagon-20261002/`, 승인 당시 QA는 `runs/speedwagon-source-header110-20261002/`에 보존했습니다. 과거 QA는 당시 증거이며 현재 공개 검증과 분리합니다.
+
+---
+
+## 아래는 보존된 과거 기록
+
 # SIRIUS — R8 통합 결정
 
 ## 2026-09-21 — 단회 polish 실사용 결과

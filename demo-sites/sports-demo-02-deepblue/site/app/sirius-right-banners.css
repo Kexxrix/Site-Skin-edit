@@ -1,0 +1,32 @@
+.sirius-site .sr-banner-stack {
+  --sr-banner-art:url('/assets/right-banners/sirius-20261002/background-deepblue-v01-1224x244.webp');
+  --sr-banner-title:#f3f7ff;--sr-banner-description:#cbdaef;
+  --sr-banner-border:#607fa6;--sr-banner-hover-border:#efd497;--sr-banner-highlight:#ffffff18;
+}
+/* Artwork is decorative; existing banner labels and actions remain HTML. */
+.sirius-site .sr-body .sr-mini-banner {
+  position:relative;isolation:isolate;overflow:hidden;
+  background:var(--sr-banner-art) center / 100% 100% no-repeat;
+  border-color:var(--sr-banner-border);
+  box-shadow:inset 0 1px 0 var(--sr-banner-highlight);
+}
+.sirius-site .sr-body .sr-mini-banner:hover {
+  background:var(--sr-banner-art) center / 100% 100% no-repeat;
+  border-color:var(--sr-banner-hover-border);
+}
+.sirius-site .sr-body .sr-mini-banner-art {
+  position:absolute;right:6px;top:50%;transform:translateY(-50%);
+  width:90px;height:53px;object-fit:contain;pointer-events:none;
+}
+.sirius-site .sr-body .sr-mini-banner > span {
+  position:relative;z-index:1;max-width:196px;
+}
+.sirius-site .sr-body .sr-mini-banner strong {
+  background:none;color:var(--sr-banner-title);
+  -webkit-text-fill-color:var(--sr-banner-title);
+  font-size:17px;line-height:20px;font-weight:800;
+}
+.sirius-site .sr-body .sr-mini-banner small {
+  color:var(--sr-banner-description);font-size:12px;line-height:16px;
+}
+

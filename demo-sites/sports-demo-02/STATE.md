@@ -1,3 +1,43 @@
+# 최신 GitHub 백업 기준 — SIRIUS PUBLIC v9 / 2026-10-02
+
+- 통합 저장소 `Kexxrix/Site-Skin-edit`의 공동 스냅샷 `backup/site-snapshots/20261002-mercury-sirius-variants/`에 현재 소스 `ace1c86197e3ea4f33e2da895ce66aa332a23523` / `main`와 관련 운영·입력·검수 자료를 보관한다. [파일별 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261002-mercury-sirius-variants/source-files.json)와 [검증·제외·공개 배포 증거](https://github.com/Kexxrix/Site-Skin-edit/tree/main/backup/site-snapshots/20261002-mercury-sirius-variants)를 따른다.
+- 앱 코드·디자인·자산 원본·실행 서버·Sites 공개 배포는 변경하지 않았다. 앱의 Git HEAD와 기존 미추적 파일 상태를 보존하고 통합 백업 저장소에서만 커밋·일반 push한다. 기존 빌드·브라우저 QA는 재사용한다.
+- 통합 백업의 커밋은 GitHub 파일 이력으로 확인한다. 앱 소스 SHA와 같은 값으로 표시하지 않으며 자기 커밋 SHA를 본문에 넣는 순환 갱신은 하지 않는다. 원격 검증 기록은 `E:/codexwork/Site-Skin-edit-backups/20261002-sports-github/remote-verification.json`에 남긴다.
+- 의존성·캐시·빌드/배포 압축·비밀값·원시 세션 로그·설치된 로컬 도구 런타임은 제외한다. 적격 DESIGN/PRODUCT와 로컬 작업 설정, 원본 입력·QA 문서는 수집한다. 이전 날짜별 작업의 “GitHub 백업 안 함” 문구는 당시 이력이다.
+
+---
+
+# 최신 운영 상태 — SIRIUS white 이관·공개 배포 완료 / 2026-10-02
+
+- 현재 앱 경로: `E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-02/site`. 원본 Speedwagon 앱은 보존했으며 아래 과거 사본 경로·배포 금지·이전 헤더 규격은 당시 이력입니다.
+- 사용자 직접 요청: 두 완성본을 현재 Site-Skin-edit로 이관하고 화이트는 기존 SIRIUS, 딥블루는 신규 SIRIUS-2에 배포. 신규 SIRIUS-2도 기존 SIRIUS처럼 공개하도록 명시 확인했습니다.
+- 공개 URL: https://sirius.kexxadrix.chatgpt.site/ — PUBLIC v9, 배포 상태 `succeeded`.
+- 프로젝트 ID: `appgprj_6aacb6c2a38881918bd8a324fa9c5b54`. 이 값을 다른 스킨 앱에 복사하지 않습니다.
+- 현재 로컬 미리보기: `http://127.0.0.1:5392/` (현재 세션에서 실행). 원본 사본의 5292/5293 서버는 변경하지 않았습니다.
+- 승인된 소스·자산·CSS 순서를 그대로 이관했습니다. 추가 디자인 변경, 실제 서비스 연결, 다른 앱 수정은 포함하지 않았습니다.
+- 이 배포 작업은 완료했습니다. 이후 변경은 새 사용자 지시를 따릅니다. 과거 디자인 명령·별도 QA·배포 작업을 자동 재개하지 않습니다.
+
+## 검증 및 출처
+
+- 소스 동결 목록 343개는 원본과 이관본 모두 SHA-256 일치. 기존 설치 도구·설정·DESIGN/PRODUCT 등 보호 파일 62개를 바이트 그대로 보존했습니다.
+- 현재 앱에서 `npx tsc --noEmit --incremental false`, `npx oxlint app/sirius-sports.tsx app/layout.tsx`, `npm run build` 종료 0. 전체 프로젝트 lint 통과를 의미하지 않습니다. 기존 큰 청크·정적 경로 분류 경고는 유지합니다.
+- Chrome/Playwright 로컬 및 공개 URL 1920×1080, 1366×900 검증 통과. Browser plugin not available. 이미지·폰트 로딩, 콘솔 오류·HTTP 실패·프레임워크 오류 오버레이 없음.
+- 헤더 110px, 본문 y110/패널 y117, 중앙 1244px, 고정 1920px 가로 탐색, 텍스트 로고 218px, 종목 10개·경기 61개를 확인했습니다.
+- 배당 선택·전체삭제·고객센터 대화상자 열기/닫기 통과. 10,000 × 1.56 = 15,600원; 10,000 × 1.56 × 1.51 = 23,556원, 표시 배당 2.36. GUEST 베팅 제출 비활성 유지.
+- 로컬 사진 메뉴 6개, 카지노 호버 높이 +72px와 해외형 복귀, 정보수정 72×28px, 우측 배너 6개·19세 안내 확인.
+- 실제 로그인·금융 거래·베팅 실행은 검증하지 않았습니다. 1920px 고정 화면의 가로 스크롤은 승인된 동작이며 모바일 재설계를 추가하지 않았습니다.
+- 배포 소스 commit: `ace1c86197e3ea4f33e2da895ce66aa332a23523` (Sites source main 원격 HEAD 일치 확인).
+- 버전 ID: `appgprj_6aacb6c2a38881918bd8a324fa9c5b54~appgver_1d1c9e5d8b3481918d257e478d0669f5`.
+- 배포 ID: `appgdep_6abf5f21c3c48191a1e9d0e10886217c`.
+- 배포 압축: `E:/codexwork/Site-Skin-edit-backups/20261002-sirius-two-variants/white-deploy-v3.tar`. 빌드된 `dist/`와 `.openai/hosting.json`만 포함합니다.
+- 검수·백업·이관·배포 증거: `E:/codexwork/Site-Skin-edit-backups/20261002-sirius-two-variants`. 공개 검수는 `public-white-verification.json`, 화면은 `public-white-1920.png`.
+- 초기 포장 시도 2회는 배포 전 archive validation에서 거절됐습니다(중복 hosting 경로, 지원되지 않는 entrypoint 경로). 최종 v3 압축에서 구조를 수정했고 소스 코드 재변경 없이 저장·배포 성공했습니다.
+- 수신 문서 원본은 `input/speedwagon-20261002/`, 승인 당시 QA는 `runs/speedwagon-source-header110-20261002/`에 보존했습니다. 과거 QA는 당시 증거이며 현재 공개 검증과 분리합니다.
+
+---
+
+## 아래는 보존된 과거 기록
+
 # SIRIUS — R8 설정·결과 전달 상태
 
 ## 최신: 단회 polish 완료 / PUBLIC v8 / 시각 피드백 대기 — 2026-09-21
