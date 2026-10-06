@@ -1,0 +1,117 @@
+{
+  "icon": "action-message",
+  "generated_at_utc": "2026-10-06T08:21:03.928886+00:00",
+  "tool": "image_gen.imagegen",
+  "tool_mode": "built-in",
+  "original_tool_output_path": null,
+  "tool_output_transport": "embedded data:image/png;base64 URL; tool returned no local original path",
+  "local_storage_operation": "exact byte decode from returned base64; no re-encode or color/alpha editing",
+  "tool_payload_base64": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\refs\\action-message-tool-payload.base64",
+  "final_path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\results\\action-message.png",
+  "prompt_path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\prompts\\action-message.txt",
+  "prompt_sha256": "461a3148b9a4447a48a68516219c4939084e75ba77405a77ac94ede2d31f615e",
+  "input_reference": {
+    "page_id": "page_47645aed071c81918769018d818cb7f0",
+    "reference": "library-file:fde1_bGliZmlsZV95Z1l2cVF0T001WXVWSFpHeUJDZTFR_FileDrive_0981513dfcb08191b072af9fa2582442",
+    "sha256": "bf07e48a3bd6d21f6d8eca98c3bc1c2a42720dd6ddf9e462e2cf094e54aa3833",
+    "role": "edit target for withdrawal; style reference only for message"
+  },
+  "before_storage_sha256": "83ffa8dc08bfde3fd3223b3336227c1feeb4950f34a42b854cce87eb1ac394cb",
+  "after_storage_sha256": "83ffa8dc08bfde3fd3223b3336227c1feeb4950f34a42b854cce87eb1ac394cb",
+  "byte_size": 390805,
+  "format": "PNG",
+  "mode": "RGBA",
+  "size": [
+    1254,
+    1254
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox_nonzero": [
+    190,
+    54,
+    1057,
+    971
+  ],
+  "alpha_bbox_at_least_32": [
+    227,
+    405,
+    1027,
+    885
+  ],
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "opaque_median_rgb": [
+    58,
+    61,
+    65
+  ],
+  "exports": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\16\\action-message.png",
+      "size": [
+        16,
+        16
+      ],
+      "byte_size": 392,
+      "sha256": "950ca67f626adc305f2bd9154d62c45660878464da3a5a49f63cb5d2482fe6ef"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\24\\action-message.png",
+      "size": [
+        24,
+        24
+      ],
+      "byte_size": 610,
+      "sha256": "059cee39c1933aabb76dc56c886525af3a512a194c1a7361cd01f2714ccbfc0f"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\32\\action-message.png",
+      "size": [
+        32,
+        32
+      ],
+      "byte_size": 900,
+      "sha256": "cc345a1ddd5bd0ebc2db3efd73984317ff086a9aee0e06eee3969f04948d03b4"
+    }
+  ],
+  "technical_validation": "passed PNG signature, PNG decode/readability, RGBA, genuine alpha range and transparent corners, exact SHA256 byte preservation, size exports",
+  "visual_review": {
+    "result": "passed with recorded minor alpha note",
+    "actual_sizes": [
+      16,
+      24,
+      32
+    ],
+    "backgrounds": [
+      "#FFFFFF",
+      "#F2F3F4",
+      "#EA981B"
+    ],
+    "observations": {
+      "actual_16px": "closed envelope remains identifiable; transparent V is weaker at this size",
+      "actual_24px": "closed envelope and clean V flap hint read immediately on white, off-white and orange backgrounds",
+      "actual_32px": "envelope and V remain clear",
+      "style": "single graphite family, nearly flat matte, no protruding letter, seal, badge or lower X diagonals"
+    },
+    "evidence": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\qa\\action-withdraw-message-small-sizes.png",
+    "review_record": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\qa\\action-withdraw-message-review.ko.md",
+    "iterations": 1,
+    "clear_visual_defects": "none observed at native sizes",
+    "alpha_note": "a few 1/255 alpha pixels outside primary silhouette enlarge nonzero bbox; >=2 alpha bbox hugs silhouette; not visible in native-size bright-background QA; source alpha preserved",
+    "css_mask_validation": "not tested"
+  },
+  "status": {
+    "generation": "complete",
+    "technical_validation": "passed",
+    "user_approval": "pending",
+    "site_adoption": "not applied",
+    "visual_review": "passed candidate"
+  }
+}

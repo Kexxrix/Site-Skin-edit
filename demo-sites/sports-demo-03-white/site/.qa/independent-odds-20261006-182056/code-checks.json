@@ -1,0 +1,56 @@
+{
+  "type": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exit_code": 0,
+    "seconds": 5.587
+  },
+  "lint-full": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--format",
+      "json",
+      "app/page.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.974
+  },
+  "lint-before": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--config",
+      "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\.qa\\independent-odds-20261006-182056\\lint-static-config.json",
+      "--format",
+      "json",
+      "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\odds-text-20261006-v1\\before-app\\page.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.091
+  },
+  "lint-after": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--config",
+      "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\.qa\\independent-odds-20261006-182056\\lint-static-config.json",
+      "--format",
+      "json",
+      "app/page.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.261
+  },
+  "lint-comparison": {
+    "before": 1,
+    "after": 1,
+    "same": true,
+    "new": []
+  }
+}

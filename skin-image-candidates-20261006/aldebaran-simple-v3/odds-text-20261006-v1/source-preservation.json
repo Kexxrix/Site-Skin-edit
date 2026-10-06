@@ -1,0 +1,61 @@
+{
+  "changed_files": [
+    {
+      "path": "app/aldebaran-white.css",
+      "sha256": "fe1d52fa8eecba060ccf3ad50ec8b7ed29795b97e7236bebfab56067a2940c1f",
+      "bytes": 8062
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "a3b76f3c0a5acee702f08f1beb11217ec19bbb147482a5c9a2ebce9702c0ff15",
+      "bytes": 10379
+    }
+  ],
+  "CSS_changed_properties_only": [
+    {
+      "selector": ".aldebaran-white .ab5-shell",
+      "property": "--ab5-odds",
+      "before": "var(--ab-ink-accent)",
+      "after": "var(--ab-text)"
+    },
+    {
+      "selector": ".aldebaran-white :is(.ab5-balance-value, .ab5-payout-value)",
+      "property": "color",
+      "before": null,
+      "after": "var(--ab-ink-accent)"
+    },
+    {
+      "selector": ".aldebaran-white :is(.ab5-balance-value, .ab5-payout-value, .ab5-slip-selection b)",
+      "property": "color",
+      "before": "var(--ab-ink-accent)",
+      "after": null
+    },
+    {
+      "selector": ".aldebaran-white :is(.ab5-slip-selection b, [data-total-odds], .confirm-picks b, .history-pick b, .ab5-summary-odds)",
+      "property": "color",
+      "before": null,
+      "after": "var(--ab-text)"
+    },
+    {
+      "selector": ".aldebaran-white :is(.dialog-total strong, .confirm-picks b, .receipt-success span, .receipt-success svg, .history-pick b, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked=\"true\"], .ab5-lobby-grid svg)",
+      "property": "color",
+      "before": "var(--ab-ink-accent)",
+      "after": null
+    },
+    {
+      "selector": ".aldebaran-white :is(.dialog-total strong, .receipt-success span, .receipt-success svg, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked=\"true\"], .ab5-lobby-grid svg)",
+      "property": "color",
+      "before": null,
+      "after": "var(--ab-ink-accent)"
+    }
+  ],
+  "background_layout_font_changes": false,
+  "icon_CSS_block_byte_identical": true,
+  "approved_icons_hash_identical": 18,
+  "approved_r5_TSX_hash_identical": true,
+  "other_current_site_files_preserved": 391,
+  "dark_original_files_preserved": 320,
+  "page_bytes_outside_two_inline_wrappers_identical": true,
+  "data_strings_calculations_handlers_unchanged": true,
+  "new_git_commits_deployment": false
+}

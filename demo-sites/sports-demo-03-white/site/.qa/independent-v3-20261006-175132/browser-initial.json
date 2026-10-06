@@ -1,0 +1,1979 @@
+{
+  "title": "ALDEBARAN · 스포츠",
+  "url": "http://127.0.0.1:5384/",
+  "bodyClass": "aldebaran-site aldebaran-white",
+  "dimensions": {
+    "viewport": 1920,
+    "scrollWidth": 1920
+  },
+  "stylesheets": [
+    {
+      "href": "http://127.0.0.1:5384/app/typography.css",
+      "owner": "<link rel=\"stylesheet\" href=\"/app/typography.css\" data-rsc-css-href=\"/app/typography.css\" data-precedence=\"vite-rsc/importer-resources\">"
+    },
+    {
+      "href": "http://127.0.0.1:5384/app/globals.css",
+      "owner": "<link rel=\"stylesheet\" href=\"/app/globals.css\" data-rsc-css-href=\"/app/globals.css\" data-precedence=\"vite-rsc/importer-resources\">"
+    },
+    {
+      "href": "http://127.0.0.1:5384/app/aldebaran.tokens.css",
+      "owner": "<link rel=\"stylesheet\" href=\"/app/aldebaran.tokens.css\" data-rsc-css-href=\"/app/aldebaran.tokens.css\" data-precedence=\"vite-rsc/importer-resources\">"
+    },
+    {
+      "href": "http://127.0.0.1:5384/app/aldebaran.surfaces.css",
+      "owner": "<link rel=\"stylesheet\" href=\"/app/aldebaran.surfaces.css\" data-rsc-css-href=\"/app/aldebaran.surfaces.css\" data-precedence=\"vite-rsc/importer-resources\">"
+    },
+    {
+      "href": "http://127.0.0.1:5384/app/aldebaran-wog-r5.css",
+      "owner": "<link rel=\"stylesheet\" href=\"/app/aldebaran-wog-r5.css\" data-rsc-css-href=\"/app/aldebaran-wog-r5.css\" data-precedence=\"vite-rsc/importer-resources\">"
+    },
+    {
+      "href": "http://127.0.0.1:5384/app/aldebaran-white.css",
+      "owner": "<link rel=\"stylesheet\" href=\"/app/aldebaran-white.css\" data-rsc-css-href=\"/app/aldebaran-white.css\" data-precedence=\"vite-rsc/importer-resources\">"
+    },
+    {
+      "href": null,
+      "owner": "<style>.tk-heisei-mincho-std{font-family:\"heisei-mincho-std\",serif;}</style>"
+    },
+    {
+      "href": null,
+      "owner": "<style>.tk-omnigothic{font-family:\"omnigothic\",sans-serif;}</style>"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-notice.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "공지사항",
+      "key": "action-notice",
+      "rect": {
+        "x": 1451.765625,
+        "y": 67.5,
+        "width": 24,
+        "height": 24,
+        "top": 67.5,
+        "right": 1475.765625,
+        "bottom": 91.5,
+        "left": 1451.765625
+      },
+      "parentRect": {
+        "x": 1451.765625,
+        "y": 62,
+        "width": 76.40625,
+        "height": 35,
+        "top": 62,
+        "right": 1528.171875,
+        "bottom": 97,
+        "left": 1451.765625
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-gift.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "이벤트게시판",
+      "key": "action-gift",
+      "rect": {
+        "x": 1542.171875,
+        "y": 67.5,
+        "width": 24,
+        "height": 24,
+        "top": 67.5,
+        "right": 1566.171875,
+        "bottom": 91.5,
+        "left": 1542.171875
+      },
+      "parentRect": {
+        "x": 1542.171875,
+        "y": 62,
+        "width": 100.609375,
+        "height": 35,
+        "top": 62,
+        "right": 1642.78125,
+        "bottom": 97,
+        "left": 1542.171875
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-attendance.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "출석체크",
+      "key": "action-attendance",
+      "rect": {
+        "x": 1656.78125,
+        "y": 67.5,
+        "width": 24,
+        "height": 24,
+        "top": 67.5,
+        "right": 1680.78125,
+        "bottom": 91.5,
+        "left": 1656.78125
+      },
+      "parentRect": {
+        "x": 1656.78125,
+        "y": 62,
+        "width": 76.40625,
+        "height": 35,
+        "top": 62,
+        "right": 1733.1875,
+        "bottom": 97,
+        "left": 1656.78125
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-support.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "고객센터",
+      "key": "action-support",
+      "rect": {
+        "x": 1747.1875,
+        "y": 67.5,
+        "width": 24,
+        "height": 24,
+        "top": 67.5,
+        "right": 1771.1875,
+        "bottom": 91.5,
+        "left": 1747.1875
+      },
+      "parentRect": {
+        "x": 1747.1875,
+        "y": 62,
+        "width": 76.40625,
+        "height": 35,
+        "top": 62,
+        "right": 1823.59375,
+        "bottom": 97,
+        "left": 1747.1875
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-deposit.png",
+      "class": "ab5-graphite-icon",
+      "parent": "ab5-quick-action primary",
+      "label": "충전",
+      "key": "action-deposit",
+      "rect": {
+        "x": 40.625,
+        "y": 123.75,
+        "width": 24,
+        "height": 24,
+        "top": 123.75,
+        "right": 64.625,
+        "bottom": 147.75,
+        "left": 40.625
+      },
+      "parentRect": {
+        "x": 17,
+        "y": 114,
+        "width": 98,
+        "height": 43.5,
+        "top": 114,
+        "right": 115,
+        "bottom": 157.5,
+        "left": 17
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-withdraw.png",
+      "class": "ab5-graphite-icon",
+      "parent": "ab5-quick-action primary",
+      "label": "환전",
+      "key": "action-withdraw",
+      "rect": {
+        "x": 142.625,
+        "y": 123.75,
+        "width": 24,
+        "height": 24,
+        "top": 123.75,
+        "right": 166.625,
+        "bottom": 147.75,
+        "left": 142.625
+      },
+      "parentRect": {
+        "x": 119,
+        "y": 114,
+        "width": 98,
+        "height": 43.5,
+        "top": 114,
+        "right": 217,
+        "bottom": 157.5,
+        "left": 119
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-support.png",
+      "class": "ab5-graphite-icon",
+      "parent": "ab5-quick-action primary",
+      "label": "고객센터",
+      "key": "action-support",
+      "rect": {
+        "x": 234.25,
+        "y": 123.75,
+        "width": 24,
+        "height": 24,
+        "top": 123.75,
+        "right": 258.25,
+        "bottom": 147.75,
+        "left": 234.25
+      },
+      "parentRect": {
+        "x": 221,
+        "y": 114,
+        "width": 98,
+        "height": 43.5,
+        "top": 114,
+        "right": 319,
+        "bottom": 157.5,
+        "left": 221
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "축구",
+      "rect": {
+        "x": 25,
+        "y": 588.5,
+        "width": 24,
+        "height": 24,
+        "top": 588.5,
+        "right": 49,
+        "bottom": 612.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 588.5,
+        "width": 54.484375,
+        "height": 24,
+        "top": 588.5,
+        "right": 79.484375,
+        "bottom": 612.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-basketball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "농구",
+      "rect": {
+        "x": 25,
+        "y": 626.5,
+        "width": 24,
+        "height": 24,
+        "top": 626.5,
+        "right": 49,
+        "bottom": 650.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 626.5,
+        "width": 54.484375,
+        "height": 24,
+        "top": 626.5,
+        "right": 79.484375,
+        "bottom": 650.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-baseball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "야구",
+      "rect": {
+        "x": 25,
+        "y": 664.5,
+        "width": 24,
+        "height": 24,
+        "top": 664.5,
+        "right": 49,
+        "bottom": 688.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 664.5,
+        "width": 54.484375,
+        "height": 24,
+        "top": 664.5,
+        "right": 79.484375,
+        "bottom": 688.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-volleyball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "배구",
+      "rect": {
+        "x": 25,
+        "y": 702.5,
+        "width": 24,
+        "height": 24,
+        "top": 702.5,
+        "right": 49,
+        "bottom": 726.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 702.5,
+        "width": 54.484375,
+        "height": 24,
+        "top": 702.5,
+        "right": 79.484375,
+        "bottom": 726.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-hockey.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "아이스하키",
+      "rect": {
+        "x": 25,
+        "y": 740.5,
+        "width": 24,
+        "height": 24,
+        "top": 740.5,
+        "right": 49,
+        "bottom": 764.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 740.5,
+        "width": 88.1875,
+        "height": 24,
+        "top": 740.5,
+        "right": 113.1875,
+        "bottom": 764.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-formula1.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "포뮬라1",
+      "rect": {
+        "x": 25,
+        "y": 778.5,
+        "width": 24,
+        "height": 24,
+        "top": 778.5,
+        "right": 49,
+        "bottom": 802.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 778.5,
+        "width": 71.8125,
+        "height": 24,
+        "top": 778.5,
+        "right": 96.8125,
+        "bottom": 802.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-boxing.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "복싱",
+      "rect": {
+        "x": 25,
+        "y": 816.5,
+        "width": 24,
+        "height": 24,
+        "top": 816.5,
+        "right": 49,
+        "bottom": 840.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 816.5,
+        "width": 54.484375,
+        "height": 24,
+        "top": 816.5,
+        "right": 79.484375,
+        "bottom": 840.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-mma.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "MMA",
+      "rect": {
+        "x": 25,
+        "y": 854.5,
+        "width": 24,
+        "height": 24,
+        "top": 854.5,
+        "right": 49,
+        "bottom": 878.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 854.5,
+        "width": 64.296875,
+        "height": 24,
+        "top": 854.5,
+        "right": 89.296875,
+        "bottom": 878.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-motorsport.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "",
+      "label": "모터스포츠",
+      "rect": {
+        "x": 25,
+        "y": 892.5,
+        "width": 24,
+        "height": 24,
+        "top": 892.5,
+        "right": 49,
+        "bottom": 916.5,
+        "left": 25
+      },
+      "parentRect": {
+        "x": 25,
+        "y": 892.5,
+        "width": 88.1875,
+        "height": 24,
+        "top": 892.5,
+        "right": 113.1875,
+        "bottom": 916.5,
+        "left": 25
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-basketball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-latest-row",
+      "label": "08:00\n토론토 랩터스\n마이애미 히트",
+      "rect": {
+        "x": 71,
+        "y": 993,
+        "width": 24,
+        "height": 24,
+        "top": 993,
+        "right": 95,
+        "bottom": 1017,
+        "left": 71
+      },
+      "parentRect": {
+        "x": 23,
+        "y": 984,
+        "width": 290,
+        "height": 51,
+        "top": 984,
+        "right": 313,
+        "bottom": 1035,
+        "left": 23
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-hockey.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-latest-row",
+      "label": "08:00\n토론토 메이플리프스\n몬트리올 캐네이디언스",
+      "rect": {
+        "x": 71,
+        "y": 1044,
+        "width": 24,
+        "height": 24,
+        "top": 1044,
+        "right": 95,
+        "bottom": 1068,
+        "left": 71
+      },
+      "parentRect": {
+        "x": 23,
+        "y": 1035,
+        "width": 290,
+        "height": 51,
+        "top": 1035,
+        "right": 313,
+        "bottom": 1086,
+        "left": 23
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-basketball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-latest-row",
+      "label": "08:30\n애틀랜타 드림\n코네티컷 선",
+      "rect": {
+        "x": 71,
+        "y": 1095,
+        "width": 24,
+        "height": 24,
+        "top": 1095,
+        "right": 95,
+        "bottom": 1119,
+        "left": 71
+      },
+      "parentRect": {
+        "x": 23,
+        "y": 1086,
+        "width": 290,
+        "height": 51,
+        "top": 1086,
+        "right": 313,
+        "bottom": 1137,
+        "left": 23
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-latest-row",
+      "label": "03:30\n바이에른 뮌헨\n우니온 베를린",
+      "rect": {
+        "x": 71,
+        "y": 1146,
+        "width": 24,
+        "height": 24,
+        "top": 1146,
+        "right": 95,
+        "bottom": 1170,
+        "left": 71
+      },
+      "parentRect": {
+        "x": 23,
+        "y": 1137,
+        "width": 290,
+        "height": 51,
+        "top": 1137,
+        "right": 313,
+        "bottom": 1188,
+        "left": 23
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-latest-row",
+      "label": "04:00\n브렌트퍼드\n첼시",
+      "rect": {
+        "x": 71,
+        "y": 1197,
+        "width": 24,
+        "height": 24,
+        "top": 1197,
+        "right": 95,
+        "bottom": 1221,
+        "left": 71
+      },
+      "parentRect": {
+        "x": 23,
+        "y": 1188,
+        "width": 290,
+        "height": 51,
+        "top": 1188,
+        "right": 313,
+        "bottom": 1239,
+        "left": 23
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-all.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "전체\n61",
+      "rect": {
+        "x": 356,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 380,
+        "bottom": 135,
+        "left": 356
+      },
+      "parentRect": {
+        "x": 347,
+        "y": 107,
+        "width": 105.90625,
+        "height": 32,
+        "top": 107,
+        "right": 452.90625,
+        "bottom": 139,
+        "left": 347
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "축구\n32",
+      "rect": {
+        "x": 469.90625,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 493.90625,
+        "bottom": 135,
+        "left": 469.90625
+      },
+      "parentRect": {
+        "x": 460.90625,
+        "y": 107,
+        "width": 105.90625,
+        "height": 32,
+        "top": 107,
+        "right": 566.8125,
+        "bottom": 139,
+        "left": 460.90625
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-basketball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "농구\n6",
+      "rect": {
+        "x": 583.8125,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 607.8125,
+        "bottom": 135,
+        "left": 583.8125
+      },
+      "parentRect": {
+        "x": 574.8125,
+        "y": 107,
+        "width": 98.0625,
+        "height": 32,
+        "top": 107,
+        "right": 672.875,
+        "bottom": 139,
+        "left": 574.8125
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-baseball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "야구\n16",
+      "rect": {
+        "x": 689.875,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 713.875,
+        "bottom": 135,
+        "left": 689.875
+      },
+      "parentRect": {
+        "x": 680.875,
+        "y": 107,
+        "width": 105.90625,
+        "height": 32,
+        "top": 107,
+        "right": 786.78125,
+        "bottom": 139,
+        "left": 680.875
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-volleyball.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "배구\n0",
+      "rect": {
+        "x": 803.78125,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 827.78125,
+        "bottom": 135,
+        "left": 803.78125
+      },
+      "parentRect": {
+        "x": 794.78125,
+        "y": 107,
+        "width": 98.0625,
+        "height": 32,
+        "top": 107,
+        "right": 892.84375,
+        "bottom": 139,
+        "left": 794.78125
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-hockey.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "아이스하키\n7",
+      "rect": {
+        "x": 909.84375,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 933.84375,
+        "bottom": 135,
+        "left": 909.84375
+      },
+      "parentRect": {
+        "x": 900.84375,
+        "y": 107,
+        "width": 134.359375,
+        "height": 32,
+        "top": 107,
+        "right": 1035.203125,
+        "bottom": 139,
+        "left": 900.84375
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-formula1.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "포뮬라1\n0",
+      "rect": {
+        "x": 1052.203125,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 1076.203125,
+        "bottom": 135,
+        "left": 1052.203125
+      },
+      "parentRect": {
+        "x": 1043.203125,
+        "y": 107,
+        "width": 116.734375,
+        "height": 32,
+        "top": 107,
+        "right": 1159.9375,
+        "bottom": 139,
+        "left": 1043.203125
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-boxing.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "복싱\n0",
+      "rect": {
+        "x": 1176.9375,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 1200.9375,
+        "bottom": 135,
+        "left": 1176.9375
+      },
+      "parentRect": {
+        "x": 1167.9375,
+        "y": 107,
+        "width": 98.0625,
+        "height": 32,
+        "top": 107,
+        "right": 1266,
+        "bottom": 139,
+        "left": 1167.9375
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-mma.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "MMA\n0",
+      "rect": {
+        "x": 1283,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 1307,
+        "bottom": 135,
+        "left": 1283
+      },
+      "parentRect": {
+        "x": 1274,
+        "y": 107,
+        "width": 108.640625,
+        "height": 32,
+        "top": 107,
+        "right": 1382.640625,
+        "bottom": 139,
+        "left": 1274
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/sport-motorsport.png",
+      "class": "ab5-graphite-sport-icon",
+      "parent": "ab5-sport-tab",
+      "label": "모터스포츠\n0",
+      "rect": {
+        "x": 1399.640625,
+        "y": 111,
+        "width": 24,
+        "height": 24,
+        "top": 111,
+        "right": 1423.640625,
+        "bottom": 135,
+        "left": 1399.640625
+      },
+      "parentRect": {
+        "x": 1390.640625,
+        "y": 107,
+        "width": 134.359375,
+        "height": 32,
+        "top": 107,
+        "right": 1525,
+        "bottom": 139,
+        "left": 1390.640625
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-deposit.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "충전",
+      "key": "action-deposit",
+      "rect": {
+        "x": 1624.625,
+        "y": 267,
+        "width": 24,
+        "height": 24,
+        "top": 267,
+        "right": 1648.625,
+        "bottom": 291,
+        "left": 1624.625
+      },
+      "parentRect": {
+        "x": 1601,
+        "y": 260,
+        "width": 98,
+        "height": 38,
+        "top": 260,
+        "right": 1699,
+        "bottom": 298,
+        "left": 1601
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-withdraw.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "환전",
+      "key": "action-withdraw",
+      "rect": {
+        "x": 1726.625,
+        "y": 267,
+        "width": 24,
+        "height": 24,
+        "top": 267,
+        "right": 1750.625,
+        "bottom": 291,
+        "left": 1726.625
+      },
+      "parentRect": {
+        "x": 1703,
+        "y": 260,
+        "width": 98,
+        "height": 38,
+        "top": 260,
+        "right": 1801,
+        "bottom": 298,
+        "left": 1703
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-gift.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "페이백",
+      "key": "action-gift",
+      "rect": {
+        "x": 1823.4375,
+        "y": 267,
+        "width": 24,
+        "height": 24,
+        "top": 267,
+        "right": 1847.4375,
+        "bottom": 291,
+        "left": 1823.4375
+      },
+      "parentRect": {
+        "x": 1805,
+        "y": 260,
+        "width": 98,
+        "height": 38,
+        "top": 260,
+        "right": 1903,
+        "bottom": 298,
+        "left": 1805
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-message.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "쪽지",
+      "key": "action-message",
+      "rect": {
+        "x": 1624.625,
+        "y": 309,
+        "width": 24,
+        "height": 24,
+        "top": 309,
+        "right": 1648.625,
+        "bottom": 333,
+        "left": 1624.625
+      },
+      "parentRect": {
+        "x": 1601,
+        "y": 302,
+        "width": 98,
+        "height": 38,
+        "top": 302,
+        "right": 1699,
+        "bottom": 340,
+        "left": 1601
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/action-support.png",
+      "class": "ab5-graphite-icon",
+      "parent": "",
+      "label": "고객센터",
+      "key": "action-support",
+      "rect": {
+        "x": 1716.25,
+        "y": 309,
+        "width": 24,
+        "height": 24,
+        "top": 309,
+        "right": 1740.25,
+        "bottom": 333,
+        "left": 1716.25
+      },
+      "parentRect": {
+        "x": 1703,
+        "y": 302,
+        "width": 98,
+        "height": 38,
+        "top": 302,
+        "right": 1801,
+        "bottom": 340,
+        "left": 1703
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/state-empty-slip.png",
+      "class": "ab5-graphite-icon",
+      "parent": "ab5-slip-empty",
+      "label": "선택된 베팅내역이 없습니다\n경기를 선택하여 배팅을 시작하세요",
+      "key": "state-empty-slip",
+      "rect": {
+        "x": 1728,
+        "y": 489.5,
+        "width": 48,
+        "height": 48,
+        "top": 489.5,
+        "right": 1776,
+        "bottom": 537.5,
+        "left": 1728
+      },
+      "parentRect": {
+        "x": 1601,
+        "y": 462,
+        "width": 302,
+        "height": 149,
+        "top": 462,
+        "right": 1903,
+        "bottom": 611,
+        "left": 1601
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "1",
+      "objectFit": "contain"
+    },
+    {
+      "src": "/icons/aldebaran-simple-v3-20261006/state-empty-slip.png",
+      "class": "ab5-graphite-icon",
+      "parent": "ab5-bet-submit",
+      "label": "베팅하기",
+      "key": "state-empty-slip",
+      "rect": {
+        "x": 1714.796875,
+        "y": 1033,
+        "width": 18,
+        "height": 18,
+        "top": 1033,
+        "right": 1732.796875,
+        "bottom": 1051,
+        "left": 1714.796875
+      },
+      "parentRect": {
+        "x": 1601,
+        "y": 1022,
+        "width": 302,
+        "height": 40,
+        "top": 1022,
+        "right": 1903,
+        "bottom": 1062,
+        "left": 1601
+      },
+      "loaded": true,
+      "filter": "none",
+      "mask": "none",
+      "opacity": "0.48",
+      "objectFit": "contain"
+    }
+  ],
+  "buttons": [
+    {
+      "class": "ab5-brand",
+      "text": "",
+      "aria": "ALDEBARAN 스포츠 홈",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "국내형 스포츠",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "해외형 스포츠\nNEW",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "E 스포츠",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "인플레이\nLIVE",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "카지노",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "슬롯",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "미니게임",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "가상 스포츠",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "자유게시판",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "ab5-menu-item",
+      "text": "경기결과",
+      "aria": null,
+      "disabled": true,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "로그인",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "회원가입",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "무기명 회원가입",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "공지사항",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "이벤트게시판",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "출석체크",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "고객센터",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "이용규정",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action primary",
+      "text": "충전",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action primary",
+      "text": "환전",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action primary",
+      "text": "고객센터",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "국내형 스포츠",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "해외형 스포츠",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "E스포츠",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "인플레이",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "카지노",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "슬롯",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "이벤트",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "출석부",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-quick-action ",
+      "text": "공지사항",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-promo wide",
+      "text": "",
+      "aria": "카지노 둘러보기",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-promo",
+      "text": "",
+      "aria": "슬롯 둘러보기",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "",
+      "aria": "해외형 검색 결과",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "",
+      "text": "",
+      "aria": "국내형 검색 결과",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "축구\n32",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "농구\n6",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "야구\n16",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "배구\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "아이스하키\n7",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "포뮬라1\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "복싱\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "MMA\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-row",
+      "text": "모터스포츠\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-latest-row",
+      "text": "08:00\n토론토 랩터스\n마이애미 히트",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-latest-row",
+      "text": "08:00\n토론토 메이플리프스\n몬트리올 캐네이디언스",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-latest-row",
+      "text": "08:30\n애틀랜타 드림\n코네티컷 선",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-latest-row",
+      "text": "03:30\n바이에른 뮌헨\n우니온 베를린",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-latest-row",
+      "text": "04:00\n브렌트퍼드\n첼시",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "전체\n61",
+      "aria": null,
+      "disabled": false,
+      "pressed": "true"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "축구\n32",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "농구\n6",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "야구\n16",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "배구\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "아이스하키\n7",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "포뮬라1\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "복싱\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "MMA\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-sport-tab",
+      "text": "모터스포츠\n0",
+      "aria": null,
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-league-head",
+      "text": "미국 (NBA 프리시즌)\n1",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-market-open",
+      "text": "80+",
+      "aria": "토론토 랩터스 전체 마켓 80개 보기",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-card-inspect",
+      "text": "토론토 랩터스\nVS\n마이애미 히트",
+      "aria": "토론토 랩터스 대 마이애미 히트 경기 보기",
+      "disabled": false,
+      "pressed": "true"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "토론토 랩터스\n1.56",
+      "aria": "토론토 랩터스 대 마이애미 히트 승패  홈 1.56",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "2.48\n마이애미 히트",
+      "aria": "토론토 랩터스 대 마이애미 히트 승패  원정 2.48",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "토론토 랩터스\n1.89",
+      "aria": "토론토 랩터스 대 마이애미 히트 핸디캡 홈 −3.5 홈 −3.5 1.89",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.94\n마이애미 히트",
+      "aria": "토론토 랩터스 대 마이애미 히트 핸디캡 홈 −3.5 원정 +3.5 1.94",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "언더\n2.18",
+      "aria": "토론토 랩터스 대 마이애미 히트 오버 / 언더 218.5 언더 2.18",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.71\n오버",
+      "aria": "토론토 랩터스 대 마이애미 히트 오버 / 언더 218.5 오버 1.71",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-league-head",
+      "text": "북미 (NHL 프리시즌)\n7",
+      "aria": null,
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-market-open",
+      "text": "79+",
+      "aria": "토론토 메이플리프스 전체 마켓 79개 보기",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-card-inspect",
+      "text": "토론토 메이플리프스\nVS\n몬트리올 캐네이디언스",
+      "aria": "토론토 메이플리프스 대 몬트리올 캐네이디언스 경기 보기",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "토론토 메이플리프스\n1.51",
+      "aria": "토론토 메이플리프스 대 몬트리올 캐네이디언스 승패  홈 1.51",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "2.60\n몬트리올 캐네이디언스",
+      "aria": "토론토 메이플리프스 대 몬트리올 캐네이디언스 승패  원정 2.60",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "토론토 메이플리프스\n2.53",
+      "aria": "토론토 메이플리프스 대 몬트리올 캐네이디언스 퍽 핸디캡 홈 −1.5 홈 −1.5 2.53",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.54\n몬트리올 캐네이디언스",
+      "aria": "토론토 메이플리프스 대 몬트리올 캐네이디언스 퍽 핸디캡 홈 −1.5 원정 +1.5 1.54",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "언더\n2.19",
+      "aria": "토론토 메이플리프스 대 몬트리올 캐네이디언스 오버 / 언더 5.5 언더 2.19",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.70\n오버",
+      "aria": "토론토 메이플리프스 대 몬트리올 캐네이디언스 오버 / 언더 5.5 오버 1.70",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-market-open",
+      "text": "52+",
+      "aria": "몬트리올 캐네이디언스 전체 마켓 52개 보기",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-card-inspect",
+      "text": "몬트리올 캐네이디언스\nVS\n토론토 메이플리프스",
+      "aria": "몬트리올 캐네이디언스 대 토론토 메이플리프스 경기 보기",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "몬트리올 캐네이디언스\n2.18",
+      "aria": "몬트리올 캐네이디언스 대 토론토 메이플리프스 승패  홈 2.18",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.71\n토론토 메이플리프스",
+      "aria": "몬트리올 캐네이디언스 대 토론토 메이플리프스 승패  원정 1.71",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "몬트리올 캐네이디언스\n4.35",
+      "aria": "몬트리올 캐네이디언스 대 토론토 메이플리프스 퍽 핸디캡 홈 −1.5 홈 −1.5 4.35",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.23\n토론토 메이플리프스",
+      "aria": "몬트리올 캐네이디언스 대 토론토 메이플리프스 퍽 핸디캡 홈 −1.5 원정 +1.5 1.23",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "언더\n2.15",
+      "aria": "몬트리올 캐네이디언스 대 토론토 메이플리프스 오버 / 언더 5.5 언더 2.15",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.72\n오버",
+      "aria": "몬트리올 캐네이디언스 대 토론토 메이플리프스 오버 / 언더 5.5 오버 1.72",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-market-open",
+      "text": "78+",
+      "aria": "Blues 전체 마켓 78개 보기",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-card-inspect",
+      "text": "Blues\nVS\nStars",
+      "aria": "Blues 대 Stars 경기 보기",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "Blues\n2.40",
+      "aria": "Blues 대 Stars 승패  홈 2.40",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.59\nStars",
+      "aria": "Blues 대 Stars 승패  원정 1.59",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "Blues\n5.11",
+      "aria": "Blues 대 Stars 퍽 핸디캡 홈 −1.5 홈 −1.5 5.11",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.18\nStars",
+      "aria": "Blues 대 Stars 퍽 핸디캡 홈 −1.5 원정 +1.5 1.18",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "언더\n1.96",
+      "aria": "Blues 대 Stars 오버 / 언더 5.5 언더 1.96",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.87\n오버",
+      "aria": "Blues 대 Stars 오버 / 언더 5.5 오버 1.87",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-market-open",
+      "text": "64+",
+      "aria": "Oilers 전체 마켓 64개 보기",
+      "disabled": false,
+      "pressed": null
+    },
+    {
+      "class": "ab5-card-inspect",
+      "text": "Oilers\nVS\nJets",
+      "aria": "Oilers 대 Jets 경기 보기",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "Oilers\n1.67",
+      "aria": "Oilers 대 Jets 승패  홈 1.67",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "2.25\nJets",
+      "aria": "Oilers 대 Jets 승패  원정 2.25",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "Oilers\n2.79",
+      "aria": "Oilers 대 Jets 퍽 핸디캡 홈 −1.5 홈 −1.5 2.79",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd reverse",
+      "text": "1.46\nJets",
+      "aria": "Oilers 대 Jets 퍽 핸디캡 홈 −1.5 원정 +1.5 1.46",
+      "disabled": false,
+      "pressed": "false"
+    },
+    {
+      "class": "ab5-odd ",
+      "text": "언더\n3.12",
+      "aria": "Oilers 대 Jets 오버 / 언더 5.5 언더 3.12",
+      "disabled": false,
+      "pressed": "false"
+    }
+  ],
+  "inputs": [
+    {
+      "placeholder": "해외형 스포츠 검색 (국가/리그명/팀명)",
+      "aria": "해외형 스포츠 검색"
+    },
+    {
+      "placeholder": "국내형 스포츠 검색 (국가/리그명/팀명)",
+      "aria": "국내형 스포츠 검색"
+    },
+    {
+      "placeholder": "",
+      "aria": null
+    },
+    {
+      "placeholder": "0",
+      "aria": "베팅 금액"
+    }
+  ],
+  "broken": [],
+  "errors": [],
+  "failedRequests": [
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "httpErrors": [
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "status": 412
+    }
+  ],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 412 ()"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+--- before/app/aldebaran-wog-r5.tsx
++++ after/app/aldebaran-wog-r5.tsx
+@@ -20,7 +20,8 @@
+ const banners=[['support','텔레그램 고객센터','문의 및 제휴 안내','01'],['notice','텔레그램 공식채널','이벤트 및 공지 안내','02'],['rules','ALDEBARAN 이용안내','서비스 이용 방법','03'],['live-guide','실시간 중계 안내','경기 중계 일정 확인','04'],['lineups','스포츠 라인업','경기별 선수 정보','05'],['age-policy','미성년자 이용불가','만 19세 이상 이용','06']] as const;
+ const tabIds=['all','soccer','basketball','baseball','volleyball','hockey'];
+ const graphiteIconBase='/icons/graphite-20261002';
+-const graphiteSportIcons:Record<string,string>=Object.fromEntries([...tabIds,'formula1','boxing','mma','motorsports'].map(id=>[id,`${graphiteIconBase}/${id}.png`]));
++const approvedIconBase='/icons/aldebaran-simple-v3-20261006';
++const graphiteSportIcons:Record<string,string>=Object.fromEntries([...tabIds,'formula1','boxing','mma','motorsports'].map(id=>[id,`${approvedIconBase}/sport-${id==='motorsports'?'motorsport':id}.png`]));
+ const sportTabs=[...tabIds.map(id=>({...sportMenu.find(s=>s.id===id)!,logo:graphiteSportIcons[id]})),
+   {id:'formula1',name:'포뮬라1',logo:graphiteSportIcons.formula1},
+   {id:'boxing',name:'복싱',logo:graphiteSportIcons.boxing},
+@@ -28,9 +29,11 @@
+   {id:'motorsports',name:'모터스포츠',logo:graphiteSportIcons.motorsports},
+ ];
+ type GraphiteIconName='deposit'|'withdraw'|'support'|'notice'|'gift'|'attendance'|'rules'|'messages'|'history'|'ticket'|'logout'|'success-check'|'empty-search';
++const approvedFunctionIcons:Partial<Record<GraphiteIconName,string>>={deposit:'action-deposit',withdraw:'action-withdraw',support:'action-support',notice:'action-notice',gift:'action-gift',attendance:'action-attendance',messages:'action-message',ticket:'state-empty-slip'};
+ export function GraphiteIcon({name}:{name:GraphiteIconName}){
++  const approved=approvedFunctionIcons[name];
+   // oxlint-disable-next-line next/no-img-element -- The selected PNG bytes and transparent artwork must be served unchanged.
+-  return <img className="ab5-graphite-icon" data-graphite-icon={name} src={`${graphiteIconBase}/${name}.png`} width="18" height="18" alt="" aria-hidden="true" draggable={false}/>;
++  return <img className="ab5-graphite-icon" data-graphite-icon={name} data-aldebaran-icon-v3={approved||undefined} src={approved?`${approvedIconBase}/${approved}.png`:`${graphiteIconBase}/${name}.png`} width="18" height="18" alt="" aria-hidden="true" draggable={false}/>;
+ }
+ const filters=[['all','전체'],['result','승무패'],['handicap','핸디캡'],['totals','언더·오버'],['other','기타']] as const;
+ export const casinoPhoto='/banners/r8/mercury-event-woman.png';
+--- before/app/aldebaran-white.css
++++ after/app/aldebaran-white.css
+@@ -63,6 +63,18 @@
+ .aldebaran-white .ab5-graphite-sport-icon {
+   opacity: 1;
+ }
++/* Approved v3 artwork: preserve native color and give small roles a readable slot. */
++.aldebaran-white :is(.ab5-graphite-sport-icon, [data-aldebaran-icon-v3]) {
++  filter: none;
++  mask-image: none;
++}
++.aldebaran-white :is(.ab5-sport-tab, .ab5-sport-row) .ab5-graphite-sport-icon {
++  width: 24px;
++  height: 24px;
++  flex-basis: 24px;
++}
++.aldebaran-white .ab5-latest-row { grid-template-columns: 40px 24px minmax(0,1fr); }
++.aldebaran-white .ab5-latest-row .ab5-graphite-sport-icon { width: 24px; height: 24px; }
+ .aldebaran-white .ab5-graphite-icon {
+   display: block;
+   width: 18px;
+@@ -81,6 +93,12 @@
+ .aldebaran-white .receipt-success .ab5-graphite-icon { width: 42px; height: 42px; }
+ .aldebaran-white .ab5-auth-logout .ab5-graphite-icon { background: var(--ab-input); border-radius: 3px; }
+ .aldebaran-white .ab5-bet-submit:disabled .ab5-graphite-icon { opacity: .48; }
++.aldebaran-white :is(.ab5-notice-links, .ab5-quick-action, .ab5-user-actions) [data-aldebaran-icon-v3] {
++  width: 24px;
++  height: 24px;
++  flex-basis: 24px;
++  opacity: 1;
++}
+ .aldebaran-white :is(.ab5-user-actions svg, .ab5-list-pane > .back-to-top) {
+   color: var(--ab-ink-accent);
+ }

@@ -1,0 +1,20 @@
+import {createRequire} from 'node:module';import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';
+const require=createRequire(import.meta.url),{chromium}=require('C:/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root=path.resolve(path.dirname(new URL(import.meta.url).pathname.slice(1)),'..'),output=path.join(root,'dialogs-stable');await fs.mkdir(output);
+const browser=await chromium.launch({channel:'chrome',headless:true}),context=await browser.newContext({viewport:{width:1920,height:1080}});
+await context.addInitScript(()=>localStorage.setItem('aldebaran-frame-r1-v1',JSON.stringify({loggedIn:true,balance:1000000,history:[{id:'qa-existing-history-fixture',createdAt:'2026-10-06T00:00:00Z',stake:5000,odds:'1.56',potential:'7800',picks:[{match:'QA 기존 경기',market:'승패',pick:'홈',price:'1.56'}]}]})));
+const page=await context.newPage();const checks=[];
+const settle=locator=>locator.evaluate(async e=>{getComputedStyle(e).opacity;await new Promise(requestAnimationFrame);await Promise.allSettled(e.getAnimations({subtree:true}).map(a=>a.finished));});
+const inspect=locator=>locator.evaluate(e=>{let opacity=1,element=e;while(element){opacity*=Number(getComputedStyle(element).opacity);element=element.parentElement;}let bg=e;while(bg&&getComputedStyle(bg).backgroundColor==='rgba(0, 0, 0, 0)')bg=bg.parentElement;const s=getComputedStyle(e),r=e.getBoundingClientRect();return {text:e.innerText,color:s.color,background:getComputedStyle(bg).backgroundColor,backgroundImage:getComputedStyle(bg).backgroundImage,opacity,font:s.fontSize+'/'+s.fontWeight,w:r.width,h:r.height};});
+const geometry=dialog=>dialog.evaluate(e=>({text:e.innerText,boxes:Array.from(e.querySelectorAll('.dialog-total,.history-pick,.history-totals'),x=>{const r=x.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};})}));
+try{
+ await page.goto('http://127.0.0.1:5384/',{waitUntil:'networkidle'});await page.locator('.ab5-shell').waitFor();await page.locator('.ab5-list-scroll .ab5-odd:not(:disabled)').first().click();await page.getByRole('textbox',{name:'베팅 금액',exact:true}).fill('5000');await page.locator('.ab5-bet-submit').click();const dialog=page.getByRole('dialog');await dialog.waitFor();await settle(dialog);
+ const confirm=[];for(const selector of ['.confirm-picks b','.dialog-total .ab5-summary-odds']){const m=await inspect(page.locator(selector));assert.equal(m.color,'rgb(65, 67, 63)');assert.equal(m.opacity,1);confirm.push(m);}
+ await page.screenshot({path:path.join(output,'confirmation.png')});const afterConfirm=await geometry(dialog);await dialog.locator('.ab5-summary-odds').evaluateAll(es=>es.forEach(e=>e.replaceWith(...e.childNodes)));const beforeConfirm=await geometry(dialog);assert.deepEqual(beforeConfirm,afterConfirm);
+ checks.push({view:'confirmation',settled:true,opacity:1,odds:confirm,inline_wrapper_geometry_text_identical:true});await dialog.getByRole('button',{name:'닫기',exact:true}).click();await dialog.waitFor({state:'hidden'});
+ await page.locator('.ab5-user-actions').getByRole('button',{name:'베팅내역',exact:true}).click();await dialog.waitFor();await settle(dialog);
+ const history=[];for(const selector of ['.history-pick b','.history-totals .ab5-summary-odds']){const m=await inspect(page.locator(selector));assert.equal(m.color,'rgb(65, 67, 63)');assert.equal(m.opacity,1);history.push(m);}
+ await page.screenshot({path:path.join(output,'history.png')});const afterHistory=await geometry(dialog);await dialog.locator('.ab5-summary-odds').evaluateAll(es=>es.forEach(e=>e.replaceWith(...e.childNodes)));const beforeHistory=await geometry(dialog);assert.deepEqual(beforeHistory,afterHistory);
+ checks.push({view:'history',settled:true,opacity:1,odds:history,inline_wrapper_geometry_text_identical:true});
+ await fs.writeFile(path.join(root,'dialogs-stable-QA.json'),JSON.stringify({checks,transactionsSubmitted:0,context:'Isolated seeded fixture;no user storage/profile'},null,2));console.log(JSON.stringify(checks));
+}finally{await context.close();await browser.close();}

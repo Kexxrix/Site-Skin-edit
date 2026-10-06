@@ -1,0 +1,62 @@
+{
+  "type": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exit_code": 0,
+    "seconds": 7.18
+  },
+  "lint-current-full": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--format",
+      "json",
+      "app/aldebaran-wog-r5.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 1.0
+  },
+  "lint-baseline-static": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--config",
+      "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\.qa\\independent-v3-20261006-175132\\lint-static-config.json",
+      "--format",
+      "json",
+      "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\application-20261006-v1\\before-source\\app\\aldebaran-wog-r5.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.138
+  },
+  "lint-current-static": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--config",
+      "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\.qa\\independent-v3-20261006-175132\\lint-static-config.json",
+      "--format",
+      "json",
+      "app/aldebaran-wog-r5.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.278
+  },
+  "independent_static_comparison": {
+    "before": 21,
+    "after": 21,
+    "same": true,
+    "new_diagnostics": []
+  },
+  "saved_configured_baseline_comparison": {
+    "before": 21,
+    "after": 21,
+    "same": true,
+    "new_diagnostics": []
+  }
+}

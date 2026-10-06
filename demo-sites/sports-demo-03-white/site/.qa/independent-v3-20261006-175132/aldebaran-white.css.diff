@@ -1,0 +1,34 @@
+--- before/aldebaran-white.css
++++ current/aldebaran-white.css
+@@ -63,6 +63,18 @@
+ .aldebaran-white .ab5-graphite-sport-icon {
+   opacity: 1;
+ }
++/* Approved v3 artwork: preserve native color and give small roles a readable slot. */
++.aldebaran-white :is(.ab5-graphite-sport-icon, [data-aldebaran-icon-v3]) {
++  filter: none;
++  mask-image: none;
++}
++.aldebaran-white :is(.ab5-sport-tab, .ab5-sport-row) .ab5-graphite-sport-icon {
++  width: 24px;
++  height: 24px;
++  flex-basis: 24px;
++}
++.aldebaran-white .ab5-latest-row { grid-template-columns: 40px 24px minmax(0,1fr); }
++.aldebaran-white .ab5-latest-row .ab5-graphite-sport-icon { width: 24px; height: 24px; }
+ .aldebaran-white .ab5-graphite-icon {
+   display: block;
+   width: 18px;
+@@ -81,6 +93,12 @@
+ .aldebaran-white .receipt-success .ab5-graphite-icon { width: 42px; height: 42px; }
+ .aldebaran-white .ab5-auth-logout .ab5-graphite-icon { background: var(--ab-input); border-radius: 3px; }
+ .aldebaran-white .ab5-bet-submit:disabled .ab5-graphite-icon { opacity: .48; }
++.aldebaran-white :is(.ab5-notice-links, .ab5-quick-action, .ab5-user-actions) [data-aldebaran-icon-v3] {
++  width: 24px;
++  height: 24px;
++  flex-basis: 24px;
++  opacity: 1;
++}
+ .aldebaran-white :is(.ab5-user-actions svg, .ab5-list-pane > .back-to-top) {
+   color: var(--ab-ink-accent);
+ }

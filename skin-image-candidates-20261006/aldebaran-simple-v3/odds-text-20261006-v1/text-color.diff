@@ -1,0 +1,48 @@
+--- before/aldebaran-white.css
++++ after/aldebaran-white.css
+@@ -40,7 +40,7 @@
+   --ab5-on-accent: var(--ab-on-accent);
+   --ab5-on-yellow: var(--ab-on-accent);
+   --ab5-small-accent: var(--ab-accent);
+-  --ab5-odds: var(--ab-ink-accent);
++  --ab5-odds: var(--ab-text);
+ }
+ /* Keep the existing video and white wordmark legible in the dark brand band. */
+ .aldebaran-white .ab5-header-main {
+@@ -52,8 +52,12 @@
+ .aldebaran-white .ab5-notice-links svg { color: var(--ab-muted); }
+ .aldebaran-white .ab5-notice-links button:hover { color: var(--ab-ink-accent); }
+ .aldebaran-white .ab5-league-label { color: var(--ab-text); }
+-.aldebaran-white :is(.ab5-balance-value, .ab5-payout-value, .ab5-slip-selection b) {
++.aldebaran-white :is(.ab5-balance-value, .ab5-payout-value) {
+   color: var(--ab-ink-accent);
++}
++/* Odds remain neutral graphite; account balances and money accents keep their meaning. */
++.aldebaran-white :is(.ab5-slip-selection b, [data-total-odds], .confirm-picks b, .history-pick b, .ab5-summary-odds) {
++  color: var(--ab-text);
+ }
+ .aldebaran-white .ab5-sport-tab:not([aria-pressed="true"]) .ab5-sport-count {
+   color: var(--ab-text);
+@@ -160,7 +164,7 @@
+ .aldebaran-white .demo-dialog { box-shadow: 0 20px 80px #30312a40; }
+ .aldebaran-white [data-slot="dialog-overlay"] { background: #35383280 !important; }
+ .aldebaran-white .dialog-total { color: var(--ab-muted); }
+-.aldebaran-white :is(.dialog-total strong, .confirm-picks b, .receipt-success span, .receipt-success svg, .history-pick b, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked="true"], .ab5-lobby-grid svg) {
++.aldebaran-white :is(.dialog-total strong, .receipt-success span, .receipt-success svg, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked="true"], .ab5-lobby-grid svg) {
+   color: var(--ab-ink-accent);
+ }
+ .aldebaran-white :is(.confirm-picks span, .history-meta, .history-pick > span, .history-totals, .history-empty p, .account-intro p, .account-intro > span) {
+--- before/page.tsx
++++ after/page.tsx
+@@ -84,9 +84,9 @@
+     {overlay?.kind==='info'&&<p className="dialog-copy">{overlay.body}</p>}
+     {overlay?.kind==='charge'&&<><p className="dialog-copy">충전 후 보유 금액은 {moneyText(DEMO.initialBalance)}원입니다.</p><div className="dialog-total"><span>현재 보유 금액</span><strong>₩ {moneyText(session.balance)}</strong></div><Button className="btn gold" data-ab-control="primary" onClick={()=>{setSession(prev=>({...prev,balance:DEMO.initialBalance}));setOverlay({kind:'info',title:'충전 완료',body:'보유 금액이 1,000,000원으로 변경되었습니다.'});}}>충전하기</Button></>}
+     {overlay?.kind==='withdraw'&&<><p className="dialog-copy">환전 문의는 고객센터 이용 안내를 확인해 주세요.</p><div className="dialog-total"><span>보유 금액</span><strong>₩ {moneyText(session.balance)}</strong></div><Button className="btn" data-ab-control="secondary" onClick={()=>setOverlay({kind:'view',view:'support'})}>이용 안내</Button></>}
+-    {overlay?.kind==='confirm'&&<><div className="confirm-picks">{selected.map(s=>{const match=matches.find(m=>m.id===s.matchId)!,market=match.markets[s.marketIndex],pick=market.picks[s.pickIndex];return <div key={s.id}><strong>{match.home.name} vs {match.away.name}</strong><span>{market.name} · {pick.label}<b>{priceText(pick.price)}</b></span></div>;})}</div><div className="dialog-total"><span>베팅 금액</span><strong>₩ {moneyText(checked.value)}</strong></div><div className="dialog-total"><span>총 배당 / 예상금액</span><strong>{total.displayOdds} / ₩ {moneyText(total.potential)}</strong></div><p className="dialog-copy">선택한 경기와 베팅 금액을 확인해 주세요.</p><Button className="btn gold" data-ab-control="primary" disabled={!session.loggedIn||!selected.length||!!checked.error} onClick={confirmExperience}>베팅 확인</Button></>}
++    {overlay?.kind==='confirm'&&<><div className="confirm-picks">{selected.map(s=>{const match=matches.find(m=>m.id===s.matchId)!,market=match.markets[s.marketIndex],pick=market.picks[s.pickIndex];return <div key={s.id}><strong>{match.home.name} vs {match.away.name}</strong><span>{market.name} · {pick.label}<b>{priceText(pick.price)}</b></span></div>;})}</div><div className="dialog-total"><span>베팅 금액</span><strong>₩ {moneyText(checked.value)}</strong></div><div className="dialog-total"><span>총 배당 / 예상금액</span><strong><span className="ab5-summary-odds">{total.displayOdds}</span> / ₩ {moneyText(total.potential)}</strong></div><p className="dialog-copy">선택한 경기와 베팅 금액을 확인해 주세요.</p><Button className="btn gold" data-ab-control="primary" disabled={!session.loggedIn||!selected.length||!!checked.error} onClick={confirmExperience}>베팅 확인</Button></>}
+     {overlay?.kind==='receipt'&&<><div className="receipt-success"><GraphiteIcon name="success-check"/><strong>베팅 완료</strong><span>{overlay.receipt.picks.length}경기 · ₩ {moneyText(overlay.receipt.stake)}</span></div><Button className="btn gold" data-ab-control="primary" onClick={()=>setOverlay({kind:'history'})}>내 베팅내역 보기</Button></>}
+-    {overlay?.kind==='history'&&<div className="history-list">{!session.history.length?<div className="history-empty"><GraphiteIcon name="history"/><strong>베팅내역이 없습니다</strong><p>경기의 배당과 베팅 금액을 선택해 주세요.</p></div>:session.history.map(receipt=><article key={receipt.id}><div className="history-meta"><time>{new Date(receipt.createdAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}</time><span>베팅 내역</span></div>{receipt.picks.map((pick,i)=><div key={i} className="history-pick"><strong>{pick.match}</strong><span>{pick.market} · {pick.pick}<b>{priceText(pick.price)}</b></span></div>)}<div className="history-totals"><span>₩ {moneyText(receipt.stake)} × {priceText(receipt.odds)}</span><strong>예상 ₩ {moneyText(receipt.potential)}</strong></div></article>)}</div>}
++    {overlay?.kind==='history'&&<div className="history-list">{!session.history.length?<div className="history-empty"><GraphiteIcon name="history"/><strong>베팅내역이 없습니다</strong><p>경기의 배당과 베팅 금액을 선택해 주세요.</p></div>:session.history.map(receipt=><article key={receipt.id}><div className="history-meta"><time>{new Date(receipt.createdAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}</time><span>베팅 내역</span></div>{receipt.picks.map((pick,i)=><div key={i} className="history-pick"><strong>{pick.match}</strong><span>{pick.market} · {pick.pick}<b>{priceText(pick.price)}</b></span></div>)}<div className="history-totals"><span>₩ {moneyText(receipt.stake)} × <span className="ab5-summary-odds">{priceText(receipt.odds)}</span></span><strong>예상 ₩ {moneyText(receipt.potential)}</strong></div></article>)}</div>}
+   </DialogContent></Dialog>
+   </>;
+ }

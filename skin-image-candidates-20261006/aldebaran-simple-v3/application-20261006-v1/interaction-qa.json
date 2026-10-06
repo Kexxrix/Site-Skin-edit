@@ -1,0 +1,508 @@
+{
+  "flow": "white5384 -> existing icons/filters/services/selection states -> correct native-color rendering; no transaction submissions",
+  "browserAvailability": "Browser plugin not available; existing Playwright + isolated headless Chrome allowed by user",
+  "context": "new nonpersistent context; no user profile/storage used",
+  "url": "http://127.0.0.1:5384/",
+  "checks": [
+    {
+      "name": "page identity / meaningful screen / no framework overlay",
+      "status": "passed",
+      "evidence": {
+        "url": "http://127.0.0.1:5384/",
+        "title": "ALDEBARAN · 스포츠"
+      }
+    },
+    {
+      "name": "18 approved PNG HTTP 200 and exact source hash",
+      "status": "passed",
+      "evidence": [
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/action-attendance.png",
+          "status": 200,
+          "bytes": 22600,
+          "sha256": "02d6ce758bb8480f9c4503e4aea3c3e9722ba734ee6c79e50bde224f32a1cc3d"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/action-deposit.png",
+          "status": 200,
+          "bytes": 15642,
+          "sha256": "6fee4d39fce4750a720770c84559b6cdeab15f862348703451534cde30ba8d23"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/action-gift.png",
+          "status": 200,
+          "bytes": 27883,
+          "sha256": "4c8586c3aec919c5ec55fffcd94411f220ce836d04dc4fa06338f12028ecc1da"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/action-message.png",
+          "status": 200,
+          "bytes": 20729,
+          "sha256": "83c8f7f8446cdf784218c2e3ac79ff5a77aa289e85dbca5d4a34adef6ba2812e"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/action-notice.png",
+          "status": 200,
+          "bytes": 18953,
+          "sha256": "3172e79d38748221074776fc91b3cf0fd368766b30f94b1c36a445b316644a1c"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/action-support.png",
+          "status": 200,
+          "bytes": 17009,
+          "sha256": "6172bd611938f703f42ec71829dbcc38a8cb90ce1d1fb91786fa2f9b932640c5"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/action-withdraw.png",
+          "status": 200,
+          "bytes": 16185,
+          "sha256": "03da67981a37f8317f4c6578608db2a3d53c84f8688ae3ce36557c9184ea6269"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-all.png",
+          "status": 200,
+          "bytes": 63374,
+          "sha256": "b19b1b3f913d74faca467f7ad12e422a5f57dffb8994cbdc8dc52622a5aae649"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-baseball.png",
+          "status": 200,
+          "bytes": 66246,
+          "sha256": "6c352b1da81fcff44796ecaf5d3051243d756f7e3e07573216a6419592a9bc7b"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-basketball.png",
+          "status": 200,
+          "bytes": 74154,
+          "sha256": "8dd9be04fa2de1a8d2c048d2c9a460029ccb9d362fc93d245071ebe38ad2ed8e"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-boxing.png",
+          "status": 200,
+          "bytes": 29507,
+          "sha256": "1efb30250d0d6dbb19319dd93e9e58f2eb0150ef027e79d184594e486be015f9"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-formula1.png",
+          "status": 200,
+          "bytes": 30323,
+          "sha256": "b5150769c7b6e87b8f908a883ac5e8a6dbfec2281ecd138b03322fab4314a70e"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-hockey.png",
+          "status": 200,
+          "bytes": 32003,
+          "sha256": "1b561e58d1a4cf156d31df3b4d0e4fc286b170bc302f89ba317a15e7b40b4e8a"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-mma.png",
+          "status": 200,
+          "bytes": 26480,
+          "sha256": "67a07a0a81a73f6b727ff1ac86b3d681053d62b4bb7af3e4c70c994e84faf7e0"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-motorsport.png",
+          "status": 200,
+          "bytes": 31770,
+          "sha256": "c5af823e510868c4dd4abf67bbd47c7ebf58faf8657d994d1c83aeadf6b359af"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png",
+          "status": 200,
+          "bytes": 68631,
+          "sha256": "5a4558b5c580bcf71f984d0725891a48afeb084d8805d5390069808857ec9a76"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/sport-volleyball.png",
+          "status": 200,
+          "bytes": 70274,
+          "sha256": "8c3496206b6524c4b1f126b46ce4a30840a6c3d31af312675945f2b1d3a37b0e"
+        },
+        {
+          "url": "/icons/aldebaran-simple-v3-20261006/state-empty-slip.png",
+          "status": 200,
+          "bytes": 14539,
+          "sha256": "a98a0546a04239f41e77a5cf70026ad96ec3fc60eb04757880c7d3054932deab"
+        }
+      ]
+    },
+    {
+      "name": "all 18 roles present in existing initial slots",
+      "status": "passed",
+      "evidence": [
+        "/icons/aldebaran-simple-v3-20261006/action-notice.png",
+        "/icons/aldebaran-simple-v3-20261006/action-gift.png",
+        "/icons/aldebaran-simple-v3-20261006/action-attendance.png",
+        "/icons/aldebaran-simple-v3-20261006/action-support.png",
+        "/icons/aldebaran-simple-v3-20261006/action-deposit.png",
+        "/icons/aldebaran-simple-v3-20261006/action-withdraw.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-soccer.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-basketball.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-baseball.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-volleyball.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-hockey.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-formula1.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-boxing.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-mma.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-motorsport.png",
+        "/icons/aldebaran-simple-v3-20261006/sport-all.png",
+        "/icons/aldebaran-simple-v3-20261006/action-message.png",
+        "/icons/aldebaran-simple-v3-20261006/state-empty-slip.png"
+      ]
+    },
+    {
+      "name": "normal/hover sports keep native color and opacity",
+      "status": "passed",
+      "evidence": {
+        "normal": {
+          "filter": "none",
+          "mask": "none",
+          "opacity": "1",
+          "width": 24,
+          "height": 24,
+          "src": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png"
+        },
+        "hover": {
+          "filter": "none",
+          "mask": "none",
+          "opacity": "1",
+          "width": 24,
+          "height": 24,
+          "src": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png"
+        }
+      }
+    },
+    {
+      "name": "10 sports filters, selected native art, empty states",
+      "status": "passed",
+      "evidence": {
+        "soccer": {
+          "expected": 32,
+          "actual": 32,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-soccer.png"
+          }
+        },
+        "basketball": {
+          "expected": 6,
+          "actual": 6,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-basketball.png"
+          }
+        },
+        "baseball": {
+          "expected": 16,
+          "actual": 16,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-baseball.png"
+          }
+        },
+        "volleyball": {
+          "expected": 0,
+          "actual": 0,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-volleyball.png"
+          }
+        },
+        "hockey": {
+          "expected": 7,
+          "actual": 7,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-hockey.png"
+          }
+        },
+        "formula1": {
+          "expected": 0,
+          "actual": 0,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-formula1.png"
+          }
+        },
+        "boxing": {
+          "expected": 0,
+          "actual": 0,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-boxing.png"
+          }
+        },
+        "mma": {
+          "expected": 0,
+          "actual": 0,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-mma.png"
+          }
+        },
+        "motorsports": {
+          "expected": 0,
+          "actual": 0,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-motorsport.png"
+          }
+        },
+        "all": {
+          "expected": 61,
+          "actual": 61,
+          "style": {
+            "filter": "none",
+            "mask": "none",
+            "opacity": "1",
+            "width": 24,
+            "height": 24,
+            "src": "/icons/aldebaran-simple-v3-20261006/sport-all.png"
+          }
+        }
+      }
+    },
+    {
+      "name": "search results and reset",
+      "status": "passed",
+      "evidence": {
+        "query": "바이에른",
+        "matches": 1
+      }
+    },
+    {
+      "name": "market filter",
+      "status": "passed",
+      "evidence": {
+        "selected": "핸디캡",
+        "reset": "전체"
+      }
+    },
+    {
+      "name": "selection/stake calculation and GUEST disabled submit",
+      "status": "passed",
+      "evidence": {
+        "selectedId": "record-401902644-0-0",
+        "disabled": {
+          "filter": "none",
+          "mask": "none",
+          "opacity": "0.48",
+          "width": 18,
+          "height": 18,
+          "src": "/icons/aldebaran-simple-v3-20261006/state-empty-slip.png"
+        },
+        "slipText": "NBA 프리시즌\n토론토 랩터스 vs 마이애미 히트\n\n승패\n연장 포함\n\n홈\n1.56",
+        "payout": "7,800"
+      }
+    },
+    {
+      "name": "selection clear restores new empty-slip ticket",
+      "status": "passed",
+      "evidence": {}
+    },
+    {
+      "name": "domestic/european navigation preserved",
+      "status": "passed",
+      "evidence": {}
+    },
+    {
+      "name": "service opens 공지사항",
+      "status": "passed",
+      "evidence": {
+        "title": "공지사항"
+      }
+    },
+    {
+      "name": "service opens 이벤트게시판",
+      "status": "passed",
+      "evidence": {
+        "title": "이벤트게시판"
+      }
+    },
+    {
+      "name": "isolated attendance checked/disabled state",
+      "status": "passed",
+      "evidence": {
+        "style": {
+          "filter": "none",
+          "mask": "none",
+          "opacity": "1",
+          "width": 14,
+          "height": 14,
+          "src": "/icons/aldebaran-simple-v3-20261006/action-attendance.png"
+        }
+      }
+    },
+    {
+      "name": "service opens 출석체크",
+      "status": "passed",
+      "evidence": {
+        "title": "출석체크"
+      }
+    },
+    {
+      "name": "service opens 고객센터",
+      "status": "passed",
+      "evidence": {
+        "title": "고객센터"
+      }
+    },
+    {
+      "name": "message action preserved",
+      "status": "passed",
+      "evidence": {}
+    },
+    {
+      "name": "existing history role preserved",
+      "status": "passed",
+      "evidence": {}
+    },
+    {
+      "name": "read-only 충전 dialog; no submission",
+      "status": "passed",
+      "evidence": {}
+    },
+    {
+      "name": "read-only 환전 dialog; no submission",
+      "status": "passed",
+      "evidence": {}
+    },
+    {
+      "name": "8 disabled GNB unchanged",
+      "status": "passed",
+      "evidence": {
+        "count": 8
+      }
+    },
+    {
+      "name": "narrow viewport retains fixed1920 horizontal layout",
+      "status": "passed",
+      "evidence": [
+        {
+          "viewport": {
+            "width": 1366,
+            "height": 900
+          },
+          "screen": 1366,
+          "width": 1920,
+          "scrollWidth": 1920,
+          "images": 0,
+          "scrollX": 554
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "screen": 390,
+          "width": 1920,
+          "scrollWidth": 1920,
+          "images": 0,
+          "scrollX": 1530
+        }
+      ]
+    },
+    {
+      "name": "app/PNG runtime health",
+      "status": "passed",
+      "evidence": {
+        "pageErrors": [],
+        "httpErrors": [],
+        "localFailures": [],
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+        ],
+        "knownBaselineExternalFailures": [
+          {
+            "url": "https://use.typekit.net/aqm4sxy.css",
+            "failure": {
+              "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+            }
+          },
+          {
+            "url": "https://use.typekit.net/hyf2mwn.js",
+            "failure": {
+              "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+            }
+          },
+          {
+            "url": "https://use.typekit.net/gig5kam.js",
+            "failure": {
+              "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "failure": null,
+  "prior_passed_checks_reused": 22,
+  "prior_script_locator_issue": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ab5-slip-tools').getByRole('button', { name: '전체삭제', exact: true })\u001b[22m\n\n    at E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\application-20261006-v1\\tools\\interaction-qa.mjs:62:85",
+  "pageErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+  ],
+  "warnings": [],
+  "failedRequests": [
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "failure": {
+        "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+      }
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "failure": {
+        "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+      }
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "failure": {
+        "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+      }
+    }
+  ],
+  "httpErrors": [],
+  "transactionsSubmitted": 0
+}

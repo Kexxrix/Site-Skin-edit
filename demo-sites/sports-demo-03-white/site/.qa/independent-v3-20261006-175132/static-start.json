@@ -1,0 +1,540 @@
+{
+  "time": "2026-10-06T08:51:55.600800+00:00",
+  "manifest_keys": [
+    "target",
+    "target_git",
+    "reference_source",
+    "reference_HEAD",
+    "reference_status",
+    "target_files",
+    "protected_original_files"
+  ],
+  "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site",
+  "git_exists": false,
+  "target_files": {
+    "count": 343,
+    "same": 341,
+    "changed": [
+      {
+        "path": "app/aldebaran-white.css",
+        "exists": true,
+        "before": "def9eba5d261dd8ef77602596ba5f56f66f8f2f04f342375bc1edbd1799d5686",
+        "now": "4ba328dbe9af737d50d5dc7cd29cc34b70c7dd10fb0205d4184362fb148c498d"
+      },
+      {
+        "path": "app/aldebaran-wog-r5.tsx",
+        "exists": true,
+        "before": "1c4811daed6dd20dd1c4bbc37619506c70db112748819790776c755633483431",
+        "now": "5a3c1b4d65f6455831b70aa7945bdcc9dbf6b147c7b405d0911af2e04d9e655e"
+      }
+    ]
+  },
+  "protected_original_files": {
+    "count": 320,
+    "same": 320,
+    "changed": []
+  },
+  "assets": [
+    {
+      "name": "action-attendance.png",
+      "bytes": 22600,
+      "sha256": "02d6ce758bb8480f9c4503e4aea3c3e9722ba734ee6c79e50bde224f32a1cc3d",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        42,
+        39,
+        213,
+        216
+      ],
+      "transparent_pixels": 48851,
+      "semi_alpha_pixels": 15450,
+      "opaque_pixels": 1235,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\action-attendance.png"
+      ]
+    },
+    {
+      "name": "action-deposit.png",
+      "bytes": 15642,
+      "sha256": "6fee4d39fce4750a720770c84559b6cdeab15f862348703451534cde30ba8d23",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        49,
+        39,
+        207,
+        216
+      ],
+      "transparent_pixels": 54020,
+      "semi_alpha_pixels": 10797,
+      "opaque_pixels": 719,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\action-deposit.png"
+      ]
+    },
+    {
+      "name": "action-gift.png",
+      "bytes": 27883,
+      "sha256": "4c8586c3aec919c5ec55fffcd94411f220ce836d04dc4fa06338f12028ecc1da",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        45,
+        39,
+        211,
+        216
+      ],
+      "transparent_pixels": 41295,
+      "semi_alpha_pixels": 23259,
+      "opaque_pixels": 982,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\action-gift.png"
+      ]
+    },
+    {
+      "name": "action-message.png",
+      "bytes": 20729,
+      "sha256": "83c8f7f8446cdf784218c2e3ac79ff5a77aa289e85dbca5d4a34adef6ba2812e",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        39,
+        74,
+        216,
+        183
+      ],
+      "transparent_pixels": 47668,
+      "semi_alpha_pixels": 17115,
+      "opaque_pixels": 753,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\action-message.png"
+      ]
+    },
+    {
+      "name": "action-notice.png",
+      "bytes": 18953,
+      "sha256": "3172e79d38748221074776fc91b3cf0fd368766b30f94b1c36a445b316644a1c",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        48,
+        39,
+        208,
+        216
+      ],
+      "transparent_pixels": 49458,
+      "semi_alpha_pixels": 15602,
+      "opaque_pixels": 476,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\action-notice.png"
+      ]
+    },
+    {
+      "name": "action-support.png",
+      "bytes": 17009,
+      "sha256": "6172bd611938f703f42ec71829dbcc38a8cb90ce1d1fb91786fa2f9b932640c5",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        39,
+        47,
+        216,
+        208
+      ],
+      "transparent_pixels": 55521,
+      "semi_alpha_pixels": 9340,
+      "opaque_pixels": 675,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\action-support.png"
+      ]
+    },
+    {
+      "name": "action-withdraw.png",
+      "bytes": 16185,
+      "sha256": "03da67981a37f8317f4c6578608db2a3d53c84f8688ae3ce36557c9184ea6269",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        42,
+        39,
+        213,
+        216
+      ],
+      "transparent_pixels": 53215,
+      "semi_alpha_pixels": 11596,
+      "opaque_pixels": 725,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\action-withdraw.png"
+      ]
+    },
+    {
+      "name": "sport-all.png",
+      "bytes": 63374,
+      "sha256": "b19b1b3f913d74faca467f7ad12e422a5f57dffb8994cbdc8dc52622a5aae649",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        13,
+        21,
+        243,
+        240
+      ],
+      "transparent_pixels": 38682,
+      "semi_alpha_pixels": 25867,
+      "opaque_pixels": 987,
+      "matching_derivatives": [
+        "exports\\256\\sport-all.png",
+        "exports\\aligned\\256\\sport-all.png"
+      ]
+    },
+    {
+      "name": "sport-baseball.png",
+      "bytes": 66246,
+      "sha256": "6c352b1da81fcff44796ecaf5d3051243d756f7e3e07573216a6419592a9bc7b",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        21,
+        21,
+        235,
+        235
+      ],
+      "transparent_pixels": 30498,
+      "semi_alpha_pixels": 34578,
+      "opaque_pixels": 460,
+      "matching_derivatives": [
+        "exports\\256\\sport-baseball.png",
+        "exports\\aligned\\256\\sport-baseball.png"
+      ]
+    },
+    {
+      "name": "sport-basketball.png",
+      "bytes": 74154,
+      "sha256": "8dd9be04fa2de1a8d2c048d2c9a460029ccb9d362fc93d245071ebe38ad2ed8e",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        14,
+        16,
+        241,
+        241
+      ],
+      "transparent_pixels": 26317,
+      "semi_alpha_pixels": 38740,
+      "opaque_pixels": 479,
+      "matching_derivatives": [
+        "exports\\256\\sport-basketball.png",
+        "exports\\aligned\\256\\sport-basketball.png"
+      ]
+    },
+    {
+      "name": "sport-boxing.png",
+      "bytes": 29507,
+      "sha256": "1efb30250d0d6dbb19319dd93e9e58f2eb0150ef027e79d184594e486be015f9",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        54,
+        32,
+        214,
+        222
+      ],
+      "transparent_pixels": 44888,
+      "semi_alpha_pixels": 20254,
+      "opaque_pixels": 394,
+      "matching_derivatives": [
+        "exports\\256\\sport-boxing.png",
+        "exports\\aligned\\256\\sport-boxing.png"
+      ]
+    },
+    {
+      "name": "sport-formula1.png",
+      "bytes": 30323,
+      "sha256": "b5150769c7b6e87b8f908a883ac5e8a6dbfec2281ecd138b03322fab4314a70e",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        25,
+        69,
+        242,
+        234
+      ],
+      "transparent_pixels": 49682,
+      "semi_alpha_pixels": 15198,
+      "opaque_pixels": 656,
+      "matching_derivatives": [
+        "exports\\256\\sport-formula1.png",
+        "exports\\aligned\\256\\sport-formula1.png"
+      ]
+    },
+    {
+      "name": "sport-hockey.png",
+      "bytes": 32003,
+      "sha256": "1b561e58d1a4cf156d31df3b4d0e4fc286b170bc302f89ba317a15e7b40b4e8a",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        12,
+        12,
+        248,
+        252
+      ],
+      "transparent_pixels": 53128,
+      "semi_alpha_pixels": 11862,
+      "opaque_pixels": 546,
+      "matching_derivatives": [
+        "exports\\256\\sport-hockey.png",
+        "exports\\aligned\\256\\sport-hockey.png"
+      ]
+    },
+    {
+      "name": "sport-mma.png",
+      "bytes": 26480,
+      "sha256": "67a07a0a81a73f6b727ff1ac86b3d681053d62b4bb7af3e4c70c994e84faf7e0",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        59,
+        25,
+        214,
+        235
+      ],
+      "transparent_pixels": 46422,
+      "semi_alpha_pixels": 18643,
+      "opaque_pixels": 471,
+      "matching_derivatives": [
+        "exports\\256\\sport-mma.png",
+        "exports\\aligned\\256\\sport-mma.png"
+      ]
+    },
+    {
+      "name": "sport-motorsport.png",
+      "bytes": 31770,
+      "sha256": "c5af823e510868c4dd4abf67bbd47c7ebf58faf8657d994d1c83aeadf6b359af",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        30,
+        10,
+        233,
+        221
+      ],
+      "transparent_pixels": 36682,
+      "semi_alpha_pixels": 28400,
+      "opaque_pixels": 454,
+      "matching_derivatives": [
+        "exports\\256\\sport-motorsport.png",
+        "exports\\aligned\\256\\sport-motorsport.png"
+      ]
+    },
+    {
+      "name": "sport-soccer.png",
+      "bytes": 68631,
+      "sha256": "5a4558b5c580bcf71f984d0725891a48afeb084d8805d5390069808857ec9a76",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        14,
+        13,
+        242,
+        244
+      ],
+      "transparent_pixels": 25245,
+      "semi_alpha_pixels": 39788,
+      "opaque_pixels": 503,
+      "matching_derivatives": [
+        "exports\\256\\sport-soccer.png",
+        "exports\\aligned\\256\\sport-soccer.png"
+      ]
+    },
+    {
+      "name": "sport-volleyball.png",
+      "bytes": 70274,
+      "sha256": "8c3496206b6524c4b1f126b46ce4a30840a6c3d31af312675945f2b1d3a37b0e",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        17,
+        15,
+        239,
+        240
+      ],
+      "transparent_pixels": 27815,
+      "semi_alpha_pixels": 37246,
+      "opaque_pixels": 475,
+      "matching_derivatives": [
+        "exports\\256\\sport-volleyball.png",
+        "exports\\aligned\\256\\sport-volleyball.png"
+      ]
+    },
+    {
+      "name": "state-empty-slip.png",
+      "bytes": 14539,
+      "sha256": "a98a0546a04239f41e77a5cf70026ad96ec3fc60eb04757880c7d3054932deab",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        39,
+        86,
+        216,
+        170
+      ],
+      "transparent_pixels": 51783,
+      "semi_alpha_pixels": 13306,
+      "opaque_pixels": 447,
+      "matching_derivatives": [
+        "exports\\aligned\\256\\state-empty-slip.png"
+      ]
+    }
+  ],
+  "baseline_source_hashes": {
+    "package.json": "4995cbbd54b3038468bb9393a0413ffcd6927ce1a040c53e23544c7ec71f68dd",
+    "package-lock.json": "5f8432502c671cadd84edb7f89d5d5477d695171a556b91c2b550e6a2de8d49b",
+    ".oxlintrc.json": "1a7aa1c7d83b05939e4e697eed9316224caea8958c4ad12837f8be740c13a47d",
+    "vite.config.ts": "3c028e727dde6c92022197ba7241a424ccd1e3d335f1f46cc9bbf91a8a3a968c",
+    "tsconfig.json": "81aca06cd76be09d9b65c7dff6a031c38664263b506ea792a28f36b17be25f2a",
+    "app\\aldebaran-center-r4.css": "d68aecc94ffb1d97405708ea9143af2438632ffee3e3ee31a57ee347bf44a753",
+    "app\\aldebaran-center-r4.tsx": "1a94fdecba183784d62ad1d2189e6ae0d89703a52522607a1742fdeddbfd5968",
+    "app\\aldebaran-frame.css": "ce855696d1f809580770aea17a034070426b7e5418e9b34b911c5fd6651ce72e",
+    "app\\aldebaran-header-r2.css": "740a634725ff8d03ad37e38f567d840effcd306a3c2b287a4d955808c82723d3",
+    "app\\aldebaran-wog-r5.css": "f53c9c0536646426d63e55bff59eda0eb0f0c96de4d2da93152a3524e1f21378",
+    "app\\aldebaran-wog-r5.tsx": "1c4811daed6dd20dd1c4bbc37619506c70db112748819790776c755633483431",
+    "app\\aldebaran.surfaces.css": "e6212831df404917fc84bd8e9d0ca98f97e003ad8e39fc66d3527f10900f7e01",
+    "app\\aldebaran.tokens.css": "68d1e27f7fa0306e176267bccbff9b15df2bc96dc11c936b843f46e9e51dcd03",
+    "app\\demo-data.ts": "eec5d277dd8b40c740eb89a9118140a8659fdfd78be0901df796f0d55694e9eb",
+    "app\\globals.css": "b60b275578eec68f44fe8e1b139bb4ba7bbe930e62f4deb1d17c41b4a8b3898b",
+    "app\\layout.tsx": "953d13fc91b40e056f4a1ad5838e98bad0ca1e3624fce20a3596d273d665ce67",
+    "app\\live-snapshots.json": "3141ebfef3b639a34058cc9bc9e81e92c547b25876dc4e7be83a0a6a18768301",
+    "app\\logo-presentation.json": "20c816091323506e7bd75f031002f93f50cc914c347a26e49926c7cb529d4d76",
+    "app\\match-motion.tsx": "727e3dfd455f6232d18fd8b22a1a5e576930e1cd6675ac57be4afa7f50a17100",
+    "app\\match-records.json": "b662a76a48e9c6f25d4add889dd375045ba97a548f67a2c0cc23126d7f21dd6d",
+    "app\\motion.css": "d3198e07daeeee288c44d536a537983c16f993628c4c9b41bc316f2bbcd8052f",
+    "app\\page.tsx": "5a58c842efc156b7c9d8dc5b791f7fdf986bd5824f809e03883d6f709081730c",
+    "app\\prematch-odds-r9.json": "5eced5028e18b083fc951dce3dbe90e486089ba53a0a35d44399aa81639b605e",
+    "app\\prematch-r15.json": "3c255064e20d1bf24023c6e12895bdee5997e3d0ed0d84f97a8964dab13265b0",
+    "app\\representative-match.json": "a598df125816313129a76ffdc8e295f6a859f2bcb33703b4b5a253f5e0f6b5d7",
+    "app\\sport-menu.json": "abdf0068c31be3fdcf39ee1dbac3e2bbc0167560c8f75d3bff97865e851624e3",
+    "app\\tracker-demo.ts": "0a022c50a6b046033e216e6733563f2eb09775360cf4a0c4cb7a8979f7c9417a",
+    "app\\typography.css": "bf83591b25272ff9247648134d88d513dac71c40148f7b6cb3c954bc377a88c2",
+    "app\\wog-market-data.ts": "8d7eaa6cd5334938b6c850adf478c8ca6715718009da1ea135936cb421364297",
+    "app\\wog-service-views.tsx": "a35c876677311dda030e9b5ad9ff8d8d29b673246f7804ea8adfef8dd5a03661",
+    "app\\aldebaran-white.css": "def9eba5d261dd8ef77602596ba5f56f66f8f2f04f342375bc1edbd1799d5686",
+    "hooks\\use-mobile.ts": "82bff42ff087bd5dc90a5d17609cc428b8688de92d1333073a839af5ad3c9cbd",
+    "lib\\utils.ts": "9304a861c8673bee09e0f12de31773abbde503b02e59dfd74763ddec2e37cf05",
+    "components\\ui\\accordion.tsx": "33e1c60ba503f4eb36f9a8b1f68b236174b11656d8efea6bac65abddda2f9019",
+    "components\\ui\\alert-dialog.tsx": "ed0f1fc432bca4c72f9dd8741ae2268a00d2d3429ff1149bf463c4271b13d8e9",
+    "components\\ui\\alert.tsx": "e760c470414c9e617d7292094146d906352fee3b1526b790a611d4a118e79196",
+    "components\\ui\\aspect-ratio.tsx": "b7fb499905e441a0602392ce118828425ad059079060109694d01f9fac00ad20",
+    "components\\ui\\attachment.tsx": "dcb9e899f1322158f016d75c400fa8cce9b797ea49bec65528bac686cee2ec5c",
+    "components\\ui\\avatar.tsx": "342f32b683937b826cdff2999d5e3057836d459aa43eadb0c3538b818d195b9a",
+    "components\\ui\\badge.tsx": "5706189b86e8670499fb33f37147dd6f65c39d59eef5211e34157f2952c35e32",
+    "components\\ui\\breadcrumb.tsx": "b28b76d6f8d0feafbbeff2220cf83f9a6b03d8c81f0145b3af4c7d19933ab2c0",
+    "components\\ui\\bubble.tsx": "dfb9f52ae3b89e4a419b336c3893ab6fb658fc324fb402759d878d54e3b2db5a",
+    "components\\ui\\button-group.tsx": "79ad8fb6644a775cc49131c1aa737ca26cae6a563beec0fa52ef6e8d85202fab",
+    "components\\ui\\button.tsx": "6b062ccdcd36ee264e786f32a4a1a630ef4d80ab2ba13ab4de20065888b0b4f9",
+    "components\\ui\\calendar.tsx": "e7bc682eff8f2215e6b0aab40d1afb7ee927c5f5bef348ccff207631b9261658",
+    "components\\ui\\card.tsx": "625fce5e16577a45108a86d7afcd70b8931cb2032abe0d6a3faf1010f666d672",
+    "components\\ui\\carousel.tsx": "7444126492d4e0b85b1270f0d83a0955350fa95b3d3fb7b88edc2a5c2b4e5d14",
+    "components\\ui\\chart.tsx": "56ab0e0b41f0cc7902414e046ea4f710bdbf0b756028672ea8c7e5137a278f2b",
+    "components\\ui\\checkbox.tsx": "56b2869e5478f38238e6a3d8aefabfbe8af565b38b2ffad06466487b3eacf154",
+    "components\\ui\\collapsible.tsx": "3fdf7ef1ca89c4d85de5ecbb25813d0f572003a53b021baf43c5f3523e48ec97",
+    "components\\ui\\combobox.tsx": "282041e2e8c52cc12e7bbc717bbd3f8c9c5ba18e7fa75b97053bc79687e1181e",
+    "components\\ui\\command.tsx": "9c1eae65aa105935a34c6b736f673b71a2ef939dde53dce29d986221edbf1f9f",
+    "components\\ui\\context-menu.tsx": "05c3646b452f5e3b9eb952eeba3d90657606d2b0875cb77652cdb5eadba0eb5c",
+    "components\\ui\\dialog.tsx": "8bc85def62538b4e62e8530c6b0ba167a192c38519c05f104bf6e10de73b811f",
+    "components\\ui\\direction.tsx": "2dea8a95accb1723db2454ccc858697d5b1f1454568cf4da5e8fcbd0cf7cc1ee",
+    "components\\ui\\drawer.tsx": "b7ac53d0e5d1fed25fc3f2ac5f5a36e247ca684c677ac376829fa8a7c039b79e",
+    "components\\ui\\dropdown-menu.tsx": "efc088f3d79f64cf96e222701ae23dcf385b53947b3cd57ffb7be6f5dadcbfe2",
+    "components\\ui\\empty.tsx": "bf54bac4881b79f6a53f55e70c18640f58a058add88aed763c71be35c4f64f59",
+    "components\\ui\\field.tsx": "79023ca89aae39f9cffa83a9483c9c672099b4547cc821486283db61c6ae9327",
+    "components\\ui\\hover-card.tsx": "d8cb7270c5893213fc00b5f270f9bc461e2d7ce5b81f77b8778253a1aeda6a2c",
+    "components\\ui\\input-group.tsx": "2e65ddecb4401220be374cc6cfc42344538266cafeb2e590b3c760c7ed6b490a",
+    "components\\ui\\input-otp.tsx": "867f568259caac95f682d128d72e681b3fe7c31701a396eacc9284401d917a6a",
+    "components\\ui\\input.tsx": "6763c86c34c1c07826386d376f5da8fe2e41585bff3615716d5da88915e088d8",
+    "components\\ui\\item.tsx": "9c5e45e6c4aae5b9c4c1304e1f1208d32681ab616a6e0de9de6e0d6b22690592",
+    "components\\ui\\kbd.tsx": "bdfb38a4f7b9b604e196b5cee0d86f12311dae72946f0dbf5928c8ad0638178f",
+    "components\\ui\\label.tsx": "e4a6fb662c44a44c468d16d79d02b3a3e5bf7b77bd50aef1e586c4d9613df0f6",
+    "components\\ui\\marker.tsx": "cd1e872384cf5001e48b4dc3cc2bb011eba9700561d41c83a89e872b60baf175",
+    "components\\ui\\menubar.tsx": "a3715f8e8b78261f5784929c532e100759c58e831c91e842438730797bc9a124",
+    "components\\ui\\message-scroller.tsx": "9512c586d1b0885cf3ae4f1c3dd4281cbdfec7428fe98ff48a66b4ba2a7319f4",
+    "components\\ui\\message.tsx": "2fedcc64ed8563a44f6697615e77574d96f819fe6e5e2fa8a555e30f8ed6bbd7",
+    "components\\ui\\native-select.tsx": "3aafb74b98c039dae4eb2c64c47ec6f5d61fdc888c057de47550346f702f434b",
+    "components\\ui\\navigation-menu.tsx": "c8e64bf5241145b512ae18f1062da8275691edf927736496a3860bec76ad6fa1",
+    "components\\ui\\pagination.tsx": "1f3c1713e8824cca7c3c0edacf9da7b0114bfda58640771b8fe0bc6179b370ce",
+    "components\\ui\\popover.tsx": "7376624438588e2d64b6e0c5cdf82cbc5fd4530bbcf1f0235c5f3ee08d12e877",
+    "components\\ui\\progress.tsx": "0d8ddec9731940e104b851cf3ac67d2fa8589b289824317a9e8f326e090ba65a",
+    "components\\ui\\radio-group.tsx": "43f2d6c2f5bdd4a26c57d93e6f141be20472f9bb8777d9a0d61cd8a5e281a999",
+    "components\\ui\\resizable.tsx": "ea7b85817d4dc70866e0bcf15264e7e1bd7e1893eb4404261fbc23a4d6ff9029",
+    "components\\ui\\scroll-area.tsx": "730c4cc49f8f1b705eb1389cd32c774056a0a2a7a48a9b092cbe44c608be3a0b",
+    "components\\ui\\select.tsx": "45489c502a21fdd5271481d64ad8f762181c9653d8d26bdc6f75450b78c3c852",
+    "components\\ui\\separator.tsx": "92ad5065f03d7edc98f367e729f3ec84ece1d99ee8cd0d3a8137f266d4ab3d8a",
+    "components\\ui\\sheet.tsx": "adb432b6f9d7a4733caa45ba8bf510a8a7ff0f6d0dd3aa1f013959fb61268234",
+    "components\\ui\\sidebar.tsx": "aa3322ca63f098aa1d2abf750f9d097da07362fce25939357f2cefc9b6a03988",
+    "components\\ui\\skeleton.tsx": "4c342102b2bbf5bd8c04fa151fe5c13c42faee2f9587a3586c27322020ca35d1",
+    "components\\ui\\slider.tsx": "af657e73d672f4dd205f19abf151d21a172cf36abfdca49fd7014a20e12367a9",
+    "components\\ui\\spinner.tsx": "8ddbb330e5564a1f53026da36c2322ed4b027687e91a88f63348ab10f26ae0cb",
+    "components\\ui\\switch.tsx": "04b085443a1c6a72d408e6eb7dd45df881ca27814415b81b39f614806b52c8fc",
+    "components\\ui\\table.tsx": "88f2ba7877eea7f34a5da18b7fa096eb2c7bed602677ce54f5494b494c5afc2e",
+    "components\\ui\\tabs.tsx": "dd914d769bc223b5d5ea56839a7752e534eb475f8d2897d5675606c368bbca1f",
+    "components\\ui\\textarea.tsx": "7ae7f0f5d907be24658652c771fee1685193102bf3200aafbf578d144d379fbf",
+    "components\\ui\\toast.tsx": "9126b09f47f0b117bf748cf19aaa4987a1f72d0813d10bfc4b4b0128e6439e48",
+    "components\\ui\\toggle-group.tsx": "9b006523be0fe3230cd75f7adf78a501829d594fd3506c56c55bb38211ff1850",
+    "components\\ui\\toggle.tsx": "6bf41d6f6ffe602c3e28274a82ac029e6ee1331ba3c670a6d814048e1823cc28",
+    "components\\ui\\tooltip.tsx": "b86e51969931c3d62e88d0bdacd1cd8219105dc6d6b6a588a80011bf92e987cd"
+  }
+}

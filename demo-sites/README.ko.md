@@ -1,5 +1,11 @@
 # TITAN 신규 데모 제작 공간
 
+## ALDEBARAN 두 번째 스킨 공개 — 2026-10-06
+
+사용자가 승인한 화이트 스킨을 별도 [ALDEBARAN-2](https://aldebaran-2.kexxadrix.chatgpt.site/)로 공개했다. PUBLIC v1, `succeeded`, 2026-10-06 19:03:56 KST. 소스는 [sports-demo-03-white/site](sports-demo-03-white/site/), 앱 소스 SHA는 `5459f3425a1388c2d978747ff43a4364b16bfe94`이며 [배포 기록](sports-demo-03-white/RELEASE.ko.md)과 [최신 STATE](sports-demo-03-white/STATE.md)를 따른다.
+
+원본 [ALDEBARAN](https://aldebaran.kexxadrix.chatgpt.site)은 v23을 유지한다. 화이트 공개 화면에서 이미지 166개·v3 아이콘 18종·주황 금액·흑연 배당과 대표 동작을 확인했다. 통합 GitHub 보관 명세는 `backup/site-snapshots/20261006-aldebaran-white-v1/`이며 이전 기준 `05e24e2b3c4545c09649091021cccb62d85bab4f`와 다른 사이트의 파일은 보존한다.
+
 ## 현재 사이트 목록과 인계 현황 — 2026-10-02
 
 이 현황은 담당 구현 스레드의 인계, 각 사이트 STATE, 저장된 완료·배포·보존 증거를 대조한 문서다. 2026-10-02 사용자 지시에 따라 세 앱과 관련 자료를 통합 GitHub 백업에 반영한다. 공개 배포와 GitHub 백업, 기술 검증과 사용자 최종 미감 승인은 각각 구분한다. 앱·서버 수정, 반복 빌드·브라우저 QA·재배포는 수행하지 않는다.

@@ -1,0 +1,60 @@
+{
+  "site": {
+    "id": "appgprj_6ac4c6462e4c81919e10f7f4f91adacf",
+    "title": "ALDEBARAN-2",
+    "slug": "aldebaran-2"
+  },
+  "audience": "public",
+  "source": {
+    "project_id": "appgprj_6ac4c6462e4c81919e10f7f4f91adacf",
+    "checkout_path": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03-white/site",
+    "commit_sha": "5459f3425a1388c2d978747ff43a4364b16bfe94",
+    "archive": "E:/codexwork/Site-Skin-edit-backups/20261006-aldebaran-white-deploy/aldebaran-white-v1.tar"
+  },
+  "savedVersion": {
+    "id": "appgprj_6ac4c6462e4c81919e10f7f4f91adacf~appgver_0d7a7e3eb49c8191bd285ab7daa5e6fa",
+    "project_id": "appgprj_6ac4c6462e4c81919e10f7f4f91adacf",
+    "version_number": 1,
+    "source": {
+      "commit_sha": "5459f3425a1388c2d978747ff43a4364b16bfe94"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000073388206b032e6e9fc36ac02",
+      "content_hash": "sha256:c45d47fe862a065c0153b880a04a617209299b200074237e7e2ad3475b28dcac",
+      "size_bytes": 60876800,
+      "file_count": 332
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ac4c76e0ca081919a530c41682edf0d",
+    "project_id": "appgprj_6ac4c6462e4c81919e10f7f4f91adacf",
+    "title": "ALDEBARAN-2",
+    "version_id": "appgprj_6ac4c6462e4c81919e10f7f4f91adacf~appgver_0d7a7e3eb49c8191bd285ab7daa5e6fa",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://aldebaran-2.kexxadrix.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac4c6462e4c81919e10f7f4f91adacf",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-06T10:03:56.530850+00:00"
+  },
+  "workflowNotes": [
+    "Exact-directory Git safe.directory passed through process environment only.",
+    "Built via absolute npm-cli.js after the package-manager shim failed on Windows.",
+    "Bundled site-workflow.mjs completed using Git Bash and TAR_OPTIONS=--force-local; credentials stayed in session memory and hidden stdin."
+  ],
+  "typecheck": {
+    "result": "passed",
+    "reusedFrom": "E:/codexwork/Site-Skin-edit-backups/20261006-aldebaran-white-release-prep-184711/checks-result.json",
+    "reason": "Application code and dependency/type configurations unchanged."
+  },
+  "build": {
+    "exit": 0,
+    "log": "build.log"
+  }
+}

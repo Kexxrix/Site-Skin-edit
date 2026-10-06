@@ -1,0 +1,44 @@
+{
+  "static_comparison": "same project rules with typeAware/typeCheck disabled equally for outside baseline and live file;full TypeScript separately checked",
+  "before": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--config",
+      "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\odds-text-20261006-v1\\lint-comparison-config.json",
+      "--format",
+      "json",
+      "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\odds-text-20261006-v1\\before-app\\page.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.101
+  },
+  "after": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--config",
+      "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\odds-text-20261006-v1\\lint-comparison-config.json",
+      "--format",
+      "json",
+      "app/page.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.275
+  },
+  "existing_before": 1,
+  "existing_after": 1,
+  "new_findings": 0,
+  "full_project_lint": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--format",
+      "json",
+      "app/page.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 0.993
+  },
+  "full_lint_pass": false
+}

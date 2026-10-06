@@ -1,0 +1,34 @@
+--- before/aldebaran-white.css
++++ current/aldebaran-white.css
+@@ -40,7 +40,7 @@
+   --ab5-on-accent: var(--ab-on-accent);
+   --ab5-on-yellow: var(--ab-on-accent);
+   --ab5-small-accent: var(--ab-accent);
+-  --ab5-odds: var(--ab-ink-accent);
++  --ab5-odds: var(--ab-text);
+ }
+ /* Keep the existing video and white wordmark legible in the dark brand band. */
+ .aldebaran-white .ab5-header-main {
+@@ -52,8 +52,12 @@
+ .aldebaran-white .ab5-notice-links svg { color: var(--ab-muted); }
+ .aldebaran-white .ab5-notice-links button:hover { color: var(--ab-ink-accent); }
+ .aldebaran-white .ab5-league-label { color: var(--ab-text); }
+-.aldebaran-white :is(.ab5-balance-value, .ab5-payout-value, .ab5-slip-selection b) {
++.aldebaran-white :is(.ab5-balance-value, .ab5-payout-value) {
+   color: var(--ab-ink-accent);
++}
++/* Odds remain neutral graphite; account balances and money accents keep their meaning. */
++.aldebaran-white :is(.ab5-slip-selection b, [data-total-odds], .confirm-picks b, .history-pick b, .ab5-summary-odds) {
++  color: var(--ab-text);
+ }
+ .aldebaran-white .ab5-sport-tab:not([aria-pressed="true"]) .ab5-sport-count {
+   color: var(--ab-text);
+@@ -160,7 +164,7 @@
+ .aldebaran-white .demo-dialog { box-shadow: 0 20px 80px #30312a40; }
+ .aldebaran-white [data-slot="dialog-overlay"] { background: #35383280 !important; }
+ .aldebaran-white .dialog-total { color: var(--ab-muted); }
+-.aldebaran-white :is(.dialog-total strong, .confirm-picks b, .receipt-success span, .receipt-success svg, .history-pick b, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked="true"], .ab5-lobby-grid svg) {
++.aldebaran-white :is(.dialog-total strong, .receipt-success span, .receipt-success svg, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked="true"], .ab5-lobby-grid svg) {
+   color: var(--ab-ink-accent);
+ }
+ .aldebaran-white :is(.confirm-picks span, .history-meta, .history-pick > span, .history-totals, .history-empty p, .account-intro p, .account-intro > span) {

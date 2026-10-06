@@ -1,0 +1,117 @@
+{
+  "icon": "action-withdraw",
+  "generated_at_utc": "2026-10-06T08:21:03.756071+00:00",
+  "tool": "image_gen.imagegen",
+  "tool_mode": "built-in",
+  "original_tool_output_path": null,
+  "tool_output_transport": "embedded data:image/png;base64 URL; tool returned no local original path",
+  "local_storage_operation": "exact byte decode from returned base64; no re-encode or color/alpha editing",
+  "tool_payload_base64": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\refs\\action-withdraw-tool-payload.base64",
+  "final_path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\results\\action-withdraw.png",
+  "prompt_path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\prompts\\action-withdraw.txt",
+  "prompt_sha256": "c0d6a042546981772dfa5b90168729990bd166e7b83d06981d325dffdddf4257",
+  "input_reference": {
+    "page_id": "page_47645aed071c81918769018d818cb7f0",
+    "reference": "library-file:fde1_bGliZmlsZV95Z1l2cVF0T001WXVWSFpHeUJDZTFR_FileDrive_0981513dfcb08191b072af9fa2582442",
+    "sha256": "bf07e48a3bd6d21f6d8eca98c3bc1c2a42720dd6ddf9e462e2cf094e54aa3833",
+    "role": "edit target for withdrawal; style reference only for message"
+  },
+  "before_storage_sha256": "d54c7b8e192a530d7765ad26d78ddf5039352c7990a0fbd488a8aa619537730f",
+  "after_storage_sha256": "d54c7b8e192a530d7765ad26d78ddf5039352c7990a0fbd488a8aa619537730f",
+  "byte_size": 240460,
+  "format": "PNG",
+  "mode": "RGBA",
+  "size": [
+    1254,
+    1254
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox_nonzero": [
+    146,
+    310,
+    965,
+    1150
+  ],
+  "alpha_bbox_at_least_32": [
+    292,
+    313,
+    962,
+    1006
+  ],
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "opaque_median_rgb": [
+    33,
+    34,
+    37
+  ],
+  "exports": [
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\16\\action-withdraw.png",
+      "size": [
+        16,
+        16
+      ],
+      "byte_size": 396,
+      "sha256": "df607e4e9f84719a966a8f8883549346a59901118cfa08f2c018766cff6dc60f"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\24\\action-withdraw.png",
+      "size": [
+        24,
+        24
+      ],
+      "byte_size": 636,
+      "sha256": "25a766ba64648c0e3ed6cc77f00a15a15220833101988954f3a405114284d3de"
+    },
+    {
+      "path": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\32\\action-withdraw.png",
+      "size": [
+        32,
+        32
+      ],
+      "byte_size": 824,
+      "sha256": "31a62eb4fe612676334ca8afdca8d8ce314a101c9af35680c2f85ddc7bd8e7b7"
+    }
+  ],
+  "technical_validation": "passed PNG signature, PNG decode/readability, RGBA, genuine alpha range and transparent corners, exact SHA256 byte preservation, size exports",
+  "visual_review": {
+    "result": "passed with recorded minor alpha note",
+    "actual_sizes": [
+      16,
+      24,
+      32
+    ],
+    "backgrounds": [
+      "#FFFFFF",
+      "#F2F3F4",
+      "#EA981B"
+    ],
+    "observations": {
+      "actual_16px": "up arrow and thin U remain identifiable; extremely small size suppresses tonal details",
+      "actual_24px": "up arrow direction and thin U read immediately on white, off-white and orange backgrounds",
+      "actual_32px": "simple up arrow and U role remains clear",
+      "style": "single graphite family, nearly flat matte, restrained weak shading; no pedestal or accent color"
+    },
+    "evidence": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\qa\\action-withdraw-message-small-sizes.png",
+    "review_record": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\qa\\action-withdraw-message-review.ko.md",
+    "iterations": 1,
+    "clear_visual_defects": "none observed at native sizes",
+    "alpha_note": "a few 1/255 alpha pixels outside primary silhouette enlarge nonzero bbox; >=2 alpha bbox hugs silhouette; not visible in native-size bright-background QA; source alpha preserved",
+    "css_mask_validation": "not tested"
+  },
+  "status": {
+    "generation": "complete",
+    "technical_validation": "passed",
+    "user_approval": "pending",
+    "site_adoption": "not applied",
+    "visual_review": "passed candidate"
+  }
+}

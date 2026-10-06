@@ -1,0 +1,422 @@
+{
+  "completed_utc": "2026-10-06T08:57:37.316605+00:00",
+  "target": "E:/codexwork/Site-Skin-edit/demo-sites/sports-demo-03-white/site",
+  "target_HEAD": null,
+  "target_branch": null,
+  "target_git_reason": "Existing local-only copy has no Git repository;none created",
+  "reference_original_HEAD": "6be8c176b374999501952d24520c8411b29b153f",
+  "scope": "18 approved icons and minimum sizing/native-color style overrides",
+  "status": "Local implementation and implementation QA complete;parent-assigned independent QA pending",
+  "approval_source": "Sentinel_3cc294c6274c81918a6b32201d3dbcf5",
+  "local_icon_application_approved": true,
+  "server": {
+    "url": "http://127.0.0.1:5384/",
+    "running_PID": 27700,
+    "HTTP": 200,
+    "operation": "Reused already-running vinext server for this exact white app. Launcher35604 exited after detecting existing27700;no shutdown/restart/duplicate server.",
+    "evidence": "server.stderr.log;netstat listener;HTTP200;isolated Chrome page identity and source PNG hashes"
+  },
+  "changed_files": [
+    {
+      "path": "app/aldebaran-white.css",
+      "sha256": "4ba328dbe9af737d50d5dc7cd29cc34b70c7dd10fb0205d4184362fb148c498d",
+      "bytes": 7889
+    },
+    {
+      "path": "app/aldebaran-wog-r5.tsx",
+      "sha256": "5a3c1b4d65f6455831b70aa7945bdcc9dbf6b147c7b405d0911af2e04d9e655e",
+      "bytes": 29631
+    }
+  ],
+  "asset_count": 18,
+  "asset_bytes": 646302,
+  "assets": [
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\action-attendance.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\action-attendance.png",
+      "bytes": 22600,
+      "sha256": "02d6ce758bb8480f9c4503e4aea3c3e9722ba734ee6c79e50bde224f32a1cc3d",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "action-attendance",
+      "existing_usage": "출석체크 링크·달력의 체크 상태",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\action-deposit.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\action-deposit.png",
+      "bytes": 15642,
+      "sha256": "6fee4d39fce4750a720770c84559b6cdeab15f862348703451534cde30ba8d23",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "action-deposit",
+      "existing_usage": "충전 빠른 메뉴·계정 동작",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\action-gift.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\action-gift.png",
+      "bytes": 27883,
+      "sha256": "4c8586c3aec919c5ec55fffcd94411f220ce836d04dc4fa06338f12028ecc1da",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "action-gift",
+      "existing_usage": "이벤트게시판 링크·페이백 동작",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\action-message.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\action-message.png",
+      "bytes": 20729,
+      "sha256": "83c8f7f8446cdf784218c2e3ac79ff5a77aa289e85dbca5d4a34adef6ba2812e",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "action-message",
+      "existing_usage": "계정 쪽지 동작",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\action-notice.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\action-notice.png",
+      "bytes": 18953,
+      "sha256": "3172e79d38748221074776fc91b3cf0fd368766b30f94b1c36a445b316644a1c",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "action-notice",
+      "existing_usage": "공지사항 링크",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\action-support.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\action-support.png",
+      "bytes": 17009,
+      "sha256": "6172bd611938f703f42ec71829dbcc38a8cb90ce1d1fb91786fa2f9b932640c5",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "action-support",
+      "existing_usage": "고객센터 공지 링크·빠른 메뉴·계정 동작·고객센터 창",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\action-withdraw.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\action-withdraw.png",
+      "bytes": 16185,
+      "sha256": "03da67981a37f8317f4c6578608db2a3d53c84f8688ae3ce36557c9184ea6269",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "action-withdraw",
+      "existing_usage": "환전 빠른 메뉴·계정 동작",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-all.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-all.png",
+      "bytes": 63374,
+      "sha256": "b19b1b3f913d74faca467f7ad12e422a5f57dffb8994cbdc8dc52622a5aae649",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-all",
+      "existing_usage": "종목 전체 탭",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-baseball.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-baseball.png",
+      "bytes": 66246,
+      "sha256": "6c352b1da81fcff44796ecaf5d3051243d756f7e3e07573216a6419592a9bc7b",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-baseball",
+      "existing_usage": "야구 탭·인기 스포츠 리스트·해당 최신 경기",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-basketball.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-basketball.png",
+      "bytes": 74154,
+      "sha256": "8dd9be04fa2de1a8d2c048d2c9a460029ccb9d362fc93d245071ebe38ad2ed8e",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-basketball",
+      "existing_usage": "농구 탭·인기 스포츠 리스트·최신 인기 게임",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-boxing.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-boxing.png",
+      "bytes": 29507,
+      "sha256": "1efb30250d0d6dbb19319dd93e9e58f2eb0150ef027e79d184594e486be015f9",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-boxing",
+      "existing_usage": "복싱 탭·인기 스포츠 리스트",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-formula1.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-formula1.png",
+      "bytes": 30323,
+      "sha256": "b5150769c7b6e87b8f908a883ac5e8a6dbfec2281ecd138b03322fab4314a70e",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-formula1",
+      "existing_usage": "포뮬라1 탭·인기 스포츠 리스트",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-hockey.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-hockey.png",
+      "bytes": 32003,
+      "sha256": "1b561e58d1a4cf156d31df3b4d0e4fc286b170bc302f89ba317a15e7b40b4e8a",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-hockey",
+      "existing_usage": "아이스하키 탭·인기 스포츠 리스트·최신 인기 게임",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-mma.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-mma.png",
+      "bytes": 26480,
+      "sha256": "67a07a0a81a73f6b727ff1ac86b3d681053d62b4bb7af3e4c70c994e84faf7e0",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-mma",
+      "existing_usage": "MMA 탭·인기 스포츠 리스트",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-motorsport.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-motorsport.png",
+      "bytes": 31770,
+      "sha256": "c5af823e510868c4dd4abf67bbd47c7ebf58faf8657d994d1c83aeadf6b359af",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-motorsport",
+      "existing_usage": "모터스포츠 탭·인기 스포츠 리스트",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-soccer.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-soccer.png",
+      "bytes": 68631,
+      "sha256": "5a4558b5c580bcf71f984d0725891a48afeb084d8805d5390069808857ec9a76",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-soccer",
+      "existing_usage": "축구 탭·인기 스포츠 리스트·최신 인기 게임",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\sport-volleyball.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\sport-volleyball.png",
+      "bytes": 70274,
+      "sha256": "8c3496206b6524c4b1f126b46ce4a30840a6c3d31af312675945f2b1d3a37b0e",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "sport-volleyball",
+      "existing_usage": "배구 탭·인기 스포츠 리스트",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\exports\\aligned\\256\\state-empty-slip.png",
+      "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site\\public\\icons\\aldebaran-simple-v3-20261006\\state-empty-slip.png",
+      "bytes": 14539,
+      "sha256": "a98a0546a04239f41e77a5cf70026ad96ec3fc60eb04757880c7d3054932deab",
+      "operation": "exact copy of approved aligned 256px derivative",
+      "original_preserved": true,
+      "role_key": "state-empty-slip",
+      "existing_usage": "빈 슬립·기존 티켓 역할(빈 상세·베팅 버튼)",
+      "approval": "User requested icon application (Sentinel_3cc294c6274c81918a6b32201d3dbcf5)",
+      "local_site_adopted": true,
+      "public_deployment": false
+    }
+  ],
+  "unused_approved_assets": [],
+  "legacy_roles_preserved": [
+    "rules",
+    "history",
+    "logout",
+    "success-check",
+    "empty-search"
+  ],
+  "preservation": {
+    "changed_existing_files": [
+      "app/aldebaran-white.css",
+      "app/aldebaran-wog-r5.tsx"
+    ],
+    "changed_file_hashes": [
+      {
+        "path": "app/aldebaran-white.css",
+        "sha256": "4ba328dbe9af737d50d5dc7cd29cc34b70c7dd10fb0205d4184362fb148c498d",
+        "bytes": 7889
+      },
+      {
+        "path": "app/aldebaran-wog-r5.tsx",
+        "sha256": "5a3c1b4d65f6455831b70aa7945bdcc9dbf6b147c7b405d0911af2e04d9e655e",
+        "bytes": 29631
+      }
+    ],
+    "protected_original_count": 320,
+    "protected_original_passed": true,
+    "preexisting_target_assets_preserved": 243,
+    "new_PNGs": 18,
+    "asset_hashes_match": true,
+    "body_text_identical": true,
+    "selection_IDs_identical": true,
+    "outer_geometry_identical": true,
+    "outer_geometry_count": 17,
+    "event_handlers_identical": true,
+    "inner_changes": "Approved icons24px;icon-dependent tab widths/notice text positions/latest icon column only"
+  },
+  "type": {
+    "mode": "type",
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exit_code": 0,
+    "seconds": 8.157
+  },
+  "build": {
+    "mode": "build",
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/vinext/dist/cli.js",
+      "build"
+    ],
+    "exit_code": 0,
+    "seconds": 14.278
+  },
+  "lint": {
+    "mode": "lint",
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/oxlint/bin/oxlint",
+      "--format",
+      "json",
+      "app/aldebaran-wog-r5.tsx"
+    ],
+    "exit_code": 1,
+    "seconds": 1.034,
+    "before_diagnostics": 21,
+    "after_diagnostics": 21,
+    "new_findings": [],
+    "same_existing_diagnostics": true,
+    "full_lint_pass": false
+  },
+  "implementation_QA": {
+    "passed_checks": 22,
+    "viewports": [
+      "1920x1080",
+      "1366x900",
+      "390x844"
+    ],
+    "source": "interaction-qa.json",
+    "page_errors": 0,
+    "local_request_failures": 0,
+    "HTTP_errors": 0,
+    "missing_images": 0,
+    "framework_overlay": false,
+    "transactions_submitted": 0,
+    "isolated_storage_only": true,
+    "known_external_failures": [
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "failure": {
+          "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      },
+      {
+        "url": "https://use.typekit.net/hyf2mwn.js",
+        "failure": {
+          "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      },
+      {
+        "url": "https://use.typekit.net/gig5kam.js",
+        "failure": {
+          "errorText": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "External Adobe3 resources blocked by execution network;same failures existed before icon change",
+    "Existing lint21 diagnostics retained;new findings0;full lint not PASS",
+    "Existing build chunk>500kB/plugin timings/route classification advisories retained",
+    "Independent QA belongs to separately assigned parent thread;not asserted complete here",
+    "Actual transactions/authenticated submissions/public deployment not performed"
+  ],
+  "Page_screen_uploads": {
+    "primary": {
+      "page_id": "page_47645aed071c81918769018d818cb7f0",
+      "reference": "library-file:fde1_bGliZmlsZV8yS0tJaXpGbjFqbUk4YjNOSUV4QkZn_FileDrive_0981513dfcb08191b072af9fa2582442",
+      "file_name": "after-1920-34e5ba1b1d524aeaaa56dea88f07efe2.png",
+      "mime_type": "image/png",
+      "byte_size": 407759,
+      "sha256": "a6439b8f2f9fcdae3f3efd59e944c008a46def8e1cd985da12fde7276cb6732f",
+      "file_access_confirmed": true,
+      "is_image": true,
+      "markdown": "![알데바란 화이트·흑연 v3 실제 적용 초기 화면 · 18종](library-file:fde1_bGliZmlsZV8yS0tJaXpGbjFqbUk4YjNOSUV4QkZn_FileDrive_0981513dfcb08191b072af9fa2582442)",
+      "inserted": false,
+      "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+    },
+    "interaction_state": {
+      "page_id": "page_47645aed071c81918769018d818cb7f0",
+      "reference": "library-file:fde1_bGliZmlsZV95Vi1WaHJKR1JQbHA4UE5VdjB5Sk93_FileDrive_0981513dfcb08191b072af9fa2582442",
+      "file_name": "final-1920-7bcef76553004f0aa97d84c24a79107c.png",
+      "mime_type": "image/png",
+      "byte_size": 409148,
+      "sha256": "3de56d33393d827117faadbb4ea4b0e58f6299d7376d253d071395b987008d17",
+      "file_access_confirmed": true,
+      "is_image": true,
+      "markdown": "![알데바란 화이트·흑연 v3 18종 실제 적용 화면 · 5384](library-file:fde1_bGliZmlsZV95Vi1WaHJKR1JQbHA4UE5VdjB5Sk93_FileDrive_0981513dfcb08191b072af9fa2582442)",
+      "inserted": false,
+      "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+    }
+  },
+  "source_images_overwritten_or_removed": false,
+  "site_code_outside_target_changed": false,
+  "remote_push_or_deployment": false,
+  "package_or_security_changes": false,
+  "user_browser_or_existing_IAB_used": false,
+  "MERCURY_server_touched": false
+}

@@ -1,0 +1,274 @@
+{
+  "completed_utc": "2026-10-06T09:26:10.363329+00:00",
+  "target": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\sports-demo-03-white\\site",
+  "HEAD_branch": "N/A;existing Gitless local white copy",
+  "status": "Scoped odds text implementation and implementation QA complete;independent QA assigned separately",
+  "user_icon_approval": "확인했음. 아이콘은 쓰면 되겠어.",
+  "approved_icons_kept": true,
+  "changes": "Default odds graphite;existing selected dark graphite chosen after white comparison;two inline wrappers isolate mixed money/odds text",
+  "changed_files": [
+    {
+      "path": "app/aldebaran-white.css",
+      "sha256": "fe1d52fa8eecba060ccf3ad50ec8b7ed29795b97e7236bebfab56067a2940c1f",
+      "bytes": 8062
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "a3b76f3c0a5acee702f08f1beb11217ec19bbb147482a5c9a2ebce9702c0ff15",
+      "bytes": 10379
+    }
+  ],
+  "documentation": "sports-demo-03-white/STATE.md appended latest v1.4,prior records preserved",
+  "after_source_snapshot": "after-app/",
+  "baseline_source_snapshot": "before-app/",
+  "baseline_inventory": "baseline-files.json",
+  "color_scope": [
+    "liveR5 list odds",
+    "liveR5 detail odds",
+    "selected odds labels+numbers",
+    "slip individual+total odds",
+    "confirmation individual+total odds",
+    "history individual+total odds"
+  ],
+  "retained_semantic_colors": [
+    "account balance",
+    "potential payout money",
+    "notice/event/attendance accents",
+    "disabled/locked states"
+  ],
+  "odds_direction_colors": "No dedicated rising/falling color channel in active R5 odds markup;archived modules untouched",
+  "contrast_basis": {
+    "source": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+    "small_text_minimum": 4.5,
+    "judgment": "unrounded ratios from settled computed sRGB colors;visual native-size review also performed;not a whole-site conformance claim"
+  },
+  "contrasts": {
+    "default": 9.571538397227945,
+    "default_hover": 7.628691344917841,
+    "selected_graphite": 4.801582987182178,
+    "selected_hover_graphite": 5.451082943380378,
+    "selected_white_rejected": 2.9599750528988746,
+    "selected_hover_white_rejected": 2.607292166365253,
+    "slip": 8.997529379172098,
+    "confirmation": 8.222784345134599,
+    "history": 8.997529379172098
+  },
+  "font_geometry": "Original fonts/sizes/weights/padding/dimensions retained;14px/950 list and14px/900 detail computed;12px labels",
+  "background": "Existing #ff641f selected/#ff793d selected-hover retained;actual background-image:none",
+  "validation": {
+    "native_state_measurements": 12,
+    "initial_graphite_odds_elements": 566,
+    "implementation_checks": 10,
+    "settled_dialog_checks": 2,
+    "states": [
+      "normal",
+      "hover",
+      "selected",
+      "selected-hover",
+      "keyboard-focus",
+      "selected-focus-hover"
+    ],
+    "viewports": [
+      "1920x1080",
+      "1366x900",
+      "390x844"
+    ],
+    "type": {
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exit_code": 0,
+      "seconds": 6.073
+    },
+    "build": {
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "node_modules/vinext/dist/cli.js",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 9.458
+    },
+    "lint": {
+      "static_comparison": "same project rules with typeAware/typeCheck disabled equally for outside baseline and live file;full TypeScript separately checked",
+      "before": {
+        "command": [
+          "C:/Program Files/nodejs/node.exe",
+          "node_modules/oxlint/bin/oxlint",
+          "--config",
+          "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\odds-text-20261006-v1\\lint-comparison-config.json",
+          "--format",
+          "json",
+          "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\odds-text-20261006-v1\\before-app\\page.tsx"
+        ],
+        "exit_code": 1,
+        "seconds": 0.101
+      },
+      "after": {
+        "command": [
+          "C:/Program Files/nodejs/node.exe",
+          "node_modules/oxlint/bin/oxlint",
+          "--config",
+          "E:\\codexwork\\Site-Skin-edit\\skin-image-candidates-20261006\\aldebaran-simple-v3\\odds-text-20261006-v1\\lint-comparison-config.json",
+          "--format",
+          "json",
+          "app/page.tsx"
+        ],
+        "exit_code": 1,
+        "seconds": 0.275
+      },
+      "existing_before": 1,
+      "existing_after": 1,
+      "new_findings": 0,
+      "full_project_lint": {
+        "command": [
+          "C:/Program Files/nodejs/node.exe",
+          "node_modules/oxlint/bin/oxlint",
+          "--format",
+          "json",
+          "app/page.tsx"
+        ],
+        "exit_code": 1,
+        "seconds": 0.993
+      },
+      "full_lint_pass": false
+    },
+    "runtime": "No app/page/localHTTP/PNG error or warnings;preexisting externalAdobe3 URLs denied in each isolatedcontext",
+    "dialog_scope": "Test fixture in isolated localStorage;confirmation/history opened and closed,no transactions submitted",
+    "comparison": "Temporary browser-only white/graphite styles;live code untouched during comparison",
+    "transitions": "Computed color measurements waited for CSS animations/transitions;portals separately asserted cumulative opacity1"
+  },
+  "preservation": {
+    "changed_files": [
+      {
+        "path": "app/aldebaran-white.css",
+        "sha256": "fe1d52fa8eecba060ccf3ad50ec8b7ed29795b97e7236bebfab56067a2940c1f",
+        "bytes": 8062
+      },
+      {
+        "path": "app/page.tsx",
+        "sha256": "a3b76f3c0a5acee702f08f1beb11217ec19bbb147482a5c9a2ebce9702c0ff15",
+        "bytes": 10379
+      }
+    ],
+    "CSS_changed_properties_only": [
+      {
+        "selector": ".aldebaran-white .ab5-shell",
+        "property": "--ab5-odds",
+        "before": "var(--ab-ink-accent)",
+        "after": "var(--ab-text)"
+      },
+      {
+        "selector": ".aldebaran-white :is(.ab5-balance-value, .ab5-payout-value)",
+        "property": "color",
+        "before": null,
+        "after": "var(--ab-ink-accent)"
+      },
+      {
+        "selector": ".aldebaran-white :is(.ab5-balance-value, .ab5-payout-value, .ab5-slip-selection b)",
+        "property": "color",
+        "before": "var(--ab-ink-accent)",
+        "after": null
+      },
+      {
+        "selector": ".aldebaran-white :is(.ab5-slip-selection b, [data-total-odds], .confirm-picks b, .history-pick b, .ab5-summary-odds)",
+        "property": "color",
+        "before": null,
+        "after": "var(--ab-text)"
+      },
+      {
+        "selector": ".aldebaran-white :is(.dialog-total strong, .confirm-picks b, .receipt-success span, .receipt-success svg, .history-pick b, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked=\"true\"], .ab5-lobby-grid svg)",
+        "property": "color",
+        "before": "var(--ab-ink-accent)",
+        "after": null
+      },
+      {
+        "selector": ".aldebaran-white :is(.dialog-total strong, .receipt-success span, .receipt-success svg, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked=\"true\"], .ab5-lobby-grid svg)",
+        "property": "color",
+        "before": null,
+        "after": "var(--ab-ink-accent)"
+      }
+    ],
+    "background_layout_font_changes": false,
+    "icon_CSS_block_byte_identical": true,
+    "approved_icons_hash_identical": 18,
+    "approved_r5_TSX_hash_identical": true,
+    "other_current_site_files_preserved": 391,
+    "dark_original_files_preserved": 320,
+    "page_bytes_outside_two_inline_wrappers_identical": true,
+    "data_strings_calculations_handlers_unchanged": true,
+    "new_git_commits_deployment": false
+  },
+  "Page_uploads": {
+    "Page_body_edited": false,
+    "uploads": [
+      {
+        "file": "comparison-stable\\selected-ink-comparison.png",
+        "page_id": "page_47645aed071c81918769018d818cb7f0",
+        "reference": "library-file:fde1_bGliZmlsZV9BSGxQVEJidGRkbVB2Y1huajRnYzFB_FileDrive_0981513dfcb08191b072af9fa2582442",
+        "file_name": "selected-ink-comparison-9f673c54f3f44ce2b6fb1c80bbbcf6da.png",
+        "mime_type": "image/png",
+        "byte_size": 65524,
+        "sha256": "35dc2c83ef7446f836d1bda4e889651ca94a70b7b00daf58473a082917a36ff1",
+        "file_access_confirmed": true,
+        "is_image": true,
+        "markdown": "![알데바란 배당 선택 글자 · 흰색/흑연 실제크기 비교](library-file:fde1_bGliZmlsZV9BSGxQVEJidGRkbVB2Y1huajRnYzFB_FileDrive_0981513dfcb08191b072af9fa2582442)",
+        "inserted": false,
+        "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+      },
+      {
+        "file": "odds-before-after.png",
+        "page_id": "page_47645aed071c81918769018d818cb7f0",
+        "reference": "library-file:fde1_bGliZmlsZV8tbHByb2tpWUtLWVM5TVlob3drQzln_FileDrive_0981513dfcb08191b072af9fa2582442",
+        "file_name": "odds-before-after-f0b4a018aafa4d37a3a169709fea833b.png",
+        "mime_type": "image/png",
+        "byte_size": 33205,
+        "sha256": "4db67c104db568bbadb0ffdd33454951cfde703644335f46064d2d21bf264105",
+        "file_access_confirmed": true,
+        "is_image": true,
+        "markdown": "![알데바란 배당 색 · 동일1.56 기본/호버/선택 전후](library-file:fde1_bGliZmlsZV8tbHByb2tpWUtLWVM5TVlob3drQzln_FileDrive_0981513dfcb08191b072af9fa2582442)",
+        "inserted": false,
+        "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+      },
+      {
+        "file": "after-selected-1920.png",
+        "page_id": "page_47645aed071c81918769018d818cb7f0",
+        "reference": "library-file:fde1_bGliZmlsZV9iZlgweFZYTnBzLTc0TURRUkdvazJn_FileDrive_0981513dfcb08191b072af9fa2582442",
+        "file_name": "after-selected-1920-2d8ae3e428c642a8b4a9b2671df169a2.png",
+        "mime_type": "image/png",
+        "byte_size": 408004,
+        "sha256": "c032769f5af38821e7612b9233c2894107a66412cf834d66f9a6ea9766434ab0",
+        "file_access_confirmed": true,
+        "is_image": true,
+        "markdown": "![알데바란 배당 흑연색 적용 · 실제 선택 화면](library-file:fde1_bGliZmlsZV9iZlgweFZYTnBzLTc0TURRUkdvazJn_FileDrive_0981513dfcb08191b072af9fa2582442)",
+        "inserted": false,
+        "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+      }
+    ]
+  },
+  "Page_body_edited": false,
+  "server_final": {
+    "url": "http://127.0.0.1:5384/",
+    "status": 200,
+    "checked_utc": "2026-10-06T09:24:32.683Z"
+  },
+  "no_deployment_push_commit_or_git_creation": true,
+  "MERCURY5416_touched": false,
+  "existing_IAB_or_user_browser_storage_used": false,
+  "images_regenerated": 0,
+  "transactions_submitted": 0,
+  "new_paid_API_packages_or_security_changes": false,
+  "remaining": "Parent-managed independent QA and final color visual review;known preexisting font-network restriction/lint/build advisories",
+  "valid_evidence": [
+    "comparison-stable/selected-ink-comparison.png",
+    "odds-before-after.png",
+    "after-selected-1920.png",
+    "dialogs-stable/confirmation.png",
+    "dialogs-stable/history.png"
+  ],
+  "preliminary_evidence": "Root-level initial comparison/measurements and initial portal screenshots captured transitions;preserved forhistory,not used for final judgment"
+}

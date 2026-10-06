@@ -1,0 +1,185 @@
+/* Local white variant: color-only overrides; ALDEBARAN geometry and assets stay intact. */
+.aldebaran-white {
+  color-scheme: light;
+  --ab-bg: #f1f1ef;
+  --ab-header: #1d1d1d;
+  --ab-deep: #ededea;
+  --ab-panel: #e9e9e6;
+  --ab-raised: #e2e2df;
+  --ab-control: #fafaf8;
+  --ab-control-hover: #e1e1dd;
+  --ab-input: #f3f3f0;
+  --ab-border: #bebfba;
+  --ab-text: #41433f;
+  --ab-muted: #63655f;
+  --ab-disabled: #858780;
+  --ab-accent: #ff641f;
+  --ab-accent-hover: #ff793d;
+  --ab-accent-pressed: #f16b30;
+  --ab-on-accent: #2b2b27;
+  --ab-ink-accent: #a3441e;
+  --ab-focus: #9a431f;
+  --destructive: #a3332d;
+  --gold: var(--ab-ink-accent);
+  --gold-light: var(--ab-ink-accent);
+}
+.aldebaran-white:has(.ab5-shell) { background: var(--ab-bg); }
+.aldebaran-white .ab5-shell {
+  --ab5-bg: var(--ab-bg);
+  --ab5-header: var(--ab-header);
+  --ab5-panel: var(--ab-panel);
+  --ab5-raised: var(--ab-raised);
+  --ab5-control: var(--ab-control);
+  --ab5-hover: var(--ab-control-hover);
+  --ab5-input: var(--ab-input);
+  --ab5-line: var(--ab-border);
+  --ab5-text: var(--ab-text);
+  --ab5-muted: var(--ab-muted);
+  --ab5-disabled: #71736d;
+  --ab5-accent: var(--ab-accent);
+  --ab5-on-accent: var(--ab-on-accent);
+  --ab5-on-yellow: var(--ab-on-accent);
+  --ab5-small-accent: var(--ab-accent);
+  --ab5-odds: var(--ab-text);
+}
+/* Keep the existing video and white wordmark legible in the dark brand band. */
+.aldebaran-white .ab5-header-main {
+  --ab5-text: #f5f4f4;
+  --ab5-control: #353535;
+  --ab5-line: #53534f;
+  --ab5-on-yellow: #2b2b27;
+}
+.aldebaran-white .ab5-notice-links svg { color: var(--ab-muted); }
+.aldebaran-white .ab5-notice-links button:hover { color: var(--ab-ink-accent); }
+.aldebaran-white .ab5-league-label { color: var(--ab-text); }
+.aldebaran-white :is(.ab5-balance-value, .ab5-payout-value) {
+  color: var(--ab-ink-accent);
+}
+/* Odds remain neutral graphite; account balances and money accents keep their meaning. */
+.aldebaran-white :is(.ab5-slip-selection b, [data-total-odds], .confirm-picks b, .history-pick b, .ab5-summary-odds) {
+  color: var(--ab-text);
+}
+.aldebaran-white .ab5-sport-tab:not([aria-pressed="true"]) .ab5-sport-count {
+  color: var(--ab-text);
+  background: #deded9;
+}
+/* New graphite PNGs keep their native shading; photos, flags and team marks stay intact. */
+.aldebaran-white .ab5-graphite-sport-icon {
+  opacity: 1;
+}
+/* Approved v3 artwork: preserve native color and give small roles a readable slot. */
+.aldebaran-white :is(.ab5-graphite-sport-icon, [data-aldebaran-icon-v3]) {
+  filter: none;
+  mask-image: none;
+}
+.aldebaran-white :is(.ab5-sport-tab, .ab5-sport-row) .ab5-graphite-sport-icon {
+  width: 24px;
+  height: 24px;
+  flex-basis: 24px;
+}
+.aldebaran-white .ab5-latest-row { grid-template-columns: 40px 24px minmax(0,1fr); }
+.aldebaran-white .ab5-latest-row .ab5-graphite-sport-icon { width: 24px; height: 24px; }
+.aldebaran-white .ab5-graphite-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  object-fit: contain;
+  pointer-events: none;
+}
+.aldebaran-white .ab5-notice-links .ab5-graphite-icon { width: 12px; height: 12px; }
+.aldebaran-white .ab5-quick-action .ab5-graphite-icon { width: 20px; height: 20px; }
+.aldebaran-white .ab5-user-actions .ab5-graphite-icon { width: 16px; height: 16px; flex-basis: 16px; }
+.aldebaran-white .ab5-slip-empty .ab5-graphite-icon { width: 48px; height: 48px; margin-bottom: 8px; }
+.aldebaran-white .ab5-empty .ab5-graphite-icon { width: 30px; height: 30px; }
+.aldebaran-white .ab5-calendar .ab5-graphite-icon { width: 14px; height: 14px; }
+.aldebaran-white .history-empty .ab5-graphite-icon { width: 34px; height: 34px; }
+.aldebaran-white .receipt-success .ab5-graphite-icon { width: 42px; height: 42px; }
+.aldebaran-white .ab5-auth-logout .ab5-graphite-icon { background: var(--ab-input); border-radius: 3px; }
+.aldebaran-white .ab5-bet-submit:disabled .ab5-graphite-icon { opacity: .48; }
+.aldebaran-white :is(.ab5-notice-links, .ab5-quick-action, .ab5-user-actions) [data-aldebaran-icon-v3] {
+  width: 24px;
+  height: 24px;
+  flex-basis: 24px;
+  opacity: 1;
+}
+.aldebaran-white :is(.ab5-user-actions svg, .ab5-list-pane > .back-to-top) {
+  color: var(--ab-ink-accent);
+}
+.aldebaran-white .ab5-league-link[aria-pressed="true"] {
+  color: var(--ab-ink-accent);
+  background: #f8e5d9;
+}
+.aldebaran-white :is(.ab5-search-row input, .ab5-amount-input input, .demo-dialog input, .demo-dialog textarea)::placeholder {
+  color: var(--ab-muted);
+  opacity: 1;
+}
+.aldebaran-white .ab5-shell button:disabled { opacity: 1; }
+.aldebaran-white .ab5-shell :is(.ab5-odd, .ab5-delete, .ab5-bet-submit):disabled {
+  color: var(--ab-disabled);
+  background: var(--ab-raised);
+  border-color: var(--ab-border);
+}
+.aldebaran-white .ab5-odd:disabled .ab5-odd-value { color: inherit; }
+.aldebaran-white .ab5-shell .ab5-slip-toggle {
+  border-color: #a4a69e;
+}
+.aldebaran-white .ab5-slip-toggle[data-checked] {
+  background: var(--ab-accent);
+  border-color: var(--ab-ink-accent);
+}
+.aldebaran-white .ab5-slip-toggle [data-slot="switch-thumb"] {
+  background: var(--ab-text);
+}
+.aldebaran-white .ab5-slip-toggle[data-checked] [data-slot="switch-thumb"] {
+  background: var(--ab-on-accent);
+}
+.aldebaran-white :is(button, a, input, textarea, select, [tabindex]):focus-visible {
+  outline-color: var(--ab-focus);
+  box-shadow: none;
+}
+.aldebaran-white .ab5-search-row:focus-within {
+  border-color: var(--ab-focus);
+}
+.aldebaran-white .ab5-amount-input:focus-within { outline-color: var(--ab-focus); }
+.aldebaran-white .ab5-amount-input:has(input[aria-invalid="true"]) { border-color: var(--destructive); }
+@media (hover: hover) {
+  .aldebaran-white :is(.ab5-auth button, .ab5-quick-action:not(.primary), .ab5-small-action, .ab5-user-actions button, .ab5-amount-quick button:not(:last-child), .ab5-market-tabs button:not([aria-pressed="true"]), .ab5-sport-tab:not([aria-pressed="true"])):not(:disabled):hover {
+    background-color: var(--ab-control-hover);
+    color: var(--ab-text);
+  }
+  .aldebaran-white .ab5-header-main .ab5-auth button:hover { background: #484843; color: #f5f4f4; }
+  .aldebaran-white :is(.ab5-sport-row, .ab5-country, .ab5-league-link, .ab5-latest-row):hover {
+    background: var(--ab-raised);
+  }
+  .aldebaran-white :is(.ab5-quick-action.primary, .ab5-odd[aria-pressed="true"], .ab5-market-tabs button[aria-pressed="true"], .ab5-amount-quick button:last-child, .ab5-bet-submit, .ab5-service-primary):not(:disabled):hover {
+    background: var(--ab-accent-hover);
+    color: var(--ab-on-accent);
+  }
+}
+/* Banner photographs remain colored and retain their original dark overlay. */
+.aldebaran-white .ab5-mini-banner strong { color: #ffb080; }
+.aldebaran-white .ab5-mini-banner small { color: #f2f2ed; }
+/* Dialogs are portalled under body, so they use the same light tokens directly. */
+.aldebaran-white .demo-dialog { box-shadow: 0 20px 80px #30312a40; }
+.aldebaran-white [data-slot="dialog-overlay"] { background: #35383280 !important; }
+.aldebaran-white .dialog-total { color: var(--ab-muted); }
+.aldebaran-white :is(.dialog-total strong, .receipt-success span, .receipt-success svg, .history-totals strong, .history-empty > svg, .ab5-service-scoreboard b, .ab5-calendar > span[data-checked="true"], .ab5-lobby-grid svg) {
+  color: var(--ab-ink-accent);
+}
+.aldebaran-white :is(.confirm-picks span, .history-meta, .history-pick > span, .history-totals, .history-empty p, .account-intro p, .account-intro > span) {
+  color: var(--ab-muted);
+}
+.aldebaran-white :is(.confirm-picks > div, .history-pick, .history-totals) { border-color: var(--ab-border); }
+.aldebaran-white .history-list article {
+  background: var(--ab-input);
+  border-color: var(--ab-border);
+  border-left-color: var(--ab-accent);
+}
+.aldebaran-white .history-meta > span { background: var(--ab-raised); color: var(--ab-text); }
+.aldebaran-white .icon-button:hover:not(:disabled) {
+  color: var(--ab-text);
+  background: var(--ab-control-hover);
+  border-color: var(--ab-border);
+}
+.aldebaran-white :is([data-ab-control="primary"], .ab5-service-primary) svg { color: inherit; }

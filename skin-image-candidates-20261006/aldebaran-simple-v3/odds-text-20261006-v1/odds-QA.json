@@ -1,0 +1,820 @@
+{
+  "url": "http://127.0.0.1:5384/",
+  "checks": [
+    {
+      "name": "initial geometry/text/selectionIDs/icons/account meaning-color preserved",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "all initial list+detail odds graphite;no inline or nested brown residue",
+      "passed": true,
+      "evidence": {
+        "count": 566
+      }
+    },
+    {
+      "name": "selected slip odds + total odds neutral graphite",
+      "passed": true,
+      "evidence": {
+        "slip": {
+          "text": "1.56",
+          "color": "rgb(65, 67, 63)",
+          "bg": "rgb(243, 243, 240)",
+          "backgroundImage": "none",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "w": 23.734375,
+          "h": 19.1875,
+          "contrast": 8.997529379172098
+        },
+        "total": {
+          "text": "1.56 배",
+          "color": "rgb(65, 67, 63)",
+          "bg": "rgb(243, 243, 240)",
+          "backgroundImage": "none",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "w": 36.875,
+          "h": 16,
+          "contrast": 8.997529379172098
+        }
+      }
+    },
+    {
+      "name": "native14px numbers/12px labels;normal/hover/selected/focus/combined states",
+      "passed": true,
+      "evidence": [
+        {
+          "state": "normal",
+          "surface": "list",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(250, 250, 248)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "950",
+            "w": 32.8125,
+            "h": 21,
+            "contrast": 9.571538397227945
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(250, 250, 248)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "800",
+            "w": 217.6875,
+            "h": 18,
+            "contrast": 9.571538397227945
+          },
+          "file": "after-normal-list.png"
+        },
+        {
+          "state": "normal",
+          "surface": "detail",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(250, 250, 248)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "900",
+            "w": 32.8125,
+            "h": 14,
+            "contrast": 9.571538397227945
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(250, 250, 248)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "w": 219.6875,
+            "h": 12,
+            "contrast": 9.571538397227945
+          },
+          "file": "after-normal-detail.png"
+        },
+        {
+          "state": "hover",
+          "surface": "list",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(225, 225, 221)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "950",
+            "w": 32.8125,
+            "h": 21,
+            "contrast": 7.628691344917841
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(225, 225, 221)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "800",
+            "w": 217.6875,
+            "h": 18,
+            "contrast": 7.628691344917841
+          },
+          "file": "after-hover-list.png"
+        },
+        {
+          "state": "hover",
+          "surface": "detail",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(225, 225, 221)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "900",
+            "w": 32.8125,
+            "h": 14,
+            "contrast": 7.628691344917841
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(225, 225, 221)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "w": 219.6875,
+            "h": 12,
+            "contrast": 7.628691344917841
+          },
+          "file": "after-hover-detail.png"
+        },
+        {
+          "state": "selected",
+          "surface": "list",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "950",
+            "w": 32.8125,
+            "h": 21,
+            "contrast": 4.801582987182178
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "800",
+            "w": 217.6875,
+            "h": 18,
+            "contrast": 4.801582987182178
+          },
+          "file": "after-selected-list.png"
+        },
+        {
+          "state": "selected",
+          "surface": "detail",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "900",
+            "w": 32.8125,
+            "h": 14,
+            "contrast": 4.801582987182178
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "w": 219.6875,
+            "h": 12,
+            "contrast": 4.801582987182178
+          },
+          "file": "after-selected-detail.png"
+        },
+        {
+          "state": "selected-hover",
+          "surface": "list",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "950",
+            "w": 32.8125,
+            "h": 21,
+            "contrast": 5.451082943380378
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "800",
+            "w": 217.6875,
+            "h": 18,
+            "contrast": 5.451082943380378
+          },
+          "file": "after-selected-hover-list.png"
+        },
+        {
+          "state": "selected-hover",
+          "surface": "detail",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "900",
+            "w": 32.8125,
+            "h": 14,
+            "contrast": 5.451082943380378
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "w": 219.6875,
+            "h": 12,
+            "contrast": 5.451082943380378
+          },
+          "file": "after-selected-hover-detail.png"
+        },
+        {
+          "state": "selected-focus",
+          "surface": "list",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "950",
+            "w": 32.8125,
+            "h": 21,
+            "contrast": 4.801582987182178
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "800",
+            "w": 217.6875,
+            "h": 18,
+            "contrast": 4.801582987182178
+          },
+          "file": "after-selected-focus-list.png"
+        },
+        {
+          "state": "selected-focus-hover",
+          "surface": "list",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "950",
+            "w": 32.8125,
+            "h": 21,
+            "contrast": 5.451082943380378
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "800",
+            "w": 217.6875,
+            "h": 18,
+            "contrast": 5.451082943380378
+          },
+          "file": "after-selected-focus-hover-list.png"
+        },
+        {
+          "state": "selected-focus",
+          "surface": "detail",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "900",
+            "w": 32.8125,
+            "h": 14,
+            "contrast": 4.801582987182178
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 100, 31)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "w": 219.6875,
+            "h": 12,
+            "contrast": 4.801582987182178
+          },
+          "file": "after-selected-focus-detail.png"
+        },
+        {
+          "state": "selected-focus-hover",
+          "surface": "detail",
+          "value": {
+            "text": "1.56",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "900",
+            "w": 32.8125,
+            "h": 14,
+            "contrast": 5.451082943380378
+          },
+          "label": {
+            "text": "토론토 랩터스",
+            "color": "rgb(43, 43, 39)",
+            "bg": "rgb(255, 121, 61)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "w": 219.6875,
+            "h": 12,
+            "contrast": 5.451082943380378
+          },
+          "file": "after-selected-focus-hover-detail.png"
+        }
+      ]
+    },
+    {
+      "name": "GUEST submit disabled;money accent preserved",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "other sports,empty state,and domestic odds use same scoped color",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "selection clear preserved",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "fixed1920 layout preserved at1366 and390",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "confirmation/history odds scopes;money accents and strings retained;no submission",
+      "passed": true,
+      "evidence": {
+        "confirm": [
+          {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(233, 233, 230)",
+            "backgroundImage": "none",
+            "fontSize": "13px",
+            "fontWeight": "700",
+            "w": 25.449951171875,
+            "h": 18.379638671875,
+            "contrast": 8.222784345134599
+          },
+          {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(233, 233, 230)",
+            "backgroundImage": "none",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "w": 40.023681640625,
+            "h": 20.7930908203125,
+            "contrast": 8.222784345134599
+          }
+        ],
+        "history": [
+          {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(243, 243, 240)",
+            "backgroundImage": "none",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "w": 27.1036376953125,
+            "h": 19.57830810546875,
+            "contrast": 8.997529379172098
+          },
+          {
+            "text": "1.56",
+            "color": "rgb(65, 67, 63)",
+            "bg": "rgb(243, 243, 240)",
+            "backgroundImage": "none",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "w": 24.64111328125,
+            "h": 13.70477294921875,
+            "contrast": 8.997529379172098
+          }
+        ],
+        "fixture": "Isolated localStorage only"
+      }
+    },
+    {
+      "name": "runtime/PNG health;known preexisting Adobe network restriction only",
+      "passed": true,
+      "evidence": {
+        "errors": [
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+          "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+        ],
+        "failed": [
+          "https://use.typekit.net/aqm4sxy.css",
+          "https://use.typekit.net/hyf2mwn.js",
+          "https://use.typekit.net/gig5kam.js",
+          "https://use.typekit.net/aqm4sxy.css",
+          "https://use.typekit.net/hyf2mwn.js",
+          "https://use.typekit.net/gig5kam.js"
+        ],
+        "httpErrors": []
+      }
+    }
+  ],
+  "rows": [
+    {
+      "state": "normal",
+      "surface": "list",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(250, 250, 248)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "950",
+        "w": 32.8125,
+        "h": 21,
+        "contrast": 9.571538397227945
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(250, 250, 248)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "800",
+        "w": 217.6875,
+        "h": 18,
+        "contrast": 9.571538397227945
+      },
+      "file": "after-normal-list.png"
+    },
+    {
+      "state": "normal",
+      "surface": "detail",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(250, 250, 248)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "900",
+        "w": 32.8125,
+        "h": 14,
+        "contrast": 9.571538397227945
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(250, 250, 248)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "w": 219.6875,
+        "h": 12,
+        "contrast": 9.571538397227945
+      },
+      "file": "after-normal-detail.png"
+    },
+    {
+      "state": "hover",
+      "surface": "list",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(225, 225, 221)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "950",
+        "w": 32.8125,
+        "h": 21,
+        "contrast": 7.628691344917841
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(225, 225, 221)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "800",
+        "w": 217.6875,
+        "h": 18,
+        "contrast": 7.628691344917841
+      },
+      "file": "after-hover-list.png"
+    },
+    {
+      "state": "hover",
+      "surface": "detail",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(225, 225, 221)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "900",
+        "w": 32.8125,
+        "h": 14,
+        "contrast": 7.628691344917841
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(65, 67, 63)",
+        "bg": "rgb(225, 225, 221)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "w": 219.6875,
+        "h": 12,
+        "contrast": 7.628691344917841
+      },
+      "file": "after-hover-detail.png"
+    },
+    {
+      "state": "selected",
+      "surface": "list",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "950",
+        "w": 32.8125,
+        "h": 21,
+        "contrast": 4.801582987182178
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "800",
+        "w": 217.6875,
+        "h": 18,
+        "contrast": 4.801582987182178
+      },
+      "file": "after-selected-list.png"
+    },
+    {
+      "state": "selected",
+      "surface": "detail",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "900",
+        "w": 32.8125,
+        "h": 14,
+        "contrast": 4.801582987182178
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "w": 219.6875,
+        "h": 12,
+        "contrast": 4.801582987182178
+      },
+      "file": "after-selected-detail.png"
+    },
+    {
+      "state": "selected-hover",
+      "surface": "list",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "950",
+        "w": 32.8125,
+        "h": 21,
+        "contrast": 5.451082943380378
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "800",
+        "w": 217.6875,
+        "h": 18,
+        "contrast": 5.451082943380378
+      },
+      "file": "after-selected-hover-list.png"
+    },
+    {
+      "state": "selected-hover",
+      "surface": "detail",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "900",
+        "w": 32.8125,
+        "h": 14,
+        "contrast": 5.451082943380378
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "w": 219.6875,
+        "h": 12,
+        "contrast": 5.451082943380378
+      },
+      "file": "after-selected-hover-detail.png"
+    },
+    {
+      "state": "selected-focus",
+      "surface": "list",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "950",
+        "w": 32.8125,
+        "h": 21,
+        "contrast": 4.801582987182178
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "800",
+        "w": 217.6875,
+        "h": 18,
+        "contrast": 4.801582987182178
+      },
+      "file": "after-selected-focus-list.png"
+    },
+    {
+      "state": "selected-focus-hover",
+      "surface": "list",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "950",
+        "w": 32.8125,
+        "h": 21,
+        "contrast": 5.451082943380378
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "800",
+        "w": 217.6875,
+        "h": 18,
+        "contrast": 5.451082943380378
+      },
+      "file": "after-selected-focus-hover-list.png"
+    },
+    {
+      "state": "selected-focus",
+      "surface": "detail",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "900",
+        "w": 32.8125,
+        "h": 14,
+        "contrast": 4.801582987182178
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 100, 31)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "w": 219.6875,
+        "h": 12,
+        "contrast": 4.801582987182178
+      },
+      "file": "after-selected-focus-detail.png"
+    },
+    {
+      "state": "selected-focus-hover",
+      "surface": "detail",
+      "value": {
+        "text": "1.56",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "14px",
+        "fontWeight": "900",
+        "w": 32.8125,
+        "h": 14,
+        "contrast": 5.451082943380378
+      },
+      "label": {
+        "text": "토론토 랩터스",
+        "color": "rgb(43, 43, 39)",
+        "bg": "rgb(255, 121, 61)",
+        "backgroundImage": "none",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "w": 219.6875,
+        "h": 12,
+        "contrast": 5.451082943380378
+      },
+      "file": "after-selected-focus-hover-detail.png"
+    }
+  ],
+  "failure": null,
+  "errors": [
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+  ],
+  "warnings": [],
+  "failed": [
+    "https://use.typekit.net/aqm4sxy.css",
+    "https://use.typekit.net/hyf2mwn.js",
+    "https://use.typekit.net/gig5kam.js",
+    "https://use.typekit.net/aqm4sxy.css",
+    "https://use.typekit.net/hyf2mwn.js",
+    "https://use.typekit.net/gig5kam.js"
+  ],
+  "httpErrors": [],
+  "transactionsSubmitted": 0,
+  "isolatedContextsOnly": true
+}

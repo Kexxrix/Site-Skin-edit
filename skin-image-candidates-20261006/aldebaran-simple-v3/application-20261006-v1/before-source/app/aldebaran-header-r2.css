@@ -1,0 +1,266 @@
+/* R3 alignment replaces the R2 tracks in place; share the body's frame values. */
+.aldebaran-site {
+  --ab-header-total-height: 104px;
+}
+
+.aldebaran-site .ab-header2 {
+  --abh-notice-height: 28px;
+  --abh-nav-height: calc(var(--ab-header-total-height) - var(--abh-notice-height));
+  --abh-text: var(--ab-text, #f5f4f4);
+  --abh-muted: var(--ab-muted, #b7b7b7);
+  --abh-bg: var(--ab-header, #1d1d1d);
+  --abh-brand-bg: var(--ab-panel, #242424);
+  --abh-hover: var(--ab-control, #353535);
+  --abh-border: var(--ab-border, #383838);
+  --abh-accent: var(--ab-accent, #ff641f);
+  --abh-accent-hover: var(--ab-accent-hover, #ff793d);
+  --abh-accent-pressed: var(--ab-accent-pressed, #eb5515);
+  --abh-on-accent: var(--ab-on-accent, #171717);
+  display: grid;
+  grid-template-columns:
+    [brand-start] calc(var(--frame-edge) + var(--left-width))
+    [brand-end] var(--frame-gap)
+    [center-start] var(--center-width)
+    [center-end] var(--frame-gap)
+    [right-start] var(--right-width)
+    [right-end] var(--frame-edge);
+  grid-template-rows: var(--abh-notice-height) var(--abh-nav-height);
+  width: 100%;
+  height: var(--ab-header-total-height);
+  flex: 0 0 var(--ab-header-total-height);
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--abh-text);
+  background: var(--abh-bg);
+  box-shadow: none;
+}
+
+.aldebaran-site .ab-header2__brand {
+  grid-column: brand-start / brand-end;
+  grid-row: 1 / 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0;
+  background: var(--abh-brand-bg);
+  color: var(--abh-text);
+  text-decoration: none;
+}
+.aldebaran-site .ab-header2__brand::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: var(--abh-accent);
+  pointer-events: none;
+}
+.aldebaran-site .ab-header2__wordmark {
+  display: block;
+  width: 216px;
+  height: auto;
+  min-width: 0;
+  flex: 0 1 216px;
+  object-fit: contain;
+}
+.aldebaran-site .ab-header2__notice {
+  grid-column: center-start / center-end;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 0 12px;
+  box-sizing: border-box;
+  color: var(--abh-muted);
+  font-size: 12px;
+  line-height: 18px;
+}
+/* Add __notice-control and __notice-text to the reused notice control/text. */
+.aldebaran-site .ab-header2__notice-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.aldebaran-site .ab-header2__notice-label {
+  flex: 0 0 auto;
+  color: var(--abh-accent);
+}
+.aldebaran-site .ab-header2__notice-text {
+  display: block;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.aldebaran-site .ab-header2__account {
+  grid-column: right-start / right-end;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+  border-top: 1px solid transparent;
+  white-space: nowrap;
+}
+.aldebaran-site .ab-header2__account > :is(button, a) {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  height: 38px;
+  min-height: 0;
+  margin: 0;
+}
+.aldebaran-site .ab-header2__nav {
+  grid-column: center-start / center-end;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border-top: 1px solid transparent;
+}
+.aldebaran-site .ab-header2__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: 42px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--abh-text);
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 140ms ease, background-color 140ms ease;
+}
+.aldebaran-site .ab-header2__item[aria-pressed="true"] {
+  color: var(--abh-on-accent);
+  background: var(--abh-accent);
+}
+.aldebaran-site .ab-header2__item .nav-dot {
+  background: currentColor;
+  box-shadow: none;
+}
+@media (hover: hover) {
+  .aldebaran-site .ab-header2__item:not(:disabled):hover {
+    background: var(--abh-hover);
+  }
+  .aldebaran-site .ab-header2__item[aria-pressed="true"]:not(:disabled):hover {
+    background: var(--abh-accent-hover);
+  }
+}
+.aldebaran-site .ab-header2__item[aria-pressed="true"]:not(:disabled):active {
+  background: var(--abh-accent-pressed);
+}
+.aldebaran-site .ab-header2__item:disabled {
+  color: var(--ab-disabled, #797979);
+  background: transparent;
+  cursor: default;
+}
+.aldebaran-site .ab-header2 :is(a, button):focus-visible {
+  outline: 2px solid var(--abh-accent);
+  outline-offset: -3px;
+}
+.aldebaran-site .ab-header2__item[aria-pressed="true"]:focus-visible {
+  outline-color: var(--abh-on-accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .aldebaran-site .ab-header2__item { transition: none; }
+}
+
+.aldebaran-site .ab-header2::before {
+  content: "";
+  grid-column: brand-end / -1;
+  grid-row: 2;
+  align-self: start;
+  justify-self: stretch;
+  position: relative;
+  z-index: 1;
+  height: 1px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--abh-border, var(--ab-border, #383838));
+  pointer-events: none;
+}
+
+/* 3. Small matte tab details. All geometry, state and handlers stay unchanged. */
+.aldebaran-site .ab-header2__item {
+  position: relative;
+  border-radius: 0;
+  clip-path: polygon(
+    0 0, calc(100% - 6px) 0, 100% 6px,
+    100% 100%, 6px 100%, 0 calc(100% - 6px)
+  );
+  text-decoration: none;
+  transition: color 140ms ease, background-color 140ms ease, border-color 140ms ease;
+}
+.aldebaran-site .ab-header2__item[aria-pressed="true"] {
+  border-color: #ff9560;
+}
+.aldebaran-site .ab-header2__item:not([aria-pressed="true"])::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 12px);
+  bottom: 5px;
+  width: 24px;
+  height: 2px;
+  background: var(--abh-accent, var(--ab-accent, #ff641f));
+  opacity: 0;
+  transform: scaleX(.6);
+  transition: opacity 140ms ease, transform 140ms ease;
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .aldebaran-site .ab-header2__item:not([aria-pressed="true"]):not(:disabled):hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.aldebaran-site .ab-header2__item:not([aria-pressed="true"]):not(:disabled):focus-visible {
+  background: var(--ab-control, #353535);
+}
+.aldebaran-site .ab-header2__item:not([aria-pressed="true"]):not(:disabled):focus-visible::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .aldebaran-site .ab-header2__item,
+  .aldebaran-site .ab-header2__item::after {
+    transition: none;
+  }
+}
