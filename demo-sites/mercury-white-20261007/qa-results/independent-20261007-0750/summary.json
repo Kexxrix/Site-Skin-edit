@@ -1,0 +1,206 @@
+{
+  "utc": "2026-10-07T08:01:37.361Z",
+  "head": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
+  "ui": {
+    "PASS": 65,
+    "FAIL": 0
+  },
+  "source": {
+    "PASS": 11,
+    "FAIL": 0
+  },
+  "finalSourcePass": true,
+  "processPass": true,
+  "http": [
+    {
+      "port": 5418,
+      "status": 200,
+      "utc": "2026-10-07T08:01:37.151Z",
+      "bytes": 475363,
+      "title": "MERCURY · 화이트"
+    },
+    {
+      "port": 5417,
+      "status": 200,
+      "utc": "2026-10-07T08:01:37.255Z",
+      "bytes": 518961,
+      "title": "MERCURY · 스킨 편집"
+    }
+  ],
+  "sourceCount": 342,
+  "buildCount": 292,
+  "cssVariables": 203,
+  "approvedRoles": 39,
+  "independentTypecheck": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+    "session": 69855,
+    "exitCode": 0
+  },
+  "observations": [
+    {
+      "id": "WHITE-A11Y-01",
+      "severity": "P4",
+      "category": "Existing code observation, nonblocking",
+      "finding": "Slip keep switch accessible name repeats 슬립 유지 twice.",
+      "reproduction": "Fresh context -> inspect .mc-slip-toggle ariaSnapshot() -> switch \"슬립 유지 슬립 유지\".",
+      "evidence": "ui-tail-2.mjs console; exact DOM in ui-tail-2-results.json/slip keep actual toggle changes state",
+      "basis": "Native .mc-keep label and Switch aria-label preserved byte-for-byte in unchanged app/mercury-sports.tsx/components/ui/switch.tsx; prior running editor was not browsed.",
+      "impact": "Screen readers may announce duplicate text. Mouse, keyboard Space, visible focus and storage restore all PASS."
+    }
+  ],
+  "adjudications": [
+    {
+      "file": "source-results.json",
+      "name": "unchanged business geometry data font and lockfile match base Git",
+      "reason": "Git rename name-only lists destination only; old app/skin-palette.ts was intentionally moved. Reclassify against no-renames change set. Corrected 332 preserved files PASS."
+    },
+    {
+      "file": "ui-results.json",
+      "name": "zero-match sport shows empty state",
+      "reason": "QA expected exactly one empty region, but list and detail panes both legitimately render an empty state. Rechecked >=1 empty region and0 cards; PASS."
+    },
+    {
+      "file": "ui-results.json",
+      "name": "HARNESS STOPPED",
+      "reason": "QA requested exact accessible name 슬립 유지. Actual existing Base UI/native label name is 슬립 유지 슬립 유지. Actual switch mouse and keyboard control, save/reload passed. Duplicate name recorded separately as P4 existing accessibility observation."
+    },
+    {
+      "file": "ui-tail-results.json",
+      "name": "HARNESS STOPPED",
+      "reason": "Shared selected odds ID appears in list and detail panes. QA strict locator needed to check both. Corrected both mirrors unpressed after delete; PASS."
+    }
+  ],
+  "runtime": {
+    "appErrors": [],
+    "localRequestFailures": [],
+    "mutations": [],
+    "externalTypekit": [
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/hyf2mwn.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/gig5kam.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/hyf2mwn.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/gig5kam.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/hyf2mwn.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/gig5kam.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/hyf2mwn.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/gig5kam.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/hyf2mwn.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/gig5kam.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/hyf2mwn.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/gig5kam.js",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": false
+      },
+      {
+        "url": "https://use.typekit.net/aqm4sxy.css",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED",
+        "noJs": true
+      }
+    ],
+    "intentionalNoJsFailures": [
+      {
+        "url": "http://127.0.0.1:5418/_next/static/chunks/index-E-jFPCif.js",
+        "error": "csp",
+        "noJs": true
+      },
+      {
+        "url": "http://127.0.0.1:5418/_next/static/chunks/layout-segment-context-DVQ02j77.js",
+        "error": "csp",
+        "noJs": true
+      },
+      {
+        "url": "http://127.0.0.1:5418/_next/static/chunks/page-CK8zVbe1.js",
+        "error": "csp",
+        "noJs": true
+      }
+    ]
+  },
+  "notTested": [
+    "Independent production rebuild",
+    "independent lint",
+    "user attachment PNG pixel comparison",
+    "real charge withdraw or betting confirmation",
+    "Firefox Safari touch devices",
+    "remote font successfully loaded screen"
+  ],
+  "screenshots": [
+    "01-white-first.png",
+    "02-white-body-popup.png",
+    "03-white-narrow-right.png",
+    "04-white-without-js.png"
+  ]
+}

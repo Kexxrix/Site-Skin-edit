@@ -1,0 +1,29 @@
+{
+  "kind": "mercury-white-button-readability-polish",
+  "version": 1,
+  "baseCommit": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
+  "basePaletteFile": "mercury-palette_98.json",
+  "basePaletteSha256": "f8387c05ce6298592b1eca859f41dd1d4069a4a95ab9d7631fac9b4badc81ae5",
+  "approval": "User approved the proposed gradient button readability polish with 진행해봐 on 2026-10-07.",
+  "colors": {
+    "normalFill": "#fffaf0",
+    "normalHover": "#f7edda",
+    "text": "#2b2826",
+    "normalBorder": "#b8aa91",
+    "selectedFill": "#ffdfaf",
+    "selectedBorder": "#b76016",
+    "disabledFill": "#f1eadf",
+    "disabledText": "#6b6154",
+    "topHighlight": "#ffffff"
+  },
+  "surfaces": ["normal control buttons", "selected sports and odds", "market tabs", "service action buttons", "amount and MAX buttons", "small badges and counts", "disabled controls"],
+  "treatment": {"normal": "solid cream", "selected": "solid light apricot with darker orange border", "chips": "solid apricot", "highlight": "one-pixel inset top line", "hover": "cream fill and darker border; no brightness filter", "focus": "two-pixel dark inset outline", "disabled": "opaque muted cream with readable dark text"},
+  "serviceGoldPngAdjustment": {
+    "baseSetting": "unchanged brightness(90%) contrast(101%) saturate(104%)",
+    "scopedDisplayOverride": "brightness(70%) contrast(101%) saturate(104%)",
+    "scope": "nine labelled PNG icons in user actions and secondary quick actions",
+    "reason": "Opaque-pixel median contrast on cream was 1.89–2.31:1; among tested 5-point steps, 70% was the lightest with all nine medians above 3:1. Metallic highlights still vary; this is not a uniform-color contrast claim.",
+    "sourcePixels": "unchanged"
+  },
+  "unchanged": ["approved v6 source JSON and generated base CSS", "layout and typography", "demo behavior", "all PNG bytes", "header image and logo", "editor and picker absence"]
+}

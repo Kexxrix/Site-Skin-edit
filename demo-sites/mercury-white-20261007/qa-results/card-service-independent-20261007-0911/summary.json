@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-07T09:18:31.521Z",
+  "scope": "Final two UI additions, with affected regressions; actual served production CSS without injection",
+  "head": "b425507730a4f39dd393645ef4273653a7c13176",
+  "counts": {
+    "PASS": 31,
+    "FAIL": 0,
+    "NOT_RUN": 0
+  },
+  "sourceCount": 343,
+  "buildCount": 292,
+  "sameFiles": true,
+  "cleanTrackedTree": true,
+  "sourceUnchangedSinceBrowser": true,
+  "browserWindowUTC": {
+    "start": "2026-10-07T09:13:36.435Z",
+    "end": "2026-10-07T09:13:55.593Z"
+  },
+  "live": {
+    "htmlStatus": 200,
+    "title": "MERCURY · 화이트",
+    "cssURL": "http://127.0.0.1:5418/_next/static/css/index.CIlfXfuu.css",
+    "cssStatus": 200,
+    "cssSHA256": "a1901d8fcefc84277c7723e0755e8e6e958a01fd2cbbe8c259c90e1f8fb13a35",
+    "cssMatchesBrowser": true,
+    "cssLinkedByLiveHTML": true,
+    "editorHTTPStatus": 200,
+    "processes": [
+      {
+        "Id": 23780,
+        "ProcessName": "node",
+        "StartUtc": "2026-10-07T08:56:03.1759003Z"
+      },
+      {
+        "Id": 35992,
+        "ProcessName": "node",
+        "StartUtc": "2026-10-07T03:54:38.7783288Z"
+      }
+    ]
+  },
+  "applicationExceptions": 0,
+  "localFailedRequests": 0,
+  "mutatingRequests": 0,
+  "externalFontRequestsBlocked": 3,
+  "minimumServiceGradientContrast": 10.317815171430098,
+  "reused": "Earlier independent 65 UI and 11 source checks for unchanged broad behavior",
+  "notRun": [
+    "New broad end-to-end suite",
+    "New build or type check",
+    "Attached reference image pixel comparison",
+    "External Typekit font loading"
+  ]
+}

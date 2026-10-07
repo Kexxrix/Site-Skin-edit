@@ -1,0 +1,3866 @@
+{
+  "utc": "2026-10-07T08:01:37.304Z",
+  "head": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
+  "expected": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
+  "sourcePass": true,
+  "processPass": true,
+  "sourceCount": 342,
+  "buildCount": 292,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "2a7091b114a761d204c2e36db313726f86344968248fc559edcb663da27009a7",
+      "expected": "2a7091b114a761d204c2e36db313726f86344968248fc559edcb663da27009a7",
+      "bytes": 105
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "693206ff1889de27cfb858e5db0b6bb8b583e8a67da04ba5fe9fe01481d7e940",
+      "expected": "693206ff1889de27cfb858e5db0b6bb8b583e8a67da04ba5fe9fe01481d7e940",
+      "bytes": 422
+    },
+    {
+      "path": ".oxfmtrc.json",
+      "sha256": "0437fcf1fbeb1066c017b6e6c6c7ff1670ef64f93b92567dbffe35aa8bf5dc4a",
+      "expected": "0437fcf1fbeb1066c017b6e6c6c7ff1670ef64f93b92567dbffe35aa8bf5dc4a",
+      "bytes": 273
+    },
+    {
+      "path": ".oxlintrc.json",
+      "sha256": "b27badef835862a105b58ad08a924b366fba7ae7fb0bdef7cfee0398b3829db6",
+      "expected": "b27badef835862a105b58ad08a924b366fba7ae7fb0bdef7cfee0398b3829db6",
+      "bytes": 1426
+    },
+    {
+      "path": "app/demo-data.ts",
+      "sha256": "d5afedb444805d6c3f219fb1b976e5931a6486cf2d734bdfc446bbb1388e522f",
+      "expected": "d5afedb444805d6c3f219fb1b976e5931a6486cf2d734bdfc446bbb1388e522f",
+      "bytes": 5748
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "dd14bcecd086bdcf693ed7ec5ca805e2026da909f095aa4b2aba7524e61e1a34",
+      "expected": "dd14bcecd086bdcf693ed7ec5ca805e2026da909f095aa4b2aba7524e61e1a34",
+      "bytes": 34341
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "f4d5d51079dd8a88d362939c69e830b9088faedcf41b624202fee62789535928",
+      "expected": "f4d5d51079dd8a88d362939c69e830b9088faedcf41b624202fee62789535928",
+      "bytes": 711
+    },
+    {
+      "path": "app/live-snapshots.json",
+      "sha256": "eeb0875a0b5138e617a25bcf342ed49378f73c1ff4a93c8579a450fd316485b4",
+      "expected": "eeb0875a0b5138e617a25bcf342ed49378f73c1ff4a93c8579a450fd316485b4",
+      "bytes": 3548
+    },
+    {
+      "path": "app/logo-presentation.json",
+      "sha256": "20c816091323506e7bd75f031002f93f50cc914c347a26e49926c7cb529d4d76",
+      "expected": "20c816091323506e7bd75f031002f93f50cc914c347a26e49926c7cb529d4d76",
+      "bytes": 30076
+    },
+    {
+      "path": "app/match-motion.tsx",
+      "sha256": "42cddac57dd9682f100a664c6795dab2449bd9a603cb26d842d1eafbee3c041d",
+      "expected": "42cddac57dd9682f100a664c6795dab2449bd9a603cb26d842d1eafbee3c041d",
+      "bytes": 5851
+    },
+    {
+      "path": "app/match-records.json",
+      "sha256": "8eb5d6bdc96c98522bd3229921dcde0b0f048aa166dc789a4617dd9a439810d1",
+      "expected": "8eb5d6bdc96c98522bd3229921dcde0b0f048aa166dc789a4617dd9a439810d1",
+      "bytes": 103576
+    },
+    {
+      "path": "app/mercury-market-view.ts",
+      "sha256": "18160da5458240f48851f0a447248d412a1b673a1c2cfbe00c6eb6b3c1d58055",
+      "expected": "18160da5458240f48851f0a447248d412a1b673a1c2cfbe00c6eb6b3c1d58055",
+      "bytes": 1713
+    },
+    {
+      "path": "app/mercury-sports.css",
+      "sha256": "7b63913cd10573d1efc50e9ddddfafc281a4aa893d3eb70cf7daaa401fb3ad61",
+      "expected": "7b63913cd10573d1efc50e9ddddfafc281a4aa893d3eb70cf7daaa401fb3ad61",
+      "bytes": 42670
+    },
+    {
+      "path": "app/mercury-sports.tsx",
+      "sha256": "3705a6313bbe17ad38144ccad05838c693dbce20168a092a0c75f37e01109dd6",
+      "expected": "3705a6313bbe17ad38144ccad05838c693dbce20168a092a0c75f37e01109dd6",
+      "bytes": 29122
+    },
+    {
+      "path": "app/mercury-white-theme.css",
+      "sha256": "d5ebac3f881a9762beac4ce4764d019bfeb42d6dcef62ba3d958442771e2d333",
+      "expected": "d5ebac3f881a9762beac4ce4764d019bfeb42d6dcef62ba3d958442771e2d333",
+      "bytes": 7466
+    },
+    {
+      "path": "app/mercury-white.css",
+      "sha256": "a0d94522f1c939e01b5761dbae02422e6cc47bc01aa9a80a2d7517d2239a41c4",
+      "expected": "a0d94522f1c939e01b5761dbae02422e6cc47bc01aa9a80a2d7517d2239a41c4",
+      "bytes": 152
+    },
+    {
+      "path": "app/motion.css",
+      "sha256": "f66bb27d984c82f4d192d1f822039c67125dd1f4e3b9091cd2d1582058110113",
+      "expected": "f66bb27d984c82f4d192d1f822039c67125dd1f4e3b9091cd2d1582058110113",
+      "bytes": 370
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "62ea9f6a088824374d196f838efedd2c87dacccfb869de622b6b68c0f47b7413",
+      "expected": "62ea9f6a088824374d196f838efedd2c87dacccfb869de622b6b68c0f47b7413",
+      "bytes": 9916
+    },
+    {
+      "path": "app/prematch-r15.json",
+      "sha256": "3c255064e20d1bf24023c6e12895bdee5997e3d0ed0d84f97a8964dab13265b0",
+      "expected": "3c255064e20d1bf24023c6e12895bdee5997e3d0ed0d84f97a8964dab13265b0",
+      "bytes": 3274553
+    },
+    {
+      "path": "app/representative-match.json",
+      "sha256": "a598df125816313129a76ffdc8e295f6a859f2bcb33703b4b5a253f5e0f6b5d7",
+      "expected": "a598df125816313129a76ffdc8e295f6a859f2bcb33703b4b5a253f5e0f6b5d7",
+      "bytes": 880
+    },
+    {
+      "path": "app/sport-menu.json",
+      "sha256": "fe7ae71a196e5e664e183b5601766e81547f53a64fdd8592591e09bcb93909dd",
+      "expected": "fe7ae71a196e5e664e183b5601766e81547f53a64fdd8592591e09bcb93909dd",
+      "bytes": 979
+    },
+    {
+      "path": "app/typography.css",
+      "sha256": "2d4b49c952a9e9709f0a33ed655355418e6ddd2566d91b27f126d15e0226958a",
+      "expected": "2d4b49c952a9e9709f0a33ed655355418e6ddd2566d91b27f126d15e0226958a",
+      "bytes": 1530
+    },
+    {
+      "path": "components.json",
+      "sha256": "002a5ca9a59a3787db4eeb6beabc560711995353e070d7df5e36dbe6d58ecaa9",
+      "expected": "002a5ca9a59a3787db4eeb6beabc560711995353e070d7df5e36dbe6d58ecaa9",
+      "bytes": 541
+    },
+    {
+      "path": "components/ui/accordion.tsx",
+      "sha256": "20df8ccd965c317376fd70c39479b3ddca376ebff40f08ab6f684f51a2afedb4",
+      "expected": "20df8ccd965c317376fd70c39479b3ddca376ebff40f08ab6f684f51a2afedb4",
+      "bytes": 2742
+    },
+    {
+      "path": "components/ui/alert-dialog.tsx",
+      "sha256": "b78e7cf80ba49b90e9f69184eaa7090026d9783eaa7761060c693a945a502d4f",
+      "expected": "b78e7cf80ba49b90e9f69184eaa7090026d9783eaa7761060c693a945a502d4f",
+      "bytes": 5488
+    },
+    {
+      "path": "components/ui/alert.tsx",
+      "sha256": "f1f30d8da19c09ef99054886461c82143f168bbde04009a6f16b609f8af93f04",
+      "expected": "f1f30d8da19c09ef99054886461c82143f168bbde04009a6f16b609f8af93f04",
+      "bytes": 2136
+    },
+    {
+      "path": "components/ui/aspect-ratio.tsx",
+      "sha256": "fd7999d9474e909cc9272f6c633c1266df0da86613985db1dc724f3371f8b4dd",
+      "expected": "fd7999d9474e909cc9272f6c633c1266df0da86613985db1dc724f3371f8b4dd",
+      "bytes": 428
+    },
+    {
+      "path": "components/ui/attachment.tsx",
+      "sha256": "20f4518e6dde10e1ef09b681d8f60a07fb9af80c76b9153b644725b2553cbdb7",
+      "expected": "20f4518e6dde10e1ef09b681d8f60a07fb9af80c76b9153b644725b2553cbdb7",
+      "bytes": 6339
+    },
+    {
+      "path": "components/ui/avatar.tsx",
+      "sha256": "5f701c7947c299126ddab74167e9bfee29c0369ca8ffc2815da48b69874eecf1",
+      "expected": "5f701c7947c299126ddab74167e9bfee29c0369ca8ffc2815da48b69874eecf1",
+      "bytes": 3165
+    },
+    {
+      "path": "components/ui/badge.tsx",
+      "sha256": "052b4c0fbcd05b23eae84f124b8a868d79f97ee934e16e8546a60a392601814c",
+      "expected": "052b4c0fbcd05b23eae84f124b8a868d79f97ee934e16e8546a60a392601814c",
+      "bytes": 1986
+    },
+    {
+      "path": "components/ui/breadcrumb.tsx",
+      "sha256": "e68407a81a9ec90bb24ad4189fd2d6284ad07d8c86e474c28686174d01326a88",
+      "expected": "e68407a81a9ec90bb24ad4189fd2d6284ad07d8c86e474c28686174d01326a88",
+      "bytes": 2724
+    },
+    {
+      "path": "components/ui/bubble.tsx",
+      "sha256": "32b8effc1af0751877bbed4653db9d9b056a08ed241aeb9d3ac662879bac6e2f",
+      "expected": "32b8effc1af0751877bbed4653db9d9b056a08ed241aeb9d3ac662879bac6e2f",
+      "bytes": 4956
+    },
+    {
+      "path": "components/ui/button-group.tsx",
+      "sha256": "6d4c96965656a8de32c00a6d4eccb3ba9904a2a4ebd04c4b849f3085fb379f27",
+      "expected": "6d4c96965656a8de32c00a6d4eccb3ba9904a2a4ebd04c4b849f3085fb379f27",
+      "bytes": 2581
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "sha256": "1fb3ecd05c213a046d55160f38a565aa322d0f9cd6fd1ec7b6eb1463d0ea4065",
+      "expected": "1fb3ecd05c213a046d55160f38a565aa322d0f9cd6fd1ec7b6eb1463d0ea4065",
+      "bytes": 3263
+    },
+    {
+      "path": "components/ui/calendar.tsx",
+      "sha256": "63d2ec465a37a791692d50448e9f2315fcf16ef686452f99bd2931604fdb4063",
+      "expected": "63d2ec465a37a791692d50448e9f2315fcf16ef686452f99bd2931604fdb4063",
+      "bytes": 8734
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "sha256": "92bf70bdd72e77c121d76af37ce356c70cf175395fd7762e8556343988670955",
+      "expected": "92bf70bdd72e77c121d76af37ce356c70cf175395fd7762e8556343988670955",
+      "bytes": 2748
+    },
+    {
+      "path": "components/ui/carousel.tsx",
+      "sha256": "d00e374d1a5f514798a95c45d9cf5867169bd2662456d5a9855c0651a1bc93d2",
+      "expected": "d00e374d1a5f514798a95c45d9cf5867169bd2662456d5a9855c0651a1bc93d2",
+      "bytes": 5969
+    },
+    {
+      "path": "components/ui/chart.tsx",
+      "sha256": "972d198a105b3063a7226f79bbecc455ea44f31fb1e64be9f8bde1cbf1451371",
+      "expected": "972d198a105b3063a7226f79bbecc455ea44f31fb1e64be9f8bde1cbf1451371",
+      "bytes": 10954
+    },
+    {
+      "path": "components/ui/checkbox.tsx",
+      "sha256": "3215e1b81f76f6473faf8ee45ff2004cc458bbc216213707d1ddaccefb17d009",
+      "expected": "3215e1b81f76f6473faf8ee45ff2004cc458bbc216213707d1ddaccefb17d009",
+      "bytes": 1566
+    },
+    {
+      "path": "components/ui/collapsible.tsx",
+      "sha256": "3eb3ee736aaaef892aebbf51d9d676c89f8642d278b3f46fad6760e22cceb5fa",
+      "expected": "3eb3ee736aaaef892aebbf51d9d676c89f8642d278b3f46fad6760e22cceb5fa",
+      "bytes": 685
+    },
+    {
+      "path": "components/ui/combobox.tsx",
+      "sha256": "8cb5fd7d7ad0c39c8dbf9457ead815396bc6e907250ef8a56fb097b9a2fb05f0",
+      "expected": "8cb5fd7d7ad0c39c8dbf9457ead815396bc6e907250ef8a56fb097b9a2fb05f0",
+      "bytes": 9435
+    },
+    {
+      "path": "components/ui/command.tsx",
+      "sha256": "b421fa62b0013f4dc4baeb04bbddeb841406cbca8c9df4804aba83e55e11640c",
+      "expected": "b421fa62b0013f4dc4baeb04bbddeb841406cbca8c9df4804aba83e55e11640c",
+      "bytes": 5222
+    },
+    {
+      "path": "components/ui/context-menu.tsx",
+      "sha256": "2d15c8755aebca4ec661c3a8b0437c7f9a1ba6c304337edd9f69a9aee38361de",
+      "expected": "2d15c8755aebca4ec661c3a8b0437c7f9a1ba6c304337edd9f69a9aee38361de",
+      "bytes": 8438
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "sha256": "f732b9a008dd9ffda5c6377d07f1846e063a5fa21854a0a648df102b715c58f5",
+      "expected": "f732b9a008dd9ffda5c6377d07f1846e063a5fa21854a0a648df102b715c58f5",
+      "bytes": 4246
+    },
+    {
+      "path": "components/ui/direction.tsx",
+      "sha256": "678a0fcddf8a404ca74374ad7d08151fbd0ae64bd758906cb231bb21c6829553",
+      "expected": "678a0fcddf8a404ca74374ad7d08151fbd0ae64bd758906cb231bb21c6829553",
+      "bytes": 111
+    },
+    {
+      "path": "components/ui/drawer.tsx",
+      "sha256": "f5053cf5f354e184de33ecef4038498d15b279176c45c5a071c92d315520094b",
+      "expected": "f5053cf5f354e184de33ecef4038498d15b279176c45c5a071c92d315520094b",
+      "bytes": 11624
+    },
+    {
+      "path": "components/ui/dropdown-menu.tsx",
+      "sha256": "dc5603c124190132b0034e212ee7e28279a8f6f2c5aa02b2052cf2a937502bf4",
+      "expected": "dc5603c124190132b0034e212ee7e28279a8f6f2c5aa02b2052cf2a937502bf4",
+      "bytes": 9081
+    },
+    {
+      "path": "components/ui/empty.tsx",
+      "sha256": "2300d1409ebb5dcd440d7d9ed7608fff54340026825d3fb044097a526f8474a1",
+      "expected": "2300d1409ebb5dcd440d7d9ed7608fff54340026825d3fb044097a526f8474a1",
+      "bytes": 2519
+    },
+    {
+      "path": "components/ui/field.tsx",
+      "sha256": "f5bd4e8d824d9c14bb6bbe2a4415e1c752506a9b672da86e7d47ebd664f1813e",
+      "expected": "f5bd4e8d824d9c14bb6bbe2a4415e1c752506a9b672da86e7d47ebd664f1813e",
+      "bytes": 6541
+    },
+    {
+      "path": "components/ui/hover-card.tsx",
+      "sha256": "d6b7c9e5ed51a17c45f376fe5945d4d2c48727d2a6491cf218660503923596de",
+      "expected": "d6b7c9e5ed51a17c45f376fe5945d4d2c48727d2a6491cf218660503923596de",
+      "bytes": 1914
+    },
+    {
+      "path": "components/ui/input-group.tsx",
+      "sha256": "a135a094cf93fd94a8c5bd062c182078137e0a59b2af944dc6af5e5a51a8a3c8",
+      "expected": "a135a094cf93fd94a8c5bd062c182078137e0a59b2af944dc6af5e5a51a8a3c8",
+      "bytes": 5447
+    },
+    {
+      "path": "components/ui/input-otp.tsx",
+      "sha256": "b847456b73ae795b55bc8f23a2d2c25bb637d9d435444d11101f9f41ae61fbb4",
+      "expected": "b847456b73ae795b55bc8f23a2d2c25bb637d9d435444d11101f9f41ae61fbb4",
+      "bytes": 2644
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "sha256": "9ba5a924b7b430dcd88a3ddad591854a467299e833d7046927e0bf74c78c6ea8",
+      "expected": "9ba5a924b7b430dcd88a3ddad591854a467299e833d7046927e0bf74c78c6ea8",
+      "bytes": 1066
+    },
+    {
+      "path": "components/ui/item.tsx",
+      "sha256": "94ffd641acef671d225d5e345766ac34c684fc6042bb7b447af669ee82610423",
+      "expected": "94ffd641acef671d225d5e345766ac34c684fc6042bb7b447af669ee82610423",
+      "bytes": 5089
+    },
+    {
+      "path": "components/ui/kbd.tsx",
+      "sha256": "b9b9eadd3b2510d88e0c2442bd07bd6aaec477dbd07a2a0375abd9714f9f8919",
+      "expected": "b9b9eadd3b2510d88e0c2442bd07bd6aaec477dbd07a2a0375abd9714f9f8919",
+      "bytes": 868
+    },
+    {
+      "path": "components/ui/label.tsx",
+      "sha256": "dd56d728bc68f25e0f2d3d484139a0fa9479e5ceec76410a7505c36745fff494",
+      "expected": "dd56d728bc68f25e0f2d3d484139a0fa9479e5ceec76410a7505c36745fff494",
+      "bytes": 544
+    },
+    {
+      "path": "components/ui/marker.tsx",
+      "sha256": "8c393f64a0434cccb527c6338903da7eb34015e0d8431e0a0c4f6a72051962b8",
+      "expected": "8c393f64a0434cccb527c6338903da7eb34015e0d8431e0a0c4f6a72051962b8",
+      "bytes": 2033
+    },
+    {
+      "path": "components/ui/menubar.tsx",
+      "sha256": "1cabede602d38da170766297b39da60d686caafee021ff5d37714d11b3b474d9",
+      "expected": "1cabede602d38da170766297b39da60d686caafee021ff5d37714d11b3b474d9",
+      "bytes": 8599
+    },
+    {
+      "path": "components/ui/message-scroller.tsx",
+      "sha256": "250b38e09a6459037db02209671d855eea2955d7d1d5765c489a0f18566a8ba5",
+      "expected": "250b38e09a6459037db02209671d855eea2955d7d1d5765c489a0f18566a8ba5",
+      "bytes": 4200
+    },
+    {
+      "path": "components/ui/message.tsx",
+      "sha256": "7b9ae2dacc508d421036a5490d6d75c6da975e05578c91389c272e5f7dfc584b",
+      "expected": "7b9ae2dacc508d421036a5490d6d75c6da975e05578c91389c272e5f7dfc584b",
+      "bytes": 2338
+    },
+    {
+      "path": "components/ui/native-select.tsx",
+      "sha256": "adc7e4ce047d7e619e9f3161eca2e4dc197399429d8f474a948f2a957a603971",
+      "expected": "adc7e4ce047d7e619e9f3161eca2e4dc197399429d8f474a948f2a957a603971",
+      "bytes": 2198
+    },
+    {
+      "path": "components/ui/navigation-menu.tsx",
+      "sha256": "042d5b109dac67727565aa465118cac76c80805856cc633aa6c312409168e346",
+      "expected": "042d5b109dac67727565aa465118cac76c80805856cc633aa6c312409168e346",
+      "bytes": 7607
+    },
+    {
+      "path": "components/ui/pagination.tsx",
+      "sha256": "837976b6d017f66459b5adf83977e2a9ada3bc100a0ecde76a6e74dac47802b3",
+      "expected": "837976b6d017f66459b5adf83977e2a9ada3bc100a0ecde76a6e74dac47802b3",
+      "bytes": 3061
+    },
+    {
+      "path": "components/ui/popover.tsx",
+      "sha256": "27a4e51e2695645ba20f2cf113625136e9490cdba4f2470a042388279fd02c56",
+      "expected": "27a4e51e2695645ba20f2cf113625136e9490cdba4f2470a042388279fd02c56",
+      "bytes": 2676
+    },
+    {
+      "path": "components/ui/progress.tsx",
+      "sha256": "bcc086c23be7e9a4cfe8a65444b8f5d949e29ff9ca38e1bb522b34d68f04035f",
+      "expected": "bcc086c23be7e9a4cfe8a65444b8f5d949e29ff9ca38e1bb522b34d68f04035f",
+      "bytes": 1834
+    },
+    {
+      "path": "components/ui/radio-group.tsx",
+      "sha256": "1d14450bd2792430076a0e85c9b5d85adb51bceebcd7e236554076884a1c3dd1",
+      "expected": "1d14450bd2792430076a0e85c9b5d85adb51bceebcd7e236554076884a1c3dd1",
+      "bytes": 1881
+    },
+    {
+      "path": "components/ui/resizable.tsx",
+      "sha256": "e79b3499dbc4e4c67ebb5174334ce099ab2c9e8d76e0d3e907d4388b7b3490e5",
+      "expected": "e79b3499dbc4e4c67ebb5174334ce099ab2c9e8d76e0d3e907d4388b7b3490e5",
+      "bytes": 1731
+    },
+    {
+      "path": "components/ui/scroll-area.tsx",
+      "sha256": "e628b4da20e27815310ab4d6a525ce56e959cc4f18a34f98ae47563d81f03cd2",
+      "expected": "e628b4da20e27815310ab4d6a525ce56e959cc4f18a34f98ae47563d81f03cd2",
+      "bytes": 1687
+    },
+    {
+      "path": "components/ui/select.tsx",
+      "sha256": "73ee89922eb71a384a579df681c1d512d92038d156590377b2485369566284f9",
+      "expected": "73ee89922eb71a384a579df681c1d512d92038d156590377b2485369566284f9",
+      "bytes": 6902
+    },
+    {
+      "path": "components/ui/separator.tsx",
+      "sha256": "bb831d9511be1f318d4e058db0692399727ab56d88f6650977377ebacbc93b0f",
+      "expected": "bb831d9511be1f318d4e058db0692399727ab56d88f6650977377ebacbc93b0f",
+      "bytes": 576
+    },
+    {
+      "path": "components/ui/sheet.tsx",
+      "sha256": "3c46175017296d486e6e5538a489c011f9977e60b67e37e1682a956b502865be",
+      "expected": "3c46175017296d486e6e5538a489c011f9977e60b67e37e1682a956b502865be",
+      "bytes": 4583
+    },
+    {
+      "path": "components/ui/sidebar.tsx",
+      "sha256": "b4c1061287417b4665ca44c1b9b51d53025dd9f4b2a26b4c994dfd6d4865c7a0",
+      "expected": "b4c1061287417b4665ca44c1b9b51d53025dd9f4b2a26b4c994dfd6d4865c7a0",
+      "bytes": 22502
+    },
+    {
+      "path": "components/ui/skeleton.tsx",
+      "sha256": "7e213f989652eb736739dfcf5248335504547a594eeb7869c55e8c0621fc6966",
+      "expected": "7e213f989652eb736739dfcf5248335504547a594eeb7869c55e8c0621fc6966",
+      "bytes": 291
+    },
+    {
+      "path": "components/ui/slider.tsx",
+      "sha256": "f76dd9625b6453c9c761f651890d0324cd9b6bd181ac6b6b4a385bafd13fb61d",
+      "expected": "f76dd9625b6453c9c761f651890d0324cd9b6bd181ac6b6b4a385bafd13fb61d",
+      "bytes": 1931
+    },
+    {
+      "path": "components/ui/spinner.tsx",
+      "sha256": "bc1b1480fb37227bc66c69eed050585113fc37ce9e0c4e16c42db9f98b6994db",
+      "expected": "bc1b1480fb37227bc66c69eed050585113fc37ce9e0c4e16c42db9f98b6994db",
+      "bytes": 376
+    },
+    {
+      "path": "components/ui/switch.tsx",
+      "sha256": "cda57e3b380185d3ffe4195856bc533f595eccbd01b103a2bb1d9a0635d6c51a",
+      "expected": "cda57e3b380185d3ffe4195856bc533f595eccbd01b103a2bb1d9a0635d6c51a",
+      "bytes": 1850
+    },
+    {
+      "path": "components/ui/table.tsx",
+      "sha256": "0dba4e4cc69b8ca88c106096d16a6b7a20308a314b997b26b4b1266a202591ff",
+      "expected": "0dba4e4cc69b8ca88c106096d16a6b7a20308a314b997b26b4b1266a202591ff",
+      "bytes": 2534
+    },
+    {
+      "path": "components/ui/tabs.tsx",
+      "sha256": "e9e02515c9212cfd5fa149f67668c4117a0b1b961c9752eaa4d7547e829da998",
+      "expected": "e9e02515c9212cfd5fa149f67668c4117a0b1b961c9752eaa4d7547e829da998",
+      "bytes": 3592
+    },
+    {
+      "path": "components/ui/textarea.tsx",
+      "sha256": "bd2878c7058d27bca7d97a01cc4dd4868e097184005ebf8b4176db93b2f3e22b",
+      "expected": "bd2878c7058d27bca7d97a01cc4dd4868e097184005ebf8b4176db93b2f3e22b",
+      "bytes": 865
+    },
+    {
+      "path": "components/ui/toast.tsx",
+      "sha256": "078c918d7a63cfc2de51c7b5ad8510b2182bbb4b21f16d9cb6b7f11bfee9e8f8",
+      "expected": "078c918d7a63cfc2de51c7b5ad8510b2182bbb4b21f16d9cb6b7f11bfee9e8f8",
+      "bytes": 7582
+    },
+    {
+      "path": "components/ui/toggle-group.tsx",
+      "sha256": "6a84a2acf3ab88692c568a62be8198a26c0c5a58084bdbf19d17b1efa3f68726",
+      "expected": "6a84a2acf3ab88692c568a62be8198a26c0c5a58084bdbf19d17b1efa3f68726",
+      "bytes": 3290
+    },
+    {
+      "path": "components/ui/toggle.tsx",
+      "sha256": "4cec25dd824d7534b1f79c68c27455136fcae594a4df2c3b43fde0b6a2035b82",
+      "expected": "4cec25dd824d7534b1f79c68c27455136fcae594a4df2c3b43fde0b6a2035b82",
+      "bytes": 1815
+    },
+    {
+      "path": "components/ui/tooltip.tsx",
+      "sha256": "7667acc0cbb79b9daad94af6bb694fb6840b5bd1395e7e60c68c0fb63af9c4bd",
+      "expected": "7667acc0cbb79b9daad94af6bb694fb6840b5bd1395e7e60c68c0fb63af9c4bd",
+      "bytes": 2921
+    },
+    {
+      "path": "hooks/use-mobile.ts",
+      "sha256": "721f945cc7254f2bf61fa70ffe3a9e307a3ec1362e8a03c225b6f8324acf8738",
+      "expected": "721f945cc7254f2bf61fa70ffe3a9e307a3ec1362e8a03c225b6f8324acf8738",
+      "bytes": 606
+    },
+    {
+      "path": "lib/utils.ts",
+      "sha256": "4b705c7d7e5c7a2dd73d26ad35e9c0583d3d3655e2a5be1e67cea21458f29c01",
+      "expected": "4b705c7d7e5c7a2dd73d26ad35e9c0583d3d3655e2a5be1e67cea21458f29c01",
+      "bytes": 175
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "fe6aa70bd863267445528ae46be876dcc9e2aceca5513862c1cf59599d84b599",
+      "expected": "fe6aa70bd863267445528ae46be876dcc9e2aceca5513862c1cf59599d84b599",
+      "bytes": 109
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f7fd266dc04314d8811d216d5aad550da05dcd783e868c9956ba1105eabfe049",
+      "expected": "f7fd266dc04314d8811d216d5aad550da05dcd783e868c9956ba1105eabfe049",
+      "bytes": 356219
+    },
+    {
+      "path": "package.json",
+      "sha256": "1e17817fa3eecba86a048ad18bfa8a1e0207957d172786ed95c8030d313a7fc9",
+      "expected": "1e17817fa3eecba86a048ad18bfa8a1e0207957d172786ed95c8030d313a7fc9",
+      "bytes": 1592
+    },
+    {
+      "path": "public/banners/mercury-left-rail/E스포츠.png",
+      "sha256": "4c9ed8bdda6d9068dd9d904b6c2c5839acbbe2dfc189a1c440bb02cb35f8e4ac",
+      "expected": "4c9ed8bdda6d9068dd9d904b6c2c5839acbbe2dfc189a1c440bb02cb35f8e4ac",
+      "bytes": 30583
+    },
+    {
+      "path": "public/banners/mercury-left-rail/국내형스포츠.png",
+      "sha256": "4f362282b6d307a9d3092a225a400c6794468cb23c051f8122af707aac76d168",
+      "expected": "4f362282b6d307a9d3092a225a400c6794468cb23c051f8122af707aac76d168",
+      "bytes": 47661
+    },
+    {
+      "path": "public/banners/mercury-left-rail/국내형스포츠2.png",
+      "sha256": "3361028bd5f6a135b593989eb54caa9fec28e71cdeca37bb914957292369731a",
+      "expected": "3361028bd5f6a135b593989eb54caa9fec28e71cdeca37bb914957292369731a",
+      "bytes": 43118
+    },
+    {
+      "path": "public/banners/mercury-left-rail/슬롯.png",
+      "sha256": "8f9196fa96636309130e17f05e040e0344d0fe00ecd48d9b7f3205256cdf9a6e",
+      "expected": "8f9196fa96636309130e17f05e040e0344d0fe00ecd48d9b7f3205256cdf9a6e",
+      "bytes": 39100
+    },
+    {
+      "path": "public/banners/mercury-left-rail/인플레이.png",
+      "sha256": "d8b6030515a21cb766f7d448f6d483e4095938f91cced78cc949d37441ba265b",
+      "expected": "d8b6030515a21cb766f7d448f6d483e4095938f91cced78cc949d37441ba265b",
+      "bytes": 32202
+    },
+    {
+      "path": "public/banners/mercury-left-rail/카지노.png",
+      "sha256": "d9bbfcf9a6485ea183e3058e7eaf5cbb25b07fb1537fd668339e06aae33cd074",
+      "expected": "d9bbfcf9a6485ea183e3058e7eaf5cbb25b07fb1537fd668339e06aae33cd074",
+      "bytes": 38019
+    },
+    {
+      "path": "public/banners/mercury-left-rail/해외형스포츠.png",
+      "sha256": "cfca751a860883f668a4d329d2b7804a44c440c529be554b7ed1d119da2820c8",
+      "expected": "cfca751a860883f668a4d329d2b7804a44c440c529be554b7ed1d119da2820c8",
+      "bytes": 32395
+    },
+    {
+      "path": "public/banners/mercury-rail-union-253-6246.png",
+      "sha256": "da017542b4b86182fb33d016b5ab358f769671824a70c5ac181b5ecacc3eb01f",
+      "expected": "da017542b4b86182fb33d016b5ab358f769671824a70c5ac181b5ecacc3eb01f",
+      "bytes": 721686
+    },
+    {
+      "path": "public/banners/r8/mercury-event-woman.png",
+      "sha256": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99",
+      "expected": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99",
+      "bytes": 2109408
+    },
+    {
+      "path": "public/banners/r8/mercury-slots-woman.png",
+      "sha256": "82957c0e5197bd2d3a2983bd260c8284632507f821251c8b76918dd0b2e600a6",
+      "expected": "82957c0e5197bd2d3a2983bd260c8284632507f821251c8b76918dd0b2e600a6",
+      "bytes": 3258365
+    },
+    {
+      "path": "public/banners/베너_슬롯 copy.png",
+      "sha256": "efb60341f177d353a03752b3632d6e5e1d333d2ebdb4958b632b74139cced37b",
+      "expected": "efb60341f177d353a03752b3632d6e5e1d333d2ebdb4958b632b74139cced37b",
+      "bytes": 28644
+    },
+    {
+      "path": "public/banners/베너_카지노 copy.png",
+      "sha256": "915633bd14aad1ae717d9e010d3a9d06d5d6a653c5514e93cf9c114365f4f0d7",
+      "expected": "915633bd14aad1ae717d9e010d3a9d06d5d6a653c5514e93cf9c114365f4f0d7",
+      "bytes": 56792
+    },
+    {
+      "path": "public/branding/image_BG.png",
+      "sha256": "ee27d73f088f48e7b5acbe17ae276fd77bfca2399bb462bc3951484afa8307a1",
+      "expected": "ee27d73f088f48e7b5acbe17ae276fd77bfca2399bb462bc3951484afa8307a1",
+      "bytes": 402582
+    },
+    {
+      "path": "public/branding/image_BG_v2.png",
+      "sha256": "4c66be74e5fc60750eeb83293ece794fba6a20e6c7ab0b771ed4c11a6c4986a2",
+      "expected": "4c66be74e5fc60750eeb83293ece794fba6a20e6c7ab0b771ed4c11a6c4986a2",
+      "bytes": 305307
+    },
+    {
+      "path": "public/branding/mercury-emblem.png",
+      "sha256": "27b16050d02334472ce7ddde4fa67f1c86704c908a59bded09bd4b64abc64ed6",
+      "expected": "27b16050d02334472ce7ddde4fa67f1c86704c908a59bded09bd4b64abc64ed6",
+      "bytes": 2438761
+    },
+    {
+      "path": "public/branding/mercury-wordmark.png",
+      "sha256": "d96816caea9378536e77bd964ddd6b39739bfcade5d64b5995856935d14277e6",
+      "expected": "d96816caea9378536e77bd964ddd6b39739bfcade5d64b5995856935d14277e6",
+      "bytes": 761840
+    },
+    {
+      "path": "public/branding/mercury-wordmark_v2.png",
+      "sha256": "cf4856d84ac465b3658d30b1377dc089b3157c2b4c07892f9cde5c18ab6a0772",
+      "expected": "cf4856d84ac465b3658d30b1377dc089b3157c2b4c07892f9cde5c18ab6a0772",
+      "bytes": 674128
+    },
+    {
+      "path": "public/branding/mercury-wordmark_v3.png",
+      "sha256": "9b6dde375a5312ba2b232e68b957560df6dce0427a30d17f008fcf3959e3c558",
+      "expected": "9b6dde375a5312ba2b232e68b957560df6dce0427a30d17f008fcf3959e3c558",
+      "bytes": 666105
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "077fd970f24c7dda4e6aef9b6f1b79a0c35d86fc7435712ba47c391cb49a840a",
+      "expected": "077fd970f24c7dda4e6aef9b6f1b79a0c35d86fc7435712ba47c391cb49a840a",
+      "bytes": 291
+    },
+    {
+      "path": "public/fonts/pretendard-jp/LICENSE.txt",
+      "sha256": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e",
+      "expected": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e",
+      "bytes": 4511
+    },
+    {
+      "path": "public/fonts/pretendard-jp/PretendardJP-Black.woff2",
+      "sha256": "71ff28e74ed789d467ed7ffe225990318e9cdbe9f07343633751a9d36d243aae",
+      "expected": "71ff28e74ed789d467ed7ffe225990318e9cdbe9f07343633751a9d36d243aae",
+      "bytes": 2145988
+    },
+    {
+      "path": "public/fonts/pretendard-jp/PretendardJP-Bold.woff2",
+      "sha256": "3c926898801c5ef97af081151566f7038ac529de88c77d212ea5f2037309dad2",
+      "expected": "3c926898801c5ef97af081151566f7038ac529de88c77d212ea5f2037309dad2",
+      "bytes": 2107244
+    },
+    {
+      "path": "public/fonts/pretendard-jp/PretendardJP-ExtraBold.woff2",
+      "sha256": "0f28b245cdd874db2e5c29a4ac4a60d5cf3479ed62b15857d61c1ff94d468b3a",
+      "expected": "0f28b245cdd874db2e5c29a4ac4a60d5cf3479ed62b15857d61c1ff94d468b3a",
+      "bytes": 2126320
+    },
+    {
+      "path": "public/fonts/pretendard-jp/PretendardJP-Medium.woff2",
+      "sha256": "6928e2b9476ef12187c2892b986d7b7f86be7a7cc7f92d517cba3b3cece192b4",
+      "expected": "6928e2b9476ef12187c2892b986d7b7f86be7a7cc7f92d517cba3b3cece192b4",
+      "bytes": 2067004
+    },
+    {
+      "path": "public/fonts/pretendard-jp/PretendardJP-Regular.woff2",
+      "sha256": "ca8abbe573f57f235faa68525e427646532c7aa5ab65d0c267c179e9a0ff76b8",
+      "expected": "ca8abbe573f57f235faa68525e427646532c7aa5ab65d0c267c179e9a0ff76b8",
+      "bytes": 2019340
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_고객센터02.png",
+      "sha256": "19f52c1b74979b58916cecd0d70a380ff668f6ae280a7e7f90b94fff8339585c",
+      "expected": "19f52c1b74979b58916cecd0d70a380ff668f6ae280a7e7f90b94fff8339585c",
+      "bytes": 4294
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_공지사항01.png",
+      "sha256": "50fa988609528ffaf28ec1413332f955a7d59c1353941f40d567f24847b6b83f",
+      "expected": "50fa988609528ffaf28ec1413332f955a7d59c1353941f40d567f24847b6b83f",
+      "bytes": 3964
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_이벤트01.png",
+      "sha256": "2bdd6ca8122527804fd2be4e7c5ce28b87e4dce8cdb55425ead8f7dd8e143b5b",
+      "expected": "2bdd6ca8122527804fd2be4e7c5ce28b87e4dce8cdb55425ead8f7dd8e143b5b",
+      "bytes": 3853
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_이용규정01.png",
+      "sha256": "a783c9b602a42bb843b7789d2f022811ef2c3e7da801d81b218c51935440588f",
+      "expected": "a783c9b602a42bb843b7789d2f022811ef2c3e7da801d81b218c51935440588f",
+      "bytes": 3992
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_쪽지.png",
+      "sha256": "e23a774a25d5593b56d78cbbd253bd38b1ff4a63937599678d7ba7079d928c21",
+      "expected": "e23a774a25d5593b56d78cbbd253bd38b1ff4a63937599678d7ba7079d928c21",
+      "bytes": 4109
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_초기화01.png",
+      "sha256": "2935cb85bd32a0b4bc86bf9da40bca97cf0f17ede659073bd89e390dece4b74e",
+      "expected": "2935cb85bd32a0b4bc86bf9da40bca97cf0f17ede659073bd89e390dece4b74e",
+      "bytes": 4046
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_출석체크01.png",
+      "sha256": "bfa580c0db16fe2c9caae88f9d4fff1cd9efb8729e1782f949e85db3ba36ef4a",
+      "expected": "bfa580c0db16fe2c9caae88f9d4fff1cd9efb8729e1782f949e85db3ba36ef4a",
+      "bytes": 4141
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_충전01.png",
+      "sha256": "48af26767cbff3a94e3cd62794cbbc1bb1b3c0277b6d8aafdac901312dc9d2cf",
+      "expected": "48af26767cbff3a94e3cd62794cbbc1bb1b3c0277b6d8aafdac901312dc9d2cf",
+      "bytes": 4406
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_티켓01.png",
+      "sha256": "984ad4482d937720a6fd90cd187ca10c47433fe798a3e7a5a25e33f0b02f7bfb",
+      "expected": "984ad4482d937720a6fd90cd187ca10c47433fe798a3e7a5a25e33f0b02f7bfb",
+      "bytes": 3461
+    },
+    {
+      "path": "public/icons/mercury-ui/Icon_Image_환전02.png",
+      "sha256": "b4817714b8cc7e21da8164be43ef4e533b5d8c70f2996a096fea7574e5926358",
+      "expected": "b4817714b8cc7e21da8164be43ef4e533b5d8c70f2996a096fea7574e5926358",
+      "bytes": 5352
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_10_history.png",
+      "sha256": "310eaa653138908dae1296b6a86259568906261a48ef67a809af2847098a15d7",
+      "expected": "310eaa653138908dae1296b6a86259568906261a48ef67a809af2847098a15d7",
+      "bytes": 25091
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_142_messages.png",
+      "sha256": "1f44789e92baf320b6ebcd11cc94a5a8636fec5e14244cc1638024b46025e351",
+      "expected": "1f44789e92baf320b6ebcd11cc94a5a8636fec5e14244cc1638024b46025e351",
+      "bytes": 20330
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_143_reset.png",
+      "sha256": "bde16d1c6d752e28653cf8771c7a597848e3f2398db3b18ca41efade6bf2bd87",
+      "expected": "bde16d1c6d752e28653cf8771c7a597848e3f2398db3b18ca41efade6bf2bd87",
+      "bytes": 20482
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_1_notice.png",
+      "sha256": "b3308551420660f9f6fda310e862e4b4c121d2ec610017d4e12b1203b49d3f69",
+      "expected": "b3308551420660f9f6fda310e862e4b4c121d2ec610017d4e12b1203b49d3f69",
+      "bytes": 20413
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_4_event.png",
+      "sha256": "42388fb1dcc68f3e061a1ecbb17700bfae9f84a3fc5348d1abf37ded6163359c",
+      "expected": "42388fb1dcc68f3e061a1ecbb17700bfae9f84a3fc5348d1abf37ded6163359c",
+      "bytes": 22470
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_5_attendance.png",
+      "sha256": "868a06751d78627cd089dea9a8032ed06e3c380969228f6320a8d329349f4adf",
+      "expected": "868a06751d78627cd089dea9a8032ed06e3c380969228f6320a8d329349f4adf",
+      "bytes": 24431
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_6_support.png",
+      "sha256": "334b952473f0cdba0a6edafbe7a6da318c549cb20d9ace4925007215a47dbde5",
+      "expected": "334b952473f0cdba0a6edafbe7a6da318c549cb20d9ace4925007215a47dbde5",
+      "bytes": 20994
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_7_rules.png",
+      "sha256": "d26bde41bfd64d718abc522566ef2d0d34293bd17204df5cc3b091a97bef24bd",
+      "expected": "d26bde41bfd64d718abc522566ef2d0d34293bd17204df5cc3b091a97bef24bd",
+      "bytes": 21337
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_8_deposit.png",
+      "sha256": "88fcbdca236fe47e960417088fec89a036e592f36a992bf0676ecef594591843",
+      "expected": "88fcbdca236fe47e960417088fec89a036e592f36a992bf0676ecef594591843",
+      "bytes": 16541
+    },
+    {
+      "path": "public/icons/sirius-20261001/imgi_9_withdraw.png",
+      "sha256": "56f402533c35e46c687338134cce4cb2ad180e9fd451f89b3b7052bc72e33e4b",
+      "expected": "56f402533c35e46c687338134cce4cb2ad180e9fd451f89b3b7052bc72e33e4b",
+      "bytes": 15895
+    },
+    {
+      "path": "public/sports/athletics.png",
+      "sha256": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "expected": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "bytes": 20053
+    },
+    {
+      "path": "public/sports/baseball.png",
+      "sha256": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "expected": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "bytes": 8659
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0000_Layer-18.png",
+      "sha256": "746520d0bbea1ced532b543078dda50bad4c4b9bad18497193dd41d816ec5769",
+      "expected": "746520d0bbea1ced532b543078dda50bad4c4b9bad18497193dd41d816ec5769",
+      "bytes": 58394
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0002_Layer-15.png",
+      "sha256": "24c8f2f89b8343581ccf723d29a1ac896be203d98c862b94c5e6edc98873aeb7",
+      "expected": "24c8f2f89b8343581ccf723d29a1ac896be203d98c862b94c5e6edc98873aeb7",
+      "bytes": 65982
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0003_Layer-14.png",
+      "sha256": "eb504cd41e304a078c1d0147a33b753530b873ae0c4cb64f2eee5208b3081d56",
+      "expected": "eb504cd41e304a078c1d0147a33b753530b873ae0c4cb64f2eee5208b3081d56",
+      "bytes": 45663
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0005_Layer-12.png",
+      "sha256": "7c95240190b5bb0d553d226a3d6e33337fd9ee00fe3bc9919ccc130c3189e037",
+      "expected": "7c95240190b5bb0d553d226a3d6e33337fd9ee00fe3bc9919ccc130c3189e037",
+      "bytes": 57547
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0006_Layer-11.png",
+      "sha256": "1a319f58e7b9f4bd1f6f20b82cc891bca402310eae7cb84ef6307e10f720b715",
+      "expected": "1a319f58e7b9f4bd1f6f20b82cc891bca402310eae7cb84ef6307e10f720b715",
+      "bytes": 65245
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-10.png",
+      "sha256": "584fdff7ae50f790f4ce33ca9b38539a7ba94a95d5a1b63c8669cc96ed5b2bc1",
+      "expected": "584fdff7ae50f790f4ce33ca9b38539a7ba94a95d5a1b63c8669cc96ed5b2bc1",
+      "bytes": 65635
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-6.png",
+      "sha256": "63d0ad289356994d84ae6e76ffc81258d3dcce7b2f8b0c71f1b3995514eaaf53",
+      "expected": "63d0ad289356994d84ae6e76ffc81258d3dcce7b2f8b0c71f1b3995514eaaf53",
+      "bytes": 99513
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-7.png",
+      "sha256": "82f02984fbed359e647c155eae19e809fec2517db12a3312b926fc7cce41399c",
+      "expected": "82f02984fbed359e647c155eae19e809fec2517db12a3312b926fc7cce41399c",
+      "bytes": 68585
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-8.png",
+      "sha256": "2d7019ba64b16c478fa15776c33e58b295897e526d39f858947366c6e3831aac",
+      "expected": "2d7019ba64b16c478fa15776c33e58b295897e526d39f858947366c6e3831aac",
+      "bytes": 70022
+    },
+    {
+      "path": "public/sports/mercury-gold-20260930/image_Sports_Sirius_0007_Layer-9.png",
+      "sha256": "0ebd89829eccc71d93cf3a232f678f4cd7ba22a7808df25d8596cba32deedfd5",
+      "expected": "0ebd89829eccc71d93cf3a232f678f4cd7ba22a7808df25d8596cba32deedfd5",
+      "bytes": 48086
+    },
+    {
+      "path": "public/sports/mlb.png",
+      "sha256": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "expected": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "bytes": 9002
+    },
+    {
+      "path": "public/sports/polish/mercury-sport-all.png",
+      "sha256": "468c9ca7b4affca65d5fbebe2715b6c0c180474f6be07e0b81eae4a54bcc3312",
+      "expected": "468c9ca7b4affca65d5fbebe2715b6c0c180474f6be07e0b81eae4a54bcc3312",
+      "bytes": 92244
+    },
+    {
+      "path": "public/sports/polish/mercury-sport-boxing.png",
+      "sha256": "e25a046dcbe81ed660dff0a118ed7c14e55bb2760ddb8664be070d799716ba2e",
+      "expected": "e25a046dcbe81ed660dff0a118ed7c14e55bb2760ddb8664be070d799716ba2e",
+      "bytes": 110423
+    },
+    {
+      "path": "public/sports/polish/mercury-sport-formula1.png",
+      "sha256": "c8dde58bd8fe01d9a2113153c4429df375bad9b37982023b81d27f174d770690",
+      "expected": "c8dde58bd8fe01d9a2113153c4429df375bad9b37982023b81d27f174d770690",
+      "bytes": 69920
+    },
+    {
+      "path": "public/sports/polish/mercury-sport-mma.png",
+      "sha256": "f8f0f2d61a1b414105b4621ff3b564eff2f33eb1cc22d78d05ee4a7fc87fc37b",
+      "expected": "f8f0f2d61a1b414105b4621ff3b564eff2f33eb1cc22d78d05ee4a7fc87fc37b",
+      "bytes": 96846
+    },
+    {
+      "path": "public/sports/polish/mercury-sport-motorsport.png",
+      "sha256": "ff7834b10114c43e431b2615a740f2aca41e4b4475a71fda050576e3ae3a9d68",
+      "expected": "ff7834b10114c43e431b2615a740f2aca41e4b4475a71fda050576e3ae3a9d68",
+      "bytes": 132308
+    },
+    {
+      "path": "public/sports/r6/leagues/baseball/mlb.png",
+      "sha256": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "expected": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "bytes": 9002
+    },
+    {
+      "path": "public/sports/r6/leagues/basketball/nba.png",
+      "sha256": "412adb58760a561bdbdacb943e0d17375f07fa3c2a1fe44d2d85eec9a8a84e8b",
+      "expected": "412adb58760a561bdbdacb943e0d17375f07fa3c2a1fe44d2d85eec9a8a84e8b",
+      "bytes": 13508
+    },
+    {
+      "path": "public/sports/r6/leagues/basketball/wnba.png",
+      "sha256": "15326c3a77455a8fc70875c4a327efc27be9f5266294143e0f34ef20b9ae610f",
+      "expected": "15326c3a77455a8fc70875c4a327efc27be9f5266294143e0f34ef20b9ae610f",
+      "bytes": 7148
+    },
+    {
+      "path": "public/sports/r6/leagues/football/nfl.png",
+      "sha256": "20adf0e2ed49e52b5df97b729344a9693b774283032ef41e8a30f04bfde8df08",
+      "expected": "20adf0e2ed49e52b5df97b729344a9693b774283032ef41e8a30f04bfde8df08",
+      "bytes": 20849
+    },
+    {
+      "path": "public/sports/r6/leagues/hockey/nhl.png",
+      "sha256": "19141499aa18e659513e2f9b530e6e1ee4e25c450ae8a239a4cf59bf8dd1be0b",
+      "expected": "19141499aa18e659513e2f9b530e6e1ee4e25c450ae8a239a4cf59bf8dd1be0b",
+      "bytes": 42707
+    },
+    {
+      "path": "public/sports/r6/leagues/soccer/bundesliga.png",
+      "sha256": "5ca590146e696aaad289ae1b0630a73e62ef3b0584cbff2abce70464ace72cbe",
+      "expected": "5ca590146e696aaad289ae1b0630a73e62ef3b0584cbff2abce70464ace72cbe",
+      "bytes": 13637
+    },
+    {
+      "path": "public/sports/r6/leagues/soccer/ligue-1.png",
+      "sha256": "da6b342a3ad8783792d3a0907c70fe878dd7b89cc70aa5ff785ee535c17b1087",
+      "expected": "da6b342a3ad8783792d3a0907c70fe878dd7b89cc70aa5ff785ee535c17b1087",
+      "bytes": 24485
+    },
+    {
+      "path": "public/sports/r6/leagues/soccer/mls.png",
+      "sha256": "2d109420fb31c72a450dd05c10ef47b16385874b1965d23ecd417a92b2919b5f",
+      "expected": "2d109420fb31c72a450dd05c10ef47b16385874b1965d23ecd417a92b2919b5f",
+      "bytes": 29636
+    },
+    {
+      "path": "public/sports/r6/leagues/soccer/premier-league.png",
+      "sha256": "78daef634201dc0be0018900f43072a1fa837fa6d38bf09d6f4a15bf3e8c9ba5",
+      "expected": "78daef634201dc0be0018900f43072a1fa837fa6d38bf09d6f4a15bf3e8c9ba5",
+      "bytes": 16410
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/american-football.png",
+      "sha256": "b44e2112679fb5c3c02e2b102e29caf1bf1fba89386e07249dbc04c058bf015f",
+      "expected": "b44e2112679fb5c3c02e2b102e29caf1bf1fba89386e07249dbc04c058bf015f",
+      "bytes": 5976
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/baseball.png",
+      "sha256": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "expected": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "bytes": 8659
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/basketball.png",
+      "sha256": "07594a948056b184d07066b1f07e67ca50eed02f82cf47ddf0b6a4739e02e39f",
+      "expected": "07594a948056b184d07066b1f07e67ca50eed02f82cf47ddf0b6a4739e02e39f",
+      "bytes": 10094
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/esports.png",
+      "sha256": "7e4793b241b1739628de151e79b3367ed3a351b02f8eafd01f196afba360ca18",
+      "expected": "7e4793b241b1739628de151e79b3367ed3a351b02f8eafd01f196afba360ca18",
+      "bytes": 4292
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/ice-hockey.png",
+      "sha256": "c393e05182eaa0e3bb84fa79d6c5aae722ccfaa6b08f7d2750671752ed1f61be",
+      "expected": "c393e05182eaa0e3bb84fa79d6c5aae722ccfaa6b08f7d2750671752ed1f61be",
+      "bytes": 5916
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/soccer.png",
+      "sha256": "553a55163515e044992112906e0f86c4ce3c577347257f364847f1163dfb0a23",
+      "expected": "553a55163515e044992112906e0f86c4ce3c577347257f364847f1163dfb0a23",
+      "bytes": 9925
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/tennis.png",
+      "sha256": "9b94f36d15179af0c09cc2d9619c908cd568996461c1677ee3b7fb2b7e6b0b81",
+      "expected": "9b94f36d15179af0c09cc2d9619c908cd568996461c1677ee3b7fb2b7e6b0b81",
+      "bytes": 7879
+    },
+    {
+      "path": "public/sports/r6/sports/mdi/volleyball.png",
+      "sha256": "9b757d69554e706d75d37599f83053071186318c6b739309ead30f7dfdb81544",
+      "expected": "9b757d69554e706d75d37599f83053071186318c6b739309ead30f7dfdb81544",
+      "bytes": 8658
+    },
+    {
+      "path": "public/sports/r6/teams/bundesliga/1-fc-union-berlin.png",
+      "sha256": "1cf0d9a9a89648e264b9ae3681b601ec0aa79e4cdd4bbdb939c3067fff4a0562",
+      "expected": "1cf0d9a9a89648e264b9ae3681b601ec0aa79e4cdd4bbdb939c3067fff4a0562",
+      "bytes": 20881
+    },
+    {
+      "path": "public/sports/r6/teams/bundesliga/bayern-munich.png",
+      "sha256": "b4f885b9888f83da9d512a8a99ffd73357504a8f2bb135157c95b99d13efe136",
+      "expected": "b4f885b9888f83da9d512a8a99ffd73357504a8f2bb135157c95b99d13efe136",
+      "bytes": 47223
+    },
+    {
+      "path": "public/sports/r6/teams/ligue-1/as-monaco.png",
+      "sha256": "0d36cd1ab643714f6b169791d557f859835edaeea37566fcc7e38f18b4adf300",
+      "expected": "0d36cd1ab643714f6b169791d557f859835edaeea37566fcc7e38f18b4adf300",
+      "bytes": 24229
+    },
+    {
+      "path": "public/sports/r6/teams/ligue-1/lens.png",
+      "sha256": "f5f6584fda3f7b6d0a58e4c65afccaceba0d3dc8dd4d8729aafbe4eaebf1b1ac",
+      "expected": "f5f6584fda3f7b6d0a58e4c65afccaceba0d3dc8dd4d8729aafbe4eaebf1b1ac",
+      "bytes": 27276
+    },
+    {
+      "path": "public/sports/r6/teams/mlb/athletics.png",
+      "sha256": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "expected": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "bytes": 20053
+    },
+    {
+      "path": "public/sports/r6/teams/mlb/tampa-bay-rays.png",
+      "sha256": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "expected": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "bytes": 16834
+    },
+    {
+      "path": "public/sports/r6/teams/mls/new-york-city-fc.png",
+      "sha256": "d559411e9767b81e7ee0d1bc80bcc63b97809469dd52dad257832d884a8988b9",
+      "expected": "d559411e9767b81e7ee0d1bc80bcc63b97809469dd52dad257832d884a8988b9",
+      "bytes": 58112
+    },
+    {
+      "path": "public/sports/r6/teams/mls/red-bull-new-york.png",
+      "sha256": "2a22e44a833c0f3376baa15f873e293f2fda043ce21bc3e1adbea7a300dc84db",
+      "expected": "2a22e44a833c0f3376baa15f873e293f2fda043ce21bc3e1adbea7a300dc84db",
+      "bytes": 35205
+    },
+    {
+      "path": "public/sports/r6/teams/nba/miami-heat.png",
+      "sha256": "288772560ecfdc953f464ea44e8ef28ce4dda5aa572f58275b70b76e79fabca8",
+      "expected": "288772560ecfdc953f464ea44e8ef28ce4dda5aa572f58275b70b76e79fabca8",
+      "bytes": 25353
+    },
+    {
+      "path": "public/sports/r6/teams/nba/toronto-raptors.png",
+      "sha256": "365c6e0cbf4aa7109735fa50995a2ab7315d5fed0b2959041381c6ab6c999627",
+      "expected": "365c6e0cbf4aa7109735fa50995a2ab7315d5fed0b2959041381c6ab6c999627",
+      "bytes": 20864
+    },
+    {
+      "path": "public/sports/r6/teams/nfl/buffalo-bills.png",
+      "sha256": "8abd249746ea8ecd486090c6567ef30d1d50a5532c0edf26db9984df026e167b",
+      "expected": "8abd249746ea8ecd486090c6567ef30d1d50a5532c0edf26db9984df026e167b",
+      "bytes": 20288
+    },
+    {
+      "path": "public/sports/r6/teams/nfl/detroit-lions.png",
+      "sha256": "23e0ed4bb30595a9431d13e37f974a1696e311b5a48b4cac893775b04848d3f7",
+      "expected": "23e0ed4bb30595a9431d13e37f974a1696e311b5a48b4cac893775b04848d3f7",
+      "bytes": 26058
+    },
+    {
+      "path": "public/sports/r6/teams/nhl/montreal-canadiens.png",
+      "sha256": "4c2ef208262a9cba589b168bfb621557b1eb492a27697da7b49884fc3303ff86",
+      "expected": "4c2ef208262a9cba589b168bfb621557b1eb492a27697da7b49884fc3303ff86",
+      "bytes": 31301
+    },
+    {
+      "path": "public/sports/r6/teams/nhl/toronto-maple-leafs.png",
+      "sha256": "d5f84559cd3746de9c65d88f4dd63834cc587f28779ed4be4e81bf151976a0c6",
+      "expected": "d5f84559cd3746de9c65d88f4dd63834cc587f28779ed4be4e81bf151976a0c6",
+      "bytes": 29883
+    },
+    {
+      "path": "public/sports/r6/teams/premier-league/brentford.png",
+      "sha256": "cb7504eb7dc38b3f295205bc78fc643f37527f4fec3e6d03251b3a70fa60a42a",
+      "expected": "cb7504eb7dc38b3f295205bc78fc643f37527f4fec3e6d03251b3a70fa60a42a",
+      "bytes": 49424
+    },
+    {
+      "path": "public/sports/r6/teams/premier-league/chelsea.png",
+      "sha256": "9bdd9669a777c1ed63564501cba4d49a5e19397e1b9ea3b15cdbbf0fcfabaf47",
+      "expected": "9bdd9669a777c1ed63564501cba4d49a5e19397e1b9ea3b15cdbbf0fcfabaf47",
+      "bytes": 55084
+    },
+    {
+      "path": "public/sports/r6/teams/wnba/atlanta-dream.png",
+      "sha256": "cf1c6ec5d0d5c7b8827fa5a2140e789a23bc3db28d2fd841d19f6a8cd278cf94",
+      "expected": "cf1c6ec5d0d5c7b8827fa5a2140e789a23bc3db28d2fd841d19f6a8cd278cf94",
+      "bytes": 31161
+    },
+    {
+      "path": "public/sports/r6/teams/wnba/connecticut-sun.png",
+      "sha256": "8dc28f8c41458345193092085d6ea98ca41953f2108a138fb4cb5ca1346a195a",
+      "expected": "8dc28f8c41458345193092085d6ea98ca41953f2108a138fb4cb5ca1346a195a",
+      "bytes": 28779
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/borussia-dortmund.png",
+      "sha256": "dacbf9fe93e49621086063c979082a0e63f565536314fa9ab18ba571890a88a7",
+      "expected": "dacbf9fe93e49621086063c979082a0e63f565536314fa9ab18ba571890a88a7",
+      "bytes": 23775
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/borussia-monchengladbach.png",
+      "sha256": "dea773ef6e5a1e3699e963d839fe02d85968d04fd857add093fd954cd2171c0b",
+      "expected": "dea773ef6e5a1e3699e963d839fe02d85968d04fd857add093fd954cd2171c0b",
+      "bytes": 17654
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/eintracht-frankfurt.png",
+      "sha256": "6de3806efdd0b4cbc47dd369d42d48502370637bc971b52510163720161812a9",
+      "expected": "6de3806efdd0b4cbc47dd369d42d48502370637bc971b52510163720161812a9",
+      "bytes": 36684
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/fc-augsburg.png",
+      "sha256": "3a6c24275085c25b492047e31f97e5aa303d0719766116217c00fe71a1f519a9",
+      "expected": "3a6c24275085c25b492047e31f97e5aa303d0719766116217c00fe71a1f519a9",
+      "bytes": 26027
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/fc-cologne.png",
+      "sha256": "020bbfdac24228d83f0d5e8cef64e7c28f1368be123d95843758a587f4125f8f",
+      "expected": "020bbfdac24228d83f0d5e8cef64e7c28f1368be123d95843758a587f4125f8f",
+      "bytes": 36432
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/hamburg-sv.png",
+      "sha256": "af5a8982e4110b0ffec3bc6a1e5eb0da61f7325b2ce9df39acea9c1e4bcc35c8",
+      "expected": "af5a8982e4110b0ffec3bc6a1e5eb0da61f7325b2ce9df39acea9c1e4bcc35c8",
+      "bytes": 5761
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/mainz.png",
+      "sha256": "5e52797844b80a3dcc161dc7354445cd5af6cf2a45e7cca34dbb1be9492aa84e",
+      "expected": "5e52797844b80a3dcc161dc7354445cd5af6cf2a45e7cca34dbb1be9492aa84e",
+      "bytes": 34149
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/sc-freiburg.png",
+      "sha256": "59d95ef80993e0d3a143008467098229517e64866672f8c0696d9095b9625b80",
+      "expected": "59d95ef80993e0d3a143008467098229517e64866672f8c0696d9095b9625b80",
+      "bytes": 25567
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/vfb-stuttgart.png",
+      "sha256": "d575e293c6b92314498900a680efcc96eea03e65c6e7b3182c2beaa3c384fefa",
+      "expected": "d575e293c6b92314498900a680efcc96eea03e65c6e7b3182c2beaa3c384fefa",
+      "bytes": 34787
+    },
+    {
+      "path": "public/sports/r7/teams/bundesliga/werder-bremen.png",
+      "sha256": "959dcd51c2fb6f0bf37aa35bf3d115f26044c1b4956c050387975ec23e9f3d10",
+      "expected": "959dcd51c2fb6f0bf37aa35bf3d115f26044c1b4956c050387975ec23e9f3d10",
+      "bytes": 19989
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/angers.png",
+      "sha256": "1f748864e054857778f5f3b8eead5469f8a64e0694469090a4ca7031948610e7",
+      "expected": "1f748864e054857778f5f3b8eead5469f8a64e0694469090a4ca7031948610e7",
+      "bytes": 21708
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/le-havre-ac.png",
+      "sha256": "9d29c6118f502ea1e85208eae4fd636afc0c37f27d9331c49cc7a7c0ad89fcd6",
+      "expected": "9d29c6118f502ea1e85208eae4fd636afc0c37f27d9331c49cc7a7c0ad89fcd6",
+      "bytes": 31466
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/le-mans.png",
+      "sha256": "300417529016f36af2730d537d7f3bf699b8d5f883e543b8ae0b148b9ba67901",
+      "expected": "300417529016f36af2730d537d7f3bf699b8d5f883e543b8ae0b148b9ba67901",
+      "bytes": 50984
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/lorient.png",
+      "sha256": "7e757cb3d07be88bc0c651222a0aa72b1dff8c828a3ca807ad4dec8d1dc3878c",
+      "expected": "7e757cb3d07be88bc0c651222a0aa72b1dff8c828a3ca807ad4dec8d1dc3878c",
+      "bytes": 27375
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/lyon.png",
+      "sha256": "bd4193f366d4526a9534f7f152df96eb2ece135f2e160fe9f29b2e0523f2e97d",
+      "expected": "bd4193f366d4526a9534f7f152df96eb2ece135f2e160fe9f29b2e0523f2e97d",
+      "bytes": 27118
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/paris-fc.png",
+      "sha256": "fa143a18091852d581f3e1607e57200bebb02dbedd28dae93986527d8096dcfd",
+      "expected": "fa143a18091852d581f3e1607e57200bebb02dbedd28dae93986527d8096dcfd",
+      "bytes": 41295
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/stade-rennais.png",
+      "sha256": "5ac73dcc6eac40d6a2a9e486cd8cc3d93795c377be5ee8b6c124eefd7f7461d0",
+      "expected": "5ac73dcc6eac40d6a2a9e486cd8cc3d93795c377be5ee8b6c124eefd7f7461d0",
+      "bytes": 29203
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/strasbourg.png",
+      "sha256": "40f341f52a3b7e7625c1661214f34f8a92054e196eff8fa82ec1b968b98d8e31",
+      "expected": "40f341f52a3b7e7625c1661214f34f8a92054e196eff8fa82ec1b968b98d8e31",
+      "bytes": 49557
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/toulouse.png",
+      "sha256": "c373f8aa331876ec440527b1453da1da5f7f05a350edd0beac7e0a27c317a70b",
+      "expected": "c373f8aa331876ec440527b1453da1da5f7f05a350edd0beac7e0a27c317a70b",
+      "bytes": 53186
+    },
+    {
+      "path": "public/sports/r7/teams/ligue-1/troyes.png",
+      "sha256": "1505b49d21c05bb6b5755c3554fb8753bc68b76baf635de79a85d5a119352bda",
+      "expected": "1505b49d21c05bb6b5755c3554fb8753bc68b76baf635de79a85d5a119352bda",
+      "bytes": 33890
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/arizona-diamondbacks.png",
+      "sha256": "36635708a263bdd5cbae71f12ffc5ebeb69250ec39e593e118aec6ddb68ecb4a",
+      "expected": "36635708a263bdd5cbae71f12ffc5ebeb69250ec39e593e118aec6ddb68ecb4a",
+      "bytes": 26650
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/atlanta-braves.png",
+      "sha256": "65b87c649c5107971aafe5d775cc0d25c56a46b96206551a1132b2c0988c5ef9",
+      "expected": "65b87c649c5107971aafe5d775cc0d25c56a46b96206551a1132b2c0988c5ef9",
+      "bytes": 20642
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/baltimore-orioles.png",
+      "sha256": "156d52708ba111af6f88e352ca9e0cfc031dfcce762cc4a0b18003a448eea10d",
+      "expected": "156d52708ba111af6f88e352ca9e0cfc031dfcce762cc4a0b18003a448eea10d",
+      "bytes": 23987
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/boston-red-sox.png",
+      "sha256": "0598bfeee2fb07bf9a088c8d4f5f90de740ad20db20435a6254d17f962fb6aab",
+      "expected": "0598bfeee2fb07bf9a088c8d4f5f90de740ad20db20435a6254d17f962fb6aab",
+      "bytes": 20122
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/chicago-cubs.png",
+      "sha256": "2ac3004afa10d2b45c67952eb4635e39bc476a1dd85e4164b48600e5f57df384",
+      "expected": "2ac3004afa10d2b45c67952eb4635e39bc476a1dd85e4164b48600e5f57df384",
+      "bytes": 27147
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/chicago-white-sox.png",
+      "sha256": "8c3ed226465af2c11734dcc50c427cedd8f9efdaf9afab7d96cb00813caa46e7",
+      "expected": "8c3ed226465af2c11734dcc50c427cedd8f9efdaf9afab7d96cb00813caa46e7",
+      "bytes": 27086
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/cincinnati-reds.png",
+      "sha256": "327b51bb4d1a1724b0b0d7265b0bfeda0f8ad98fe0e297fecc60df88ea884f55",
+      "expected": "327b51bb4d1a1724b0b0d7265b0bfeda0f8ad98fe0e297fecc60df88ea884f55",
+      "bytes": 11132
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/cleveland-guardians.png",
+      "sha256": "2f42e7cbe46c28f397bd659d7dd6f462872471ad485c20ee93c92af2d21830e9",
+      "expected": "2f42e7cbe46c28f397bd659d7dd6f462872471ad485c20ee93c92af2d21830e9",
+      "bytes": 16610
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/colorado-rockies.png",
+      "sha256": "4d39973c4ed60ed71a4ffc59df36478ab81aeefe823202e32356f02f1ecbc549",
+      "expected": "4d39973c4ed60ed71a4ffc59df36478ab81aeefe823202e32356f02f1ecbc549",
+      "bytes": 15373
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/detroit-tigers.png",
+      "sha256": "360b6642b83928641e02b9199621b769072ee26f4725e1f8f7f71537be9f7134",
+      "expected": "360b6642b83928641e02b9199621b769072ee26f4725e1f8f7f71537be9f7134",
+      "bytes": 19249
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/houston-astros.png",
+      "sha256": "49a0dd2f424078d029de6b26130387182f84a24604eb3be2bc95740cec7e3d6f",
+      "expected": "49a0dd2f424078d029de6b26130387182f84a24604eb3be2bc95740cec7e3d6f",
+      "bytes": 32607
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/kansas-city-royals.png",
+      "sha256": "7105c7f87f9a68eec992a1018697ba01317285e32f29b312b84f1e4f2a53c470",
+      "expected": "7105c7f87f9a68eec992a1018697ba01317285e32f29b312b84f1e4f2a53c470",
+      "bytes": 12195
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/los-angeles-angels.png",
+      "sha256": "9dfb154b9d58cc7b02ec54572bd997537fbae72ad84fdc2a193cb455485bed38",
+      "expected": "9dfb154b9d58cc7b02ec54572bd997537fbae72ad84fdc2a193cb455485bed38",
+      "bytes": 25366
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/los-angeles-dodgers.png",
+      "sha256": "440e0178f09055a6173e0fae1945414b684385748d0014cf8c16c91c46b86b72",
+      "expected": "440e0178f09055a6173e0fae1945414b684385748d0014cf8c16c91c46b86b72",
+      "bytes": 7007
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/miami-marlins.png",
+      "sha256": "b714cd75d317d6d4546b7de5be283937415bf59bb2cca7c080a6e23c33f44509",
+      "expected": "b714cd75d317d6d4546b7de5be283937415bf59bb2cca7c080a6e23c33f44509",
+      "bytes": 36484
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/milwaukee-brewers.png",
+      "sha256": "af91a9db1c999159c8fc8509a14b434758cc832eb149ebd21d05df712c833518",
+      "expected": "af91a9db1c999159c8fc8509a14b434758cc832eb149ebd21d05df712c833518",
+      "bytes": 25146
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/minnesota-twins.png",
+      "sha256": "79da06dff12470b9b6fb07a1aaac629c0c52bee78a142e1ff2417910baf507e4",
+      "expected": "79da06dff12470b9b6fb07a1aaac629c0c52bee78a142e1ff2417910baf507e4",
+      "bytes": 12490
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/new-york-mets.png",
+      "sha256": "9bce146b96e48ed77a6685fac67a7e859e6e8b46f4bec025cad104fb0002b443",
+      "expected": "9bce146b96e48ed77a6685fac67a7e859e6e8b46f4bec025cad104fb0002b443",
+      "bytes": 23961
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/new-york-yankees.png",
+      "sha256": "f0fb6640bcd23b24500bd532005e533d4ac63300ea2a74252268bcbc13337387",
+      "expected": "f0fb6640bcd23b24500bd532005e533d4ac63300ea2a74252268bcbc13337387",
+      "bytes": 13457
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/philadelphia-phillies.png",
+      "sha256": "9fd1719cb3678e2f683f61cc7658352f48ec05211f6af1216549b1064a13666f",
+      "expected": "9fd1719cb3678e2f683f61cc7658352f48ec05211f6af1216549b1064a13666f",
+      "bytes": 6830
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/pittsburgh-pirates.png",
+      "sha256": "97231e24efa8c06f296fe1d319abb730b5cd3ba241a3598b1c3df1cff3850259",
+      "expected": "97231e24efa8c06f296fe1d319abb730b5cd3ba241a3598b1c3df1cff3850259",
+      "bytes": 5821
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/san-diego-padres.png",
+      "sha256": "8ce9c768ccc79fde8e185d709e362c28d339b877dc6727681d5c99321e634879",
+      "expected": "8ce9c768ccc79fde8e185d709e362c28d339b877dc6727681d5c99321e634879",
+      "bytes": 8548
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/san-francisco-giants.png",
+      "sha256": "48d3ae11d8668b0ac6bc045db69251307da4f4dcc7de4d9a7a6bb5cb6fc94ee6",
+      "expected": "48d3ae11d8668b0ac6bc045db69251307da4f4dcc7de4d9a7a6bb5cb6fc94ee6",
+      "bytes": 9865
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/seattle-mariners.png",
+      "sha256": "c5895f877eded062efd9a8c95cdd6c4839545e88139337224d45d6cde694aaff",
+      "expected": "c5895f877eded062efd9a8c95cdd6c4839545e88139337224d45d6cde694aaff",
+      "bytes": 34176
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/st-louis-cardinals.png",
+      "sha256": "6f0a66a06fad839113ce4210bf098a35856d4b72c8501fee139c7dcbdbbd4383",
+      "expected": "6f0a66a06fad839113ce4210bf098a35856d4b72c8501fee139c7dcbdbbd4383",
+      "bytes": 11890
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/texas-rangers.png",
+      "sha256": "78a52e4e5d7f451c33d0dd707c487b591dc92c34ef38700fc64c8f3b1c197acd",
+      "expected": "78a52e4e5d7f451c33d0dd707c487b591dc92c34ef38700fc64c8f3b1c197acd",
+      "bytes": 9367
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/toronto-blue-jays.png",
+      "sha256": "88b5103c5040f568ab731fb6fd15ed7064c7f1956761c1588e57e2a71510d6eb",
+      "expected": "88b5103c5040f568ab731fb6fd15ed7064c7f1956761c1588e57e2a71510d6eb",
+      "bytes": 21184
+    },
+    {
+      "path": "public/sports/r7/teams/mlb/washington-nationals.png",
+      "sha256": "f55b16330b5d3696c83c60a7248ffbbd95acd04806c5cd98389ad3d8867f1060",
+      "expected": "f55b16330b5d3696c83c60a7248ffbbd95acd04806c5cd98389ad3d8867f1060",
+      "bytes": 30310
+    },
+    {
+      "path": "public/sports/r7/teams/mls/atlanta-united-fc.png",
+      "sha256": "c5e4a39bb7cdfc651b26c5099e6f582d772edf0f61834301b5b7040e15b4ef6f",
+      "expected": "c5e4a39bb7cdfc651b26c5099e6f582d772edf0f61834301b5b7040e15b4ef6f",
+      "bytes": 41456
+    },
+    {
+      "path": "public/sports/r7/teams/mls/austin-fc.png",
+      "sha256": "25967e16d3264c14686fde07f8cba94b52f30b6f7ce99a5c4d526fdef5951955",
+      "expected": "25967e16d3264c14686fde07f8cba94b52f30b6f7ce99a5c4d526fdef5951955",
+      "bytes": 22172
+    },
+    {
+      "path": "public/sports/r7/teams/mls/cf-montreal.png",
+      "sha256": "d858623c42f51e12384aa03925976a65b7d18d9ef04db24da29523479f7479ae",
+      "expected": "d858623c42f51e12384aa03925976a65b7d18d9ef04db24da29523479f7479ae",
+      "bytes": 41663
+    },
+    {
+      "path": "public/sports/r7/teams/mls/charlotte-fc.png",
+      "sha256": "ef78a886116e0dc479c2b4154c13633575dd3cd0e529425f1759e854e51bb3ad",
+      "expected": "ef78a886116e0dc479c2b4154c13633575dd3cd0e529425f1759e854e51bb3ad",
+      "bytes": 33529
+    },
+    {
+      "path": "public/sports/r7/teams/mls/chicago-fire-fc.png",
+      "sha256": "46c771a6834f9cc61ff0ba9cdd57f19b62051fa75a06a2a0be106be4731dc206",
+      "expected": "46c771a6834f9cc61ff0ba9cdd57f19b62051fa75a06a2a0be106be4731dc206",
+      "bytes": 25796
+    },
+    {
+      "path": "public/sports/r7/teams/mls/colorado-rapids.png",
+      "sha256": "c9673985b6515635f28544eb7500a68dd75d6cf017ba92341a6d9b483ae47348",
+      "expected": "c9673985b6515635f28544eb7500a68dd75d6cf017ba92341a6d9b483ae47348",
+      "bytes": 36271
+    },
+    {
+      "path": "public/sports/r7/teams/mls/columbus-crew.png",
+      "sha256": "ef97290a706f417a30053df26bd5034edad8d80b6909345bd594ca682d4c92f0",
+      "expected": "ef97290a706f417a30053df26bd5034edad8d80b6909345bd594ca682d4c92f0",
+      "bytes": 16214
+    },
+    {
+      "path": "public/sports/r7/teams/mls/d-c-united.png",
+      "sha256": "5f2420048f90062c4043d04ca7a7c54ccc01a306bf21cd61ef25213a3cb57696",
+      "expected": "5f2420048f90062c4043d04ca7a7c54ccc01a306bf21cd61ef25213a3cb57696",
+      "bytes": 24989
+    },
+    {
+      "path": "public/sports/r7/teams/mls/fc-cincinnati.png",
+      "sha256": "5179fe8258773f976469f481c1338638dc4325a0cdf9b401afd7ee47478ec8aa",
+      "expected": "5179fe8258773f976469f481c1338638dc4325a0cdf9b401afd7ee47478ec8aa",
+      "bytes": 35105
+    },
+    {
+      "path": "public/sports/r7/teams/mls/fc-dallas.png",
+      "sha256": "3234b993c7e987edb3bc03e55054a1631df636e7d0e78d5ab66ba55e1ed05ed7",
+      "expected": "3234b993c7e987edb3bc03e55054a1631df636e7d0e78d5ab66ba55e1ed05ed7",
+      "bytes": 36268
+    },
+    {
+      "path": "public/sports/r7/teams/mls/houston-dynamo-fc.png",
+      "sha256": "495f80023ba3af8981be36340dac8ec499524f16402f7999c4e1efdd6a5fd474",
+      "expected": "495f80023ba3af8981be36340dac8ec499524f16402f7999c4e1efdd6a5fd474",
+      "bytes": 23569
+    },
+    {
+      "path": "public/sports/r7/teams/mls/la-galaxy.png",
+      "sha256": "e73cf87ea8bd685b47df9e8ea47a2ef2c34903c5614c0186601b076e22bea752",
+      "expected": "e73cf87ea8bd685b47df9e8ea47a2ef2c34903c5614c0186601b076e22bea752",
+      "bytes": 30074
+    },
+    {
+      "path": "public/sports/r7/teams/mls/lafc.png",
+      "sha256": "49a6da62aa2dfbf99aa211b13883b09c4608e7bab48b051b5968cca241c78d81",
+      "expected": "49a6da62aa2dfbf99aa211b13883b09c4608e7bab48b051b5968cca241c78d81",
+      "bytes": 21589
+    },
+    {
+      "path": "public/sports/r7/teams/mls/minnesota-united-fc.png",
+      "sha256": "aaf1935cab50473c35e6fcf1a1f24a3cbfe424de2c54a1129f623f669ad871fb",
+      "expected": "aaf1935cab50473c35e6fcf1a1f24a3cbfe424de2c54a1129f623f669ad871fb",
+      "bytes": 25178
+    },
+    {
+      "path": "public/sports/r7/teams/mls/nashville-sc.png",
+      "sha256": "ac4c07fcb4121730ff4acbe824ec934cad19a14ca22707d6bc3845a2ad4968c3",
+      "expected": "ac4c07fcb4121730ff4acbe824ec934cad19a14ca22707d6bc3845a2ad4968c3",
+      "bytes": 16240
+    },
+    {
+      "path": "public/sports/r7/teams/mls/new-england-revolution.png",
+      "sha256": "d56c95ea9da954936fdb988ec0f49cbc00a66f70a80befd0c039d9486c487d85",
+      "expected": "d56c95ea9da954936fdb988ec0f49cbc00a66f70a80befd0c039d9486c487d85",
+      "bytes": 47966
+    },
+    {
+      "path": "public/sports/r7/teams/mls/orlando-city-sc.png",
+      "sha256": "25c7d09962f19b2cf473a5178aa7a7af2da34c58919fdd87262f47872280ac52",
+      "expected": "25c7d09962f19b2cf473a5178aa7a7af2da34c58919fdd87262f47872280ac52",
+      "bytes": 37411
+    },
+    {
+      "path": "public/sports/r7/teams/mls/philadelphia-union.png",
+      "sha256": "414db22a76708ca8e57300bdb776494c5114fa1610d1e9b4b7cbbc6f6b704dcd",
+      "expected": "414db22a76708ca8e57300bdb776494c5114fa1610d1e9b4b7cbbc6f6b704dcd",
+      "bytes": 46098
+    },
+    {
+      "path": "public/sports/r7/teams/mls/portland-timbers.png",
+      "sha256": "acb0a9e30a4918fc809faa3d7d4ee2c438d37f78f6d17609bfb82f8b31004127",
+      "expected": "acb0a9e30a4918fc809faa3d7d4ee2c438d37f78f6d17609bfb82f8b31004127",
+      "bytes": 30358
+    },
+    {
+      "path": "public/sports/r7/teams/mls/real-salt-lake.png",
+      "sha256": "53edbb63ccd181b0c07daf5da71ded0dcdb6d2e69dba674801f4ff7fcabc1f4e",
+      "expected": "53edbb63ccd181b0c07daf5da71ded0dcdb6d2e69dba674801f4ff7fcabc1f4e",
+      "bytes": 36946
+    },
+    {
+      "path": "public/sports/r7/teams/mls/san-jose-earthquakes.png",
+      "sha256": "f81375b4cd2fab3bc8fbb7b46a321a0b226d9a2ae102567d929eb57da9bde0ec",
+      "expected": "f81375b4cd2fab3bc8fbb7b46a321a0b226d9a2ae102567d929eb57da9bde0ec",
+      "bytes": 32914
+    },
+    {
+      "path": "public/sports/r7/teams/mls/seattle-sounders-fc.png",
+      "sha256": "934ce12f10dff3b5c8a5cd931329ef3ccb43f989f134682736255fd8e5880753",
+      "expected": "934ce12f10dff3b5c8a5cd931329ef3ccb43f989f134682736255fd8e5880753",
+      "bytes": 29461
+    },
+    {
+      "path": "public/sports/r7/teams/mls/sporting-kansas-city.png",
+      "sha256": "3eff1193d2e19f7360f43c1f369ddb139157aa180a4dbf955b970d1c3d637753",
+      "expected": "3eff1193d2e19f7360f43c1f369ddb139157aa180a4dbf955b970d1c3d637753",
+      "bytes": 38752
+    },
+    {
+      "path": "public/sports/r7/teams/mls/st-louis-city-sc.png",
+      "sha256": "9d54c97478c9398c9f01a7a844de6d4bac32fff6ea19e1c43f2e637c5c680a63",
+      "expected": "9d54c97478c9398c9f01a7a844de6d4bac32fff6ea19e1c43f2e637c5c680a63",
+      "bytes": 20613
+    },
+    {
+      "path": "public/sports/r7/teams/mls/toronto-fc.png",
+      "sha256": "82c1fd12111222f7fc3e561e87b4154391c68c95a9e935ab4dcbf6c5bea6770e",
+      "expected": "82c1fd12111222f7fc3e561e87b4154391c68c95a9e935ab4dcbf6c5bea6770e",
+      "bytes": 31904
+    },
+    {
+      "path": "public/sports/r7/teams/mls/vancouver-whitecaps.png",
+      "sha256": "fce54cb122036faa8d19529e14c2bea1cfef94764db8226f02ef20a691d11823",
+      "expected": "fce54cb122036faa8d19529e14c2bea1cfef94764db8226f02ef20a691d11823",
+      "bytes": 30555
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/arizona-cardinals.png",
+      "sha256": "23cec922440f985d64948415c6f1295d91870ec979565bbff12fb442f2563b61",
+      "expected": "23cec922440f985d64948415c6f1295d91870ec979565bbff12fb442f2563b61",
+      "bytes": 19190
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/atlanta-falcons.png",
+      "sha256": "97a495e68d8d178075aa63486afe773405fdf9d889941079216cdf0abe7200c2",
+      "expected": "97a495e68d8d178075aa63486afe773405fdf9d889941079216cdf0abe7200c2",
+      "bytes": 26423
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/baltimore-ravens.png",
+      "sha256": "153119fd96d3ee6915159fc25d3c91722d66e501edae90902cf6f1090d1df163",
+      "expected": "153119fd96d3ee6915159fc25d3c91722d66e501edae90902cf6f1090d1df163",
+      "bytes": 25365
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/carolina-panthers.png",
+      "sha256": "ee5d0ac68b0fd41d520136ee1a52c77229a1397542dad0cb1557f393cc7f81bd",
+      "expected": "ee5d0ac68b0fd41d520136ee1a52c77229a1397542dad0cb1557f393cc7f81bd",
+      "bytes": 16549
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/chicago-bears.png",
+      "sha256": "9601cf8e81b8227dba70763d19f8fd998040d7fe6753bcafd01a517dee13601a",
+      "expected": "9601cf8e81b8227dba70763d19f8fd998040d7fe6753bcafd01a517dee13601a",
+      "bytes": 41856
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/cincinnati-bengals.png",
+      "sha256": "2eea9ce35f2b51f35ebd2a152b788a021b7daeedec4b8f93c459a88e304fdaa7",
+      "expected": "2eea9ce35f2b51f35ebd2a152b788a021b7daeedec4b8f93c459a88e304fdaa7",
+      "bytes": 14193
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/cleveland-browns.png",
+      "sha256": "4b1e67939849a813799b8e73f2498823e3c47703bae5b9fc0a09b1ee1814e25a",
+      "expected": "4b1e67939849a813799b8e73f2498823e3c47703bae5b9fc0a09b1ee1814e25a",
+      "bytes": 37267
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/dallas-cowboys.png",
+      "sha256": "37d8a06e0a4bd620e63c321f9dfe6887acadb3bd3e8948b7b19cff68c21cb6d7",
+      "expected": "37d8a06e0a4bd620e63c321f9dfe6887acadb3bd3e8948b7b19cff68c21cb6d7",
+      "bytes": 16121
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/denver-broncos.png",
+      "sha256": "619d825e34a07495b45a0aee7ed1ff07b6059d477547086fc5608e3b68092cec",
+      "expected": "619d825e34a07495b45a0aee7ed1ff07b6059d477547086fc5608e3b68092cec",
+      "bytes": 21039
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/green-bay-packers.png",
+      "sha256": "c44ab02cc1fcf37c90566ed84314223e9138255abf0f1659b2ad9f2ed86e138c",
+      "expected": "c44ab02cc1fcf37c90566ed84314223e9138255abf0f1659b2ad9f2ed86e138c",
+      "bytes": 21270
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/houston-texans.png",
+      "sha256": "29ebf0152657978f02bd69f7279f1fe0a17874f4fba440fb223bcdceeb58d1d2",
+      "expected": "29ebf0152657978f02bd69f7279f1fe0a17874f4fba440fb223bcdceeb58d1d2",
+      "bytes": 18214
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/indianapolis-colts.png",
+      "sha256": "32dec771e3165c232359dab2b808d8c7ed3e1c69324dd2b9640dd57c7c208ba7",
+      "expected": "32dec771e3165c232359dab2b808d8c7ed3e1c69324dd2b9640dd57c7c208ba7",
+      "bytes": 20610
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/jacksonville-jaguars.png",
+      "sha256": "cf366102f8cfe34a5ba5478ff13503154ad6aa3b0bc905667fb1e93e1dfdaded",
+      "expected": "cf366102f8cfe34a5ba5478ff13503154ad6aa3b0bc905667fb1e93e1dfdaded",
+      "bytes": 34949
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/kansas-city-chiefs.png",
+      "sha256": "afaa45333f9ef6aa854723f9992b52d2e2a8676e55b22cf77d62f3da78f1c3d8",
+      "expected": "afaa45333f9ef6aa854723f9992b52d2e2a8676e55b22cf77d62f3da78f1c3d8",
+      "bytes": 19849
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/las-vegas-raiders.png",
+      "sha256": "1f97295efcd1f49ef6a7b324ca1be80f443952efda1182e6291f87edd71c4512",
+      "expected": "1f97295efcd1f49ef6a7b324ca1be80f443952efda1182e6291f87edd71c4512",
+      "bytes": 30830
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/los-angeles-chargers.png",
+      "sha256": "b58c90102f2df6f9bdfa55d400d62bb5c87bc06117939d804493563ce5ab53ea",
+      "expected": "b58c90102f2df6f9bdfa55d400d62bb5c87bc06117939d804493563ce5ab53ea",
+      "bytes": 15234
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/los-angeles-rams.png",
+      "sha256": "a24af31bfe9a3523775b27d6a6ed585de91232244c6d517c3fa55ec52fe0d815",
+      "expected": "a24af31bfe9a3523775b27d6a6ed585de91232244c6d517c3fa55ec52fe0d815",
+      "bytes": 12307
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/miami-dolphins.png",
+      "sha256": "4f424de42272fc94e7c820086c3794d1fc9157be6fec1d7ef7d0e1ea1513ed43",
+      "expected": "4f424de42272fc94e7c820086c3794d1fc9157be6fec1d7ef7d0e1ea1513ed43",
+      "bytes": 29568
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/minnesota-vikings.png",
+      "sha256": "10e60829edc1c1948f85d1b65e084abdeb80b004afa62d43add3e3d13ceea5c7",
+      "expected": "10e60829edc1c1948f85d1b65e084abdeb80b004afa62d43add3e3d13ceea5c7",
+      "bytes": 38393
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/new-england-patriots.png",
+      "sha256": "d9a6289a199980993fe003720e2b4edec13503dcdd81c623d7804f9de1cc8636",
+      "expected": "d9a6289a199980993fe003720e2b4edec13503dcdd81c623d7804f9de1cc8636",
+      "bytes": 15795
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/new-orleans-saints.png",
+      "sha256": "adbcd3f6cff8fde30d8fff4a52ad5bab31741fc78e790e71082099ace5740438",
+      "expected": "adbcd3f6cff8fde30d8fff4a52ad5bab31741fc78e790e71082099ace5740438",
+      "bytes": 22420
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/new-york-giants.png",
+      "sha256": "24c9de4c5358a0977d2a77f9bcf714f20ce069b2edf43d9a45669f7c157e4516",
+      "expected": "24c9de4c5358a0977d2a77f9bcf714f20ce069b2edf43d9a45669f7c157e4516",
+      "bytes": 5462
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/new-york-jets.png",
+      "sha256": "9259b1a7810e5ac5c8c84ef7769f0dc55117329be7fc1e0f757a7f7cd2ab542e",
+      "expected": "9259b1a7810e5ac5c8c84ef7769f0dc55117329be7fc1e0f757a7f7cd2ab542e",
+      "bytes": 5432
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/philadelphia-eagles.png",
+      "sha256": "b57ea86bcb1831e6dc2d3179ed0c0a8ba3cc54f054f7c8598a0f2ae327598f12",
+      "expected": "b57ea86bcb1831e6dc2d3179ed0c0a8ba3cc54f054f7c8598a0f2ae327598f12",
+      "bytes": 29288
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/pittsburgh-steelers.png",
+      "sha256": "7be2a0cebf36fcddd13a7ed0e07549aedb70d33cf7ba5057d7a7fe55c9f2c624",
+      "expected": "7be2a0cebf36fcddd13a7ed0e07549aedb70d33cf7ba5057d7a7fe55c9f2c624",
+      "bytes": 25607
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/san-francisco-49ers.png",
+      "sha256": "cd9a7e6a251e8e011c09828465acc6149adf7fadfacde51fc8f123e89773cb42",
+      "expected": "cd9a7e6a251e8e011c09828465acc6149adf7fadfacde51fc8f123e89773cb42",
+      "bytes": 23236
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/seattle-seahawks.png",
+      "sha256": "652f2c2bc5c2846c0bc093a7ebfd4a280fc2e6dde01989903bc27d1f3776fdac",
+      "expected": "652f2c2bc5c2846c0bc093a7ebfd4a280fc2e6dde01989903bc27d1f3776fdac",
+      "bytes": 15621
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/tampa-bay-buccaneers.png",
+      "sha256": "c1d39b864ce2f1f2b73d6c92bc4acc0fab374bb05e573430a93c5c3819cde510",
+      "expected": "c1d39b864ce2f1f2b73d6c92bc4acc0fab374bb05e573430a93c5c3819cde510",
+      "bytes": 38718
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/tennessee-titans.png",
+      "sha256": "27bb94a30325202549b0ae829c7ea20c4e83054a8dde59b09f4a8052cd308997",
+      "expected": "27bb94a30325202549b0ae829c7ea20c4e83054a8dde59b09f4a8052cd308997",
+      "bytes": 24922
+    },
+    {
+      "path": "public/sports/r7/teams/nfl/washington-commanders.png",
+      "sha256": "4aeb1adbe89b5889b43e7ecd30602d11a97c521871242e50c99006799b20a1c8",
+      "expected": "4aeb1adbe89b5889b43e7ecd30602d11a97c521871242e50c99006799b20a1c8",
+      "bytes": 13776
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/chicago-blackhawks.png",
+      "sha256": "3295894b05629d524b27f4eb0da6468febfd33236d08683a0a8acb95cb92f586",
+      "expected": "3295894b05629d524b27f4eb0da6468febfd33236d08683a0a8acb95cb92f586",
+      "bytes": 58896
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/dallas-stars.png",
+      "sha256": "976604d15316699b51ec2d2ffb3eddb5ffcca4b3b8f167bd7c6cd6af2c53fb88",
+      "expected": "976604d15316699b51ec2d2ffb3eddb5ffcca4b3b8f167bd7c6cd6af2c53fb88",
+      "bytes": 22174
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/edmonton-oilers.png",
+      "sha256": "9e2a7f73c3af1e645765867071ebd34c22ba2f9f9eb62e99d26217080e945436",
+      "expected": "9e2a7f73c3af1e645765867071ebd34c22ba2f9f9eb62e99d26217080e945436",
+      "bytes": 33397
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/los-angeles-kings.png",
+      "sha256": "b59f06a093239616082fca96e423fcb7bb7f93186a9aced7cf1dada631481dce",
+      "expected": "b59f06a093239616082fca96e423fcb7bb7f93186a9aced7cf1dada631481dce",
+      "bytes": 27541
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/minnesota-wild.png",
+      "sha256": "b90b53240ae08219527ec9320092e5608ab905cf271ce6e309b9e1e206b020ef",
+      "expected": "b90b53240ae08219527ec9320092e5608ab905cf271ce6e309b9e1e206b020ef",
+      "bytes": 27882
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/seattle-kraken.png",
+      "sha256": "a843ab53a768fb2eb9fa1f9162d80944d65292eff3ed7628e07547b588f144c2",
+      "expected": "a843ab53a768fb2eb9fa1f9162d80944d65292eff3ed7628e07547b588f144c2",
+      "bytes": 30088
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/st-louis-blues.png",
+      "sha256": "0667f8b6f8803998186237fb57fe3d6405f39201038f8055446efd216538444d",
+      "expected": "0667f8b6f8803998186237fb57fe3d6405f39201038f8055446efd216538444d",
+      "bytes": 23848
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/vancouver-canucks.png",
+      "sha256": "4ea1c14612cbb7c4af5e472601978fceb450cba6c8ba260e1ce2664c740819ed",
+      "expected": "4ea1c14612cbb7c4af5e472601978fceb450cba6c8ba260e1ce2664c740819ed",
+      "bytes": 48443
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/vegas-golden-knights.png",
+      "sha256": "e2c357852fa4e2137ff0598542c900e1dba76df0a128b8f24c9764ad417061fd",
+      "expected": "e2c357852fa4e2137ff0598542c900e1dba76df0a128b8f24c9764ad417061fd",
+      "bytes": 23521
+    },
+    {
+      "path": "public/sports/r7/teams/nhl/winnipeg-jets.png",
+      "sha256": "61d623556a2c377c2358a960628e504a89ba3d35505709043f14695f9ed0a21a",
+      "expected": "61d623556a2c377c2358a960628e504a89ba3d35505709043f14695f9ed0a21a",
+      "bytes": 35254
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/arsenal.png",
+      "sha256": "e33f0ce5a35b67c936bc36715b5b1a0cbe5670a6124fda78f14f889b6a63ede7",
+      "expected": "e33f0ce5a35b67c936bc36715b5b1a0cbe5670a6124fda78f14f889b6a63ede7",
+      "bytes": 40822
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/aston-villa.png",
+      "sha256": "84f1f56ff05efce53004d29e36214258f671b80ae817e6ea7787a771f123e190",
+      "expected": "84f1f56ff05efce53004d29e36214258f671b80ae817e6ea7787a771f123e190",
+      "bytes": 35361
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/brighton-hove-albion.png",
+      "sha256": "0b012d3e68bab2aa3495867614e9b72307a6503d5f80ce3633b68047303f17a7",
+      "expected": "0b012d3e68bab2aa3495867614e9b72307a6503d5f80ce3633b68047303f17a7",
+      "bytes": 33014
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/coventry-city.png",
+      "sha256": "46b8af75b701bc2dfad3b1aa42786e8971759d1d0b5c48efdc846646a1109484",
+      "expected": "46b8af75b701bc2dfad3b1aa42786e8971759d1d0b5c48efdc846646a1109484",
+      "bytes": 64970
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/everton.png",
+      "sha256": "fc5c78c9a779db04968e1aeb5f147b8170ced966754c6ba9dd2a2128dfdc567d",
+      "expected": "fc5c78c9a779db04968e1aeb5f147b8170ced966754c6ba9dd2a2128dfdc567d",
+      "bytes": 45865
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/hull-city.png",
+      "sha256": "cdba67d4ab6d06b1e7eba442d614ff37076317ea439d9f1292c0141ddc3fc848",
+      "expected": "cdba67d4ab6d06b1e7eba442d614ff37076317ea439d9f1292c0141ddc3fc848",
+      "bytes": 38562
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/ipswich-town.png",
+      "sha256": "a3de5473b38f84c46d7cf7fad45f861b91f700cfe41a05b42dc51ea29ebb1281",
+      "expected": "a3de5473b38f84c46d7cf7fad45f861b91f700cfe41a05b42dc51ea29ebb1281",
+      "bytes": 29644
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/newcastle-united.png",
+      "sha256": "289e13c56df6320f7de2f636e507b5b340df8dc62d6cc02e9c27b660cfc74230",
+      "expected": "289e13c56df6320f7de2f636e507b5b340df8dc62d6cc02e9c27b660cfc74230",
+      "bytes": 64738
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/nottingham-forest.png",
+      "sha256": "19c7a914ffe191246a6f24d47a4c865b8b5be77c13e096e496ecd31ab34d1f64",
+      "expected": "19c7a914ffe191246a6f24d47a4c865b8b5be77c13e096e496ecd31ab34d1f64",
+      "bytes": 17379
+    },
+    {
+      "path": "public/sports/r7/teams/premier-league/tottenham-hotspur.png",
+      "sha256": "7de2a16b076a09be24c9e1b178ac95b88e14ac301bd6309bf2df625f0258e1a0",
+      "expected": "7de2a16b076a09be24c9e1b178ac95b88e14ac301bd6309bf2df625f0258e1a0",
+      "bytes": 15386
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/chicago-sky.png",
+      "sha256": "c2274b6490eb8efb65a34d85e88d832b7a509b620cf202a9d1e98c43290c9e4b",
+      "expected": "c2274b6490eb8efb65a34d85e88d832b7a509b620cf202a9d1e98c43290c9e4b",
+      "bytes": 26522
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/dallas-wings.png",
+      "sha256": "1f23b224d199e68a5bec085c308ad840a874722474afc98fad5ae51c9f8d2f28",
+      "expected": "1f23b224d199e68a5bec085c308ad840a874722474afc98fad5ae51c9f8d2f28",
+      "bytes": 31274
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/las-vegas-aces.png",
+      "sha256": "1db7b07bf4eb2ba63c6d89e30edae357eecd3c9490840385d0b1acc4abcd797b",
+      "expected": "1db7b07bf4eb2ba63c6d89e30edae357eecd3c9490840385d0b1acc4abcd797b",
+      "bytes": 16873
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/los-angeles-sparks.png",
+      "sha256": "77742d99cf2448add4c2c672e5789d286f08a0b4387fcaaf055ef468ade5d9d6",
+      "expected": "77742d99cf2448add4c2c672e5789d286f08a0b4387fcaaf055ef468ade5d9d6",
+      "bytes": 36381
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/phoenix-mercury.png",
+      "sha256": "8c307d0e6ec41672e5422e5624beb03d28c3d5cb07f3d44c9bcb610860ce4752",
+      "expected": "8c307d0e6ec41672e5422e5624beb03d28c3d5cb07f3d44c9bcb610860ce4752",
+      "bytes": 25964
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/portland-fire.png",
+      "sha256": "9151ba8352a2fb96d66ec9ab0fa9309fb0d8e2aa66952fb78a978ff464e632e4",
+      "expected": "9151ba8352a2fb96d66ec9ab0fa9309fb0d8e2aa66952fb78a978ff464e632e4",
+      "bytes": 20010
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/seattle-storm.png",
+      "sha256": "0dd75571c792a4b9a09825edc147bd67f3f1240fb49dbf18ca5a74dc09837a39",
+      "expected": "0dd75571c792a4b9a09825edc147bd67f3f1240fb49dbf18ca5a74dc09837a39",
+      "bytes": 26206
+    },
+    {
+      "path": "public/sports/r7/teams/wnba/washington-mystics.png",
+      "sha256": "f5e34af248d6a87b27d57d8e76a97addda9aa098639119d65737ce1452835ff8",
+      "expected": "f5e34af248d6a87b27d57d8e76a97addda9aa098639119d65737ce1452835ff8",
+      "bytes": 57134
+    },
+    {
+      "path": "public/sports/r8/mercury-american-football.png",
+      "sha256": "e0f8d80ec2fd68089e116bec0d37e7c284ebd101be445d4494606dd3058a9703",
+      "expected": "e0f8d80ec2fd68089e116bec0d37e7c284ebd101be445d4494606dd3058a9703",
+      "bytes": 98580
+    },
+    {
+      "path": "public/sports/r8/mercury-baseball.png",
+      "sha256": "7c12c667b6c3864e38399f3e8f2749153ed55525ffaceeaae8350e772f1d49b4",
+      "expected": "7c12c667b6c3864e38399f3e8f2749153ed55525ffaceeaae8350e772f1d49b4",
+      "bytes": 132507
+    },
+    {
+      "path": "public/sports/r8/mercury-basketball.png",
+      "sha256": "115fdfbf991648a20918aeea3ed65302ef6aded97dbfcbf9fa18daf226ba3afc",
+      "expected": "115fdfbf991648a20918aeea3ed65302ef6aded97dbfcbf9fa18daf226ba3afc",
+      "bytes": 127654
+    },
+    {
+      "path": "public/sports/r8/mercury-esports.png",
+      "sha256": "6f836f4b7a33b7f7e1d37f72f16b4feac44c5d77e07d3a51fd3aae202a181a5e",
+      "expected": "6f836f4b7a33b7f7e1d37f72f16b4feac44c5d77e07d3a51fd3aae202a181a5e",
+      "bytes": 75670
+    },
+    {
+      "path": "public/sports/r8/mercury-ice-hockey.png",
+      "sha256": "c0f799fc91339b44e4a0429ad5c43e94b86636a31552642992afee6a462c8f08",
+      "expected": "c0f799fc91339b44e4a0429ad5c43e94b86636a31552642992afee6a462c8f08",
+      "bytes": 82946
+    },
+    {
+      "path": "public/sports/r8/mercury-soccer.png",
+      "sha256": "073f109264e5dbdf4b3f09b05f823a6cee69a355ec15ef0fae579b765bce3fad",
+      "expected": "073f109264e5dbdf4b3f09b05f823a6cee69a355ec15ef0fae579b765bce3fad",
+      "bytes": 115608
+    },
+    {
+      "path": "public/sports/r8/mercury-tennis.png",
+      "sha256": "2ecefa4b9a2d1f1dc42577225ae4c4644c73b9551db1b8eebfe0c876e4b82574",
+      "expected": "2ecefa4b9a2d1f1dc42577225ae4c4644c73b9551db1b8eebfe0c876e4b82574",
+      "bytes": 135573
+    },
+    {
+      "path": "public/sports/r8/mercury-volleyball.png",
+      "sha256": "57d3491922f2e828e2470b95ba614ab9c8458b8942f06e0654a7a097d7548f2a",
+      "expected": "57d3491922f2e828e2470b95ba614ab9c8458b8942f06e0654a7a097d7548f2a",
+      "bytes": 118865
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_11_soccer.png",
+      "sha256": "335327be60d90740f3079a1c73a8727dedd4a4d94a450c897aedaa886e0023f2",
+      "expected": "335327be60d90740f3079a1c73a8727dedd4a4d94a450c897aedaa886e0023f2",
+      "bytes": 30406
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_12_basketball.png",
+      "sha256": "22124d50a37c86a4e7d078aaa16c2915f87aa1b35ccd385c81a065899042b3f6",
+      "expected": "22124d50a37c86a4e7d078aaa16c2915f87aa1b35ccd385c81a065899042b3f6",
+      "bytes": 28771
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_13_baseball.png",
+      "sha256": "68ff6135cfe90b96ee28db92a576a8021805a61963155246f131e90f5c5a62f8",
+      "expected": "68ff6135cfe90b96ee28db92a576a8021805a61963155246f131e90f5c5a62f8",
+      "bytes": 28414
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_14_volleyball.png",
+      "sha256": "203cde7efabc7879eefb5a0d3f3eec3b01481d1fa77ccdce6fe07408db1e8898",
+      "expected": "203cde7efabc7879eefb5a0d3f3eec3b01481d1fa77ccdce6fe07408db1e8898",
+      "bytes": 26328
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_15_hockey.png",
+      "sha256": "7310b258005da9f57b2edfec2909b12587c3a6b7841155802b7151a85b0fc956",
+      "expected": "7310b258005da9f57b2edfec2909b12587c3a6b7841155802b7151a85b0fc956",
+      "bytes": 16541
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_16_formula1.png",
+      "sha256": "be2aba0f79cb890aa0da7ace1b4614a212fb22614eed0d086090975cdfcbf075",
+      "expected": "be2aba0f79cb890aa0da7ace1b4614a212fb22614eed0d086090975cdfcbf075",
+      "bytes": 29151
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_17_boxing.png",
+      "sha256": "16991dd692bbbabf877589b48ffc29d832d71bac014888ce245ad85eae4d77eb",
+      "expected": "16991dd692bbbabf877589b48ffc29d832d71bac014888ce245ad85eae4d77eb",
+      "bytes": 20911
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_18_mma.png",
+      "sha256": "ea58b55480cbcd7aefb0adcd7d25c33821b33c0d36825be52763424427b6529e",
+      "expected": "ea58b55480cbcd7aefb0adcd7d25c33821b33c0d36825be52763424427b6529e",
+      "bytes": 22714
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_19_motorsports.png",
+      "sha256": "61f459ea9a0d47aac8b71f892f33d91752157d9354d81b008560d7be2b179882",
+      "expected": "61f459ea9a0d47aac8b71f892f33d91752157d9354d81b008560d7be2b179882",
+      "bytes": 22709
+    },
+    {
+      "path": "public/sports/sirius-20261001/imgi_23_all.png",
+      "sha256": "57ffd602680071a84d8d88f0dbac5163af9c4e64016da8a536ad64f788d7c371",
+      "expected": "57ffd602680071a84d8d88f0dbac5163af9c4e64016da8a536ad64f788d7c371",
+      "bytes": 22646
+    },
+    {
+      "path": "public/sports/tampa-bay-rays.png",
+      "sha256": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "expected": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "bytes": 16834
+    },
+    {
+      "path": "scripts/generate-white-theme.mjs",
+      "sha256": "1d57ea1ea8b8ce3ee0452387a9e2ed731862a3621925aa28076bc587406d3a78",
+      "expected": "1d57ea1ea8b8ce3ee0452387a9e2ed731862a3621925aa28076bc587406d3a78",
+      "bytes": 500
+    },
+    {
+      "path": "theme/mercury-palette_98.json",
+      "sha256": "f8387c05ce6298592b1eca859f41dd1d4069a4a95ab9d7631fac9b4badc81ae5",
+      "expected": "f8387c05ce6298592b1eca859f41dd1d4069a4a95ab9d7631fac9b4badc81ae5",
+      "bytes": 3132
+    },
+    {
+      "path": "theme/palette-compiler.ts",
+      "sha256": "f0355ccb412caae62fe2e65e80e01d13fa8ac80f54222ae7ec870d6b074c36e5",
+      "expected": "f0355ccb412caae62fe2e65e80e01d13fa8ac80f54222ae7ec870d6b074c36e5",
+      "bytes": 40845
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "c7fc4b172d42a37c8e28c766c468abc1ca5b1180b1aed72be9e88dc84f0f6839",
+      "expected": "c7fc4b172d42a37c8e28c766c468abc1ca5b1180b1aed72be9e88dc84f0f6839",
+      "bytes": 701
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "ad91b11036a96da74f5059109ed34b88b7f2136820fabef1485d877e35771f36",
+      "expected": "ad91b11036a96da74f5059109ed34b88b7f2136820fabef1485d877e35771f36",
+      "bytes": 372
+    }
+  ],
+  "build": [
+    {
+      "path": "dist\\server\\index.js",
+      "sha256": "1314bc3ff2ea26d6d7348ea5c978bbaa6f9dc70a6699917df40a5122ed94d9aa",
+      "expected": "1314bc3ff2ea26d6d7348ea5c978bbaa6f9dc70a6699917df40a5122ed94d9aa",
+      "bytes": 257557
+    },
+    {
+      "path": "dist\\server\\vinext-externals.json",
+      "sha256": "00130e0879c4df4a8984eb6a0aa253bf54bb2f1913ff911fed9abda48e1e9051",
+      "expected": "00130e0879c4df4a8984eb6a0aa253bf54bb2f1913ff911fed9abda48e1e9051",
+      "bytes": 29
+    },
+    {
+      "path": "dist\\server\\BUILD_ID",
+      "sha256": "e2eeb0653a20201e770b3f7f9f51b0a37f616aed4799ff11ac386b2c31d2885e",
+      "expected": "e2eeb0653a20201e770b3f7f9f51b0a37f616aed4799ff11ac386b2c31d2885e",
+      "bytes": 36
+    },
+    {
+      "path": "dist\\server\\vinext-server.json",
+      "sha256": "20e98683d1d8c36abb90691ee23fd865cfa98d17a721d2f2757f15d3e434cc18",
+      "expected": "20e98683d1d8c36abb90691ee23fd865cfa98d17a721d2f2757f15d3e434cc18",
+      "bytes": 86
+    },
+    {
+      "path": "dist\\server\\vinext-client-assets.js",
+      "sha256": "8dad38977d051a0d82ee11450cb50d8891ed908e87774a1c6744c333015e2b33",
+      "expected": "8dad38977d051a0d82ee11450cb50d8891ed908e87774a1c6744c333015e2b33",
+      "bytes": 1427
+    },
+    {
+      "path": "dist\\server\\__vite_rsc_assets_manifest.js",
+      "sha256": "6a1c59d72a999c7470ab6ecee9cf9a4ca1c7d784133927ff7052a3030d60e75a",
+      "expected": "6a1c59d72a999c7470ab6ecee9cf9a4ca1c7d784133927ff7052a3030d60e75a",
+      "bytes": 2305
+    },
+    {
+      "path": "dist\\client\\favicon.svg",
+      "sha256": "077fd970f24c7dda4e6aef9b6f1b79a0c35d86fc7435712ba47c391cb49a840a",
+      "expected": "077fd970f24c7dda4e6aef9b6f1b79a0c35d86fc7435712ba47c391cb49a840a",
+      "bytes": 291
+    },
+    {
+      "path": "dist\\client\\vinext-client-entry-manifest.json",
+      "sha256": "7a922ebd926b243fc14a10ac4b74bd56116a8decbc717737f1a62a4818e5fd26",
+      "expected": "7a922ebd926b243fc14a10ac4b74bd56116a8decbc717737f1a62a4818e5fd26",
+      "bytes": 65
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-rail-union-253-6246.png",
+      "sha256": "da017542b4b86182fb33d016b5ab358f769671824a70c5ac181b5ecacc3eb01f",
+      "expected": "da017542b4b86182fb33d016b5ab358f769671824a70c5ac181b5ecacc3eb01f",
+      "bytes": 721686
+    },
+    {
+      "path": "dist\\client\\banners\\베너_슬롯 copy.png",
+      "sha256": "efb60341f177d353a03752b3632d6e5e1d333d2ebdb4958b632b74139cced37b",
+      "expected": "efb60341f177d353a03752b3632d6e5e1d333d2ebdb4958b632b74139cced37b",
+      "bytes": 28644
+    },
+    {
+      "path": "dist\\client\\banners\\베너_카지노 copy.png",
+      "sha256": "915633bd14aad1ae717d9e010d3a9d06d5d6a653c5514e93cf9c114365f4f0d7",
+      "expected": "915633bd14aad1ae717d9e010d3a9d06d5d6a653c5514e93cf9c114365f4f0d7",
+      "bytes": 56792
+    },
+    {
+      "path": "dist\\client\\branding\\image_BG.png",
+      "sha256": "ee27d73f088f48e7b5acbe17ae276fd77bfca2399bb462bc3951484afa8307a1",
+      "expected": "ee27d73f088f48e7b5acbe17ae276fd77bfca2399bb462bc3951484afa8307a1",
+      "bytes": 402582
+    },
+    {
+      "path": "dist\\client\\branding\\image_BG_v2.png",
+      "sha256": "4c66be74e5fc60750eeb83293ece794fba6a20e6c7ab0b771ed4c11a6c4986a2",
+      "expected": "4c66be74e5fc60750eeb83293ece794fba6a20e6c7ab0b771ed4c11a6c4986a2",
+      "bytes": 305307
+    },
+    {
+      "path": "dist\\client\\branding\\mercury-emblem.png",
+      "sha256": "27b16050d02334472ce7ddde4fa67f1c86704c908a59bded09bd4b64abc64ed6",
+      "expected": "27b16050d02334472ce7ddde4fa67f1c86704c908a59bded09bd4b64abc64ed6",
+      "bytes": 2438761
+    },
+    {
+      "path": "dist\\client\\branding\\mercury-wordmark.png",
+      "sha256": "d96816caea9378536e77bd964ddd6b39739bfcade5d64b5995856935d14277e6",
+      "expected": "d96816caea9378536e77bd964ddd6b39739bfcade5d64b5995856935d14277e6",
+      "bytes": 761840
+    },
+    {
+      "path": "dist\\client\\branding\\mercury-wordmark_v2.png",
+      "sha256": "cf4856d84ac465b3658d30b1377dc089b3157c2b4c07892f9cde5c18ab6a0772",
+      "expected": "cf4856d84ac465b3658d30b1377dc089b3157c2b4c07892f9cde5c18ab6a0772",
+      "bytes": 674128
+    },
+    {
+      "path": "dist\\client\\branding\\mercury-wordmark_v3.png",
+      "sha256": "9b6dde375a5312ba2b232e68b957560df6dce0427a30d17f008fcf3959e3c558",
+      "expected": "9b6dde375a5312ba2b232e68b957560df6dce0427a30d17f008fcf3959e3c558",
+      "bytes": 666105
+    },
+    {
+      "path": "dist\\client\\sports\\athletics.png",
+      "sha256": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "expected": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "bytes": 20053
+    },
+    {
+      "path": "dist\\client\\sports\\baseball.png",
+      "sha256": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "expected": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "bytes": 8659
+    },
+    {
+      "path": "dist\\client\\sports\\mlb.png",
+      "sha256": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "expected": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "bytes": 9002
+    },
+    {
+      "path": "dist\\client\\sports\\tampa-bay-rays.png",
+      "sha256": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "expected": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "bytes": 16834
+    },
+    {
+      "path": "dist\\client\\.vite\\manifest.json",
+      "sha256": "eb8cd9fc5246181478dbc7404fb39cdc4610a42585c13a00fe79ba8f4176c7f8",
+      "expected": "eb8cd9fc5246181478dbc7404fb39cdc4610a42585c13a00fe79ba8f4176c7f8",
+      "bytes": 2256
+    },
+    {
+      "path": "dist\\client\\_next\\static\\chunks\\index-E-jFPCif.js",
+      "sha256": "49962f8ff14398985dc6388e1e7e42f31458b8a281248ad6b16caca1189ece2e",
+      "expected": "49962f8ff14398985dc6388e1e7e42f31458b8a281248ad6b16caca1189ece2e",
+      "bytes": 192301
+    },
+    {
+      "path": "dist\\client\\_next\\static\\chunks\\app-route-prefetch-policy-BVqCZQ37.js",
+      "sha256": "05a348bbebe102b6df60d498de04dac47fa507108f3b283ad34f9f84adf654da",
+      "expected": "05a348bbebe102b6df60d498de04dac47fa507108f3b283ad34f9f84adf654da",
+      "bytes": 937
+    },
+    {
+      "path": "dist\\client\\_next\\static\\chunks\\framework-D_rUT4EX.js",
+      "sha256": "939d0fabebb3b2f01753bb866b067d8d3384fb06da19f0e6557609d3b1a9f4f7",
+      "expected": "939d0fabebb3b2f01753bb866b067d8d3384fb06da19f0e6557609d3b1a9f4f7",
+      "bytes": 190152
+    },
+    {
+      "path": "dist\\client\\_next\\static\\chunks\\layout-segment-context-DVQ02j77.js",
+      "sha256": "11c03d9be031dfa8ff41bc30623442869822d7c9661372dadd7c928dd77b93c1",
+      "expected": "11c03d9be031dfa8ff41bc30623442869822d7c9661372dadd7c928dd77b93c1",
+      "bytes": 494
+    },
+    {
+      "path": "dist\\client\\_next\\static\\chunks\\page-CK8zVbe1.js",
+      "sha256": "b9b226deab010523836b1e386ace350cd329a2d4772af53b1f9ffd13accd44ec",
+      "expected": "b9b226deab010523836b1e386ace350cd329a2d4772af53b1f9ffd13accd44ec",
+      "bytes": 3496920
+    },
+    {
+      "path": "dist\\client\\_next\\static\\chunks\\rolldown-runtime-C60lm6uB.js",
+      "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+      "expected": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+      "bytes": 694
+    },
+    {
+      "path": "dist\\client\\_next\\static\\chunks\\streamed-icons-Bumrcy-j.js",
+      "sha256": "7eb2a6b44b9c0faa7300c8dd36b0fae7a35d9f65e139dd9046b3df193aa83bc8",
+      "expected": "7eb2a6b44b9c0faa7300c8dd36b0fae7a35d9f65e139dd9046b3df193aa83bc8",
+      "bytes": 772
+    },
+    {
+      "path": "dist\\client\\_next\\static\\css\\index.CP2YFaGU.css",
+      "sha256": "7878fe5e63ecad2aa5bb62fe685551486456fb7bd38f2d9c4b02a2b8158a95a9",
+      "expected": "7878fe5e63ecad2aa5bb62fe685551486456fb7bd38f2d9c4b02a2b8158a95a9",
+      "bytes": 234577
+    },
+    {
+      "path": "dist\\client\\_next\\static\\0f816acb-35ff-4e58-bf1f-f119dc837fd4\\_buildManifest.js",
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "expected": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "bytes": 159
+    },
+    {
+      "path": "dist\\client\\_next\\static\\0f816acb-35ff-4e58-bf1f-f119dc837fd4\\_ssgManifest.js",
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "expected": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "bytes": 76
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0000_Layer-18.png",
+      "sha256": "746520d0bbea1ced532b543078dda50bad4c4b9bad18497193dd41d816ec5769",
+      "expected": "746520d0bbea1ced532b543078dda50bad4c4b9bad18497193dd41d816ec5769",
+      "bytes": 58394
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0002_Layer-15.png",
+      "sha256": "24c8f2f89b8343581ccf723d29a1ac896be203d98c862b94c5e6edc98873aeb7",
+      "expected": "24c8f2f89b8343581ccf723d29a1ac896be203d98c862b94c5e6edc98873aeb7",
+      "bytes": 65982
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0003_Layer-14.png",
+      "sha256": "eb504cd41e304a078c1d0147a33b753530b873ae0c4cb64f2eee5208b3081d56",
+      "expected": "eb504cd41e304a078c1d0147a33b753530b873ae0c4cb64f2eee5208b3081d56",
+      "bytes": 45663
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0005_Layer-12.png",
+      "sha256": "7c95240190b5bb0d553d226a3d6e33337fd9ee00fe3bc9919ccc130c3189e037",
+      "expected": "7c95240190b5bb0d553d226a3d6e33337fd9ee00fe3bc9919ccc130c3189e037",
+      "bytes": 57547
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0006_Layer-11.png",
+      "sha256": "1a319f58e7b9f4bd1f6f20b82cc891bca402310eae7cb84ef6307e10f720b715",
+      "expected": "1a319f58e7b9f4bd1f6f20b82cc891bca402310eae7cb84ef6307e10f720b715",
+      "bytes": 65245
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0007_Layer-10.png",
+      "sha256": "584fdff7ae50f790f4ce33ca9b38539a7ba94a95d5a1b63c8669cc96ed5b2bc1",
+      "expected": "584fdff7ae50f790f4ce33ca9b38539a7ba94a95d5a1b63c8669cc96ed5b2bc1",
+      "bytes": 65635
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0007_Layer-6.png",
+      "sha256": "63d0ad289356994d84ae6e76ffc81258d3dcce7b2f8b0c71f1b3995514eaaf53",
+      "expected": "63d0ad289356994d84ae6e76ffc81258d3dcce7b2f8b0c71f1b3995514eaaf53",
+      "bytes": 99513
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0007_Layer-7.png",
+      "sha256": "82f02984fbed359e647c155eae19e809fec2517db12a3312b926fc7cce41399c",
+      "expected": "82f02984fbed359e647c155eae19e809fec2517db12a3312b926fc7cce41399c",
+      "bytes": 68585
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0007_Layer-8.png",
+      "sha256": "2d7019ba64b16c478fa15776c33e58b295897e526d39f858947366c6e3831aac",
+      "expected": "2d7019ba64b16c478fa15776c33e58b295897e526d39f858947366c6e3831aac",
+      "bytes": 70022
+    },
+    {
+      "path": "dist\\client\\sports\\mercury-gold-20260930\\image_Sports_Sirius_0007_Layer-9.png",
+      "sha256": "0ebd89829eccc71d93cf3a232f678f4cd7ba22a7808df25d8596cba32deedfd5",
+      "expected": "0ebd89829eccc71d93cf3a232f678f4cd7ba22a7808df25d8596cba32deedfd5",
+      "bytes": 48086
+    },
+    {
+      "path": "dist\\client\\sports\\polish\\mercury-sport-all.png",
+      "sha256": "468c9ca7b4affca65d5fbebe2715b6c0c180474f6be07e0b81eae4a54bcc3312",
+      "expected": "468c9ca7b4affca65d5fbebe2715b6c0c180474f6be07e0b81eae4a54bcc3312",
+      "bytes": 92244
+    },
+    {
+      "path": "dist\\client\\sports\\polish\\mercury-sport-boxing.png",
+      "sha256": "e25a046dcbe81ed660dff0a118ed7c14e55bb2760ddb8664be070d799716ba2e",
+      "expected": "e25a046dcbe81ed660dff0a118ed7c14e55bb2760ddb8664be070d799716ba2e",
+      "bytes": 110423
+    },
+    {
+      "path": "dist\\client\\sports\\polish\\mercury-sport-formula1.png",
+      "sha256": "c8dde58bd8fe01d9a2113153c4429df375bad9b37982023b81d27f174d770690",
+      "expected": "c8dde58bd8fe01d9a2113153c4429df375bad9b37982023b81d27f174d770690",
+      "bytes": 69920
+    },
+    {
+      "path": "dist\\client\\sports\\polish\\mercury-sport-mma.png",
+      "sha256": "f8f0f2d61a1b414105b4621ff3b564eff2f33eb1cc22d78d05ee4a7fc87fc37b",
+      "expected": "f8f0f2d61a1b414105b4621ff3b564eff2f33eb1cc22d78d05ee4a7fc87fc37b",
+      "bytes": 96846
+    },
+    {
+      "path": "dist\\client\\sports\\polish\\mercury-sport-motorsport.png",
+      "sha256": "ff7834b10114c43e431b2615a740f2aca41e4b4475a71fda050576e3ae3a9d68",
+      "expected": "ff7834b10114c43e431b2615a740f2aca41e4b4475a71fda050576e3ae3a9d68",
+      "bytes": 132308
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-american-football.png",
+      "sha256": "e0f8d80ec2fd68089e116bec0d37e7c284ebd101be445d4494606dd3058a9703",
+      "expected": "e0f8d80ec2fd68089e116bec0d37e7c284ebd101be445d4494606dd3058a9703",
+      "bytes": 98580
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-baseball.png",
+      "sha256": "7c12c667b6c3864e38399f3e8f2749153ed55525ffaceeaae8350e772f1d49b4",
+      "expected": "7c12c667b6c3864e38399f3e8f2749153ed55525ffaceeaae8350e772f1d49b4",
+      "bytes": 132507
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-basketball.png",
+      "sha256": "115fdfbf991648a20918aeea3ed65302ef6aded97dbfcbf9fa18daf226ba3afc",
+      "expected": "115fdfbf991648a20918aeea3ed65302ef6aded97dbfcbf9fa18daf226ba3afc",
+      "bytes": 127654
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-esports.png",
+      "sha256": "6f836f4b7a33b7f7e1d37f72f16b4feac44c5d77e07d3a51fd3aae202a181a5e",
+      "expected": "6f836f4b7a33b7f7e1d37f72f16b4feac44c5d77e07d3a51fd3aae202a181a5e",
+      "bytes": 75670
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-ice-hockey.png",
+      "sha256": "c0f799fc91339b44e4a0429ad5c43e94b86636a31552642992afee6a462c8f08",
+      "expected": "c0f799fc91339b44e4a0429ad5c43e94b86636a31552642992afee6a462c8f08",
+      "bytes": 82946
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-soccer.png",
+      "sha256": "073f109264e5dbdf4b3f09b05f823a6cee69a355ec15ef0fae579b765bce3fad",
+      "expected": "073f109264e5dbdf4b3f09b05f823a6cee69a355ec15ef0fae579b765bce3fad",
+      "bytes": 115608
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-tennis.png",
+      "sha256": "2ecefa4b9a2d1f1dc42577225ae4c4644c73b9551db1b8eebfe0c876e4b82574",
+      "expected": "2ecefa4b9a2d1f1dc42577225ae4c4644c73b9551db1b8eebfe0c876e4b82574",
+      "bytes": 135573
+    },
+    {
+      "path": "dist\\client\\sports\\r8\\mercury-volleyball.png",
+      "sha256": "57d3491922f2e828e2470b95ba614ab9c8458b8942f06e0654a7a097d7548f2a",
+      "expected": "57d3491922f2e828e2470b95ba614ab9c8458b8942f06e0654a7a097d7548f2a",
+      "bytes": 118865
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_11_soccer.png",
+      "sha256": "335327be60d90740f3079a1c73a8727dedd4a4d94a450c897aedaa886e0023f2",
+      "expected": "335327be60d90740f3079a1c73a8727dedd4a4d94a450c897aedaa886e0023f2",
+      "bytes": 30406
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_12_basketball.png",
+      "sha256": "22124d50a37c86a4e7d078aaa16c2915f87aa1b35ccd385c81a065899042b3f6",
+      "expected": "22124d50a37c86a4e7d078aaa16c2915f87aa1b35ccd385c81a065899042b3f6",
+      "bytes": 28771
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_13_baseball.png",
+      "sha256": "68ff6135cfe90b96ee28db92a576a8021805a61963155246f131e90f5c5a62f8",
+      "expected": "68ff6135cfe90b96ee28db92a576a8021805a61963155246f131e90f5c5a62f8",
+      "bytes": 28414
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_14_volleyball.png",
+      "sha256": "203cde7efabc7879eefb5a0d3f3eec3b01481d1fa77ccdce6fe07408db1e8898",
+      "expected": "203cde7efabc7879eefb5a0d3f3eec3b01481d1fa77ccdce6fe07408db1e8898",
+      "bytes": 26328
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_15_hockey.png",
+      "sha256": "7310b258005da9f57b2edfec2909b12587c3a6b7841155802b7151a85b0fc956",
+      "expected": "7310b258005da9f57b2edfec2909b12587c3a6b7841155802b7151a85b0fc956",
+      "bytes": 16541
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_16_formula1.png",
+      "sha256": "be2aba0f79cb890aa0da7ace1b4614a212fb22614eed0d086090975cdfcbf075",
+      "expected": "be2aba0f79cb890aa0da7ace1b4614a212fb22614eed0d086090975cdfcbf075",
+      "bytes": 29151
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_17_boxing.png",
+      "sha256": "16991dd692bbbabf877589b48ffc29d832d71bac014888ce245ad85eae4d77eb",
+      "expected": "16991dd692bbbabf877589b48ffc29d832d71bac014888ce245ad85eae4d77eb",
+      "bytes": 20911
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_18_mma.png",
+      "sha256": "ea58b55480cbcd7aefb0adcd7d25c33821b33c0d36825be52763424427b6529e",
+      "expected": "ea58b55480cbcd7aefb0adcd7d25c33821b33c0d36825be52763424427b6529e",
+      "bytes": 22714
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_19_motorsports.png",
+      "sha256": "61f459ea9a0d47aac8b71f892f33d91752157d9354d81b008560d7be2b179882",
+      "expected": "61f459ea9a0d47aac8b71f892f33d91752157d9354d81b008560d7be2b179882",
+      "bytes": 22709
+    },
+    {
+      "path": "dist\\client\\sports\\sirius-20261001\\imgi_23_all.png",
+      "sha256": "57ffd602680071a84d8d88f0dbac5163af9c4e64016da8a536ad64f788d7c371",
+      "expected": "57ffd602680071a84d8d88f0dbac5163af9c4e64016da8a536ad64f788d7c371",
+      "bytes": 22646
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\borussia-dortmund.png",
+      "sha256": "dacbf9fe93e49621086063c979082a0e63f565536314fa9ab18ba571890a88a7",
+      "expected": "dacbf9fe93e49621086063c979082a0e63f565536314fa9ab18ba571890a88a7",
+      "bytes": 23775
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\borussia-monchengladbach.png",
+      "sha256": "dea773ef6e5a1e3699e963d839fe02d85968d04fd857add093fd954cd2171c0b",
+      "expected": "dea773ef6e5a1e3699e963d839fe02d85968d04fd857add093fd954cd2171c0b",
+      "bytes": 17654
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\eintracht-frankfurt.png",
+      "sha256": "6de3806efdd0b4cbc47dd369d42d48502370637bc971b52510163720161812a9",
+      "expected": "6de3806efdd0b4cbc47dd369d42d48502370637bc971b52510163720161812a9",
+      "bytes": 36684
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\fc-augsburg.png",
+      "sha256": "3a6c24275085c25b492047e31f97e5aa303d0719766116217c00fe71a1f519a9",
+      "expected": "3a6c24275085c25b492047e31f97e5aa303d0719766116217c00fe71a1f519a9",
+      "bytes": 26027
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\fc-cologne.png",
+      "sha256": "020bbfdac24228d83f0d5e8cef64e7c28f1368be123d95843758a587f4125f8f",
+      "expected": "020bbfdac24228d83f0d5e8cef64e7c28f1368be123d95843758a587f4125f8f",
+      "bytes": 36432
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\hamburg-sv.png",
+      "sha256": "af5a8982e4110b0ffec3bc6a1e5eb0da61f7325b2ce9df39acea9c1e4bcc35c8",
+      "expected": "af5a8982e4110b0ffec3bc6a1e5eb0da61f7325b2ce9df39acea9c1e4bcc35c8",
+      "bytes": 5761
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\mainz.png",
+      "sha256": "5e52797844b80a3dcc161dc7354445cd5af6cf2a45e7cca34dbb1be9492aa84e",
+      "expected": "5e52797844b80a3dcc161dc7354445cd5af6cf2a45e7cca34dbb1be9492aa84e",
+      "bytes": 34149
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\sc-freiburg.png",
+      "sha256": "59d95ef80993e0d3a143008467098229517e64866672f8c0696d9095b9625b80",
+      "expected": "59d95ef80993e0d3a143008467098229517e64866672f8c0696d9095b9625b80",
+      "bytes": 25567
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\vfb-stuttgart.png",
+      "sha256": "d575e293c6b92314498900a680efcc96eea03e65c6e7b3182c2beaa3c384fefa",
+      "expected": "d575e293c6b92314498900a680efcc96eea03e65c6e7b3182c2beaa3c384fefa",
+      "bytes": 34787
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\bundesliga\\werder-bremen.png",
+      "sha256": "959dcd51c2fb6f0bf37aa35bf3d115f26044c1b4956c050387975ec23e9f3d10",
+      "expected": "959dcd51c2fb6f0bf37aa35bf3d115f26044c1b4956c050387975ec23e9f3d10",
+      "bytes": 19989
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\angers.png",
+      "sha256": "1f748864e054857778f5f3b8eead5469f8a64e0694469090a4ca7031948610e7",
+      "expected": "1f748864e054857778f5f3b8eead5469f8a64e0694469090a4ca7031948610e7",
+      "bytes": 21708
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\le-havre-ac.png",
+      "sha256": "9d29c6118f502ea1e85208eae4fd636afc0c37f27d9331c49cc7a7c0ad89fcd6",
+      "expected": "9d29c6118f502ea1e85208eae4fd636afc0c37f27d9331c49cc7a7c0ad89fcd6",
+      "bytes": 31466
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\le-mans.png",
+      "sha256": "300417529016f36af2730d537d7f3bf699b8d5f883e543b8ae0b148b9ba67901",
+      "expected": "300417529016f36af2730d537d7f3bf699b8d5f883e543b8ae0b148b9ba67901",
+      "bytes": 50984
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\lorient.png",
+      "sha256": "7e757cb3d07be88bc0c651222a0aa72b1dff8c828a3ca807ad4dec8d1dc3878c",
+      "expected": "7e757cb3d07be88bc0c651222a0aa72b1dff8c828a3ca807ad4dec8d1dc3878c",
+      "bytes": 27375
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\lyon.png",
+      "sha256": "bd4193f366d4526a9534f7f152df96eb2ece135f2e160fe9f29b2e0523f2e97d",
+      "expected": "bd4193f366d4526a9534f7f152df96eb2ece135f2e160fe9f29b2e0523f2e97d",
+      "bytes": 27118
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\paris-fc.png",
+      "sha256": "fa143a18091852d581f3e1607e57200bebb02dbedd28dae93986527d8096dcfd",
+      "expected": "fa143a18091852d581f3e1607e57200bebb02dbedd28dae93986527d8096dcfd",
+      "bytes": 41295
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\stade-rennais.png",
+      "sha256": "5ac73dcc6eac40d6a2a9e486cd8cc3d93795c377be5ee8b6c124eefd7f7461d0",
+      "expected": "5ac73dcc6eac40d6a2a9e486cd8cc3d93795c377be5ee8b6c124eefd7f7461d0",
+      "bytes": 29203
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\strasbourg.png",
+      "sha256": "40f341f52a3b7e7625c1661214f34f8a92054e196eff8fa82ec1b968b98d8e31",
+      "expected": "40f341f52a3b7e7625c1661214f34f8a92054e196eff8fa82ec1b968b98d8e31",
+      "bytes": 49557
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\toulouse.png",
+      "sha256": "c373f8aa331876ec440527b1453da1da5f7f05a350edd0beac7e0a27c317a70b",
+      "expected": "c373f8aa331876ec440527b1453da1da5f7f05a350edd0beac7e0a27c317a70b",
+      "bytes": 53186
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\ligue-1\\troyes.png",
+      "sha256": "1505b49d21c05bb6b5755c3554fb8753bc68b76baf635de79a85d5a119352bda",
+      "expected": "1505b49d21c05bb6b5755c3554fb8753bc68b76baf635de79a85d5a119352bda",
+      "bytes": 33890
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\arizona-diamondbacks.png",
+      "sha256": "36635708a263bdd5cbae71f12ffc5ebeb69250ec39e593e118aec6ddb68ecb4a",
+      "expected": "36635708a263bdd5cbae71f12ffc5ebeb69250ec39e593e118aec6ddb68ecb4a",
+      "bytes": 26650
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\atlanta-braves.png",
+      "sha256": "65b87c649c5107971aafe5d775cc0d25c56a46b96206551a1132b2c0988c5ef9",
+      "expected": "65b87c649c5107971aafe5d775cc0d25c56a46b96206551a1132b2c0988c5ef9",
+      "bytes": 20642
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\baltimore-orioles.png",
+      "sha256": "156d52708ba111af6f88e352ca9e0cfc031dfcce762cc4a0b18003a448eea10d",
+      "expected": "156d52708ba111af6f88e352ca9e0cfc031dfcce762cc4a0b18003a448eea10d",
+      "bytes": 23987
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\boston-red-sox.png",
+      "sha256": "0598bfeee2fb07bf9a088c8d4f5f90de740ad20db20435a6254d17f962fb6aab",
+      "expected": "0598bfeee2fb07bf9a088c8d4f5f90de740ad20db20435a6254d17f962fb6aab",
+      "bytes": 20122
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\chicago-cubs.png",
+      "sha256": "2ac3004afa10d2b45c67952eb4635e39bc476a1dd85e4164b48600e5f57df384",
+      "expected": "2ac3004afa10d2b45c67952eb4635e39bc476a1dd85e4164b48600e5f57df384",
+      "bytes": 27147
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\chicago-white-sox.png",
+      "sha256": "8c3ed226465af2c11734dcc50c427cedd8f9efdaf9afab7d96cb00813caa46e7",
+      "expected": "8c3ed226465af2c11734dcc50c427cedd8f9efdaf9afab7d96cb00813caa46e7",
+      "bytes": 27086
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\cincinnati-reds.png",
+      "sha256": "327b51bb4d1a1724b0b0d7265b0bfeda0f8ad98fe0e297fecc60df88ea884f55",
+      "expected": "327b51bb4d1a1724b0b0d7265b0bfeda0f8ad98fe0e297fecc60df88ea884f55",
+      "bytes": 11132
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\cleveland-guardians.png",
+      "sha256": "2f42e7cbe46c28f397bd659d7dd6f462872471ad485c20ee93c92af2d21830e9",
+      "expected": "2f42e7cbe46c28f397bd659d7dd6f462872471ad485c20ee93c92af2d21830e9",
+      "bytes": 16610
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\colorado-rockies.png",
+      "sha256": "4d39973c4ed60ed71a4ffc59df36478ab81aeefe823202e32356f02f1ecbc549",
+      "expected": "4d39973c4ed60ed71a4ffc59df36478ab81aeefe823202e32356f02f1ecbc549",
+      "bytes": 15373
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\detroit-tigers.png",
+      "sha256": "360b6642b83928641e02b9199621b769072ee26f4725e1f8f7f71537be9f7134",
+      "expected": "360b6642b83928641e02b9199621b769072ee26f4725e1f8f7f71537be9f7134",
+      "bytes": 19249
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\houston-astros.png",
+      "sha256": "49a0dd2f424078d029de6b26130387182f84a24604eb3be2bc95740cec7e3d6f",
+      "expected": "49a0dd2f424078d029de6b26130387182f84a24604eb3be2bc95740cec7e3d6f",
+      "bytes": 32607
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\kansas-city-royals.png",
+      "sha256": "7105c7f87f9a68eec992a1018697ba01317285e32f29b312b84f1e4f2a53c470",
+      "expected": "7105c7f87f9a68eec992a1018697ba01317285e32f29b312b84f1e4f2a53c470",
+      "bytes": 12195
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\los-angeles-angels.png",
+      "sha256": "9dfb154b9d58cc7b02ec54572bd997537fbae72ad84fdc2a193cb455485bed38",
+      "expected": "9dfb154b9d58cc7b02ec54572bd997537fbae72ad84fdc2a193cb455485bed38",
+      "bytes": 25366
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\los-angeles-dodgers.png",
+      "sha256": "440e0178f09055a6173e0fae1945414b684385748d0014cf8c16c91c46b86b72",
+      "expected": "440e0178f09055a6173e0fae1945414b684385748d0014cf8c16c91c46b86b72",
+      "bytes": 7007
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\miami-marlins.png",
+      "sha256": "b714cd75d317d6d4546b7de5be283937415bf59bb2cca7c080a6e23c33f44509",
+      "expected": "b714cd75d317d6d4546b7de5be283937415bf59bb2cca7c080a6e23c33f44509",
+      "bytes": 36484
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\milwaukee-brewers.png",
+      "sha256": "af91a9db1c999159c8fc8509a14b434758cc832eb149ebd21d05df712c833518",
+      "expected": "af91a9db1c999159c8fc8509a14b434758cc832eb149ebd21d05df712c833518",
+      "bytes": 25146
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\minnesota-twins.png",
+      "sha256": "79da06dff12470b9b6fb07a1aaac629c0c52bee78a142e1ff2417910baf507e4",
+      "expected": "79da06dff12470b9b6fb07a1aaac629c0c52bee78a142e1ff2417910baf507e4",
+      "bytes": 12490
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\new-york-mets.png",
+      "sha256": "9bce146b96e48ed77a6685fac67a7e859e6e8b46f4bec025cad104fb0002b443",
+      "expected": "9bce146b96e48ed77a6685fac67a7e859e6e8b46f4bec025cad104fb0002b443",
+      "bytes": 23961
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\new-york-yankees.png",
+      "sha256": "f0fb6640bcd23b24500bd532005e533d4ac63300ea2a74252268bcbc13337387",
+      "expected": "f0fb6640bcd23b24500bd532005e533d4ac63300ea2a74252268bcbc13337387",
+      "bytes": 13457
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\philadelphia-phillies.png",
+      "sha256": "9fd1719cb3678e2f683f61cc7658352f48ec05211f6af1216549b1064a13666f",
+      "expected": "9fd1719cb3678e2f683f61cc7658352f48ec05211f6af1216549b1064a13666f",
+      "bytes": 6830
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\pittsburgh-pirates.png",
+      "sha256": "97231e24efa8c06f296fe1d319abb730b5cd3ba241a3598b1c3df1cff3850259",
+      "expected": "97231e24efa8c06f296fe1d319abb730b5cd3ba241a3598b1c3df1cff3850259",
+      "bytes": 5821
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\san-diego-padres.png",
+      "sha256": "8ce9c768ccc79fde8e185d709e362c28d339b877dc6727681d5c99321e634879",
+      "expected": "8ce9c768ccc79fde8e185d709e362c28d339b877dc6727681d5c99321e634879",
+      "bytes": 8548
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\san-francisco-giants.png",
+      "sha256": "48d3ae11d8668b0ac6bc045db69251307da4f4dcc7de4d9a7a6bb5cb6fc94ee6",
+      "expected": "48d3ae11d8668b0ac6bc045db69251307da4f4dcc7de4d9a7a6bb5cb6fc94ee6",
+      "bytes": 9865
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\seattle-mariners.png",
+      "sha256": "c5895f877eded062efd9a8c95cdd6c4839545e88139337224d45d6cde694aaff",
+      "expected": "c5895f877eded062efd9a8c95cdd6c4839545e88139337224d45d6cde694aaff",
+      "bytes": 34176
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\st-louis-cardinals.png",
+      "sha256": "6f0a66a06fad839113ce4210bf098a35856d4b72c8501fee139c7dcbdbbd4383",
+      "expected": "6f0a66a06fad839113ce4210bf098a35856d4b72c8501fee139c7dcbdbbd4383",
+      "bytes": 11890
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\texas-rangers.png",
+      "sha256": "78a52e4e5d7f451c33d0dd707c487b591dc92c34ef38700fc64c8f3b1c197acd",
+      "expected": "78a52e4e5d7f451c33d0dd707c487b591dc92c34ef38700fc64c8f3b1c197acd",
+      "bytes": 9367
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\toronto-blue-jays.png",
+      "sha256": "88b5103c5040f568ab731fb6fd15ed7064c7f1956761c1588e57e2a71510d6eb",
+      "expected": "88b5103c5040f568ab731fb6fd15ed7064c7f1956761c1588e57e2a71510d6eb",
+      "bytes": 21184
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mlb\\washington-nationals.png",
+      "sha256": "f55b16330b5d3696c83c60a7248ffbbd95acd04806c5cd98389ad3d8867f1060",
+      "expected": "f55b16330b5d3696c83c60a7248ffbbd95acd04806c5cd98389ad3d8867f1060",
+      "bytes": 30310
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\atlanta-united-fc.png",
+      "sha256": "c5e4a39bb7cdfc651b26c5099e6f582d772edf0f61834301b5b7040e15b4ef6f",
+      "expected": "c5e4a39bb7cdfc651b26c5099e6f582d772edf0f61834301b5b7040e15b4ef6f",
+      "bytes": 41456
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\austin-fc.png",
+      "sha256": "25967e16d3264c14686fde07f8cba94b52f30b6f7ce99a5c4d526fdef5951955",
+      "expected": "25967e16d3264c14686fde07f8cba94b52f30b6f7ce99a5c4d526fdef5951955",
+      "bytes": 22172
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\cf-montreal.png",
+      "sha256": "d858623c42f51e12384aa03925976a65b7d18d9ef04db24da29523479f7479ae",
+      "expected": "d858623c42f51e12384aa03925976a65b7d18d9ef04db24da29523479f7479ae",
+      "bytes": 41663
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\charlotte-fc.png",
+      "sha256": "ef78a886116e0dc479c2b4154c13633575dd3cd0e529425f1759e854e51bb3ad",
+      "expected": "ef78a886116e0dc479c2b4154c13633575dd3cd0e529425f1759e854e51bb3ad",
+      "bytes": 33529
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\chicago-fire-fc.png",
+      "sha256": "46c771a6834f9cc61ff0ba9cdd57f19b62051fa75a06a2a0be106be4731dc206",
+      "expected": "46c771a6834f9cc61ff0ba9cdd57f19b62051fa75a06a2a0be106be4731dc206",
+      "bytes": 25796
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\colorado-rapids.png",
+      "sha256": "c9673985b6515635f28544eb7500a68dd75d6cf017ba92341a6d9b483ae47348",
+      "expected": "c9673985b6515635f28544eb7500a68dd75d6cf017ba92341a6d9b483ae47348",
+      "bytes": 36271
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\columbus-crew.png",
+      "sha256": "ef97290a706f417a30053df26bd5034edad8d80b6909345bd594ca682d4c92f0",
+      "expected": "ef97290a706f417a30053df26bd5034edad8d80b6909345bd594ca682d4c92f0",
+      "bytes": 16214
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\d-c-united.png",
+      "sha256": "5f2420048f90062c4043d04ca7a7c54ccc01a306bf21cd61ef25213a3cb57696",
+      "expected": "5f2420048f90062c4043d04ca7a7c54ccc01a306bf21cd61ef25213a3cb57696",
+      "bytes": 24989
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\fc-cincinnati.png",
+      "sha256": "5179fe8258773f976469f481c1338638dc4325a0cdf9b401afd7ee47478ec8aa",
+      "expected": "5179fe8258773f976469f481c1338638dc4325a0cdf9b401afd7ee47478ec8aa",
+      "bytes": 35105
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\fc-dallas.png",
+      "sha256": "3234b993c7e987edb3bc03e55054a1631df636e7d0e78d5ab66ba55e1ed05ed7",
+      "expected": "3234b993c7e987edb3bc03e55054a1631df636e7d0e78d5ab66ba55e1ed05ed7",
+      "bytes": 36268
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\houston-dynamo-fc.png",
+      "sha256": "495f80023ba3af8981be36340dac8ec499524f16402f7999c4e1efdd6a5fd474",
+      "expected": "495f80023ba3af8981be36340dac8ec499524f16402f7999c4e1efdd6a5fd474",
+      "bytes": 23569
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\la-galaxy.png",
+      "sha256": "e73cf87ea8bd685b47df9e8ea47a2ef2c34903c5614c0186601b076e22bea752",
+      "expected": "e73cf87ea8bd685b47df9e8ea47a2ef2c34903c5614c0186601b076e22bea752",
+      "bytes": 30074
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\lafc.png",
+      "sha256": "49a6da62aa2dfbf99aa211b13883b09c4608e7bab48b051b5968cca241c78d81",
+      "expected": "49a6da62aa2dfbf99aa211b13883b09c4608e7bab48b051b5968cca241c78d81",
+      "bytes": 21589
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\minnesota-united-fc.png",
+      "sha256": "aaf1935cab50473c35e6fcf1a1f24a3cbfe424de2c54a1129f623f669ad871fb",
+      "expected": "aaf1935cab50473c35e6fcf1a1f24a3cbfe424de2c54a1129f623f669ad871fb",
+      "bytes": 25178
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\nashville-sc.png",
+      "sha256": "ac4c07fcb4121730ff4acbe824ec934cad19a14ca22707d6bc3845a2ad4968c3",
+      "expected": "ac4c07fcb4121730ff4acbe824ec934cad19a14ca22707d6bc3845a2ad4968c3",
+      "bytes": 16240
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\new-england-revolution.png",
+      "sha256": "d56c95ea9da954936fdb988ec0f49cbc00a66f70a80befd0c039d9486c487d85",
+      "expected": "d56c95ea9da954936fdb988ec0f49cbc00a66f70a80befd0c039d9486c487d85",
+      "bytes": 47966
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\orlando-city-sc.png",
+      "sha256": "25c7d09962f19b2cf473a5178aa7a7af2da34c58919fdd87262f47872280ac52",
+      "expected": "25c7d09962f19b2cf473a5178aa7a7af2da34c58919fdd87262f47872280ac52",
+      "bytes": 37411
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\philadelphia-union.png",
+      "sha256": "414db22a76708ca8e57300bdb776494c5114fa1610d1e9b4b7cbbc6f6b704dcd",
+      "expected": "414db22a76708ca8e57300bdb776494c5114fa1610d1e9b4b7cbbc6f6b704dcd",
+      "bytes": 46098
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\portland-timbers.png",
+      "sha256": "acb0a9e30a4918fc809faa3d7d4ee2c438d37f78f6d17609bfb82f8b31004127",
+      "expected": "acb0a9e30a4918fc809faa3d7d4ee2c438d37f78f6d17609bfb82f8b31004127",
+      "bytes": 30358
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\real-salt-lake.png",
+      "sha256": "53edbb63ccd181b0c07daf5da71ded0dcdb6d2e69dba674801f4ff7fcabc1f4e",
+      "expected": "53edbb63ccd181b0c07daf5da71ded0dcdb6d2e69dba674801f4ff7fcabc1f4e",
+      "bytes": 36946
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\san-jose-earthquakes.png",
+      "sha256": "f81375b4cd2fab3bc8fbb7b46a321a0b226d9a2ae102567d929eb57da9bde0ec",
+      "expected": "f81375b4cd2fab3bc8fbb7b46a321a0b226d9a2ae102567d929eb57da9bde0ec",
+      "bytes": 32914
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\seattle-sounders-fc.png",
+      "sha256": "934ce12f10dff3b5c8a5cd931329ef3ccb43f989f134682736255fd8e5880753",
+      "expected": "934ce12f10dff3b5c8a5cd931329ef3ccb43f989f134682736255fd8e5880753",
+      "bytes": 29461
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\sporting-kansas-city.png",
+      "sha256": "3eff1193d2e19f7360f43c1f369ddb139157aa180a4dbf955b970d1c3d637753",
+      "expected": "3eff1193d2e19f7360f43c1f369ddb139157aa180a4dbf955b970d1c3d637753",
+      "bytes": 38752
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\st-louis-city-sc.png",
+      "sha256": "9d54c97478c9398c9f01a7a844de6d4bac32fff6ea19e1c43f2e637c5c680a63",
+      "expected": "9d54c97478c9398c9f01a7a844de6d4bac32fff6ea19e1c43f2e637c5c680a63",
+      "bytes": 20613
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\toronto-fc.png",
+      "sha256": "82c1fd12111222f7fc3e561e87b4154391c68c95a9e935ab4dcbf6c5bea6770e",
+      "expected": "82c1fd12111222f7fc3e561e87b4154391c68c95a9e935ab4dcbf6c5bea6770e",
+      "bytes": 31904
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\mls\\vancouver-whitecaps.png",
+      "sha256": "fce54cb122036faa8d19529e14c2bea1cfef94764db8226f02ef20a691d11823",
+      "expected": "fce54cb122036faa8d19529e14c2bea1cfef94764db8226f02ef20a691d11823",
+      "bytes": 30555
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\arizona-cardinals.png",
+      "sha256": "23cec922440f985d64948415c6f1295d91870ec979565bbff12fb442f2563b61",
+      "expected": "23cec922440f985d64948415c6f1295d91870ec979565bbff12fb442f2563b61",
+      "bytes": 19190
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\atlanta-falcons.png",
+      "sha256": "97a495e68d8d178075aa63486afe773405fdf9d889941079216cdf0abe7200c2",
+      "expected": "97a495e68d8d178075aa63486afe773405fdf9d889941079216cdf0abe7200c2",
+      "bytes": 26423
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\baltimore-ravens.png",
+      "sha256": "153119fd96d3ee6915159fc25d3c91722d66e501edae90902cf6f1090d1df163",
+      "expected": "153119fd96d3ee6915159fc25d3c91722d66e501edae90902cf6f1090d1df163",
+      "bytes": 25365
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\carolina-panthers.png",
+      "sha256": "ee5d0ac68b0fd41d520136ee1a52c77229a1397542dad0cb1557f393cc7f81bd",
+      "expected": "ee5d0ac68b0fd41d520136ee1a52c77229a1397542dad0cb1557f393cc7f81bd",
+      "bytes": 16549
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\chicago-bears.png",
+      "sha256": "9601cf8e81b8227dba70763d19f8fd998040d7fe6753bcafd01a517dee13601a",
+      "expected": "9601cf8e81b8227dba70763d19f8fd998040d7fe6753bcafd01a517dee13601a",
+      "bytes": 41856
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\cincinnati-bengals.png",
+      "sha256": "2eea9ce35f2b51f35ebd2a152b788a021b7daeedec4b8f93c459a88e304fdaa7",
+      "expected": "2eea9ce35f2b51f35ebd2a152b788a021b7daeedec4b8f93c459a88e304fdaa7",
+      "bytes": 14193
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\cleveland-browns.png",
+      "sha256": "4b1e67939849a813799b8e73f2498823e3c47703bae5b9fc0a09b1ee1814e25a",
+      "expected": "4b1e67939849a813799b8e73f2498823e3c47703bae5b9fc0a09b1ee1814e25a",
+      "bytes": 37267
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\dallas-cowboys.png",
+      "sha256": "37d8a06e0a4bd620e63c321f9dfe6887acadb3bd3e8948b7b19cff68c21cb6d7",
+      "expected": "37d8a06e0a4bd620e63c321f9dfe6887acadb3bd3e8948b7b19cff68c21cb6d7",
+      "bytes": 16121
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\denver-broncos.png",
+      "sha256": "619d825e34a07495b45a0aee7ed1ff07b6059d477547086fc5608e3b68092cec",
+      "expected": "619d825e34a07495b45a0aee7ed1ff07b6059d477547086fc5608e3b68092cec",
+      "bytes": 21039
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\green-bay-packers.png",
+      "sha256": "c44ab02cc1fcf37c90566ed84314223e9138255abf0f1659b2ad9f2ed86e138c",
+      "expected": "c44ab02cc1fcf37c90566ed84314223e9138255abf0f1659b2ad9f2ed86e138c",
+      "bytes": 21270
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\houston-texans.png",
+      "sha256": "29ebf0152657978f02bd69f7279f1fe0a17874f4fba440fb223bcdceeb58d1d2",
+      "expected": "29ebf0152657978f02bd69f7279f1fe0a17874f4fba440fb223bcdceeb58d1d2",
+      "bytes": 18214
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\indianapolis-colts.png",
+      "sha256": "32dec771e3165c232359dab2b808d8c7ed3e1c69324dd2b9640dd57c7c208ba7",
+      "expected": "32dec771e3165c232359dab2b808d8c7ed3e1c69324dd2b9640dd57c7c208ba7",
+      "bytes": 20610
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\jacksonville-jaguars.png",
+      "sha256": "cf366102f8cfe34a5ba5478ff13503154ad6aa3b0bc905667fb1e93e1dfdaded",
+      "expected": "cf366102f8cfe34a5ba5478ff13503154ad6aa3b0bc905667fb1e93e1dfdaded",
+      "bytes": 34949
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\kansas-city-chiefs.png",
+      "sha256": "afaa45333f9ef6aa854723f9992b52d2e2a8676e55b22cf77d62f3da78f1c3d8",
+      "expected": "afaa45333f9ef6aa854723f9992b52d2e2a8676e55b22cf77d62f3da78f1c3d8",
+      "bytes": 19849
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\las-vegas-raiders.png",
+      "sha256": "1f97295efcd1f49ef6a7b324ca1be80f443952efda1182e6291f87edd71c4512",
+      "expected": "1f97295efcd1f49ef6a7b324ca1be80f443952efda1182e6291f87edd71c4512",
+      "bytes": 30830
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\los-angeles-chargers.png",
+      "sha256": "b58c90102f2df6f9bdfa55d400d62bb5c87bc06117939d804493563ce5ab53ea",
+      "expected": "b58c90102f2df6f9bdfa55d400d62bb5c87bc06117939d804493563ce5ab53ea",
+      "bytes": 15234
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\los-angeles-rams.png",
+      "sha256": "a24af31bfe9a3523775b27d6a6ed585de91232244c6d517c3fa55ec52fe0d815",
+      "expected": "a24af31bfe9a3523775b27d6a6ed585de91232244c6d517c3fa55ec52fe0d815",
+      "bytes": 12307
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\miami-dolphins.png",
+      "sha256": "4f424de42272fc94e7c820086c3794d1fc9157be6fec1d7ef7d0e1ea1513ed43",
+      "expected": "4f424de42272fc94e7c820086c3794d1fc9157be6fec1d7ef7d0e1ea1513ed43",
+      "bytes": 29568
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\minnesota-vikings.png",
+      "sha256": "10e60829edc1c1948f85d1b65e084abdeb80b004afa62d43add3e3d13ceea5c7",
+      "expected": "10e60829edc1c1948f85d1b65e084abdeb80b004afa62d43add3e3d13ceea5c7",
+      "bytes": 38393
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\new-england-patriots.png",
+      "sha256": "d9a6289a199980993fe003720e2b4edec13503dcdd81c623d7804f9de1cc8636",
+      "expected": "d9a6289a199980993fe003720e2b4edec13503dcdd81c623d7804f9de1cc8636",
+      "bytes": 15795
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\new-orleans-saints.png",
+      "sha256": "adbcd3f6cff8fde30d8fff4a52ad5bab31741fc78e790e71082099ace5740438",
+      "expected": "adbcd3f6cff8fde30d8fff4a52ad5bab31741fc78e790e71082099ace5740438",
+      "bytes": 22420
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\new-york-giants.png",
+      "sha256": "24c9de4c5358a0977d2a77f9bcf714f20ce069b2edf43d9a45669f7c157e4516",
+      "expected": "24c9de4c5358a0977d2a77f9bcf714f20ce069b2edf43d9a45669f7c157e4516",
+      "bytes": 5462
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\new-york-jets.png",
+      "sha256": "9259b1a7810e5ac5c8c84ef7769f0dc55117329be7fc1e0f757a7f7cd2ab542e",
+      "expected": "9259b1a7810e5ac5c8c84ef7769f0dc55117329be7fc1e0f757a7f7cd2ab542e",
+      "bytes": 5432
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\philadelphia-eagles.png",
+      "sha256": "b57ea86bcb1831e6dc2d3179ed0c0a8ba3cc54f054f7c8598a0f2ae327598f12",
+      "expected": "b57ea86bcb1831e6dc2d3179ed0c0a8ba3cc54f054f7c8598a0f2ae327598f12",
+      "bytes": 29288
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\pittsburgh-steelers.png",
+      "sha256": "7be2a0cebf36fcddd13a7ed0e07549aedb70d33cf7ba5057d7a7fe55c9f2c624",
+      "expected": "7be2a0cebf36fcddd13a7ed0e07549aedb70d33cf7ba5057d7a7fe55c9f2c624",
+      "bytes": 25607
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\san-francisco-49ers.png",
+      "sha256": "cd9a7e6a251e8e011c09828465acc6149adf7fadfacde51fc8f123e89773cb42",
+      "expected": "cd9a7e6a251e8e011c09828465acc6149adf7fadfacde51fc8f123e89773cb42",
+      "bytes": 23236
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\seattle-seahawks.png",
+      "sha256": "652f2c2bc5c2846c0bc093a7ebfd4a280fc2e6dde01989903bc27d1f3776fdac",
+      "expected": "652f2c2bc5c2846c0bc093a7ebfd4a280fc2e6dde01989903bc27d1f3776fdac",
+      "bytes": 15621
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\tampa-bay-buccaneers.png",
+      "sha256": "c1d39b864ce2f1f2b73d6c92bc4acc0fab374bb05e573430a93c5c3819cde510",
+      "expected": "c1d39b864ce2f1f2b73d6c92bc4acc0fab374bb05e573430a93c5c3819cde510",
+      "bytes": 38718
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\tennessee-titans.png",
+      "sha256": "27bb94a30325202549b0ae829c7ea20c4e83054a8dde59b09f4a8052cd308997",
+      "expected": "27bb94a30325202549b0ae829c7ea20c4e83054a8dde59b09f4a8052cd308997",
+      "bytes": 24922
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nfl\\washington-commanders.png",
+      "sha256": "4aeb1adbe89b5889b43e7ecd30602d11a97c521871242e50c99006799b20a1c8",
+      "expected": "4aeb1adbe89b5889b43e7ecd30602d11a97c521871242e50c99006799b20a1c8",
+      "bytes": 13776
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\chicago-blackhawks.png",
+      "sha256": "3295894b05629d524b27f4eb0da6468febfd33236d08683a0a8acb95cb92f586",
+      "expected": "3295894b05629d524b27f4eb0da6468febfd33236d08683a0a8acb95cb92f586",
+      "bytes": 58896
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\dallas-stars.png",
+      "sha256": "976604d15316699b51ec2d2ffb3eddb5ffcca4b3b8f167bd7c6cd6af2c53fb88",
+      "expected": "976604d15316699b51ec2d2ffb3eddb5ffcca4b3b8f167bd7c6cd6af2c53fb88",
+      "bytes": 22174
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\edmonton-oilers.png",
+      "sha256": "9e2a7f73c3af1e645765867071ebd34c22ba2f9f9eb62e99d26217080e945436",
+      "expected": "9e2a7f73c3af1e645765867071ebd34c22ba2f9f9eb62e99d26217080e945436",
+      "bytes": 33397
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\los-angeles-kings.png",
+      "sha256": "b59f06a093239616082fca96e423fcb7bb7f93186a9aced7cf1dada631481dce",
+      "expected": "b59f06a093239616082fca96e423fcb7bb7f93186a9aced7cf1dada631481dce",
+      "bytes": 27541
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\minnesota-wild.png",
+      "sha256": "b90b53240ae08219527ec9320092e5608ab905cf271ce6e309b9e1e206b020ef",
+      "expected": "b90b53240ae08219527ec9320092e5608ab905cf271ce6e309b9e1e206b020ef",
+      "bytes": 27882
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\seattle-kraken.png",
+      "sha256": "a843ab53a768fb2eb9fa1f9162d80944d65292eff3ed7628e07547b588f144c2",
+      "expected": "a843ab53a768fb2eb9fa1f9162d80944d65292eff3ed7628e07547b588f144c2",
+      "bytes": 30088
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\st-louis-blues.png",
+      "sha256": "0667f8b6f8803998186237fb57fe3d6405f39201038f8055446efd216538444d",
+      "expected": "0667f8b6f8803998186237fb57fe3d6405f39201038f8055446efd216538444d",
+      "bytes": 23848
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\vancouver-canucks.png",
+      "sha256": "4ea1c14612cbb7c4af5e472601978fceb450cba6c8ba260e1ce2664c740819ed",
+      "expected": "4ea1c14612cbb7c4af5e472601978fceb450cba6c8ba260e1ce2664c740819ed",
+      "bytes": 48443
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\vegas-golden-knights.png",
+      "sha256": "e2c357852fa4e2137ff0598542c900e1dba76df0a128b8f24c9764ad417061fd",
+      "expected": "e2c357852fa4e2137ff0598542c900e1dba76df0a128b8f24c9764ad417061fd",
+      "bytes": 23521
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\nhl\\winnipeg-jets.png",
+      "sha256": "61d623556a2c377c2358a960628e504a89ba3d35505709043f14695f9ed0a21a",
+      "expected": "61d623556a2c377c2358a960628e504a89ba3d35505709043f14695f9ed0a21a",
+      "bytes": 35254
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\arsenal.png",
+      "sha256": "e33f0ce5a35b67c936bc36715b5b1a0cbe5670a6124fda78f14f889b6a63ede7",
+      "expected": "e33f0ce5a35b67c936bc36715b5b1a0cbe5670a6124fda78f14f889b6a63ede7",
+      "bytes": 40822
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\aston-villa.png",
+      "sha256": "84f1f56ff05efce53004d29e36214258f671b80ae817e6ea7787a771f123e190",
+      "expected": "84f1f56ff05efce53004d29e36214258f671b80ae817e6ea7787a771f123e190",
+      "bytes": 35361
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\brighton-hove-albion.png",
+      "sha256": "0b012d3e68bab2aa3495867614e9b72307a6503d5f80ce3633b68047303f17a7",
+      "expected": "0b012d3e68bab2aa3495867614e9b72307a6503d5f80ce3633b68047303f17a7",
+      "bytes": 33014
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\coventry-city.png",
+      "sha256": "46b8af75b701bc2dfad3b1aa42786e8971759d1d0b5c48efdc846646a1109484",
+      "expected": "46b8af75b701bc2dfad3b1aa42786e8971759d1d0b5c48efdc846646a1109484",
+      "bytes": 64970
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\everton.png",
+      "sha256": "fc5c78c9a779db04968e1aeb5f147b8170ced966754c6ba9dd2a2128dfdc567d",
+      "expected": "fc5c78c9a779db04968e1aeb5f147b8170ced966754c6ba9dd2a2128dfdc567d",
+      "bytes": 45865
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\hull-city.png",
+      "sha256": "cdba67d4ab6d06b1e7eba442d614ff37076317ea439d9f1292c0141ddc3fc848",
+      "expected": "cdba67d4ab6d06b1e7eba442d614ff37076317ea439d9f1292c0141ddc3fc848",
+      "bytes": 38562
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\ipswich-town.png",
+      "sha256": "a3de5473b38f84c46d7cf7fad45f861b91f700cfe41a05b42dc51ea29ebb1281",
+      "expected": "a3de5473b38f84c46d7cf7fad45f861b91f700cfe41a05b42dc51ea29ebb1281",
+      "bytes": 29644
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\newcastle-united.png",
+      "sha256": "289e13c56df6320f7de2f636e507b5b340df8dc62d6cc02e9c27b660cfc74230",
+      "expected": "289e13c56df6320f7de2f636e507b5b340df8dc62d6cc02e9c27b660cfc74230",
+      "bytes": 64738
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\nottingham-forest.png",
+      "sha256": "19c7a914ffe191246a6f24d47a4c865b8b5be77c13e096e496ecd31ab34d1f64",
+      "expected": "19c7a914ffe191246a6f24d47a4c865b8b5be77c13e096e496ecd31ab34d1f64",
+      "bytes": 17379
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\premier-league\\tottenham-hotspur.png",
+      "sha256": "7de2a16b076a09be24c9e1b178ac95b88e14ac301bd6309bf2df625f0258e1a0",
+      "expected": "7de2a16b076a09be24c9e1b178ac95b88e14ac301bd6309bf2df625f0258e1a0",
+      "bytes": 15386
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\chicago-sky.png",
+      "sha256": "c2274b6490eb8efb65a34d85e88d832b7a509b620cf202a9d1e98c43290c9e4b",
+      "expected": "c2274b6490eb8efb65a34d85e88d832b7a509b620cf202a9d1e98c43290c9e4b",
+      "bytes": 26522
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\dallas-wings.png",
+      "sha256": "1f23b224d199e68a5bec085c308ad840a874722474afc98fad5ae51c9f8d2f28",
+      "expected": "1f23b224d199e68a5bec085c308ad840a874722474afc98fad5ae51c9f8d2f28",
+      "bytes": 31274
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\las-vegas-aces.png",
+      "sha256": "1db7b07bf4eb2ba63c6d89e30edae357eecd3c9490840385d0b1acc4abcd797b",
+      "expected": "1db7b07bf4eb2ba63c6d89e30edae357eecd3c9490840385d0b1acc4abcd797b",
+      "bytes": 16873
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\los-angeles-sparks.png",
+      "sha256": "77742d99cf2448add4c2c672e5789d286f08a0b4387fcaaf055ef468ade5d9d6",
+      "expected": "77742d99cf2448add4c2c672e5789d286f08a0b4387fcaaf055ef468ade5d9d6",
+      "bytes": 36381
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\phoenix-mercury.png",
+      "sha256": "8c307d0e6ec41672e5422e5624beb03d28c3d5cb07f3d44c9bcb610860ce4752",
+      "expected": "8c307d0e6ec41672e5422e5624beb03d28c3d5cb07f3d44c9bcb610860ce4752",
+      "bytes": 25964
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\portland-fire.png",
+      "sha256": "9151ba8352a2fb96d66ec9ab0fa9309fb0d8e2aa66952fb78a978ff464e632e4",
+      "expected": "9151ba8352a2fb96d66ec9ab0fa9309fb0d8e2aa66952fb78a978ff464e632e4",
+      "bytes": 20010
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\seattle-storm.png",
+      "sha256": "0dd75571c792a4b9a09825edc147bd67f3f1240fb49dbf18ca5a74dc09837a39",
+      "expected": "0dd75571c792a4b9a09825edc147bd67f3f1240fb49dbf18ca5a74dc09837a39",
+      "bytes": 26206
+    },
+    {
+      "path": "dist\\client\\sports\\r7\\teams\\wnba\\washington-mystics.png",
+      "sha256": "f5e34af248d6a87b27d57d8e76a97addda9aa098639119d65737ce1452835ff8",
+      "expected": "f5e34af248d6a87b27d57d8e76a97addda9aa098639119d65737ce1452835ff8",
+      "bytes": 57134
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\bundesliga\\1-fc-union-berlin.png",
+      "sha256": "1cf0d9a9a89648e264b9ae3681b601ec0aa79e4cdd4bbdb939c3067fff4a0562",
+      "expected": "1cf0d9a9a89648e264b9ae3681b601ec0aa79e4cdd4bbdb939c3067fff4a0562",
+      "bytes": 20881
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\bundesliga\\bayern-munich.png",
+      "sha256": "b4f885b9888f83da9d512a8a99ffd73357504a8f2bb135157c95b99d13efe136",
+      "expected": "b4f885b9888f83da9d512a8a99ffd73357504a8f2bb135157c95b99d13efe136",
+      "bytes": 47223
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\ligue-1\\as-monaco.png",
+      "sha256": "0d36cd1ab643714f6b169791d557f859835edaeea37566fcc7e38f18b4adf300",
+      "expected": "0d36cd1ab643714f6b169791d557f859835edaeea37566fcc7e38f18b4adf300",
+      "bytes": 24229
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\ligue-1\\lens.png",
+      "sha256": "f5f6584fda3f7b6d0a58e4c65afccaceba0d3dc8dd4d8729aafbe4eaebf1b1ac",
+      "expected": "f5f6584fda3f7b6d0a58e4c65afccaceba0d3dc8dd4d8729aafbe4eaebf1b1ac",
+      "bytes": 27276
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\mlb\\athletics.png",
+      "sha256": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "expected": "c2913ecb1cb2761bedeca9d33f0bdff5f09dee5e69c48c2e506e6f2c7a1e0b9b",
+      "bytes": 20053
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\mlb\\tampa-bay-rays.png",
+      "sha256": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "expected": "15f2c4c5719f9538f51a1360e1efbebaa9d9deca948337c71c05655511d1e1f9",
+      "bytes": 16834
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\mls\\new-york-city-fc.png",
+      "sha256": "d559411e9767b81e7ee0d1bc80bcc63b97809469dd52dad257832d884a8988b9",
+      "expected": "d559411e9767b81e7ee0d1bc80bcc63b97809469dd52dad257832d884a8988b9",
+      "bytes": 58112
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\mls\\red-bull-new-york.png",
+      "sha256": "2a22e44a833c0f3376baa15f873e293f2fda043ce21bc3e1adbea7a300dc84db",
+      "expected": "2a22e44a833c0f3376baa15f873e293f2fda043ce21bc3e1adbea7a300dc84db",
+      "bytes": 35205
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\nba\\miami-heat.png",
+      "sha256": "288772560ecfdc953f464ea44e8ef28ce4dda5aa572f58275b70b76e79fabca8",
+      "expected": "288772560ecfdc953f464ea44e8ef28ce4dda5aa572f58275b70b76e79fabca8",
+      "bytes": 25353
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\nba\\toronto-raptors.png",
+      "sha256": "365c6e0cbf4aa7109735fa50995a2ab7315d5fed0b2959041381c6ab6c999627",
+      "expected": "365c6e0cbf4aa7109735fa50995a2ab7315d5fed0b2959041381c6ab6c999627",
+      "bytes": 20864
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\nfl\\buffalo-bills.png",
+      "sha256": "8abd249746ea8ecd486090c6567ef30d1d50a5532c0edf26db9984df026e167b",
+      "expected": "8abd249746ea8ecd486090c6567ef30d1d50a5532c0edf26db9984df026e167b",
+      "bytes": 20288
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\nfl\\detroit-lions.png",
+      "sha256": "23e0ed4bb30595a9431d13e37f974a1696e311b5a48b4cac893775b04848d3f7",
+      "expected": "23e0ed4bb30595a9431d13e37f974a1696e311b5a48b4cac893775b04848d3f7",
+      "bytes": 26058
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\nhl\\montreal-canadiens.png",
+      "sha256": "4c2ef208262a9cba589b168bfb621557b1eb492a27697da7b49884fc3303ff86",
+      "expected": "4c2ef208262a9cba589b168bfb621557b1eb492a27697da7b49884fc3303ff86",
+      "bytes": 31301
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\nhl\\toronto-maple-leafs.png",
+      "sha256": "d5f84559cd3746de9c65d88f4dd63834cc587f28779ed4be4e81bf151976a0c6",
+      "expected": "d5f84559cd3746de9c65d88f4dd63834cc587f28779ed4be4e81bf151976a0c6",
+      "bytes": 29883
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\premier-league\\brentford.png",
+      "sha256": "cb7504eb7dc38b3f295205bc78fc643f37527f4fec3e6d03251b3a70fa60a42a",
+      "expected": "cb7504eb7dc38b3f295205bc78fc643f37527f4fec3e6d03251b3a70fa60a42a",
+      "bytes": 49424
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\premier-league\\chelsea.png",
+      "sha256": "9bdd9669a777c1ed63564501cba4d49a5e19397e1b9ea3b15cdbbf0fcfabaf47",
+      "expected": "9bdd9669a777c1ed63564501cba4d49a5e19397e1b9ea3b15cdbbf0fcfabaf47",
+      "bytes": 55084
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\wnba\\atlanta-dream.png",
+      "sha256": "cf1c6ec5d0d5c7b8827fa5a2140e789a23bc3db28d2fd841d19f6a8cd278cf94",
+      "expected": "cf1c6ec5d0d5c7b8827fa5a2140e789a23bc3db28d2fd841d19f6a8cd278cf94",
+      "bytes": 31161
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\teams\\wnba\\connecticut-sun.png",
+      "sha256": "8dc28f8c41458345193092085d6ea98ca41953f2108a138fb4cb5ca1346a195a",
+      "expected": "8dc28f8c41458345193092085d6ea98ca41953f2108a138fb4cb5ca1346a195a",
+      "bytes": 28779
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\american-football.png",
+      "sha256": "b44e2112679fb5c3c02e2b102e29caf1bf1fba89386e07249dbc04c058bf015f",
+      "expected": "b44e2112679fb5c3c02e2b102e29caf1bf1fba89386e07249dbc04c058bf015f",
+      "bytes": 5976
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\baseball.png",
+      "sha256": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "expected": "2bb80bfd03f3ea3062c90a5f518c12634a69ebdc12c59b5dc390e9ca92138c2a",
+      "bytes": 8659
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\basketball.png",
+      "sha256": "07594a948056b184d07066b1f07e67ca50eed02f82cf47ddf0b6a4739e02e39f",
+      "expected": "07594a948056b184d07066b1f07e67ca50eed02f82cf47ddf0b6a4739e02e39f",
+      "bytes": 10094
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\esports.png",
+      "sha256": "7e4793b241b1739628de151e79b3367ed3a351b02f8eafd01f196afba360ca18",
+      "expected": "7e4793b241b1739628de151e79b3367ed3a351b02f8eafd01f196afba360ca18",
+      "bytes": 4292
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\ice-hockey.png",
+      "sha256": "c393e05182eaa0e3bb84fa79d6c5aae722ccfaa6b08f7d2750671752ed1f61be",
+      "expected": "c393e05182eaa0e3bb84fa79d6c5aae722ccfaa6b08f7d2750671752ed1f61be",
+      "bytes": 5916
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\soccer.png",
+      "sha256": "553a55163515e044992112906e0f86c4ce3c577347257f364847f1163dfb0a23",
+      "expected": "553a55163515e044992112906e0f86c4ce3c577347257f364847f1163dfb0a23",
+      "bytes": 9925
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\tennis.png",
+      "sha256": "9b94f36d15179af0c09cc2d9619c908cd568996461c1677ee3b7fb2b7e6b0b81",
+      "expected": "9b94f36d15179af0c09cc2d9619c908cd568996461c1677ee3b7fb2b7e6b0b81",
+      "bytes": 7879
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\sports\\mdi\\volleyball.png",
+      "sha256": "9b757d69554e706d75d37599f83053071186318c6b739309ead30f7dfdb81544",
+      "expected": "9b757d69554e706d75d37599f83053071186318c6b739309ead30f7dfdb81544",
+      "bytes": 8658
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\baseball\\mlb.png",
+      "sha256": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "expected": "52b0ef634028d5e5186dc98e7e4034db054dba019d654799cf2f3214ca8766bb",
+      "bytes": 9002
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\basketball\\nba.png",
+      "sha256": "412adb58760a561bdbdacb943e0d17375f07fa3c2a1fe44d2d85eec9a8a84e8b",
+      "expected": "412adb58760a561bdbdacb943e0d17375f07fa3c2a1fe44d2d85eec9a8a84e8b",
+      "bytes": 13508
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\basketball\\wnba.png",
+      "sha256": "15326c3a77455a8fc70875c4a327efc27be9f5266294143e0f34ef20b9ae610f",
+      "expected": "15326c3a77455a8fc70875c4a327efc27be9f5266294143e0f34ef20b9ae610f",
+      "bytes": 7148
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\football\\nfl.png",
+      "sha256": "20adf0e2ed49e52b5df97b729344a9693b774283032ef41e8a30f04bfde8df08",
+      "expected": "20adf0e2ed49e52b5df97b729344a9693b774283032ef41e8a30f04bfde8df08",
+      "bytes": 20849
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\hockey\\nhl.png",
+      "sha256": "19141499aa18e659513e2f9b530e6e1ee4e25c450ae8a239a4cf59bf8dd1be0b",
+      "expected": "19141499aa18e659513e2f9b530e6e1ee4e25c450ae8a239a4cf59bf8dd1be0b",
+      "bytes": 42707
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\soccer\\bundesliga.png",
+      "sha256": "5ca590146e696aaad289ae1b0630a73e62ef3b0584cbff2abce70464ace72cbe",
+      "expected": "5ca590146e696aaad289ae1b0630a73e62ef3b0584cbff2abce70464ace72cbe",
+      "bytes": 13637
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\soccer\\ligue-1.png",
+      "sha256": "da6b342a3ad8783792d3a0907c70fe878dd7b89cc70aa5ff785ee535c17b1087",
+      "expected": "da6b342a3ad8783792d3a0907c70fe878dd7b89cc70aa5ff785ee535c17b1087",
+      "bytes": 24485
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\soccer\\mls.png",
+      "sha256": "2d109420fb31c72a450dd05c10ef47b16385874b1965d23ecd417a92b2919b5f",
+      "expected": "2d109420fb31c72a450dd05c10ef47b16385874b1965d23ecd417a92b2919b5f",
+      "bytes": 29636
+    },
+    {
+      "path": "dist\\client\\sports\\r6\\leagues\\soccer\\premier-league.png",
+      "sha256": "78daef634201dc0be0018900f43072a1fa837fa6d38bf09d6f4a15bf3e8c9ba5",
+      "expected": "78daef634201dc0be0018900f43072a1fa837fa6d38bf09d6f4a15bf3e8c9ba5",
+      "bytes": 16410
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_고객센터02.png",
+      "sha256": "19f52c1b74979b58916cecd0d70a380ff668f6ae280a7e7f90b94fff8339585c",
+      "expected": "19f52c1b74979b58916cecd0d70a380ff668f6ae280a7e7f90b94fff8339585c",
+      "bytes": 4294
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_공지사항01.png",
+      "sha256": "50fa988609528ffaf28ec1413332f955a7d59c1353941f40d567f24847b6b83f",
+      "expected": "50fa988609528ffaf28ec1413332f955a7d59c1353941f40d567f24847b6b83f",
+      "bytes": 3964
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_이벤트01.png",
+      "sha256": "2bdd6ca8122527804fd2be4e7c5ce28b87e4dce8cdb55425ead8f7dd8e143b5b",
+      "expected": "2bdd6ca8122527804fd2be4e7c5ce28b87e4dce8cdb55425ead8f7dd8e143b5b",
+      "bytes": 3853
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_이용규정01.png",
+      "sha256": "a783c9b602a42bb843b7789d2f022811ef2c3e7da801d81b218c51935440588f",
+      "expected": "a783c9b602a42bb843b7789d2f022811ef2c3e7da801d81b218c51935440588f",
+      "bytes": 3992
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_쪽지.png",
+      "sha256": "e23a774a25d5593b56d78cbbd253bd38b1ff4a63937599678d7ba7079d928c21",
+      "expected": "e23a774a25d5593b56d78cbbd253bd38b1ff4a63937599678d7ba7079d928c21",
+      "bytes": 4109
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_초기화01.png",
+      "sha256": "2935cb85bd32a0b4bc86bf9da40bca97cf0f17ede659073bd89e390dece4b74e",
+      "expected": "2935cb85bd32a0b4bc86bf9da40bca97cf0f17ede659073bd89e390dece4b74e",
+      "bytes": 4046
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_출석체크01.png",
+      "sha256": "bfa580c0db16fe2c9caae88f9d4fff1cd9efb8729e1782f949e85db3ba36ef4a",
+      "expected": "bfa580c0db16fe2c9caae88f9d4fff1cd9efb8729e1782f949e85db3ba36ef4a",
+      "bytes": 4141
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_충전01.png",
+      "sha256": "48af26767cbff3a94e3cd62794cbbc1bb1b3c0277b6d8aafdac901312dc9d2cf",
+      "expected": "48af26767cbff3a94e3cd62794cbbc1bb1b3c0277b6d8aafdac901312dc9d2cf",
+      "bytes": 4406
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_티켓01.png",
+      "sha256": "984ad4482d937720a6fd90cd187ca10c47433fe798a3e7a5a25e33f0b02f7bfb",
+      "expected": "984ad4482d937720a6fd90cd187ca10c47433fe798a3e7a5a25e33f0b02f7bfb",
+      "bytes": 3461
+    },
+    {
+      "path": "dist\\client\\icons\\mercury-ui\\Icon_Image_환전02.png",
+      "sha256": "b4817714b8cc7e21da8164be43ef4e533b5d8c70f2996a096fea7574e5926358",
+      "expected": "b4817714b8cc7e21da8164be43ef4e533b5d8c70f2996a096fea7574e5926358",
+      "bytes": 5352
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_10_history.png",
+      "sha256": "310eaa653138908dae1296b6a86259568906261a48ef67a809af2847098a15d7",
+      "expected": "310eaa653138908dae1296b6a86259568906261a48ef67a809af2847098a15d7",
+      "bytes": 25091
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_142_messages.png",
+      "sha256": "1f44789e92baf320b6ebcd11cc94a5a8636fec5e14244cc1638024b46025e351",
+      "expected": "1f44789e92baf320b6ebcd11cc94a5a8636fec5e14244cc1638024b46025e351",
+      "bytes": 20330
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_143_reset.png",
+      "sha256": "bde16d1c6d752e28653cf8771c7a597848e3f2398db3b18ca41efade6bf2bd87",
+      "expected": "bde16d1c6d752e28653cf8771c7a597848e3f2398db3b18ca41efade6bf2bd87",
+      "bytes": 20482
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_1_notice.png",
+      "sha256": "b3308551420660f9f6fda310e862e4b4c121d2ec610017d4e12b1203b49d3f69",
+      "expected": "b3308551420660f9f6fda310e862e4b4c121d2ec610017d4e12b1203b49d3f69",
+      "bytes": 20413
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_4_event.png",
+      "sha256": "42388fb1dcc68f3e061a1ecbb17700bfae9f84a3fc5348d1abf37ded6163359c",
+      "expected": "42388fb1dcc68f3e061a1ecbb17700bfae9f84a3fc5348d1abf37ded6163359c",
+      "bytes": 22470
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_5_attendance.png",
+      "sha256": "868a06751d78627cd089dea9a8032ed06e3c380969228f6320a8d329349f4adf",
+      "expected": "868a06751d78627cd089dea9a8032ed06e3c380969228f6320a8d329349f4adf",
+      "bytes": 24431
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_6_support.png",
+      "sha256": "334b952473f0cdba0a6edafbe7a6da318c549cb20d9ace4925007215a47dbde5",
+      "expected": "334b952473f0cdba0a6edafbe7a6da318c549cb20d9ace4925007215a47dbde5",
+      "bytes": 20994
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_7_rules.png",
+      "sha256": "d26bde41bfd64d718abc522566ef2d0d34293bd17204df5cc3b091a97bef24bd",
+      "expected": "d26bde41bfd64d718abc522566ef2d0d34293bd17204df5cc3b091a97bef24bd",
+      "bytes": 21337
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_8_deposit.png",
+      "sha256": "88fcbdca236fe47e960417088fec89a036e592f36a992bf0676ecef594591843",
+      "expected": "88fcbdca236fe47e960417088fec89a036e592f36a992bf0676ecef594591843",
+      "bytes": 16541
+    },
+    {
+      "path": "dist\\client\\icons\\sirius-20261001\\imgi_9_withdraw.png",
+      "sha256": "56f402533c35e46c687338134cce4cb2ad180e9fd451f89b3b7052bc72e33e4b",
+      "expected": "56f402533c35e46c687338134cce4cb2ad180e9fd451f89b3b7052bc72e33e4b",
+      "bytes": 15895
+    },
+    {
+      "path": "dist\\client\\fonts\\pretendard-jp\\LICENSE.txt",
+      "sha256": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e",
+      "expected": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e",
+      "bytes": 4511
+    },
+    {
+      "path": "dist\\client\\fonts\\pretendard-jp\\PretendardJP-Black.woff2",
+      "sha256": "71ff28e74ed789d467ed7ffe225990318e9cdbe9f07343633751a9d36d243aae",
+      "expected": "71ff28e74ed789d467ed7ffe225990318e9cdbe9f07343633751a9d36d243aae",
+      "bytes": 2145988
+    },
+    {
+      "path": "dist\\client\\fonts\\pretendard-jp\\PretendardJP-Bold.woff2",
+      "sha256": "3c926898801c5ef97af081151566f7038ac529de88c77d212ea5f2037309dad2",
+      "expected": "3c926898801c5ef97af081151566f7038ac529de88c77d212ea5f2037309dad2",
+      "bytes": 2107244
+    },
+    {
+      "path": "dist\\client\\fonts\\pretendard-jp\\PretendardJP-ExtraBold.woff2",
+      "sha256": "0f28b245cdd874db2e5c29a4ac4a60d5cf3479ed62b15857d61c1ff94d468b3a",
+      "expected": "0f28b245cdd874db2e5c29a4ac4a60d5cf3479ed62b15857d61c1ff94d468b3a",
+      "bytes": 2126320
+    },
+    {
+      "path": "dist\\client\\fonts\\pretendard-jp\\PretendardJP-Medium.woff2",
+      "sha256": "6928e2b9476ef12187c2892b986d7b7f86be7a7cc7f92d517cba3b3cece192b4",
+      "expected": "6928e2b9476ef12187c2892b986d7b7f86be7a7cc7f92d517cba3b3cece192b4",
+      "bytes": 2067004
+    },
+    {
+      "path": "dist\\client\\fonts\\pretendard-jp\\PretendardJP-Regular.woff2",
+      "sha256": "ca8abbe573f57f235faa68525e427646532c7aa5ab65d0c267c179e9a0ff76b8",
+      "expected": "ca8abbe573f57f235faa68525e427646532c7aa5ab65d0c267c179e9a0ff76b8",
+      "bytes": 2019340
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-left-rail\\E스포츠.png",
+      "sha256": "4c9ed8bdda6d9068dd9d904b6c2c5839acbbe2dfc189a1c440bb02cb35f8e4ac",
+      "expected": "4c9ed8bdda6d9068dd9d904b6c2c5839acbbe2dfc189a1c440bb02cb35f8e4ac",
+      "bytes": 30583
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-left-rail\\국내형스포츠.png",
+      "sha256": "4f362282b6d307a9d3092a225a400c6794468cb23c051f8122af707aac76d168",
+      "expected": "4f362282b6d307a9d3092a225a400c6794468cb23c051f8122af707aac76d168",
+      "bytes": 47661
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-left-rail\\국내형스포츠2.png",
+      "sha256": "3361028bd5f6a135b593989eb54caa9fec28e71cdeca37bb914957292369731a",
+      "expected": "3361028bd5f6a135b593989eb54caa9fec28e71cdeca37bb914957292369731a",
+      "bytes": 43118
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-left-rail\\슬롯.png",
+      "sha256": "8f9196fa96636309130e17f05e040e0344d0fe00ecd48d9b7f3205256cdf9a6e",
+      "expected": "8f9196fa96636309130e17f05e040e0344d0fe00ecd48d9b7f3205256cdf9a6e",
+      "bytes": 39100
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-left-rail\\인플레이.png",
+      "sha256": "d8b6030515a21cb766f7d448f6d483e4095938f91cced78cc949d37441ba265b",
+      "expected": "d8b6030515a21cb766f7d448f6d483e4095938f91cced78cc949d37441ba265b",
+      "bytes": 32202
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-left-rail\\카지노.png",
+      "sha256": "d9bbfcf9a6485ea183e3058e7eaf5cbb25b07fb1537fd668339e06aae33cd074",
+      "expected": "d9bbfcf9a6485ea183e3058e7eaf5cbb25b07fb1537fd668339e06aae33cd074",
+      "bytes": 38019
+    },
+    {
+      "path": "dist\\client\\banners\\mercury-left-rail\\해외형스포츠.png",
+      "sha256": "cfca751a860883f668a4d329d2b7804a44c440c529be554b7ed1d119da2820c8",
+      "expected": "cfca751a860883f668a4d329d2b7804a44c440c529be554b7ed1d119da2820c8",
+      "bytes": 32395
+    },
+    {
+      "path": "dist\\client\\banners\\r8\\mercury-event-woman.png",
+      "sha256": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99",
+      "expected": "d56425d3aa57a2eb11f067f87dfc5db65496e4e511561f945a4b2efc8e392b99",
+      "bytes": 2109408
+    },
+    {
+      "path": "dist\\client\\banners\\r8\\mercury-slots-woman.png",
+      "sha256": "82957c0e5197bd2d3a2983bd260c8284632507f821251c8b76918dd0b2e600a6",
+      "expected": "82957c0e5197bd2d3a2983bd260c8284632507f821251c8b76918dd0b2e600a6",
+      "bytes": 3258365
+    },
+    {
+      "path": "dist\\server\\ssr\\index.js",
+      "sha256": "e349749cc9a8abdb221313642c0abe971b6d4b5c13361aac3559e3ed7bf47494",
+      "expected": "e349749cc9a8abdb221313642c0abe971b6d4b5c13361aac3559e3ed7bf47494",
+      "bytes": 74133
+    },
+    {
+      "path": "dist\\server\\ssr\\vinext-server.json",
+      "sha256": "20e98683d1d8c36abb90691ee23fd865cfa98d17a721d2f2757f15d3e434cc18",
+      "expected": "20e98683d1d8c36abb90691ee23fd865cfa98d17a721d2f2757f15d3e434cc18",
+      "bytes": 86
+    },
+    {
+      "path": "dist\\server\\ssr\\vinext-client-assets.js",
+      "sha256": "8dad38977d051a0d82ee11450cb50d8891ed908e87774a1c6744c333015e2b33",
+      "expected": "8dad38977d051a0d82ee11450cb50d8891ed908e87774a1c6744c333015e2b33",
+      "bytes": 1427
+    },
+    {
+      "path": "dist\\server\\ssr\\__vite_rsc_assets_manifest.js",
+      "sha256": "6a1c59d72a999c7470ab6ecee9cf9a4ca1c7d784133927ff7052a3030d60e75a",
+      "expected": "6a1c59d72a999c7470ab6ecee9cf9a4ca1c7d784133927ff7052a3030d60e75a",
+      "bytes": 2305
+    },
+    {
+      "path": "dist\\server\\ssr\\_next\\static\\app-prefetch-fetch-queue-DOPEQW2-.js",
+      "sha256": "56e1b0c10087ee6ff7f949b15d1ef63cb11228ff93a159a52f9ad7ef851e4e02",
+      "expected": "56e1b0c10087ee6ff7f949b15d1ef63cb11228ff93a159a52f9ad7ef851e4e02",
+      "bytes": 9
+    },
+    {
+      "path": "dist\\server\\ssr\\_next\\static\\app-router-scroll-B-C19qlb.js",
+      "sha256": "e7e3b98c0283c386bb32d52544fe3b99d45cc825df3a79fc7699bede0b039266",
+      "expected": "e7e3b98c0283c386bb32d52544fe3b99d45cc825df3a79fc7699bede0b039266",
+      "bytes": 2542
+    },
+    {
+      "path": "dist\\server\\ssr\\_next\\static\\error-boundary-CfJR1rkC.js",
+      "sha256": "c64dd3f45a6a9f13bf3e854444198b5b8915f0b77ebb6f773a5d977d1a49252e",
+      "expected": "c64dd3f45a6a9f13bf3e854444198b5b8915f0b77ebb6f773a5d977d1a49252e",
+      "bytes": 5324
+    },
+    {
+      "path": "dist\\server\\ssr\\_next\\static\\layout-segment-context-6sYF5ZVQ.js",
+      "sha256": "a85fda13330113e90efe6c1de69fe06227bda852798cad24be04993695aae927",
+      "expected": "a85fda13330113e90efe6c1de69fe06227bda852798cad24be04993695aae927",
+      "bytes": 379
+    },
+    {
+      "path": "dist\\server\\ssr\\_next\\static\\page-BJ7FwdXl.js",
+      "sha256": "e5344c783991cbec74897a476001c5f7d601f6ccd9acff8b83f13bdb8f6c2cce",
+      "expected": "e5344c783991cbec74897a476001c5f7d601f6ccd9acff8b83f13bdb8f6c2cce",
+      "bytes": 3492972
+    },
+    {
+      "path": "dist\\server\\ssr\\_next\\static\\streamed-icons-JsA12Qah.js",
+      "sha256": "4686993e67c90b36e81b4b7b849785f86385f5463e4a0db91aeb2863015a15e1",
+      "expected": "4686993e67c90b36e81b4b7b849785f86385f5463e4a0db91aeb2863015a15e1",
+      "bytes": 659
+    },
+    {
+      "path": "dist\\server\\_next\\static\\app-page-cache-CTVkcnM6.js",
+      "sha256": "aa3e4de7da90df191f5094564effc6e7b378a3b5c7bd258c9689636a82c91995",
+      "expected": "aa3e4de7da90df191f5094564effc6e7b378a3b5c7bd258c9689636a82c91995",
+      "bytes": 5416
+    },
+    {
+      "path": "dist\\server\\_next\\static\\app-page-cache-render-DkyzrcN3.js",
+      "sha256": "de9ef031f2d11c4b31be2170f4b013ee5facd389b8ecd434c1b7e1f22f543b00",
+      "expected": "de9ef031f2d11c4b31be2170f4b013ee5facd389b8ecd434c1b7e1f22f543b00",
+      "bytes": 1826
+    },
+    {
+      "path": "dist\\server\\_next\\static\\app-prerender-endpoints-COxSVCj0.js",
+      "sha256": "b77120de3912c9816f4523b1cb0556614026f314e96429cfa546cf05647eb505",
+      "expected": "b77120de3912c9816f4523b1cb0556614026f314e96429cfa546cf05647eb505",
+      "bytes": 1946
+    },
+    {
+      "path": "dist\\server\\_next\\static\\app-route-handler-dispatch-CE_p2YPS.js",
+      "sha256": "bf0ee00433b74fe22dce7d08a949b652e4e7ac7545c92e3ab916249ca394a6f2",
+      "expected": "bf0ee00433b74fe22dce7d08a949b652e4e7ac7545c92e3ab916249ca394a6f2",
+      "bytes": 25943
+    },
+    {
+      "path": "dist\\server\\_next\\static\\app-static-generation-DFiBvpNc.js",
+      "sha256": "71451721ae4a42108e9ed32567cd9d9861beb4952215b0fd57ffc373cd3edc01",
+      "expected": "71451721ae4a42108e9ed32567cd9d9861beb4952215b0fd57ffc373cd3edc01",
+      "bytes": 916
+    },
+    {
+      "path": "dist\\server\\_next\\static\\cache-headers-BWS_TjMG.js",
+      "sha256": "4a7780e0f48bd7516d1fa640b47a82b3974eddccfe8d2ce82a285908c781210c",
+      "expected": "4a7780e0f48bd7516d1fa640b47a82b3974eddccfe8d2ce82a285908c781210c",
+      "bytes": 48221
+    },
+    {
+      "path": "dist\\server\\_next\\static\\framework~index-DHbtHVCt.js",
+      "sha256": "9726c5b2107efc65824048112c55452e496466a01b23573eb3402c6d78f5dee1",
+      "expected": "9726c5b2107efc65824048112c55452e496466a01b23573eb3402c6d78f5dee1",
+      "bytes": 56655
+    },
+    {
+      "path": "dist\\server\\_next\\static\\framework~index~layout~app-page-cache-render~app-page-cache~seed-cache~app-route-handler-dispatch-DAFTWj8g.js",
+      "sha256": "01c8168087c228178da9abfc06c60d9445c2a1dde1670fa6c190b6a4ae85de15",
+      "expected": "01c8168087c228178da9abfc06c60d9445c2a1dde1670fa6c190b6a4ae85de15",
+      "bytes": 824
+    },
+    {
+      "path": "dist\\server\\_next\\static\\framework~index~layout~page~app-page-cache-render~app-page-cache~seed-cache~app-route-handl~beoizrd4-CTKg4vuf.js",
+      "sha256": "4f686187dcd97b5d9eef7f152f93eaf0b53172f59e748a8ecf410a20b326e9f8",
+      "expected": "4f686187dcd97b5d9eef7f152f93eaf0b53172f59e748a8ecf410a20b326e9f8",
+      "bytes": 5499
+    },
+    {
+      "path": "dist\\server\\_next\\static\\headers-C_Xmh0O_.js",
+      "sha256": "4ebe8f97988dfb53d3d31679d4b3c76a7ea2c716ffbe752c9451e14e7bf244a2",
+      "expected": "4ebe8f97988dfb53d3d31679d4b3c76a7ea2c716ffbe752c9451e14e7bf244a2",
+      "bytes": 4971
+    },
+    {
+      "path": "dist\\server\\_next\\static\\navigation-runtime-bY4vdICx.js",
+      "sha256": "01ca5a9cd215ace2d43c7fd5a654e0faeafc627f236a27c2b55e06fc30039bde",
+      "expected": "01ca5a9cd215ace2d43c7fd5a654e0faeafc627f236a27c2b55e06fc30039bde",
+      "bytes": 803
+    },
+    {
+      "path": "dist\\server\\_next\\static\\page-asX26sxH.js",
+      "sha256": "2954f1c68ba46c7be69597f0ad1a02fdc94d6aa1ea88da74e3be339460d20bfd",
+      "expected": "2954f1c68ba46c7be69597f0ad1a02fdc94d6aa1ea88da74e3be339460d20bfd",
+      "bytes": 178
+    },
+    {
+      "path": "dist\\server\\_next\\static\\rolldown-runtime-DUnMT5BP.js",
+      "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+      "expected": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+      "bytes": 694
+    },
+    {
+      "path": "dist\\server\\_next\\static\\seed-cache-vqKEJlSm.js",
+      "sha256": "8b2d95f79e370776c0284c105ccb0ae407970311c3916b1788c5bf7eceabfa03",
+      "expected": "8b2d95f79e370776c0284c105ccb0ae407970311c3916b1788c5bf7eceabfa03",
+      "bytes": 2040
+    },
+    {
+      "path": "dist\\server\\_next\\static\\css\\index.CP2YFaGU.css",
+      "sha256": "7878fe5e63ecad2aa5bb62fe685551486456fb7bd38f2d9c4b02a2b8158a95a9",
+      "expected": "7878fe5e63ecad2aa5bb62fe685551486456fb7bd38f2d9c4b02a2b8158a95a9",
+      "bytes": 234577
+    }
+  ],
+  "preserved": {
+    "editor": {
+      "files": 340,
+      "head": "c5b033a3a714b94be846c62554823b773abe8329",
+      "expectedHead": "c5b033a3a714b94be846c62554823b773abe8329",
+      "allMatch": true,
+      "mismatches": []
+    },
+    "original_mercury": {
+      "files": 337,
+      "head": "ef1becb38bbba0ae8803f7c84155bcbeeb57004e",
+      "expectedHead": "ef1becb38bbba0ae8803f7c84155bcbeeb57004e",
+      "allMatch": true,
+      "mismatches": []
+    }
+  },
+  "listeners": [
+    "TCP    127.0.0.1:5417         0.0.0.0:0              LISTENING       35992",
+    "TCP    127.0.0.1:5418         0.0.0.0:0              LISTENING       17860"
+  ],
+  "processes": [
+    {
+      "Id": 17860,
+      "ProcessName": "node",
+      "StartUtc": "2026-10-07T07:31:12.4502042Z"
+    },
+    {
+      "Id": 35992,
+      "ProcessName": "node",
+      "StartUtc": "2026-10-07T03:54:38.7783288Z"
+    }
+  ],
+  "http": [
+    {
+      "port": 5418,
+      "status": 200,
+      "utc": "2026-10-07T08:01:37.151Z",
+      "bytes": 475363,
+      "title": "MERCURY · 화이트"
+    },
+    {
+      "port": 5417,
+      "status": 200,
+      "utc": "2026-10-07T08:01:37.255Z",
+      "bytes": 518961,
+      "title": "MERCURY · 스킨 편집"
+    }
+  ],
+  "gitStatus": ""
+}

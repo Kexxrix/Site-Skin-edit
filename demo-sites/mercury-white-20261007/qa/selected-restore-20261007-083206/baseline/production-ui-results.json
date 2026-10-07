@@ -1,0 +1,760 @@
+{
+  "validationMode": "Approved 697 production build served on 5418; no stylesheet injection",
+  "serverUrl": "http://127.0.0.1:5418/",
+  "pass": 24,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "fresh first entry uses all approved colors without saved palette",
+      "pass": true,
+      "evidence": {
+        "background": "#fffaf0",
+        "surface": "#fffaf0",
+        "raised": "#fffaf0",
+        "control": "#fffaf0",
+        "input": "#fffaf0",
+        "header": "#ffffff",
+        "border": "#c9c7bb",
+        "text": "#2b2826",
+        "muted": "#212121",
+        "disabled": "#757575",
+        "accent": "#fef8e1",
+        "accentSoft": "#000000",
+        "onAccent": "#000000",
+        "shadow": "#000000",
+        "headerMenu": "#e4ddcd",
+        "headerButton": "#636363",
+        "headerButtonText": "#ffffff",
+        "headerButtonBorder": "#787878",
+        "headerButtonAccent": "#c7c7c7",
+        "headerButtonHover": "#111111",
+        "odds": "#363636",
+        "error": "#ff1e00",
+        "menuActiveText": "#ff8f0f",
+        "menuActiveLine": "#ff8f0f",
+        "sportSelectedBackground": "#ffc26f",
+        "sportSelectedText": "#2b2826",
+        "sportSelectedBorder": "#ff8800",
+        "oddsSelectedBackground": "#ffbd61",
+        "oddsSelectedText": "#000000",
+        "oddsSelectedBorder": "#ff8800",
+        "actionBackground": "#ffffff",
+        "actionText": "#000000",
+        "actionBorder": "#ffffff",
+        "chipBackground": "#ffbc5e",
+        "chipText": "#000000",
+        "chipBorder": "#ffb561",
+        "leagueText": "#000000",
+        "chipGradientTop": "#ffdb9e",
+        "chipGradientBottom": "#ffbe0a"
+      }
+    },
+    {
+      "name": "site only; editor picker QA lane absent",
+      "pass": true,
+      "evidence": {
+        "body": "1920px",
+        "scroll": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "base layout typography and unaffected surfaces preserved",
+      "pass": true,
+      "evidence": {
+        "shell": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 250, 240)",
+          "border": "rgb(43, 40, 38)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 994,
+            "top": 0,
+            "right": 1920,
+            "bottom": 994,
+            "left": 0
+          }
+        },
+        "header": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "border": "rgb(43, 40, 38)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 198,
+            "top": 0,
+            "right": 1920,
+            "bottom": 198,
+            "left": 0
+          }
+        },
+        "body": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "rgb(43, 40, 38)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 0,
+            "y": 198,
+            "width": 1920,
+            "height": 796,
+            "top": 198,
+            "right": 1920,
+            "bottom": 994,
+            "left": 0
+          }
+        },
+        "sportbar": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 250, 240)",
+          "border": "rgb(43, 40, 38)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 347,
+            "y": 206,
+            "width": 1226,
+            "height": 42,
+            "top": 206,
+            "right": 1573,
+            "bottom": 248,
+            "left": 347
+          }
+        },
+        "league": {
+          "color": "rgb(0, 0, 0)",
+          "bg": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "14px",
+          "rect": {
+            "x": 360,
+            "y": 267,
+            "width": 165.921875,
+            "height": 18,
+            "top": 267,
+            "right": 525.921875,
+            "bottom": 285,
+            "left": 360
+          }
+        },
+        "card": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 250, 240)",
+          "border": "rgb(254, 248, 225)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 358,
+            "y": 304,
+            "width": 587,
+            "height": 228,
+            "top": 304,
+            "right": 945,
+            "bottom": 532,
+            "left": 358
+          }
+        },
+        "level": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(43, 40, 38)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "10.5px",
+          "rect": {
+            "x": 1601,
+            "y": 218,
+            "width": 42,
+            "height": 24,
+            "top": 218,
+            "right": 1643,
+            "bottom": 242,
+            "left": 1601
+          }
+        },
+        "sports": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(43, 40, 38)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "10.5px",
+          "rect": {
+            "x": 17,
+            "y": 841.5,
+            "width": 53.59375,
+            "height": 24,
+            "top": 841.5,
+            "right": 70.59375,
+            "bottom": 865.5,
+            "left": 17
+          }
+        },
+        "menu": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(183, 96, 22)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "8px",
+          "rect": {
+            "x": 456,
+            "y": 102,
+            "width": 28,
+            "height": 16,
+            "top": 102,
+            "right": 484,
+            "bottom": 118,
+            "left": 456
+          }
+        },
+        "marketChip": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(183, 96, 22)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "12px",
+          "rect": {
+            "x": 896.515625,
+            "y": 317,
+            "width": 35.484375,
+            "height": 24,
+            "top": 317,
+            "right": 932,
+            "bottom": 341,
+            "left": 896.515625
+          }
+        },
+        "selectedCount": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(43, 40, 38)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "12px",
+          "rect": {
+            "x": 416.203125,
+            "y": 212.5,
+            "width": 23.703125,
+            "height": 21,
+            "top": 212.5,
+            "right": 439.90625,
+            "bottom": 233.5,
+            "left": 416.203125
+          }
+        },
+        "selectedSport": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(183, 96, 22)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 347,
+            "y": 207,
+            "width": 101.90625,
+            "height": 32,
+            "top": 207,
+            "right": 448.90625,
+            "bottom": 239,
+            "left": 347
+          }
+        },
+        "headerButton": {
+          "color": "rgb(255, 255, 255)",
+          "bg": "none",
+          "backgroundColor": "rgb(99, 99, 99)",
+          "border": "rgb(120, 120, 120)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "12px",
+          "rect": {
+            "x": 1650,
+            "y": 32,
+            "width": 76,
+            "height": 36,
+            "top": 32,
+            "right": 1726,
+            "bottom": 68,
+            "left": 1650
+          }
+        },
+        "normalOdds": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 250, 240)",
+          "border": "rgb(184, 170, 145)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 371,
+            "y": 403,
+            "width": 278.5,
+            "height": 36,
+            "top": 403,
+            "right": 649.5,
+            "bottom": 439,
+            "left": 371
+          }
+        }
+      }
+    },
+    {
+      "name": "all images preserved with nine justified scoped display-filter changes",
+      "pass": true,
+      "evidence": {
+        "count": 164
+      }
+    },
+    {
+      "name": "Guest balance full count and disabled inactive categories preserved",
+      "pass": true,
+      "evidence": {
+        "matches": 61,
+        "balance": "1,000,000",
+        "guestSubmitDisabled": true
+      }
+    },
+    {
+      "name": "solid apricot chips and unchanged header league colors",
+      "pass": true,
+      "evidence": {
+        "color": "rgb(43, 40, 38)",
+        "bg": "none",
+        "backgroundColor": "rgb(255, 223, 175)",
+        "border": "rgb(183, 96, 22)",
+        "filter": "none",
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "12px",
+        "rect": {
+          "x": 896.515625,
+          "y": 317,
+          "width": 35.484375,
+          "height": 24,
+          "top": 317,
+          "right": 932,
+          "bottom": 341,
+          "left": 896.515625
+        }
+      }
+    },
+    {
+      "name": "sport filters counts selected fill and empty state operate",
+      "pass": true
+    },
+    {
+      "name": "team search and clear restore full list",
+      "pass": true,
+      "evidence": {
+        "filteredCount": 3
+      }
+    },
+    {
+      "name": "league folding and reopening retain dimensions",
+      "pass": true
+    },
+    {
+      "name": "market chip opens correct match and detail filters work",
+      "pass": true,
+      "evidence": {
+        "detailMatch": "record-401881922"
+      }
+    },
+    {
+      "name": "odds select replacement and deselect preserve slip ids",
+      "pass": true,
+      "evidence": {
+        "id": "record-401902644-0-0",
+        "replacement": "record-401902644-0-1"
+      }
+    },
+    {
+      "name": "solid selected odds and stake calculation use unchanged behavior",
+      "pass": true,
+      "evidence": {
+        "selected": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(183, 96, 22)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "16px",
+          "rect": {
+            "x": 371,
+            "y": 403,
+            "width": 278.5,
+            "height": 36,
+            "top": 403,
+            "right": 649.5,
+            "bottom": 439,
+            "left": 371
+          }
+        },
+        "totalOdds": "1.56",
+        "payout": 7800,
+        "submitted": 0
+      }
+    },
+    {
+      "name": "invalid amount and reset remain functional",
+      "pass": true
+    },
+    {
+      "name": "keep-slip reload restores selection and stake only in isolated storage",
+      "pass": true,
+      "evidence": {
+        "id": "record-401902644-0-0",
+        "balance": 1000000,
+        "history": 0
+      }
+    },
+    {
+      "name": "support event history and charge/withdraw popups open and close without execution",
+      "pass": true,
+      "evidence": {
+        "popups": [
+          "고객센터",
+          "충전",
+          "환전 안내",
+          "내 베팅내역",
+          "이벤트게시판"
+        ],
+        "transactionExecutions": 0
+      }
+    },
+    {
+      "name": "domestic and european navigation preserve slip and layout modes",
+      "pass": true
+    },
+    {
+      "name": "hover and keyboard focus retain authored selected/chip styling",
+      "pass": true,
+      "evidence": {
+        "normal": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(183, 96, 22)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "12px",
+          "rect": {
+            "x": 896.515625,
+            "y": 317,
+            "width": 35.484375,
+            "height": 24,
+            "top": 317,
+            "right": 932,
+            "bottom": 341,
+            "left": 896.515625
+          }
+        },
+        "hover": {
+          "color": "rgb(43, 40, 38)",
+          "bg": "none",
+          "backgroundColor": "rgb(255, 223, 175)",
+          "border": "rgb(183, 96, 22)",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "fontSize": "12px",
+          "rect": {
+            "x": 896.515625,
+            "y": 317,
+            "width": 35.484375,
+            "height": 24,
+            "top": 317,
+            "right": 932,
+            "bottom": 341,
+            "left": 896.515625
+          }
+        }
+      }
+    },
+    {
+      "name": "independent pane scrolling preserves fixed header and right pane",
+      "pass": true
+    },
+    {
+      "name": "fixed canvas alignment and access at 2560",
+      "pass": true,
+      "evidence": {
+        "viewport": 2560,
+        "scroll": 2560,
+        "shell": {
+          "x": 320,
+          "y": 0,
+          "width": 1920,
+          "height": 994,
+          "top": 0,
+          "right": 2240,
+          "bottom": 994,
+          "left": 320
+        },
+        "body": "1920px"
+      }
+    },
+    {
+      "name": "fixed canvas alignment and access at 1920",
+      "pass": true,
+      "evidence": {
+        "viewport": 1920,
+        "scroll": 1920,
+        "shell": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 994,
+          "top": 0,
+          "right": 1920,
+          "bottom": 994,
+          "left": 0
+        },
+        "body": "1920px"
+      }
+    },
+    {
+      "name": "fixed canvas alignment and access at 1366",
+      "pass": true,
+      "evidence": {
+        "viewport": 1366,
+        "scroll": 1920,
+        "shell": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 994,
+          "top": 0,
+          "right": 1920,
+          "bottom": 994,
+          "left": 0
+        },
+        "body": "1920px"
+      }
+    },
+    {
+      "name": "no-JavaScript production first paint has solid polished control theme",
+      "pass": true,
+      "evidence": {
+        "color": "rgb(43, 40, 38)",
+        "bg": "none",
+        "backgroundColor": "rgb(255, 250, 240)",
+        "border": "rgb(43, 40, 38)",
+        "filter": "none",
+        "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+        "fontSize": "16px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 994,
+          "top": 0,
+          "right": 1920,
+          "bottom": 994,
+          "left": 0
+        }
+      }
+    },
+    {
+      "name": "stale editor palette and presets are ignored and untouched",
+      "pass": true
+    },
+    {
+      "name": "runtime local request failures and transaction requests absent; external fonts recorded",
+      "pass": true,
+      "evidence": {
+        "errors": 0,
+        "localFailures": 0,
+        "transactionRequests": 0,
+        "intentionalNoJsBlocks": [
+          {
+            "url": "http://127.0.0.1:5418/_next/static/chunks/index-minNuS-y.js",
+            "reason": "csp",
+            "context": "no-js"
+          },
+          {
+            "url": "http://127.0.0.1:5418/_next/static/chunks/layout-segment-context-fO6KizeK.js",
+            "reason": "csp",
+            "context": "no-js"
+          },
+          {
+            "url": "http://127.0.0.1:5418/_next/static/chunks/page-CK8zVbe1.js",
+            "reason": "csp",
+            "context": "no-js"
+          }
+        ],
+        "externalFonts": [
+          "https://use.typekit.net/aqm4sxy.css",
+          "https://use.typekit.net/hyf2mwn.js",
+          "https://use.typekit.net/gig5kam.js"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "requestFailures": [
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "http://127.0.0.1:5418/_next/static/chunks/index-minNuS-y.js",
+      "reason": "csp",
+      "context": "no-js"
+    },
+    {
+      "url": "http://127.0.0.1:5418/_next/static/chunks/layout-segment-context-fO6KizeK.js",
+      "reason": "csp",
+      "context": "no-js"
+    },
+    {
+      "url": "http://127.0.0.1:5418/_next/static/chunks/page-CK8zVbe1.js",
+      "reason": "csp",
+      "context": "no-js"
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "no-js"
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED",
+      "context": "normal"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+  ],
+  "mutations": []
+}

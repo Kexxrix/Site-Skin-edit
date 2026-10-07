@@ -1,5 +1,11 @@
 # TITAN 신규 데모 제작 공간
 
+## MERCURY White 정식 로컬 등록 — 2026-10-07
+
+[MERCURY White](mercury-white-20261007/INDEX.ko.md)를 별도 화이트 스킨으로 등록했다. [로컬 화면](http://127.0.0.1:5418/), [최신 STATE](mercury-white-20261007/STATE.md), 앱 `mercury-white-20261007/site/`, 소스 `b425507730a4f39dd393645ef4273653a7c13176`을 기준으로 한다. 사용자 지시에 따라 **Sites 등록·공개 배포는 보류**하며 기존 MERCURY 공개 사이트와 실행 서버는 유지한다.
+
+통합 GitHub 보관 명세는 `backup/site-snapshots/20261007-mercury-white-local/`이다. 현재 소스 343개·빌드 292개 및 실제 서빙 CSS 해시 일치를 확인했고, 동일 입력의 독립 QA 31 PASS / 0 FAIL 결과를 재사용한다. 이번 작업은 운영 문서 등록과 백업이며 앱 디자인·기능을 변경하지 않는다.
+
 ## ALDEBARAN 두 번째 스킨 공개 — 2026-10-06
 
 사용자가 승인한 화이트 스킨을 별도 [ALDEBARAN-2](https://aldebaran-2.kexxadrix.chatgpt.site/)로 공개했다. PUBLIC v1, `succeeded`, 2026-10-06 19:03:56 KST. 소스는 [sports-demo-03-white/site](sports-demo-03-white/site/), 앱 소스 SHA는 `5459f3425a1388c2d978747ff43a4364b16bfe94`이며 [배포 기록](sports-demo-03-white/RELEASE.ko.md)과 [최신 STATE](sports-demo-03-white/STATE.md)를 따른다.

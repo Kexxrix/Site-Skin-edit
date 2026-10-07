@@ -1,0 +1,705 @@
+{
+  "utc": "2026-10-07T07:59:05.334Z",
+  "results": [
+    {
+      "name": "zero-match sport shows empty state",
+      "status": "PASS",
+      "evidence": {
+        "sport": "volleyball",
+        "emptyCount": 2,
+        "cards": 0,
+        "message": [
+          "등록된 경기가 없습니다.현재 조건에 맞는 경기가 없습니다.검색·필터 초기화",
+          "경기 없음다른 검색어나 종목을 선택해 주세요."
+        ]
+      }
+    },
+    {
+      "name": "slip keep actual toggle changes state",
+      "status": "PASS",
+      "evidence": {
+        "dom": {
+          "outer": "<span data-unchecked=\"\" role=\"switch\" tabindex=\"0\" id=\"base-ui-_R_aasmi_\" aria-checked=\"false\" data-slot=\"switch\" data-size=\"default\" aria-label=\"슬립 유지\" class=\"peer group/switch relative inline-flex shrink-0 items-center rounded-full border border-transparent transition-all outline-none group-has-[:focus-visible]/field-label:border-transparent group-has-[:focus-visible]/field-label:ring-0 after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-[size=default]:h-[18.4px] data-[size=default]:w-[32px] data-[size=sm]:h-[14px] data-[size=sm]:w-[24px] dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-checked:bg-primary data-unchecked:bg-input dark:data-unchecked:bg-input/80 data-disabled:cursor-not-allowed data-disabled:opacity-50 mc-slip-toggle\" aria-labelledby=\"base-ui-_R_aasmiH1_-label\"><span data-unchecked=\"\" data-slot=\"switch-thumb\" class=\"pointer-events-none block rounded-full bg-background ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 group-data-[size=default]/switch:data-checked:translate-x-[calc(100%-2px)] group-data-[size=sm]/switch:data-checked:translate-x-[calc(100%-2px)] dark:data-checked:bg-primary-foreground group-data-[size=default]/switch:data-unchecked:translate-x-0 group-data-[size=sm]/switch:data-unchecked:translate-x-0 dark:data-unchecked:bg-foreground\"></span></span>",
+          "role": "switch",
+          "tabIndex": 0,
+          "label": "슬립 유지"
+        },
+        "after": {
+          "aria": "true",
+          "checked": true
+        }
+      }
+    },
+    {
+      "name": "isolated slip keep restores selected ID and stake after reload",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "slip item deletion clears selected odds and slip",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "second selection same match replaces existing pick",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "selected odds click toggles it off",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "slip keep keyboard Space toggle works with visible focus",
+      "status": "PASS",
+      "evidence": {
+        "checked": false,
+        "visible": true
+      }
+    },
+    {
+      "name": "clear all selections clears slip and pressed odds",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "domestic mode switches actual layout and solid active menu",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "european mode returns actual market layout",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "body popup 고객센터 title and fixed theme",
+      "status": "PASS",
+      "evidence": {
+        "title": "고객센터",
+        "portal": true,
+        "style": {
+          "color": "rgb(31, 17, 8)",
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(238, 227, 185)",
+          "shadow": "rgba(0, 0, 0, 0.933) 0px 24px 100px 0px, rgba(255, 255, 255, 0.267) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "focusVisible": false,
+          "outlineStyle": "none",
+          "outlineColor": "rgb(31, 17, 8)",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+        }
+      }
+    },
+    {
+      "name": "popup 고객센터 close hover keyboard focus works",
+      "status": "PASS",
+      "evidence": {
+        "states": {
+          "normal": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(17, 17, 17)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "hover": {
+            "color": "rgb(31, 17, 8)",
+            "bg": "rgb(255, 250, 240)",
+            "gradient": "none",
+            "border": "rgb(224, 223, 216)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "focus": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+            "filter": "none",
+            "focusVisible": true,
+            "outlineStyle": "solid",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          }
+        }
+      }
+    },
+    {
+      "name": "popup 고객센터 closes without balance changes",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "body popup 충전 title and fixed theme",
+      "status": "PASS",
+      "evidence": {
+        "title": "충전",
+        "portal": true,
+        "style": {
+          "color": "rgb(31, 17, 8)",
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(238, 227, 185)",
+          "shadow": "rgba(0, 0, 0, 0.933) 0px 24px 100px 0px, rgba(255, 255, 255, 0.267) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "focusVisible": false,
+          "outlineStyle": "none",
+          "outlineColor": "rgb(31, 17, 8)",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+        }
+      }
+    },
+    {
+      "name": "popup 충전 close hover keyboard focus works",
+      "status": "PASS",
+      "evidence": {
+        "states": {
+          "normal": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(17, 17, 17)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "hover": {
+            "color": "rgb(31, 17, 8)",
+            "bg": "rgb(255, 250, 240)",
+            "gradient": "none",
+            "border": "rgb(224, 223, 216)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "focus": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+            "filter": "none",
+            "focusVisible": true,
+            "outlineStyle": "solid",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          }
+        }
+      }
+    },
+    {
+      "name": "popup 충전 closes without balance changes",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "body popup 환전 title and fixed theme",
+      "status": "PASS",
+      "evidence": {
+        "title": "환전 안내",
+        "portal": true,
+        "style": {
+          "color": "rgb(31, 17, 8)",
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(238, 227, 185)",
+          "shadow": "rgba(0, 0, 0, 0.933) 0px 24px 100px 0px, rgba(255, 255, 255, 0.267) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "focusVisible": false,
+          "outlineStyle": "none",
+          "outlineColor": "rgb(31, 17, 8)",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+        }
+      }
+    },
+    {
+      "name": "popup 환전 close hover keyboard focus works",
+      "status": "PASS",
+      "evidence": {
+        "states": {
+          "normal": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(17, 17, 17)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "hover": {
+            "color": "rgb(31, 17, 8)",
+            "bg": "rgb(255, 250, 240)",
+            "gradient": "none",
+            "border": "rgb(224, 223, 216)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "focus": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+            "filter": "none",
+            "focusVisible": true,
+            "outlineStyle": "solid",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          }
+        }
+      }
+    },
+    {
+      "name": "popup 환전 closes without balance changes",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "body popup 베팅내역 title and fixed theme",
+      "status": "PASS",
+      "evidence": {
+        "title": "내 베팅내역",
+        "portal": true,
+        "style": {
+          "color": "rgb(31, 17, 8)",
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(238, 227, 185)",
+          "shadow": "rgba(0, 0, 0, 0.933) 0px 24px 100px 0px, rgba(255, 255, 255, 0.267) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "focusVisible": false,
+          "outlineStyle": "none",
+          "outlineColor": "rgb(31, 17, 8)",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+        }
+      }
+    },
+    {
+      "name": "popup 베팅내역 close hover keyboard focus works",
+      "status": "PASS",
+      "evidence": {
+        "states": {
+          "normal": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(17, 17, 17)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "hover": {
+            "color": "rgb(31, 17, 8)",
+            "bg": "rgb(255, 250, 240)",
+            "gradient": "none",
+            "border": "rgb(224, 223, 216)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "focus": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+            "filter": "none",
+            "focusVisible": true,
+            "outlineStyle": "solid",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          }
+        }
+      }
+    },
+    {
+      "name": "popup 베팅내역 closes without balance changes",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "body popup 이벤트 title and fixed theme",
+      "status": "PASS",
+      "evidence": {
+        "title": "이벤트게시판",
+        "portal": true,
+        "style": {
+          "color": "rgb(31, 17, 8)",
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(238, 227, 185)",
+          "shadow": "rgba(0, 0, 0, 0.933) 0px 24px 100px 0px, rgba(255, 255, 255, 0.267) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "focusVisible": false,
+          "outlineStyle": "none",
+          "outlineColor": "rgb(31, 17, 8)",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+        }
+      }
+    },
+    {
+      "name": "popup 이벤트 close hover keyboard focus works",
+      "status": "PASS",
+      "evidence": {
+        "states": {
+          "normal": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(17, 17, 17)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "hover": {
+            "color": "rgb(31, 17, 8)",
+            "bg": "rgb(255, 250, 240)",
+            "gradient": "none",
+            "border": "rgb(224, 223, 216)",
+            "shadow": "none",
+            "filter": "none",
+            "focusVisible": false,
+            "outlineStyle": "none",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          },
+          "focus": {
+            "color": "rgb(17, 17, 17)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "none",
+            "border": "rgba(0, 0, 0, 0)",
+            "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+            "filter": "none",
+            "focusVisible": true,
+            "outlineStyle": "solid",
+            "outlineColor": "rgb(31, 17, 8)",
+            "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif"
+          }
+        }
+      }
+    },
+    {
+      "name": "popup 이벤트 closes without balance changes",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "photo logo flag filter protection persists after interaction",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "no financial balance or history mutation",
+      "status": "PASS",
+      "evidence": {
+        "mercury-demo-r6-v1": {
+          "loggedIn": false,
+          "balance": 1000000,
+          "history": []
+        },
+        "mercury-demo-r6-v1-slip": {
+          "keep": false
+        }
+      }
+    },
+    {
+      "name": "old editor palette and preset storage cannot alter white default",
+      "status": "PASS",
+      "evidence": {
+        "variables": {
+          "count": 203,
+          "mismatches": []
+        },
+        "storage": {
+          "raw": {
+            "mercury-skin-lab:palette:v1": "{\"kind\":\"mercury-skin-palette\",\"version\":6,\"palette\":{\"background\":\"#100014\",\"surface\":\"#fffaf0\",\"raised\":\"#fffaf0\",\"control\":\"#fffaf0\",\"input\":\"#fffaf0\",\"header\":\"#ffffff\",\"border\":\"#c9c7bb\",\"text\":\"#2b2826\",\"muted\":\"#212121\",\"disabled\":\"#757575\",\"accent\":\"#fef8e1\",\"accentSoft\":\"#000000\",\"onAccent\":\"#000000\",\"shadow\":\"#000000\",\"headerMenu\":\"#e4ddcd\",\"headerButton\":\"#636363\",\"headerButtonText\":\"#ffffff\",\"headerButtonBorder\":\"#787878\",\"headerButtonAccent\":\"#c7c7c7\",\"headerButtonHover\":\"#111111\",\"odds\":\"#363636\",\"error\":\"#ff1e00\",\"menuActiveText\":\"#ff8f0f\",\"menuActiveLine\":\"#ff8f0f\",\"sportSelectedBackground\":\"#ffc26f\",\"sportSelectedText\":\"#2b2826\",\"sportSelectedBorder\":\"#ff8800\",\"oddsSelectedBackground\":\"#ffbd61\",\"oddsSelectedText\":\"#000000\",\"oddsSelectedBorder\":\"#ff8800\",\"actionBackground\":\"#ffffff\",\"actionText\":\"#000000\",\"actionBorder\":\"#ffffff\",\"chipBackground\":\"#ffbc5e\",\"chipText\":\"#000000\",\"chipBorder\":\"#ffb561\",\"leagueText\":\"#ff00ee\",\"chipGradientTop\":\"#111111\",\"chipGradientBottom\":\"#000000\"},\"mood\":{\"hue\":0,\"saturation\":0,\"lightness\":0},\"locks\":{\"background\":true,\"surface\":true,\"raised\":true,\"control\":true,\"input\":true,\"header\":false,\"border\":false,\"text\":false,\"muted\":false,\"disabled\":false,\"accent\":true,\"accentSoft\":false,\"onAccent\":false,\"shadow\":false,\"headerMenu\":false,\"headerButton\":false,\"headerButtonText\":false,\"headerButtonBorder\":false,\"headerButtonAccent\":false,\"headerButtonHover\":false,\"odds\":true,\"error\":true,\"menuActiveText\":true,\"menuActiveLine\":true,\"sportSelectedBackground\":true,\"sportSelectedText\":false,\"sportSelectedBorder\":false,\"oddsSelectedBackground\":true,\"oddsSelectedText\":false,\"oddsSelectedBorder\":true,\"actionBackground\":true,\"actionText\":false,\"actionBorder\":true,\"chipBackground\":false,\"chipText\":false,\"chipBorder\":false,\"leagueText\":false,\"chipGradientTop\":false,\"chipGradientBottom\":false},\"menuStyle\":\"solid\",\"goldIconOutline\":false,\"buttonFill\":{\"mode\":\"original\",\"angle\":0,\"strength\":100,\"stops\":[{\"color\":\"#fffaf0\",\"position\":0},{\"color\":\"#ffffff\",\"position\":50},{\"color\":\"#ffffff\",\"position\":100}]},\"oddsSelectedStyle\":\"warm\",\"creamDetails\":\"original\",\"goldIconTuning\":{\"sport\":{\"brightness\":93,\"contrast\":92,\"saturation\":105},\"selectedSport\":{\"brightness\":97,\"contrast\":120,\"saturation\":112},\"service\":{\"brightness\":90,\"contrast\":101,\"saturation\":104}},\"chipStyle\":\"gradient\"}",
+            "mercury-skin-lab:presets:v1": "{\"version\":6,\"items\":[]}"
+          },
+          "audit": {
+            "reads": [
+              "mercury-demo-r6-v1",
+              "mercury-demo-r6-v1-slip",
+              "mercury-skin-lab:palette:v1",
+              "mercury-skin-lab:presets:v1"
+            ],
+            "writes": [
+              "mercury-demo-r6-v1",
+              "mercury-demo-r6-v1-slip"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "JavaScript disabled first render is same approved white theme no editor",
+      "status": "PASS",
+      "evidence": {
+        "count": 203,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "no app exceptions local asset failures or mutating HTTP requests",
+      "status": "PASS",
+      "evidence": {
+        "errors": [],
+        "requests": [
+          {
+            "url": "https://use.typekit.net/aqm4sxy.css",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/hyf2mwn.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/gig5kam.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/aqm4sxy.css",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/hyf2mwn.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/gig5kam.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/aqm4sxy.css",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/hyf2mwn.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/gig5kam.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": false
+          },
+          {
+            "url": "https://use.typekit.net/aqm4sxy.css",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED",
+            "noJs": true
+          },
+          {
+            "url": "http://127.0.0.1:5418/_next/static/chunks/index-E-jFPCif.js",
+            "error": "csp",
+            "noJs": true
+          },
+          {
+            "url": "http://127.0.0.1:5418/_next/static/chunks/layout-segment-context-DVQ02j77.js",
+            "error": "csp",
+            "noJs": true
+          },
+          {
+            "url": "http://127.0.0.1:5418/_next/static/chunks/page-CK8zVbe1.js",
+            "error": "csp",
+            "noJs": true
+          }
+        ],
+        "warnings": [
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          }
+        ],
+        "mutations": []
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": false
+    },
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED",
+      "noJs": true
+    },
+    {
+      "url": "http://127.0.0.1:5418/_next/static/chunks/index-E-jFPCif.js",
+      "error": "csp",
+      "noJs": true
+    },
+    {
+      "url": "http://127.0.0.1:5418/_next/static/chunks/layout-segment-context-DVQ02j77.js",
+      "error": "csp",
+      "noJs": true
+    },
+    {
+      "url": "http://127.0.0.1:5418/_next/static/chunks/page-CK8zVbe1.js",
+      "error": "csp",
+      "noJs": true
+    }
+  ],
+  "warnings": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    }
+  ],
+  "mutations": []
+}

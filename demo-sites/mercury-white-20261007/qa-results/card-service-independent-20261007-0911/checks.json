@@ -1,0 +1,660 @@
+{
+  "utc": "2026-10-07T09:13:55.880Z",
+  "checks": [
+    {
+      "name": "fixed343 sources292 outputs clean commit match",
+      "status": "PASS",
+      "evidence": {
+        "head": "b425507730a4f39dd393645ef4273653a7c13176",
+        "sourceCount": 343,
+        "buildCount": 292
+      }
+    },
+    {
+      "name": "followup changes CSS and metadata only",
+      "status": "PASS",
+      "evidence": {
+        "diff": [
+          "app/mercury-white.css",
+          "theme/mercury-white-button-polish.json"
+        ]
+      }
+    },
+    {
+      "name": "real production page ready no editor or framework overlay",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "browser uses real served CSS matching fixed production file",
+      "status": "PASS",
+      "evidence": {
+        "url": "http://127.0.0.1:5418/_next/static/css/index.CIlfXfuu.css",
+        "status": 200,
+        "sha256": "a1901d8fcefc84277c7723e0755e8e6e958a01fd2cbbe8c259c90e1f8fb13a35"
+      }
+    },
+    {
+      "name": "whole chosen uninspected card has dark outer edge and inset line",
+      "status": "PASS",
+      "evidence": {
+        "normal": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(201, 199, 187)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "selected": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(183, 96, 22)",
+          "borderWidth": "1px",
+          "shadow": "rgb(183, 96, 22) 0px 0px 0px 1px inset",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        }
+      }
+    },
+    {
+      "name": "card outer edge persists through child hover and keyboard focus",
+      "status": "PASS",
+      "evidence": {
+        "hoverCard": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(183, 96, 22)",
+          "borderWidth": "1px",
+          "shadow": "rgb(183, 96, 22) 0px 0px 0px 1px inset",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "focusCard": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(183, 96, 22)",
+          "borderWidth": "1px",
+          "shadow": "rgb(183, 96, 22) 0px 0px 0px 1px inset",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        }
+      }
+    },
+    {
+      "name": "selection preserves all61 card dimensions",
+      "status": "PASS",
+      "evidence": {
+        "count": 61
+      }
+    },
+    {
+      "name": "deselect removes chosen outer edge and slip entry",
+      "status": "PASS",
+      "evidence": {
+        "before": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(201, 199, 187)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "after": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(201, 199, 187)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        }
+      }
+    },
+    {
+      "name": "inspected match card also shows strong whole-card edge",
+      "status": "PASS",
+      "evidence": {
+        "bg": "rgb(255, 250, 240)",
+        "gradient": "none",
+        "color": "rgb(43, 40, 38)",
+        "border": "rgb(183, 96, 22)",
+        "borderWidth": "1px",
+        "shadow": "rgb(183, 96, 22) 0px 0px 0px 1px inset",
+        "filter": "none",
+        "outline": "none",
+        "focusVisible": false
+      }
+    },
+    {
+      "name": "service 0 exact header gradient normal hover focus",
+      "status": "PASS",
+      "evidence": {
+        "header": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+        "states": {
+          "normal": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(184, 170, 145)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "none",
+            "focusVisible": false
+          },
+          "hover": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(183, 96, 22)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "none",
+            "focusVisible": false
+          },
+          "focus": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(184, 170, 145)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "solid",
+            "focusVisible": true
+          }
+        }
+      }
+    },
+    {
+      "name": "service 0 mask and text contrast over every gradient stop",
+      "status": "PASS",
+      "evidence": {
+        "mask": "rgb(43, 40, 38)",
+        "ratios": [
+          10.823233963330216,
+          12.212629609636597,
+          14.642073398671192,
+          12.411898368520129,
+          10.720358020749751,
+          10.317815171430098
+        ]
+      }
+    },
+    {
+      "name": "service 1 exact header gradient normal hover focus",
+      "status": "PASS",
+      "evidence": {
+        "header": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+        "states": {
+          "normal": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(184, 170, 145)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "none",
+            "focusVisible": false
+          },
+          "hover": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(183, 96, 22)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "none",
+            "focusVisible": false
+          },
+          "focus": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(184, 170, 145)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "solid",
+            "focusVisible": true
+          }
+        }
+      }
+    },
+    {
+      "name": "service 1 mask and text contrast over every gradient stop",
+      "status": "PASS",
+      "evidence": {
+        "mask": "rgb(43, 40, 38)",
+        "ratios": [
+          10.823233963330216,
+          12.212629609636597,
+          14.642073398671192,
+          12.411898368520129,
+          10.720358020749751,
+          10.317815171430098
+        ]
+      }
+    },
+    {
+      "name": "service 2 exact header gradient normal hover focus",
+      "status": "PASS",
+      "evidence": {
+        "header": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+        "states": {
+          "normal": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(184, 170, 145)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "none",
+            "focusVisible": false
+          },
+          "hover": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(183, 96, 22)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "none",
+            "focusVisible": false
+          },
+          "focus": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+            "color": "rgb(43, 40, 38)",
+            "border": "rgb(184, 170, 145)",
+            "borderWidth": "1px",
+            "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+            "filter": "none",
+            "outline": "solid",
+            "focusVisible": true
+          }
+        }
+      }
+    },
+    {
+      "name": "service 2 mask and text contrast over every gradient stop",
+      "status": "PASS",
+      "evidence": {
+        "mask": "rgb(43, 40, 38)",
+        "ratios": [
+          10.823233963330216,
+          12.212629609636597,
+          14.642073398671192,
+          12.411898368520129,
+          10.720358020749751,
+          10.317815171430098
+        ]
+      }
+    },
+    {
+      "name": "restored sport original f9 selected palette stays exact for3 states",
+      "status": "PASS",
+      "evidence": {
+        "normal": {
+          "bg": "rgb(255, 194, 111)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "hover": {
+          "bg": "rgb(255, 194, 111)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "focus": {
+          "bg": "rgb(255, 194, 111)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+          "filter": "none",
+          "outline": "solid",
+          "focusVisible": true
+        }
+      }
+    },
+    {
+      "name": "restored market original f9 selected palette stays exact for3 states",
+      "status": "PASS",
+      "evidence": {
+        "normal": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "hover": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "focus": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+          "filter": "none",
+          "outline": "solid",
+          "focusVisible": true
+        }
+      }
+    },
+    {
+      "name": "restored selected odds f9 palette stays exact for3 states",
+      "status": "PASS",
+      "evidence": {
+        "normal": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "hover": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "none",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "focus": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(255, 136, 0)",
+          "borderWidth": "1px",
+          "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+          "filter": "none",
+          "outline": "solid",
+          "focusVisible": true
+        }
+      }
+    },
+    {
+      "name": "slip removal unpresses all matching odds and restores card edge",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "retained ordinary cream flat button .mc-sport-tab:not([aria-pressed=true])",
+      "status": "PASS",
+      "evidence": {
+        "bg": "rgb(255, 250, 240)",
+        "gradient": "none",
+        "color": "rgb(43, 40, 38)",
+        "border": "rgb(184, 170, 145)",
+        "borderWidth": "1px",
+        "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+        "filter": "none",
+        "outline": "none",
+        "focusVisible": false
+      }
+    },
+    {
+      "name": "retained ordinary cream flat button .mc-market-tabs button:not([aria-pressed=true])",
+      "status": "PASS",
+      "evidence": {
+        "bg": "rgb(255, 250, 240)",
+        "gradient": "none",
+        "color": "rgb(43, 40, 38)",
+        "border": "rgb(184, 170, 145)",
+        "borderWidth": "1px",
+        "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+        "filter": "none",
+        "outline": "none",
+        "focusVisible": false
+      }
+    },
+    {
+      "name": "retained ordinary cream flat button .mc-odd:not([aria-pressed=true]):not(:disabled)",
+      "status": "PASS",
+      "evidence": {
+        "bg": "rgb(255, 250, 240)",
+        "gradient": "none",
+        "color": "rgb(43, 40, 38)",
+        "border": "rgb(184, 170, 145)",
+        "borderWidth": "1px",
+        "shadow": "none",
+        "filter": "none",
+        "outline": "none",
+        "focusVisible": false
+      }
+    },
+    {
+      "name": "retained ordinary cream flat button .mc-quick-action.secondary",
+      "status": "PASS",
+      "evidence": {
+        "bg": "rgb(255, 250, 240)",
+        "gradient": "none",
+        "color": "rgb(43, 40, 38)",
+        "border": "rgb(184, 170, 145)",
+        "borderWidth": "1px",
+        "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+        "filter": "none",
+        "outline": "none",
+        "focusVisible": false
+      }
+    },
+    {
+      "name": "retained ordinary cream flat button .mc-user-actions button",
+      "status": "PASS",
+      "evidence": {
+        "bg": "rgb(255, 250, 240)",
+        "gradient": "none",
+        "color": "rgb(43, 40, 38)",
+        "border": "rgb(184, 170, 145)",
+        "borderWidth": "1px",
+        "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+        "filter": "none",
+        "outline": "none",
+        "focusVisible": false
+      }
+    },
+    {
+      "name": "retained ordinary cream flat button .mc-amount-quick button:not(:last-child)",
+      "status": "PASS",
+      "evidence": {
+        "bg": "rgb(255, 250, 240)",
+        "gradient": "none",
+        "color": "rgb(43, 40, 38)",
+        "border": "rgb(184, 170, 145)",
+        "borderWidth": "1px",
+        "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+        "filter": "none",
+        "outline": "none",
+        "focusVisible": false
+      }
+    },
+    {
+      "name": "retained ordinary hover and visible focus",
+      "status": "PASS",
+      "evidence": {
+        "normal": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(184, 170, 145)",
+          "borderWidth": "1px",
+          "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "hover": {
+          "bg": "rgb(247, 237, 218)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(183, 96, 22)",
+          "borderWidth": "1px",
+          "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "outline": "none",
+          "focusVisible": false
+        },
+        "focus": {
+          "bg": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "color": "rgb(43, 40, 38)",
+          "border": "rgb(184, 170, 145)",
+          "borderWidth": "1px",
+          "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset",
+          "filter": "none",
+          "outline": "solid",
+          "focusVisible": true
+        }
+      }
+    },
+    {
+      "name": "retained flat apricot chips stay independent",
+      "status": "PASS",
+      "evidence": {
+        "count": 77
+      }
+    },
+    {
+      "name": "customer-center info popup works with fixed white body portal",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "rendered images all load and real financial state unchanged",
+      "status": "PASS",
+      "evidence": {
+        "images": 164
+      }
+    },
+    {
+      "name": "no app exception local failure or mutating HTTP",
+      "status": "PASS",
+      "evidence": {
+        "errors": [],
+        "requests": [
+          {
+            "url": "https://use.typekit.net/aqm4sxy.css",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "url": "https://use.typekit.net/hyf2mwn.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "url": "https://use.typekit.net/gig5kam.js",
+            "error": "net::ERR_NETWORK_ACCESS_DENIED"
+          }
+        ],
+        "warnings": [
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+          }
+        ],
+        "mutations": []
+      }
+    },
+    {
+      "name": "same fixed commit343sources292outputs unchanged through QA",
+      "status": "PASS",
+      "evidence": {
+        "startUtc": "2026-10-07T09:13:36.435Z",
+        "endUtc": "2026-10-07T09:13:55.593Z",
+        "head": "b425507730a4f39dd393645ef4273653a7c13176"
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    }
+  ],
+  "mutations": []
+}

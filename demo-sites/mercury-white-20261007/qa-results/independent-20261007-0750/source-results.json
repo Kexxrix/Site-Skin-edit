@@ -1,0 +1,89 @@
+[
+  {
+    "name": "exact frozen commit all342 sources and built outputs match",
+    "status": "PASS",
+    "evidence": {
+      "sources": 342,
+      "build": 292
+    }
+  },
+  {
+    "name": "approved v6 3132 bytes input consumed and Git bytes exact",
+    "status": "PASS",
+    "evidence": {}
+  },
+  {
+    "name": "all39 approved colors locks mood modes stops and PNG tuning consumed unchanged",
+    "status": "PASS",
+    "evidence": {}
+  },
+  {
+    "name": "static theme CSS equals approved input in original c5 theme engine",
+    "status": "PASS",
+    "evidence": {
+      "sha256": "d5ebac3f881a9762beac4ce4764d019bfeb42d6dcef62ba3d958442771e2d333"
+    }
+  },
+  {
+    "name": "editor picker styles and runtime imports absent",
+    "status": "PASS",
+    "evidence": {}
+  },
+  {
+    "name": "production bundles contain no palette editor picker or preset history markers",
+    "status": "PASS",
+    "evidence": {
+      "hits": [],
+      "bundles": 37
+    }
+  },
+  {
+    "name": "all249 copied public asset bytes preserved",
+    "status": "PASS",
+    "evidence": {
+      "count": 249,
+      "mismatches": []
+    }
+  },
+  {
+    "name": "unchanged business geometry data font and lockfile match base Git",
+    "status": "FAIL",
+    "evidence": {
+      "count": 333,
+      "rawLineEndingDifferences": [
+        "app/mercury-sports.css",
+        "app/skin-palette.ts"
+      ],
+      "mismatches": [
+        {
+          "path": "app/skin-palette.ts",
+          "match": false,
+          "normalizedMatch": false
+        }
+      ]
+    }
+  },
+  {
+    "name": "existing editor source bytes and HEAD preserved read-only",
+    "status": "PASS",
+    "evidence": {
+      "head": "c5b033a3a714b94be846c62554823b773abe8329",
+      "count": 340,
+      "mismatches": []
+    }
+  },
+  {
+    "name": "existing original_mercury source bytes and HEAD preserved read-only",
+    "status": "PASS",
+    "evidence": {
+      "head": "ef1becb38bbba0ae8803f7c84155bcbeeb57004e",
+      "count": 337,
+      "mismatches": []
+    }
+  },
+  {
+    "name": "white Git working tree clean and no remote",
+    "status": "PASS",
+    "evidence": {}
+  }
+]

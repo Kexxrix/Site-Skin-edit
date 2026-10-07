@@ -1,0 +1,409 @@
+{
+  "pass": 8,
+  "fail": 0,
+  "mode": "Actual new production build on 5418; no stylesheet injection",
+  "checks": [
+    {
+      "name": "all match-card geometry unchanged; outline does not cause layout shift",
+      "pass": true,
+      "evidence": {
+        "cards": 61
+      },
+      "reused": true
+    },
+    {
+      "name": "exact header menu gradient reused on three services in normal hover focus",
+      "pass": true,
+      "evidence": {
+        "header": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+        "evidence": [
+          {
+            "text": "충전",
+            "states": {
+              "normal": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(184, 170, 145)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) none 3px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              },
+              "hover": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(183, 96, 22)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) none 3px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              },
+              "focus": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(184, 170, 145)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) solid 2px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              }
+            },
+            "mask": "rgb(43, 40, 38)"
+          },
+          {
+            "text": "환전",
+            "states": {
+              "normal": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(184, 170, 145)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) none 3px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              },
+              "hover": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(183, 96, 22)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) none 3px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              },
+              "focus": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(184, 170, 145)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) solid 2px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              }
+            },
+            "mask": "rgb(43, 40, 38)"
+          },
+          {
+            "text": "고객센터",
+            "states": {
+              "normal": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(184, 170, 145)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) none 3px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              },
+              "hover": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(183, 96, 22)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) none 3px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              },
+              "focus": {
+                "color": "rgb(43, 40, 38)",
+                "background": "rgba(0, 0, 0, 0)",
+                "gradient": "linear-gradient(rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)",
+                "border": "rgb(184, 170, 145)",
+                "shadow": "rgb(255, 255, 255) 0px 1px 0px 0px inset, rgb(184, 170, 145) 0px -1px 0px 0px inset",
+                "outline": "rgb(43, 40, 38) solid 2px",
+                "filter": "none",
+                "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+                "size": "12px",
+                "width": 98,
+                "height": 43.5,
+                "minTextContrast": 10.317815171430098
+              }
+            },
+            "mask": "rgb(43, 40, 38)"
+          }
+        ]
+      },
+      "reused": true
+    },
+    {
+      "name": "other eleven normal/hover/focus/disabled families keep exact prior polish",
+      "pass": true,
+      "evidence": {
+        "families": 11
+      },
+      "reused": true
+    },
+    {
+      "name": "selected whole card outline survives hover and nested keyboard focus",
+      "pass": true,
+      "evidence": {
+        "normal": {
+          "color": "rgb(43, 40, 38)",
+          "background": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(183, 96, 22)",
+          "shadow": "rgb(183, 96, 22) 0px 0px 0px 1px inset",
+          "outline": "rgb(43, 40, 38) none 3px",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "size": "16px",
+          "width": 587,
+          "height": 228
+        },
+        "hover": {
+          "color": "rgb(43, 40, 38)",
+          "background": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(183, 96, 22)",
+          "shadow": "rgb(183, 96, 22) 0px 0px 0px 1px inset",
+          "outline": "rgb(43, 40, 38) none 3px",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "size": "16px",
+          "width": 587,
+          "height": 228
+        },
+        "focus": {
+          "color": "rgb(43, 40, 38)",
+          "background": "rgb(255, 250, 240)",
+          "gradient": "none",
+          "border": "rgb(183, 96, 22)",
+          "shadow": "rgb(183, 96, 22) 0px 0px 0px 1px inset",
+          "outline": "rgb(43, 40, 38) none 3px",
+          "filter": "none",
+          "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+          "size": "16px",
+          "width": 587,
+          "height": 228
+        },
+        "borderContrast": 4.296228470027664
+      },
+      "reused": true
+    },
+    {
+      "name": "chosen betting card remains outlined when another match is inspected",
+      "pass": true,
+      "evidence": {
+        "chosenOutlinePersists": true,
+        "deselectedUninspectedOutlineClears": true
+      },
+      "reused": true
+    },
+    {
+      "name": "approved selected sport odds and market styling remains exact",
+      "pass": true,
+      "evidence": {
+        "evidence": {
+          "sport": {
+            "normal": {
+              "color": "rgb(43, 40, 38)",
+              "background": "rgb(255, 194, 111)",
+              "gradient": "none",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "none",
+              "outline": "rgb(255, 136, 0) none 3px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "16px",
+              "width": 101.90625,
+              "height": 32
+            },
+            "hover": {
+              "color": "rgb(43, 40, 38)",
+              "background": "rgb(255, 194, 111)",
+              "gradient": "none",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "none",
+              "outline": "rgb(255, 136, 0) none 3px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "16px",
+              "width": 101.90625,
+              "height": 32
+            },
+            "focus": {
+              "color": "rgb(43, 40, 38)",
+              "background": "rgb(255, 194, 111)",
+              "gradient": "none",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+              "outline": "rgb(255, 136, 0) solid 2px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "16px",
+              "width": 101.90625,
+              "height": 32
+            }
+          },
+          "market": {
+            "normal": {
+              "color": "rgb(0, 0, 0)",
+              "background": "rgba(0, 0, 0, 0)",
+              "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "none",
+              "outline": "rgb(0, 0, 0) none 3px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "12px",
+              "width": 112.59375,
+              "height": 32
+            },
+            "hover": {
+              "color": "rgb(0, 0, 0)",
+              "background": "rgba(0, 0, 0, 0)",
+              "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "none",
+              "outline": "rgb(0, 0, 0) none 3px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "12px",
+              "width": 112.59375,
+              "height": 32
+            },
+            "focus": {
+              "color": "rgb(0, 0, 0)",
+              "background": "rgba(0, 0, 0, 0)",
+              "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+              "outline": "rgb(0, 0, 0) solid 2px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "12px",
+              "width": 112.59375,
+              "height": 32
+            }
+          },
+          "odds": {
+            "normal": {
+              "color": "rgb(0, 0, 0)",
+              "background": "rgba(0, 0, 0, 0)",
+              "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "none",
+              "outline": "rgb(0, 0, 0) none 3px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "16px",
+              "width": 278.5,
+              "height": 36
+            },
+            "hover": {
+              "color": "rgb(0, 0, 0)",
+              "background": "rgba(0, 0, 0, 0)",
+              "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "none",
+              "outline": "rgb(0, 0, 0) none 3px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "16px",
+              "width": 278.5,
+              "height": 36
+            },
+            "focus": {
+              "color": "rgb(0, 0, 0)",
+              "background": "rgba(0, 0, 0, 0)",
+              "gradient": "linear-gradient(rgb(255, 195, 112) 0%, rgb(255, 189, 97) 52%, rgb(255, 183, 82) 100%)",
+              "border": "rgb(255, 136, 0)",
+              "shadow": "rgb(23, 23, 23) 0px 0px 0px 2px",
+              "outline": "rgb(0, 0, 0) solid 2px",
+              "filter": "none",
+              "font": "\"Pretendard JP\", \"Noto Sans JP\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif",
+              "size": "16px",
+              "width": 278.5,
+              "height": 36
+            }
+          }
+        },
+        "payout": 7800,
+        "transactions": 0
+      },
+      "reused": true
+    },
+    {
+      "name": "three services still open correct popups without execution",
+      "pass": true,
+      "evidence": [
+        "충전",
+        "환전 안내",
+        "고객센터"
+      ],
+      "reused": true
+    },
+    {
+      "name": "164 images and runtime identical in matching empty-slip state; no transaction requests",
+      "pass": true,
+      "evidence": {
+        "images": 164,
+        "errors": 0,
+        "localFailures": 0,
+        "transactions": 0,
+        "blockedFonts": [
+          "https://use.typekit.net/aqm4sxy.css",
+          "https://use.typekit.net/hyf2mwn.js",
+          "https://use.typekit.net/gig5kam.js"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "failures": [
+    {
+      "url": "https://use.typekit.net/aqm4sxy.css",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://use.typekit.net/hyf2mwn.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://use.typekit.net/gig5kam.js",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED"
+    }
+  ],
+  "mutations": [],
+  "harnessCorrection": "Compared the same empty-slip state; selected-slip ticket removal was expected behavior. Seven successful checks reused; app source unchanged."
+}

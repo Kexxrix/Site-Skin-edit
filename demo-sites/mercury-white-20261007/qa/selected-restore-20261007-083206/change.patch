@@ -1,0 +1,84 @@
+diff --git a/app/mercury-white.css b/app/mercury-white.css
+index f68fbde..9ae084c 100644
+--- a/app/mercury-white.css
++++ b/app/mercury-white.css
+@@ -27,12 +27,6 @@
+   --skin-chip-text: var(--white-button-text);
+   --skin-chip-border: var(--white-selected-border);
+   --skin-chip-inset: inset 0 0 0 1px var(--white-selected-border);
+-  --skin-odds-selected-fill: var(--white-selected-fill);
+-  --skin-oddsSelectedText: var(--white-button-text);
+-  --skin-oddsSelectedBorder: var(--white-selected-border);
+-  --skin-sportSelectedBackground: var(--white-selected-fill);
+-  --skin-sportSelectedText: var(--white-button-text);
+-  --skin-sportSelectedBorder: var(--white-selected-border);
+ }
+ 
+ .mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+@@ -52,16 +46,23 @@
+   border-color: var(--white-selected-border);
+   filter: none;
+ }
+-.mc-shell :is(.mc-sport-tab, .mc-market-tabs button, .mc-odd)[aria-pressed="true"]:hover {
+-  background: var(--white-selected-fill);
+-  border-color: var(--white-selected-border);
+-}
+ .mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+   .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
+   .mc-odd, .mc-market-open):focus-visible {
+   outline: 2px solid var(--white-button-text);
+   outline-offset: -2px;
+ }
++/* User feedback: selected controls use the original v6 colors and warm fill.
++   Flat badges/counts and every unselected readability treatment stay intact. */
++.mc-shell :is(.mc-sport-tab, .mc-market-tabs button, .mc-odd)[aria-pressed="true"] {
++  box-shadow: none;
++}
++.mc-shell :is(.mc-sport-tab, .mc-market-tabs button, .mc-odd)[aria-pressed="true"]:focus-visible {
++  box-shadow: 0 0 0 2px var(--skin-shadow-171717, #171717);
++}
++.mc-shell .mc-sport-tab[aria-pressed="true"]:focus-visible {
++  outline-color: var(--skin-sportSelectedBorder);
++}
+ .mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+   .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
+   .mc-odd):disabled {
+diff --git a/theme/mercury-white-button-polish.json b/theme/mercury-white-button-polish.json
+index 09faaeb..aa7b985 100644
+--- a/theme/mercury-white-button-polish.json
++++ b/theme/mercury-white-button-polish.json
+@@ -1,6 +1,6 @@
+ {
+   "kind": "mercury-white-button-readability-polish",
+-  "version": 1,
++  "version": 2,
+   "baseCommit": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
+   "basePaletteFile": "mercury-palette_98.json",
+   "basePaletteSha256": "f8387c05ce6298592b1eca859f41dd1d4069a4a95ab9d7631fac9b4badc81ae5",
+@@ -10,14 +10,22 @@
+     "normalHover": "#f7edda",
+     "text": "#2b2826",
+     "normalBorder": "#b8aa91",
+-    "selectedFill": "#ffdfaf",
+-    "selectedBorder": "#b76016",
++    "chipFill": "#ffdfaf",
++    "detailBorder": "#b76016",
+     "disabledFill": "#f1eadf",
+     "disabledText": "#6b6154",
+     "topHighlight": "#ffffff"
+   },
+-  "surfaces": ["normal control buttons", "selected sports and odds", "market tabs", "service action buttons", "amount and MAX buttons", "small badges and counts", "disabled controls"],
+-  "treatment": {"normal": "solid cream", "selected": "solid light apricot with darker orange border", "chips": "solid apricot", "highlight": "one-pixel inset top line", "hover": "cream fill and darker border; no brightness filter", "focus": "two-pixel dark inset outline", "disabled": "opaque muted cream with readable dark text"},
++  "surfaces": ["normal control buttons", "service action buttons", "amount and MAX buttons", "small badges and counts", "disabled controls"],
++  "treatment": {"normal": "solid cream", "selected": "original approved v6 sport colors and warm odds/market gradient restored by user feedback", "chips": "solid apricot retained, including counts within selected sports", "highlight": "one-pixel inset top line on unselected controls; original selected controls have no extra shadow", "hover": "cream fill and darker border for unselected controls; original v6 for selected controls", "focus": "two-pixel dark inset outline on unselected controls; original v6 colors on selected controls", "disabled": "opaque muted cream with readable dark text"},
++  "selectedRestore": {
++    "approval": "User requested selected buttons keep the brighter pre-polish style on 2026-10-07; other gradient readability improvements remain.",
++    "referenceCommit": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
++    "previousPolishCommit": "697a5711c8684eadd7c7f9068fe2974d47a91fb7",
++    "sport": {"background": "#ffc26f", "text": "#2b2826", "border": "#ff8800", "focus": "#ff8800"},
++    "oddsAndMarket": {"backgroundRole": "#ffbd61", "fillStyle": "warm", "text": "#000000", "border": "#ff8800", "focus": "#000000"},
++    "implementation": "Remove only six scoped selected-role overrides; inherit exact base v6 calculated fills. Restore selected sport focus, original two-pixel dark focus shadow for selected groups, and remove extra selected top highlight."
++  },
+   "serviceGoldPngAdjustment": {
+     "baseSetting": "unchanged brightness(90%) contrast(101%) saturate(104%)",
+     "scopedDisplayOverride": "brightness(70%) contrast(101%) saturate(104%)",

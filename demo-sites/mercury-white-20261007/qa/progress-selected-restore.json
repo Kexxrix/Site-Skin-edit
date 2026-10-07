@@ -1,0 +1,68 @@
+{
+  "phase": "Final selected-restored production source frozen; ready for independent QA",
+  "started_utc": "2026-10-07T08:32:08.560559+00:00",
+  "current_commit": "697a5711c8684eadd7c7f9068fe2974d47a91fb7",
+  "qa": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\selected-restore-20261007-083206",
+  "prior_qa": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224",
+  "source_changed": true,
+  "affected_files": [
+    "app/mercury-white.css",
+    "theme/mercury-white-button-polish.json"
+  ],
+  "groups": [
+    "sport tabs aria-pressed=true",
+    "odds aria-pressed=true",
+    "market tabs aria-pressed=true"
+  ],
+  "live_pid": 36312,
+  "editor_preserved_pid": 35992,
+  "restart_authorized": true,
+  "nonselected_unchanged": true,
+  "attachment_pixels_used": false,
+  "reference": "f9 computed styles and approved v6 input",
+  "source_changed_utc": "2026-10-07T08:33:02.251010+00:00",
+  "staging_build_site": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224\\build-site",
+  "latest_source_change_utc": "2026-10-07T08:37:09.072720+00:00",
+  "reference_groups_measured": 3,
+  "reference_states_per_group": 3,
+  "attachment": {
+    "library_file_id": "libfile_dad322f7f4f481919480b35b4f18ed64",
+    "file_id": "file_0000000028f881f9886dbc164cf4a119",
+    "file_name": "image(20261007-082907).png",
+    "expected_bytes": 99753,
+    "metadata_read_success": true,
+    "prepare_materialize_success": true,
+    "supported_transfer_attempts": 1,
+    "transfer_exit": 1,
+    "exact_error": "library file transfer failed: download failed",
+    "pixels_viewed": false,
+    "retry_or_bypass": false,
+    "working_reference": "Exact approved v6 and freshly measured existing c5/f9-equivalent selected CSS"
+  },
+  "source_commit": "22bba115d3df595c968f32c2ed8ba802ef454ad0",
+  "polish_activated": true,
+  "followup_restart_count": 1,
+  "user_feedback": "Selected buttons restore f9/v6; nonselected gradients fixed and retain current state",
+  "updated_utc": "2026-10-07T08:47:50.911294+00:00",
+  "checks": {
+    "restore_ui_pass": 24,
+    "restore_ui_fail": 0,
+    "targeted_comparison_pass": 7,
+    "targeted_comparison_fail": 0,
+    "selected_groups": 3,
+    "selected_states_per_group": 3,
+    "nonselected_families_preserved": 12,
+    "images_preserved": 164,
+    "build_exit": 0,
+    "type_lint_reused_unchanged_inputs": true
+  },
+  "remaining": [
+    "Independent QA and user final visual acceptance",
+    "Example PNG supported transfer failed; actual pixels unavailable",
+    "Existing Adobe Typekit network restriction"
+  ],
+  "visual_proof": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\selected-restore-20261007-083206\\selected-full.png",
+  "handoff": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\selected-restore-20261007-083206\\QA-HANDOFF.ko.md",
+  "manifest": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\selected-restore-20261007-083206\\final-source.json",
+  "independent_qa_complete": false
+}

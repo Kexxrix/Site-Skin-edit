@@ -1,5 +1,11 @@
 # Site-Skin-edit — TITAN 제작 자료
 
+## MERCURY White 로컬 등록 — 2026-10-07
+
+[머큐리 화이트 인덱스](demo-sites/mercury-white-20261007/INDEX.ko.md) / [로컬 화면](http://127.0.0.1:5418/) / [현재 운영 상태](demo-sites/mercury-white-20261007/STATE.md).
+
+최신 앱 소스는 `b425507730a4f39dd393645ef4273653a7c13176`이며 기존 통합 GitHub에 소스·자산·입력·검수 기록을 보관한다. [수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261007-mercury-white-local/source-files.json)를 따른다. **이번 등록은 로컬·GitHub 대상이며 Sites 등록과 공개 배포는 하지 않는다.** 기존 공개 사이트와 다른 작업은 유지한다.
+
 ## 사이트 현재 현황 — 2026-10-02 인계 기준
 
 | 사이트 | 공개 완료 기준 | 최신 운영 문서 |

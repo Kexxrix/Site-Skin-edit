@@ -1,0 +1,32 @@
+{
+  "original": {
+    "name": "unchanged business geometry data font and lockfile match base Git",
+    "status": "FAIL",
+    "evidence": {
+      "count": 333,
+      "rawLineEndingDifferences": [
+        "app/mercury-sports.css",
+        "app/skin-palette.ts"
+      ],
+      "mismatches": [
+        {
+          "path": "app/skin-palette.ts",
+          "match": false,
+          "normalizedMatch": false
+        }
+      ]
+    }
+  },
+  "corrected": {
+    "name": "unchanged business geometry data font and lockfile match base Git",
+    "status": "PASS",
+    "evidence": {
+      "count": 332,
+      "excluded": "app/skin-palette.ts is intentionally moved to theme/palette-compiler.ts, independently checked against approved c5 calculations",
+      "rawLineEndingDifferences": [
+        "app/mercury-sports.css"
+      ],
+      "mismatches": []
+    }
+  }
+}

@@ -1,0 +1,1306 @@
+diff --git a/.gitattributes b/.gitattributes
+new file mode 100644
+index 0000000..6b7b68d
+--- /dev/null
++++ b/.gitattributes
+@@ -0,0 +1,2 @@
++# Preserve the approved Library JSON bytes across Windows checkouts.
++theme/mercury-palette_98.json -text
+diff --git a/app/layout.tsx b/app/layout.tsx
+index f767ea4..2d56843 100644
+--- a/app/layout.tsx
++++ b/app/layout.tsx
+@@ -2,9 +2,11 @@ import type { Metadata } from 'next';
+ import './typography.css';
+ import './globals.css';
+ import './mercury-sports.css';
++import './mercury-white-theme.css';
++import './mercury-white.css';
+ 
+ export const metadata: Metadata = {
+-  title: 'MERCURY · 스킨 편집',
++  title: 'MERCURY · 화이트',
+   description: 'MERCURY 스포츠 — 종목과 리그별 경기 일정, 대진, 배당을 확인하세요.',
+   icons: { icon: '/favicon.svg' },
+ };
+diff --git a/app/mercury-white-theme.css b/app/mercury-white-theme.css
+new file mode 100644
+index 0000000..c1d29d6
+--- /dev/null
++++ b/app/mercury-white-theme.css
+@@ -0,0 +1,206 @@
++/* MERCURY skin-lab v6: effective CSS palette. Whole-mood exclusions: background, surface, raised, control, input, accent, odds, error, menuActiveText, menuActiveLine, sportSelectedBackground, oddsSelectedBackground, oddsSelectedBorder, actionBackground, actionBorder. Images keep their pixels. */
++:root {
++  --skin-background: #fffaf0;
++  --skin-surface: #fffaf0;
++  --skin-raised: #fffaf0;
++  --skin-control: #fffaf0;
++  --skin-input: #fffaf0;
++  --skin-header: #ffffff;
++  --skin-border: #c9c7bb;
++  --skin-text: #2b2826;
++  --skin-muted: #212121;
++  --skin-disabled: #757575;
++  --skin-accent: #fef8e1;
++  --skin-accentSoft: #000000;
++  --skin-onAccent: #000000;
++  --skin-shadow: #000000;
++  --skin-headerMenu: #e4ddcd;
++  --skin-headerButton: #636363;
++  --skin-headerButtonText: #ffffff;
++  --skin-headerButtonBorder: #787878;
++  --skin-headerButtonAccent: #c7c7c7;
++  --skin-headerButtonHover: #111111;
++  --skin-odds: #363636;
++  --skin-error: #ff1e00;
++  --skin-menuActiveText: #ff8f0f;
++  --skin-menuActiveLine: #ff8f0f;
++  --skin-sportSelectedBackground: #ffc26f;
++  --skin-sportSelectedText: #2b2826;
++  --skin-sportSelectedBorder: #ff8800;
++  --skin-oddsSelectedBackground: #ffbd61;
++  --skin-oddsSelectedText: #000000;
++  --skin-oddsSelectedBorder: #ff8800;
++  --skin-actionBackground: #ffffff;
++  --skin-actionText: #000000;
++  --skin-actionBorder: #ffffff;
++  --skin-chipBackground: #ffbc5e;
++  --skin-chipText: #000000;
++  --skin-chipBorder: #ffb561;
++  --skin-leagueText: #000000;
++  --skin-chipGradientTop: #ffdb9e;
++  --skin-chipGradientBottom: #ffbe0a;
++  --skin-header-141414: #ffffff;
++  --skin-control-353535: #ffffff;
++  --skin-input-090909: #fffaf0;
++  --skin-text-ffffff: #2b2826;
++  --skin-disabled-757575: #757575;
++  --skin-accent-ffcd55: #fef8e1;
++  --skin-accentSoft-ffe6a3: #000000;
++  --skin-accentSoft-fff7c7: #121212;
++  --skin-control-939393: #ffffff;
++  --skin-accent-ffedc0: #ffffff;
++  --skin-accent-af800d: #eccf5b;
++  --skin-control-292929: #fffaf0;
++  --skin-control-585858: #ffffff;
++  --skin-onAccent-171717: #000000;
++  --skin-header-080808: #ffffff;
++  --skin-headerMenu-080808: #e4ddcd;
++  --skin-headerMenu-171717: #efeae0;
++  --skin-headerMenu-30302e: #ffffff;
++  --skin-headerMenu-191918: #f0ece2;
++  --skin-headerMenu-070707: #e3dccc;
++  --skin-headerMenu-020202: #e0d8c5;
++  --skin-text-ffffff0d: #2b28260d;
++  --skin-accent-382211: #9c6c38;
++  --skin-accent-b5832e: #ddc891;
++  --skin-accent-fff7df: #ffffff;
++  --skin-accent-76501c: #cda350;
++  --skin-accent-422a13: #a77839;
++  --skin-accent-d9ad50: #efe5c5;
++  --skin-accent-fff9e7: #ffffff;
++  --skin-accent-8b5d1d: #d5ae5e;
++  --skin-accent-3e2711: #a47536;
++  --skin-accent-c9993d: #e4d6ad;
++  --skin-accent-fff3d1: #ffffff;
++  --skin-accent-483016: #ab803e;
++  --skin-accent-fff3d13d: #ffffff3d;
++  --skin-accent-fff9e742: #ffffff42;
++  --skin-accent-fff3d138: #ffffff38;
++  --skin-accent-352111: #986b39;
++  --skin-accent-aa7626: #dcbf7f;
++  --skin-accent-fff6d9: #ffffff;
++  --skin-accent-7e531a: #d2a651;
++  --skin-accent-3c2511: #a17237;
++  --skin-accent-d5a448: #ece0bc;
++  --skin-accent-82561c: #d2a857;
++  --skin-accent-402810: #a87833;
++  --skin-accent-c79639: #e2d3a9;
++  --skin-accent-fff2cf: #ffffff;
++  --skin-accent-604018: #c5953e;
++  --skin-accent-fff6d93d: #ffffff3d;
++  --skin-accent-fff2cf38: #ffffff38;
++  --skin-text-f3f0e8: #20150e;
++  --skin-accent-ffe59a: #ffffff;
++  --skin-accent-d2a03b: #e9dbaf;
++  --skin-accent-af7d24: #dfc57f;
++  --skin-accent-f4dfad: #ffffff;
++  --skin-shadow-000000b3: #000000b3;
++  --skin-headerButtonBorder-454545: #787878;
++  --skin-headerButtonText-f2f0e9: #ffffff;
++  --skin-headerButton-050505: #636363;
++  --skin-headerButtonAccent-f3ce65: #c7c7c7;
++  --skin-headerButtonAccent-9e7c25: #7d7d7d;
++  --skin-headerButtonHover-111111: #111111;
++  --skin-headerButtonBorder-747168: #a69c9c;
++  --skin-headerButtonAccent-e0bb50: #b3b3b3;
++  --skin-background-050505: #fffaf0;
++  --skin-control-313131: #ffffff;
++  --skin-control-4c4c4c: #ffffff;
++  --skin-accent-51350840: #c8951c40;
++  --skin-control-444444: #ffffff;
++  --skin-control-242424: #fff7e6;
++  --skin-text-ffffff26: #2b282626;
++  --skin-shadow-00000066: #00000066;
++  --skin-text-ffffffb3: #2b2826b3;
++  --skin-accent-c69b4f99: #e5d9bb99;
++  --skin-text-ffffff80: #2b282680;
++  --skin-shadow-000000: #000000;
++  --skin-shadow-000000bf: #000000bf;
++  --skin-accent-fff1c9: #ffffff;
++  --skin-accent-ffd36b66: #fffdf666;
++  --skin-accent-ffe1a3: #ffffff;
++  --skin-onAccent-000000: #000000;
++  --skin-accentSoft-ffdd6d: #000000;
++  --skin-text-f5f1e8: #23160d;
++  --skin-surface-141414: #fffaf0;
++  --skin-accent-d9ad43: #eee3b9;
++  --skin-raised-1c1c1c: #fffaf0;
++  --skin-muted-b8b5ad: #212121;
++  --skin-border-3b3b3b: #c9c7bb;
++  --skin-accent-78511c: #cea451;
++  --skin-text-f5eedf: #1f1108;
++  --skin-shadow-171717: #171717;
++  --skin-border-555555: #e0dfd8;
++  --skin-border-353535: #c4c1b4;
++  --skin-control-202020: #fff4de;
++  --skin-control-171717: #ffeecc;
++  --skin-text-ffffff24: #2b282624;
++  --skin-shadow-080808: #080808;
++  --skin-shadow-00000055: #0005;
++  --skin-control-282828: #fff9ee;
++  --skin-control-1c1c1c: #fff1d6;
++  --skin-accent-9b864f: #ccc6a9;
++  --skin-accent-ffe6a34d: #ffffff4d;
++  --skin-accent-d9ad432b: #eee3b92b;
++  --skin-accent-ffe6a3: #ffffff;
++  --skin-accent-e6bb55: #f6eed0;
++  --skin-accent-d4a038: #e9dbae;
++  --skin-accent-f6d786: #ffffff;
++  --skin-accent-886123: #d0b066;
++  --skin-accent-fff7dc: #ffffff;
++  --skin-accent-93641e: #d8b364;
++  --skin-shadow-00000077: #0007;
++  --skin-accent-d9ad4315: #eee3b915;
++  --skin-accent-fff0c5: #ffffff;
++  --skin-accent-f3cc72: #fdfbf3;
++  --skin-accentSoft-fff0c0: #0f0f0f;
++  --skin-accent-fffbed: #ffffff;
++  --skin-accent-d9ad4350: #eee3b950;
++  --skin-shadow-000000aa: #000a;
++  --skin-shadow-00000099: #0009;
++  --skin-disabled-858585: #858585;
++  --skin-border-383838: #c6c4b8;
++  --skin-text-ffffff08: #2b282608;
++  --skin-muted-a8a69e: #111111;
++  --skin-disabled-555555: #555;
++  --skin-accentSoft-fff1c6: #111111;
++  --skin-muted-929292: #000000;
++  --skin-surface-171717: #fffcf6;
++  --skin-border-9d8140: #fbf9f0;
++  --skin-shadow-000000ee: #000e;
++  --skin-accent-ffe6a344: #ffffff44;
++  --skin-shadow-000000bb: #000b;
++  --skin-muted-aaa79e: #121212;
++  --skin-muted-cbc7bd: #353030;
++  --skin-muted-a5a39b: #0f0f0f;
++  --skin-border-333333: #c2c0b2;
++  --skin-border-444444: #d1cfc5;
++  --skin-surface-181818: #fffdf8;
++  --skin-menu-active-background: none;
++  --skin-menu-active-color: #ff8f0f;
++  --skin-menu-active-shadow: none;
++  --skin-menu-active-line-display: block;
++  --skin-gold-icon-filter: none;
++  --skin-gold-sport-filter: brightness(93%) contrast(92%) saturate(105%);
++  --skin-gold-selectedSport-filter: brightness(97%) contrast(120%) saturate(112%);
++  --skin-gold-service-filter: brightness(90%) contrast(101%) saturate(104%);
++  --skin-action-fill: initial;
++  --skin-action-text: initial;
++  --skin-action-border: initial;
++  --skin-chip-fill: linear-gradient(180deg, #ffdb9e 0%, #ffbe0a 100%);
++  --skin-chip-text: #000000;
++  --skin-chip-border: #ffb561;
++  --skin-action-hover-filter: initial;
++  --skin-chip-inset: inset 0 0 0 1px #ffb561;
++  --skin-action-hover-shadow: initial;
++  --skin-action-disabled-fill: initial;
++  --skin-action-disabled-text: initial;
++  --skin-action-disabled-border: initial;
++  --skin-checked-fill: initial;
++  --skin-checked-thumb: initial;
++  --skin-normal-fill: initial;
++  --skin-odds-selected-fill: linear-gradient(180deg, #ffc370 0%, #ffbd61 52%, #ffb752 100%);
++  --skin-focus-color: #2b2826;
++  --skin-odds-selected-focus: #000000;
++  --skin-header-focus-color: #ffffff;
++}
+diff --git a/app/mercury-white.css b/app/mercury-white.css
+new file mode 100644
+index 0000000..44f0849
+--- /dev/null
++++ b/app/mercury-white.css
+@@ -0,0 +1,5 @@
++/* Keep the authored desktop layout; only remove the editor workspace lane. */
++.mercury-site:has(.mc-shell) {
++  width: 1920px;
++  margin-inline: auto;
++}
+diff --git a/app/page.tsx b/app/page.tsx
+index ea9f1cc..75e8ff1 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -6,8 +6,6 @@ import {Button} from '@/components/ui/button';
+ import {Dialog,DialogClose,DialogContent,DialogTitle} from '@/components/ui/dialog';
+ import {matches,selectionId,priceText,moneyText,DEMO,totalsFor,validateStake,type Match,type Selection,type Receipt} from './demo-data';
+ import {MercurySurface,type Session,type Overlay} from './mercury-sports';
+-import {SkinEditor} from './skin-editor';
+-import './skin-editor.css';
+ 
+ const initialSession:Session={loggedIn:false,balance:DEMO.initialBalance,history:[]};
+ const serviceCopy={support:'배당 선택과 금액 계산은 스포츠 가이드에서 확인하실 수 있습니다. 베팅내역에서 선택한 경기와 금액을 확인하세요.'};
+@@ -81,7 +79,7 @@ export default function Page() {
+   }
+   function showOverlay(next:Overlay){if(next.kind==='account'){setSession(prev=>({...prev,loggedIn:true}));return;}setOverlay(next);}
+   const overlayTitle=overlay?.kind==='info'?overlay.title:overlay?.kind==='charge'?'충전':overlay?.kind==='withdraw'?'환전 안내':overlay?.kind==='history'?'내 베팅내역':overlay?.kind==='receipt'?'베팅이 완료되었습니다':'선택 내역 확인';
+-  return <div className="skin-workspace"><div className="mercury-site"><MercurySurface selected={selected} toggle={toggle} session={session} open={showOverlay} logout={logout} stake={stake} setStake={setStake} stakeTouched={stakeTouched} setStakeTouched={setStakeTouched} remove={id=>setSelected(prev=>prev.filter(s=>s.id!==id))} clear={()=>setSelected([])} keep={keep} setKeep={setKeep} storageError={storageError}/>
++  return <div className="mercury-site"><MercurySurface selected={selected} toggle={toggle} session={session} open={showOverlay} logout={logout} stake={stake} setStake={setStake} stakeTouched={stakeTouched} setStakeTouched={setStakeTouched} remove={id=>setSelected(prev=>prev.filter(s=>s.id!==id))} clear={()=>setSelected([])} keep={keep} setKeep={setKeep} storageError={storageError}/>
+   <Dialog open={!!overlay} onOpenChange={open=>{if(!open)setOverlay(null);}}><DialogContent className="demo-dialog" showCloseButton={false} aria-describedby={undefined}><DialogClose render={<Button className="icon-button dialog-close" aria-label="닫기"/>}><X/></DialogClose><DialogTitle>{overlayTitle}</DialogTitle>
+     {overlay?.kind==='info'&&<p className="dialog-copy">{overlay.body}</p>}
+     {overlay?.kind==='charge'&&<><p className="dialog-copy">충전 후 보유 금액은 {moneyText(DEMO.initialBalance)}원입니다.</p><div className="dialog-total"><span>현재 보유 금액</span><strong>₩ {moneyText(session.balance)}</strong></div><Button className="btn gold" onClick={()=>{setSession(prev=>({...prev,balance:DEMO.initialBalance}));setOverlay({kind:'info',title:'충전 완료',body:'보유 금액이 1,000,000원으로 변경되었습니다.'});}}>충전하기</Button></>}
+@@ -90,7 +88,7 @@ export default function Page() {
+     {overlay?.kind==='receipt'&&<><div className="receipt-success"><Check/><strong>베팅 완료</strong><span>{overlay.receipt.picks.length}경기 · ₩ {moneyText(overlay.receipt.stake)}</span></div><Button className="btn gold" onClick={()=>setOverlay({kind:'history'})}>내 베팅내역 보기</Button></>}
+     {overlay?.kind==='history'&&<div className="history-list">{!session.history.length?<div className="history-empty"><History/><strong>베팅내역이 없습니다</strong><p>경기의 배당과 베팅 금액을 선택해 주세요.</p></div>:session.history.map(receipt=><article key={receipt.id}><div className="history-meta"><time>{new Date(receipt.createdAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}</time><span>베팅 내역</span></div>{receipt.picks.map((pick,i)=><div key={i} className="history-pick"><strong>{pick.match}</strong><span>{pick.market} · {pick.pick}<b>{pick.price}</b></span></div>)}<div className="history-totals"><span>₩ {moneyText(receipt.stake)} × {receipt.odds}</span><strong>예상 ₩ {moneyText(receipt.potential)}</strong></div></article>)}</div>}
+   </DialogContent></Dialog>
+-  </div><SkinEditor/></div>;
++  </div>;
+ }
+ 
+ 
+diff --git a/app/skin-editor.css b/app/skin-editor.css
+deleted file mode 100644
+index dd46af1..0000000
+--- a/app/skin-editor.css
++++ /dev/null
+@@ -1,88 +0,0 @@
+-.skin-editor,.skin-launcher {font-family:var(--font-ui,system-ui),sans-serif;}
+-.skin-editor {position:fixed;z-index:100;top:16px;right:16px;width:370px;max-width:calc(100vw - 32px);height:calc(100dvh - 32px);display:flex;flex-direction:column;background:#f6f5f1;color:#292c2f;border:1px solid #b9b9b3;border-radius:10px;box-shadow:0 8px 30px #0004;font-size:13px;line-height:1.45;user-select:text;}
+-.skin-editor * {box-sizing:border-box;}
+-.skin-editor h1,.skin-editor h2,.skin-editor p {margin:0;}
+-.skin-header {display:flex;align-items:center;justify-content:space-between;padding:18px 20px 15px;border-bottom:1px solid #d5d6cf;}
+-.skin-kicker {font-size:10px;font-weight:700;letter-spacing:1.1px;color:#656b70;}
+-.skin-header h1 {font-size:22px;font-weight:700;line-height:1.35;margin-top:3px;}
+-.skin-editor button,.skin-editor input,.skin-editor select {font:inherit;color:#292c2f;}
+-.skin-editor button {border:1px solid #c7cac2;border-radius:5px;background:#fff;padding:7px 9px;line-height:1.35;cursor:pointer;}
+-.skin-editor button:hover:not(:disabled) {background:#ebece5;border-color:#777e73;}
+-.skin-editor button:disabled {opacity:.48;cursor:default;}
+-.skin-editor button:focus-visible,.skin-editor input:focus-visible,.skin-editor select:focus-visible {outline:2px solid #315b48;outline-offset:2px;box-shadow:none;}
+-.skin-editor .skin-close {font-size:25px;line-height:24px;width:32px;height:32px;padding:0;border:0;background:transparent;}
+-.skin-scroll {flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:16px 20px 24px;scrollbar-width:thin;}
+-.skin-intro {color:#5e6265;margin-bottom:12px!important;}
+-.skin-editor .skin-pick-toggle {width:100%;margin-bottom:8px;font-weight:600;}
+-.skin-editor .skin-pick-toggle[aria-pressed=true] {background:#e2eae3;border-color:#315b48;color:#254a35;}
+-.skin-pick-help,.skin-pick-status {display:block;font-size:11px;color:#315b48;margin:0 0 8px!important;}
+-.skin-mode-label {display:block;margin-bottom:5px;font-size:12px;}
+-.skin-effect-label {display:flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;}
+-.skin-effect-label input {accent-color:#3a6451;}
+-.skin-color-row[data-picked=true] {background:#e2eae3;outline:1px solid #527b62;border-radius:4px;}
+-.skin-picker-layer {position:fixed;inset:0;z-index:500;pointer-events:none;font:12px/1.45 var(--font-ui,system-ui),sans-serif;color:#292c2f;}
+-.skin-picker-outline {position:fixed;box-sizing:border-box;border:2px solid #315b48;border-radius:3px;pointer-events:none;}
+-.skin-picker-choices {position:fixed;width:280px;max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px);overflow:auto;padding:12px;border:1px solid #9caaa0;border-radius:8px;background:#f6f5f1;box-shadow:0 4px 18px #0004;pointer-events:auto;}
+-.skin-picker-choices strong {display:block;margin-bottom:8px;}
+-.skin-picker-choices button {display:flex;justify-content:space-between;gap:8px;width:100%;margin-top:5px;padding:7px 8px;border:1px solid #c7cac2;border-radius:4px;background:#fff;color:#292c2f;font:inherit;cursor:pointer;text-align:left;}
+-.skin-picker-choices button:hover {background:#e2eae3;}
+-.skin-picker-choices button:focus-visible {outline:2px solid #315b48;outline-offset:1px;}
+-.skin-picker-choices small {color:#626d65;font-size:10px;}
+-.skin-picker-origin {display:block;margin-top:2px;font-size:9px!important;}
+-.skin-picker-image-note {margin:0 0 8px;font-size:11px;color:#715526;}
+-.skin-picker-choices .skin-picker-exit {justify-content:center;margin-top:10px;font-size:11px;background:#e8ebe3;}
+-.skin-editor .skin-compare {width:100%;background:#263e32;color:#fff;border-color:#263e32;font-weight:600;}
+-.skin-editor .skin-compare:hover:not(:disabled) {background:#365643;}
+-.skin-editor .skin-compare[aria-pressed=true] {background:#5c4830;border-color:#5c4830;}
+-.skin-editor .skin-compare[aria-pressed=true]:hover:not(:disabled) {background:#715a3b;border-color:#715a3b;}
+-.skin-comparison-note {display:block;padding-top:8px;color:#715526;font-size:12px;}
+-.skin-toolbar {display:flex;gap:5px;margin-top:8px;}
+-.skin-toolbar button {flex:1;font-size:11px;padding:7px 4px;white-space:nowrap;}
+-.skin-section {margin:18px 0 0;padding:14px 0 0;border:0;border-top:1px solid #d5d6cf;min-width:0;}
+-.skin-section legend,.skin-section h2 {padding:0 7px 0 0;font-size:13px;font-weight:700;}
+-.skin-section h2 {margin-bottom:9px;}
+-.skin-mood {margin-bottom:10px;}
+-.skin-mood label {display:flex;align-items:center;justify-content:space-between;font-size:12px;margin-bottom:4px;}
+-.skin-mood output {font-variant-numeric:tabular-nums;color:#5c6364;}
+-.skin-editor input[type=range] {display:block;width:100%;height:18px;margin:0;padding:0;accent-color:#3a6451;cursor:pointer;background:transparent;}
+-.skin-editor .skin-link {border:0;background:transparent;text-decoration:underline;padding:2px 0;color:#4a6254;font-size:11px;}
+-.skin-color-row {display:grid;grid-template-columns:minmax(0,1fr) 27px 89px;align-items:center;gap:7px;min-height:49px;font-size:12px;}
+-.skin-color-row>label {min-width:0;}
+-.skin-color-label {display:flex;flex-direction:column;gap:3px;min-width:0;}
+-.skin-lock {display:flex;align-items:center;gap:4px;width:max-content;color:#686e6a;font-size:10px;cursor:pointer;}
+-.skin-lock input {width:12px;height:12px;margin:0;accent-color:#3a6451;}
+-.skin-editor input[type=color] {width:27px;height:27px;padding:2px;border:1px solid #c7cac2;border-radius:4px;background:#fff;cursor:pointer;}
+-.skin-editor input[type=text],.skin-editor select {height:31px;min-width:0;width:100%;border:1px solid #c7cac2;border-radius:4px;padding:4px 7px;background:#fff;color:#292c2f;}
+-.skin-editor .skin-hex {font-family:ui-monospace,Consolas,monospace;font-size:12px;text-transform:uppercase;}
+-.skin-editor input[aria-invalid=true] {border-color:#a43434;}
+-.skin-field-error {display:block;color:#a43434;font-size:10px;line-height:1.3;margin:3px 0 5px;}
+-.skin-protected {margin-top:14px;padding:10px;background:#e8ebe3;border-radius:5px;color:#4d5e4f;font-size:11px;}
+-.skin-warning {margin-top:12px;padding:10px;border:1px solid #dbbd79;border-radius:5px;background:#fff7df;color:#6e4b13;font-size:11px;}
+-.skin-warning strong {display:block;font-size:12px;}
+-.skin-warning ul {margin:5px 0;padding-left:16px;}
+-.skin-warning small {font-size:10px;line-height:1.4;}
+-.skin-inline {display:flex;gap:6px;align-items:center;margin:7px 0;}
+-.skin-inline>input,.skin-inline>select {flex:1;}
+-.skin-inline>button {flex:0 0 48px;height:31px;padding:4px 7px;}
+-.skin-section>small {display:block;color:#686e6a;font-size:10px;line-height:1.45;margin-top:7px;}
+-.skin-export {display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+-.skin-export button {font-size:11px;}
+-.skin-export button:last-child {grid-column:1/-1;}
+-.skin-notice,.skin-error {display:block;margin-top:12px!important;padding:10px;border-radius:5px;font-size:12px;}
+-.skin-notice {background:#e8eee5;color:#355638;}
+-.skin-error {background:#f8e9e6;color:#913832;border:1px solid #ddb2aa;}
+-.skin-launcher {position:fixed;z-index:100;bottom:16px;right:16px;border:1px solid #b9b9b3;border-radius:6px;background:#f6f5f1;color:#292c2f;box-shadow:0 2px 8px #0003;padding:9px 14px;font-size:12px;font-weight:600;}
+-.skin-launcher:hover {background:#ebece5;}
+-.skin-launcher:focus-visible {outline:2px solid #315b48;outline-offset:2px;}
+-/* The editor owns a separate lane at every viewport width. */
+-body:has(.skin-workspace>.skin-editor) {min-width:2306px;}
+-.skin-workspace:has(>.skin-editor) {display:flex;align-items:flex-start;gap:16px;width:2306px;margin-inline:auto;}
+-.skin-workspace:has(>.skin-editor)>.mercury-site {flex:0 0 1920px;width:1920px;}
+-.skin-workspace>.skin-editor {position:sticky;top:16px;right:auto;flex:0 0 370px;max-width:none;margin-top:16px;}
+-.skin-gradient-stop {margin-top:10px;padding-top:8px;border-top:1px solid #d7dbd2;}
+-.skin-gradient-stop>label {font-size:11px;font-weight:600;}
+-.skin-gradient-stop .skin-inline>input[type=color] {flex:0 0 27px;}
+-.skin-gold-group {padding:8px 0;border-bottom:1px solid #d4cab8;}
+-.skin-gold-group:last-of-type {border-bottom:0;}
+-.skin-gold-group>strong {display:block;margin-bottom:5px;font-size:11px;}
+-.skin-gold-group[data-picked] {outline:1px solid #b39057;outline-offset:3px;}
+diff --git a/app/skin-editor.tsx b/app/skin-editor.tsx
+deleted file mode 100644
+index 7293706..0000000
+--- a/app/skin-editor.tsx
++++ /dev/null
+@@ -1,325 +0,0 @@
+-'use client';
+-
+-import {useCallback, useEffect, useMemo, useReducer, useRef, useState, type KeyboardEvent} from 'react';
+-import {SkinPicker, type PickKey} from './skin-picker';
+-import {
+-  BUILTIN_PRESETS, COLOR_FIELDS, DEFAULT_SNAPSHOT, PRESET_KEY, STORAGE_KEY,
+-  contrastWarnings, historyReducer, paletteCss, paletteJson, parsePaletteJson, validateSnapshot,
+-  type ButtonFill, type ChipStyle, type ColorKey, type CreamDetails, type GoldIconGroup, type HistoryState, type MenuStyle, type Mood, type OddsSelectedStyle, type Preset, type Snapshot,
+-} from './skin-palette';
+-
+-const INITIAL_HISTORY: HistoryState = {past: [], present: DEFAULT_SNAPSHOT, future: [], group: null};
+-
+-function download(text: string, filename: string, mime: string) {
+-  const url = URL.createObjectURL(new Blob([text], {type: mime}));
+-  const link = document.createElement('a');
+-  link.href = url; link.download = filename; document.body.appendChild(link); link.click(); link.remove();
+-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+-}
+-
+-function ColorField({colorKey, label, value, locked, selected, lockChange, change, end}: {
+-  colorKey: ColorKey; label: string; value: string; locked: boolean; selected: boolean; lockChange: (locked: boolean) => void; change: (value: string) => void; end: () => void;
+-}) {
+-  const [draft, setDraft] = useState(value);
+-  const [seenValue, setSeenValue] = useState(value);
+-  if (seenValue !== value) {setSeenValue(value); setDraft(value);}
+-  const valid = /^#[0-9a-f]{6}$/i.test(draft);
+-  const id = `skin-color-${colorKey}`;
+-  return <div className="skin-color-row" data-picked={selected || undefined}>
+-    <div className="skin-color-label"><label htmlFor={id}>{label}</label>
+-      <label className="skin-lock"><input type="checkbox" aria-label={`${label} 전체 색감 제외`} checked={locked}
+-        onChange={event => lockChange(event.target.checked)}/>색감 잠금</label></div>
+-    <input type="color" aria-label={`${label} 색상 선택`} value={value}
+-      onPointerDown={end} onBlur={end} onChange={event => change(event.target.value)}/>
+-    <div><input id={id} className="skin-hex" type="text" spellCheck={false} autoComplete="off"
+-      value={draft} aria-invalid={!valid} aria-describedby={!valid ? `${id}-error` : undefined}
+-      onBlur={end} onChange={event => {const next = event.target.value; setDraft(next); if (/^#[0-9a-f]{6}$/i.test(next)) change(next.toLowerCase());}}/>
+-      {!valid && <small id={`${id}-error`} className="skin-field-error">#RRGGBB 형식이 필요합니다.</small>}
+-    </div>
+-  </div>;
+-}
+-
+-function GradientStop({index, color, position, min, max, change, end}: {index: number; color: string; position: number; min: number; max: number; change: (next: {color?: string; position?: number}) => void; end: () => void}) {
+-  const [draft, setDraft] = useState(color);
+-  const [seenColor, setSeenColor] = useState(color);
+-  if (seenColor !== color) {setSeenColor(color); setDraft(color);}
+-  const valid = /^#[0-9a-f]{6}$/i.test(draft);
+-  return <div className="skin-gradient-stop">
+-    <label htmlFor={`skin-gradient-stop-${index}`}>색상 지점 {index + 1}</label>
+-    <div className="skin-inline"><input type="color" aria-label={`그라데이션 지점 ${index + 1} 색상 선택`} value={color} onPointerDown={end} onBlur={end} onChange={event => change({color: event.target.value})}/>
+-      <input id={`skin-gradient-stop-${index}`} className="skin-hex" type="text" spellCheck={false} value={draft} aria-invalid={!valid} aria-describedby={!valid ? `skin-gradient-error-${index}` : undefined} onBlur={end}
+-        onChange={event => {setDraft(event.target.value); if (/^#[0-9a-f]{6}$/i.test(event.target.value)) change({color: event.target.value.toLowerCase()});}}/></div>
+-    {!valid && <small id={`skin-gradient-error-${index}`} className="skin-field-error">#RRGGBB 형식이 필요합니다.</small>}
+-    <div className="skin-mood"><label htmlFor={`skin-gradient-position-${index}`}>위치<output>{position}%</output></label>
+-      <input id={`skin-gradient-position-${index}`} type="range" min={min} max={max} step="1" value={position} onPointerDown={end} onPointerUp={end} onKeyUp={end} onBlur={end} onChange={event => change({position: Number(event.target.value)})}/></div>
+-  </div>;
+-}
+-
+-function loadPresets(raw: string): Preset[] {
+-  const payload = JSON.parse(raw) as {version?: unknown; items?: unknown};
+-  if (!payload || ![1, 2, 3, 4, 5, 6].includes(payload.version as number) || !Array.isArray(payload.items) || payload.items.length > 50) throw new Error('프리셋 저장 형식이 올바르지 않습니다.');
+-  const ids = new Set<string>();
+-  return payload.items.map((item: unknown) => {
+-    if (!item || typeof item !== 'object' || Array.isArray(item)) throw new Error('프리셋 항목을 확인해 주세요.');
+-    const p = item as Record<string, unknown>;
+-    if (typeof p.id !== 'string' || !p.id.startsWith('custom-') || p.id.length > 100 || ids.has(p.id) ||
+-      typeof p.name !== 'string' || !p.name.trim() || p.name.length > 60) throw new Error('프리셋 이름이나 ID가 올바르지 않습니다.');
+-    ids.add(p.id);
+-    return {id: p.id, name: p.name, value: validateSnapshot(p.value)};
+-  });
+-}
+-
+-export function SkinEditor() {
+-  const [history, dispatch] = useReducer(historyReducer, INITIAL_HISTORY);
+-  const [open, setOpen] = useState(true);
+-  const [original, setOriginal] = useState(false);
+-  const [ready, setReady] = useState(false);
+-  const [customPresets, setCustomPresets] = useState<Preset[]>([]);
+-  const [selectedPreset, setSelectedPreset] = useState('original');
+-  const [presetName, setPresetName] = useState('');
+-  const [notice, setNotice] = useState('');
+-  const [error, setError] = useState('');
+-  const [draftVersion, setDraftVersion] = useState(0);
+-  const [paletteRevision, setPaletteRevision] = useState(0);
+-  const [presetsRevision, setPresetsRevision] = useState(0);
+-  const [picking, setPicking] = useState(false);
+-  const [pickedRole, setPickedRole] = useState<PickKey | null>(null);
+-  const inputRef = useRef<HTMLInputElement>(null);
+-  const storageWritable = useRef({palette: false, presets: false});
+-  const value = useMemo(() => validateSnapshot(history.present), [history.present]);
+-  const warnings = contrastWarnings(value);
+-  const allPresets = [...BUILTIN_PRESETS, ...customPresets];
+-
+-  useEffect(() => {
+-    let active = true;
+-    queueMicrotask(() => {
+-    if (!active) return;
+-    try {
+-      const raw = localStorage.getItem(STORAGE_KEY);
+-      if (raw) dispatch({type: 'set', value: parsePaletteJson(raw)});
+-      storageWritable.current.palette = true;
+-    } catch (cause) {setError(`저장 팔레트를 불러오지 못했습니다: ${cause instanceof Error ? cause.message : '저장소 접근 오류'}`);}
+-    try {
+-      const saved = localStorage.getItem(PRESET_KEY);
+-      if (saved) setCustomPresets(loadPresets(saved));
+-      storageWritable.current.presets = true;
+-    } catch (cause) {setError(`저장 프리셋을 불러오지 못했습니다: ${cause instanceof Error ? cause.message : '저장소 접근 오류'}`);}
+-    setReady(true);
+-    });
+-    return () => {active = false;};
+-  }, []);
+-
+-  useEffect(() => {
+-    if (!ready) return;
+-    const style = document.createElement('style');
+-    style.id = 'mercury-skin-preview';
+-    document.head.appendChild(style);
+-    return () => {style.remove();};
+-  }, [ready]);
+-
+-  useEffect(() => {
+-    if (!ready) return;
+-    const style = document.getElementById('mercury-skin-preview');
+-    if (style) style.textContent = paletteCss(original ? DEFAULT_SNAPSHOT : value);
+-  }, [ready, original, value]);
+-
+-  useEffect(() => {
+-    if (!ready || !storageWritable.current.palette || paletteRevision === 0) return;
+-    try {localStorage.setItem(STORAGE_KEY, paletteJson(value));}
+-    catch {queueMicrotask(() => setError('현재 팔레트를 브라우저에 저장하지 못했습니다. JSON으로 내보내 보관해 주세요.'));}
+-  }, [ready, value, paletteRevision]);
+-
+-  useEffect(() => {
+-    if (!ready || !storageWritable.current.presets || presetsRevision === 0) return;
+-    try {localStorage.setItem(PRESET_KEY, JSON.stringify({version: 6, items: customPresets}));}
+-    catch {queueMicrotask(() => setError('프리셋을 브라우저에 저장하지 못했습니다.'));}
+-  }, [ready, customPresets, presetsRevision]);
+-
+-  function commit(next: Snapshot, group?: string) {
+-    dispatch({type: 'set', value: next, group}); setNotice(''); setError('');
+-    setPaletteRevision(previous => previous + 1);
+-    // Explicit palette replacement also discards partial/invalid text drafts,
+-    // even when the accepted snapshot is identical to the current one.
+-    if (!group) setDraftVersion(previous => previous + 1);
+-  }
+-  function travel(type: 'undo' | 'redo') {
+-    dispatch({type}); setDraftVersion(previous => previous + 1);
+-    setPaletteRevision(previous => previous + 1);
+-  }
+-  function end() {dispatch({type: 'end'});}
+-  function setMood(key: keyof Mood, number: number) {
+-    commit({...value, mood: {...value.mood, [key]: number}}, `mood-${key}`);
+-  }
+-  function setFill(next: ButtonFill, group?: string) {commit({...value, buttonFill: next}, group);}
+-  function setGold(group: GoldIconGroup, key: 'brightness' | 'contrast' | 'saturation', number: number) {
+-    commit({...value, goldIconTuning: {...value.goldIconTuning, [group]: {...value.goldIconTuning[group], [key]: number}}}, `gold-${group}-${key}`);
+-  }
+-  function setLock(key: ColorKey, locked: boolean) {
+-    dispatch({type: 'set', value: {...value, locks: {...value.locks, [key]: locked}}});
+-    setPaletteRevision(previous => previous + 1);
+-    setNotice(''); setError('');
+-  }
+-  function loadPreset() {
+-    const preset = allPresets.find(p => p.id === selectedPreset);
+-    if (!preset) return;
+-    commit(preset.value); setOriginal(false); setNotice(`${preset.name} 팔레트를 적용했습니다.`);
+-  }
+-  function savePreset() {
+-    const name = presetName.trim();
+-    if (!name || name.length > 60) {setError('프리셋 이름은 1~60자로 입력해 주세요.'); return;}
+-    const existing = customPresets.find(p => p.name === name);
+-    if (!existing && customPresets.length >= 50) {setError('프리셋은 최대 50개까지 저장할 수 있습니다.'); return;}
+-    const preset: Preset = {id: existing?.id ?? `custom-${crypto.randomUUID()}`, name, value};
+-    setCustomPresets(previous => existing ? previous.map(p => p.id === existing.id ? preset : p) : [...previous, preset]);
+-    setPresetsRevision(previous => previous + 1);
+-    setSelectedPreset(preset.id); setError(''); setNotice(`${name} 프리셋을 저장했습니다.`);
+-  }
+-  async function importFile(file: File | undefined) {
+-    if (!file) return;
+-    try {
+-      if (file.size > 65536) throw new Error('JSON 파일은 64KB 이하여야 합니다.');
+-      const next = parsePaletteJson(await file.text());
+-      commit(next); setOriginal(false); setNotice('JSON 팔레트를 가져왔습니다.');
+-    } catch (cause) {setError(cause instanceof Error ? cause.message : '파일을 읽지 못했습니다.');}
+-    if (inputRef.current) inputRef.current.value = '';
+-  }
+-  function panelKeyDown(event: KeyboardEvent<HTMLElement>) {
+-    event.stopPropagation();
+-    const target = event.target as HTMLElement;
+-    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'z' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) {
+-      event.preventDefault(); travel(event.shiftKey ? 'redo' : 'undo'); setOriginal(false);
+-    }
+-  }
+-  const stopPicking = useCallback(() => {
+-    setPicking(false); requestAnimationFrame(() => document.getElementById('skin-pick-toggle')?.focus());
+-  }, []);
+-  const pickRole = useCallback((key: PickKey) => {
+-    setPickedRole(key);
+-    const input = document.getElementById(key === 'normalGradient' ? 'skin-button-fill' : key === 'chipStyle' ? 'skin-chip-style' : key.startsWith('gold-') ? `skin-${key}-brightness` : `skin-color-${key}`) as HTMLInputElement | HTMLSelectElement | null;
+-    input?.scrollIntoView({block: 'center', inline: 'nearest', behavior: 'smooth'});
+-    input?.focus({preventScroll: true}); if (input instanceof HTMLInputElement) input.select();
+-  }, []);
+-
+-  if (!open) return <button type="button" className="skin-launcher" onClick={() => setOpen(true)} aria-expanded="false" aria-controls="skin-editor">색상 편집</button>;
+-
+-  // The panel contains native controls; these handlers only isolate their events from the site.
+-  // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
+-  return <aside id="skin-editor" className="skin-editor" aria-label="스킨 색상 편집기"
+-    onKeyDown={panelKeyDown} onKeyUp={event => event.stopPropagation()} onClick={event => event.stopPropagation()}
+-    onPointerDown={event => event.stopPropagation()}>
+-    <header className="skin-header"><div><span className="skin-kicker">MERCURY / SKIN LAB</span><h1>색상 편집</h1></div>
+-      <button type="button" className="skin-close" aria-label="편집 패널 닫기" onClick={() => {setOpen(false); setOriginal(false); setPicking(false); end();}}>×</button>
+-    </header>
+-    <div className="skin-scroll">
+-      <p className="skin-intro">{COLOR_FIELDS.length}개 역할 색상을 직접 편집합니다. 색감 잠금은 전체 색조·채도·명도 조절에서만 제외하며 직접 입력은 적용됩니다.</p>
+-      <button id="skin-pick-toggle" type="button" className="skin-pick-toggle" disabled={original || !ready} aria-pressed={picking} onClick={() => setPicking(previous => !previous)}>{picking ? '화면 색상 선택 종료 (Esc)' : '화면에서 색상 선택'}</button>
+-      {picking && <p className="skin-pick-help">화면 요소를 클릭하거나 Tab으로 이동 후 Enter를 누르세요. 선택 중에는 사이트 동작이 멈춥니다.</p>}
+-      {pickedRole && <output className="skin-pick-status" aria-live="polite">{pickedRole === 'normalGradient' ? '일반 버튼 표현' : pickedRole === 'chipStyle' ? '칩 배경 표현' : pickedRole.startsWith('gold-') ? '금색 PNG 보정' : COLOR_FIELDS.find(field => field.key === pickedRole)?.label} 항목을 선택했습니다.</output>}
+-      <button type="button" className="skin-compare" aria-pressed={original} onClick={() => {setOriginal(previous => !previous); setPicking(false); setDraftVersion(previous => previous + 1); end();}}>
+-        {original ? '편집 색상으로 돌아가기' : '원본 색상 보기'}
+-      </button>
+-      {original && <output className="skin-comparison-note">원본 색상을 보는 중입니다. 편집값은 보존됩니다.</output>}
+-      <div className="skin-toolbar">
+-        <button type="button" disabled={!history.past.length || original} onClick={() => travel('undo')}>되돌리기</button>
+-        <button type="button" disabled={!history.future.length || original} onClick={() => travel('redo')}>다시 실행</button>
+-        <button type="button" disabled={original} onClick={() => commit(DEFAULT_SNAPSHOT)}>원본으로 초기화</button>
+-      </div>
+-      <fieldset className="skin-section" disabled={original || !ready}><legend>전체 색감</legend>
+-        {([
+-          ['hue', '색조', -180, 180, '°'], ['saturation', '채도', -100, 100, '%'], ['lightness', '명도', -40, 40, '%'],
+-        ] as const).map(([key, label, min, max, unit]) => <div className="skin-mood" key={key}>
+-          <label htmlFor={`skin-mood-${key}`}>{label}<output>{value.mood[key] > 0 ? '+' : ''}{value.mood[key]}{unit}</output></label>
+-          <input id={`skin-mood-${key}`} type="range" min={min} max={max} step="1" value={value.mood[key]}
+-            onPointerDown={end} onPointerUp={end} onPointerCancel={end} onKeyUp={end} onBlur={end}
+-            onChange={event => setMood(key, Number(event.target.value))}/>
+-        </div>)}
+-        <button type="button" className="skin-link" onClick={() => commit({...value, mood: {hue: 0, saturation: 0, lightness: 0}})}>전체 색감만 초기화</button>
+-      </fieldset>
+-      <fieldset className="skin-section" disabled={original || !ready}><legend>메뉴 · 아이콘 표현</legend>
+-        <label className="skin-mode-label" htmlFor="skin-menu-style">활성 메뉴 표현</label>
+-        <select id="skin-menu-style" value={value.menuStyle} onChange={event => commit({...value, menuStyle: event.target.value as MenuStyle})}><option value="metal">금속 그라데이션</option><option value="solid">단색 · 짧은 밑줄</option></select>
+-        <label className="skin-effect-label"><input type="checkbox" checked={value.goldIconOutline} onChange={event => commit({...value, goldIconOutline: event.target.checked})}/>금색 아이콘 얕은 명암</label>
+-      </fieldset>
+-      <fieldset className="skin-section" disabled={original || !ready}><legend>크림 동작 · 작은 칩</legend>
+-        <label className="skin-mode-label" htmlFor="skin-cream-details">동작 버튼과 칩 표현</label>
+-        <select id="skin-cream-details" value={value.creamDetails} onChange={event => commit({...value, creamDetails: event.target.value as CreamDetails})}><option value="original">기존 표현</option><option value="warm">따뜻한 작은 음영</option></select>
+-        <small>충전·환전·고객센터·MAX·베팅 버튼과 작은 칩의 색상을 분리합니다. 비활성 버튼은 비활성 글자색을 사용합니다.</small>
+-      </fieldset>
+-      <fieldset className="skin-section" disabled={original || !ready}><legend>작은 칩 표현</legend>
+-        <label className="skin-mode-label" htmlFor="skin-chip-style">칩 배경 표현</label>
+-        <select id="skin-chip-style" value={value.chipStyle} onChange={event => commit({...value, chipStyle: event.target.value as ChipStyle})}>
+-          <option value="original">기존 표현</option><option value="solid">단색</option><option value="gradient">두 색 그라데이션</option>
+-        </select>
+-        <small>레벨·메뉴 배지·마켓 개수·종목 개수 등 작은 칩에 적용됩니다. 단색은 작은 칩 배경, 그라데이션은 위쪽·아래쪽 색상을 사용합니다. 리그 제목 글자색은 따로 설정합니다.</small>
+-      </fieldset>
+-      <fieldset className="skin-section" disabled={original || !ready}><legend>금색 PNG 보정</legend>
+-        {([['sport', '밝은 바탕 종목'], ['selectedSport', '선택 종목'], ['service', '서비스']] as const).map(([group, label]) => <div className="skin-gold-group" key={group} data-picked={pickedRole === `gold-${group}` || undefined}>
+-          <strong>{label}</strong>
+-          {([['brightness', '밝기', 60, 120], ['contrast', '대비', 80, 160], ['saturation', '채도', 60, 140]] as const).map(([key, label, min, max]) => <div className="skin-mood" key={key}>
+-            <label htmlFor={`skin-gold-${group}-${key}`}>{label}<output>{value.goldIconTuning[group][key]}%</output></label>
+-            <input id={`skin-gold-${group}-${key}`} type="range" min={min} max={max} step="1" value={value.goldIconTuning[group][key]} onPointerDown={end} onPointerUp={end} onPointerCancel={end} onKeyUp={end} onBlur={end}
+-              onChange={event => setGold(group, key, Number(event.target.value))}/>
+-          </div>)}
+-        </div>)}
+-        <button type="button" className="skin-link" onClick={() => commit({...value, goldIconTuning: DEFAULT_SNAPSHOT.goldIconTuning})}>PNG 보정 초기화</button>
+-        <small>지정된 금색 PNG만 화면에서 보정합니다. 원본 파일, 로고·배너·국기·팀 이미지와 단색 마스크는 유지합니다.</small>
+-      </fieldset>
+-      <fieldset id="skin-normal-gradient" className="skin-section" disabled={original || !ready}><legend>일반 버튼 표현</legend>
+-        <label className="skin-mode-label" htmlFor="skin-button-fill">일반 버튼 배경</label>
+-        <select id="skin-button-fill" value={value.buttonFill.mode} onChange={event => setFill({...value.buttonFill, mode: event.target.value as ButtonFill['mode']})}>
+-          <option value="original">기존 버튼별 표현</option><option value="solid">단색</option><option value="gradient">직접 그라데이션</option>
+-        </select>
+-        <small>단색은 ‘일반 버튼’ 색상을 사용합니다. 선택 상태와 헤더·강조 버튼은 별도로 유지합니다.</small>
+-        {value.buttonFill.mode === 'gradient' && <div>
+-          {value.buttonFill.stops.map((stop, index) => <GradientStop key={`${index}-${draftVersion}`} index={index} color={stop.color} position={stop.position}
+-            min={value.buttonFill.stops[index - 1]?.position ?? 0} max={value.buttonFill.stops[index + 1]?.position ?? 100} end={end}
+-            change={next => setFill({...value.buttonFill, stops: value.buttonFill.stops.map((current, at) => at === index ? {...current, ...next} : current)}, `gradient-stop-${index}`)}/>)}
+-          {([['angle', '그라데이션 각도', 360, '°'], ['strength', '그라데이션 강도', 100, '%']] as const).map(([key, label, max, unit]) => <div className="skin-mood" key={key}>
+-            <label htmlFor={`skin-gradient-${key}`}>{label}<output>{value.buttonFill[key]}{unit}</output></label>
+-            <input id={`skin-gradient-${key}`} type="range" min="0" max={max} step="1" value={value.buttonFill[key]} onPointerDown={end} onPointerUp={end} onPointerCancel={end} onKeyUp={end} onBlur={end}
+-              onChange={event => setFill({...value.buttonFill, [key]: Number(event.target.value)}, `gradient-${key}`)}/>
+-          </div>)}
+-          <small>강도 0%는 일반 버튼 단색, 100%는 지정한 색상입니다. 전체 색감은 ‘일반 버튼’의 색감 잠금을 따릅니다.</small>
+-        </div>}
+-      </fieldset>
+-      <fieldset className="skin-section" disabled={original || !ready}><legend>선택 버튼 표현</legend>
+-        <label className="skin-mode-label" htmlFor="skin-odds-selected-style">선택 배당 · 마켓 배경 표현</label>
+-        <select id="skin-odds-selected-style" value={value.oddsSelectedStyle} onChange={event => commit({...value, oddsSelectedStyle: event.target.value as OddsSelectedStyle})}><option value="metal">금속 그라데이션</option><option value="solid">단색</option><option value="warm">절제된 그라데이션</option></select>
+-        <small>역할별 색상에서 선택 종목과 선택 배당·마켓의 배경·글자·테두리를 각각 편집합니다. 선택 종목 배경은 단색입니다.</small>
+-      </fieldset>
+-      <fieldset className="skin-section" disabled={original || !ready}><legend>역할별 색상</legend>
+-        {COLOR_FIELDS.filter(({key}, index) => index < 30 || key === 'leagueText' ||
+-          (key.startsWith('action') && value.creamDetails === 'warm') ||
+-          (key === 'chipBackground' && (value.chipStyle === 'solid' || (value.chipStyle === 'original' && value.creamDetails === 'warm'))) ||
+-          ((key === 'chipText' || key === 'chipBorder') && (value.chipStyle !== 'original' || value.creamDetails === 'warm')) ||
+-          ((key === 'chipGradientTop' || key === 'chipGradientBottom') && value.chipStyle === 'gradient')).map(field => <ColorField key={`${field.key}-${draftVersion}`} colorKey={field.key} label={field.label} value={value.palette[field.key]}
+-          locked={value.locks[field.key]} selected={pickedRole === field.key} lockChange={locked => setLock(field.key, locked)}
+-          end={end} change={color => commit({...value, palette: {...value.palette, [field.key]: color}}, `color-${field.key}`)}/>)}
+-      </fieldset>
+-      <div className="skin-protected">배당 숫자·오류색은 기본적으로 색감 잠금이 켜져 있으며 직접 편집할 수 있습니다. 사진·국기·팀 로고와 헤더 상단 금색 PNG는 픽셀을 유지합니다. 메뉴 그라데이션과 헤더 버튼은 CSS 색상으로 편집합니다.</div>
+-      {warnings.length > 0 && <div className="skin-warning" aria-live="polite"><strong>대비 확인이 필요합니다</strong>
+-        <ul>{warnings.map(warning => <li key={warning.label}>{warning.label}: {warning.ratio.toFixed(2)}:1</li>)}</ul>
+-        <small>단색 기준으로 4.5:1 미만입니다. 그라데이션과 보호 이미지 위 글자도 화면에서 확인해 주세요.</small>
+-      </div>}
+-      <section className="skin-section" aria-labelledby="skin-presets-title"><h2 id="skin-presets-title">프리셋</h2>
+-        <div className="skin-inline"><select aria-label="프리셋 선택" value={selectedPreset} onChange={event => setSelectedPreset(event.target.value)}>
+-          <optgroup label="기본 팔레트">{BUILTIN_PRESETS.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}</optgroup>
+-          {customPresets.length > 0 && <optgroup label="저장한 팔레트">{customPresets.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}</optgroup>}
+-        </select><button type="button" onClick={loadPreset}>적용</button></div>
+-        <div className="skin-inline"><input type="text" aria-label="프리셋 이름" placeholder="프리셋 이름" maxLength={60} value={presetName} onChange={event => setPresetName(event.target.value)}/>
+-          <button type="button" onClick={savePreset}>저장</button></div>
+-        <small>같은 이름으로 저장하면 해당 프리셋을 갱신합니다.</small>
+-      </section>
+-      <section className="skin-section" aria-labelledby="skin-export-title"><h2 id="skin-export-title">가져오기 · 내보내기</h2>
+-        <div className="skin-export"><button type="button" onClick={() => inputRef.current?.click()}>JSON 가져오기</button>
+-          <button type="button" onClick={() => download(paletteJson(value), 'mercury-palette.json', 'application/json')}>JSON 내보내기</button>
+-          <button type="button" onClick={() => download(paletteCss(value), 'mercury-palette.css', 'text/css')}>CSS 내보내기</button></div>
+-        <input ref={inputRef} hidden type="file" accept=".json,application/json" aria-label="JSON 팔레트 파일" onChange={event => void importFile(event.target.files?.[0])}/>
+-        <small>JSON은 색상·전체 색감·잠금·메뉴·아이콘·버튼 표현을 저장합니다. CSS는 잠금이 반영된 최종 표현입니다. 원본 비교 중에도 편집 팔레트가 내보내집니다.</small>
+-      </section>
+-      {notice && <output className="skin-notice">{notice}</output>}
+-      {error && <p className="skin-error" role="alert">{error}</p>}
+-    </div>
+-    {picking && <SkinPicker key={`${value.creamDetails}:${value.chipStyle}`} menuStyle={value.menuStyle} creamDetails={value.creamDetails} chipStyle={value.chipStyle} onPick={pickRole} onExit={stopPicking}/>}
+-  </aside>;
+-}
+diff --git a/app/skin-picker.tsx b/app/skin-picker.tsx
+deleted file mode 100644
+index cfdbf33..0000000
+--- a/app/skin-picker.tsx
++++ /dev/null
+@@ -1,233 +0,0 @@
+-'use client';
+-
+-import {useEffect, useLayoutEffect, useRef, useState} from 'react';
+-import {createPortal} from 'react-dom';
+-import {COLOR_FIELDS, type ChipStyle, type ColorKey, type CreamDetails, type MenuStyle} from './skin-palette';
+-
+-export type PickKey = ColorKey | 'normalGradient' | 'chipStyle' | 'gold-sport' | 'gold-selectedSport' | 'gold-service';
+-type Choice = {key: PickKey; label: string; element?: HTMLElement; origin?: string};
+-type Target = {element: HTMLElement; title: string; choices: Choice[]; image: boolean};
+-const choice = (key: PickKey, label: string): Choice => ({key, label});
+-const ordinary = () => [choice('control', '버튼 배경'), choice('normalGradient', '일반 버튼 그라데이션'), choice('text', '버튼 글자'), choice('border', '테두리')];
+-const panel = () => [choice('surface', '패널 배경'), choice('text', '글자'), choice('border', '테두리')];
+-const creamAction = () => [choice('actionBackground', '동작 버튼 배경'), choice('actionText', '동작 글자 · 마스크'), choice('actionBorder', '동작 테두리')];
+-const chipChoices = (creamDetails: CreamDetails, chipStyle: ChipStyle) => [
+-  choice('chipStyle', '칩 단색 · 그라데이션 설정'),
+-  ...(chipStyle === 'gradient' ? [choice('chipGradientTop', '그라데이션 위쪽'), choice('chipGradientBottom', '그라데이션 아래쪽')] :
+-    chipStyle === 'solid' || creamDetails === 'warm' ? [choice('chipBackground', '작은 칩 배경')] : []),
+-  ...(chipStyle !== 'original' || creamDetails === 'warm' ? [choice('chipText', '작은 칩 글자'), choice('chipBorder', '작은 칩 테두리')] : []),
+-];
+-const servicePngSelector = '.mc-shell img.mc-ui-icon[src^="/icons/sirius-20261001/"],.mc-user-actions img.mc-ui-icon[src="/icons/mercury-ui/Icon_Image_이벤트01.png"]';
+-
+-// These are semantic bindings, never a match against a HEX value.
+-function directTarget(source: Element, menuStyle: MenuStyle, creamDetails: CreamDetails, chipStyle: ChipStyle): Target | null {
+-  const image = !!source.closest('img,.mc-country-flag,.mc-quick-banner');
+-  let element: HTMLElement | null = null, title = '', choices: Choice[] = [];
+-  const match = (selector: string) => source.closest<HTMLElement>(selector);
+-  if ((element = match('.mc-badge,.mc-menu-badge,.mc-market-open,.mc-sport-count'))) {
+-    title = '작은 칩'; choices = chipChoices(creamDetails, chipStyle);
+-  } else if ((element = match('.mc-auth button'))) {
+-    const anonymous = element.matches('.mc-auth-guest button:last-child');
+-    title = '헤더 버튼';
+-    choices = [choice('headerButton', '기본 배경'), choice(anonymous ? 'headerButtonAccent' : 'headerButtonText', anonymous ? '무기명 글자 · 테두리' : '글자'),
+-      choice(anonymous ? 'headerButtonAccent' : 'headerButtonBorder', '테두리'), choice('headerButtonHover', 'hover 배경')];
+-  } else if ((element = match('[data-skin-target="menu-item"]'))) {
+-    title = '헤더 메뉴';
+-    choices = [choice('headerMenu', '메뉴 바탕'), choice('text', '일반 글자'), choice('menuActiveText', menuStyle === 'metal' ? '활성 금속 글자' : '활성 단색 글자'), choice('menuActiveLine', '활성 밑줄 (단색 모드)')];
+-  } else if ((element = match('[data-skin-target="sport"]'))) {
+-    const active = element.getAttribute('aria-pressed') === 'true';
+-    title = '종목 버튼';
+-    choices = active ? [choice('sportSelectedBackground', '선택 종목 배경'), choice('sportSelectedText', '선택 종목 글자'), choice('sportSelectedBorder', '선택 종목 테두리'), ...chipChoices(creamDetails, chipStyle).map(item => ({...item, element: element!.querySelector<HTMLElement>('.mc-sport-count') ?? element!}))] :
+-      [choice('control', '종목 버튼 배경'), choice('normalGradient', '일반 버튼 그라데이션'), choice('text', '글자'), choice('accentSoft', 'hover 테두리')];
+-  } else if ((element = match('[data-skin-target="odds"]'))) {
+-    const active = element.getAttribute('aria-pressed') === 'true';
+-    title = '배당 버튼';
+-    choices = active ? [choice('oddsSelectedBackground', '선택 배경'), choice('oddsSelectedText', '선택 글자 · 숫자'), choice('oddsSelectedBorder', '선택 테두리')] :
+-      [choice('control', '버튼 배경'), choice('normalGradient', '일반 버튼 그라데이션'), choice('text', '팀 · 선택지 글자'), choice(element.matches(':disabled') ? 'disabled' : 'odds', element.matches(':disabled') ? '마감 아이콘' : '배당 숫자'), choice('border', '테두리')];
+-  } else if ((element = match('.mc-quick-action'))) {
+-    title = '서비스 버튼';
+-    choices = element.classList.contains('primary') ? creamDetails === 'warm' ? creamAction() : [choice('accent', '강조 배경 · 테두리'), choice('onAccent', '글자 · 단색 아이콘')] : ordinary();
+-  } else if ((element = match('.mc-market-tabs button'))) {
+-    title = '마켓 탭';
+-    choices = element.getAttribute('aria-pressed') === 'true' ? [choice('oddsSelectedBackground', '선택 배경'), choice('oddsSelectedText', '선택 글자'), choice('oddsSelectedBorder', '선택 테두리')] : ordinary();
+-  } else if ((element = match('.mc-slip-selection b'))) {
+-    title = '슬립 배당 숫자'; choices = [choice('odds', '배당 숫자')];
+-  } else if ((element = match('.mc-amount-quick button:last-child'))) {
+-    title = '최대 금액 강조 버튼'; choices = creamDetails === 'warm' ? creamAction() : [choice('accent', '강조 배경'), choice('onAccent', '글자'), choice('border', '테두리')];
+-  } else if ((element = match('.mc-delete,.mc-reset'))) {
+-    title = '슬립 기능 버튼'; choices = [choice('input', '버튼 배경'), choice('muted', '글자'), choice('border', '테두리')];
+-  } else if ((element = match('.mc-slip-toggle'))) {
+-    title = '슬립 유지 스위치';
+-    choices = element.getAttribute('aria-checked') === 'true' && creamDetails === 'warm' ? creamAction() :
+-      [choice(element.getAttribute('aria-checked') === 'true' ? 'accent' : 'control', '스위치 바탕'), choice('text', '원형 표시'), choice('border', '테두리')];
+-  } else if ((element = match('.mc-bet-submit'))) {
+-    title = '베팅 버튼';
+-    choices = creamDetails === 'warm' ? element.matches(':disabled') ? [choice('control', '비활성 배경'), choice('disabled', '비활성 글자 · 마스크'), choice('border', '비활성 테두리')] : creamAction() : [choice('accent', '배경'), choice('onAccent', '글자 · 단색 아이콘'), choice('border', '테두리')];
+-  } else if ((element = match('.mc-amount-input,.mc-search-row,.mc-folder,.mc-slip-summary,.mc-slip-empty,.mc-slip-selection,.demo-dialog input,.demo-dialog textarea'))) {
+-    title = '입력 영역';
+-    choices = [choice('input', '입력 배경'), choice('text', '글자'), choice(element.matches(':has(input[aria-invalid="true"])') ? 'error' : 'border', '테두리')];
+-  } else if ((element = match('.demo-dialog button'))) {
+-    // Popup buttons use globals.css, outside the normal-fill override selectors.
+-    title = element.matches('.dialog-close') ? '팝업 닫기 버튼' : '팝업 버튼';
+-    if (element.matches('.icon-button')) {
+-      choices = element.matches(':disabled') ? [choice('disabled', '비활성 아이콘')] :
+-        [choice('muted', '아이콘 글자'), choice('text', 'hover 아이콘 글자'), choice('control', 'hover 배경'), choice('border', 'hover 테두리')];
+-    } else if (element.matches('.btn')) {
+-      choices = element.matches(':disabled') ? [choice('control', '비활성 배경'), choice('disabled', '비활성 글자'), choice('border', '비활성 테두리')] :
+-        element.matches('.gold') ? [choice('accent', '기존 강조 그라데이션 · 테두리'), choice('onAccent', '글자'), choice('accentSoft', 'hover 테두리')] :
+-          [choice('control', '기존 버튼 그라데이션'), choice('text', '글자'), choice('border', '테두리'), choice('accent', 'hover 테두리')];
+-    }
+-  } else if ((element = match('.mc-user-actions button,.mc-small-action,.mc-amount-quick button,.mc-delete,.mc-reset'))) {
+-    title = '기능 버튼'; choices = ordinary();
+-  } else if ((element = match('.mc-market-head,.mc-match-heading'))) {
+-    title = '패널 제목'; choices = [choice('raised', '제목 배경'), choice('text', '글자'), choice('border', '구분선')];
+-  } else if ((element = match('.mc-league-label small'))) {
+-    title = '리그 보조 글자'; choices = [choice('muted', '보조 글자')];
+-  } else if ((element = match('.mc-league-head'))) {
+-    title = '리그 제목 (투명 바탕)'; choices = [{...choice('leagueText', '리그 제목 글자'), element: element.querySelector<HTMLElement>('.mc-league-label') ?? element}, choice('text', '접기 아이콘'), choice('border', '구분선')];
+-  } else if ((element = match('.mc-sportbar,.mc-list-pane,.mc-market-tabs'))) {
+-    title = element.matches('.mc-sportbar') ? '종목 바' : '경기 목록 · 마켓 영역'; choices = [choice('input', '영역 배경')];
+-  } else if ((element = match('.mc-notice-links button'))) {
+-    title = '공지 · 안내'; choices = [choice('background', '컨테이너 배경'), choice('text', '글자'), choice('accent', 'hover 글자')];
+-  } else if ((element = match('[data-skin-target="header"]'))) {
+-    title = '헤더 이미지 영역'; choices = [choice('header', '이미지 뒤 CSS 바탕')];
+-  } else if ((element = match('[data-skin-target="menu"]'))) {
+-    title = '메뉴 바탕'; choices = [choice('headerMenu', '메뉴 그라데이션')];
+-  } else if ((element = match('[data-skin-target="panel"],.mc-rail-card,.mc-market-group,.mc-amount,.demo-dialog'))) {
+-    title = element.matches('.mc-amount') ? '베팅 금액 박스' : '패널'; choices = panel();
+-  } else if ((element = match('[data-skin-target="background"],.mercury-site'))) {
+-    title = '화면 바탕'; choices = [choice('background', '전체 배경'), choice('text', '글자')];
+-  }
+-  return element ? {element, title, image: image || element.dataset.skinTarget === 'header', choices: choices.filter((item, index, all) => all.findIndex(other => other.key === item.key) === index)} : null;
+-}
+-
+-// Walk the painted parents. Transparent wrappers contribute no fake background.
+-// Sources are the authored CSS roles, including gradient and pseudo-element owners.
+-export function skinTarget(source: Element, menuStyle: MenuStyle, creamDetails: CreamDetails = 'original', chipStyle: ChipStyle = 'original'): Target | null {
+-  const target = directTarget(source, menuStyle, creamDetails, chipStyle);
+-  if (!target) return null;
+-  target.choices = target.choices.map(item => ({...item, element: item.element ?? target.element}));
+-  // These PNGs ignore pointer events, so actual clicks hit their owner button.
+-  const serviceIcon = source.matches(servicePngSelector) ? source as HTMLElement : source.closest('button')?.querySelector<HTMLElement>(servicePngSelector);
+-  if (source.matches('.mc-sport-icon img[src^="/sports/sirius-20261001/"]')) {
+-    target.choices.unshift({...choice(source.closest('.mc-sport-tab[aria-pressed="true"]') ? 'gold-selectedSport' : 'gold-sport', '금색 종목 PNG 보정'), element: source as HTMLElement});
+-  } else if (serviceIcon) {
+-    target.image = true;
+-    target.choices.unshift({...choice('gold-service', '금색 서비스 PNG 보정'), element: serviceIcon});
+-  }
+-  for (let element: HTMLElement | null = source instanceof HTMLElement ? source : source.parentElement; element; element = element.parentElement) {
+-    if (element.matches('.mercury-site') || element === document.body) break;
+-    const bindings: Choice[] = [];
+-    if (element.matches('.mc-shell,.mc-notice')) bindings.push({key: 'background', label: element.matches('.mc-shell') ? '전체 화면 바탕' : '공지 바탕', origin: '--mc-bg / background'});
+-    if (element.matches('.mc-sportbar,.mc-list-pane,.mc-market-tabs,.mc-folder,.mc-slip-summary,.mc-slip-empty,.mc-slip-selection,.mc-search-row,.mc-amount-input')) bindings.push({key: 'input', label: element.matches('.mc-sportbar') ? '종목 바 배경' : element.matches('.mc-list-pane') ? '경기 목록 배경' : element.matches('.mc-slip-summary') ? '슬립 합계 배경' : '입력 · 슬립 내부 배경', origin: '--mc-input / input'});
+-    if (element.matches('.mc-sportbar')) bindings.push({key:'border',label:'종목 바 아래 구분선',origin:'inset box-shadow / border'});
+-    if (element.matches('.mc-rail-card,.mc-card,.mc-market-group,.mc-amount,.demo-dialog')) bindings.push({key:'surface',label:element.matches('.mc-amount')?'베팅 금액 박스 배경':element.matches('.mc-slip')?'슬립 패널 배경':element.matches('.mc-card')?'경기 카드 배경':'패널 배경',origin:'--mc-panel / surface'});
+-    if (element.matches('.mc-match-heading,.mc-market-head')) bindings.push({key:'raised',label:'패널 제목 배경',origin:'--mc-raised / raised'});
+-    if (element.matches('.mc-menu-panel')) bindings.push({key:'headerMenu',label:'메뉴 그라데이션 바탕',origin:'6색단 gradient / headerMenu'},{key:'accent',label:'메뉴 위·아래 금속 구분선',origin:'::before / ::after gradient / accent'});
+-    if (element.matches('.mc-header-main,.mc-header')) bindings.push({key:'header',label:element.matches('.mc-header-main')?'헤더 이미지 뒤 CSS 바탕':'헤더 컨테이너 바탕',origin:element.matches('.mc-header-main')?'고정 PNG 위 겹침 · CSS header':'CSS header'});
+-    for (const item of bindings) if (!target.choices.some(existing => existing.element === element && existing.key === item.key)) target.choices.push({...item,element});
+-  }
+-  return target;
+-}
+-
+-export function SkinPicker({menuStyle, creamDetails, chipStyle, onPick, onExit}: {menuStyle: MenuStyle; creamDetails: CreamDetails; chipStyle: ChipStyle; onPick: (key: PickKey) => void; onExit: () => void}) {
+-  const [hover, setHover] = useState<Target | null>(null);
+-  const [selected, setSelected] = useState<Target | null>(null);
+-  const [rect, setRect] = useState<DOMRect | null>(null);
+-  const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
+-  const [viewport, setViewport] = useState({width: 0, height: 0});
+-  const selectedRef = useRef<Target | null>(null);
+-  const [highlighted, setHighlighted] = useState<HTMLElement | null>(null);
+-  const firstChoice = useRef<HTMLButtonElement>(null);
+-  const target = selected ?? hover;
+-  const outlined = highlighted ?? target?.element;
+-  const hoverElement = useRef<HTMLElement | null>(null);
+-
+-  useEffect(() => {
+-    const excluded = (element: Element) => !!element.closest('#skin-editor,[data-skin-picker-ui]');
+-    const app = (element: Element) => !!element.closest('.mercury-site,.demo-dialog');
+-    const cancel = (event: Event) => {event.preventDefault(); event.stopImmediatePropagation();};
+-    const inspect = (element: Element) => {
+-      const next = skinTarget(element, menuStyle, creamDetails, chipStyle);
+-      if (!next) return;
+-      setHover(next); setHighlighted(null); hoverElement.current = next.element;
+-      if (next.choices.length === 1 && !next.image) {onPick(next.choices[0].key); setSelected(null); selectedRef.current = null;}
+-      else {setSelected(next); selectedRef.current = next;}
+-    };
+-    const click = (event: MouseEvent) => {
+-      const element = event.target instanceof Element ? event.target : null;
+-      if (!element || excluded(element) || !app(element)) return;
+-      cancel(event); inspect(element);
+-    };
+-    const block = (event: Event) => {
+-      const element = event.target instanceof Element ? event.target : null;
+-      if (element && !excluded(element) && app(element)) {
+-        cancel(event);
+-        // Disabled native buttons suppress click; pointerdown still exposes their roles.
+-        if (event.type === 'pointerdown' && element.closest('button:disabled')) inspect(element);
+-      }
+-    };
+-    const key = (event: KeyboardEvent) => {
+-      if (event.key === 'Escape') {cancel(event); onExit(); return;}
+-      const element = event.target instanceof Element ? event.target : null;
+-      if (!element || excluded(element)) return;
+-      if (event.key === 'Tab') {event.stopImmediatePropagation(); return;}
+-      cancel(event);
+-      if ((event.key === 'Enter' || event.key === ' ') && app(element)) inspect(element);
+-    };
+-    const move = (event: PointerEvent) => {
+-      const element = event.target instanceof Element ? event.target : null;
+-      if (!element || excluded(element) || !app(element) || selectedRef.current) return;
+-      const next = skinTarget(element, menuStyle, creamDetails, chipStyle);
+-      if (next?.element === hoverElement.current) return;
+-      hoverElement.current = next?.element ?? null; setHover(next); setHighlighted(null);
+-    };
+-    const focus = (event: FocusEvent) => {
+-      const element = event.target instanceof Element ? event.target : null;
+-      if (!element || excluded(element) || !app(element) || selectedRef.current) return;
+-      const next = skinTarget(element, menuStyle, creamDetails, chipStyle); hoverElement.current = next?.element ?? null; setHover(next); setHighlighted(null);
+-    };
+-    const blockers = ['pointerdown', 'pointerup', 'mousedown', 'mouseup', 'dblclick', 'auxclick', 'contextmenu', 'submit', 'beforeinput', 'paste', 'cut', 'drop', 'keyup'];
+-    window.addEventListener('click', click, true);
+-    window.addEventListener('keydown', key, true);
+-    window.addEventListener('pointermove', move, true);
+-    window.addEventListener('focusin', focus, true);
+-    for (const name of blockers) window.addEventListener(name, block, {capture: true, passive: false});
+-    document.querySelector<HTMLElement>('.mc-menu-item[aria-current="page"]')?.focus({preventScroll: true});
+-    return () => {
+-      window.removeEventListener('click', click, true); window.removeEventListener('keydown', key, true); window.removeEventListener('pointermove', move, true);
+-      window.removeEventListener('focusin', focus, true);
+-      for (const name of blockers) window.removeEventListener(name, block, true);
+-    };
+-  }, [menuStyle, creamDetails, chipStyle, onPick, onExit]);
+-
+-  useLayoutEffect(() => {
+-    let frame = 0;
+-    const update = () => {
+-      if (!outlined?.isConnected) {setRect(null); return;}
+-      setRect(outlined.getBoundingClientRect()); setViewport({width: innerWidth, height: innerHeight});
+-      setAnchorRect(selected?.element.isConnected ? selected.element.getBoundingClientRect() : null);
+-    };
+-    const schedule = () => {cancelAnimationFrame(frame); frame = requestAnimationFrame(update);};
+-    update(); window.addEventListener('scroll', schedule, true); window.addEventListener('resize', schedule);
+-    const observer = new MutationObserver(() => {if (outlined && !outlined.isConnected) {selectedRef.current = null; setSelected(null); setHover(null); setHighlighted(null); setRect(null);}});
+-    observer.observe(document.body, {childList: true, subtree: true});
+-    return () => {cancelAnimationFrame(frame); window.removeEventListener('scroll', schedule, true); window.removeEventListener('resize', schedule); observer.disconnect();};
+-  }, [outlined, selected?.element]);
+-
+-  useEffect(() => {if (selected) firstChoice.current?.focus({preventScroll: true});}, [selected]);
+-
+-  const visible = rect && rect.bottom > 0 && rect.right > 0 && rect.top < viewport.height && rect.left < viewport.width;
+-  const popupLeft = anchorRect ? Math.max(8, Math.min(anchorRect.left, viewport.width - 288)) : 8;
+-  const popupHeight = Math.min(420, viewport.height - 16, 95 + (selected?.choices.length ?? 0) * 44 + (selected?.image ? 60 : 0));
+-  const popupTop = anchorRect ? Math.max(8, Math.min(anchorRect.bottom + 8, viewport.height - popupHeight - 8)) : 8;
+-  return createPortal(<div data-skin-picker-ui className="skin-picker-layer">
+-    {visible && <div className="skin-picker-outline" data-target={outlined?.className} style={{left: Math.max(0, rect.left), top: Math.max(0, rect.top), width: Math.min(rect.right, viewport.width) - Math.max(0, rect.left), height: Math.min(rect.bottom, viewport.height) - Math.max(0, rect.top)}}/>}
+-    {selected && rect && <section className="skin-picker-choices" aria-label="이 요소의 색상 역할" style={{left: popupLeft, top: popupTop, maxHeight:Math.min(420,viewport.height - 16)}}>
+-      <strong>{selected.title}</strong>
+-      {selected.image && <p className="skin-picker-image-note">{selected.choices.some(item => item.key.startsWith('gold-')) ? '원본 PNG는 유지합니다. 지정된 금색 PNG 보정과 컨테이너 CSS 색상을 선택할 수 있습니다.' : '이미지 픽셀은 색상 편집 대상이 아닙니다. 아래 항목은 컨테이너의 CSS 색상입니다.'}</p>}
+-      <div>{selected.choices.map((item, index) => <button ref={index === 0 ? firstChoice : undefined} type="button" key={item.key + index} data-role={item.key} data-origin={item.origin} onPointerMove={() => setHighlighted(item.element ?? selected.element)} onFocus={() => setHighlighted(item.element ?? selected.element)} onClick={() => {setHighlighted(item.element ?? selected.element); onPick(item.key); selectedRef.current = null; setSelected(null);}}><span>{item.label}{item.origin && <small className="skin-picker-origin">{item.origin}</small>}</span><small>{item.key === 'normalGradient' ? '일반 버튼 표현' : item.key === 'chipStyle' ? '칩 배경 표현' : item.key.startsWith('gold-') ? '금색 PNG 보정' : COLOR_FIELDS.find(field => field.key === item.key)?.label}</small></button>)}</div>
+-      <button type="button" className="skin-picker-exit" onClick={onExit}>선택 모드 종료 (Esc)</button>
+-    </section>}
+-  </div>, document.body);
+-}
+diff --git a/package.json b/package.json
+index 6a8e96a..8e7ab64 100644
+--- a/package.json
++++ b/package.json
+@@ -8,9 +8,10 @@
+   "scripts": {
+     "dev": "vinext dev",
+     "build": "vinext build",
+-    "start": "wrangler dev --config dist/server/wrangler.json",
++    "start": "vinext start --hostname 127.0.0.1 --port 5418",
+     "lint": "oxlint",
+-    "format": "oxfmt"
++    "format": "oxfmt",
++    "theme": "node --experimental-strip-types scripts/generate-white-theme.mjs"
+   },
+   "dependencies": {
+     "react": "19.2.6",
+diff --git a/scripts/generate-white-theme.mjs b/scripts/generate-white-theme.mjs
+new file mode 100644
+index 0000000..1ec2415
+--- /dev/null
++++ b/scripts/generate-white-theme.mjs
+@@ -0,0 +1,8 @@
++import fs from 'node:fs/promises';
++import {paletteCss,parsePaletteJson} from '../theme/palette-compiler.ts';
++
++// Build-time only. The browser receives static CSS and no palette editor code.
++const input=new URL('../theme/mercury-palette_98.json',import.meta.url);
++const css=paletteCss(parsePaletteJson(await fs.readFile(input,'utf8')));
++await fs.writeFile(new URL('../app/mercury-white-theme.css',import.meta.url),css);
++console.log('Generated static MERCURY white CSS from mercury-palette_98.json.');
+diff --git a/theme/mercury-palette_98.json b/theme/mercury-palette_98.json
+new file mode 100644
+index 0000000..0348b7e
+--- /dev/null
++++ b/theme/mercury-palette_98.json
+@@ -0,0 +1,132 @@
++{
++  "kind": "mercury-skin-palette",
++  "version": 6,
++  "palette": {
++    "background": "#fffaf0",
++    "surface": "#fffaf0",
++    "raised": "#fffaf0",
++    "control": "#fffaf0",
++    "input": "#fffaf0",
++    "header": "#ffffff",
++    "border": "#c9c7bb",
++    "text": "#2b2826",
++    "muted": "#212121",
++    "disabled": "#757575",
++    "accent": "#fef8e1",
++    "accentSoft": "#000000",
++    "onAccent": "#000000",
++    "shadow": "#000000",
++    "headerMenu": "#e4ddcd",
++    "headerButton": "#636363",
++    "headerButtonText": "#ffffff",
++    "headerButtonBorder": "#787878",
++    "headerButtonAccent": "#c7c7c7",
++    "headerButtonHover": "#111111",
++    "odds": "#363636",
++    "error": "#ff1e00",
++    "menuActiveText": "#ff8f0f",
++    "menuActiveLine": "#ff8f0f",
++    "sportSelectedBackground": "#ffc26f",
++    "sportSelectedText": "#2b2826",
++    "sportSelectedBorder": "#ff8800",
++    "oddsSelectedBackground": "#ffbd61",
++    "oddsSelectedText": "#000000",
++    "oddsSelectedBorder": "#ff8800",
++    "actionBackground": "#ffffff",
++    "actionText": "#000000",
++    "actionBorder": "#ffffff",
++    "chipBackground": "#ffbc5e",
++    "chipText": "#000000",
++    "chipBorder": "#ffb561",
++    "leagueText": "#000000",
++    "chipGradientTop": "#ffdb9e",
++    "chipGradientBottom": "#ffbe0a"
++  },
++  "mood": {
++    "hue": 0,
++    "saturation": 0,
++    "lightness": 0
++  },
++  "locks": {
++    "background": true,
++    "surface": true,
++    "raised": true,
++    "control": true,
++    "input": true,
++    "header": false,
++    "border": false,
++    "text": false,
++    "muted": false,
++    "disabled": false,
++    "accent": true,
++    "accentSoft": false,
++    "onAccent": false,
++    "shadow": false,
++    "headerMenu": false,
++    "headerButton": false,
++    "headerButtonText": false,
++    "headerButtonBorder": false,
++    "headerButtonAccent": false,
++    "headerButtonHover": false,
++    "odds": true,
++    "error": true,
++    "menuActiveText": true,
++    "menuActiveLine": true,
++    "sportSelectedBackground": true,
++    "sportSelectedText": false,
++    "sportSelectedBorder": false,
++    "oddsSelectedBackground": true,
++    "oddsSelectedText": false,
++    "oddsSelectedBorder": true,
++    "actionBackground": true,
++    "actionText": false,
++    "actionBorder": true,
++    "chipBackground": false,
++    "chipText": false,
++    "chipBorder": false,
++    "leagueText": false,
++    "chipGradientTop": false,
++    "chipGradientBottom": false
++  },
++  "menuStyle": "solid",
++  "goldIconOutline": false,
++  "buttonFill": {
++    "mode": "original",
++    "angle": 0,
++    "strength": 100,
++    "stops": [
++      {
++        "color": "#fffaf0",
++        "position": 0
++      },
++      {
++        "color": "#ffffff",
++        "position": 50
++      },
++      {
++        "color": "#ffffff",
++        "position": 100
++      }
++    ]
++  },
++  "oddsSelectedStyle": "warm",
++  "creamDetails": "original",
++  "goldIconTuning": {
++    "sport": {
++      "brightness": 93,
++      "contrast": 92,
++      "saturation": 105
++    },
++    "selectedSport": {
++      "brightness": 97,
++      "contrast": 120,
++      "saturation": 112
++    },
++    "service": {
++      "brightness": 90,
++      "contrast": 101,
++      "saturation": 104
++    }
++  },
++  "chipStyle": "gradient"
++}
+\ No newline at end of file
+diff --git a/app/skin-palette.ts b/theme/palette-compiler.ts
+similarity index 81%
+rename from app/skin-palette.ts
+rename to theme/palette-compiler.ts
+index 3a974f6..8129878 100644
+--- a/app/skin-palette.ts
++++ b/theme/palette-compiler.ts
+@@ -761,8 +761,6 @@ export const DEFAULT_LOCKS = Object.fromEntries(COLOR_FIELDS.map(({key}) => [key
+ export const DEFAULT_BUTTON_FILL: ButtonFill = {mode: 'original', angle: 0, strength: 100, stops: [{color: '#292929', position: 0}, {color: '#313131', position: 50}, {color: '#4c4c4c', position: 100}]};
+ export const DEFAULT_GOLD_ICON_TUNING: GoldIconTuning = {sport: {brightness: 100, contrast: 100, saturation: 100}, selectedSport: {brightness: 100, contrast: 100, saturation: 100}, service: {brightness: 100, contrast: 100, saturation: 100}};
+ export const DEFAULT_SNAPSHOT: Snapshot = {palette: DEFAULT_PALETTE, mood: DEFAULT_MOOD, locks: DEFAULT_LOCKS, menuStyle: 'metal', goldIconOutline: false, buttonFill: DEFAULT_BUTTON_FILL, oddsSelectedStyle: 'metal', creamDetails: 'original', goldIconTuning: DEFAULT_GOLD_ICON_TUNING, chipStyle: 'original'};
+-export const STORAGE_KEY = 'mercury-skin-lab:palette:v1';
+-export const PRESET_KEY = 'mercury-skin-lab:presets:v1';
+ 
+ const clamp = (value: number, min = 0, max = 1) => Math.min(max, Math.max(min, value));
+ const modulo = (value: number, divisor: number) => ((value % divisor) + divisor) % divisor;
+@@ -1020,25 +1018,6 @@ export function parsePaletteJson(text: string): Snapshot {
+   return validateSnapshot(value);
+ }
+ 
+-export type HistoryState = {past: Snapshot[]; present: Snapshot; future: Snapshot[]; group: string | null};
+-export type HistoryAction = {type: 'set'; value: Snapshot; group?: string} | {type: 'undo' | 'redo' | 'end'};
+-const equal = (a: Snapshot, b: Snapshot) => JSON.stringify(a) === JSON.stringify(b);
+-
+-export function historyReducer(state: HistoryState, action: HistoryAction): HistoryState {
+-  if (action.type === 'end') return state.group === null ? state : {...state, group: null};
+-  if (action.type === 'undo') {
+-    if (!state.past.length) return state;
+-    return {past: state.past.slice(0, -1), present: state.past.at(-1)!, future: [state.present, ...state.future].slice(0, 80), group: null};
+-  }
+-  if (action.type === 'redo') {
+-    if (!state.future.length) return state;
+-    return {past: [...state.past, state.present].slice(-80), present: state.future[0], future: state.future.slice(1), group: null};
+-  }
+-  if (action.type !== 'set' || equal(state.present, action.value)) return state;
+-  return {past: action.group && action.group === state.group ? state.past : [...state.past, state.present].slice(-80),
+-    present: action.value, future: [], group: action.group ?? null};
+-}
+-
+ function luminance(hex: string): number {
+   const [r, g, b] = rgba(hex);
+   const linear = (value: number) => value <= .04045 ? value / 12.92 : ((value + .055) / 1.055) ** 2.4;
+@@ -1049,134 +1028,3 @@ export function contrast(a: string, b: string): number {
+   const values = [luminance(a), luminance(b)].sort((x, y) => y - x);
+   return (values[0] + .05) / (values[1] + .05);
+ }
+-
+-export function contrastWarnings(snapshot: Snapshot): {label: string; ratio: number}[] {
+-  const p = effectivePalette(snapshot);
+-  const checks: [string, string, string][] = [
+-    ['본문 / 카드', p.text, p.surface], ['본문 / 일반 버튼', p.text, p.control],
+-    ['본문 / 입력', p.text, p.input], ['보조 글자 / 카드', p.muted, p.surface],
+-    ['강조 위 글자 / 강조', p.onAccent, p.accent], ['배당 숫자 / 일반 버튼', p.odds, p.control],
+-    ['헤더 버튼 글자 / 바탕', p.headerButtonText, p.headerButton], ['오류 / 입력', p.error, p.input],
+-    ['선택 종목 글자 / 배경', p.sportSelectedText, p.sportSelectedBackground],
+-    ['선택 배당 글자 / 배경', p.oddsSelectedText, p.oddsSelectedBackground],
+-    ['슬립 배당 / 입력', p.odds, p.input],
+-  ];
+-  if (snapshot.menuStyle === 'solid') {
+-    const menuStops = ['#080808', '#171717', '#30302e', '#191918', '#070707', '#020202'].map(source => recolor(source, 'headerMenu', p.headerMenu));
+-    const worst = menuStops.reduce((lowest, bg) => contrast(p.menuActiveText, bg) < contrast(p.menuActiveText, lowest) ? bg : lowest);
+-    checks.push(['활성 메뉴 글자 / 메뉴', p.menuActiveText, worst]);
+-  }
+-  if (snapshot.creamDetails === 'warm') {
+-    const worst = [3, 0, -3].map(lightness => adjust(p.actionBackground, {hue: 0, saturation: 0, lightness})).sort((a, b) => contrast(p.actionText, a) - contrast(p.actionText, b))[0];
+-    checks.push(['크림 동작 버튼 글자 / 배경', p.actionText, worst]);
+-  }
+-  if (snapshot.creamDetails === 'warm' || snapshot.chipStyle !== 'original') {
+-    const stops = snapshot.chipStyle === 'solid' ? [p.chipBackground] : snapshot.chipStyle === 'gradient' ? [p.chipGradientTop, p.chipGradientBottom] :
+-      [3, 0, -3].map(lightness => adjust(p.chipBackground, {hue: 0, saturation: 0, lightness}));
+-    const worst = stops.sort((a, b) => contrast(p.chipText, a) - contrast(p.chipText, b))[0];
+-    checks.push(['작은 칩 글자 / 배경', p.chipText, worst]);
+-  }
+-  return checks.map(([label, fg, bg]) => ({label, ratio: contrast(fg, bg)})).filter(check => check.ratio < 4.5);
+-}
+-
+-export type Preset = {id: string; name: string; value: Snapshot};
+-// User-provided v2 cream palette (SHA 5f8c65ab...); only the requested header
+-// background differs. Other original colors, mood and locks are preserved.
+-export const CREAM_SNAPSHOT: Snapshot = validateSnapshot({
+-  palette: {background: '#f1ecdf', surface: '#fffaf0', raised: '#fffaf0', control: '#fffaf0', input: '#f4f1ec', header: '#f5f5f5', border: '#c9c7bb', text: '#2b2826', muted: '#212121', disabled: '#757575', accent: '#ffffff', accentSoft: '#8f8f8f', onAccent: '#000000', shadow: '#000000', headerMenu: '#e4ddcd', headerButton: '#5c564d', headerButtonText: '#ffffff', headerButtonBorder: '#4f3e11', headerButtonAccent: '#ffce47', headerButtonHover: '#111111', odds: '#363636', error: '#ff1e00', menuActiveText: '#2b2826', menuActiveLine: '#4f3e11'},
+-  mood: {hue: 0, saturation: 0, lightness: 0},
+-  locks: {background: true, surface: true, raised: true, control: true, input: true, header: false, border: false, text: false, muted: false, disabled: false, accent: true, accentSoft: false, onAccent: false, shadow: false, headerMenu: false, headerButton: false, headerButtonText: false, headerButtonBorder: false, headerButtonAccent: false, headerButtonHover: false, odds: true, error: true, menuActiveText: false, menuActiveLine: false},
+-  menuStyle: 'solid', goldIconOutline: true,
+-});
+-function builtinValue(overrides: Partial<Palette>): Snapshot {
+-  const legacy = Object.fromEntries(COLOR_FIELDS.slice(0, 14).map(({key}) => [key, DEFAULT_PALETTE[key]]));
+-  return validateSnapshot({palette: {...legacy, ...overrides}, mood: DEFAULT_MOOD});
+-}
+-// Latest JSON is preserved as user-cream-original-v3.json (1461 bytes).
+-// Keep this separate from the earlier cream preset, including metal / outline false.
+-export const USER_CREAM_SNAPSHOT: Snapshot = validateSnapshot({
+-  "kind": "mercury-skin-palette",
+-  "version": 3,
+-  "palette": {
+-    "background": "#fffaf0",
+-    "surface": "#fffaf0",
+-    "raised": "#fffaf0",
+-    "control": "#fffaf0",
+-    "input": "#fffaf0",
+-    "header": "#ffffff",
+-    "border": "#c9c7bb",
+-    "text": "#2b2826",
+-    "muted": "#212121",
+-    "disabled": "#757575",
+-    "accent": "#ffffff",
+-    "accentSoft": "#8f8f8f",
+-    "onAccent": "#000000",
+-    "shadow": "#000000",
+-    "headerMenu": "#e4ddcd",
+-    "headerButton": "#787878",
+-    "headerButtonText": "#ffffff",
+-    "headerButtonBorder": "#4f3e11",
+-    "headerButtonAccent": "#ffce47",
+-    "headerButtonHover": "#111111",
+-    "odds": "#363636",
+-    "error": "#ff1e00",
+-    "menuActiveText": "#ffffff",
+-    "menuActiveLine": "#ffffff"
+-  },
+-  "mood": {
+-    "hue": 0,
+-    "saturation": 0,
+-    "lightness": 0
+-  },
+-  "locks": {
+-    "background": true,
+-    "surface": true,
+-    "raised": true,
+-    "control": true,
+-    "input": true,
+-    "header": false,
+-    "border": false,
+-    "text": false,
+-    "muted": false,
+-    "disabled": false,
+-    "accent": true,
+-    "accentSoft": false,
+-    "onAccent": false,
+-    "shadow": false,
+-    "headerMenu": false,
+-    "headerButton": false,
+-    "headerButtonText": false,
+-    "headerButtonBorder": false,
+-    "headerButtonAccent": false,
+-    "headerButtonHover": false,
+-    "odds": true,
+-    "error": true,
+-    "menuActiveText": true,
+-    "menuActiveLine": true
+-  },
+-  "menuStyle": "metal",
+-  "goldIconOutline": false
+-});
+-export const USER_CREAM_POLISHED_SNAPSHOT: Snapshot = validateSnapshot({
+-  ...USER_CREAM_SNAPSHOT,
+-  palette: {...USER_CREAM_SNAPSHOT.palette,
+-    actionBackground: '#e9dcc5', actionText: '#433729', actionBorder: '#bca580',
+-    chipBackground: '#decaa4', chipText: '#483927', chipBorder: '#a58c65',
+-    chipGradientTop: adjust('#decaa4', {hue: 0, saturation: 0, lightness: 3}), chipGradientBottom: adjust('#decaa4', {hue: 0, saturation: 0, lightness: -3}),
+-    sportSelectedBackground: '#3d352d', sportSelectedText: '#fff7e8', sportSelectedBorder: '#b39057',
+-    oddsSelectedBackground: '#514236', oddsSelectedText: '#fff7e8', oddsSelectedBorder: '#b39057',
+-    menuActiveText: '#483525', menuActiveLine: '#9e743b'},
+-  menuStyle: 'solid', creamDetails: 'warm', oddsSelectedStyle: 'warm',
+-  locks: {...USER_CREAM_SNAPSHOT.locks, chipGradientTop: USER_CREAM_SNAPSHOT.locks.chipBackground, chipGradientBottom: USER_CREAM_SNAPSHOT.locks.chipBackground},
+-  goldIconTuning: {sport: {brightness: 80, contrast: 120, saturation: 104}, selectedSport: {brightness: 100, contrast: 110, saturation: 100}, service: {brightness: 78, contrast: 124, saturation: 108}},
+-});
+-
+-export const BUILTIN_PRESETS: Preset[] = [
+-  {id: 'original', name: 'MERCURY 원본', value: DEFAULT_SNAPSHOT},
+-  {id: 'cream', name: '크림 화이트', value: CREAM_SNAPSHOT},
+-  {id: 'user-cream', name: '사용자 크림', value: USER_CREAM_SNAPSHOT},
+-  {id: 'user-cream-polished', name: '사용자 크림 · 폴리싱', value: USER_CREAM_POLISHED_SNAPSHOT},
+-  {id: 'petrol', name: '페트롤 · 실버', value: builtinValue({background: '#0c151a', surface: '#17272e', raised: '#20313a', control: '#293f48', input: '#101e24', header: '#0b151b', border: '#48626d', accent: '#9ec6cf', accentSoft: '#d2e6ea', onAccent: '#122a32'})},
+-  {id: 'violet', name: '스모키 바이올렛', value: builtinValue({background: '#14121b', surface: '#211d2c', raised: '#2c2737', control: '#383144', input: '#17131f', header: '#141019', border: '#51465f', accent: '#c4addf', accentSoft: '#e5d9f3', onAccent: '#271b36'})},
+-  {id: 'ivory', name: '아이보리 · 버건디', value: builtinValue({background: '#e6dfd3', surface: '#f7f1e7', raised: '#e8decf', control: '#d8cbb9', input: '#fffaf1', header: '#d6c8b5', border: '#aa9480', text: '#29211e', muted: '#615148', disabled: '#88786e', accent: '#8b3648', accentSoft: '#9b4858', onAccent: '#ffffff'})},
+-];
+diff --git a/vite.config.ts b/vite.config.ts
+index 48f8f0a..6ff2797 100644
+--- a/vite.config.ts
++++ b/vite.config.ts
+@@ -2,9 +2,9 @@ import tailwindcss from '@tailwindcss/postcss';
+ import vinext from 'vinext';
+ import {defineConfig} from 'vite';
+ 
+-// Isolated local skin preview: no Sites project binding or deploy adapter.
++// Isolated local white site: no Sites project binding or deploy adapter.
+ export default defineConfig({
+   css: {postcss: {plugins: [tailwindcss()]}},
+   plugins: [vinext()],
+-  server: {host: '127.0.0.1', port: 5416, strictPort: true, open: false},
++  server: {host: '127.0.0.1', port: 5418, strictPort: true, open: false},
+ });

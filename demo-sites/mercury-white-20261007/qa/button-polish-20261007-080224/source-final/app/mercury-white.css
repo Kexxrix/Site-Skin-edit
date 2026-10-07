@@ -1,0 +1,89 @@
+/* Keep the authored desktop layout; only remove the editor workspace lane. */
+.mercury-site:has(.mc-shell) {
+  width: 1920px;
+  margin-inline: auto;
+}
+
+/* Approved readability polish, derived from v6 without changing its source JSON. */
+.mc-shell {
+  --white-button-fill: #fffaf0;
+  --white-button-hover: #f7edda;
+  --white-button-text: #2b2826;
+  --white-button-border: #b8aa91;
+  --white-selected-fill: #ffdfaf;
+  --white-selected-border: #b76016;
+  --white-disabled-fill: #f1eadf;
+  --white-disabled-text: #6b6154;
+  --skin-normal-fill: var(--white-button-fill);
+  --skin-action-fill: var(--white-button-fill);
+  --skin-action-text: var(--white-button-text);
+  --skin-action-border: var(--white-button-border);
+  --skin-action-hover-filter: none;
+  --skin-action-hover-shadow: inset 0 1px 0 #ffffff;
+  --skin-action-disabled-fill: var(--white-disabled-fill);
+  --skin-action-disabled-text: var(--white-disabled-text);
+  --skin-action-disabled-border: var(--white-button-border);
+  --skin-chip-fill: var(--white-selected-fill);
+  --skin-chip-text: var(--white-button-text);
+  --skin-chip-border: var(--white-selected-border);
+  --skin-chip-inset: inset 0 0 0 1px var(--white-selected-border);
+  --skin-odds-selected-fill: var(--white-selected-fill);
+  --skin-oddsSelectedText: var(--white-button-text);
+  --skin-oddsSelectedBorder: var(--white-selected-border);
+  --skin-sportSelectedBackground: var(--white-selected-fill);
+  --skin-sportSelectedText: var(--white-button-text);
+  --skin-sportSelectedBorder: var(--white-selected-border);
+}
+
+.mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+  .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button) {
+  box-shadow: inset 0 1px 0 #ffffff;
+}
+.mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+  .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
+  .mc-odd):not(:disabled):not([aria-pressed="true"]) {
+  color: var(--white-button-text);
+  border-color: var(--white-button-border);
+}
+.mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+  .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
+  .mc-odd):not(:disabled):not([aria-pressed="true"]):hover {
+  background: var(--white-button-hover);
+  border-color: var(--white-selected-border);
+  filter: none;
+}
+.mc-shell :is(.mc-sport-tab, .mc-market-tabs button, .mc-odd)[aria-pressed="true"]:hover {
+  background: var(--white-selected-fill);
+  border-color: var(--white-selected-border);
+}
+.mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+  .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
+  .mc-odd, .mc-market-open):focus-visible {
+  outline: 2px solid var(--white-button-text);
+  outline-offset: -2px;
+}
+.mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
+  .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
+  .mc-odd):disabled {
+  background: var(--white-disabled-fill);
+  color: var(--white-disabled-text);
+  border-color: var(--white-button-border);
+  box-shadow: none;
+  opacity: 1;
+}
+.mc-shell .mc-odd:disabled .mc-odd-value {
+  color: var(--white-disabled-text);
+}
+.mc-shell .mc-quick-action.primary .mc-ui-icon-mask {
+  background-color: var(--white-button-text);
+}
+.mc-shell .mc-bet-submit:disabled .mc-ui-icon-mask {
+  background-color: var(--white-disabled-text);
+}
+
+/* These nine labelled service icons had opaque-pixel median contrast < 2.4:1.
+   Darken only their display, preserving source PNGs and the global v6 filter. */
+.mc-shell .mc-user-actions img.mc-ui-icon,
+.mc-shell .mc-quick-action.secondary img.mc-ui-icon {
+  filter: brightness(70%) contrast(101%) saturate(104%);
+}

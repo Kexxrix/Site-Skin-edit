@@ -1,0 +1,12 @@
+[
+  {
+    "id": "WHITE-A11Y-01",
+    "severity": "P4",
+    "category": "Existing code observation, nonblocking",
+    "finding": "Slip keep switch accessible name repeats 슬립 유지 twice.",
+    "reproduction": "Fresh context -> inspect .mc-slip-toggle ariaSnapshot() -> switch \"슬립 유지 슬립 유지\".",
+    "evidence": "ui-tail-2.mjs console; exact DOM in ui-tail-2-results.json/slip keep actual toggle changes state",
+    "basis": "Native .mc-keep label and Switch aria-label preserved byte-for-byte in unchanged app/mercury-sports.tsx/components/ui/switch.tsx; prior running editor was not browsed.",
+    "impact": "Screen readers may announce duplicate text. Mouse, keyboard Space, visible focus and storage restore all PASS."
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "phase": "Final production source frozen and ready for independent QA",
+  "started_utc": "2026-10-07T08:02:25.159442+00:00",
+  "baseline_commit": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
+  "baseline_preserved": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224\\baseline",
+  "polish_qa": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224",
+  "expected_affected_files": [
+    "app/mercury-white.css",
+    "theme/mercury-white-button-polish.json"
+  ],
+  "source_changed": true,
+  "server_restart": true,
+  "browser": "Browser plugin not available; existing regular Playwright, isolated contexts",
+  "scope": "Buttons and level chips readability; no layout/behavior/assets change",
+  "source_changed_utc": "2026-10-07T08:05:22.491848+00:00",
+  "affected_files": [
+    "app/mercury-white.css",
+    "theme/mercury-white-button-polish.json"
+  ],
+  "qa_runtime_url": null,
+  "latest_source_change_utc": "2026-10-07T08:08:42.148355+00:00",
+  "service_icon_override": "Only nine labelled icons, brightness90→70; global v6 settings and PNG bytes unchanged; measured low contrast before adjustment",
+  "preview_server_created": false,
+  "auto_review_block": {
+    "action": "Start hidden detached 5419 production preview server",
+    "reason": "별도 5419 서버와 실행·로그 파일을 생성하는 지속적 부작용이며, 사용자가 명시한 서버 변경 금지와 원래 작업 범위를 벗어납니다.",
+    "retry_or_bypass": false
+  },
+  "validation_mode": "Actual new production build on 5418; no CSS injection",
+  "updated_utc": "2026-10-07T08:29:41.894588+00:00",
+  "changes_verified": [
+    "normal service and MAX buttons solid cream + dark text",
+    "selected sports odds and market tabs solid light apricot + darker orange border",
+    "small level counts and badges solid",
+    "one-pixel top highlight; no metallic stripe",
+    "nine labelled service gold PNG display brightness90→70 only after measured low contrast"
+  ],
+  "checks": {
+    "build_exit": 0,
+    "typecheck_exit": 0,
+    "lint_new_exit": 0,
+    "production_ui_pass": 24,
+    "production_ui_fail": 0,
+    "production_state_pass": 10,
+    "production_state_fail": 0,
+    "runtime_errors": 0,
+    "local_request_failures": 0,
+    "transaction_requests": 0,
+    "related_lint_existing": 1,
+    "related_lint_new": 0
+  },
+  "remaining": [
+    "independent QA and user final visual acceptance; existing attachment/Typekit access limitations"
+  ],
+  "visual_proof": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224\\production-entry-full.png",
+  "source_commit": "697a5711c8684eadd7c7f9068fe2974d47a91fb7",
+  "restart_approval_received": true,
+  "approval_text": "재시작해",
+  "server_restart_count": 1,
+  "polish_activated": true,
+  "server_proof": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224\\server-live.json",
+  "white_pid": 31792,
+  "editor_preserved_pid": 35992,
+  "independent_qa_complete": false,
+  "handoff": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224\\QA-HANDOFF.ko.md",
+  "manifest": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\mercury-white-20261007\\qa\\button-polish-20261007-080224\\final-source.json"
+}
