@@ -1,0 +1,209 @@
+const imgText = "https://www.figma.com/api/mcp/asset/20e3918b-3f28-482b-8d71-8ddbcc92e7bf.png";
+const imgText1 = "https://www.figma.com/api/mcp/asset/c3b8c532-00fd-4d19-a071-f213c2a0cf91.png";
+
+export default function Container() {
+  return (
+    <div className="content-stretch flex flex-col items-start pb-[8px] relative size-full" data-node-id="339:4" data-name="Container">
+      <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none" />
+      <div className="content-stretch flex gap-[8px] h-[34px] items-center relative shrink-0 w-[1226px]" data-node-id="339:5" data-name="스포츠 종목">
+        <div className="bg-[#ffc26f] border border-[#ffc26f] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[101.906px]" data-node-id="339:6" data-name="Button">
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:7" data-name="Text">
+            <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgText} />
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:8" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:9">
+              전체
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:10" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:11">
+              61
+            </p>
+            <div className="absolute border border-solid border-white inset-0 rounded-[4px]" data-node-id="347:6" data-name="Inset edge · 원본 CSS" />
+          </div>
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[101.906px]" data-node-id="339:12" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:13" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-121.96%] max-w-none top-[-16.1%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:14" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:15">
+              축구
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:16" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:17">
+              32
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:7" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[94.063px]" data-node-id="339:18" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:19" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-237.08%] max-w-none top-[-16.1%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:20" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:21">
+              농구
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:22" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:23">
+              6
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:8" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[101.906px]" data-node-id="339:24" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:25" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-346.9%] max-w-none top-[-16.1%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:26" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:27">
+              야구
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:28" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:29">
+              16
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:9" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[94.063px]" data-node-id="339:30" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:31" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-10.19%] max-w-none top-[-121.44%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:32" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:33">
+              배구
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:34" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:35">
+              0
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:10" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[130.359px]" data-node-id="339:36" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:37" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-120.02%] max-w-none top-[-115.24%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:38" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:39">
+              아이스하키
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:40" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:41">
+              7
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:11" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[112.734px]" data-node-id="339:42" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:43" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-238.8%] max-w-none top-[-122.65%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:44" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:45">
+              포뮬라1
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:46" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:47">
+              0
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:12" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[94.063px]" data-node-id="339:48" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:49" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-350.18%] max-w-none top-[-123.17%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:50" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:51">
+              복싱
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:52" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:53">
+              0
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:13" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[104.641px]" data-node-id="339:54" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:55" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-122.09%] max-w-none top-[-227.3%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:56" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:57">
+              MMA
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:58" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:59">
+              0
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:14" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+        <div className="border border-[#b8aa91] border-solid content-stretch flex gap-[8px] h-[32px] items-center px-[8px] py-[4px] relative rounded-[4px] shrink-0 w-[130.359px]" data-node-id="339:60" data-name="Button">
+          <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[4px]" />
+          <div className="relative shrink-0 size-[20px]" data-node-id="339:61" data-name="Text">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-7.95%] max-w-none top-[-225.06%] w-[460.74%]" src={imgText1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="339:62" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="339:63">
+              모터스포츠
+            </p>
+          </div>
+          <div className="bg-[#ffbd60] content-stretch flex flex-col h-[21px] items-center overflow-clip px-[4px] py-[2px] relative rounded-[4px] shrink-0" data-node-id="339:64" data-name="Text">
+            <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[17px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="339:65">
+              0
+            </p>
+            <div className="absolute border border-[#ffd1aa] border-solid inset-0 rounded-[4px]" data-node-id="347:15" data-name="Inset edge · 원본 CSS" />
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+        </div>
+      </div>
+      <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-1px_0px_0px_#c9c7bb]" />
+    </div>
+  );
+}

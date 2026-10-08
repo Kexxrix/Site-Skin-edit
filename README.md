@@ -1,10 +1,10 @@
 # Site-Skin-edit — TITAN 제작 자료
 
-## MERCURY White 로컬 등록 — 2026-10-07
+## MERCURY White 공개 — 2026-10-08
 
-[머큐리 화이트 인덱스](demo-sites/mercury-white-20261007/INDEX.ko.md) / [로컬 화면](http://127.0.0.1:5418/) / [현재 운영 상태](demo-sites/mercury-white-20261007/STATE.md).
+[MERCURY White PUBLIC v1](https://mercury-white.kexxadrix.chatgpt.site/) / [배포 기록](demo-sites/mercury-white-20261007/RELEASE.ko.md) / [로컬 화면](http://127.0.0.1:5418/) / [현재 운영 상태](demo-sites/mercury-white-20261007/STATE.md).
 
-최신 앱 소스는 `b425507730a4f39dd393645ef4273653a7c13176`이며 기존 통합 GitHub에 소스·자산·입력·검수 기록을 보관한다. [수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261007-mercury-white-local/source-files.json)를 따른다. **이번 등록은 로컬·GitHub 대상이며 Sites 등록과 공개 배포는 하지 않는다.** 기존 공개 사이트와 다른 작업은 유지한다.
+승인된 최신 화이트 스킨을 링크 공개 방식으로 배포했다. PUBLIC v1, 배포 `succeeded`, 배포 소스 `694efe89b8f230030c21f554d674ab71617a60bc`. 원본 로컬 작업과 기존 공개 사이트는 유지하며 [최신 GitHub 수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261008-mercury-white-public-v1/source-files.json)에 소스·자산·입력·검수·배포 기록을 보관한다.
 
 ## 사이트 현재 현황 — 2026-10-02 인계 기준
 

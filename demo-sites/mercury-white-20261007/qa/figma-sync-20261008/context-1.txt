@@ -1,0 +1,160 @@
+const imgIconColor = "https://www.figma.com/api/mcp/asset/b73ee48d-fd18-4fbd-becb-d2e7b703f456.png";
+const imgButton = "https://www.figma.com/api/mcp/asset/e32de07a-274e-46b0-8e58-d342ea4a4030.png";
+const imgButton1 = "https://www.figma.com/api/mcp/asset/d9b284f7-4513-43bf-992d-5f1840411feb.png";
+const imgButton2 = "https://www.figma.com/api/mcp/asset/646d7b67-3a7a-4d59-bede-8f69c1a57ac9.png";
+const imgButton3 = "https://www.figma.com/api/mcp/asset/6f9d1ba7-f151-40d1-a1d6-17cf990917cf.png";
+const imgButton4 = "https://www.figma.com/api/mcp/asset/5066ce02-be3f-4324-9ed5-f29a088ef06a.png";
+const imgButton5 = "https://www.figma.com/api/mcp/asset/16cd8661-b48e-42ae-bc44-e3673f9862ba.png";
+
+export default function Section() {
+  return (
+    <div className="bg-[#fffaf0] border border-[#c9c7bb] border-solid gap-x-[4px] gap-y-[4px] grid grid-cols-[___98px_98px_98px] grid-rows-[________43.50px_44px_66px_62px_62px_62px_62px_62px] p-[8px] relative rounded-[5px] size-full" data-node-id="337:88" data-name="Section - 빠른 메뉴">
+      <div className="border border-[#b8aa91] border-solid col-1 content-stretch flex gap-[6px] items-center justify-center justify-self-stretch px-[6px] relative rounded-[5px] row-1 self-stretch shrink-0" data-node-id="337:89" data-name="Button">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[5px]" style={{ backgroundImage: "linear-gradient(180deg, rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)" }} />
+        <div className="overflow-clip relative shrink-0 size-[20px]" data-node-id="337:90" data-name="Icon · 충전">
+          <div className="absolute left-0 size-[20px] top-0" data-node-id="340:3" data-name="Icon color">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-351.04%] max-w-none top-[-223.14%] w-[460.74%]" src={imgIconColor} />
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[20px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="337:91">
+          충전
+        </p>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white,inset_0px_-1px_0px_0px_#b8aa91]" />
+      </div>
+      <div className="border border-[#b8aa91] border-solid col-2 content-stretch flex gap-[6px] items-center justify-center justify-self-stretch px-[6px] relative rounded-[5px] row-1 self-stretch shrink-0" data-node-id="337:92" data-name="Button">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[5px]" style={{ backgroundImage: "linear-gradient(180deg, rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)" }} />
+        <div className="overflow-clip relative shrink-0 size-[20px]" data-node-id="337:93" data-name="Icon · 환전">
+          <div className="absolute left-0 size-[20px] top-0" data-node-id="340:5" data-name="Icon color">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-352.24%] max-w-none top-[-227.63%] w-[460.74%]" src={imgIconColor} />
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[20px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="337:94">
+          환전
+        </p>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white,inset_0px_-1px_0px_0px_#b8aa91]" />
+      </div>
+      <div className="border border-[#b8aa91] border-solid col-3 content-stretch flex gap-[6px] items-center justify-center justify-self-stretch px-[6px] relative rounded-[5px] row-1 self-stretch shrink-0" data-node-id="337:95" data-name="Button">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[5px]" style={{ backgroundImage: "linear-gradient(180deg, rgb(228, 221, 205) 0%, rgb(239, 234, 224) 19%, rgb(255, 255, 255) 35%, rgb(240, 236, 226) 55%, rgb(227, 220, 204) 80%, rgb(224, 216, 197) 100%)" }} />
+        <div className="overflow-clip relative shrink-0 size-[20px]" data-node-id="337:96" data-name="Icon · 고객센터">
+          <div className="absolute left-0 size-[20px] top-0" data-node-id="340:7" data-name="Icon color">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[691.1%] left-[-349.14%] max-w-none top-[-335.2%] w-[460.74%]" src={imgIconColor} />
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[20px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="337:97">
+          고객센터
+        </p>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white,inset_0px_-1px_0px_0px_#b8aa91]" />
+      </div>
+      <div className="border border-[#b8aa91] border-solid col-1 content-stretch flex gap-[6px] items-center justify-center justify-self-stretch px-[6px] relative rounded-[5px] row-2 self-stretch shrink-0" data-node-id="337:98" data-name="Button">
+        <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[5px]" />
+        <div className="relative shrink-0 size-[16px]" data-node-id="337:99" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[691.1%] left-[-12%] max-w-none top-[-332.83%] w-[460.74%]" src={imgIconColor} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[20px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="337:100">
+          이벤트
+        </p>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+      </div>
+      <div className="border border-[#b8aa91] border-solid col-2 content-stretch flex gap-[6px] items-center justify-center justify-self-stretch px-[6px] relative rounded-[5px] row-2 self-stretch shrink-0" data-node-id="337:101" data-name="Button">
+        <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[5px]" />
+        <div className="relative shrink-0 size-[16px]" data-node-id="337:102" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[691.1%] left-[-237.55%] max-w-none top-[-333.7%] w-[460.74%]" src={imgIconColor} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[20px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="337:103">
+          출석부
+        </p>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+      </div>
+      <div className="border border-[#b8aa91] border-solid col-3 content-stretch flex gap-[6px] items-center justify-center justify-self-stretch px-[6px] relative rounded-[5px] row-2 self-stretch shrink-0" data-node-id="337:104" data-name="Button">
+        <div aria-hidden className="absolute bg-[#fffaf0] inset-0 pointer-events-none rounded-[5px]" />
+        <div className="relative shrink-0 size-[16px]" data-node-id="337:105" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[691.1%] left-[-122.72%] max-w-none top-[-437.29%] w-[460.74%]" src={imgIconColor} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[20px] not-italic relative shrink-0 text-[#2b2826] text-[12px] text-center whitespace-nowrap" data-node-id="337:106">
+          공지사항
+        </p>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_white]" />
+      </div>
+      <div className="col-[1/span_3] content-stretch flex flex-col items-start justify-self-stretch pt-[4px] relative row-3 self-stretch shrink-0" data-node-id="337:107" data-name="Button:margin">
+        <div className="content-stretch flex h-[62px] items-center overflow-clip px-[12px] relative rounded-[5px] shrink-0 w-[302px]" data-node-id="337:108" data-name="Button">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[5px]">
+            <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgButton} />
+          </div>
+          <div className="bg-[rgba(255,255,255,0)] content-stretch drop-shadow-[0px_1px_0px_black,0px_1px_2px_rgba(0,0,0,0.75)] flex flex-col items-start relative shrink-0" data-node-id="337:109" data-name="Text">
+            <p className="[word-break:break-word] bg-clip-text font-['Pretendard_JP:ExtraBold'] leading-[30px] not-italic relative shrink-0 text-[24px] text-[transparent] whitespace-nowrap" data-node-id="337:110" style={{ backgroundImage: "linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 34%, rgb(233, 219, 175) 58%, rgb(223, 197, 127) 68%, rgb(255, 255, 255) 100%)" }}>
+              국내형 스포츠
+            </p>
+          </div>
+          <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_rgba(43,40,38,0.7),inset_0px_0px_0px_1px_rgba(229,217,187,0.6),inset_0px_5px_7px_-2px_rgba(43,40,38,0.5)]" />
+        </div>
+      </div>
+      <div className="col-[1/span_3] content-stretch flex items-center justify-self-stretch overflow-clip px-[12px] relative rounded-[5px] row-4 self-stretch shrink-0" data-node-id="337:111" data-name="Button">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[5px]">
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgButton1} />
+        </div>
+        <div className="bg-[rgba(255,255,255,0)] content-stretch drop-shadow-[0px_1px_0px_black,0px_1px_2px_rgba(0,0,0,0.75)] flex flex-col items-start relative shrink-0" data-node-id="337:112" data-name="Text">
+          <p className="[word-break:break-word] bg-clip-text font-['Pretendard_JP:ExtraBold'] leading-[30px] not-italic relative shrink-0 text-[24px] text-[transparent] whitespace-nowrap" data-node-id="337:113" style={{ backgroundImage: "linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 34%, rgb(233, 219, 175) 58%, rgb(223, 197, 127) 68%, rgb(255, 255, 255) 100%)" }}>
+            해외형 스포츠
+          </p>
+        </div>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_rgba(43,40,38,0.7),inset_0px_0px_0px_1px_rgba(229,217,187,0.6),inset_0px_5px_7px_-2px_rgba(43,40,38,0.5)]" />
+      </div>
+      <div className="col-[1/span_3] content-stretch flex items-center justify-self-stretch overflow-clip px-[12px] relative rounded-[5px] row-5 self-stretch shrink-0" data-node-id="337:114" data-name="Button">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[5px]">
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgButton2} />
+        </div>
+        <div className="bg-[rgba(255,255,255,0)] content-stretch drop-shadow-[0px_1px_0px_black,0px_1px_2px_rgba(0,0,0,0.75)] flex flex-col items-start relative shrink-0" data-node-id="337:115" data-name="Text">
+          <p className="[word-break:break-word] bg-clip-text font-['Pretendard_JP:ExtraBold'] leading-[30px] not-italic relative shrink-0 text-[24px] text-[transparent] whitespace-nowrap" data-node-id="337:116" style={{ backgroundImage: "linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 34%, rgb(233, 219, 175) 58%, rgb(223, 197, 127) 68%, rgb(255, 255, 255) 100%)" }}>
+            E-스포츠
+          </p>
+        </div>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_rgba(43,40,38,0.7),inset_0px_0px_0px_1px_rgba(229,217,187,0.6),inset_0px_5px_7px_-2px_rgba(43,40,38,0.5)]" />
+      </div>
+      <div className="col-[1/span_3] content-stretch flex items-center justify-self-stretch overflow-clip px-[12px] relative rounded-[5px] row-6 self-stretch shrink-0" data-node-id="337:117" data-name="Button">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[5px]">
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgButton3} />
+        </div>
+        <div className="bg-[rgba(255,255,255,0)] content-stretch drop-shadow-[0px_1px_0px_black,0px_1px_2px_rgba(0,0,0,0.75)] flex flex-col items-start relative shrink-0" data-node-id="337:118" data-name="Text">
+          <p className="[word-break:break-word] bg-clip-text font-['Pretendard_JP:ExtraBold'] leading-[30px] not-italic relative shrink-0 text-[24px] text-[transparent] whitespace-nowrap" data-node-id="337:119" style={{ backgroundImage: "linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 34%, rgb(233, 219, 175) 58%, rgb(223, 197, 127) 68%, rgb(255, 255, 255) 100%)" }}>
+            인플레이
+          </p>
+        </div>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_rgba(43,40,38,0.7),inset_0px_0px_0px_1px_rgba(229,217,187,0.6),inset_0px_5px_7px_-2px_rgba(43,40,38,0.5)]" />
+      </div>
+      <div className="col-[1/span_3] content-stretch flex items-center justify-self-stretch overflow-clip px-[12px] relative rounded-[5px] row-7 self-stretch shrink-0" data-node-id="337:120" data-name="Button">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[5px]">
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgButton4} />
+        </div>
+        <div className="bg-[rgba(255,255,255,0)] content-stretch drop-shadow-[0px_1px_0px_black,0px_1px_2px_rgba(0,0,0,0.75)] flex flex-col items-start relative shrink-0" data-node-id="337:121" data-name="Text">
+          <p className="[word-break:break-word] bg-clip-text font-['Pretendard_JP:ExtraBold'] leading-[30px] not-italic relative shrink-0 text-[24px] text-[transparent] whitespace-nowrap" data-node-id="337:122" style={{ backgroundImage: "linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 34%, rgb(233, 219, 175) 58%, rgb(223, 197, 127) 68%, rgb(255, 255, 255) 100%)" }}>
+            슬롯
+          </p>
+        </div>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_rgba(43,40,38,0.7),inset_0px_0px_0px_1px_rgba(229,217,187,0.6),inset_0px_5px_7px_-2px_rgba(43,40,38,0.5)]" />
+      </div>
+      <div className="col-[1/span_3] content-stretch flex items-center justify-self-stretch overflow-clip px-[12px] relative rounded-[5px] row-8 self-stretch shrink-0" data-node-id="337:123" data-name="Button">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[5px]">
+          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgButton5} />
+        </div>
+        <div className="bg-[rgba(255,255,255,0)] content-stretch drop-shadow-[0px_1px_0px_black,0px_1px_2px_rgba(0,0,0,0.75)] flex flex-col items-start relative shrink-0" data-node-id="337:124" data-name="Text">
+          <p className="[word-break:break-word] bg-clip-text font-['Pretendard_JP:ExtraBold'] leading-[30px] not-italic relative shrink-0 text-[24px] text-[transparent] whitespace-nowrap" data-node-id="337:125" style={{ backgroundImage: "linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 34%, rgb(233, 219, 175) 58%, rgb(223, 197, 127) 68%, rgb(255, 255, 255) 100%)" }}>
+            카지노
+          </p>
+        </div>
+        <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_1px_0px_0px_rgba(43,40,38,0.7),inset_0px_0px_0px_1px_rgba(229,217,187,0.6),inset_0px_5px_7px_-2px_rgba(43,40,38,0.5)]" />
+      </div>
+    </div>
+  );
+}

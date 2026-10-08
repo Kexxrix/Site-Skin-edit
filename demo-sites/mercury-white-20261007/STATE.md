@@ -1,4 +1,58 @@
-# MERCURY White — 로컬 정식 등록 / GitHub 보관 기준 / 2026-10-07
+# MERCURY White — PUBLIC v1 배포 / 2026-10-08
+
+- 현재 공개 주소: https://mercury-white.kexxadrix.chatgpt.site/ . 링크가 있으면 누구나 볼 수 있는 PUBLIC v1이며 배포 상태는 `succeeded`다.
+- 현재 승인된 아이콘 선택 색상까지 포함하여 배포했다. 배포 전 동결한 로컬 소스 345개는 그대로이며 기존 5418/PID41768, 5417/PID35992를 유지했다.
+- 별도 배포 사본은 `publish/site/`, 소스 커밋 `694efe89b8f230030c21f554d674ab71617a60bc`다. 이 사본에만 호스팅 어댑터 설정·ignore·Sites 연결 파일을 추가했다.
+- 빌드·타입 검사 통과. 실제 공개 화면에서 이미지 126개 정상, Figma 아이콘 41곳 및 전체/축구 아이콘 선택 상태를 확인했다. Sites public 설정과 실제 공개 브라우저 표시를 확인했다. 터미널 무인증 요청은 403으로 제한되어 별도 기록했다.
+- 최신 인계는 [RELEASE.ko.md](RELEASE.ko.md), 통합 GitHub 수집 기준은 `backup/site-snapshots/20261008-mercury-white-public-v1/`이다. 아래의 미배포·등록만 수행했다는 표현은 당시 이력이며 이번 배포 지시로 대체됐다.
+
+---
+
+# MERCURY White — 종목 아이콘 선택 상태 / 2026-10-08
+
+- 사용자 브라우저 코멘트에 따라 선택 종목 아이콘은 어둡게, 선택 해제 시 원래 금색으로 표시한다. 전체 탭은 기본 금색 atlas를 사용하고 선택할 때만 기존 어두운 트로피 이미지를 사용한다.
+- 앱 수정은 `app/mercury-white.css` 하나다. 이미지 파일·컴포넌트·데이터·팔레트·레이아웃은 유지했고 검사 대상 272개 중 나머지 271개 해시가 동일하다.
+- 빌드 통과, 1927×932 브라우저에서 전체 포함 10개 탭 선택·해제 검사 통과. 사이드바·최신 인기 게임 아이콘의 색상 필터는 변경되지 않았다. 이미지 오류 0개, 콘솔 오류·경고 0개. CSS만 변경되어 직전 타입 검사 결과를 재사용했다.
+- 현재 로컬 5418은 PID41768, 5417/PID35992는 유지한다. 새 빌드 294개 및 실제 응답 CSS 일치를 검증했고 이전 dist를 `qa/sport-icon-state-20261008/runtime-before/dist`에 보존했다.
+- QA는 실제 빌드를 임시 5498로 전달하면서 외부 Typekit을 차단하고 저장소를 메모리로 격리했다. UI·동작 오버라이드는 없다. 임시 탭·서버는 종료했고 사용자 탭은 조작하지 않았다. 커밋·push·공개 배포 없음.
+- [축구 선택 화면](qa/sport-icon-state-20261008/soccer-selected.png), [전체 선택 화면](qa/sport-icon-state-20261008/all-selected.png), [브라우저 검증](qa/sport-icon-state-20261008/browser-verification.json), [실행 검증](qa/sport-icon-state-20261008/runtime-verification.json).
+
+---
+
+# MERCURY White — 메뉴 가독성·최신 인기 게임 아이콘 / 2026-10-08 (이전 단계)
+
+- 브라우저 코멘트에 따라 활성 메뉴 글자를 짙은 브론즈 `#6b481b` 단색으로 조정하고 밝은 그라데이션·흐린 그림자를 제거했다. 금색 밑줄과 글자 크기·굵기·배치는 유지했다.
+- 최신 인기 게임 5곳의 이전 PNG 직접 참조를 공통 `SportIcon`으로 교체했다. 종목 탭과 동일한 Figma 이미지·크롭을 사용하고 기존 14×14 크기는 유지했다. 이미지 파일과 경기 데이터는 변경하지 않았다.
+- 앱 변경은 `app/mercury-sports.tsx`, `app/mercury-white.css` 두 파일이다. 검사 대상 app/public/theme 272개 중 나머지 270개는 SHA-256이 동일하다.
+- 빌드와 타입 검사 통과. 1927×932에서 화면을 확인했고 최신 경기 클릭·국내형 전환·해외형 전환 3개 동작이 통과했다. 이미지 오류 0개, 브라우저 오류·경고 0개, 프레임워크 오류 화면 없음. 모바일 재검수와 전체 린트 재실행은 하지 않았다.
+- 현재 로컬 5418은 PID24972이다. 새 빌드 294개와 실제 CSS 응답 일치를 확인했다. 이전 dist는 `qa/readability-latest-20261008/runtime-before/dist`에 보존했다. 5417/PID35992와 사용자 탭·저장 상태는 변경하지 않았다.
+- 브라우저 검수는 실제 5418 응답을 임시 5498로 전달하고 외부 Typekit 요청을 빈 로컬 응답으로 대체하며 저장소를 메모리로 격리했다. UI와 동작 코드는 그대로다. 임시 탭·서버는 종료했다. 새 커밋·push·공개 배포 없음.
+- [화면](qa/readability-latest-20261008/after-latest-1927.png), [브라우저 검증](qa/readability-latest-20261008/browser-verification.json), [빌드·원본 보존 검사](qa/readability-latest-20261008/static-verification.json), [실행 빌드 검증](qa/readability-latest-20261008/runtime-verification.json).
+
+---
+
+# MERCURY White — Figma 아이콘·색상 반영 / 2026-10-08 (이전 단계)
+
+- 사용자 요청에 따라 Figma `333:2`의 아이콘 36곳, 숫자 배지, 선택 종목·마켓·경기 카드 테두리, 활성 메뉴의 금색 글자와 밑줄을 반영했다. 이미지 원본 2개를 별도 경로에 추가하고 피그마의 자르기 위치를 CSS로 재현했다.
+- 현재 [로컬 화면](http://127.0.0.1:5418/)은 PID40968이다. 새 빌드 294개를 검증하고 5418만 한 번 재시작했다. 5417/PID35992와 기존 사용자 탭은 유지했다.
+- 이번 앱 수정은 `app/mercury-sports.tsx`, `app/mercury-white.css` 두 파일과 `public/icons/mercury-figma-20261008/`의 PNG 두 개다. 기존 파일 344개 중 342개는 SHA-256이 동일하며 승인 v6 입력도 보존했다.
+- 빌드·타입 검사, 1920×1080 화면 비교, 아이콘 36곳과 이미지 오류 0개, 종목·마켓·선택·메뉴 동작 6개를 확인했다. 린트는 기존 40개에서 39개로 줄었고 신규 진단은 없다.
+- 동작 QA는 현재 5418 빌드의 응답을 임시 5498 서버로 전달하면서 저장소를 메모리로 격리하고 외부 Typekit만 로컬 빈 응답으로 바꿨다. 초기 직접 브라우저 격리 시도와 최종 통과 근거를 구분해 기록했다. 임시 서버·탭은 종료했다.
+- [변경 및 검수 기록](qa/figma-sync-20261008/change-record.json), [최종 파일 검증](qa/figma-sync-20261008/final-verification.json), [최종 화면](qa/figma-sync-20261008/browser-verified-1920.png)을 따른다. 새 커밋·GitHub 백업·공개 배포는 하지 않았다.
+
+---
+
+# MERCURY White — 웜 차콜 배지 로컬 반영 / 2026-10-07 (이전 단계)
+
+- 사용자 승인에 따라 SPORTS·LIVE·LV.0·BET 배지 4종에 배경 `#36312b`, 글자 `#f5e8c5`, 안쪽 테두리 `#806c49`를 적용했다. 크기·폰트·숫자칩·헤더 NEW/LIVE 칩·선택 탭과 배당의 주황색은 유지했다.
+- 현재 [로컬 화면](http://127.0.0.1:5418/)에 반영됐으며 5418/PID18312가 실행 중이다. 이번 반영에서 5418만 한 번 재시작했고 기존 5417/PID35992는 유지했다.
+- 앱 소스는 `b425507730a4f39dd393645ef4273653a7c13176` 기준에 `app/mercury-white.css`, `theme/mercury-white-button-polish.json` 두 파일이 미커밋 변경된 상태다. GitHub 백업 `11f6f9dc1e6923ce1d6e6bb9652c0e71a64f0705`에는 이번 배지 변경이 아직 포함되지 않는다. 새 커밋·push·배포는 하지 않았다.
+- 빌드 exit 0, 실제 브라우저 8 PASS / 0 FAIL, 소스 341개 유지·변경 2개, 새 빌드 292개 일치·기존 빌드 292개 보존을 확인했다. 실제 서빙 CSS는 `index.C9jghax1.css`, SHA-256 `1ebd85b1977896b4b06e974fa2789dbfd34acdf07134601e0d3e4230b5546ab1`이다.
+- [검수 기록](qa/badge-charcoal-20261007-101259/QA-REPORT.ko.md)과 [최종 검증](qa/badge-charcoal-20261007-101259/final-verification.json)을 따른다. 기존 외부 Typekit 폰트 검증 제한은 유지한다.
+
+---
+
+# MERCURY White — 로컬 정식 등록 / GitHub 보관 기준 / 2026-10-07 (배지 변경 전)
 
 - 최신 사용자 지시: 현재 머큐리 화이트를 로컬과 GitHub에 등록하며 **공개 배포는 하지 않는다**.
 - 정식 관리명은 **MERCURY White**, 시작 문서는 [INDEX.ko.md](INDEX.ko.md). 로컬 주소 http://127.0.0.1:5418/ , 앱 소스 `b425507730a4f39dd393645ef4273653a7c13176`, 브랜치 `mercury-white-20261007`이다.

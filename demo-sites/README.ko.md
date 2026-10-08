@@ -1,10 +1,10 @@
 # TITAN 신규 데모 제작 공간
 
-## MERCURY White 정식 로컬 등록 — 2026-10-07
+## MERCURY White 공개 — 2026-10-08
 
-[MERCURY White](mercury-white-20261007/INDEX.ko.md)를 별도 화이트 스킨으로 등록했다. [로컬 화면](http://127.0.0.1:5418/), [최신 STATE](mercury-white-20261007/STATE.md), 앱 `mercury-white-20261007/site/`, 소스 `b425507730a4f39dd393645ef4273653a7c13176`을 기준으로 한다. 사용자 지시에 따라 **Sites 등록·공개 배포는 보류**하며 기존 MERCURY 공개 사이트와 실행 서버는 유지한다.
+[MERCURY White PUBLIC v1](https://mercury-white.kexxadrix.chatgpt.site/)을 별도 화이트 스킨으로 공개했다. 배포 상태 `succeeded`, 링크가 있으면 누구나 볼 수 있는 접근 정책이다. [배포 기록](mercury-white-20261007/RELEASE.ko.md), [최신 STATE](mercury-white-20261007/STATE.md), 배포 사본 `mercury-white-20261007/publish/site/`, 배포 소스 `694efe89b8f230030c21f554d674ab71617a60bc`를 기준으로 한다.
 
-통합 GitHub 보관 명세는 `backup/site-snapshots/20261007-mercury-white-local/`이다. 현재 소스 343개·빌드 292개 및 실제 서빙 CSS 해시 일치를 확인했고, 동일 입력의 독립 QA 31 PASS / 0 FAIL 결과를 재사용한다. 이번 작업은 운영 문서 등록과 백업이며 앱 디자인·기능을 변경하지 않는다.
+로컬 원본 345개 파일과 5418/PID41768, 편집기 5417/PID35992 및 기존 MERCURY 공개 사이트는 유지한다. 빌드·타입 검사·공개 설정·실제 공개 브라우저 화면을 확인했다. 터미널 무인증 HTTP 검사는 403 응답으로 제한됐다. 최신 통합 GitHub 보관 명세는 `backup/site-snapshots/20261008-mercury-white-public-v1/`이다.
 
 ## ALDEBARAN 두 번째 스킨 공개 — 2026-10-06
 

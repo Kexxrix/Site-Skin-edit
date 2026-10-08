@@ -1,0 +1,58 @@
+const imgImage = "https://www.figma.com/api/mcp/asset/9e7808e7-8f64-4257-9f37-72e990b15d0a.png";
+
+export default function Navigation() {
+  return (
+    <div className="content-stretch flex gap-[14px] items-center relative size-full" data-node-id="337:70" data-name="Navigation - 공지 및 이용 안내">
+      <div className="content-stretch flex gap-[4px] h-[37px] items-center relative shrink-0" data-node-id="337:71" data-name="Button">
+        <div className="relative shrink-0 size-[12px]" data-node-id="337:72" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[712.13%] left-[-125.64%] max-w-none top-[-457.96%] w-[474.75%]" src={imgImage} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[37px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="337:73">
+          공지사항
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[4px] h-[37px] items-center relative shrink-0" data-node-id="337:74" data-name="Button">
+        <div className="relative shrink-0 size-[12px]" data-node-id="337:75" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[712.13%] left-[-16.07%] max-w-none top-[-347.39%] w-[474.75%]" src={imgImage} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[37px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="337:76">
+          이벤트게시판
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[4px] h-[37px] items-center relative shrink-0" data-node-id="337:77" data-name="Button">
+        <div className="relative shrink-0 size-[12px]" data-node-id="337:78" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[712.13%] left-[-242.22%] max-w-none top-[-347.39%] w-[474.75%]" src={imgImage} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[37px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="337:79">
+          출석체크
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[4px] h-[37px] items-center relative shrink-0" data-node-id="337:80" data-name="Button">
+        <div className="relative shrink-0 size-[12px]" data-node-id="337:81" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[712.13%] left-[-362.46%] max-w-none top-[-342.73%] w-[474.75%]" src={imgImage} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[37px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="337:82">
+          고객센터
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[4px] h-[37px] items-center relative shrink-0" data-node-id="337:83" data-name="Button">
+        <div className="relative shrink-0 size-[12px]" data-node-id="337:84" data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[712.13%] left-[-13.73%] max-w-none top-[-453.3%] w-[474.75%]" src={imgImage} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Pretendard_JP:Bold'] leading-[37px] not-italic relative shrink-0 text-[#2b2826] text-[14px] text-center whitespace-nowrap" data-node-id="337:85">
+          이용규정
+        </p>
+      </div>
+    </div>
+  );
+}

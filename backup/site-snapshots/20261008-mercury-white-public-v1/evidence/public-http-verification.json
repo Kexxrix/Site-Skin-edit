@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-10-08T08:36:02.767334+00:00",
+  "source_files_unchanged": 345,
+  "release_only_differences": [
+    ".gitignore",
+    "vite.config.ts"
+  ],
+  "anonymous_http_checks": [
+    {
+      "path": "/",
+      "status": 403,
+      "verification": "Observed initial urllib request; stopped on HTTPError. No retry or bypass. Public response and asset response hashes unverified through this path."
+    }
+  ],
+  "no_font_retry": true
+}

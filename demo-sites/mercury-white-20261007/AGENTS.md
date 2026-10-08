@@ -1,4 +1,35 @@
-# MERCURY White — local implementation
+# MERCURY White — local implementation and public release
+
+## Current approved publication — 2026-10-08
+
+- The user requested publishing the current MERCURY White skin and updating GitHub, then explicitly selected public access for anyone with the link. This supersedes the older no-deployment instructions below.
+- PUBLIC v1: https://mercury-white.kexxadrix.chatgpt.site/ ; project `appgprj_6ac7523068808191aa0f1014883e0752`; deployment succeeded. Release checkout `publish/site/`, source commit `694efe89b8f230030c21f554d674ab71617a60bc`. See `RELEASE.ko.md`.
+- Preserve approved local `site/` bytes, its b425 HEAD/branch/no-remotes state, and 5418/PID41768 plus editor 5417/PID35992. Hosting-only changes belong to the separate release checkout. Integrated GitHub backup commit/push is authorized; do not alter other sites.
+- Latest public UI/HTTP/build evidence and final remote verification: `E:/codexwork/Site-Skin-edit-backups/20261008-mercury-white-deploy/`. Snapshot `backup/site-snapshots/20261008-mercury-white-public-v1/`. Earlier local-only records remain historical.
+
+## Latest user follow-up — selected sport icon colors / 2026-10-08
+
+- Selected sport-tab icons darken; deselected icons restore their original gold. All uses the gold atlas when idle and its existing dark trophy only when selected. CSS-only change; keep sidebar/latest icons, source images, data, geometry and earlier follow-ups intact.
+- Current 5418 PID41768 supersedes PID24972; editor 5417/PID35992 is unchanged. Build and all ten tab state checks pass at 1927x932. Evidence: `qa/sport-icon-state-20261008/` and newest `STATE.md`. Temporary QA tab/server closed; user tab untouched. No commit/push/deployment.
+
+## Latest user follow-up — menu readability and latest-game icons / 2026-10-08
+
+- Browser comments requested improving the active menu label and updating the missed latest-game icons. Active labels now use solid dark bronze #6b481b without the blurred shadow, retaining the gold underline. Five latest-game rows use the shared Figma SportIcon at their original 14px size. Preserve these changes and all prior unrelated styling.
+- Current 5418 PID24972 supersedes PID40968. Editor 5417/PID35992 remains unchanged. No commit, push or deployment.
+- Evidence: `qa/readability-latest-20261008/` and newest `STATE.md`. Build/typecheck, 1927x932 visual inspection and three isolated UI interactions pass. User tab was only read for the before screenshot. Temporary QA tab/server are closed.
+
+## Latest user follow-up — Figma icons and colors / 2026-10-08
+
+- The user requested applying the updated Figma frame `333:2` to the local white site. Exact atlas crops replace 36 displayed icons; changed chip, active control, card outline and header label colors follow Figma. Original images and the v6 palette remain intact.
+- Current 5418 runtime is PID40968, superseding PID18312 below. Editor 5417/PID35992 remains unchanged. No new commit, push or public deployment was made.
+- Latest evidence and limitations: `qa/figma-sync-20261008/change-record.json`, `final-verification.json`, and `STATE.md`. Build/typecheck and six isolated interaction checks pass; whole-project lint retains 39 existing errors with no new diagnostics. Temporary QA server and tabs were closed.
+
+## Latest approved follow-up — warm charcoal badges / 2026-10-07
+
+- The user approved applying the warm charcoal preview. Only `.mc-shell .mc-badge` labels SPORTS/LIVE/LV.0/BET change to background `#36312b`, text `#f5e8c5`, inset edge `#806c49`. Preserve counts, header chips, selected controls, geometry, assets and original v6 JSON.
+- Current local source is base commit `b425507730a4f39dd393645ef4273653a7c13176` plus two uncommitted files: `app/mercury-white.css` and `theme/mercury-white-button-polish.json` v4. No new commit, GitHub push or deployment was made for this follow-up.
+- Applying the approved change required one 5418 restart. Current PID18312 supersedes PID23780; preserve it and editor 5417/PID35992. Prior b425 dist is retained under `qa/badge-charcoal-20261007-101259/runtime-retired-b425/dist/`. This follow-up supersedes the completed registration-only preservation scope below.
+- Build and eight browser checks pass; evidence is `qa/badge-charcoal-20261007-101259/`. External Typekit requests were blocked before transmission in isolated QA; do not retry them. Personal browser/IAB/storage and all other servers remain untouched.
 
 ## Current registration scope — 2026-10-07
 
