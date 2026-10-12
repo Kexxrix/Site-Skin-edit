@@ -1,0 +1,17 @@
+--- before-mercury-white.css
++++ app/mercury-white.css
+@@ -234,9 +234,13 @@
+ .mc-shell .mc-latest-row .mc-sport-icon { width: 14px; height: 14px; }
+ 
+ /* Shallow card edges and recessed inputs keep the original component hierarchy. */
+-.mc-shell :is(.mc-card, .mc-market-group, .mc-rail-card, .mc-amount) {
++.mc-shell :is(.mc-card, .mc-market-group, .mc-rail-card, .mc-amount):where(:not(.mc-banner-stack)) {
+   background-image: linear-gradient(180deg, #ffffff66 0%, #ffffff00 90px);
+   box-shadow: var(--white-panel-relief);
++}
++/* Image-backed banners need the existing warm cream for readable captions. */
++.mc-shell .mc-banner-stack .mc-mini-banner small {
++  color: #f5e8c5;
+ }
+ .mc-shell .mc-market-head {
+   background: linear-gradient(180deg, #ffffff 0%, var(--white-button-fill) 42%,

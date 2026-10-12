@@ -4,7 +4,7 @@
   margin-inline: auto;
 }
 
-/* Approved readability polish, derived from v6 without changing its source JSON. */
+/* Preserve the approved palette; restore MERCURY's lit faces and lower bevels. */
 .mc-shell {
   --white-button-fill: #fffaf0;
   --white-button-hover: #f7edda;
@@ -14,12 +14,26 @@
   --white-selected-border: #b76016;
   --white-disabled-fill: #f1eadf;
   --white-disabled-text: #6b6154;
-  --skin-normal-fill: var(--white-button-fill);
-  --skin-action-fill: var(--white-button-fill);
+  --white-button-gradient: linear-gradient(0deg,
+    color-mix(in srgb, var(--white-button-fill) 80%, var(--white-button-border)) 17.308%,
+    var(--white-button-fill) 50.481%, #ffffff 100%);
+  --white-button-hover-gradient: linear-gradient(0deg,
+    color-mix(in srgb, var(--white-button-hover) 86%, var(--white-button-border)) 17.308%,
+    var(--white-button-hover) 50.481%, #ffffff 100%);
+  --white-button-relief: inset 0 1px 0 #ffffff,
+    inset 0 -1px 0 color-mix(in srgb, var(--white-button-border) 32%, transparent),
+    0 1px 2px color-mix(in srgb, var(--white-button-text) 12%, transparent);
+  --white-selected-relief: inset 0 1px 0 #ffffffb3,
+    inset 0 -1px 0 color-mix(in srgb, var(--white-selected-border) 28%, transparent),
+    0 1px 2px color-mix(in srgb, var(--white-button-text) 15%, transparent);
+  --white-panel-relief: inset 0 1px 0 #ffffff,
+    0 1px 3px color-mix(in srgb, var(--white-button-text) 9%, transparent);
+  --skin-normal-fill: var(--white-button-gradient);
+  --skin-action-fill: var(--white-button-gradient);
   --skin-action-text: var(--white-button-text);
   --skin-action-border: var(--white-button-border);
   --skin-action-hover-filter: none;
-  --skin-action-hover-shadow: inset 0 1px 0 #ffffff;
+  --skin-action-hover-shadow: var(--white-button-relief);
   --skin-action-disabled-fill: var(--white-disabled-fill);
   --skin-action-disabled-text: var(--white-disabled-text);
   --skin-action-disabled-border: var(--white-button-border);
@@ -30,8 +44,9 @@
 }
 
 .mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
-  .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button) {
-  box-shadow: inset 0 1px 0 #ffffff;
+  .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
+  .mc-odd) {
+  box-shadow: var(--white-button-relief);
 }
 .mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
   .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
@@ -42,7 +57,7 @@
 .mc-shell :is(.mc-quick-action, .mc-user-actions button, .mc-small-action,
   .mc-amount-quick button, .mc-bet-submit, .mc-sport-tab, .mc-market-tabs button,
   .mc-odd):not(:disabled):not([aria-pressed="true"]):hover {
-  background: var(--white-button-hover);
+  background: var(--white-button-hover-gradient);
   border-color: var(--white-selected-border);
   filter: none;
 }
@@ -52,13 +67,20 @@
   outline: 2px solid var(--white-button-text);
   outline-offset: -2px;
 }
-/* User feedback: selected controls use the original v6 colors and warm fill.
-   Flat badges/counts and every unselected readability treatment stay intact. */
+/* Keep each selected color as the middle stop, adding only light and shade. */
 .mc-shell :is(.mc-sport-tab, .mc-market-tabs button, .mc-odd)[aria-pressed="true"] {
-  box-shadow: none;
+  --white-depth-base: var(--skin-oddsSelectedBackground);
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--white-depth-base) 65%, #ffffff) 0%,
+    var(--white-depth-base) 46%,
+    color-mix(in srgb, var(--white-depth-base) 87%, var(--white-selected-border)) 100%);
+  box-shadow: var(--white-selected-relief);
+}
+.mc-shell button.mc-sport-tab[aria-pressed="true"] {
+  --white-depth-base: var(--skin-sportSelectedBackground);
 }
 .mc-shell :is(.mc-sport-tab, .mc-market-tabs button, .mc-odd)[aria-pressed="true"]:focus-visible {
-  box-shadow: 0 0 0 2px var(--skin-shadow-171717, #171717);
+  box-shadow: var(--white-selected-relief), 0 0 0 2px var(--skin-shadow-171717, #171717);
 }
 .mc-shell .mc-sport-tab[aria-pressed="true"]:focus-visible {
   outline-color: var(--skin-sportSelectedBorder);
@@ -111,7 +133,7 @@
 .mc-shell .mc-quick-action.primary:not(:disabled):not([aria-pressed="true"]):hover,
 .mc-shell .mc-quick-action.primary:not(:disabled):focus-visible {
   background: var(--white-service-menu-gradient);
-  box-shadow: inset 0 1px 0 #ffffff, inset 0 -1px 0 var(--white-button-border);
+  box-shadow: var(--white-button-relief), inset 0 -1px 0 var(--white-button-border);
   filter: none;
 }
 
@@ -191,7 +213,7 @@
 .mc-shell .mc-card[data-inspected="true"],
 .mc-shell .mc-card:has(.mc-odd[aria-pressed="true"]) {
   border-color: #ffbc60;
-  box-shadow: inset 0 0 0 1px #ffbc60;
+  box-shadow: inset 0 0 0 1px #ffbc60, var(--white-panel-relief);
 }
 .mc-shell .mc-market-tabs button[aria-pressed="true"] {
   border-color: #ffd1aa;
@@ -210,3 +232,64 @@
 }
 
 .mc-shell .mc-latest-row .mc-sport-icon { width: 14px; height: 14px; }
+
+/* Shallow card edges and recessed inputs keep the original component hierarchy. */
+.mc-shell :is(.mc-card, .mc-market-group, .mc-rail-card, .mc-amount):where(:not(.mc-banner-stack)) {
+  background-image: linear-gradient(180deg, #ffffff66 0%, #ffffff00 90px);
+  box-shadow: var(--white-panel-relief);
+}
+/* Image-backed banners need the existing warm cream for readable captions. */
+.mc-shell .mc-banner-stack .mc-mini-banner small {
+  color: #f5e8c5;
+}
+.mc-shell .mc-market-head {
+  background: linear-gradient(180deg, #ffffff 0%, var(--white-button-fill) 42%,
+    color-mix(in srgb, var(--white-button-fill) 88%, var(--white-button-border)) 100%);
+  box-shadow: inset 0 1px 0 #ffffff;
+}
+.mc-shell :is(.mc-search-row, .mc-amount-input, .mc-slip-empty) {
+  box-shadow: inset 0 1px 3px color-mix(in srgb, var(--white-button-border) 24%, transparent),
+    0 1px 0 #ffffff;
+}
+.mc-shell :is(.mc-sport-count, .mc-market-open, .mc-menu-badge) {
+  background-image: linear-gradient(180deg, #ffffff66 0%, #ffffff00 52%, #b8aa911f 100%);
+  box-shadow: inset 0 1px 0 #ffffff99, inset 0 -1px 0 #b8aa9140;
+}
+.mc-shell .mc-badge {
+  box-shadow: inset 0 0 0 1px #806c49, inset 0 2px 0 #f5e8c538, inset 0 -2px 0 #2b28266b;
+}
+.mc-shell .mc-auth button {
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--skin-headerButton-050505) 82%, #ffffff) 0%,
+    var(--skin-headerButton-050505) 48%,
+    color-mix(in srgb, var(--skin-headerButton-050505) 86%, var(--white-button-text)) 100%);
+  box-shadow: inset 0 1px 0 #ffffff26, inset 0 -1px 0 #2b28264d;
+}
+
+/* Separate the header levels using the existing cream and gold palette. */
+.mc-shell {
+  --white-section-header-gradient: linear-gradient(180deg,
+    #fffaf0 0%, #f5e8c5 55%, #e2d3a9 calc(100% - 1px), #b8aa91 100%);
+}
+.mc-shell .mc-league-head {
+  padding-inline: 9px;
+  background: linear-gradient(180deg, #ffffff 0%, var(--white-button-fill) 55%,
+    color-mix(in srgb, var(--white-button-fill) 93%, var(--white-button-border)) 100%);
+  border-bottom-color: var(--mc-line);
+  box-shadow: inset 0 1px 0 #ffffff, 0 1px 2px #2b28260f;
+}
+.mc-shell .mc-card {
+  background-image: var(--white-section-header-gradient);
+  /* Existing 12px top padding + 24px metadata + half of the 12px row gap. */
+  background-size: 100% 42px;
+  background-repeat: no-repeat;
+}
+.mc-shell .mc-match-heading {
+  background: var(--white-section-header-gradient);
+  color: var(--white-button-text);
+  border-bottom-color: var(--white-button-border);
+  box-shadow: inset 0 1px 0 #ffffff, 0 1px 2px #2b282617;
+}
+.mc-shell .mc-match-start {
+  color: inherit;
+}

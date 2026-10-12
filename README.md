@@ -1,10 +1,10 @@
 # Site-Skin-edit — TITAN 제작 자료
 
-## MERCURY White 공개 — 2026-10-08
+## MERCURY White 공개 — 2026-10-12
 
-[MERCURY White PUBLIC v1](https://mercury-white.kexxadrix.chatgpt.site/) / [배포 기록](demo-sites/mercury-white-20261007/RELEASE.ko.md) / [로컬 화면](http://127.0.0.1:5418/) / [현재 운영 상태](demo-sites/mercury-white-20261007/STATE.md).
+[MERCURY White PUBLIC v2](https://mercury-white.kexxadrix.chatgpt.site/) / [배포 기록](demo-sites/mercury-white-20261007/RELEASE.ko.md) / [로컬 화면](http://127.0.0.1:5418/) / [현재 운영 상태](demo-sites/mercury-white-20261007/STATE.md).
 
-승인된 최신 화이트 스킨을 링크 공개 방식으로 배포했다. PUBLIC v1, 배포 `succeeded`, 배포 소스 `694efe89b8f230030c21f554d674ab71617a60bc`. 원본 로컬 작업과 기존 공개 사이트는 유지하며 [최신 GitHub 수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261008-mercury-white-public-v1/source-files.json)에 소스·자산·입력·검수·배포 기록을 보관한다.
+최신 버튼 입체감·크림 리그 헤더·골드 경기 제목 및 카드 상단·배너 복원을 공개 사이트에 반영했다. PUBLIC v2, 배포 `succeeded`, 배포 소스 `70e61703c766e50bcab920f4a2886a399badbf2f`. 원본 로컬 작업과 다른 사이트는 유지하며 [최신 GitHub 수집 명세](https://github.com/Kexxrix/Site-Skin-edit/blob/main/backup/site-snapshots/20261012-mercury-white-public-v2/source-files.json)에 소스·자산·입력·검수·배포 기록을 보관한다.
 
 ## 사이트 현재 현황 — 2026-10-02 인계 기준
 

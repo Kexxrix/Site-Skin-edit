@@ -1,3 +1,26 @@
+# MERCURY White — PUBLIC v2
+
+2026-10-12 12:29:18 KST에 최신 로컬 입체감·헤더·배너 수정본을 기존 공개 사이트에 배포했다. 사용자의 공개 배포 및 GitHub 업데이트 지시에 따라 기존 public 접근을 유지했다.
+
+- 공개 주소: https://mercury-white.kexxadrix.chatgpt.site/
+- 사이트 ID: `appgprj_6ac7523068808191aa0f1014883e0752`
+- 저장 버전: v2 / `appgprj_6ac7523068808191aa0f1014883e0752~appgver_3831c2f1e4288191a04d3a38194ba52f`
+- 배포 ID: `appgdep_6acc53fe48808191b115efe33e29ac14`, 상태 `succeeded`, 접근 `public`.
+- 배포 소스: `publish/site/`, 커밋 `70e61703c766e50bcab920f4a2886a399badbf2f`.
+- 반영 범위: 버튼·카드 입체감, 밝은 크림 리그 헤더와 좌우 9px 패딩, 골드 경기 제목과 42px 카드 상단, 오른쪽 배너 배경 및 크림색 설명 복원.
+- 이번 배포에서는 로컬 원본 345개 파일을 그대로 유지하고, 배포 사본의 `app/mercury-white.css`와 `theme/mercury-white-button-polish.json` 두 파일만 최신 원본과 동기화했다. 호스팅 설정·의존성·자산·동작은 변경하지 않았다.
+
+## v2 검증 및 GitHub 보관
+
+- 배포 사본의 `npm run build`와 `tsc --noEmit --incremental false` 통과. Sites v2 저장과 배포 성공을 확인했다.
+- 실제 공개 HTTPS 화면 1927×932에서 헤더 색상·9px 패딩·버튼 입체감·42px 카드 띠와 양쪽 배너를 확인했다. 이미지 126개 정상, Figma 아이콘 41곳, 새로 수집된 콘솔 오류·경고 0개다.
+- 공개 페이지에 CSS·동작·저장소 오버라이드를 넣지 않았다. 외부 Typekit은 기존 제한에 따라 검수 탭에서 요청 전 제외했으며 캡처 후 임시 차단 설정을 해제했다. 외부 폰트 제공과 모바일 재검수는 이번 검증에 포함하지 않는다. 과거 실패한 터미널 무인증 요청은 반복하지 않았다.
+- 기존 큰 청크·vinext 경로 분류 경고는 유지된다. 현재 로컬 5418 개발 서버를 재시작하지 않았고 사용자 로컬 탭의 선택 상태도 유지했다.
+- 통합 GitHub 수집 기준: `backup/site-snapshots/20261012-mercury-white-public-v2/source-files.json`. 소스·자산·입력·운영 문서·적격 QA 및 배포 증거를 기존 저장소에 업데이트한다. 다른 사이트와 이전 스냅샷은 보존한다.
+- 공개 화면·빌드·타입·원격 검증 근거: `E:/codexwork/Site-Skin-edit-backups/20261012-mercury-white-deploy/`. 최종 GitHub 결과는 커밋·push 후 생성하는 `github-remote-verification.json`을 따른다. 배포 소스 SHA와 통합 GitHub SHA는 구분한다.
+
+---
+
 # MERCURY White — PUBLIC v1
 
 2026-10-08 17:25:23 KST에 사용자 승인 상태를 별도 공개 사이트로 배포했다. 링크가 있으면 누구나 볼 수 있도록 공개하라는 후속 지시를 반영했다.

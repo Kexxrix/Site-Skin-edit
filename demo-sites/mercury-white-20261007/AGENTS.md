@@ -1,11 +1,31 @@
 # MERCURY White — local implementation and public release
 
+## Latest user follow-up — restore component depth / 2026-10-12
+
+- Latest header refinement supersedes the bronze detail header below: league headers now use a near-white cream relief and 9px horizontal padding, copied from the read-only SIRIUS `sirius-visual-depth.css` league rule. The detail-match header uses the exact previous league gold gradient and dark text. Card-top gold, all other controls/assets, geometry and user-selected match remain unchanged. Evidence: `qa/header-refine-20261012/`.
+- Header-color follow-up: the user's three browser comments requested depth on league headers and color on the detail-match header and card top. The attached blue reference supplies the hierarchy; retain the current cream/gold/bronze palette. League headers and the existing 42px card metadata band use a light gold gradient; the detail header uses existing bronze/charcoal colors with cream text. Geometry, fonts, selected outlines, odds/buttons and both image-banner groups stay unchanged. Evidence: `qa/header-color-20261012/`; build and browser checks pass.
+- Banner regression follow-up: exclude `.mc-banner-stack` from the common card gradient using a zero-specificity `:where(:not(...))` exclusion. Its original CSS background image must remain visible; captions use the existing warm cream #f5e8c5 on that dark image. Do not treat an `<img>`-only check as coverage of CSS background assets. All six right-hand banners and all six left service backgrounds were visually rechecked; evidence: `qa/banner-fix-20261012/`.
+- The user requested restoring original MERCURY button/component depth while retaining the current white palette. This authorizes the scoped local CSS update and supersedes the older byte-preservation rule for this follow-up only. ALDEBARAN and SIRIUS are comparison references and remain untouched.
+- Local `site/app/mercury-white.css` restores gradients, highlights and shallow bevels; `site/theme/mercury-white-button-polish.json` records the treatment. Preserve the base palette, generated theme CSS, icons, images, geometry, typography and demo logic.
+- Build/typecheck pass. At 1920x940, 822 elements retain their geometry, text, text color, font, border color and pressed state; 126 images and 41 Figma icon render settings match the baseline. Selection, deselection, hover and keyboard focus checks pass. Evidence: `qa/depth-restore-20261012/`.
+- Old 5417/5418 processes were no longer running when checked. Current local preview is `http://127.0.0.1:5418/`, vinext dev PID8444. The editor was not started. Do not treat historical PIDs below as current.
+- PUBLIC v1 and `publish/site/` remain unchanged. No new commit, push or publication. User aesthetic approval is pending; see the newest `STATE.md` entry. External Typekit requests were excluded in the QA tab and were not retried.
+
 ## Current approved publication — 2026-10-08
 
 - The user requested publishing the current MERCURY White skin and updating GitHub, then explicitly selected public access for anyone with the link. This supersedes the older no-deployment instructions below.
 - PUBLIC v1: https://mercury-white.kexxadrix.chatgpt.site/ ; project `appgprj_6ac7523068808191aa0f1014883e0752`; deployment succeeded. Release checkout `publish/site/`, source commit `694efe89b8f230030c21f554d674ab71617a60bc`. See `RELEASE.ko.md`.
 - Preserve approved local `site/` bytes, its b425 HEAD/branch/no-remotes state, and 5418/PID41768 plus editor 5417/PID35992. Hosting-only changes belong to the separate release checkout. Integrated GitHub backup commit/push is authorized; do not alter other sites.
 - Latest public UI/HTTP/build evidence and final remote verification: `E:/codexwork/Site-Skin-edit-backups/20261008-mercury-white-deploy/`. Snapshot `backup/site-snapshots/20261008-mercury-white-public-v1/`. Earlier local-only records remain historical.
+
+
+## Current authorized publication — 2026-10-12
+
+- The user explicitly requested public deployment and a GitHub update after the latest local header refinement. This supersedes the historical local-only/no-publish records below.
+- PUBLIC v2 succeeded at the existing public URL https://mercury-white.kexxadrix.chatgpt.site/ ; source commit `70e61703c766e50bcab920f4a2886a399badbf2f` in `publish/site/`. Preserve the existing site identity and audience. See `RELEASE.ko.md`.
+- Keep all 345 frozen local source files, b425 HEAD/branch/no-remotes state and the existing local 5418 server/user selection unchanged. The release checkout received only the two current CSS/treatment-record files. Do not treat older PIDs as current.
+- Build and typecheck pass; actual public 1927x932 render confirms refined headers, button depth, both banner groups, 126 loaded images and 41 Figma icons, with no new captured console errors/warnings. External Typekit was excluded for QA, then the temporary request block was removed. Do not retry previously restricted requests.
+- Integrated GitHub update is authorized for MERCURY White and its navigation/evidence only. Snapshot `backup/site-snapshots/20261012-mercury-white-public-v2/`; external final proof `E:/codexwork/Site-Skin-edit-backups/20261012-mercury-white-deploy/`. Preserve other sites and previous snapshots.
 
 ## Latest user follow-up — selected sport icon colors / 2026-10-08
 

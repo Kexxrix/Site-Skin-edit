@@ -1,10 +1,10 @@
 # TITAN 신규 데모 제작 공간
 
-## MERCURY White 공개 — 2026-10-08
+## MERCURY White 공개 — 2026-10-12
 
-[MERCURY White PUBLIC v1](https://mercury-white.kexxadrix.chatgpt.site/)을 별도 화이트 스킨으로 공개했다. 배포 상태 `succeeded`, 링크가 있으면 누구나 볼 수 있는 접근 정책이다. [배포 기록](mercury-white-20261007/RELEASE.ko.md), [최신 STATE](mercury-white-20261007/STATE.md), 배포 사본 `mercury-white-20261007/publish/site/`, 배포 소스 `694efe89b8f230030c21f554d674ab71617a60bc`를 기준으로 한다.
+[MERCURY White PUBLIC v2](https://mercury-white.kexxadrix.chatgpt.site/)에 최신 입체감·헤더·배너 수정본을 배포했다. 배포 상태 `succeeded`, 기존 public 접근 정책 유지. [배포 기록](mercury-white-20261007/RELEASE.ko.md), [최신 STATE](mercury-white-20261007/STATE.md), 배포 사본 `mercury-white-20261007/publish/site/`, 배포 소스 `70e61703c766e50bcab920f4a2886a399badbf2f`를 기준으로 한다.
 
-로컬 원본 345개 파일과 5418/PID41768, 편집기 5417/PID35992 및 기존 MERCURY 공개 사이트는 유지한다. 빌드·타입 검사·공개 설정·실제 공개 브라우저 화면을 확인했다. 터미널 무인증 HTTP 검사는 403 응답으로 제한됐다. 최신 통합 GitHub 보관 명세는 `backup/site-snapshots/20261008-mercury-white-public-v1/`이다.
+로컬 원본 345개와 현재 5418 서버 및 다른 사이트는 유지했다. 빌드·타입 검사와 실제 공개 브라우저 1927×932 화면을 확인했고 이미지 126개 정상, Figma 아이콘 41곳, 새 콘솔 오류·경고 0개다. 외부 Typekit 제공·새 모바일 QA는 검증 범위에서 제외했다. 최신 통합 GitHub 보관 명세는 `backup/site-snapshots/20261012-mercury-white-public-v2/`이다.
 
 ## ALDEBARAN 두 번째 스킨 공개 — 2026-10-06
 

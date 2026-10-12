@@ -1,3 +1,27 @@
+# MERCURY White — PUBLIC v2 배포 / 2026-10-12
+
+- [공개 사이트](https://mercury-white.kexxadrix.chatgpt.site/)에 최신 로컬 수정본을 PUBLIC v2로 배포했다. 배포 `succeeded`, 기존 public 접근 유지, 완료 2026-10-12 12:29:18 KST.
+- 버튼 입체감, 크림 리그 헤더·9px 패딩, 골드 경기 제목·카드 상단, 오른쪽 배너 배경·설명을 반영했다. 별도 배포 사본 `publish/site/`의 소스 커밋은 `70e61703c766e50bcab920f4a2886a399badbf2f`다.
+- 배포 사본에서 CSS와 파생 기록 두 파일만 갱신했으며 로컬 원본 345개 파일·기본 HEAD·브랜치·remote 없음 상태는 유지했다. 로컬 5418 서버와 사용자 선택도 변경하지 않았다.
+- 빌드·타입 검사 통과. 실제 공개 1927×932 화면에서 최신 헤더·버튼·양쪽 배너, 정상 이미지 126개와 Figma 아이콘 41곳을 확인했다. 새 콘솔 오류·경고 0개다. 외부 Typekit 제공과 새 모바일 QA는 검증하지 않았으며 기존 빌드 경고는 남아 있다.
+- [배포 기록](RELEASE.ko.md), 통합 GitHub 수집 기준 `backup/site-snapshots/20261012-mercury-white-public-v2/`, 최종 증거 `E:/codexwork/Site-Skin-edit-backups/20261012-mercury-white-deploy/`를 따른다. 아래 로컬만 수정·미배포 표현과 PUBLIC v1은 당시 이력이다.
+
+---
+
+# MERCURY White — 입체감 복원 로컬 수정 / 2026-10-12
+
+- 최신 헤더 농도·패딩 조정: 리그 헤더의 골드 색을 거의 흰색인 크림 명암으로 낮추고, 시리우스 `sirius-visual-depth.css`에서 확인한 좌우 9px 패딩을 적용했다. 오른쪽 경기 제목에는 바로 전 리그 헤더의 골드 그라데이션을 그대로 옮기고 글자를 어둡게 바꿨다. 아래 브론즈 제목 기록은 이전 단계다. 카드 상단·배당·양쪽 배너는 그대로이며, 현재 선택한 바이에른 뮌헨 경기와 스크롤 상태도 유지했다. 빌드 통과, 1927×932 시각 검수 및 계산 스타일 비교에서 헤더 내부 좌우 이동 외 치수·폰트 변화가 없음을 확인했다. [현재 화면](qa/header-refine-20261012/after-1927.png), [패딩 참조](qa/header-refine-20261012/reference-padding.json). 로컬 수정만 수행했다.
+- 후속 헤더 색상: 브라우저 코멘트 3곳에 따라 리그 헤더와 경기 카드 상단 정보줄(기존 여백·높이 안의 42px)에 밝은 골드 그라데이션을, 오른쪽 경기 제목에 브론즈·차콜 그라데이션과 크림색 글자를 적용했다. 첨부 예시의 영역 구분을 현재 팔레트로 재현했다. 앱 변경은 CSS 한 파일이며 1927×932에서 772개 요소의 치수·텍스트·폰트 차이 0, 배당 566개·마켓 탭·양쪽 배너의 스타일 유지, 선택 카드 외곽선 유지, 리그 접기·펼치기를 확인했다. 빌드 통과, CSS만 변경하여 타입 검사는 직전 통과 결과를 재사용했다. [화면](qa/header-color-20261012/after-1927.png), [브라우저 검수](qa/header-color-20261012/browser-verification.json). 공개 배포·GitHub 변경 없음.
+- 후속 배너 수정: 공통 카드 `background-image`가 오른쪽 안내 배너 이미지를 덮은 회귀를 수정했다. `.mc-banner-stack`을 입체감 공통 규칙에서 제외하고, 어두운 배경의 설명 글자만 기존 크림색 `#f5e8c5`로 조정했다. 실제 1927×932 화면에서 오른쪽 6개 배너의 이미지·제목·설명을 확인했고 왼쪽 6개 이미지 배너, 선택 카드 외곽선, 일반 버튼 입체감도 유지된다. 앞선 이미지 126개 검사는 `<img>` 대상이므로 CSS 배경 누락을 잡지 못했다. [복원 화면](qa/banner-fix-20261012/fixed-banners-1927.png)과 [검증 기록](qa/banner-fix-20261012/browser-verification.json)을 추가했다.
+- 현재 크림·주황·차콜 배색을 유지하면서 원래 MERCURY의 버튼 명암을 복원했다. 일반 버튼·배당·선택 탭에는 그라데이션과 상하단 음영, 카드·마켓 제목에는 얕은 깊이, 입력 영역에는 안쪽 음영을 적용했다.
+- 앱 변경은 `site/app/mercury-white.css`와 파생 기록 `site/theme/mercury-white-button-polish.json` 두 파일이다. 검사한 app/public/theme 272개 중 나머지 270개 SHA-256은 동일하다. 기존 TSX 및 아이콘 폴더의 미커밋 변경은 이번 수정 전부터 존재했다.
+- `vinext build`, `tsc --noEmit --incremental false` 통과. 실제 로컬 화면 1920×940에서 16개 그룹·822개 요소의 위치·크기·텍스트·글자색·폰트·테두리색이 수정 전과 동일하고, 이미지 126개와 Figma 아이콘 41곳도 유지됐다. 종목·마켓·배당 선택/해제, 호버와 키보드 포커스를 확인했으며 콘솔 오류·경고와 이미지 오류는 0개다.
+- [로컬 미리보기](http://127.0.0.1:5418/)는 vinext dev PID8444로 실행 중이다. 점검 당시 이전 5417/5418 서버는 종료된 상태였고, 이번에 5418만 시작했다. 아래 PID들은 과거 이력이다. 빌드는 완료했으며 화면 검수는 현재 로컬 개발 서버로 수행했다.
+- [수정 화면](qa/depth-restore-20261012/after-1920.png), [선택 화면](qa/depth-restore-20261012/selected-1920.png), [브라우저 검증](qa/depth-restore-20261012/browser-verification.json), [파일 보존 검사](qa/depth-restore-20261012/final-source-verification.json).
+- 외부 Typekit은 기존 제한에 따라 검수에서 제외했다. 기존 고정 데스크톱 구성을 유지했고 모바일 재검수는 하지 않았다. 기존 빌드의 큰 청크·vinext 경로 분류 경고는 남아 있다. 사용자 미감 승인, GitHub 백업, 공개 배포는 이번 수정에 포함되지 않았다. PUBLIC v1·배포 사본·다른 사이트는 그대로다.
+
+---
+
 # MERCURY White — PUBLIC v1 배포 / 2026-10-08
 
 - 현재 공개 주소: https://mercury-white.kexxadrix.chatgpt.site/ . 링크가 있으면 누구나 볼 수 있는 PUBLIC v1이며 배포 상태는 `succeeded`다.

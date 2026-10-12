@@ -1,6 +1,6 @@
 {
   "kind": "mercury-white-button-readability-polish",
-  "version": 4,
+  "version": 5,
   "baseCommit": "f9e5847acccbe6bd2790abab9b448d15494ffe17",
   "basePaletteFile": "mercury-palette_98.json",
   "basePaletteSha256": "f8387c05ce6298592b1eca859f41dd1d4069a4a95ab9d7631fac9b4badc81ae5",
@@ -24,14 +24,14 @@
     "disabled controls"
   ],
   "treatment": {
-    "normal": "solid cream",
-    "selected": "original approved v6 sport colors and warm odds/market gradient restored by user feedback",
-    "chips": "Counts retain solid apricot, including selected sports; SPORTS/LIVE/LV.0/BET labels use approved warm charcoal",
-    "highlight": "one-pixel inset top line on unselected controls; original selected controls have no extra shadow",
-    "hover": "cream fill and darker border for unselected controls; original v6 for selected controls",
+    "normal": "Approved cream with the original MERCURY odds gradient stop positions, lit top and shaded lower bevel",
+    "selected": "Existing apricot/orange center color retained; white highlight and darker same-palette lower edge",
+    "chips": "Existing apricot and charcoal colors retained with small inset bevels",
+    "highlight": "Inset top light, lower bevel and shallow outside shadow; no geometry or motion changes",
+    "hover": "Existing hover cream/border with gradient retained",
     "focus": "two-pixel dark inset outline on unselected controls; original v6 colors on selected controls",
     "disabled": "opaque muted cream with readable dark text",
-    "service": "Only three primary quick actions reuse exact header-menu gradient; dark text/icons retained"
+    "service": "Existing header-menu gradient retained, with shallow lower relief"
   },
   "selectedRestore": {
     "approval": "User requested selected buttons keep the brighter pre-polish style on 2026-10-07; other gradient readability improvements remain.",
@@ -71,7 +71,12 @@
     "approval": "User approved the warm charcoal badge proposal with 웜~ 차콜 괜찮은데 적용해봐 on 2026-10-07.",
     "baseCommit": "b425507730a4f39dd393645ef4273653a7c13176",
     "selector": ".mc-shell .mc-badge",
-    "labels": ["SPORTS", "LIVE", "LV.0", "BET"],
+    "labels": [
+      "SPORTS",
+      "LIVE",
+      "LV.0",
+      "BET"
+    ],
     "background": "#36312b",
     "text": "#f5e8c5",
     "insetEdge": "#806c49",
@@ -95,5 +100,20 @@
       "service PNG filters",
       "original v6 JSON"
     ]
+  },
+  "depthRestore": {
+    "requestedOn": "2026-10-12",
+    "request": "Restore original MERCURY component depth while retaining the current white palette. ALDEBARAN and SIRIUS are references only.",
+    "source": "app/mercury-white.css",
+    "reference": "User-provided dark MERCURY and current white screenshots",
+    "normalGradientStops": "0deg: 17.308%, 50.481%, 100%, taken from original .mc-odd",
+    "preserved": [
+      "base palette JSON and generated CSS bytes",
+      "selected color roles and border hues",
+      "typography, spacing, dimensions and all icon/asset bytes",
+      "demo state and interaction logic",
+      "existing public release until a separate publication action"
+    ],
+    "visualApproval": "pending user review"
   }
 }

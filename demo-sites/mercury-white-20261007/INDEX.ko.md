@@ -1,8 +1,10 @@
-# MERCURY White — PUBLIC v1
+# MERCURY White — PUBLIC v2
 
-로컬 등록일: 2026-10-07. 공개 배포일: 2026-10-08. 사용자의 후속 배포 지시에 따라 현재 승인 상태를 **MERCURY White PUBLIC v1**으로 공개했다. [공개 화면](https://mercury-white.kexxadrix.chatgpt.site/)과 [배포 기록](RELEASE.ko.md)을 따른다.
+로컬 등록일: 2026-10-07. 최신 공개 배포일: 2026-10-12. 사용자의 후속 지시에 따라 현재 입체감·헤더·배너 수정본을 **MERCURY White PUBLIC v2**로 배포했다. [공개 화면](https://mercury-white.kexxadrix.chatgpt.site/)과 [배포 기록](RELEASE.ko.md)을 따른다.
 
-최신 상태: 2026-10-08 종목 선택 아이콘 색상과 앞선 메뉴 가독성·최신 인기 게임 아이콘 수정까지 배포했다. 로컬 5418/PID41768과 원본 미커밋 변경은 유지한다. 배포 사본 `publish/site/`의 소스 SHA는 `694efe89b8f230030c21f554d674ab71617a60bc`이며 통합 GitHub 수집 기준은 `backup/site-snapshots/20261008-mercury-white-public-v1/`이다. [최신 STATE](STATE.md)와 [RELEASE](RELEASE.ko.md)를 우선한다. 아래 최초 등록 검증은 당시 기록이다.
+최신 상태: 버튼·카드 입체감, 크림 리그 헤더와 좌우 9px 패딩, 골드 경기 제목·카드 상단, 오른쪽 배너 배경과 설명을 반영했다. 빌드·타입·실제 공개 브라우저 검수를 통과했다. [최신 STATE](STATE.md)를 따른다. 로컬 원본 파일과 [5418 미리보기](http://127.0.0.1:5418/)는 유지한다.
+
+공개 기준: 배포 사본 `publish/site/`의 소스 SHA `70e61703c766e50bcab920f4a2886a399badbf2f`, PUBLIC v2 `succeeded`. 통합 GitHub 수집 기준은 `backup/site-snapshots/20261012-mercury-white-public-v2/`이다. 원본 앱 HEAD는 후속 미커밋 변경을 포함한 기본 커밋이며, 배포 소스 SHA와 통합 GitHub SHA는 별개다. 아래 최초 등록 검증은 당시 기록이다.
 
 | 항목 | 현재 기준 |
 | --- | --- |
@@ -10,10 +12,10 @@
 | 로컬 화면 | http://127.0.0.1:5418/ |
 | 브라우저 제목 | MERCURY · 화이트 |
 | 앱 경로 | `E:/codexwork/Site-Skin-edit/demo-sites/mercury-white-20261007/site` |
-| 앱 소스 커밋 | `b425507730a4f39dd393645ef4273653a7c13176` |
+| 앱 기본 커밋 | `b425507730a4f39dd393645ef4273653a7c13176` + 후속 작업 파일 |
 | 앱 브랜치 | `mercury-white-20261007` |
-| 공개 상태 | PUBLIC v1 · https://mercury-white.kexxadrix.chatgpt.site/ |
-| 배포 사본 | `publish/site/` · `694efe89b8f230030c21f554d674ab71617a60bc` |
+| 공개 상태 | PUBLIC v2 · https://mercury-white.kexxadrix.chatgpt.site/ |
+| 배포 사본 | `publish/site/` · `70e61703c766e50bcab920f4a2886a399badbf2f` |
 | GitHub 보관 | 기존 `Kexxrix/Site-Skin-edit`, `demo-sites/mercury-white-20261007/` |
 
 ## 최초 등록한 화면 기준 — 2026-10-07 이력
