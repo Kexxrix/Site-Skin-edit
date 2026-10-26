@@ -7,6 +7,7 @@
 /* Figma 1303:11608. Shared lobby geometry adapted from the existing LUNA page. */
 html:has(.raised-page),body:has(.raised-page){height:100%;min-height:0;overflow:hidden;background:#141515}
 .raised-page,.raised-dialog{--raised-page:#141515;--raised-hero:#181919;--raised-surface:#242424;--raised-line:#383838;--raised-muted:#b7b7b7;--raised-text:#f5f4f4;--raised-gold:#e6c76d;--raised-selection:#353535;--raised-disabled:#797979;--raised-input:#191919;--raised-metal:linear-gradient(180deg,#faf7d2 0%,#ffda88 14.423%,#ffcc77 20.673%,#ffc76d 46.154%,#d08400 77.404%,#a45e00 96.635%);font-family:'Paperlogy',sans-serif;font-size:14px;line-height:1.4;color:var(--raised-text);background:var(--raised-page);font-weight:400}
+.raised-page[data-theme=white],.raised-dialog[data-theme=white]{--raised-page:#f5f5f2;--raised-hero:#fafaf8;--raised-surface:#fff;--raised-line:#deded7;--raised-muted:#73766e;--raised-text:#20231f;--raised-gold:#84641f;--raised-selection:#eaeae4;--raised-disabled:#92958e;--raised-input:#fff}
 .raised-page{width:100%;min-width:1100px;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
 .raised-page *{box-sizing:border-box}
 .raised-page button,.raised-dialog button{font-family:inherit;line-height:1.4}
@@ -24,6 +25,7 @@ html:has(.raised-page),body:has(.raised-page){height:100%;min-height:0;overflow:
 .raised-brand::after{content:'';position:absolute;left:232px;top:28px;height:32px;width:1px;background:var(--raised-line)}
 .raised-brand>a{display:block;width:184px;height:37.375px}
 .raised-brand>a>img{display:block;width:100%;height:100%;object-fit:contain}
+.raised-white-logo{display:block;width:100%;height:100%;background:var(--raised-gold);mask-mode:alpha;mask-repeat:no-repeat;mask-size:100% 100%}
 .raised-menu-toggle{display:none}
 .raised-notice{position:relative;flex:1;min-width:0;height:28px;padding:0 14px;display:flex;align-items:center;gap:8px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#00000094,#0000004d 48%,#ffffff0d);box-shadow:inset 0 -1px 1px #ffffff26,inset 0 3px 5px #000c}
 .raised-notice>img{flex:none}
@@ -121,7 +123,8 @@ html:has(.raised-page),body:has(.raised-page){height:100%;min-height:0;overflow:
 @media(hover:hover){.raised-page :is(.raised-menu-item,.raised-account,.raised-provider,.raised-odds,.raised-arrow):hover{outline:1px solid var(--raised-gold);outline-offset:-1px}.raised-page :is(.raised-view-all,.raised-quick-links button):hover{color:var(--raised-gold)}}
 @media(prefers-reduced-motion:reduce){.raised-notice-message{animation:none}}
 /* Layered benefit cards retain the original photo crop and exported alpha masks. */
-.raised-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.raised-hero{display:flex;gap:12px}
+.raised-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;flex:1;min-width:0}
 .raised-benefit{position:relative;container-type:inline-size;aspect-ratio:522.666687/256;overflow:hidden;border:0;border-radius:6px;padding:0;background:#141515;text-align:left;isolation:isolate}
 .benefit-photo,.benefit-readability,.benefit-portrait,.benefit-lower-shade{position:absolute;inset:0;pointer-events:none}
 .benefit-photo>img,.benefit-portrait>img{position:absolute;left:0;top:-.1%;width:100%;height:114.9%;max-width:none}
@@ -141,6 +144,36 @@ html:has(.raised-page),body:has(.raised-page){height:100%;min-height:0;overflow:
 .raised-artwork>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none}
 .raised-gateway{border-color:transparent}
 .raised-gateway::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;border:1px solid transparent;background:var(--raised-metal) border-box;mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);mask-composite:exclude}
+/* WhiteGold surface tokens follow Figma 693:3503; artwork remains unchanged. */
+[data-theme=white] .raised-header{background:linear-gradient(90deg,#e8e2d8,#f4f2ec)}
+[data-theme=white] .raised-header-art{opacity:.16}
+[data-theme=white] .raised-header-fade{background:linear-gradient(180deg,#f5f4ef1a 0%,#f5f4ef1a 50%,#f5f4efd1 100%)}
+[data-theme=white] .raised-notice{background:linear-gradient(180deg,#4a423338,#4a423314 48%,#fff3);box-shadow:inset 0 -1px 1px #ffffffc7,inset 0 2px 4px #29211440}
+[data-theme=white] .raised-account:not(.is-primary){background:none}
+[data-theme=white] .raised-sidebar{box-shadow:0 5px 14px #1a140814}
+[data-theme=white] .raised-menu-item.is-selected{border-left-color:#b49345}
+[data-theme=white] .raised-match{background:linear-gradient(180deg,#fff 0%,#fbfbf8 20%,#f1f0ea 40%,#e7e6df 55%,#fcfcfa 100%);box-shadow:0 2px 5px #0000001a,inset 0 1px 1px #fffc}
+[data-theme=white] .raised-odds{background:linear-gradient(180deg,#fff,#f1f0ea 38%,#dfded6);box-shadow:0 1px 2px #0000001f,inset 0 -1px #00000017,inset 0 1px #ffffffd9}
+[data-theme=white] .raised-odds[aria-pressed=true]{background:#f3dfad;border-color:#a67c29}
+[data-theme=white] .raised-provider-info .raised-gold-text{background:none;color:var(--raised-gold)}
+[data-theme=white] .raised-partners{background:#20231f;border-radius:6px}
+/* Figma 693:4779: three 3:1 companion banners and the existing native film. */
+.has-film .raised-hero{height:547px}
+.has-film .raised-benefits{display:flex;flex-direction:column;flex:0 0 calc((100% - 24px)/3)}
+.has-film .raised-benefit{aspect-ratio:auto;flex:1;min-height:0}
+.has-film .benefit-photo,.has-film .benefit-portrait{bottom:auto;height:48.97959cqw}
+.has-film .benefit-display{top:-28px;opacity:.8}
+.has-film .benefit-title{left:18px;top:auto;bottom:16px;font-size:clamp(18px,4.97449cqw,26px);line-height:1.3}
+.has-film .benefit-entry{left:auto;right:18px;top:auto;bottom:14px;width:clamp(150px,32.52551%,170px);height:32px;gap:8px;padding:0 10px 0 12px;font-size:13px;line-height:20px}
+.has-film .benefit-entry>img{width:20px;height:20px}
+.raised-film{flex:1;min-width:0;overflow:hidden;border-radius:6px;background:#181919}
+.raised-film video{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:1299px){
+  .has-film .raised-hero{height:auto;flex-direction:column}
+  .has-film .raised-benefits{flex:auto}
+  .has-film .raised-benefit{flex:none;aspect-ratio:3}
+  .has-film .raised-film{flex:auto;aspect-ratio:1057/547}
+}
 @media(max-width:1500px){
   .benefit-entry{left:auto;right:3.44388%;top:auto;bottom:7.03125%;width:max(32.52551%,130px);height:max(14.0625%,28px);font-size:clamp(11px,2.67857cqw,14px);line-height:20px;gap:clamp(6px,1.53061cqw,8px);padding-left:clamp(8px,2.29592cqw,12px);padding-right:clamp(6px,1.91327cqw,10px)}
   .benefit-entry>img{width:clamp(14px,3.82653cqw,20px);height:clamp(14px,3.82653cqw,20px)}

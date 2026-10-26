@@ -8,6 +8,13 @@ import { casinoProviders, matches, menuGroups, slotProviders, type Provider } fr
 import figmaAssets from './figma-assets.json';
 const imageSizes: Record<string, { width: number; height: number }> = figmaAssets.sizes;
 
+const views = [
+  { id: 'black', label: '블랙 골드' },
+  { id: 'white', label: '화이트 골드' },
+  { id: 'black-video', label: '블랙 골드 · 영상' },
+  { id: 'white-video', label: '화이트 골드 · 영상' },
+] as const;
+
 function GoldImage({ src, alt = '', className }: { src: string; alt?: string; className?: string }) {
   const size = (figmaAssets.sizes as Record<string, { width: number; height: number }>)[src];
   return <Image unoptimized loading="eager" src={src} {...size} alt={alt} className={className} />;
@@ -50,11 +57,25 @@ function ProviderSection({ id, title, providers, openNotice, arrows }: { id: str
 }
 
 
-export function RaisedHome() {
+export function RaisedHome({ initialView = 'black' }: { initialView?: string }) {
+  const [viewIndex, setViewIndex] = useState(() => Math.max(0, views.findIndex(view => view.id === initialView)));
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState('입금신청');
   const [notice, setNotice] = useState<Notice | null>(null);
   const assets = figmaAssets.images;
+  const view = views[viewIndex];
+  const white = viewIndex % 2 === 1;
+  const film = viewIndex >= 2;
+  const theme = white ? 'white' : 'black';
+  const headerIcon = (icon: 'Megaphone' | 'CalendarCheck' | 'ReceiptText' | 'Telegram') => assets[`${white ? 'imgWhiteHeaderIcon' : 'imgP19AssetsHeaderIcon'}${icon}` as keyof typeof assets];
+  const changeView = (index: number) => {
+    setViewIndex(index);
+    setMenuOpen(false);
+    const url = new URL(window.location.href);
+    url.searchParams.set('view', views[index].id);
+    window.history.replaceState(null, '', url);
+    document.querySelector('.raised-main')?.scrollTo({ top: 0 });
+  };
   const serviceNotice = (title: string) => setNotice({ title, description: '현재 디자인 미리보기에서는 이 서비스를 이용할 수 없습니다.' });
   const navigateMenu = (label: string) => {
     setActiveMenu(label);
@@ -81,18 +102,18 @@ export function RaisedHome() {
     'Netent', 'Microgaming', 'Habanero', 'PgSoft', 'Bng', 'BlueprintGaming', 'Cq9', 'ElkStudios',
   ];
   const partnerBreaks = [0, 8, 15, 23];
-  return <div className={`raised-page${menuOpen ? ' is-menu-open' : ''}`} data-theme="black" data-figma-node="1303:11608">
+  return <div className={`raised-page${film ? ' has-film' : ''}${menuOpen ? ' is-menu-open' : ''}`} data-theme={theme} data-view={view.id} data-figma-node="1303:11608">
     <header className="raised-header">
       <div className="raised-header-art" aria-hidden="true"><GoldImage src={assets.imgGeneratedGoldFlow03ImageOverlay} /></div>
       <div className="raised-header-fade" aria-hidden="true" />
-      <div className="raised-brand"><Link href="/" aria-label="ALDEBARAN 홈"><GoldImage src={assets.imgLogo} alt="ALDEBARAN" /></Link></div>
+      <div className="raised-brand"><Link href={`/?view=${view.id}`} aria-label="ALDEBARAN 홈">{white ? <span className="raised-white-logo" style={{ maskImage: `url("${assets.imgWhiteLogo}")` }} aria-hidden="true" /> : <GoldImage src={assets.imgLogo} alt="ALDEBARAN" />}</Link></div>
       <button className="raised-menu-toggle" type="button" aria-label={menuOpen ? '메뉴 닫기' : '메뉴 열기'} aria-expanded={menuOpen} aria-controls="raised-sidebar" onClick={() => setMenuOpen(value => !value)}><span /><span /><span /></button>
       <div className="raised-notice">
-        <GoldImage src={assets.imgP19AssetsHeaderIconMegaphone} /><span className="raised-notice-label">공지</span><span className="raised-notice-separator" />
+        <GoldImage src={headerIcon('Megaphone')} /><span className="raised-notice-label">공지</span><span className="raised-notice-separator" />
         <div className="raised-notice-viewport"><p className="raised-notice-message">서비스 점검 및 이벤트 안내는 공지사항에서 확인해 주세요.</p></div>
       </div>
       <nav className="raised-quick-links" aria-label="회원 바로가기">
-        {[['출석체크', 'CalendarCheck'], ['배팅내역', 'ReceiptText'], ['고객지원 · 텔레그램', 'Telegram']].map(([label, icon]) => <button type="button" key={label} onClick={() => serviceNotice(label)}><GoldImage src={assets[`imgP19AssetsHeaderIcon${icon}` as keyof typeof assets]} />{label}</button>)}
+        {([['출석체크', 'CalendarCheck'], ['배팅내역', 'ReceiptText'], ['고객지원 · 텔레그램', 'Telegram']] as const).map(([label, icon]) => <button type="button" key={label} onClick={() => serviceNotice(label)}><GoldImage src={headerIcon(icon)} />{label}</button>)}
       </nav>
       <div className="raised-member-access">
         <button className="raised-account" type="button" onClick={() => serviceNotice('로그인')}>로그인</button>
@@ -104,16 +125,17 @@ export function RaisedHome() {
       <div className="raised-sidebar-rail">
         <aside className="raised-sidebar" id="raised-sidebar" aria-label="주요 메뉴">
           <div className="raised-menu-scroll">
-            {menuGroups.map(group => <nav className="raised-menu-group" key={group.title} aria-label={group.title}><h2>{group.title}</h2><div className="raised-menu-items">{group.items.map(([label]) => <button className={`raised-menu-item${activeMenu === label ? ' is-selected' : ''}`} type="button" key={label} aria-pressed={activeMenu === label} onClick={() => navigateMenu(label)}><GoldImage className="raised-menu-icon" src={iconFor(label)} /><span>{label}</span><GoldImage className="raised-menu-grip" src={assets.imgGrip} /></button>)}</div></nav>)}
+            {menuGroups.map(group => <nav className="raised-menu-group" key={group.title} aria-label={group.title}><h2>{group.title}</h2><div className="raised-menu-items">{group.items.map(([label]) => <button className={`raised-menu-item${activeMenu === label ? ' is-selected' : ''}`} type="button" key={label} aria-pressed={activeMenu === label} onClick={() => navigateMenu(label)}><GoldImage className="raised-menu-icon" src={iconFor(label)} /><span>{label}</span><GoldImage className="raised-menu-grip" src={white ? assets.imgWhiteGrip : assets.imgGrip} /></button>)}</div></nav>)}
           </div>
-          <div className="raised-view-switcher" aria-label="디자인 색상">
-            {['black', 'white', 'black-video', 'white-video'].map((name, index) => <button key={name} className={`raised-view-swatch swatch-${name}`} type="button" aria-label={['블랙 골드 화면', '화이트 디자인 안내', '블랙 그라데이션 디자인 안내', '화이트 그라데이션 디자인 안내'][index]} onClick={() => index === 0 ? document.querySelector('.raised-main')?.scrollTo({ top: 0 }) : setNotice({ title: '디자인 색상', description: '이 페이지는 지정된 BlackGold · Paperlogy 화면의 미리보기입니다.' })} />)}
-          </div>
+          <fieldset className="raised-view-switcher" aria-label="화면 상태 변경">
+            {views.map((option, index) => <button key={option.id} className={`raised-view-swatch swatch-${option.id}`} type="button" aria-label={option.label} title={option.label} aria-pressed={viewIndex === index} onClick={() => changeView(index)} />)}
+          </fieldset>
           <p className="raised-credit">TITAN SOLUSION</p>
         </aside>
       </div>
-      <main className="raised-main" aria-label="BlackGold · Paperlogy 로비">
-        <section className="raised-benefits" aria-label="회원 혜택">
+      <main className="raised-main" aria-label={`${view.label} · Paperlogy 로비`}>
+        <section className="raised-hero" aria-label="회원 혜택">
+          <div className="raised-benefits">
           {benefits.map(benefit => <button className={`raised-benefit ${benefit.className}`} data-figma-node={benefit.node} key={benefit.title} type="button" aria-label={`${benefit.title} · ${benefit.action}`} onClick={() => serviceNotice(benefit.title)}>
             <span className="benefit-photo"><GoldImage src={benefit.photo} /></span>
             <span className="benefit-readability" />
@@ -123,6 +145,8 @@ export function RaisedHome() {
             <span className="benefit-title">{benefit.title}</span>
             <span className="benefit-entry"><span>{benefit.action}</span><GoldImage src={assets.imgToneInk} /></span>
           </button>)}
+          </div>
+          {film && <div className="raised-film"><video autoPlay muted loop playsInline controls preload="metadata" aria-label="카지노 소개 영상" src="/media/goldflow-hero-web.mp4" /></div>}
         </section>
         <section className="raised-section raised-gateways" aria-labelledby="raised-gateways-title">
           <h2 id="raised-gateways-title">콘텐츠 바로가기</h2>
@@ -138,6 +162,6 @@ export function RaisedHome() {
         <footer className="raised-partners" aria-label="게임 파트너">{partnerBreaks.slice(0, -1).map((start, row) => <div className="raised-partner-row" key={row}>{partnerNames.slice(start, partnerBreaks[row + 1]).map(name => <div className="raised-partner-logo" key={name}><GoldImage src={assets[`imgLogo${name}` as keyof typeof assets]} alt={name.replace(/([a-z])([A-Z])/g, '$1 $2')} /></div>)}</div>)}</footer>
       </main>
     </div>
-    <Dialog open={notice !== null} onOpenChange={open => { if (!open) setNotice(null); }}><DialogContent className="raised-dialog" showCloseButton={false}><DialogTitle>{notice?.title}</DialogTitle>{notice?.provider && <ProviderCard provider={notice.provider} />}<DialogDescription>{notice?.description}</DialogDescription><DialogClose className="raised-dialog-close">닫기</DialogClose></DialogContent></Dialog>
+    <Dialog open={notice !== null} onOpenChange={open => { if (!open) setNotice(null); }}><DialogContent className="raised-dialog" data-theme={theme} showCloseButton={false}><DialogTitle>{notice?.title}</DialogTitle>{notice?.provider && <ProviderCard provider={notice.provider} />}<DialogDescription>{notice?.description}</DialogDescription><DialogClose className="raised-dialog-close">닫기</DialogClose></DialogContent></Dialog>
   </div>;
 }

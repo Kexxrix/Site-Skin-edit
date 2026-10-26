@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'ALDEBARAN · BlackGold · Paperlogy',
+  title: 'ALDEBARAN · GoldFlow · Paperlogy',
   description: 'Figma 1303:11608 로컬 디자인 미리보기',
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
