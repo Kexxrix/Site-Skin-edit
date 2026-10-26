@@ -1,0 +1,1061 @@
+{
+  "preservation": [
+    {
+      "id": "351:610",
+      "before": "1e9bb755",
+      "after": "1e9bb755",
+      "same": true,
+      "count": 76
+    },
+    {
+      "id": "351:687",
+      "before": "10895465",
+      "after": "10895465",
+      "same": true,
+      "count": 76
+    },
+    {
+      "id": "351:764",
+      "before": "cf6386e0",
+      "after": "cf6386e0",
+      "same": true,
+      "count": 74
+    },
+    {
+      "id": "351:838",
+      "before": "1d4fda15",
+      "after": "1d4fda15",
+      "same": true,
+      "count": 74
+    },
+    {
+      "id": "351:912",
+      "before": "4056190",
+      "after": "4056190",
+      "same": true,
+      "count": 78
+    },
+    {
+      "id": "351:990",
+      "before": "3b4169d9",
+      "after": "3b4169d9",
+      "same": true,
+      "count": 78
+    },
+    {
+      "id": "351:1068",
+      "before": "68df3f8b",
+      "after": "68df3f8b",
+      "same": true,
+      "count": 74
+    },
+    {
+      "id": "351:1143",
+      "before": "b41d4331",
+      "after": "b41d4331",
+      "same": true,
+      "count": 74
+    },
+    {
+      "id": "351:1218",
+      "before": "54f760d9",
+      "after": "54f760d9",
+      "same": true,
+      "count": 67
+    },
+    {
+      "id": "351:1285",
+      "before": "5ceb00f4",
+      "after": "5ceb00f4",
+      "same": true,
+      "count": 67
+    },
+    {
+      "id": "380:42599",
+      "before": "49c710b",
+      "after": "49c710b",
+      "same": true,
+      "count": 73
+    },
+    {
+      "id": "380:42686",
+      "before": "410f1069",
+      "after": "410f1069",
+      "same": true,
+      "count": 73
+    },
+    {
+      "id": "355:1790",
+      "before": "734cdaf1",
+      "after": "734cdaf1",
+      "same": true,
+      "count": 507
+    },
+    {
+      "id": "355:2891",
+      "before": "652f9465",
+      "after": "652f9465",
+      "same": true,
+      "count": 481
+    }
+  ],
+  "styleGroups": {
+    "Style": {
+      "values": [
+        "Showcase",
+        "Islands",
+        "HUD",
+        "Index",
+        "Spine",
+        "IconPanel",
+        "Library"
+      ]
+    },
+    "Theme": {
+      "values": [
+        "WhiteGold",
+        "BlackGold"
+      ]
+    }
+  },
+  "variants": 14,
+  "nav": [
+    {
+      "id": "396:43937",
+      "name": "Theme=WhiteGold, State=Default",
+      "properties": [
+        {
+          "name": "Label#396:3",
+          "type": "TEXT"
+        },
+        {
+          "name": "Icon#396:4",
+          "type": "INSTANCE_SWAP",
+          "preferred": 14
+        },
+        {
+          "name": "Show grip#396:5",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "Theme",
+          "type": "VARIANT"
+        },
+        {
+          "name": "State",
+          "type": "VARIANT"
+        }
+      ],
+      "w": 176,
+      "h": 36
+    },
+    {
+      "id": "396:43948",
+      "name": "Theme=WhiteGold, State=Hover",
+      "properties": [
+        {
+          "name": "Label#396:3",
+          "type": "TEXT"
+        },
+        {
+          "name": "Icon#396:4",
+          "type": "INSTANCE_SWAP",
+          "preferred": 14
+        },
+        {
+          "name": "Show grip#396:5",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "Theme",
+          "type": "VARIANT"
+        },
+        {
+          "name": "State",
+          "type": "VARIANT"
+        }
+      ],
+      "w": 176,
+      "h": 36
+    },
+    {
+      "id": "396:43959",
+      "name": "Theme=WhiteGold, State=Selected",
+      "properties": [
+        {
+          "name": "Label#396:3",
+          "type": "TEXT"
+        },
+        {
+          "name": "Icon#396:4",
+          "type": "INSTANCE_SWAP",
+          "preferred": 14
+        },
+        {
+          "name": "Show grip#396:5",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "Theme",
+          "type": "VARIANT"
+        },
+        {
+          "name": "State",
+          "type": "VARIANT"
+        }
+      ],
+      "w": 176,
+      "h": 36
+    },
+    {
+      "id": "396:43971",
+      "name": "Theme=BlackGold, State=Default",
+      "properties": [
+        {
+          "name": "Label#396:3",
+          "type": "TEXT"
+        },
+        {
+          "name": "Icon#396:4",
+          "type": "INSTANCE_SWAP",
+          "preferred": 14
+        },
+        {
+          "name": "Show grip#396:5",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "Theme",
+          "type": "VARIANT"
+        },
+        {
+          "name": "State",
+          "type": "VARIANT"
+        }
+      ],
+      "w": 176,
+      "h": 36
+    },
+    {
+      "id": "396:43982",
+      "name": "Theme=BlackGold, State=Hover",
+      "properties": [
+        {
+          "name": "Label#396:3",
+          "type": "TEXT"
+        },
+        {
+          "name": "Icon#396:4",
+          "type": "INSTANCE_SWAP",
+          "preferred": 14
+        },
+        {
+          "name": "Show grip#396:5",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "Theme",
+          "type": "VARIANT"
+        },
+        {
+          "name": "State",
+          "type": "VARIANT"
+        }
+      ],
+      "w": 176,
+      "h": 36
+    },
+    {
+      "id": "396:43993",
+      "name": "Theme=BlackGold, State=Selected",
+      "properties": [
+        {
+          "name": "Label#396:3",
+          "type": "TEXT"
+        },
+        {
+          "name": "Icon#396:4",
+          "type": "INSTANCE_SWAP",
+          "preferred": 14
+        },
+        {
+          "name": "Show grip#396:5",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "Theme",
+          "type": "VARIANT"
+        },
+        {
+          "name": "State",
+          "type": "VARIANT"
+        }
+      ],
+      "w": 176,
+      "h": 36
+    }
+  ],
+  "sourceSides": [
+    {
+      "id": "396:44019",
+      "w": 232,
+      "h": 1120,
+      "mode": {
+        "VariableCollectionId:347:554": "347:0"
+      },
+      "rail": 40,
+      "rows": [
+        {
+          "id": "396:44046",
+          "label": "입금신청",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "400038689cf62907610fa0ed9d08281515724f31",
+          "state": "Selected"
+        },
+        {
+          "id": "396:44059",
+          "label": "출금신청",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "57c0739f3481a84f7d077492940b09a8bccb77c3",
+          "state": "Default"
+        },
+        {
+          "id": "396:44071",
+          "label": "마이페이지",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "6390eb66ef29033d9096d09775a0a178868f9f4a",
+          "state": "Default"
+        },
+        {
+          "id": "396:44083",
+          "label": "문의하기",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "c8d9209c1b537030f26bea3df30ec463f8b8676c",
+          "state": "Default"
+        },
+        {
+          "id": "396:44095",
+          "label": "쪽지",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "7cfb023f56058439eab09cf42fc09e039230bfa9",
+          "state": "Default"
+        },
+        {
+          "id": "396:44111",
+          "label": "국내형",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "93404c95768daed2b48ec523e579f70241ccf84f",
+          "state": "Default"
+        },
+        {
+          "id": "396:44123",
+          "label": "해외형",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "04f2ac8d62894f09f4c92fba91ff3953fda3fe15",
+          "state": "Default"
+        },
+        {
+          "id": "396:44135",
+          "label": "E스포츠",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "0387a6889f1a88f5fba0cc1b3fc96c10efc06b54",
+          "state": "Default"
+        },
+        {
+          "id": "396:44147",
+          "label": "라이브",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "511a9f82f3392a06c884fa19be8ddc31d4216100",
+          "state": "Default"
+        },
+        {
+          "id": "396:44163",
+          "label": "라이브카지노",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "3a83abee56000f7ae1407798e352796f190ea42c",
+          "state": "Default"
+        },
+        {
+          "id": "396:44175",
+          "label": "슬롯",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "04252ee2370c4301852058d89e2d0da1e8437860",
+          "state": "Default"
+        },
+        {
+          "id": "396:44191",
+          "label": "공지사항",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "6bac39fef0ea2ac3829c372139b06ac317a24c4b",
+          "state": "Default"
+        },
+        {
+          "id": "396:44203",
+          "label": "이벤트",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "98714ae08c678546c2d86bddc2bebf0031f149ea",
+          "state": "Default"
+        },
+        {
+          "id": "396:44215",
+          "label": "베팅규정",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "76790f0f42ebf652e257ce46abea27969d3b90c2",
+          "state": "Default"
+        }
+      ],
+      "fontIcons": 0
+    },
+    {
+      "id": "396:44231",
+      "w": 232,
+      "h": 1120,
+      "mode": {
+        "VariableCollectionId:347:554": "347:1"
+      },
+      "rail": 40,
+      "rows": [
+        {
+          "id": "396:44258",
+          "label": "입금신청",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "400038689cf62907610fa0ed9d08281515724f31",
+          "state": "Selected"
+        },
+        {
+          "id": "396:44271",
+          "label": "출금신청",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "57c0739f3481a84f7d077492940b09a8bccb77c3",
+          "state": "Default"
+        },
+        {
+          "id": "396:44283",
+          "label": "마이페이지",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "6390eb66ef29033d9096d09775a0a178868f9f4a",
+          "state": "Default"
+        },
+        {
+          "id": "396:44295",
+          "label": "문의하기",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "c8d9209c1b537030f26bea3df30ec463f8b8676c",
+          "state": "Default"
+        },
+        {
+          "id": "396:44307",
+          "label": "쪽지",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "7cfb023f56058439eab09cf42fc09e039230bfa9",
+          "state": "Default"
+        },
+        {
+          "id": "396:44323",
+          "label": "국내형",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "93404c95768daed2b48ec523e579f70241ccf84f",
+          "state": "Default"
+        },
+        {
+          "id": "396:44335",
+          "label": "해외형",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "04f2ac8d62894f09f4c92fba91ff3953fda3fe15",
+          "state": "Default"
+        },
+        {
+          "id": "396:44347",
+          "label": "E스포츠",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "0387a6889f1a88f5fba0cc1b3fc96c10efc06b54",
+          "state": "Default"
+        },
+        {
+          "id": "396:44359",
+          "label": "라이브",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "511a9f82f3392a06c884fa19be8ddc31d4216100",
+          "state": "Default"
+        },
+        {
+          "id": "396:44375",
+          "label": "라이브카지노",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "3a83abee56000f7ae1407798e352796f190ea42c",
+          "state": "Default"
+        },
+        {
+          "id": "396:44387",
+          "label": "슬롯",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "04252ee2370c4301852058d89e2d0da1e8437860",
+          "state": "Default"
+        },
+        {
+          "id": "396:44403",
+          "label": "공지사항",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "6bac39fef0ea2ac3829c372139b06ac317a24c4b",
+          "state": "Default"
+        },
+        {
+          "id": "396:44415",
+          "label": "이벤트",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "98714ae08c678546c2d86bddc2bebf0031f149ea",
+          "state": "Default"
+        },
+        {
+          "id": "396:44427",
+          "label": "베팅규정",
+          "fontSize": 13,
+          "w": 176,
+          "h": 36,
+          "iconW": 28,
+          "iconH": 28,
+          "imageHash": "76790f0f42ebf652e257ce46abea27969d3b90c2",
+          "state": "Default"
+        }
+      ],
+      "fontIcons": 0
+    }
+  ],
+  "badgeList": [
+    {
+      "name": "deposit",
+      "id": "396:2399",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "withdraw",
+      "id": "396:2401",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "profile",
+      "id": "396:2403",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "support",
+      "id": "396:2405",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "mail",
+      "id": "396:2407",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "domestic",
+      "id": "396:2409",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "international",
+      "id": "396:2411",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "esports",
+      "id": "396:2413",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "live",
+      "id": "396:2415",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "casino",
+      "id": "396:2417",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "slots",
+      "id": "396:2419",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "notice",
+      "id": "396:2421",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "event",
+      "id": "396:2423",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
+      "name": "rules",
+      "id": "396:2425",
+      "children": 1,
+      "imageOnly": true,
+      "size": [
+        28,
+        28
+      ],
+      "nativeSize": {
+        "width": 1254,
+        "height": 1254
+      }
+    }
+  ],
+  "comparisonRows": [
+    {
+      "id": "352:1061",
+      "w": 1996,
+      "children": [
+        {
+          "id": "352:1062",
+          "x": 0,
+          "w": 232
+        },
+        {
+          "id": "352:1142",
+          "x": 294,
+          "w": 232
+        },
+        {
+          "id": "352:1219",
+          "x": 588,
+          "w": 232
+        },
+        {
+          "id": "352:1300",
+          "x": 882,
+          "w": 232
+        },
+        {
+          "id": "352:1378",
+          "x": 1176,
+          "w": 232
+        },
+        {
+          "id": "381:7845",
+          "x": 1470,
+          "w": 232
+        },
+        {
+          "id": "397:9201",
+          "x": 1764,
+          "w": 232
+        }
+      ]
+    },
+    {
+      "id": "352:1450",
+      "w": 1996,
+      "children": [
+        {
+          "id": "352:1451",
+          "x": 0,
+          "w": 232
+        },
+        {
+          "id": "352:1531",
+          "x": 294,
+          "w": 232
+        },
+        {
+          "id": "352:1608",
+          "x": 588,
+          "w": 232
+        },
+        {
+          "id": "352:1689",
+          "x": 882,
+          "w": 232
+        },
+        {
+          "id": "352:1767",
+          "x": 1176,
+          "w": 232
+        },
+        {
+          "id": "381:9130",
+          "x": 1470,
+          "w": 232
+        },
+        {
+          "id": "397:10861",
+          "x": 1764,
+          "w": 232
+        }
+      ]
+    },
+    {
+      "id": "356:555",
+      "w": 13824,
+      "children": [
+        {
+          "id": "356:556",
+          "x": 0,
+          "w": 1920
+        },
+        {
+          "id": "356:2049",
+          "x": 1984,
+          "w": 1920
+        },
+        {
+          "id": "356:2679",
+          "x": 3968,
+          "w": 1920
+        },
+        {
+          "id": "356:3304",
+          "x": 5952,
+          "w": 1920
+        },
+        {
+          "id": "356:3985",
+          "x": 7936,
+          "w": 1920
+        },
+        {
+          "id": "381:8032",
+          "x": 9920,
+          "w": 1920
+        },
+        {
+          "id": "397:9636",
+          "x": 11904,
+          "w": 1920
+        }
+      ]
+    },
+    {
+      "id": "356:4593",
+      "w": 13824,
+      "children": [
+        {
+          "id": "356:4594",
+          "x": 0,
+          "w": 1920
+        },
+        {
+          "id": "356:5626",
+          "x": 1984,
+          "w": 1920
+        },
+        {
+          "id": "356:6230",
+          "x": 3968,
+          "w": 1920
+        },
+        {
+          "id": "356:6829",
+          "x": 5952,
+          "w": 1920
+        },
+        {
+          "id": "356:7484",
+          "x": 7936,
+          "w": 1920
+        },
+        {
+          "id": "381:9317",
+          "x": 9920,
+          "w": 1920
+        },
+        {
+          "id": "397:11296",
+          "x": 11904,
+          "w": 1920
+        }
+      ]
+    }
+  ],
+  "full": [
+    {
+      "id": "397:10161",
+      "w": 1920,
+      "h": 1899.199951171875,
+      "properties": {
+        "Header style#317:1": {
+          "type": "INSTANCE_SWAP",
+          "value": "315:1193",
+          "preferredValues": []
+        },
+        "Sidebar style#317:0": {
+          "type": "INSTANCE_SWAP",
+          "value": "396:44019",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "e6568f2d50d3578d29ffa2a8a6c428565cf9c389"
+            }
+          ]
+        }
+      },
+      "sidebar": {
+        "id": "I397:10161;355:1793",
+        "w": 232,
+        "h": 1691.800048828125,
+        "main": "396:44019",
+        "rows": 14
+      }
+    },
+    {
+      "id": "397:11787",
+      "w": 1920,
+      "h": 1899.199951171875,
+      "properties": {
+        "Header style#218:0": {
+          "type": "INSTANCE_SWAP",
+          "value": "215:552",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "e22a0ed748a1b1fc5a50069af5834f7144c59706"
+            }
+          ]
+        },
+        "Sidebar style#218:1": {
+          "type": "INSTANCE_SWAP",
+          "value": "396:44231",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "e6568f2d50d3578d29ffa2a8a6c428565cf9c389"
+            }
+          ]
+        }
+      },
+      "sidebar": {
+        "id": "I397:11787;355:2894",
+        "w": 232,
+        "h": 1691.800048828125,
+        "main": "396:44231",
+        "rows": 14
+      }
+    }
+  ]
+}

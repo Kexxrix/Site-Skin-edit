@@ -1,0 +1,15 @@
+function norm(v){if(typeof v==="number")return Math.round(v*10000)/10000;if(Array.isArray(v))return v.map(norm);if(v&&typeof v==="object"){const o={};for(const k of Object.keys(v).sort())o[k]=norm(v[k]);return o;}return v;}
+function snap(n,ignore=false){const r={type:n.type,width:n.width,height:n.height,visible:n.visible,opacity:('opacity'in n?n.opacity:undefined)};if(!ignore){r.x=n.x;r.y=n.y;}for(const k of ["fills","strokes","effects","cornerRadius","layoutMode","layoutSizingHorizontal","layoutSizingVertical","paddingLeft","paddingRight","paddingTop","paddingBottom","itemSpacing","clipsContent","overflowDirection","boundVariables","explicitVariableModes"])if(k in n&&typeof n[k]!=="symbol")r[k]=n[k];if(n.type==="TEXT"){r.characters=n.characters;r.fonts=n.getStyledTextSegments(["fontName","fontSize","lineHeight","letterSpacing"]);r.leadingTrim=n.leadingTrim;}if("children"in n)r.children=n.children.map(c=>snap(c));return norm(r);}
+function hash(v){const s=JSON.stringify(v);let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return(h>>>0).toString(16);}
+function eq(a,b){if(typeof a==="number"&&typeof b==="number")return Math.abs(a-b)<=.001;if(a===b)return true;if(!a||!b||typeof a!=="object"||typeof b!=="object")return false;const ks=Object.keys(a);return ks.length===Object.keys(b).length&&ks.every(k=>eq(a[k],b[k]));}
+
+const page=await figma.getNodeByIdAsync("795:1330");await figma.setCurrentPageAsync(page);
+figma.skipInvisibleInstanceChildren=false;
+await Promise.all([{"family":"Pretendard JP","style":"Medium"},{"family":"Pretendard JP","style":"SemiBold"},{"family":"Pretendard JP","style":"Bold"},{"family":"Bebas Neue","style":"Regular"},{"family":"Pretendard JP","style":"ExtraBold"},{"family":"Pretendard JP","style":"Regular"},{"family":"Noto Sans KR","style":"Medium","variationSettings":{"wght":500}},{"family":"Noto Sans KR","style":"Bold","variationSettings":{"wght":700}},{"family":"Noto Sans KR","style":"Black","variationSettings":{"wght":900}},{"family":"Noto Sans KR","style":"Regular","variationSettings":{"wght":400}},{"family":"Pretendard JP","style":"Black"},{"family":"Noto Serif KR","style":"SemiBold","variationSettings":{"wght":600}}].map(f=>figma.loadFontAsync(f)));
+const bg=await figma.getNodeByIdAsync("899:7515"),root=await figma.getNodeByIdAsync("868:4894");
+const image=bg.fills.find(p=>p.type==="IMAGE");if(!image||image.imageHash!=="399145638aad92d29988893e305b54870665d203")throw new Error("Unexpected Frost background");
+const c={r:3/255,g:16/255,b:25/255};
+const veil={type:"GRADIENT_LINEAR",visible:true,opacity:1,blendMode:"NORMAL",gradientTransform:[[0,1,0],[-1,0,1]],gradientStops:[[0,0],[.78,0],[.87,.55],[1,.76]].map(([position,a])=>({position,color:{...c,a}}))};
+bg.fills=[veil,image];
+const s=snap(root,true);s.children=root.children.filter(n=>n.id!==bg.id).map(n=>snap(n));
+return {mutatedNodeIds:[bg.id],rootId:root.id,backgroundId:bg.id,backgroundFills:bg.fills,uiHash:hash(s),originalUiUnchanged:hash(s)==="a8c02b8f",reason:"Reduce frost detail behind footer partner logos only"};

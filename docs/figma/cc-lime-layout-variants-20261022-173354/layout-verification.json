@@ -1,0 +1,489 @@
+{
+  "pageId": "919:7490",
+  "pageName": "25 · CC Lime · 레이아웃 바리에이션 · 1920",
+  "componentSet": {
+    "id": "925:2034",
+    "name": "P25/CC Lime/Top layout",
+    "variantCount": 2,
+    "definitions": {
+      "Layout": {
+        "type": "VARIANT",
+        "defaultValue": "SoloSquare",
+        "variantOptions": [
+          "SoloSquare",
+          "CenterBars"
+        ]
+      }
+    }
+  },
+  "reports": [
+    {
+      "rootId": "919:7491",
+      "name": "CC Lime · A 단일 히어로 + 2×2 바로가기 · 1920",
+      "width": 1920,
+      "height": 1941.199951171875,
+      "instanceCount": 88,
+      "unlinkedInstances": [],
+      "uniqueImageCount": 100,
+      "newImageHashes": [],
+      "viewport": {
+        "id": "I925:1785;919:7507",
+        "width": 1024,
+        "height": 588,
+        "clipsContent": true,
+        "overflowDirection": "HORIZONTAL"
+      },
+      "track": {
+        "id": "I925:1785;924:1993",
+        "width": 3096,
+        "height": 588
+      },
+      "selectors": [
+        {
+          "id": "I925:1785;924:1995",
+          "name": "Select 페이백 포인트",
+          "reactions": [
+            {
+              "action": {
+                "type": "NODE",
+                "destinationId": "924:1914",
+                "navigation": "SCROLL_TO",
+                "transition": {
+                  "type": "SCROLL_ANIMATE",
+                  "easing": {
+                    "type": "EASE_OUT"
+                  },
+                  "duration": 0.3499999940395355
+                },
+                "resetVideoPosition": false
+              },
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "924:1914",
+                  "navigation": "SCROLL_TO",
+                  "transition": {
+                    "type": "SCROLL_ANIMATE",
+                    "easing": {
+                      "type": "EASE_OUT"
+                    },
+                    "duration": 0.3499999940395355
+                  },
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I925:1785;924:1998",
+          "name": "Select 회원 이벤트",
+          "reactions": [
+            {
+              "action": {
+                "type": "NODE",
+                "destinationId": "924:1929",
+                "navigation": "SCROLL_TO",
+                "transition": {
+                  "type": "SCROLL_ANIMATE",
+                  "easing": {
+                    "type": "EASE_OUT"
+                  },
+                  "duration": 0.3499999940395355
+                },
+                "resetVideoPosition": false
+              },
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "924:1929",
+                  "navigation": "SCROLL_TO",
+                  "transition": {
+                    "type": "SCROLL_ANIMATE",
+                    "easing": {
+                      "type": "EASE_OUT"
+                    },
+                    "duration": 0.3499999940395355
+                  },
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I925:1785;924:2001",
+          "name": "Select 데일리 리워드",
+          "reactions": [
+            {
+              "action": {
+                "type": "NODE",
+                "destinationId": "924:1944",
+                "navigation": "SCROLL_TO",
+                "transition": {
+                  "type": "SCROLL_ANIMATE",
+                  "easing": {
+                    "type": "EASE_OUT"
+                  },
+                  "duration": 0.3499999940395355
+                },
+                "resetVideoPosition": false
+              },
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "924:1944",
+                  "navigation": "SCROLL_TO",
+                  "transition": {
+                    "type": "SCROLL_ANIMATE",
+                    "easing": {
+                      "type": "EASE_OUT"
+                    },
+                    "duration": 0.3499999940395355
+                  },
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ],
+      "anchors": [],
+      "gatewayCards": [
+        {
+          "id": "I925:1785;924:1959",
+          "name": "Gateway / LiveCasino",
+          "width": 268,
+          "height": 268
+        },
+        {
+          "id": "I925:1785;924:1967",
+          "name": "Gateway / Slots",
+          "width": 268,
+          "height": 268
+        },
+        {
+          "id": "I925:1785;924:1975",
+          "name": "Gateway / Sports",
+          "width": 268,
+          "height": 268
+        },
+        {
+          "id": "I925:1785;924:1983",
+          "name": "Gateway / InPlay",
+          "width": 268,
+          "height": 268
+        }
+      ],
+      "mainFlow": [
+        {
+          "id": "925:1785",
+          "name": "Top layout · SoloSquare",
+          "y": 18,
+          "width": 1592,
+          "height": 588
+        },
+        {
+          "id": "919:7518",
+          "name": "Sports betting",
+          "y": 622,
+          "width": 1592,
+          "height": 264
+        },
+        {
+          "id": "919:7524",
+          "name": "🎥 라이브 카지노",
+          "y": 902,
+          "width": 1592,
+          "height": 347.6000061035156
+        },
+        {
+          "id": "919:7538",
+          "name": "🎰 슬롯 로비",
+          "y": 1265.5999755859375,
+          "width": 1592,
+          "height": 347.6000061035156
+        },
+        {
+          "id": "919:7552",
+          "name": "Partners · Flexible centered grid · BlackGold",
+          "y": 1629.199951171875,
+          "width": 1592,
+          "height": 192
+        }
+      ],
+      "lowerHashes": [
+        {
+          "name": "Sports betting",
+          "hash": "47f4b87b"
+        },
+        {
+          "name": "🎥 라이브 카지노",
+          "hash": "5d3c8a0c"
+        },
+        {
+          "name": "🎰 슬롯 로비",
+          "hash": "477a7988"
+        },
+        {
+          "name": "Partners · Flexible centered grid · BlackGold",
+          "hash": "438614e8"
+        }
+      ]
+    },
+    {
+      "rootId": "920:7490",
+      "name": "CC Lime · B 중앙 강조 캐러셀 + 슬림 바 · 1920",
+      "width": 1920,
+      "height": 1941.199951171875,
+      "instanceCount": 92,
+      "unlinkedInstances": [],
+      "uniqueImageCount": 100,
+      "newImageHashes": [],
+      "viewport": {
+        "id": "I925:1879;920:7506",
+        "width": 1592,
+        "height": 420,
+        "clipsContent": true,
+        "overflowDirection": "HORIZONTAL"
+      },
+      "track": {
+        "id": "I925:1879;924:2084",
+        "width": 4128,
+        "height": 420
+      },
+      "selectors": [
+        {
+          "id": "I925:1879;924:2150",
+          "name": "Select 페이백 포인트",
+          "reactions": [
+            {
+              "action": {
+                "type": "NODE",
+                "destinationId": "924:2145",
+                "navigation": "SCROLL_TO",
+                "transition": {
+                  "type": "SCROLL_ANIMATE",
+                  "easing": {
+                    "type": "EASE_OUT"
+                  },
+                  "duration": 0.3499999940395355
+                },
+                "resetVideoPosition": false
+              },
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "924:2145",
+                  "navigation": "SCROLL_TO",
+                  "transition": {
+                    "type": "SCROLL_ANIMATE",
+                    "easing": {
+                      "type": "EASE_OUT"
+                    },
+                    "duration": 0.3499999940395355
+                  },
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I925:1879;924:2153",
+          "name": "Select 회원 이벤트",
+          "reactions": [
+            {
+              "action": {
+                "type": "NODE",
+                "destinationId": "924:2146",
+                "navigation": "SCROLL_TO",
+                "transition": {
+                  "type": "SCROLL_ANIMATE",
+                  "easing": {
+                    "type": "EASE_OUT"
+                  },
+                  "duration": 0.3499999940395355
+                },
+                "resetVideoPosition": false
+              },
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "924:2146",
+                  "navigation": "SCROLL_TO",
+                  "transition": {
+                    "type": "SCROLL_ANIMATE",
+                    "easing": {
+                      "type": "EASE_OUT"
+                    },
+                    "duration": 0.3499999940395355
+                  },
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I925:1879;924:2156",
+          "name": "Select 데일리 리워드",
+          "reactions": [
+            {
+              "action": {
+                "type": "NODE",
+                "destinationId": "924:2147",
+                "navigation": "SCROLL_TO",
+                "transition": {
+                  "type": "SCROLL_ANIMATE",
+                  "easing": {
+                    "type": "EASE_OUT"
+                  },
+                  "duration": 0.3499999940395355
+                },
+                "resetVideoPosition": false
+              },
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "924:2147",
+                  "navigation": "SCROLL_TO",
+                  "transition": {
+                    "type": "SCROLL_ANIMATE",
+                    "easing": {
+                      "type": "EASE_OUT"
+                    },
+                    "duration": 0.3499999940395355
+                  },
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ],
+      "anchors": [
+        {
+          "id": "I925:1879;924:2145",
+          "name": "Center focus stop 1",
+          "x": 0,
+          "width": 1592,
+          "parentId": "I925:1879;924:2084"
+        },
+        {
+          "id": "I925:1879;924:2146",
+          "name": "Center focus stop 2",
+          "x": 1268,
+          "width": 1592,
+          "parentId": "I925:1879;924:2084"
+        },
+        {
+          "id": "I925:1879;924:2147",
+          "name": "Center focus stop 3",
+          "x": 2536,
+          "width": 1592,
+          "parentId": "I925:1879;924:2084"
+        }
+      ],
+      "gatewayCards": [
+        {
+          "id": "I925:1879;924:2051",
+          "name": "Gateway / LiveCasino",
+          "width": 389.75,
+          "height": 72
+        },
+        {
+          "id": "I925:1879;924:2059",
+          "name": "Gateway / Slots",
+          "width": 389.75,
+          "height": 72
+        },
+        {
+          "id": "I925:1879;924:2067",
+          "name": "Gateway / Sports",
+          "width": 389.75,
+          "height": 72
+        },
+        {
+          "id": "I925:1879;924:2075",
+          "name": "Gateway / InPlay",
+          "width": 389.75,
+          "height": 72
+        }
+      ],
+      "mainFlow": [
+        {
+          "id": "925:1879",
+          "name": "Top layout · CenterBars",
+          "y": 18,
+          "width": 1592,
+          "height": 588
+        },
+        {
+          "id": "920:7517",
+          "name": "Sports betting",
+          "y": 622,
+          "width": 1592,
+          "height": 264
+        },
+        {
+          "id": "920:7523",
+          "name": "🎥 라이브 카지노",
+          "y": 902,
+          "width": 1592,
+          "height": 347.6000061035156
+        },
+        {
+          "id": "920:7537",
+          "name": "🎰 슬롯 로비",
+          "y": 1265.5999755859375,
+          "width": 1592,
+          "height": 347.6000061035156
+        },
+        {
+          "id": "920:7551",
+          "name": "Partners · Flexible centered grid · BlackGold",
+          "y": 1629.199951171875,
+          "width": 1592,
+          "height": 192
+        }
+      ],
+      "lowerHashes": [
+        {
+          "name": "Sports betting",
+          "hash": "47f4b87b"
+        },
+        {
+          "name": "🎥 라이브 카지노",
+          "hash": "5d3c8a0c"
+        },
+        {
+          "name": "🎰 슬롯 로비",
+          "hash": "477a7988"
+        },
+        {
+          "name": "Partners · Flexible centered grid · BlackGold",
+          "hash": "438614e8"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "verifiedAt": "2026-10-23T18:11:05.014972+09:00",
+  "runtime": {
+    "node": "24.14.0",
+    "pnpm": "11.25.0"
+  },
+  "freshDependencyInstall": {
+    "command": "pnpm install --frozen-lockfile",
+    "result": "passed",
+    "note": "Fresh verification directory; pnpm reused its content-addressed package cache."
+  },
+  "productionBuild": {
+    "command": "pnpm build",
+    "result": "passed"
+  },
+  "typecheck": {
+    "command": "pnpm exec tsc --noEmit --incremental false",
+    "result": "passed"
+  },
+  "productionSmoke": {
+    "command": "pnpm start --hostname 127.0.0.1 --port 3012",
+    "result": "passed",
+    "httpChecks": [
+      {
+        "url": "/",
+        "status": 200,
+        "title": "Titan Solution — B2B 베팅 플랫폼"
+      },
+      {
+        "url": "/assets/hero-team-user-20260915/디지털 아트에 몰입한 크리에이티브 디자이너04.png",
+        "status": 200,
+        "bytes": 1894010,
+        "contentType": "image/png"
+      },
+      {
+        "url": "/assets/hero-team-user-20260915/역동적인 개발팀_02.png",
+        "status": 200,
+        "bytes": 1950472,
+        "contentType": "image/png"
+      },
+      {
+        "url": "/assets/hero-team-user-20260915/탁월한 기술력_03.png",
+        "status": 200,
+        "bytes": 1980373,
+        "contentType": "image/png"
+      },
+      {
+        "url": "/assets/hero-team-user-20260915/파트너의 경제적 성공02.png",
+        "status": 200,
+        "bytes": 1948135,
+        "contentType": "image/png"
+      },
+      {
+        "url": "/videos/TITAN-KO-5scene-19s-v003.mp4",
+        "status": 200,
+        "bytes": 25253744,
+        "contentType": "video/mp4"
+      }
+    ]
+  },
+  "sourceFiles": 88,
+  "publicFiles": 48,
+  "sourceCopyHashMismatches": [],
+  "missingReferencedMedia": [],
+  "limitations": [
+    "Execution on the recipient computer has not been tested.",
+    "Dependency installation and external fonts require network access.",
+    "The existing contact form and Telegram entry are preview-only."
+  ],
+  "cleanupNote": "E: validation dependency cleanup was blocked by automatic policy; node_modules is excluded from this archive."
+}

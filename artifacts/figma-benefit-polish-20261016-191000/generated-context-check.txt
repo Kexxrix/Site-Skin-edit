@@ -1,0 +1,76 @@
+const imgArtwork = "https://www.figma.com/api/mcp/asset/501951d4-edf3-47f0-9579-fbeba8c53e0e.png";
+
+type P17Bit365BlackGoldButtonBenefitProps = {
+  className?: string;
+  label?: string;
+};
+
+function P17Bit365BlackGoldButtonBenefit({ className, label = "내 지갑 바로가기" }: P17Bit365BlackGoldButtonBenefitProps) {
+  return (
+    <div className={className || "border border-[#faf7d2] border-solid content-stretch drop-shadow-[0px_2px_2px_rgba(0,0,0,0.5)] flex items-center justify-center min-h-[32px] pb-[5.5px] pt-[6.5px] px-[12px] relative rounded-[6px]"} data-node-id="435:52982" data-name="P17 전용 / BIT365 BlackGold/Button/Benefit">
+      <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[6px]" style={{ backgroundImage: "linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(3.4534427584276273e-7deg, rgb(41, 41, 41) 17.308%, rgb(49, 49, 49) 50.481%, rgb(76, 76, 76) 100%)" }} />
+      <div className="[word-break:break-word] bg-clip-text flex flex-col font-['Pretendard_JP:ExtraBold'] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[transparent] text-center text-shadow-[0px_1px_1px_rgba(0,0,0,0.72)] whitespace-nowrap" data-node-id="435:52983" style={{ backgroundImage: "linear-gradient(180deg, rgb(250, 247, 210) 0%, rgb(255, 218, 136) 14.423%, rgb(255, 204, 119) 20.673%, rgb(255, 199, 109) 46.154%, rgb(208, 132, 0) 77.404%, rgb(164, 94, 0) 96.635%), linear-gradient(90deg, rgb(212, 175, 55) 0%, rgb(212, 175, 55) 100%)" }}>
+        <p className="leading-[20px]">{label}</p>
+      </div>
+      <div className="absolute inset-[-1px] pointer-events-none rounded-[inherit] shadow-[inset_0px_-2px_3px_0px_rgba(0,0,0,0.55),inset_0px_1px_0.5px_0px_rgba(255,255,255,0.1)]" />
+    </div>
+  );
+}
+
+type P17BannerBlackGoldPaybackProps = {
+  className?: string;
+  description?: string;
+  tag?: string;
+  title?: string;
+};
+
+export default function P17BannerBlackGoldPayback({ className, description = "콤프와 페이백 포인트를 한 곳에서 확인하세요.", tag = "PAYBACK", title = "페이백 포인트" }: P17BannerBlackGoldPaybackProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col h-[174px] items-start min-w-[220px] overflow-clip relative rounded-[10px] w-[522.667px]"} data-node-id="449:4147" data-name="P17/Banner/BlackGold/Payback">
+      <div className="bg-[var(--bit365-black-gold-hero,#181919)] border border-[#faf7d2] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-h-px overflow-clip relative rounded-[10px] w-full" data-node-id="449:4138" data-name="카드 콘텐츠">
+        <div className="absolute inset-[-1px] pointer-events-none" data-node-id="449:4139" data-name="Artwork">
+          <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgArtwork} />
+          <div className="absolute inset-0 rounded-[inherit] shadow-[inset_0px_-4px_8.8px_0px_black,inset_0px_4px_8.8px_0px_black]" />
+        </div>
+        <div className="absolute bg-gradient-to-r from-[rgba(24,25,25,0.9)] inset-[-1px] opacity-36 to-[rgba(24,25,25,0.03)]" data-node-id="449:4140" data-name="Shade" />
+        <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between max-w-[260px] min-h-px p-[10px] relative w-[260px]" data-node-id="449:4141" data-name="Copy">
+          <div className="border border-[rgba(255,255,255,0.25)] border-solid content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.45)] flex items-center justify-center min-h-[18px] pb-[1.5px] pt-[2.5px] px-[4px] relative rounded-[2px] shrink-0" data-node-id="449:4142" style={{ backgroundImage: "linear-gradient(90deg, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.44) 100%), linear-gradient(4.061719636183625e-7deg, rgb(41, 41, 41) 17.308%, rgb(49, 49, 49) 50.481%, rgb(76, 76, 76) 100%)" }} data-name="Tag">
+            <div className="[word-break:break-word] bg-clip-text flex flex-col font-['Pretendard_JP:ExtraBold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-[transparent] text-center text-shadow-[0px_1px_1px_rgba(0,0,0,0.72)] whitespace-nowrap" data-node-id="449:4143" style={{ backgroundImage: "linear-gradient(180deg, rgb(250, 247, 210) 0%, rgb(255, 218, 136) 14.423%, rgb(255, 204, 119) 20.673%, rgb(255, 199, 109) 46.154%, rgb(208, 132, 0) 77.404%, rgb(164, 94, 0) 96.635%), linear-gradient(90deg, rgb(230, 199, 109) 0%, rgb(230, 199, 109) 100%)" }}>
+              <p className="leading-[14px]">{tag}</p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col items-start justify-center leading-[0] not-italic relative shrink-0 text-[transparent] text-shadow-[0px_2px_2px_black] w-[263px]" data-node-id="465:2781" data-name="Typography">
+            <div className="bg-clip-text bg-gradient-to-b flex flex-col font-['Pretendard_JP:ExtraBold'] from-[#ffedc0] justify-center relative shrink-0 text-[26px] to-[#af800d] via-1/2 via-[#ffcd55] w-[263px]" data-node-id="449:4144">
+              <p className="leading-[36.4px]">{title}</p>
+            </div>
+            <div className="bg-clip-text flex flex-col font-['Pretendard_JP:Bold'] justify-center relative shrink-0 text-[13px] w-[263px]" data-node-id="449:4145" style={{ backgroundImage: "linear-gradient(180deg, rgb(255, 255, 227) 20%, rgb(255, 222, 150) 50%, rgb(203, 162, 111) 80%), linear-gradient(90deg, rgb(245, 244, 244) 0%, rgb(245, 244, 244) 100%)" }}>
+              <p className="leading-[18.2px]">{description}</p>
+            </div>
+          </div>
+          <P17Bit365BlackGoldButtonBenefit className="border border-[#faf7d2] border-solid content-stretch drop-shadow-[0px_2px_2px_rgba(0,0,0,0.5)] flex h-[32px] items-center justify-center min-h-[32px] pb-[5.5px] pt-[6.5px] px-[12px] relative rounded-[6px] shrink-0" />
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: P17/Banner/Shadow/Artwork: Effect(type: INNER_SHADOW, color: #000000, offset: (0, 4), radius: 8.800000190734863, spread: 0); Effect(type: INNER_SHADOW, color: #000000, offset: (0, -4), radius: 8.800000190734863, spread: 0), P17/Banner/Shadow/Label: Effect(type: DROP_SHADOW, color: #000000B8, offset: (0, 1), radius: 1, spread: 0), P17/Banner/Shadow/Tag: Effect(type: DROP_SHADOW, color: #00000073, offset: (0, 1), radius: 2, spread: 0), P17/Banner/Shadow/Headline: Effect(type: DROP_SHADOW, color: #000000, offset: (0, 2), radius: 2, spread: 0), P17/Banner/Shadow/Action: Effect(type: INNER_SHADOW, color: #FFFFFF1A, offset: (0, 1), radius: 0.5, spread: 0); Effect(type: INNER_SHADOW, color: #0000008C, offset: (0, -2), radius: 3, spread: 0); Effect(type: DROP_SHADOW, color: #00000080, offset: (0, 2), radius: 4, spread: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## P17/Banner/BlackGold/Payback
+**Node ID:** 449:4147
+
+17번 전용 Payback 배너. 골드 그라데이션·안쪽 그림자·텍스트 그림자를 공통 스타일로 적용하며 모든 텍스트는 leadingTrim NONE입니다.
+
+## P17 전용 / BIT365 BlackGold/Button/Benefit
+**Node ID:** 435:52982
+
+배너 CTA. Pretendard JP ExtraBold 14px / line-height 20px. 트림 없이 상단 6.5px·하단 5.5px 패딩으로 광학 중앙 정렬하며 텍스트를 자르지 않습니다.
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

@@ -1,0 +1,185 @@
+{
+  "scope": "5 reference-based sidebar structures in WhiteGold and BlackGold; 10 sidebars and 10 full 1920 screens; preserve originals; no site code",
+  "specs": [
+    {
+      "style": "Showcase",
+      "label": "01 · 혜택 쇼케이스",
+      "summary": "상단 3개 혜택 타일과 골드 하이라이트를 메뉴와 분리",
+      "sources": [
+        "Gold Casino",
+        "NoLimit City"
+      ],
+      "urls": [
+        "https://dribbble.com/shots/24102608-Gold-Casino",
+        "https://dribbble.com/shots/26107007-Casino-Dashboard-UI-for-NoLimit-City"
+      ],
+      "adjustment": "232px 폭 안에서 혜택 3개를 작은 독립 타일로 제한. 외부 VIP 문구와 라이브 승자 피드는 추가하지 않고 기존 메뉴 14개 유지."
+    },
+    {
+      "style": "Islands",
+      "label": "02 · 분리형 아일랜드",
+      "summary": "서비스·스포츠·게임을 떠 있는 독립 모듈로 구성",
+      "sources": [
+        "Metafy",
+        "Game Launcher",
+        "March Madness"
+      ],
+      "urls": [
+        "https://dribbble.com/shots/20867106-Game-centric-sidebar-navigation",
+        "https://dribbble.com/shots/18019661-Game-Launcher-Sidebar",
+        "https://dribbble.com/shots/21293018-March-Madness-Game-Switcher"
+      ],
+      "adjustment": "채팅·설치 게임·우측 영상 패널은 제외. 원래 메뉴를 분리 카드에 유지하고 기존 경기 정보 1개를 스포츠 탐색 보조로 재사용."
+    },
+    {
+      "style": "HUD",
+      "label": "03 · HUD 이중 레일",
+      "summary": "카테고리 아이콘 레일과 읽기 쉬운 보조 목록을 병행",
+      "sources": [
+        "AR Craft"
+      ],
+      "urls": [
+        "https://dribbble.com/shots/17803008-AR-Craft-Mobile-Game-Landing-Page-Design"
+      ],
+      "adjustment": "게임 HUD의 비정형 레일은 48px 카테고리 레일로 축소. 나머지 공간에 한글 메뉴를 수평으로 표시해 아이콘 의존과 과한 네온을 제거."
+    },
+    {
+      "style": "Index",
+      "label": "04 · 번호형 목차",
+      "summary": "큰 번호와 헤어라인으로 기능군을 명확하게 구분",
+      "sources": [
+        "Vention"
+      ],
+      "urls": [
+        "https://brand.ventionteams.com/brand-positioning/"
+      ],
+      "adjustment": "브랜드 문서의 목차를 서비스·스포츠·게임·게시판으로 재해석. 기본은 모두 펼친 상태이며 기능군별 접힘 속성을 제공."
+    },
+    {
+      "style": "Spine",
+      "label": "05 · 책등형 프레임",
+      "summary": "세로 카테고리 책등과 이중 프레임을 조합",
+      "sources": [
+        "Villa Covri",
+        "Rogue Studio",
+        "Editorial New"
+      ],
+      "urls": [
+        "https://speckyboy.com/sticky-vertical-navbars/",
+        "https://www.cssdesignawards.com/sites/rogue-studio/35855/",
+        "https://onepagelove.com/editorial-new"
+      ],
+      "adjustment": "과거 세로 내비 아카이브의 프레임·책등만 차용. 필수 메뉴 14개는 회전하지 않고 수평 유지. 양측 레일을 추가해 본문 폭을 줄이지 않음."
+    }
+  ],
+  "foundation": {
+    "createdNodeIds": [
+      "347:552",
+      "347:553"
+    ],
+    "page": "347:552",
+    "review": "347:553",
+    "collection": "VariableCollectionId:347:554",
+    "modes": {
+      "WhiteGold": "347:0",
+      "BlackGold": "347:1"
+    },
+    "vars": {
+      "page": "VariableID:347:555",
+      "surface": "VariableID:347:556",
+      "panel": "VariableID:347:557",
+      "line": "VariableID:347:558",
+      "text": "VariableID:347:559",
+      "muted": "VariableID:347:560",
+      "goldText": "VariableID:347:561",
+      "accentLine": "VariableID:347:562",
+      "selection": "VariableID:347:563",
+      "gold": "VariableID:347:564",
+      "onGold": "VariableID:347:565",
+      "onImage": "VariableID:347:566",
+      "gap4": "VariableID:347:567",
+      "gap8": "VariableID:347:568",
+      "gap12": "VariableID:347:569",
+      "gap16": "VariableID:347:570",
+      "radius8": "VariableID:347:571",
+      "radius14": "VariableID:347:572",
+      "sidebarWidth": "VariableID:347:573"
+    },
+    "createdVariableIds": [
+      "VariableID:347:555",
+      "VariableID:347:556",
+      "VariableID:347:557",
+      "VariableID:347:558",
+      "VariableID:347:559",
+      "VariableID:347:560",
+      "VariableID:347:561",
+      "VariableID:347:562",
+      "VariableID:347:563",
+      "VariableID:347:564",
+      "VariableID:347:565",
+      "VariableID:347:566",
+      "VariableID:347:567",
+      "VariableID:347:568",
+      "VariableID:347:569",
+      "VariableID:347:570",
+      "VariableID:347:571",
+      "VariableID:347:572",
+      "VariableID:347:573"
+    ],
+    "textStyles": {
+      "Title": "S:35d56b8134489daa45f04df4fdeeabf5f1865626,",
+      "Number": "S:85e0614886de4a9db129e9666dba914230ca68e7,",
+      "Caption": "S:871c8b0ccd120694576ee794ecdb8b242b13339a,",
+      "Solution": "S:ba828b9262f868f76120ef04ffa114d5c485c1e8,"
+    },
+    "gold": "S:6b3024e5139b687f319385020dc10e0efaa8201c,",
+    "effects": {
+      "WhiteGold": "S:7207a5f553fedc50fb95271b53a6258f8583a144,",
+      "BlackGold": "S:2e30aab973270d8c0b3eaaa167b034fb6e2a1591,"
+    },
+    "createdStyleIds": [
+      "S:35d56b8134489daa45f04df4fdeeabf5f1865626,",
+      "S:85e0614886de4a9db129e9666dba914230ca68e7,",
+      "S:871c8b0ccd120694576ee794ecdb8b242b13339a,",
+      "S:ba828b9262f868f76120ef04ffa114d5c485c1e8,",
+      "S:6b3024e5139b687f319385020dc10e0efaa8201c,",
+      "S:7207a5f553fedc50fb95271b53a6258f8583a144,",
+      "S:2e30aab973270d8c0b3eaaa167b034fb6e2a1591,"
+    ]
+  },
+  "preservedWhite": [
+    {
+      "id": "317:1490",
+      "hash": "70f46ce1"
+    },
+    {
+      "id": "318:2054",
+      "hash": "48ed8bbd"
+    },
+    {
+      "id": "318:2063",
+      "hash": "a89c3878"
+    },
+    {
+      "id": "313:1286",
+      "hash": "75b5088b"
+    },
+    {
+      "id": "313:2001",
+      "hash": "ce59007"
+    },
+    {
+      "id": "315:1193",
+      "hash": "b8123819"
+    },
+    {
+      "id": "316:1172",
+      "hash": "ef7df6e2"
+    }
+  ],
+  "preservedBlack": {
+    "id": "218:1787",
+    "hash": "8bea446e"
+  },
+  "document": "https://chatgpt.com/space/page_eea2fb35a7608191a14003e7910ed2c5"
+}

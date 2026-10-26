@@ -1,0 +1,1706 @@
+{
+  "createdAt": "2026-10-14 09:12:04 UTC",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "scope": "3 new flat sidebar variants and 1920px comparisons; plain-text TITAN SOLUSION footer on the 3 approved WOG variants",
+  "styles": [
+    "Panel",
+    "Rail",
+    "Grid"
+  ],
+  "reference": "https://www.espn.com/",
+  "measurements": {
+    "referenceSidebar": 220,
+    "rowHeight": 36,
+    "linkFont": 12,
+    "iconFont": 16,
+    "padding": "8px 12px",
+    "iconLabelGap": 8,
+    "sectionGap": 10,
+    "radius": 10
+  },
+  "codeConnect": "No matching Sidebar/NavigationItem Code Connect files found",
+  "discovery": {
+    "pages": [
+      {
+        "id": "0:1",
+        "name": "01 · 반응형 와이어프레임"
+      },
+      {
+        "id": "2:2",
+        "name": "02 · 편집 컴포넌트"
+      },
+      {
+        "id": "2:3",
+        "name": "03 · 반응형 규칙"
+      },
+      {
+        "id": "44:552",
+        "name": "04 · BIT365 홈"
+      },
+      {
+        "id": "44:553",
+        "name": "05 · BIT365 컴포넌트"
+      },
+      {
+        "id": "88:553",
+        "name": "08 · 샴페인 골드 컴포넌트"
+      },
+      {
+        "id": "73:2891",
+        "name": "06 · BIT365 · ALDEBARAN 테마"
+      },
+      {
+        "id": "88:552",
+        "name": "07 · BIT365 · 샴페인 골드"
+      },
+      {
+        "id": "139:552",
+        "name": "09 · BIT365 · 블랙 골드"
+      },
+      {
+        "id": "158:597",
+        "name": "10 · 블랙 골드 컴포넌트"
+      },
+      {
+        "id": "212:552",
+        "name": "11 · 헤더·메뉴 · 3종 컴포넌트"
+      },
+      {
+        "id": "212:553",
+        "name": "12 · 헤더·메뉴 · 3종 비교"
+      },
+      {
+        "id": "261:552",
+        "name": "13 · WOG 입체 사이드바"
+      }
+    ],
+    "colors": {
+      "page": {
+        "id": "VariableID:158:554",
+        "name": "page",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:553"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "surface": {
+        "id": "VariableID:158:556",
+        "name": "surface",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:555"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "hero": {
+        "id": "VariableID:158:558",
+        "name": "hero",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:557"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "line": {
+        "id": "VariableID:158:560",
+        "name": "line",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:559"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "accentLine": {
+        "id": "VariableID:158:562",
+        "name": "accentLine",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:561"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "text": {
+        "id": "VariableID:158:564",
+        "name": "text",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:563"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "muted": {
+        "id": "VariableID:158:566",
+        "name": "muted",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:565"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "yellow": {
+        "id": "VariableID:158:568",
+        "name": "yellow",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:567"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "mint": {
+        "id": "VariableID:158:570",
+        "name": "mint",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:569"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "tag": {
+        "id": "VariableID:158:572",
+        "name": "tag",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:571"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "theme/header": {
+        "id": "VariableID:158:574",
+        "name": "theme/header",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:573"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "theme/control": {
+        "id": "VariableID:158:576",
+        "name": "theme/control",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:575"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "theme/amber": {
+        "id": "VariableID:158:578",
+        "name": "theme/amber",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:577"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "theme/onAccent": {
+        "id": "VariableID:158:580",
+        "name": "theme/onAccent",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:579"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "theme/disabled": {
+        "id": "VariableID:158:582",
+        "name": "theme/disabled",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:581"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "theme/input": {
+        "id": "VariableID:158:584",
+        "name": "theme/input",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:583"
+        },
+        "collection": "VariableCollectionId:158:552"
+      },
+      "theme/onBadge": {
+        "id": "VariableID:158:586",
+        "name": "theme/onBadge",
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:158:585"
+        },
+        "collection": "VariableCollectionId:158:552"
+      }
+    },
+    "wog": [
+      {
+        "id": "263:552",
+        "name": "Style=Raised",
+        "w": 232,
+        "h": 1010,
+        "dock": {
+          "id": "263:764",
+          "w": 206,
+          "h": 40,
+          "fills": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 0.10000000149011612,
+                    "g": 0.10000000149011612,
+                    "b": 0.10000000149011612,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:559"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.10000000149011612,
+                    "g": 0.10000000149011612,
+                    "b": 0.10000000149011612,
+                    "a": 1
+                  },
+                  "position": 0.07999999821186066,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:559"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.1899999976158142,
+                    "g": 0.1899999976158142,
+                    "b": 0.1899999976158142,
+                    "a": 1
+                  },
+                  "position": 0.699999988079071,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:558"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.28999999165534973,
+                    "g": 0.28999999165534973,
+                    "b": 0.28999999165534973,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:557"
+                    }
+                  }
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.21960784494876862,
+                "g": 0.21960784494876862,
+                "b": 0.21960784494876862
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:158:560"
+                }
+              }
+            }
+          ],
+          "effect": "S:a3de00e225b08fcc050d0ddfe1bc5def8838503e,",
+          "align": "CENTER",
+          "label": [
+            {
+              "id": "263:575",
+              "name": "Solution",
+              "text": "TITAN SOLUSION",
+              "font": {
+                "family": "Pretendard JP",
+                "style": "Bold"
+              },
+              "size": 14,
+              "style": "",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.7176470756530762,
+                    "g": 0.7176470756530762,
+                    "b": 0.7176470756530762
+                  },
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:158:566"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "263:765",
+        "name": "Style=Inset",
+        "w": 232,
+        "h": 1010,
+        "dock": {
+          "id": "263:977",
+          "w": 206,
+          "h": 40,
+          "fills": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 0.10000000149011612,
+                    "g": 0.10000000149011612,
+                    "b": 0.10000000149011612,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:559"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.10000000149011612,
+                    "g": 0.10000000149011612,
+                    "b": 0.10000000149011612,
+                    "a": 1
+                  },
+                  "position": 0.07999999821186066,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:559"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.1899999976158142,
+                    "g": 0.1899999976158142,
+                    "b": 0.1899999976158142,
+                    "a": 1
+                  },
+                  "position": 0.699999988079071,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:558"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.28999999165534973,
+                    "g": 0.28999999165534973,
+                    "b": 0.28999999165534973,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:557"
+                    }
+                  }
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.21960784494876862,
+                "g": 0.21960784494876862,
+                "b": 0.21960784494876862
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:158:560"
+                }
+              }
+            }
+          ],
+          "effect": "S:a3de00e225b08fcc050d0ddfe1bc5def8838503e,",
+          "align": "CENTER",
+          "label": [
+            {
+              "id": "263:788",
+              "name": "Solution",
+              "text": "TITAN SOLUSION",
+              "font": {
+                "family": "Pretendard JP",
+                "style": "Bold"
+              },
+              "size": 14,
+              "style": "",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.7176470756530762,
+                    "g": 0.7176470756530762,
+                    "b": 0.7176470756530762
+                  },
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:158:566"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "263:978",
+        "name": "Style=Tiles",
+        "w": 232,
+        "h": 830,
+        "dock": {
+          "id": "263:1178",
+          "w": 206,
+          "h": 40,
+          "fills": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 0.10000000149011612,
+                    "g": 0.10000000149011612,
+                    "b": 0.10000000149011612,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:559"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.10000000149011612,
+                    "g": 0.10000000149011612,
+                    "b": 0.10000000149011612,
+                    "a": 1
+                  },
+                  "position": 0.07999999821186066,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:559"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.1899999976158142,
+                    "g": 0.1899999976158142,
+                    "b": 0.1899999976158142,
+                    "a": 1
+                  },
+                  "position": 0.699999988079071,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:558"
+                    }
+                  }
+                },
+                {
+                  "color": {
+                    "r": 0.28999999165534973,
+                    "g": 0.28999999165534973,
+                    "b": 0.28999999165534973,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:261:557"
+                    }
+                  }
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.21960784494876862,
+                "g": 0.21960784494876862,
+                "b": 0.21960784494876862
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:158:560"
+                }
+              }
+            }
+          ],
+          "effect": "S:a3de00e225b08fcc050d0ddfe1bc5def8838503e,",
+          "align": "CENTER",
+          "label": [
+            {
+              "id": "263:1001",
+              "name": "Solution",
+              "text": "TITAN SOLUSION",
+              "font": {
+                "family": "Pretendard JP",
+                "style": "Bold"
+              },
+              "size": 14,
+              "style": "",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.7176470756530762,
+                    "g": 0.7176470756530762,
+                    "b": 0.7176470756530762
+                  },
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:158:566"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "source": {
+      "id": "263:552",
+      "groups": [
+        {
+          "name": "Sidebar group / 서비스",
+          "title": "서비스",
+          "menus": [
+            {
+              "name": "Menu / 입금신청",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "입금신청"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Selected",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 출금신청",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "출금신청"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 마이페이지",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "마이페이지"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 문의하기",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "문의하기"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 쪽지",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "쪽지"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "name": "Sidebar group / 스포츠",
+          "title": "스포츠",
+          "menus": [
+            {
+              "name": "Menu / 국내형",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "국내형"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 해외형",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "해외형"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / E스포츠",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "E스포츠"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 라이브",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "라이브"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "name": "Sidebar group / 게임",
+          "title": "게임",
+          "menus": [
+            {
+              "name": "Menu / 라이브카지노",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "라이브카지노"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 슬롯",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "슬롯"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "name": "Sidebar group / 게시판",
+          "title": "게시판",
+          "menus": [
+            {
+              "name": "Menu / 공지사항",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "공지사항"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 이벤트",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "이벤트"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            },
+            {
+              "name": "Menu / 베팅규정",
+              "properties": {
+                "Badge#262:2": {
+                  "type": "TEXT",
+                  "value": "200x"
+                },
+                "Show badge#262:3": {
+                  "type": "BOOLEAN",
+                  "value": false
+                },
+                "Icon#262:1": {
+                  "type": "TEXT",
+                  "value": ""
+                },
+                "Label#262:0": {
+                  "type": "TEXT",
+                  "value": "베팅규정"
+                },
+                "Style": {
+                  "value": "Raised",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                },
+                "State": {
+                  "value": "Default",
+                  "type": "VARIANT",
+                  "boundVariables": {}
+                }
+              },
+              "icon": ""
+            }
+          ]
+        }
+      ]
+    },
+    "nav": {
+      "id": "159:694",
+      "key": "87b9ab2987dd3192a3647972380a64823c3ebc15",
+      "properties": {
+        "Label#46:3": {
+          "type": "TEXT",
+          "defaultValue": "스포츠"
+        },
+        "Icon#48:0": {
+          "type": "TEXT",
+          "defaultValue": ""
+        },
+        "Badge#54:0": {
+          "type": "TEXT",
+          "defaultValue": "200x"
+        },
+        "Show badge#54:1": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        }
+      },
+      "children": [
+        {
+          "id": "159:694",
+          "name": "BIT365 BlackGold/Navigation/Item",
+          "type": "COMPONENT",
+          "font": null,
+          "size": null
+        },
+        {
+          "id": "159:695",
+          "name": "Icon slot",
+          "type": "FRAME",
+          "font": null,
+          "size": null
+        },
+        {
+          "id": "159:696",
+          "name": "Glyph",
+          "type": "TEXT",
+          "font": {
+            "family": "Font Awesome 6 Free",
+            "style": "Solid"
+          },
+          "size": 14
+        },
+        {
+          "id": "159:697",
+          "name": "Label",
+          "type": "TEXT",
+          "font": {
+            "family": "Pretendard JP",
+            "style": "Bold"
+          },
+          "size": 13
+        },
+        {
+          "id": "159:698",
+          "name": "Badge",
+          "type": "FRAME",
+          "font": null,
+          "size": null
+        },
+        {
+          "id": "159:699",
+          "name": "Badge label",
+          "type": "TEXT",
+          "font": {
+            "family": "Pretendard JP",
+            "style": "Bold"
+          },
+          "size": 8
+        }
+      ]
+    },
+    "fonts": [
+      {
+        "family": "Font Awesome 5 Brands",
+        "style": "Regular"
+      },
+      {
+        "family": "Font Awesome 5 Free",
+        "style": "Regular"
+      },
+      {
+        "family": "Font Awesome 5 Free",
+        "style": "Solid"
+      },
+      {
+        "family": "Font Awesome 6 Brands",
+        "style": "Regular"
+      },
+      {
+        "family": "Font Awesome 6 Free",
+        "style": "Regular"
+      },
+      {
+        "family": "Font Awesome 6 Free",
+        "style": "Solid"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "Black"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "Bold"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "ExtraBold"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "ExtraLight"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "Light"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "Medium"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "Regular"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "SemiBold"
+      },
+      {
+        "family": "Pretendard JP",
+        "style": "Thin"
+      }
+    ],
+    "textStyles": [
+      {
+        "id": "S:10096e0cd791ca584fa93297897af65ae42f2d0d,",
+        "name": "BIT365 BlackGold WOG/Navigation",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14
+      },
+      {
+        "id": "S:71cb39aeb8f787246f004bce6abe9ab0072aea6c,",
+        "name": "BIT365 BlackGold WOG/Group",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 12
+      }
+    ],
+    "pageMaster": {
+      "Header style#218:0": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "215:552",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "e22a0ed748a1b1fc5a50069af5834f7144c59706"
+          }
+        ]
+      },
+      "Sidebar style#218:1": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "216:654",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "08f5d0d086caed312d9127e634a44bd32012ae1d"
+          },
+          {
+            "type": "COMPONENT_SET",
+            "key": "4883af27d98e6249200e12e8eaf36654520e21c2"
+          }
+        ]
+      }
+    }
+  },
+  "footerFix": {
+    "removedNodeIds": [
+      "263:764",
+      "263:977",
+      "263:1178"
+    ],
+    "mutatedNodeIds": [
+      "263:552",
+      "263:553",
+      "263:601",
+      "I263:601;262:676",
+      "I263:601;262:677",
+      "I263:601;262:678",
+      "I263:601;262:675",
+      "263:555",
+      "I263:555;262:574",
+      "I263:555;262:575",
+      "I263:555;262:569",
+      "I263:555;262:570",
+      "I263:555;262:571",
+      "263:556",
+      "I263:556;262:558",
+      "I263:556;262:559",
+      "I263:556;262:553",
+      "I263:556;262:554",
+      "I263:556;262:555",
+      "263:557",
+      "I263:557;262:558",
+      "I263:557;262:559",
+      "I263:557;262:553",
+      "I263:557;262:554",
+      "I263:557;262:555",
+      "263:558",
+      "I263:558;262:558",
+      "I263:558;262:559",
+      "I263:558;262:553",
+      "I263:558;262:554",
+      "I263:558;262:555",
+      "263:559",
+      "I263:559;262:558",
+      "I263:559;262:559",
+      "I263:559;262:553",
+      "I263:559;262:554",
+      "I263:559;262:555",
+      "263:560",
+      "263:661",
+      "I263:661;262:676",
+      "I263:661;262:677",
+      "I263:661;262:678",
+      "I263:661;262:675",
+      "263:562",
+      "I263:562;262:558",
+      "I263:562;262:559",
+      "I263:562;262:553",
+      "I263:562;262:554",
+      "I263:562;262:555",
+      "263:563",
+      "I263:563;262:558",
+      "I263:563;262:559",
+      "I263:563;262:553",
+      "I263:563;262:554",
+      "I263:563;262:555",
+      "263:564",
+      "I263:564;262:558",
+      "I263:564;262:559",
+      "I263:564;262:553",
+      "I263:564;262:554",
+      "I263:564;262:555",
+      "263:565",
+      "I263:565;262:558",
+      "I263:565;262:559",
+      "I263:565;262:553",
+      "I263:565;262:554",
+      "I263:565;262:555",
+      "263:566",
+      "263:704",
+      "I263:704;262:676",
+      "I263:704;262:677",
+      "I263:704;262:678",
+      "I263:704;262:675",
+      "263:568",
+      "I263:568;262:558",
+      "I263:568;262:559",
+      "I263:568;262:553",
+      "I263:568;262:554",
+      "I263:568;262:555",
+      "263:569",
+      "I263:569;262:558",
+      "I263:569;262:559",
+      "I263:569;262:553",
+      "I263:569;262:554",
+      "I263:569;262:555",
+      "263:570",
+      "263:738",
+      "I263:738;262:676",
+      "I263:738;262:677",
+      "I263:738;262:678",
+      "I263:738;262:675",
+      "263:572",
+      "I263:572;262:558",
+      "I263:572;262:559",
+      "I263:572;262:553",
+      "I263:572;262:554",
+      "I263:572;262:555",
+      "263:573",
+      "I263:573;262:558",
+      "I263:573;262:559",
+      "I263:573;262:553",
+      "I263:573;262:554",
+      "I263:573;262:555",
+      "263:574",
+      "I263:574;262:558",
+      "I263:574;262:559",
+      "I263:574;262:553",
+      "I263:574;262:554",
+      "I263:574;262:555",
+      "263:575",
+      "263:765",
+      "263:766",
+      "263:814",
+      "I263:814;262:681",
+      "I263:814;262:682",
+      "I263:814;262:683",
+      "I263:814;262:680",
+      "263:768",
+      "I263:768;262:606",
+      "I263:768;262:607",
+      "I263:768;262:601",
+      "I263:768;262:602",
+      "I263:768;262:603",
+      "263:769",
+      "I263:769;262:590",
+      "I263:769;262:591",
+      "I263:769;262:585",
+      "I263:769;262:586",
+      "I263:769;262:587",
+      "263:770",
+      "I263:770;262:590",
+      "I263:770;262:591",
+      "I263:770;262:585",
+      "I263:770;262:586",
+      "I263:770;262:587",
+      "263:771",
+      "I263:771;262:590",
+      "I263:771;262:591",
+      "I263:771;262:585",
+      "I263:771;262:586",
+      "I263:771;262:587",
+      "263:772",
+      "I263:772;262:590",
+      "I263:772;262:591",
+      "I263:772;262:585",
+      "I263:772;262:586",
+      "I263:772;262:587",
+      "263:773",
+      "263:874",
+      "I263:874;262:681",
+      "I263:874;262:682",
+      "I263:874;262:683",
+      "I263:874;262:680",
+      "263:775",
+      "I263:775;262:590",
+      "I263:775;262:591",
+      "I263:775;262:585",
+      "I263:775;262:586",
+      "I263:775;262:587",
+      "263:776",
+      "I263:776;262:590",
+      "I263:776;262:591",
+      "I263:776;262:585",
+      "I263:776;262:586",
+      "I263:776;262:587",
+      "263:777",
+      "I263:777;262:590",
+      "I263:777;262:591",
+      "I263:777;262:585",
+      "I263:777;262:586",
+      "I263:777;262:587",
+      "263:778",
+      "I263:778;262:590",
+      "I263:778;262:591",
+      "I263:778;262:585",
+      "I263:778;262:586",
+      "I263:778;262:587",
+      "263:779",
+      "263:917",
+      "I263:917;262:681",
+      "I263:917;262:682",
+      "I263:917;262:683",
+      "I263:917;262:680",
+      "263:781",
+      "I263:781;262:590",
+      "I263:781;262:591",
+      "I263:781;262:585",
+      "I263:781;262:586",
+      "I263:781;262:587",
+      "263:782",
+      "I263:782;262:590",
+      "I263:782;262:591",
+      "I263:782;262:585",
+      "I263:782;262:586",
+      "I263:782;262:587",
+      "263:783",
+      "263:951",
+      "I263:951;262:681",
+      "I263:951;262:682",
+      "I263:951;262:683",
+      "I263:951;262:680",
+      "263:785",
+      "I263:785;262:590",
+      "I263:785;262:591",
+      "I263:785;262:585",
+      "I263:785;262:586",
+      "I263:785;262:587",
+      "263:786",
+      "I263:786;262:590",
+      "I263:786;262:591",
+      "I263:786;262:585",
+      "I263:786;262:586",
+      "I263:786;262:587",
+      "263:787",
+      "I263:787;262:590",
+      "I263:787;262:591",
+      "I263:787;262:585",
+      "I263:787;262:586",
+      "I263:787;262:587",
+      "263:788",
+      "263:978",
+      "263:979",
+      "263:1027",
+      "I263:1027;262:685",
+      "263:981",
+      "I263:981;262:638",
+      "I263:981;262:639",
+      "I263:981;262:633",
+      "I263:981;262:634",
+      "I263:981;262:635",
+      "263:982",
+      "I263:982;262:622",
+      "I263:982;262:623",
+      "I263:982;262:617",
+      "I263:982;262:618",
+      "I263:982;262:619",
+      "263:983",
+      "I263:983;262:622",
+      "I263:983;262:623",
+      "I263:983;262:617",
+      "I263:983;262:618",
+      "I263:983;262:619",
+      "263:984",
+      "I263:984;262:622",
+      "I263:984;262:623",
+      "I263:984;262:617",
+      "I263:984;262:618",
+      "I263:984;262:619",
+      "263:985",
+      "I263:985;262:622",
+      "I263:985;262:623",
+      "I263:985;262:617",
+      "I263:985;262:618",
+      "I263:985;262:619",
+      "276:3374",
+      "263:986",
+      "263:1084",
+      "I263:1084;262:685",
+      "263:988",
+      "I263:988;262:622",
+      "I263:988;262:623",
+      "I263:988;262:617",
+      "I263:988;262:618",
+      "I263:988;262:619",
+      "263:989",
+      "I263:989;262:622",
+      "I263:989;262:623",
+      "I263:989;262:617",
+      "I263:989;262:618",
+      "I263:989;262:619",
+      "263:990",
+      "I263:990;262:622",
+      "I263:990;262:623",
+      "I263:990;262:617",
+      "I263:990;262:618",
+      "I263:990;262:619",
+      "263:991",
+      "I263:991;262:622",
+      "I263:991;262:623",
+      "I263:991;262:617",
+      "I263:991;262:618",
+      "I263:991;262:619",
+      "263:992",
+      "263:1124",
+      "I263:1124;262:685",
+      "263:994",
+      "I263:994;262:622",
+      "I263:994;262:623",
+      "I263:994;262:617",
+      "I263:994;262:618",
+      "I263:994;262:619",
+      "263:995",
+      "I263:995;262:622",
+      "I263:995;262:623",
+      "I263:995;262:617",
+      "I263:995;262:618",
+      "I263:995;262:619",
+      "263:996",
+      "263:1155",
+      "I263:1155;262:685",
+      "263:998",
+      "I263:998;262:622",
+      "I263:998;262:623",
+      "I263:998;262:617",
+      "I263:998;262:618",
+      "I263:998;262:619",
+      "263:999",
+      "I263:999;262:622",
+      "I263:999;262:623",
+      "I263:999;262:617",
+      "I263:999;262:618",
+      "I263:999;262:619",
+      "263:1000",
+      "I263:1000;262:622",
+      "I263:1000;262:623",
+      "I263:1000;262:617",
+      "I263:1000;262:618",
+      "I263:1000;262:619",
+      "276:3375",
+      "263:1001"
+    ],
+    "checks": [
+      {
+        "id": "263:552",
+        "footer": "263:575",
+        "text": "TITAN SOLUSION",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Medium"
+        },
+        "size": 12,
+        "boxRemoved": true,
+        "menuHashBefore": "dbde0126",
+        "menuHashAfter": "dbde0126",
+        "height": 988
+      },
+      {
+        "id": "263:765",
+        "footer": "263:788",
+        "text": "TITAN SOLUSION",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Medium"
+        },
+        "size": 12,
+        "boxRemoved": true,
+        "menuHashBefore": "ddd9a252",
+        "menuHashAfter": "ddd9a252",
+        "height": 988
+      },
+      {
+        "id": "263:978",
+        "footer": "263:1001",
+        "text": "TITAN SOLUSION",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Medium"
+        },
+        "size": 12,
+        "boxRemoved": true,
+        "menuHashBefore": "60b66b34",
+        "menuHashAfter": "60b66b34",
+        "height": 808
+      }
+    ]
+  }
+}

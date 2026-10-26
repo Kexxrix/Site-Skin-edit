@@ -1,0 +1,539 @@
+{
+  "page": "25 · CC Lime · 레이아웃 바리에이션 · 1920",
+  "children": [
+    {
+      "id": "919:7491",
+      "name": "CC Lime · A 단일 히어로 + 2×2 바로가기 · 1920",
+      "type": "FRAME",
+      "x": 100,
+      "y": 220,
+      "w": 1920,
+      "h": 1941.199951171875
+    },
+    {
+      "id": "920:7490",
+      "name": "CC Lime · B 중앙 강조 캐러셀 + 슬림 바 · 1920",
+      "type": "FRAME",
+      "x": 2220,
+      "y": 220,
+      "w": 1920,
+      "h": 1941.199951171875
+    },
+    {
+      "id": "924:2163",
+      "name": "25 · CC Lime — 레이아웃 바리에이션",
+      "type": "TEXT",
+      "x": 100,
+      "y": 48,
+      "w": 3900,
+      "h": 40
+    },
+    {
+      "id": "924:2164",
+      "name": "원본 보존 · 기존 이미지 재사용 · A: 단일 히어로 + 2×2 정사각형 · B: 중앙 강조 스크롤 + 슬림 바로가기",
+      "type": "TEXT",
+      "x": 100,
+      "y": 104,
+      "w": 3900,
+      "h": 22
+    },
+    {
+      "id": "924:2165",
+      "name": "A · 단일 히어로 / 2×2 스퀘어 도크",
+      "type": "TEXT",
+      "x": 100,
+      "y": 170,
+      "w": 1920,
+      "h": 26
+    },
+    {
+      "id": "924:2166",
+      "name": "B · 중앙 강조 캐러셀 / 72px 슬림 바",
+      "type": "TEXT",
+      "x": 2220,
+      "y": 170,
+      "w": 1920,
+      "h": 26
+    },
+    {
+      "id": "925:2034",
+      "name": "P25/CC Lime/Top layout",
+      "type": "COMPONENT_SET",
+      "x": 100,
+      "y": 2560,
+      "w": 3280,
+      "h": 684
+    },
+    {
+      "id": "925:2035",
+      "name": "상단 전용 컴포넌트 · Layout 2종",
+      "type": "TEXT",
+      "x": 100,
+      "y": 2490,
+      "w": 3280,
+      "h": 30
+    }
+  ],
+  "sourceHash": "61ce5dee",
+  "sourceSize": [
+    1920,
+    1941.199951171875
+  ],
+  "fonts": [
+    {
+      "family": "Noto Sans KR",
+      "style": "Medium",
+      "variationSettings": {
+        "wght": 500
+      }
+    },
+    {
+      "family": "Noto Sans KR",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    {
+      "family": "Bebas Neue",
+      "style": "Regular"
+    },
+    {
+      "family": "Noto Sans KR",
+      "style": "Black",
+      "variationSettings": {
+        "wght": 900
+      }
+    },
+    {
+      "family": "Pretendard JP",
+      "style": "Bold"
+    },
+    {
+      "family": "Noto Sans KR",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400
+      }
+    }
+  ],
+  "top": {
+    "id": "930:2107",
+    "name": "Top layout · CenterBars · prototype frame",
+    "type": "FRAME",
+    "x": 45,
+    "y": 18,
+    "w": 1592,
+    "h": 588,
+    "children": [
+      {
+        "id": "930:2108",
+        "name": "B · Center-focus carousel",
+        "type": "FRAME",
+        "x": 0,
+        "y": 0,
+        "w": 1592,
+        "h": 464,
+        "children": [
+          {
+            "id": "930:2109",
+            "name": "Center-focus viewport · horizontal scroll",
+            "type": "FRAME",
+            "x": 0,
+            "y": 0,
+            "w": 1592,
+            "h": 420,
+            "children": [
+              {
+                "id": "930:2110",
+                "name": "Carousel track · three center-focus stops",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "w": 4128,
+                "h": 420,
+                "children": [
+                  {
+                    "id": "930:2111",
+                    "name": "P23-A0 / Events",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 44,
+                    "w": 324,
+                    "h": 332
+                  },
+                  {
+                    "id": "930:2125",
+                    "name": "P23-A0 / Payback",
+                    "type": "FRAME",
+                    "x": 340,
+                    "y": 0,
+                    "w": 912,
+                    "h": 420
+                  },
+                  {
+                    "id": "930:2139",
+                    "name": "P23-A0 / DailyReward",
+                    "type": "FRAME",
+                    "x": 1268,
+                    "y": 44,
+                    "w": 324,
+                    "h": 332
+                  },
+                  {
+                    "id": "930:2153",
+                    "name": "Events · center focus",
+                    "type": "FRAME",
+                    "x": 1608,
+                    "y": 0,
+                    "w": 912,
+                    "h": 420
+                  },
+                  {
+                    "id": "930:2167",
+                    "name": "Payback · side preview",
+                    "type": "FRAME",
+                    "x": 2536,
+                    "y": 44,
+                    "w": 324,
+                    "h": 332
+                  },
+                  {
+                    "id": "930:2181",
+                    "name": "Daily reward · center focus",
+                    "type": "FRAME",
+                    "x": 2876,
+                    "y": 0,
+                    "w": 912,
+                    "h": 420
+                  },
+                  {
+                    "id": "930:2195",
+                    "name": "Events · side preview",
+                    "type": "FRAME",
+                    "x": 3804,
+                    "y": 44,
+                    "w": 324,
+                    "h": 332
+                  },
+                  {
+                    "id": "930:2209",
+                    "name": "Center focus stop 1",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "w": 1592,
+                    "h": 420
+                  },
+                  {
+                    "id": "930:2210",
+                    "name": "Center focus stop 2",
+                    "type": "FRAME",
+                    "x": 1268,
+                    "y": 0,
+                    "w": 1592,
+                    "h": 420
+                  },
+                  {
+                    "id": "930:2211",
+                    "name": "Center focus stop 3",
+                    "type": "FRAME",
+                    "x": 2536,
+                    "y": 0,
+                    "w": 1592,
+                    "h": 420
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "930:2212",
+            "name": "Carousel navigation · three benefits",
+            "type": "FRAME",
+            "x": 0,
+            "y": 432,
+            "w": 1592,
+            "h": 32,
+            "children": [
+              {
+                "id": "930:2213",
+                "name": "Benefit selector · scroll targets",
+                "type": "FRAME",
+                "x": 536,
+                "y": 0,
+                "w": 520,
+                "h": 32,
+                "children": [
+                  {
+                    "id": "930:2214",
+                    "name": "Select 페이백 포인트",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "w": 168,
+                    "h": 32
+                  },
+                  {
+                    "id": "930:2216",
+                    "name": "Select 회원 이벤트",
+                    "type": "FRAME",
+                    "x": 176,
+                    "y": 0,
+                    "w": 168,
+                    "h": 32
+                  },
+                  {
+                    "id": "930:2218",
+                    "name": "Select 데일리 리워드",
+                    "type": "FRAME",
+                    "x": 352,
+                    "y": 0,
+                    "w": 168,
+                    "h": 32
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "930:2220",
+        "name": "콘텐츠 바로가기 / Section",
+        "type": "FRAME",
+        "x": 0,
+        "y": 480,
+        "w": 1592,
+        "h": 108,
+        "children": [
+          {
+            "id": "930:2221",
+            "name": "콘텐츠 바로가기 / Heading",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "w": 1592,
+            "h": 28,
+            "text": "콘텐츠 바로가기",
+            "font": {
+              "family": "Noto Sans KR",
+              "style": "Bold",
+              "variationSettings": {
+                "wght": 700
+              }
+            },
+            "fontSize": 20
+          },
+          {
+            "id": "930:2222",
+            "name": "콘텐츠 카드 / Grid",
+            "type": "FRAME",
+            "x": 0,
+            "y": 36,
+            "w": 1592,
+            "h": 72,
+            "children": [
+              {
+                "id": "930:2223",
+                "name": "Gateway / LiveCasino",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "w": 389.75,
+                "h": 72,
+                "children": [
+                  {
+                    "id": "930:2224",
+                    "name": "카드 콘텐츠",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "w": 389.75,
+                    "h": 72
+                  }
+                ]
+              },
+              {
+                "id": "930:2231",
+                "name": "Gateway / Slots",
+                "type": "FRAME",
+                "x": 400.75,
+                "y": 0,
+                "w": 389.75,
+                "h": 72,
+                "children": [
+                  {
+                    "id": "930:2232",
+                    "name": "카드 콘텐츠",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "w": 389.75,
+                    "h": 72
+                  }
+                ]
+              },
+              {
+                "id": "930:2239",
+                "name": "Gateway / Sports",
+                "type": "FRAME",
+                "x": 801.5,
+                "y": 0,
+                "w": 389.75,
+                "h": 72,
+                "children": [
+                  {
+                    "id": "930:2240",
+                    "name": "카드 콘텐츠",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "w": 389.75,
+                    "h": 72
+                  }
+                ]
+              },
+              {
+                "id": "930:2247",
+                "name": "Gateway / InPlay",
+                "type": "FRAME",
+                "x": 1202.25,
+                "y": 0,
+                "w": 389.75,
+                "h": 72,
+                "children": [
+                  {
+                    "id": "930:2248",
+                    "name": "카드 콘텐츠",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "w": 389.75,
+                    "h": 72
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sourceImageHashes": [
+    "2839ea3c2e4dfce5d0ac76690b2b8c80c299d4be",
+    "15c99cfd8e9b82bc12eb70e3745fba4714c13d88",
+    "ea1d8a912c9c2c21fee4e904e53a55532a5d0e0d",
+    "7cca493b57ef7384729013271cee4dc7d951dafd",
+    "407c0262b29f5d08aeb87a708b3dbbbd24079945",
+    "89b2e2ce556c25e9a431415246b0ecf4c2f575af",
+    "418450dd077342466d5c863b4230ddeebce44801",
+    "7ff2abed8d61fc240439d9ec7d6cd446b056a83e",
+    "b13193c04cb7851a252fa51eb707bf50dda0ebc9",
+    "70733d9457870d55e6fef6efb4c804557cc7e8d1",
+    "0932f6551a255dbace946c0b24b9b62296a1638d",
+    "ff9ad0c9b74ce2e4ae0a2b98e3eb18d0a3a76894",
+    "0b0ee2e71d5ec2f3ddd649dabdfd413affc4a603",
+    "b4f9e22c37e31cfa1c38f9f3448363fe75c0f99c",
+    "3e09b3a5e841c72859f04c3764c1f0080156b070",
+    "9c5614941fd495ce64ef99d283a6f2773aa83e0a",
+    "1f3049d3980080c185e7d4c75e0df23e24468cf7",
+    "2680103a27cbc9b02b7f9a82a5e6e0baf80c2198",
+    "83cf35bc32ad7e52afdc91830af7ac6053411d79",
+    "c17e2b5fde43d9a35f3bca07ee5588c8d14bef11",
+    "f85e41a37edafdd9fcc8792b59ab28a5efddafee",
+    "2fa5dfe44d019e8cca72ce1c0ca2213fe3d79a30",
+    "879de2364abc7facf3c36d646671c106af30ffcd",
+    "2ff81b73ccff1aab1dad54afc948d836e274f5cf",
+    "d4c4d93e9054def962fbcee4db556fa8c75c5b8e",
+    "2fe402079880854b29e6ca46785f5f91b22e59b5",
+    "2d71c1cf12a31aea50b03aa07be10b3fdb985889",
+    "f3524ba5f9c1d4a03c3ebbf60129316dd118ab4d",
+    "c1eafa0c3a64f66d472e3cf08f28973855944d44",
+    "621066c11aa2f0672a3cdcd749aca27aaa0db9cb",
+    "98b742be0ce98485ac65848a1e7a9749778cb611",
+    "faba7970e20533ca691a4c82667dac1f9fbd8656",
+    "5e84c89197587651e9480fecd783387f2e2ad8d8",
+    "c94702277c292dc6954e4e7dbfb3aee8021dfa0b",
+    "3558fc0732cf3f584b0af13590c07559c01eeec1",
+    "675c76d92fea8ff27ec78ac42c7c8c65fa7f0a80",
+    "98e45804d6efce7b2ae7f09306570f71ccfa67ce",
+    "163ce639b046df1b10139be4301e1ddd31575b20",
+    "20da911be9a3be59ba1c93760c4c8218d4b1eea3",
+    "a2d02400a7e3a30f6197c85c56c27ac47118bb9b",
+    "9a8f696a7145f99bb1755a4f68109205de7f7b02",
+    "2c1fd054913354cf47d789f46c9541e8c7a234bb",
+    "987918218af5aa7bbe1e9a0db7a419efdd83c966",
+    "4082a1aae3d0fd6ca6358b591a1f3d5bcd804bc8",
+    "5c992739b4687713473dce20a50f8137b8a1cd63",
+    "818dbb7c4d55b4cbfab221c1629a9ad0c29471e6",
+    "b9ab25fa8a631501e0923d88748ff94428962f72",
+    "5966af7c76a94e7d812033ac25fda8a13dbc2d8c",
+    "eee98cf2085f703ab8854ae5a7bb1774d4d910b5",
+    "a0049aa27ab4a91682d71f4e7a5add854ffe8218",
+    "212b1f28cb8bedfe22c1d9bd101efdb469f77c6c",
+    "380c6c8351e8f0d3ed0fea7c45159888a25afefd",
+    "e0e380c4db07372b52a1cda490b467fbcff6d48d",
+    "6d235a62331f3cac9a6c1c2406b5855be8485ebe",
+    "a75bf64bc4036196489c07caf06572c3500878bc",
+    "87044b7fa7812447f3b02640a61a2d033c34bd86",
+    "1c4bf81652308d97c2dffe9ec0c9cbc3c1f185d1",
+    "e2c291084784e9fbdef20c097a6ab9d42e0a020f",
+    "dff2375d46f8e9ec8ee92a527ca698a883e87344",
+    "08c06952d34a9f8fe9814c89d9de983ef7ab5cd8",
+    "6cc0df1f3835b399cb74e951222faf6daecedfd0",
+    "faa97287f76e36d08db845a9803aafd88f26253b",
+    "16d89440ee7e75f278af2758b8056a3bc478197b",
+    "3763b289431fe25fe25db59da867372e4318e83e",
+    "980f4cfd05d191f090a15a0c8dbaa3cbd371634c",
+    "9b27c7ccf8acca6d6b62da21612dc6dc063bc520",
+    "b65bdf4227e3098521a5e8a497c8629c59c69a68",
+    "cd831b5d2e03ec41c72b3713f018fbc81c085f79",
+    "6128f9d08558190bad046673dcfd8efc3d400cab",
+    "edc224fd2a9b95c40a7d1728f2d1a42b8a25aea0",
+    "76aa0dd6504ab36190a2c8dc855d018934adff31",
+    "2be187d47c73277291a6bf7d1deadf83f59b2a4f",
+    "d643d26a6f59500b4d9b72edbee9152b926d8dfd",
+    "e990de953666cc760894823e41022e36e12186bd",
+    "bd75af94b954d3fa20f2ce59bfbc6cbf5f12069b",
+    "fa5690586e2858f86b3c35ed24668fbcc84cbf06",
+    "9e10f9964466ee65f5cbc8273db9de2326cd2f9b",
+    "13539c0e53ecdb1d02069f25fb4d2a9e8dca4b76",
+    "f345b21544c76bc8d916e00a8eaf21f1592dd9b3",
+    "51293cb4fb659ad91806f05a803bb9c67acc5da6",
+    "c79e756f05d275df3c3e834c8f5254a5e03030ae",
+    "ffcd0b96dca29e2e117c4bbd3f543d66baf839dc",
+    "a582ccd035820beb6a79d8bb2f6bbf1509f9b525",
+    "7f50e22da163fb424fff3836feb4d64b963aa77b",
+    "5608d2b340b04f4a0948c82714059939c11282e6",
+    "0acc6ece610016af06eab2da999e67356baf2aaa",
+    "aec5b6ab4e40b9293ff4546f0c7eb7403c4f5f82",
+    "b16a220b041e8bd303f790a4a540399e7eac24e6",
+    "2579f4a3d03a93b81aee8bb550632958df9a3234",
+    "d74e7a45b3692c715b19c1f00c30a198be3ccdd0",
+    "e67eb23fd42644dfdd572ec4bff356d6d2b2101b",
+    "bc9b197223411741cd6e464019c188eebac17a72",
+    "d23b31141da3798b3ed1fee4a11c14c5f5345246",
+    "8d050d9ebb862b7ebe7f9d21d03d1f51a39ba647",
+    "98c63eaa872873559f639bef334041f4d1989606",
+    "8a43e46e9ef634e0f40a995afac2fd2f2425160d",
+    "8931bb468d6d74278ac48e446d85ec62714c3eae",
+    "e44e3b7afc3a32f88db52d67e371dcdb2a18e828",
+    "a7dafd13cde47441025350f0b0cdf9f304f04be1",
+    "be853fa4f4acb3fb8fc46cd502f5996db832ca6a"
+  ],
+  "protected": [
+    {
+      "id": "919:7491",
+      "hash": "5f4e494c"
+    },
+    {
+      "id": "920:7490",
+      "hash": "61ce5dee"
+    },
+    {
+      "id": "925:2034",
+      "hash": "8bd7e0f1"
+    }
+  ]
+}

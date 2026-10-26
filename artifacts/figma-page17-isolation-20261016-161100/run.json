@@ -1,0 +1,118 @@
+{
+  "task": "Isolate all component dependencies of Figma page 17",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "comparisonPage": {
+    "id": "347:553",
+    "name": "17 · 레퍼런스 사이드 패널 · 비교"
+  },
+  "independentLibraryPage": {
+    "id": "435:14043",
+    "name": "18 · 17번 비교 전용 컴포넌트"
+  },
+  "changes": {
+    "instanceRootsReplaced": 56,
+    "componentUnits": 69,
+    "componentsIncludingVariants": 167,
+    "variableCollections": 3,
+    "variables": 83,
+    "styles": 18,
+    "preservedEditableInstances": true,
+    "preservedExistingImages": true
+  },
+  "verification": {
+    "dependencyAudit": {
+      "pageId": "347:553",
+      "libraryPageId": "435:14043",
+      "nodes": 15384,
+      "instances": 2443,
+      "libraryUnits": 69,
+      "components": 167,
+      "variables": 83,
+      "styles": 18,
+      "externalMains": [],
+      "externalStyles": [],
+      "externalVariables": [],
+      "externalPropertyReferences": [],
+      "missing": [],
+      "prototypeCount": 0,
+      "prototypes": []
+    },
+    "sourceAndCloneEquivalence": {
+      "checkedUnits": 69,
+      "copyDifferences": []
+    },
+    "originalComponentPreservation": {
+      "checkedOriginalUnits": 69,
+      "changedOriginalUnits": [],
+      "pageTop": [
+        {
+          "id": "352:1058",
+          "x": 100,
+          "y": 100,
+          "w": 2418,
+          "h": 2806
+        },
+        {
+          "id": "356:552",
+          "x": 2700,
+          "y": 100,
+          "w": 15936,
+          "h": 4280.39990234375
+        },
+        {
+          "id": "356:8064",
+          "x": 100,
+          "y": 3100,
+          "w": 1536,
+          "h": 1048
+        },
+        {
+          "id": "381:10355",
+          "x": 100,
+          "y": 4300,
+          "w": 880,
+          "h": 1290
+        },
+        {
+          "id": "397:12461",
+          "x": 100,
+          "y": 5900,
+          "w": 880,
+          "h": 1290
+        },
+        {
+          "id": "410:15089",
+          "x": 100,
+          "y": 7500,
+          "w": 880,
+          "h": 1290
+        }
+      ]
+    },
+    "renderComparison": {
+      "nodeId": "410:14429",
+      "resolution": [
+        1920,
+        1900
+      ],
+      "before": "qa/before-1920.png",
+      "after": "qa/after-1920.png",
+      "pixelDifferenceBoundingBox": null,
+      "pixelIdentical": true
+    },
+    "repairedDuringValidation": {
+      "whiteMasterImageOverrides": 4,
+      "instanceAutoLayoutSettings": 2
+    },
+    "remainingRisks": []
+  },
+  "scope": {
+    "changedFigmaPages": [
+      "347:553",
+      "435:14043"
+    ],
+    "originalComponentPagesUnchanged": true,
+    "siteCodeChanged": false,
+    "sourceImageFilesChanged": false
+  }
+}

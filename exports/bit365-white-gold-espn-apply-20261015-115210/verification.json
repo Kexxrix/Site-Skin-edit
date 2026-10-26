@@ -1,0 +1,869 @@
+{
+  "scope": "Apply existing WhiteGold ESPN Panel sidebar as Page/1920 default; preserve all six comparisons and source components",
+  "baseline": {
+    "master": "317:1490",
+    "property": "Sidebar style#317:0",
+    "default": "313:552",
+    "side": {
+      "id": "317:1512",
+      "main": "313:552",
+      "w": 232,
+      "h": 1691.800048828125,
+      "refs": {
+        "mainComponent": "Sidebar style#317:0"
+      },
+      "sizing": [
+        "FIXED",
+        "FIXED"
+      ]
+    },
+    "screens": [
+      {
+        "id": "319:3120",
+        "name": "Page / wog / Inset / 1920",
+        "page": "307:552",
+        "sidebar": "313:804",
+        "hash": "6eec9b0e",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:3992",
+        "name": "Page / wog / Tiles / 1920",
+        "page": "307:552",
+        "sidebar": "313:1056",
+        "hash": "3764ae8f",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:6598",
+        "name": "Page / espn / Grid / 1920",
+        "page": "307:552",
+        "sidebar": "313:1763",
+        "hash": "15483091",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:5726",
+        "name": "Page / espn / Rail / 1920",
+        "page": "307:552",
+        "sidebar": "313:1523",
+        "hash": "2e469b73",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:4856",
+        "name": "Page / espn / Panel / 1920",
+        "page": "307:552",
+        "sidebar": "313:1287",
+        "hash": "f610562d",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:2206",
+        "name": "Page / wog / Raised / 1920",
+        "page": "307:552",
+        "sidebar": "313:552",
+        "hash": "6fa4ca47",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      }
+    ],
+    "protectedAssets": [
+      {
+        "id": "313:1286",
+        "hash": "8b838d5"
+      },
+      {
+        "id": "313:2001",
+        "hash": "cafa597c"
+      },
+      {
+        "id": "315:1193",
+        "hash": "10d6ce43"
+      },
+      {
+        "id": "316:1172",
+        "hash": "afdd5882"
+      }
+    ]
+  },
+  "change": {
+    "mutatedNodeIds": [
+      "317:1490",
+      "317:1512",
+      "319:3120",
+      "I319:3120;317:1512",
+      "319:3992",
+      "I319:3992;317:1512",
+      "319:6598",
+      "I319:6598;317:1512",
+      "319:5726",
+      "I319:5726;317:1512",
+      "319:4856",
+      "I319:4856;317:1512",
+      "319:2206",
+      "I319:2206;317:1512"
+    ],
+    "default": "313:1287",
+    "sidebar": {
+      "id": "317:1512",
+      "name": "Sidebar",
+      "main": "313:1287",
+      "size": [
+        232,
+        1691.800048828125
+      ]
+    },
+    "preserved": [
+      {
+        "id": "319:3120",
+        "requested": "313:804",
+        "actual": "313:804",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:3992",
+        "requested": "313:1056",
+        "actual": "313:1056",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:6598",
+        "requested": "313:1763",
+        "actual": "313:1763",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:5726",
+        "requested": "313:1523",
+        "actual": "313:1523",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:4856",
+        "requested": "313:1287",
+        "actual": "313:1287",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      },
+      {
+        "id": "319:2206",
+        "requested": "313:552",
+        "actual": "313:552",
+        "size": [
+          1920,
+          1899.199951171875
+        ]
+      }
+    ],
+    "createdNodeIds": [],
+    "reusedESPNComponent": true
+  },
+  "verification": {
+    "createdNodeIds": [
+      "340:6190"
+    ],
+    "removedNodeIds": [
+      "340:6190"
+    ],
+    "protectedAssets": [
+      {
+        "id": "313:1286",
+        "hash": "8b838d5",
+        "actual": "8b838d5",
+        "unchanged": true
+      },
+      {
+        "id": "313:2001",
+        "hash": "cafa597c",
+        "actual": "cafa597c",
+        "unchanged": true
+      },
+      {
+        "id": "315:1193",
+        "hash": "10d6ce43",
+        "actual": "10d6ce43",
+        "unchanged": true
+      },
+      {
+        "id": "316:1172",
+        "hash": "afdd5882",
+        "actual": "afdd5882",
+        "unchanged": true
+      }
+    ],
+    "screens": [
+      {
+        "id": "319:3120",
+        "before": "6eec9b0e",
+        "actual": "6eec9b0e",
+        "unchanged": true,
+        "sidebar": "313:804"
+      },
+      {
+        "id": "319:3992",
+        "before": "3764ae8f",
+        "actual": "3764ae8f",
+        "unchanged": true,
+        "sidebar": "313:1056"
+      },
+      {
+        "id": "319:6598",
+        "before": "15483091",
+        "actual": "15483091",
+        "unchanged": true,
+        "sidebar": "313:1763"
+      },
+      {
+        "id": "319:5726",
+        "before": "2e469b73",
+        "actual": "2e469b73",
+        "unchanged": true,
+        "sidebar": "313:1523"
+      },
+      {
+        "id": "319:4856",
+        "before": "f610562d",
+        "actual": "f610562d",
+        "unchanged": true,
+        "sidebar": "313:1287"
+      },
+      {
+        "id": "319:2206",
+        "before": "6fa4ca47",
+        "actual": "6fa4ca47",
+        "unchanged": true,
+        "sidebar": "313:552"
+      }
+    ],
+    "freshDefault": {
+      "id": "340:6190",
+      "property": "313:1287",
+      "sidebar": "313:1287",
+      "size": [
+        1920,
+        1899.199951171875
+      ]
+    },
+    "defaultESPN": true,
+    "editable": {
+      "totalDescendants": 560,
+      "nodeCounts": {
+        "COMPONENT": 1,
+        "INSTANCE": 60,
+        "FRAME": 242,
+        "TEXT": 194,
+        "RECTANGLE": 58,
+        "VECTOR": 6
+      },
+      "imageNodes": [
+        {
+          "id": "I317:1491;315:1211",
+          "name": "Alpha source / Logo",
+          "type": "RECTANGLE",
+          "w": 128,
+          "h": 26
+        },
+        {
+          "id": "I317:1664;316:1121;159:702",
+          "name": "Artwork",
+          "type": "FRAME",
+          "w": 522.6666870117188,
+          "h": 174
+        },
+        {
+          "id": "I317:1664;316:1121;159:703",
+          "name": "Shade",
+          "type": "FRAME",
+          "w": 522.6666870117188,
+          "h": 174
+        },
+        {
+          "id": "I317:1664;316:1123;159:702",
+          "name": "Artwork",
+          "type": "FRAME",
+          "w": 522.6666259765625,
+          "h": 174
+        },
+        {
+          "id": "I317:1664;316:1123;159:703",
+          "name": "Shade",
+          "type": "FRAME",
+          "w": 522.6666259765625,
+          "h": 174
+        },
+        {
+          "id": "I317:1664;316:1125;159:702",
+          "name": "Artwork",
+          "type": "FRAME",
+          "w": 522.6666259765625,
+          "h": 174
+        },
+        {
+          "id": "I317:1664;316:1130;159:735",
+          "name": "Artwork",
+          "type": "FRAME",
+          "w": 389.75,
+          "h": 158
+        },
+        {
+          "id": "I317:1664;316:1132;159:735",
+          "name": "Artwork",
+          "type": "FRAME",
+          "w": 389.75,
+          "h": 158
+        },
+        {
+          "id": "I317:1664;316:1134;159:735",
+          "name": "Artwork",
+          "type": "FRAME",
+          "w": 389.75,
+          "h": 158
+        },
+        {
+          "id": "I317:1664;316:1136;159:735",
+          "name": "Artwork",
+          "type": "FRAME",
+          "w": 389.75,
+          "h": 158
+        },
+        {
+          "id": "I317:1664;316:1140;159:764",
+          "name": "HomeLogo",
+          "type": "FRAME",
+          "w": 28,
+          "h": 28
+        },
+        {
+          "id": "I317:1664;316:1140;159:769",
+          "name": "AwayLogo",
+          "type": "FRAME",
+          "w": 28,
+          "h": 28
+        },
+        {
+          "id": "I317:1664;316:1141;159:764",
+          "name": "HomeLogo",
+          "type": "FRAME",
+          "w": 28,
+          "h": 28
+        },
+        {
+          "id": "I317:1664;316:1141;159:769",
+          "name": "AwayLogo",
+          "type": "FRAME",
+          "w": 28,
+          "h": 28
+        },
+        {
+          "id": "I317:1664;316:1142;159:764",
+          "name": "HomeLogo",
+          "type": "FRAME",
+          "w": 28,
+          "h": 28
+        },
+        {
+          "id": "I317:1664;316:1142;159:769",
+          "name": "AwayLogo",
+          "type": "FRAME",
+          "w": 28,
+          "h": 28
+        },
+        {
+          "id": "I317:1664;316:1147;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1147;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1148;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1148;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1149;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1149;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1150;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1150;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1151;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1151;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1152;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1152;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1153;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1153;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1154;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1154;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1155;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1155;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1156;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1156;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1161;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1161;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1162;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1162;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1163;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1163;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1164;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1164;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1165;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1165;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1166;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1166;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1167;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1167;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1168;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1168;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1169;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1169;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1170;159:848",
+          "name": "Art",
+          "type": "FRAME",
+          "w": 178,
+          "h": 238
+        },
+        {
+          "id": "I317:1664;316:1170;159:849",
+          "name": "Brandmark",
+          "type": "FRAME",
+          "w": 156,
+          "h": 58
+        },
+        {
+          "id": "I317:1664;316:1171;315:1119",
+          "name": "Logo / evolution / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1120",
+          "name": "Logo / asia-gaming / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1121",
+          "name": "Logo / castar / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1122",
+          "name": "Logo / betgames / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1123",
+          "name": "Logo / big-gaming / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1124",
+          "name": "Logo / dream-gaming / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1125",
+          "name": "Logo / wm-casino / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1126",
+          "name": "Logo / vivo-gaming / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1128",
+          "name": "Logo / pragmatic-play / Original image",
+          "type": "RECTANGLE",
+          "w": 177.85714721679688,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1129",
+          "name": "Logo / play-n-go / Original image",
+          "type": "RECTANGLE",
+          "w": 177.8571319580078,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1130",
+          "name": "Logo / yggdrasil / Original image",
+          "type": "RECTANGLE",
+          "w": 177.85714721679688,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1131",
+          "name": "Logo / red-tiger / Original image",
+          "type": "RECTANGLE",
+          "w": 177.85714721679688,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1132",
+          "name": "Logo / relax-gaming / Original image",
+          "type": "RECTANGLE",
+          "w": 177.85714721679688,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1133",
+          "name": "Logo / wazdan / Original image",
+          "type": "RECTANGLE",
+          "w": 177.85714721679688,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1134",
+          "name": "Logo / hacksaw / Original image",
+          "type": "RECTANGLE",
+          "w": 177.85714721679688,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1135",
+          "name": "Logo / playtech / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1137",
+          "name": "Logo / netent / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1138",
+          "name": "Logo / microgaming / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1139",
+          "name": "Logo / habanero / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1140",
+          "name": "Logo / pg-soft / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1141",
+          "name": "Logo / bng / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1142",
+          "name": "Logo / blueprint-gaming / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1143",
+          "name": "Logo / cq9 / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        },
+        {
+          "id": "I317:1664;316:1171;315:1144",
+          "name": "Logo / elk-studios / Original image",
+          "type": "RECTANGLE",
+          "w": 178,
+          "h": 64
+        }
+      ],
+      "fonts": [
+        "Font Awesome 6 Free",
+        "Pretendard JP"
+      ],
+      "fontPass": true,
+      "completeUIRaster": false
+    },
+    "master": {
+      "id": "317:1490",
+      "default": "313:1287",
+      "size": [
+        1920,
+        1899.199951171875
+      ]
+    },
+    "allPreserved": true
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "inventory": {
+    "screens": [
+      {
+        "id": "450:25841",
+        "name": "BlackGold / LibraryGold / 1920",
+        "type": "FRAME",
+        "w": 1920,
+        "h": 1899.199951171875,
+        "layout": "VERTICAL",
+        "primary": "AUTO",
+        "counter": "FIXED",
+        "sizingH": "FIXED",
+        "sizingV": "HUG",
+        "clips": false,
+        "header": {
+          "id": "450:25842",
+          "name": "Header",
+          "w": 1920,
+          "h": 64,
+          "main": "435:52325",
+          "children": [
+            {
+              "id": "I450:25842;435:52326",
+              "name": "Decoration",
+              "type": "FRAME",
+              "w": 1920,
+              "h": 64,
+              "visible": false
+            },
+            {
+              "id": "I450:25842;435:52327",
+              "name": "Menu",
+              "type": "FRAME",
+              "w": 28,
+              "h": 28,
+              "visible": true
+            },
+            {
+              "id": "I450:25842;435:52329",
+              "name": "Frame 1",
+              "type": "FRAME",
+              "w": 174,
+              "h": 26,
+              "visible": true
+            },
+            {
+              "id": "I450:25842;435:52333",
+              "name": "Search",
+              "type": "FRAME",
+              "w": 580,
+              "h": 42,
+              "visible": false
+            },
+            {
+              "id": "I450:25842;435:52336",
+              "name": "Spacer",
+              "type": "FRAME",
+              "w": 1412,
+              "h": 10,
+              "visible": true
+            },
+            {
+              "id": "I450:25842;435:52337",
+              "name": "Events",
+              "type": "TEXT",
+              "w": 32,
+              "h": 17,
+              "visible": true
+            },
+            {
+              "id": "I450:25842;435:52338",
+              "name": "Support",
+              "type": "TEXT",
+              "w": 42,
+              "h": 17,
+              "visible": true
+            },
+            {
+              "id": "I450:25842;435:52339",
+              "name": "P17 전용 / BIT365 BlackGold/Button/Ghost",
+              "type": "INSTANCE",
+              "w": 62,
+              "h": 40,
+              "visible": true
+            },
+            {
+              "id": "I450:25842;435:52340",
+              "name": "P17 전용 / BIT365 BlackGold/Button/Primary",
+              "type": "INSTANCE",
+              "w": 72,
+              "h": 40,
+              "visible": true
+            }
+          ]
+        },
+        "shell": {
+          "id": "450:25843",
+          "w": 1920,
+          "h": 1835.199951171875,
+          "grow": 0,
+          "sizingH": "FILL",
+          "sizingV": "HUG",
+          "primary": "FIXED",
+          "clips": false
+        },
+        "sidebar": {
+          "id": "450:25844",
+          "w": 232,
+          "h": 1691.800048828125,
+          "main": "435:49225",
+          "props": {
+            "Style": {
+              "value": "LibraryGold",
+              "type": "VARIANT",
+              "boundVariables": {}
+            },
+            "Theme": {
+              "value": "BlackGold",
+              "type": "VARIANT",
+              "boundVariables": {}
+            }
+          }
+        },
+        "body": {
+          "id": "450:25845",
+          "w": 1688,
+          "h": 1835.199951171875,
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "sizingV": "HUG"
+        }
+      },
+      {
+        "id": "450:20783",
+        "name": "WhiteGold / LibraryGold / 1920",
+        "type": "FRAME",
+        "w": 1920,
+        "h": 1899.199951171875,
+        "layout": "VERTICAL",
+        "primary": "AUTO",
+        "counter": "FIXED",
+        "sizingH": "FIXED",
+        "sizingV": "HUG",
+        "clips": false,
+        "header": {
+          "id": "450:20784",
+          "name": "Header",
+          "w": 1920,
+          "h": 64,
+          "main": "435:51895",
+          "children": [
+            {
+              "id": "I450:20784;435:51896",
+              "name": "Decoration",
+              "type": "FRAME",
+              "w": 1920,
+              "h": 64,
+              "visible": false
+            },
+            {
+              "id": "I450:20784;435:51897",
+              "name": "Menu",
+              "type": "FRAME",
+              "w": 28,
+              "h": 28,
+              "visible": true
+            },
+            {
+              "id": "I450:20784;435:51899",
+              "name": "Frame 1",
+              "type": "FRAME",
+              "w": 174,
+              "h": 26,
+              "visible": true
+            },
+            {
+              "id": "I450:20784;435:51905",
+              "name": "Search",
+              "type": "FRAME",
+              "w": 580,
+              "h": 42,
+              "visible": false
+            },
+            {
+              "id": "I450:20784;435:51908",
+              "name": "Spacer",
+              "type": "FRAME",
+              "w": 1412,
+              "h": 10,
+              "visible": true
+            },
+            {
+              "id": "I450:20784;435:51909",
+              "name": "Events",
+              "type": "TEXT",
+              "w": 32,
+              "h": 17,
+              "visible": true
+            },
+            {
+              "id": "I450:20784;435:51910",
+              "name": "Support",
+              "type": "TEXT",
+              "w": 42,
+              "h": 17,
+              "visible": true
+            },
+            {
+              "id": "I450:20784;435:51911",
+              "name": "P17 전용 / BIT365 BlackGold/Button/Ghost",
+              "type": "INSTANCE",
+              "w": 62,
+              "h": 40,
+              "visible": true
+            },
+            {
+              "id": "I450:20784;435:51912",
+              "name": "P17 전용 / BIT365 BlackGold/Button/Primary",
+              "type": "INSTANCE",
+              "w": 72,
+              "h": 40,
+              "visible": true
+            }
+          ]
+        },
+        "shell": {
+          "id": "450:20785",
+          "w": 1920,
+          "h": 1835.199951171875,
+          "grow": 0,
+          "sizingH": "FILL",
+          "sizingV": "HUG",
+          "primary": "FIXED",
+          "clips": true
+        },
+        "sidebar": {
+          "id": "450:20786",
+          "w": 232,
+          "h": 1691.800048828125,
+          "main": "435:49186",
+          "props": {
+            "Style": {
+              "value": "LibraryGold",
+              "type": "VARIANT",
+              "boundVariables": {}
+            },
+            "Theme": {
+              "value": "WhiteGold",
+              "type": "VARIANT",
+              "boundVariables": {}
+            }
+          }
+        },
+        "body": {
+          "id": "450:21394",
+          "w": 1688,
+          "h": 1835.199951171875,
+          "layout": "VERTICAL",
+          "primary": "AUTO",
+          "sizingV": "HUG"
+        }
+      }
+    ],
+    "pageChildren": [
+      {
+        "id": "352:1058",
+        "name": "사이드 패널 8종 · 두 가지 스킨",
+        "x": 100,
+        "y": 100,
+        "w": 2418,
+        "h": 2806
+      },
+      {
+        "id": "356:552",
+        "name": "1920 · 레퍼런스 전체 화면 16종",
+        "x": 2700,
+        "y": 100,
+        "w": 15936,
+        "h": 4280.39990234375
+      },
+      {
+        "id": "356:8064",
+        "name": "참조 출처 · 사이트용 조정 기록",
+        "x": 100,
+        "y": 3100,
+        "w": 1536,
+        "h": 1048
+      },
+      {
+        "id": "381:10355",
+        "name": "06 · 이미지 아이콘 패널 · 두 가지 스킨",
+        "x": 100,
+        "y": 4300,
+        "w": 880,
+        "h": 1290
+      },
+      {
+        "id": "397:12461",
+        "name": "07 · 게임 라이브러리형 · 두 가지 스킨",
+        "x": 100,
+        "y": 5900,
+        "w": 880,
+        "h": 1290
+      },
+      {
+        "id": "410:15089",
+        "name": "08 · 골드블랙 라이브러리형 · 두 가지 스킨",
+        "x": 100,
+        "y": 7500,
+        "w": 880,
+        "h": 1290
+      }
+    ],
+    "sidebarVariants": [
+      {
+        "id": "435:49186",
+        "name": "Style=LibraryGold, Theme=WhiteGold"
+      },
+      {
+        "id": "435:49225",
+        "name": "Style=LibraryGold, Theme=BlackGold"
+      }
+    ],
+    "paintStyles": [
+      {
+        "id": "S:6d9014548fcc12932c7cb42509704e9217fd6b08,",
+        "name": "P17 전용 / BIT365 ReferenceSidebar/Gold"
+      },
+      {
+        "id": "S:1fbeb48c3c54bb4f7a40bc87fd6c0c35806d5e5e,",
+        "name": "P17 전용 / BIT365 BlackGold/Compare/Metal"
+      },
+      {
+        "id": "S:3e06bc027a713c6422b99da22c289d0b3838c117,",
+        "name": "P17 전용 / BIT365 BlackGold/Compare/Gold"
+      }
+    ],
+    "collections": [
+      {
+        "id": "VariableCollectionId:435:14044",
+        "name": "P17 전용 / BIT365 · Reference Side Panels",
+        "modes": [
+          {
+            "name": "WhiteGold",
+            "modeId": "435:0"
+          },
+          {
+            "name": "BlackGold",
+            "modeId": "435:1"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:435:14045",
+        "name": "P17 전용 / BIT365 · White Gold · Independent",
+        "modes": [
+          {
+            "name": "WhiteGold",
+            "modeId": "435:2"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:435:14046",
+        "name": "P17 전용 / BIT365 · Black Gold · Independent",
+        "modes": [
+          {
+            "name": "Black Gold",
+            "modeId": "435:3"
+          }
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "id": "0:1",
+        "name": "01 · 반응형 와이어프레임"
+      },
+      {
+        "id": "2:2",
+        "name": "02 · 편집 컴포넌트"
+      },
+      {
+        "id": "2:3",
+        "name": "03 · 반응형 규칙"
+      },
+      {
+        "id": "44:552",
+        "name": "04 · BIT365 홈"
+      },
+      {
+        "id": "44:553",
+        "name": "05 · BIT365 컴포넌트"
+      },
+      {
+        "id": "88:553",
+        "name": "08 · 샴페인 골드 컴포넌트"
+      },
+      {
+        "id": "73:2891",
+        "name": "06 · BIT365 · ALDEBARAN 테마"
+      },
+      {
+        "id": "88:552",
+        "name": "07 · BIT365 · 샴페인 골드"
+      },
+      {
+        "id": "139:552",
+        "name": "09 · BIT365 · 블랙 골드"
+      },
+      {
+        "id": "158:597",
+        "name": "10 · 블랙 골드 컴포넌트"
+      },
+      {
+        "id": "212:552",
+        "name": "11 · 헤더·메뉴 · 3종 컴포넌트"
+      },
+      {
+        "id": "212:553",
+        "name": "12 · 헤더·메뉴 · 3종 비교"
+      },
+      {
+        "id": "261:552",
+        "name": "13 · WOG 입체 사이드바"
+      },
+      {
+        "id": "284:552",
+        "name": "14 · ESPN 플랫 사이드바"
+      },
+      {
+        "id": "307:552",
+        "name": "15 · BIT365 · 화이트 골드"
+      },
+      {
+        "id": "347:552",
+        "name": "16 · 레퍼런스 사이드 패널 · 컴포넌트"
+      },
+      {
+        "id": "347:553",
+        "name": "17 · 레퍼런스 사이드 패널 · 비교"
+      },
+      {
+        "id": "435:14043",
+        "name": "18 · 17번 비교 전용 컴포넌트"
+      }
+    ]
+  },
+  "assets": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"out\":[{\"id\":\"435:52330\",\"name\":\"Logo\",\"type\":\"FRAME\",\"w\":128,\"h\":26,\"fills\":[{\"type\":\"IMAGE\",\"visible\":true,\"opacity\":1,\"blendMode\":\"NORMAL\",\"scaleMode\":\"FIT\",\"scalingFactor\":0.5,\"rotation\":0,\"filters\":{\"exposure\":0,\"contrast\":0,\"saturation\":0,\"temperature\":0,\"tint\":0,\"highlights\":0,\"shadows\":0},\"imageTransform\":[[1,0,0],[0,1,0]],\"imageHash\":\"89b2e2ce556c25e9a431415246b0ecf4c2f575af\"}],\"children\":[]},{\"id\":\"435:51900\",\"name\":\"Logo\",\"type\":\"FRAME\",\"w\":128,\"h\":26,\"fills\":[],\"children\":[{\"id\":\"435:51901\",\"type\":\"RECTANGLE\",\"name\":\"Alpha source / Logo\",\"font\":null},{\"id\":\"435:51902\",\"type\":\"RECTANGLE\",\"name\":\"Gold silhouette\",\"font\":null}]},{\"id\":\"435:52882\",\"name\":\"P17 전용 / BIT365 BlackGold/Button/Primary\",\"type\":\"COMPONENT\",\"w\":72,\"h\":40,\"fills\":[{\"type\":\"SOLID\",\"visible\":true,\"opacity\":1,\"blendMode\":\"NORMAL\",\"color\":{\"r\":0.8313725590705872,\"g\":0.686274528503418,\"b\":0.21568627655506134},\"boundVariables\":{\"color\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14083\"}}},{\"type\":\"GRADIENT_LINEAR\",\"visible\":true,\"opacity\":1,\"blendMode\":\"NORMAL\",\"gradientStops\":[{\"color\":{\"r\":0.9803921580314636,\"g\":0.9686274528503418,\"b\":0.8235294222831726,\"a\":1},\"position\":0,\"boundVariables\":{}},{\"color\":{\"r\":1,\"g\":0.8567878007888794,\"b\":0.5336538553237915,\"a\":1},\"position\":0.14423076808452606,\"boundVariables\":{}},{\"color\":{\"r\":1,\"g\":0.7997111678123474,\"b\":0.4663461446762085,\"a\":1},\"position\":0.20673076808452606,\"boundVariables\":{}},{\"color\":{\"r\":1,\"g\":0.7785155177116394,\"b\":0.42788460850715637,\"a\":1},\"position\":0.4615384638309479,\"boundVariables\":{}},{\"color\":{\"r\":0.817307710647583,\"g\":0.5174322724342346,\"b\":0,\"a\":1},\"position\":0.7740384340286255,\"boundVariables\":{}},{\"color\":{\"r\":0.6442307829856873,\"g\":0.3681318461894989,\"b\":0,\"a\":1},\"position\":0.9663461446762085,\"boundVariables\":{}}],\"gradientTransform\":[[6.123234262925839e-17,1,0],[-1,6.123234262925839e-17,1]]}],\"children\":[{\"id\":\"435:52883\",\"type\":\"TEXT\",\"name\":\"Label\",\"font\":{\"family\":\"Pretendard JP\",\"style\":\"Bold\"}}]},{\"id\":\"435:52880\",\"name\":\"P17 전용 / BIT365 BlackGold/Button/Ghost\",\"type\":\"COMPONENT\",\"w\":62,\"h\":40,\"fills\":[],\"children\":[{\"id\":\"435:52881\",\"type\":\"TEXT\",\"name\":\"Label\",\"font\":{\"family\":\"Pretendard JP\",\"style\":\"Bold\"}}]}],\"vars\":[{\"id\":\"VariableID:435:14050\",\"name\":\"page\",\"values\":{\"435:0\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14064\"},\"435:1\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14066\"}}},{\"id\":\"VariableID:435:14061\",\"name\":\"surface\",\"values\":{\"435:0\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14054\"},\"435:1\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14071\"}}},{\"id\":\"VariableID:435:14057\",\"name\":\"panel\",\"values\":{\"435:0\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14078\"},\"435:1\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14068\"}}},{\"id\":\"VariableID:435:14058\",\"name\":\"line\",\"values\":{\"435:0\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14065\"},\"435:1\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14067\"}}},{\"id\":\"VariableID:435:14059\",\"name\":\"muted\",\"values\":{\"435:0\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14075\"},\"435:1\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14082\"}}},{\"id\":\"VariableID:435:14062\",\"name\":\"goldText\",\"values\":{\"435:0\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14093\"},\"435:1\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14100\"}}},{\"id\":\"VariableID:435:14063\",\"name\":\"text\",\"values\":{\"435:0\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14080\"},\"435:1\":{\"type\":\"VARIABLE_ALIAS\",\"id\":\"VariableID:435:14070\"}}}]}"
+      }
+    ],
+    "isError": false
+  }
+}

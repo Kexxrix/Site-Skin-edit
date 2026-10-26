@@ -1,0 +1,928 @@
+{
+  "scope": "12 existing components, 24 added variants, 36 total variants",
+  "sets": [
+    {
+      "id": "28:556",
+      "name": "Button/Default",
+      "originalId": "3:2",
+      "variants": [
+        {
+          "id": "3:2",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:552",
+          "name": "Style=라운드"
+        },
+        {
+          "id": "28:554",
+          "name": "Style=컴팩트"
+        }
+      ]
+    },
+    {
+      "id": "28:561",
+      "name": "Button/Solid",
+      "originalId": "3:4",
+      "variants": [
+        {
+          "id": "3:4",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:557",
+          "name": "Style=라운드"
+        },
+        {
+          "id": "28:559",
+          "name": "Style=컴팩트"
+        }
+      ]
+    },
+    {
+      "id": "28:566",
+      "name": "Module/Code",
+      "originalId": "3:6",
+      "variants": [
+        {
+          "id": "3:6",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:562",
+          "name": "Style=원형"
+        },
+        {
+          "id": "28:564",
+          "name": "Style=채움"
+        }
+      ]
+    },
+    {
+      "id": "28:571",
+      "name": "Navigation/Item",
+      "originalId": "3:8",
+      "variants": [
+        {
+          "id": "3:8",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:567",
+          "name": "Style=필형"
+        },
+        {
+          "id": "28:569",
+          "name": "Style=라인형"
+        }
+      ]
+    },
+    {
+      "id": "28:582",
+      "name": "GameCard/Desktop",
+      "originalId": "4:2",
+      "variants": [
+        {
+          "id": "4:2",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:572",
+          "name": "Style=이미지 강조"
+        },
+        {
+          "id": "28:577",
+          "name": "Style=가로형"
+        }
+      ]
+    },
+    {
+      "id": "28:593",
+      "name": "GameCard/Mobile",
+      "originalId": "4:9",
+      "variants": [
+        {
+          "id": "4:9",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:583",
+          "name": "Style=이미지 강조"
+        },
+        {
+          "id": "28:588",
+          "name": "Style=가로형"
+        }
+      ]
+    },
+    {
+      "id": "28:608",
+      "name": "EventCard/Horizontal",
+      "originalId": "4:16",
+      "variants": [
+        {
+          "id": "4:16",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:594",
+          "name": "Style=이미지 오른쪽"
+        },
+        {
+          "id": "28:600",
+          "name": "Style=세로형"
+        }
+      ]
+    },
+    {
+      "id": "28:623",
+      "name": "EventCard/Stacked",
+      "originalId": "4:25",
+      "variants": [
+        {
+          "id": "4:25",
+          "name": "Style=기본"
+        },
+        {
+          "id": "28:609",
+          "name": "Style=이미지 강조"
+        },
+        {
+          "id": "28:615",
+          "name": "Style=가로형"
+        }
+      ]
+    },
+    {
+      "id": "30:562",
+      "name": "Shortcut/Desktop",
+      "originalId": "4:34",
+      "variants": [
+        {
+          "id": "4:34",
+          "name": "Style=기본"
+        },
+        {
+          "id": "30:556",
+          "name": "Style=라운드"
+        },
+        {
+          "id": "30:559",
+          "name": "Style=라인형"
+        }
+      ]
+    },
+    {
+      "id": "30:569",
+      "name": "Shortcut/Mobile",
+      "originalId": "4:40",
+      "variants": [
+        {
+          "id": "4:40",
+          "name": "Style=기본"
+        },
+        {
+          "id": "30:563",
+          "name": "Style=라운드"
+        },
+        {
+          "id": "30:566",
+          "name": "Style=라인형"
+        }
+      ]
+    },
+    {
+      "id": "30:598",
+      "name": "Match/Row",
+      "originalId": "4:46",
+      "variants": [
+        {
+          "id": "4:46",
+          "name": "Style=기본"
+        },
+        {
+          "id": "30:570",
+          "name": "Style=라운드"
+        },
+        {
+          "id": "30:584",
+          "name": "Style=컴팩트"
+        }
+      ]
+    },
+    {
+      "id": "30:627",
+      "name": "Match/Stacked",
+      "originalId": "4:60",
+      "variants": [
+        {
+          "id": "4:60",
+          "name": "Style=기본"
+        },
+        {
+          "id": "30:599",
+          "name": "Style=라운드"
+        },
+        {
+          "id": "30:613",
+          "name": "Style=컴팩트"
+        }
+      ]
+    }
+  ],
+  "basePreservation": [
+    {
+      "id": "3:2",
+      "name": "Button/Default",
+      "unchanged": true
+    },
+    {
+      "id": "3:4",
+      "name": "Button/Solid",
+      "unchanged": true
+    },
+    {
+      "id": "3:6",
+      "name": "Module/Code",
+      "unchanged": true
+    },
+    {
+      "id": "3:8",
+      "name": "Navigation/Item",
+      "unchanged": true
+    },
+    {
+      "id": "4:2",
+      "name": "GameCard/Desktop",
+      "unchanged": true
+    },
+    {
+      "id": "4:9",
+      "name": "GameCard/Mobile",
+      "unchanged": true
+    },
+    {
+      "id": "4:16",
+      "name": "EventCard/Horizontal",
+      "unchanged": true
+    },
+    {
+      "id": "4:25",
+      "name": "EventCard/Stacked",
+      "unchanged": true
+    },
+    {
+      "id": "4:34",
+      "name": "Shortcut/Desktop",
+      "unchanged": true
+    },
+    {
+      "id": "4:40",
+      "name": "Shortcut/Mobile",
+      "unchanged": true
+    },
+    {
+      "id": "4:46",
+      "name": "Match/Row",
+      "unchanged": true
+    },
+    {
+      "id": "4:60",
+      "name": "Match/Stacked",
+      "unchanged": true
+    }
+  ],
+  "screenPreservation": [
+    {
+      "id": "5:2",
+      "name": "1440px · Desktop",
+      "sameBounds": true,
+      "sameText": true,
+      "sameTextPropertyValues": true,
+      "keyChange": "Component property IDs regenerated by combineAsVariants; names and values retained"
+    },
+    {
+      "id": "6:191",
+      "name": "1920px · Desktop",
+      "sameBounds": true,
+      "sameText": true,
+      "sameTextPropertyValues": true,
+      "keyChange": "Component property IDs regenerated by combineAsVariants; names and values retained"
+    },
+    {
+      "id": "6:503",
+      "name": "768px · Tablet",
+      "sameBounds": true,
+      "sameText": true,
+      "sameTextPropertyValues": true,
+      "keyChange": "Component property IDs regenerated by combineAsVariants; names and values retained"
+    },
+    {
+      "id": "6:792",
+      "name": "390px · Mobile",
+      "sameBounds": true,
+      "sameText": true,
+      "sameTextPropertyValues": true,
+      "keyChange": "Component property IDs regenerated by combineAsVariants; names and values retained"
+    },
+    {
+      "id": "9:740",
+      "name": "B · 모바일 메뉴 펼침",
+      "sameBounds": true,
+      "sameText": true,
+      "sameTextPropertyValues": true,
+      "keyChange": "Component property IDs regenerated by combineAsVariants; names and values retained"
+    }
+  ],
+  "styleSwitchChecks": [
+    {
+      "id": "28:556",
+      "name": "Button/Default",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "컴팩트",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "28:561",
+      "name": "Button/Solid",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "컴팩트",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "28:566",
+      "name": "Module/Code",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "원형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "채움",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "28:571",
+      "name": "Navigation/Item",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "필형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라인형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "28:582",
+      "name": "GameCard/Desktop",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "이미지 강조",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "가로형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "28:593",
+      "name": "GameCard/Mobile",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "이미지 강조",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "가로형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "28:608",
+      "name": "EventCard/Horizontal",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "이미지 오른쪽",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "세로형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "28:623",
+      "name": "EventCard/Stacked",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "이미지 강조",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "가로형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "30:562",
+      "name": "Shortcut/Desktop",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라인형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "30:569",
+      "name": "Shortcut/Mobile",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라인형",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "30:598",
+      "name": "Match/Row",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "컴팩트",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "30:627",
+      "name": "Match/Stacked",
+      "results": [
+        {
+          "style": "기본",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        },
+        {
+          "style": "컴팩트",
+          "propertyValuesPreserved": true,
+          "detached": false,
+          "overflow": []
+        }
+      ]
+    }
+  ],
+  "actualInstanceSwitchChecks": [
+    {
+      "sourceId": "5:118",
+      "component": "GameCard/Desktop",
+      "width": 172.3333282470703,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 172.3333282470703,
+          "h": 159,
+          "overflow": []
+        },
+        {
+          "style": "이미지 강조",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 172.3333282470703,
+          "h": 235,
+          "overflow": []
+        },
+        {
+          "style": "가로형",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 172.3333282470703,
+          "h": 103.75,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "6:885",
+      "component": "GameCard/Mobile",
+      "width": 159,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 159,
+          "h": 157,
+          "overflow": []
+        },
+        {
+          "style": "이미지 강조",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 159,
+          "h": 207,
+          "overflow": []
+        },
+        {
+          "style": "가로형",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 159,
+          "h": 116.44999694824219,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "5:60",
+      "component": "EventCard/Horizontal",
+      "width": 545,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 545,
+          "h": 152,
+          "overflow": []
+        },
+        {
+          "style": "이미지 오른쪽",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 545,
+          "h": 152,
+          "overflow": []
+        },
+        {
+          "style": "세로형",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 545,
+          "h": 278.20001220703125,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "6:827",
+      "component": "EventCard/Stacked",
+      "width": 328,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 328,
+          "h": 252.1999969482422,
+          "overflow": []
+        },
+        {
+          "style": "이미지 강조",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 328,
+          "h": 302.20001220703125,
+          "overflow": []
+        },
+        {
+          "style": "가로형",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 328,
+          "h": 152,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "5:236",
+      "component": "Match/Row",
+      "width": 1104,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 1104,
+          "h": 84,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 1104,
+          "h": 84,
+          "overflow": []
+        },
+        {
+          "style": "컴팩트",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 1104,
+          "h": 74,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "6:1003",
+      "component": "Match/Stacked",
+      "width": 328,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 328,
+          "h": 149,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 328,
+          "h": 149,
+          "overflow": []
+        },
+        {
+          "style": "컴팩트",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 328,
+          "h": 135,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "5:18",
+      "component": "Button/Default",
+      "width": 62,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 62,
+          "h": 38,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 62,
+          "h": 38,
+          "overflow": []
+        },
+        {
+          "style": "컴팩트",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 62,
+          "h": 32,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "5:30",
+      "component": "Navigation/Item",
+      "width": 190,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 190,
+          "h": 43,
+          "overflow": []
+        },
+        {
+          "style": "필형",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 190,
+          "h": 43,
+          "overflow": []
+        },
+        {
+          "style": "라인형",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 190,
+          "h": 34.70000076293945,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "sourceId": "5:81",
+      "component": "Shortcut/Desktop",
+      "width": 361.3333435058594,
+      "modes": [
+        {
+          "style": "기본",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 361.3333435058594,
+          "h": 60,
+          "overflow": []
+        },
+        {
+          "style": "라운드",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 361.3333435058594,
+          "h": 60,
+          "overflow": []
+        },
+        {
+          "style": "라인형",
+          "textPreserved": true,
+          "imagesPreserved": true,
+          "w": 361.3333435058594,
+          "h": 44,
+          "overflow": []
+        }
+      ]
+    }
+  ],
+  "overview": {
+    "id": "32:556",
+    "width": 1800,
+    "height": 3202.4,
+    "url": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=32-556",
+    "render": "overview-checked.png",
+    "example": "gamecard-example.png"
+  },
+  "visualStatus": "Passed: all 36 examples rendered, no visible clipping or overlap after fixing the Match/Row comparison arrangement.",
+  "unmodified": [
+    "All original masters' visuals, dimensions and content",
+    "Existing home screen content and positions",
+    "User-supplied image assets and reference rectangle",
+    "Local website source"
+  ],
+  "calculation": {
+    "added": "12 × 2 = 24",
+    "total": "12 × 3 = 36"
+  },
+  "scopeLimits": "Only the existing 12 component families and their comparison board. No page modules, source code or extra content were added."
+}

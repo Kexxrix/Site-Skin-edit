@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-21",
+  "task": "ZXC reference access and additional page24 theme",
+  "sourceURL": "https://zxc.bet/?ref=tokkis&ref_event=18cf84b5-2e28-45cf-a335-6a7d621c2a2d",
+  "access": {
+    "browser": "Chrome",
+    "publicHome": true,
+    "loginUsed": false
+  },
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "pageId": "795:1330",
+    "frameId": "829:2453",
+    "url": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=829-2453",
+    "backgroundId": "829:3120",
+    "shadeId": "831:3010"
+  },
+  "palette": {
+    "page": "#101820",
+    "header": "#17222b",
+    "sidebar": "#1a2630",
+    "panel": "#24333f",
+    "control": "#263844",
+    "input": "#202f3a",
+    "ink": "#071820",
+    "accent": "#63c7f2",
+    "accentLight": "#83d8fa",
+    "text": "#f4f9fc",
+    "muted": "#a8bac6",
+    "line": "#39505e",
+    "overlayTop": "#0c161e",
+    "overlayMid": "#0e1a24",
+    "overlayBottom": "#0a121a"
+  },
+  "verification": {
+    "layoutDifferences": 0,
+    "instanceLinksPreserved": 94,
+    "sourceImagesPreserved": 100,
+    "masksPreserved": 3,
+    "protectedScreensAndMasters": 47,
+    "visibleTexts": 151,
+    "textStyleCount": 19,
+    "variables": 35,
+    "fontsLoaded": 7,
+    "textTrimUsed": false,
+    "visualReview": "PASS",
+    "finalScreenshot": "qa/final-full-page-png.png"
+  },
+  "status": {
+    "created": true,
+    "technicalQA": "PASS",
+    "visualQA": "PASS",
+    "userAccepted": false,
+    "adopted": false,
+    "webCodeChanged": false,
+    "deployed": false
+  },
+  "limitations": [
+    "Reference SCore font replaced with existing verified Pretendard JP",
+    "Gateway bitmap gold lettering preserved",
+    "Figma 1920 visual only; no new mobile/runtime behavior tested"
+  ]
+}

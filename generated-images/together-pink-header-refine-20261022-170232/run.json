@@ -1,0 +1,82 @@
+{
+  "task": "Together Pink themed header and subtler body background",
+  "date": "2026-10-22",
+  "timezone": "Asia/Seoul",
+  "method": "Built-in image_gen",
+  "scope": "Figma Together Pink background treatment only; preserve live user-enlarged mascot and fixed layout",
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "pageId": "795:1330",
+    "rootId": "850:3637",
+    "mutatedNodeIds": [
+      "850:3638",
+      "905:7502"
+    ],
+    "createdNodeIds": []
+  },
+  "generation": {
+    "attempted": 1,
+    "succeeded": 1,
+    "failed": 0,
+    "skipped": 0,
+    "selectedByAgent": 1,
+    "figmaApplied": 1,
+    "acceptedByUser": 0,
+    "webAdopted": 0,
+    "prompt": "prompts/header.txt",
+    "asset": {
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-c9114ba5-9782-4dbb-b63b-e05bafe9c431.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-header-refine-20261022-170232/results/together-pink-fantasy-header-v1.png",
+      "operation": "move",
+      "verification": "qa/asset-move.json"
+    },
+    "requestedAspectRatio": "8:1 panoramic header art",
+    "actualAspectRatio": "3:1 (2172x724), displayed with centered FILL crop at 1920x88",
+    "attachedImageReferences": [],
+    "reference": "Existing live page and user screenshot inspected for style and crop; text generation with matching art direction"
+  },
+  "changes": {
+    "headerImageOpacity": 0.6,
+    "headerSize": [
+      1920,
+      88
+    ],
+    "bodyImageOpacityBefore": 0.8,
+    "bodyImageOpacityAfter": 0.38,
+    "mascot": {
+      "preservedUserEdit": true,
+      "nodeId": "905:7503",
+      "x": -162,
+      "y": 1086,
+      "width": 573,
+      "height": 749,
+      "sourceImageUnchanged": true,
+      "cropPolicy": "User allows partial edge crop if character stays recognizable and layout unaffected"
+    }
+  },
+  "verification": {
+    "unrequestedCoreChanges": false,
+    "coreHashBefore": "3eab0228",
+    "coreHashAfter": "3eab0228",
+    "mascotUnchanged": true,
+    "instanceCount": 94,
+    "protectedCount": 55,
+    "protectedUnchanged": true,
+    "protectedScreens": 11,
+    "protectedMasters": 44,
+    "visualQa": "Final full 1920 screenshot and exact-size 1920x88 header crop inspected. Face remains recognizable despite intentional crop; existing content remains unobscured.",
+    "formatAndSha256": "pass",
+    "runtimeQa": "Not applicable; no website code or server changed"
+  },
+  "evidence": {
+    "baseline": "qa/baseline.json",
+    "applyState": "qa/apply-state.json",
+    "before": "qa/reference-before.png",
+    "after": "qa/together-pink-final.png",
+    "headerDetail": "qa/header-detail.png",
+    "comparison": "qa/before-after.png"
+  },
+  "sourcePreservation": "Previous generated background and transparent mascot assets were not moved, overwritten, resized or regenerated.",
+  "rollback": "Restore header fills and body image opacity from qa/baseline.json; retain user's mascot placement.",
+  "runDirectory": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-header-refine-20261022-170232"
+}

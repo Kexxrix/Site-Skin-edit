@@ -1,0 +1,2171 @@
+{
+  "status": "completed-and-verified-in-figma",
+  "request": "Preserve adopted LibraryGold sidebar and add one variation with generated freestanding gold icons without square frames.",
+  "tool": "built-in image_gen",
+  "counts": {
+    "attempted": 14,
+    "succeeded": 14,
+    "failed": 0,
+    "skipped": 0,
+    "selectedByAgent": 14,
+    "rejected": 0,
+    "acceptedByUser": 0
+  },
+  "scope": {
+    "newVariation": "LibraryGoldFree",
+    "skins": [
+      "BlackGold",
+      "WhiteGold"
+    ],
+    "desktop1920": true,
+    "mobile": false,
+    "websiteSourceChanged": false,
+    "activeAdoptedSidebarReplaced": false
+  },
+  "assets": [
+    {
+      "id": "deposit",
+      "file": "01-deposit.png",
+      "promptPath": "prompts/deposit.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/01-deposit.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-eedaee56-215e-4a6d-98f9-927aec64d731.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/01-deposit.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "deposit",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\01-deposit.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          92,
+          1218,
+          1190
+        ],
+        "sha256": "aa61fa7995cccb73684aa88b18b3fef3ee662743302292920c407f381d2451fe",
+        "bytes": 1326071
+      },
+      "transferVerification": {
+        "id": "deposit",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-eedaee56-215e-4a6d-98f9-927aec64d731.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/01-deposit.png",
+        "operation": "move",
+        "sha256Before": "AA61FA7995CCCB73684AA88B18B3FEF3EE662743302292920C407F381D2451FE",
+        "sha256After": "AA61FA7995CCCB73684AA88B18B3FEF3EE662743302292920C407F381D2451FE",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: wallet with a star coin and a downward arrow for deposit.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central wallet with a star coin and a downward arrow for deposit and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "withdraw",
+      "file": "02-withdraw.png",
+      "promptPath": "prompts/withdraw.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/02-withdraw.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b51e01b8-8df8-43db-aa9c-b00170bee984.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/02-withdraw.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "withdraw",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\02-withdraw.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          17,
+          1248,
+          1238
+        ],
+        "sha256": "3b4508d02565f220761d06ab0ac4e74f8f3366676bb934da9b021e653ae7d5e6",
+        "bytes": 1504444
+      },
+      "transferVerification": {
+        "id": "withdraw",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b51e01b8-8df8-43db-aa9c-b00170bee984.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/02-withdraw.png",
+        "operation": "move",
+        "sha256Before": "3B4508D02565F220761D06AB0AC4E74F8F3366676BB934DA9B021E653AE7D5E6",
+        "sha256After": "3B4508D02565F220761D06AB0AC4E74F8F3366676BB934DA9B021E653AE7D5E6",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: wallet with a star coin and an upward arrow for withdrawal.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central wallet with a star coin and an upward arrow for withdrawal and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "profile",
+      "file": "03-profile.png",
+      "promptPath": "prompts/profile.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/03-profile.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-a4ed83ca-8d36-43c3-aaa1-a8b55397ecea.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/03-profile.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "profile",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\03-profile.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          37,
+          1240,
+          1254
+        ],
+        "sha256": "a2f742a712170f47adfaf3fa7074c807da80fcae6cc0fc2fa81c527744b3728e",
+        "bytes": 1096654
+      },
+      "transferVerification": {
+        "id": "profile",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-a4ed83ca-8d36-43c3-aaa1-a8b55397ecea.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/03-profile.png",
+        "operation": "move",
+        "sha256Before": "A2F742A712170F47ADFAF3FA7074C807DA80FCAE6CC0FC2FA81C527744B3728E",
+        "sha256After": "A2F742A712170F47ADFAF3FA7074C807DA80FCAE6CC0FC2FA81C527744B3728E",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: simple person bust silhouette.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central simple person bust silhouette and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "support",
+      "file": "04-support.png",
+      "promptPath": "prompts/support.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/04-support.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-246ac385-8f93-4916-b2ce-5f4917e00f47.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/04-support.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "support",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\04-support.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "bbox": [
+          0,
+          37,
+          1240,
+          1254
+        ],
+        "sha256": "3b705690a5bd44f46bd2422a38754a30afc244f70b893bdfd4fd7b6aea44130d",
+        "bytes": 1335349
+      },
+      "transferVerification": {
+        "id": "support",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-246ac385-8f93-4916-b2ce-5f4917e00f47.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/04-support.png",
+        "operation": "move",
+        "sha256Before": "3B705690A5BD44F46BD2422A38754A30AFC244F70B893BDFD4FD7B6AEA44130D",
+        "sha256After": "3B705690A5BD44F46BD2422A38754A30AFC244F70B893BDFD4FD7B6AEA44130D",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: customer support over-ear headset and microphone.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central customer support over-ear headset and microphone and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "mail",
+      "file": "05-mail.png",
+      "promptPath": "prompts/mail.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/05-mail.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b56ede63-1978-4e09-8fd4-627620f14148.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/05-mail.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "mail",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\05-mail.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          33,
+          1193,
+          1254
+        ],
+        "sha256": "d34cb97b201c071ba797a78945413d964ba90c8e92b3f58fd52c9e4d52aee90c",
+        "bytes": 1629939
+      },
+      "transferVerification": {
+        "id": "mail",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b56ede63-1978-4e09-8fd4-627620f14148.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/05-mail.png",
+        "operation": "move",
+        "sha256Before": "D34CB97B201C071BA797A78945413D964BA90C8E92B3F58FD52C9E4D52AEE90C",
+        "sha256After": "D34CB97B201C071BA797A78945413D964BA90C8E92B3F58FD52C9E4D52AEE90C",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: sealed envelope.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central sealed envelope and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "domestic",
+      "file": "06-domestic.png",
+      "promptPath": "prompts/domestic.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/06-domestic.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-83c1605a-48b5-4a9d-ba83-4accdfbc285e.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/06-domestic.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "domestic",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\06-domestic.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          53,
+          1192,
+          1254
+        ],
+        "sha256": "3c6f858fc0c24bed816b53cad7e5afded54bcdb5baf13151d5e19de87ad9376a",
+        "bytes": 1299414
+      },
+      "transferVerification": {
+        "id": "domestic",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-83c1605a-48b5-4a9d-ba83-4accdfbc285e.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/06-domestic.png",
+        "operation": "move",
+        "sha256Before": "3C6F858FC0C24BED816B53CAD7E5AFDED54BCDB5BAF13151D5E19DE87AD9376A",
+        "sha256After": "3C6F858FC0C24BED816B53CAD7E5AFDED54BCDB5BAF13151D5E19DE87AD9376A",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: football floating above a compact stadium.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central football floating above a compact stadium and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "international",
+      "file": "07-international.png",
+      "promptPath": "prompts/international.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/07-international.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-39fd12ff-ac6e-457a-a74c-1c0c14220011.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/07-international.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "international",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\07-international.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          37,
+          56,
+          1224,
+          1220
+        ],
+        "sha256": "8ead4b5fb8cf00f933513c9cb2fbbdc3869b1028308096bbbe1526e2266a0d76",
+        "bytes": 1664453
+      },
+      "transferVerification": {
+        "id": "international",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-39fd12ff-ac6e-457a-a74c-1c0c14220011.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/07-international.png",
+        "operation": "move",
+        "sha256Before": "8EAD4B5FB8CF00F933513C9CB2FBBDC3869B1028308096BBBE1526E2266A0D76",
+        "sha256After": "8EAD4B5FB8CF00F933513C9CB2FBBDC3869B1028308096BBBE1526E2266A0D76",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: globe with longitude and latitude lines.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central globe with longitude and latitude lines and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "esports",
+      "file": "08-esports.png",
+      "promptPath": "prompts/esports.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/08-esports.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-7dc57dda-54aa-40c0-890d-5b96210eafd9.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/08-esports.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "esports",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\08-esports.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          25,
+          1253,
+          1220
+        ],
+        "sha256": "34bf21f885a48ea942351d4490483c2f367ba929c024e56661731b69b39c183c",
+        "bytes": 1607924
+      },
+      "transferVerification": {
+        "id": "esports",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-7dc57dda-54aa-40c0-890d-5b96210eafd9.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/08-esports.png",
+        "operation": "move",
+        "sha256Before": "34BF21F885A48EA942351D4490483C2F367BA929C024E56661731B69B39C183C",
+        "sha256After": "34BF21F885A48EA942351D4490483C2F367BA929C024E56661731B69B39C183C",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: game controller.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central game controller and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "live",
+      "file": "09-live.png",
+      "promptPath": "prompts/live.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/09-live.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-0250b51f-0324-498c-b0ef-6a55180ebc39.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/09-live.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "live",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\09-live.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1586,
+        "height": 992,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          105,
+          55,
+          1572,
+          992
+        ],
+        "sha256": "ee131f0d95042ab15ad77d29bd6318f38e7108a578b54835833914131a4725ca",
+        "bytes": 984831
+      },
+      "transferVerification": {
+        "id": "live",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-0250b51f-0324-498c-b0ef-6a55180ebc39.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/09-live.png",
+        "operation": "move",
+        "sha256Before": "EE131F0D95042AB15AD77D29BD6318F38E7108A578B54835833914131A4725CA",
+        "sha256After": "EE131F0D95042AB15AD77D29BD6318F38E7108A578B54835833914131A4725CA",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: play triangle with symmetrical broadcast waves.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central play triangle with symmetrical broadcast waves and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "casino",
+      "file": "10-casino.png",
+      "promptPath": "prompts/casino.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/10-casino.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-71ae6f7e-4cf8-4da8-a748-0f96dea8eec1.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/10-casino.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "casino",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\10-casino.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          9,
+          1182,
+          1254
+        ],
+        "sha256": "1d85cb95ff6b818c3bf2588bc3027bb89241823e146173a74438196eb6a48466",
+        "bytes": 1679059
+      },
+      "transferVerification": {
+        "id": "casino",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-71ae6f7e-4cf8-4da8-a748-0f96dea8eec1.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/10-casino.png",
+        "operation": "move",
+        "sha256Before": "1D85CB95FF6B818C3BF2588BC3027BB89241823E146173A74438196EB6A48466",
+        "sha256After": "1D85CB95FF6B818C3BF2588BC3027BB89241823E146173A74438196EB6A48466",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: two spade playing cards and a poker chip.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central two spade playing cards and a poker chip and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "slots",
+      "file": "11-slots.png",
+      "promptPath": "prompts/slots.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/11-slots.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-84a70822-ae68-4e97-bb8b-1a351f30aefa.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/11-slots.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "slots",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\11-slots.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          19,
+          1236,
+          1254
+        ],
+        "sha256": "500b1d70a10e624f1f05c0b6e717b4d687d87da717157f4acb1c1cd34ac47fa6",
+        "bytes": 1697358
+      },
+      "transferVerification": {
+        "id": "slots",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-84a70822-ae68-4e97-bb8b-1a351f30aefa.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/11-slots.png",
+        "operation": "move",
+        "sha256Before": "500B1D70A10E624F1F05C0B6E717B4D687D87DA717157F4ACB1C1CD34AC47FA6",
+        "sha256After": "500B1D70A10E624F1F05C0B6E717B4D687D87DA717157F4ACB1C1CD34AC47FA6",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: three-reel star slot machine with side lever.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central three-reel star slot machine with side lever and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "notice",
+      "file": "12-notice.png",
+      "promptPath": "prompts/notice.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/12-notice.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-5adc145b-11a3-4a43-a0c8-5632c84e4329.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/12-notice.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "notice",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\12-notice.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          31,
+          1238,
+          1220
+        ],
+        "sha256": "7d5dcfdce3b9f5c3ff1c4ac82528de7d7c2234fb5350abbfa06d02e8cd91e2c0",
+        "bytes": 1253795
+      },
+      "transferVerification": {
+        "id": "notice",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-5adc145b-11a3-4a43-a0c8-5632c84e4329.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/12-notice.png",
+        "operation": "move",
+        "sha256Before": "7D5DCFDCE3B9F5C3FF1C4AC82528DE7D7C2234FB5350ABBFA06D02E8CD91E2C0",
+        "sha256After": "7D5DCFDCE3B9F5C3FF1C4AC82528DE7D7C2234FB5350ABBFA06D02E8CD91E2C0",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: megaphone with three short sound marks.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central megaphone with three short sound marks and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "event",
+      "file": "13-event.png",
+      "promptPath": "prompts/event.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/13-event.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-4a6e7094-b786-4c86-b3e6-c0a92560c2b5.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/13-event.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "event",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\13-event.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          21,
+          1174,
+          1254
+        ],
+        "sha256": "7d4ba136cf85100dbcbb2fb1b66ba1519798114e990d5474c076c6f6cdd6ebb7",
+        "bytes": 1783029
+      },
+      "transferVerification": {
+        "id": "event",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-4a6e7094-b786-4c86-b3e6-c0a92560c2b5.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/13-event.png",
+        "operation": "move",
+        "sha256Before": "7D4BA136CF85100DBCBB2FB1B66BA1519798114E990D5474C076C6F6CDD6EBB7",
+        "sha256After": "7D4BA136CF85100DBCBB2FB1B66BA1519798114E990D5474C076C6F6CDD6EBB7",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: gift box with a ribbon.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central gift box with a ribbon and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    },
+    {
+      "id": "rules",
+      "file": "14-rules.png",
+      "promptPath": "prompts/rules.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/14-rules.png",
+      "referenceRole": "Existing framed icon: central object, gold/black materials, soft 3D perspective and lighting; outer badge removed",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-52bb86de-d3a2-4df0-b1c7-81f6533d6978.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/14-rules.png",
+      "operation": "move",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "userAccepted": false,
+      "appliedInComparison": true,
+      "adoptedAsActiveSidebar": false,
+      "imageMetadata": {
+        "id": "rules",
+        "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\sidebar-library-gold-free-20261019-144156\\results\\14-rules.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          23,
+          1251,
+          1254
+        ],
+        "sha256": "05172ec61c9bd0464dc254fc807c88f92aca2fabcc0cdf168dbad3d123176760",
+        "bytes": 1616981
+      },
+      "transferVerification": {
+        "id": "rules",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-52bb86de-d3a2-4df0-b1c7-81f6533d6978.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-free-20261019-144156/results/14-rules.png",
+        "operation": "move",
+        "sha256Before": "05172EC61C9BD0464DC254FC807C88F92ACA2FABCC0CDF168DBAD3D123176760",
+        "sha256After": "05172EC61C9BD0464DC254FC807C88F92ACA2FABCC0CDF168DBAD3D123176760",
+        "match": true
+      },
+      "prompt": "Use case: precise-object-edit.\nEdit the supplied icon image into ONE freestanding, unframed sidebar icon: rulebook with a check mark.\nReference role: preserve the existing central object's subject, recognizable silhouette, front-facing soft 3D perspective, polished champagne-gold metal, warm highlights, dark metallic recesses, bevel detail and top-left studio lighting.\nRemove the ENTIRE external rounded-square button/tile: its gold perimeter rim, black backplate, corner frame and all behind-object panel surfaces. Reconstruct any object edges hidden by that outer tile.\nKeep only the central rulebook with a check mark and its intrinsic parts, floating on a genuinely transparent background. Intrinsic object geometry such as a book cover, wallet body or slot machine casing is allowed; an external square/round badge, app-icon container or backing plate is forbidden.\nCentered isolated object with approximately 80% canvas occupancy and transparent breathing room on every edge. Preserve the same series material and lighting; make the silhouette readable at a 28px sidebar display size. No scene, no ground plane, no enclosing shape, no pedestal added, no background shadow rectangle, no text, no watermark. Do not replace this with a flat line/vector icon.\nOutput one clean transparent PNG icon, not a sheet, collage or menu screenshot.\n"
+    }
+  ],
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "assets": {
+      "createdNodeIds": [
+        "550:4303",
+        "550:4304",
+        "550:4305",
+        "550:4306",
+        "550:4307",
+        "550:4308",
+        "550:4309",
+        "550:4310",
+        "550:4311",
+        "550:4312",
+        "550:4313",
+        "550:4314",
+        "550:4315",
+        "550:4316",
+        "550:4317",
+        "550:4318",
+        "550:4319",
+        "550:4320",
+        "550:4321",
+        "550:4322",
+        "550:4323",
+        "550:4324",
+        "550:4325",
+        "550:4326",
+        "550:4327",
+        "550:4328",
+        "550:4329",
+        "550:4330",
+        "550:4331"
+      ],
+      "mutatedNodeIds": [],
+      "sectionId": "550:4303",
+      "icons": [
+        {
+          "id": "deposit",
+          "componentId": "550:4304",
+          "imageNodeId": "550:4305",
+          "key": "da49dcbbc2467364261a863438bf4614e84e5c2f"
+        },
+        {
+          "id": "withdraw",
+          "componentId": "550:4306",
+          "imageNodeId": "550:4307",
+          "key": "99519f909fe1c439cd5547cee04a596c10da6a35"
+        },
+        {
+          "id": "profile",
+          "componentId": "550:4308",
+          "imageNodeId": "550:4309",
+          "key": "37729367ae27acc4b6fac1707053443e39c06bd2"
+        },
+        {
+          "id": "support",
+          "componentId": "550:4310",
+          "imageNodeId": "550:4311",
+          "key": "e1a35f548bb51bfa2b6e8b77739cefc4981e247e"
+        },
+        {
+          "id": "mail",
+          "componentId": "550:4312",
+          "imageNodeId": "550:4313",
+          "key": "759039a1c996a826bc1782a51b14565c300b3355"
+        },
+        {
+          "id": "domestic",
+          "componentId": "550:4314",
+          "imageNodeId": "550:4315",
+          "key": "0fd3808a185e0d501f76305af05d412821dde9d2"
+        },
+        {
+          "id": "international",
+          "componentId": "550:4316",
+          "imageNodeId": "550:4317",
+          "key": "b1d833a73cd87243864c115be461b982d1dda798"
+        },
+        {
+          "id": "esports",
+          "componentId": "550:4318",
+          "imageNodeId": "550:4319",
+          "key": "e0db6708ba1841673586754bf7dc20c42ecd03ca"
+        },
+        {
+          "id": "live",
+          "componentId": "550:4320",
+          "imageNodeId": "550:4321",
+          "key": "f877c285771072769c32ba4282e6ef18980e864e"
+        },
+        {
+          "id": "casino",
+          "componentId": "550:4322",
+          "imageNodeId": "550:4323",
+          "key": "95caaf19c74209e51ebb84743973fa238cd70ffa"
+        },
+        {
+          "id": "slots",
+          "componentId": "550:4324",
+          "imageNodeId": "550:4325",
+          "key": "82347f662d6ce04b68e0679fe65d4f2255d8166a"
+        },
+        {
+          "id": "notice",
+          "componentId": "550:4326",
+          "imageNodeId": "550:4327",
+          "key": "7df0eccd893405695d1453928fbbca8c2c1526c1"
+        },
+        {
+          "id": "event",
+          "componentId": "550:4328",
+          "imageNodeId": "550:4329",
+          "key": "cd6f45360cf37f88f6ee12fa8a85b49152d49ec0"
+        },
+        {
+          "id": "rules",
+          "componentId": "550:4330",
+          "imageNodeId": "550:4331",
+          "key": "b1951686f35b2ed425dfbcd8b3c0eae37580585a"
+        }
+      ],
+      "sourceNav": [
+        {
+          "id": "435:51439",
+          "name": "Theme=WhiteGold, State=Default",
+          "reactions": 0
+        },
+        {
+          "id": "435:51443",
+          "name": "Theme=WhiteGold, State=Hover",
+          "reactions": 0
+        },
+        {
+          "id": "435:51447",
+          "name": "Theme=WhiteGold, State=Selected",
+          "reactions": 0
+        },
+        {
+          "id": "435:51452",
+          "name": "Theme=BlackGold, State=Default",
+          "reactions": 0
+        },
+        {
+          "id": "435:51456",
+          "name": "Theme=BlackGold, State=Hover",
+          "reactions": 0
+        },
+        {
+          "id": "435:51460",
+          "name": "Theme=BlackGold, State=Selected",
+          "reactions": 0
+        }
+      ],
+      "sectionPosition": {
+        "x": 100,
+        "y": 15920,
+        "w": 2200,
+        "h": 1500
+      }
+    },
+    "components": {
+      "createdNodeIds": [
+        "551:4303",
+        "551:4304",
+        "551:4305",
+        "551:4306",
+        "551:4307",
+        "551:4308",
+        "551:4309",
+        "551:4310",
+        "551:4311",
+        "551:4312",
+        "551:4313",
+        "551:4314",
+        "551:4315",
+        "551:4316",
+        "551:4317",
+        "551:4318",
+        "551:4319",
+        "551:4320",
+        "551:4321",
+        "551:4322",
+        "551:4323",
+        "551:4324",
+        "551:4325",
+        "551:4326",
+        "551:4327",
+        "551:4328",
+        "551:4329",
+        "551:4372",
+        "551:4373",
+        "551:4374",
+        "551:4375",
+        "551:4376",
+        "551:4377",
+        "551:4378",
+        "551:4379",
+        "551:4380",
+        "551:4381",
+        "551:4382",
+        "551:4383",
+        "551:4384",
+        "551:4385",
+        "551:4386",
+        "551:4387",
+        "551:4388",
+        "551:4389",
+        "551:4390",
+        "551:4391",
+        "551:4392",
+        "551:4393",
+        "551:4394",
+        "551:4395",
+        "551:4396",
+        "551:4397",
+        "551:4398",
+        "551:4399",
+        "551:4400",
+        "551:4401",
+        "551:4402",
+        "551:4403",
+        "551:4404",
+        "551:4405",
+        "551:4406",
+        "551:4407",
+        "551:4408",
+        "551:4409",
+        "551:4410",
+        "551:4707",
+        "551:4708",
+        "551:4709",
+        "551:4710",
+        "551:4711",
+        "551:4712",
+        "551:4713",
+        "551:4714",
+        "551:4715",
+        "551:4716",
+        "551:4717",
+        "551:4718",
+        "551:4719",
+        "551:4720",
+        "551:4721",
+        "551:4722",
+        "551:4723",
+        "551:4724",
+        "551:4725",
+        "551:4726",
+        "551:4727",
+        "551:4728",
+        "551:4729",
+        "551:4730",
+        "551:4731",
+        "551:4732",
+        "551:4733",
+        "551:4734",
+        "551:4735",
+        "551:4736",
+        "551:4737",
+        "551:4738",
+        "551:4739",
+        "551:4740",
+        "551:4741",
+        "551:4742",
+        "551:4743",
+        "551:4744",
+        "551:4745",
+        "551:5042",
+        "551:5043",
+        "551:5044",
+        "551:5045",
+        "551:5046",
+        "551:5047",
+        "551:5048",
+        "551:5049",
+        "551:5050",
+        "551:5051",
+        "551:5052",
+        "551:5053",
+        "551:5054",
+        "551:5055",
+        "551:5056",
+        "551:5057",
+        "551:5058"
+      ],
+      "mutatedNodeIds": [],
+      "sectionId": "550:4303",
+      "navSetId": "551:4303",
+      "navVariants": [
+        {
+          "id": "551:4304",
+          "name": "Theme=WhiteGold, State=Default"
+        },
+        {
+          "id": "551:4308",
+          "name": "Theme=WhiteGold, State=Hover"
+        },
+        {
+          "id": "551:4312",
+          "name": "Theme=WhiteGold, State=Selected"
+        },
+        {
+          "id": "551:4317",
+          "name": "Theme=BlackGold, State=Default"
+        },
+        {
+          "id": "551:4321",
+          "name": "Theme=BlackGold, State=Hover"
+        },
+        {
+          "id": "551:4325",
+          "name": "Theme=BlackGold, State=Selected"
+        }
+      ],
+      "sidebarSetId": "551:5042",
+      "sidebars": [
+        {
+          "id": "551:4372",
+          "theme": "WhiteGold",
+          "menuCount": 14,
+          "w": 232,
+          "h": 1120
+        },
+        {
+          "id": "551:4707",
+          "theme": "BlackGold",
+          "menuCount": 14,
+          "w": 232,
+          "h": 1120
+        }
+      ],
+      "iconMap": {
+        "deposit": {
+          "id": "deposit",
+          "componentId": "550:4304",
+          "imageNodeId": "550:4305",
+          "key": "da49dcbbc2467364261a863438bf4614e84e5c2f"
+        },
+        "withdraw": {
+          "id": "withdraw",
+          "componentId": "550:4306",
+          "imageNodeId": "550:4307",
+          "key": "99519f909fe1c439cd5547cee04a596c10da6a35"
+        },
+        "profile": {
+          "id": "profile",
+          "componentId": "550:4308",
+          "imageNodeId": "550:4309",
+          "key": "37729367ae27acc4b6fac1707053443e39c06bd2"
+        },
+        "support": {
+          "id": "support",
+          "componentId": "550:4310",
+          "imageNodeId": "550:4311",
+          "key": "e1a35f548bb51bfa2b6e8b77739cefc4981e247e"
+        },
+        "mail": {
+          "id": "mail",
+          "componentId": "550:4312",
+          "imageNodeId": "550:4313",
+          "key": "759039a1c996a826bc1782a51b14565c300b3355"
+        },
+        "domestic": {
+          "id": "domestic",
+          "componentId": "550:4314",
+          "imageNodeId": "550:4315",
+          "key": "0fd3808a185e0d501f76305af05d412821dde9d2"
+        },
+        "international": {
+          "id": "international",
+          "componentId": "550:4316",
+          "imageNodeId": "550:4317",
+          "key": "b1d833a73cd87243864c115be461b982d1dda798"
+        },
+        "esports": {
+          "id": "esports",
+          "componentId": "550:4318",
+          "imageNodeId": "550:4319",
+          "key": "e0db6708ba1841673586754bf7dc20c42ecd03ca"
+        },
+        "live": {
+          "id": "live",
+          "componentId": "550:4320",
+          "imageNodeId": "550:4321",
+          "key": "f877c285771072769c32ba4282e6ef18980e864e"
+        },
+        "casino": {
+          "id": "casino",
+          "componentId": "550:4322",
+          "imageNodeId": "550:4323",
+          "key": "95caaf19c74209e51ebb84743973fa238cd70ffa"
+        },
+        "slots": {
+          "id": "slots",
+          "componentId": "550:4324",
+          "imageNodeId": "550:4325",
+          "key": "82347f662d6ce04b68e0679fe65d4f2255d8166a"
+        },
+        "notice": {
+          "id": "notice",
+          "componentId": "550:4326",
+          "imageNodeId": "550:4327",
+          "key": "7df0eccd893405695d1453928fbbca8c2c1526c1"
+        },
+        "event": {
+          "id": "event",
+          "componentId": "550:4328",
+          "imageNodeId": "550:4329",
+          "key": "cd6f45360cf37f88f6ee12fa8a85b49152d49ec0"
+        },
+        "rules": {
+          "id": "rules",
+          "componentId": "550:4330",
+          "imageNodeId": "550:4331",
+          "key": "b1951686f35b2ed425dfbcd8b3c0eae37580585a"
+        }
+      },
+      "summary": {
+        "icons": 14,
+        "navStates": 6,
+        "sidebarThemes": 2,
+        "existingSourcesUnchanged": true,
+        "existingNavUnchanged": true,
+        "existingSidebarSetPropertiesUnchanged": true
+      }
+    },
+    "comparison": {
+      "createdNodeIds": [
+        "552:35868",
+        "552:35869",
+        "552:35870",
+        "552:35871",
+        "552:35872",
+        "552:35873",
+        "552:35874",
+        "552:36054",
+        "552:36055",
+        "552:36056",
+        "552:36391",
+        "552:36392",
+        "552:36393",
+        "552:36573",
+        "552:36574",
+        "552:36575",
+        "552:36910",
+        "552:36911",
+        "552:36913",
+        "552:36914",
+        "552:36916",
+        "552:36917",
+        "552:36919",
+        "552:36920",
+        "552:36922",
+        "552:36923",
+        "552:36925",
+        "552:36926",
+        "552:36928",
+        "552:36929",
+        "552:36931",
+        "552:36932",
+        "552:36934",
+        "552:36935",
+        "552:36937",
+        "552:36938",
+        "552:36940",
+        "552:36941",
+        "552:36943",
+        "552:36944",
+        "552:36946",
+        "552:36947",
+        "552:36949",
+        "552:36950",
+        "552:36952",
+        "552:36953",
+        "552:36954",
+        "552:36967",
+        "552:36968",
+        "552:36969",
+        "552:36970",
+        "552:36971",
+        "552:36972",
+        "552:36973",
+        "552:36974",
+        "552:36975",
+        "552:36976",
+        "552:36977",
+        "552:36978",
+        "552:36979",
+        "552:36980",
+        "552:36981",
+        "552:36982",
+        "552:36983",
+        "552:36984",
+        "552:36985",
+        "552:36986",
+        "552:36987",
+        "552:36988",
+        "552:36989",
+        "552:36990",
+        "552:36991",
+        "552:36992",
+        "552:36993",
+        "552:36994",
+        "552:36995",
+        "552:36996",
+        "552:36997",
+        "552:36998",
+        "552:36999",
+        "552:37000",
+        "552:37001",
+        "552:37002",
+        "552:37003",
+        "552:37004",
+        "552:37005",
+        "552:37006",
+        "552:37007",
+        "552:37008",
+        "552:37009",
+        "552:37010",
+        "552:37011",
+        "552:37012",
+        "552:37013",
+        "552:37014",
+        "552:37015",
+        "552:37016",
+        "552:37017",
+        "552:37018",
+        "552:37763",
+        "552:37776",
+        "552:37777",
+        "552:37778",
+        "552:37779",
+        "552:37780",
+        "552:37781",
+        "552:37782",
+        "552:37783",
+        "552:37784",
+        "552:37785",
+        "552:37786",
+        "552:37787",
+        "552:37788",
+        "552:37789",
+        "552:37790",
+        "552:37791",
+        "552:37792",
+        "552:37793",
+        "552:37794",
+        "552:37795",
+        "552:37796",
+        "552:37797",
+        "552:37798",
+        "552:37799",
+        "552:37800",
+        "552:37801",
+        "552:37802",
+        "552:37803",
+        "552:37804",
+        "552:37805",
+        "552:37806",
+        "552:37807",
+        "552:37808",
+        "552:37809",
+        "552:37810",
+        "552:37811",
+        "552:37812",
+        "552:37813",
+        "552:37814",
+        "552:37815",
+        "552:37816",
+        "552:37817",
+        "552:37818",
+        "552:37819",
+        "552:37820",
+        "552:37821",
+        "552:37822",
+        "552:37823",
+        "552:37824",
+        "552:37825",
+        "552:37826",
+        "552:37827",
+        "552:38598"
+      ],
+      "mutatedNodeIds": [],
+      "sectionId": "552:35868",
+      "reviewFrameId": "552:35871",
+      "sideInstances": [
+        {
+          "id": "552:35874",
+          "main": "435:49225",
+          "theme": "BlackGold",
+          "label": "기존 · 블랙 골드"
+        },
+        {
+          "id": "552:36056",
+          "main": "551:4707",
+          "theme": "BlackGold",
+          "label": "추가 · 아이콘 단독"
+        },
+        {
+          "id": "552:36393",
+          "main": "435:49186",
+          "theme": "WhiteGold",
+          "label": "기존 · 화이트 골드"
+        },
+        {
+          "id": "552:36575",
+          "main": "551:4372",
+          "theme": "WhiteGold",
+          "label": "추가 · 아이콘 단독"
+        }
+      ],
+      "fullScreens": [
+        {
+          "id": "552:36967",
+          "theme": "BlackGold",
+          "sidebarId": "552:36971",
+          "sidebarMain": "551:4707",
+          "headerMain": "486:4945",
+          "mainContentUnchanged": true,
+          "originalScreenUnchanged": true,
+          "w": 1920,
+          "h": 1948.199951171875,
+          "sidebarWidth": 232,
+          "sidebarHeight": 1691.800048828125
+        },
+        {
+          "id": "552:37776",
+          "theme": "WhiteGold",
+          "sidebarId": "552:37780",
+          "sidebarMain": "551:4372",
+          "headerMain": "486:4998",
+          "mainContentUnchanged": true,
+          "originalScreenUnchanged": true,
+          "w": 1920,
+          "h": 1948.199951171875,
+          "sidebarWidth": 232,
+          "sidebarHeight": 1691.800048828125
+        }
+      ],
+      "summary": {
+        "existingFullComparisonScreens": 28,
+        "addedFullScreens": 2,
+        "existingContentPreserved": true
+      }
+    }
+  },
+  "verification": {
+    "components": {
+      "icons": [
+        {
+          "id": "deposit",
+          "componentId": "550:4304",
+          "imageNodeId": "550:4305",
+          "hash": "418450dd077342466d5c863b4230ddeebce44801",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "withdraw",
+          "componentId": "550:4306",
+          "imageNodeId": "550:4307",
+          "hash": "7ff2abed8d61fc240439d9ec7d6cd446b056a83e",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "profile",
+          "componentId": "550:4308",
+          "imageNodeId": "550:4309",
+          "hash": "b13193c04cb7851a252fa51eb707bf50dda0ebc9",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "support",
+          "componentId": "550:4310",
+          "imageNodeId": "550:4311",
+          "hash": "70733d9457870d55e6fef6efb4c804557cc7e8d1",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "mail",
+          "componentId": "550:4312",
+          "imageNodeId": "550:4313",
+          "hash": "0932f6551a255dbace946c0b24b9b62296a1638d",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "domestic",
+          "componentId": "550:4314",
+          "imageNodeId": "550:4315",
+          "hash": "ff9ad0c9b74ce2e4ae0a2b98e3eb18d0a3a76894",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "international",
+          "componentId": "550:4316",
+          "imageNodeId": "550:4317",
+          "hash": "0b0ee2e71d5ec2f3ddd649dabdfd413affc4a603",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "esports",
+          "componentId": "550:4318",
+          "imageNodeId": "550:4319",
+          "hash": "b4f9e22c37e31cfa1c38f9f3448363fe75c0f99c",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "live",
+          "componentId": "550:4320",
+          "imageNodeId": "550:4321",
+          "hash": "3e09b3a5e841c72859f04c3764c1f0080156b070",
+          "w": 1586,
+          "h": 992,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "casino",
+          "componentId": "550:4322",
+          "imageNodeId": "550:4323",
+          "hash": "9c5614941fd495ce64ef99d283a6f2773aa83e0a",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "slots",
+          "componentId": "550:4324",
+          "imageNodeId": "550:4325",
+          "hash": "1f3049d3980080c185e7d4c75e0df23e24468cf7",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "notice",
+          "componentId": "550:4326",
+          "imageNodeId": "550:4327",
+          "hash": "2680103a27cbc9b02b7f9a82a5e6e0baf80c2198",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "event",
+          "componentId": "550:4328",
+          "imageNodeId": "550:4329",
+          "hash": "83cf35bc32ad7e52afdc91830af7ac6053411d79",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        },
+        {
+          "id": "rules",
+          "componentId": "550:4330",
+          "imageNodeId": "550:4331",
+          "hash": "c17e2b5fde43d9a35f3bca07ee5588c8d14bef11",
+          "w": 1254,
+          "h": 1254,
+          "mode": "FIT",
+          "noContainerPaint": true,
+          "imageOnly": true
+        }
+      ],
+      "sidebars": [
+        {
+          "id": "551:4372",
+          "theme": "Theme=WhiteGold",
+          "w": 232,
+          "h": 1120,
+          "items": [
+            {
+              "id": "551:4382",
+              "name": "Menu / 입금신청",
+              "menuMain": "551:4312",
+              "iconMain": "550:4304",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "입금신청",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4383",
+              "name": "Menu / 출금신청",
+              "menuMain": "551:4304",
+              "iconMain": "550:4306",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "출금신청",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4384",
+              "name": "Menu / 마이페이지",
+              "menuMain": "551:4304",
+              "iconMain": "550:4308",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "마이페이지",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4385",
+              "name": "Menu / 문의하기",
+              "menuMain": "551:4304",
+              "iconMain": "550:4310",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "문의하기",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4386",
+              "name": "Menu / 쪽지",
+              "menuMain": "551:4304",
+              "iconMain": "550:4312",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "쪽지",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4391",
+              "name": "Menu / 국내형",
+              "menuMain": "551:4304",
+              "iconMain": "550:4314",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "국내형",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4392",
+              "name": "Menu / 해외형",
+              "menuMain": "551:4304",
+              "iconMain": "550:4316",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "해외형",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4393",
+              "name": "Menu / E스포츠",
+              "menuMain": "551:4304",
+              "iconMain": "550:4318",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "E스포츠",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4394",
+              "name": "Menu / 라이브",
+              "menuMain": "551:4304",
+              "iconMain": "550:4320",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "라이브",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4399",
+              "name": "Menu / 라이브카지노",
+              "menuMain": "551:4304",
+              "iconMain": "550:4322",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "라이브카지노",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4400",
+              "name": "Menu / 슬롯",
+              "menuMain": "551:4304",
+              "iconMain": "550:4324",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "슬롯",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4405",
+              "name": "Menu / 공지사항",
+              "menuMain": "551:4304",
+              "iconMain": "550:4326",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "공지사항",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4406",
+              "name": "Menu / 이벤트",
+              "menuMain": "551:4304",
+              "iconMain": "550:4328",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "이벤트",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4407",
+              "name": "Menu / 베팅규정",
+              "menuMain": "551:4304",
+              "iconMain": "550:4330",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "베팅규정",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            }
+          ],
+          "allCorrect": true
+        },
+        {
+          "id": "551:4707",
+          "theme": "Theme=BlackGold",
+          "w": 232,
+          "h": 1120,
+          "items": [
+            {
+              "id": "551:4717",
+              "name": "Menu / 입금신청",
+              "menuMain": "551:4325",
+              "iconMain": "550:4304",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "입금신청",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4718",
+              "name": "Menu / 출금신청",
+              "menuMain": "551:4317",
+              "iconMain": "550:4306",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "출금신청",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4719",
+              "name": "Menu / 마이페이지",
+              "menuMain": "551:4317",
+              "iconMain": "550:4308",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "마이페이지",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4720",
+              "name": "Menu / 문의하기",
+              "menuMain": "551:4317",
+              "iconMain": "550:4310",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "문의하기",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4721",
+              "name": "Menu / 쪽지",
+              "menuMain": "551:4317",
+              "iconMain": "550:4312",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "쪽지",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4726",
+              "name": "Menu / 국내형",
+              "menuMain": "551:4317",
+              "iconMain": "550:4314",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "국내형",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4727",
+              "name": "Menu / 해외형",
+              "menuMain": "551:4317",
+              "iconMain": "550:4316",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "해외형",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4728",
+              "name": "Menu / E스포츠",
+              "menuMain": "551:4317",
+              "iconMain": "550:4318",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "E스포츠",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4729",
+              "name": "Menu / 라이브",
+              "menuMain": "551:4317",
+              "iconMain": "550:4320",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "라이브",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4734",
+              "name": "Menu / 라이브카지노",
+              "menuMain": "551:4317",
+              "iconMain": "550:4322",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "라이브카지노",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4735",
+              "name": "Menu / 슬롯",
+              "menuMain": "551:4317",
+              "iconMain": "550:4324",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "슬롯",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4740",
+              "name": "Menu / 공지사항",
+              "menuMain": "551:4317",
+              "iconMain": "550:4326",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "공지사항",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4741",
+              "name": "Menu / 이벤트",
+              "menuMain": "551:4317",
+              "iconMain": "550:4328",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "이벤트",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            },
+            {
+              "id": "551:4742",
+              "name": "Menu / 베팅규정",
+              "menuMain": "551:4317",
+              "iconMain": "550:4330",
+              "w": 216,
+              "h": 36,
+              "iconW": 28,
+              "iconH": 28,
+              "label": "베팅규정",
+              "labelFont": 13,
+              "noTrim": true,
+              "newRaster": true
+            }
+          ],
+          "allCorrect": true
+        }
+      ],
+      "navStates": [
+        {
+          "id": "551:4304",
+          "name": "Theme=WhiteGold, State=Default",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "551:4308",
+          "name": "Theme=WhiteGold, State=Hover",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "551:4312",
+          "name": "Theme=WhiteGold, State=Selected",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "551:4317",
+          "name": "Theme=BlackGold, State=Default",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "551:4321",
+          "name": "Theme=BlackGold, State=Hover",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "551:4325",
+          "name": "Theme=BlackGold, State=Selected",
+          "w": 216,
+          "h": 36
+        }
+      ],
+      "sidebarProperties": [
+        {
+          "name": "Theme",
+          "type": "VARIANT",
+          "options": [
+            "WhiteGold",
+            "BlackGold"
+          ]
+        }
+      ],
+      "summary": {
+        "rasterIcons": 14,
+        "allImageOnly": true,
+        "allFit": true,
+        "newSidebarCount": 2,
+        "allMenusCorrect": true,
+        "navStateCount": 6
+      }
+    },
+    "fullScreens": {
+      "screens": [
+        {
+          "id": "552:36967",
+          "type": "FRAME",
+          "w": 1920,
+          "sidebarMain": "551:4707",
+          "sidebarW": 232,
+          "menuCount": 14,
+          "navMains": [
+            "551:4325",
+            "551:4317"
+          ],
+          "aligned": true
+        },
+        {
+          "id": "552:37776",
+          "type": "FRAME",
+          "w": 1920,
+          "sidebarMain": "551:4372",
+          "sidebarW": 232,
+          "menuCount": 14,
+          "navMains": [
+            "551:4312",
+            "551:4304"
+          ],
+          "aligned": true
+        }
+      ],
+      "summary": {
+        "all1920": true,
+        "allNormalFrames": true,
+        "allMenu14": true,
+        "allAligned": true,
+        "existingHeaderBoardScreens": 28
+      }
+    },
+    "visual": {
+      "result": "PASS",
+      "proofs": [
+        "qa/generated-series-proof.png",
+        "qa/sidebar-comparison.png",
+        "qa/menu-states.png",
+        "qa/black-full.png",
+        "qa/white-full.png"
+      ],
+      "observations": "14 raster-only icons with visible alpha cutouts, no external tile. Gold metal and light direction match original series. Menu 36px, icon slot 28px, editable text 13px. All six state variants and both full-screen previews checked."
+    },
+    "originalFiles": {
+      "count": 14,
+      "allUnchanged": true,
+      "files": [
+        {
+          "id": "deposit",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/01-deposit.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "withdraw",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/02-withdraw.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "profile",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/03-profile.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "support",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/04-support.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "mail",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/05-mail.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "domestic",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/06-domestic.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "international",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/07-international.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "esports",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/08-esports.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "live",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/09-live.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "casino",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/10-casino.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "slots",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/11-slots.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "notice",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/12-notice.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "event",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/13-event.png",
+          "hashUnchanged": true
+        },
+        {
+          "id": "rules",
+          "path": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/14-rules.png",
+          "hashUnchanged": true
+        }
+      ]
+    },
+    "imageFiles": {
+      "count": 14,
+      "allPngRgba": true,
+      "allHaveTransparency": true,
+      "exactZeroCorners": 13,
+      "maxCornerAlpha": 1,
+      "preservedGenerationPixels": true,
+      "note": "One source corner has alpha 1/255; no visible backing plate in native UI proofs. Generated images were not resized or cropped."
+    }
+  },
+  "untouched": [
+    "Adopted LibraryGold master components",
+    "Existing navigation item components",
+    "Existing 28 full-screen header comparison frames",
+    "Main page content and headers",
+    "Original icon files",
+    "Website source code"
+  ]
+}

@@ -1,0 +1,814 @@
+{
+  "task": "Improve the user-added video and stacked banner layout",
+  "status": "complete",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "user_source_frame": "618:65586",
+  "reference_screenshot": "C:/Users/User/AppData/Local/Temp/codex-clipboard-59830023-cf90-4f0d-a92e-cbe982805ab7.png",
+  "component_creation": {
+    "section": {
+      "id": "623:5569",
+      "name": "18 · 07B VideoHero · 이미지 전체 표시 배너",
+      "x": 100,
+      "y": 22940,
+      "w": 1770,
+      "h": 320
+    },
+    "banners": [
+      {
+        "key": "Payback",
+        "id": "623:5570",
+        "sourceId": "573:5820",
+        "w": 523,
+        "h": 174.3333282470703,
+        "artId": "623:5572",
+        "copyId": "623:5574",
+        "sourceBefore": "360357c8",
+        "sourceAfter": "360357c8",
+        "sourceUnchanged": true,
+        "properties": [
+          "Tag#449:17",
+          "Title#449:18",
+          "Description#449:19"
+        ]
+      },
+      {
+        "key": "Events",
+        "id": "623:5582",
+        "sourceId": "573:5832",
+        "w": 523,
+        "h": 174.3333282470703,
+        "artId": "623:5584",
+        "copyId": "623:5586",
+        "sourceBefore": "6609e36b",
+        "sourceAfter": "6609e36b",
+        "sourceUnchanged": true,
+        "properties": [
+          "Tag#449:20",
+          "Title#449:21",
+          "Description#449:22"
+        ]
+      },
+      {
+        "key": "DailyReward",
+        "id": "623:5594",
+        "sourceId": "573:5844",
+        "w": 523,
+        "h": 174.3333282470703,
+        "artId": "623:5596",
+        "copyId": "623:5598",
+        "sourceBefore": "16bee65e",
+        "sourceAfter": "16bee65e",
+        "sourceUnchanged": true,
+        "properties": [
+          "Tag#449:23",
+          "Title#449:24",
+          "Description#449:25"
+        ]
+      }
+    ],
+    "createdNodeIds": [
+      "623:5569",
+      "623:5570",
+      "623:5571",
+      "623:5572",
+      "623:5573",
+      "623:5574",
+      "623:5575",
+      "623:5576",
+      "623:5577",
+      "623:5578",
+      "623:5579",
+      "623:5580",
+      "623:5582",
+      "623:5583",
+      "623:5584",
+      "623:5585",
+      "623:5586",
+      "623:5587",
+      "623:5588",
+      "623:5589",
+      "623:5590",
+      "623:5591",
+      "623:5592",
+      "623:5594",
+      "623:5595",
+      "623:5596",
+      "623:5597",
+      "623:5598",
+      "623:5599",
+      "623:5600",
+      "623:5601",
+      "623:5602",
+      "623:5603",
+      "623:5604"
+    ]
+  },
+  "screen_creation": {
+    "section": {
+      "id": "624:45880",
+      "name": "17 · 07B 동영상 + 상단 배너 · 가독성 개선",
+      "x": 100,
+      "y": 29175,
+      "w": 2048,
+      "h": 2352.199951171875
+    },
+    "screen": {
+      "id": "624:45881",
+      "name": "07B 동영상배너 · 3:1 이미지 / 여백 개선 · 1920",
+      "w": 1920,
+      "h": 2224.199951171875
+    },
+    "hero": {
+      "id": "624:45888",
+      "w": 1592,
+      "h": 547,
+      "gap": 12,
+      "columnId": "624:45889",
+      "columnW": 523,
+      "columnH": 547
+    },
+    "video": {
+      "id": "624:45893",
+      "w": 1057,
+      "h": 547,
+      "paintUnchanged": true,
+      "fill": [
+        {
+          "type": "VIDEO",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "videoTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "videoHash": "0bc85917d1253f5a5d748a1b3419d98288387409"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "624:46038",
+        "mainComponentId": "623:5570",
+        "w": 523,
+        "h": 174.3333282470703
+      },
+      {
+        "id": "624:46051",
+        "mainComponentId": "623:5582",
+        "w": 523,
+        "h": 174.3333282470703
+      },
+      {
+        "id": "624:46064",
+        "mainComponentId": "623:5594",
+        "w": 523,
+        "h": 174.3333282470703
+      }
+    ],
+    "createdNodeIds": [
+      "624:45880",
+      "624:45881",
+      "624:45882",
+      "624:45883",
+      "624:45884",
+      "624:45885",
+      "624:45886",
+      "624:45887",
+      "624:45888",
+      "624:45889",
+      "624:46038",
+      "624:46051",
+      "624:46064",
+      "624:45893",
+      "624:45894",
+      "624:45895",
+      "624:45896",
+      "624:45897",
+      "624:45898",
+      "624:45899",
+      "624:45900",
+      "624:45901",
+      "624:45902",
+      "624:45903",
+      "624:45904",
+      "624:45905",
+      "624:45906",
+      "624:45907",
+      "624:45908",
+      "624:45909",
+      "624:45910",
+      "624:45911",
+      "624:45912",
+      "624:45913",
+      "624:45914",
+      "624:45915",
+      "624:45916",
+      "624:45917",
+      "624:45918",
+      "624:45919",
+      "624:45920",
+      "624:45921",
+      "624:45922",
+      "624:45923",
+      "624:45924",
+      "624:45925",
+      "624:45926",
+      "624:45927",
+      "624:45928",
+      "624:45929",
+      "624:45930",
+      "624:45931",
+      "624:45932",
+      "624:45933",
+      "624:45934"
+    ],
+    "sourceBefore": "d42315a",
+    "sourceAfter": "d42315a",
+    "sourceUnchanged": true
+  },
+  "initial_audit": {
+    "screen": {
+      "id": "624:45881",
+      "w": 1920,
+      "h": 2224.199951171875
+    },
+    "hero": {
+      "id": "624:45888",
+      "w": 1592,
+      "h": 547
+    },
+    "cards": [
+      {
+        "id": "624:46038",
+        "w": 523,
+        "h": 174.3333282470703,
+        "image": {
+          "hash": "c30d33e9b8b566b5c4dfcbf70683b10409a22951",
+          "mode": "FIT",
+          "size": {
+            "width": 2172,
+            "height": 724
+          }
+        },
+        "flow": [
+          {
+            "name": "Tag",
+            "x": 16,
+            "y": 16,
+            "w": 55,
+            "h": 18
+          },
+          {
+            "name": "Typography",
+            "x": 16,
+            "y": 42.166664123535156,
+            "w": 228,
+            "h": 76
+          },
+          {
+            "name": "Action",
+            "x": 16,
+            "y": 126.33332824707031,
+            "w": 115,
+            "h": 32
+          }
+        ],
+        "texts": [
+          {
+            "name": "Tag",
+            "text": "PAYBACK",
+            "w": 47,
+            "h": 14,
+            "font": 10,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 14
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Title",
+            "text": "페이백 포인트",
+            "w": 228,
+            "h": 34,
+            "font": 26,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 34
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Description",
+            "text": "콤프와 페이백 포인트를 한 곳에서 확인하세요.",
+            "w": 228,
+            "h": 40,
+            "font": 13,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Label",
+            "text": "내 지갑 바로가기",
+            "w": 91,
+            "h": 20,
+            "font": 14,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            },
+            "trim": "NONE"
+          }
+        ],
+        "checks": {
+          "sourceRatio": true,
+          "fullImage": true,
+          "flowInside": true,
+          "flowNoOverlap": true,
+          "nativeInstance": true
+        }
+      },
+      {
+        "id": "624:46051",
+        "w": 523,
+        "h": 174.3333282470703,
+        "image": {
+          "hash": "a2d49a9b8d2a970d382b65410b432144e04d9d2f",
+          "mode": "FIT",
+          "size": {
+            "width": 2172,
+            "height": 724
+          }
+        },
+        "flow": [
+          {
+            "name": "Tag",
+            "x": 16,
+            "y": 16,
+            "w": 48,
+            "h": 18
+          },
+          {
+            "name": "Typography",
+            "x": 16,
+            "y": 42.166664123535156,
+            "w": 228,
+            "h": 76
+          },
+          {
+            "name": "Action",
+            "x": 16,
+            "y": 126.33332824707031,
+            "w": 100,
+            "h": 32
+          }
+        ],
+        "texts": [
+          {
+            "name": "Tag",
+            "text": "EVENTS",
+            "w": 40,
+            "h": 14,
+            "font": 10,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 14
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Title",
+            "text": "회원 이벤트",
+            "w": 228,
+            "h": 34,
+            "font": 26,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 34
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Description",
+            "text": "진행 중인 혜택과 참여 조건을 빠르게 확인하세요.",
+            "w": 228,
+            "h": 40,
+            "font": 13,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Label",
+            "text": "혜택 모아보기",
+            "w": 76,
+            "h": 20,
+            "font": 14,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            },
+            "trim": "NONE"
+          }
+        ],
+        "checks": {
+          "sourceRatio": true,
+          "fullImage": true,
+          "flowInside": true,
+          "flowNoOverlap": true,
+          "nativeInstance": true
+        }
+      },
+      {
+        "id": "624:46064",
+        "w": 523,
+        "h": 174.3333282470703,
+        "image": {
+          "hash": "df970d55571cedbe3844547813c339486089b69a",
+          "mode": "FIT",
+          "size": {
+            "width": 2172,
+            "height": 724
+          }
+        },
+        "flow": [
+          {
+            "name": "Tag",
+            "x": 16,
+            "y": 16,
+            "w": 82,
+            "h": 18
+          },
+          {
+            "name": "Typography",
+            "x": 16,
+            "y": 42.166664123535156,
+            "w": 228,
+            "h": 76
+          },
+          {
+            "name": "Action",
+            "x": 16,
+            "y": 126.33332824707031,
+            "w": 100,
+            "h": 32
+          }
+        ],
+        "texts": [
+          {
+            "name": "Tag",
+            "text": "DAILY REWARD",
+            "w": 74,
+            "h": 14,
+            "font": 10,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 14
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Title",
+            "text": "데일리 리워드",
+            "w": 228,
+            "h": 34,
+            "font": 26,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 34
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Description",
+            "text": "출석 체크로 매일 이어지는 보상을 만나보세요.",
+            "w": 228,
+            "h": 40,
+            "font": 13,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            },
+            "trim": "NONE"
+          },
+          {
+            "name": "Label",
+            "text": "오늘 참여하기",
+            "w": 76,
+            "h": 20,
+            "font": 14,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            },
+            "trim": "NONE"
+          }
+        ],
+        "checks": {
+          "sourceRatio": true,
+          "fullImage": true,
+          "flowInside": true,
+          "flowNoOverlap": true,
+          "nativeInstance": true
+        }
+      }
+    ],
+    "otherSections": [
+      {
+        "name": "Sports betting",
+        "unchanged": true
+      },
+      {
+        "name": "🎥 라이브 카지노",
+        "unchanged": true
+      },
+      {
+        "name": "🎰 슬롯 로비",
+        "unchanged": true
+      },
+      {
+        "name": "Partners · Flexible centered grid · BlackGold",
+        "unchanged": true
+      }
+    ],
+    "checks": {
+      "cards": true,
+      "videoNative": true,
+      "videoPaintUnchanged": true,
+      "headerUnchanged": true,
+      "sidebarUnchanged": true,
+      "bodyUnchanged": true,
+      "heroFullWidth": true,
+      "alignedHeight": true
+    },
+    "allPassed": true
+  },
+  "copy_fix": {
+    "mutatedNodeIds": [
+      "623:5574",
+      "623:5577",
+      "623:5586",
+      "623:5589",
+      "623:5598",
+      "623:5601"
+    ],
+    "copies": [
+      {
+        "id": "623:5574",
+        "w": 304,
+        "maxWidth": 304,
+        "typoId": "623:5577",
+        "typoWidth": 272,
+        "texts": [
+          {
+            "id": "623:5578",
+            "name": "Title",
+            "w": 272,
+            "h": 34,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 34
+            }
+          },
+          {
+            "id": "623:5579",
+            "name": "Description",
+            "w": 272,
+            "h": 20,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          }
+        ]
+      },
+      {
+        "id": "623:5586",
+        "w": 304,
+        "maxWidth": 304,
+        "typoId": "623:5589",
+        "typoWidth": 272,
+        "texts": [
+          {
+            "id": "623:5590",
+            "name": "Title",
+            "w": 272,
+            "h": 34,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 34
+            }
+          },
+          {
+            "id": "623:5591",
+            "name": "Description",
+            "w": 272,
+            "h": 20,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          }
+        ]
+      },
+      {
+        "id": "623:5598",
+        "w": 304,
+        "maxWidth": 304,
+        "typoId": "623:5601",
+        "typoWidth": 272,
+        "texts": [
+          {
+            "id": "623:5602",
+            "name": "Title",
+            "w": 272,
+            "h": 34,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 34
+            }
+          },
+          {
+            "id": "623:5603",
+            "name": "Description",
+            "w": 272,
+            "h": 20,
+            "lineHeight": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "final_audit": {
+    "cards": [
+      {
+        "id": "624:46038",
+        "w": 523,
+        "h": 174.3333282470703,
+        "copyWidth": 304,
+        "description": {
+          "width": 272,
+          "height": 20,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 20
+          },
+          "trim": "NONE"
+        },
+        "flow": [
+          {
+            "name": "Tag",
+            "y": 16,
+            "h": 18
+          },
+          {
+            "name": "Typography",
+            "y": 52.166664123535156,
+            "h": 56
+          },
+          {
+            "name": "Action",
+            "y": 126.33332824707031,
+            "h": 32
+          }
+        ],
+        "singleLine": true,
+        "noOverlap": true,
+        "inside": true
+      },
+      {
+        "id": "624:46051",
+        "w": 523,
+        "h": 174.3333282470703,
+        "copyWidth": 304,
+        "description": {
+          "width": 272,
+          "height": 20,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 20
+          },
+          "trim": "NONE"
+        },
+        "flow": [
+          {
+            "name": "Tag",
+            "y": 16,
+            "h": 18
+          },
+          {
+            "name": "Typography",
+            "y": 52.166664123535156,
+            "h": 56
+          },
+          {
+            "name": "Action",
+            "y": 126.33332824707031,
+            "h": 32
+          }
+        ],
+        "singleLine": true,
+        "noOverlap": true,
+        "inside": true
+      },
+      {
+        "id": "624:46064",
+        "w": 523,
+        "h": 174.3333282470703,
+        "copyWidth": 304,
+        "description": {
+          "width": 272,
+          "height": 20,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 20
+          },
+          "trim": "NONE"
+        },
+        "flow": [
+          {
+            "name": "Tag",
+            "y": 16,
+            "h": 18
+          },
+          {
+            "name": "Typography",
+            "y": 52.166664123535156,
+            "h": 56
+          },
+          {
+            "name": "Action",
+            "y": 126.33332824707031,
+            "h": 32
+          }
+        ],
+        "singleLine": true,
+        "noOverlap": true,
+        "inside": true
+      }
+    ],
+    "originalDigest": "d42315a",
+    "originalUnchanged": true,
+    "allPassed": true
+  },
+  "visual_review": {
+    "status": "PASS",
+    "evidence": [
+      "qa/hero-final.png",
+      "qa/screen-final.png"
+    ],
+    "initial_issue": "An inherited maxWidth=260 on the copy containers left final syllables on orphaned lines.",
+    "fix": "Set the new copy containers to 304px with 272px text width; kept the existing 13px description text and all copy unchanged.",
+    "result": "Full source artwork visible in each 3:1 banner; subjects are not cut at the top. All descriptions fit on one line. Headline, description and CTA spacing are consistent. Hero columns align."
+  },
+  "layout": {
+    "banner_width": 523,
+    "banner_height_formula": "523 / 3 = 174.3333",
+    "banner_gap": 12,
+    "hero_height_formula": "3 * (523 / 3) + 2 * 12 = 547",
+    "video_width_formula": "1592 - 523 - 12 = 1057",
+    "video_height": 547,
+    "screen_width": 1920,
+    "copy_width": 304,
+    "inner_text_width": 272
+  },
+  "preserved": [
+    "User-added source frame",
+    "Original shared banner masters",
+    "Original native VIDEO paint and videoHash",
+    "Header and sidebar",
+    "Gateway grid, sports, game cards and partner grid content"
+  ],
+  "new_image_generation": false,
+  "video_playback_tested": false,
+  "website_implementation": false
+}

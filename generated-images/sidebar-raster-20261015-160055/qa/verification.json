@@ -1,0 +1,753 @@
+{
+  "checks": {
+    "fourteenPNGs": true,
+    "rasterOnlyIconComponents": true,
+    "twoThemeMenus": true,
+    "states": true,
+    "linked1920": true,
+    "sixthOption": true,
+    "previousColumnsPositioned": true,
+    "oldWOGESPNAndPageMasters": true,
+    "originalNineSidebarHashes": true,
+    "captureRemoved": true
+  },
+  "preservationNote": "기존 10개 레퍼런스 사이드바 중 9개는 작업 전후 구조·시각 속성 해시가 동일합니다. 화이트 책등형(351:1218) 1개는 해시 차이가 감지됐습니다. 금번 직접 수정 노드 목록에는 해당 컴포넌트나 그 하위 노드가 없으며 원인을 확정하지 못했습니다. 기존 상태를 덮어쓰거나 추정으로 복원하지 않았습니다. WOG/ESPN 및 기존 전체 페이지 마스터 4개는 해시 동일합니다.",
+  "preserved": [
+    {
+      "id": "351:610",
+      "same": true,
+      "hash": "1e9bb755",
+      "count": 76
+    },
+    {
+      "id": "351:687",
+      "same": true,
+      "hash": "10895465",
+      "count": 76
+    },
+    {
+      "id": "351:764",
+      "same": true,
+      "hash": "cf6386e0",
+      "count": 74
+    },
+    {
+      "id": "351:838",
+      "same": true,
+      "hash": "1d4fda15",
+      "count": 74
+    },
+    {
+      "id": "351:912",
+      "same": true,
+      "hash": "4056190",
+      "count": 78
+    },
+    {
+      "id": "351:990",
+      "same": true,
+      "hash": "3b4169d9",
+      "count": 78
+    },
+    {
+      "id": "351:1068",
+      "same": true,
+      "hash": "68df3f8b",
+      "count": 74
+    },
+    {
+      "id": "351:1143",
+      "same": true,
+      "hash": "b41d4331",
+      "count": 74
+    },
+    {
+      "id": "351:1218",
+      "same": false,
+      "hash": "54f760d9",
+      "count": 67
+    },
+    {
+      "id": "351:1285",
+      "same": true,
+      "hash": "5ceb00f4",
+      "count": 67
+    },
+    {
+      "id": "317:1490",
+      "same": true,
+      "hash": "70f46ce1",
+      "count": 561
+    },
+    {
+      "id": "313:1286",
+      "same": true,
+      "hash": "75b5088b",
+      "count": 405
+    },
+    {
+      "id": "313:2001",
+      "same": true,
+      "hash": "ce59007",
+      "count": 397
+    },
+    {
+      "id": "218:1787",
+      "same": true,
+      "hash": "8bea446e",
+      "count": 500
+    }
+  ],
+  "rasterIcons": [
+    {
+      "key": "deposit",
+      "id": "380:2309",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "withdraw",
+      "id": "380:2311",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "profile",
+      "id": "380:2313",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "support",
+      "id": "380:2315",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "mail",
+      "id": "380:2317",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "domestic",
+      "id": "380:2319",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "international",
+      "id": "380:2321",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "esports",
+      "id": "380:2323",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "live",
+      "id": "380:2325",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "casino",
+      "id": "380:2327",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "slots",
+      "id": "380:2329",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "notice",
+      "id": "380:2331",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "event",
+      "id": "380:2333",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "key": "rules",
+      "id": "380:2335",
+      "rasterOnly": true,
+      "size": [
+        40,
+        40
+      ]
+    }
+  ],
+  "sides": [
+    {
+      "id": "380:42599",
+      "name": "Style=IconPanel, Theme=WhiteGold",
+      "mode": "347:0",
+      "w": 232,
+      "h": 1120,
+      "menuCount": 14,
+      "orderCorrect": true,
+      "uniquePNGs": 14,
+      "vectorCount": 0,
+      "iconFontCount": 0,
+      "dividers": 3,
+      "corners": [
+        8,
+        48,
+        8,
+        48
+      ],
+      "rows": [
+        {
+          "label": "입금신청",
+          "font": 14,
+          "icon": "380:2309",
+          "png": "8921b692e6a9531e54395ec14805a21a37ec9edd",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "출금신청",
+          "font": 14,
+          "icon": "380:2311",
+          "png": "6ceb1734007ca6238b81659a65461fe6a97d096c",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "마이페이지",
+          "font": 14,
+          "icon": "380:2313",
+          "png": "743699968a3170316bf09e5a8083a03faba63364",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "문의하기",
+          "font": 14,
+          "icon": "380:2315",
+          "png": "8dec159819d081c35a75992f86f1977fce653d31",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "쪽지",
+          "font": 14,
+          "icon": "380:2317",
+          "png": "9f065440e4f38e53d5a8a819fcbdb50eb449305f",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "국내형",
+          "font": 14,
+          "icon": "380:2319",
+          "png": "09954bf0772de919f09ea59f95d1ed7a03869a23",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "해외형",
+          "font": 14,
+          "icon": "380:2321",
+          "png": "9bb9650ab5702dc39c0ac4b7e1a6c50bf1ca5ffe",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "E스포츠",
+          "font": 14,
+          "icon": "380:2323",
+          "png": "66757a2b4768a5161d7aa179bc8c3fd007816dc3",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "라이브",
+          "font": 14,
+          "icon": "380:2325",
+          "png": "43945c4b4239950a980d12c234039b039ada72f3",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "라이브카지노",
+          "font": 14,
+          "icon": "380:2327",
+          "png": "d173b9149ccd4958341d86fdbde8fea3e782614b",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "슬롯",
+          "font": 14,
+          "icon": "380:2329",
+          "png": "f87c5f00d5807fe4d9ca4f4e1959225e224c77b2",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "공지사항",
+          "font": 14,
+          "icon": "380:2331",
+          "png": "8d4c5aeecc331a3b49999268ea12c6788d25ddb1",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "이벤트",
+          "font": 14,
+          "icon": "380:2333",
+          "png": "a30d02208aa19a68a24a71873da410f628c5556d",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "베팅규정",
+          "font": 14,
+          "icon": "380:2335",
+          "png": "aca29f641ecb260ae986f93762eadc45151afa66",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        }
+      ]
+    },
+    {
+      "id": "380:42686",
+      "name": "Style=IconPanel, Theme=BlackGold",
+      "mode": "347:1",
+      "w": 232,
+      "h": 1120,
+      "menuCount": 14,
+      "orderCorrect": true,
+      "uniquePNGs": 14,
+      "vectorCount": 0,
+      "iconFontCount": 0,
+      "dividers": 3,
+      "corners": [
+        8,
+        48,
+        8,
+        48
+      ],
+      "rows": [
+        {
+          "label": "입금신청",
+          "font": 14,
+          "icon": "380:2309",
+          "png": "8921b692e6a9531e54395ec14805a21a37ec9edd",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "출금신청",
+          "font": 14,
+          "icon": "380:2311",
+          "png": "6ceb1734007ca6238b81659a65461fe6a97d096c",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "마이페이지",
+          "font": 14,
+          "icon": "380:2313",
+          "png": "743699968a3170316bf09e5a8083a03faba63364",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "문의하기",
+          "font": 14,
+          "icon": "380:2315",
+          "png": "8dec159819d081c35a75992f86f1977fce653d31",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "쪽지",
+          "font": 14,
+          "icon": "380:2317",
+          "png": "9f065440e4f38e53d5a8a819fcbdb50eb449305f",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "국내형",
+          "font": 14,
+          "icon": "380:2319",
+          "png": "09954bf0772de919f09ea59f95d1ed7a03869a23",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "해외형",
+          "font": 14,
+          "icon": "380:2321",
+          "png": "9bb9650ab5702dc39c0ac4b7e1a6c50bf1ca5ffe",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "E스포츠",
+          "font": 14,
+          "icon": "380:2323",
+          "png": "66757a2b4768a5161d7aa179bc8c3fd007816dc3",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "라이브",
+          "font": 14,
+          "icon": "380:2325",
+          "png": "43945c4b4239950a980d12c234039b039ada72f3",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "라이브카지노",
+          "font": 14,
+          "icon": "380:2327",
+          "png": "d173b9149ccd4958341d86fdbde8fea3e782614b",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "슬롯",
+          "font": 14,
+          "icon": "380:2329",
+          "png": "f87c5f00d5807fe4d9ca4f4e1959225e224c77b2",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "공지사항",
+          "font": 14,
+          "icon": "380:2331",
+          "png": "8d4c5aeecc331a3b49999268ea12c6788d25ddb1",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "이벤트",
+          "font": 14,
+          "icon": "380:2333",
+          "png": "a30d02208aa19a68a24a71873da410f628c5556d",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        },
+        {
+          "label": "베팅규정",
+          "font": 14,
+          "icon": "380:2335",
+          "png": "aca29f641ecb260ae986f93762eadc45151afa66",
+          "slot": [
+            40,
+            40
+          ],
+          "rowH": 52
+        }
+      ]
+    }
+  ],
+  "full": [
+    {
+      "id": "381:8551",
+      "w": 1920,
+      "h": 1899.199951171875,
+      "pageMaster": "355:1790",
+      "sidebar": "I381:8551;355:1793",
+      "mode": "347:0",
+      "pngs": 14
+    },
+    {
+      "id": "381:9802",
+      "w": 1920,
+      "h": 1899.199951171875,
+      "pageMaster": "355:2891",
+      "sidebar": "I381:9802;355:2894",
+      "mode": "347:1",
+      "pngs": 14
+    }
+  ],
+  "nav": {
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "380:42574",
+        "props": {
+          "Theme": "WhiteGold",
+          "State": "Default"
+        },
+        "h": 52,
+        "iconType": "INSTANCE_SWAP"
+      },
+      {
+        "id": "380:42578",
+        "props": {
+          "Theme": "WhiteGold",
+          "State": "Hover"
+        },
+        "h": 52,
+        "iconType": "INSTANCE_SWAP"
+      },
+      {
+        "id": "380:42582",
+        "props": {
+          "Theme": "WhiteGold",
+          "State": "Selected"
+        },
+        "h": 52,
+        "iconType": "INSTANCE_SWAP"
+      },
+      {
+        "id": "380:42586",
+        "props": {
+          "Theme": "BlackGold",
+          "State": "Default"
+        },
+        "h": 52,
+        "iconType": "INSTANCE_SWAP"
+      },
+      {
+        "id": "380:42590",
+        "props": {
+          "Theme": "BlackGold",
+          "State": "Hover"
+        },
+        "h": 52,
+        "iconType": "INSTANCE_SWAP"
+      },
+      {
+        "id": "380:42594",
+        "props": {
+          "Theme": "BlackGold",
+          "State": "Selected"
+        },
+        "h": 52,
+        "iconType": "INSTANCE_SWAP"
+      }
+    ]
+  },
+  "sidebarOptions": [
+    "Showcase",
+    "Islands",
+    "HUD",
+    "Index",
+    "Spine",
+    "IconPanel"
+  ],
+  "componentCount": 84,
+  "captureRemoved": true,
+  "referenceVariables": 19,
+  "positions": [
+    {
+      "id": "352:1061",
+      "count": 6,
+      "x": [
+        0,
+        294,
+        588,
+        882,
+        1176,
+        1470
+      ],
+      "widths": [
+        232,
+        232,
+        232,
+        232,
+        232,
+        232
+      ]
+    },
+    {
+      "id": "352:1450",
+      "count": 6,
+      "x": [
+        0,
+        294,
+        588,
+        882,
+        1176,
+        1470
+      ],
+      "widths": [
+        232,
+        232,
+        232,
+        232,
+        232,
+        232
+      ]
+    },
+    {
+      "id": "356:555",
+      "count": 6,
+      "x": [
+        0,
+        1984,
+        3968,
+        5952,
+        7936,
+        9920
+      ],
+      "widths": [
+        1920,
+        1920,
+        1920,
+        1920,
+        1920,
+        1920
+      ]
+    },
+    {
+      "id": "356:4593",
+      "count": 6,
+      "x": [
+        0,
+        1984,
+        3968,
+        5952,
+        7936,
+        9920
+      ],
+      "widths": [
+        1920,
+        1920,
+        1920,
+        1920,
+        1920,
+        1920
+      ]
+    }
+  ]
+}

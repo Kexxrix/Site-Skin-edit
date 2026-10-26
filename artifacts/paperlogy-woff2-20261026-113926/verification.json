@@ -1,0 +1,48 @@
+{
+  "result": "pass",
+  "verifiedAt": "2026-10-26T11:43:57.973414+09:00",
+  "conversionRecord": "conversion.json",
+  "filesConverted": 9,
+  "fullGlyphsNoSubsetting": true,
+  "allGlyphOutlinesAndHintsVerified": true,
+  "originalTtfAndSourceSha256Preserved": true,
+  "licenseSha256Preserved": true,
+  "cssWoff2FirstTtfFallbackVerified": true,
+  "preloadAdded": false,
+  "browser": {
+    "record": "browser-verification.json",
+    "woff2FacesLoaded": 9,
+    "fontRequestsWithoutSelection": 0,
+    "regularSelectedRequests": 1,
+    "ttfRequestsDuringWoff2Test": 0,
+    "unselectedSampleFontSizeLineHeightAndBoundsUnchanged": true,
+    "renderVisuallyInspected": true
+  },
+  "sourcePreservation": {
+    "filesChecked": 1227,
+    "changedFiles": [],
+    "existingPaperlogyReferences": []
+  },
+  "sizes": {
+    "ttfBytes": 11799396,
+    "woff2Bytes": 3902380,
+    "reductionPercent": 66.93,
+    "formula": "(1 - woff2Bytes / ttfBytes) * 100"
+  },
+  "scope": {
+    "siteApplied": false,
+    "deployed": false,
+    "systemFontsInstalled": false,
+    "appDependenciesChanged": false,
+    "toolInstalledOnlyInIsolatedEnvironment": "C:\\Users\\User\\.cache\\codex-tools\\paperlogy-woff2-20261026-113926"
+  },
+  "limitations": [
+    "Browser verification is isolated font registration QA, not an existing production page pixel comparison.",
+    "Actual site adoption, line-wrap QA and deployment remain separate instructions."
+  ],
+  "cleanup": {
+    "temporaryQaServerStopped": true,
+    "port": 5487,
+    "agentCreatedQaTabClosed": true
+  }
+}

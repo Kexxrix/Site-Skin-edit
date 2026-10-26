@@ -1,0 +1,512 @@
+{
+  "scope": "Sidebar component family, 1920px only",
+  "styles": [
+    "Raised",
+    "Inset",
+    "Tiles"
+  ],
+  "states": [
+    "Default",
+    "Hover",
+    "Selected",
+    "Pressed"
+  ],
+  "source": "https://wog-1000.com/",
+  "preserve": [
+    "original pages 09/10",
+    "source gold gradient",
+    "all menu labels/order/icons",
+    "TITAN SOLUSION",
+    "header and page content"
+  ],
+  "checks": [
+    "connected variants",
+    "100% sidebar visual review",
+    "1920px page composition",
+    "style swap/override",
+    "original preservation"
+  ],
+  "baseline": {
+    "protected": [
+      {
+        "id": "139:552",
+        "count": 2670,
+        "hash": "c47cd377"
+      },
+      {
+        "id": "158:597",
+        "count": 1016,
+        "hash": "a762a4bb"
+      }
+    ],
+    "groups": [
+      {
+        "id": "159:601",
+        "name": "Sidebar group / 서비스",
+        "layout": "VERTICAL",
+        "gap": 2,
+        "title": "서비스",
+        "titleFont": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "titleSize": 12,
+        "items": [
+          {
+            "id": "159:603",
+            "name": "Menu / 입금신청",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "입금신청"
+              }
+            }
+          },
+          {
+            "id": "159:604",
+            "name": "Menu / 출금신청",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "출금신청"
+              }
+            }
+          },
+          {
+            "id": "159:605",
+            "name": "Menu / 마이페이지",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "마이페이지"
+              }
+            }
+          },
+          {
+            "id": "159:606",
+            "name": "Menu / 문의하기",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "문의하기"
+              }
+            }
+          },
+          {
+            "id": "159:607",
+            "name": "Menu / 쪽지",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "쪽지"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "159:608",
+        "name": "Sidebar group / 스포츠",
+        "layout": "VERTICAL",
+        "gap": 2,
+        "title": "스포츠",
+        "titleFont": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "titleSize": 12,
+        "items": [
+          {
+            "id": "159:610",
+            "name": "Menu / 국내형",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "국내형"
+              }
+            }
+          },
+          {
+            "id": "159:611",
+            "name": "Menu / 해외형",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "해외형"
+              }
+            }
+          },
+          {
+            "id": "159:612",
+            "name": "Menu / E스포츠",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "E스포츠"
+              }
+            }
+          },
+          {
+            "id": "159:613",
+            "name": "Menu / 라이브",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "라이브"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "159:614",
+        "name": "Sidebar group / 게임",
+        "layout": "VERTICAL",
+        "gap": 2,
+        "title": "게임",
+        "titleFont": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "titleSize": 12,
+        "items": [
+          {
+            "id": "159:616",
+            "name": "Menu / 라이브카지노",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "라이브카지노"
+              }
+            }
+          },
+          {
+            "id": "159:617",
+            "name": "Menu / 슬롯",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "슬롯"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "159:618",
+        "name": "Sidebar group / 게시판",
+        "layout": "VERTICAL",
+        "gap": 2,
+        "title": "게시판",
+        "titleFont": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "titleSize": 12,
+        "items": [
+          {
+            "id": "159:620",
+            "name": "Menu / 공지사항",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "공지사항"
+              }
+            }
+          },
+          {
+            "id": "159:621",
+            "name": "Menu / 이벤트",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "이벤트"
+              }
+            }
+          },
+          {
+            "id": "159:622",
+            "name": "Menu / 베팅규정",
+            "props": {
+              "Badge#54:0": {
+                "type": "TEXT",
+                "value": "200x"
+              },
+              "Show badge#54:1": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#48:0": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "Label#46:3": {
+                "type": "TEXT",
+                "value": "베팅규정"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "id": "S:dae6bc949c95392444d156580552d034d805b803,",
+        "name": "BIT365 BlackGold/Compare/Gold"
+      },
+      {
+        "id": "S:4755116d1e8d5fd3d78d566e98fcbae991c5b3c7,",
+        "name": "BIT365 BlackGold/Compare/Metal"
+      }
+    ],
+    "pageMaster": {
+      "id": "218:1787",
+      "name": "BIT365 BlackGold Compare/Page/1920",
+      "w": 1920,
+      "h": 1899.199951171875,
+      "key": "047a7f0ecac2e16a9e60fd63d3064040ce66fffa",
+      "props": {
+        "Header style#218:0": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "215:552",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "e22a0ed748a1b1fc5a50069af5834f7144c59706"
+            }
+          ]
+        },
+        "Sidebar style#218:1": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "216:654",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "08f5d0d086caed312d9127e634a44bd32012ae1d"
+            }
+          ]
+        }
+      }
+    },
+    "variables": [
+      {
+        "id": "VariableCollectionId:2:4",
+        "name": "Wireframe · 소스 색상",
+        "modes": [
+          {
+            "name": "Default",
+            "modeId": "2:0"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:44:554",
+        "name": "BIT365 · Reference",
+        "modes": [
+          {
+            "name": "Dark",
+            "modeId": "44:0"
+          },
+          {
+            "name": "ALDEBARAN",
+            "modeId": "73:0"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:88:554",
+        "name": "BIT365 · Champagne · Independent",
+        "modes": [
+          {
+            "name": "Champagne",
+            "modeId": "88:0"
+          },
+          {
+            "name": "Black Gold",
+            "modeId": "139:0"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:158:552",
+        "name": "BIT365 · Black Gold · Independent",
+        "modes": [
+          {
+            "name": "Black Gold",
+            "modeId": "158:0"
+          }
+        ]
+      },
+      {
+        "id": "VariableCollectionId:213:552",
+        "name": "BIT365 BlackGold Compare / Interaction",
+        "modes": [
+          {
+            "name": "Interaction",
+            "modeId": "213:0"
+          },
+          {
+            "name": "Menu shown",
+            "modeId": "219:0"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "topic": "NACRE NOIR · 자개 구미호",
+  "userBrief": "검은 옻칠과 무지갯빛 자개로 만들어진 공예품 같은 몸과 아홉 꼬리의 구미호. 메뉴와 프레임까지 옻칠·자개로 연결. 기존 레이아웃을 유지한 추가 페이지.",
+  "tool": "Codex built-in image_gen",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "sessionId": "f11d41e1-b2e8-4bd7-b159-c0e859973231",
+  "sourceRootId": "980:3310",
+  "newRootId": "1019:3843",
+  "pageId": "919:7490",
+  "sourceHash": "7e142f44",
+  "plannedAssets": [
+    "background",
+    "character",
+    "header",
+    "banner-payback",
+    "banner-events",
+    "banner-daily",
+    "gateway-casino",
+    "gateway-slots",
+    "gateway-sports",
+    "gateway-inplay"
+  ],
+  "material": "Museum-grade Korean najeon chilgi craft: deep polished black ottchil lacquer with physically cut thin abalone mother-of-pearl shell fragments precisely inlaid flush in the surface, visible individual irregular shell pieces and tiny crisp black lacquer seams. Restrained naturally iridescent pearl white, mint/seafoam, lilac, rose and subtle turquoise reflections that change across different shell fragments, fine silver filigree. Smooth hard sculptural body and tails, absolutely no fur, no glitter coating, no rainbow plastic, no soft plush, no chrome mirror skin. The mother-of-pearl pattern must be identifiable through real shell-grain striations, segmented inlay and black negative space. Premium handcrafted object photographed with controlled soft studio highlights.",
+  "status": {
+    "generation": "complete",
+    "figmaPreviewApplied": true,
+    "technicalQa": "passed PNG decode, hash preservation, file size and alpha checks",
+    "visualQa": "passed full page and actual-size top/mascot screenshots",
+    "userAccepted": false,
+    "websiteAdopted": false
+  },
+  "preservation": {
+    "layout": "Fixed page24 layout, 1920 x 1829.2",
+    "originalAssets": true,
+    "existingThemeFrames": true,
+    "sharedInstances": 91
+  },
+  "notes": [
+    "Background and character are separate layers.",
+    "Characters must have true alpha; do not use a rectangular scene as the mascot.",
+    "Each banner and gateway has its own composition and semantic role.",
+    "No fabricated benefit amount or payout terms."
+  ],
+  "assets": [
+    {
+      "id": "background",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-3aeeb5f3-e53d-4d30-9c1d-adcc06d4bde4.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+      "operation": "move",
+      "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a",
+      "sizeBytes": 2336120,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1284,
+        1225
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\qa\\source.png",
+          "role": "layout density only; no old theme style",
+          "sha256": "0f44941fd2ba41cb0699e5e89139d840690bcd4f0de0d51fa1002639f3f241ec"
+        }
+      ],
+      "status": "generated; agent reviewed material and page background purpose",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\background.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "banner-daily",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-5f0f84a8-2e58-4f13-b217-42c11b7130ea.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\banner-daily.png",
+      "sha256": "26927a11cabae9019c137cd5e772d7cd827027edb039afdea9751e467d049145",
+      "operation": "move",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 2766057,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1790,
+        878
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character-v1.png",
+          "role": "character face/material only; new scene and pose",
+          "sha256": "11cd04379581370b3c17ef4859184e05b0184c1d75cce688c0276402c821a103"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "nacre/lacquer scene vocabulary",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "status": "generated; agent reviewed separate purposes, shell material, title-safe areas",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\banner-daily.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "banner-events",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-a1489a2e-84d9-4054-8b38-c3cd6537046d.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\banner-events.png",
+      "sha256": "1319ce86816ef8b7d9ab8d570af2add7ec7e9b2da611d385e7b167bc30899669",
+      "operation": "move",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 2813510,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1791,
+        878
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character-v1.png",
+          "role": "character face/material only; new scene and pose",
+          "sha256": "11cd04379581370b3c17ef4859184e05b0184c1d75cce688c0276402c821a103"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "nacre/lacquer scene vocabulary",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "status": "generated; agent reviewed separate purposes, shell material, title-safe areas",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\banner-events.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "banner-payback",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-6a1f3e39-d258-4992-822a-199cf210ab78.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\banner-payback.png",
+      "sha256": "00f0b36e5ab7175d61b7c877933f47d7898e49b661adfe87a588c96dd739dca4",
+      "operation": "move",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 2946240,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1791,
+        878
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character-v1.png",
+          "role": "character face/material only; new scene and pose",
+          "sha256": "11cd04379581370b3c17ef4859184e05b0184c1d75cce688c0276402c821a103"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "nacre/lacquer scene vocabulary",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "status": "generated; agent reviewed separate purposes, shell material, title-safe areas",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\banner-payback.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "character-v1",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-ee252441-3b60-428e-8d29-5ab3d6f74236.png",
+      "alpha": true,
+      "status": "candidate not selected; eight tail tips visible; needs ninth distinct tail",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character-v1.png",
+      "operation": "move",
+      "sha256": "11cd04379581370b3c17ef4859184e05b0184c1d75cce688c0276402c821a103",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 2943651,
+      "format": "PNG",
+      "mode": "RGBA",
+      "size": [
+        1097,
+        1434
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "lacquer and shell material only",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "alphaCheck": "real alpha present; one corner alpha=1/255, visually negligible, candidate not selected",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\character.txt",
+      "agentSelected": false,
+      "figmaPreviewApplied": false,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "character",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-e64338a9-eb6f-4735-996f-29bc0172908c.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character.png",
+      "operation": "move",
+      "sha256": "bec5466425c75658bfc58068cb21ec032b245592404bc27177ce24f0b5b3f599",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 2813513,
+      "format": "PNG",
+      "mode": "RGBA",
+      "size": [
+        1097,
+        1434
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character-v1.png",
+          "role": "edit target; preserve face and material, add ninth tail",
+          "sha256": "11cd04379581370b3c17ef4859184e05b0184c1d75cce688c0276402c821a103"
+        }
+      ],
+      "review": {
+        "material": "visible abalone fragments, black lacquer seams and smooth hard surfaces; no fur",
+        "tailCount": 9,
+        "tailTips": "four left, one tallest center, four right including the new lower-right tail",
+        "status": "agent selected; user acceptance pending"
+      },
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\character-v2.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "gateway-casino",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-398825fb-2609-4a80-8e61-1d0436aedfa7.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\gateway-casino.png",
+      "sha256": "8a6a08031cfa66bed130481cadb9fb17e48762fcfc8904704d17132ce191145e",
+      "operation": "move",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 2990107,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1971,
+        798
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character.png",
+          "role": "selected nine-tail fox face/material; new pose",
+          "sha256": "bec5466425c75658bfc58068cb21ec032b245592404bc27177ce24f0b5b3f599"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "lacquer and shell scene material",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "status": "generated; agent reviewed distinct category, camera and crafted material",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\gateway-casino.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "gateway-inplay",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-f1325b15-65aa-4d8a-ab48-63703cd1528c.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\gateway-inplay.png",
+      "sha256": "321186387f67cf2e23066ba786d11ee77e4a487c3d9449f11556e529997326c1",
+      "operation": "move",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 3146196,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1971,
+        798
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character.png",
+          "role": "selected nine-tail fox face/material; new pose",
+          "sha256": "bec5466425c75658bfc58068cb21ec032b245592404bc27177ce24f0b5b3f599"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "lacquer and shell scene material",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "status": "generated; agent reviewed distinct category, camera and crafted material",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\gateway-inplay.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "gateway-slots",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-896a3b1b-b836-4c9e-9015-72852023f511.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\gateway-slots.png",
+      "sha256": "a2c9593bbb2fd0f69705989a8458332aa6fb1baa41002528650a543370d08acb",
+      "operation": "move",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 3090518,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1969,
+        799
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character.png",
+          "role": "selected nine-tail fox face/material; new pose",
+          "sha256": "bec5466425c75658bfc58068cb21ec032b245592404bc27177ce24f0b5b3f599"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "lacquer and shell scene material",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "status": "generated; agent reviewed distinct category, camera and crafted material",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\gateway-slots.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "gateway-sports",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-e15f9915-e265-44d1-9e75-4e42d74b5852.png",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\gateway-sports.png",
+      "sha256": "2e04e522862258d0de3cffb94232c5d24bda25926ad727045a9a3120aaf195f0",
+      "operation": "move",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 3157085,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1971,
+        798
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\character.png",
+          "role": "selected nine-tail fox face/material; new pose",
+          "sha256": "bec5466425c75658bfc58068cb21ec032b245592404bc27177ce24f0b5b3f599"
+        },
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "lacquer and shell scene material",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "status": "generated; agent reviewed distinct category, camera and crafted material",
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\gateway-sports.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    },
+    {
+      "id": "header",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-920c5bb7-3d3e-4a1a-9164-c8087e5ab77a.png",
+      "alpha": false,
+      "status": "generated; agent selected header material",
+      "finalPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\header.png",
+      "operation": "move",
+      "sha256": "432b397e0daa01d827a526569bf499aa52b61bc9c3be86cdf44122abf2adf50f",
+      "hashBeforeAfterVerified": true,
+      "sizeBytes": 2091929,
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        2172,
+        724
+      ],
+      "references": [
+        {
+          "path": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\results\\background.png",
+          "role": "lacquer and shell material only",
+          "sha256": "ad1574dbe5923af329bdb7cf6ec243c6c5ca51107e1c629550c0eb0b80a3849a"
+        }
+      ],
+      "promptPath": "E:\\codexwork\\Site-Skin-edit\\generated-images\\najeon-gumiho-20261023-162610\\prompts\\header.txt",
+      "agentSelected": true,
+      "figmaPreviewApplied": true,
+      "userAccepted": false,
+      "websiteAdopted": false
+    }
+  ],
+  "counts": {
+    "attempted": 11,
+    "succeeded": 11,
+    "failed": 0,
+    "skipped": 0,
+    "agentSelected": 10,
+    "rejectedCandidates": 1,
+    "figmaPreviewApplied": 10,
+    "userAccepted": 0
+  },
+  "verification": {
+    "rootId": "1019:3843",
+    "name": "NACRE NOIR · 자개 구미호 · 24 기본형 고정 · 1920",
+    "sourceUnchanged": true,
+    "previousRootsUnchanged": true,
+    "geometryDifferences": [],
+    "decorChanges": [
+      {
+        "id": "1019:3845",
+        "change": "mascot moved 63px left inside its existing 573x749 decorative layer so the face stays visible"
+      },
+      {
+        "id": "1019:3863",
+        "change": "new Gumiho mask"
+      },
+      {
+        "id": "1019:3877",
+        "change": "new Gumiho mask"
+      },
+      {
+        "id": "1019:3891",
+        "change": "new Gumiho mask"
+      }
+    ],
+    "counts": {
+      "nodes": 631,
+      "instances": 91
+    },
+    "oldSkinReferenceCount": 0,
+    "rootSize": [
+      1920,
+      1829.199951171875
+    ],
+    "mainGap": 16,
+    "contentTitleGaps": [
+      {
+        "name": "콘텐츠 바로가기 / Section",
+        "gap": 8
+      },
+      {
+        "name": "Sports betting",
+        "gap": 8
+      },
+      {
+        "name": "🎥 라이브 카지노",
+        "gap": 8
+      },
+      {
+        "name": "🎰 슬롯 로비",
+        "gap": 8
+      }
+    ],
+    "allPriorRootCount": 18,
+    "mutatedNodeIds": [
+      "I1019:3849;652:6085",
+      "I1019:3849;652:6085;652:6016",
+      "I1019:3849;652:6086",
+      "I1019:3849;652:6086;652:6016",
+      "I1019:3849;652:6087",
+      "I1019:3849;652:6087;652:6016",
+      "I1019:3849;652:6088",
+      "I1019:3849;652:6088;652:6016",
+      "I1019:3849;652:6093",
+      "I1019:3849;652:6093;652:6016",
+      "I1019:3849;652:6094",
+      "I1019:3849;652:6094;652:6016",
+      "I1019:3849;652:6095",
+      "I1019:3849;652:6095;652:6016",
+      "I1019:3849;652:6096",
+      "I1019:3849;652:6096;652:6016",
+      "I1019:3849;652:6101",
+      "I1019:3849;652:6101;652:6016",
+      "I1019:3849;652:6102",
+      "I1019:3849;652:6102;652:6016",
+      "I1019:3849;652:6107",
+      "I1019:3849;652:6107;652:6016",
+      "I1019:3849;652:6108",
+      "I1019:3849;652:6108;652:6016",
+      "I1019:3849;652:6109",
+      "I1019:3849;652:6109;652:6016"
+    ],
+    "instanceCount": 91,
+    "allInstanceLinksPreserved": true
+  },
+  "screenshots": {
+    "source": "qa/source.png",
+    "first": "qa/first.png",
+    "final": "qa/final-verified.png",
+    "actualSizeTop": "qa/final-verified-top.png",
+    "actualSizeCharacter": "qa/final-verified-character.png"
+  },
+  "figmaUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP/?node-id=1019-3843",
+  "polish": [
+    "Added a ninth distinct tail after the first mascot candidate read as eight.",
+    "Reduced background opacity to 0.24, header texture to 0.34, default menu texture to 0.05 and section bar texture to 0.20 after full-page QA.",
+    "Kept new decorative mascot layer size, shifted it 63px left for face visibility.",
+    "Removed added default menu strokes and refreshed label fill/hug sizing to match the source geometry exactly.",
+    "Updated only cloned banner foreground masks to protect Gumiho face readability above display lettering."
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "fileUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=5-2",
+  "source": {
+    "pageId": "page_eea2fb35a7608191a14003e7910ed2c5",
+    "url": "http://127.0.0.1:4317/",
+    "readOnly": true,
+    "font": "Malgun Gothic"
+  },
+  "screens": [
+    {
+      "id": "5:2",
+      "name": "1440px · Desktop",
+      "width": 1440,
+      "height": 2283.64990234375,
+      "textNodes": 159,
+      "instances": 48,
+      "autoLayouts": 152,
+      "imageNodes": 0,
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "overflow": []
+    },
+    {
+      "id": "6:191",
+      "name": "1920px · Desktop",
+      "width": 1920,
+      "height": 2089.349853515625,
+      "textNodes": 159,
+      "instances": 48,
+      "autoLayouts": 152,
+      "imageNodes": 0,
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "overflow": []
+    },
+    {
+      "id": "6:503",
+      "name": "768px · Tablet",
+      "width": 768,
+      "height": 2705.14990234375,
+      "textNodes": 147,
+      "instances": 41,
+      "autoLayouts": 141,
+      "imageNodes": 0,
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "overflow": []
+    },
+    {
+      "id": "6:792",
+      "name": "390px · Mobile",
+      "width": 390,
+      "height": 3499.050048828125,
+      "textNodes": 147,
+      "instances": 41,
+      "autoLayouts": 141,
+      "imageNodes": 0,
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "overflow": []
+    }
+  ],
+  "resizeChecks": [
+    {
+      "source": "6:792",
+      "width": 360,
+      "overflow": []
+    },
+    {
+      "source": "6:792",
+      "width": 430,
+      "overflow": []
+    },
+    {
+      "source": "6:503",
+      "width": 640,
+      "overflow": []
+    },
+    {
+      "source": "5:2",
+      "width": 1280,
+      "overflow": []
+    }
+  ],
+  "editableFont": "Noto Sans KR",
+  "visualQA": {
+    "reviewed": [
+      "desktop-1440-final.png",
+      "desktop-1920.png",
+      "tablet-768.png",
+      "mobile-390-final.png",
+      "editing-guide.png"
+    ],
+    "result": "No visible clipping or unintended overlap found in final rendered outputs. Structure preserves 7 modules; mobile sidebar is a separate menu frame.",
+    "differences": [
+      "Noto Sans KR replaces unavailable Malgun Gothic.",
+      "Browser scrollbar is excluded from Figma viewport width.",
+      "Figma breakpoint layouts are separate frames; Wrap / Fill / Hug operate within each frame. Card maxWidth follows the selected reference width."
+    ]
+  },
+  "scope": {
+    "sourceChanges": 0,
+    "existingAssetsChanged": 0,
+    "serviceFunctionality": false,
+    "figmaRuntimeConfigEditor": false
+  },
+  "pages": {
+    "screen": "0:1",
+    "kit": "2:2",
+    "notes": "2:3"
+  },
+  "components": {
+    "button": "3:2",
+    "solid": "3:4",
+    "badge": "3:6",
+    "nav": "3:8",
+    "game": "4:2",
+    "gameMobile": "4:9",
+    "event": "4:16",
+    "eventStack": "4:25",
+    "shortcut": "4:34",
+    "shortcutMobile": "4:40",
+    "match": "4:46",
+    "matchStack": "4:60"
+  },
+  "extras": {
+    "createdNodeIds": [
+      "9:740",
+      "9:741",
+      "9:742",
+      "9:743",
+      "I9:743;3:3",
+      "9:745",
+      "I9:745;3:9",
+      "9:747",
+      "I9:747;3:9",
+      "9:749",
+      "I9:749;3:9",
+      "9:751",
+      "I9:751;3:9",
+      "9:753",
+      "I9:753;3:9",
+      "9:755",
+      "9:756",
+      "9:757",
+      "9:758",
+      "9:759",
+      "9:760",
+      "9:761",
+      "9:762",
+      "9:763",
+      "9:764",
+      "9:765",
+      "9:766",
+      "9:767",
+      "9:768",
+      "9:769",
+      "9:770",
+      "9:771",
+      "9:772",
+      "9:773",
+      "9:774",
+      "9:775",
+      "9:776",
+      "9:777",
+      "9:778"
+    ],
+    "mutatedNodeIds": [
+      "4:61",
+      "6:815"
+    ],
+    "menu": {
+      "id": "9:740",
+      "w": 320,
+      "h": 385.6000061035156
+    },
+    "guide": {
+      "id": "9:756",
+      "w": 960,
+      "h": 1092.699951171875
+    }
+  }
+}

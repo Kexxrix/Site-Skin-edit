@@ -1,0 +1,22 @@
+{
+  "text_files_scanned": 1532,
+  "patterns": [
+    "private_key",
+    "github_token",
+    "openai_key",
+    "jwt",
+    "bearer_literal",
+    "aws_access_key",
+    "google_api_key",
+    "telegram_bot_token",
+    "credential_url"
+  ],
+  "findings": [],
+  "limits": "Strong-pattern scan and explicit filename exclusions, not a universal guarantee.",
+  "additional_patterns": [
+    "basic_auth_literal",
+    "credential_assignment",
+    "signed_cloud_url"
+  ],
+  "additional_findings": []
+}

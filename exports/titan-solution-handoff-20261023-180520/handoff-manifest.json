@@ -1,0 +1,490 @@
+{
+  "createdAt": "2026-10-23T18:05:24.127085+09:00",
+  "sourcePath": "E:\\codexwork\\Site-Skin-edit\\titan_promotion",
+  "packageProjectPath": "E:\\codexwork\\Site-Skin-edit\\exports\\titan-solution-handoff-20261023-180520\\titan_promotion",
+  "outputPath": "E:\\codexwork\\Site-Skin-edit\\exports\\titan-solution-handoff-20261023-180520",
+  "sourceFiles": [
+    {
+      "path": ".gitignore",
+      "bytes": 567,
+      "sha256": "1cf0019416e4f37b9a557c6b778f429d319025917359dd7cdc0b073549df0276"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1343,
+      "sha256": "6d9854da6cb2073e49232e9e0155c9b70a6bcb7d034212778fd16d58521c9026"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 12,
+      "sha256": "d631d88045f74623d568adfb4783b72e3d1b732330d749bc6c72e6648d4581d3"
+    },
+    {
+      "path": "components.json",
+      "bytes": 449,
+      "sha256": "27404a76839baf390a1b990f4346ccb981db771c9bc1496992ce677a18a20b1e"
+    },
+    {
+      "path": "next.config.mjs",
+      "bytes": 217,
+      "sha256": "751d5d44d48b8d046af3b7f08a1230a66e7322afcefa46eda6187d367c1178d7"
+    },
+    {
+      "path": "package.json",
+      "bytes": 769,
+      "sha256": "f8983f64eac28682e5f89674acefc275f059c7e99c4be731702049b38a83a524"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 116517,
+      "sha256": "4746af4b5dc6b6c16f9c3f6426d8b6ba90772c1e51fcdd464e6fefafc3511e8d"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 52,
+      "sha256": "628fbe60d6c4fefe9bcbf297f5b4173d67aae92e4ce65fed628704b248050e6a"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "bytes": 152,
+      "sha256": "f84748b4cbbee63a06463ca8836b64e77733c1a920b74ccfe7114e02080cc2e8"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 680,
+      "sha256": "b38556ee4129c36e12537b54f32b96577417473124ff25a6b41248afef554598"
+    },
+    {
+      "path": "app/globals.css",
+      "bytes": 5211,
+      "sha256": "028a77850c29d344f65965141732013dbdb92f0ffcfe597c14c99101229511e5"
+    },
+    {
+      "path": "app/layout.tsx",
+      "bytes": 1540,
+      "sha256": "79e8ec959e19df1e29df60353d6ae88c3f46c7a571a98938761a87cac5040bbb"
+    },
+    {
+      "path": "app/page.tsx",
+      "bytes": 1172,
+      "sha256": "aca0f7b713f02eebce0ac6877f03058b33b7c3c68554eb19dd2a8485c971be0b"
+    },
+    {
+      "path": "app/wireframe.css",
+      "bytes": 4278,
+      "sha256": "fdbb7b7956bb8bbdacae998250f894f8a5435eaa55edfeca5732eceb743cccc6"
+    },
+    {
+      "path": "components/contact.module.css",
+      "bytes": 6019,
+      "sha256": "4af3c100597b5f004b563c7193c59349691432f579cd13b1c374b821dec394b5"
+    },
+    {
+      "path": "components/contact.tsx",
+      "bytes": 11440,
+      "sha256": "3cabc8c1c1b2c7785f2d1746f786d44b486f852e06bef61afacf351e132a5651"
+    },
+    {
+      "path": "components/counter.tsx",
+      "bytes": 1561,
+      "sha256": "0882890da4a391b0b892278029e6e96345089bca94639723416d3f95ba18c2bb"
+    },
+    {
+      "path": "components/pill-button.tsx",
+      "bytes": 2542,
+      "sha256": "dd1b719e0685de1f4e574712cd434f0a824bb495796a1f1cfba095f3762b84d3"
+    },
+    {
+      "path": "components/platform.module.css",
+      "bytes": 4854,
+      "sha256": "fe269a9bd896616889f4cc532731a117aaea69b881c92c031105f7d852fa6244"
+    },
+    {
+      "path": "components/platform.tsx",
+      "bytes": 4497,
+      "sha256": "fe8ca3a48b360ce87f4113fe9615dca24ef0d38b0c860d0c6ef2c5454176bc5c"
+    },
+    {
+      "path": "components/portfolio.module.css",
+      "bytes": 7380,
+      "sha256": "c630d0a80c723a0f7759d66b291de3b08239cf6808642a611210cecc5f324806"
+    },
+    {
+      "path": "components/portfolio.tsx",
+      "bytes": 4778,
+      "sha256": "fef7e4eabfd194ecfe14055f174dc039bbe7ddb46ac17318e33f4b6ce4f32ed7"
+    },
+    {
+      "path": "components/reveal.tsx",
+      "bytes": 1253,
+      "sha256": "41adf1fce54e159ea49ff486f765f90bc9d49228248c4f4b76ec866d4431bb51"
+    },
+    {
+      "path": "components/site-footer.tsx",
+      "bytes": 877,
+      "sha256": "51d73849893d5ff870e85145b95b570bd924cd7961da11fc7ff35ff857b2e5ec"
+    },
+    {
+      "path": "components/site-header.module.css",
+      "bytes": 4005,
+      "sha256": "fbf9a52f08d3727d7ec77dadc934f4644a15d95ebbe88a04ae9a38e545aa8fa3"
+    },
+    {
+      "path": "components/site-header.tsx",
+      "bytes": 3621,
+      "sha256": "3b299bdd9064bd472c79f066f11647686e613b9ed2fd122f8c8a19fb760e40b3"
+    },
+    {
+      "path": "components/solutions.module.css",
+      "bytes": 4877,
+      "sha256": "2426a0c1f6ca5ef2f6f8401abdffa8c85effd5706d088d4c179dd60d48361dc4"
+    },
+    {
+      "path": "components/solutions.tsx",
+      "bytes": 4594,
+      "sha256": "20ce79d5367e62ecae338c59a3bd562efbb5515db3c63a2fdb94529a7a71e7db"
+    },
+    {
+      "path": "components/support.module.css",
+      "bytes": 5523,
+      "sha256": "f6351ca8f4101f1c737ffee18e0eba964139cfb284b60cfc052271d69e18fbfd"
+    },
+    {
+      "path": "components/support.tsx",
+      "bytes": 7862,
+      "sha256": "86bda71902d151d766581c7f2d8de8ae8d11939c11e4a3ec7d45cd27182e55b2"
+    },
+    {
+      "path": "components/telegram-contact.tsx",
+      "bytes": 753,
+      "sha256": "23f7ab9a4c00f39c3d66ba5ce1477a3d10b9748f41e1028119f3b646f56f5c1b"
+    },
+    {
+      "path": "components/hero.module.css",
+      "bytes": 7377,
+      "sha256": "e19cb53a59c153dbbfcd90907a6c26948f8ef5f92e08835becd32841183eb7c0"
+    },
+    {
+      "path": "components/hero.tsx",
+      "bytes": 4876,
+      "sha256": "32a7aebc1212b06b6bc2838fd0c72d344fae53a90d5f76fe1013f28a9405170d"
+    },
+    {
+      "path": "components/telegram-contact.module.css",
+      "bytes": 816,
+      "sha256": "9253e9bbb7e9aef7d2a286e0f83de6f42379b8de61250bcd30a9b6a9ecc1f219"
+    },
+    {
+      "path": "components/why-titan.module.css",
+      "bytes": 3089,
+      "sha256": "0757f7c6ea982599db5d0741fbbf752155ba5173e7edd94f523f70ab674d8e7f"
+    },
+    {
+      "path": "components/why-titan.tsx",
+      "bytes": 3368,
+      "sha256": "9f2f0cb9e3ec7191e612ec0f59ed73cf9c93055f15346f897ac3f7f099503085"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "bytes": 3256,
+      "sha256": "0aa06b4cbcc43630204cfd6ee196ec3d2b086ce5bc550125fe8d8857cf64ab72"
+    },
+    {
+      "path": "lib/demos.ts",
+      "bytes": 2150,
+      "sha256": "0764191debe6327a4f9385d6968067f9514afb5ce2a3048c827477bccce1456a"
+    },
+    {
+      "path": "lib/utils.ts",
+      "bytes": 172,
+      "sha256": "76db4720b8835194b5bb3c6e4f1049914e39a24121dee582eca62039c8c16dfb"
+    },
+    {
+      "path": "public/apple-icon.png",
+      "bytes": 2626,
+      "sha256": "da678942d4656a903f61000551cc51c09464d7a223faaae304e8210e1ca19257"
+    },
+    {
+      "path": "public/icon-dark-32x32.png",
+      "bytes": 585,
+      "sha256": "8a1570b2955c3748b6844356a7487d88c60f9f1e699e870a3452a3decd1ba03c"
+    },
+    {
+      "path": "public/icon-light-32x32.png",
+      "bytes": 566,
+      "sha256": "83145e5bb033ace23cd8e7fbb63e7c39733aaf58f8a7280d7800995cced6f7c2"
+    },
+    {
+      "path": "public/icon.svg",
+      "bytes": 1329,
+      "sha256": "234f561c4db09781786f4d0b24b2ecfaf876e78544710573b046aaafead3fbe6"
+    },
+    {
+      "path": "public/placeholder-logo.png",
+      "bytes": 568,
+      "sha256": "d7c39d978af643ba9525de6fb8171e0f834882db4110c82ecad0df3f4f69551a"
+    },
+    {
+      "path": "public/placeholder-logo.svg",
+      "bytes": 3208,
+      "sha256": "19a9e968f4656d52a4c249b4056117ad109370ba9da51cdc630ddded74cec73b"
+    },
+    {
+      "path": "public/placeholder-user.jpg",
+      "bytes": 1635,
+      "sha256": "22be067d748175598a5e00123902f5c8332dd7f101de03dfb92ec08d85bb5e53"
+    },
+    {
+      "path": "public/placeholder.jpg",
+      "bytes": 1064,
+      "sha256": "14be0c7aa11cca1e78f0966176b286a6d36d00ec64be027775dfeb33d8e2dfdf"
+    },
+    {
+      "path": "public/placeholder.svg",
+      "bytes": 3253,
+      "sha256": "64badf7aabda0b9630b87020ffb6095cb858ccbcf66b355c2aa08b1063954d3b"
+    },
+    {
+      "path": "public/assets/aures.webp",
+      "bytes": 80882,
+      "sha256": "7b184140155e631bd5ba62e031fb50ad82b265008ca5fe54b74e703d77bebdc4"
+    },
+    {
+      "path": "public/assets/carpe-diem.webp",
+      "bytes": 96188,
+      "sha256": "9ba17759bf75aacedc0e6fb56b777005c5e838527d1cc2dbb514337e0782efe9"
+    },
+    {
+      "path": "public/assets/cat-village.webp",
+      "bytes": 128034,
+      "sha256": "09c330d490935090f918f60768f7cbebca6310e8add78399b10de4c442953232"
+    },
+    {
+      "path": "public/assets/cobalt.webp",
+      "bytes": 63850,
+      "sha256": "03c12d0f6df0ea2c7dbc039a0b736d3e19b3bdbdad5a17d33911376e4287a348"
+    },
+    {
+      "path": "public/assets/dizora-work.webp",
+      "bytes": 33854,
+      "sha256": "c1d71f1cb304299048ddf258c91d46a48d9bd2a953a1e071ce15f7dac3adfd72"
+    },
+    {
+      "path": "public/assets/fire.webp",
+      "bytes": 167212,
+      "sha256": "5092cc3641227084e07be4e7a467f85d3638cfbb24bac369a046e3780ee3f70d"
+    },
+    {
+      "path": "public/assets/girls-frontline.webp",
+      "bytes": 132952,
+      "sha256": "e3a7203af467fd781c12edbd550b6c8a24d87dec435f5a2ed3ed3ed1cf345838"
+    },
+    {
+      "path": "public/assets/ground-zero.webp",
+      "bytes": 96840,
+      "sha256": "ba2cee27af30bd84527b517ed1b3b9c883958b2c877e6dc2c91cf77e236fe367"
+    },
+    {
+      "path": "public/assets/gta-casino.webp",
+      "bytes": 99808,
+      "sha256": "bcfeac2c8da2691773b3d0f9e15d492d511fb3a51e6b824a1140c30febe1027a"
+    },
+    {
+      "path": "public/assets/hero-bg.png",
+      "bytes": 199547,
+      "sha256": "3d333ecd02f8439847b289bb5e10427d8ee9a3fab089101a7713b84422e10a71"
+    },
+    {
+      "path": "public/assets/hero-team-meeting.jpg",
+      "bytes": 52078,
+      "sha256": "7a18f2e405a00114df3eeb5a93755a13e7b25cdf8b5f1d8cb1b57dbbff5ef4e0"
+    },
+    {
+      "path": "public/assets/lumiere.webp",
+      "bytes": 83820,
+      "sha256": "6dfeeb1eba17667be8df126651d96453d22a4f6dc0adf9cebb02725d7c6d08bf"
+    },
+    {
+      "path": "public/assets/platform-team.webp",
+      "bytes": 175168,
+      "sha256": "3233d4160d89f1aa2214d11c85dcd33f73b5adfc35fa42f9879aaf0c81a5842c"
+    },
+    {
+      "path": "public/assets/support-design.jpg",
+      "bytes": 91316,
+      "sha256": "4f7fd9337bbde894210b6ae8c40f9f480437e7165b226fc96ef22223629bff50"
+    },
+    {
+      "path": "public/assets/support-discovery.jpg",
+      "bytes": 103057,
+      "sha256": "b908be49383f8eec150188971cb772fc68e93427f33d40f7f58ca90058a2e3f8"
+    },
+    {
+      "path": "public/assets/support-operations.jpg",
+      "bytes": 84427,
+      "sha256": "0f165de3ded4b8a24976bc86519d4536e1cd63133d846ea80bff5ff243544aab"
+    },
+    {
+      "path": "public/assets/support-testing.jpg",
+      "bytes": 109953,
+      "sha256": "d531e83d621a526dddbf24fb07d024ac34867ec3d31791a7bc5c5ebdcf854977"
+    },
+    {
+      "path": "public/assets/hero-dev-team-v001.png",
+      "bytes": 1928279,
+      "sha256": "a50a017cc0679326b0ce15a82a236a616b8feb35e2cceb326b98f10898d82284"
+    },
+    {
+      "path": "public/assets/hero-dev-team-editorial-v002.png",
+      "bytes": 1926494,
+      "sha256": "39794b8d3a6ce94965671b2f759e80f7f3c6d8bfa4f3edbdebe3901021a00408"
+    },
+    {
+      "path": "public/assets/hero-team/01-creative-engineering.png",
+      "bytes": 1964662,
+      "sha256": "e9693e2fc45a045a78b3f38bad3ee65184ad6f83bf9f76cc15f0c3e7a4481eb3"
+    },
+    {
+      "path": "public/assets/hero-team/02-support-portrait.png",
+      "bytes": 1880719,
+      "sha256": "1f3a93c1ef07436e42b4597dfa11547e82df1eb5e7acd545fda828c895d4ffd6"
+    },
+    {
+      "path": "public/assets/hero-team/03-technology-architect.png",
+      "bytes": 2055652,
+      "sha256": "3393132cfe98006a05db5b41bc62c236de4ecf7b93bebcb2384292b4d054ba3c"
+    },
+    {
+      "path": "public/assets/hero-team/04-partner-conversation.png",
+      "bytes": 1995679,
+      "sha256": "bb7a46d1990cbd1f913b0b43997b95b317dd9bf0ea486a4b6ed84422e614d606"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260909/01-development-review.png",
+      "bytes": 1764493,
+      "sha256": "ecbf6fd9e8854ee5859c13aabfc9ffc4b484355ded6dfc8b32fe57e30c8e4ad5"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260909/02-team-review.png",
+      "bytes": 1808141,
+      "sha256": "3ef75c51323e1fed252896d2f38ce0c48f53307572d3153888673bc7a819204f"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260909/03-group-review.png",
+      "bytes": 1832618,
+      "sha256": "7fb7564b7ea287eebde23cd9300e2938e91c86f278ac82353b035e5e918a2c84"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260909/04-monitor-review.png",
+      "bytes": 1875557,
+      "sha256": "f01992137858c2d75fc640139ce3a1d49aed5ffb8f920bcf2d991baef0491ae1"
+    },
+    {
+      "path": "public/assets/hero-team-generated-20260910/01-development-planning.png",
+      "bytes": 1785512,
+      "sha256": "40f50084647470a609faffa839e3c859c501f238db228d4bc2ff0ebcf1bb0393"
+    },
+    {
+      "path": "public/assets/hero-team-generated-20260910/02-customer-support.png",
+      "bytes": 1759109,
+      "sha256": "f3e6df9f8acbaeed54322c1b6d85f8ee9d28bcee1dab3b4a384042b7c587486d"
+    },
+    {
+      "path": "public/assets/hero-team-generated-20260910/03-technical-meeting.png",
+      "bytes": 1767950,
+      "sha256": "eeda92b4bf04a581badd16eaa885322d9d717632d768eea6c75cb05f665bad1c"
+    },
+    {
+      "path": "public/assets/hero-team-generated-20260910/04-idea-meeting.png",
+      "bytes": 1792402,
+      "sha256": "1f3dc00b7fa989e478bd72feb4ae8c4eb62d082a4b7b529ad8aa109f49f3bdac"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260915/디지털 아트에 몰입한 크리에이티브 디자이너04.png",
+      "bytes": 1894010,
+      "sha256": "93c5f4f54217da6f2706f6939721e4a11d020ec70129a4d756cc76fa7a87b4e1"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260915/탁월한 기술력_03.png",
+      "bytes": 1980373,
+      "sha256": "fa71d243b93f94defe2b4ef8bc51e054fe0c1d08b59914eb241de8dca374bd1a"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260915/파트너의 경제적 성공02.png",
+      "bytes": 1948135,
+      "sha256": "c033ec3e0c1be049061b8a577164cc28026c0e60a10255269926a851a35014d8"
+    },
+    {
+      "path": "public/assets/hero-team-user-20260915/역동적인 개발팀_02.png",
+      "bytes": 1950472,
+      "sha256": "a888b01638930ac34c765f5f4fa4fb90985395a96fe887590257a1fe5334fa8c"
+    },
+    {
+      "path": "public/videos/TITAN-20s-R4-review-v003.mp4",
+      "bytes": 21826728,
+      "sha256": "a21234afd8bb5a250dfd0670c183ab12ae11dbf2edeac8879e304386e795fc46"
+    },
+    {
+      "path": "public/videos/TITAN-20s-R4-v003-motion-v001.mp4",
+      "bytes": 22424973,
+      "sha256": "d82afc864595fc7bcbfa8ab0d871c594aacc75b397a5ebcb278af682d116aae6"
+    },
+    {
+      "path": "public/videos/TITAN-KO-5scene-25p6s-v001.mp4",
+      "bytes": 23691373,
+      "sha256": "d17cf80edb29087efa48e13afb93721003bb1cfb6732d55c2ce311b16caf1a40"
+    },
+    {
+      "path": "public/videos/TITAN-KO-5scene-19s-v003.mp4",
+      "bytes": 25253744,
+      "sha256": "592accea6ca4dc0a60e0717bfbbb3453a3d4111236c9c0ac73cc771fb7c76916"
+    },
+    {
+      "path": "docs/briefs/hero-media-brief.md",
+      "bytes": 11792,
+      "sha256": "55a4e3b8104b781f3dd8d63fa162b8998cae1e7feffedabc89a35f7271111219"
+    }
+  ],
+  "excluded": [
+    {
+      "path": ".git/",
+      "reason": "dependency, generated output, VCS, or local tool state"
+    },
+    {
+      "path": "node_modules/",
+      "reason": "dependency, generated output, VCS, or local tool state"
+    },
+    {
+      "path": ".next/",
+      "reason": "dependency, generated output, VCS, or local tool state"
+    },
+    {
+      "path": "next-env.d.ts",
+      "reason": "generated or machine-specific configuration"
+    }
+  ],
+  "mediaReferences": [
+    "/assets/aures.webp",
+    "/assets/cat-village.webp",
+    "/assets/cobalt.webp",
+    "/assets/fire.webp",
+    "/assets/girls-frontline.webp",
+    "/assets/ground-zero.webp",
+    "/assets/gta-casino.webp",
+    "/assets/hero-bg.png",
+    "/assets/hero-team-user-20260915/디지털 아트에 몰입한 크리에이티브 디자이너04.png",
+    "/assets/hero-team-user-20260915/역동적인 개발팀_02.png",
+    "/assets/hero-team-user-20260915/탁월한 기술력_03.png",
+    "/assets/hero-team-user-20260915/파트너의 경제적 성공02.png",
+    "/assets/lumiere.webp",
+    "/assets/platform-team.webp",
+    "/assets/support-design.jpg",
+    "/assets/support-discovery.jpg",
+    "/assets/support-operations.jpg",
+    "/assets/support-testing.jpg",
+    "/videos/TITAN-KO-5scene-19s-v003.mp4"
+  ],
+  "missingMedia": [],
+  "sourceFileCount": 88,
+  "sourceBytes": 129167186
+}

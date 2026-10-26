@@ -1,0 +1,3428 @@
+{
+  "pageName": "24 · A0 정밀 마스크 · 골드 그라데이션 · 1920",
+  "roots": [
+    {
+      "id": "795:1331",
+      "name": "A0 · 정밀 마스크 · 골드 그라데이션 · BlackGold · 1920",
+      "x": 100,
+      "y": 100,
+      "w": 1920,
+      "h": 1819.199951171875
+    }
+  ],
+  "tree": {
+    "id": "795:1331",
+    "name": "A0 · 정밀 마스크 · 골드 그라데이션 · BlackGold · 1920",
+    "type": "FRAME",
+    "x": 100,
+    "y": 100,
+    "w": 1920,
+    "h": 1819.199951171875,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.0784313753247261,
+          "g": 0.08235294371843338,
+          "b": 0.08235294371843338
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:435:14066"
+          }
+        }
+      }
+    ],
+    "strokes": [],
+    "children": [
+      {
+        "id": "795:1332",
+        "name": "Header · 07B GoldFlow03 · R6",
+        "type": "INSTANCE",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 88,
+        "fills": [
+          {
+            "type": "GRADIENT_LINEAR",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "gradientStops": [
+              {
+                "color": {
+                  "r": 0.16862745583057404,
+                  "g": 0.1568627506494522,
+                  "b": 0.13725490868091583,
+                  "a": 1
+                },
+                "position": 0,
+                "boundVariables": {
+                  "color": {
+                    "type": "VARIABLE_ALIAS",
+                    "id": "VariableID:539:4076"
+                  }
+                }
+              },
+              {
+                "color": {
+                  "r": 0.10980392247438431,
+                  "g": 0.11372549086809158,
+                  "b": 0.10980392247438431,
+                  "a": 1
+                },
+                "position": 1,
+                "boundVariables": {
+                  "color": {
+                    "type": "VARIABLE_ALIAS",
+                    "id": "VariableID:539:4079"
+                  }
+                }
+              }
+            ],
+            "gradientTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "strokes": [],
+        "children": [
+          {
+            "id": "I795:1332;693:3258",
+            "name": "Generated GoldFlow03 / image overlay",
+            "type": "RECTANGLE",
+            "x": 0,
+            "y": -136,
+            "w": 1920,
+            "h": 640.2947998046875,
+            "fills": [
+              {
+                "type": "IMAGE",
+                "visible": true,
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "scaleMode": "FIT",
+                "scalingFactor": 0.5,
+                "rotation": 0,
+                "filters": {
+                  "exposure": 0,
+                  "contrast": 0,
+                  "saturation": 0,
+                  "temperature": 0,
+                  "tint": 0,
+                  "highlights": 0,
+                  "shadows": 0
+                },
+                "imageTransform": [
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "imageHash": "6a3df4ab26f2e8c797e86cfedd5a486dd3d23e42"
+              }
+            ],
+            "strokes": []
+          },
+          {
+            "id": "I795:1332;693:3259",
+            "name": "Readability fade",
+            "type": "RECTANGLE",
+            "x": 0,
+            "y": 0,
+            "w": 1920,
+            "h": 88,
+            "fills": [
+              {
+                "type": "GRADIENT_LINEAR",
+                "visible": true,
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "gradientStops": [
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.05999999865889549
+                    },
+                    "position": 0,
+                    "boundVariables": {}
+                  },
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1599999964237213
+                    },
+                    "position": 0.3799999952316284,
+                    "boundVariables": {}
+                  },
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.41999998688697815
+                    },
+                    "position": 0.6800000071525574,
+                    "boundVariables": {}
+                  },
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.949999988079071
+                    },
+                    "position": 1,
+                    "boundVariables": {}
+                  }
+                ],
+                "gradientTransform": [
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    -1,
+                    0,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "strokes": []
+          },
+          {
+            "id": "I795:1332;693:3260",
+            "name": "Single gold band",
+            "type": "FRAME",
+            "x": 0,
+            "y": 0,
+            "w": 1920,
+            "h": 88,
+            "fills": [],
+            "strokes": [],
+            "children": [
+              {
+                "id": "I795:1332;693:3261",
+                "name": "Brand rail / sidebar alignment",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "w": 245,
+                "h": 88,
+                "fills": [],
+                "strokes": []
+              },
+              {
+                "id": "I795:1332;693:3264",
+                "name": "Notice · inline",
+                "type": "INSTANCE",
+                "x": 277,
+                "y": 30,
+                "w": 830,
+                "h": 28,
+                "fills": [
+                  {
+                    "type": "GRADIENT_LINEAR",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "gradientStops": [
+                      {
+                        "color": {
+                          "r": 0,
+                          "g": 0,
+                          "b": 0,
+                          "a": 0.5799999833106995
+                        },
+                        "position": 0,
+                        "boundVariables": {}
+                      },
+                      {
+                        "color": {
+                          "r": 0,
+                          "g": 0,
+                          "b": 0,
+                          "a": 0.30000001192092896
+                        },
+                        "position": 0.47999998927116394,
+                        "boundVariables": {}
+                      },
+                      {
+                        "color": {
+                          "r": 1,
+                          "g": 1,
+                          "b": 1,
+                          "a": 0.054999999701976776
+                        },
+                        "position": 1,
+                        "boundVariables": {}
+                      }
+                    ],
+                    "gradientTransform": [
+                      [
+                        0,
+                        1,
+                        0
+                      ],
+                      [
+                        -1,
+                        0,
+                        1
+                      ]
+                    ]
+                  }
+                ],
+                "strokes": []
+              },
+              {
+                "id": "I795:1332;693:3265",
+                "name": "Quick links",
+                "type": "INSTANCE",
+                "x": 1139,
+                "y": 26,
+                "w": 376,
+                "h": 36,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "color": {
+                      "r": 0.0784313753247261,
+                      "g": 0.08235294371843338,
+                      "b": 0.08235294371843338
+                    },
+                    "boundVariables": {
+                      "color": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:435:14050"
+                      }
+                    }
+                  }
+                ],
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "color": {
+                      "r": 0.21960784494876862,
+                      "g": 0.21960784494876862,
+                      "b": 0.21960784494876862
+                    },
+                    "boundVariables": {
+                      "color": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:435:14058"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "I795:1332;693:3266",
+                "name": "Member access",
+                "type": "FRAME",
+                "x": 1547,
+                "y": 26,
+                "w": 322,
+                "h": 36,
+                "fills": [],
+                "strokes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "795:1333",
+        "name": "Page shell",
+        "type": "FRAME",
+        "x": 0,
+        "y": 88,
+        "w": 1920,
+        "h": 1731.199951171875,
+        "fills": [],
+        "strokes": [],
+        "children": [
+          {
+            "id": "795:1334",
+            "name": "Sidebar rail · banner aligned",
+            "type": "FRAME",
+            "x": 0,
+            "y": 0,
+            "w": 232,
+            "h": 992,
+            "fills": [],
+            "strokes": [],
+            "children": [
+              {
+                "id": "795:1335",
+                "name": "Sidebar · Roomy 44px · Icon 22px",
+                "type": "INSTANCE",
+                "x": 0,
+                "y": 18,
+                "w": 232,
+                "h": 956,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "color": {
+                      "r": 0.0941176488995552,
+                      "g": 0.09803921729326248,
+                      "b": 0.09803921729326248
+                    },
+                    "boundVariables": {
+                      "color": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:435:14057"
+                      }
+                    }
+                  }
+                ],
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "color": {
+                      "r": 0.21960784494876862,
+                      "g": 0.21960784494876862,
+                      "b": 0.21960784494876862
+                    },
+                    "boundVariables": {
+                      "color": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:435:14058"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "795:1336",
+                "name": "Frame 1",
+                "type": "FRAME",
+                "x": 12,
+                "y": 911,
+                "w": 113,
+                "h": 23,
+                "fills": [],
+                "strokes": []
+              }
+            ]
+          },
+          {
+            "id": "795:1341",
+            "name": "Main content",
+            "type": "FRAME",
+            "x": 232,
+            "y": 0,
+            "w": 1688,
+            "h": 1731.199951171875,
+            "fills": [],
+            "strokes": [],
+            "children": [
+              {
+                "id": "795:1342",
+                "name": "Benefits · P23-A0",
+                "type": "FRAME",
+                "x": 45,
+                "y": 18,
+                "w": 1592,
+                "h": 256,
+                "fills": [],
+                "strokes": []
+              },
+              {
+                "id": "795:1346",
+                "name": "콘텐츠 바로가기 / Section",
+                "type": "FRAME",
+                "x": 45,
+                "y": 290,
+                "w": 1592,
+                "h": 194,
+                "fills": [],
+                "strokes": []
+              },
+              {
+                "id": "795:1353",
+                "name": "Sports betting",
+                "type": "FRAME",
+                "x": 45,
+                "y": 500,
+                "w": 1592,
+                "h": 264,
+                "fills": [],
+                "strokes": []
+              },
+              {
+                "id": "795:1359",
+                "name": "🎥 라이브 카지노",
+                "type": "FRAME",
+                "x": 45,
+                "y": 780,
+                "w": 1592,
+                "h": 347.6000061035156,
+                "fills": [],
+                "strokes": []
+              },
+              {
+                "id": "795:1373",
+                "name": "🎰 슬롯 로비",
+                "type": "FRAME",
+                "x": 45,
+                "y": 1143.5999755859375,
+                "w": 1592,
+                "h": 347.6000061035156,
+                "fills": [],
+                "strokes": []
+              },
+              {
+                "id": "795:1387",
+                "name": "Partners · Flexible centered grid · BlackGold",
+                "type": "INSTANCE",
+                "x": 45,
+                "y": 1507.199951171875,
+                "w": 1592,
+                "h": 192,
+                "fills": [],
+                "strokes": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "795:1332",
+      "name": "Header · 07B GoldFlow03 · R6",
+      "masterId": "693:3257",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "I795:1332;693:3262",
+      "name": "Logo",
+      "masterId": "660:5998",
+      "masterName": "P19/Assets/Logo/BlackGold"
+    },
+    {
+      "id": "I795:1332;693:3264",
+      "name": "Notice · inline",
+      "masterId": "660:6000",
+      "masterName": "Theme=BlackGold, Step=1"
+    },
+    {
+      "id": "I795:1332;693:3264;660:6001",
+      "name": "P19/Assets/HeaderIcon/megaphone",
+      "masterId": "660:6080",
+      "masterName": "P19/Assets/HeaderIcon/megaphone"
+    },
+    {
+      "id": "I795:1332;693:3265",
+      "name": "Quick links",
+      "masterId": "693:3348",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "I795:1332;693:3265;693:3349",
+      "name": "CheckIn",
+      "masterId": "660:6126",
+      "masterName": "Role=CheckIn, Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1332;693:3265;693:3349;660:6127",
+      "name": "P19/Assets/HeaderIcon/calendar-check",
+      "masterId": "660:6202",
+      "masterName": "P19/Assets/HeaderIcon/calendar-check"
+    },
+    {
+      "id": "I795:1332;693:3265;693:3350",
+      "name": "Betting",
+      "masterId": "660:6132",
+      "masterName": "Role=Betting, Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1332;693:3265;693:3350;660:6133",
+      "name": "P19/Assets/HeaderIcon/receipt-text",
+      "masterId": "660:6208",
+      "masterName": "P19/Assets/HeaderIcon/receipt-text"
+    },
+    {
+      "id": "I795:1332;693:3265;693:3351",
+      "name": "Telegram",
+      "masterId": "660:6138",
+      "masterName": "Role=Telegram, Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1332;693:3265;693:3351;660:6139",
+      "name": "P19/Assets/HeaderIcon/telegram",
+      "masterId": "660:6213",
+      "masterName": "P19/Assets/HeaderIcon/telegram"
+    },
+    {
+      "id": "I795:1332;693:3267",
+      "name": "Login",
+      "masterId": "693:3389",
+      "masterName": "Theme=BlackGold, Action=Login"
+    },
+    {
+      "id": "I795:1332;693:3268",
+      "name": "Join",
+      "masterId": "693:3391",
+      "masterName": "Theme=BlackGold, Action=Join"
+    },
+    {
+      "id": "I795:1332;693:3269",
+      "name": "Anonymous",
+      "masterId": "693:3393",
+      "masterName": "Theme=BlackGold, Action=Anonymous"
+    },
+    {
+      "id": "795:1335",
+      "name": "Sidebar · Roomy 44px · Icon 22px",
+      "masterId": "652:6078",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "I795:1335;652:6084",
+      "name": "Menu / 입금신청",
+      "masterId": "652:6022",
+      "masterName": "Theme=BlackGold, State=Selected"
+    },
+    {
+      "id": "I795:1335;652:6084;652:6023",
+      "name": "Icon",
+      "masterId": "660:6228",
+      "masterName": "P19/Assets/GoldIcon/deposit"
+    },
+    {
+      "id": "I795:1335;652:6084;652:6025",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6085",
+      "name": "Menu / 출금신청",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6085;652:6015",
+      "name": "Icon",
+      "masterId": "660:6237",
+      "masterName": "P19/Assets/GoldIcon/withdraw"
+    },
+    {
+      "id": "I795:1335;652:6085;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6086",
+      "name": "Menu / 마이페이지",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6086;652:6015",
+      "name": "Icon",
+      "masterId": "660:6239",
+      "masterName": "P19/Assets/GoldIcon/profile"
+    },
+    {
+      "id": "I795:1335;652:6086;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6087",
+      "name": "Menu / 문의하기",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6087;652:6015",
+      "name": "Icon",
+      "masterId": "660:6241",
+      "masterName": "P19/Assets/GoldIcon/support"
+    },
+    {
+      "id": "I795:1335;652:6087;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6088",
+      "name": "Menu / 쪽지",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6088;652:6015",
+      "name": "Icon",
+      "masterId": "660:6243",
+      "masterName": "P19/Assets/GoldIcon/mail"
+    },
+    {
+      "id": "I795:1335;652:6088;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6093",
+      "name": "Menu / 국내형",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6093;652:6015",
+      "name": "Icon",
+      "masterId": "660:6245",
+      "masterName": "P19/Assets/GoldIcon/domestic"
+    },
+    {
+      "id": "I795:1335;652:6093;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6094",
+      "name": "Menu / 해외형",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6094;652:6015",
+      "name": "Icon",
+      "masterId": "660:6247",
+      "masterName": "P19/Assets/GoldIcon/international"
+    },
+    {
+      "id": "I795:1335;652:6094;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6095",
+      "name": "Menu / E스포츠",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6095;652:6015",
+      "name": "Icon",
+      "masterId": "660:6249",
+      "masterName": "P19/Assets/GoldIcon/esports"
+    },
+    {
+      "id": "I795:1335;652:6095;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6096",
+      "name": "Menu / 인플레이",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6096;652:6015",
+      "name": "Icon",
+      "masterId": "660:6251",
+      "masterName": "P19/Assets/GoldIcon/live"
+    },
+    {
+      "id": "I795:1335;652:6096;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6101",
+      "name": "Menu / 라이브카지노",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6101;652:6015",
+      "name": "Icon",
+      "masterId": "660:6253",
+      "masterName": "P19/Assets/GoldIcon/casino"
+    },
+    {
+      "id": "I795:1335;652:6101;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6102",
+      "name": "Menu / 슬롯",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6102;652:6015",
+      "name": "Icon",
+      "masterId": "660:6255",
+      "masterName": "P19/Assets/GoldIcon/slots"
+    },
+    {
+      "id": "I795:1335;652:6102;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6107",
+      "name": "Menu / 공지사항",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6107;652:6015",
+      "name": "Icon",
+      "masterId": "660:6257",
+      "masterName": "P19/Assets/GoldIcon/notice"
+    },
+    {
+      "id": "I795:1335;652:6107;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6108",
+      "name": "Menu / 이벤트",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6108;652:6015",
+      "name": "Icon",
+      "masterId": "660:6259",
+      "masterName": "P19/Assets/GoldIcon/event"
+    },
+    {
+      "id": "I795:1335;652:6108;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "I795:1335;652:6109",
+      "name": "Menu / 베팅규정",
+      "masterId": "652:6014",
+      "masterName": "Theme=BlackGold, State=Default"
+    },
+    {
+      "id": "I795:1335;652:6109;652:6015",
+      "name": "Icon",
+      "masterId": "660:6261",
+      "masterName": "P19/Assets/GoldIcon/rules"
+    },
+    {
+      "id": "I795:1335;652:6109;652:6017",
+      "name": "Grip",
+      "masterId": "660:6230",
+      "masterName": "P19/Assets/Grip"
+    },
+    {
+      "id": "795:1343",
+      "name": "P23-A0 / Payback",
+      "masterId": "771:650",
+      "masterName": "P23/Selected/A0/Payback"
+    },
+    {
+      "id": "I795:1343;778:5019",
+      "name": "Arrow · original vector",
+      "masterId": "737:3544",
+      "masterName": "Tone=Ink"
+    },
+    {
+      "id": "795:1344",
+      "name": "P23-A0 / Events",
+      "masterId": "771:663",
+      "masterName": "P23/Selected/A0/Events"
+    },
+    {
+      "id": "I795:1344;778:5023",
+      "name": "Arrow · original vector",
+      "masterId": "737:3544",
+      "masterName": "Tone=Ink"
+    },
+    {
+      "id": "795:1345",
+      "name": "P23-A0 / DailyReward",
+      "masterId": "771:676",
+      "masterName": "P23/Selected/A0/DailyReward"
+    },
+    {
+      "id": "I795:1345;778:5027",
+      "name": "Arrow · original vector",
+      "masterId": "737:3544",
+      "masterName": "Tone=Ink"
+    },
+    {
+      "id": "795:1349",
+      "name": "Gateway / LiveCasino",
+      "masterId": "660:6301",
+      "masterName": "P19/Gateway/BlackGold/LiveCasino"
+    },
+    {
+      "id": "795:1350",
+      "name": "Gateway / Slots",
+      "masterId": "660:6309",
+      "masterName": "P19/Gateway/BlackGold/Slots"
+    },
+    {
+      "id": "795:1351",
+      "name": "Gateway / Sports",
+      "masterId": "660:6317",
+      "masterName": "P19/Gateway/BlackGold/Sports"
+    },
+    {
+      "id": "795:1352",
+      "name": "Gateway / InPlay",
+      "masterId": "660:6325",
+      "masterName": "P19/Gateway/BlackGold/InPlay"
+    },
+    {
+      "id": "795:1354",
+      "name": "P19/Content/SectionHeading",
+      "masterId": "660:6333",
+      "masterName": "P19/Content/SectionHeading"
+    },
+    {
+      "id": "795:1356",
+      "name": "SportsBetCard · 바이에른 뮌헨 vs 우니온 베를린",
+      "masterId": "660:6343",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1357",
+      "name": "SportsBetCard · 토론토 랩터스 vs 마이애미 히트",
+      "masterId": "660:6343",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1358",
+      "name": "SportsBetCard · 탬파베이 레이스 vs 애슬레틱스",
+      "masterId": "660:6343",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1360",
+      "name": "P19/Content/SectionHeading",
+      "masterId": "660:6333",
+      "masterName": "P19/Content/SectionHeading"
+    },
+    {
+      "id": "795:1363",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1364",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1365",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1366",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1367",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1368",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1369",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1370",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1371",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1372",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1374",
+      "name": "P19/Content/SectionHeading",
+      "masterId": "660:6333",
+      "masterName": "P19/Content/SectionHeading"
+    },
+    {
+      "id": "795:1377",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1378",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1379",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1380",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1381",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1382",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1383",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1384",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1385",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1386",
+      "name": "P19/Cards/Game",
+      "masterId": "660:6434",
+      "masterName": "Theme=BlackGold"
+    },
+    {
+      "id": "795:1387",
+      "name": "Partners · Flexible centered grid · BlackGold",
+      "masterId": "660:6446",
+      "masterName": "P19/Partners/BlackGold"
+    }
+  ],
+  "fonts": [
+    {
+      "fontName": {
+        "family": "Noto Sans KR",
+        "style": "Black"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Noto Sans KR",
+        "style": "Bold"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Noto Sans KR",
+        "style": "DemiLight"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Noto Sans KR",
+        "style": "Light"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Noto Sans KR",
+        "style": "Medium"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Noto Sans KR",
+        "style": "Regular"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Noto Sans KR",
+        "style": "Thin"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "Black"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "Bold"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "ExtraBold"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "ExtraLight"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "Light"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "Medium"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "Regular"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP",
+        "style": "Thin"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "Black"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "Bold"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "ExtraBold"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "ExtraLight"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "Light"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "Medium"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "Regular"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "fontName": {
+        "family": "Pretendard JP Variable",
+        "style": "Thin"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "I795:1332;693:3258",
+      "name": "Generated GoldFlow03 / image overlay",
+      "parent": "Header · 07B GoldFlow03 · R6",
+      "w": 1920,
+      "h": 640.2947998046875,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "6a3df4ab26f2e8c797e86cfedd5a486dd3d23e42",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1332;693:3262",
+      "name": "Logo",
+      "parent": "Brand rail / sidebar alignment",
+      "w": 184,
+      "h": 37.375,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "89b2e2ce556c25e9a431415246b0ecf4c2f575af",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6084;652:6023;660:6229",
+      "name": "Image / deposit",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "418450dd077342466d5c863b4230ddeebce44801",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6085;652:6015;660:6238",
+      "name": "Image / withdraw",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "7ff2abed8d61fc240439d9ec7d6cd446b056a83e",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6086;652:6015;660:6240",
+      "name": "Image / profile",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "b13193c04cb7851a252fa51eb707bf50dda0ebc9",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6087;652:6015;660:6242",
+      "name": "Image / support",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "70733d9457870d55e6fef6efb4c804557cc7e8d1",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6088;652:6015;660:6244",
+      "name": "Image / mail",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "0932f6551a255dbace946c0b24b9b62296a1638d",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6093;652:6015;660:6246",
+      "name": "Image / domestic",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "ff9ad0c9b74ce2e4ae0a2b98e3eb18d0a3a76894",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6094;652:6015;660:6248",
+      "name": "Image / international",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "0b0ee2e71d5ec2f3ddd649dabdfd413affc4a603",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6095;652:6015;660:6250",
+      "name": "Image / esports",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "b4f9e22c37e31cfa1c38f9f3448363fe75c0f99c",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6096;652:6015;660:6252",
+      "name": "Image / live",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "3e09b3a5e841c72859f04c3764c1f0080156b070",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6101;652:6015;660:6254",
+      "name": "Image / casino",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "9c5614941fd495ce64ef99d283a6f2773aa83e0a",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6102;652:6015;660:6256",
+      "name": "Image / slots",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "1f3049d3980080c185e7d4c75e0df23e24468cf7",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6107;652:6015;660:6258",
+      "name": "Image / notice",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2680103a27cbc9b02b7f9a82a5e6e0baf80c2198",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6108;652:6015;660:6260",
+      "name": "Image / event",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "83cf35bc32ad7e52afdc91830af7ac6053411d79",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1335;652:6109;652:6015;660:6262",
+      "name": "Image / rules",
+      "parent": "Icon",
+      "w": 22,
+      "h": 22,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "c17e2b5fde43d9a35f3bca07ee5588c8d14bef11",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1343;771:651",
+      "name": "Photo · current image",
+      "parent": "P23-A0 / Payback",
+      "w": 522.6666870117188,
+      "h": 256,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2fa5dfe44d019e8cca72ce1c0ca2213fe3d79a30",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1343;771:656",
+      "name": "Photo · foreground restore",
+      "parent": "Portrait in front · native mask",
+      "w": 522.6666870117188,
+      "h": 256,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2fa5dfe44d019e8cca72ce1c0ca2213fe3d79a30",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1344;771:664",
+      "name": "Photo · current image",
+      "parent": "P23-A0 / Events",
+      "w": 522.6666259765625,
+      "h": 256,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "f85e41a37edafdd9fcc8792b59ab28a5efddafee",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1344;771:669",
+      "name": "Photo · foreground restore",
+      "parent": "Portrait in front · native mask",
+      "w": 522.6666259765625,
+      "h": 256,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "f85e41a37edafdd9fcc8792b59ab28a5efddafee",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1345;771:677",
+      "name": "Photo · current image",
+      "parent": "P23-A0 / DailyReward",
+      "w": 522.6666259765625,
+      "h": 256,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "879de2364abc7facf3c36d646671c106af30ffcd",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1345;771:682",
+      "name": "Photo · foreground restore",
+      "parent": "Portrait in front · native mask",
+      "w": 522.6666259765625,
+      "h": 256,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "879de2364abc7facf3c36d646671c106af30ffcd",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1349;660:6303",
+      "name": "Artwork",
+      "parent": "카드 콘텐츠",
+      "w": 389.75,
+      "h": 158,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2ff81b73ccff1aab1dad54afc948d836e274f5cf",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1349;660:6308",
+      "name": "타이틀이미지",
+      "parent": "카드 콘텐츠",
+      "w": 199,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "d4c4d93e9054def962fbcee4db556fa8c75c5b8e",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1350;660:6311",
+      "name": "Artwork",
+      "parent": "카드 콘텐츠",
+      "w": 389.75,
+      "h": 158,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2fe402079880854b29e6ca46785f5f91b22e59b5",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1350;660:6313",
+      "name": "타이틀이미지",
+      "parent": "Shade",
+      "w": 199,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2d71c1cf12a31aea50b03aa07be10b3fdb985889",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1351;660:6319",
+      "name": "Artwork",
+      "parent": "카드 콘텐츠",
+      "w": 389.75,
+      "h": 158,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "f3524ba5f9c1d4a03c3ebbf60129316dd118ab4d",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1351;660:6321",
+      "name": "타이틀이미지",
+      "parent": "Shade",
+      "w": 199,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "c1eafa0c3a64f66d472e3cf08f28973855944d44",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1352;660:6327",
+      "name": "Artwork",
+      "parent": "카드 콘텐츠",
+      "w": 389.75,
+      "h": 158,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "621066c11aa2f0672a3cdcd749aca27aaa0db9cb",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1352;660:6329",
+      "name": "타이틀이미지",
+      "parent": "Shade",
+      "w": 199,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "98b742be0ce98485ac65848a1e7a9749778cb611",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1356;660:6351",
+      "name": "HomeLogo",
+      "parent": "Home team",
+      "w": 28,
+      "h": 28,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "faba7970e20533ca691a4c82667dac1f9fbd8656",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1356;660:6356",
+      "name": "AwayLogo",
+      "parent": "Away team",
+      "w": 28,
+      "h": 28,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "5e84c89197587651e9480fecd783387f2e2ad8d8",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1357;660:6351",
+      "name": "HomeLogo",
+      "parent": "Home team",
+      "w": 28,
+      "h": 28,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "c94702277c292dc6954e4e7dbfb3aee8021dfa0b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1357;660:6356",
+      "name": "AwayLogo",
+      "parent": "Away team",
+      "w": 28,
+      "h": 28,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "3558fc0732cf3f584b0af13590c07559c01eeec1",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1358;660:6351",
+      "name": "HomeLogo",
+      "parent": "Home team",
+      "w": 28,
+      "h": 28,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "675c76d92fea8ff27ec78ac42c7c8c65fa7f0a80",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1358;660:6356",
+      "name": "AwayLogo",
+      "parent": "Away team",
+      "w": 28,
+      "h": 28,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "98e45804d6efce7b2ae7f09306570f71ccfa67ce",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1363;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "163ce639b046df1b10139be4301e1ddd31575b20",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1363;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "20da911be9a3be59ba1c93760c4c8218d4b1eea3",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1364;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "a2d02400a7e3a30f6197c85c56c27ac47118bb9b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1364;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "9a8f696a7145f99bb1755a4f68109205de7f7b02",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1365;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2c1fd054913354cf47d789f46c9541e8c7a234bb",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1365;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "987918218af5aa7bbe1e9a0db7a419efdd83c966",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1366;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "4082a1aae3d0fd6ca6358b591a1f3d5bcd804bc8",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1366;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "5c992739b4687713473dce20a50f8137b8a1cd63",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1367;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "818dbb7c4d55b4cbfab221c1629a9ad0c29471e6",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1367;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "b9ab25fa8a631501e0923d88748ff94428962f72",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1368;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "5966af7c76a94e7d812033ac25fda8a13dbc2d8c",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1368;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "eee98cf2085f703ab8854ae5a7bb1774d4d910b5",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1369;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "a0049aa27ab4a91682d71f4e7a5add854ffe8218",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1369;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "212b1f28cb8bedfe22c1d9bd101efdb469f77c6c",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1370;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "380c6c8351e8f0d3ed0fea7c45159888a25afefd",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1370;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "e0e380c4db07372b52a1cda490b467fbcff6d48d",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1371;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "6d235a62331f3cac9a6c1c2406b5855be8485ebe",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1371;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "a75bf64bc4036196489c07caf06572c3500878bc",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1372;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "87044b7fa7812447f3b02640a61a2d033c34bd86",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1372;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "1c4bf81652308d97c2dffe9ec0c9cbc3c1f185d1",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1377;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "e2c291084784e9fbdef20c097a6ab9d42e0a020f",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1377;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "dff2375d46f8e9ec8ee92a527ca698a883e87344",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1378;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "08c06952d34a9f8fe9814c89d9de983ef7ab5cd8",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1378;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "dff2375d46f8e9ec8ee92a527ca698a883e87344",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1379;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "6cc0df1f3835b399cb74e951222faf6daecedfd0",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1379;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "faa97287f76e36d08db845a9803aafd88f26253b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1380;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "16d89440ee7e75f278af2758b8056a3bc478197b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1380;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "3763b289431fe25fe25db59da867372e4318e83e",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1381;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "980f4cfd05d191f090a15a0c8dbaa3cbd371634c",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1381;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "9b27c7ccf8acca6d6b62da21612dc6dc063bc520",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1382;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "b65bdf4227e3098521a5e8a497c8629c59c69a68",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1382;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "cd831b5d2e03ec41c72b3713f018fbc81c085f79",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1383;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "6128f9d08558190bad046673dcfd8efc3d400cab",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1383;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "edc224fd2a9b95c40a7d1728f2d1a42b8a25aea0",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1384;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "76aa0dd6504ab36190a2c8dc855d018934adff31",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1384;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2be187d47c73277291a6bf7d1deadf83f59b2a4f",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1385;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "d643d26a6f59500b4d9b72edbee9152b926d8dfd",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1385;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "e990de953666cc760894823e41022e36e12186bd",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1386;660:6435",
+      "name": "Art",
+      "parent": "P19/Cards/Game",
+      "w": 178,
+      "h": 238,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "bd75af94b954d3fa20f2ce59bfbc6cbf5f12069b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1386;660:6436",
+      "name": "Brandmark",
+      "parent": "Art",
+      "w": 156,
+      "h": 58,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "fa5690586e2858f86b3c35ed24668fbcc84cbf06",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6449",
+      "name": "Logo / evolution",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "9e10f9964466ee65f5cbc8273db9de2326cd2f9b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6450",
+      "name": "Logo / asia-gaming",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "13539c0e53ecdb1d02069f25fb4d2a9e8dca4b76",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6451",
+      "name": "Logo / castar",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "f345b21544c76bc8d916e00a8eaf21f1592dd9b3",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6452",
+      "name": "Logo / betgames",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "51293cb4fb659ad91806f05a803bb9c67acc5da6",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6453",
+      "name": "Logo / big-gaming",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "c79e756f05d275df3c3e834c8f5254a5e03030ae",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6454",
+      "name": "Logo / dream-gaming",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "ffcd0b96dca29e2e117c4bbd3f543d66baf839dc",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6455",
+      "name": "Logo / wm-casino",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "a582ccd035820beb6a79d8bb2f6bbf1509f9b525",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6456",
+      "name": "Logo / vivo-gaming",
+      "parent": "Logo row 1",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "7f50e22da163fb424fff3836feb4d64b963aa77b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6459",
+      "name": "Logo / pragmatic-play",
+      "parent": "Logo row 2",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "0acc6ece610016af06eab2da999e67356baf2aaa",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6460",
+      "name": "Logo / play-n-go",
+      "parent": "Logo row 2",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "aec5b6ab4e40b9293ff4546f0c7eb7403c4f5f82",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6461",
+      "name": "Logo / yggdrasil",
+      "parent": "Logo row 2",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "b16a220b041e8bd303f790a4a540399e7eac24e6",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6462",
+      "name": "Logo / red-tiger",
+      "parent": "Logo row 2",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "2579f4a3d03a93b81aee8bb550632958df9a3234",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6463",
+      "name": "Logo / relax-gaming",
+      "parent": "Logo row 2",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "d74e7a45b3692c715b19c1f00c30a198be3ccdd0",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6464",
+      "name": "Logo / wazdan",
+      "parent": "Logo row 2",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "e67eb23fd42644dfdd572ec4bff356d6d2b2101b",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6465",
+      "name": "Logo / hacksaw",
+      "parent": "Logo row 2",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "bc9b197223411741cd6e464019c188eebac17a72",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6467",
+      "name": "Logo / netent",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "d23b31141da3798b3ed1fee4a11c14c5f5345246",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6468",
+      "name": "Logo / microgaming",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "8d050d9ebb862b7ebe7f9d21d03d1f51a39ba647",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6469",
+      "name": "Logo / habanero",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "98c63eaa872873559f639bef334041f4d1989606",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6470",
+      "name": "Logo / pg-soft",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "8a43e46e9ef634e0f40a995afac2fd2f2425160d",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6471",
+      "name": "Logo / bng",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "8931bb468d6d74278ac48e446d85ec62714c3eae",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6472",
+      "name": "Logo / blueprint-gaming",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "e44e3b7afc3a32f88db52d67e371dcdb2a18e828",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6473",
+      "name": "Logo / cq9",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "a7dafd13cde47441025350f0b0cdf9f304f04be1",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "I795:1387;660:6474",
+      "name": "Logo / elk-studios",
+      "parent": "Logo row 3",
+      "w": 128,
+      "h": 48,
+      "paints": [
+        {
+          "type": "IMAGE",
+          "hash": "be853fa4f4acb3fb8fc46cd502f5996db832ca6a",
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          }
+        }
+      ]
+    }
+  ]
+}

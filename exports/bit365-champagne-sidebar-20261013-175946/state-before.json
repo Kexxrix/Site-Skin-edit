@@ -1,0 +1,401 @@
+{
+  "scope": "Update BIT365 Champagne/Sidebar only; 4 groups,14 items; preserve service/game fonts and TITAN SOLUSION; reuse existing library icons",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "pageId": "88:553",
+  "sidebarId": "89:589",
+  "baseline": {
+    "protectedText": [
+      {
+        "id": "89:590",
+        "name": "Group",
+        "text": "서비스",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 12,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7215686440467834,
+              "g": 0.686274528503418,
+              "b": 0.6274510025978088
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:88:568"
+              }
+            }
+          }
+        ],
+        "style": ""
+      },
+      {
+        "id": "89:594",
+        "name": "Group",
+        "text": "게임",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 12,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7215686440467834,
+              "g": 0.686274528503418,
+              "b": 0.6274510025978088
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:88:568"
+              }
+            }
+          }
+        ],
+        "style": ""
+      },
+      {
+        "id": "89:604",
+        "name": "Solution",
+        "text": "TITAN SOLUSION",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7215686440467834,
+              "g": 0.686274528503418,
+              "b": 0.6274510025978088
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:88:568"
+              }
+            }
+          }
+        ],
+        "style": ""
+      }
+    ],
+    "nav": {
+      "id": "89:558",
+      "padding": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "gap": 12,
+      "fills": [],
+      "defs": {
+        "Label#46:3": {
+          "type": "TEXT",
+          "defaultValue": "스포츠"
+        },
+        "Icon#48:0": {
+          "type": "TEXT",
+          "defaultValue": ""
+        },
+        "Badge#54:0": {
+          "type": "TEXT",
+          "defaultValue": "200x"
+        },
+        "Show badge#54:1": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        }
+      },
+      "children": [
+        {
+          "id": "89:559",
+          "name": "Icon slot",
+          "type": "FRAME",
+          "w": 16,
+          "h": 16,
+          "font": null,
+          "text": null,
+          "refs": {},
+          "fills": []
+        },
+        {
+          "id": "89:560",
+          "name": "Glyph",
+          "type": "TEXT",
+          "w": 14,
+          "h": 14,
+          "font": {
+            "family": "Font Awesome 6 Free",
+            "style": "Solid"
+          },
+          "text": "",
+          "refs": {
+            "characters": "Icon#48:0"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.7215686440467834,
+                "g": 0.686274528503418,
+                "b": 0.6274510025978088
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:88:568"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "89:561",
+          "name": "Label",
+          "type": "TEXT",
+          "w": 162,
+          "h": 18.200000762939453,
+          "font": {
+            "family": "Pretendard JP",
+            "style": "Bold"
+          },
+          "text": "스포츠",
+          "refs": {
+            "characters": "Label#46:3"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9607843160629272,
+                "g": 0.9333333373069763,
+                "b": 0.8745098114013672
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:88:566"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "89:562",
+          "name": "Badge",
+          "type": "FRAME",
+          "w": 28,
+          "h": 19,
+          "font": null,
+          "text": null,
+          "refs": {
+            "visible": "Show badge#54:1"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.16862745583057404,
+                "g": 0.1882352977991104,
+                "b": 0.250980406999588
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:88:574"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "89:563",
+          "name": "Badge label",
+          "type": "TEXT",
+          "w": 20,
+          "h": 11,
+          "font": {
+            "family": "Pretendard JP",
+            "style": "Bold"
+          },
+          "text": "200x",
+          "refs": {
+            "characters": "Badge#54:0"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8470588326454163,
+                "g": 0.7176470756530762,
+                "b": 0.4745098054409027
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:88:570"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "navFingerprint": {
+      "hash": "4dbb306f",
+      "nodes": 5
+    },
+    "sideChildren": [
+      {
+        "id": "89:590",
+        "name": "Group",
+        "type": "TEXT",
+        "w": 210,
+        "h": 17,
+        "visible": true
+      },
+      {
+        "id": "89:591",
+        "name": "BIT365 Champagne/Navigation/Item",
+        "type": "INSTANCE",
+        "w": 210,
+        "h": 44,
+        "visible": true
+      },
+      {
+        "id": "89:592",
+        "name": "BIT365 Champagne/Navigation/Item",
+        "type": "INSTANCE",
+        "w": 210,
+        "h": 44,
+        "visible": true
+      },
+      {
+        "id": "89:593",
+        "name": "BIT365 Champagne/Navigation/Item",
+        "type": "INSTANCE",
+        "w": 210,
+        "h": 44,
+        "visible": true
+      },
+      {
+        "id": "89:594",
+        "name": "Group",
+        "type": "TEXT",
+        "w": 210,
+        "h": 17,
+        "visible": true
+      },
+      {
+        "id": "89:595",
+        "name": "BIT365 Champagne/Navigation/Item",
+        "type": "INSTANCE",
+        "w": 210,
+        "h": 44,
+        "visible": true
+      },
+      {
+        "id": "89:596",
+        "name": "BIT365 Champagne/Navigation/Item",
+        "type": "INSTANCE",
+        "w": 210,
+        "h": 44,
+        "visible": true
+      },
+      {
+        "id": "89:597",
+        "name": "BIT365 Champagne/Navigation/Item",
+        "type": "INSTANCE",
+        "w": 210,
+        "h": 44,
+        "visible": true
+      },
+      {
+        "id": "89:598",
+        "name": "Support",
+        "type": "FRAME",
+        "w": 210,
+        "h": 96.4000015258789,
+        "visible": true
+      },
+      {
+        "id": "89:604",
+        "name": "Solution",
+        "type": "TEXT",
+        "w": 210,
+        "h": 16.799999237060547,
+        "visible": true
+      }
+    ]
+  },
+  "protectedPages": {
+    "pages": {
+      "44:552": {
+        "hash": "2c1a9b39",
+        "nodes": 2470
+      },
+      "44:553": {
+        "hash": "56590b40",
+        "nodes": 982
+      },
+      "73:2891": {
+        "hash": "a2ab2629",
+        "nodes": 2470
+      }
+    }
+  }
+}

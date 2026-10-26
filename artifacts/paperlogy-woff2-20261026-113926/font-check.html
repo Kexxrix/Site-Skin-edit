@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paperlogy WOFF2 · 독립 등록 검수</title>
+<style>
+  html { scrollbar-gutter: stable; }
+  .qa-shell { max-width: 1100px; margin: 24px auto; padding: 16px; color: #17212b; font-family: Arial, sans-serif; }
+  .qa-shell h1 { font-size: 24px; }
+  .qa-panel { border: 1px solid #adb7c2; border-radius: 6px; padding: 16px; margin: 16px 0; }
+  .qa-panel h2 { margin: 0 0 8px; font-size: 20px; }
+  .qa-panel p { margin: 0 0 12px; font-size: 16px; line-height: 1.5; }
+  .qa-panel button, .qa-panel input { font: inherit; }
+  .qa-controls { display: flex; gap: 12px; flex-wrap: wrap; }
+  .qa-controls button { padding: 8px 12px; }
+  .qa-preview { font-size: 24px; line-height: 1.7; }
+  .qa-row { display: flex; align-items: baseline; gap: 20px; border-bottom: 1px solid #e6e9ed; padding: 4px 0; }
+  .qa-weight { width: 40px; font: 14px Arial, sans-serif; }
+  .qa-sample { font-size: 22px; line-height: 1.65; }
+  .qa-result { white-space: pre-wrap; font-size: 12px; height: 160px; overflow: auto; }
+</style>
+<main class="qa-shell">
+  <h1>Paperlogy WOFF2 · 독립 등록 검수</h1>
+  <p>기존 사이트와 연결되지 않은 QA 페이지입니다. 폰트 등록, 필요 굵기 요청, 전체 굵기 명시 검사를 순서대로 실행합니다.</p>
+  <section id="baseline" class="qa-panel" aria-label="기존 폰트 보존 표본">
+    <h2>기존 폰트 보존 표본</h2>
+    <p>페이백 포인트 · 회원 이벤트 · 데일리 리워드<br>스포츠 · 라이브 카지노 · 인플레이 0123456789</p>
+    <button type="button">기존 버튼</button>
+    <input aria-label="기존 입력" value="기존 입력 ABC 123">
+  </section>
+  <div class="qa-controls">
+    <button id="register" type="button">1. CSS만 등록</button>
+    <button id="regular" type="button" disabled>2. 선택한 400 굵기만 표시</button>
+    <button id="all" type="button" disabled>3. QA에서 9개 굵기 명시 검사</button>
+    <button id="save" type="button">검증 JSON 저장</button>
+  </div>
+  <p id="preview" class="qa-preview">명시적으로 선택하기 전: 가나다 ABC 0123</p>
+  <div id="weights" aria-label="굵기 검수 결과"></div>
+  <pre id="result" class="qa-result" aria-live="polite"></pre>
+</main>
+<script>
+  const sample = '페이백 포인트 · 회원 이벤트 · 데일리 리워드 ABC abc 0123456789 日本語';
+  const qa = { steps: [], errors: [] };
+  const baseline = document.querySelector('#baseline');
+  function snapshot() {
+    return [baseline, ...baseline.querySelectorAll('*')].map(node => {
+      const s = getComputedStyle(node), r = node.getBoundingClientRect();
+      return { tag: node.tagName, fontFamily: s.fontFamily, fontWeight: s.fontWeight,
+        fontSize: s.fontSize, lineHeight: s.lineHeight, letterSpacing: s.letterSpacing,
+        width: r.width, height: r.height, x: r.x, y: r.y };
+    });
+  }
+  function fontRequests() {
+    return performance.getEntriesByType('resource').filter(r => /\.(?:woff2|ttf)(?:$|\?)/.test(r.name)).map(r => new URL(r.name).pathname);
+  }
+  const initial = snapshot();
+  qa.initial = { snapshot: initial, fontRequests: fontRequests() };
+  function record(step, extra = {}) {
+    qa.steps.push({ step, snapshot: snapshot(), baselineUnchanged: JSON.stringify(snapshot()) === JSON.stringify(initial),
+      fontRequests: fontRequests(), ...extra });
+    document.querySelector('#result').textContent = JSON.stringify(qa, null, 2);
+  }
+  function fail(error) { qa.errors.push(String(error)); record('error'); }
+  document.querySelector('#register').onclick = async () => {
+    try {
+      const link = document.createElement('link'); link.rel = 'stylesheet';
+      link.href = '/assets/fonts/paperlogy/paperlogy.css';
+      const loaded = new Promise((resolve, reject) => { link.onload = resolve; link.onerror = reject; });
+      document.head.append(link); await loaded; await document.fonts.ready;
+      record('registered without selecting', { registeredFaces: [...document.fonts].filter(f => f.family === 'Paperlogy').map(f => ({ weight: f.weight, status: f.status })) });
+      document.querySelector('#register').disabled = true;
+      document.querySelector('#regular').disabled = false;
+    } catch (error) { fail(error); }
+  };
+  document.querySelector('#regular').onclick = async () => {
+    try {
+      const faces = await document.fonts.load('400 24px Paperlogy', sample);
+      const preview = document.querySelector('#preview');
+      preview.classList.add('font-paperlogy'); preview.style.fontWeight = '400'; preview.textContent = sample;
+      await document.fonts.ready;
+      record('explicit regular only', { loadedFaces: faces.map(f => ({ family: f.family, weight: f.weight, status: f.status })),
+        computedFontFamily: getComputedStyle(preview).fontFamily });
+      document.querySelector('#regular').disabled = true; document.querySelector('#all').disabled = false;
+    } catch (error) { fail(error); }
+  };
+  document.querySelector('#all').onclick = async () => {
+    try {
+      const tested = [];
+      for (let weight = 100; weight <= 900; weight += 100) {
+        const faces = await document.fonts.load(`${weight} 22px Paperlogy`, sample);
+        tested.push({ weight, matched: faces.length === 1 && faces[0].weight === String(weight),
+          faces: faces.map(f => ({ family: f.family, weight: f.weight, status: f.status })) });
+        const row = document.createElement('div'); row.className = 'qa-row';
+        const label = document.createElement('span'); label.className = 'qa-weight'; label.textContent = weight;
+        const text = document.createElement('span'); text.className = 'qa-sample font-paperlogy'; text.style.fontWeight = weight; text.textContent = sample;
+        row.append(label, text); document.querySelector('#weights').append(row);
+      }
+      await document.fonts.ready;
+      record('all weights explicit QA only', { tested, allMatched: tested.every(x => x.matched) });
+      document.querySelector('#all').disabled = true;
+    } catch (error) { fail(error); }
+  };
+  document.querySelector('#save').onclick = async () => {
+    try {
+      const response = await fetch('/__paperlogy_qa_result', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(qa, null, 2) });
+      if (!response.ok) throw new Error(`QA save failed: ${response.status}`);
+      document.querySelector('#save').textContent = '검증 JSON 저장 완료';
+    } catch (error) { fail(error); }
+  };
+  record('baseline');
+</script>
+</html>

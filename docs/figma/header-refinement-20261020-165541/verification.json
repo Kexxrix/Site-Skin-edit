@@ -1,0 +1,1486 @@
+{
+  "status": "PASS",
+  "pageId": "693:3254",
+  "pageName": "21 · 헤더 디테일 · 36px / 중심 정렬",
+  "figmaUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=693-6096",
+  "scope": "Only document item 01: header control height and vertical flow alignment",
+  "decision": {
+    "controlHeight": 36,
+    "previousHeight": 44,
+    "headerHeight": 88,
+    "sharedCenterY": 44,
+    "opticalTextAndIconOffset": 0.5,
+    "explanation": "No exact pixel value specified. 36px selected to align the button silhouette with the 37.375px logo while retaining 14px text and 16px service icons."
+  },
+  "structuralChecks": {
+    "allPassed": true,
+    "sourceScreenPreservation": [
+      {
+        "id": "647:46475",
+        "unchanged": true
+      },
+      {
+        "id": "647:46527",
+        "unchanged": true
+      },
+      {
+        "id": "647:46579",
+        "unchanged": true
+      },
+      {
+        "id": "647:46633",
+        "unchanged": true
+      }
+    ],
+    "sourceComponentPreservation": [
+      {
+        "id": "660:5907",
+        "hash": "733f1f2c",
+        "unchanged": true
+      },
+      {
+        "id": "660:6084",
+        "hash": "dd59069f",
+        "unchanged": true
+      },
+      {
+        "id": "660:6215",
+        "hash": "b9b55346",
+        "unchanged": true
+      }
+    ],
+    "newScreens": [
+      {
+        "id": "693:3446",
+        "sourceId": "647:46475",
+        "sourceUnchanged": true,
+        "bodyUnchanged": true,
+        "bodyHash": "c1fc2990",
+        "dimensionsPreserved": true,
+        "bodyConnectionsPreserved": true,
+        "physicalInstances": 36,
+        "headerMain": "693:3257",
+        "headerHeight": 88,
+        "groups": [
+          {
+            "name": "Brand rail / sidebar alignment",
+            "w": 245,
+            "h": 88,
+            "x": 0,
+            "y": 0,
+            "centerY": 44
+          },
+          {
+            "name": "Notice · inline",
+            "w": 830,
+            "h": 28,
+            "x": 277,
+            "y": 30,
+            "centerY": 44
+          },
+          {
+            "name": "Quick links",
+            "w": 376,
+            "h": 36,
+            "x": 1139,
+            "y": 26,
+            "centerY": 44
+          },
+          {
+            "name": "Member access",
+            "w": 322,
+            "h": 36,
+            "x": 1547,
+            "y": 26,
+            "centerY": 44
+          }
+        ],
+        "buttonSizes": [
+          {
+            "name": "Login",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3389"
+          },
+          {
+            "name": "Join",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3391"
+          },
+          {
+            "name": "Anonymous",
+            "w": 126,
+            "h": 36,
+            "r": 6,
+            "main": "693:3393"
+          }
+        ],
+        "rightMargin": 51,
+        "textUnchanged": true,
+        "headerTexts": [
+          {
+            "id": "I693:3447;693:3264;660:6002",
+            "text": "공지",
+            "trim": "NONE",
+            "w": 23,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3447;693:3264;660:6006",
+            "text": "서비스 점검 및 이벤트 안내는 공지사항에서 확인해 주세요.",
+            "trim": "NONE",
+            "w": 296,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3447;693:3265;693:3349;660:6128",
+            "text": "출석체크",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3447;693:3265;693:3350;660:6134",
+            "text": "배팅내역",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3447;693:3265;693:3351;660:6140",
+            "text": "고객지원 · 텔레그램",
+            "trim": "NONE",
+            "w": 108,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3447;693:3267;693:3390",
+            "text": "로그인",
+            "trim": "NONE",
+            "w": 37,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3447;693:3268;693:3392",
+            "text": "회원가입",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3447;693:3269;693:3394",
+            "text": "무기명 회원가입",
+            "trim": "NONE",
+            "w": 88,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          }
+        ],
+        "icons": [
+          {
+            "id": "I693:3447;693:3265;693:3349;660:6127",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6202"
+          },
+          {
+            "id": "I693:3447;693:3265;693:3350;660:6133",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6208"
+          },
+          {
+            "id": "I693:3447;693:3265;693:3351;660:6139",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6213"
+          }
+        ],
+        "logo": {
+          "w": 184,
+          "h": 37.375,
+          "x": 24,
+          "centerY": 44
+        },
+        "rootOverflow": "NONE",
+        "rootClip": false
+      },
+      {
+        "id": "693:3503",
+        "sourceId": "647:46527",
+        "sourceUnchanged": true,
+        "bodyUnchanged": true,
+        "bodyHash": "17e77bfc",
+        "dimensionsPreserved": true,
+        "bodyConnectionsPreserved": true,
+        "physicalInstances": 36,
+        "headerMain": "693:3270",
+        "headerHeight": 88,
+        "groups": [
+          {
+            "name": "Brand rail / sidebar alignment",
+            "w": 245,
+            "h": 88,
+            "x": 0,
+            "y": 0,
+            "centerY": 44
+          },
+          {
+            "name": "Notice · inline",
+            "w": 830,
+            "h": 28,
+            "x": 277,
+            "y": 30,
+            "centerY": 44
+          },
+          {
+            "name": "Quick links",
+            "w": 376,
+            "h": 36,
+            "x": 1139,
+            "y": 26,
+            "centerY": 44
+          },
+          {
+            "name": "Member access",
+            "w": 322,
+            "h": 36,
+            "x": 1547,
+            "y": 26,
+            "centerY": 44
+          }
+        ],
+        "buttonSizes": [
+          {
+            "name": "Login",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3395"
+          },
+          {
+            "name": "Join",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3397"
+          },
+          {
+            "name": "Anonymous",
+            "w": 126,
+            "h": 36,
+            "r": 6,
+            "main": "693:3399"
+          }
+        ],
+        "rightMargin": 51,
+        "textUnchanged": true,
+        "headerTexts": [
+          {
+            "id": "I693:3504;693:3277;660:6030",
+            "text": "공지",
+            "trim": "NONE",
+            "w": 23,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3504;693:3277;660:6034",
+            "text": "서비스 점검 및 이벤트 안내는 공지사항에서 확인해 주세요.",
+            "trim": "NONE",
+            "w": 296,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3504;693:3278;693:3353;660:6146",
+            "text": "출석체크",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3504;693:3278;693:3354;660:6152",
+            "text": "배팅내역",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3504;693:3278;693:3355;660:6158",
+            "text": "고객지원 · 텔레그램",
+            "trim": "NONE",
+            "w": 108,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3504;693:3280;693:3396",
+            "text": "로그인",
+            "trim": "NONE",
+            "w": 37,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3504;693:3281;693:3398",
+            "text": "회원가입",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:3504;693:3282;693:3400",
+            "text": "무기명 회원가입",
+            "trim": "NONE",
+            "w": 88,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          }
+        ],
+        "icons": [
+          {
+            "id": "I693:3504;693:3278;693:3353;660:6145",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6202"
+          },
+          {
+            "id": "I693:3504;693:3278;693:3354;660:6151",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6208"
+          },
+          {
+            "id": "I693:3504;693:3278;693:3355;660:6157",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6213"
+          }
+        ],
+        "logo": {
+          "w": 184,
+          "h": 37.375,
+          "x": 24,
+          "centerY": 44
+        },
+        "rootOverflow": "NONE",
+        "rootClip": false
+      },
+      {
+        "id": "693:4772",
+        "sourceId": "647:46579",
+        "sourceUnchanged": true,
+        "bodyUnchanged": true,
+        "bodyHash": "eaf5d1ba",
+        "dimensionsPreserved": true,
+        "bodyConnectionsPreserved": true,
+        "physicalInstances": 36,
+        "headerMain": "693:3257",
+        "headerHeight": 88,
+        "groups": [
+          {
+            "name": "Brand rail / sidebar alignment",
+            "w": 245,
+            "h": 88,
+            "x": 0,
+            "y": 0,
+            "centerY": 44
+          },
+          {
+            "name": "Notice · inline",
+            "w": 830,
+            "h": 28,
+            "x": 277,
+            "y": 30,
+            "centerY": 44
+          },
+          {
+            "name": "Quick links",
+            "w": 376,
+            "h": 36,
+            "x": 1139,
+            "y": 26,
+            "centerY": 44
+          },
+          {
+            "name": "Member access",
+            "w": 322,
+            "h": 36,
+            "x": 1547,
+            "y": 26,
+            "centerY": 44
+          }
+        ],
+        "buttonSizes": [
+          {
+            "name": "Login",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3389"
+          },
+          {
+            "name": "Join",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3391"
+          },
+          {
+            "name": "Anonymous",
+            "w": 126,
+            "h": 36,
+            "r": 6,
+            "main": "693:3393"
+          }
+        ],
+        "rightMargin": 51,
+        "textUnchanged": true,
+        "headerTexts": [
+          {
+            "id": "I693:4773;693:3264;660:6002",
+            "text": "공지",
+            "trim": "NONE",
+            "w": 23,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4773;693:3264;660:6006",
+            "text": "서비스 점검 및 이벤트 안내는 공지사항에서 확인해 주세요.",
+            "trim": "NONE",
+            "w": 296,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4773;693:3265;693:3349;660:6128",
+            "text": "출석체크",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4773;693:3265;693:3350;660:6134",
+            "text": "배팅내역",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4773;693:3265;693:3351;660:6140",
+            "text": "고객지원 · 텔레그램",
+            "trim": "NONE",
+            "w": 108,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4773;693:3267;693:3390",
+            "text": "로그인",
+            "trim": "NONE",
+            "w": 37,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4773;693:3268;693:3392",
+            "text": "회원가입",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4773;693:3269;693:3394",
+            "text": "무기명 회원가입",
+            "trim": "NONE",
+            "w": 88,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          }
+        ],
+        "icons": [
+          {
+            "id": "I693:4773;693:3265;693:3349;660:6127",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6202"
+          },
+          {
+            "id": "I693:4773;693:3265;693:3350;660:6133",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6208"
+          },
+          {
+            "id": "I693:4773;693:3265;693:3351;660:6139",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6213"
+          }
+        ],
+        "logo": {
+          "w": 184,
+          "h": 37.375,
+          "x": 24,
+          "centerY": 44
+        },
+        "rootOverflow": "NONE",
+        "rootClip": false
+      },
+      {
+        "id": "693:4826",
+        "sourceId": "647:46633",
+        "sourceUnchanged": true,
+        "bodyUnchanged": true,
+        "bodyHash": "70aa9618",
+        "dimensionsPreserved": true,
+        "bodyConnectionsPreserved": true,
+        "physicalInstances": 36,
+        "headerMain": "693:3270",
+        "headerHeight": 88,
+        "groups": [
+          {
+            "name": "Brand rail / sidebar alignment",
+            "w": 245,
+            "h": 88,
+            "x": 0,
+            "y": 0,
+            "centerY": 44
+          },
+          {
+            "name": "Notice · inline",
+            "w": 830,
+            "h": 28,
+            "x": 277,
+            "y": 30,
+            "centerY": 44
+          },
+          {
+            "name": "Quick links",
+            "w": 376,
+            "h": 36,
+            "x": 1139,
+            "y": 26,
+            "centerY": 44
+          },
+          {
+            "name": "Member access",
+            "w": 322,
+            "h": 36,
+            "x": 1547,
+            "y": 26,
+            "centerY": 44
+          }
+        ],
+        "buttonSizes": [
+          {
+            "name": "Login",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3395"
+          },
+          {
+            "name": "Join",
+            "w": 90,
+            "h": 36,
+            "r": 6,
+            "main": "693:3397"
+          },
+          {
+            "name": "Anonymous",
+            "w": 126,
+            "h": 36,
+            "r": 6,
+            "main": "693:3399"
+          }
+        ],
+        "rightMargin": 51,
+        "textUnchanged": true,
+        "headerTexts": [
+          {
+            "id": "I693:4827;693:3277;660:6030",
+            "text": "공지",
+            "trim": "NONE",
+            "w": 23,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4827;693:3277;660:6034",
+            "text": "서비스 점검 및 이벤트 안내는 공지사항에서 확인해 주세요.",
+            "trim": "NONE",
+            "w": 296,
+            "h": 20,
+            "centerY": 44,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Medium"
+            },
+            "size": 13,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4827;693:3278;693:3353;660:6146",
+            "text": "출석체크",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4827;693:3278;693:3354;660:6152",
+            "text": "배팅내역",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4827;693:3278;693:3355;660:6158",
+            "text": "고객지원 · 텔레그램",
+            "trim": "NONE",
+            "w": 108,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "SemiBold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4827;693:3280;693:3396",
+            "text": "로그인",
+            "trim": "NONE",
+            "w": 37,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4827;693:3281;693:3398",
+            "text": "회원가입",
+            "trim": "NONE",
+            "w": 49,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          },
+          {
+            "id": "I693:4827;693:3282;693:3400",
+            "text": "무기명 회원가입",
+            "trim": "NONE",
+            "w": 88,
+            "h": 20,
+            "centerY": 44.5,
+            "font": {
+              "family": "Pretendard JP",
+              "style": "Bold"
+            },
+            "size": 14,
+            "line": {
+              "unit": "PIXELS",
+              "value": 20
+            }
+          }
+        ],
+        "icons": [
+          {
+            "id": "I693:4827;693:3278;693:3353;660:6145",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6202"
+          },
+          {
+            "id": "I693:4827;693:3278;693:3354;660:6151",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6208"
+          },
+          {
+            "id": "I693:4827;693:3278;693:3355;660:6157",
+            "w": 16,
+            "h": 16,
+            "centerY": 44.5,
+            "main": "660:6213"
+          }
+        ],
+        "logo": {
+          "w": 184,
+          "h": 37.375,
+          "x": 24,
+          "centerY": 44
+        },
+        "rootOverflow": "NONE",
+        "rootClip": false
+      }
+    ],
+    "token": {
+      "id": "VariableID:693:3253",
+      "name": "Header/control-height",
+      "values": {
+        "693:0": 36
+      },
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": {
+        "WEB": "var(--header-control-height)"
+      }
+    },
+    "review": {
+      "id": "693:6096",
+      "w": 4048,
+      "h": 406,
+      "rowW": 3920,
+      "columns": [
+        {
+          "w": 1920,
+          "h": 256,
+          "headers": [
+            {
+              "id": "693:6101",
+              "w": 1920,
+              "h": 88
+            },
+            {
+              "id": "693:6146",
+              "w": 1920,
+              "h": 88
+            }
+          ]
+        },
+        {
+          "w": 1920,
+          "h": 256,
+          "headers": [
+            {
+              "id": "693:6235",
+              "w": 1920,
+              "h": 88
+            },
+            {
+              "id": "693:6282",
+              "w": 1920,
+              "h": 88
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "componentSets": [
+    {
+      "id": "693:3256",
+      "name": "P21/Header/GoldFlow03/Compact",
+      "properties": {
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "BlackGold",
+          "variantOptions": [
+            "BlackGold",
+            "WhiteGold"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "693:3257",
+          "name": "Theme=BlackGold",
+          "w": 1920,
+          "h": 88,
+          "bound": {
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:539:4076"
+              },
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:539:4079"
+              }
+            ]
+          }
+        },
+        {
+          "id": "693:3270",
+          "name": "Theme=WhiteGold",
+          "w": 1920,
+          "h": 88,
+          "bound": {
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:539:4076"
+              },
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:539:4079"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "693:3347",
+      "name": "P21/Header/QuickLinks/Compact",
+      "properties": {
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "BlackGold",
+          "variantOptions": [
+            "BlackGold",
+            "WhiteGold"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "693:3348",
+          "name": "Theme=BlackGold",
+          "w": 376,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14050"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14058"
+              }
+            ]
+          }
+        },
+        {
+          "id": "693:3352",
+          "name": "Theme=WhiteGold",
+          "w": 376,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14050"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14058"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "693:3388",
+      "name": "P21/Controls/AccountButton/Compact",
+      "properties": {
+        "Login label#576:54": {
+          "type": "TEXT",
+          "defaultValue": "로그인"
+        },
+        "Join label#576:61": {
+          "type": "TEXT",
+          "defaultValue": "회원가입"
+        },
+        "Anonymous label#576:68": {
+          "type": "TEXT",
+          "defaultValue": "무기명 회원가입"
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "defaultValue": "BlackGold",
+          "variantOptions": [
+            "BlackGold",
+            "WhiteGold"
+          ]
+        },
+        "Action": {
+          "type": "VARIANT",
+          "defaultValue": "Login",
+          "variantOptions": [
+            "Login",
+            "Join",
+            "Anonymous"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "693:3389",
+          "name": "Theme=BlackGold, Action=Login",
+          "w": 90,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "strokes": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14058"
+              }
+            ]
+          }
+        },
+        {
+          "id": "693:3391",
+          "name": "Theme=BlackGold, Action=Join",
+          "w": 90,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14083"
+              }
+            ]
+          }
+        },
+        {
+          "id": "693:3393",
+          "name": "Theme=BlackGold, Action=Anonymous",
+          "w": 126,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "strokes": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14062"
+              }
+            ]
+          }
+        },
+        {
+          "id": "693:3395",
+          "name": "Theme=WhiteGold, Action=Login",
+          "w": 90,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "strokes": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14058"
+              }
+            ]
+          }
+        },
+        {
+          "id": "693:3397",
+          "name": "Theme=WhiteGold, Action=Join",
+          "w": 90,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14083"
+              }
+            ]
+          }
+        },
+        {
+          "id": "693:3399",
+          "name": "Theme=WhiteGold, Action=Anonymous",
+          "w": 126,
+          "h": 36,
+          "bound": {
+            "height": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:693:3253"
+            },
+            "topLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "topRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomLeftRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "bottomRightRadius": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:261:563"
+            },
+            "strokes": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:435:14062"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "visualReview": {
+    "result": "PASS",
+    "evidence": [
+      "qa/header-comparison.png",
+      "qa/header-36px-normal.png",
+      "qa/goldflow-full-screens.png",
+      "qa/video-full-screens.png"
+    ],
+    "checked": [
+      "normal-scale header text and icon visibility",
+      "dark and white header styles",
+      "button optical centering and R6 silhouette",
+      "unchanged right margin and notice width",
+      "all four full-height screen compositions"
+    ],
+    "observations": "No clipping or overlap introduced in header. Entire screen height is retained. Existing intentional horizontal game carousels are preserved."
+  },
+  "notChanged": [
+    "Original pages 19 and 20",
+    "Card artwork and body layout",
+    "Sidebar design and viewport behavior",
+    "Local web implementation",
+    "Source feedback document"
+  ],
+  "limitations": [
+    "Figma design verification only; web runtime not changed or tested."
+  ]
+}

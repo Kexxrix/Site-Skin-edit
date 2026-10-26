@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "scope": "Page 21 banner image replacement only",
+  "pageId": "693:3254",
+  "sourceReference": {
+    "screenshot": "C:/Users/User/AppData/Local/Temp/codex-clipboard-56cf2870-cdc3-4a59-9ad4-4a2f3878e3e6.png",
+    "figmaInstances": [
+      "693:3458",
+      "693:3459",
+      "693:3460"
+    ],
+    "sourceImageHashes": {
+      "Payback": "2fa5dfe44d019e8cca72ce1c0ca2213fe3d79a30",
+      "Events": "f85e41a37edafdd9fcc8792b59ab28a5efddafee",
+      "DailyReward": "879de2364abc7facf3c36d646671c106af30ffcd"
+    },
+    "imageDimensions": {
+      "width": 1672,
+      "height": 941
+    }
+  },
+  "applied": {
+    "screens": 4,
+    "banners": 12,
+    "dedicatedMainComponents": 12,
+    "componentSectionId": "731:3524",
+    "componentLinks": "Existing physical banner instance IDs retained; linked to page-21-specific cloned masters."
+  },
+  "structural": {
+    "allPassed": true,
+    "screens": [
+      {
+        "id": "693:3446",
+        "layoutAndTextPreserved": true,
+        "dimensionsPreserved": true,
+        "instanceIdsPreserved": true,
+        "mainGap": 16,
+        "titleGaps": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "id": "693:3503",
+        "layoutAndTextPreserved": true,
+        "dimensionsPreserved": true,
+        "instanceIdsPreserved": true,
+        "mainGap": 16,
+        "titleGaps": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "id": "693:4772",
+        "layoutAndTextPreserved": true,
+        "dimensionsPreserved": true,
+        "instanceIdsPreserved": true,
+        "mainGap": 16,
+        "titleGaps": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "id": "693:4826",
+        "layoutAndTextPreserved": true,
+        "dimensionsPreserved": true,
+        "instanceIdsPreserved": true,
+        "mainGap": 16,
+        "titleGaps": [
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    ],
+    "oldMasters": [
+      {
+        "id": "660:6263",
+        "unchanged": true
+      },
+      {
+        "id": "660:6277",
+        "unchanged": true
+      },
+      {
+        "id": "660:6289",
+        "unchanged": true
+      },
+      {
+        "id": "660:6478",
+        "unchanged": true
+      },
+      {
+        "id": "660:6490",
+        "unchanged": true
+      },
+      {
+        "id": "660:6502",
+        "unchanged": true
+      },
+      {
+        "id": "660:6599",
+        "unchanged": true
+      },
+      {
+        "id": "660:6611",
+        "unchanged": true
+      },
+      {
+        "id": "660:6623",
+        "unchanged": true
+      },
+      {
+        "id": "660:6635",
+        "unchanged": true
+      },
+      {
+        "id": "660:6647",
+        "unchanged": true
+      },
+      {
+        "id": "660:6659",
+        "unchanged": true
+      }
+    ]
+  },
+  "visual": {
+    "passed": true,
+    "evidence": [
+      "qa/sources.png",
+      "qa/standard.png",
+      "qa/video.png"
+    ],
+    "observations": "Reviewed all three images in standard and 3:1 video-companion banners, in dark and white skins. No new text clipping or overlap found. Video crops retain the upper image region to keep faces visible."
+  },
+  "preserved": [
+    "Header and sidebar",
+    "Main gap 16px and title/content gap 8px",
+    "Text styles, copy, buttons, box dimensions",
+    "Cards, gateway images and video asset",
+    "Original P19 banner masters on page 20",
+    "Local web code"
+  ],
+  "limitations": "Video-companion crops preserve the existing 3:1 box, so the lower part of the 16:9 source image is cropped."
+}

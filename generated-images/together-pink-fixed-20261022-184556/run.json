@@ -1,0 +1,291 @@
+{
+  "status": "verified_and_applied_to_figma",
+  "tool": "built-in image_gen",
+  "scope": "Together Pink page24 duplicate on page25; fixed layout; replace 3 benefit and 4 gateway images",
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "sourceRootId": "850:3637",
+    "targetPageId": "919:7490",
+    "newRootId": "949:2268"
+  },
+  "counts": {
+    "attempted": 7,
+    "succeeded": 7,
+    "failed": 0,
+    "skipped": 0,
+    "qaPassed": 7,
+    "selectedByAgent": 7,
+    "acceptedByUser": 0,
+    "rejectedOutputs": 0
+  },
+  "assets": [
+    {
+      "key": "banner-payback",
+      "originalPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-58e51286-30f9-4d76-affd-d62a495126dc.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-fixed-20261022-184556/results/banner-payback.png",
+      "operation": "move",
+      "originalSha256Before": "fe51740baf645f8776033eaaca522a7aba857570af1b93882891abb2b0da6236",
+      "finalSha256": "fe51740baf645f8776033eaaca522a7aba857570af1b93882891abb2b0da6236",
+      "size": [
+        1791,
+        878
+      ],
+      "format": "PNG",
+      "bytes": 2278573,
+      "prompt": "prompts/banner-payback.txt",
+      "references": [
+        "qa/mascot-reference.png",
+        "qa/source-pink.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "imageHash": "1318a0cebdf8810d7fa311b88503da97a31fb331",
+      "appliedToFigma": true
+    },
+    {
+      "key": "banner-events",
+      "originalPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-7ae29e55-54cb-4e41-8d79-7188a9685ebb.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-fixed-20261022-184556/results/banner-events.png",
+      "operation": "move",
+      "originalSha256Before": "598ca1096fb159cf1bfa334e74081d610cd4da2fa55543fe774c7f6959a9736c",
+      "finalSha256": "598ca1096fb159cf1bfa334e74081d610cd4da2fa55543fe774c7f6959a9736c",
+      "size": [
+        1881,
+        836
+      ],
+      "format": "PNG",
+      "bytes": 2308340,
+      "prompt": "prompts/banner-events.txt",
+      "references": [
+        "qa/mascot-reference.png",
+        "qa/source-pink.png",
+        "results/banner-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "imageHash": "7c8c6c38733fb86cb571624340f328dd955524d5",
+      "appliedToFigma": true
+    },
+    {
+      "key": "banner-reward",
+      "originalPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-5e03ec2b-d6b7-4c7e-823a-7cc05656f79a.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-fixed-20261022-184556/results/banner-reward.png",
+      "operation": "move",
+      "originalSha256Before": "34fb2a51a6bdda78d8b44a4aa61b304f9fc539f23db44f55ea3daeab70a28bea",
+      "finalSha256": "34fb2a51a6bdda78d8b44a4aa61b304f9fc539f23db44f55ea3daeab70a28bea",
+      "size": [
+        1792,
+        878
+      ],
+      "format": "PNG",
+      "bytes": 2326846,
+      "prompt": "prompts/banner-reward.txt",
+      "references": [
+        "qa/mascot-reference.png",
+        "qa/source-pink.png",
+        "results/banner-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "imageHash": "80f0fd2902670f295dc077d28a2769f5c8384ab6",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-casino",
+      "originalPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-90278630-2203-4aeb-be5d-f08af7c90009.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-fixed-20261022-184556/results/gateway-casino.png",
+      "operation": "move",
+      "originalSha256Before": "f5c4dc0f60ffeaf51d0fa834ebf2dc5d5c9d211e17229a265f49f5b2a9997db2",
+      "finalSha256": "f5c4dc0f60ffeaf51d0fa834ebf2dc5d5c9d211e17229a265f49f5b2a9997db2",
+      "size": [
+        1969,
+        799
+      ],
+      "format": "PNG",
+      "bytes": 2376362,
+      "prompt": "prompts/gateway-casino.txt",
+      "references": [
+        "qa/mascot-reference.png",
+        "qa/source-pink.png",
+        "results/banner-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "imageHash": "dd9e4c5efdcba82cfdb30dbe0c348951b5c83531",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-slots",
+      "originalPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-751e6d73-0e61-4687-af37-66fad7bd6c88.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-fixed-20261022-184556/results/gateway-slots.png",
+      "operation": "move",
+      "originalSha256Before": "9f595ef85a928fb6df2b378ec1c120b8b1e5ebe5164563d7343969dbf1b2e8de",
+      "finalSha256": "9f595ef85a928fb6df2b378ec1c120b8b1e5ebe5164563d7343969dbf1b2e8de",
+      "size": [
+        1969,
+        799
+      ],
+      "format": "PNG",
+      "bytes": 2458351,
+      "prompt": "prompts/gateway-slots.txt",
+      "references": [
+        "qa/mascot-reference.png",
+        "qa/source-pink.png",
+        "results/banner-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "imageHash": "49420d40a5c85f9bd37f67818c32abdbae0cf03e",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-sports",
+      "originalPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-54143a64-e10f-4e65-9d1e-784075a4a44f.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-fixed-20261022-184556/results/gateway-sports.png",
+      "operation": "move",
+      "originalSha256Before": "a54b44b16ed9929e6925baf477d6082d7e7b0dbe0881bcc29fd35ccd765b38c8",
+      "finalSha256": "a54b44b16ed9929e6925baf477d6082d7e7b0dbe0881bcc29fd35ccd765b38c8",
+      "size": [
+        1969,
+        799
+      ],
+      "format": "PNG",
+      "bytes": 2551461,
+      "prompt": "prompts/gateway-sports.txt",
+      "references": [
+        "qa/mascot-reference.png",
+        "qa/source-pink.png",
+        "results/banner-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "imageHash": "d8b08311ddc1be029baf2f4f663d56504002fbbe",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-inplay",
+      "originalPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-c22fb84c-2c6d-4fe7-a387-8b3f14f61d5a.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-fixed-20261022-184556/results/gateway-inplay.png",
+      "operation": "move",
+      "originalSha256Before": "800205692aae6ae9bef115cb5b683d1d47c2c71af69320006b3dabbbfe5baad1",
+      "finalSha256": "800205692aae6ae9bef115cb5b683d1d47c2c71af69320006b3dabbbfe5baad1",
+      "size": [
+        1969,
+        799
+      ],
+      "format": "PNG",
+      "bytes": 2359095,
+      "prompt": "prompts/gateway-inplay.txt",
+      "references": [
+        "qa/mascot-reference.png",
+        "qa/source-pink.png",
+        "results/banner-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "imageHash": "e8f086c168167fc9ad76b1d07f6c26e40ada8511",
+      "appliedToFigma": true
+    }
+  ],
+  "technicalRecoveries": [
+    "Clone attempt 1 rolled back: label template font had not been loaded",
+    "Clone attempt 2 rolled back: return value 48124 bytes exceeded 48000 limit; removed redundant ID map",
+    "Upload parameter validation rejected virtual instance-child ID; gateway instances preserved using temporary real staging nodes"
+  ],
+  "verification": {
+    "sourceTogetherPinkUnchanged": true,
+    "sourceHash": "18aed130",
+    "layoutUnchanged": true,
+    "layoutHash": "8ede3586",
+    "layoutComparisonExclusion": "Only the three native silhouette vector geometries, which were replaced for new character artwork",
+    "textAndTypographyUnchanged": true,
+    "lowerFourSubtreesUnchanged": true,
+    "instances": 91,
+    "missingInstances": 0,
+    "newUniqueImages": 7,
+    "replacedImageFillNodes": 10,
+    "nativeForegroundMasksAdapted": 3,
+    "temporaryNodesRemaining": 0,
+    "visualCheckedAt1920px": true,
+    "sourceAssetsMoveSha256Matched": true,
+    "existingPage25Checks": [
+      {
+        "id": "919:7491",
+        "name": "CC Lime · A 단일 히어로 + 2×2 바로가기 · 1920",
+        "before": "5f4e494c",
+        "after": "5f4e494c",
+        "unchanged": true
+      },
+      {
+        "id": "920:7490",
+        "name": "CC Lime · B 중앙 강조 캐러셀 + 슬림 바 · 1920",
+        "before": "99a91e4a",
+        "after": "99a91e4a",
+        "unchanged": true
+      },
+      {
+        "id": "925:2034",
+        "name": "P25/CC Lime/Top layout",
+        "before": "8bd7e0f1",
+        "after": "8bd7e0f1",
+        "unchanged": true
+      },
+      {
+        "id": "937:1767",
+        "name": "CC Lime · B2 Neon District · 생성 이미지 · 1920",
+        "before": "18d4631d",
+        "after": "90d177b2",
+        "unchanged": false
+      }
+    ],
+    "existingB2Drift": {
+      "detected": true,
+      "cause": "UNKNOWN",
+      "noWritesPerformed": true,
+      "pixelDifferenceBox": [
+        622,
+        709,
+        1846,
+        725
+      ],
+      "record": "existing-b2-drift.json"
+    }
+  },
+  "delivery": {
+    "figmaUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=949-2268",
+    "newRootId": "949:2268",
+    "pageId": "919:7490",
+    "size": [
+      1920,
+      1819.199951171875
+    ],
+    "finalImage": "qa/pink-full.png",
+    "preview": "qa/pink-top.png",
+    "comparison": "qa/comparison.png",
+    "assetInventory": "asset-inventory.json",
+    "websiteCodeChanged": false,
+    "deployed": false,
+    "userAccepted": false
+  }
+}

@@ -1,0 +1,2059 @@
+{
+  "status": "Design and scoped QA complete; user selection not recorded",
+  "scope": "Reference side panels in Figma only, 1920px priority",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "pages": {
+    "components": "347:552",
+    "comparison": "347:553"
+  },
+  "gallery": "352:1058",
+  "fullComparison": "356:552",
+  "referenceNotes": "356:8064",
+  "specs": [
+    {
+      "style": "Showcase",
+      "label": "01 · 혜택 쇼케이스",
+      "summary": "상단 3개 혜택 타일과 골드 하이라이트를 메뉴와 분리",
+      "sources": [
+        "Gold Casino",
+        "NoLimit City"
+      ],
+      "urls": [
+        "https://dribbble.com/shots/24102608-Gold-Casino",
+        "https://dribbble.com/shots/26107007-Casino-Dashboard-UI-for-NoLimit-City"
+      ],
+      "adjustment": "232px 폭 안에서 혜택 3개를 작은 독립 타일로 제한. 외부 VIP 문구와 라이브 승자 피드는 추가하지 않고 기존 메뉴 14개 유지."
+    },
+    {
+      "style": "Islands",
+      "label": "02 · 분리형 아일랜드",
+      "summary": "서비스·스포츠·게임을 떠 있는 독립 모듈로 구성",
+      "sources": [
+        "Metafy",
+        "Game Launcher",
+        "March Madness"
+      ],
+      "urls": [
+        "https://dribbble.com/shots/20867106-Game-centric-sidebar-navigation",
+        "https://dribbble.com/shots/18019661-Game-Launcher-Sidebar",
+        "https://dribbble.com/shots/21293018-March-Madness-Game-Switcher"
+      ],
+      "adjustment": "채팅·설치 게임·우측 영상 패널은 제외. 원래 메뉴를 분리 카드에 유지하고 기존 경기 정보 1개를 스포츠 탐색 보조로 재사용."
+    },
+    {
+      "style": "HUD",
+      "label": "03 · HUD 이중 레일",
+      "summary": "카테고리 아이콘 레일과 읽기 쉬운 보조 목록을 병행",
+      "sources": [
+        "AR Craft"
+      ],
+      "urls": [
+        "https://dribbble.com/shots/17803008-AR-Craft-Mobile-Game-Landing-Page-Design"
+      ],
+      "adjustment": "게임 HUD의 비정형 레일은 48px 카테고리 레일로 축소. 나머지 공간에 한글 메뉴를 수평으로 표시해 아이콘 의존과 과한 네온을 제거."
+    },
+    {
+      "style": "Index",
+      "label": "04 · 번호형 목차",
+      "summary": "큰 번호와 헤어라인으로 기능군을 명확하게 구분",
+      "sources": [
+        "Vention"
+      ],
+      "urls": [
+        "https://brand.ventionteams.com/brand-positioning/"
+      ],
+      "adjustment": "브랜드 문서의 목차를 서비스·스포츠·게임·게시판으로 재해석. 기본은 모두 펼친 상태이며 기능군별 접힘 속성을 제공."
+    },
+    {
+      "style": "Spine",
+      "label": "05 · 책등형 프레임",
+      "summary": "세로 카테고리 책등과 기능군별 프레임을 조합",
+      "sources": [
+        "Villa Covri",
+        "Rogue Studio",
+        "Editorial New"
+      ],
+      "urls": [
+        "https://speckyboy.com/sticky-vertical-navbars/",
+        "https://www.cssdesignawards.com/sites/rogue-studio/35855/",
+        "https://onepagelove.com/editorial-new"
+      ],
+      "adjustment": "과거 세로 내비 아카이브의 프레임·책등만 차용. 필수 메뉴 14개는 회전하지 않고 수평 유지. 양측 레일을 추가해 본문 폭을 줄이지 않음."
+    }
+  ],
+  "parts": {
+    "createdNodeIds": [
+      "347:552",
+      "347:553"
+    ],
+    "page": "347:552",
+    "review": "347:553",
+    "collection": "VariableCollectionId:347:554",
+    "modes": {
+      "WhiteGold": "347:0",
+      "BlackGold": "347:1"
+    },
+    "vars": {
+      "page": "VariableID:347:555",
+      "surface": "VariableID:347:556",
+      "panel": "VariableID:347:557",
+      "line": "VariableID:347:558",
+      "text": "VariableID:347:559",
+      "muted": "VariableID:347:560",
+      "goldText": "VariableID:347:561",
+      "accentLine": "VariableID:347:562",
+      "selection": "VariableID:347:563",
+      "gold": "VariableID:347:564",
+      "onGold": "VariableID:347:565",
+      "onImage": "VariableID:347:566",
+      "gap4": "VariableID:347:567",
+      "gap8": "VariableID:347:568",
+      "gap12": "VariableID:347:569",
+      "gap16": "VariableID:347:570",
+      "radius8": "VariableID:347:571",
+      "radius14": "VariableID:347:572",
+      "sidebarWidth": "VariableID:347:573"
+    },
+    "createdVariableIds": [
+      "VariableID:347:555",
+      "VariableID:347:556",
+      "VariableID:347:557",
+      "VariableID:347:558",
+      "VariableID:347:559",
+      "VariableID:347:560",
+      "VariableID:347:561",
+      "VariableID:347:562",
+      "VariableID:347:563",
+      "VariableID:347:564",
+      "VariableID:347:565",
+      "VariableID:347:566",
+      "VariableID:347:567",
+      "VariableID:347:568",
+      "VariableID:347:569",
+      "VariableID:347:570",
+      "VariableID:347:571",
+      "VariableID:347:572",
+      "VariableID:347:573"
+    ],
+    "textStyles": {
+      "Title": "S:35d56b8134489daa45f04df4fdeeabf5f1865626,",
+      "Number": "S:85e0614886de4a9db129e9666dba914230ca68e7,",
+      "Caption": "S:871c8b0ccd120694576ee794ecdb8b242b13339a,",
+      "Solution": "S:ba828b9262f868f76120ef04ffa114d5c485c1e8,"
+    },
+    "gold": "S:6b3024e5139b687f319385020dc10e0efaa8201c,",
+    "effects": {
+      "WhiteGold": "S:7207a5f553fedc50fb95271b53a6258f8583a144,",
+      "BlackGold": "S:2e30aab973270d8c0b3eaaa167b034fb6e2a1591,"
+    },
+    "createdStyleIds": [
+      "S:35d56b8134489daa45f04df4fdeeabf5f1865626,",
+      "S:85e0614886de4a9db129e9666dba914230ca68e7,",
+      "S:871c8b0ccd120694576ee794ecdb8b242b13339a,",
+      "S:ba828b9262f868f76120ef04ffa114d5c485c1e8,",
+      "S:6b3024e5139b687f319385020dc10e0efaa8201c,",
+      "S:7207a5f553fedc50fb95271b53a6258f8583a144,",
+      "S:2e30aab973270d8c0b3eaaa167b034fb6e2a1591,"
+    ],
+    "sidebars": "351:1352",
+    "menus": "349:652",
+    "indexSections": "350:754",
+    "pageMasters": [
+      {
+        "id": "355:1790",
+        "Theme": "WhiteGold",
+        "source": "317:1490",
+        "property": "Sidebar style#317:0",
+        "sidebar": "351:610",
+        "sideId": "355:1793",
+        "size": [
+          1920,
+          1899.199951171875
+        ],
+        "sidebarSize": [
+          232,
+          1691.800048828125
+        ],
+        "preferred": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "e6568f2d50d3578d29ffa2a8a6c428565cf9c389"
+          }
+        ]
+      },
+      {
+        "id": "355:2891",
+        "Theme": "BlackGold",
+        "source": "218:1787",
+        "property": "Sidebar style#218:1",
+        "sidebar": "351:687",
+        "sideId": "355:2894",
+        "size": [
+          1920,
+          1899.199951171875
+        ],
+        "sidebarSize": [
+          232,
+          1691.800048828125
+        ],
+        "preferred": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "e6568f2d50d3578d29ffa2a8a6c428565cf9c389"
+          }
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "behavior": {
+      "createdNodeIds": [
+        "358:7861",
+        "358:7932",
+        "358:8824",
+        "358:9682"
+      ],
+      "removedNodeIds": [
+        "358:7861",
+        "358:7932",
+        "358:8824",
+        "358:9682"
+      ],
+      "sidebars": [
+        {
+          "id": "351:610",
+          "style": "Showcase",
+          "theme": "WhiteGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:687",
+          "style": "Showcase",
+          "theme": "BlackGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:764",
+          "style": "Islands",
+          "theme": "WhiteGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:838",
+          "style": "Islands",
+          "theme": "BlackGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:912",
+          "style": "HUD",
+          "theme": "WhiteGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:990",
+          "style": "HUD",
+          "theme": "BlackGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:1068",
+          "style": "Index",
+          "theme": "WhiteGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:1143",
+          "style": "Index",
+          "theme": "BlackGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:1218",
+          "style": "Spine",
+          "theme": "WhiteGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        },
+        {
+          "id": "351:1285",
+          "style": "Spine",
+          "theme": "BlackGold",
+          "count": 14,
+          "order": true,
+          "fontPass": true,
+          "solution": "TITAN SOLUSION",
+          "solutionNoBox": true
+        }
+      ],
+      "stateTests": [
+        {
+          "Style": "Showcase",
+          "Theme": "WhiteGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Showcase",
+          "Theme": "WhiteGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Showcase",
+          "Theme": "WhiteGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "Showcase",
+          "Theme": "BlackGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Showcase",
+          "Theme": "BlackGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Showcase",
+          "Theme": "BlackGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "Islands",
+          "Theme": "WhiteGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Islands",
+          "Theme": "WhiteGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Islands",
+          "Theme": "WhiteGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "Islands",
+          "Theme": "BlackGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Islands",
+          "Theme": "BlackGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Islands",
+          "Theme": "BlackGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "HUD",
+          "Theme": "WhiteGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "HUD",
+          "Theme": "WhiteGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "HUD",
+          "Theme": "WhiteGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "HUD",
+          "Theme": "BlackGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "HUD",
+          "Theme": "BlackGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "HUD",
+          "Theme": "BlackGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "Index",
+          "Theme": "WhiteGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Index",
+          "Theme": "WhiteGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Index",
+          "Theme": "WhiteGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "Index",
+          "Theme": "BlackGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Index",
+          "Theme": "BlackGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Index",
+          "Theme": "BlackGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "Spine",
+          "Theme": "WhiteGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Spine",
+          "Theme": "WhiteGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Spine",
+          "Theme": "WhiteGold",
+          "State": "Selected",
+          "pass": true
+        },
+        {
+          "Style": "Spine",
+          "Theme": "BlackGold",
+          "State": "Default",
+          "pass": true
+        },
+        {
+          "Style": "Spine",
+          "Theme": "BlackGold",
+          "State": "Hover",
+          "pass": true
+        },
+        {
+          "Style": "Spine",
+          "Theme": "BlackGold",
+          "State": "Selected",
+          "pass": true
+        }
+      ],
+      "swapTests": [
+        {
+          "Theme": "WhiteGold",
+          "Style": "Showcase",
+          "pass": true
+        },
+        {
+          "Theme": "WhiteGold",
+          "Style": "Islands",
+          "pass": true
+        },
+        {
+          "Theme": "WhiteGold",
+          "Style": "HUD",
+          "pass": true
+        },
+        {
+          "Theme": "WhiteGold",
+          "Style": "Index",
+          "pass": true
+        },
+        {
+          "Theme": "WhiteGold",
+          "Style": "Spine",
+          "pass": true
+        },
+        {
+          "Theme": "BlackGold",
+          "Style": "Showcase",
+          "pass": true
+        },
+        {
+          "Theme": "BlackGold",
+          "Style": "Islands",
+          "pass": true
+        },
+        {
+          "Theme": "BlackGold",
+          "Style": "HUD",
+          "pass": true
+        },
+        {
+          "Theme": "BlackGold",
+          "Style": "Index",
+          "pass": true
+        },
+        {
+          "Theme": "BlackGold",
+          "Style": "Spine",
+          "pass": true
+        }
+      ],
+      "sectionTests": [
+        {
+          "variant": "Theme=WhiteGold, Group=Service, State=Open",
+          "count": 5,
+          "pass": true
+        },
+        {
+          "variant": "Theme=WhiteGold, Group=Service, State=Closed",
+          "count": 0,
+          "pass": true
+        },
+        {
+          "variant": "Theme=WhiteGold, Group=Sports, State=Open",
+          "count": 4,
+          "pass": true
+        },
+        {
+          "variant": "Theme=WhiteGold, Group=Sports, State=Closed",
+          "count": 0,
+          "pass": true
+        },
+        {
+          "variant": "Theme=WhiteGold, Group=Games, State=Open",
+          "count": 2,
+          "pass": true
+        },
+        {
+          "variant": "Theme=WhiteGold, Group=Games, State=Closed",
+          "count": 0,
+          "pass": true
+        },
+        {
+          "variant": "Theme=WhiteGold, Group=Boards, State=Open",
+          "count": 3,
+          "pass": true
+        },
+        {
+          "variant": "Theme=WhiteGold, Group=Boards, State=Closed",
+          "count": 0,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Service, State=Open",
+          "count": 5,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Service, State=Closed",
+          "count": 0,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Sports, State=Open",
+          "count": 4,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Sports, State=Closed",
+          "count": 0,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Games, State=Open",
+          "count": 2,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Games, State=Closed",
+          "count": 0,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Boards, State=Open",
+          "count": 3,
+          "pass": true
+        },
+        {
+          "variant": "Theme=BlackGold, Group=Boards, State=Closed",
+          "count": 0,
+          "pass": true
+        }
+      ],
+      "screenChecks": [
+        {
+          "id": "356:558",
+          "Style": "Showcase",
+          "Theme": "WhiteGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:1790",
+          "sidebar": "351:610",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:2051",
+          "Style": "Islands",
+          "Theme": "WhiteGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:1790",
+          "sidebar": "351:764",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:2681",
+          "Style": "HUD",
+          "Theme": "WhiteGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:1790",
+          "sidebar": "351:912",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:3306",
+          "Style": "Index",
+          "Theme": "WhiteGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:1790",
+          "sidebar": "351:1068",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:3987",
+          "Style": "Spine",
+          "Theme": "WhiteGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:1790",
+          "sidebar": "351:1218",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:4596",
+          "Style": "Showcase",
+          "Theme": "BlackGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:2891",
+          "sidebar": "351:687",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:5628",
+          "Style": "Islands",
+          "Theme": "BlackGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:2891",
+          "sidebar": "351:838",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:6232",
+          "Style": "HUD",
+          "Theme": "BlackGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:2891",
+          "sidebar": "351:990",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:6831",
+          "Style": "Index",
+          "Theme": "BlackGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:2891",
+          "sidebar": "351:1143",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        },
+        {
+          "id": "356:7486",
+          "Style": "Spine",
+          "Theme": "BlackGold",
+          "size": [
+            1920,
+            1899.199951171875
+          ],
+          "main": "355:2891",
+          "sidebar": "351:1285",
+          "sideWidth": 232,
+          "bodyWidth": 1688,
+          "bodyX": 232
+        }
+      ],
+      "counts": {
+        "components": 62,
+        "sets": 3,
+        "variables": 19,
+        "modes": [
+          "WhiteGold",
+          "BlackGold"
+        ]
+      },
+      "pass": true
+    },
+    "preservation": {
+      "original": [
+        {
+          "id": "317:1490",
+          "hash": "70f46ce1",
+          "actual": "70f46ce1",
+          "unchanged": true
+        },
+        {
+          "id": "318:2054",
+          "hash": "48ed8bbd",
+          "actual": "48ed8bbd",
+          "unchanged": true
+        },
+        {
+          "id": "318:2063",
+          "hash": "a89c3878",
+          "actual": "a89c3878",
+          "unchanged": true
+        },
+        {
+          "id": "313:1286",
+          "hash": "75b5088b",
+          "actual": "75b5088b",
+          "unchanged": true
+        },
+        {
+          "id": "313:2001",
+          "hash": "ce59007",
+          "actual": "ce59007",
+          "unchanged": true
+        },
+        {
+          "id": "315:1193",
+          "hash": "b8123819",
+          "actual": "b8123819",
+          "unchanged": true
+        },
+        {
+          "id": "316:1172",
+          "hash": "ef7df6e2",
+          "actual": "ef7df6e2",
+          "unchanged": true
+        },
+        {
+          "id": "218:1787",
+          "hash": "8bea446e",
+          "actual": "8bea446e",
+          "unchanged": true
+        }
+      ],
+      "originalAllPreserved": true,
+      "esPNDefaultPreserved": true,
+      "goldGradientUnchanged": true,
+      "imageNodeSchema": [
+        "id",
+        "name",
+        "type",
+        "width",
+        "height"
+      ],
+      "masters": [
+        {
+          "id": "355:1790",
+          "theme": "WhiteGold",
+          "totalDescendants": 507,
+          "nodeCounts": {
+            "COMPONENT": 1,
+            "INSTANCE": 64,
+            "FRAME": 218,
+            "TEXT": 187,
+            "RECTANGLE": 32,
+            "VECTOR": 6
+          },
+          "imageNodes": [
+            [
+              "I355:1791;315:1211",
+              "Alpha source / Logo",
+              "RECTANGLE",
+              128,
+              26
+            ],
+            [
+              "I355:1794;316:1121;159:702",
+              "Artwork",
+              "FRAME",
+              522.6666870117188,
+              174
+            ],
+            [
+              "I355:1794;316:1121;159:703",
+              "Shade",
+              "FRAME",
+              522.6666870117188,
+              174
+            ],
+            [
+              "I355:1794;316:1123;159:702",
+              "Artwork",
+              "FRAME",
+              522.6666259765625,
+              174
+            ],
+            [
+              "I355:1794;316:1123;159:703",
+              "Shade",
+              "FRAME",
+              522.6666259765625,
+              174
+            ],
+            [
+              "I355:1794;316:1125;159:702",
+              "Artwork",
+              "FRAME",
+              522.6666259765625,
+              174
+            ],
+            [
+              "I355:1794;316:1130;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:1794;316:1132;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:1794;316:1134;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:1794;316:1136;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:1794;316:1140;159:764",
+              "HomeLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:1794;316:1140;159:769",
+              "AwayLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:1794;316:1141;159:764",
+              "HomeLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:1794;316:1141;159:769",
+              "AwayLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:1794;316:1142;159:764",
+              "HomeLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:1794;316:1142;159:769",
+              "AwayLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:1794;316:1147;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1147;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1148;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1148;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1149;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1149;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1150;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1150;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1151;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1151;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1152;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1152;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1153;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1153;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1154;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1154;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1155;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1155;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1156;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1156;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1161;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1161;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1162;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1162;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1163;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1163;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1164;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1164;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1165;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1165;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1166;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1166;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1167;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1167;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1168;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1168;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1169;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1169;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1170;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:1794;316:1170;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:1794;316:1171;315:1119",
+              "Logo / evolution / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1120",
+              "Logo / asia-gaming / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1121",
+              "Logo / castar / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1122",
+              "Logo / betgames / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1123",
+              "Logo / big-gaming / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1124",
+              "Logo / dream-gaming / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1125",
+              "Logo / wm-casino / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1126",
+              "Logo / vivo-gaming / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1128",
+              "Logo / pragmatic-play / Original image",
+              "RECTANGLE",
+              177.85714721679688,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1129",
+              "Logo / play-n-go / Original image",
+              "RECTANGLE",
+              177.8571319580078,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1130",
+              "Logo / yggdrasil / Original image",
+              "RECTANGLE",
+              177.85714721679688,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1131",
+              "Logo / red-tiger / Original image",
+              "RECTANGLE",
+              177.85714721679688,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1132",
+              "Logo / relax-gaming / Original image",
+              "RECTANGLE",
+              177.85714721679688,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1133",
+              "Logo / wazdan / Original image",
+              "RECTANGLE",
+              177.85714721679688,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1134",
+              "Logo / hacksaw / Original image",
+              "RECTANGLE",
+              177.85714721679688,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1135",
+              "Logo / playtech / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1137",
+              "Logo / netent / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1138",
+              "Logo / microgaming / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1139",
+              "Logo / habanero / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1140",
+              "Logo / pg-soft / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1141",
+              "Logo / bng / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1142",
+              "Logo / blueprint-gaming / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1143",
+              "Logo / cq9 / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:1794;316:1171;315:1144",
+              "Logo / elk-studios / Original image",
+              "RECTANGLE",
+              178,
+              64
+            ]
+          ],
+          "bodyUnchanged": true,
+          "headerUnchanged": true,
+          "fontFamilies": [
+            "Font Awesome 6 Free",
+            "Pretendard JP"
+          ]
+        },
+        {
+          "id": "355:2891",
+          "theme": "BlackGold",
+          "totalDescendants": 481,
+          "nodeCounts": {
+            "COMPONENT": 1,
+            "INSTANCE": 63,
+            "FRAME": 195,
+            "TEXT": 187,
+            "RECTANGLE": 30,
+            "VECTOR": 6
+          },
+          "imageNodes": [
+            [
+              "I355:2892;215:556",
+              "Logo",
+              "FRAME",
+              128,
+              26
+            ],
+            [
+              "I355:2898;159:702",
+              "Artwork",
+              "FRAME",
+              522.6666870117188,
+              174
+            ],
+            [
+              "I355:2898;159:703",
+              "Shade",
+              "FRAME",
+              522.6666870117188,
+              174
+            ],
+            [
+              "I355:2900;159:702",
+              "Artwork",
+              "FRAME",
+              522.6666259765625,
+              174
+            ],
+            [
+              "I355:2900;159:703",
+              "Shade",
+              "FRAME",
+              522.6666259765625,
+              174
+            ],
+            [
+              "I355:2902;159:702",
+              "Artwork",
+              "FRAME",
+              522.6666259765625,
+              174
+            ],
+            [
+              "I355:2907;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:2909;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:2911;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:2913;159:735",
+              "Artwork",
+              "FRAME",
+              389.75,
+              158
+            ],
+            [
+              "I355:2917;159:764",
+              "HomeLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:2917;159:769",
+              "AwayLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:2918;159:764",
+              "HomeLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:2918;159:769",
+              "AwayLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:2919;159:764",
+              "HomeLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:2919;159:769",
+              "AwayLogo",
+              "FRAME",
+              28,
+              28
+            ],
+            [
+              "I355:2924;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2924;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2925;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2925;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2926;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2926;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2927;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2927;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2928;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2928;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2929;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2929;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2930;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2930;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2931;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2931;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2932;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2932;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2933;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2933;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2938;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2938;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2939;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2939;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2940;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2940;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2941;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2941;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2942;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2942;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2943;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2943;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2944;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2944;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2945;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2945;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2946;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2946;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2947;159:848",
+              "Art",
+              "FRAME",
+              178,
+              238
+            ],
+            [
+              "I355:2947;159:849",
+              "Brandmark",
+              "FRAME",
+              156,
+              58
+            ],
+            [
+              "I355:2948;159:863",
+              "Logo / evolution",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:864",
+              "Logo / asia-gaming",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:865",
+              "Logo / castar",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:866",
+              "Logo / betgames",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:867",
+              "Logo / big-gaming",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:868",
+              "Logo / dream-gaming",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:869",
+              "Logo / wm-casino",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:870",
+              "Logo / vivo-gaming",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:872",
+              "Logo / pragmatic-play",
+              "RECTANGLE",
+              206.85714721679688,
+              64
+            ],
+            [
+              "I355:2948;159:873",
+              "Logo / play-n-go",
+              "RECTANGLE",
+              206.8571319580078,
+              64
+            ],
+            [
+              "I355:2948;159:874",
+              "Logo / yggdrasil",
+              "RECTANGLE",
+              206.8571319580078,
+              64
+            ],
+            [
+              "I355:2948;159:875",
+              "Logo / red-tiger",
+              "RECTANGLE",
+              206.8571319580078,
+              64
+            ],
+            [
+              "I355:2948;159:876",
+              "Logo / relax-gaming",
+              "RECTANGLE",
+              206.8571319580078,
+              64
+            ],
+            [
+              "I355:2948;159:877",
+              "Logo / wazdan",
+              "RECTANGLE",
+              206.85714721679688,
+              64
+            ],
+            [
+              "I355:2948;159:878",
+              "Logo / hacksaw",
+              "RECTANGLE",
+              206.85714721679688,
+              64
+            ],
+            [
+              "I355:2948;159:879",
+              "Logo / playtech",
+              "RECTANGLE",
+              129,
+              64
+            ],
+            [
+              "I355:2948;159:881",
+              "Logo / netent",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:882",
+              "Logo / microgaming",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:883",
+              "Logo / habanero",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:884",
+              "Logo / pg-soft",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:885",
+              "Logo / bng",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:886",
+              "Logo / blueprint-gaming",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:887",
+              "Logo / cq9",
+              "RECTANGLE",
+              178,
+              64
+            ],
+            [
+              "I355:2948;159:888",
+              "Logo / elk-studios",
+              "RECTANGLE",
+              178,
+              64
+            ]
+          ],
+          "bodyUnchanged": true,
+          "headerUnchanged": true,
+          "fontFamilies": [
+            "Font Awesome 6 Free",
+            "Pretendard JP"
+          ]
+        }
+      ]
+    }
+  },
+  "visualQA": {
+    "status": "passed",
+    "files": [
+      "sidebar-gallery-final.png",
+      "full-comparison.png",
+      "islands-white-1920.png"
+    ],
+    "checked": [
+      "10 sidebar variants and source captions",
+      "Full 1920 composition",
+      "Menu labels, spacing and alignment",
+      "WhiteGold and BlackGold color resolution",
+      "Existing imagery and content preserved"
+    ]
+  },
+  "sourceCoverage": {
+    "document": "https://chatgpt.com/space/page_eea2fb35a7608191a14003e7910ed2c5",
+    "cases": 10,
+    "groupedStructures": 5,
+    "directVisualInThisRun": [
+      "Vention desktop page",
+      "NoLimit City original static image"
+    ],
+    "limits": [
+      "Some Dribbble pages presented browser human verification; used the accessible primary text and the Page's already collected structural descriptions",
+      "Villa Covri / Rogue / Editorial New are archival design references; no current interaction claim"
+    ]
+  },
+  "notChanged": [
+    "Existing WOG and ESPN designs and comparison screens",
+    "Original WhiteGold ESPN default",
+    "Original WhiteGold and BlackGold header/body content and image paints",
+    "Local website source, server, routes and deployment",
+    "Source Page content"
+  ],
+  "remaining": [
+    "Mobile/tablet and narrow-width layouts not validated; 1920px is the approved priority",
+    "Figma component/variant switching tested; no browser product functionality or animated prototype is claimed"
+  ]
+}

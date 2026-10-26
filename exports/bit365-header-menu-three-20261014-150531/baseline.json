@@ -1,0 +1,2180 @@
+{
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "scope": "Header and sidebar three-style comparison",
+  "styles": [
+    "Original",
+    "BlackMetal",
+    "ArtDeco",
+    "SportsBroadcast"
+  ],
+  "sourceFrameIds": [
+    "140:552",
+    "140:1555",
+    "140:2485",
+    "140:4796"
+  ],
+  "sourceComponents": {
+    "header": {
+      "id": "159:552",
+      "properties": {
+        "Viewport": {
+          "type": "VARIANT",
+          "defaultValue": "Desktop",
+          "variantOptions": [
+            "Desktop",
+            "Mobile",
+            "Tablet"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "159:553",
+          "type": "COMPONENT",
+          "name": "Viewport=Desktop",
+          "w": 1920,
+          "h": 64,
+          "x": 25,
+          "y": 25,
+          "layout": "HORIZONTAL",
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "padding": [
+            8,
+            12,
+            8,
+            12
+          ],
+          "gap": 12,
+          "properties": {
+            "Viewport": {
+              "type": "VARIANT",
+              "defaultValue": "Desktop",
+              "variantOptions": [
+                "Desktop",
+                "Mobile",
+                "Tablet"
+              ]
+            }
+          },
+          "children": [
+            {
+              "id": "159:554",
+              "type": "FRAME",
+              "name": "Menu",
+              "w": 28,
+              "h": 28,
+              "x": 13,
+              "y": 18,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:556",
+              "type": "FRAME",
+              "name": "Frame 1",
+              "w": 174,
+              "h": 26,
+              "x": 53,
+              "y": 19,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "HUG",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 28,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:560",
+              "type": "FRAME",
+              "name": "Search",
+              "w": 580,
+              "h": 42,
+              "x": 249,
+              "y": 11,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "HUG",
+              "padding": [
+                10,
+                10,
+                10,
+                10
+              ],
+              "gap": 12,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:563",
+              "type": "FRAME",
+              "name": "Spacer",
+              "w": 1412,
+              "h": 10,
+              "x": 239,
+              "y": 27,
+              "layout": "VERTICAL",
+              "hs": "FILL",
+              "vs": "HUG",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:564",
+              "type": "TEXT",
+              "name": "Events",
+              "w": 32,
+              "h": 17,
+              "x": 1663,
+              "y": 23.5,
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                null,
+                null,
+                null,
+                null
+              ],
+              "text": "이벤트",
+              "font": {
+                "family": "Pretendard JP",
+                "style": "Bold"
+              },
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:565",
+              "type": "TEXT",
+              "name": "Support",
+              "w": 42,
+              "h": 17,
+              "x": 1707,
+              "y": 23.5,
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                null,
+                null,
+                null,
+                null
+              ],
+              "text": "고객지원",
+              "font": {
+                "family": "Pretendard JP",
+                "style": "Bold"
+              },
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:566",
+              "type": "INSTANCE",
+              "name": "BIT365 BlackGold/Button/Ghost",
+              "w": 62,
+              "h": 40,
+              "x": 1761,
+              "y": 12,
+              "layout": "HORIZONTAL",
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                9,
+                14,
+                9,
+                14
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:567",
+              "type": "INSTANCE",
+              "name": "BIT365 BlackGold/Button/Primary",
+              "w": 72,
+              "h": 40,
+              "x": 1835,
+              "y": 12,
+              "layout": "HORIZONTAL",
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                9,
+                14,
+                9,
+                14
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            }
+          ]
+        },
+        {
+          "id": "159:568",
+          "type": "COMPONENT",
+          "name": "Viewport=Mobile",
+          "w": 390,
+          "h": 58,
+          "x": 25,
+          "y": 113,
+          "layout": "HORIZONTAL",
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "padding": [
+            7,
+            6,
+            7,
+            6
+          ],
+          "gap": 6,
+          "properties": {
+            "Viewport": {
+              "type": "VARIANT",
+              "defaultValue": "Desktop",
+              "variantOptions": [
+                "Desktop",
+                "Mobile",
+                "Tablet"
+              ]
+            }
+          },
+          "children": [
+            {
+              "id": "159:569",
+              "type": "FRAME",
+              "name": "Menu",
+              "w": 28,
+              "h": 28,
+              "x": 7,
+              "y": 15,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:571",
+              "type": "FRAME",
+              "name": "Logo",
+              "w": 94,
+              "h": 20,
+              "x": 41,
+              "y": 19,
+              "layout": "VERTICAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:572",
+              "type": "FRAME",
+              "name": "Spacer",
+              "w": 20,
+              "h": 10,
+              "x": 141,
+              "y": 24,
+              "layout": "VERTICAL",
+              "hs": "FILL",
+              "vs": "HUG",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:573",
+              "type": "FRAME",
+              "name": "Theme",
+              "w": 32,
+              "h": 32,
+              "x": 167,
+              "y": 13,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:575",
+              "type": "FRAME",
+              "name": "Search",
+              "w": 32,
+              "h": 32,
+              "x": 205,
+              "y": 13,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:577",
+              "type": "INSTANCE",
+              "name": "BIT365 BlackGold/Button/Ghost",
+              "w": 62,
+              "h": 40,
+              "x": 243,
+              "y": 9,
+              "layout": "HORIZONTAL",
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                9,
+                14,
+                9,
+                14
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:578",
+              "type": "INSTANCE",
+              "name": "BIT365 BlackGold/Button/Primary",
+              "w": 72,
+              "h": 40,
+              "x": 311,
+              "y": 9,
+              "layout": "HORIZONTAL",
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                9,
+                14,
+                9,
+                14
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            }
+          ]
+        },
+        {
+          "id": "159:579",
+          "type": "COMPONENT",
+          "name": "Viewport=Tablet",
+          "w": 768,
+          "h": 62,
+          "x": 25,
+          "y": 195,
+          "layout": "HORIZONTAL",
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "padding": [
+            8,
+            12,
+            8,
+            12
+          ],
+          "gap": 12,
+          "properties": {
+            "Viewport": {
+              "type": "VARIANT",
+              "defaultValue": "Desktop",
+              "variantOptions": [
+                "Desktop",
+                "Mobile",
+                "Tablet"
+              ]
+            }
+          },
+          "children": [
+            {
+              "id": "159:580",
+              "type": "FRAME",
+              "name": "Menu",
+              "w": 28,
+              "h": 28,
+              "x": 13,
+              "y": 17,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:582",
+              "type": "FRAME",
+              "name": "Logo",
+              "w": 128,
+              "h": 26,
+              "x": 53,
+              "y": 18,
+              "layout": "VERTICAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:583",
+              "type": "FRAME",
+              "name": "Theme",
+              "w": 44,
+              "h": 44,
+              "x": 193,
+              "y": 9,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "FIXED",
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:585",
+              "type": "FRAME",
+              "name": "Search",
+              "w": 348,
+              "h": 42,
+              "x": 249,
+              "y": 10,
+              "layout": "HORIZONTAL",
+              "hs": "FIXED",
+              "vs": "HUG",
+              "padding": [
+                10,
+                10,
+                10,
+                10
+              ],
+              "gap": 12,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:588",
+              "type": "INSTANCE",
+              "name": "BIT365 BlackGold/Button/Ghost",
+              "w": 62,
+              "h": 40,
+              "x": 249,
+              "y": 11,
+              "layout": "HORIZONTAL",
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                9,
+                14,
+                9,
+                14
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            },
+            {
+              "id": "159:589",
+              "type": "INSTANCE",
+              "name": "BIT365 BlackGold/Button/Primary",
+              "w": 72,
+              "h": 40,
+              "x": 323,
+              "y": 11,
+              "layout": "HORIZONTAL",
+              "hs": "HUG",
+              "vs": "HUG",
+              "padding": [
+                9,
+                14,
+                9,
+                14
+              ],
+              "gap": 0,
+              "text": null,
+              "font": null,
+              "refs": {},
+              "reactions": []
+            }
+          ]
+        }
+      ]
+    },
+    "sidebar": {
+      "id": "159:600",
+      "type": "COMPONENT",
+      "name": "BIT365 BlackGold/Sidebar",
+      "w": 232,
+      "h": 830,
+      "x": 3800,
+      "y": 702,
+      "layout": "VERTICAL",
+      "hs": "FIXED",
+      "vs": "HUG",
+      "padding": [
+        14,
+        10,
+        18,
+        10
+      ],
+      "gap": 16,
+      "properties": {},
+      "children": [
+        {
+          "id": "159:601",
+          "type": "FRAME",
+          "name": "Sidebar group / 서비스",
+          "w": 210,
+          "h": 247,
+          "x": 11,
+          "y": 15,
+          "layout": "VERTICAL",
+          "hs": "FILL",
+          "vs": "HUG",
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "gap": 2,
+          "text": null
+        },
+        {
+          "id": "159:608",
+          "type": "FRAME",
+          "name": "Sidebar group / 스포츠",
+          "w": 210,
+          "h": 201,
+          "x": 11,
+          "y": 278,
+          "layout": "VERTICAL",
+          "hs": "FILL",
+          "vs": "HUG",
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "gap": 2,
+          "text": null
+        },
+        {
+          "id": "159:614",
+          "type": "FRAME",
+          "name": "Sidebar group / 게임",
+          "w": 210,
+          "h": 109,
+          "x": 11,
+          "y": 495,
+          "layout": "VERTICAL",
+          "hs": "FILL",
+          "vs": "HUG",
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "gap": 2,
+          "text": null
+        },
+        {
+          "id": "159:618",
+          "type": "FRAME",
+          "name": "Sidebar group / 게시판",
+          "w": 210,
+          "h": 155,
+          "x": 11,
+          "y": 620,
+          "layout": "VERTICAL",
+          "hs": "FILL",
+          "vs": "HUG",
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "gap": 2,
+          "text": null
+        },
+        {
+          "id": "159:623",
+          "type": "TEXT",
+          "name": "Solution",
+          "w": 210,
+          "h": 20,
+          "x": 11,
+          "y": 791,
+          "hs": "FILL",
+          "vs": "HUG",
+          "padding": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "text": "TITAN SOLUSION"
+        }
+      ],
+      "rows": [
+        {
+          "id": "159:603",
+          "type": "INSTANCE",
+          "name": "Menu / 입금신청",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 19,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "입금신청"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:604",
+          "type": "INSTANCE",
+          "name": "Menu / 출금신청",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 65,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "출금신청"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:605",
+          "type": "INSTANCE",
+          "name": "Menu / 마이페이지",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 111,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "마이페이지"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:606",
+          "type": "INSTANCE",
+          "name": "Menu / 문의하기",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 157,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "문의하기"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:607",
+          "type": "INSTANCE",
+          "name": "Menu / 쪽지",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 203,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "쪽지"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:610",
+          "type": "INSTANCE",
+          "name": "Menu / 국내형",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 19,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "국내형"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:611",
+          "type": "INSTANCE",
+          "name": "Menu / 해외형",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 65,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "해외형"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:612",
+          "type": "INSTANCE",
+          "name": "Menu / E스포츠",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 111,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "E스포츠"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:613",
+          "type": "INSTANCE",
+          "name": "Menu / 라이브",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 157,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "라이브"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:616",
+          "type": "INSTANCE",
+          "name": "Menu / 라이브카지노",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 19,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "라이브카지노"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:617",
+          "type": "INSTANCE",
+          "name": "Menu / 슬롯",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 65,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "슬롯"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:620",
+          "type": "INSTANCE",
+          "name": "Menu / 공지사항",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 19,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "공지사항"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:621",
+          "type": "INSTANCE",
+          "name": "Menu / 이벤트",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 65,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "이벤트"
+            }
+          },
+          "main": "159:694"
+        },
+        {
+          "id": "159:622",
+          "type": "INSTANCE",
+          "name": "Menu / 베팅규정",
+          "w": 210,
+          "h": 44,
+          "x": 0,
+          "y": 111,
+          "layout": "HORIZONTAL",
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "gap": 12,
+          "properties": {
+            "Badge#54:0": {
+              "type": "TEXT",
+              "value": "200x"
+            },
+            "Show badge#54:1": {
+              "type": "BOOLEAN",
+              "value": false
+            },
+            "Icon#48:0": {
+              "type": "TEXT",
+              "value": ""
+            },
+            "Label#46:3": {
+              "type": "TEXT",
+              "value": "베팅규정"
+            }
+          },
+          "main": "159:694"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        {
+          "family": "Font Awesome 6 Free",
+          "style": "Solid"
+        }
+      ]
+    },
+    "nav": {
+      "id": "159:694",
+      "type": "COMPONENT",
+      "name": "BIT365 BlackGold/Navigation/Item",
+      "w": 210,
+      "h": 44,
+      "x": 300,
+      "y": 1652,
+      "layout": "HORIZONTAL",
+      "hs": "FIXED",
+      "vs": "HUG",
+      "padding": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "gap": 12,
+      "properties": {
+        "Label#46:3": {
+          "type": "TEXT",
+          "defaultValue": "스포츠"
+        },
+        "Icon#48:0": {
+          "type": "TEXT",
+          "defaultValue": ""
+        },
+        "Badge#54:0": {
+          "type": "TEXT",
+          "defaultValue": "200x"
+        },
+        "Show badge#54:1": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        }
+      },
+      "children": [
+        {
+          "id": "159:695",
+          "type": "FRAME",
+          "name": "Icon slot",
+          "w": 16,
+          "h": 16,
+          "x": 10,
+          "y": 10,
+          "layout": "VERTICAL",
+          "hs": "FIXED",
+          "vs": "FIXED",
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "gap": 0,
+          "text": null,
+          "ref": {},
+          "visible": true
+        },
+        {
+          "id": "159:697",
+          "type": "TEXT",
+          "name": "Label",
+          "w": 162,
+          "h": 18.200000762939453,
+          "x": 38,
+          "y": 10,
+          "hs": "FILL",
+          "vs": "FIXED",
+          "padding": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "text": "스포츠",
+          "ref": {
+            "characters": "Label#46:3"
+          },
+          "visible": true
+        },
+        {
+          "id": "159:698",
+          "type": "FRAME",
+          "name": "Badge",
+          "w": 28,
+          "h": 19,
+          "x": 172,
+          "y": 10,
+          "layout": "HORIZONTAL",
+          "hs": "HUG",
+          "vs": "HUG",
+          "padding": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "gap": 0,
+          "text": null,
+          "ref": {
+            "visible": "Show badge#54:1"
+          },
+          "visible": false
+        }
+      ]
+    },
+    "gold": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.8313725590705872,
+          "g": 0.686274528503418,
+          "b": 0.21568627655506134
+        },
+        "boundVariables": {
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:158:568"
+          }
+        }
+      },
+      {
+        "type": "GRADIENT_LINEAR",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "gradientStops": [
+          {
+            "color": {
+              "r": 0.9803921580314636,
+              "g": 0.9686274528503418,
+              "b": 0.8235294222831726,
+              "a": 1
+            },
+            "position": 0,
+            "boundVariables": {}
+          },
+          {
+            "color": {
+              "r": 1,
+              "g": 0.8567878007888794,
+              "b": 0.5336538553237915,
+              "a": 1
+            },
+            "position": 0.14423076808452606,
+            "boundVariables": {}
+          },
+          {
+            "color": {
+              "r": 1,
+              "g": 0.7997111678123474,
+              "b": 0.4663461446762085,
+              "a": 1
+            },
+            "position": 0.20673076808452606,
+            "boundVariables": {}
+          },
+          {
+            "color": {
+              "r": 1,
+              "g": 0.7785155177116394,
+              "b": 0.42788460850715637,
+              "a": 1
+            },
+            "position": 0.4615384638309479,
+            "boundVariables": {}
+          },
+          {
+            "color": {
+              "r": 0.817307710647583,
+              "g": 0.5174322724342346,
+              "b": 0,
+              "a": 1
+            },
+            "position": 0.7740384340286255,
+            "boundVariables": {}
+          },
+          {
+            "color": {
+              "r": 0.6442307829856873,
+              "g": 0.3681318461894989,
+              "b": 0,
+              "a": 1
+            },
+            "position": 0.9663461446762085,
+            "boundVariables": {}
+          }
+        ],
+        "gradientTransform": [
+          [
+            6.123234262925839e-17,
+            1,
+            0
+          ],
+          [
+            -1,
+            6.123234262925839e-17,
+            1
+          ]
+        ]
+      }
+    ],
+    "buttonId": "159:598"
+  },
+  "baseline": {
+    "pages": [
+      {
+        "id": "0:1",
+        "name": "01 · 반응형 와이어프레임",
+        "components": 0,
+        "sets": 0,
+        "instances": 156
+      },
+      {
+        "id": "2:2",
+        "name": "02 · 편집 컴포넌트",
+        "components": 36,
+        "sets": 12,
+        "instances": 48
+      },
+      {
+        "id": "2:3",
+        "name": "03 · 반응형 규칙",
+        "components": 0,
+        "sets": 0,
+        "instances": 0
+      },
+      {
+        "id": "44:552",
+        "name": "04 · BIT365 홈",
+        "components": 0,
+        "sets": 0,
+        "instances": 272
+      },
+      {
+        "id": "44:553",
+        "name": "05 · BIT365 컴포넌트",
+        "components": 23,
+        "sets": 7,
+        "instances": 61
+      },
+      {
+        "id": "88:553",
+        "name": "08 · 샴페인 골드 컴포넌트",
+        "components": 21,
+        "sets": 6,
+        "instances": 71
+      },
+      {
+        "id": "73:2891",
+        "name": "06 · BIT365 · ALDEBARAN 테마",
+        "components": 0,
+        "sets": 0,
+        "instances": 322
+      },
+      {
+        "id": "88:552",
+        "name": "07 · BIT365 · 샴페인 골드",
+        "components": 0,
+        "sets": 0,
+        "instances": 274
+      },
+      {
+        "id": "139:552",
+        "name": "09 · BIT365 · 블랙 골드",
+        "components": 0,
+        "sets": 0,
+        "instances": 274
+      },
+      {
+        "id": "158:597",
+        "name": "10 · 블랙 골드 컴포넌트",
+        "components": 21,
+        "sets": 6,
+        "instances": 71
+      }
+    ],
+    "totals": {
+      "components": 101,
+      "sets": 31,
+      "instances": 1549
+    },
+    "sourcePages": [
+      {
+        "id": "139:552",
+        "hash": "c47cd377",
+        "nodes": 2670
+      },
+      {
+        "id": "158:597",
+        "hash": "a762a4bb",
+        "nodes": 1016
+      }
+    ],
+    "frames": [
+      {
+        "id": "140:552",
+        "name": "BIT365 · 블랙 골드 · 1920px",
+        "w": 1920,
+        "h": 1899.199951171875,
+        "children": [
+          {
+            "id": "140:553",
+            "name": "BIT365 BlackGold/Header",
+            "type": "INSTANCE",
+            "w": 1920,
+            "h": 64
+          },
+          {
+            "id": "140:554",
+            "name": "Page shell",
+            "type": "FRAME",
+            "w": 1920,
+            "h": 1835.199951171875
+          }
+        ],
+        "instances": [
+          {
+            "id": "140:553",
+            "name": "BIT365 BlackGold/Header",
+            "main": "159:553",
+            "reactions": []
+          },
+          {
+            "id": "140:555",
+            "name": "BIT365 BlackGold/Sidebar",
+            "main": "159:600",
+            "reactions": []
+          }
+        ]
+      },
+      {
+        "id": "140:1555",
+        "name": "BIT365 · 블랙 골드 · 1440px",
+        "w": 1440,
+        "h": 1899.199951171875,
+        "children": [
+          {
+            "id": "140:1556",
+            "name": "BIT365 BlackGold/Header",
+            "type": "INSTANCE",
+            "w": 1440,
+            "h": 64
+          },
+          {
+            "id": "140:1557",
+            "name": "Page shell",
+            "type": "FRAME",
+            "w": 1440,
+            "h": 1835.199951171875
+          }
+        ],
+        "instances": [
+          {
+            "id": "140:1556",
+            "name": "BIT365 BlackGold/Header",
+            "main": "159:553",
+            "reactions": []
+          },
+          {
+            "id": "140:1558",
+            "name": "BIT365 BlackGold/Sidebar",
+            "main": "159:600",
+            "reactions": []
+          }
+        ]
+      },
+      {
+        "id": "140:2485",
+        "name": "BIT365 · 블랙 골드 · 768px",
+        "w": 768,
+        "h": 2382.199951171875,
+        "children": [
+          {
+            "id": "140:2486",
+            "name": "BIT365 BlackGold/Header",
+            "type": "INSTANCE",
+            "w": 768,
+            "h": 62
+          },
+          {
+            "id": "140:2487",
+            "name": "Page shell",
+            "type": "FRAME",
+            "w": 768,
+            "h": 2263.199951171875
+          },
+          {
+            "id": "140:2534",
+            "name": "BIT365 BlackGold/Navigation/Bottom",
+            "type": "INSTANCE",
+            "w": 768,
+            "h": 57
+          }
+        ],
+        "instances": [
+          {
+            "id": "140:2486",
+            "name": "BIT365 BlackGold/Header",
+            "main": "159:579",
+            "reactions": []
+          },
+          {
+            "id": "140:2491",
+            "name": "BIT365 BlackGold/Benefit",
+            "main": "159:701",
+            "reactions": []
+          }
+        ]
+      },
+      {
+        "id": "140:3255",
+        "name": "BIT365 · 블랙 골드 · 390px",
+        "w": 390,
+        "h": 2418.60009765625,
+        "children": [
+          {
+            "id": "140:3256",
+            "name": "BIT365 BlackGold/Header",
+            "type": "INSTANCE",
+            "w": 390,
+            "h": 58
+          },
+          {
+            "id": "140:3257",
+            "name": "Page shell",
+            "type": "FRAME",
+            "w": 390,
+            "h": 2303.60009765625
+          },
+          {
+            "id": "140:3305",
+            "name": "BIT365 BlackGold/Navigation/Bottom",
+            "type": "INSTANCE",
+            "w": 390,
+            "h": 57
+          }
+        ],
+        "instances": [
+          {
+            "id": "140:3256",
+            "name": "BIT365 BlackGold/Header",
+            "main": "159:568",
+            "reactions": []
+          },
+          {
+            "id": "140:3260",
+            "name": "BIT365 BlackGold/Benefit",
+            "main": "159:710",
+            "reactions": []
+          }
+        ]
+      },
+      {
+        "id": "140:4028",
+        "name": "BIT365 · 블랙 골드 · 768px · 스크롤",
+        "w": 768,
+        "h": 1024,
+        "children": [
+          {
+            "id": "140:4029",
+            "name": "BIT365 BlackGold/Header",
+            "type": "INSTANCE",
+            "w": 768,
+            "h": 62
+          },
+          {
+            "id": "140:4030",
+            "name": "Page shell",
+            "type": "FRAME",
+            "w": 768,
+            "h": 905
+          },
+          {
+            "id": "140:4077",
+            "name": "BIT365 BlackGold/Navigation/Bottom",
+            "type": "INSTANCE",
+            "w": 768,
+            "h": 57
+          }
+        ],
+        "instances": [
+          {
+            "id": "140:4029",
+            "name": "BIT365 BlackGold/Header",
+            "main": "159:579",
+            "reactions": []
+          },
+          {
+            "id": "140:4034",
+            "name": "BIT365 BlackGold/Benefit",
+            "main": "159:701",
+            "reactions": []
+          }
+        ]
+      },
+      {
+        "id": "140:4796",
+        "name": "BIT365 · 블랙 골드 · 390px · 스크롤",
+        "w": 390,
+        "h": 844,
+        "children": [
+          {
+            "id": "140:4797",
+            "name": "BIT365 BlackGold/Header",
+            "type": "INSTANCE",
+            "w": 390,
+            "h": 58
+          },
+          {
+            "id": "140:4798",
+            "name": "Page shell",
+            "type": "FRAME",
+            "w": 390,
+            "h": 729
+          },
+          {
+            "id": "140:4846",
+            "name": "BIT365 BlackGold/Navigation/Bottom",
+            "type": "INSTANCE",
+            "w": 390,
+            "h": 57
+          }
+        ],
+        "instances": [
+          {
+            "id": "140:4797",
+            "name": "BIT365 BlackGold/Header",
+            "main": "159:568",
+            "reactions": []
+          },
+          {
+            "id": "140:4801",
+            "name": "BIT365 BlackGold/Benefit",
+            "main": "159:710",
+            "reactions": []
+          }
+        ]
+      }
+    ],
+    "foundations": [
+      {
+        "id": "VariableID:158:554",
+        "name": "page",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.0784313753247261,
+          "g": 0.08235294371843338,
+          "b": 0.08235294371843338,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:556",
+        "name": "surface",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.1411764770746231,
+          "g": 0.1411764770746231,
+          "b": 0.1411764770746231,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:558",
+        "name": "hero",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.0941176488995552,
+          "g": 0.09803921729326248,
+          "b": 0.09803921729326248,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:560",
+        "name": "line",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.21960784494876862,
+          "g": 0.21960784494876862,
+          "b": 0.21960784494876862,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:562",
+        "name": "accentLine",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.7058823704719543,
+          "g": 0.5764706134796143,
+          "b": 0.2705882489681244,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:564",
+        "name": "text",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "value": {
+          "r": 0.9607843160629272,
+          "g": 0.95686274766922,
+          "b": 0.95686274766922,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:566",
+        "name": "muted",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "value": {
+          "r": 0.7176470756530762,
+          "g": 0.7176470756530762,
+          "b": 0.7176470756530762,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:568",
+        "name": "yellow",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.8313725590705872,
+          "g": 0.686274528503418,
+          "b": 0.21568627655506134,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:570",
+        "name": "mint",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.9019607901573181,
+          "g": 0.7803921699523926,
+          "b": 0.4274509847164154,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:572",
+        "name": "tag",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.2078431397676468,
+          "g": 0.2078431397676468,
+          "b": 0.2078431397676468,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:574",
+        "name": "theme/header",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.11372549086809158,
+          "g": 0.11372549086809158,
+          "b": 0.11372549086809158,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:576",
+        "name": "theme/control",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.2078431397676468,
+          "g": 0.2078431397676468,
+          "b": 0.2078431397676468,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:578",
+        "name": "theme/amber",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.9019607901573181,
+          "g": 0.7803921699523926,
+          "b": 0.4274509847164154,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:580",
+        "name": "theme/onAccent",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "value": {
+          "r": 0.09019608050584793,
+          "g": 0.09019608050584793,
+          "b": 0.09019608050584793,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:582",
+        "name": "theme/disabled",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "value": {
+          "r": 0.4745098054409027,
+          "g": 0.4745098054409027,
+          "b": 0.4745098054409027,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:584",
+        "name": "theme/input",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "value": {
+          "r": 0.09803921729326248,
+          "g": 0.09803921729326248,
+          "b": 0.09803921729326248,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:158:586",
+        "name": "theme/onBadge",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "value": {
+          "r": 0.09019608050584793,
+          "g": 0.09019608050584793,
+          "b": 0.09019608050584793,
+          "a": 1
+        }
+      }
+    ],
+    "globalVariableCount": 93,
+    "textStyles": [
+      {
+        "id": "S:8f5571b83522f20f12648ef6aafba17b2a4b557d,",
+        "name": "BIT365 BlackGold/Section",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 20
+      },
+      {
+        "id": "S:758c726d3d29453dcba8f5201d0388d12c95b9d8,",
+        "name": "BIT365 BlackGold/Card",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14
+      },
+      {
+        "id": "S:7f24249dec8e73a1c0cdd6ad654ae19b8a85e1be,",
+        "name": "BIT365 BlackGold/Body",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Regular"
+        },
+        "size": 12
+      },
+      {
+        "id": "S:73830b88d6504ecc17a971343c9bcfc1f651f8f6,",
+        "name": "BIT365 BlackGold/Small",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Regular"
+        },
+        "size": 10
+      },
+      {
+        "id": "S:38ed5a6ad44d5efc43cf4f9854a3f84b3ba4f323,",
+        "name": "BIT365 BlackGold/Tag",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 8
+      },
+      {
+        "id": "S:0e4a4f0c8c43b143cfe10be810171531953f97f0,",
+        "name": "BIT365 BlackGold/Sports/Meta",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 11
+      },
+      {
+        "id": "S:03f17e318f4fe8b5dc225781e8d831481d83fa01,",
+        "name": "BIT365 BlackGold/Sports/League",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 13
+      },
+      {
+        "id": "S:213ed1b6a188dd2940a8eef122d984a0eec3ffd3,",
+        "name": "BIT365 BlackGold/Sports/Team",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14
+      },
+      {
+        "id": "S:7b09d3ee8bb33fca1884f7452c0b4d681ab94336,",
+        "name": "BIT365 BlackGold/Sports/OddLabel",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 12
+      },
+      {
+        "id": "S:8f9b42e084bfb017dd82265c5e1755eb34600ab1,",
+        "name": "BIT365 BlackGold/Sports/OddValue",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14
+      }
+    ],
+    "effectStyles": []
+  },
+  "instructionPage": "page_eea2fb35a7608191a14003e7910ed2c5",
+  "excluded": [
+    "Original edits",
+    "Body redesign",
+    "White Gold screens",
+    "New bitmap generation",
+    "Frontend code"
+  ]
+}

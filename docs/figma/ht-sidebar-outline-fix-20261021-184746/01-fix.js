@@ -1,0 +1,19 @@
+function norm(v){if(typeof v==="number")return Math.round(v*10000)/10000;if(Array.isArray(v))return v.map(norm);if(v&&typeof v==="object"){const o={};for(const k of Object.keys(v).sort())o[k]=norm(v[k]);return o;}return v;}
+function snap(n,ignore=false){const r={type:n.type,width:n.width,height:n.height,visible:n.visible,opacity:('opacity'in n?n.opacity:undefined)};if(!ignore){r.x=n.x;r.y=n.y;}for(const k of ["fills","strokes","effects","cornerRadius","layoutMode","layoutSizingHorizontal","layoutSizingVertical","paddingLeft","paddingRight","paddingTop","paddingBottom","itemSpacing","clipsContent","overflowDirection","boundVariables","explicitVariableModes"])if(k in n&&typeof n[k]!=="symbol")r[k]=n[k];if(n.type==="TEXT"){r.characters=n.characters;r.fonts=n.getStyledTextSegments(["fontName","fontSize","lineHeight","letterSpacing"]);r.leadingTrim=n.leadingTrim;}if("children"in n)r.children=n.children.map(c=>snap(c));return norm(r);}
+function hash(v){const s=JSON.stringify(v);let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return(h>>>0).toString(16);}
+function eq(a,b){if(typeof a==="number"&&typeof b==="number")return Math.abs(a-b)<=.001;if(a===b)return true;if(!a||!b||typeof a!=="object"||typeof b!=="object")return false;const ks=Object.keys(a);return ks.length===Object.keys(b).length&&ks.every(k=>eq(a[k],b[k]));}
+
+await figma.setCurrentPageAsync(await figma.getNodeByIdAsync('795:1330'));
+const sidebar=await figma.getNodeByIdAsync('818:1900'),root=await figma.getNodeByIdAsync('818:1896'),all=[sidebar,...sidebar.findAll(()=>true)],fonts=new Map();
+for(const t of sidebar.findAllWithCriteria({types:['TEXT']}))for(const seg of t.getStyledTextSegments(['fontName']))fonts.set(JSON.stringify(seg.fontName),seg.fontName);
+await Promise.all([...fonts.values()].map(f=>figma.loadFontAsync(f)));
+function geometry(n){const v={x:n.x,y:n.y,w:n.width,h:n.height};for(const k of ['layoutMode','itemSpacing','paddingLeft','paddingRight','paddingTop','paddingBottom','clipsContent','overflowDirection','cornerRadius'])if(k in n&&typeof n[k]!=='symbol')v[k]=n[k];return v;}
+const before=new Map(all.map(n=>[n.id,geometry(n)])),protectedIds=['795:1331','803:1334','652:6078','652:6014','652:6022'],protectedBefore=[];
+for(const id of protectedIds)protectedBefore.push({id,hash:hash(snap(await figma.getNodeByIdAsync(id),true))});
+const targets=sidebar.findAll(n=>((n.type==='INSTANCE'&&n.name.startsWith('Menu / '))||(n.type==='FRAME'&&n.name==='Section title'))&&n.strokeAlign==='OUTSIDE');
+const changes=[];for(const n of targets){changes.push({id:n.id,name:n.name,oldAlign:n.strokeAlign,oldStrokesIncludedInLayout:n.strokesIncludedInLayout});n.strokesIncludedInLayout=false;n.strokeAlign='INSIDE';}
+const geometryDifferences=[];for(const n of all)if(!eq(before.get(n.id),geometry(n)))geometryDifferences.push({id:n.id,before:before.get(n.id),after:geometry(n)});
+if(geometryDifferences.length)throw Error('Unexpected geometry change: '+JSON.stringify(geometryDifferences.slice(0,5)));
+const protectedChecks=[];for(const old of protectedBefore){const actual=hash(snap(await figma.getNodeByIdAsync(old.id),true));protectedChecks.push({...old,after:actual,pass:actual===old.hash});}
+if(protectedChecks.some(x=>!x.pass))throw Error('Protected source changed');
+return{mutatedNodeIds:changes.map(x=>x.id),changes,geometryDifferenceCount:0,protectedChecks,sidebarId:sidebar.id,screenId:root.id,sidebarSize:[sidebar.width,sidebar.height],allMenuAndTitleStrokesInside:sidebar.findAll(n=>(n.type==='INSTANCE'&&n.name.startsWith('Menu / '))||(n.type==='FRAME'&&n.name==='Section title')).every(n=>n.strokeAlign==='INSIDE'),scrollClippingPreserved:sidebar.findOne(n=>n.name==='Menu scroll viewport').clipsContent,overflow:sidebar.findOne(n=>n.name==='Menu scroll viewport').overflowDirection};

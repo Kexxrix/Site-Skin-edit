@@ -1,0 +1,1192 @@
+{
+  "status": "completed-and-verified-in-figma",
+  "request": "Remove the left category rail from Library. Add a new variation using generated unified gold-black icon images.",
+  "scope": {
+    "desktop1920": true,
+    "mobile": false,
+    "previousColoredStyle": "retained, category rail removed",
+    "newStyle": "LibraryGold",
+    "themes": [
+      "WhiteGold",
+      "BlackGold"
+    ],
+    "websiteSourceChanged": false
+  },
+  "counts": {
+    "attempted": 14,
+    "succeeded": 14,
+    "failed": 0,
+    "skipped": 0,
+    "selectedByAgent": 14,
+    "rejected": 0,
+    "approvedByUser": 0
+  },
+  "acceptedByUser": false,
+  "assets": [
+    {
+      "id": "deposit",
+      "label": "입금신청",
+      "prompt": "prompts/deposit.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-beee933d-2f3a-4392-8dd8-cab5608303db.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/01-deposit.png",
+      "operation": "move",
+      "file": "01-deposit.png",
+      "bytes": 1784018,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "317bcc1487ce4c7c2331dd8f0913b909e89a561b2ceb19fb2e5577687199b9f2",
+      "transferVerification": {
+        "id": "deposit",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-beee933d-2f3a-4392-8dd8-cab5608303db.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/01-deposit.png",
+        "operation": "move",
+        "sha256Before": "317BCC1487CE4C7C2331DD8F0913B909E89A561B2CEB19FB2E5577687199B9F2",
+        "sha256After": "317BCC1487CE4C7C2331DD8F0913B909E89A561B2CEB19FB2E5577687199B9F2",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2727",
+        "key": "9a5fcc5d14322acab6ab035bdb928c96d3311239",
+        "imageHash": "4068f851c4b64dd9dd90caec6f2be66b0992a97d"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "withdraw",
+      "label": "출금신청",
+      "prompt": "prompts/withdraw.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-5960d158-a52b-4306-9c79-7ec184ddf4bb.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/02-withdraw.png",
+      "operation": "move",
+      "file": "02-withdraw.png",
+      "bytes": 1813666,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "1159e39ec74cd1ec4742555942f90c6c1c9dfb87d8c0dacf0da5244e4007af3c",
+      "transferVerification": {
+        "id": "withdraw",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-5960d158-a52b-4306-9c79-7ec184ddf4bb.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/02-withdraw.png",
+        "operation": "move",
+        "sha256Before": "1159E39EC74CD1EC4742555942F90C6C1C9DFB87D8C0DACF0DA5244E4007AF3C",
+        "sha256After": "1159E39EC74CD1EC4742555942F90C6C1C9DFB87D8C0DACF0DA5244E4007AF3C",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2729",
+        "key": "2f049aa28d812a9a1c72f28bf6a93783a2d10856",
+        "imageHash": "4712940c6cfce0e4285191fec6f17618a05ed13b"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "profile",
+      "label": "마이페이지",
+      "prompt": "prompts/profile.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-cbb2a4c2-1512-4740-b3c6-8f6738f52d96.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/03-profile.png",
+      "operation": "move",
+      "file": "03-profile.png",
+      "bytes": 1613223,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "cc6e22f9bdd29081ab3dcd93d7cdeab9c151af9e28b28408356ca5bb56d156d1",
+      "transferVerification": {
+        "id": "profile",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-cbb2a4c2-1512-4740-b3c6-8f6738f52d96.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/03-profile.png",
+        "operation": "move",
+        "sha256Before": "CC6E22F9BDD29081AB3DCD93D7CDEAB9C151AF9E28B28408356CA5BB56D156D1",
+        "sha256After": "CC6E22F9BDD29081AB3DCD93D7CDEAB9C151AF9E28B28408356CA5BB56D156D1",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2731",
+        "key": "b2cbc3640a412013cc45be9e9953a7f602eb0660",
+        "imageHash": "78d52f7853be3767fe9edb590b69c98e21679813"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "support",
+      "label": "문의하기",
+      "prompt": "prompts/support.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-441e2de9-e6f3-4557-912c-92d4c1f841e8.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/04-support.png",
+      "operation": "move",
+      "file": "04-support.png",
+      "bytes": 1908125,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "2cdc78ea4aa8bfdab123143db6f62c768637633399a95cee9faf20c55302c3c8",
+      "transferVerification": {
+        "id": "support",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-441e2de9-e6f3-4557-912c-92d4c1f841e8.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/04-support.png",
+        "operation": "move",
+        "sha256Before": "2CDC78EA4AA8BFDAB123143DB6F62C768637633399A95CEE9FAF20C55302C3C8",
+        "sha256After": "2CDC78EA4AA8BFDAB123143DB6F62C768637633399A95CEE9FAF20C55302C3C8",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2733",
+        "key": "68de2b1238f5e4fc8d82537e8b5376ae4cd45898",
+        "imageHash": "b07a1695d54cf1172aeb6658b2f726dc4bfbbc0e"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "mail",
+      "label": "쪽지",
+      "prompt": "prompts/mail.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-6ab6ce97-7173-42fe-aeee-ca1a53116313.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/05-mail.png",
+      "operation": "move",
+      "file": "05-mail.png",
+      "bytes": 1846804,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "4d22341e148e901b354b5510eeb6acf18cabf4d612c8777b3b7cfcdf5991e54c",
+      "transferVerification": {
+        "id": "mail",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-6ab6ce97-7173-42fe-aeee-ca1a53116313.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/05-mail.png",
+        "operation": "move",
+        "sha256Before": "4D22341E148E901B354B5510EEB6ACF18CABF4D612C8777B3B7CFCDF5991E54C",
+        "sha256After": "4D22341E148E901B354B5510EEB6ACF18CABF4D612C8777B3B7CFCDF5991E54C",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2735",
+        "key": "9d466bda1f5593ddec55a9a8a0e59d445a2aa819",
+        "imageHash": "b198a4f2b1704fa0f41da3388b14b6c0da3ae2df"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "domestic",
+      "label": "국내형",
+      "prompt": "prompts/domestic.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-9a9c78cb-e046-4558-9b91-0dfc7f96066a.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/06-domestic.png",
+      "operation": "move",
+      "file": "06-domestic.png",
+      "bytes": 1875108,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "ecc11a52239b7da5249655f4803d9c815aa45555d5ec3cb6680c9d746c52a79b",
+      "transferVerification": {
+        "id": "domestic",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-9a9c78cb-e046-4558-9b91-0dfc7f96066a.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/06-domestic.png",
+        "operation": "move",
+        "sha256Before": "ECC11A52239B7DA5249655F4803D9C815AA45555D5EC3CB6680C9D746C52A79B",
+        "sha256After": "ECC11A52239B7DA5249655F4803D9C815AA45555D5EC3CB6680C9D746C52A79B",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2737",
+        "key": "0df4fc7f465ba678247f8024014ff9cac69ce977",
+        "imageHash": "4460987583b9dce1052d9b6e9f71448b183d2353"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "international",
+      "label": "해외형",
+      "prompt": "prompts/international.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b648eadf-7eae-400b-8809-5b9d9fc3c4f2.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/07-international.png",
+      "operation": "move",
+      "file": "07-international.png",
+      "bytes": 1818073,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "22ba690a76061bd27d9f4ea42215982f5db1463b5319cc8023e1ef6ac212258d",
+      "transferVerification": {
+        "id": "international",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b648eadf-7eae-400b-8809-5b9d9fc3c4f2.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/07-international.png",
+        "operation": "move",
+        "sha256Before": "22BA690A76061BD27D9F4EA42215982F5DB1463B5319CC8023E1EF6AC212258D",
+        "sha256After": "22BA690A76061BD27D9F4EA42215982F5DB1463B5319CC8023E1EF6AC212258D",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2739",
+        "key": "8881e90a359ddc79761e37a9021cddc7175071ec",
+        "imageHash": "7ff92d282b34836a0f51b951babc6570cc266680"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "esports",
+      "label": "E스포츠",
+      "prompt": "prompts/esports.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-bd747d7e-6b00-4a18-ba68-7c1c8fd03731.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/08-esports.png",
+      "operation": "move",
+      "file": "08-esports.png",
+      "bytes": 1905871,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "a63093a210677f2531347390945a8aeddb0618c4ee3040bf4c33396a30043cb3",
+      "transferVerification": {
+        "id": "esports",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-bd747d7e-6b00-4a18-ba68-7c1c8fd03731.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/08-esports.png",
+        "operation": "move",
+        "sha256Before": "A63093A210677F2531347390945A8AEDDB0618C4EE3040BF4C33396A30043CB3",
+        "sha256After": "A63093A210677F2531347390945A8AEDDB0618C4EE3040BF4C33396A30043CB3",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2741",
+        "key": "4686be2ffe96185756418846dfcf4d5a461b4ddd",
+        "imageHash": "715391aef71a033de2c3685551dadbd189a32bc4"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "live",
+      "label": "라이브",
+      "prompt": "prompts/live.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-17c05ce9-2d6f-4c7e-b1a3-a660c9cd8b85.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/09-live.png",
+      "operation": "move",
+      "file": "09-live.png",
+      "bytes": 1803924,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "d7a62908c048c372090b242ff41448433a050be7c92d1ce2042f53fae86847ee",
+      "transferVerification": {
+        "id": "live",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-17c05ce9-2d6f-4c7e-b1a3-a660c9cd8b85.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/09-live.png",
+        "operation": "move",
+        "sha256Before": "D7A62908C048C372090B242FF41448433A050BE7C92D1CE2042F53FAE86847EE",
+        "sha256After": "D7A62908C048C372090B242FF41448433A050BE7C92D1CE2042F53FAE86847EE",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2743",
+        "key": "4f3333a804b60d519a71998995a691c5e4468d6d",
+        "imageHash": "4baeda84ae745c434bcae2b6880f858a2ceb4a29"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "casino",
+      "label": "라이브카지노",
+      "prompt": "prompts/casino.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-9a91bace-f9d5-406f-b556-1c59080b82f5.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/10-casino.png",
+      "operation": "move",
+      "file": "10-casino.png",
+      "bytes": 1787277,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "8e3609cb2b163b1fb40e71212f79fab09fd4d86591eab8facbc4e4826d353595",
+      "transferVerification": {
+        "id": "casino",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-9a91bace-f9d5-406f-b556-1c59080b82f5.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/10-casino.png",
+        "operation": "move",
+        "sha256Before": "8E3609CB2B163B1FB40E71212F79FAB09FD4D86591EAB8FACBC4E4826D353595",
+        "sha256After": "8E3609CB2B163B1FB40E71212F79FAB09FD4D86591EAB8FACBC4E4826D353595",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2745",
+        "key": "94c29d15f0f2bc98067ad3d5a86081b98777844f",
+        "imageHash": "7d30ea2cc158df7aaf0a314aa71d9110c06fa312"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "slots",
+      "label": "슬롯",
+      "prompt": "prompts/slots.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-99ac7b0d-1259-4007-8759-73fa1768a16e.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/11-slots.png",
+      "operation": "move",
+      "file": "11-slots.png",
+      "bytes": 1895340,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "a09ffd8419ecae0350710072c5ca7d24799ad43ad4a25e41b379ca9ad6c6aeac",
+      "transferVerification": {
+        "id": "slots",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-99ac7b0d-1259-4007-8759-73fa1768a16e.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/11-slots.png",
+        "operation": "move",
+        "sha256Before": "A09FFD8419ECAE0350710072C5CA7D24799AD43AD4A25E41B379CA9AD6C6AEAC",
+        "sha256After": "A09FFD8419ECAE0350710072C5CA7D24799AD43AD4A25E41B379CA9AD6C6AEAC",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2747",
+        "key": "fa68b7859d127abe9b93d0459b8993981feb8c87",
+        "imageHash": "97afbeb249e0440e9f3497d3cd7ffe23019c959c"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "notice",
+      "label": "공지사항",
+      "prompt": "prompts/notice.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-786d877a-f1df-436b-ace9-30c96b40e5ca.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/12-notice.png",
+      "operation": "move",
+      "file": "12-notice.png",
+      "bytes": 1684328,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "2beaaa37d6519be75fc8e0ac8de8cd3685a94c858b0e4f396aea3d706f36b472",
+      "transferVerification": {
+        "id": "notice",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-786d877a-f1df-436b-ace9-30c96b40e5ca.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/12-notice.png",
+        "operation": "move",
+        "sha256Before": "2BEAAA37D6519BE75FC8E0AC8DE8CD3685A94C858B0E4F396AEA3D706F36B472",
+        "sha256After": "2BEAAA37D6519BE75FC8E0AC8DE8CD3685A94C858B0E4F396AEA3D706F36B472",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2749",
+        "key": "b0fa62f925834d8221c28438cc3c8f62175fa9ef",
+        "imageHash": "a67d5c136150d4efa732f51b7f03d8f86dece17e"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "event",
+      "label": "이벤트",
+      "prompt": "prompts/event.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-c1388565-8edf-4bdf-8960-1ccb0c476779.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/13-event.png",
+      "operation": "move",
+      "file": "13-event.png",
+      "bytes": 1898826,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "d17bd24fee6c908afe540879a8e5267a3722e93f015fd419ae767194217db89d",
+      "transferVerification": {
+        "id": "event",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-c1388565-8edf-4bdf-8960-1ccb0c476779.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/13-event.png",
+        "operation": "move",
+        "sha256Before": "D17BD24FEE6C908AFE540879A8E5267A3722E93F015FD419AE767194217DB89D",
+        "sha256After": "D17BD24FEE6C908AFE540879A8E5267A3722E93F015FD419AE767194217DB89D",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2751",
+        "key": "c5892bf8f51d46e5ec7054339505eb528b481516",
+        "imageHash": "cdcb534f98a02df4a249b9a53001eb0d36129e99"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    },
+    {
+      "id": "rules",
+      "label": "베팅규정",
+      "prompt": "prompts/rules.txt",
+      "reference": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "referenceRole": "badge framing, scale, soft 3D depth and perspective only; palette and subject specified separately",
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-53336c0f-b39a-4ade-bfb3-59b0b15af676.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/14-rules.png",
+      "operation": "move",
+      "file": "14-rules.png",
+      "bytes": 1851238,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "4191a3719349f63d7a8e88fcdfb1f6bc8f15ddac75503bb426aa58d2d3065e16",
+      "transferVerification": {
+        "id": "rules",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-53336c0f-b39a-4ade-bfb3-59b0b15af676.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-gold-20261015-172224/results/14-rules.png",
+        "operation": "move",
+        "sha256Before": "4191A3719349F63D7A8E88FCDFB1F6BC8F15DDAC75503BB426AA58D2D3065E16",
+        "sha256After": "4191A3719349F63D7A8E88FCDFB1F6BC8F15DDAC75503BB426AA58D2D3065E16",
+        "match": true
+      },
+      "figma": {
+        "id": "408:2753",
+        "key": "f4567b7528b8cb05c42a07accdc0c4628cfe8cec",
+        "imageHash": "3959901555a4aa8cde24898a6973b67924ccb770"
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false
+    }
+  ],
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "componentPage": "347:552",
+    "comparisonPage": "347:553",
+    "sidebarSet": "351:1352",
+    "railRemoval": {
+      "mutatedNodeIds": [
+        "396:44019",
+        "396:44037",
+        "396:44231",
+        "396:44249",
+        "397:9204",
+        "397:10864",
+        "397:12960"
+      ],
+      "removedSubtrees": [
+        {
+          "id": "396:44020",
+          "name": "Category rail",
+          "referencedDescendants": 12
+        },
+        {
+          "id": "396:44230",
+          "name": "Rail divider",
+          "referencedDescendants": 0
+        },
+        {
+          "id": "396:44232",
+          "name": "Category rail",
+          "referencedDescendants": 12
+        },
+        {
+          "id": "396:44442",
+          "name": "Rail divider",
+          "referencedDescendants": 0
+        }
+      ]
+    },
+    "badges": {
+      "createdNodeIds": [
+        "408:2727",
+        "408:2728",
+        "408:2729",
+        "408:2730",
+        "408:2731",
+        "408:2732",
+        "408:2733",
+        "408:2734",
+        "408:2735",
+        "408:2736",
+        "408:2737",
+        "408:2738",
+        "408:2739",
+        "408:2740",
+        "408:2741",
+        "408:2742",
+        "408:2743",
+        "408:2744",
+        "408:2745",
+        "408:2746",
+        "408:2747",
+        "408:2748",
+        "408:2749",
+        "408:2750",
+        "408:2751",
+        "408:2752",
+        "408:2753",
+        "408:2754"
+      ],
+      "removedTemporaryNodeIds": [
+        "407:2177",
+        "407:2178",
+        "407:2179",
+        "407:2180",
+        "407:2181",
+        "407:2182",
+        "407:2184",
+        "407:2185",
+        "407:2186",
+        "407:2187",
+        "407:2188",
+        "407:2189",
+        "407:2190",
+        "407:2191",
+        "407:2192",
+        "407:2193",
+        "407:2194",
+        "407:2195",
+        "407:2196",
+        "407:2197",
+        "407:2198",
+        "407:2199",
+        "407:2200",
+        "407:2201",
+        "407:2202",
+        "407:2203",
+        "407:2204",
+        "407:2205",
+        "407:2206",
+        "407:2207",
+        "407:2208",
+        "407:2209",
+        "407:2210",
+        "407:2211",
+        "407:2212",
+        "407:2213",
+        "407:2214",
+        "407:2215",
+        "407:2216",
+        "407:2217",
+        "407:2218",
+        "407:2219",
+        "407:2220",
+        "407:2221",
+        "407:2222",
+        "407:2223",
+        "407:2224",
+        "407:2225",
+        "407:2226",
+        "407:2227",
+        "407:2228",
+        "407:2229",
+        "407:2230",
+        "407:2231",
+        "407:2232",
+        "407:2233",
+        "407:2234",
+        "407:2235",
+        "407:2236"
+      ],
+      "badges": {
+        "deposit": {
+          "id": "408:2727",
+          "key": "9a5fcc5d14322acab6ab035bdb928c96d3311239",
+          "imageHash": "4068f851c4b64dd9dd90caec6f2be66b0992a97d"
+        },
+        "withdraw": {
+          "id": "408:2729",
+          "key": "2f049aa28d812a9a1c72f28bf6a93783a2d10856",
+          "imageHash": "4712940c6cfce0e4285191fec6f17618a05ed13b"
+        },
+        "profile": {
+          "id": "408:2731",
+          "key": "b2cbc3640a412013cc45be9e9953a7f602eb0660",
+          "imageHash": "78d52f7853be3767fe9edb590b69c98e21679813"
+        },
+        "support": {
+          "id": "408:2733",
+          "key": "68de2b1238f5e4fc8d82537e8b5376ae4cd45898",
+          "imageHash": "b07a1695d54cf1172aeb6658b2f726dc4bfbbc0e"
+        },
+        "mail": {
+          "id": "408:2735",
+          "key": "9d466bda1f5593ddec55a9a8a0e59d445a2aa819",
+          "imageHash": "b198a4f2b1704fa0f41da3388b14b6c0da3ae2df"
+        },
+        "domestic": {
+          "id": "408:2737",
+          "key": "0df4fc7f465ba678247f8024014ff9cac69ce977",
+          "imageHash": "4460987583b9dce1052d9b6e9f71448b183d2353"
+        },
+        "international": {
+          "id": "408:2739",
+          "key": "8881e90a359ddc79761e37a9021cddc7175071ec",
+          "imageHash": "7ff92d282b34836a0f51b951babc6570cc266680"
+        },
+        "esports": {
+          "id": "408:2741",
+          "key": "4686be2ffe96185756418846dfcf4d5a461b4ddd",
+          "imageHash": "715391aef71a033de2c3685551dadbd189a32bc4"
+        },
+        "live": {
+          "id": "408:2743",
+          "key": "4f3333a804b60d519a71998995a691c5e4468d6d",
+          "imageHash": "4baeda84ae745c434bcae2b6880f858a2ceb4a29"
+        },
+        "casino": {
+          "id": "408:2745",
+          "key": "94c29d15f0f2bc98067ad3d5a86081b98777844f",
+          "imageHash": "7d30ea2cc158df7aaf0a314aa71d9110c06fa312"
+        },
+        "slots": {
+          "id": "408:2747",
+          "key": "fa68b7859d127abe9b93d0459b8993981feb8c87",
+          "imageHash": "97afbeb249e0440e9f3497d3cd7ffe23019c959c"
+        },
+        "notice": {
+          "id": "408:2749",
+          "key": "b0fa62f925834d8221c28438cc3c8f62175fa9ef",
+          "imageHash": "a67d5c136150d4efa732f51b7f03d8f86dece17e"
+        },
+        "event": {
+          "id": "408:2751",
+          "key": "c5892bf8f51d46e5ec7054339505eb528b481516",
+          "imageHash": "cdcb534f98a02df4a249b9a53001eb0d36129e99"
+        },
+        "rules": {
+          "id": "408:2753",
+          "key": "f4567b7528b8cb05c42a07accdc0c4628cfe8cec",
+          "imageHash": "3959901555a4aa8cde24898a6973b67924ccb770"
+        }
+      },
+      "count": 14
+    },
+    "build": {
+      "createdNodeIds": [
+        "409:2727",
+        "409:2728",
+        "409:2730",
+        "409:2731",
+        "409:2738",
+        "409:2739",
+        "409:2740",
+        "409:2741",
+        "409:2749",
+        "409:2750",
+        "409:2751",
+        "409:2752",
+        "409:2760",
+        "409:2761",
+        "409:2762",
+        "409:2763",
+        "409:2764",
+        "409:2772",
+        "409:2773",
+        "409:2774",
+        "409:2775",
+        "409:2783",
+        "409:2784",
+        "409:2785",
+        "409:2786",
+        "409:2794",
+        "409:2795",
+        "409:2796",
+        "409:2797",
+        "409:2798",
+        "409:2799",
+        "409:2800",
+        "409:2801",
+        "409:2802",
+        "409:2803",
+        "409:2804",
+        "409:2805",
+        "409:2806",
+        "409:2807",
+        "409:2808",
+        "409:2809",
+        "409:2810",
+        "409:2811",
+        "409:2812",
+        "409:2813",
+        "409:2814",
+        "409:2815",
+        "409:2816",
+        "409:2817",
+        "409:2818",
+        "409:2819",
+        "409:2820",
+        "409:2821",
+        "409:2822",
+        "409:2823",
+        "409:2824",
+        "409:2825",
+        "409:2826",
+        "409:2827",
+        "409:2828",
+        "409:2829",
+        "409:2830",
+        "409:2831",
+        "409:2832",
+        "409:2833",
+        "409:2834",
+        "409:3131",
+        "409:3132",
+        "409:3133",
+        "409:3134",
+        "409:3135",
+        "409:3136",
+        "409:3137",
+        "409:3138",
+        "409:3139",
+        "409:3140",
+        "409:3141",
+        "409:3142",
+        "409:3143",
+        "409:3144",
+        "409:3145",
+        "409:3146",
+        "409:3147",
+        "409:3148",
+        "409:3149",
+        "409:3150",
+        "409:3151",
+        "409:3152",
+        "409:3153",
+        "409:3154",
+        "409:3155",
+        "409:3156",
+        "409:3157",
+        "409:3158",
+        "409:3159",
+        "409:3160",
+        "409:3161",
+        "409:3162",
+        "409:3163",
+        "409:3164",
+        "409:3165",
+        "409:3166",
+        "409:3167",
+        "409:3168",
+        "409:3169"
+      ],
+      "mutatedNodeIds": [
+        "351:1352"
+      ],
+      "navSet": {
+        "id": "409:2795",
+        "key": "83bc54ae8740153183e2540dba8510e58e8486d5"
+      },
+      "sidebars": {
+        "WhiteGold": {
+          "id": "409:2796",
+          "key": "9bc16ae0a12285aed5d61e9bfd8372fb5ac57632"
+        },
+        "BlackGold": {
+          "id": "409:3131",
+          "key": "02655474c957b68ef3d757f56e2d63e10817c554"
+        }
+      },
+      "navVariants": [
+        {
+          "id": "409:2727",
+          "name": "Theme=WhiteGold, State=Default",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "409:2738",
+          "name": "Theme=WhiteGold, State=Hover",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "409:2749",
+          "name": "Theme=WhiteGold, State=Selected",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "409:2761",
+          "name": "Theme=BlackGold, State=Default",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "409:2772",
+          "name": "Theme=BlackGold, State=Hover",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "id": "409:2783",
+          "name": "Theme=BlackGold, State=Selected",
+          "w": 216,
+          "h": 36
+        }
+      ],
+      "badgeCount": 14
+    },
+    "comparison": {
+      "createdNodeIds": [
+        "410:11477",
+        "410:11478",
+        "410:11479",
+        "410:11480",
+        "410:11660",
+        "410:11995",
+        "410:11996",
+        "410:11997",
+        "410:11998",
+        "410:12627",
+        "410:13313",
+        "410:13314",
+        "410:13315",
+        "410:13316",
+        "410:13496",
+        "410:13831",
+        "410:13832",
+        "410:13833",
+        "410:13834",
+        "410:14429",
+        "410:15089",
+        "410:15090",
+        "410:15091",
+        "410:15092",
+        "410:15093",
+        "410:15094",
+        "410:15274",
+        "410:15275",
+        "410:15276",
+        "410:15277",
+        "410:15457",
+        "410:15458",
+        "410:15459",
+        "410:15460",
+        "410:15461",
+        "410:15462",
+        "410:15463",
+        "410:15464",
+        "410:15475",
+        "410:15476",
+        "410:15477",
+        "410:15495",
+        "410:15496",
+        "410:15497",
+        "410:15509",
+        "410:15510",
+        "410:15511",
+        "410:15512",
+        "410:15513",
+        "410:15524",
+        "410:15525",
+        "410:15526",
+        "410:15544",
+        "410:15545",
+        "410:15546",
+        "410:15558",
+        "410:15559",
+        "410:15560"
+      ],
+      "mutatedNodeIds": [
+        "352:1061",
+        "356:555",
+        "352:1450",
+        "356:4593",
+        "352:1058",
+        "352:1059",
+        "352:1060",
+        "352:1448",
+        "352:1449",
+        "352:1061",
+        "352:1450",
+        "356:552",
+        "356:553",
+        "356:4591",
+        "356:555",
+        "356:4593",
+        "356:8064"
+      ],
+      "removedTemporaryInstances": [
+        {
+          "id": "410:11479",
+          "referencedDescendants": 179
+        },
+        {
+          "id": "410:11997",
+          "referencedDescendants": 610
+        },
+        {
+          "id": "410:13315",
+          "referencedDescendants": 179
+        },
+        {
+          "id": "410:13833",
+          "referencedDescendants": 584
+        }
+      ],
+      "newColumns": {
+        "WhiteGold": "410:11477",
+        "BlackGold": "410:13313"
+      },
+      "newScreens": {
+        "WhiteGold": "410:12627",
+        "BlackGold": "410:14429"
+      },
+      "dedicatedReview": "410:15089",
+      "reviewSides": {
+        "WhiteGold": "410:15094",
+        "BlackGold": "410:15277"
+      },
+      "gallery": {
+        "id": "352:1058",
+        "w": 2418,
+        "h": 2806
+      },
+      "fullGallery": {
+        "id": "356:552",
+        "x": 2700,
+        "w": 15936,
+        "h": 4280.39990234375
+      }
+    },
+    "swapTest": {
+      "createdNodeIds": [
+        "412:3051"
+      ],
+      "removedTemporaryInstances": [
+        {
+          "id": "412:3051",
+          "referencedDescendants": 10
+        }
+      ],
+      "iconStateThemeSwapPassed": true
+    }
+  },
+  "verification": {
+    "assets": "qa/asset-verification.json",
+    "structure": "qa/figma-verification.json",
+    "preservation": [
+      {
+        "id": "351:610",
+        "before": "1e9bb755",
+        "after": "1e9bb755",
+        "same": true
+      },
+      {
+        "id": "351:687",
+        "before": "10895465",
+        "after": "10895465",
+        "same": true
+      },
+      {
+        "id": "351:764",
+        "before": "cf6386e0",
+        "after": "cf6386e0",
+        "same": true
+      },
+      {
+        "id": "351:838",
+        "before": "1d4fda15",
+        "after": "1d4fda15",
+        "same": true
+      },
+      {
+        "id": "351:912",
+        "before": "4056190",
+        "after": "4056190",
+        "same": true
+      },
+      {
+        "id": "351:990",
+        "before": "3b4169d9",
+        "after": "3b4169d9",
+        "same": true
+      },
+      {
+        "id": "351:1068",
+        "before": "68df3f8b",
+        "after": "68df3f8b",
+        "same": true
+      },
+      {
+        "id": "351:1143",
+        "before": "b41d4331",
+        "after": "b41d4331",
+        "same": true
+      },
+      {
+        "id": "351:1218",
+        "before": "54f760d9",
+        "after": "54f760d9",
+        "same": true
+      },
+      {
+        "id": "351:1285",
+        "before": "5ceb00f4",
+        "after": "5ceb00f4",
+        "same": true
+      },
+      {
+        "id": "380:42599",
+        "before": "49c710b",
+        "after": "49c710b",
+        "same": true
+      },
+      {
+        "id": "380:42686",
+        "before": "410f1069",
+        "after": "410f1069",
+        "same": true
+      },
+      {
+        "id": "355:1790",
+        "before": "734cdaf1",
+        "after": "734cdaf1",
+        "same": true
+      },
+      {
+        "id": "355:2891",
+        "before": "652f9465",
+        "after": "652f9465",
+        "same": true
+      },
+      {
+        "id": "396:44019",
+        "before": "7f716b17",
+        "after": "7f716b17",
+        "same": true
+      },
+      {
+        "id": "396:44231",
+        "before": "3bae04f9",
+        "after": "3bae04f9",
+        "same": true
+      }
+    ],
+    "visualQA": {
+      "result": "No clipping, image assignment or alignment defect found in final review and black desktop render",
+      "review": "qa/review-final.png",
+      "fullScreen1920Black": "qa/1920-black-final.png"
+    },
+    "menuCount": 14,
+    "iconSize": 28,
+    "labelSize": 13,
+    "rowHeight": 36,
+    "categoryRailAbsent": true,
+    "styles": 8,
+    "sidebarVariants": 16,
+    "temporaryCaptureRemoved": true,
+    "temporaryTabClosed": true,
+    "temporaryServerStopped": true
+  },
+  "notChanged": [
+    "Six earlier styles and two page masters; before/after hashes match",
+    "Colored PNG images of Library; only its requested rail was removed",
+    "Header and main page content",
+    "Local website source and deployment"
+  ],
+  "knownLimitations": [
+    "Mobile deferred by user",
+    "Grips and navigation are design representations; no new website behavior implemented"
+  ],
+  "implementationNote": "Variant clones do not retain standalone set-owned property definitions. New gold navigation base was rebuilt with independent Label, Icon and Show grip properties before creating variants."
+}

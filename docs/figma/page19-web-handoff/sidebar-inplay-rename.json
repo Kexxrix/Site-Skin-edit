@@ -1,0 +1,169 @@
+{
+  "task": "Rename sports Live menu to In Play",
+  "sourcePageId": "660:5899",
+  "apply": {
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "652:6061",
+      "I652:6061;652:6003",
+      "652:6096",
+      "I652:6096;652:6016"
+    ],
+    "checks": [
+      {
+        "id": "652:6061",
+        "labelId": "I652:6061;652:6003",
+        "label": "인플레이",
+        "layoutPreserved": true
+      },
+      {
+        "id": "652:6096",
+        "labelId": "I652:6096;652:6016",
+        "label": "인플레이",
+        "layoutPreserved": true
+      }
+    ],
+    "allPassed": true
+  },
+  "audit": {
+    "screens": [
+      {
+        "id": "647:46475",
+        "labels": [
+          "국내형",
+          "해외형",
+          "E스포츠",
+          "인플레이"
+        ],
+        "icons": [
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          }
+        ],
+        "rowHeight": [
+          44,
+          44,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "647:46527",
+        "labels": [
+          "국내형",
+          "해외형",
+          "E스포츠",
+          "인플레이"
+        ],
+        "icons": [
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          }
+        ],
+        "rowHeight": [
+          44,
+          44,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "647:46579",
+        "labels": [
+          "국내형",
+          "해외형",
+          "E스포츠",
+          "인플레이"
+        ],
+        "icons": [
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          }
+        ],
+        "rowHeight": [
+          44,
+          44,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "647:46633",
+        "labels": [
+          "국내형",
+          "해외형",
+          "E스포츠",
+          "인플레이"
+        ],
+        "icons": [
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          },
+          {
+            "width": 22,
+            "height": 22
+          }
+        ],
+        "rowHeight": [
+          44,
+          44,
+          44,
+          44
+        ]
+      }
+    ],
+    "allPassed": true
+  },
+  "visualQA": {
+    "status": "PASS",
+    "file": "qa/sidebar-inplay.png"
+  }
+}

@@ -1,0 +1,6 @@
+const p=await figma.getNodeByIdAsync('435:14043');await figma.setCurrentPageAsync(p);
+const old=[];for(const[id,name]of [['599:5377','17 · 07B AbstractGold · 이미지 오버레이 헤더'],['604:5441','18 · 07B Abstract · 브론즈 새틴 / 스모크 골드 · 헤더 원본']]){const s=await figma.getNodeByIdAsync(id);if(!s||s.type!=='SECTION'||s.name!==name)throw Error('Deletion target changed '+id);old.push(s);}
+const remaining=[];for(const s of old)for(const c of s.findAllWithCriteria({types:['COMPONENT']})){const instances=await c.getInstancesAsync();if(instances.length)remaining.push({componentId:c.id,instances:instances.map(n=>n.id)});}if(remaining.length)throw Error('Remaining component dependencies '+JSON.stringify(remaining));
+const removed=old.map(n=>({id:n.id,name:n.name,descendantCount:n.findAll(()=>true).length}));for(const n of old)n.remove();
+const section=await figma.getNodeByIdAsync('611:5569');section.y=21820;
+return{removedSectionRoots:removed,removedHeaderFamilies:['599:5378','604:5442','604:5531'],remainingDependencies:remaining,mutatedNodeIds:[section.id],section:{id:section.id,name:section.name,x:section.x,y:section.y,w:section.width,h:section.height},oldSectionsAbsent:!(await figma.getNodeByIdAsync('599:5377'))&&!(await figma.getNodeByIdAsync('604:5441'))};

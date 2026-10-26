@@ -1,0 +1,1 @@
+await figma.setCurrentPageAsync(await figma.getNodeByIdAsync("435:14043"));const ids=["486:4707","486:4766"];for(const id of ids){const n=await figma.getNodeByIdAsync(id);n.description=n.description.replace("균일한","고정된");}return {mutatedNodeIds:ids};

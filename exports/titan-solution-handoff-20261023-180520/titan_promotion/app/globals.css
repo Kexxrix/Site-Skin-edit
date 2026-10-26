@@ -1,0 +1,208 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-signal: var(--signal);
+  --color-signal-foreground: var(--signal-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+
+  --font-sans: var(--font-poppins), 'Pretendard Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-outfit), 'Pretendard Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), 'Pretendard Variable', ui-monospace, monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Near-black lifted from Dizora (#0A0A0A) */
+  --background: oklch(0.16 0 0);
+  --foreground: oklch(0.91 0.006 60);
+
+  /* Panels / cards sit just above the page (~#1C1C1C) */
+  --surface: oklch(0.235 0.004 60);
+  --surface-foreground: oklch(0.93 0.006 60);
+  --card: oklch(0.235 0.004 60);
+  --card-foreground: oklch(0.93 0.006 60);
+  --popover: oklch(0.21 0.004 60);
+  --popover-foreground: oklch(0.93 0.006 60);
+
+  /* Primary accent: warm orange from Dizora (#FA871F) */
+  --primary: oklch(0.72 0.176 55);
+  --primary-foreground: oklch(0.17 0.01 60);
+
+  /* Signal green — reserved for live / realtime state only (#52ED38) */
+  --signal: oklch(0.84 0.23 143);
+  --signal-foreground: oklch(0.16 0.02 150);
+
+  --secondary: oklch(0.28 0.004 60);
+  --secondary-foreground: oklch(0.93 0.006 60);
+
+  --muted: oklch(0.26 0.004 60);
+  --muted-foreground: oklch(0.68 0.008 60);
+
+  --accent: oklch(0.72 0.176 55);
+  --accent-foreground: oklch(0.17 0.01 60);
+
+  --destructive: oklch(0.62 0.2 25);
+
+  --border: oklch(1 0 0 / 9%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.72 0.176 55);
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply bg-background;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    background: oklch(0.72 0.176 55 / 0.32);
+  }
+}
+
+@layer utilities {
+  /* Scroll-reveal: quiet by default, lively on entry */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hover-lift {
+    transition:
+      transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.3s ease,
+      box-shadow 0.3s ease,
+      background-color 0.3s ease;
+    will-change: transform;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px -28px rgba(0, 0, 0, 0.7);
+  }
+
+  .animate-float {
+    animation: titan-float 6s ease-in-out infinite;
+  }
+  .animate-glow {
+    animation: titan-glow 5s ease-in-out infinite;
+  }
+}
+
+@keyframes titan-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes titan-glow {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+/* Pulsing live indicator ring */
+@keyframes titan-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  75%,
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+.live-ping::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--signal);
+  animation: titan-ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Marquee for the logo / trust row */
+@keyframes titan-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: titan-marquee 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .animate-float,
+  .animate-glow,
+  .animate-marquee,
+  .live-ping::before {
+    animation: none !important;
+  }
+}

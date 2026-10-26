@@ -1,0 +1,109 @@
+{
+  "task": "Together Pink original 3D mascot and matching raster environment",
+  "date": "2026-10-22",
+  "timezone": "Asia/Seoul",
+  "method": "Built-in image_gen; two independent generated images",
+  "userScope": "Experimental cute 3D platform-game-like fictional character plus matching background on existing Together Pink page. Keep fixed page-24 layout.",
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "pageId": "795:1330",
+    "rootId": "850:3637",
+    "backgroundNodeId": "905:7502",
+    "mascotNodeId": "905:7503"
+  },
+  "counts": {
+    "attempted": 2,
+    "generated": 2,
+    "failed": 0,
+    "skipped": 0,
+    "selectedByAgent": 2,
+    "visualQaPassed": 2,
+    "figmaApplied": 2,
+    "rejected": 0,
+    "userApproved": 0,
+    "webDeployed": 0
+  },
+  "promptFiles": {
+    "background": "prompts/background.txt",
+    "mascot": "prompts/mascot.txt"
+  },
+  "references": {
+    "observedScreen": "qa/reference-before.png",
+    "attachedImageInputs": [],
+    "role": "Live Figma geometry, palette and exposed area inspected; new assets generated independently with shared lighting specification"
+  },
+  "assets": [
+    {
+      "key": "background",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-cff9461f-84b7-4731-bddb-54933a1176fa.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-3d-mascot-20261022-164324/results/together-pink-fantasy-background-v1.png",
+      "operation": "move",
+      "verificationFile": "qa/asset-moves.json",
+      "generated": true,
+      "selectedByAgent": true,
+      "qaPass": true,
+      "acceptedByUser": false,
+      "figmaApplied": true,
+      "webAdopted": false
+    },
+    {
+      "key": "mascot",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-985fd484-4268-4c6b-9e2c-e4d06698e66c.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-3d-mascot-20261022-164324/results/together-pink-star-mascot-v1.png",
+      "operation": "move",
+      "verificationFile": "qa/asset-moves.json",
+      "generated": true,
+      "selectedByAgent": true,
+      "qaPass": true,
+      "acceptedByUser": false,
+      "figmaApplied": true,
+      "webAdopted": false
+    }
+  ],
+  "design": {
+    "mascot": "Original rose-pink star-eared dragon-bunny, cream muzzle/belly, mint tuft, chunky sneakers, welcoming wave",
+    "environment": "Dark rose 3D fantasy terrain, curved bridges, pearlescent spheres, near-black center",
+    "placement": {
+      "x": 2,
+      "y": 1090,
+      "width": 260,
+      "height": 340,
+      "scaleMode": "FIT",
+      "rationale": "Empty gutter below sidebar; complete visible silhouette without covering existing menu or cards"
+    },
+    "backgroundOpacity": 0.8,
+    "mascotOpacity": 1,
+    "lighting": "Soft upper-left key, magenta upper-right rim"
+  },
+  "verification": {
+    "originalUiHashBefore": "9540a15f",
+    "originalUiHashAfter": "9540a15f",
+    "originalUiUnchanged": true,
+    "originalInstances": 94,
+    "instancesAfter": 94,
+    "originalImageNodes": 100,
+    "totalImageNodes": 102,
+    "originalNodeCount": 629,
+    "totalNodeCount": 631,
+    "protectedScreens": 11,
+    "protectedMasters": 44,
+    "protectedUnchanged": true,
+    "protectedCount": 55,
+    "sourceSha256Match": true,
+    "actualTransparentAlphaVerified": true,
+    "visualMethod": "Full 1920 x 1820 Figma render inspected",
+    "runtimeVerification": "Not performed; no web code changed"
+  },
+  "evidence": {
+    "baseline": "qa/baseline.json",
+    "applyState": "qa/apply-state.json",
+    "assetMoves": "qa/asset-moves.json",
+    "finalScreenshot": "qa/together-pink-applied.png",
+    "comparison": "qa/before-after.png"
+  },
+  "rollback": "Hide new layers 905:7502 and 905:7503 to restore original single-color background. Original content was not mutated.",
+  "limitations": [
+    "Mascot sits below y=1090 and therefore below the initial 1080px viewport. Full Figma page includes it; web scrolling/sticky behavior was not implemented or verified."
+  ],
+  "runDirectory": "E:/codexwork/Site-Skin-edit/generated-images/together-pink-3d-mascot-20261022-164324"
+}

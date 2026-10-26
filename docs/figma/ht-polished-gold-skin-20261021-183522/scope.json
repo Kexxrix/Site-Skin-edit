@@ -1,0 +1,29 @@
+{
+  "task": "Page24 HT Polished Gold skin",
+  "baseline": "795:1331",
+  "preserve": [
+    "gold baseline",
+    "CC Lime accepted successful by user",
+    "layout containers, gaps, dimensions, corners",
+    "ALDEBARAN brand",
+    "current content photos and native masks",
+    "original instance connections"
+  ],
+  "deliverable": "One additional editable full screen on page 24, separate theme variables and shared typography/effects",
+  "discovery": {
+    "codeConnect": "No *.figma.ts/js found in scoped repository scan",
+    "components": "Reuse original 94 local instances with 44 masters; no library import required",
+    "tokens": "Existing gold primitives inspected; private HT skin collection to avoid propagation",
+    "images": "All existing Figma assets; no new assets or full UI capture import required",
+    "fonts": "GmarketSansMedium observed on source site but unavailable in Figma; use verified Pretendard JP weights and keep Bebas Neue display"
+  },
+  "acceptance": [
+    "gold and CC hashes unchanged",
+    "source master hashes unchanged",
+    "same fixed container geometry",
+    "same text copy",
+    "same photos and mask paths",
+    "no text overflow/missing fonts",
+    "visual QA at 1920 plus header/hero details"
+  ]
+}

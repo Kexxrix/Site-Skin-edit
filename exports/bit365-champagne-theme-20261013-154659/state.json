@@ -1,0 +1,1223 @@
+{
+  "scope": "New BIT365 theme page with independent components and variables",
+  "source": {
+    "baselines": [
+      {
+        "id": "44:552",
+        "name": "04 · BIT365 홈",
+        "hash": "ace609cc",
+        "nodeCount": 2574
+      },
+      {
+        "id": "44:553",
+        "name": "05 · BIT365 컴포넌트",
+        "hash": "c9f9d22d",
+        "nodeCount": 1027
+      },
+      {
+        "id": "73:2891",
+        "name": "06 · BIT365 · ALDEBARAN 테마",
+        "hash": "dd4ca50b",
+        "nodeCount": 2574
+      }
+    ],
+    "components": [
+      {
+        "id": "46:552",
+        "name": "BIT365/Button/Ghost",
+        "type": "COMPONENT",
+        "children": [],
+        "props": {
+          "Label#46:0": {
+            "type": "TEXT",
+            "defaultValue": "로그인"
+          }
+        }
+      },
+      {
+        "id": "46:554",
+        "name": "BIT365/Button/Primary",
+        "type": "COMPONENT",
+        "children": [],
+        "props": {
+          "Label#46:1": {
+            "type": "TEXT",
+            "defaultValue": "회원가입"
+          }
+        }
+      },
+      {
+        "id": "46:556",
+        "name": "BIT365/Button/Benefit",
+        "type": "COMPONENT",
+        "children": [],
+        "props": {
+          "Label#46:2": {
+            "type": "TEXT",
+            "defaultValue": "내 지갑 바로가기"
+          }
+        }
+      },
+      {
+        "id": "46:558",
+        "name": "BIT365/Navigation/Item",
+        "type": "COMPONENT",
+        "children": [],
+        "props": {
+          "Label#46:3": {
+            "type": "TEXT",
+            "defaultValue": "스포츠"
+          },
+          "Icon#48:0": {
+            "type": "TEXT",
+            "defaultValue": ""
+          },
+          "Badge#54:0": {
+            "type": "TEXT",
+            "defaultValue": "200x"
+          },
+          "Show badge#54:1": {
+            "type": "BOOLEAN",
+            "defaultValue": false
+          }
+        }
+      },
+      {
+        "id": "48:598",
+        "name": "BIT365/SectionHeading",
+        "type": "COMPONENT",
+        "children": [],
+        "props": {
+          "Title#48:1": {
+            "type": "TEXT",
+            "defaultValue": "라이브 카지노"
+          }
+        }
+      },
+      {
+        "id": "48:618",
+        "name": "BIT365/Navigation/Bottom",
+        "type": "COMPONENT",
+        "children": [],
+        "props": {}
+      },
+      {
+        "id": "51:561",
+        "name": "BIT365/Sidebar",
+        "type": "COMPONENT",
+        "children": [],
+        "props": {}
+      },
+      {
+        "id": "60:2630",
+        "name": "BIT365/ProviderCard",
+        "type": "COMPONENT_SET",
+        "children": [
+          {
+            "id": "46:561",
+            "name": "Viewport=Desktop"
+          },
+          {
+            "id": "46:567",
+            "name": "Viewport=Mobile"
+          }
+        ],
+        "props": {
+          "Title#60:0": {
+            "type": "TEXT",
+            "defaultValue": "에볼루션"
+          },
+          "Subtitle#60:1": {
+            "type": "TEXT",
+            "defaultValue": "Evolution"
+          },
+          "Viewport": {
+            "type": "VARIANT",
+            "defaultValue": "Desktop",
+            "variantOptions": [
+              "Desktop",
+              "Mobile"
+            ]
+          }
+        }
+      },
+      {
+        "id": "60:2631",
+        "name": "BIT365/Benefit",
+        "type": "COMPONENT_SET",
+        "children": [
+          {
+            "id": "46:573",
+            "name": "Viewport=Desktop, Layout=Full"
+          },
+          {
+            "id": "46:583",
+            "name": "Viewport=Mobile, Layout=Full"
+          },
+          {
+            "id": "46:593",
+            "name": "Viewport=Mobile, Layout=Half"
+          }
+        ],
+        "props": {
+          "Tag#60:2": {
+            "type": "TEXT",
+            "defaultValue": "PAYBACK"
+          },
+          "Title#60:3": {
+            "type": "TEXT",
+            "defaultValue": "페이백 포인트"
+          },
+          "Description#60:4": {
+            "type": "TEXT",
+            "defaultValue": "콤프와 페이백 포인트를 한 곳에서 확인하세요."
+          },
+          "Viewport": {
+            "type": "VARIANT",
+            "defaultValue": "Desktop",
+            "variantOptions": [
+              "Desktop",
+              "Mobile"
+            ]
+          },
+          "Layout": {
+            "type": "VARIANT",
+            "defaultValue": "Full",
+            "variantOptions": [
+              "Full",
+              "Half"
+            ]
+          }
+        }
+      },
+      {
+        "id": "60:2632",
+        "name": "BIT365/Gateway",
+        "type": "COMPONENT_SET",
+        "children": [
+          {
+            "id": "46:603",
+            "name": "Viewport=Desktop"
+          },
+          {
+            "id": "46:609",
+            "name": "Viewport=Mobile"
+          }
+        ],
+        "props": {
+          "Tag#60:5": {
+            "type": "TEXT",
+            "defaultValue": "LIVE CASINO"
+          },
+          "Title#60:6": {
+            "type": "TEXT",
+            "defaultValue": "라이브 카지노"
+          },
+          "Viewport": {
+            "type": "VARIANT",
+            "defaultValue": "Desktop",
+            "variantOptions": [
+              "Desktop",
+              "Mobile"
+            ]
+          }
+        }
+      },
+      {
+        "id": "60:2633",
+        "name": "BIT365/Header",
+        "type": "COMPONENT_SET",
+        "children": [
+          {
+            "id": "48:556",
+            "name": "Viewport=Desktop"
+          },
+          {
+            "id": "48:572",
+            "name": "Viewport=Mobile"
+          },
+          {
+            "id": "48:585",
+            "name": "Viewport=Tablet"
+          }
+        ],
+        "props": {
+          "Viewport": {
+            "type": "VARIANT",
+            "defaultValue": "Desktop",
+            "variantOptions": [
+              "Desktop",
+              "Mobile",
+              "Tablet"
+            ]
+          }
+        }
+      },
+      {
+        "id": "60:2634",
+        "name": "BIT365/FuturesCard",
+        "type": "COMPONENT_SET",
+        "children": [
+          {
+            "id": "48:607",
+            "name": "Viewport=Desktop"
+          },
+          {
+            "id": "54:636",
+            "name": "Viewport=Mobile"
+          }
+        ],
+        "props": {
+          "Symbol#60:7": {
+            "type": "TEXT",
+            "defaultValue": "₿"
+          },
+          "Ticker#60:8": {
+            "type": "TEXT",
+            "defaultValue": "BTCUSDT"
+          },
+          "Price#60:9": {
+            "type": "TEXT",
+            "defaultValue": "$83,328.00"
+          },
+          "Change#60:10": {
+            "type": "TEXT",
+            "defaultValue": "▲ 0.44%"
+          },
+          "Volume#60:11": {
+            "type": "TEXT",
+            "defaultValue": "24h Vol · 8.17B USDT"
+          },
+          "Viewport": {
+            "type": "VARIANT",
+            "defaultValue": "Desktop",
+            "variantOptions": [
+              "Desktop",
+              "Mobile"
+            ]
+          }
+        }
+      },
+      {
+        "id": "60:2635",
+        "name": "BIT365/Partners",
+        "type": "COMPONENT_SET",
+        "children": [
+          {
+            "id": "51:626",
+            "name": "Viewport=Desktop"
+          },
+          {
+            "id": "52:603",
+            "name": "Viewport=Mobile"
+          }
+        ],
+        "props": {
+          "Viewport": {
+            "type": "VARIANT",
+            "defaultValue": "Desktop",
+            "variantOptions": [
+              "Desktop",
+              "Mobile"
+            ]
+          }
+        }
+      },
+      {
+        "id": "68:980",
+        "name": "BIT365/SportsBetCard",
+        "type": "COMPONENT_SET",
+        "children": [
+          {
+            "id": "68:890",
+            "name": "Viewport=Desktop"
+          },
+          {
+            "id": "68:935",
+            "name": "Viewport=Mobile"
+          }
+        ],
+        "props": {
+          "Time#68:32": {
+            "type": "TEXT",
+            "defaultValue": "09.19 03:30"
+          },
+          "League#68:33": {
+            "type": "TEXT",
+            "defaultValue": "분데스리가"
+          },
+          "MarketCount#68:34": {
+            "type": "TEXT",
+            "defaultValue": "111+"
+          },
+          "HomeTeam#68:35": {
+            "type": "TEXT",
+            "defaultValue": "바이에른 뮌헨"
+          },
+          "AwayTeam#68:36": {
+            "type": "TEXT",
+            "defaultValue": "우니온 베를린"
+          },
+          "HomeOdds#68:37": {
+            "type": "TEXT",
+            "defaultValue": "1.31"
+          },
+          "DrawOdds#68:38": {
+            "type": "TEXT",
+            "defaultValue": "5.82"
+          },
+          "AwayOdds#68:39": {
+            "type": "TEXT",
+            "defaultValue": "9.01"
+          },
+          "ShowDraw#68:40": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "HandicapHome#68:41": {
+            "type": "TEXT",
+            "defaultValue": "1.90"
+          },
+          "HandicapName#68:42": {
+            "type": "TEXT",
+            "defaultValue": "핸디캡"
+          },
+          "HandicapLine#68:43": {
+            "type": "TEXT",
+            "defaultValue": "홈 −1.5"
+          },
+          "HandicapAway#68:44": {
+            "type": "TEXT",
+            "defaultValue": "1.93"
+          },
+          "UnderOdds#68:45": {
+            "type": "TEXT",
+            "defaultValue": "1.61"
+          },
+          "TotalLine#68:46": {
+            "type": "TEXT",
+            "defaultValue": "3.5"
+          },
+          "OverOdds#68:47": {
+            "type": "TEXT",
+            "defaultValue": "2.37"
+          },
+          "Viewport": {
+            "type": "VARIANT",
+            "defaultValue": "Desktop",
+            "variantOptions": [
+              "Desktop",
+              "Mobile"
+            ]
+          }
+        }
+      }
+    ],
+    "variables": [
+      {
+        "id": "VariableID:44:555",
+        "name": "page",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-page)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.04313725605607033,
+            "g": 0.054901961237192154,
+            "b": 0.05098039284348488,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.0784313753247261,
+            "g": 0.08235294371843338,
+            "b": 0.08235294371843338,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:556",
+        "name": "surface",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-surface)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.07058823853731155,
+            "g": 0.09019608050584793,
+            "b": 0.08235294371843338,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.1411764770746231,
+            "g": 0.1411764770746231,
+            "b": 0.1411764770746231,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:557",
+        "name": "hero",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-hero)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.027450980618596077,
+            "g": 0.06666667014360428,
+            "b": 0.05098039284348488,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.0941176488995552,
+            "g": 0.09803921729326248,
+            "b": 0.09803921729326248,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:558",
+        "name": "line",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-line)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.1568627506494522,
+            "g": 0.1882352977991104,
+            "b": 0.1725490242242813,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.21960784494876862,
+            "g": 0.21960784494876862,
+            "b": 0.21960784494876862,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:559",
+        "name": "accentLine",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-accentLine)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.09019608050584793,
+            "g": 0.3843137323856354,
+            "b": 0.26274511218070984,
+            "a": 1
+          },
+          "73:0": {
+            "r": 1,
+            "g": 0.3921568691730499,
+            "b": 0.12156862765550613,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:560",
+        "name": "text",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-text)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.929411768913269,
+            "g": 0.9529411792755127,
+            "b": 0.9372549057006836,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.9607843160629272,
+            "g": 0.95686274766922,
+            "b": 0.95686274766922,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:561",
+        "name": "muted",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-muted)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.5764706134796143,
+            "g": 0.6470588445663452,
+            "b": 0.6078431606292725,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.7176470756530762,
+            "g": 0.7176470756530762,
+            "b": 0.7176470756530762,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:562",
+        "name": "yellow",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-yellow)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.9490196108818054,
+            "g": 0.7647058963775635,
+            "b": 0,
+            "a": 1
+          },
+          "73:0": {
+            "r": 1,
+            "g": 0.3921568691730499,
+            "b": 0.12156862765550613,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:563",
+        "name": "mint",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-mint)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.38823530077934265,
+            "g": 0.886274516582489,
+            "b": 0.7098039388656616,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.3137255012989044,
+            "g": 0.8627451062202454,
+            "b": 0.8509804010391235,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:44:564",
+        "name": "tag",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-tag)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.05098039284348488,
+            "g": 0.2235294133424759,
+            "b": 0.1568627506494522,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.2078431397676468,
+            "g": 0.2078431397676468,
+            "b": 0.2078431397676468,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:73:2884",
+        "name": "theme/header",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ab-header)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.04313725605607033,
+            "g": 0.054901961237192154,
+            "b": 0.05098039284348488,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.11372549086809158,
+            "g": 0.11372549086809158,
+            "b": 0.11372549086809158,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:73:2885",
+        "name": "theme/control",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ab-control)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.2078431397676468,
+            "g": 0.2078431397676468,
+            "b": 0.2078431397676468,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.2078431397676468,
+            "g": 0.2078431397676468,
+            "b": 0.2078431397676468,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:73:2886",
+        "name": "theme/amber",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ab5-yellow)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.9490196108818054,
+            "g": 0.7647058963775635,
+            "b": 0,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.9882352948188782,
+            "g": 0.843137264251709,
+            "b": 0.24313725531101227,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:73:2887",
+        "name": "theme/onAccent",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ab-on-accent)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.04313725605607033,
+            "g": 0.054901961237192154,
+            "b": 0.05098039284348488,
+            "a": 1
+          },
+          "73:0": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:73:2888",
+        "name": "theme/disabled",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ab-disabled)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.5764706134796143,
+            "g": 0.6470588445663452,
+            "b": 0.6078431606292725,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.4745098054409027,
+            "g": 0.4745098054409027,
+            "b": 0.4745098054409027,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:73:2889",
+        "name": "theme/input",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ab-input)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.04313725605607033,
+            "g": 0.054901961237192154,
+            "b": 0.05098039284348488,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.09803921729326248,
+            "g": 0.09803921729326248,
+            "b": 0.09803921729326248,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:73:2890",
+        "name": "theme/onBadge",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ab5-on-yellow)"
+        },
+        "values": {
+          "44:0": {
+            "r": 0.04313725605607033,
+            "g": 0.054901961237192154,
+            "b": 0.05098039284348488,
+            "a": 1
+          },
+          "73:0": {
+            "r": 0.09019608050584793,
+            "g": 0.09019608050584793,
+            "b": 0.09019608050584793,
+            "a": 1
+          }
+        }
+      }
+    ],
+    "styles": [
+      {
+        "id": "S:3185e6d6a5492537461050b9bc4cf1bbfbdd1667,",
+        "name": "BIT365/Section",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 20,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:02e7b5343c2485903d8d356e8748179c900eabd4,",
+        "name": "BIT365/Card",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 14,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:bd445c39b8ea53d86f19e4b19e2eee3559f4db75,",
+        "name": "BIT365/Body",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Regular"
+        },
+        "fontSize": 12,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:f044c3c10b620270d0491a52c9ee909b7f5b1f5c,",
+        "name": "BIT365/Small",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Regular"
+        },
+        "fontSize": 10,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:6116ce96821615a2c26fdfec370545c2addb7514,",
+        "name": "BIT365/Tag",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 8,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:60ba76190cc2e939acd7b95475c961488372a63d,",
+        "name": "BIT365/Sports/Meta",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 11,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:ddb0d35c690cf2df8f6e53a38008dff1095fb5ac,",
+        "name": "BIT365/Sports/League",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 13,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:ac5ef56f1f9a569df9fdfa67b8363708f1ba471c,",
+        "name": "BIT365/Sports/Team",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 14,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:311e9ffd8a8a111c52ddd80dacdd1737ad17cfe0,",
+        "name": "BIT365/Sports/OddLabel",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 12,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      },
+      {
+        "id": "S:1ce2cea801ce74d236a87747c2a1d2679d58a776,",
+        "name": "BIT365/Sports/OddValue",
+        "fontName": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "fontSize": 14,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 139.9999976158142
+        },
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0
+      }
+    ]
+  },
+  "foundation": {
+    "createdNodeIds": [
+      "88:552",
+      "88:553",
+      "88:599",
+      "88:600",
+      "88:601",
+      "88:602",
+      "88:603",
+      "88:604",
+      "88:605",
+      "88:606",
+      "88:607",
+      "88:608",
+      "88:609"
+    ],
+    "pageId": "88:552",
+    "kitId": "88:553",
+    "collectionId": "VariableCollectionId:88:554",
+    "modeId": "88:0",
+    "varMap": {
+      "VariableID:44:555": "VariableID:88:556",
+      "VariableID:44:556": "VariableID:88:558",
+      "VariableID:44:557": "VariableID:88:560",
+      "VariableID:44:558": "VariableID:88:562",
+      "VariableID:44:559": "VariableID:88:564",
+      "VariableID:44:560": "VariableID:88:566",
+      "VariableID:44:561": "VariableID:88:568",
+      "VariableID:44:562": "VariableID:88:570",
+      "VariableID:44:563": "VariableID:88:572",
+      "VariableID:44:564": "VariableID:88:574",
+      "VariableID:73:2884": "VariableID:88:576",
+      "VariableID:73:2885": "VariableID:88:578",
+      "VariableID:73:2886": "VariableID:88:580",
+      "VariableID:73:2887": "VariableID:88:582",
+      "VariableID:73:2888": "VariableID:88:584",
+      "VariableID:73:2889": "VariableID:88:586",
+      "VariableID:73:2890": "VariableID:88:588"
+    },
+    "roleMap": {
+      "page": "VariableID:88:556",
+      "surface": "VariableID:88:558",
+      "hero": "VariableID:88:560",
+      "line": "VariableID:88:562",
+      "accentLine": "VariableID:88:564",
+      "text": "VariableID:88:566",
+      "muted": "VariableID:88:568",
+      "yellow": "VariableID:88:570",
+      "mint": "VariableID:88:572",
+      "tag": "VariableID:88:574",
+      "theme/header": "VariableID:88:576",
+      "theme/control": "VariableID:88:578",
+      "theme/amber": "VariableID:88:580",
+      "theme/onAccent": "VariableID:88:582",
+      "theme/disabled": "VariableID:88:584",
+      "theme/input": "VariableID:88:586",
+      "theme/onBadge": "VariableID:88:588"
+    },
+    "styleMap": {
+      "S:3185e6d6a5492537461050b9bc4cf1bbfbdd1667,": "S:cc23e03e8ad188bbee3c4f894171e851541814cb,",
+      "S:02e7b5343c2485903d8d356e8748179c900eabd4,": "S:74ae29ca7ca65a22899c345fb1933c99acebd8db,",
+      "S:bd445c39b8ea53d86f19e4b19e2eee3559f4db75,": "S:ba0a92f8cde804af7e735b7c27a98b6cb6d3b4c2,",
+      "S:f044c3c10b620270d0491a52c9ee909b7f5b1f5c,": "S:b39a9804fc81747f24fc9c2e65882a5b46d1d495,",
+      "S:6116ce96821615a2c26fdfec370545c2addb7514,": "S:3021c5a17065c1860d4f748e814b9dc6a91f2a69,",
+      "S:60ba76190cc2e939acd7b95475c961488372a63d,": "S:6ed64bbbd0792f21e5ea14066ec6420ba3b4edd6,",
+      "S:ddb0d35c690cf2df8f6e53a38008dff1095fb5ac,": "S:08e134aa42b42e55d331b68733f875691489279d,",
+      "S:ac5ef56f1f9a569df9fdfa67b8363708f1ba471c,": "S:23ada18f0a5071122acd21c86e6dab1cc7f0fef0,",
+      "S:311e9ffd8a8a111c52ddd80dacdd1737ad17cfe0,": "S:2b571d05308e4b0ccbedf52bb479081bef25649c,",
+      "S:1ce2cea801ce74d236a87747c2a1d2679d58a776,": "S:96ec279609b3669f04b6725002dc6a1bfc7771e4,"
+    },
+    "styles": [
+      {
+        "id": "S:cc23e03e8ad188bbee3c4f894171e851541814cb,",
+        "name": "BIT365 Champagne/Section"
+      },
+      {
+        "id": "S:74ae29ca7ca65a22899c345fb1933c99acebd8db,",
+        "name": "BIT365 Champagne/Card"
+      },
+      {
+        "id": "S:ba0a92f8cde804af7e735b7c27a98b6cb6d3b4c2,",
+        "name": "BIT365 Champagne/Body"
+      },
+      {
+        "id": "S:b39a9804fc81747f24fc9c2e65882a5b46d1d495,",
+        "name": "BIT365 Champagne/Small"
+      },
+      {
+        "id": "S:3021c5a17065c1860d4f748e814b9dc6a91f2a69,",
+        "name": "BIT365 Champagne/Tag"
+      },
+      {
+        "id": "S:6ed64bbbd0792f21e5ea14066ec6420ba3b4edd6,",
+        "name": "BIT365 Champagne/Sports/Meta"
+      },
+      {
+        "id": "S:08e134aa42b42e55d331b68733f875691489279d,",
+        "name": "BIT365 Champagne/Sports/League"
+      },
+      {
+        "id": "S:23ada18f0a5071122acd21c86e6dab1cc7f0fef0,",
+        "name": "BIT365 Champagne/Sports/Team"
+      },
+      {
+        "id": "S:2b571d05308e4b0ccbedf52bb479081bef25649c,",
+        "name": "BIT365 Champagne/Sports/OddLabel"
+      },
+      {
+        "id": "S:96ec279609b3669f04b6725002dc6a1bfc7771e4,",
+        "name": "BIT365 Champagne/Sports/OddValue"
+      }
+    ],
+    "mediaFrame": "88:599",
+    "mediaNodes": [
+      "88:600",
+      "88:601",
+      "88:602",
+      "88:603",
+      "88:604",
+      "88:605",
+      "88:606",
+      "88:607",
+      "88:608",
+      "88:609"
+    ]
+  },
+  "palette": {
+    "page": "#101724",
+    "surface": "#1b2433",
+    "hero": "#131d2b",
+    "line": "#394250",
+    "accentLine": "#8f7853",
+    "text": "#f5eedf",
+    "muted": "#b8afa0",
+    "yellow": "#d8b779",
+    "mint": "#ead2a2",
+    "tag": "#2b3040",
+    "theme/header": "#151e2c",
+    "theme/control": "#293449",
+    "theme/amber": "#dfc28c",
+    "theme/onAccent": "#182132",
+    "theme/disabled": "#8e8b84",
+    "theme/input": "#101724",
+    "theme/onBadge": "#182132"
+  }
+}

@@ -1,0 +1,834 @@
+{
+  "task": "Page 19 sidebar selected style and viewport-dependent height",
+  "finalScope": "Only sidebar appearance and height behavior changed. Full-page artboards and all main content remain visible at their original dimensions.",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "pageId": "647:46472",
+  "baseline": {
+    "viewportHeight": 1080,
+    "headerHeight": 88,
+    "topMargin": 18,
+    "bottomMargin": 18,
+    "railHeight": 992,
+    "sidebarHeight": 956,
+    "calculation": "1080 - 88 - 18 - 18 = 956"
+  },
+  "components": {
+    "createdNodeIds": [
+      "652:5999",
+      "652:6000",
+      "652:6042",
+      "652:6001",
+      "652:6002",
+      "652:6003",
+      "652:6004",
+      "652:6005",
+      "652:6006",
+      "652:6007",
+      "652:6008",
+      "652:6009",
+      "652:6010",
+      "652:6011",
+      "652:6012",
+      "652:6013",
+      "652:6014",
+      "652:6015",
+      "652:6016",
+      "652:6017",
+      "652:6018",
+      "652:6019",
+      "652:6020",
+      "652:6021",
+      "652:6022",
+      "652:6023",
+      "652:6024",
+      "652:6025",
+      "652:6026",
+      "652:6043",
+      "652:6044",
+      "652:6075",
+      "652:6045",
+      "652:6046",
+      "652:6047",
+      "652:6048",
+      "652:6049",
+      "652:6050",
+      "652:6051",
+      "652:6052",
+      "652:6053",
+      "652:6054",
+      "652:6055",
+      "652:6056",
+      "652:6057",
+      "652:6058",
+      "652:6059",
+      "652:6060",
+      "652:6061",
+      "652:6062",
+      "652:6063",
+      "652:6064",
+      "652:6065",
+      "652:6066",
+      "652:6067",
+      "652:6068",
+      "652:6069",
+      "652:6070",
+      "652:6071",
+      "652:6072",
+      "652:6073",
+      "652:6074",
+      "652:6076",
+      "652:6077",
+      "652:6078",
+      "652:6079",
+      "652:6110",
+      "652:6080",
+      "652:6081",
+      "652:6082",
+      "652:6083",
+      "652:6084",
+      "652:6085",
+      "652:6086",
+      "652:6087",
+      "652:6088",
+      "652:6089",
+      "652:6090",
+      "652:6091",
+      "652:6092",
+      "652:6093",
+      "652:6094",
+      "652:6095",
+      "652:6096",
+      "652:6097",
+      "652:6098",
+      "652:6099",
+      "652:6100",
+      "652:6101",
+      "652:6102",
+      "652:6103",
+      "652:6104",
+      "652:6105",
+      "652:6106",
+      "652:6107",
+      "652:6108",
+      "652:6109",
+      "652:6111",
+      "652:6112"
+    ],
+    "createdStyleIds": [
+      "S:7eb54c241cde724401b197c7451174099a5b622a,"
+    ],
+    "mutatedNodeIds": [],
+    "section": {
+      "id": "652:5999",
+      "name": "19 · P19 · 가변 높이 사이드바 · 활성 메뉴"
+    },
+    "navSet": {
+      "id": "652:6000",
+      "name": "P19/07BRoomy/NavigationItem",
+      "variants": [
+        {
+          "id": "652:6001",
+          "name": "Theme=WhiteGold, State=Default"
+        },
+        {
+          "id": "652:6005",
+          "name": "Theme=WhiteGold, State=Hover"
+        },
+        {
+          "id": "652:6009",
+          "name": "Theme=WhiteGold, State=Selected"
+        },
+        {
+          "id": "652:6014",
+          "name": "Theme=BlackGold, State=Default"
+        },
+        {
+          "id": "652:6018",
+          "name": "Theme=BlackGold, State=Hover"
+        },
+        {
+          "id": "652:6022",
+          "name": "Theme=BlackGold, State=Selected"
+        }
+      ]
+    },
+    "sidebarSet": {
+      "id": "652:6042",
+      "name": "P19/07BRoomy/SidebarViewport"
+    },
+    "selected": [
+      {
+        "id": "652:6009",
+        "name": "Theme=WhiteGold, State=Selected",
+        "radius": 8,
+        "strokeLeft": 2,
+        "oldMarkerVisible": false,
+        "icon": 22
+      },
+      {
+        "id": "652:6022",
+        "name": "Theme=BlackGold, State=Selected",
+        "radius": 8,
+        "strokeLeft": 2,
+        "oldMarkerVisible": false,
+        "icon": 22
+      }
+    ],
+    "variants": [
+      {
+        "id": "652:6043",
+        "name": "Theme=WhiteGold",
+        "height": 956,
+        "minHeight": null,
+        "viewportId": "652:6075",
+        "footerId": "652:6076",
+        "rowCount": 14,
+        "rowsPreserved": true
+      },
+      {
+        "id": "652:6078",
+        "name": "Theme=BlackGold",
+        "height": 956,
+        "minHeight": null,
+        "viewportId": "652:6110",
+        "footerId": "652:6111",
+        "rowCount": 14,
+        "rowsPreserved": true
+      }
+    ],
+    "allPassed": true
+  },
+  "activeStyleFix": {
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "652:6042",
+      "652:6049",
+      "652:6084"
+    ],
+    "checks": [
+      {
+        "id": "652:6049",
+        "radius": 8,
+        "strokeLeft": 2,
+        "main": "652:6009"
+      },
+      {
+        "id": "652:6084",
+        "radius": 8,
+        "strokeLeft": 2,
+        "main": "652:6022"
+      }
+    ],
+    "priorSources": [
+      {
+        "id": "573:4975",
+        "name": "Theme=BlackGold, State=Selected",
+        "height": 44,
+        "radius": 6
+      },
+      {
+        "id": "573:4962",
+        "name": "Theme=WhiteGold, State=Selected",
+        "height": 44,
+        "radius": 6
+      },
+      {
+        "id": "573:5062",
+        "name": "Theme=BlackGold",
+        "height": 1120,
+        "radius": 6
+      },
+      {
+        "id": "573:5023",
+        "name": "Theme=WhiteGold",
+        "height": 1120,
+        "radius": 6
+      }
+    ],
+    "allPassed": true
+  },
+  "fullPageRestore": {
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "647:46475",
+      "647:46477",
+      "647:46478",
+      "647:46479",
+      "647:46480",
+      "647:46527",
+      "647:46529",
+      "647:46530",
+      "647:46531",
+      "647:46532",
+      "647:46579",
+      "647:46581",
+      "647:46582",
+      "647:46583",
+      "647:46584",
+      "647:46633",
+      "647:46635",
+      "647:46636",
+      "647:46637",
+      "647:46638",
+      "647:46473",
+      "647:46474"
+    ],
+    "screens": [
+      {
+        "id": "647:46475",
+        "height": 1949.199951171875,
+        "mainHeight": 1861.199951171875,
+        "mainSizing": "HUG",
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "selected": {
+          "id": "I647:46479;652:6084",
+          "main": "652:6022",
+          "radius": 6,
+          "strokeLeft": 2,
+          "strokeRight": 0,
+          "strokeTop": 0,
+          "strokeBottom": 0,
+          "strokes": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.9372549057006836,
+                    "b": 0.6823529005050659,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.9764705896377563,
+                    "g": 0.729411780834198,
+                    "b": 0.17254899442195892,
+                    "a": 1
+                  },
+                  "position": 0.5,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.6745098233222961,
+                    "g": 0.4196077883243561,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "marker": null
+        }
+      },
+      {
+        "id": "647:46527",
+        "height": 1949.199951171875,
+        "mainHeight": 1861.199951171875,
+        "mainSizing": "HUG",
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "selected": {
+          "id": "I647:46531;652:6049",
+          "main": "652:6009",
+          "radius": 6,
+          "strokeLeft": 2,
+          "strokeRight": 0,
+          "strokeTop": 0,
+          "strokeBottom": 0,
+          "strokes": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.9372549057006836,
+                    "b": 0.6823529005050659,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.9764705896377563,
+                    "g": 0.729411780834198,
+                    "b": 0.17254899442195892,
+                    "a": 1
+                  },
+                  "position": 0.5,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.6745098233222961,
+                    "g": 0.4196077883243561,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "marker": null
+        }
+      },
+      {
+        "id": "647:46579",
+        "height": 2224.199951171875,
+        "mainHeight": 2136.199951171875,
+        "mainSizing": "HUG",
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "selected": {
+          "id": "I647:46583;652:6084",
+          "main": "652:6022",
+          "radius": 6,
+          "strokeLeft": 2,
+          "strokeRight": 0,
+          "strokeTop": 0,
+          "strokeBottom": 0,
+          "strokes": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.9372549057006836,
+                    "b": 0.6823529005050659,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.9764705896377563,
+                    "g": 0.729411780834198,
+                    "b": 0.17254899442195892,
+                    "a": 1
+                  },
+                  "position": 0.5,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.6745098233222961,
+                    "g": 0.4196077883243561,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "marker": null
+        }
+      },
+      {
+        "id": "647:46633",
+        "height": 2224.199951171875,
+        "mainHeight": 2136.199951171875,
+        "mainSizing": "HUG",
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "selected": {
+          "id": "I647:46637;652:6049",
+          "main": "652:6009",
+          "radius": 6,
+          "strokeLeft": 2,
+          "strokeRight": 0,
+          "strokeTop": 0,
+          "strokeBottom": 0,
+          "strokes": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.9372549057006836,
+                    "b": 0.6823529005050659,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.9764705896377563,
+                    "g": 0.729411780834198,
+                    "b": 0.17254899442195892,
+                    "a": 1
+                  },
+                  "position": 0.5,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.6745098233222961,
+                    "g": 0.4196077883243561,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "marker": null
+        }
+      }
+    ],
+    "fullPageRestored": true
+  },
+  "finalResponsiveAudit": {
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "647:46478",
+      "647:46530",
+      "647:46582",
+      "647:46636"
+    ],
+    "tests": [
+      {
+        "screenId": "647:46475",
+        "viewportHeight": 768,
+        "sidebarHeight": 644,
+        "menuHeight": 596,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46475",
+        "viewportHeight": 900,
+        "sidebarHeight": 776,
+        "menuHeight": 728,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46475",
+        "viewportHeight": 1080,
+        "sidebarHeight": 956,
+        "menuHeight": 908,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46475",
+        "viewportHeight": 1440,
+        "sidebarHeight": 1316,
+        "menuHeight": 1268,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46527",
+        "viewportHeight": 768,
+        "sidebarHeight": 644,
+        "menuHeight": 596,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46527",
+        "viewportHeight": 900,
+        "sidebarHeight": 776,
+        "menuHeight": 728,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46527",
+        "viewportHeight": 1080,
+        "sidebarHeight": 956,
+        "menuHeight": 908,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46527",
+        "viewportHeight": 1440,
+        "sidebarHeight": 1316,
+        "menuHeight": 1268,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46579",
+        "viewportHeight": 768,
+        "sidebarHeight": 644,
+        "menuHeight": 596,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46579",
+        "viewportHeight": 900,
+        "sidebarHeight": 776,
+        "menuHeight": 728,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46579",
+        "viewportHeight": 1080,
+        "sidebarHeight": 956,
+        "menuHeight": 908,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46579",
+        "viewportHeight": 1440,
+        "sidebarHeight": 1316,
+        "menuHeight": 1268,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46633",
+        "viewportHeight": 768,
+        "sidebarHeight": 644,
+        "menuHeight": 596,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46633",
+        "viewportHeight": 900,
+        "sidebarHeight": 776,
+        "menuHeight": 728,
+        "needsMenuScroll": true,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46633",
+        "viewportHeight": 1080,
+        "sidebarHeight": 956,
+        "menuHeight": 908,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      },
+      {
+        "screenId": "647:46633",
+        "viewportHeight": 1440,
+        "sidebarHeight": 1316,
+        "menuHeight": 1268,
+        "needsMenuScroll": false,
+        "footerInside": true,
+        "dimensionsPreserved": true,
+        "selectedMatches": true,
+        "bodyPreserved": true,
+        "fullPageVisible": true,
+        "passed": true
+      }
+    ],
+    "final": [
+      {
+        "screenId": "647:46475",
+        "artboardHeight": 1949.199951171875,
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "mainOverflow": "NONE",
+        "bodySignature": "fd12ba0f",
+        "expectedSignature": "fd12ba0f"
+      },
+      {
+        "screenId": "647:46527",
+        "artboardHeight": 1949.199951171875,
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "mainOverflow": "NONE",
+        "bodySignature": "7e28ba8d",
+        "expectedSignature": "7e28ba8d"
+      },
+      {
+        "screenId": "647:46579",
+        "artboardHeight": 2224.199951171875,
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "mainOverflow": "NONE",
+        "bodySignature": "d1f941a4",
+        "expectedSignature": "d1f941a4"
+      },
+      {
+        "screenId": "647:46633",
+        "artboardHeight": 2224.199951171875,
+        "railHeight": 992,
+        "sidebarHeight": 956,
+        "mainOverflow": "NONE",
+        "bodySignature": "7489eb88",
+        "expectedSignature": "7489eb88"
+      }
+    ],
+    "allPassed": true
+  },
+  "visualQA": {
+    "status": "PASS",
+    "files": [
+      "qa/sidebar-components.png",
+      "qa/goldflow03-full-pair.png",
+      "qa/video-banner-full-pair.png"
+    ],
+    "checked": [
+      "Full-height rounded gold left edge on selected row in both themes",
+      "All four original full pages remain visible",
+      "Sidebar ends at viewport-based height with footer inside",
+      "22px icons and original 44px rows and 13px text retained"
+    ]
+  },
+  "implementationBoundary": "Figma auto-layout and scroll overflow configured. Web equivalent documented in component description; website code and browser runtime were not changed or tested.",
+  "superseded": "An initial full-screen viewport draft was replaced by the user's sidebar-only correction. Final tests resize the sidebar rail only and preserve original document heights."
+}

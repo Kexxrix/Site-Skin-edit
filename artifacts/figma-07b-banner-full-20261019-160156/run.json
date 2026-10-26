@@ -1,0 +1,443 @@
+{
+  "request": "Restore original full-image banner style across the Roomy dark and white screens",
+  "scope": "Six scoped Roomy banner masters and their linked instances",
+  "phase": "complete",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "masters": {
+    "createdNodeIds": [
+      "584:5377",
+      "584:5378",
+      "584:5379",
+      "584:5380",
+      "584:5381",
+      "584:5382"
+    ],
+    "mutatedNodeIds": [
+      "573:5820",
+      "573:5821",
+      "573:5822",
+      "573:5824",
+      "573:5825",
+      "584:5377",
+      "573:5832",
+      "573:5833",
+      "573:5834",
+      "573:5836",
+      "573:5837",
+      "584:5378",
+      "573:5844",
+      "573:5845",
+      "573:5846",
+      "573:5848",
+      "573:5849",
+      "584:5379",
+      "573:5856",
+      "573:5857",
+      "573:5858",
+      "573:5860",
+      "573:5861",
+      "584:5380",
+      "573:5868",
+      "573:5869",
+      "573:5870",
+      "573:5872",
+      "573:5873",
+      "584:5381",
+      "573:5880",
+      "573:5881",
+      "573:5882",
+      "573:5884",
+      "573:5885",
+      "584:5382"
+    ],
+    "banners": [
+      {
+        "id": "573:5820",
+        "w": 522.6666870117188,
+        "h": 256,
+        "r": 6,
+        "image": {
+          "w": 522.6666870117188,
+          "h": 256,
+          "mode": "FILL"
+        },
+        "copy": {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 256
+        },
+        "preservedImages": true,
+        "preservedText": true,
+        "noDetailsStrip": true,
+        "fillsWholeCard": true
+      },
+      {
+        "id": "573:5832",
+        "w": 522.6666259765625,
+        "h": 256,
+        "r": 6,
+        "image": {
+          "w": 522.6666259765625,
+          "h": 256,
+          "mode": "FILL"
+        },
+        "copy": {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 256
+        },
+        "preservedImages": true,
+        "preservedText": true,
+        "noDetailsStrip": true,
+        "fillsWholeCard": true
+      },
+      {
+        "id": "573:5844",
+        "w": 522.6666259765625,
+        "h": 256,
+        "r": 6,
+        "image": {
+          "w": 522.6666259765625,
+          "h": 256,
+          "mode": "FILL"
+        },
+        "copy": {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 256
+        },
+        "preservedImages": true,
+        "preservedText": true,
+        "noDetailsStrip": true,
+        "fillsWholeCard": true
+      },
+      {
+        "id": "573:5856",
+        "w": 522.6666870117188,
+        "h": 256,
+        "r": 6,
+        "image": {
+          "w": 522.6666870117188,
+          "h": 256,
+          "mode": "FILL"
+        },
+        "copy": {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 256
+        },
+        "preservedImages": true,
+        "preservedText": true,
+        "noDetailsStrip": true,
+        "fillsWholeCard": true
+      },
+      {
+        "id": "573:5868",
+        "w": 522.6666259765625,
+        "h": 256,
+        "r": 6,
+        "image": {
+          "w": 522.6666259765625,
+          "h": 256,
+          "mode": "FILL"
+        },
+        "copy": {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 256
+        },
+        "preservedImages": true,
+        "preservedText": true,
+        "noDetailsStrip": true,
+        "fillsWholeCard": true
+      },
+      {
+        "id": "573:5880",
+        "w": 522.6666259765625,
+        "h": 256,
+        "r": 6,
+        "image": {
+          "w": 522.6666259765625,
+          "h": 256,
+          "mode": "FILL"
+        },
+        "copy": {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 256
+        },
+        "preservedImages": true,
+        "preservedText": true,
+        "noDetailsStrip": true,
+        "fillsWholeCard": true
+      }
+    ],
+    "allPassed": true
+  },
+  "instances": {
+    "screens": [
+      {
+        "screen": "574:41902",
+        "section": "574:41908",
+        "w": 1592,
+        "h": 256,
+        "banners": [
+          {
+            "id": "574:41909",
+            "main": "573:5820",
+            "h": 256,
+            "r": 6,
+            "image": {
+              "w": 522.6666870117188,
+              "h": 256,
+              "mode": "FILL"
+            },
+            "copy": {
+              "x": 0,
+              "y": 0,
+              "w": 260,
+              "h": 256
+            },
+            "wholeImageBackground": true,
+            "hasSeparateDetails": false,
+            "textLayers": [
+              {
+                "name": "Tag",
+                "text": "PAYBACK"
+              },
+              {
+                "name": "Title",
+                "text": "페이백 포인트"
+              },
+              {
+                "name": "Description",
+                "text": "콤프와 페이백 포인트를 한 곳에서 확인하세요."
+              },
+              {
+                "name": "Label",
+                "text": "내 지갑 바로가기"
+              }
+            ]
+          },
+          {
+            "id": "574:41910",
+            "main": "573:5832",
+            "h": 256,
+            "r": 6,
+            "image": {
+              "w": 522.6666259765625,
+              "h": 256,
+              "mode": "FILL"
+            },
+            "copy": {
+              "x": 0,
+              "y": 0,
+              "w": 260,
+              "h": 256
+            },
+            "wholeImageBackground": true,
+            "hasSeparateDetails": false,
+            "textLayers": [
+              {
+                "name": "Tag",
+                "text": "EVENTS"
+              },
+              {
+                "name": "Title",
+                "text": "회원 이벤트"
+              },
+              {
+                "name": "Description",
+                "text": "진행 중인 혜택과 참여 조건을 빠르게 확인하세요."
+              },
+              {
+                "name": "Label",
+                "text": "혜택 모아보기"
+              }
+            ]
+          },
+          {
+            "id": "574:41911",
+            "main": "573:5844",
+            "h": 256,
+            "r": 6,
+            "image": {
+              "w": 522.6666259765625,
+              "h": 256,
+              "mode": "FILL"
+            },
+            "copy": {
+              "x": 0,
+              "y": 0,
+              "w": 260,
+              "h": 256
+            },
+            "wholeImageBackground": true,
+            "hasSeparateDetails": false,
+            "textLayers": [
+              {
+                "name": "Tag",
+                "text": "DAILY REWARD"
+              },
+              {
+                "name": "Title",
+                "text": "데일리 리워드"
+              },
+              {
+                "name": "Description",
+                "text": "출석 체크로 매일 이어지는 보상을 만나보세요."
+              },
+              {
+                "name": "Label",
+                "text": "오늘 참여하기"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screen": "574:43010",
+        "section": "574:43016",
+        "w": 1592,
+        "h": 256,
+        "banners": [
+          {
+            "id": "574:43017",
+            "main": "573:5856",
+            "h": 256,
+            "r": 6,
+            "image": {
+              "w": 522.6666870117188,
+              "h": 256,
+              "mode": "FILL"
+            },
+            "copy": {
+              "x": 0,
+              "y": 0,
+              "w": 260,
+              "h": 256
+            },
+            "wholeImageBackground": true,
+            "hasSeparateDetails": false,
+            "textLayers": [
+              {
+                "name": "Tag",
+                "text": "PAYBACK"
+              },
+              {
+                "name": "Title",
+                "text": "페이백 포인트"
+              },
+              {
+                "name": "Description",
+                "text": "콤프와 페이백 포인트를 한 곳에서 확인하세요."
+              },
+              {
+                "name": "Label",
+                "text": "내 지갑 바로가기"
+              }
+            ]
+          },
+          {
+            "id": "574:43018",
+            "main": "573:5868",
+            "h": 256,
+            "r": 6,
+            "image": {
+              "w": 522.6666259765625,
+              "h": 256,
+              "mode": "FILL"
+            },
+            "copy": {
+              "x": 0,
+              "y": 0,
+              "w": 260,
+              "h": 256
+            },
+            "wholeImageBackground": true,
+            "hasSeparateDetails": false,
+            "textLayers": [
+              {
+                "name": "Tag",
+                "text": "EVENTS"
+              },
+              {
+                "name": "Title",
+                "text": "회원 이벤트"
+              },
+              {
+                "name": "Description",
+                "text": "진행 중인 혜택과 참여 조건을 빠르게 확인하세요."
+              },
+              {
+                "name": "Label",
+                "text": "혜택 모아보기"
+              }
+            ]
+          },
+          {
+            "id": "574:43019",
+            "main": "573:5880",
+            "h": 256,
+            "r": 6,
+            "image": {
+              "w": 522.6666259765625,
+              "h": 256,
+              "mode": "FILL"
+            },
+            "copy": {
+              "x": 0,
+              "y": 0,
+              "w": 260,
+              "h": 256
+            },
+            "wholeImageBackground": true,
+            "hasSeparateDetails": false,
+            "textLayers": [
+              {
+                "name": "Tag",
+                "text": "DAILY REWARD"
+              },
+              {
+                "name": "Title",
+                "text": "데일리 리워드"
+              },
+              {
+                "name": "Description",
+                "text": "출석 체크로 매일 이어지는 보상을 만나보세요."
+              },
+              {
+                "name": "Label",
+                "text": "오늘 참여하기"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allInherited": true
+  },
+  "verification": {
+    "visual": "PASS",
+    "evidence": [
+      "qa/full-banner-black.png",
+      "qa/full-banner-white.png"
+    ],
+    "observations": "Viewed all six rendered banners. Background fills full card, no separate information strip, overlaid text and action visible; subjects remain readable. Height 256px and radius 6px preserved.",
+    "limitation": "FILL maintains image aspect ratio and crops the source horizontally to fit the taller card."
+  },
+  "notChanged": [
+    "Roomy sidebar",
+    "Header",
+    "Gateway, sports and game cards",
+    "Section14 baseline",
+    "Source image files"
+  ]
+}
+

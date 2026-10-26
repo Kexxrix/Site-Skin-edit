@@ -1,0 +1,1 @@
+await figma.setCurrentPageAsync(await figma.getNodeByIdAsync("795:1330"));const sourcePage=await figma.getNodeByIdAsync("771:552"),page=figma.currentPage;page.backgrounds=sourcePage.backgrounds;return{mutatedNodeIds:[page.id],backgrounds:page.backgrounds,sourceBackgrounds:sourcePage.backgrounds};

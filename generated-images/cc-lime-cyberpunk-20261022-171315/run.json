@@ -1,0 +1,248 @@
+{
+  "task": "CC Lime cyberpunk city and original characters",
+  "date": "2026-10-22",
+  "timezone": "Asia/Seoul",
+  "method": "Built-in image_gen, one independent call per asset",
+  "scope": "Existing Figma CC Lime page-24 fixed layout; background, themed header and two original characters",
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "pageId": "795:1330",
+    "rootId": "803:1334",
+    "createdNodeIds": [
+      "911:7502",
+      "911:7503",
+      "911:7504",
+      "911:7505"
+    ],
+    "mutatedNodeIds": [
+      "803:1334",
+      "911:7503",
+      "803:1335",
+      "911:7504",
+      "911:7505",
+      "I803:1335;693:3258",
+      "I803:1335;693:3259"
+    ]
+  },
+  "generation": {
+    "attempted": 4,
+    "generated": 4,
+    "failed": 0,
+    "skipped": 0,
+    "qaPassed": 4,
+    "selectedByAgent": 4,
+    "figmaApplied": 4,
+    "rejected": 0,
+    "acceptedByUser": 0,
+    "webDeployed": 0
+  },
+  "assets": [
+    {
+      "key": "background",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-f58eb026-b963-49da-92fa-590bd3dcce29.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-cyberpunk-20261022-171315/results/cc-lime-cyberpunk-city-v1.png",
+      "prompt": "prompts/background.txt",
+      "operation": "move",
+      "verification": "qa/asset-moves.json",
+      "attachedImageReferences": [],
+      "observedSource": "qa/reference-before.png",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "acceptedByUser": false,
+      "figmaApplied": true,
+      "webAdopted": false
+    },
+    {
+      "key": "header",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-124c298d-c64f-4243-b7da-6cb64febba51.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-cyberpunk-20261022-171315/results/cc-lime-cyberpunk-header-v1.png",
+      "prompt": "prompts/header.txt",
+      "operation": "move",
+      "verification": "qa/asset-moves.json",
+      "attachedImageReferences": [],
+      "observedSource": "qa/reference-before.png",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "acceptedByUser": false,
+      "figmaApplied": true,
+      "webAdopted": false
+    },
+    {
+      "key": "runner",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-c8ca0e5c-5274-4211-afac-a5a0c298775f.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-cyberpunk-20261022-171315/results/cc-lime-cyber-runner-v1.png",
+      "prompt": "prompts/runner.txt",
+      "operation": "move",
+      "verification": "qa/asset-moves.json",
+      "attachedImageReferences": [],
+      "observedSource": "qa/reference-before.png",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "acceptedByUser": false,
+      "figmaApplied": true,
+      "webAdopted": false
+    },
+    {
+      "key": "scout",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-91980822-478c-47cc-a3f5-9f1eb4483cc0.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-cyberpunk-20261022-171315/results/cc-lime-scout-robot-v1.png",
+      "prompt": "prompts/scout.txt",
+      "operation": "move",
+      "verification": "qa/asset-moves.json",
+      "attachedImageReferences": [],
+      "observedSource": "qa/reference-before.png",
+      "generated": true,
+      "qaPass": true,
+      "selectedByAgent": true,
+      "acceptedByUser": false,
+      "figmaApplied": true,
+      "webAdopted": false
+    }
+  ],
+  "design": {
+    "background": "Dark rainy cyberpunk industrial city, wet graphite metal and lime-neon light",
+    "header": "Matching wide city rooftop panorama",
+    "runner": "Original adult female courier with lime hair, practical black techwear and cybernetic arm",
+    "scout": "Original feline scout robot in titanium/graphite with lime eye display",
+    "lighting": "Soft cool-neutral upper-left key and lime upper-right rim",
+    "bodyOpacity": 0.5,
+    "headerOpacity": 0.75,
+    "characterOpacity": 1,
+    "runnerBounds": {
+      "id": "911:7504",
+      "name": "CC Lime · Original cyberpunk runner",
+      "x": -240,
+      "y": 1082,
+      "width": 800,
+      "height": 1066.666748046875,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FIT",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "15c99cfd8e9b82bc12eb70e3745fba4714c13d88"
+        }
+      ],
+      "locked": true
+    },
+    "scoutBounds": {
+      "id": "911:7505",
+      "name": "CC Lime · Original feline scout robot",
+      "x": 1680,
+      "y": 1595,
+      "width": 260,
+      "height": 260,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FIT",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "ea1d8a912c9c2c21fee4e904e53a55532a5d0e0d"
+        }
+      ],
+      "locked": true
+    },
+    "cropPolicy": "Partial edge/body crop allowed by user's established direction if recognizable and layout unaffected"
+  },
+  "preservation": {
+    "coreHashBefore": "d76d92f4",
+    "coreHashAfter": "d76d92f4",
+    "originalUiUnchangedExceptHeaderBackground": true,
+    "instancesBefore": 94,
+    "instancesAfter": 94,
+    "originalImageNodes": 101,
+    "totalImageNodes": 105,
+    "originalNodeCount": 630,
+    "totalNodeCount": 634,
+    "protectedScreens": 11,
+    "protectedMasters": 44,
+    "protectedCount": 55,
+    "protectedUnchanged": true,
+    "rootClipsContentBefore": false,
+    "rootClipsContentAfter": false,
+    "decorationClipsContent": true
+  },
+  "qa": {
+    "format": "All PNGs decoded and verified; runner/scout contain actual alpha",
+    "sha256": "Move hashes identical before and after",
+    "visual": "Final full Figma render inspected; characters remain recognizable; existing content and partner logos remain visible.",
+    "frameSize": [
+      1920,
+      1819.199951171875
+    ],
+    "screenshotSize": [
+      1935,
+      1821
+    ],
+    "screenshotNote": "Existing source frame has clipping disabled and paint extending beyond frame. Final screenshot includes that existing overflow; fixed layout geometry unchanged.",
+    "runtime": "Not applicable; no website files/server changed"
+  },
+  "evidence": {
+    "baseline": "qa/baseline.json",
+    "applyState": "qa/apply-state.json",
+    "assetMoves": "qa/asset-moves.json",
+    "before": "qa/reference-before.png",
+    "final": "qa/cc-lime-cyberpunk-applied.png",
+    "comparison": "qa/before-after.png",
+    "headerDetail": "qa/header-detail.png",
+    "charactersDetail": "qa/character-details.png"
+  },
+  "rollback": "Hide artwork frame 911:7502. Restore header fills from baseline.json and original visibility of I803:1335;693:3258 / I803:1335;693:3259. Original assets and native instances are preserved.",
+  "limitations": [
+    "Web responsive behavior is not implemented or verified. Characters are decorative below initial 1080px viewport in this fixed layout."
+  ],
+  "runDirectory": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-cyberpunk-20261022-171315"
+}

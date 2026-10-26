@@ -1,0 +1,336 @@
+[
+  {
+    "id": "record-401884790",
+    "sport": "soccer",
+    "time": "09.19 03:30",
+    "league": "분데스리가",
+    "home": {
+      "id": "132",
+      "name": "바이에른 뮌헨",
+      "originalName": "Bayern Munich",
+      "logo": "/sports/r6/teams/bundesliga/bayern-munich.png"
+    },
+    "away": {
+      "id": "598",
+      "name": "우니온 베를린",
+      "originalName": "1. FC Union Berlin",
+      "logo": "/sports/r6/teams/bundesliga/1-fc-union-berlin.png"
+    },
+    "markets": [
+      {
+        "name": "승무패",
+        "rule": "정규시간 90분 · 추가시간 포함 · 연장 제외",
+        "picks": [
+          {
+            "label": "홈",
+            "price": 1.31,
+            "priceCents": 131
+          },
+          {
+            "label": "무",
+            "price": 5.82,
+            "priceCents": 582
+          },
+          {
+            "label": "원정",
+            "price": 9.01,
+            "priceCents": 901
+          }
+        ],
+        "period": "regulation",
+        "settlement": "quarter-split; integer-push; half-line-no-push",
+        "sourceKind": "synthetic-model",
+        "datasetVersion": "aldebaran-prematch-r9-20260922",
+        "canonicalId": "record-401884790|soccer.result_3way|regulation|90분·추가시간 포함 · 연장 제외|both||3way",
+        "templateId": "soccer.result_3way",
+        "settlementScope": "90분·추가시간 포함 · 연장 제외",
+        "subjectId": "both",
+        "status": "active",
+        "variant": "3way",
+        "category": "result",
+        "group": "soccer.result_3way:regulation:both:3way"
+      },
+      {
+        "name": "오버 / 언더",
+        "rule": "정규시간 90분 · 추가시간 포함 · 연장 제외 · 정수 환급 / 쿼터 분할",
+        "line": "3.5",
+        "picks": [
+          {
+            "label": "오버",
+            "price": 2.37,
+            "priceCents": 237
+          },
+          {
+            "label": "언더",
+            "price": 1.61,
+            "priceCents": 161
+          }
+        ],
+        "period": "regulation",
+        "settlement": "quarter-split; integer-push; half-line-no-push",
+        "sourceKind": "synthetic-model",
+        "datasetVersion": "aldebaran-prematch-r9-20260922",
+        "canonicalId": "record-401884790|soccer.total_goals|regulation|90분·추가시간 포함 · 연장 제외|both|3.5|",
+        "templateId": "soccer.total_goals",
+        "settlementScope": "90분·추가시간 포함 · 연장 제외",
+        "subjectId": "both",
+        "status": "active",
+        "variant": "",
+        "category": "totals",
+        "group": "soccer.total_goals:regulation:both:"
+      },
+      {
+        "name": "핸디캡",
+        "rule": "정규시간 90분 · 추가시간 포함 · 연장 제외 · 정수 환급 / 쿼터 분할",
+        "line": "홈 −1.5",
+        "picks": [
+          {
+            "label": "홈 −1.5",
+            "price": 1.9,
+            "priceCents": 190
+          },
+          {
+            "label": "원정 +1.5",
+            "price": 1.93,
+            "locked": false,
+            "priceCents": 193
+          }
+        ],
+        "period": "regulation",
+        "settlement": "quarter-split; integer-push; half-line-no-push",
+        "sourceKind": "synthetic-model",
+        "datasetVersion": "aldebaran-prematch-r9-20260922",
+        "canonicalId": "record-401884790|soccer.asian_handicap|regulation|90분·추가시간 포함 · 연장 제외|both|-1.5|",
+        "templateId": "soccer.asian_handicap",
+        "settlementScope": "90분·추가시간 포함 · 연장 제외",
+        "subjectId": "both",
+        "status": "active",
+        "variant": "",
+        "category": "handicap",
+        "group": "soccer.asian_handicap:regulation:both:"
+      }
+    ],
+    "marketCount": 111,
+    "sourceMode": "static-collection",
+    "oddsSourceKind": "synthetic-model"
+  },
+  {
+    "id": "record-401902644",
+    "sport": "basketball",
+    "time": "10.04 08:00",
+    "league": "NBA 프리시즌",
+    "home": {
+      "id": "28",
+      "name": "토론토 랩터스",
+      "originalName": "Toronto Raptors",
+      "logo": "/sports/r6/teams/nba/toronto-raptors.png"
+    },
+    "away": {
+      "id": "14",
+      "name": "마이애미 히트",
+      "originalName": "Miami Heat",
+      "logo": "/sports/r6/teams/nba/miami-heat.png"
+    },
+    "markets": [
+      {
+        "name": "승패",
+        "rule": "연장 포함",
+        "picks": [
+          {
+            "label": "홈",
+            "price": 1.56,
+            "priceCents": 156
+          },
+          {
+            "label": "원정",
+            "price": 2.48,
+            "priceCents": 248
+          }
+        ],
+        "period": "full_game",
+        "settlement": "quarter-split; integer-push; half-line-no-push",
+        "sourceKind": "synthetic-model",
+        "datasetVersion": "aldebaran-prematch-r9-20260922",
+        "canonicalId": "record-401902644|basketball.moneyline|full_game|연장 포함|both||2way-refund",
+        "templateId": "basketball.moneyline",
+        "settlementScope": "연장 포함",
+        "subjectId": "both",
+        "status": "active",
+        "variant": "2way-refund",
+        "category": "result",
+        "group": "basketball.moneyline:full_game:both:2way-refund"
+      },
+      {
+        "name": "오버 / 언더",
+        "rule": "연장 포함 · 정수 환급 / 쿼터 분할",
+        "line": "218.5",
+        "picks": [
+          {
+            "label": "오버",
+            "price": 1.71,
+            "priceCents": 171
+          },
+          {
+            "label": "언더",
+            "price": 2.18,
+            "priceCents": 218
+          }
+        ],
+        "period": "full_game",
+        "settlement": "quarter-split; integer-push; half-line-no-push",
+        "sourceKind": "synthetic-model",
+        "datasetVersion": "aldebaran-prematch-r9-20260922",
+        "canonicalId": "record-401902644|basketball.total_points|full_game|연장 포함|both|218.5|",
+        "templateId": "basketball.total_points",
+        "settlementScope": "연장 포함",
+        "subjectId": "both",
+        "status": "active",
+        "variant": "",
+        "category": "totals",
+        "group": "basketball.total_points:full_game:both:"
+      },
+      {
+        "name": "핸디캡",
+        "rule": "연장 포함 · 정수 환급 / 쿼터 분할",
+        "line": "홈 −3.5",
+        "picks": [
+          {
+            "label": "홈 −3.5",
+            "price": 1.89,
+            "priceCents": 189
+          },
+          {
+            "label": "원정 +3.5",
+            "price": 1.94,
+            "locked": false,
+            "priceCents": 194
+          }
+        ],
+        "period": "full_game",
+        "settlement": "quarter-split; integer-push; half-line-no-push",
+        "sourceKind": "synthetic-model",
+        "datasetVersion": "aldebaran-prematch-r9-20260922",
+        "canonicalId": "record-401902644|basketball.spread|full_game|연장 포함|both|-3.5|",
+        "templateId": "basketball.spread",
+        "settlementScope": "연장 포함",
+        "subjectId": "both",
+        "status": "active",
+        "variant": "",
+        "category": "handicap",
+        "group": "basketball.spread:full_game:both:"
+      }
+    ],
+    "marketCount": 80,
+    "sourceMode": "static-collection",
+    "oddsSourceKind": "synthetic-model"
+  },
+  {
+    "id": "aldebaran-r15-baseball-01",
+    "sport": "baseball",
+    "time": "09.24 09:00",
+    "league": "MLB",
+    "home": {
+      "id": "30",
+      "name": "탬파베이 레이스",
+      "originalName": "Tampa Bay Rays",
+      "logo": "/sports/r6/teams/mlb/tampa-bay-rays.png"
+    },
+    "away": {
+      "id": "11",
+      "name": "애슬레틱스",
+      "originalName": "Athletics",
+      "logo": "/sports/r6/teams/mlb/athletics.png"
+    },
+    "markets": [
+      {
+        "name": "전체 · 승패",
+        "rule": "연장 포함 · 동점 환불",
+        "key": "baseball.moneyline:full_game:both:2way-refund",
+        "group": "baseball.moneyline:full_game:both:2way-refund",
+        "category": "result",
+        "picks": [
+          {
+            "label": "홈",
+            "key": "0",
+            "price": 1.72,
+            "priceCents": 172
+          },
+          {
+            "label": "원정",
+            "key": "1",
+            "price": 2.25,
+            "priceCents": 225
+          }
+        ],
+        "canonicalId": "aldebaran-r15-baseball-01|baseball.moneyline|full_game|연장 포함|both||2way-refund",
+        "templateId": "baseball.moneyline",
+        "period": "full_game",
+        "settlementScope": "연장 포함",
+        "subjectId": "both",
+        "status": "active",
+        "variant": "2way-refund"
+      },
+      {
+        "name": "전체 · 총 득점 언더·오버",
+        "rule": "연장 포함 · 정수 동점 환불",
+        "key": "baseball.total_runs:full_game:both:",
+        "group": "baseball.total_runs:full_game:both:",
+        "category": "totals",
+        "picks": [
+          {
+            "label": "언더",
+            "key": "0",
+            "price": 2.15,
+            "priceCents": 215
+          },
+          {
+            "label": "오버",
+            "key": "1",
+            "price": 1.79,
+            "priceCents": 179
+          }
+        ],
+        "line": "7.5",
+        "canonicalId": "aldebaran-r15-baseball-01|baseball.total_runs|full_game|연장 포함|both|7.5|",
+        "templateId": "baseball.total_runs",
+        "period": "full_game",
+        "settlementScope": "연장 포함",
+        "subjectId": "both",
+        "status": "active",
+        "variant": ""
+      },
+      {
+        "name": "전체 · 런라인 핸디캡",
+        "rule": "연장 포함 · 정수 동점 환불",
+        "key": "baseball.run_line:full_game:both:",
+        "group": "baseball.run_line:full_game:both:",
+        "category": "handicap",
+        "picks": [
+          {
+            "label": "홈",
+            "key": "0",
+            "price": 2.78,
+            "priceCents": 278
+          },
+          {
+            "label": "원정",
+            "key": "1",
+            "price": 1.5,
+            "priceCents": 150
+          }
+        ],
+        "line": "-1.5",
+        "canonicalId": "aldebaran-r15-baseball-01|baseball.run_line|full_game|연장 포함|both|-1.5|",
+        "templateId": "baseball.run_line",
+        "period": "full_game",
+        "settlementScope": "연장 포함",
+        "subjectId": "both",
+        "status": "active",
+        "variant": ""
+      }
+    ],
+    "marketCount": 65,
+    "sourceMode": "synthetic-demo",
+    "oddsSourceKind": "synthetic-model"
+  }
+]

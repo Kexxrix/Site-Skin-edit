@@ -1,0 +1,267 @@
+{
+  "task": "Theme raster backgrounds for three existing page 24 skins",
+  "date": "2026-10-22",
+  "timezone": "Asia/Seoul",
+  "method": "Built-in image_gen, three independent text-to-image calls",
+  "scope": "Figma page 24 background image layers only; fixed layout and existing content unchanged",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "pageId": "795:1330",
+  "runDirectory": "E:/codexwork/Site-Skin-edit/generated-images/cobalt-frost-crimson-backgrounds-20261022-162819",
+  "counts": {
+    "attempted": 3,
+    "generated": 3,
+    "failed": 0,
+    "skipped": 0,
+    "visualQaPassed": 3,
+    "selectedForFigmaByAgent": 3,
+    "figmaApplied": 3,
+    "rejected": 0,
+    "userApproved": 0,
+    "webDeployed": 0
+  },
+  "prompts": [
+    {
+      "key": "cobalt",
+      "file": "prompts/cobalt.txt",
+      "attachedImageReferences": [],
+      "observedFigmaReference": "qa/cobalt-before.png",
+      "referenceUse": "Existing screen inspected for colors, background exposure and geometry; screenshot not attached to generation"
+    },
+    {
+      "key": "frost",
+      "file": "prompts/frost.txt",
+      "attachedImageReferences": [],
+      "observedFigmaReference": "qa/frost-before.png",
+      "referenceUse": "Existing screen inspected for colors, background exposure and geometry; screenshot not attached to generation"
+    },
+    {
+      "key": "crimson",
+      "file": "prompts/crimson.txt",
+      "attachedImageReferences": [],
+      "observedFigmaReference": "qa/crimson-before.png",
+      "referenceUse": "Existing screen inspected for colors, background exposure and geometry; screenshot not attached to generation"
+    }
+  ],
+  "assets": [
+    {
+      "key": "cobalt",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-e10378fb-acf8-49f6-960e-ccdefce629f3.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cobalt-frost-crimson-backgrounds-20261022-162819/results/royal-cobalt-glass-background-v1.png",
+      "operation": "move",
+      "fileVerification": "qa/asset-moves.json",
+      "generationStatus": "succeeded",
+      "qaStatus": "pass",
+      "userApproved": false,
+      "figmaApplied": true,
+      "webAdopted": false,
+      "rootId": "868:4209",
+      "name": "Royal Cobalt · 24 기본형 고정 · 1920",
+      "backgroundId": "899:7502",
+      "imageHash": "6dc140732c359ba29627c278e71ef05ba181d750",
+      "opacity": 0.85,
+      "scaleMode": "FILL",
+      "backgroundLocked": true,
+      "backgroundPositioning": "ABSOLUTE",
+      "backgroundConstraints": {
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "width": 1920,
+      "height": 1819.199951171875,
+      "uiHashBefore": "51db86d5",
+      "uiHashAfter": "51db86d5",
+      "originalUiUnchanged": true,
+      "instances": 94,
+      "originalImageNodeCount": 100,
+      "totalImageNodeCount": 101,
+      "originalNodeCount": 629,
+      "totalNodeCount": 630,
+      "finalScreenshot": "qa/cobalt-applied.png"
+    },
+    {
+      "key": "frost",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-9a9b88ac-3836-488f-9fc8-f569c14f962d.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cobalt-frost-crimson-backgrounds-20261022-162819/results/frost-azure-ice-background-v1.png",
+      "operation": "move",
+      "fileVerification": "qa/asset-moves.json",
+      "generationStatus": "succeeded",
+      "qaStatus": "pass",
+      "userApproved": false,
+      "figmaApplied": true,
+      "webAdopted": false,
+      "rootId": "868:4894",
+      "name": "Frost Azure · 24 기본형 고정 · 1920",
+      "backgroundId": "899:7515",
+      "imageHash": "399145638aad92d29988893e305b54870665d203",
+      "opacity": 0.6,
+      "scaleMode": "FILL",
+      "backgroundLocked": true,
+      "backgroundPositioning": "ABSOLUTE",
+      "backgroundConstraints": {
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "width": 1920,
+      "height": 1819.199951171875,
+      "uiHashBefore": "a8c02b8f",
+      "uiHashAfter": "a8c02b8f",
+      "originalUiUnchanged": true,
+      "instances": 94,
+      "originalImageNodeCount": 100,
+      "totalImageNodeCount": 101,
+      "originalNodeCount": 675,
+      "totalNodeCount": 676,
+      "finalScreenshot": "qa/frost-applied.png",
+      "finalBackgroundFills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 0.6000000238418579,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "399145638aad92d29988893e305b54870665d203"
+        },
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.0117647061124444,
+                "g": 0.062745101749897,
+                "b": 0.09803921729326248,
+                "a": 0
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.0117647061124444,
+                "g": 0.062745101749897,
+                "b": 0.09803921729326248,
+                "a": 0
+              },
+              "position": 0.7799999713897705,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.0117647061124444,
+                "g": 0.062745101749897,
+                "b": 0.09803921729326248,
+                "a": 0.550000011920929
+              },
+              "position": 0.8700000047683716,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.0117647061124444,
+                "g": 0.062745101749897,
+                "b": 0.09803921729326248,
+                "a": 0.7599999904632568
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              -1,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "refinement": "Footer gradient above image, transparent until 78% height, 55% navy at 87%, 76% at bottom"
+    },
+    {
+      "key": "crimson",
+      "source": "C:/Users/User/.codex/generated_images/01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c/exec-19e7ecb4-8621-41cc-89aa-025ebd38f10e.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cobalt-frost-crimson-backgrounds-20261022-162819/results/ggr-crimson-obsidian-background-v1.png",
+      "operation": "move",
+      "fileVerification": "qa/asset-moves.json",
+      "generationStatus": "succeeded",
+      "qaStatus": "pass",
+      "userApproved": false,
+      "figmaApplied": true,
+      "webAdopted": false,
+      "rootId": "840:3015",
+      "name": "GGR Crimson · 24 기본형 고정 · 1920",
+      "backgroundId": "899:7528",
+      "imageHash": "405bd940aed10e3e340c74a24b8160cef83772d5",
+      "opacity": 0.85,
+      "scaleMode": "FILL",
+      "backgroundLocked": true,
+      "backgroundPositioning": "ABSOLUTE",
+      "backgroundConstraints": {
+        "horizontal": "STRETCH",
+        "vertical": "STRETCH"
+      },
+      "width": 1920,
+      "height": 1819.199951171875,
+      "uiHashBefore": "f526354d",
+      "uiHashAfter": "f526354d",
+      "originalUiUnchanged": true,
+      "instances": 94,
+      "originalImageNodeCount": 100,
+      "totalImageNodeCount": 101,
+      "originalNodeCount": 629,
+      "totalNodeCount": 630,
+      "finalScreenshot": "qa/crimson-applied.png"
+    }
+  ],
+  "verification": {
+    "originalUiHashUnchanged": true,
+    "protectedUnchanged": true,
+    "protectedCount": 53,
+    "protectedScreens": 9,
+    "protectedMasters": 44,
+    "instanceCountPerTarget": 94,
+    "originalImageNodeCountPerTarget": 100,
+    "sourceFileSha256Matches": true,
+    "sourceImagesNotResized": true,
+    "figmaVisualQa": "Full screenshots inspected. Frost footer contrast refined and verified after paint-order correction.",
+    "runtimeQa": "Not applicable; no website files or runtime changed"
+  },
+  "recovery": "Hide or remove only new background rectangles 899:7502, 899:7515, 899:7528; all original content remains intact. Unlock the respective rectangle to change its image fill/opacity.",
+  "evidence": {
+    "baseline": "qa/baseline.json",
+    "applyState": "qa/apply-state.json",
+    "frostFinal": "qa/frost-final-state.json",
+    "comparison": "qa/comparison.png",
+    "assetMoves": "qa/asset-moves.json"
+  }
+}

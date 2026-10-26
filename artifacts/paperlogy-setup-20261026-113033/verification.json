@@ -1,0 +1,110 @@
+{
+  "verifiedAt": "2026-10-26T11:36:24.261220+09:00",
+  "result": "pass",
+  "fontChecks": [
+    {
+      "file": "ttf/Paperlogy-1Thin.ttf",
+      "cssWeight": 100,
+      "internalUsWeightClass": 250,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-2ExtraLight.ttf",
+      "cssWeight": 200,
+      "internalUsWeightClass": 250,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-3Light.ttf",
+      "cssWeight": 300,
+      "internalUsWeightClass": 300,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-4Regular.ttf",
+      "cssWeight": 400,
+      "internalUsWeightClass": 400,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-5Medium.ttf",
+      "cssWeight": 500,
+      "internalUsWeightClass": 500,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-6SemiBold.ttf",
+      "cssWeight": 600,
+      "internalUsWeightClass": 600,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-7Bold.ttf",
+      "cssWeight": 700,
+      "internalUsWeightClass": 700,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-8ExtraBold.ttf",
+      "cssWeight": 800,
+      "internalUsWeightClass": 800,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    },
+    {
+      "file": "ttf/Paperlogy-9Black.ttf",
+      "cssWeight": 900,
+      "internalUsWeightClass": 900,
+      "pathExists": true,
+      "sourceAndCopySha256Equal": true,
+      "sampleGlyphsPresent": true
+    }
+  ],
+  "licenseSha256Verified": true,
+  "cssOnlyDefinesFontFacesAndOptInClass": true,
+  "woff2Prepared": false,
+  "toolsInstalled": false,
+  "sourcePreservation": {
+    "baselineFileCount": 1227,
+    "changedFiles": [],
+    "existingPaperlogyReferences": []
+  },
+  "browser": {
+    "engine": "Codex in-app Chromium",
+    "fixture": "font-check.html",
+    "registeredFaces": 9,
+    "requestsBeforeSelection": 0,
+    "requestsAfterSelecting400": 1,
+    "allWeightsExplicitQaLoaded": 9,
+    "unselectedSampleComputedFontsSizesLineHeightAndBoundsUnchanged": true,
+    "renderVisuallyInspected": true,
+    "sample": "페이백 포인트 · 회원 이벤트 · 데일리 리워드 ABC abc 0123456789 日本語",
+    "evidence": "browser-verification.json"
+  },
+  "limitations": [
+    "Existing sites were not started or visually re-rendered; unchanged runtime-source hashes and absent imports are verified.",
+    "Browser comparison uses an isolated registration fixture, not a production screenshot comparison.",
+    "WOFF2 conversion deferred because additional conversion tools are absent; no installation performed.",
+    "Actual adoption, page-specific line wrapping and deployment remain separate instructions."
+  ],
+  "cleanup": {
+    "temporaryQaServerStopped": true,
+    "port": 5487,
+    "agentCreatedQaTabClosed": true
+  }
+}

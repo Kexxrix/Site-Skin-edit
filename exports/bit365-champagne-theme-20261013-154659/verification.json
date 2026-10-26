@@ -1,0 +1,1052 @@
+{
+  "audit": {
+    "originalPages": [
+      {
+        "id": "44:552",
+        "name": "04 · BIT365 홈",
+        "hash": "ace609cc",
+        "nodeCount": 2574,
+        "current": {
+          "hash": "ace609cc",
+          "nodeCount": 2574
+        },
+        "unchanged": true
+      },
+      {
+        "id": "44:553",
+        "name": "05 · BIT365 컴포넌트",
+        "hash": "c9f9d22d",
+        "nodeCount": 1027,
+        "current": {
+          "hash": "c9f9d22d",
+          "nodeCount": 1027
+        },
+        "unchanged": true
+      },
+      {
+        "id": "73:2891",
+        "name": "06 · BIT365 · ALDEBARAN 테마",
+        "hash": "dd4ca50b",
+        "nodeCount": 2574,
+        "current": {
+          "hash": "dd4ca50b",
+          "nodeCount": 2574
+        },
+        "unchanged": true
+      }
+    ],
+    "originalVariableChanges": [],
+    "originalPropertyChanges": [],
+    "newPages": [
+      {
+        "id": "88:552",
+        "name": "07 · BIT365 · 샴페인 골드",
+        "nodeCount": 2574,
+        "instances": 272,
+        "components": 0,
+        "sets": 0,
+        "sharedComponents": [],
+        "sharedVariables": [],
+        "sharedStyles": []
+      },
+      {
+        "id": "88:553",
+        "name": "08 · 샴페인 골드 컴포넌트",
+        "nodeCount": 915,
+        "instances": 59,
+        "components": 21,
+        "sets": 6,
+        "sharedComponents": [],
+        "sharedVariables": [],
+        "sharedStyles": []
+      }
+    ],
+    "screens": [
+      {
+        "id": "91:992",
+        "name": "BIT365 · 샴페인 골드 · 1920px",
+        "w": 1920,
+        "h": 1755.800048828125,
+        "layout": "VERTICAL",
+        "textCount": 186,
+        "layoutOrTextChanges": [],
+        "liveCards": 10,
+        "artErrors": [],
+        "sportsCards": 3
+      },
+      {
+        "id": "92:1418",
+        "name": "BIT365 · 샴페인 골드 · 1440px",
+        "w": 1440,
+        "h": 1755.800048828125,
+        "layout": "VERTICAL",
+        "textCount": 190,
+        "layoutOrTextChanges": [],
+        "liveCards": 10,
+        "artErrors": [],
+        "sportsCards": 3
+      },
+      {
+        "id": "92:2658",
+        "name": "BIT365 · 샴페인 골드 · 768px",
+        "w": 768,
+        "h": 2315.199951171875,
+        "layout": "VERTICAL",
+        "textCount": 170,
+        "layoutOrTextChanges": [],
+        "liveCards": 10,
+        "artErrors": [],
+        "sportsCards": 3
+      },
+      {
+        "id": "92:3808",
+        "name": "BIT365 · 샴페인 골드 · 390px",
+        "w": 390,
+        "h": 2537.60009765625,
+        "layout": "VERTICAL",
+        "textCount": 169,
+        "layoutOrTextChanges": [],
+        "liveCards": 10,
+        "artErrors": [],
+        "sportsCards": 3
+      },
+      {
+        "id": "92:4958",
+        "name": "BIT365 · 샴페인 골드 · 768px · 스크롤",
+        "w": 768,
+        "h": 1024,
+        "layout": "VERTICAL",
+        "textCount": 170,
+        "layoutOrTextChanges": [],
+        "liveCards": 10,
+        "artErrors": [],
+        "sportsCards": 3
+      },
+      {
+        "id": "92:6102",
+        "name": "BIT365 · 샴페인 골드 · 390px · 스크롤",
+        "w": 390,
+        "h": 844,
+        "layout": "VERTICAL",
+        "textCount": 169,
+        "layoutOrTextChanges": [],
+        "liveCards": 10,
+        "artErrors": [],
+        "sportsCards": 3
+      }
+    ],
+    "variables": [
+      {
+        "id": "VariableID:88:555",
+        "name": "palette/page",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.062745101749897,
+            "g": 0.09019608050584793,
+            "b": 0.1411764770746231,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-page-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:556",
+        "name": "page",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:555"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-page)"
+        }
+      },
+      {
+        "id": "VariableID:88:557",
+        "name": "palette/surface",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.10588235408067703,
+            "g": 0.1411764770746231,
+            "b": 0.20000000298023224,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-surface-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:558",
+        "name": "surface",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:557"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-surface)"
+        }
+      },
+      {
+        "id": "VariableID:88:559",
+        "name": "palette/hero",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.07450980693101883,
+            "g": 0.11372549086809158,
+            "b": 0.16862745583057404,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-hero-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:560",
+        "name": "hero",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:559"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-hero)"
+        }
+      },
+      {
+        "id": "VariableID:88:561",
+        "name": "palette/line",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.2235294133424759,
+            "g": 0.25882354378700256,
+            "b": 0.3137255012989044,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-line-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:562",
+        "name": "line",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:561"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-line)"
+        }
+      },
+      {
+        "id": "VariableID:88:563",
+        "name": "palette/accentLine",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.5607843399047852,
+            "g": 0.47058823704719543,
+            "b": 0.32549020648002625,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-accent-line-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:564",
+        "name": "accentLine",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:563"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-accent-line)"
+        }
+      },
+      {
+        "id": "VariableID:88:565",
+        "name": "palette/text",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.9607843160629272,
+            "g": 0.9333333373069763,
+            "b": 0.8745098114013672,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-text-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:566",
+        "name": "text",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:565"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-text)"
+        }
+      },
+      {
+        "id": "VariableID:88:567",
+        "name": "palette/muted",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.7215686440467834,
+            "g": 0.686274528503418,
+            "b": 0.6274510025978088,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-muted-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:568",
+        "name": "muted",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:567"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-muted)"
+        }
+      },
+      {
+        "id": "VariableID:88:569",
+        "name": "palette/yellow",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.8470588326454163,
+            "g": 0.7176470756530762,
+            "b": 0.4745098054409027,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-yellow-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:570",
+        "name": "yellow",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:569"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-yellow)"
+        }
+      },
+      {
+        "id": "VariableID:88:571",
+        "name": "palette/mint",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.9176470637321472,
+            "g": 0.8235294222831726,
+            "b": 0.6352941393852234,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-mint-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:572",
+        "name": "mint",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:571"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-mint)"
+        }
+      },
+      {
+        "id": "VariableID:88:573",
+        "name": "palette/tag",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.16862745583057404,
+            "g": 0.1882352977991104,
+            "b": 0.250980406999588,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-tag-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:574",
+        "name": "tag",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:573"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-tag)"
+        }
+      },
+      {
+        "id": "VariableID:88:575",
+        "name": "palette/theme/header",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.08235294371843338,
+            "g": 0.11764705926179886,
+            "b": 0.1725490242242813,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-header-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:576",
+        "name": "theme/header",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:575"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-header)"
+        }
+      },
+      {
+        "id": "VariableID:88:577",
+        "name": "palette/theme/control",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.16078431904315948,
+            "g": 0.20392157137393951,
+            "b": 0.2862745225429535,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-control-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:578",
+        "name": "theme/control",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:577"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-control)"
+        }
+      },
+      {
+        "id": "VariableID:88:579",
+        "name": "palette/theme/amber",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.8745098114013672,
+            "g": 0.7607843279838562,
+            "b": 0.5490196347236633,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-amber-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:580",
+        "name": "theme/amber",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:579"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-amber)"
+        }
+      },
+      {
+        "id": "VariableID:88:581",
+        "name": "palette/theme/onAccent",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.0941176488995552,
+            "g": 0.12941177189350128,
+            "b": 0.19607843458652496,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-accent-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:582",
+        "name": "theme/onAccent",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:581"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-accent)"
+        }
+      },
+      {
+        "id": "VariableID:88:583",
+        "name": "palette/theme/disabled",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.5568627715110779,
+            "g": 0.545098066329956,
+            "b": 0.5176470875740051,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-disabled-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:584",
+        "name": "theme/disabled",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:583"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-disabled)"
+        }
+      },
+      {
+        "id": "VariableID:88:585",
+        "name": "palette/theme/input",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.062745101749897,
+            "g": 0.09019608050584793,
+            "b": 0.1411764770746231,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-input-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:586",
+        "name": "theme/input",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:585"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-input)"
+        }
+      },
+      {
+        "id": "VariableID:88:587",
+        "name": "palette/theme/onBadge",
+        "scopes": [],
+        "values": {
+          "88:0": {
+            "r": 0.0941176488995552,
+            "g": 0.12941177189350128,
+            "b": 0.19607843458652496,
+            "a": 1
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-badge-raw)"
+        }
+      },
+      {
+        "id": "VariableID:88:588",
+        "name": "theme/onBadge",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "values": {
+          "88:0": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:88:587"
+          }
+        },
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-badge)"
+        }
+      }
+    ],
+    "gallery": {
+      "id": "94:593",
+      "w": 2040,
+      "h": 3217.599853515625,
+      "missingMasters": []
+    }
+  },
+  "gallery": {
+    "createdNodeIds": [
+      "95:804",
+      "95:805",
+      "95:806",
+      "95:807",
+      "95:808",
+      "I95:808;89:798",
+      "I95:808;89:799",
+      "I95:808;89:800",
+      "I95:808;89:801",
+      "I95:808;89:802",
+      "I95:808;89:803",
+      "I95:808;89:804",
+      "I95:808;89:805",
+      "I95:808;89:806",
+      "I95:808;89:807",
+      "I95:808;89:808",
+      "I95:808;89:809",
+      "I95:808;89:810",
+      "I95:808;89:811",
+      "I95:808;89:812",
+      "I95:808;89:813",
+      "I95:808;89:814",
+      "I95:808;89:815",
+      "I95:808;89:816",
+      "I95:808;89:817",
+      "I95:808;89:818",
+      "I95:808;89:819",
+      "I95:808;89:820",
+      "I95:808;89:821",
+      "I95:808;89:822",
+      "I95:808;89:823",
+      "I95:808;89:824",
+      "I95:808;89:825",
+      "I95:808;89:826",
+      "I95:808;89:827",
+      "I95:808;89:828",
+      "I95:808;89:829",
+      "I95:808;89:830",
+      "I95:808;89:831",
+      "I95:808;89:832",
+      "I95:808;89:833",
+      "I95:808;89:834",
+      "I95:808;89:835",
+      "I95:808;89:836",
+      "I95:808;89:837",
+      "I95:808;89:838",
+      "I95:808;89:839",
+      "I95:808;89:840",
+      "I95:808;89:841",
+      "95:809",
+      "I95:809;89:798",
+      "I95:809;89:799",
+      "I95:809;89:800",
+      "I95:809;89:801",
+      "I95:809;89:802",
+      "I95:809;89:803",
+      "I95:809;89:804",
+      "I95:809;89:805",
+      "I95:809;89:806",
+      "I95:809;89:807",
+      "I95:809;89:808",
+      "I95:809;89:809",
+      "I95:809;89:810",
+      "I95:809;89:811",
+      "I95:809;89:812",
+      "I95:809;89:813",
+      "I95:809;89:814",
+      "I95:809;89:815",
+      "I95:809;89:816",
+      "I95:809;89:817",
+      "I95:809;89:818",
+      "I95:809;89:819",
+      "I95:809;89:820",
+      "I95:809;89:821",
+      "I95:809;89:822",
+      "I95:809;89:823",
+      "I95:809;89:824",
+      "I95:809;89:825",
+      "I95:809;89:826",
+      "I95:809;89:827",
+      "I95:809;89:828",
+      "I95:809;89:829",
+      "I95:809;89:830",
+      "I95:809;89:831",
+      "I95:809;89:832",
+      "I95:809;89:833",
+      "I95:809;89:834",
+      "I95:809;89:835",
+      "I95:809;89:836",
+      "I95:809;89:837",
+      "I95:809;89:838",
+      "I95:809;89:839",
+      "I95:809;89:840",
+      "I95:809;89:841",
+      "95:810",
+      "I95:810;89:798",
+      "I95:810;89:799",
+      "I95:810;89:800",
+      "I95:810;89:801",
+      "I95:810;89:802",
+      "I95:810;89:803",
+      "I95:810;89:804",
+      "I95:810;89:805",
+      "I95:810;89:806",
+      "I95:810;89:807",
+      "I95:810;89:808",
+      "I95:810;89:809",
+      "I95:810;89:810",
+      "I95:810;89:811",
+      "I95:810;89:812",
+      "I95:810;89:813",
+      "I95:810;89:814",
+      "I95:810;89:815",
+      "I95:810;89:816",
+      "I95:810;89:817",
+      "I95:810;89:818",
+      "I95:810;89:819",
+      "I95:810;89:820",
+      "I95:810;89:821",
+      "I95:810;89:822",
+      "I95:810;89:823",
+      "I95:810;89:824",
+      "I95:810;89:825",
+      "I95:810;89:826",
+      "I95:810;89:827",
+      "I95:810;89:828",
+      "I95:810;89:829",
+      "I95:810;89:830",
+      "I95:810;89:831",
+      "I95:810;89:832",
+      "I95:810;89:833",
+      "I95:810;89:834",
+      "I95:810;89:835",
+      "I95:810;89:836",
+      "I95:810;89:837",
+      "I95:810;89:838",
+      "I95:810;89:839",
+      "I95:810;89:840",
+      "I95:810;89:841",
+      "95:811",
+      "95:812",
+      "95:813",
+      "I95:813;89:843",
+      "I95:813;89:844",
+      "I95:813;89:845",
+      "I95:813;89:846",
+      "I95:813;89:847",
+      "I95:813;89:848",
+      "I95:813;89:849",
+      "I95:813;89:850",
+      "I95:813;89:851",
+      "I95:813;89:852",
+      "I95:813;89:853",
+      "I95:813;89:854",
+      "I95:813;89:855",
+      "I95:813;89:856",
+      "I95:813;89:857",
+      "I95:813;89:858",
+      "I95:813;89:859",
+      "I95:813;89:860",
+      "I95:813;89:861",
+      "I95:813;89:862",
+      "I95:813;89:863",
+      "I95:813;89:864",
+      "I95:813;89:865",
+      "I95:813;89:866",
+      "I95:813;89:867",
+      "I95:813;89:868",
+      "I95:813;89:869",
+      "I95:813;89:870",
+      "I95:813;89:871",
+      "I95:813;89:872",
+      "I95:813;89:873",
+      "I95:813;89:874",
+      "I95:813;89:875",
+      "I95:813;89:876",
+      "I95:813;89:877",
+      "I95:813;89:878",
+      "I95:813;89:879",
+      "I95:813;89:880",
+      "I95:813;89:881",
+      "I95:813;89:882",
+      "I95:813;89:883",
+      "I95:813;89:884",
+      "I95:813;89:885",
+      "I95:813;89:886",
+      "95:814",
+      "I95:814;89:843",
+      "I95:814;89:844",
+      "I95:814;89:845",
+      "I95:814;89:846",
+      "I95:814;89:847",
+      "I95:814;89:848",
+      "I95:814;89:849",
+      "I95:814;89:850",
+      "I95:814;89:851",
+      "I95:814;89:852",
+      "I95:814;89:853",
+      "I95:814;89:854",
+      "I95:814;89:855",
+      "I95:814;89:856",
+      "I95:814;89:857",
+      "I95:814;89:858",
+      "I95:814;89:859",
+      "I95:814;89:860",
+      "I95:814;89:861",
+      "I95:814;89:862",
+      "I95:814;89:863",
+      "I95:814;89:864",
+      "I95:814;89:865",
+      "I95:814;89:866",
+      "I95:814;89:867",
+      "I95:814;89:868",
+      "I95:814;89:869",
+      "I95:814;89:870",
+      "I95:814;89:871",
+      "I95:814;89:872",
+      "I95:814;89:873",
+      "I95:814;89:874",
+      "I95:814;89:875",
+      "I95:814;89:876",
+      "I95:814;89:877",
+      "I95:814;89:878",
+      "I95:814;89:879",
+      "I95:814;89:880",
+      "I95:814;89:881",
+      "I95:814;89:882",
+      "I95:814;89:883",
+      "I95:814;89:884",
+      "I95:814;89:885",
+      "I95:814;89:886",
+      "95:815",
+      "I95:815;89:843",
+      "I95:815;89:844",
+      "I95:815;89:845",
+      "I95:815;89:846",
+      "I95:815;89:847",
+      "I95:815;89:848",
+      "I95:815;89:849",
+      "I95:815;89:850",
+      "I95:815;89:851",
+      "I95:815;89:852",
+      "I95:815;89:853",
+      "I95:815;89:854",
+      "I95:815;89:855",
+      "I95:815;89:856",
+      "I95:815;89:857",
+      "I95:815;89:858",
+      "I95:815;89:859",
+      "I95:815;89:860",
+      "I95:815;89:861",
+      "I95:815;89:862",
+      "I95:815;89:863",
+      "I95:815;89:864",
+      "I95:815;89:865",
+      "I95:815;89:866",
+      "I95:815;89:867",
+      "I95:815;89:868",
+      "I95:815;89:869",
+      "I95:815;89:870",
+      "I95:815;89:871",
+      "I95:815;89:872",
+      "I95:815;89:873",
+      "I95:815;89:874",
+      "I95:815;89:875",
+      "I95:815;89:876",
+      "I95:815;89:877",
+      "I95:815;89:878",
+      "I95:815;89:879",
+      "I95:815;89:880",
+      "I95:815;89:881",
+      "I95:815;89:882",
+      "I95:815;89:883",
+      "I95:815;89:884",
+      "I95:815;89:885",
+      "I95:815;89:886"
+    ],
+    "mutatedNodeIds": [
+      "94:593"
+    ],
+    "removedNodeIds": [
+      "88:599",
+      "88:600",
+      "88:601",
+      "88:602",
+      "88:603",
+      "88:604",
+      "88:605",
+      "88:606",
+      "88:607",
+      "88:608",
+      "88:609"
+    ],
+    "galleryId": "94:593",
+    "sportsId": "95:804",
+    "gallerySize": {
+      "w": 2040,
+      "h": 3217.599853515625
+    },
+    "represented": [
+      "89:703",
+      "89:552",
+      "89:554",
+      "89:728",
+      "89:717",
+      "89:589",
+      "89:558",
+      "89:556",
+      "89:573",
+      "89:659",
+      "89:668",
+      "89:677",
+      "89:690",
+      "89:696",
+      "89:646",
+      "89:652",
+      "89:746",
+      "89:771",
+      "89:564",
+      "89:797",
+      "89:842"
+    ],
+    "missingComponents": []
+  },
+  "visualReview": "Desktop 1920, 1440; tablet 768; mobile 390; scroll 768x1024, 390x844; component gallery. No layout or content changes beyond palette and new live-card artwork.",
+  "figmaScreenUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=91-992",
+  "figmaComponentsUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=94-593"
+}

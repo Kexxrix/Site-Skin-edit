@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "status": "verified_and_applied_to_figma",
+  "tool": "built-in image_gen",
+  "scope": "B2 duplicate on Figma page25; 3 benefit hero images + 4 full-bleed gateways",
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "pageId": "919:7490",
+    "rootId": "937:1767"
+  },
+  "counts": {
+    "attempted": 8,
+    "succeeded": 7,
+    "failed": 1,
+    "skipped": 0,
+    "qaPassed": 7,
+    "selectedByAgent": 7,
+    "acceptedByUser": 0,
+    "rejectedOutputs": 0
+  },
+  "failedAttempts": [
+    {
+      "key": "hero-events",
+      "attempt": 1,
+      "reason": "output safety rejection",
+      "category": "sexual",
+      "imageProduced": false,
+      "change": "replace club host portrait with non-person member invitation portal scene"
+    }
+  ],
+  "assets": [
+    {
+      "key": "hero-payback",
+      "role": "Payback",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-c2733fb9-a1be-4473-9300-aac76a4768cb.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-neon-b2-20261022-181805/results/hero-payback.png",
+      "operation": "move",
+      "sha256BeforeAfterVerified": true,
+      "prompt": "prompts/hero-payback.txt",
+      "references": [
+        "qa/source-b.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "format": "PNG",
+      "width": 1850,
+      "height": 850,
+      "bytes": 2864818,
+      "original_sha256_before": "8b1f99381e383fca8b47f49ee9bb36ad2bcb1e431d936a7a0fbbf8fb8e926f2a",
+      "final_sha256": "8b1f99381e383fca8b47f49ee9bb36ad2bcb1e431d936a7a0fbbf8fb8e926f2a",
+      "imageHash": "a11c550130e7041e8893855e538d89e4c6ddfc91",
+      "appliedToFigma": true
+    },
+    {
+      "key": "hero-events",
+      "role": "Events",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-751810a4-3805-4266-bcde-731d94e75146.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-neon-b2-20261022-181805/results/hero-events.png",
+      "operation": "move",
+      "sha256BeforeAfterVerified": true,
+      "prompt": "prompts/hero-events.txt",
+      "references": [
+        "qa/source-b.png",
+        "results/hero-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "format": "PNG",
+      "width": 1851,
+      "height": 850,
+      "bytes": 2907901,
+      "original_sha256_before": "a4718c098e8d672b33f2383f175b25bee8e6bb6e27d5e3842ec661948c9e2950",
+      "final_sha256": "a4718c098e8d672b33f2383f175b25bee8e6bb6e27d5e3842ec661948c9e2950",
+      "imageHash": "aae73707afe976e036b7793be6906b4a89258846",
+      "appliedToFigma": true
+    },
+    {
+      "key": "hero-reward",
+      "role": "DailyReward",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-285a8d55-7695-4c7d-89ce-8c7c37ef0b94.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-neon-b2-20261022-181805/results/hero-reward.png",
+      "operation": "move",
+      "sha256BeforeAfterVerified": true,
+      "prompt": "prompts/hero-reward.txt",
+      "references": [
+        "qa/source-b.png",
+        "results/hero-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "format": "PNG",
+      "width": 1851,
+      "height": 850,
+      "bytes": 2743032,
+      "original_sha256_before": "83a28c695d610c7aa6b2fbff76cbdfbdff3bff46a8b0d28d86d1998301bfd06d",
+      "final_sha256": "83a28c695d610c7aa6b2fbff76cbdfbdff3bff46a8b0d28d86d1998301bfd06d",
+      "imageHash": "4f1e648d95a5420ef88a6b6879bdb175a87aa5fc",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-casino",
+      "role": "LiveCasino",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-da5d5e30-c1eb-4ee2-ade6-4eac3f288ecb.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-neon-b2-20261022-181805/results/gateway-casino.png",
+      "operation": "move",
+      "sha256BeforeAfterVerified": true,
+      "prompt": "prompts/gateway-casino.txt",
+      "references": [
+        "qa/source-b.png",
+        "results/hero-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "format": "PNG",
+      "width": 2172,
+      "height": 724,
+      "bytes": 2662353,
+      "original_sha256_before": "4f4fc65d0d8bab5fffee57f68efee649881aaa042bf4e26033567fdb7042cf46",
+      "final_sha256": "4f4fc65d0d8bab5fffee57f68efee649881aaa042bf4e26033567fdb7042cf46",
+      "imageHash": "3eb014f344e1aae032b8fd0647cb596692dcc8c2",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-slots",
+      "role": "Slots",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-49f99e75-d28c-4f1c-bd47-ad1a154fc96f.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-neon-b2-20261022-181805/results/gateway-slots.png",
+      "operation": "move",
+      "sha256BeforeAfterVerified": true,
+      "prompt": "prompts/gateway-slots.txt",
+      "references": [
+        "qa/source-b.png",
+        "results/hero-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "format": "PNG",
+      "width": 2172,
+      "height": 724,
+      "bytes": 2895607,
+      "original_sha256_before": "8fb07f5c0b69ee7378a6b5b7483d90aec34ef29103d0ec0af1941ac642b4ded6",
+      "final_sha256": "8fb07f5c0b69ee7378a6b5b7483d90aec34ef29103d0ec0af1941ac642b4ded6",
+      "imageHash": "0850da6dcc0e857ad02e2f23e62f9b7898a52257",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-sports",
+      "role": "Sports",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-7571c5f4-4155-4b2d-8bfe-53b599710170.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-neon-b2-20261022-181805/results/gateway-sports.png",
+      "operation": "move",
+      "sha256BeforeAfterVerified": true,
+      "prompt": "prompts/gateway-sports.txt",
+      "references": [
+        "qa/source-b.png",
+        "results/hero-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "format": "PNG",
+      "width": 2172,
+      "height": 724,
+      "bytes": 2876322,
+      "original_sha256_before": "03396cebf45e71deca1cb140e79259c8a77459026dd616fd0bce7793d38d2e62",
+      "final_sha256": "03396cebf45e71deca1cb140e79259c8a77459026dd616fd0bce7793d38d2e62",
+      "imageHash": "a554bcb25ebb82e1ae4210a34f94e5890048be39",
+      "appliedToFigma": true
+    },
+    {
+      "key": "gateway-inplay",
+      "role": "InPlay",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-44b70769-af4c-4906-ab25-5b8daaddd414.png",
+      "final": "E:/codexwork/Site-Skin-edit/generated-images/cc-lime-neon-b2-20261022-181805/results/gateway-inplay.png",
+      "operation": "move",
+      "sha256BeforeAfterVerified": true,
+      "prompt": "prompts/gateway-inplay.txt",
+      "references": [
+        "qa/source-b.png",
+        "results/hero-payback.png"
+      ],
+      "generated": true,
+      "qa_pass": true,
+      "selected_by_agent": true,
+      "accepted_by_user": false,
+      "adopted": false,
+      "format": "PNG",
+      "width": 2172,
+      "height": 724,
+      "bytes": 2907989,
+      "original_sha256_before": "91b3615d126f6bc0d9bf718dcaddf1eed38fb9752fd26ac2ef5a4da3d57afc18",
+      "final_sha256": "91b3615d126f6bc0d9bf718dcaddf1eed38fb9752fd26ac2ef5a4da3d57afc18",
+      "imageHash": "1d50a56078ca735e0c68bdd5d2cc52f502b10a53",
+      "appliedToFigma": true
+    }
+  ],
+  "verification": {
+    "sourceAAndBAndMasterUnchanged": true,
+    "lowerSubtreesUnchanged": true,
+    "newUniqueImages": 7,
+    "placedImageNodes": 11,
+    "gatewaysAllFullBleed": true,
+    "editableTopTextNodes": 36,
+    "linkedInstances": 91,
+    "missingInstances": 0,
+    "carouselTargets": 7,
+    "targetsStayWithinNewCopy": true,
+    "visualCheckedAt1920px": true,
+    "browserPrototype": {
+      "result": "PASS",
+      "observed": [
+        "Payback initial state",
+        "Tab to member events",
+        "Tab to daily reward",
+        "Click left Payback preview returns to center"
+      ],
+      "evidence": [
+        "qa/prototype-events.png",
+        "qa/prototype-reward.png",
+        "qa/prototype-side-return.png"
+      ]
+    },
+    "notVerified": [
+      "drag input",
+      "infinite loop",
+      "autoplay",
+      "actual website responsive behavior"
+    ]
+  },
+  "delivery": {
+    "figmaUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=937-1767",
+    "fullScreenshot": "qa/b2-full.png",
+    "preview": "qa/b2-top.png",
+    "comparison": "qa/comparison.png",
+    "assetInventory": "asset-inventory.json",
+    "review": "review.ko.md",
+    "userAccepted": false,
+    "websiteCodeChanged": false,
+    "deployed": false
+  }
+}

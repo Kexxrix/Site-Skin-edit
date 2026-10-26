@@ -1,3 +1,13 @@
+## 최신 프로젝트 백업 — 2026-10-26
+
+2026-10-12 이후의 작업을 수집했습니다. LUNA, TITAN Paperlogy 복제본, Figma·BIT365 내보내기와 생성 이미지, TITAN 인계·폰트·제작 문서를 포함합니다. 원본 작업과 기존 배포는 유지했습니다.
+
+[백업 범위와 검증 기록](backup/site-snapshots/20261026-project-sync/README.ko.md) · [파일별 수집 명세](backup/site-snapshots/20261026-project-sync/source-files.json) · [제외 목록](backup/site-snapshots/20261026-project-sync/excluded.json)
+
+아래 내용은 기존 백업 이력입니다. 이 안내는 GitHub 백업 사본에만 추가했으며 로컬 작업 README는 수정하지 않았습니다.
+
+---
+
 # Site-Skin-edit — TITAN 제작 자료
 
 ## MERCURY White 공개 — 2026-10-12

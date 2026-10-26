@@ -1,0 +1,801 @@
+{
+  "completedAt": "2026-10-14 08:48:19 UTC",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "page": {
+    "id": "261:552",
+    "name": "13 · WOG 입체 사이드바"
+  },
+  "reference": {
+    "url": "https://wog-1000.com/",
+    "observed": "1920x1080 DOM and visual review; gradient, bevel, inset highlight and cast shadow construction",
+    "scope": "Material quality reference; original WOG art and icons not copied"
+  },
+  "deliverables": {
+    "sidebarSet": "265:840",
+    "sidebarVariants": {
+      "Raised": "263:552",
+      "Inset": "263:765",
+      "Tiles": "263:978"
+    },
+    "navigationSet": "262:648",
+    "groupHeaderSet": "262:686",
+    "gallery": "265:883",
+    "desktop1920": "266:1408"
+  },
+  "componentCounts": {
+    "sidebar": 3,
+    "navigation": 12,
+    "groupHeader": 3
+  },
+  "componentSetCount": 3,
+  "properties": {
+    "sidebar": {
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Raised",
+        "variantOptions": [
+          "Raised",
+          "Inset",
+          "Tiles"
+        ]
+      }
+    },
+    "navigation": {
+      "Label#262:0": {
+        "type": "TEXT",
+        "defaultValue": "스포츠"
+      },
+      "Icon#262:1": {
+        "type": "TEXT",
+        "defaultValue": ""
+      },
+      "Badge#262:2": {
+        "type": "TEXT",
+        "defaultValue": "200x"
+      },
+      "Show badge#262:3": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Raised",
+        "variantOptions": [
+          "Raised",
+          "Inset",
+          "Tiles"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Hover",
+          "Selected",
+          "Pressed"
+        ]
+      }
+    },
+    "pageSwap": {
+      "mutatedNodeIds": [
+        "218:1787"
+      ],
+      "property": "Sidebar style#218:1",
+      "before": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "216:654",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "08f5d0d086caed312d9127e634a44bd32012ae1d"
+          }
+        ]
+      },
+      "after": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "216:654",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "08f5d0d086caed312d9127e634a44bd32012ae1d"
+          },
+          {
+            "type": "COMPONENT_SET",
+            "key": "4883af27d98e6249200e12e8eaf36654520e21c2"
+          }
+        ]
+      }
+    }
+  },
+  "checks": {
+    "protectedPagesUnchanged": [
+      {
+        "id": "139:552",
+        "count": 2670,
+        "hash": "c47cd377"
+      },
+      {
+        "id": "158:597",
+        "count": 1016,
+        "hash": "a762a4bb"
+      }
+    ],
+    "existingGoldPaintExactMatch": true,
+    "galleryLinksAndMenuContent": [
+      {
+        "id": "265:888",
+        "type": "INSTANCE",
+        "main": "216:654",
+        "w": 232,
+        "h": 830,
+        "rows": [
+          {
+            "name": "Menu / 입금신청",
+            "label": "입금신청",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 출금신청",
+            "label": "출금신청",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 마이페이지",
+            "label": "마이페이지",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 문의하기",
+            "label": "문의하기",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 쪽지",
+            "label": "쪽지",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 국내형",
+            "label": "국내형",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 해외형",
+            "label": "해외형",
+            "icon": ""
+          },
+          {
+            "name": "Menu / E스포츠",
+            "label": "E스포츠",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 라이브",
+            "label": "라이브",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 라이브카지노",
+            "label": "라이브카지노",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 슬롯",
+            "label": "슬롯",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 공지사항",
+            "label": "공지사항",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 이벤트",
+            "label": "이벤트",
+            "icon": ""
+          },
+          {
+            "name": "Menu / 베팅규정",
+            "label": "베팅규정",
+            "icon": ""
+          }
+        ],
+        "overflow": []
+      },
+      {
+        "id": "265:1055",
+        "type": "INSTANCE",
+        "main": "263:552",
+        "w": 232,
+        "h": 1010,
+        "rows": [
+          {
+            "name": "Menu / 입금신청",
+            "label": "입금신청",
+            "icon": "",
+            "state": "Selected"
+          },
+          {
+            "name": "Menu / 출금신청",
+            "label": "출금신청",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 마이페이지",
+            "label": "마이페이지",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 문의하기",
+            "label": "문의하기",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 쪽지",
+            "label": "쪽지",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 국내형",
+            "label": "국내형",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 해외형",
+            "label": "해외형",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / E스포츠",
+            "label": "E스포츠",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 라이브",
+            "label": "라이브",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 라이브카지노",
+            "label": "라이브카지노",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 슬롯",
+            "label": "슬롯",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 공지사항",
+            "label": "공지사항",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 이벤트",
+            "label": "이벤트",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 베팅규정",
+            "label": "베팅규정",
+            "icon": "",
+            "state": "Default"
+          }
+        ],
+        "overflow": []
+      },
+      {
+        "id": "265:1196",
+        "type": "INSTANCE",
+        "main": "263:765",
+        "w": 232,
+        "h": 1010,
+        "rows": [
+          {
+            "name": "Menu / 입금신청",
+            "label": "입금신청",
+            "icon": "",
+            "state": "Selected"
+          },
+          {
+            "name": "Menu / 출금신청",
+            "label": "출금신청",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 마이페이지",
+            "label": "마이페이지",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 문의하기",
+            "label": "문의하기",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 쪽지",
+            "label": "쪽지",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 국내형",
+            "label": "국내형",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 해외형",
+            "label": "해외형",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / E스포츠",
+            "label": "E스포츠",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 라이브",
+            "label": "라이브",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 라이브카지노",
+            "label": "라이브카지노",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 슬롯",
+            "label": "슬롯",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 공지사항",
+            "label": "공지사항",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 이벤트",
+            "label": "이벤트",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 베팅규정",
+            "label": "베팅규정",
+            "icon": "",
+            "state": "Default"
+          }
+        ],
+        "overflow": []
+      },
+      {
+        "id": "265:1337",
+        "type": "INSTANCE",
+        "main": "263:978",
+        "w": 232,
+        "h": 830,
+        "rows": [
+          {
+            "name": "Menu / 입금신청",
+            "label": "입금신청",
+            "icon": "",
+            "state": "Selected"
+          },
+          {
+            "name": "Menu / 출금신청",
+            "label": "출금신청",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 마이페이지",
+            "label": "마이페이지",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 문의하기",
+            "label": "문의하기",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 쪽지",
+            "label": "쪽지",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 국내형",
+            "label": "국내형",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 해외형",
+            "label": "해외형",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / E스포츠",
+            "label": "E스포츠",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 라이브",
+            "label": "라이브",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 라이브카지노",
+            "label": "라이브카지노",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 슬롯",
+            "label": "슬롯",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 공지사항",
+            "label": "공지사항",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 이벤트",
+            "label": "이벤트",
+            "icon": "",
+            "state": "Default"
+          },
+          {
+            "name": "Menu / 베팅규정",
+            "label": "베팅규정",
+            "icon": "",
+            "state": "Default"
+          }
+        ],
+        "overflow": []
+      }
+    ],
+    "actualSwapWithLocalOverrides": [
+      {
+        "style": "Inset",
+        "main": "263:765",
+        "rows": 14,
+        "label": "입금신청 · 안내",
+        "icon": "",
+        "badge": "200x",
+        "showBadge": true,
+        "state": "Selected",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14,
+        "truncate": "ENDING",
+        "maxLines": 1,
+        "footer": "TITAN SOLUSION"
+      },
+      {
+        "style": "Tiles",
+        "main": "263:978",
+        "rows": 14,
+        "label": "입금신청 · 안내",
+        "icon": "",
+        "badge": "200x",
+        "showBadge": true,
+        "state": "Selected",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14,
+        "truncate": "ENDING",
+        "maxLines": 1,
+        "footer": "TITAN SOLUSION"
+      },
+      {
+        "style": "Raised",
+        "main": "263:552",
+        "rows": 14,
+        "label": "입금신청 · 안내",
+        "icon": "",
+        "badge": "200x",
+        "showBadge": true,
+        "state": "Selected",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 14,
+        "truncate": "ENDING",
+        "maxLines": 1,
+        "footer": "TITAN SOLUSION"
+      }
+    ],
+    "pageApplications": [
+      {
+        "id": "266:1414",
+        "style": "Raised",
+        "sideMain": "263:552",
+        "sideSize": [
+          232,
+          1691.800048828125
+        ],
+        "bodyHash": "ca527a55",
+        "headerSize": [
+          1920,
+          64
+        ]
+      },
+      {
+        "id": "266:2373",
+        "style": "Inset",
+        "sideMain": "263:765",
+        "sideSize": [
+          232,
+          1691.800048828125
+        ],
+        "bodyHash": "ca527a55",
+        "headerSize": [
+          1920,
+          64
+        ]
+      },
+      {
+        "id": "266:2873",
+        "style": "Tiles",
+        "sideMain": "263:978",
+        "sideSize": [
+          232,
+          1691.800048828125
+        ],
+        "bodyHash": "ca527a55",
+        "headerSize": [
+          1920,
+          64
+        ]
+      }
+    ],
+    "temporaryTestInstanceRemoved": true,
+    "visualReview": {
+      "gallery": "PASS — original scale; label legibility, material finish, spacing, footer, button states",
+      "desktop1920": "PASS — layout composition and sidebar placement; unchanged body verified separately by hash"
+    },
+    "foundationVariables": [
+      {
+        "id": "VariableID:261:554",
+        "name": "primitive/metal-light",
+        "type": "COLOR",
+        "scopes": [],
+        "code": {
+          "WEB": "var(--bit365-wog-primitive-metal-light)"
+        },
+        "value": {
+          "r": 0.28999999165534973,
+          "g": 0.28999999165534973,
+          "b": 0.28999999165534973,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:261:555",
+        "name": "primitive/metal-face",
+        "type": "COLOR",
+        "scopes": [],
+        "code": {
+          "WEB": "var(--bit365-wog-primitive-metal-face)"
+        },
+        "value": {
+          "r": 0.1899999976158142,
+          "g": 0.1899999976158142,
+          "b": 0.1899999976158142,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:261:556",
+        "name": "primitive/metal-shade",
+        "type": "COLOR",
+        "scopes": [],
+        "code": {
+          "WEB": "var(--bit365-wog-primitive-metal-shade)"
+        },
+        "value": {
+          "r": 0.10000000149011612,
+          "g": 0.10000000149011612,
+          "b": 0.10000000149011612,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:261:557",
+        "name": "surface/highlight",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-surface-highlight)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:261:554"
+        }
+      },
+      {
+        "id": "VariableID:261:558",
+        "name": "surface/face",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-surface-face)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:261:555"
+        }
+      },
+      {
+        "id": "VariableID:261:559",
+        "name": "surface/shade",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-surface-shade)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:261:556"
+        }
+      },
+      {
+        "id": "VariableID:261:560",
+        "name": "space/button-gap",
+        "type": "FLOAT",
+        "scopes": [
+          "GAP"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-space-button-gap)"
+        },
+        "value": 6
+      },
+      {
+        "id": "VariableID:261:561",
+        "name": "space/group-gap",
+        "type": "FLOAT",
+        "scopes": [
+          "GAP"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-space-group-gap)"
+        },
+        "value": 18
+      },
+      {
+        "id": "VariableID:261:562",
+        "name": "space/panel-padding",
+        "type": "FLOAT",
+        "scopes": [
+          "GAP"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-space-panel-padding)"
+        },
+        "value": 12
+      },
+      {
+        "id": "VariableID:261:563",
+        "name": "radius/button",
+        "type": "FLOAT",
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-radius-button)"
+        },
+        "value": 6
+      },
+      {
+        "id": "VariableID:261:564",
+        "name": "radius/panel",
+        "type": "FLOAT",
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-radius-panel)"
+        },
+        "value": 8
+      },
+      {
+        "id": "VariableID:261:565",
+        "name": "size/button-height",
+        "type": "FLOAT",
+        "scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-size-button-height)"
+        },
+        "value": 48
+      },
+      {
+        "id": "VariableID:261:566",
+        "name": "size/tile-height",
+        "type": "FLOAT",
+        "scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "code": {
+          "WEB": "var(--bit365-wog-size-tile-height)"
+        },
+        "value": 66
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "Name": "sidebar-comparison.png",
+      "Width": 1152,
+      "Height": 1540,
+      "Bytes": 480714,
+      "SHA256": "D01AB23B7FEE86261A5BA098176B1F64933C6DB45DF34AF49F21220E8FF667FE"
+    },
+    {
+      "Name": "desktop-1920-comparison.png",
+      "Width": 5968,
+      "Height": 2110,
+      "Bytes": 4620900,
+      "SHA256": "613F87D35E9D7D345D5B92BB75267D63A02C70201A4E82B5F9DF83E25E94D617"
+    }
+  ],
+  "excluded": [
+    "Mobile viewport work",
+    "Frontend implementation",
+    "Header redesign",
+    "Body redesign",
+    "Web navigation or interactive prototype wiring",
+    "User aesthetic approval"
+  ]
+}

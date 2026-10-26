@@ -1,0 +1,78 @@
+/* Optional local font registration. Not imported by any existing site. */
+/* @font-face declarations do not preload weights. Files load when used. */
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-1Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-2ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-3Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-4Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-5Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-6SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-7Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-8ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./ttf/Paperlogy-9Black.ttf") format("truetype");
+}
+
+/* Opt in on the exact element or scope only after explicit adoption. */
+.font-paperlogy {
+  font-family: "Paperlogy", var(--font-ui, system-ui), sans-serif;
+}

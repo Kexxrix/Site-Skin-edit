@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "Page 21, four 1920px screen frames only",
+  "referenceNodeId": "693:3456",
+  "mainGap": 16,
+  "titleContentGap": 8,
+  "verifiedScreens": 4,
+  "verifiedTitleContentPairs": 16,
+  "visualReview": {
+    "passed": true,
+    "images": [
+      "reference-main.png",
+      "goldflow-after.png",
+      "video-after.png"
+    ],
+    "observations": "All four screens show compact section spacing without new overlap or clipping. Full screen content retained."
+  },
+  "preserved": [
+    "Existing physical component instance IDs and source links",
+    "Header",
+    "Sidebar",
+    "Text and images",
+    "Card sizes and horizontal gaps",
+    "Main content width and padding",
+    "Other Figma pages",
+    "Local web code"
+  ],
+  "implementationNote": "In the two video layouts, moved the existing hero frame directly under Main content, preserving its dimensions and all descendant IDs. This gives a 16px hero-to-section gap independently of the 8px title-to-card gap.",
+  "structuralVerification": "verification.json"
+}

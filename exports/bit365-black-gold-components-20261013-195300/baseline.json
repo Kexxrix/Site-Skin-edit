@@ -1,0 +1,1075 @@
+{
+  "discovery": {
+    "pages": [
+      {
+        "id": "0:1",
+        "name": "01 · 반응형 와이어프레임"
+      },
+      {
+        "id": "2:2",
+        "name": "02 · 편집 컴포넌트"
+      },
+      {
+        "id": "2:3",
+        "name": "03 · 반응형 규칙"
+      },
+      {
+        "id": "44:552",
+        "name": "04 · BIT365 홈"
+      },
+      {
+        "id": "44:553",
+        "name": "05 · BIT365 컴포넌트"
+      },
+      {
+        "id": "88:553",
+        "name": "08 · 샴페인 골드 컴포넌트"
+      },
+      {
+        "id": "73:2891",
+        "name": "06 · BIT365 · ALDEBARAN 테마"
+      },
+      {
+        "id": "88:552",
+        "name": "07 · BIT365 · 샴페인 골드"
+      },
+      {
+        "id": "139:552",
+        "name": "09 · BIT365 · 블랙 골드"
+      }
+    ],
+    "components": [
+      {
+        "id": "89:703",
+        "name": "Viewport=Desktop",
+        "parentId": "89:702",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Header",
+        "w": 1920,
+        "h": 64,
+        "representative": "140:553",
+        "deps": [
+          "89:552",
+          "89:554"
+        ],
+        "properties": [
+          "Viewport"
+        ],
+        "nodeCount": 17
+      },
+      {
+        "id": "89:552",
+        "name": "BIT365 Champagne/Button/Ghost",
+        "parentId": "88:553",
+        "parentType": "PAGE",
+        "parentName": "08 · 샴페인 골드 컴포넌트",
+        "w": 62,
+        "h": 40,
+        "representative": "I140:553;89:715",
+        "deps": [],
+        "properties": [
+          "Label#46:0"
+        ],
+        "nodeCount": 2
+      },
+      {
+        "id": "89:554",
+        "name": "BIT365 Champagne/Button/Primary",
+        "parentId": "88:553",
+        "parentType": "PAGE",
+        "parentName": "08 · 샴페인 골드 컴포넌트",
+        "w": 72,
+        "h": 40,
+        "representative": "I140:553;89:716",
+        "deps": [],
+        "properties": [
+          "Label#46:1"
+        ],
+        "nodeCount": 2
+      },
+      {
+        "id": "89:589",
+        "name": "BIT365 Champagne/Sidebar",
+        "parentId": "88:553",
+        "parentType": "PAGE",
+        "parentName": "08 · 샴페인 골드 컴포넌트",
+        "w": 232,
+        "h": 830,
+        "representative": "140:555",
+        "deps": [
+          "89:558"
+        ],
+        "properties": [],
+        "nodeCount": 94
+      },
+      {
+        "id": "89:558",
+        "name": "BIT365 Champagne/Navigation/Item",
+        "parentId": "88:553",
+        "parentType": "PAGE",
+        "parentName": "08 · 샴페인 골드 컴포넌트",
+        "w": 210,
+        "h": 44,
+        "representative": "I140:555;89:591",
+        "deps": [],
+        "properties": [
+          "Label#46:3",
+          "Icon#48:0",
+          "Badge#54:0",
+          "Show badge#54:1"
+        ],
+        "nodeCount": 6
+      },
+      {
+        "id": "89:659",
+        "name": "Viewport=Desktop, Layout=Full",
+        "parentId": "89:658",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Benefit",
+        "w": 520,
+        "h": 174,
+        "representative": "140:559",
+        "deps": [
+          "89:556"
+        ],
+        "properties": [
+          "Tag#60:2",
+          "Title#60:3",
+          "Description#60:4",
+          "Viewport",
+          "Layout"
+        ],
+        "nodeCount": 10
+      },
+      {
+        "id": "89:556",
+        "name": "BIT365 Champagne/Button/Benefit",
+        "parentId": "88:553",
+        "parentType": "PAGE",
+        "parentName": "08 · 샴페인 골드 컴포넌트",
+        "w": 98,
+        "h": 34,
+        "representative": "I140:559;89:667",
+        "deps": [],
+        "properties": [
+          "Label#46:2"
+        ],
+        "nodeCount": 2
+      },
+      {
+        "id": "89:690",
+        "name": "Viewport=Desktop",
+        "parentId": "89:689",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Gateway",
+        "w": 250,
+        "h": 158,
+        "representative": "140:563",
+        "deps": [],
+        "properties": [
+          "Tag#60:5",
+          "Title#60:6",
+          "Viewport"
+        ],
+        "nodeCount": 6
+      },
+      {
+        "id": "89:564",
+        "name": "BIT365 Champagne/SectionHeading",
+        "parentId": "88:553",
+        "parentType": "PAGE",
+        "parentName": "08 · 샴페인 골드 컴포넌트",
+        "w": 1200,
+        "h": 38,
+        "representative": "140:568",
+        "deps": [],
+        "properties": [
+          "Title#48:1"
+        ],
+        "nodeCount": 9
+      },
+      {
+        "id": "89:797",
+        "name": "Viewport=Desktop",
+        "parentId": "89:796",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/SportsBetCard",
+        "w": 520,
+        "h": 228,
+        "representative": "140:570",
+        "deps": [],
+        "properties": [
+          "Time#68:32",
+          "League#68:33",
+          "MarketCount#68:34",
+          "HomeTeam#68:35",
+          "AwayTeam#68:36",
+          "HomeOdds#68:37",
+          "DrawOdds#68:38",
+          "AwayOdds#68:39",
+          "ShowDraw#68:40",
+          "HandicapHome#68:41",
+          "HandicapName#68:42",
+          "HandicapLine#68:43",
+          "HandicapAway#68:44",
+          "UnderOdds#68:45",
+          "TotalLine#68:46",
+          "OverOdds#68:47",
+          "Viewport"
+        ],
+        "nodeCount": 45
+      },
+      {
+        "id": "89:646",
+        "name": "Viewport=Desktop",
+        "parentId": "89:645",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/ProviderCard",
+        "w": 180,
+        "h": 301.6000061035156,
+        "representative": "140:577",
+        "deps": [],
+        "properties": [
+          "Title#60:0",
+          "Subtitle#60:1",
+          "Viewport"
+        ],
+        "nodeCount": 6
+      },
+      {
+        "id": "89:746",
+        "name": "Viewport=Desktop",
+        "parentId": "89:745",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Partners",
+        "w": 1200,
+        "h": 248,
+        "representative": "140:601",
+        "deps": [],
+        "properties": [
+          "Viewport"
+        ],
+        "nodeCount": 29
+      },
+      {
+        "id": "89:728",
+        "name": "Viewport=Tablet",
+        "parentId": "89:702",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Header",
+        "w": 768,
+        "h": 62,
+        "representative": "140:2486",
+        "deps": [
+          "89:552",
+          "89:554"
+        ],
+        "properties": [
+          "Viewport"
+        ],
+        "nodeCount": 13
+      },
+      {
+        "id": "89:842",
+        "name": "Viewport=Mobile",
+        "parentId": "89:796",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/SportsBetCard",
+        "w": 364,
+        "h": 228,
+        "representative": "140:2530",
+        "deps": [],
+        "properties": [
+          "Time#68:32",
+          "League#68:33",
+          "MarketCount#68:34",
+          "HomeTeam#68:35",
+          "AwayTeam#68:36",
+          "HomeOdds#68:37",
+          "DrawOdds#68:38",
+          "AwayOdds#68:39",
+          "ShowDraw#68:40",
+          "HandicapHome#68:41",
+          "HandicapName#68:42",
+          "HandicapLine#68:43",
+          "HandicapAway#68:44",
+          "UnderOdds#68:45",
+          "TotalLine#68:46",
+          "OverOdds#68:47",
+          "Viewport"
+        ],
+        "nodeCount": 45
+      },
+      {
+        "id": "89:771",
+        "name": "Viewport=Mobile",
+        "parentId": "89:745",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Partners",
+        "w": 370,
+        "h": 220,
+        "representative": "140:2533",
+        "deps": [],
+        "properties": [
+          "Viewport"
+        ],
+        "nodeCount": 30
+      },
+      {
+        "id": "89:573",
+        "name": "BIT365 Champagne/Navigation/Bottom",
+        "parentId": "88:553",
+        "parentType": "PAGE",
+        "parentName": "08 · 샴페인 골드 컴포넌트",
+        "w": 390,
+        "h": 57,
+        "representative": "140:2534",
+        "deps": [],
+        "properties": [],
+        "nodeCount": 16
+      },
+      {
+        "id": "89:717",
+        "name": "Viewport=Mobile",
+        "parentId": "89:702",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Header",
+        "w": 390,
+        "h": 58,
+        "representative": "140:3256",
+        "deps": [
+          "89:552",
+          "89:554"
+        ],
+        "properties": [
+          "Viewport"
+        ],
+        "nodeCount": 13
+      },
+      {
+        "id": "89:668",
+        "name": "Viewport=Mobile, Layout=Full",
+        "parentId": "89:658",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Benefit",
+        "w": 350,
+        "h": 146,
+        "representative": "140:3260",
+        "deps": [
+          "89:556"
+        ],
+        "properties": [
+          "Tag#60:2",
+          "Title#60:3",
+          "Description#60:4",
+          "Viewport",
+          "Layout"
+        ],
+        "nodeCount": 10
+      },
+      {
+        "id": "89:677",
+        "name": "Viewport=Mobile, Layout=Half",
+        "parentId": "89:658",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Benefit",
+        "w": 170,
+        "h": 138,
+        "representative": "140:3262",
+        "deps": [
+          "89:556"
+        ],
+        "properties": [
+          "Tag#60:2",
+          "Title#60:3",
+          "Description#60:4",
+          "Viewport",
+          "Layout"
+        ],
+        "nodeCount": 10
+      },
+      {
+        "id": "89:696",
+        "name": "Viewport=Mobile",
+        "parentId": "89:689",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/Gateway",
+        "w": 170,
+        "h": 108,
+        "representative": "140:3265",
+        "deps": [],
+        "properties": [
+          "Tag#60:5",
+          "Title#60:6",
+          "Viewport"
+        ],
+        "nodeCount": 6
+      },
+      {
+        "id": "89:652",
+        "name": "Viewport=Mobile",
+        "parentId": "89:645",
+        "parentType": "COMPONENT_SET",
+        "parentName": "BIT365 Champagne/ProviderCard",
+        "w": 140,
+        "h": 240.8000030517578,
+        "representative": "140:3274",
+        "deps": [],
+        "properties": [
+          "Title#60:0",
+          "Subtitle#60:1",
+          "Viewport"
+        ],
+        "nodeCount": 6
+      }
+    ],
+    "screens": [
+      {
+        "id": "140:552",
+        "name": "BIT365 · 블랙 골드 · 1920px",
+        "w": 1920,
+        "h": 1899.199951171875,
+        "imageHash": "9ca3f91d",
+        "textHash": "47b75ba2",
+        "geometryHash": "86482bae",
+        "images": 80,
+        "nodes": 497,
+        "masks": 7
+      },
+      {
+        "id": "140:1555",
+        "name": "BIT365 · 블랙 골드 · 1440px",
+        "w": 1440,
+        "h": 1899.199951171875,
+        "imageHash": "3f46890e",
+        "textHash": "21a4d6ea",
+        "geometryHash": "751acfd5",
+        "images": 78,
+        "nodes": 497,
+        "masks": 7
+      },
+      {
+        "id": "140:2485",
+        "name": "BIT365 · 블랙 골드 · 768px",
+        "w": 768,
+        "h": 2382.199951171875,
+        "imageHash": "d5268884",
+        "textHash": "2456f983",
+        "geometryHash": "f10ddb05",
+        "images": 78,
+        "nodes": 416,
+        "masks": 7
+      },
+      {
+        "id": "140:3255",
+        "name": "BIT365 · 블랙 골드 · 390px",
+        "w": 390,
+        "h": 2418.60009765625,
+        "imageHash": "dabf084e",
+        "textHash": "3708c490",
+        "geometryHash": "5c8ba423",
+        "images": 79,
+        "nodes": 419,
+        "masks": 7
+      },
+      {
+        "id": "140:4028",
+        "name": "BIT365 · 블랙 골드 · 768px · 스크롤",
+        "w": 768,
+        "h": 1024,
+        "imageHash": "6a8972da",
+        "textHash": "2456f983",
+        "geometryHash": "771b0483",
+        "images": 78,
+        "nodes": 416,
+        "masks": 7
+      },
+      {
+        "id": "140:4796",
+        "name": "BIT365 · 블랙 골드 · 390px · 스크롤",
+        "w": 390,
+        "h": 844,
+        "imageHash": "75e4bd4a",
+        "textHash": "3708c490",
+        "geometryHash": "aad0394e",
+        "images": 78,
+        "nodes": 419,
+        "masks": 7
+      }
+    ]
+  },
+  "foundations": {
+    "originals": [
+      {
+        "page": "88:552",
+        "hash": "6997cdbb",
+        "count": 2618
+      },
+      {
+        "page": "88:553",
+        "hash": "bfc69671",
+        "count": 1012
+      },
+      {
+        "page": "73:2891",
+        "hash": "bd39e2ae",
+        "count": 3031
+      }
+    ],
+    "styles": [
+      {
+        "id": "S:cc23e03e8ad188bbee3c4f894171e851541814cb,",
+        "name": "BIT365 Champagne/Section",
+        "font": {
+          "family": "Pretendard JP",
+          "style": "Bold"
+        },
+        "size": 20
+      }
+    ],
+    "variables": [
+      {
+        "id": "VariableID:88:555",
+        "name": "palette/page",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-page-raw)"
+        },
+        "value": {
+          "r": 0.0784313753247261,
+          "g": 0.08235294371843338,
+          "b": 0.08235294371843338,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:556",
+        "name": "page",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-page)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:555"
+        }
+      },
+      {
+        "id": "VariableID:88:557",
+        "name": "palette/surface",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-surface-raw)"
+        },
+        "value": {
+          "r": 0.1411764770746231,
+          "g": 0.1411764770746231,
+          "b": 0.1411764770746231,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:558",
+        "name": "surface",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-surface)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:557"
+        }
+      },
+      {
+        "id": "VariableID:88:559",
+        "name": "palette/hero",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-hero-raw)"
+        },
+        "value": {
+          "r": 0.0941176488995552,
+          "g": 0.09803921729326248,
+          "b": 0.09803921729326248,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:560",
+        "name": "hero",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-hero)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:559"
+        }
+      },
+      {
+        "id": "VariableID:88:561",
+        "name": "palette/line",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-line-raw)"
+        },
+        "value": {
+          "r": 0.21960784494876862,
+          "g": 0.21960784494876862,
+          "b": 0.21960784494876862,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:562",
+        "name": "line",
+        "type": "COLOR",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-line)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:561"
+        }
+      },
+      {
+        "id": "VariableID:88:563",
+        "name": "palette/accentLine",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-accent-line-raw)"
+        },
+        "value": {
+          "r": 0.7058823704719543,
+          "g": 0.5764706134796143,
+          "b": 0.2705882489681244,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:564",
+        "name": "accentLine",
+        "type": "COLOR",
+        "scopes": [
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-accent-line)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:563"
+        }
+      },
+      {
+        "id": "VariableID:88:565",
+        "name": "palette/text",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-text-raw)"
+        },
+        "value": {
+          "r": 0.9607843160629272,
+          "g": 0.95686274766922,
+          "b": 0.95686274766922,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:566",
+        "name": "text",
+        "type": "COLOR",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-text)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:565"
+        }
+      },
+      {
+        "id": "VariableID:88:567",
+        "name": "palette/muted",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-muted-raw)"
+        },
+        "value": {
+          "r": 0.7176470756530762,
+          "g": 0.7176470756530762,
+          "b": 0.7176470756530762,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:568",
+        "name": "muted",
+        "type": "COLOR",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-muted)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:567"
+        }
+      },
+      {
+        "id": "VariableID:88:569",
+        "name": "palette/yellow",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-yellow-raw)"
+        },
+        "value": {
+          "r": 0.8313725590705872,
+          "g": 0.686274528503418,
+          "b": 0.21568627655506134,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:570",
+        "name": "yellow",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-yellow)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:569"
+        }
+      },
+      {
+        "id": "VariableID:88:571",
+        "name": "palette/mint",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-mint-raw)"
+        },
+        "value": {
+          "r": 0.9019607901573181,
+          "g": 0.7803921699523926,
+          "b": 0.4274509847164154,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:572",
+        "name": "mint",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-mint)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:571"
+        }
+      },
+      {
+        "id": "VariableID:88:573",
+        "name": "palette/tag",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-tag-raw)"
+        },
+        "value": {
+          "r": 0.2078431397676468,
+          "g": 0.2078431397676468,
+          "b": 0.2078431397676468,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:574",
+        "name": "tag",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-tag)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:573"
+        }
+      },
+      {
+        "id": "VariableID:88:575",
+        "name": "palette/theme/header",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-header-raw)"
+        },
+        "value": {
+          "r": 0.11372549086809158,
+          "g": 0.11372549086809158,
+          "b": 0.11372549086809158,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:576",
+        "name": "theme/header",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-header)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:575"
+        }
+      },
+      {
+        "id": "VariableID:88:577",
+        "name": "palette/theme/control",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-control-raw)"
+        },
+        "value": {
+          "r": 0.2078431397676468,
+          "g": 0.2078431397676468,
+          "b": 0.2078431397676468,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:578",
+        "name": "theme/control",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-control)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:577"
+        }
+      },
+      {
+        "id": "VariableID:88:579",
+        "name": "palette/theme/amber",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-amber-raw)"
+        },
+        "value": {
+          "r": 0.9019607901573181,
+          "g": 0.7803921699523926,
+          "b": 0.4274509847164154,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:580",
+        "name": "theme/amber",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-amber)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:579"
+        }
+      },
+      {
+        "id": "VariableID:88:581",
+        "name": "palette/theme/onAccent",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-accent-raw)"
+        },
+        "value": {
+          "r": 0.09019608050584793,
+          "g": 0.09019608050584793,
+          "b": 0.09019608050584793,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:582",
+        "name": "theme/onAccent",
+        "type": "COLOR",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-accent)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:581"
+        }
+      },
+      {
+        "id": "VariableID:88:583",
+        "name": "palette/theme/disabled",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-disabled-raw)"
+        },
+        "value": {
+          "r": 0.4745098054409027,
+          "g": 0.4745098054409027,
+          "b": 0.4745098054409027,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:584",
+        "name": "theme/disabled",
+        "type": "COLOR",
+        "scopes": [
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-disabled)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:583"
+        }
+      },
+      {
+        "id": "VariableID:88:585",
+        "name": "palette/theme/input",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-input-raw)"
+        },
+        "value": {
+          "r": 0.09803921729326248,
+          "g": 0.09803921729326248,
+          "b": 0.09803921729326248,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:586",
+        "name": "theme/input",
+        "type": "COLOR",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-input)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:585"
+        }
+      },
+      {
+        "id": "VariableID:88:587",
+        "name": "palette/theme/onBadge",
+        "type": "COLOR",
+        "scopes": [],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-badge-raw)"
+        },
+        "value": {
+          "r": 0.09019608050584793,
+          "g": 0.09019608050584793,
+          "b": 0.09019608050584793,
+          "a": 1
+        }
+      },
+      {
+        "id": "VariableID:88:588",
+        "name": "theme/onBadge",
+        "type": "COLOR",
+        "scopes": [
+          "SHAPE_FILL",
+          "TEXT_FILL"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--bit365-champagne-theme-on-badge)"
+        },
+        "value": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:88:587"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+await figma.setCurrentPageAsync(await figma.getNodeByIdAsync(cfg.pageId));const changed=[];const fonts=new Map();for(const d of cfg.cards)for(const t of figma.getNodeById(d.id).findAllWithCriteria({types:["TEXT"]}))for(const s of t.getStyledTextSegments(["fontName"]))fonts.set(JSON.stringify(s.fontName),s.fontName);await Promise.all([...fonts.values()].map(f=>figma.loadFontAsync(f)));
+for(const d of cfg.cards){const titleKey=d.variant==="A2"?"Purpose/Stack":d.variant==="B3"?"Purpose/Caption":d.variant==="A1"||d.variant==="A3"?"Purpose/26":"Purpose/28";const entryKey=["A1","A3","B0","B3"].includes(d.variant)?"Entry/13":"Entry/14";
+const pairs=[[d.titleId,cfg.styles[titleKey]],[d.entryId,cfg.styles[entryKey]]];for(const id of d.displayIds)pairs.push([id,cfg.styles[d.variant+"/"+d.role+"/"+(d.key==="OutlineDepth"?"Wide":"Photo")]]);for(const id of d.extraDisplayIds){const n=figma.getNodeById(id);if(n.type==="TEXT")pairs.push([id,cfg.styles[d.variant+"/"+d.role+"/Wide"]]);}
+for(const[id,sid]of pairs){const t=figma.getNodeById(id);await t.setTextStyleIdAsync(sid);changed.push(id);}}
+return{mutatedNodeIds:changed,linkedTextCount:changed.length};

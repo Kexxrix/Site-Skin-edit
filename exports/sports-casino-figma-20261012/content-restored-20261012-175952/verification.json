@@ -1,0 +1,92 @@
+{
+  "fileUrl": "https://www.figma.com/design/PoUHKHsm9xOYavWBQ7uAGP?node-id=5-2",
+  "change": "Restored the content that was mistakenly cleared, while keeping production-facing screens free of authoring instructions.",
+  "contentBasis": {
+    "events": "User-provided operating-site screenshot",
+    "casinoProviders": "User-provided operating-site screenshot",
+    "slotCards": "Existing wireframe content restored without exhibition suffix",
+    "matches": "Existing wireframe match fields restored without sample caption"
+  },
+  "frames": [
+    {
+      "id": "5:2",
+      "name": "1440px · Desktop",
+      "w": 1440,
+      "h": 1870
+    },
+    {
+      "id": "6:191",
+      "name": "1920px · Desktop",
+      "w": 1920,
+      "h": 1676
+    },
+    {
+      "id": "6:503",
+      "name": "768px · Tablet",
+      "w": 768,
+      "h": 2294
+    },
+    {
+      "id": "6:792",
+      "name": "390px · Mobile",
+      "w": 390,
+      "h": 3144.39990234375
+    },
+    {
+      "id": "9:740",
+      "name": "B · 모바일 메뉴 펼침",
+      "w": 320,
+      "h": 355
+    }
+  ],
+  "validation": [
+    {
+      "id": "5:2",
+      "width": 1440,
+      "cardsWithContent": 20,
+      "unwanted": [],
+      "overflow": []
+    },
+    {
+      "id": "6:191",
+      "width": 1920,
+      "cardsWithContent": 20,
+      "unwanted": [],
+      "overflow": []
+    },
+    {
+      "id": "6:503",
+      "width": 768,
+      "cardsWithContent": 20,
+      "unwanted": [],
+      "overflow": []
+    },
+    {
+      "id": "6:792",
+      "width": 390,
+      "cardsWithContent": 20,
+      "unwanted": [],
+      "overflow": []
+    }
+  ],
+  "visualQA": {
+    "reviewed": [
+      "desktop-1440.png",
+      "desktop-1920.png",
+      "tablet-768.png",
+      "mobile-390.png"
+    ],
+    "result": "Content visible at all four breakpoints. No observed clipping or overlap."
+  },
+  "preserved": [
+    "Editable text and component properties",
+    "Responsive Auto Layout",
+    "Local source and planning document"
+  ],
+  "removedOnly": [
+    "Authoring headings and module letters",
+    "Exhibition and sample disclaimers",
+    "Structural explanatory captions"
+  ],
+  "remaining": "Slot and match entries retain the previous wireframe example data."
+}

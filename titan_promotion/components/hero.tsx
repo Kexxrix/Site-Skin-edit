@@ -9,15 +9,13 @@ const STATS = [
   { to: 24, suffix: "", unit: "시간", label: "운영·기술 지원", featured: false, animate: false },
 ]
 
-// Temporary preview video from Dizora; replace with the Titan introduction video.
-const REFERENCE_VIDEO_ID = "-jokuknAtu8"
-const REFERENCE_VIDEO_URL = `https://www.youtube-nocookie.com/embed/${REFERENCE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${REFERENCE_VIDEO_ID}&controls=0&rel=0&playsinline=1`
+const TITAN_VIDEO_URL = "/videos/TITAN-KO-5scene-19s-v003.mp4"
 
 const TEAM_PHOTOS = [
-  { src: "/assets/hero-team-generated-20260910/01-development-planning.png", width: 1122, height: 1402, position: "20% 50%" },
-  { src: "/assets/hero-team-generated-20260910/02-customer-support.png", width: 1122, height: 1402, position: "50% 50%" },
-  { src: "/assets/hero-team-generated-20260910/03-technical-meeting.png", width: 1122, height: 1402, position: "70% 50%" },
-  { src: "/assets/hero-team-generated-20260910/04-idea-meeting.png", width: 1122, height: 1402, position: "50% 50%" },
+  { src: "/assets/hero-team-user-20260915/디지털 아트에 몰입한 크리에이티브 디자이너04.png", width: 1086, height: 1448, position: "50% 50%" },
+  { src: "/assets/hero-team-user-20260915/탁월한 기술력_03.png", width: 1086, height: 1448, position: "50% 50%" },
+  { src: "/assets/hero-team-user-20260915/파트너의 경제적 성공02.png", width: 1086, height: 1448, position: "50% 50%" },
+  { src: "/assets/hero-team-user-20260915/역동적인 개발팀_02.png", width: 1086, height: 1448, position: "50% 50%" },
 ]
 
 export function Hero() {
@@ -77,20 +75,25 @@ export function Hero() {
         <Reveal delay={320}>
           <div className={styles.media}>
             <div className={styles.videoBox}>
-              <iframe
-                src={REFERENCE_VIDEO_URL}
-                title="Dizora 레퍼런스 임시 소개 영상"
-                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-                allowFullScreen
-                referrerPolicy="strict-origin-when-cross-origin"
+              <video
+                src={TITAN_VIDEO_URL}
+                aria-label="TITAN Solution 소개 영상"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                preload="metadata"
                 className={styles.videoFrame}
-              />
+              >
+                <a href={TITAN_VIDEO_URL}>TITAN 소개 영상 보기</a>
+              </video>
             </div>
 
             <div
               className={styles.sideImage}
               role="img"
-              aria-label="개발·기획 협업, 고객 상담, 기술 회의와 아이디어 회의를 보여주는 연출 사진"
+              aria-label="디자인 작업, 기술 운영, 파트너십과 개발팀 협업을 보여주는 연출 사진"
             >
               {TEAM_PHOTOS.map((photo, index) => (
                 <img

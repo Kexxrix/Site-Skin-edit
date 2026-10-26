@@ -1,0 +1,880 @@
+{
+  "task": "Reduce signup-button depth to a mostly flat gold appearance with very subtle depth",
+  "status": "complete",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "reference": "C:/Users/User/AppData/Local/Temp/codex-clipboard-ddb5402e-3970-44f3-ab08-b846727ce6bb.png",
+  "apply": {
+    "mutatedNodeIds": [
+      "573:5693",
+      "573:5770"
+    ],
+    "buttons": [
+      {
+        "id": "573:5693",
+        "name": "Theme=BlackGold, Action=Join",
+        "before": {
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8313725590705872,
+                "g": 0.686274528503418,
+                "b": 0.21568627655506134
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:435:14083"
+                }
+              }
+            },
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 0.9803921580314636,
+                    "g": 0.9686274528503418,
+                    "b": 0.8235294222831726,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.8567878007888794,
+                    "b": 0.5336538553237915,
+                    "a": 1
+                  },
+                  "position": 0.14423076808452606,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.7997111678123474,
+                    "b": 0.4663461446762085,
+                    "a": 1
+                  },
+                  "position": 0.20673076808452606,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.7785155177116394,
+                    "b": 0.42788460850715637,
+                    "a": 1
+                  },
+                  "position": 0.4615384638309479,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.817307710647583,
+                    "g": 0.5174322724342346,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 0.7740384340286255,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.6442307829856873,
+                    "g": 0.3681318461894989,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 0.9663461446762085,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  6.123234262925839e-17,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  6.123234262925839e-17,
+                  1
+                ]
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.2199999988079071
+              },
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "spread": 0,
+              "blendMode": "NORMAL",
+              "showShadowBehindNode": true
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9607843160629272,
+                "g": 0.8470588326454163,
+                "b": 0.545098066329956
+              },
+              "boundVariables": {}
+            }
+          ],
+          "w": 90,
+          "h": 44,
+          "radius": 6,
+          "texts": [
+            {
+              "copy": "회원가입",
+              "size": 14,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.14509804546833038,
+                    "g": 0.125490203499794,
+                    "b": 0.0784313753247261
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8313725590705872,
+                "g": 0.686274528503418,
+                "b": 0.21568627655506134
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:435:14083"
+                }
+              }
+            },
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 0.9176470637321472,
+                    "g": 0.7647058963775635,
+                    "b": 0.4431372582912445,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.8941176533699036,
+                    "g": 0.7333333492279053,
+                    "b": 0.3960784375667572,
+                    "a": 1
+                  },
+                  "position": 0.5,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.8666666746139526,
+                    "g": 0.6941176652908325,
+                    "b": 0.35686275362968445,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 0.5,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.18000000715255737
+              },
+              "offset": {
+                "x": 0,
+                "y": 1
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            },
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "radius": 1,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.10000000149011612
+              },
+              "offset": {
+                "x": 0,
+                "y": 1
+              },
+              "spread": 0,
+              "blendMode": "NORMAL",
+              "showShadowBehindNode": true
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.949999988079071,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8039215803146362,
+                "g": 0.6313725709915161,
+                "b": 0.3019607961177826
+              },
+              "boundVariables": {}
+            }
+          ],
+          "w": 90,
+          "h": 44,
+          "radius": 6,
+          "texts": [
+            {
+              "copy": "회원가입",
+              "size": 14,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.14509804546833038,
+                    "g": 0.125490203499794,
+                    "b": 0.0784313753247261
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        "checks": {
+          "boundsUnchanged": true,
+          "radiusUnchanged": true,
+          "textUnchanged": true,
+          "subtleShadow": true
+        }
+      },
+      {
+        "id": "573:5770",
+        "name": "Theme=WhiteGold, Action=Join",
+        "before": {
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8313725590705872,
+                "g": 0.686274528503418,
+                "b": 0.21568627655506134
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:435:14083"
+                }
+              }
+            },
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 0.9803921580314636,
+                    "g": 0.9686274528503418,
+                    "b": 0.8235294222831726,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.8567878007888794,
+                    "b": 0.5336538553237915,
+                    "a": 1
+                  },
+                  "position": 0.14423076808452606,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.7997111678123474,
+                    "b": 0.4663461446762085,
+                    "a": 1
+                  },
+                  "position": 0.20673076808452606,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 0.7785155177116394,
+                    "b": 0.42788460850715637,
+                    "a": 1
+                  },
+                  "position": 0.4615384638309479,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.817307710647583,
+                    "g": 0.5174322724342346,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 0.7740384340286255,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.6442307829856873,
+                    "g": 0.3681318461894989,
+                    "b": 0,
+                    "a": 1
+                  },
+                  "position": 0.9663461446762085,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  6.123234262925839e-17,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  6.123234262925839e-17,
+                  1
+                ]
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.2199999988079071
+              },
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "spread": 0,
+              "blendMode": "NORMAL",
+              "showShadowBehindNode": true
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9607843160629272,
+                "g": 0.8470588326454163,
+                "b": 0.545098066329956
+              },
+              "boundVariables": {}
+            }
+          ],
+          "w": 90,
+          "h": 44,
+          "radius": 6,
+          "texts": [
+            {
+              "copy": "회원가입",
+              "size": 14,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.14509804546833038,
+                    "g": 0.125490203499794,
+                    "b": 0.0784313753247261
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        "after": {
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8313725590705872,
+                "g": 0.686274528503418,
+                "b": 0.21568627655506134
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:435:14083"
+                }
+              }
+            },
+            {
+              "type": "GRADIENT_LINEAR",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 0.9176470637321472,
+                    "g": 0.7647058963775635,
+                    "b": 0.4431372582912445,
+                    "a": 1
+                  },
+                  "position": 0,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.8941176533699036,
+                    "g": 0.7333333492279053,
+                    "b": 0.3960784375667572,
+                    "a": 1
+                  },
+                  "position": 0.5,
+                  "boundVariables": {}
+                },
+                {
+                  "color": {
+                    "r": 0.8666666746139526,
+                    "g": 0.6941176652908325,
+                    "b": 0.35686275362968445,
+                    "a": 1
+                  },
+                  "position": 1,
+                  "boundVariables": {}
+                }
+              ],
+              "gradientTransform": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 0.5,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.18000000715255737
+              },
+              "offset": {
+                "x": 0,
+                "y": 1
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            },
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "radius": 1,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.10000000149011612
+              },
+              "offset": {
+                "x": 0,
+                "y": 1
+              },
+              "spread": 0,
+              "blendMode": "NORMAL",
+              "showShadowBehindNode": true
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.949999988079071,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8039215803146362,
+                "g": 0.6313725709915161,
+                "b": 0.3019607961177826
+              },
+              "boundVariables": {}
+            }
+          ],
+          "w": 90,
+          "h": 44,
+          "radius": 6,
+          "texts": [
+            {
+              "copy": "회원가입",
+              "size": 14,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.14509804546833038,
+                    "g": 0.125490203499794,
+                    "b": 0.0784313753247261
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        "checks": {
+          "boundsUnchanged": true,
+          "radiusUnchanged": true,
+          "textUnchanged": true,
+          "subtleShadow": true
+        }
+      }
+    ],
+    "otherActions": [
+      {
+        "id": "573:5690",
+        "name": "Theme=BlackGold, Action=Login",
+        "unchanged": true
+      },
+      {
+        "id": "573:5696",
+        "name": "Theme=BlackGold, Action=Anonymous",
+        "unchanged": true
+      },
+      {
+        "id": "573:5767",
+        "name": "Theme=WhiteGold, Action=Login",
+        "unchanged": true
+      },
+      {
+        "id": "573:5773",
+        "name": "Theme=WhiteGold, Action=Anonymous",
+        "unchanged": true
+      }
+    ],
+    "allPassed": true
+  },
+  "verification": {
+    "screens": [
+      {
+        "screenId": "574:41902",
+        "headerId": "574:41995",
+        "groupId": "I574:41995;573:5674",
+        "joinId": "I574:41995;573:5676",
+        "master": "573:5693",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "574:43010",
+        "headerId": "574:43105",
+        "groupId": "I574:43105;573:5749",
+        "joinId": "I574:43105;573:5751",
+        "master": "573:5770",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "613:45331",
+        "headerId": "613:45423",
+        "groupId": "I613:45423;611:5579",
+        "joinId": "I613:45423;611:5581",
+        "master": "573:5693",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "613:46006",
+        "headerId": "613:46100",
+        "groupId": "I613:46100;611:5591",
+        "joinId": "I613:46100;611:5593",
+        "master": "573:5770",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "613:46711",
+        "headerId": "613:46803",
+        "groupId": "I613:46803;611:5668",
+        "joinId": "I613:46803;611:5670",
+        "master": "573:5693",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "613:47386",
+        "headerId": "613:47480",
+        "groupId": "I613:47480;611:5680",
+        "joinId": "I613:47480;611:5682",
+        "master": "573:5770",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "613:48091",
+        "headerId": "613:48183",
+        "groupId": "I613:48183;611:5757",
+        "joinId": "I613:48183;611:5759",
+        "master": "573:5693",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "613:48766",
+        "headerId": "613:48860",
+        "groupId": "I613:48860;611:5769",
+        "joinId": "I613:48860;611:5771",
+        "master": "573:5770",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "624:45881",
+        "headerId": "624:45882",
+        "groupId": "I624:45882;611:5757",
+        "joinId": "I624:45882;611:5759",
+        "master": "573:5693",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      },
+      {
+        "screenId": "632:45883",
+        "headerId": "632:45884",
+        "groupId": "I632:45884;611:5769",
+        "joinId": "I632:45884;611:5771",
+        "master": "573:5770",
+        "w": 90,
+        "h": 44,
+        "stops": 3,
+        "shadowRadius": 1,
+        "checks": {
+          "dimensions": true,
+          "radius6": true,
+          "softGradient": true,
+          "softShadow": true
+        }
+      }
+    ],
+    "missingHistoricalFrames": [
+      "618:65586"
+    ],
+    "allPassed": true
+  },
+  "visual_review": {
+    "status": "PASS",
+    "evidence": [
+      "qa/header-dark.png",
+      "qa/header-white.png"
+    ],
+    "notes": "Subtle gold gradient with restrained 1px lift; strong cream highlight and deep amber lower band removed. Text remains readable in both theme contexts."
+  },
+  "scope": "Only P17/07BRoomy/AccountButton Join variants 573:5693 and 573:5770; connected Roomy and GoldFlow headers update through their existing component references.",
+  "unchanged": [
+    "90 x 44 dimensions",
+    "R6 radius and existing radius binding",
+    "회원가입 copy, 14px font and line height",
+    "Login and Anonymous action masters",
+    "Header layout, notice, background imagery and body"
+  ],
+  "website_implementation": false
+}

@@ -1,0 +1,953 @@
+{
+  "scope": "Additional game-library sidebar based on user screenshot; retain menu14, existing themes and six styles. Desktop 1920 first.",
+  "status": "completed-and-verified-in-figma",
+  "reference": "C:/Users/User/AppData/Local/Temp/codex-clipboard-b483decc-9f62-443c-b90c-a96635774380.png",
+  "counts": {
+    "attempted": 14,
+    "succeeded": 14,
+    "failed": 0,
+    "skipped": 0,
+    "selectedByAgent": 14,
+    "rejected": 0,
+    "approvedByUser": 0
+  },
+  "acceptedByUser": false,
+  "assets": [
+    {
+      "id": "deposit",
+      "label": "입금신청",
+      "prompt": "prompts/deposit.txt",
+      "references": [
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-76f286c9-dbb0-4ecb-a316-d4c0753e0a50.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+      "operation": "move",
+      "file": "01-deposit.png",
+      "bytes": 1619618,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "67932a7d2b724610f4959a9107a66df07b0a720e7cc5cf8061788bf2778fc5b4",
+      "transferVerification": {
+        "note": "First output moved and SHA-256 equality verified before remaining generation batch in this task."
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2399",
+        "key": "792063ad91bd8f037be7cbe44935e4fcf7140540",
+        "imageHash": "400038689cf62907610fa0ed9d08281515724f31"
+      }
+    },
+    {
+      "id": "withdraw",
+      "label": "출금신청",
+      "prompt": "prompts/withdraw.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-a4316070-d04b-47f3-adeb-882085709d68.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/02-withdraw.png",
+      "operation": "move",
+      "file": "02-withdraw.png",
+      "bytes": 1628530,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "74ff0343a812b5d00632705246727fb8637d652923eb6831daa4a34cb8d990fe",
+      "transferVerification": {
+        "id": "withdraw",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-a4316070-d04b-47f3-adeb-882085709d68.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/02-withdraw.png",
+        "operation": "move",
+        "sha256Before": "74FF0343A812B5D00632705246727FB8637D652923EB6831DAA4A34CB8D990FE",
+        "sha256After": "74FF0343A812B5D00632705246727FB8637D652923EB6831DAA4A34CB8D990FE",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2401",
+        "key": "a411bc97ec6e76eacc83e892386d3a0ceecdc6be",
+        "imageHash": "57c0739f3481a84f7d077492940b09a8bccb77c3"
+      }
+    },
+    {
+      "id": "profile",
+      "label": "마이페이지",
+      "prompt": "prompts/profile.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-a8872753-379b-4fa7-af7d-96e77a859d33.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/03-profile.png",
+      "operation": "move",
+      "file": "03-profile.png",
+      "bytes": 1766461,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "82949b34ce81e480516ae0c9a22886af3c4a8434343e11fc0f8f122da48e9e70",
+      "transferVerification": {
+        "id": "profile",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-a8872753-379b-4fa7-af7d-96e77a859d33.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/03-profile.png",
+        "operation": "move",
+        "sha256Before": "82949B34CE81E480516AE0C9A22886AF3C4A8434343E11FC0F8F122DA48E9E70",
+        "sha256After": "82949B34CE81E480516AE0C9A22886AF3C4A8434343E11FC0F8F122DA48E9E70",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2403",
+        "key": "21a0338937946377f9d20bdf510f694602f1de4d",
+        "imageHash": "6390eb66ef29033d9096d09775a0a178868f9f4a"
+      }
+    },
+    {
+      "id": "support",
+      "label": "문의하기",
+      "prompt": "prompts/support.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-3e79fc3c-3ab0-4a0d-99ac-551cc30b9ab5.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/04-support.png",
+      "operation": "move",
+      "file": "04-support.png",
+      "bytes": 1639050,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "7bed73148f71cb5f3756d9697240c0c5b316f64208c7377ddaa9030391893670",
+      "transferVerification": {
+        "id": "support",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-3e79fc3c-3ab0-4a0d-99ac-551cc30b9ab5.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/04-support.png",
+        "operation": "move",
+        "sha256Before": "7BED73148F71CB5F3756D9697240C0C5B316F64208C7377DDAA9030391893670",
+        "sha256After": "7BED73148F71CB5F3756D9697240C0C5B316F64208C7377DDAA9030391893670",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2405",
+        "key": "5c137580037efd0d2ecc05408b4955c489984239",
+        "imageHash": "c8d9209c1b537030f26bea3df30ec463f8b8676c"
+      }
+    },
+    {
+      "id": "mail",
+      "label": "쪽지",
+      "prompt": "prompts/mail.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-ba2a7105-d1bb-4c19-9cc9-5b4f48dd3a4a.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/05-mail.png",
+      "operation": "move",
+      "file": "05-mail.png",
+      "bytes": 1561152,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "2e0a9181930a7379ba09275ec4d43b27425c8ddd680cbbb04219825875f3a52a",
+      "transferVerification": {
+        "id": "mail",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-ba2a7105-d1bb-4c19-9cc9-5b4f48dd3a4a.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/05-mail.png",
+        "operation": "move",
+        "sha256Before": "2E0A9181930A7379BA09275EC4D43B27425C8DDD680CBBB04219825875F3A52A",
+        "sha256After": "2E0A9181930A7379BA09275EC4D43B27425C8DDD680CBBB04219825875F3A52A",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2407",
+        "key": "9ec88c20347a127e9fe20f11c55b238f0b0acbe2",
+        "imageHash": "7cfb023f56058439eab09cf42fc09e039230bfa9"
+      }
+    },
+    {
+      "id": "domestic",
+      "label": "국내형",
+      "prompt": "prompts/domestic.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-e722aec7-3382-44ad-9cc0-7cd425ce113d.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/06-domestic.png",
+      "operation": "move",
+      "file": "06-domestic.png",
+      "bytes": 1739636,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "d9f696446695f988e870c56b8c93b1640f24b4081ec692156b9bce849e43370b",
+      "transferVerification": {
+        "id": "domestic",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-e722aec7-3382-44ad-9cc0-7cd425ce113d.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/06-domestic.png",
+        "operation": "move",
+        "sha256Before": "D9F696446695F988E870C56B8C93B1640F24B4081EC692156B9BCE849E43370B",
+        "sha256After": "D9F696446695F988E870C56B8C93B1640F24B4081EC692156B9BCE849E43370B",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2409",
+        "key": "418d74d0bc829ac0e9335ec7b58b61033d7cc636",
+        "imageHash": "93404c95768daed2b48ec523e579f70241ccf84f"
+      }
+    },
+    {
+      "id": "international",
+      "label": "해외형",
+      "prompt": "prompts/international.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-765baaa8-bac6-49b5-854d-1cb854cd1f0e.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/07-international.png",
+      "operation": "move",
+      "file": "07-international.png",
+      "bytes": 1719909,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "dfbcd2d0c58ba783a7af77097336bf0b30615411147228306395bc1ce5d9fceb",
+      "transferVerification": {
+        "id": "international",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-765baaa8-bac6-49b5-854d-1cb854cd1f0e.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/07-international.png",
+        "operation": "move",
+        "sha256Before": "DFBCD2D0C58BA783A7AF77097336BF0B30615411147228306395BC1CE5D9FCEB",
+        "sha256After": "DFBCD2D0C58BA783A7AF77097336BF0B30615411147228306395BC1CE5D9FCEB",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2411",
+        "key": "60b1d6dff6cf62011616715c7a57d7ae5132cb13",
+        "imageHash": "04f2ac8d62894f09f4c92fba91ff3953fda3fe15"
+      }
+    },
+    {
+      "id": "esports",
+      "label": "E스포츠",
+      "prompt": "prompts/esports.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-01e5b0e1-e6fe-4b2c-aa4c-3e38a6d4ba1b.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/08-esports.png",
+      "operation": "move",
+      "file": "08-esports.png",
+      "bytes": 1639154,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "9826fa4244313ee296bfa14bb21614a8b5d1e369b8eda7c965323f02681ad5ee",
+      "transferVerification": {
+        "id": "esports",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-01e5b0e1-e6fe-4b2c-aa4c-3e38a6d4ba1b.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/08-esports.png",
+        "operation": "move",
+        "sha256Before": "9826FA4244313EE296BFA14BB21614A8B5D1E369B8EDA7C965323F02681AD5EE",
+        "sha256After": "9826FA4244313EE296BFA14BB21614A8B5D1E369B8EDA7C965323F02681AD5EE",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2413",
+        "key": "6c540fa24f1ecf87fe2e4c3d00cc5b5211dc43d0",
+        "imageHash": "0387a6889f1a88f5fba0cc1b3fc96c10efc06b54"
+      }
+    },
+    {
+      "id": "live",
+      "label": "라이브",
+      "prompt": "prompts/live.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-8a776252-83e6-49c8-90c3-6b5d6baa3309.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/09-live.png",
+      "operation": "move",
+      "file": "09-live.png",
+      "bytes": 1504558,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "1ee45efd816843c802efa8e4f4cd28057bac9440d4b405406f7953fd1fa7ba63",
+      "transferVerification": {
+        "id": "live",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-8a776252-83e6-49c8-90c3-6b5d6baa3309.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/09-live.png",
+        "operation": "move",
+        "sha256Before": "1EE45EFD816843C802EFA8E4F4CD28057BAC9440D4B405406F7953FD1FA7BA63",
+        "sha256After": "1EE45EFD816843C802EFA8E4F4CD28057BAC9440D4B405406F7953FD1FA7BA63",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2415",
+        "key": "05a6fa22e0b01ac2d952c53c3de807086714322e",
+        "imageHash": "511a9f82f3392a06c884fa19be8ddc31d4216100"
+      }
+    },
+    {
+      "id": "casino",
+      "label": "라이브카지노",
+      "prompt": "prompts/casino.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-f2213e40-af63-4b83-97a0-73bb995797fc.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/10-casino.png",
+      "operation": "move",
+      "file": "10-casino.png",
+      "bytes": 1580816,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "f0f4babf3af4180a3a86e0a48ae143d2a5f6562038560099df47690de93fe016",
+      "transferVerification": {
+        "id": "casino",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-f2213e40-af63-4b83-97a0-73bb995797fc.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/10-casino.png",
+        "operation": "move",
+        "sha256Before": "F0F4BABF3AF4180A3A86E0A48AE143D2A5F6562038560099DF47690DE93FE016",
+        "sha256After": "F0F4BABF3AF4180A3A86E0A48AE143D2A5F6562038560099DF47690DE93FE016",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2417",
+        "key": "e44d0e8a7c857dd911ed61d5f90f0275b481c547",
+        "imageHash": "3a83abee56000f7ae1407798e352796f190ea42c"
+      }
+    },
+    {
+      "id": "slots",
+      "label": "슬롯",
+      "prompt": "prompts/slots.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-ba64365f-42ab-46ad-803e-abe896277896.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/11-slots.png",
+      "operation": "move",
+      "file": "11-slots.png",
+      "bytes": 1650972,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "09333d7d3883e4a6c37fea22b01bd97d0f8bc0e456a184577cb9de64bc8a509a",
+      "transferVerification": {
+        "id": "slots",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-ba64365f-42ab-46ad-803e-abe896277896.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/11-slots.png",
+        "operation": "move",
+        "sha256Before": "09333D7D3883E4A6C37FEA22B01BD97D0F8BC0E456A184577CB9DE64BC8A509A",
+        "sha256After": "09333D7D3883E4A6C37FEA22B01BD97D0F8BC0E456A184577CB9DE64BC8A509A",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2419",
+        "key": "7d6384ab14ac79eac48f72f39b57d8f9c1e814b3",
+        "imageHash": "04252ee2370c4301852058d89e2d0da1e8437860"
+      }
+    },
+    {
+      "id": "notice",
+      "label": "공지사항",
+      "prompt": "prompts/notice.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b5f2fcbb-c3b7-4df1-b128-9626bb7ada51.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/12-notice.png",
+      "operation": "move",
+      "file": "12-notice.png",
+      "bytes": 1692408,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "57f6131fef5d62da4634da14ce71b2b3389e6ae77019101ce0279d47ed9bab33",
+      "transferVerification": {
+        "id": "notice",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-b5f2fcbb-c3b7-4df1-b128-9626bb7ada51.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/12-notice.png",
+        "operation": "move",
+        "sha256Before": "57F6131FEF5D62DA4634DA14CE71B2B3389E6AE77019101CE0279D47ED9BAB33",
+        "sha256After": "57F6131FEF5D62DA4634DA14CE71B2B3389E6AE77019101CE0279D47ED9BAB33",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2421",
+        "key": "78642a487e9728249f469ad172c95a42c8c8e9b3",
+        "imageHash": "6bac39fef0ea2ac3829c372139b06ac317a24c4b"
+      }
+    },
+    {
+      "id": "event",
+      "label": "이벤트",
+      "prompt": "prompts/event.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-51a9fd37-c8d4-4f53-a71c-481c8c4a06f7.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/13-event.png",
+      "operation": "move",
+      "file": "13-event.png",
+      "bytes": 1755906,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "17a592f2c84c18b2f0193cd5065165551576f841fc438ddabf860eb2e6828d0e",
+      "transferVerification": {
+        "id": "event",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-51a9fd37-c8d4-4f53-a71c-481c8c4a06f7.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/13-event.png",
+        "operation": "move",
+        "sha256Before": "17A592F2C84C18B2F0193CD5065165551576F841FC438DDABF860EB2E6828D0E",
+        "sha256After": "17A592F2C84C18B2F0193CD5065165551576F841FC438DDABF860EB2E6828D0E",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2423",
+        "key": "8daf619379082e2601145d388cf261a18eeaeb09",
+        "imageHash": "98714ae08c678546c2d86bddc2bebf0031f149ea"
+      }
+    },
+    {
+      "id": "rules",
+      "label": "베팅규정",
+      "prompt": "prompts/rules.txt",
+      "references": [
+        "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/01-deposit.png",
+        "user screenshot"
+      ],
+      "originalToolPath": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-2d02e8db-6efd-4bbb-8473-29a3f0c77e61.png",
+      "finalPath": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/14-rules.png",
+      "operation": "move",
+      "file": "14-rules.png",
+      "bytes": 1656307,
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "f95ac82673da87a17ba96e5999e21c68ab6604e29604da19e9f4a545e069b912",
+      "transferVerification": {
+        "id": "rules",
+        "source": "C:\\Users\\User\\.codex\\generated_images\\01a12f2c-b7ff-70f0-a8bc-b8dc63caa00c\\exec-2d02e8db-6efd-4bbb-8473-29a3f0c77e61.png",
+        "destination": "E:/codexwork/Site-Skin-edit/generated-images/sidebar-library-20261015-165429/results/14-rules.png",
+        "operation": "move",
+        "sha256Before": "F95AC82673DA87A17BA96E5999E21C68AB6604E29604DA19E9F4A545E069B912",
+        "sha256After": "F95AC82673DA87A17BA96E5999E21C68AB6604E29604DA19E9F4A545E069B912",
+        "match": true
+      },
+      "selectedByAgent": true,
+      "adoptedInFigma": true,
+      "approvedByUser": false,
+      "figma": {
+        "id": "396:2425",
+        "key": "f254de2a3b4cb84da82a131b3bf94cd4fae8ae97",
+        "imageHash": "76790f0f42ebf652e257ce46abea27969d3b90c2"
+      }
+    }
+  ],
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "componentPage": "347:552",
+    "comparisonPage": "347:553",
+    "sidebarSet": "351:1352",
+    "createdNodeIds": [
+      "397:9201",
+      "397:9202",
+      "397:9203",
+      "397:9204",
+      "397:9277",
+      "397:9636",
+      "397:9637",
+      "397:9638",
+      "397:9639",
+      "397:10161",
+      "397:10861",
+      "397:10862",
+      "397:10863",
+      "397:10864",
+      "397:10937",
+      "397:11296",
+      "397:11297",
+      "397:11298",
+      "397:11299",
+      "397:11787",
+      "397:12461",
+      "397:12462",
+      "397:12463",
+      "397:12464",
+      "397:12465",
+      "397:12466",
+      "397:12660",
+      "397:12661",
+      "397:12662",
+      "397:12663",
+      "397:12857",
+      "397:12858",
+      "397:12859",
+      "397:12860",
+      "397:12861",
+      "397:12862",
+      "397:12863",
+      "397:12864",
+      "397:12875",
+      "397:12876",
+      "397:12877",
+      "397:12895",
+      "397:12896",
+      "397:12897",
+      "397:12909",
+      "397:12910",
+      "397:12911",
+      "397:12912",
+      "397:12913",
+      "397:12924",
+      "397:12925",
+      "397:12926",
+      "397:12944",
+      "397:12945",
+      "397:12946",
+      "397:12958",
+      "397:12959",
+      "397:12960"
+    ],
+    "mutatedNodeIds": [
+      "352:1061",
+      "356:555",
+      "352:1450",
+      "356:4593",
+      "352:1058",
+      "352:1059",
+      "352:1060",
+      "352:1448",
+      "352:1449",
+      "352:1061",
+      "352:1450",
+      "356:552",
+      "356:553",
+      "356:4591",
+      "356:555",
+      "356:4593",
+      "356:8064"
+    ],
+    "navSet": {
+      "id": "396:44005",
+      "key": "36422bd7c4e1d59a5af2937a0018aacffbcfe312"
+    },
+    "railSet": {
+      "id": "396:44018",
+      "key": "d8c94a10ff04be861cbe415c141283137aba8f6d"
+    },
+    "grip": "396:43930",
+    "sidebars": {
+      "WhiteGold": {
+        "id": "396:44019",
+        "key": "87d64f97bda04c7ad65355d592fe6de3f4b536eb"
+      },
+      "BlackGold": {
+        "id": "396:44231",
+        "key": "bd3b044ee01ca9ee6a24b9d9a004545220f15fab"
+      }
+    },
+    "navVariants": [
+      {
+        "id": "396:43937",
+        "name": "Theme=WhiteGold, State=Default"
+      },
+      {
+        "id": "396:43948",
+        "name": "Theme=WhiteGold, State=Hover"
+      },
+      {
+        "id": "396:43959",
+        "name": "Theme=WhiteGold, State=Selected"
+      },
+      {
+        "id": "396:43971",
+        "name": "Theme=BlackGold, State=Default"
+      },
+      {
+        "id": "396:43982",
+        "name": "Theme=BlackGold, State=Hover"
+      },
+      {
+        "id": "396:43993",
+        "name": "Theme=BlackGold, State=Selected"
+      }
+    ],
+    "railVariants": [
+      {
+        "id": "396:44006",
+        "name": "Theme=WhiteGold, State=Default"
+      },
+      {
+        "id": "396:44009",
+        "name": "Theme=WhiteGold, State=Selected"
+      },
+      {
+        "id": "396:44012",
+        "name": "Theme=BlackGold, State=Default"
+      },
+      {
+        "id": "396:44015",
+        "name": "Theme=BlackGold, State=Selected"
+      }
+    ],
+    "typography": {
+      "Menu": "S:e0a849c7cb8ce258eb74b19ca6fd4eddb0a8ca50,",
+      "Selected": "S:7f1a3c49118caed10ef36d08a159cf59324655be,"
+    },
+    "badgeCount": 14,
+    "removedTemporaryInstances": [
+      {
+        "id": "397:9203",
+        "referencedDescendants": 72
+      },
+      {
+        "id": "397:9638",
+        "referencedDescendants": 503
+      },
+      {
+        "id": "397:10863",
+        "referencedDescendants": 72
+      },
+      {
+        "id": "397:11298",
+        "referencedDescendants": 477
+      }
+    ],
+    "newColumns": {
+      "WhiteGold": "397:9201",
+      "BlackGold": "397:10861"
+    },
+    "newScreens": {
+      "WhiteGold": "397:10161",
+      "BlackGold": "397:11787"
+    },
+    "dedicatedReview": "397:12461",
+    "reviewSides": {
+      "WhiteGold": "397:12466",
+      "BlackGold": "397:12663"
+    },
+    "gallery": {
+      "id": "352:1058",
+      "w": 2124,
+      "h": 2806
+    },
+    "fullGallery": {
+      "id": "356:552",
+      "x": 2400,
+      "w": 13952,
+      "h": 4280.39990234375
+    },
+    "iconSwapTest": {
+      "createdNodeIds": [
+        "400:2743"
+      ],
+      "removedTemporaryInstances": [
+        {
+          "id": "400:2743",
+          "referencedDescendants": 10
+        }
+      ],
+      "iconSwapPassed": true,
+      "actualIcon": "396:2425",
+      "sourceSizes": [
+        {
+          "id": "396:43937",
+          "w": 176,
+          "h": 36
+        },
+        {
+          "id": "396:43948",
+          "w": 176,
+          "h": 36
+        },
+        {
+          "id": "396:43959",
+          "w": 176,
+          "h": 36
+        },
+        {
+          "id": "396:43971",
+          "w": 176,
+          "h": 36
+        },
+        {
+          "id": "396:43982",
+          "w": 176,
+          "h": 36
+        },
+        {
+          "id": "396:43993",
+          "w": 176,
+          "h": 36
+        }
+      ]
+    }
+  },
+  "verification": {
+    "assets": {
+      "count": 14,
+      "unique": 14,
+      "prompts": 14,
+      "allPNG_RGBA": true,
+      "all1254Square": true
+    },
+    "preservation": [
+      {
+        "id": "351:610",
+        "before": "1e9bb755",
+        "after": "1e9bb755",
+        "same": true,
+        "count": 76
+      },
+      {
+        "id": "351:687",
+        "before": "10895465",
+        "after": "10895465",
+        "same": true,
+        "count": 76
+      },
+      {
+        "id": "351:764",
+        "before": "cf6386e0",
+        "after": "cf6386e0",
+        "same": true,
+        "count": 74
+      },
+      {
+        "id": "351:838",
+        "before": "1d4fda15",
+        "after": "1d4fda15",
+        "same": true,
+        "count": 74
+      },
+      {
+        "id": "351:912",
+        "before": "4056190",
+        "after": "4056190",
+        "same": true,
+        "count": 78
+      },
+      {
+        "id": "351:990",
+        "before": "3b4169d9",
+        "after": "3b4169d9",
+        "same": true,
+        "count": 78
+      },
+      {
+        "id": "351:1068",
+        "before": "68df3f8b",
+        "after": "68df3f8b",
+        "same": true,
+        "count": 74
+      },
+      {
+        "id": "351:1143",
+        "before": "b41d4331",
+        "after": "b41d4331",
+        "same": true,
+        "count": 74
+      },
+      {
+        "id": "351:1218",
+        "before": "54f760d9",
+        "after": "54f760d9",
+        "same": true,
+        "count": 67
+      },
+      {
+        "id": "351:1285",
+        "before": "5ceb00f4",
+        "after": "5ceb00f4",
+        "same": true,
+        "count": 67
+      },
+      {
+        "id": "380:42599",
+        "before": "49c710b",
+        "after": "49c710b",
+        "same": true,
+        "count": 73
+      },
+      {
+        "id": "380:42686",
+        "before": "410f1069",
+        "after": "410f1069",
+        "same": true,
+        "count": 73
+      },
+      {
+        "id": "355:1790",
+        "before": "734cdaf1",
+        "after": "734cdaf1",
+        "same": true,
+        "count": 507
+      },
+      {
+        "id": "355:2891",
+        "before": "652f9465",
+        "after": "652f9465",
+        "same": true,
+        "count": 481
+      }
+    ],
+    "styleGroups": {
+      "Style": {
+        "values": [
+          "Showcase",
+          "Islands",
+          "HUD",
+          "Index",
+          "Spine",
+          "IconPanel",
+          "Library"
+        ]
+      },
+      "Theme": {
+        "values": [
+          "WhiteGold",
+          "BlackGold"
+        ]
+      }
+    },
+    "structure": "qa/figma-verification.json",
+    "visualQA": {
+      "review": "qa/review-final.png",
+      "fullScreen1920Black": "qa/1920-black-final.png",
+      "result": "No clipping, wrong image assignment, or alignment defect found in final render."
+    },
+    "mobile": "Deferred by user priority; not inspected.",
+    "temporaryImportCapture": "removed",
+    "temporaryImportTab": "closed",
+    "temporaryServer": "stopped"
+  },
+  "notChanged": [
+    "Existing six sidebar styles and original page masters; verified before/after node hashes",
+    "Header, banner, casino/slot imagery, sports cards and provider logos",
+    "Local website source and deployment"
+  ]
+}

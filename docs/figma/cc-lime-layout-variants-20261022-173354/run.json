@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "task": "CC Lime 기존 화면을 보존하며 배너와 콘텐츠 바로가기 레이아웃 2종 추가",
+  "date": "2026-10-22",
+  "timezone": "Asia/Seoul",
+  "outputDirectory": "E:/codexwork/Site-Skin-edit/docs/figma/cc-lime-layout-variants-20261022-173354",
+  "figma": {
+    "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+    "sourcePageId": "795:1330",
+    "sourceRootId": "803:1334",
+    "newPageId": "919:7490",
+    "newPageName": "25 · CC Lime · 레이아웃 바리에이션 · 1920",
+    "screens": [
+      {
+        "id": "919:7491",
+        "variant": "SoloSquare",
+        "width": 1920,
+        "height": 1941.199951171875,
+        "prototypeFrameId": "930:1995",
+        "componentId": "925:1784"
+      },
+      {
+        "id": "920:7490",
+        "variant": "CenterBars",
+        "width": 1920,
+        "height": 1941.199951171875,
+        "prototypeFrameId": "930:2107",
+        "componentId": "925:1878"
+      }
+    ],
+    "componentSetId": "925:2034"
+  },
+  "generation": {
+    "requested": false,
+    "attempted": 0,
+    "succeeded": 0,
+    "newImageHashes": 0,
+    "existingUniqueImagesPerScreen": 100,
+    "sourceAssetsModified": false
+  },
+  "verification": {
+    "originalProtectedObjects": 56,
+    "originalsUnchanged": true,
+    "sourceRootFullHash": "ca4b3723",
+    "lowerSubtreesUnchangedPerScreen": 4,
+    "linkedInstances": {
+      "A": 87,
+      "B": 91
+    },
+    "unlinkedInstances": 0,
+    "all10ScrollDestinationsExist": true,
+    "masterAppearanceChecks": {
+      "reports": [
+        {
+          "topId": "930:1995",
+          "masterId": "925:1784",
+          "appearanceMatches": true,
+          "selectorNames": [
+            "Select 페이백 포인트",
+            "Select 회원 이벤트",
+            "Select 데일리 리워드"
+          ],
+          "uniformSelectorSurface": true
+        },
+        {
+          "topId": "930:2107",
+          "masterId": "925:1878",
+          "appearanceMatches": true,
+          "selectorNames": [
+            "Select 페이백 포인트",
+            "Select 회원 이벤트",
+            "Select 데일리 리워드"
+          ],
+          "uniformSelectorSurface": true
+        }
+      ]
+    },
+    "visualQA": {
+      "fullScreens": true,
+      "actual1920pxPNGs": true,
+      "comparison": true,
+      "portraitAndGiftVisible": true
+    },
+    "browserPrototype": {
+      "tool": "cua_repl",
+      "A": [
+        "Payback initial",
+        "Reward via03",
+        "Events via02",
+        "Payback via01"
+      ],
+      "B": [
+        "Payback initial",
+        "Events via tab",
+        "Reward via tab",
+        "Payback via tab"
+      ],
+      "result": "passed",
+      "notTested": [
+        "direct horizontal drag input",
+        "B side preview click",
+        "infinite loop",
+        "autoplay",
+        "actual web responsive behavior"
+      ]
+    }
+  },
+  "preservation": {
+    "originalPages": true,
+    "originalComponentMasters": true,
+    "sourceImages": true,
+    "headerAndSidebarAppearance": true,
+    "unrelatedThemes": true,
+    "websiteCode": true,
+    "serversAndDeployment": true
+  },
+  "prototypeImplementation": {
+    "topFramesDetachedForNativeTargets": true,
+    "reusableVisualMastersPreserved": true,
+    "initialInstanceScrollFailed": true,
+    "fixedBy": "Bind SCROLL_TO to actual descendant frames in standalone editable top modules",
+    "numberSelectorTreatment": "uniform navigation controls without fixed active indication"
+  },
+  "state": {
+    "designCreated": true,
+    "technicalChecked": true,
+    "visuallyChecked": true,
+    "prototypeTabNavigationChecked": true,
+    "userAccepted": false,
+    "siteAdopted": false,
+    "deployed": false
+  },
+  "evidence": [
+    "README.ko.md",
+    "source-verification.json",
+    "final-verification.json",
+    "style-verification.json",
+    "qa-files.json",
+    "qa/comparison.png",
+    "qa/top-details.png"
+  ],
+  "failedAtomicRolledBackScripts": [
+    "03-compose-variations.js",
+    "04-compose-editable-layouts.js",
+    "09-bind-instance-scroll-targets.js"
+  ]
+}

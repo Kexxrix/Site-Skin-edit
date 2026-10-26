@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-22",
+  "timezone": "Asia/Seoul",
+  "fileKey": "PoUHKHsm9xOYavWBQ7uAGP",
+  "pageId": "795:1330",
+  "sourceFrameId": "850:3637",
+  "request": "Add White Gallery, Hanji Ink, Bio Membrane skins with fixed existing layout",
+  "layoutChangesAuthorized": false,
+  "themes": [
+    {
+      "key": "gallery",
+      "name": "White Gallery",
+      "frameId": "884:6638",
+      "collectionId": "VariableCollectionId:884:6568",
+      "position": {
+        "x": 100,
+        "y": 6268
+      },
+      "status": {
+        "created": true,
+        "structureQA": true,
+        "visualQA": true,
+        "userAccepted": false,
+        "siteAdopted": false
+      },
+      "verification": {
+        "originalNodes": 629,
+        "instances": 94,
+        "images": 100,
+        "masks": 3,
+        "visibleTexts": 151,
+        "textStyles": 19,
+        "variables": 45,
+        "effectStyles": 5,
+        "decorationNodes": 0
+      }
+    },
+    {
+      "key": "hanji",
+      "name": "Hanji Ink",
+      "frameId": "884:7328",
+      "collectionId": "VariableCollectionId:884:7255",
+      "position": {
+        "x": 2220,
+        "y": 6268
+      },
+      "status": {
+        "created": true,
+        "structureQA": true,
+        "visualQA": true,
+        "userAccepted": false,
+        "siteAdopted": false
+      },
+      "verification": {
+        "originalNodes": 629,
+        "instances": 94,
+        "images": 100,
+        "masks": 3,
+        "visibleTexts": 151,
+        "textStyles": 21,
+        "variables": 45,
+        "effectStyles": 6,
+        "decorationNodes": 66
+      }
+    },
+    {
+      "key": "bio",
+      "name": "Bio Membrane",
+      "frameId": "884:8017",
+      "collectionId": "VariableCollectionId:884:7945",
+      "position": {
+        "x": 4340,
+        "y": 6268
+      },
+      "status": {
+        "created": true,
+        "structureQA": true,
+        "visualQA": true,
+        "userAccepted": false,
+        "siteAdopted": false
+      },
+      "verification": {
+        "originalNodes": 629,
+        "instances": 94,
+        "images": 100,
+        "masks": 3,
+        "visibleTexts": 151,
+        "textStyles": 19,
+        "variables": 45,
+        "effectStyles": 7,
+        "decorationNodes": 16
+      }
+    }
+  ],
+  "preservedOriginals": 53,
+  "preservationFailures": [],
+  "geometryDifferences": [
+    {
+      "key": "gallery",
+      "count": 0
+    },
+    {
+      "key": "hanji",
+      "count": 0
+    },
+    {
+      "key": "bio",
+      "count": 0
+    }
+  ],
+  "sourceVariableDifferences": [],
+  "assetScope": {
+    "originalImagesReplaced": 0,
+    "bitmapGenerated": false,
+    "contentImageHashAndTransformsPreserved": true,
+    "uiImageDisplayFilterOverrides": {
+      "gallery": 15,
+      "hanji": 15,
+      "bio": 1
+    },
+    "nativeDecorations": {
+      "hanji": 66,
+      "bio": 16
+    }
+  },
+  "webCodeChanged": false,
+  "deployed": false,
+  "preview": "qa/comparison.png",
+  "notes": [
+    "Native noise blendMode field excluded after compatible-schema validation failure.",
+    "Sidebar 1px layout shift corrected by restoring stroke-free original unselected rows.",
+    "Hanji serif hero font restored to original metrics; serif retained in fixed section and card title containers."
+  ]
+}
