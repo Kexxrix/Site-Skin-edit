@@ -1,6 +1,13 @@
 import { Reveal } from "@/components/reveal"
 import styles from "./why-titan.module.css"
 
+const TEAM_PHOTOS = [
+  { src: "/assets/hero-team-user-20260915/디지털 아트에 몰입한 크리에이티브 디자이너04.png", width: 1086, height: 1448, position: "50% 50%" },
+  { src: "/assets/hero-team-user-20260915/탁월한 기술력_03.png", width: 1086, height: 1448, position: "50% 50%" },
+  { src: "/assets/hero-team-user-20260915/파트너의 경제적 성공02.png", width: 1086, height: 1448, position: "50% 50%" },
+  { src: "/assets/hero-team-user-20260915/역동적인 개발팀_02.png", width: 1086, height: 1448, position: "50% 50%" },
+]
+
 const STRENGTHS = [
   {
     icon: "development",
@@ -74,9 +81,25 @@ export function WhyTitan() {
           </div>
         </Reveal>
 
+        <Reveal className={styles.teamGallery}>
+          {TEAM_PHOTOS.map((photo) => (
+            <img
+              key={photo.src}
+              src={photo.src}
+              alt="Titan의 디자인·기술 운영·파트너십·개발팀을 보여주는 연출 사진"
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+              decoding="async"
+              style={{ objectPosition: photo.position }}
+            />
+          ))}
+        </Reveal>
+
         <ul className={styles.strengthList}>
           {STRENGTHS.map((strength, index) => (
             <Reveal key={strength.icon} as="li" delay={index * 100} className={styles.strength}>
+              <span className={styles.number} aria-hidden>0{index + 1}</span>
               <span className={styles.icon}><StrengthIcon type={strength.icon} /></span>
               <div>
                 <h3>{strength.title}</h3>

@@ -11,18 +11,11 @@ const STATS = [
 
 const TITAN_VIDEO_URL = "/videos/TITAN-KO-5scene-19s-v003.mp4"
 
-const TEAM_PHOTOS = [
-  { src: "/assets/hero-team-user-20260915/디지털 아트에 몰입한 크리에이티브 디자이너04.png", width: 1086, height: 1448, position: "50% 50%" },
-  { src: "/assets/hero-team-user-20260915/탁월한 기술력_03.png", width: 1086, height: 1448, position: "50% 50%" },
-  { src: "/assets/hero-team-user-20260915/파트너의 경제적 성공02.png", width: 1086, height: 1448, position: "50% 50%" },
-  { src: "/assets/hero-team-user-20260915/역동적인 개발팀_02.png", width: 1086, height: 1448, position: "50% 50%" },
-]
-
 export function Hero() {
   return (
     <section id="top" aria-labelledby="hero-heading" className={styles.hero}>
       <div className={styles.container}>
-        <Reveal>
+        <Reveal className={styles.eyebrowReveal}>
           <p className={styles.eyebrow}>
             <span aria-hidden className={styles.eyebrowDot} />
             B2B Betting Platform
@@ -37,18 +30,24 @@ export function Hero() {
             </h1>
           </Reveal>
 
-          <Reveal delay={160}>
-            <div className={styles.actions}>
-              <PillButton href="#portfolio">라이브 데모 보기</PillButton>
-              <PillButton href="#contact" variant="secondary">
-                도입 상담하기
-              </PillButton>
-            </div>
-          </Reveal>
         </div>
 
-        <Reveal delay={240}>
-          <div className={styles.statsRow}>
+        <Reveal className={styles.introReveal} delay={160}>
+            <div className={styles.intro}>
+              <p className={styles.subtitle}>
+                <span>자체 개발 카지노·슬롯 벤더와 스포츠북, 통합머니·정산.</span>
+                <span>사용자·파트너·백오피스까지 하나의 체계로 관리합니다.</span>
+              </p>
+              <div className={styles.actions}>
+                <PillButton href="#portfolio">라이브 데모 보기</PillButton>
+                <PillButton href="#contact" variant="secondary">
+                  도입 상담하기
+                </PillButton>
+              </div>
+            </div>
+        </Reveal>
+
+        <Reveal className={styles.statsReveal} delay={320}>
             <div className={styles.statsGroup}>
               <dl className={styles.stats} aria-label="도입 실적과 운영·지원 경험" aria-describedby="hero-stats-note">
                 {STATS.map((stat) => (
@@ -65,14 +64,8 @@ export function Hero() {
               <p id="hero-stats-note" className={styles.statsNote}>실적·업력: 2026년 1월 기준</p>
             </div>
 
-            <p className={styles.subtitle}>
-              <span>자체 개발 카지노·슬롯 벤더와 스포츠북, 통합머니·정산.</span>
-              <span>사용자·파트너·백오피스까지 하나의 체계로 관리합니다.</span>
-            </p>
-          </div>
         </Reveal>
-
-        <Reveal delay={320}>
+        <Reveal className={styles.mediaReveal} delay={240}>
           <div className={styles.media}>
             <div className={styles.videoBox}>
               <video
@@ -82,7 +75,6 @@ export function Hero() {
                 muted
                 loop
                 playsInline
-                controls
                 preload="metadata"
                 className={styles.videoFrame}
               >
@@ -90,23 +82,6 @@ export function Hero() {
               </video>
             </div>
 
-            <div
-              className={styles.sideImage}
-              role="img"
-              aria-label="디자인 작업, 기술 운영, 파트너십과 개발팀 협업을 보여주는 연출 사진"
-            >
-              {TEAM_PHOTOS.map((photo, index) => (
-                <img
-                  key={photo.src}
-                  src={photo.src}
-                  alt=""
-                  width={photo.width}
-                  height={photo.height}
-                  className={styles.sideImg}
-                  style={{ objectPosition: photo.position, animationDelay: `${-20 + index * 5}s` }}
-                />
-              ))}
-            </div>
           </div>
         </Reveal>
       </div>

@@ -8,6 +8,7 @@ const NAV = [
   { href: "#solutions", label: "솔루션" },
   { href: "#platform", label: "플랫폼" },
   { href: "#support", label: "구축·지원" },
+  { href: "#adoption-guide", label: "FAQ" },
   { href: "#contact", label: "문의" },
 ]
 
@@ -48,23 +49,6 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-
-        <div className={styles.desktopCta}>
-          <a
-            href="#contact"
-            className={styles.cta}
-          >
-            도입 상담
-            <span
-              aria-hidden
-              className={styles.ctaArrow}
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-                <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-          </a>
-        </div>
 
         <button
           type="button"

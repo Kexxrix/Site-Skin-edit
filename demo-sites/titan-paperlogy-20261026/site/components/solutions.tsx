@@ -53,9 +53,8 @@ function SolutionIcon({ type }: { type: "casino" | "tojino" }) {
 
 function selectSolution(solution: (typeof SOLUTIONS)[number]["name"]) {
   window.dispatchEvent(new CustomEvent("titan:select-solution", { detail: { solution } }))
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
   document.getElementById("contact")?.scrollIntoView({
-    behavior: reducedMotion ? "instant" : "smooth",
+    behavior: "instant",
   })
 }
 
@@ -87,9 +86,9 @@ export function Solutions() {
                   <div className={styles.cardCopy}>
                     <h3>{solution.name}</h3>
                     <p className={styles.scope}>{solution.scope}</p>
-                    <p className={styles.cardDescription}>{solution.description}</p>
                   </div>
                 </div>
+                <p className={styles.cardDescription}>{solution.description}</p>
                 <dl className={styles.feature}>
                   <dt>대표 관리 기능</dt>
                   <dd>{solution.feature}</dd>
@@ -100,6 +99,7 @@ export function Solutions() {
                   className={styles.consultButton}
                 >
                   {solution.cta}
+                  <span className={styles.consultArrow} aria-hidden>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
                     <path
                       d="M7 17L17 7M17 7H8M17 7v9"
@@ -109,6 +109,7 @@ export function Solutions() {
                       strokeLinejoin="round"
                     />
                   </svg>
+                  </span>
                 </button>
               </article>
             </Reveal>

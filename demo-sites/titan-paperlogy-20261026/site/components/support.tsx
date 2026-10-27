@@ -121,10 +121,10 @@ export function Support() {
                     decoding="async"
                     className={styles.photo}
                   />
+                  <span className={styles.stepNumber} aria-hidden>{s.step}</span>
                 </div>
                 <div className={styles.cardContent}>
                   <div className={styles.cardTitle}>
-                    <span className={styles.stepNumber} aria-hidden>{s.step}</span>
                     <h3>{s.title}</h3>
                   </div>
                   <p>{s.desc}</p>
@@ -138,7 +138,7 @@ export function Support() {
           <Reveal>
             <p className={styles.eyebrow}><span aria-hidden />FAQ</p>
             <h2 id="adoption-guide-heading" className={styles.faqTitle}>
-              도입 전,<br /><span>확인하세요.</span>
+              도입 전, <span>확인하세요.</span>
             </h2>
             <p className={styles.faqDescription}>
               임대·분양부터 서비스 전환과 운영 지원까지, 도입에 필요한 내용을 안내합니다.
@@ -148,13 +148,24 @@ export function Support() {
             <div className={styles.faqList}>
               {FAQS.map((faq, index) => (
                 <details key={faq.question} name="adoption-faq" open={index === 0} className={styles.faqItem}>
-                  <summary className={styles.faqQuestion}>
+                  <summary
+                    id={`faq-question-${index}`}
+                    className={styles.faqQuestion}
+                    style={{ gridRow: Math.floor(index / 2) * 2 + 1 }}
+                  >
+                    <span className={styles.faqNumber} aria-hidden>{String(index + 1).padStart(2, "0")}</span>
                     <span>{faq.question}</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                       <path d="m6 9 6 6 6-6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </summary>
-                  <div className={styles.faqAnswer}>
+                  <div
+                    id={`faq-answer-${index}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${index}`}
+                    className={styles.faqAnswer}
+                    style={{ gridRow: Math.floor(index / 2) * 2 + 2 }}
+                  >
                     {faq.answers.map((answer) => <p key={answer}>{answer}</p>)}
                   </div>
                 </details>

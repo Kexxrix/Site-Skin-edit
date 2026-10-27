@@ -1,7 +1,7 @@
 /* Dizora About Us: split heading with three open columns for Titan's strengths. */
 .whyTitan {
-  background: #111;
-  color: #fff;
+  background: var(--site-alt);
+  color: var(--site-text);
   scroll-margin-top: 100px;
 }
 
@@ -51,29 +51,46 @@
 }
 
 .title > span {
-  color: #fa871f;
+  color: var(--site-accent);
 }
 
 .introduction {
   margin: 0;
-  color: #e0d9d9;
+  color: var(--site-copy);
   font-size: 16px;
   line-height: 26px;
   word-break: keep-all;
 }
 
+.teamGallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.teamGallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 .strengthList {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
   margin: 56px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .strength {
+  border-top: 1px solid var(--site-border);
+  padding-block: 28px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: 88px 44px minmax(0, 1fr);
   align-content: start;
   align-items: start;
   gap: 20px;
@@ -86,15 +103,15 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background: #fa871f;
-  color: #fff;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--site-accent);
 }
 
 .strength h3 {
   margin: 0 0 12px;
-  color: #fa871f;
-  font-size: 22px;
+  color: var(--site-accent);
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.4;
   word-break: keep-all;
@@ -102,9 +119,9 @@
 
 .strength p {
   margin: 0;
-  color: #e0d9d9;
+  color: var(--site-copy);
   font-size: 16px;
-  line-height: 26px;
+  line-height: 28px;
   word-break: keep-all;
 }
 
@@ -115,7 +132,7 @@
   }
 
   .strength h3 {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 
@@ -140,7 +157,7 @@
   }
 
   .strength {
-    grid-template-columns: 44px minmax(0, 1fr);
+    grid-template-columns: 64px 40px minmax(0, 1fr);
     gap: 18px;
   }
 
@@ -150,6 +167,20 @@
 }
 
 @media (max-width: 767px) {
+  .teamGallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .teamGallery img {
+    aspect-ratio: 3 / 4;
+  }
+
+  .teamGallery img:nth-child(n + 3) {
+    display: none;
+  }
+
   .container {
     padding-block: 48px;
   }
@@ -173,7 +204,7 @@
   }
 
   .strength {
-    grid-template-columns: 40px minmax(0, 1fr);
+    grid-template-columns: 44px minmax(0, 1fr);
     gap: 12px;
   }
 
@@ -183,12 +214,12 @@
   }
 
   .strength h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .strength p {
-    font-size: 14.75px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 27px;
   }
 }
 
@@ -197,3 +228,24 @@
     width: calc(100% - 40px);
   }
 }
+
+.number { color: var(--site-accent); font-family: var(--font-heading); font-size: 48px; font-weight: 500; line-height: 1; }
+.strength > div { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 40px; }
+.strength h3 { color: var(--site-text); font-size: 22px; }
+@media (min-width: 1024px) {
+  .strength {
+    grid-template-columns: 88px 44px minmax(0, 1fr) minmax(0, calc((100% - 64px) / 2));
+  }
+
+  .strength > div {
+    display: contents;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .strength {
+    grid-template-columns: 88px 44px minmax(0, 1fr) minmax(0, calc((100% - 40px) / 2));
+  }
+}
+
+@media (max-width: 767px) { .number { font-size: 32px; } .icon { display: none; } .strength > div { grid-template-columns: minmax(0, 1fr); gap: 4px; } .strength h3 { font-size: 19px; } }

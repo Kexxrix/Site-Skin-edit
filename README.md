@@ -1,3 +1,13 @@
+## 최신 TITAN · AURORA 백업 — 2026-10-27
+
+TITAN의 V1·V2·V3, 프로젝트 19개와 필터 전환 모션, AURORA의 골드 워드마크 및 네 개 독립 페이지를 현재 로컬 작업본과 동일하게 보관했습니다. 소스·설정·자산 333개를 해시로 대조했으며 기존 파일은 삭제하지 않았습니다.
+
+[백업 범위·실행·검증 기록](backup/site-snapshots/20261027-titan-aurora/README.ko.md) · [파일별 명세](backup/site-snapshots/20261027-titan-aurora/source-files.json) · [검수 근거](backup/site-snapshots/20261027-titan-aurora/evidence)
+
+이 업데이트는 GitHub 보관 작업입니다. 로컬 원본과 공개 사이트 배포는 유지했으며, TITAN의 오로라 링크는 로컬 5430 서버가 필요합니다. 아래 안내는 이전 작업 이력으로 보존합니다.
+
+---
+
 ## 최신 프로젝트 백업 — 2026-10-26
 
 2026-10-12 이후의 작업을 수집했습니다. LUNA, TITAN Paperlogy 복제본, Figma·BIT365 내보내기와 생성 이미지, TITAN 인계·폰트·제작 문서를 포함합니다. 원본 작업과 기존 배포는 유지했습니다.

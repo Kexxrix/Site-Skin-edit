@@ -1,0 +1,241 @@
+{
+  "target": "http://127.0.0.1:3001/?version=v3#portfolio",
+  "changedFile": "E:/codexwork/Site-Skin-edit/demo-sites/titan-paperlogy-20261026/site/components/portfolio.tsx",
+  "change": "Include selected filter in Reveal card key; replay existing animation when category changes",
+  "baseline": {
+    "cards": [
+      {
+        "animation": "reveal-in",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "reveal-in",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "reveal-in",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "reveal-in",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "reveal-in",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "reveal-in",
+        "opacity": "1",
+        "transform": "none"
+      }
+    ],
+    "filter": "카지노",
+    "names": [
+      "CAT VILLAGE",
+      "GIRLS FRONTLINE",
+      "GROUND ZERO",
+      "風林花山",
+      "VENUS",
+      "PARADISE BEACH"
+    ],
+    "page": "01 / 02"
+  },
+  "desktop": [
+    {
+      "cards": [
+        {
+          "animation": "reveal-in",
+          "delay": "0s",
+          "duration": "0.7s",
+          "name": "CAT VILLAGE",
+          "opacity": "0.997285",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0488666)"
+        },
+        {
+          "animation": "reveal-in",
+          "delay": "0.09s",
+          "duration": "0.7s",
+          "name": "GIRLS FRONTLINE",
+          "opacity": "0.988991",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.198156)"
+        },
+        {
+          "animation": "reveal-in",
+          "delay": "0.18s",
+          "duration": "0.7s",
+          "name": "GROUND ZERO",
+          "opacity": "0.967231",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.589841)"
+        },
+        {
+          "animation": "reveal-in",
+          "delay": "0s",
+          "duration": "0.7s",
+          "name": "風林花山",
+          "opacity": "0.997285",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0488666)"
+        },
+        {
+          "animation": "reveal-in",
+          "delay": "0.09s",
+          "duration": "0.7s",
+          "name": "VENUS",
+          "opacity": "0.988991",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.198156)"
+        },
+        {
+          "animation": "reveal-in",
+          "delay": "0.18s",
+          "duration": "0.7s",
+          "name": "PARADISE BEACH",
+          "opacity": "0.967231",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.589841)"
+        }
+      ],
+      "filter": "카지노",
+      "page": "01 / 02",
+      "phase": "all-to-casino",
+      "width": 1440
+    },
+    {
+      "filter": "토지노",
+      "firstCard": {
+        "opacity": "0.884876",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.07223)"
+      },
+      "names": [
+        "MERCURY Light",
+        "MERCURY Dark",
+        "SIRIUS Light",
+        "SIRIUS Dark",
+        "ALDEBARAN Light",
+        "ALDEBARAN Dark"
+      ],
+      "page": "01 / 02",
+      "phase": "casino-page2-to-tojino"
+    },
+    {
+      "filter": "전체",
+      "firstCard": {
+        "opacity": "0.864173",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.44488)"
+      },
+      "names": [
+        "CAT VILLAGE",
+        "GIRLS FRONTLINE",
+        "GROUND ZERO",
+        "風林花山",
+        "VENUS",
+        "PARADISE BEACH"
+      ],
+      "page": "01 / 04",
+      "phase": "tojino-to-all"
+    }
+  ],
+  "settled": {
+    "cards": [
+      {
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "opacity": "1",
+        "transform": "none"
+      }
+    ],
+    "overflow": false
+  },
+  "casinoPage2": [
+    "ATHENA",
+    "WILD WEST",
+    "CARPE DIEM"
+  ],
+  "reducedMotion": {
+    "cards": [
+      {
+        "animation": "none",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "none",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "none",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "none",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "none",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "animation": "none",
+        "opacity": "1",
+        "transform": "none"
+      }
+    ],
+    "filter": "카지노"
+  },
+  "mobileBefore": {
+    "scrollY": 756,
+    "width": 390
+  },
+  "mobile": {
+    "filter": "카지노",
+    "firstCard": {
+      "animation": "reveal-in",
+      "opacity": "0.864058",
+      "transform": "matrix(1, 0, 0, 1, 0, 2.44696)"
+    },
+    "names": [
+      "CAT VILLAGE",
+      "GIRLS FRONTLINE",
+      "GROUND ZERO",
+      "風林花山",
+      "VENUS",
+      "PARADISE BEACH"
+    ],
+    "overflow": false,
+    "page": "01 / 02",
+    "phase": "mobile-all-to-casino",
+    "scrollY": 756,
+    "width": 390
+  },
+  "logs": [],
+  "typecheck": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+    "exitCode": 0
+  },
+  "browser": "CUA in-app browser; Browser plugin absent, existing supported browser bridge used; no external browser setup"
+}

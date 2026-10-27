@@ -57,8 +57,8 @@ function ProviderSection({ id, title, providers, openNotice, arrows }: { id: str
 }
 
 
-export function RaisedHome({ initialView = 'black' }: { initialView?: string }) {
-  const [viewIndex, setViewIndex] = useState(() => Math.max(0, views.findIndex(view => view.id === initialView)));
+export function RaisedHome({ viewId }: { viewId: (typeof views)[number]['id'] }) {
+  const viewIndex = views.findIndex(view => view.id === viewId);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState('입금신청');
   const [notice, setNotice] = useState<Notice | null>(null);
@@ -68,14 +68,6 @@ export function RaisedHome({ initialView = 'black' }: { initialView?: string }) 
   const film = viewIndex >= 2;
   const theme = white ? 'white' : 'black';
   const headerIcon = (icon: 'Megaphone' | 'CalendarCheck' | 'ReceiptText' | 'Telegram') => assets[`${white ? 'imgWhiteHeaderIcon' : 'imgP19AssetsHeaderIcon'}${icon}` as keyof typeof assets];
-  const changeView = (index: number) => {
-    setViewIndex(index);
-    setMenuOpen(false);
-    const url = new URL(window.location.href);
-    url.searchParams.set('view', views[index].id);
-    window.history.replaceState(null, '', url);
-    document.querySelector('.raised-main')?.scrollTo({ top: 0 });
-  };
   const serviceNotice = (title: string) => setNotice({ title, description: '현재 디자인 미리보기에서는 이 서비스를 이용할 수 없습니다.' });
   const navigateMenu = (label: string) => {
     setActiveMenu(label);
@@ -106,7 +98,7 @@ export function RaisedHome({ initialView = 'black' }: { initialView?: string }) 
     <header className="raised-header">
       <div className="raised-header-art" aria-hidden="true"><GoldImage src={assets.imgGeneratedGoldFlow03ImageOverlay} /></div>
       <div className="raised-header-fade" aria-hidden="true" />
-      <div className="raised-brand"><Link href={`/?view=${view.id}`} aria-label="ALDEBARAN 홈">{white ? <span className="raised-white-logo" style={{ maskImage: `url("${assets.imgWhiteLogo}")` }} aria-hidden="true" /> : <GoldImage src={assets.imgLogo} alt="ALDEBARAN" />}</Link></div>
+      <div className="raised-brand"><Link href={`/${view.id}`} aria-label="AURORA 홈"><span className="raised-aurora-logo" aria-hidden="true"><Image unoptimized loading="eager" src="/assets/brand/고급 메탈릭 골드 워드마크 AURORA.png" width={2172} height={724} alt="" /></span></Link></div>
       <button className="raised-menu-toggle" type="button" aria-label={menuOpen ? '메뉴 닫기' : '메뉴 열기'} aria-expanded={menuOpen} aria-controls="raised-sidebar" onClick={() => setMenuOpen(value => !value)}><span /><span /><span /></button>
       <div className="raised-notice">
         <GoldImage src={headerIcon('Megaphone')} /><span className="raised-notice-label">공지</span><span className="raised-notice-separator" />
@@ -127,9 +119,6 @@ export function RaisedHome({ initialView = 'black' }: { initialView?: string }) 
           <div className="raised-menu-scroll">
             {menuGroups.map(group => <nav className="raised-menu-group" key={group.title} aria-label={group.title}><h2>{group.title}</h2><div className="raised-menu-items">{group.items.map(([label]) => <button className={`raised-menu-item${activeMenu === label ? ' is-selected' : ''}`} type="button" key={label} aria-pressed={activeMenu === label} onClick={() => navigateMenu(label)}><GoldImage className="raised-menu-icon" src={iconFor(label)} /><span>{label}</span><GoldImage className="raised-menu-grip" src={white ? assets.imgWhiteGrip : assets.imgGrip} /></button>)}</div></nav>)}
           </div>
-          <fieldset className="raised-view-switcher" aria-label="화면 상태 변경">
-            {views.map((option, index) => <button key={option.id} className={`raised-view-swatch swatch-${option.id}`} type="button" aria-label={option.label} title={option.label} aria-pressed={viewIndex === index} onClick={() => changeView(index)} />)}
-          </fieldset>
           <p className="raised-credit">TITAN SOLUSION</p>
         </aside>
       </div>

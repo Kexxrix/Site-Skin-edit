@@ -1,0 +1,73 @@
+{
+  "createdAt": "2026-10-27T07:26:20.988Z",
+  "repository": "https://github.com/Kexxrix/Site-Skin-edit",
+  "branch": "main",
+  "baseCommit": "7c2959e4b5f9ca33f9117ef54e4d1bcd63f84e1d",
+  "sourceRoot": "E:/codexwork/Site-Skin-edit",
+  "sourceFiles": 333,
+  "sourceBytes": 266554933,
+  "changedSourceFiles": 30,
+  "addedSourceFiles": 84,
+  "unchangedSourceFiles": 219,
+  "deletedFiles": 0,
+  "previousRemoteOnlyFilesPreserved": 24,
+  "projects": [
+    {
+      "path": "demo-sites/titan-paperlogy-20261026",
+      "files": 181,
+      "bytes": 164084480
+    },
+    {
+      "path": "demo-sites/aldebaran-blackgold-paperlogy-20261026",
+      "files": 152,
+      "bytes": 102470453
+    }
+  ],
+  "integrity": {
+    "sourceFilesStillMatchInventory": true,
+    "uploadedProjectCopyMatchesSourceSha256": true,
+    "evidenceCopyMatchesSourceSha256": true,
+    "previousRemoteOnlyFilesUnchanged": true
+  },
+  "evidenceFiles": 11,
+  "checks": [
+    {
+      "name": "current upload content",
+      "method": "SHA-256 of all eligible source files and isolated upload copies",
+      "result": "333/333 match"
+    },
+    {
+      "name": "Aurora four routes",
+      "method": "Reuse 2026-10-27 typecheck, lint, build and browser evidence",
+      "result": "passed",
+      "evidence": "evidence/aurora-four-pages-titan/verification.json"
+    },
+    {
+      "name": "Titan versions and demo links",
+      "method": "Reuse 2026-10-27 typecheck, build and browser evidence before the final filter key change",
+      "result": "passed",
+      "evidence": "evidence/aurora-four-pages-titan/titan-browser-verification.json"
+    },
+    {
+      "name": "Titan final filter change",
+      "method": "Reuse subsequent typecheck, desktop/mobile transitions and reduced-motion browser evidence",
+      "result": "passed",
+      "evidence": "evidence/titan-filter-feedback/verification.json"
+    },
+    {
+      "name": "Git whitespace check",
+      "method": "git -c core.whitespace=cr-at-eol,-blank-at-eof diff --cached --check",
+      "result": "passed except intentionally preserved formatting under the default check",
+      "note": "Five copied source files have an existing blank line at EOF; CRLF and all source bytes were preserved rather than reformatted during backup."
+    }
+  ],
+  "sourceProjectModifiedByUpload": false,
+  "originalTitanRepositoryModified": false,
+  "publicDeploymentPerformed": false,
+  "limitations": [
+    "GitHub backup only; no new public site deployment",
+    "Aurora links in Titan target 127.0.0.1:5430; both local development servers are required",
+    "No fresh dependency install or build was run for this byte-identical backup; previous task validation is retained with its original scope",
+    "Generated-image working directories and unrelated projects are outside this two-project upload scope; site-used assets are included"
+  ]
+}

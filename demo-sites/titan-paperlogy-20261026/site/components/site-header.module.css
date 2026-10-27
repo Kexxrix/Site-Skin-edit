@@ -9,7 +9,7 @@
   z-index: 50;
   padding-top: 30px;
   padding-bottom: 0;
-  color: #fff;
+  color: var(--site-text);
   transition:
     padding 220ms ease,
     background-color 220ms ease,
@@ -19,8 +19,8 @@
 .scrolled {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgb(218 218 218 / 12%);
-  background: rgb(10 10 10 / 92%);
+  border-bottom: 1px solid var(--site-border);
+  background: var(--site-header);
   backdrop-filter: blur(12px);
 }
 
@@ -40,7 +40,7 @@
   flex-shrink: 0;
   align-items: center;
   font-family: var(--font-heading);
-  font-size: 26.4px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.8px;
@@ -48,17 +48,18 @@
 }
 
 .logoAccent {
-  color: #fa871f;
+  color: var(--site-accent);
 }
 
 .nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .navLink {
   padding: 15px;
-  font-size: 15.7px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   white-space: nowrap;
@@ -67,20 +68,20 @@
 
 .navLink:hover,
 .mobileLink:hover {
-  color: #fa871f;
+  color: var(--site-accent);
 }
 
 .cta {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  min-height: 52px;
-  padding: 8px 8px 6px 25px;
+  gap: 14px;
+  min-height: 40px;
+  padding: 6px 6px 6px 18px;
   border-radius: 50px;
   background: #fa871f;
-  color: #fff;
-  font-size: 16px;
+  color: var(--site-text);
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   white-space: nowrap;
@@ -96,11 +97,11 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: #fff;
-  color: #fa871f;
+  color: var(--site-accent);
   transition: transform 180ms ease;
 }
 
@@ -145,10 +146,10 @@
     justify-content: center;
     width: 46px;
     height: 46px;
-    border: 1px solid rgb(255 255 255 / 30%);
+    border: 1px solid var(--site-border);
     border-radius: 50%;
     background: transparent;
-    color: #fff;
+    color: var(--site-text);
     cursor: pointer;
   }
 
@@ -157,9 +158,9 @@
     width: calc(100% - 48px);
     margin: 16px auto 0;
     padding: 14px;
-    border: 1px solid rgb(255 255 255 / 12%);
+    border: 1px solid var(--site-border);
     border-radius: 20px;
-    background: #1c1c1c;
+    background: var(--site-panel);
     box-shadow: 0 20px 45px rgb(0 0 0 / 30%);
   }
 
@@ -184,7 +185,7 @@
     padding: 10px 20px;
     border-radius: 50px;
     background: #fa871f;
-    color: #fff;
+    color: var(--site-text);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -198,7 +199,7 @@
   }
 
   .logo {
-    font-size: 22.6px;
+    font-size: 24px;
     letter-spacing: -0.6px;
   }
 }
@@ -212,3 +213,4 @@
     transition: none;
   }
 }
+

@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-27T15:45:20.7416161+09:00",
+  "request": "Separate four fixed Aurora pages, remove mode switcher, link all four as Tojino in local Titan project",
+  "changedFiles": [
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/site/app/page.tsx",
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/site/app/black/page.tsx",
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/site/app/white/page.tsx",
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/site/app/black-video/page.tsx",
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/site/app/white-video/page.tsx",
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/site/app/raised/raised-home.tsx",
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/site/app/raised/raised.css",
+    "demo-sites/aldebaran-blackgold-paperlogy-20261026/README.ko.md",
+    "demo-sites/titan-paperlogy-20261026/site/lib/demos.ts",
+    "demo-sites/titan-paperlogy-20261026/site/components/versions/v1/demos.ts",
+    "demo-sites/titan-paperlogy-20261026/site/components/versions/v2/demos.ts",
+    "demo-sites/titan-paperlogy-20261026/site/public/assets/aurora-black.png",
+    "demo-sites/titan-paperlogy-20261026/site/public/assets/aurora-white.png",
+    "demo-sites/titan-paperlogy-20261026/site/public/assets/aurora-black-video.png",
+    "demo-sites/titan-paperlogy-20261026/site/public/assets/aurora-white-video.png",
+    "demo-sites/titan-paperlogy-20261026/site/README.PAPERLOGY.ko.md"
+  ],
+  "technicalChecks": [
+    {
+      "project": "Aurora",
+      "result": "passed",
+      "command": "npx.cmd tsc --noEmit --incremental false"
+    },
+    {
+      "project": "Aurora",
+      "result": "passed",
+      "command": "npm run lint"
+    },
+    {
+      "project": "Aurora",
+      "result": "passed",
+      "command": "npm run build",
+      "note": "vinext route classification limitation notice only"
+    },
+    {
+      "project": "Titan",
+      "result": "passed",
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false"
+    },
+    {
+      "project": "Titan",
+      "result": "passed",
+      "command": "npm run build",
+      "note": "Separate type check used because existing build configuration skips type validation"
+    }
+  ],
+  "browserEvidence": [
+    "aurora-browser-verification.json",
+    "titan-browser-verification.json",
+    "titan-tojino-aurora-1440.png",
+    "titan-tojino-aurora-390-top.png",
+    "titan-tojino-aurora-390-bottom.png"
+  ],
+  "preservationEvidence": "demo-data-verification.json",
+  "assetEvidence": "thumbnail-verification.json",
+  "limitations": [
+    "Local-only links require both 3001 and 5430 servers",
+    "Other browser engines and physical mobile devices not tested"
+  ],
+  "publicDeployment": false,
+  "originalTitanProjectModified": false,
+  "figmaModified": false
+}

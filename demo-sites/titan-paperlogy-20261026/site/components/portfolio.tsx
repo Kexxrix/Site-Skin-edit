@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { DEMOS, type Demo } from "@/lib/demos"
+import { useLayoutEffect, useRef, useState } from "react"
+import { DEMOS, type Demo, type DemoCategory } from "@/lib/demos"
 import { Reveal } from "@/components/reveal"
 import styles from "./portfolio.module.css"
 
@@ -28,9 +28,8 @@ function DemoCard({ demo }: { demo: Demo }) {
         detail: { demo: demo.name, solution: demo.solution },
       }),
     )
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     document.getElementById("contact")?.scrollIntoView({
-      behavior: reducedMotion ? "instant" : "smooth",
+      behavior: "instant",
     })
   }
 
@@ -92,8 +91,31 @@ function DemoCard({ demo }: { demo: Demo }) {
 }
 
 export function Portfolio() {
+  const [filter, setFilter] = useState<"all" | DemoCategory>("all")
+  const [page, setPage] = useState(0)
+  const sectionRef = useRef<HTMLElement>(null)
+  const scrollToList = useRef(false)
+
+  function changePage(nextPage: number) {
+    if (nextPage === page) return
+    scrollToList.current = window.matchMedia("(max-width: 767px)").matches
+    setPage(nextPage)
+  }
+
+  useLayoutEffect(() => {
+    if (!scrollToList.current) return
+    scrollToList.current = false
+    sectionRef.current?.scrollIntoView({ behavior: "instant", block: "start" })
+  }, [page])
+  const demos = [
+    ...DEMOS.filter((demo) => demo.category === "casino"),
+    ...DEMOS.filter((demo) => demo.category === "tojino"),
+  ].filter((demo) => filter === "all" || demo.category === filter)
+  const pageCount = Math.ceil(demos.length / 6)
+  const visibleDemos = demos.slice(page * 6, (page + 1) * 6)
+
   return (
-    <section id="portfolio" aria-labelledby="portfolio-heading" className={styles.portfolio}>
+    <section ref={sectionRef} id="portfolio" aria-labelledby="portfolio-heading" className={styles.portfolio}>
       <div className={styles.container}>
         <Reveal>
           <div className={styles.headingRow}>
@@ -109,32 +131,78 @@ export function Portfolio() {
               <span>공개 데모를 기반으로 브랜드, 콘텐츠, 운영 방식에 맞춰 수정·구축합니다.</span>{" "}
               <span>관리자, 파트너 페이지 데모는 도입 상담 과정에서 안내 드리겠습니다.</span>
             </p>
-            <button
-              type="button"
-              disabled
-              aria-label="전체 포트폴리오 보기 (준비 중)"
-              title="전체 포트폴리오 준비 중"
-              className={styles.viewAll}
-            >
-              View All
-              <span aria-hidden><ArrowIcon /></span>
-            </button>
+            <div className={styles.filters} role="group" aria-label="데모 분류 필터">
+              {([
+                { value: "all", label: "전체" },
+                { value: "casino", label: "카지노" },
+                { value: "tojino", label: "토지노" },
+              ] as const).map((item) => (
+                <button
+                  key={item.value}
+                  type="button"
+                  aria-pressed={filter === item.value}
+                  onClick={() => {
+                    setFilter(item.value)
+                    setPage(0)
+                  }}
+                  className={styles.filterButton}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         </Reveal>
 
         <div className={styles.grid}>
-          {DEMOS.map((demo, index) => (
-            <Reveal key={demo.name} delay={(index % 3) * 90} className={styles.cardReveal}>
+          {visibleDemos.map((demo, index) => (
+            <Reveal key={`${filter}-${demo.name}`} delay={(index % 3) * 90} className={styles.cardReveal}>
               <DemoCard demo={demo} />
             </Reveal>
           ))}
-          <Reveal delay={180} className={styles.comingSoonReveal}>
-            <article className={`${styles.card} ${styles.comingSoonCard}`}>
-              <h3>Coming Soon</h3>
-              <p>새로운 프로젝트를 준비 중입니다.</p>
-            </article>
-          </Reveal>
+          {Array.from({ length: 6 - visibleDemos.length }, (_, index) => (
+            <div key={`empty-${index}`} className={styles.pagePlaceholder} aria-hidden="true" />
+          ))}
         </div>
+        <nav className={styles.pagination} aria-label="데모 페이지">
+          <button
+            type="button"
+            className={styles.pageArrow}
+            aria-label="이전 페이지"
+            disabled={page === 0}
+            onClick={() => changePage(page - 1)}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="m14 5-7 7 7 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <div className={styles.pageBars}>
+            {Array.from({ length: pageCount }, (_, index) => (
+              <button
+                key={index}
+                type="button"
+                aria-label={`${index + 1}페이지`}
+                aria-current={page === index ? "page" : undefined}
+                className={styles.pageBar}
+                onClick={() => changePage(index)}
+              />
+            ))}
+          </div>
+          <button
+            type="button"
+            className={styles.pageArrow}
+            aria-label="다음 페이지"
+            disabled={page === pageCount - 1}
+            onClick={() => changePage(page + 1)}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="m10 5 7 7-7 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <span className={styles.pageCount} aria-live="polite" aria-atomic="true">
+            {String(page + 1).padStart(2, "0")} / {String(pageCount).padStart(2, "0")}
+          </span>
+        </nav>
       </div>
     </section>
   )

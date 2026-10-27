@@ -235,7 +235,7 @@ export function Contact() {
                       value={consultationMessage}
                       onChange={(e) => setConsultationMessage(e.target.value)}
                       placeholder="현재 운영 상황, 변경하고 싶은 부분이나 궁금한 내용을 알려주세요."
-                      rows={5}
+                      rows={3}
                       className={`${styles.input} ${styles.textarea}`}
                     />
                   </div>

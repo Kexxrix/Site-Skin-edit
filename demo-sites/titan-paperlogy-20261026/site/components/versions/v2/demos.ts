@@ -1,0 +1,165 @@
+export type DemoCategory = "casino" | "tojino"
+
+export type Demo = {
+  name: string
+  category: DemoCategory
+  categoryLabel: string
+  image: string
+  href: string
+  solution: "토지노 솔루션" | "카지노 솔루션"
+}
+
+export const DEMOS: Demo[] = [
+  {
+    name: "CAT VILLAGE",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/cat-village.webp",
+    href: "https://titan-solution-demo.pages.dev/cat-village/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "GIRLS FRONTLINE",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/girls-frontline.webp",
+    href: "https://titan-solution-demo.pages.dev/girls-frontline/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "GROUND ZERO",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/ground-zero.webp",
+    href: "https://titan-solution-demo.pages.dev/ground-zero/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "風林花山",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/fire.webp",
+    href: "https://titan-solution-demo.pages.dev/furinkazan/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "VENUS",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/venus.png",
+    href: "https://titan-solution-demo.pages.dev/venus/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "PARADISE BEACH",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/paradise-beach.png",
+    href: "https://titan-solution-demo.pages.dev/paradise-beach/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "ATHENA",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/athena.png",
+    href: "https://titan-solution-demo.pages.dev/athena/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "WILD WEST",
+    category: "casino",
+    categoryLabel: "카지노·슬롯",
+    image: "/assets/wild-west.png",
+    href: "https://titan-solution-demo.pages.dev/wild-west/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "CARPE DIEM",
+    category: "casino",
+    categoryLabel: "카지노",
+    image: "/assets/carpe-diem-demo.png",
+    href: "https://titan-solution-demo.pages.dev/carpe-diem/",
+    solution: "카지노 솔루션",
+  },
+  {
+    name: "MERCURY Light",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/mercury-light.png",
+    href: "https://titan-solution-demo.pages.dev/mercury/?skin=light",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "MERCURY Dark",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/mercury-dark.png",
+    href: "https://titan-solution-demo.pages.dev/mercury/?skin=dark",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "SIRIUS Light",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/sirius-light.png",
+    href: "https://titan-solution-demo.pages.dev/sirius/?skin=light",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "SIRIUS Dark",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/sirius-dark.png",
+    href: "https://titan-solution-demo.pages.dev/sirius/?skin=dark",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "ALDEBARAN Light",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/aldebaran-light.png",
+    href: "https://titan-solution-demo.pages.dev/aldebaran/?skin=light",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "ALDEBARAN Dark",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/aldebaran-dark.png",
+    href: "https://titan-solution-demo.pages.dev/aldebaran/?skin=dark",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "AURORA Black",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/aurora-black.png",
+    href: "http://127.0.0.1:5430/black",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "AURORA White",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/aurora-white.png",
+    href: "http://127.0.0.1:5430/white",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "AURORA Black Video",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/aurora-black-video.png",
+    href: "http://127.0.0.1:5430/black-video",
+    solution: "토지노 솔루션",
+  },
+  {
+    name: "AURORA White Video",
+    category: "tojino",
+    categoryLabel: "스포츠·카지노·슬롯",
+    image: "/assets/aurora-white-video.png",
+    href: "http://127.0.0.1:5430/white-video",
+    solution: "토지노 솔루션",
+  },
+]
