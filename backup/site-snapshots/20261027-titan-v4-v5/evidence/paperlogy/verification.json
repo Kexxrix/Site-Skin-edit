@@ -1,0 +1,149 @@
+{
+  "checkedAt": "2026-10-27T08:28:22.398Z",
+  "source": "E:/codexwork/Site-Skin-edit/demo-sites/titan-paperlogy-20261026/site",
+  "font": "Paperlogy",
+  "changedFiles": [
+    {
+      "path": "components/versions/v4/page.tsx",
+      "before": "2e6226ce44d09851652a8ddb5fae84a0f77df24119d6c1e7941af5543ce44eb1",
+      "after": "96ae9d1c745f4850165fdd278356950d55c5bf93e50f175a902436acf59e27aa"
+    },
+    {
+      "path": "components/versions/v4/theme.module.css",
+      "before": "d058a7bf99f4b8afbad1882a3eeb06526aae62f4bad497b982d3aade6116251c",
+      "after": "37435f8d1905837393e6518f279ba276c16c44277b9d66a1fb0ef4b0eca554b9"
+    },
+    {
+      "path": "components/versions/v5/page.tsx",
+      "before": "5cbf988ccf4a7947e88fbfc31e33c149952d320a0eb7e19bcaa69d6d491f13d4",
+      "after": "da09b227fbd33d360b9f3d8cd80e5f4d524bb59d5821f32ee098d1114efc98d9"
+    },
+    {
+      "path": "components/versions/v5/theme.module.css",
+      "before": "dde8ff9d131bf15049783f9503789e870317a472632f74a86dc3888424171c54",
+      "after": "ebb78dd107e8a71d8052f85e312310775b8ee07291b99231a5d738537b500c6a"
+    },
+    {
+      "path": "README.PAPERLOGY.ko.md",
+      "before": "500c1314c4ee1f12ffa960326ff56f26f7a7eaf832f8873ab84f971adeb8dd48",
+      "after": "28bdb9a8ae78890574a8fbd5c1aa9696c843e280a1d05e91af009f218eb28d51"
+    }
+  ],
+  "technical": [
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "result": "passed"
+    },
+    {
+      "command": "node node_modules/next/dist/bin/next build",
+      "result": "passed"
+    }
+  ],
+  "browser": {
+    "viewports": [
+      360,
+      390,
+      1024,
+      1440
+    ],
+    "v3HeadingsPreserved": true,
+    "v3FontsPreserved": true,
+    "warningsOrErrors": 0,
+    "checks": [
+      {
+        "label": "after-v4-1024",
+        "viewport": 1024,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "after-v5-1024",
+        "viewport": 1024,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "after-v5-390",
+        "viewport": 390,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "v5-mobile-faq-open",
+        "viewport": 390,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "after-v4-390",
+        "viewport": 390,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "v4-mobile-faq-open",
+        "viewport": 390,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "after-v4-360",
+        "viewport": 360,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "after-v5-360",
+        "viewport": 360,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      },
+      {
+        "label": "final-v5-1440",
+        "viewport": 1440,
+        "overflow": false,
+        "headingOverflow": [],
+        "nonPaperlogyText": [],
+        "switchNavOverlap": false,
+        "visibleBrokenImages": []
+      }
+    ],
+    "actualHeadingFont": "Paperlogy 6 SemiBold"
+  },
+  "unchanged": [
+    "V1 original font combination",
+    "V2/V3 source",
+    "image and video assets",
+    "Aurora",
+    "original titan_promotion project",
+    "GitHub",
+    "public deployment"
+  ],
+  "limitations": [
+    "Other browser engines and physical mobile devices were not tested"
+  ]
+}

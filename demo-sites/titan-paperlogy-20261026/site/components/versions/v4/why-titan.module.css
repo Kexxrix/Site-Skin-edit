@@ -1,0 +1,134 @@
+.whyTitan {
+  background: var(--site-alt);
+  color: var(--site-text);
+  scroll-margin-top: 100px;
+}
+
+.container {
+  width: calc(100% - 48px);
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 88px;
+}
+
+.headingRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: end;
+  gap: 20px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.eyebrow > span {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--site-accent);
+}
+
+.title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  word-break: keep-all;
+}
+
+.title > span { color: var(--site-accent); }
+
+.introduction {
+  margin: 0;
+  color: var(--site-copy);
+  font-size: 16px;
+  line-height: 26px;
+  word-break: keep-all;
+}
+
+.strengthList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.strength {
+  position: relative;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--site-border);
+  border-radius: 12px;
+  background: var(--site-panel);
+}
+
+.number {
+  display: block;
+  color: var(--site-accent);
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.icon {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #fff0e2;
+  color: var(--site-accent);
+}
+
+.strength h3 {
+  margin: 28px 0 14px;
+  color: var(--site-text);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.strength p {
+  margin: 0;
+  color: var(--site-copy);
+  font-size: 15px;
+  line-height: 28px;
+  word-break: keep-all;
+}
+
+@media (max-width: 1023px) {
+  .container { padding-block: 64px; }
+  .headingRow { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .strengthList { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 32px; }
+  .strength { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; padding-right: 88px; }
+  .number { font-size: 40px; }
+  .strength h3 { margin-top: 0; font-size: 21px; }
+}
+
+@media (max-width: 767px) {
+  .container { width: calc(100% - 40px); padding-block: 56px; }
+  .eyebrow { font-size: 14px; }
+  .title { font-size: 32px; }
+  .strength { display: block; padding: 24px; }
+  .number { font-size: 36px; }
+  .icon { top: 24px; right: 24px; }
+  .strength h3 { margin-top: 22px; font-size: 20px; }
+  .strength p { line-height: 27px; }
+}

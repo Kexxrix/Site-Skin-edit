@@ -1,3 +1,13 @@
+## 최신 TITAN V4·V5 백업 — 2026-10-27
+
+TITAN V1~V5 전환, V4·V5 Paperlogy 적용, V5 문의 드롭다운 화살표 수정과 상단 설명·버튼의 우측 정렬을 반영했습니다. AURORA 네 페이지는 직전 업로드 상태를 유지합니다.
+
+[반영 범위·실행·검증 기록](backup/site-snapshots/20261027-titan-v4-v5/README.ko.md) · [파일별 명세](backup/site-snapshots/20261027-titan-v4-v5/source-files.json) · [검수 근거](backup/site-snapshots/20261027-titan-v4-v5/evidence)
+
+현재 두 프로젝트의 소스·설정·자산 380개를 해시로 대조했습니다. 로컬 원본과 공개 배포는 변경하지 않았으며, 아래 내용은 이전 작업 이력입니다.
+
+---
+
 ## 최신 TITAN · AURORA 백업 — 2026-10-27
 
 TITAN의 V1·V2·V3, 프로젝트 19개와 필터 전환 모션, AURORA의 골드 워드마크 및 네 개 독립 페이지를 현재 로컬 작업본과 동일하게 보관했습니다. 소스·설정·자산 333개를 해시로 대조했으며 기존 파일은 삭제하지 않았습니다.

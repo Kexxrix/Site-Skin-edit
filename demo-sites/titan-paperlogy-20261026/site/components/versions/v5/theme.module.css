@@ -1,0 +1,24 @@
+/* Scoped from upstream 61a0e36561b56bbee394c25ec630b902ed2ecbbb; other versions keep their existing styles. */
+.page { color-scheme:light; --site-bg:#fff; --site-alt:#f3f4f4; --site-panel:#fff; --site-field:#fff; --site-raised:#e9ebeb; --site-text:#202426; --site-copy:#586064; --site-muted:#737b80; --site-accent:#fa871f; --site-border:#dfe2e3; --site-header:rgb(255 255 255 / 96%); }
+:where(.page) :global(*) { box-sizing:border-box; } .page { margin:0; background:#fff; color:var(--site-text); } :where(.page) :global(button),:where(.page) :global(input),:where(.page) :global(select),:where(.page) :global(textarea) { font:inherit; } :where(.page) :global(button),:where(.page) :global(a),:where(.page) :global(input),:where(.page) :global(select),:where(.page) :global(textarea) { -webkit-tap-highlight-color:transparent; } :where(.page) :global(button),:where(.page) :global(a) { touch-action:manipulation; } :where(.page) :global(button) { cursor:pointer; } :where(.page) :global(a) { color:inherit; text-decoration:none; } :where(.page) :global(button:disabled) { cursor:not-allowed; opacity:.4; } :where(.page) :global(:focus-visible) { outline:2px solid #fa871f; outline-offset:4px; } :where(.page) :global(h1),:where(.page) :global(h2),:where(.page) :global(h3) { font-family:var(--font-outfit),'Pretendard Variable',sans-serif; } :where(.page) :global(::selection) { background:#fa871f44; }
+:where(.page) :global(.v5-wrap) { width:calc(100% - 96px); max-width:1440px; margin-inline:auto; }
+:where(.page) :global(.v5-section) { padding-block:104px; scroll-margin-top:90px; }
+:where(.page) :global(.v5-heading) { display:grid; grid-template-columns:1.2fr 1fr; gap:32px 80px; align-items:end; margin-bottom:56px; }
+:where(.page) :global(.v5-kicker) { margin:0 0 20px; font:500 12px/1.5 var(--font-poppins),sans-serif; letter-spacing:.12em; text-transform:uppercase; display:flex; align-items:center; gap:12px; }
+:where(.page) :global(.v5-kicker::before) { content:''; width:22px; height:2px; background:#fa871f; }
+:where(.page) :global(.v5-title) { margin:0; font-size:clamp(36px,3.2vw,52px); font-weight:600; letter-spacing:-.045em; line-height:1.2; word-break:keep-all; }
+:where(.page) :global(.v5-title span) { color:#fa871f; }
+:where(.page) :global(.v5-desc) { margin:0; color:var(--site-copy); font-size:16px; line-height:1.8; word-break:keep-all; max-width:560px; }
+:where(.page) :global(.v5-link) { display:inline-flex; justify-content:space-between; align-items:center; gap:40px; min-height:48px; padding:0 22px; border:1px solid var(--site-border); background:white; color:var(--site-text); font-size:14px; font-weight:600; border-radius:4px; }
+:where(.page) :global(.v5-link:hover) { border-color:#fa871f; }
+:where(.page) :global(.v5-primary) { background:#fa871f; color:white; border-color:#fa871f; }
+:where(.page) :global(.reveal) { opacity:1; }
+.page :global(footer p) { color:var(--site-muted); }
+@media(max-width:1023px) { :where(.page) :global(.v5-wrap) { width:calc(100% - 48px); } :where(.page) :global(.v5-section) { padding-block:72px; } :where(.page) :global(.v5-heading) { gap:24px 40px; margin-bottom:40px; } }
+@media(max-width:767px) { :where(.page) :global(.v5-wrap) { width:calc(100% - 40px); } :where(.page) :global(.v5-section) { padding-block:56px; } :where(.page) :global(.v5-heading) { grid-template-columns:1fr; gap:24px; margin-bottom:32px; } :where(.page) :global(.v5-title) { font-size:32px; } :where(.page) :global(.v5-kicker) { margin-bottom:16px; } :where(.page) :global(.v5-desc) { font-size:15px; } }
+.page {
+ --font-outfit:var(--font-paperlogy); --font-poppins:var(--font-paperlogy); --font-geist-mono:var(--font-paperlogy);
+ --font-sans:var(--font-paperlogy),ui-sans-serif,system-ui,sans-serif; --font-heading:var(--font-paperlogy),ui-sans-serif,system-ui,sans-serif; --font-mono:var(--font-paperlogy),ui-sans-serif,system-ui,sans-serif; font-family:var(--font-sans); --background:var(--site-bg); --foreground:var(--site-text); --primary:#fa871f; --primary-foreground:#fff; }
+:where(.page) :global(.reveal.is-visible) { animation: none; transform: none; }
+:global(html):has(.page) { scroll-snap-type: none; }
+

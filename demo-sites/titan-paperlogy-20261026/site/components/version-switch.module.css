@@ -1,7 +1,7 @@
 .versionSwitch {
   position: fixed;
   top: 40px;
-  left: max(16px, calc((100vw - 1280px) / 2 - 176px));
+  left: max(16px, calc((100vw - 1280px) / 2 - 256px));
   display: flex;
   gap: 4px;
   padding: 4px;
@@ -33,6 +33,35 @@
   outline-offset: 2px;
 }
 
-@media (max-width: 1639px) {
+@media (max-width: 1799px) {
   .versionSwitch { top: auto; bottom: 16px; left: 16px; }
+}
+
+@media (max-width: 599px) {
+  .versionSwitch { bottom: 76px; }
+}
+
+.versionSwitch.light {
+  top: 22px;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: #dfe2e3;
+  background: #fff;
+}
+
+.light a { color: #202426; }
+.light a[aria-current="page"] { color: #fff; }
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .versionSwitch.light { left: 40%; }
+}
+
+@media (max-width: 767px) {
+  .versionSwitch.light {
+    top: auto;
+    bottom: 76px;
+    left: 16px;
+    transform: none;
+  }
 }

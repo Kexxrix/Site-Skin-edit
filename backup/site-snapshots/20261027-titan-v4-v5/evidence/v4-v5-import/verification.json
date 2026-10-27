@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-27T08:12:07.558Z",
+  "sourceCommit": "61a0e36561b56bbee394c25ec630b902ed2ecbbb",
+  "sourceRepository": "https://github.com/RickyJayPark/titan_promotion",
+  "target": "E:/codexwork/Site-Skin-edit/demo-sites/titan-paperlogy-20261026/site",
+  "urls": {
+    "v4": "http://127.0.0.1:3001/?version=v4#top",
+    "v5": "http://127.0.0.1:3001/?version=v5#top"
+  },
+  "technical": [
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "exitCode": 0
+    },
+    {
+      "command": "node node_modules/next/dist/bin/next build",
+      "exitCode": 0,
+      "note": "Type validation is separately performed because the existing Next configuration skips build typechecking"
+    }
+  ],
+  "preservation": {
+    "verifiedAt": "2026-10-27T08:10:57.014Z",
+    "existingFiles": 181,
+    "changed": [
+      "app/page.tsx",
+      "components/version-switch.tsx",
+      "components/version-switch.module.css",
+      "README.PAPERLOGY.ko.md"
+    ],
+    "unchanged": 177,
+    "missing": [],
+    "unexpected": [],
+    "newFiles": 47,
+    "assetsReused": 11
+  },
+  "browser": {
+    "method": "CUA in-app browser; Browser plugin absent; existing supported browser bridge used without dependency installation",
+    "widths": [
+      360,
+      390,
+      1024,
+      1440
+    ],
+    "flows": [
+      "V1-V5 switching and return to original versions",
+      "V4 four-card pagination and Aurora cards",
+      "V5 19/9/10 demo filters and Aurora preview selection",
+      "V4/V5 consultation selection and FAQ",
+      "V4/V5 mobile menu navigation",
+      "V5 reload and settled V4 back/V5 forward state"
+    ],
+    "consoleErrors": 0,
+    "brokenImages": 0,
+    "horizontalOverflow": false,
+    "video": "2400x1024 media loaded and playing",
+    "evidence": "qa/browser-verification.json"
+  },
+  "publicDeployment": false,
+  "githubUpdated": false,
+  "limitations": [
+    "Other browser engines and physical mobile devices were not tested",
+    "Aurora links still require the existing local server on port 5430",
+    "Original remote design was reviewed through downloaded source; no separate upstream hosted preview was available"
+  ]
+}
