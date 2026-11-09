@@ -1,0 +1,253 @@
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-4Regular.woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-5Medium.woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-6SemiBold.woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-7Bold.woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-8ExtraBold.woff2');font-weight:800;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-9Black.woff2');font-weight:900;font-display:swap}
+:root{color-scheme:dark;--cream:#fff2cc;--gold:#bc9456;--deep:#100e25;--font-ui:Paperlogy,'Pretendard JP',sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:var(--deep);color:var(--cream);font-family:var(--font-ui)}p{margin:0}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible{outline:3px solid #fff2cc;outline-offset:4px}
+[class*="font-['Paperlogy:"]{font-family:Paperlogy,'Pretendard JP',sans-serif!important}
+[class*="Paperlogy:4_"]{font-weight:400}[class*="Paperlogy:5_"]{font-weight:500}[class*="Paperlogy:6_"]{font-weight:600}[class*="Paperlogy:7_"]{font-weight:700}[class*="Paperlogy:8_"]{font-weight:800}[class*="Paperlogy:9_"]{font-weight:900}
+#world{position:relative;width:100%;height:100%;overflow:hidden}#backgrounds{position:absolute;inset:0;background:var(--deep)}.scene-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 700ms ease}.scene-background.active{opacity:1}
+/* Figma is a scenic 1920 by 1080 composition. Keep its internal geometry. */
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%) scale(var(--scene-scale,1));transform-origin:center}
+#page-host{position:absolute;inset:0;overflow:hidden;z-index:1}.scene{position:absolute;inset:0;width:1920px;height:1080px}.leaving{pointer-events:none}
+#header-host{position:absolute;inset:0 0 auto;height:76px;z-index:20}.world-header{width:1920px;height:76px;translate:0 calc(-1 * var(--vertical-space,0px))}
+.world-header button{border:0;background:none;padding:0;text-align:initial}.world-header button:hover{filter:brightness(1.12)}
+.dock-shade{position:absolute;inset:auto 0 calc(-1 * var(--vertical-space,0px));height:150px;background:linear-gradient(transparent,rgba(10,6,23,.88));pointer-events:none;z-index:9}
+#navigation-host{position:absolute;inset:0;pointer-events:none;z-index:10}.world-dock{pointer-events:auto;top:calc(963px + var(--vertical-space,0px));--dock-pop:1.04}
+.world-dock button{border:0;background:none;padding:0;scale:var(--dock-hover-scale,1);transition:scale 160ms cubic-bezier(.2,.75,.25,1);--dock-gold:brightness(1.12) drop-shadow(0 0 2px #ffe6a3) drop-shadow(0 0 8px #ff992abe)}
+.world-dock .dock-frame{pointer-events:none;filter:var(--dock-glow,none);transition:filter 130ms ease-out}
+.world-dock .dock-frame::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  mask:url("./assets/dock-frame-mask.svg") center / 100% 100% no-repeat;
+  background:linear-gradient(112deg,transparent 10%,#ffc35b24 24%,#ffe4a4b8 41%,#fffbed 48%,#ffe79bbf 54%,transparent 66%,#ffda826b 73%,transparent 82%) -120px 0 / 112px 100% no-repeat;
+  animation:450ms cubic-bezier(.32,.02,.26,1) both var(--dock-sweep,none);
+}
+.world-dock .dock-symbol{animation:480ms cubic-bezier(.32,.02,.22,1) both var(--dock-spin,none)}
+/* The lantern is painted into the mirrored skin; its paper sits at (366, 48) in the 380 x 106 button. */
+.world-dock button::after{
+  content:"";position:absolute;left:366px;top:48px;width:74px;height:88px;translate:-50% -50%;pointer-events:none;
+  background:radial-gradient(ellipse 12px 20px at center,#fffaddde 5%,#fff19c9c 72%,transparent),
+    radial-gradient(ellipse closest-side,#ffd45ec4 12%,#ffae3f99 39%,#ff8e2829 67%,transparent);
+  mix-blend-mode:screen;opacity:var(--dock-lit,0);transition:opacity 120ms ease-out;
+}
+.world-dock button:is(:focus-visible,:active,.dock-hit){--dock-glow:var(--dock-gold);--dock-lit:1;--dock-spin:dock-spin;--dock-sweep:dock-sweep}
+.world-dock button[aria-current="page"]{--dock-hover-scale:var(--dock-pop);--dock-glow:var(--dock-gold);--dock-lit:1}
+.world-dock button:focus-visible{--dock-hover-scale:var(--dock-pop)}
+@media(hover:hover){
+  .world-dock button:hover{--dock-hover-scale:var(--dock-pop);--dock-glow:var(--dock-gold);--dock-lit:1;--dock-spin:dock-spin;--dock-sweep:dock-sweep}
+}
+.world-dock button:active{scale:.985}
+.world-dock button.dock-hit{animation:dock-confirm 500ms ease-out}
+@keyframes dock-spin{from{transform:perspective(240px) rotateY(0turn)}45%{transform:perspective(240px) rotateY(.53turn) scale(1.07)}to{transform:perspective(240px) rotateY(1turn)}}
+@keyframes dock-sweep{from{background-position:-120px 0}to{background-position:390px 0}}
+.hero-emblem-relief{display:none}
+@media(prefers-reduced-motion:no-preference){
+  .hero-emblem-relief{display:block;mix-blend-mode:hard-light;opacity:.46}
+  [data-name="Image / main ABURAYA emblem"]>div::after{
+    content:"";position:absolute;pointer-events:none;
+    left:-1.27%;top:-1.4%;width:102.6%;height:103.26%;
+    background:url("./assets/hero-emblem-normal.png") center / 100% 100% no-repeat;
+    filter:url("#emblem-brass-highlight");mix-blend-mode:screen;opacity:.68;
+    mask:linear-gradient(108deg,transparent 6%,#0003 26%,#000a 40%,#000f 49%,#0008 62%,transparent 87%)
+      var(--emblem-highlight-x,32%) center / 32% 100% no-repeat;
+  }
+  [data-name="Image / main ABURAYA emblem"]::before,
+  [data-name="Image / main ABURAYA emblem"]::after{
+    content:"";position:absolute;z-index:1;pointer-events:none;
+    left:11.2%;top:71.5%;width:119px;height:128px;translate:-50% -50%;
+    background:radial-gradient(ellipse 34px 44px at center,#ffd26ba1 4%,#ffac355c 58%,transparent),
+      radial-gradient(ellipse closest-side,#ffb34f64 22%,#ff841f3d 48%,#ff752715 70%,transparent);
+    mix-blend-mode:screen;animation:title-lantern 7.2s ease-in-out -1.3s infinite;
+  }
+  [data-name="Image / main ABURAYA emblem"]::after{
+    left:88.8%;animation-duration:8.6s;animation-delay:-4.1s;
+  }
+  [data-name="Image / bathhouse section title"]::before,
+  [data-name="Image / bathhouse section title"]::after{
+    content:"";position:absolute;z-index:1;pointer-events:none;
+    top:60.5%;left:4.65%;width:100px;height:88px;translate:-50% -50%;
+    background:radial-gradient(ellipse 18px 14px at center,#fffbdfef 20%,#fff0a9aa 64%,transparent),
+      radial-gradient(ellipse closest-side,#ffe79bf2 12%,#ffc052bc 34%,#ff9c4a70 50%,#ff902622 72%,transparent);
+    mix-blend-mode:screen;animation:title-lantern 5.4s ease-in-out infinite;
+  }
+  [data-name="Image / bathhouse section title"]::after{
+    left:95%;animation-duration:6.2s;animation-delay:-2.1s;
+  }
+  /* Match the frame crop pixel for pixel. White in the mask is exposed brass. */
+  [data-name="Image / bathhouse section title"]>div::after{
+    content:"";position:absolute;pointer-events:none;
+    left:-2.28%;top:-14.86%;width:104.5%;height:141.12%;
+    mask:url("./assets/section-title-brass-mask.png") center / 100% 100% no-repeat luminance;
+    background:linear-gradient(112deg,transparent 12%,#ffd28f12 35%,#fff2c72b 49%,#ffe8ab17 58%,transparent 83%)
+      -112px center / 112px 100% no-repeat;
+    animation:title-sweep 11s linear -7s infinite;
+  }
+}
+@keyframes title-lantern{0%,100%{opacity:.1}50%{opacity:.97}}
+@keyframes title-sweep{0%,82%{background-position:-112px center}100%{background-position:calc(100% + 112px) center}}
+@keyframes dock-confirm{0%{scale:.985;filter:brightness(1.38)}36%{scale:var(--dock-pop)}100%{scale:var(--dock-hover-scale,1)}}
+@media(prefers-reduced-motion:reduce){
+  .world-dock button{--dock-pop:1}
+  .world-dock .dock-symbol,.world-dock .dock-frame::after{animation:none}
+  .world-dock button:active{scale:1}
+}
+.card-slot,.live-grid{display:contents}
+.featured-cards{position:absolute;inset:0 84px;display:grid;grid-template-columns:minmax(0,1fr)}
+.featured-cards:has(.sliding-out){overflow:hidden}
+.featured-page{grid-area:1/1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:center;gap:8px;padding:0 4px}
+.featured-page[inert]{visibility:hidden}
+.featured-page.sliding-out{visibility:visible}
+.featured-page .card-slot{display:block;position:relative;aspect-ratio:var(--card-ratio)}
+.featured-page .game-card{left:0;top:0}
+.featured-face{
+  position:absolute;inset:0;pointer-events:none;
+  transition:transform 270ms cubic-bezier(.2,.75,.25,1);
+}
+.game-card [data-name="Game / artwork"],
+.game-card [data-name="Readability / lower label gradient"]{height:auto;bottom:10px}
+.game-card [data-name="Game / artwork"]{overflow:hidden}
+.prism-surface{
+  isolation:isolate;transform-origin:center bottom;transition:scale 240ms ease-out;
+}
+.prism-surface::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(112deg,#ff86c2 0px,#ffc276 22px,#fff298 42px,
+    #78efab 64px,#69eafa 85px,#83a3ff 107px,#cea1ff 128px,#ff86c2 148px)
+    var(--prism-spectrum-x,50%) center / 200% 100% no-repeat;
+  mix-blend-mode:hard-light;
+  /* The spectrum moves behind fixed facets. The pointer light fades both faces together. */
+  mask-image:repeating-conic-gradient(from -30deg,#000 0deg 60deg,#0005 60deg 120deg),
+    radial-gradient(ellipse 76% 82% at var(--light-x,50%) var(--light-y,50%),#000e 7%,#0007 51%,transparent);
+  mask-size:14px 24.25px,100% 100%;mask-position:center;mask-repeat:repeat,no-repeat;mask-composite:intersect;
+  opacity:var(--prism-opacity,0);transition:opacity 180ms ease-out;
+}
+.featured-frame-glint{
+  pointer-events:none;mask-size:100% 100%;mask-repeat:no-repeat;
+  background:radial-gradient(ellipse 71% 68% at var(--light-x,50%) var(--light-y,50%),#fff8d9 3%,#ffe09bcc 30%,#ffc86844 65%,transparent 95%);
+  mix-blend-mode:color-dodge;opacity:var(--glint-opacity,0);transition:opacity 180ms ease-out;
+}
+.featured-frame-normal{
+  pointer-events:none;mix-blend-mode:hard-light;
+  opacity:var(--glint-opacity,0);transition:opacity 180ms ease-out;
+}
+@media(any-hover:hover) and (prefers-reduced-motion:no-preference){
+  .card-slot:has(.tracking-light:hover),.slot-game-card.tracking-light:hover{z-index:1}
+  .featured-page:not([inert]) .tracking-light:hover .featured-face,
+  .slot-game-card.tracking-light:hover .featured-face{
+    --prism-opacity:.66;--glint-opacity:.92;
+    transform:perspective(900px) translateY(-4px) scale(1.29) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));
+    transition-duration:95ms;
+  }
+  .tracking-light:hover .prism-surface{scale:1.045}
+}
+.game-card,.provider-card{border:0;padding:0;background:none;text-align:initial;transition:filter 180ms,translate 180ms}
+.slot-game-card [data-name="Provider / supplied artwork"],
+.slot-game-card [data-name="Readability / logo and labels"]{height:auto;bottom:10px}
+.slot-game-card [data-name="Provider / supplied artwork"]{overflow:hidden}
+.slot-game-card .prism-surface{position:absolute;inset:0}
+/* The landscape rail has a taller crown and a shallower picture opening. */
+.wide-slot .slot-game-card :is([data-name="Provider / supplied artwork"],[data-name="Readability / logo and labels"]){
+  top:32px;bottom:8px;left:21px;right:21px;width:auto;
+}
+.wide-slot .slot-game-card .prism-surface{background:#15121b}
+.wide-slot .slot-game-card .prism-surface img{width:76%;object-position:center var(--face-y,0%)}
+.wide-slot .slot-game-card img[src$="/slots-imgProviderSuppliedArtwork.png"]{--face-y:9%}
+.wide-slot .slot-game-card img[src$="/slots-imgProviderSuppliedArtwork11.png"]{--face-y:33%}
+.wide-slot .slot-game-card img[src$="/slots-imgProviderSuppliedArtwork13.png"]{--face-y:21%}
+.wide-slot .slot-game-card [data-name="Readability / logo and labels"]{
+  background:linear-gradient(90deg,transparent 34%,#15121b44 52%,#15121b 75%);
+}
+.wide-slot .slot-game-card [data-name^="Provider / original gold logo"]{left:164px;top:40px;width:116px;height:45px}
+.wide-slot .slot-game-card div:has(>p){left:218px;width:146px}
+.wide-slot .slot-game-card div:has(>p.leading-\[22px\]){font-size:14px}
+.live-card{transition:scale 180ms ease-out,translate 180ms ease-out}
+.live-card>[data-name="Readability / lower logo and labels"]{display:none}
+.live-card.live-highlighted{z-index:2;--live-frame-light:brightness(1.16)}
+.live-card [data-name^="Frame / "]{filter:var(--live-frame-light,none);transition:filter 160ms ease-out}
+.live-character-media{position:absolute;pointer-events:none}
+.live-character-media>img,.live-character-media>video{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:fill}
+.live-character-media>video,.live-playing .live-character-media>img{visibility:hidden}
+.live-playing .live-character-media>video{visibility:visible}
+/* Keep the lower rail crop while smoke, wings and the bird move beyond the card. */
+.live-playing .live-motion-window{overflow:visible;clip-path:inset(-100% -100% 0)}
+.live-frame-sweep{
+  pointer-events:none;mask-size:100% 100%;mask-repeat:no-repeat;
+  background:linear-gradient(110deg,transparent 8%,#ffc66638 28%,#ffe6a6db 46%,#fffae9 51%,#ffe5a49c 57%,transparent 83%) -65% 0 / 38% 100% no-repeat;
+}
+@media(prefers-reduced-motion:no-preference){
+  .live-highlighted{scale:1.15;translate:0 -4px}
+  .live-highlighted .live-frame-sweep{animation:live-frame-sweep 620ms ease-out both}
+}
+@keyframes live-frame-sweep{from{background-position:-65% 0}to{background-position:165% 0}}
+.carousel-arrow{border:0;background:none;padding:0}.carousel-arrow:hover,.category-button:hover{filter:brightness(1.25)}
+/* Layer shadows preserve the gold fill of clipped gradient text. */
+.scene .bg-clip-text,.world-dock .bg-clip-text{text-shadow:none;filter:drop-shadow(0 1.2px 0 #1a0409) drop-shadow(0 2px 2px #0008)}
+.notice-board{position:absolute;left:296px;top:598px;width:1328px;height:350px}.notice-board button:hover{filter:brightness(1.12)}
+.modal-brand{object-fit:contain!important}
+/* Extend only the decorative backgrounds beyond the centered 16:9 stage. */
+@media(min-width:761px){
+  .dock-shade,.world-header::before,.world-header>[data-name="Header / fine brass rule"]{left:50%;right:auto;width:calc(100vw / var(--scene-scale,1));transform:translateX(-50%)}
+  .world-header::before{content:"";position:absolute;top:0;height:100%;background:var(--deep);pointer-events:none}
+}
+@media(max-width:760px){
+  html,body{overflow:auto;height:auto;min-height:100%}
+  #world{min-height:100dvh;height:auto;overflow:hidden}#backgrounds{position:fixed}
+  #stage{position:relative;left:0;top:0;transform:none;width:100%;height:auto;min-height:100dvh}
+  #page-host{position:relative;inset:auto;min-height:100dvh;overflow:hidden;padding:124px 0 146px}
+  .scene{position:relative;width:100%;height:auto;min-height:570px;margin:0}.scene.leaving{position:absolute;top:124px}
+  #header-host{position:fixed;height:106px;width:100vw;background:#100e25ed;backdrop-filter:blur(8px)}
+  .world-header{width:100%;height:106px;position:relative;translate:none}
+  .world-header>[data-name="Notice / bathhouse ticker"],.world-header>[data-name="Account / guest credits"],.world-header>[data-name="Header / fine brass rule"]{display:none}
+  .world-header>[data-name="Image / compact ABURAYA wordmark"]{left:16px;top:16px;zoom:.64}
+  .world-header>[data-name="Entry / login button"]{left:auto;right:12px;top:10px;zoom:.72}
+  .world-header>[data-name="Services / horizontal actions"]{left:50%;top:calc(56px / var(--service-scale));transform:translateX(-50%);zoom:var(--service-scale)}
+  #navigation-host{position:fixed;top:auto;bottom:0;left:0;right:0;height:120px;background:linear-gradient(transparent,#100e25 25%);pointer-events:auto}
+  .world-dock{position:absolute;left:50%;top:8px;transform:translateX(-50%);width:776px;height:auto;display:grid;grid-template-columns:380px 380px;gap:4px 8px;zoom:calc((100vw - 16px) / 776px)}
+  .world-dock{--dock-pop:1.02}
+  .world-dock>button{position:relative;left:0;top:0}.dock-shade{display:none}
+  .scene>[data-name^="Panel /"],.scene>[data-name^="Readability /"]{display:none}
+  .scene>[data-name^="Section title"]{position:relative;top:0;left:50%;zoom:.64;transform:translateX(-50%);margin:0 0 20px}
+  .scene[data-scene="home"]>[data-name="Hero / ABURAYA identity"]{position:relative;left:0;top:0;width:100%;height:220px}
+  .scene[data-scene="home"] [data-name="Image / main ABURAYA emblem"]{left:50%;top:0;transform:translateX(-50%) scale(var(--hero-scale));transform-origin:top center}
+  .scene[data-scene="home"] [data-name="Hero / ABURAYA identity"]>div:last-child{left:0;top:200px;width:100%;font-size:15px;text-align:center;transform:none;translate:none}
+  .featured-panel{position:relative;top:0;left:0;width:100%;height:auto;padding:52px 0 12px}
+  .featured-panel>[data-name^="Panel /"]{display:none}
+  .featured-panel>.carousel-arrow{top:0;left:calc(50% - 50px)}
+  .featured-panel>[data-name="Arrow / right"]{left:calc(50% + 6px)}
+  .featured-cards{position:relative;inset:auto;margin:0 8px}
+  .featured-page{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:4px}
+  .card-slot{display:block;position:relative;aspect-ratio:var(--card-ratio);min-width:0}
+  .card-slot>button{position:absolute;left:0!important;top:0;transform:scale(var(--card-scale,1));transform-origin:top left}
+  .live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:70px 12px;margin:75px 16px 0}
+  .live-grid .live-highlighted{scale:1;translate:none}
+  @media(prefers-reduced-motion:no-preference){
+    .live-grid .card-slot{transition:scale 180ms ease-out,translate 180ms ease-out}
+    .live-grid .card-slot:has(.live-highlighted){z-index:2;scale:1.15;translate:0 -4px}
+  }
+  .live-grid .tall-slot{grid-column:1 / -1;width:220px;justify-self:center}
+  .live-grid .wide-slot{grid-column:1 / -1;width:min(340px,100%);justify-self:center}
+  .scene[data-scene="slots"] [data-name^="Providers / "]{position:relative;left:0;top:0;width:auto;height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 12px}
+  .scene[data-scene="slots"] .wide-slot{grid-column:1 / -1}
+  .slot-categories{position:relative;left:0;top:0;width:auto;height:auto;display:flex;justify-content:center;gap:12px;margin:0 12px 20px}
+  .slot-categories .category-button{position:relative;left:0;top:0;zoom:.85}
+  .scene[data-scene="notice"]{padding-top:120px}
+  .notice-board{position:relative;left:0;top:0;width:calc(100% - 24px);height:auto;margin:0 12px}
+  .notice-board>div{width:100%;height:auto;min-height:350px;padding:14px 10px}
+  .notice-board [data-name^="Panel / "]{display:none}
+  .notice-list{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+  .notice-list>[data-name^="Post / "]{position:relative;left:0;top:0;width:100%;height:auto;min-height:60px;padding:10px 12px;display:flex;align-items:center;gap:8px;text-align:left}
+  .notice-list>[data-name^="Post / "]>div{position:static;translate:none;transform:none;width:auto;height:auto}
+  .notice-list>[data-name^="Post / "]>div:first-child{flex:1;font-size:14px}
+  .notice-list>[data-name^="Post / "]>div:nth-child(2){font-size:10px;flex-shrink:0}
+  .notice-list>[data-name^="Post / "]>div:last-child{font-size:22px}
+  .notice-list>[data-name^="Go to page "]{position:relative;left:0;top:0;margin-top:8px}
+  .notice-article>div:not([data-name]){position:relative;left:0;top:0;width:100%;height:auto;translate:none;transform:none;margin:8px 0 18px}
+  .notice-article>div:nth-child(3){font-size:20px}.notice-article>div:nth-child(5){font-size:15px}
+  .notice-article>[data-name="Back / notice list"]{position:relative;left:0;top:0;margin:18px 0 0}
+  .game-options{grid-template-columns:repeat(2,1fr)!important}dialog{padding:24px!important}.modal-links{flex-wrap:wrap}#status{bottom:130px!important}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0s!important;transition-duration:0s!important}}
+#status{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);z-index:50;background:#251224f5;border:1px solid var(--gold);border-radius:12px;padding:12px 22px;opacity:0;pointer-events:none;transition:opacity 180ms,transform 180ms;max-width:90vw;text-align:center}#status.visible{opacity:1;transform:translate(-50%,0)}
+dialog{position:fixed;inset:0;margin:auto;width:min(640px,calc(100vw - 32px));max-height:calc(100dvh - 40px);padding:32px;border:1px solid var(--gold);border-radius:24px;color:var(--cream);background:linear-gradient(145deg,#391426fb,#100e25fc);box-shadow:0 24px 100px #000a;overflow:auto}dialog::backdrop{background:#020b08b3;backdrop-filter:blur(7px)}.modal-close{position:absolute;right:16px;top:10px;font-size:30px;background:none;border:0;width:40px;height:40px}.modal-brand{width:250px;height:70px;object-fit:cover;margin:0 auto 12px}.modal-brand+h1{text-align:center;font-size:25px;font-weight:800;margin-bottom:24px}dialog label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;margin:18px 0}dialog input,dialog textarea{width:100%;min-height:48px;padding:12px 14px;background:#190c1b;border:1px solid #8d8155;border-radius:10px;color:#fff2cf;outline-color:#dbbe79}dialog input:focus,dialog textarea:focus{border-color:#fff2cf}.password-field{position:relative;display:flex}.password-field input{padding-right:70px}.password-field button{position:absolute;right:12px;top:12px;font-size:13px;color:var(--gold);background:none;border:0}.primary{display:block;width:100%;padding:14px 20px;border:1px solid #e3c878;border-radius:30px;background:linear-gradient(#642132,#310e20);font-weight:800;font-size:18px;margin-top:20px}.primary:hover{filter:brightness(1.2)}.modal-links{display:flex;justify-content:space-between;gap:16px;margin-top:20px;font-size:13px;color:var(--gold)}.modal-links button{background:none;border:0}.demo-note{font-size:12px;line-height:1.7;text-align:center;color:#c9b795;margin-top:20px}.modal-copy{font-size:18px;line-height:1.8;text-align:center}.message-preview{white-space:pre-wrap;padding:20px 0;line-height:1.7}.form-error{color:#ffc09e;font-size:13px}.provider-preview{height:76px;max-width:220px;object-fit:contain;margin:0 auto 24px}.game-options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.game-option{background:#170c21;border:1px solid #9f8956;border-radius:12px;overflow:hidden;font-size:12px;line-height:1.5;text-align:center}.game-option img{width:100%;aspect-ratio:1;object-fit:cover}.game-option span{display:block;padding:10px 5px}.game-option:hover{border-color:#ffedb0;filter:brightness(1.1)}.game-preview{max-height:380px;max-width:100%;margin:auto;border-radius:12px}.load-error{padding:160px 100px;text-align:center}

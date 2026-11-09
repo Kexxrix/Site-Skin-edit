@@ -1,0 +1,9 @@
+{
+  "name": "aburaya-local-demo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "python -m http.server 5443 --bind 127.0.0.1",
+    "check": "node --check app.js"
+  }
+}
