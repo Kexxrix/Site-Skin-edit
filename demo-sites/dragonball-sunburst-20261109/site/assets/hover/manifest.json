@@ -1,0 +1,73 @@
+{
+  "purpose": "Technical hover-lighting maps derived from the existing Dragon Ball frames; original artwork unchanged",
+  "reference": "Totoro World and ABURAYA hover timing, transforms and normal-light shader",
+  "assets": [
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\home-imgFrameGeneratedGoldCapsulePng.png",
+      "output": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\hover\\featured-frame-normal.png",
+      "operation": "luminance-gradient normal map; original alpha retained",
+      "source_sha256": "cb1be1786e7892b8ffc20240fa38a1aeaf67b389b3b4179bc6352675146289b2",
+      "output_sha256": "85fcca89838d99f837b39672127e240e684521347f2a3249ccedaa54c9a2cbfb",
+      "dimensions": [
+        1264,
+        1527
+      ],
+      "bytes": 703553,
+      "qa": "readable PNG; same source dimensions; normal alpha exact"
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\featured\\gold-frame.png",
+      "output": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\hover\\additional-frame-normal.png",
+      "operation": "luminance-gradient normal map; original alpha retained",
+      "source_sha256": "960f59f960bf9ebc2150709b9923e6465d7f3ec856de88e849a3f36105f638d2",
+      "output_sha256": "04b4d57a9216f2448b6df7c9408b005a29f347b2e69c6b149b2b961535c0d916",
+      "dimensions": [
+        1141,
+        1378
+      ],
+      "bytes": 552604,
+      "qa": "readable PNG; same source dimensions; normal alpha exact"
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\slots-imgFrameFrameLiveSmallGeneratedPng.png",
+      "output": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\hover\\slot-frame-normal.png",
+      "operation": "luminance-gradient normal map; original alpha retained",
+      "source_sha256": "ade7490497fb12951173690ff5ed8d586b8dbc4d3bab7f739735592954521fe6",
+      "output_sha256": "7111fc65326a5e235d245c61ec9066d8912db79da1dfa68314ad52c9a4d5c4cc",
+      "dimensions": [
+        1296,
+        1543
+      ],
+      "bytes": 439264,
+      "qa": "readable PNG; same source dimensions; normal alpha exact"
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\slots-imgFrameFrameSlotsWideGeneratedPng.png",
+      "output": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\hover\\slot-wide-frame-normal.png",
+      "operation": "luminance-gradient normal map; original alpha retained",
+      "source_sha256": "b55ec545b1f2c8728ead7feb19a25530d5f86d8afcbd2c102bf68b114838abd2",
+      "output_sha256": "501bc44b45d893d5797692bac6dfe9636a6b2df439cdb8846b52059429a48477",
+      "dimensions": [
+        1536,
+        704
+      ],
+      "bytes": 317523,
+      "qa": "readable PNG; same source dimensions; normal alpha exact"
+    },
+    {
+      "source": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\home-imgSkinGeneratedCapsulePng.png",
+      "output": "E:\\codexwork\\Site-Skin-edit\\demo-sites\\dragonball-sunburst-20261109\\site\\assets\\hover\\dock-gold-mask.png",
+      "operation": "gold-only alpha mask aligned to original image crop",
+      "source_sha256": "d06e9d98ccbdd87a43ddb60a394849e4a33f1660c54b5d627cabe7c5f90c7ee9",
+      "output_sha256": "8d6a8aa65a4712b3101ba2be3a0dd0705a20e0ba6fdb29f9badc500fdc7257b3",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 75856,
+      "qa": "readable PNG; same source dimensions; normal alpha exact"
+    }
+  ],
+  "accepted_by_user": false,
+  "publicly_deployed": false
+}

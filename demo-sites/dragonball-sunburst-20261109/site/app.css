@@ -1,0 +1,182 @@
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-4Regular.woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-5Medium.woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-6SemiBold.woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-7Bold.woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-8ExtraBold.woff2');font-weight:800;font-display:swap}
+@font-face{font-family:Paperlogy;src:url('./fonts/paperlogy/woff2/Paperlogy-9Black.woff2');font-weight:900;font-display:swap}
+:root{color-scheme:dark;--cream:#fff2cc;--gold:#bc9456;--deep:#100e25;--font-ui:Paperlogy,'Pretendard JP',sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:var(--deep);color:var(--cream);font-family:var(--font-ui)}p{margin:0}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible{outline:3px solid #fff2cc;outline-offset:4px}
+[class*="font-['Paperlogy:"]{font-family:Paperlogy,'Pretendard JP',sans-serif!important}
+[class*="Paperlogy:4_"]{font-weight:400}[class*="Paperlogy:5_"]{font-weight:500}[class*="Paperlogy:6_"]{font-weight:600}[class*="Paperlogy:7_"]{font-weight:700}[class*="Paperlogy:8_"]{font-weight:800}[class*="Paperlogy:9_"]{font-weight:900}
+#status{bottom:130px!important}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0s!important;transition-duration:0s!important}}
+#status{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);z-index:50;background:#251224f5;border:1px solid var(--gold);border-radius:12px;padding:12px 22px;opacity:0;pointer-events:none;transition:opacity 180ms,transform 180ms;max-width:90vw;text-align:center}#status.visible{opacity:1;transform:translate(-50%,0)}
+dialog{position:fixed;inset:0;margin:auto;width:min(640px,calc(100vw - 32px));max-height:calc(100dvh - 40px);padding:32px;border:1px solid var(--gold);border-radius:24px;color:var(--cream);background:linear-gradient(145deg,#391426fb,#100e25fc);box-shadow:0 24px 100px #000a;overflow:auto}dialog::backdrop{background:#020b08b3;backdrop-filter:blur(7px)}.modal-close{position:absolute;right:16px;top:10px;font-size:30px;background:none;border:0;width:40px;height:40px}.modal-brand{width:250px;height:70px;object-fit:cover;margin:0 auto 12px}.modal-brand+h1{text-align:center;font-size:25px;font-weight:800;margin-bottom:24px}dialog label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;margin:18px 0}dialog input,dialog textarea{width:100%;min-height:48px;padding:12px 14px;background:#190c1b;border:1px solid #8d8155;border-radius:10px;color:#fff2cf;outline-color:#dbbe79}dialog input:focus,dialog textarea:focus{border-color:#fff2cf}.password-field{position:relative;display:flex}.password-field input{padding-right:70px}.password-field button{position:absolute;right:12px;top:12px;font-size:13px;color:var(--gold);background:none;border:0}.primary{display:block;width:100%;padding:14px 20px;border:1px solid #e3c878;border-radius:30px;background:linear-gradient(#642132,#310e20);font-weight:800;font-size:18px;margin-top:20px}.primary:hover{filter:brightness(1.2)}.modal-links{display:flex;justify-content:space-between;gap:16px;margin-top:20px;font-size:13px;color:var(--gold)}.modal-links button{background:none;border:0}.demo-note{font-size:12px;line-height:1.7;text-align:center;color:#c9b795;margin-top:20px}.modal-copy{font-size:18px;line-height:1.8;text-align:center}.message-preview{white-space:pre-wrap;padding:20px 0;line-height:1.7}.form-error{color:#ffc09e;font-size:13px}.provider-preview{height:76px;max-width:220px;object-fit:contain;margin:0 auto 24px}.game-options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.game-option{background:#170c21;border:1px solid #9f8956;border-radius:12px;overflow:hidden;font-size:12px;line-height:1.5;text-align:center}.game-option img{width:100%;aspect-ratio:1;object-fit:cover}.game-option span{display:block;padding:10px 5px}.game-option:hover{border-color:#ffedb0;filter:brightness(1.1)}.game-preview{max-height:380px;max-width:100%;margin:auto;border-radius:12px}.load-error{padding:160px 100px;text-align:center}
+#world{position:relative;width:100%;height:100%;overflow:hidden}#backgrounds{position:absolute;inset:0;background:#101d31}.scene-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 700ms ease}.scene-background.active{opacity:1}
+/* Preserve the Figma 1920 x 1080 parent geometry; extend scenery at other ratios. */
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%) scale(var(--scene-scale,1));transform-origin:center}
+#page-host{position:absolute;inset:0;overflow:hidden;z-index:1}.scene{position:absolute;inset:0;width:1920px;height:1080px}.leaving{pointer-events:none}
+#header-host{position:absolute;inset:0 0 auto;height:76px;z-index:20}.world-header{width:1920px;height:76px;translate:0 calc(-1 * var(--vertical-space,0px))}
+button{border:0;background:none;padding:0;text-align:initial}.header-ticker,.services,.card-slot,.live-grid{display:contents}
+.featured-grid{position:absolute;inset:0 98px;display:grid;grid-template-columns:minmax(0,1fr)}
+.featured-grid:has(.sliding-out){overflow:hidden}
+.featured-page{grid-area:1/1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:center;gap:28px}
+.featured-page[inert]{visibility:hidden}.featured-page.sliding-out{visibility:visible}
+.featured-page .card-slot{display:block;position:relative;aspect-ratio:var(--card-ratio);min-width:0}
+.featured-page .game-card{left:0;top:0}
+.additional-featured [data-name="Artwork / clipped window"]{border-radius:42px}
+.world-header button:hover,.carousel-arrow:hover,.slot-categories button:hover,.notice-board button:hover{filter:brightness(1.15)}
+.provider-card:active,.game-card:active{filter:brightness(1.2)}
+.dock-shade{position:absolute;inset:auto 0 calc(-1 * var(--vertical-space,0px));height:150px;background:linear-gradient(transparent,rgba(20,36,56,.55));pointer-events:none;z-index:9}
+#navigation-host{position:absolute;inset:0;pointer-events:none;z-index:10}.world-dock{pointer-events:auto;top:calc(963px + var(--vertical-space,0px))}
+.game-card,.provider-card{transition:filter 180ms,translate 180ms}
+.notice-board{position:absolute;left:296px;top:598px;width:1328px;height:350px}.notice-board>div{position:relative}
+/* The Figma export encodes a mirrored bitmap as an invalid negative CSS width. */
+[data-name="Image / left / generated PNG"] img{width:124.09%;left:-10.13%;scale:-1 1}
+[data-node-id="2572:3198"] img{width:126.48%;left:-26.48%;scale:-1 1}
+[data-node-id="2572:3268"] img{width:93.11%;left:-20.48%;scale:-1 1}
+.modal-brand{object-fit:contain!important}dialog{background:linear-gradient(145deg,#1d334afb,#101d31fc)}dialog input,dialog textarea,.game-option{background:#0d1729}.primary{background:linear-gradient(#274d74,#122440)}
+@media(min-width:761px){
+  .dock-shade,.world-header>[data-name="Header / navy glass"],.world-header>[data-name="Header / lower ivory rule"]{left:50%;right:auto;width:calc(100vw / var(--scene-scale,1));transform:translateX(-50%)}
+}
+@media(max-width:760px){
+  html,body{overflow:auto;height:auto;min-height:100%}#world{min-height:100dvh;height:auto;overflow:hidden}#backgrounds{position:fixed}
+  #stage{position:relative;left:0;top:0;transform:none;width:100%;height:auto;min-height:100dvh}
+  #page-host{position:relative;inset:auto;min-height:100dvh;overflow:hidden;padding:130px 0 146px}.scene{position:relative;width:100%;height:auto;min-height:570px}.scene.leaving{position:absolute;top:130px}
+  #header-host{position:fixed;height:108px;width:100%;background:#101d31ed;backdrop-filter:blur(8px)}.world-header{width:100%;height:108px;position:relative;translate:none}
+  .world-header>*{display:none}.world-header>[data-name="Brand / header"]{display:block;left:16px;top:4px;zoom:.65}
+  .world-header>[data-name="P31 / Button / primary login"]{display:block;left:auto;right:16px;top:16px;zoom:.74}
+  .services{display:block;position:absolute;width:528px;height:40px;left:50%;top:calc(63px / var(--service-scale));transform:translateX(-50%);zoom:var(--service-scale)}
+  .services>button{left:calc(var(--action-index) * 136px);top:0}
+  #navigation-host{position:fixed;top:auto;bottom:0;left:0;right:0;height:120px;background:linear-gradient(transparent,#101d31 25%);pointer-events:auto}
+  .world-dock{position:absolute;left:50%;top:8px;transform:translateX(-50%);width:776px;height:auto;display:grid;grid-template-columns:380px 380px;gap:4px 8px;zoom:var(--dock-scale)}
+  .world-dock>button{position:relative;left:0;top:0}.dock-shade{display:none}
+  .scene>[data-name^="Panel /"],.scene>[data-name^="Readability /"]{display:none}
+  .scene>[data-name^="Section title"]{position:relative;top:0;left:50%;zoom:.64;transform:translateX(-50%);margin:0 0 20px}
+  .scene[data-scene="home"]>[data-name^="Hero / identity"]{position:relative;left:0;top:0;width:100%;height:290px}
+  .scene[data-scene="home"] [data-name="P31 / Brand / DragonBall Z"]{left:10px;top:10px;transform:scale(var(--hero-scale));transform-origin:top left;z-index:1}
+  .scene[data-scene="home"] [data-name^="Hero / identity"]>div:nth-child(2){left:16px;top:210px;width:180px;font-size:14px;height:auto;translate:none}
+  .scene[data-scene="home"] [data-name="Character / adult base Goku / transparent"]{left:auto;right:0;top:70px;width:190px;height:285px;mask-size:190px 285px}
+  .featured-panel{position:relative;top:0;left:0;width:100%;height:auto;padding:52px 0 12px}.featured-panel>[data-name^="Panel /"]{display:none}
+  .featured-panel>.carousel-arrow{top:0;left:calc(50% - 62px)}.featured-panel>[data-name="Carousel / next"]{left:calc(50% + 8px)}
+  .featured-grid{position:relative;inset:auto;margin:0 12px}
+  .featured-page{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}
+  .card-slot{display:block;position:relative;aspect-ratio:var(--card-ratio);min-width:0}.card-slot>button{position:absolute;left:0!important;top:0;transform:scale(var(--card-scale,1));transform-origin:top left}
+  .live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:70px 12px;margin:70px 16px 0}
+  .live-grid .tall-slot{grid-column:1 / -1;width:220px;justify-self:center}.live-grid .wide-slot{grid-column:1 / -1;width:min(340px,100%);justify-self:center}
+  .scene[data-scene="slots"] [data-name^="Providers / "]{position:relative;left:0;top:0;width:auto;height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 12px}
+  .scene[data-scene="slots"] .wide-slot{grid-column:1 / -1}.slot-categories{position:relative;left:0;top:0;width:auto;height:auto;display:flex;justify-content:center;gap:12px;margin:0 12px 20px}.slot-categories button{position:relative;left:0;top:0;zoom:.85}
+  .scene[data-scene="notice"]{padding-top:100px}.notice-board{position:relative;left:0;top:0;width:calc(100% - 24px);height:auto;margin:0 12px}
+  .notice-board>div{width:100%;height:auto;min-height:350px;padding:14px 10px;background:#101d31e8;border:1px solid #d6a74e;border-radius:12px}
+  .notice-board [data-name="Notice / generated reading panel"]{display:none}.notice-list [data-name="Posts / five rows"]{position:relative;inset:auto;width:100%;height:auto;display:grid;gap:10px}
+  .notice-list [data-name="Posts / five rows"]>button{position:relative;inset:auto;width:100%;height:auto;min-height:70px;padding:12px;display:flex;flex-wrap:wrap;align-items:center;gap:6px;border-bottom:1px solid #d6a74e66}
+  .notice-list [data-name="Post / generated navy-gold row"]{display:none}.notice-list [data-name="Posts / five rows"]>button>div:not([data-name]){position:static;translate:none;transform:none;width:100%;height:auto;font-size:14px}.notice-list [data-name="Posts / five rows"]>button>div:last-child{display:none}
+  .notice-list [data-name="Posts / five rows"]>button>div:nth-last-child(2){font-size:11px;color:#bcd0db}
+  .notice-list [data-name="Pagination / pages 1 to 4"]{position:relative;left:auto;top:auto;margin:18px auto 0}
+  .notice-article>div:not([data-name]){position:relative;inset:auto;width:100%;height:auto;translate:none;transform:none;margin:18px 0;font-size:15px;line-height:1.8}.notice-article>div:nth-child(3){font-size:19px}
+  .notice-article>[data-name^="Back to page"]{position:relative;left:0;top:0}.notice-article>[data-name="Article / divider"]{display:none}
+  .game-options{grid-template-columns:repeat(2,1fr)!important}dialog{padding:24px!important}.modal-links{flex-wrap:wrap}#status{bottom:130px!important}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0s!important;transition-duration:0s!important}}
+
+.scene [class*="shadow-[0px_3px_"],.world-dock [class*="shadow-[0px_"]{box-shadow:none}
+.scene [class*="shadow-[0px_3px_5px"]{filter:drop-shadow(0 3px 5px #00050f73)}
+.scene [class*="shadow-[0px_3px_6px"]{filter:drop-shadow(0 3px 6px #050a1466)}
+.scene [class*="shadow-[0px_3px_8px"]{filter:drop-shadow(0 3px 8px #050a1466)}
+.world-dock [class*="shadow-[0px_0px_12px"]{filter:drop-shadow(0 0 12px #ff7314a6)}
+
+/* Match the Totoro / ABURAYA hover timing and motion with Dragon Ball artwork. */
+.world-dock{--dock-pop:1.04}
+.world-dock button{border:0;background:none;padding:0;scale:var(--dock-hover-scale,1);transition:scale 160ms cubic-bezier(.2,.75,.25,1);--dock-gold:brightness(1.12) drop-shadow(0 0 2px #ffe6a3) drop-shadow(0 0 8px #ff992abe)}
+/* Back the transparent icon opening beneath the supplied metal rim. */
+.world-dock button::before{content:"";position:absolute;left:44.75px;top:54.62px;width:58px;height:53px;translate:-50% -50%;border-radius:50%;background:rgba(7,20,43,.78);pointer-events:none}
+.world-dock .dock-symbol{left:20.75px;top:30.62px}
+.world-dock .dock-frame{pointer-events:none;filter:var(--dock-glow,none);transition:filter 130ms ease-out}
+.world-dock .dock-sweep{
+  pointer-events:none;mask-size:100% 100%;mask-repeat:no-repeat;
+  background:linear-gradient(112deg,transparent 10%,#ffc35b24 24%,#ffe4a4b8 41%,#fffbed 48%,#ffe79bbf 54%,transparent 66%,#ffda826b 73%,transparent 82%) -120px 0 / 112px 100% no-repeat;
+  animation:450ms cubic-bezier(.32,.02,.26,1) both var(--dock-sweep,none);
+}
+.world-dock .dock-symbol{animation:480ms cubic-bezier(.32,.02,.22,1) both var(--dock-spin,none)}
+/* Light the Dragon Ball on the right of the supplied capsule skin. */
+.world-dock button::after{
+  content:"";position:absolute;left:332px;top:54px;width:72px;height:72px;translate:-50% -50%;pointer-events:none;
+  background:radial-gradient(ellipse 12px 20px at center,#fffaddde 5%,#fff19c9c 72%,transparent),
+    radial-gradient(ellipse closest-side,#ffd45ec4 12%,#ffae3f99 39%,#ff8e2829 67%,transparent);
+  mix-blend-mode:screen;opacity:var(--dock-lit,0);transition:opacity 120ms ease-out;
+}
+.world-dock button:is(:focus-visible,:active,.dock-hit){--dock-glow:var(--dock-gold);--dock-lit:1;--dock-spin:dock-spin;--dock-sweep:dock-sweep}
+.world-dock button[aria-current="page"]{--dock-hover-scale:var(--dock-pop);--dock-glow:var(--dock-gold);--dock-lit:1}
+.world-dock button:focus-visible{--dock-hover-scale:var(--dock-pop)}
+@media(hover:hover){
+  .world-dock button:hover{--dock-hover-scale:var(--dock-pop);--dock-glow:var(--dock-gold);--dock-lit:1;--dock-spin:dock-spin;--dock-sweep:dock-sweep}
+}
+.world-dock button:active{scale:.985}
+.world-dock button.dock-hit{animation:dock-confirm 500ms ease-out}
+@keyframes dock-spin{from{transform:perspective(240px) rotateY(0turn)}45%{transform:perspective(240px) rotateY(.53turn) scale(1.07)}to{transform:perspective(240px) rotateY(1turn)}}
+@keyframes dock-sweep{from{background-position:-120px 0}to{background-position:390px 0}}
+
+@keyframes dock-confirm{0%{scale:.985;filter:brightness(1.38)}36%{scale:var(--dock-pop)}100%{scale:var(--dock-hover-scale,1)}}
+@media(prefers-reduced-motion:reduce){
+  .world-dock button{--dock-pop:1}
+  .world-dock .dock-symbol,.world-dock .dock-sweep{animation:none}
+  .world-dock button:active{scale:1}
+}
+.featured-face{position:absolute;inset:0;pointer-events:none;transition:transform 270ms cubic-bezier(.2,.75,.25,1)}
+/* Keep the enlarging artwork and reflection inside the stationary picture opening. */
+.slot-game-card [data-name^="Provider / Dragon Ball artwork"]{overflow:hidden}
+.prism-surface{
+  isolation:isolate;transform-origin:center bottom;transition:scale 240ms ease-out;
+}
+.prism-surface::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(112deg,#ff86c2 0px,#ffc276 22px,#fff298 42px,
+    #78efab 64px,#69eafa 85px,#83a3ff 107px,#cea1ff 128px,#ff86c2 148px)
+    var(--prism-spectrum-x,50%) center / 200% 100% no-repeat;
+  mix-blend-mode:hard-light;
+  /* The spectrum moves behind fixed facets. The pointer light fades both faces together. */
+  mask-image:repeating-conic-gradient(from -30deg,#000 0deg 60deg,#0005 60deg 120deg),
+    radial-gradient(ellipse 76% 82% at var(--light-x,50%) var(--light-y,50%),#000e 7%,#0007 51%,transparent);
+  mask-size:14px 24.25px,100% 100%;mask-position:center;mask-repeat:repeat,no-repeat;mask-composite:intersect;
+  opacity:var(--prism-opacity,0);transition:opacity 180ms ease-out;
+}
+.featured-frame-glint{
+  pointer-events:none;mask-size:100% 100%;mask-repeat:no-repeat;
+  background:radial-gradient(ellipse 71% 68% at var(--light-x,50%) var(--light-y,50%),#fff8d9 3%,#ffe09bcc 30%,#ffc86844 65%,transparent 95%);
+  mix-blend-mode:color-dodge;opacity:var(--glint-opacity,0);transition:opacity 180ms ease-out;
+}
+.featured-frame-normal{
+  pointer-events:none;mix-blend-mode:hard-light;
+  opacity:var(--glint-opacity,0);transition:opacity 180ms ease-out;
+}
+@media(any-hover:hover) and (prefers-reduced-motion:no-preference){
+  .card-slot:has(.tracking-light:hover),.slot-game-card.tracking-light:hover{z-index:1}
+  .featured-page:not([inert]) .tracking-light:hover .featured-face,
+  .slot-game-card.tracking-light:hover .featured-face{
+    --prism-opacity:.66;--glint-opacity:.92;
+    transform:perspective(900px) translateY(-4px) scale(1.29) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));
+    transition-duration:95ms;
+  }
+  .tracking-light:hover .prism-surface{scale:1.045}
+}
+
+.live-card{transition:scale 180ms ease-out,translate 180ms ease-out}
+.live-card.live-highlighted{z-index:2;--live-frame-light:brightness(1.16)}
+.live-card [data-name^="Frame / "]{filter:var(--live-frame-light,none);transition:filter 160ms ease-out}
+.live-frame-sweep{
+  pointer-events:none;mask-size:100% 100%;mask-repeat:no-repeat;
+  background:linear-gradient(110deg,transparent 8%,#ffc66638 28%,#ffe6a6db 46%,#fffae9 51%,#ffe5a49c 57%,transparent 83%) -65% 0 / 38% 100% no-repeat;
+}
+@media(prefers-reduced-motion:no-preference){
+  .live-highlighted{scale:1.15;translate:0 -4px}
+  .live-highlighted .live-frame-sweep{animation:live-frame-sweep 620ms ease-out both}
+}
+@keyframes live-frame-sweep{from{background-position:-65% 0}to{background-position:165% 0}}
+
+/* Keep the original lower fade/crop while leaving room above and beside the animation. */
+.live-motion-character{mask-image:none!important;overflow:visible;clip-path:inset(-400% -400% 0)}
+.live-character-media{position:absolute;pointer-events:none}
+.live-character-media>img,.live-character-media>video{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:fill}
+.live-character-media>video,.live-playing .live-character-media>img{visibility:hidden}
+.live-playing .live-character-media>video{visibility:visible}
