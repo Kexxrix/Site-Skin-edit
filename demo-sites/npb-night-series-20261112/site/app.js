@@ -2,6 +2,7 @@ const pages = ['home', 'live', 'slots', 'notice'];
 const titles = ['おすすめゲーム', 'ライブカジノ', 'スロットゲーム', 'お知らせ'];
 const teams = {giants: '読売ジャイアンツ', tigers: '阪神タイガース', hawks: '福岡ソフトバンクホークス', dragons: '中日ドラゴンズ', fighters: '北海道日本ハムファイターズ', carp: '広島東洋カープ', baystars: '横浜DeNAベイスターズ', swallows: '東京ヤクルトスワローズ', lions: '埼玉西武ライオンズ', marines: '千葉ロッテマリーンズ', buffaloes: 'オリックス・バファローズ', eagles: '東北楽天ゴールデンイーグルス'};
 const teamFlags = {giants: 'assets/giants-flag-trial.png', tigers: 'assets/tigers-flag.png', hawks: 'assets/hawks-flag.png', dragons: 'assets/dragons-flag.png', fighters: 'assets/fighters-flag.png', carp: 'assets/carp-flag.png', baystars: 'assets/baystars-flag.png', swallows: 'assets/swallows-flag.png', lions: 'assets/lions-flag.png', marines: 'assets/marines-flag.png', buffaloes: 'assets/buffaloes-flag.png', eagles: 'assets/eagles-flag.png'};
+const leagueFlag = 'assets/login/league-flag.png';
 const leagues = {
   'セントラル・リーグ': ['giants', 'tigers', 'dragons', 'carp', 'baystars', 'swallows'],
   'パシフィック・リーグ': ['hawks', 'fighters', 'lions', 'marines', 'buffaloes', 'eagles']
@@ -21,7 +22,9 @@ const images = new Map();
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let team = 'giants';
 try { const saved = localStorage.getItem('npb-night-series-team'); if (saved in teams) team = saved; } catch {}
-let page = pages.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home';
+let demoEntered = false;
+try { demoEntered = sessionStorage.getItem('npb-demo-entered') === '1'; } catch {}
+let page = entryRoute();
 let renderTicket = 0;
 let menuTicket = 0;
 let requestedTeam = team;
@@ -30,7 +33,6 @@ let finishPageMotion = () => {};
 let finishSkinMotion = () => {};
 let lightId = 0;
 let stopFlagMotion = () => {};
-let account = '';
 let noticePage = 1;
 let noticeView = 'page-1';
 let category = 0;
@@ -79,6 +81,16 @@ function resize() {
   const scale = Math.min(document.documentElement.clientWidth / 1920, innerHeight / 1080);
   stage.style.setProperty('--scene-scale', scale);
   stage.style.setProperty('--vertical-space', `${(innerHeight / scale - 1080) / 2}px`);
+}
+function entryRoute() {
+  const hash = location.hash.slice(1);
+  if (!demoEntered || hash === 'login') return 'login';
+  return pages.includes(hash) ? hash : 'home';
+}
+function renderRoute() {
+  const route = entryRoute();
+  if (location.hash !== '#' + route) history.replaceState(null, '', '#' + route);
+  return render(route, requestedTeam);
 }
 function navigate(name) {
   closeTeamMenu(false);
@@ -148,7 +160,7 @@ document.addEventListener('pointerdown', event => {
 });
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') { closeTeamMenu(true); return; }
-  if (!['ArrowLeft', 'ArrowRight'].includes(event.key) || event.defaultPrevented || event.isComposing ||
+  if (page === 'login' || location.hash === '#login' || !['ArrowLeft', 'ArrowRight'].includes(event.key) || event.defaultPrevented || event.isComposing ||
       event.ctrlKey || event.altKey || event.metaKey || event.shiftKey || modal.open ||
       event.target.isContentEditable || event.target.closest?.('input,textarea,select,[role="slider"]')) return;
   const option = event.target.closest?.('[role="menuitemradio"]');
@@ -173,31 +185,44 @@ modal.addEventListener('close', () => { if (lastFocus?.isConnected) lastFocus.fo
 modal.addEventListener('click', event => {
   if (event.target === modal) { const r = modal.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) modal.close(); }
 });
-function login(mode = 'login') {
-  if (account && mode === 'login') {
-    openModal('マイアカウント', `<p class="modal-copy">${escapeHtml(account)} さん</p><p class="demo-note">デモクレジット：0</p><button class="primary" id="logout">ログアウト</button>`);
-    content.querySelector('#logout').onclick = () => { account = ''; updateAccount(); modal.close(); toast('ログアウトしました'); }; return;
-  }
-  const register = mode === 'register';
-  openModal(register ? '会員登録' : 'ログイン', `<form id="account-form"><label>ユーザーID<input name="user" autocomplete="off" placeholder="デモ用のユーザーID" required maxlength="24"></label><label>パスワード<span class="password-field"><input name="password" type="password" autocomplete="off" placeholder="デモ用のパスワード" required minlength="4"><button type="button" id="show-password" aria-label="パスワードを表示">表示</button></span></label>${register ? '<label>パスワード確認<input name="confirm" type="password" required minlength="4" autocomplete="off"></label>' : ''}<p class="form-error" role="alert"></p><button class="primary" type="submit">${register ? '登録してはじめる' : 'ログイン'}</button></form><div class="modal-links"><button id="switch-account">${register ? 'ログインへ戻る' : '会員登録'}</button><button id="reset-password">パスワードをお忘れの方</button></div><p class="demo-note">ローカルデモです。入力内容は送信・保存されません。</p>`);
-  const form = content.querySelector('form');
-  content.querySelector('#show-password').onclick = event => { const input = form.elements.password; input.type = input.type === 'password' ? 'text' : 'password'; event.target.textContent = input.type === 'password' ? '表示' : '非表示'; };
-  content.querySelector('#switch-account').onclick = () => login(register ? 'login' : 'register');
-  content.querySelector('#reset-password').onclick = () => support('パスワードのお問い合わせ');
-  form.onsubmit = event => {
-    event.preventDefault();
-    if (register && form.elements.password.value !== form.elements.confirm.value) { form.querySelector('.form-error').textContent = 'パスワードが一致しません。'; return; }
-    account = form.elements.user.value.trim(); if (!account) { form.querySelector('.form-error').textContent = 'ユーザーIDを入力してください。'; return; }
-    updateAccount(); modal.close(); toast(`${account} さん、ようこそ`);
-  };
-}
+function login() { navigate('login'); }
 function updateAccount() {
-  headerHost.querySelector('.account-credit').textContent = account ? '0' : 'ログイン後に確認';
-  const entry = headerHost.querySelector('.login-button');
-  entry.setAttribute('aria-label', account ? 'マイアカウント' : 'ログイン'); entry.querySelector('p').textContent = account ? 'マイページ' : 'ログイン';
+  headerHost.querySelector('.account-credit').textContent = demoEntered ? '0' : 'ログイン後に確認';
+}
+async function showLoginScreen(ticket, withTransition) {
+  const scene = await template('screens/login.html');
+  await preload(scene);
+  if (ticket !== renderTicket) return;
+  const form = scene.querySelector('form');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (page !== 'login' || location.hash !== '#login') return;
+    demoEntered = true;
+    try { sessionStorage.setItem('npb-demo-entered', '1'); } catch {}
+    form.reset();
+    navigate('home');
+  });
+  const apply = async () => {
+    if (ticket !== renderTicket) return;
+    stopFlagMotion();
+    headerHost.replaceChildren();
+    navHost.replaceChildren();
+    document.querySelector('#backgrounds').replaceChildren();
+    page = 'login';
+    world.dataset.page = page;
+    pageHost.replaceChildren(scene);
+    document.title = 'ログイン | NPB NIGHT SERIES';
+    document.querySelector('meta[name="theme-color"]').content = '#06090f';
+    const flag = scene.querySelector('.entry-flag');
+    await flag.querySelector('img').decode();
+    if (ticket !== renderTicket) return;
+    stopFlagMotion = animateTeamFlag(flag, reduceMotion);
+  };
+  if (withTransition) await transitionTeamFlag('npb', apply, ticket);
+  else await apply();
 }
 function wallet(type) {
-  if (!account) { login(); return; }
+  if (!demoEntered) { login(); return; }
   openModal(type, `<p class="modal-copy">デモクレジット <strong>0</strong></p><form><label>金額<input type="number" name="amount" min="1" step="1" placeholder="金額を入力" required></label><button class="primary" type="submit">確認</button></form><p class="demo-note">画面確認用のデモです。実際の入出金は行われません。</p>`);
   content.querySelector('form').onsubmit = event => { event.preventDefault(); const amount = Number(event.target.elements.amount.value); openModal(`${type}の確認`, `<p class="modal-copy">${amount.toLocaleString('ja-JP')} クレジット</p><p class="demo-note">デモのため申請・送金は行われません。</p><button class="primary" id="done">閉じる</button>`); content.querySelector('#done').onclick = () => modal.close(); };
 }
@@ -205,7 +230,7 @@ function support(title = 'お問い合わせ') {
   openModal(title, '<form><label>件名<input name="subject" required placeholder="お問い合わせの件名"></label><label>内容<textarea name="message" required rows="4" placeholder="内容を入力してください"></textarea></label><button type="submit" class="primary">内容を確認</button></form><p class="demo-note">入力内容は外部に送信されません。</p>');
   content.querySelector('form').onsubmit = event => { event.preventDefault(); openModal('お問い合わせの確認', `<h2>${escapeHtml(event.target.elements.subject.value)}</h2><p class="message-preview">${escapeHtml(event.target.elements.message.value)}</p><p class="demo-note">ローカルデモのため、送信は行われません。</p><button class="primary" id="done">閉じる</button>`); content.querySelector('#done').onclick = () => modal.close(); };
 }
-function messages() { if (!account) { login(); return; } openModal('メール', '<p class="modal-copy">新しいメッセージはありません。</p>'); }
+function messages() { if (!demoEntered) { login(); return; } openModal('メール', '<p class="modal-copy">新しいメッセージはありません。</p>'); }
 function gamePreview(title, image) {
   openModal(title, `<img class="game-preview" src="${image}" alt="${escapeHtml(title)}"><p class="demo-note">ゲーム画面のプレビューです。実際のゲームには接続していません。</p><button class="primary" id="back-lobby">ロビーへ戻る</button>`);
   content.querySelector('#back-lobby').onclick = () => modal.close();
@@ -390,7 +415,7 @@ async function showNotice(board, view = noticeView, focus = false) {
 async function transitionTeamFlag(nextTeam, applyScene, ticket) {
   const cover = document.createElement('div');
   cover.className = 'skin-flag-cover'; cover.dataset.team = nextTeam; cover.setAttribute('aria-hidden', 'true');
-  const image = new Image(); image.alt = ''; image.src = teamFlags[nextTeam]; cover.append(image);
+  const image = new Image(); image.alt = ''; image.src = nextTeam === 'npb' ? leagueFlag : teamFlags[nextTeam]; cover.append(image);
   await image.decode();
   if (ticket !== renderTicket) return;
   if (reduceMotion.matches) { await applyScene(); return; }
@@ -424,10 +449,16 @@ async function render(nextPage = page, nextTeam = team) {
   finishPageMotion();
   finishSkinMotion();
   document.documentElement.removeAttribute('data-page-transition');
+  const crossesLogin = nextPage !== page && (nextPage === 'login' || page === 'login') && Boolean(pageHost.querySelector('.scene'));
   const switchingSkin = nextTeam !== team && pageHost.querySelector('.scene') && !reduceMotion.matches;
   const switchingPage = nextPage !== page && nextTeam === team && pageHost.querySelector('.scene') && !reduceMotion.matches;
   const direction = pages.indexOf(nextPage) >= pages.indexOf(page) ? 1 : -1;
   try {
+    if (nextPage === 'login') {
+      await showLoginScreen(ticket, crossesLogin);
+      if (ticket === renderTicket) world.setAttribute('aria-busy', 'false');
+      return;
+    }
     const [scene, home] = await Promise.all([template(`screens/${nextTeam}-${nextPage}.html`), template(`screens/${nextTeam}-home.html`)]);
     const homeBackground = scene.querySelector('[data-name="Background / common ballpark photograph"] img');
     if (homeBackground) {
@@ -474,8 +505,8 @@ async function render(nextPage = page, nextTeam = team) {
     document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).getPropertyValue('--base').trim();
     resize();
     };
-    if (switchingSkin) {
-      await transitionTeamFlag(nextTeam, applyScene, ticket);
+    if (crossesLogin || switchingSkin) {
+      await transitionTeamFlag(crossesLogin ? 'npb' : nextTeam, applyScene, ticket);
     } else if (switchingPage && document.startViewTransition) {
         document.documentElement.setAttribute('data-page-transition', '');
         document.documentElement.style.setProperty('--page-direction', direction);
@@ -515,7 +546,7 @@ async function render(nextPage = page, nextTeam = team) {
   }
 }
 addEventListener('resize', resize);
-addEventListener('hashchange', () => render(pages.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home', requestedTeam));
+addEventListener('hashchange', renderRoute);
 reduceMotion.addEventListener('change', () => { if (reduceMotion.matches) { skinTransition?.skipTransition(); finishPageMotion(); finishSkinMotion(); } });
-if (!pages.includes(location.hash.slice(1))) history.replaceState(null, '', '#home');
-render();
+resize();
+renderRoute();

@@ -1,0 +1,94 @@
+/* 1920 × 1080 NPB league entry screen */
+#world[data-page="login"] :is(#header-host, #navigation-host, #team-menu-host) { display: none; }
+.entry-screen { overflow: hidden; color: #edd191; font-family: var(--font-ui); }
+.entry-stadium, .entry-night, .entry-shade { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.entry-stadium { object-fit: cover; }
+.entry-night { background: rgb(4 6 13 / 12%); }
+.entry-shade { background: linear-gradient(90deg, rgb(4 6 13 / 2%), rgb(4 6 13 / 8%) 48%, rgb(4 6 13 / 60%) 64%, rgb(4 6 13 / 62%)); }
+.entry-flag {
+  position: absolute; left: -260px; top: 0; width: 1920px; height: 1080px; pointer-events: none;
+  opacity: .26; mask: url("./assets/login/flag-mask.svg") center / 100% 100% no-repeat;
+  animation: entry-flag-drift 3s ease-in-out infinite;
+}
+.entry-flag > img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.entry-flag.flag-ready > img { visibility: hidden; }
+@keyframes entry-flag-drift { 50% { transform: translateX(5px) scaleY(1.008); } }
+.entry-panel { position: absolute; left: 1266.4px; top: 228.25px; width: 500px; height: 580px; }
+.entry-glass { position: absolute; inset: 11px; border-radius: 7px; background: rgb(5 8 13 / 77%); backdrop-filter: blur(5.556px); }
+.entry-frame, .entry-edge { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+@property --entry-angle { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.entry-edge {
+  mask: url("./assets/login/frame-mask.png") center / 100% 100% no-repeat;
+  background: conic-gradient(from var(--entry-angle), transparent 0deg 290deg, #82beff 330deg, white 352deg, transparent);
+  animation: entry-edge-turn 6s linear infinite;
+}
+.entry-edge span {
+  display: block; position: absolute; left: -104.167px; top: -104.167px; width: 208.333px; height: 208.333px;
+  background: url("./assets/login/frame-light.svg") center no-repeat; mix-blend-mode: screen;
+  animation: entry-edge-glint 6s ease-in-out infinite;
+}
+@keyframes entry-edge-turn { to { --entry-angle: 360deg; } }
+@keyframes entry-edge-glint { 25% { translate: 500px 0; } 50% { translate: 500px 580px; } 75% { translate: 0 580px; } }
+.entry-brand { position: absolute; left: 118px; top: 56px; width: 264px; height: 174px; margin: 0; }
+.entry-brand img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.entry-brand::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  mask: url("./assets/login/brand-mask.png") center / 100% 100% no-repeat;
+  background: linear-gradient(105deg, transparent 36%, rgb(255 255 255 / 80%) 50%, transparent 64%) no-repeat;
+  background-size: 180% 160%; mix-blend-mode: screen;
+  animation: entry-brand-shine 6s cubic-bezier(.68,0,.32,1) infinite;
+}
+@keyframes entry-brand-shine { 0%, 30% { background-position: 220% center; } 62%, 100% { background-position: -120% center; } }
+.entry-welcome, .entry-credit { position: absolute; width: 100%; text-align: center; }
+.entry-welcome { top: 234px; font-size: 17px; font-weight: 700; line-height: 27px; }
+.entry-credit { top: 600px; color: #c4c7cc; font-size: 13px; line-height: 23.5px; }
+.entry-divider { position: absolute; left: 61px; right: 61px; top: 272px; height: 1px; background: linear-gradient(90deg, transparent, #ffe096e6, transparent); }
+.entry-form { position: absolute; left: 92px; top: 299px; width: 316px; display: grid; gap: 22px; }
+.entry-field { height: 37px; background: url("./assets/login/field.png") center / 100% 100% no-repeat; }
+.entry-field:focus-within { filter: drop-shadow(0 0 6px #ffd67866); }
+.entry-field input {
+  display: block; width: 100%; height: 100%; padding: 0 20px; background: transparent; color: #ffe9b8;
+  border: 0; outline: 0; font: 700 13.672px/1.3 var(--font-ui); caret-color: #ffe9b8;
+}
+.entry-field input::placeholder { color: #adb2ba; opacity: 1; }
+.entry-submit {
+  position: relative; isolation: isolate; height: 40px; text-align: center; color: #17130e;
+  font: 700 16px/1.3 var(--font-ui); transition: filter .2s ease;
+}
+.entry-submit::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("./assets/login/submit.png") center / 100% 100% no-repeat; }
+.entry-form:invalid .entry-submit::before { opacity: .72; }
+.entry-submit:hover, .entry-submit:focus-visible { filter: brightness(1.12) drop-shadow(0 0 6px #ffd67866); }
+.entry-emblems { position: absolute; left: 142px; right: 142px; top: 479px; display: flex; justify-content: space-between; pointer-events: none; }
+.entry-emblems img { width: 39px; height: 42px; object-fit: contain; }
+.entry-corner {
+  position: absolute; width: 120px; height: 80.43px; pointer-events: none;
+  animation: entry-spread 550ms cubic-bezier(.22,1,.36,1) 120ms both, entry-breathe 3s ease-in-out 650ms infinite;
+}
+.entry-corner.left { left: -38px; --dx: -1; }
+.entry-corner.right { right: -38px; --dx: 1; }
+.entry-corner.top { top: -30px; --dy: -1; }
+.entry-corner.bottom { bottom: -30px; --dy: 1; }
+.entry-corner::before, .entry-corner::after { content: ""; position: absolute; inset: 0; scale: calc(-1 * var(--dx)) calc(-1 * var(--dy)); }
+.entry-corner::before { background: url("./assets/login/corner.png") center / cover; }
+.entry-corner::after {
+  mask: url("./assets/login/corner.png") center / cover no-repeat;
+  background: linear-gradient(105deg, transparent 32%, #fffcebba 44%, white 50%, #fffcebba 56%, transparent 68%) 120% 0 / 240% 100% no-repeat;
+  animation: entry-corner-shine 2.6s ease-in-out .8s infinite;
+}
+.entry-corner.top.right::after { animation-delay: 1s; }
+.entry-corner.bottom.right::after { animation-delay: 1.2s; }
+.entry-corner.bottom.left::after { animation-delay: 1.4s; }
+@keyframes entry-spread {
+  from { opacity: 0; transform: translate(calc(var(--dx) * -26px), calc(var(--dy) * -26px)) scale(.86); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes entry-breathe {
+  0%, 100% { transform: none; filter: drop-shadow(0 4px 10px #0009) drop-shadow(0 0 8px #ffcd6452); }
+  50% { transform: translate(calc(var(--dx) * 5px), calc(var(--dy) * 5px)); filter: drop-shadow(0 4px 10px #0009) drop-shadow(0 0 12px #ffda82cc) drop-shadow(0 0 26px #ffb44666) brightness(1.14); }
+}
+@keyframes entry-corner-shine { 45%, 100% { background-position: -20% 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .entry-screen *, .entry-screen ::after { animation: none; transition: none; }
+  .entry-edge, .entry-brand::after, .entry-corner::after, .entry-flag .flag-cloth { display: none; }
+  .entry-flag.flag-ready > img { visibility: visible; }
+}
