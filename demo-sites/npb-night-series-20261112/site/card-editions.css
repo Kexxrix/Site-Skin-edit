@@ -1,0 +1,99 @@
+.game-card .card-face {
+  filter: drop-shadow(0 3px 2px #050608a8) drop-shadow(0 7px 5px #05060866);
+}
+
+.provider-card .card-face {
+  filter: drop-shadow(0 4px 3px #03040685);
+}
+
+.game-card[data-rank] {
+  --edition-light: color-mix(in srgb, var(--accent) 35%, #f5f7f7);
+  --edition-mid: var(--accent);
+  --edition-deep: color-mix(in srgb, var(--accent) 30%, #14171c);
+  --edition-stamp: "CLUB";
+  --stamp-cut: polygon(0 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+  --edition-grain: repeating-linear-gradient(135deg, transparent 0 2px, #16191f85 2px 3px);
+  --edition-finish: .44;
+  --edition-undercoat: saturate(.8) contrast(1.08);
+}
+
+.game-card:is([data-rank="2"], [data-rank="3"]) {
+  --edition-light: #eff6fc;
+  --edition-mid: #acbed0;
+  --edition-deep: #44536a;
+  --edition-stamp: "SILVER";
+  --stamp-cut: polygon(4px 0, 100% 0, 100% calc(100% - 4px), calc(100% - 4px) 100%, 0 100%, 0 4px);
+  --edition-finish: .67;
+  --edition-grain: repeating-linear-gradient(0deg, #fff2 0 1px, transparent 1px 3px);
+  --edition-undercoat: grayscale(1) brightness(1.24);
+}
+
+.game-card[data-rank="1"] {
+  --edition-light: #fff3c8;
+  --edition-mid: #ebbd6c;
+  --edition-deep: #80531e;
+  --edition-stamp: "MVP";
+  --stamp-cut: polygon(5px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 5px 100%, 0 calc(100% - 5px), 0 5px);
+  --edition-finish: .67;
+  --edition-grain: repeating-linear-gradient(120deg, #fff3 0 1px, transparent 1px 4px);
+  --edition-undercoat: sepia(1) saturate(1.7) brightness(1.23);
+}
+
+/* Use each club's original cut-metal alpha for the engraving and plate finish. */
+.game-card[data-rank] [data-name="Card / generated metal frame"] {
+  isolation: isolate;
+}
+
+.game-card[data-rank] [data-name="Card / generated metal frame"] > img:first-child {
+  filter: var(--edition-undercoat);
+}
+
+.game-card[data-rank] [data-name="Card / generated metal frame"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mask: var(--edition-frame-mask) center / 100% 100% no-repeat;
+  background: var(--edition-grain),
+    linear-gradient(135deg, var(--edition-light), var(--edition-mid) 20%, var(--edition-deep) 44%, var(--edition-light) 68%, var(--edition-mid) 82%, var(--edition-deep));
+  mix-blend-mode: hard-light;
+  opacity: var(--edition-finish);
+}
+
+.game-card[data-rank] .card-frame-normal {
+  z-index: 1;
+}
+
+/* Extend the existing numbered index into a stamped corner plate. */
+.game-card[data-rank] [data-name="Card / index well"] {
+  width: 81px;
+  border-radius: 0;
+  background: linear-gradient(135deg, var(--edition-light), var(--edition-deep) 48%, var(--edition-mid));
+  clip-path: var(--stamp-cut);
+}
+
+.game-card[data-rank] [data-name="Card / index well"]::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  clip-path: inherit;
+  background: linear-gradient(110deg, var(--edition-light), var(--edition-mid) 38%, var(--edition-deep) 39%, #14171b 43%, #25282c);
+}
+
+.game-card[data-rank] [data-name="Card / index well"]::after {
+  content: var(--edition-stamp);
+  position: absolute;
+  inset: 0 4px 0 34px;
+  display: grid;
+  place-items: center;
+  color: var(--edition-light);
+  font: 800 10px/1 "Pretendard JP", sans-serif;
+  letter-spacing: .075em;
+}
+
+.game-card[data-rank] [data-name="Card / index well"] + div {
+  left: 36px;
+  color: #17191b;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 1px #ffffff38;
+}

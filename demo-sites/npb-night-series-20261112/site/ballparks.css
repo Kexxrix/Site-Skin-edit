@@ -1,0 +1,122 @@
+/* Crop the stadium photograph below the original readability, flag and UI layers.
+   The FHD photos already fill 16:9; overscan gives each focal point actual travel. */
+#backgrounds > .background-layer:not(.team-flag-background):has(> img) {
+  transform-origin: var(--park-focus, center);
+  scale: var(--park-zoom, 1);
+  pointer-events: none;
+}
+#backgrounds > .background-layer:not(.team-flag-background) > img {
+  object-position: var(--park-focus, center);
+}
+
+/* The lamp coordinates are in the photograph's own space so the light follows its crop. */
+#backgrounds > .background-layer:not(.team-flag-background):has(> img)::after {
+  content: "";
+  position: absolute;
+  left: var(--lamp-x);
+  top: var(--lamp-y);
+  width: 132px;
+  height: 70px;
+  translate: -50% -50%;
+  pointer-events: none;
+  background: var(--park-atmosphere, radial-gradient(ellipse at center,
+    #fffbe8 0%, #fff6d68c 3%, color-mix(in srgb, var(--highlight) 40%, transparent) 15%, transparent 65%));
+  mix-blend-mode: screen;
+  opacity: .25;
+}
+@media (prefers-reduced-motion: no-preference) {
+  #backgrounds > .background-layer:not(.team-flag-background):has(> img)::after {
+    animation: ballpark-light 6.8s ease-in-out infinite alternate;
+  }
+}
+@keyframes ballpark-light {
+  from { opacity: .17 }
+  to { opacity: .52 }
+}
+
+/* Daylight scenes use small specks of reflected light along the perimeter. */
+body:is([data-team="tigers"], [data-team="baystars"], [data-team="carp"], [data-team="buffaloes"], [data-team="marines"], [data-team="eagles"], [data-team="dragons"], [data-team="hawks"], [data-team="fighters"], [data-team="lions"]) #world[data-page="live"],
+body:is([data-team="buffaloes"], [data-team="marines"], [data-team="eagles"]) #world[data-page="slots"] {
+  --park-atmosphere: radial-gradient(2px 2px at 30% 64%, #fffd, transparent),
+    radial-gradient(3px 2px at 64% 30%, var(--highlight), transparent),
+    radial-gradient(2px 2px at 78% 48%, #fff9, transparent);
+}
+
+/* The Tigers notice artwork already had an offset export frame; use one crop. */
+body[data-team="tigers"] #world[data-page="notice"] #backgrounds > [data-name="Background / generated team ballpark"] {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Giants: roof lights. */
+body[data-team="giants"] #world[data-page="home"] { --park-zoom: 1.12; --park-focus: 18% 68%; --lamp-x: 85.83%; --lamp-y: 28.15%; }
+body[data-team="giants"] #world[data-page="live"] { --park-zoom: 1.13; --park-focus: 50% 72%; --lamp-x: 80%; --lamp-y: 15.93%; }
+body[data-team="giants"] #world[data-page="slots"] { --park-zoom: 1.09; --park-focus: 18% 78%; --lamp-x: 87.5%; --lamp-y: 40%; }
+body[data-team="giants"] #world[data-page="notice"] { --park-zoom: 1.07; --park-focus: 68% 45%; --lamp-x: 94.17%; --lamp-y: 22.59%; }
+
+/* Tigers: floodlight tower. */
+body[data-team="tigers"] #world[data-page="home"] { --park-zoom: 1.09; --park-focus: 48% 82%; --lamp-x: 89.79%; --lamp-y: 32.59%; }
+body[data-team="tigers"] #world[data-page="live"] { --park-zoom: 1.18; --park-focus: 54% 84%; --lamp-x: 82%; --lamp-y: 25%; }
+body[data-team="tigers"] #world[data-page="slots"] { --park-zoom: 1.13; --park-focus: 74% 85%; --lamp-x: 22.71%; --lamp-y: 27.04%; }
+body[data-team="tigers"] #world[data-page="notice"] { --park-zoom: 1.06; --park-focus: 47% 89%; --lamp-x: 88.96%; --lamp-y: 30.74%; }
+
+/* Baystars: harbor-side light tower. */
+body[data-team="baystars"] #world[data-page="home"] { --park-zoom: 1.055; --park-focus: 70% 0%; --lamp-x: 91.46%; --lamp-y: 11.85%; }
+body[data-team="baystars"] #world[data-page="live"] { --park-zoom: 1.29; --park-focus: 48% 45%; --lamp-x: 16%; --lamp-y: 35%; }
+body[data-team="baystars"] #world[data-page="slots"] { --park-zoom: 1.09; --park-focus: 80% 78%; --lamp-x: 84.38%; --lamp-y: 19.63%; }
+body[data-team="baystars"] #world[data-page="notice"] { --park-zoom: 1.1; --park-focus: 31% 91%; --lamp-x: 87.71%; --lamp-y: 34.07%; }
+
+/* Carp: red concourse and stand. */
+body[data-team="carp"] #world[data-page="home"] { --park-zoom: 1.14; --park-focus: 9% 0%; --lamp-x: 72.92%; --lamp-y: 11.85%; }
+body[data-team="carp"] #world[data-page="live"] { --park-zoom: 1.12; --park-focus: 46% 82%; --lamp-x: 92%; --lamp-y: 26%; }
+body[data-team="carp"] #world[data-page="slots"] { --park-zoom: 1.055; --park-focus: 80% 0%; --lamp-x: 91.88%; --lamp-y: 9.26%; }
+body[data-team="carp"] #world[data-page="notice"] { --park-zoom: 1.08; --park-focus: 53% 0%; --lamp-x: 93.75%; --lamp-y: 9.26%; }
+
+/* Swallows: stand and floodlights. */
+body[data-team="swallows"] #world[data-page="home"] { --park-zoom: 1.13; --park-focus: 14% 0%; --lamp-x: 80.62%; --lamp-y: 10%; }
+body[data-team="swallows"] #world[data-page="live"] { --park-zoom: 1.17; --park-focus: 46% 90%; --lamp-x: 71.88%; --lamp-y: 23.33%; }
+body[data-team="swallows"] #world[data-page="slots"] { --park-zoom: 1.08; --park-focus: 24% 0%; --lamp-x: 8.12%; --lamp-y: 7.78%; }
+body[data-team="swallows"] #world[data-page="notice"] { --park-zoom: 1.08; --park-focus: 65% 77%; --lamp-x: 91.88%; --lamp-y: 25.56%; }
+
+/* Dragons: blue dome fascia. */
+body[data-team="dragons"] #world[data-page="home"] { --park-zoom: 1.115; --park-focus: 68% 91%; --lamp-x: 85.42%; --lamp-y: 40.74%; }
+body[data-team="dragons"] #world[data-page="live"] { --park-zoom: 1.21; --park-focus: 43% 95%; --lamp-x: 87%; --lamp-y: 24%; }
+body[data-team="dragons"] #world[data-page="slots"] { --park-zoom: 1.085; --park-focus: 62% 43%; --lamp-x: 88.54%; --lamp-y: 17.41%; }
+body[data-team="dragons"] #world[data-page="notice"] { --park-zoom: 1.09; --park-focus: 91% 85%; --lamp-x: 94.58%; --lamp-y: 38.52%; }
+
+/* Hawks: illuminated dome. */
+body[data-team="hawks"] #world[data-page="home"] { --park-zoom: 1.1; --park-focus: 21% 61%; --lamp-x: 83.12%; --lamp-y: 25.93%; }
+body[data-team="hawks"] #world[data-page="live"] { --park-zoom: 1.19; --park-focus: 48% 92%; --lamp-x: 86%; --lamp-y: 27%; }
+body[data-team="hawks"] #world[data-page="slots"] { --park-zoom: 1.08; --park-focus: 70% 27%; --lamp-x: 94.79%; --lamp-y: 20.74%; }
+body[data-team="hawks"] #world[data-page="notice"] { --park-zoom: 1.095; --park-focus: 20% 78%; --lamp-x: 87.29%; --lamp-y: 40%; }
+
+/* Fighters: glass end wall. */
+body[data-team="fighters"] #world[data-page="home"] { --park-zoom: 1.12; --park-focus: 25% 32%; --lamp-x: 86.67%; --lamp-y: 41.11%; }
+body[data-team="fighters"] #world[data-page="live"] { --park-zoom: 1.19; --park-focus: 40% 85%; --lamp-x: 83%; --lamp-y: 24%; }
+body[data-team="fighters"] #world[data-page="slots"] { --park-zoom: 1.09; --park-focus: 46% 0%; --lamp-x: 17.5%; --lamp-y: 19.63%; }
+body[data-team="fighters"] #world[data-page="notice"] { --park-zoom: 1.12; --park-focus: 62% 91%; --lamp-x: 89.17%; --lamp-y: 18.89%; }
+
+/* Buffaloes: tiered dome facade. */
+body[data-team="buffaloes"] #world[data-page="home"] { --park-zoom: 1.12; --park-focus: 47% 90%; --lamp-x: 88.75%; --lamp-y: 47.04%; }
+body[data-team="buffaloes"] #world[data-page="live"] { --park-zoom: 1.27; --park-focus: 48% 82%; --lamp-x: 20%; --lamp-y: 32%; }
+body[data-team="buffaloes"] #world[data-page="slots"] { --park-zoom: 1.09; --park-focus: 68% 84%; --lamp-x: 92%; --lamp-y: 30%; }
+body[data-team="buffaloes"] #world[data-page="notice"] { --park-zoom: 1.09; --park-focus: 50% 69%; --lamp-x: 93.54%; --lamp-y: 28.52%; }
+
+/* Marines: light bank and open stand. */
+body[data-team="marines"] #world[data-page="home"] { --park-zoom: 1.055; --park-focus: 88% 0%; --lamp-x: 92.71%; --lamp-y: 12.59%; }
+body[data-team="marines"] #world[data-page="live"] { --park-zoom: 1.2; --park-focus: 43% 90%; --lamp-x: 87%; --lamp-y: 22%; }
+body[data-team="marines"] #world[data-page="slots"] { --park-zoom: 1.11; --park-focus: 72% 75%; --lamp-x: 90%; --lamp-y: 32%; }
+body[data-team="marines"] #world[data-page="notice"] { --park-zoom: 1.09; --park-focus: 68% 89%; --lamp-x: 91.67%; --lamp-y: 44.81%; }
+
+/* Lions: open-sided roof. */
+body[data-team="lions"] #world[data-page="home"] { --park-zoom: 1.14; --park-focus: 48% 88%; --lamp-x: 84.79%; --lamp-y: 58.52%; }
+body[data-team="lions"] #world[data-page="live"] { --park-zoom: 1.19; --park-focus: 50% 93%; --lamp-x: 83%; --lamp-y: 34%; }
+body[data-team="lions"] #world[data-page="slots"] { --park-zoom: 1.095; --park-focus: 42% 48%; --lamp-x: 82.71%; --lamp-y: 12.59%; }
+body[data-team="lions"] #world[data-page="notice"] { --park-zoom: 1.07; --park-focus: 69% 82%; --lamp-x: 94.38%; --lamp-y: 36.67%; }
+
+/* Eagles: light tower and wheel. */
+body[data-team="eagles"] #world[data-page="home"] { --park-zoom: 1.13; --park-focus: 15% 0%; --lamp-x: 83.96%; --lamp-y: 14.07%; }
+body[data-team="eagles"] #world[data-page="live"] { --park-zoom: 1.23; --park-focus: 45% 89%; --lamp-x: 85%; --lamp-y: 28%; }
+body[data-team="eagles"] #world[data-page="slots"] { --park-zoom: 1.075; --park-focus: 22% 47%; --lamp-x: 88%; --lamp-y: 29%; }
+body[data-team="eagles"] #world[data-page="notice"] { --park-zoom: 1.115; --park-focus: 25% 86%; --lamp-x: 73.96%; --lamp-y: 39.63%; }

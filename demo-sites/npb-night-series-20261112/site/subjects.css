@@ -1,0 +1,145 @@
+/* FHD artwork coordinates. Register each portrait on the eye line at y=235
+   and the near shoulder at y=371, keeping the original pose and mask together. */
+body[data-team="baystars"] {
+  --sideline-height: 35%;
+  --portrait-pivot: 1352px 160px;
+  --portrait-scale: 1.023;
+  --portrait-lift: -1px;
+  --portrait-light-x: 1352px;
+  --portrait-exposure: 1.01;
+}
+body[data-team="buffaloes"] {
+  --sideline-height: 36%;
+  --portrait-pivot: 1630px 154px;
+  --portrait-scale: 0.986;
+  --portrait-lift: 5px;
+  --portrait-light-x: 1630px;
+  --portrait-exposure: 1.035;
+}
+body[data-team="carp"] {
+  --sideline-height: 26%;
+  --portrait-pivot: 1363px 111px;
+  --portrait-scale: 1.124;
+  --portrait-lift: 48px;
+  --portrait-light-x: 1363px;
+  --portrait-exposure: 1.02;
+}
+body[data-team="dragons"] {
+  --sideline-height: 52%;
+  --portrait-pivot: 1390px 123px;
+  --portrait-scale: 0.932;
+  --portrait-lift: 36px;
+  --portrait-light-x: 1390px;
+  --portrait-exposure: 1.015;
+}
+body[data-team="eagles"] {
+  --sideline-height: 33%;
+  --portrait-pivot: 1418px 125px;
+  --portrait-scale: 1.106;
+  --portrait-lift: 34px;
+  --portrait-light-x: 1418px;
+  --portrait-exposure: 0.99;
+}
+body[data-team="fighters"] {
+  --sideline-height: 60%;
+  --portrait-pivot: 1385px 111px;
+  --portrait-scale: 0.925;
+  --portrait-lift: 48px;
+  --portrait-light-x: 1385px;
+  --portrait-exposure: 1.015;
+}
+body[data-team="giants"] {
+  --sideline-height: 44%;
+  --portrait-pivot: 597px 173px;
+  --portrait-scale: 0.824;
+  --portrait-lift: -22px;
+  --portrait-light-x: 1427px;
+  --portrait-exposure: 0.985;
+}
+body[data-team="hawks"] {
+  --sideline-height: 36%;
+  --portrait-pivot: 1385px 170px;
+  --portrait-scale: 0.965;
+  --portrait-lift: -11px;
+  --portrait-light-x: 1385px;
+  --portrait-exposure: 1.015;
+}
+body[data-team="lions"] {
+  --sideline-height: 60%;
+  --portrait-pivot: 1440px 129px;
+  --portrait-scale: 0.834;
+  --portrait-lift: 30px;
+  --portrait-light-x: 1440px;
+  --portrait-exposure: 1.06;
+}
+body[data-team="marines"] {
+  --sideline-height: 49%;
+  --portrait-pivot: 1482px 129px;
+  --portrait-scale: 0.840;
+  --portrait-lift: 30px;
+  --portrait-light-x: 1482px;
+  --portrait-exposure: 1.055;
+}
+body[data-team="swallows"] {
+  --sideline-height: 48%;
+  --portrait-pivot: 1376px 144px;
+  --portrait-scale: 1.143;
+  --portrait-lift: 15px;
+  --portrait-light-x: 1376px;
+  --portrait-exposure: 1.025;
+}
+body[data-team="tigers"] {
+  --sideline-height: 43%;
+  --portrait-pivot: 675px 181px;
+  --portrait-scale: 1.007;
+  --portrait-lift: -30px;
+  --portrait-light-x: 1435px;
+  --portrait-exposure: 1.025;
+}
+
+/* Most exports use a display:contents group. Give it the hero's original
+   coordinate space so the rim is painted outside the child's alpha mask. */
+.hero > :has(> .hero-player) {
+  display: block;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.hero > :has(> .hero-player),
+.hero-player > [data-name="Player / upper-body viewport"] {
+  transform-origin: var(--portrait-pivot);
+  translate: 0 var(--portrait-lift);
+  scale: var(--portrait-scale);
+  filter: brightness(var(--portrait-exposure)) contrast(1.015) saturate(.97)
+    drop-shadow(-2px 0 2px color-mix(in srgb, var(--accent) 54%, transparent))
+    drop-shadow(3px 6px 9px rgb(5 9 16 / 22%));
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  left: calc(var(--portrait-light-x) - 350px);
+  top: 12px;
+  width: 700px;
+  height: 514px;
+  background: radial-gradient(ellipse closest-side at 50% 49%,
+    color-mix(in srgb, var(--accent) 21%, transparent),
+    color-mix(in srgb, var(--accent) 9%, transparent) 48%, transparent);
+}
+
+/* The live sidelines are photographed groups in the same raster as the park.
+   A feathered edge grade keeps their uniforms and skin tones photographic. */
+#world[data-page="live"] #backgrounds > .background-layer:not(.team-flag-background):has(> img) {
+  isolation: isolate;
+}
+#world[data-page="live"] #backgrounds > .background-layer:not(.team-flag-background):has(> img)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  --sideline-fill: color-mix(in srgb, var(--highlight) 27%, transparent);
+  background: radial-gradient(ellipse 23% 38% at 7% var(--sideline-height), var(--sideline-fill), transparent),
+    radial-gradient(ellipse 23% 38% at 93% var(--sideline-height), var(--sideline-fill), transparent);
+  mix-blend-mode: soft-light;
+}
