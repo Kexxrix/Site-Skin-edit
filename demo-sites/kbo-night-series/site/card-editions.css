@@ -1,0 +1,104 @@
+.game-card .card-face {
+  filter: drop-shadow(0 3px 2px #050608a8) drop-shadow(0 7px 5px #05060866);
+}
+
+.provider-card .card-face {
+  filter: drop-shadow(0 4px 3px #03040685);
+}
+
+.game-card[data-rank] {
+  --edition-light: color-mix(in srgb, var(--accent) 35%, #f5f7f7);
+  --edition-mid: var(--accent);
+  --edition-deep: color-mix(in srgb, var(--accent) 30%, #14171c);
+  --edition-label: "구단";
+  --edition-cut: polygon(0 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%);
+  --edition-engraving: repeating-linear-gradient(135deg, transparent 0 2px, #16191f85 2px 3px);
+  --edition-finish: .44;
+  --edition-undercoat: saturate(.8) contrast(1.08);
+}
+
+.game-card:is([data-rank="2"], [data-rank="3"]) {
+  --edition-light: #eff6fc;
+  --edition-mid: #acbed0;
+  --edition-deep: #44536a;
+  --edition-label: "실버";
+  --edition-cut: polygon(4px 0, 100% 0, 100% calc(100% - 4px), calc(100% - 4px) 100%, 0 100%, 0 4px);
+  --edition-engraving: repeating-linear-gradient(0deg, #fff2 0 1px, transparent 1px 3px);
+  --edition-finish: .67;
+  --edition-undercoat: grayscale(1) brightness(1.24);
+}
+
+.game-card[data-rank="1"] {
+  --edition-number: "01";
+  --edition-light: #fff3c8;
+  --edition-mid: #ebbd6c;
+  --edition-deep: #80531e;
+  --edition-label: "MVP";
+  --edition-cut: polygon(5px 0, calc(100% - 7px) 0, 100% 50%, calc(100% - 7px) 100%, 0 100%, 0 5px);
+  --edition-engraving: repeating-linear-gradient(120deg, #fff3 0 1px, transparent 1px 4px);
+  --edition-finish: .67;
+  --edition-undercoat: sepia(1) saturate(1.7) brightness(1.23);
+}
+
+.game-card[data-rank="2"] { --edition-number: "02"; }
+.game-card[data-rank="3"] { --edition-number: "03"; }
+.game-card[data-rank="4"] { --edition-number: "04"; }
+.game-card[data-rank="5"] { --edition-number: "05"; }
+
+.game-card[data-rank] [data-name="건메탈 프레임"] {
+  isolation: isolate;
+}
+
+.game-card[data-rank] [data-name="건메탈 프레임"] > img:first-child {
+  filter: var(--edition-undercoat);
+}
+
+/* Follow the original metal frame's alpha, including both the open face and cut corners. */
+.game-card[data-rank] [data-name="건메탈 프레임"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mask: var(--edition-frame-mask) center / 100% 100% no-repeat;
+  background: var(--edition-engraving),
+    linear-gradient(135deg, var(--edition-light), var(--edition-mid) 20%, var(--edition-deep) 44%, var(--edition-light) 68%, var(--edition-mid) 82%, var(--edition-deep));
+  mix-blend-mode: hard-light;
+  opacity: var(--edition-finish);
+}
+
+.game-card[data-rank] .card-frame-normal {
+  z-index: 1;
+}
+
+/* Both halves of the badge move with the card face during the pointer tilt. */
+.game-card[data-rank] .card-face::before,
+.game-card[data-rank] .card-face::after {
+  position: absolute;
+  top: 15px;
+  height: 21px;
+  z-index: 2;
+  display: grid;
+  align-items: center;
+  pointer-events: none;
+  font: 800 11px/1 var(--font-ui);
+}
+
+.game-card[data-rank] .card-face::before {
+  content: var(--edition-number);
+  left: 18px;
+  width: 66px;
+  padding-left: 7px;
+  color: #16181c;
+  font-variant-numeric: tabular-nums;
+  clip-path: var(--edition-cut);
+  background: linear-gradient(115deg, var(--edition-light) 4%, var(--edition-mid) 38%, var(--edition-deep) 39%, #14171b 43%, #25282c);
+  box-shadow: inset 0 1px var(--edition-light), inset 0 -1px var(--edition-mid);
+}
+
+.game-card[data-rank] .card-face::after {
+  content: var(--edition-label);
+  left: 44px;
+  width: 35px;
+  justify-items: center;
+  color: var(--edition-light);
+}

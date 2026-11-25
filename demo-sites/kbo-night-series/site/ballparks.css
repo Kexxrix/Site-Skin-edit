@@ -1,0 +1,98 @@
+/* Keep the crop on the photograph so both parks retain their own composition during a page crossfade. */
+#backgrounds > [data-ballpark] {
+  pointer-events: none;
+  transform-origin: var(--park-focus);
+  scale: var(--park-zoom);
+}
+#backgrounds > [data-ballpark] > img {
+  object-position: var(--park-focus);
+}
+#backgrounds > [data-ballpark]::after {
+  content: "";
+  position: absolute;
+  left: var(--lamp-x);
+  top: var(--lamp-y);
+  width: 160px;
+  height: 85px;
+  translate: -50% -50%;
+  background: var(--park-light, radial-gradient(ellipse closest-side, #fffcdfc2, #ffe6bb50 24%, transparent 95%));
+  mix-blend-mode: screen;
+  opacity: .3;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  #backgrounds > [data-ballpark]::after {
+    animation: park-light 6.8s ease-in-out infinite alternate;
+  }
+}
+@keyframes park-light {
+  from { opacity: .18 }
+  to { opacity: .49 }
+}
+
+/* Daylight lamps reflect small points of light. */
+[data-ballpark="samsung-notice"], [data-ballpark="kt-notice"], [data-ballpark="hanwha-notice"], [data-ballpark="nc-live"] {
+  --park-light: radial-gradient(3px 2px at 46% 50%, #fffef0e0, transparent),
+    radial-gradient(2px 2px at 51% 46%, #fff8d9b0, transparent),
+    radial-gradient(3px 2px at 56% 50%, #fff8d9b0, transparent);
+}
+
+/* Gwangju */
+[data-ballpark="kia-home"] { --park-zoom: 1.09; --park-focus: 72% 35%; --lamp-x: 58.63%; --lamp-y: 30.53%; }
+[data-ballpark="kia-live"] { --park-zoom: 1.045; --park-focus: 86% 44%; --lamp-x: 75.42%; --lamp-y: 8.25%; }
+[data-ballpark="kia-slots"] { --park-zoom: 1.09; --park-focus: 46% 57%; --lamp-x: 88.07%; --lamp-y: 20.42%; }
+[data-ballpark="kia-notice"] { --park-zoom: 1.08; --park-focus: 58% 49%; --lamp-x: 91.58%; --lamp-y: 23.23%; }
+
+/* Jamsil, LG */
+[data-ballpark="lg-home"] { --park-zoom: 1.1; --park-focus: 63% 69%; --lamp-x: 39.55%; --lamp-y: 39.05%; }
+[data-ballpark="lg-live"] { --park-zoom: 1.055; --park-focus: 89% 30%; --lamp-x: 15.06%; --lamp-y: 24.76%; }
+[data-ballpark="lg-slots"] { --park-zoom: 1.055; --park-focus: 46% 61%; --lamp-x: 4.26%; --lamp-y: 10.21%; }
+[data-ballpark="lg-notice"] { --park-zoom: 1.075; --park-focus: 50% 75%; --lamp-x: 88.9%; --lamp-y: 28.36%; }
+
+/* Daegu */
+[data-ballpark="samsung-home"] { --park-zoom: 1.065; --park-focus: 34% 61%; --lamp-x: 8.87%; --lamp-y: 27.04%; }
+[data-ballpark="samsung-live"] { --park-zoom: 1.055; --park-focus: 84% 16%; --lamp-x: 62.8%; --lamp-y: 17.99%; }
+[data-ballpark="samsung-slots"] { --park-zoom: 1.085; --park-focus: 53% 65%; --lamp-x: 92.23%; --lamp-y: 15.5%; }
+[data-ballpark="samsung-notice"] { --park-zoom: 1.06; --park-focus: 64% 50%; --lamp-x: 93.39%; --lamp-y: 25.82%; }
+
+/* Jamsil, Doosan */
+[data-ballpark="doosan-home"] { --park-zoom: 1.12; --park-focus: 72% 69%; --lamp-x: 83.75%; --lamp-y: 41.53%; }
+[data-ballpark="doosan-live"] { --park-zoom: 1.075; --park-focus: 88% 26%; --lamp-x: 44.43%; --lamp-y: 10.63%; }
+[data-ballpark="doosan-slots"] { --park-zoom: 1.065; --park-focus: 55% 53%; --lamp-x: 91.49%; --lamp-y: 17.51%; }
+[data-ballpark="doosan-notice"] { --park-zoom: 1.105; --park-focus: 71% 57%; --lamp-x: 92.77%; --lamp-y: 37.83%; }
+
+/* Incheon */
+[data-ballpark="ssg-home"] { --park-zoom: 1.105; --park-focus: 70% 72%; --lamp-x: 84.26%; --lamp-y: 25.13%; }
+[data-ballpark="ssg-live"] { --park-zoom: 1.06; --park-focus: 88% 35%; --lamp-x: 18.75%; --lamp-y: 12.17%; }
+[data-ballpark="ssg-slots"] { --park-zoom: 1.07; --park-focus: 51% 56%; --lamp-x: 76.37%; --lamp-y: 12.33%; }
+[data-ballpark="ssg-notice"] { --park-zoom: 1.09; --park-focus: 46% 56%; --lamp-x: 87.92%; --lamp-y: 50.21%; }
+
+/* Suwon */
+[data-ballpark="kt-home"] { --park-zoom: 1.075; --park-focus: 69% 57%; --lamp-x: 88.33%; --lamp-y: 14.92%; }
+[data-ballpark="kt-live"] { --park-zoom: 1.05; --park-focus: 87% 38%; --lamp-x: 68.15%; --lamp-y: 26.46%; }
+[data-ballpark="kt-slots"] { --park-zoom: 1.08; --park-focus: 56% 62%; --lamp-x: 70.48%; --lamp-y: 19.68%; }
+[data-ballpark="kt-notice"] { --park-zoom: 1.085; --park-focus: 43% 68%; --lamp-x: 92.95%; --lamp-y: 21.01%; }
+
+/* Busan */
+[data-ballpark="lotte-home"] { --park-zoom: 1.08; --park-focus: 74% 67%; --lamp-x: 96.19%; --lamp-y: 22.96%; }
+[data-ballpark="lotte-live"] { --park-zoom: 1.045; --park-focus: 88% 46%; --lamp-x: 8.96%; --lamp-y: 13.97%; }
+[data-ballpark="lotte-slots"] { --park-zoom: 1.095; --park-focus: 57% 54%; --lamp-x: 91.7%; --lamp-y: 19.42%; }
+[data-ballpark="lotte-notice"] { --park-zoom: 1.085; --park-focus: 65% 66%; --lamp-x: 93.78%; --lamp-y: 31.9%; }
+
+/* Daejeon */
+[data-ballpark="hanwha-home"] { --park-zoom: 1.09; --park-focus: 71% 48%; --lamp-x: 85.3%; --lamp-y: 25.08%; }
+[data-ballpark="hanwha-live"] { --park-zoom: 1.055; --park-focus: 90% 30%; --lamp-x: 17.56%; --lamp-y: 17.46%; }
+[data-ballpark="hanwha-slots"] { --park-zoom: 1.05; --park-focus: 42% 60%; --lamp-x: 5.36%; --lamp-y: 11.11%; }
+[data-ballpark="hanwha-notice"] { --park-zoom: 1.1; --park-focus: 64% 71%; --lamp-x: 92.11%; --lamp-y: 31.06%; }
+
+/* Changwon */
+[data-ballpark="nc-home"] { --park-zoom: 1.085; --park-focus: 55% 58%; --lamp-x: 95.18%; --lamp-y: 26.98%; }
+[data-ballpark="nc-live"] { --park-zoom: 1.095; --park-focus: 42% 60%; --lamp-x: 63.81%; --lamp-y: 25.71%; }
+[data-ballpark="nc-slots"] { --park-zoom: 1.075; --park-focus: 52% 55%; --lamp-x: 91.82%; --lamp-y: 13.86%; }
+[data-ballpark="nc-notice"] { --park-zoom: 1.085; --park-focus: 62% 49%; --lamp-x: 93.27%; --lamp-y: 25.77%; }
+
+/* Gocheok Dome */
+[data-ballpark="kiwoom-home"] { --park-zoom: 1.105; --park-focus: 43% 34%; --lamp-x: 13.87%; --lamp-y: 20.58%; }
+[data-ballpark="kiwoom-live"] { --park-zoom: 1.045; --park-focus: 90% 44%; --lamp-x: 25.27%; --lamp-y: 18.36%; }
+[data-ballpark="kiwoom-slots"] { --park-zoom: 1.105; --park-focus: 57% 35%; --lamp-x: 89.64%; --lamp-y: 13.54%; }
+[data-ballpark="kiwoom-notice"] { --park-zoom: 1.11; --park-focus: 59% 31%; --lamp-x: 87.44%; --lamp-y: 31.43%; }

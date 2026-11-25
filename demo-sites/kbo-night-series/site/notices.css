@@ -1,0 +1,117 @@
+.kbo-notices {
+  background: url("./notices/panel.png") center / 100% 100% no-repeat;
+  color: #fff5ed;
+  font-family: var(--font-ui);
+}
+
+.kbo-notices button {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+.kbo-notices button:focus-visible {
+  outline: 2px solid #fff5ed;
+  outline-offset: 2px;
+}
+.kbo-notices button:hover { filter: brightness(1.18); }
+
+.kbo-notices .kbo-notice-rows {
+  position: absolute;
+  inset: 16px 24px auto;
+  display: grid;
+  gap: 8px;
+  width: auto;
+}
+.kbo-notice-rows .kbo-notice-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  padding: 0 78px 0 24px;
+  background: url("./notices/row.png") center / 100% 100% no-repeat;
+  text-align: left;
+}
+.kbo-notice-title { font-size: 18px; font-weight: 600; line-height: 22px; }
+.kbo-notice-date { color: #e5d8d6; font-size: 16px; font-weight: 400; line-height: 19px; }
+
+.kbo-notice-pages {
+  position: absolute;
+  left: 50%;
+  top: 304px;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+.kbo-notice-pages .kbo-notice-page {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  background: url("./notices/page.png") center / cover;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.kbo-notice-pages [aria-current="page"] {
+  background-image: url("./notices/page-active.png");
+  color: #ff9c9f;
+}
+
+.kbo-notice-article { position: relative; height: 100%; }
+.kbo-notice-article .kbo-notice-back {
+  position: absolute;
+  left: 48px;
+  top: 28px;
+  width: 124px;
+  height: 40px;
+  padding-left: 18px;
+  background: url("./notices/back.png") center / cover;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.kbo-notice-heading,
+.kbo-notice-article .kbo-notice-date {
+  position: absolute;
+  left: 196px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.kbo-notice-heading {
+  top: 28px;
+  width: 1084px;
+  height: 32px;
+  color: #fff5ed;
+  font: 700 24px/29px var(--font-ui);
+}
+.kbo-notice-article .kbo-notice-date {
+  top: 70px;
+  height: 24px;
+  color: #ff9c9f;
+  font-size: 17px;
+  line-height: 20px;
+}
+.kbo-notice-divider {
+  position: absolute;
+  inset: 108px 48px auto;
+  height: 1px;
+  background: url("./notices/divider.png") center / 100% 100%;
+}
+.kbo-notice-body {
+  position: absolute;
+  inset: 130px 48px auto;
+  margin: 0;
+  color: #e5d8d6;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 31px;
+  white-space: pre-wrap;
+}

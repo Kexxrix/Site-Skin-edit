@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "KBO Series UI";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/pretendard-jp/KBO-Series-UI.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "KBO Series UI";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/pretendard-jp/KBO-Series-UI.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "KBO Series UI";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/pretendard-jp/KBO-Series-UI.woff2") format("woff2");
+}
+
+:root {
+  --font-ui: "KBO Series UI", "Malgun Gothic", sans-serif;
+  font-family: var(--font-ui);
+  font-synthesis: none;
+}
+
+body, button, input, select, textarea {
+  font-family: var(--font-ui);
+}
+
+[class*="font-['Pretendard_JP:"] {
+  font-family: var(--font-ui);
+}
+
+[class~="font-['Pretendard_JP:Regular']"] {
+  font-weight: 400;
+}
+
+[class~="font-['Pretendard_JP:SemiBold']"] {
+  font-weight: 600;
+}
+
+[class~="font-['Pretendard_JP:Bold']"] {
+  font-weight: 700;
+}

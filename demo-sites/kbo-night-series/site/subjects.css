@@ -1,0 +1,125 @@
+/* The exported player cutouts share a 730 × 902 box at (1035, 82).
+   Register their individual eye and shoulder landmarks in the 1920 × 1080 scene. */
+body[data-team="doosan"] {
+  --player-eye: 404px 105px;
+  --player-lift: 48px;
+  --player-scale: 0.883;
+  --player-exposure: 1.015;
+  --supporters-focus: 88% 28%;
+}
+body[data-team="hanwha"] {
+  --player-eye: 418px 117px;
+  --player-lift: 36px;
+  --player-scale: 0.925;
+  --player-exposure: 0.99;
+  --supporters-focus: 87% 18%;
+}
+body[data-team="kia"] {
+  --player-eye: 452px 105px;
+  --player-lift: 48px;
+  --player-scale: 0.907;
+  --player-exposure: 1;
+  --supporters-focus: 89% 42%;
+}
+body[data-team="kiwoom"] {
+  --player-eye: 355px 166px;
+  --player-lift: -13px;
+  --player-scale: 0.958;
+  --player-exposure: 1.045;
+  --supporters-focus: 85% 56%;
+}
+body[data-team="kt"] {
+  --player-eye: 451px 106px;
+  --player-lift: 47px;
+  --player-scale: 0.866;
+  --player-exposure: 1.025;
+  --supporters-focus: 89% 29%;
+}
+body[data-team="lg"] {
+  --player-eye: 475px 111px;
+  --player-lift: 42px;
+  --player-scale: 0.913;
+  --player-exposure: 1;
+  --supporters-focus: 86% 26%;
+}
+body[data-team="lotte"] {
+  --player-eye: 520px 139px;
+  --player-lift: 14px;
+  --player-scale: 0.986;
+  --player-exposure: 1.025;
+  --supporters-focus: 85% 25%;
+}
+body[data-team="nc"] {
+  --player-eye: 444px 110px;
+  --player-lift: 43px;
+  --player-scale: 0.901;
+  --player-exposure: 1.01;
+}
+body[data-team="samsung"] {
+  --player-eye: 391px 110px;
+  --player-lift: 43px;
+  --player-scale: 0.971;
+  --player-exposure: 1.035;
+  --supporters-focus: 74% 22%;
+}
+body[data-team="ssg"] {
+  --player-eye: 449px 114px;
+  --player-lift: 39px;
+  --player-scale: 0.925;
+  --player-exposure: 1.02;
+  --supporters-focus: 88% 21%;
+}
+
+.hero-player {
+  transform-origin: var(--player-eye);
+  translate: 0 var(--player-lift);
+  scale: var(--player-scale);
+  pointer-events: none;
+}
+.hero-player::before {
+  content: "";
+  position: absolute;
+  inset: -7% -8% 24%;
+  background: radial-gradient(ellipse closest-side at 54% 48%,
+    color-mix(in srgb, var(--accent) 20%, transparent),
+    color-mix(in srgb, var(--accent) 8%, transparent) 58%, transparent);
+}
+.hero-player > img {
+  filter: brightness(var(--player-exposure)) contrast(1.015) saturate(.98)
+    drop-shadow(-2px 0 2px color-mix(in srgb, var(--highlight) 47%, transparent))
+    drop-shadow(3px 5px 8px rgb(6 9 14 / 25%));
+}
+
+/* Nine sidelines are part of the stadium photograph. Place a feathered
+   fill on the actual group, leaving the centre of the playing field clear. */
+body:not([data-team="nc"]) #world[data-page="live"] #backgrounds > .background-layer:not(.team-flag-background):has(> img)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(ellipse 18% 34% at var(--supporters-focus),
+    color-mix(in srgb, var(--highlight) 25%, transparent), transparent);
+  mix-blend-mode: soft-light;
+}
+
+/* Changwon's performer has a separate alpha cutout and a visible floor. */
+.scene[data-scene="live"] > [data-name="창원 응원단 · 투명 이미지"] {
+  transform-origin: 160px 135px;
+  scale: 1.07;
+  translate: 0 16px;
+  pointer-events: none;
+}
+.scene[data-scene="live"] > [data-name="창원 응원단 · 투명 이미지"]::before {
+  content: "";
+  position: absolute;
+  left: 32%;
+  bottom: 0;
+  width: 33%;
+  height: 2.2%;
+  background: radial-gradient(ellipse, rgb(6 12 23 / 46%), transparent 72%);
+}
+.scene[data-scene="live"] > [data-name="창원 응원단 · 투명 이미지"] > img {
+  filter: brightness(1.015) contrast(1.015)
+    drop-shadow(-2px 0 2px color-mix(in srgb, var(--highlight) 42%, transparent));
+}
