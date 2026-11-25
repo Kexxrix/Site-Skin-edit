@@ -207,13 +207,14 @@ async function showLoginScreen(ticket, withTransition) {
     stopFlagMotion();
     headerHost.replaceChildren();
     navHost.replaceChildren();
-    document.querySelector('#backgrounds').replaceChildren();
+    const backdrop = scene.querySelector('.entry-backdrop');
+    document.querySelector('#backgrounds').replaceChildren(backdrop);
     page = 'login';
     world.dataset.page = page;
     pageHost.replaceChildren(scene);
     document.title = 'ログイン | NPB NIGHT SERIES';
     document.querySelector('meta[name="theme-color"]').content = '#06090f';
-    const flag = scene.querySelector('.entry-flag');
+    const flag = backdrop.querySelector('.entry-flag');
     await flag.querySelector('img').decode();
     if (ticket !== renderTicket) return;
     stopFlagMotion = animateTeamFlag(flag, reduceMotion);
