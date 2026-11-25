@@ -263,6 +263,7 @@ function addFrameLight(frame, className) {
 }
 function wireCardMotion(button, live = false) {
   button.classList.add(live ? 'live-card' : 'tilt-card');
+  const viewport = live ? button.closest('.live-viewport') : null;
   const face = document.createElement('div'); face.className = 'card-face';
   face.append(...button.childNodes); button.append(face);
   let lightMatrix;
@@ -282,6 +283,13 @@ function wireCardMotion(button, live = false) {
   function paint() {
     pending = 0;
     const rect = button.getBoundingClientRect();
+    if (viewport) {
+      const bounds = viewport.getBoundingClientRect();
+      const edgeX = rect.width * .075, edgeY = rect.height * .075;
+      const originX = rect.left - bounds.left < edgeX ? 'left' : bounds.right - rect.right < edgeX ? 'right' : 'center';
+      const originY = rect.top - bounds.top < edgeY ? 'top' : bounds.bottom - rect.bottom < edgeY ? 'bottom' : 'center';
+      face.style.transformOrigin = originX + ' ' + originY;
+    }
     const x = Math.max(-1, Math.min(1, 2 * (pointerX - rect.left) / rect.width - 1));
     const y = Math.max(-1, Math.min(1, 2 * (pointerY - rect.top) / rect.height - 1));
     const radius = Math.max(1, Math.hypot(x, y));
@@ -341,10 +349,14 @@ function wireHome(scene) {
 function wireProviders(scene) {
   const panel = scene.querySelector(page === 'live' ? '[data-name="Live / provider panel and card grid"]' : '[data-name="Providers / 5 + 5 + 4"]');
   panel.classList.add(page === 'live' ? 'live-grid' : 'slot-grid');
-  [...panel.children].forEach(node => {
+  const cards = page === 'live' ? panel.querySelector('.live-cards') : panel;
+  [...cards.children].forEach(node => {
     const label = node.querySelector('p')?.textContent; if (!label) return;
     const logo = node.querySelector('[data-name^="Provider / existing"] img')?.getAttribute('src');
-    const button = buttonize(node, label, () => gameLobby(label, logo)); button.classList.add('provider-card'); wireCardMotion(button, page === 'live'); wrapCard(button);
+    const button = buttonize(node, label, () => gameLobby(label, logo));
+    button.classList.add('provider-card');
+    wireCardMotion(button, page === 'live');
+    if (page === 'slots') wrapCard(button);
   });
   if (page === 'slots') {
     scene.querySelector('[data-name="Slots / provider panel"]').classList.add('slots-panel');

@@ -76,7 +76,57 @@ body:is([data-team="fighters"],[data-team="hawks"],[data-team="giants"],[data-te
 .world-dock button,.provider-card,.game-card{transition:filter 160ms ease}.world-dock button:active,.provider-card:active,.game-card:active{filter:brightness(1.25)}
 .featured-grid{position:absolute;top:10px;left:98px;width:1372px;height:304px;display:grid;grid-template-columns:repeat(5,252px);gap:28px;overflow:visible}
 .featured-grid>.card-slot{display:block;position:relative;width:252px;height:304px}.featured-grid .game-card{left:0;top:0}
-.live-grid,.slots-panel{background:rgba(6,7,8,.05)}
+.slots-panel{background:rgba(6,7,8,.05)}
+.live-grid {
+  position: absolute;
+  left: 250px;
+  top: 294px;
+  width: 1420px;
+  height: 600px;
+  border: 1px solid var(--edge);
+  border-radius: 16px;
+  background: linear-gradient(rgba(6,7,8,.59), rgba(6,7,8,.83));
+}
+.live-viewport {
+  position: absolute;
+  left: 29px;
+  top: 33px;
+  width: 1360px;
+  height: 540px;
+  overflow: hidden auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+.live-viewport::-webkit-scrollbar { display: none; }
+.live-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 210px);
+  grid-auto-rows: 250px;
+  gap: 40px 20px;
+}
+.live-cards > * { position: relative; }
+.live-tall, .live-wide { grid-column: span 2; }
+.live-tall { grid-row: span 2; }
+.live-layer, .live-fill { position: absolute; inset: 0; width: 100%; height: 100%; }
+.live-portrait { position: absolute; inset: 8px; overflow: hidden; }
+.live-portrait img { transition: transform 180ms ease-out; }
+.live-logo { position: absolute; top: 136px; left: 50%; translate: -50%; width: 164px; height: 68px; }
+.live-tall .live-logo { top: 400px; }
+.live-logo img { object-fit: contain; }
+.live-label, .live-english {
+  position: absolute;
+  inset-inline: 10px;
+  text-align: center;
+  font-family: Paperlogy, var(--font-ui);
+  color: var(--text\/primary);
+}
+.live-label { top: 201px; font-size: 16px; font-weight: 900; line-height: 23px; }
+.live-wide .live-label { font-size: 21px; }
+.live-english { top: 224px; font-size: 10px; font-weight: 700; line-height: 14px; letter-spacing: .06em; opacity: .83; }
+.live-tall .live-label { top: 473px; font-size: 26px; line-height: 31px; }
+.live-tall .live-english { top: 504px; font-size: 13px; line-height: 18px; }
+.live-card:focus-visible { outline-offset: -4px; z-index: 3; }
+.live-card:focus-visible .card-face { outline: 3px solid #fff3ca; outline-offset: -4px; }
 .slot-categories button{border-width:1px;border-style:solid;border-color:#52576194;background:linear-gradient(#131619,#090a0d)}
 .slot-categories button[aria-pressed="true"]{border-color:var(--accent);background:linear-gradient(var(--selected-well),#090a0d)}
 .slot-categories button[aria-pressed="true"] p{color:var(--highlight)}.slot-categories button[aria-pressed="false"] p{color:#e0e5eb}
@@ -110,8 +160,6 @@ dialog label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weig
 .tilt-card,.live-card{overflow:visible;isolation:isolate}
 .card-face{position:absolute;inset:0;pointer-events:none;transition:transform 270ms cubic-bezier(.2,.75,.25,1)}
 .live-card .card-face{overflow:hidden;transition:transform 180ms ease-out}
-body[data-team="baystars"] .live-card[data-name="Live provider / PRAGMATIC PLAY"] [data-name="Image / player portrait"]{overflow:hidden;background:#080b11}
-body[data-team="baystars"] .live-card[data-name="Live provider / PRAGMATIC PLAY"] [data-name="Image / player portrait"]>img{transform:translateY(-22%);mask-image:linear-gradient(#000 0%,#000 82%,transparent 100%)}
 .prism-surface{isolation:isolate;overflow:hidden}.prism-surface>img{transform-origin:center bottom;transition:scale 240ms ease-out}
 .prism-surface::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(112deg,#ff86c2 0px,#ffc276 22px,#fff298 42px,#78efab 64px,#69eafa 85px,#83a3ff 107px,#cea1ff 128px,#ff86c2 148px) var(--prism-spectrum-x,50%) center / 200% 100% no-repeat;mix-blend-mode:hard-light;mask-image:repeating-conic-gradient(from -30deg,#000 0deg 60deg,#0005 60deg 120deg),radial-gradient(ellipse 76% 82% at var(--light-x,50%) var(--light-y,50%),#000e 7%,#0007 51%,transparent);mask-size:14px 24.25px,100% 100%;mask-position:center;mask-repeat:repeat,no-repeat;mask-composite:intersect;opacity:var(--prism-opacity,0);transition:opacity 180ms ease-out}
 .card-frame-normal{pointer-events:none;mix-blend-mode:hard-light;opacity:var(--glint-opacity,0);transition:opacity 180ms ease-out}
@@ -122,7 +170,8 @@ body[data-team="baystars"] .live-card[data-name="Live provider / PRAGMATIC PLAY"
   .card-slot:has(.tracking-light:hover){z-index:3}.provider-card.tracking-light:hover{z-index:3}
   .tilt-card.tracking-light:hover .card-face{--prism-opacity:.66;--glint-opacity:.92;transform:perspective(900px) translateY(-4px) scale(1.29) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition-duration:95ms}
   .tracking-light:hover .prism-surface>img{scale:1.045}
-  .live-card.tracking-light:hover .card-face{transform:translateY(-4px) scale(1.15)}
+  .live-card:not(.live-tall).tracking-light:hover .card-face{transform:scale(1.15)}
+  .live-tall.tracking-light:hover .live-portrait img{transform:scale(1.08)}
   .live-card.tracking-light:hover .live-frame-sweep{animation:live-frame-sweep 620ms ease-out both}
 }
 .tilt-card:focus-visible{z-index:3}.tilt-card:focus-visible .card-face{--glint-opacity:.65}
