@@ -77,6 +77,23 @@ body:is([data-team="fighters"],[data-team="hawks"],[data-team="giants"],[data-te
 .featured-grid{position:absolute;top:10px;left:98px;width:1372px;height:304px;display:grid;grid-template-columns:repeat(5,252px);gap:28px;overflow:visible}
 .featured-grid>.card-slot{display:block;position:relative;width:252px;height:304px}.featured-grid .game-card{left:0;top:0}
 .slots-panel{background:rgba(6,7,8,.05)}
+.slot-viewport {
+  position: absolute; left: 105px; top: 0; width: 1356px; height: 739px;
+  padding: 17px 16px 14px; overflow: hidden auto; scrollbar-width: none; overscroll-behavior: contain;
+}
+.slot-viewport::-webkit-scrollbar { display: none; }
+.slot-cards { display: grid; grid-template-columns: repeat(5, 252px); grid-auto-rows: 272px; gap: 12px 16px; }
+.slot-card { position: relative; width: 252px; height: 272px; --hover-lift: 0px; }
+.slot-picture, .slot-shade { position: absolute; inset: 8px; width: 236px; height: 256px; }
+.slot-frame { position: absolute; inset: 0; }
+.slot-card .provider-logo { position: absolute; top: 163px; left: 50px; width: 152px; height: 60px; }
+.slot-label, .slot-english { position: absolute; left: 12px; right: 12px; text-align: center; font-family: Paperlogy, var(--font-ui); }
+.slot-label { top: 221px; color: #f5f2eb; font-size: 19px; line-height: 26px; font-weight: 900; }
+.slot-english { top: 247px; color: #ccd1d9; font-size: 10px; line-height: 15px; font-weight: 700; }
+.slot-card:focus-visible { z-index: 3; }
+.slot-card .provider-logo:is([data-brand="playson"], [data-brand="fa-chai"], [data-brand="booming-games"], [data-brand="spinomenal"]) img {
+  filter: drop-shadow(0 0 .8px white) drop-shadow(0 0 1.1px white) drop-shadow(0 0 1.65px white);
+}
 .live-grid {
   position: absolute;
   left: 250px;
@@ -112,7 +129,40 @@ body:is([data-team="fighters"],[data-team="hawks"],[data-team="giants"],[data-te
 .live-portrait img { transition: transform 180ms ease-out; }
 .live-logo { position: absolute; top: 136px; left: 50%; translate: -50%; width: 164px; height: 68px; }
 .live-tall .live-logo { top: 400px; }
-.live-logo img { object-fit: contain; }
+/* Keep each official 640×240 PNG intact and use Figma's crop for its visible ink. */
+.provider-logo { pointer-events: none; overflow: visible; }
+.provider-logo img {
+  position: absolute; left: var(--logo-left); top: var(--logo-top);
+  width: var(--logo-width); height: auto; max-width: none;
+  filter: drop-shadow(0 0 1px #03050b) drop-shadow(0 0 1.25px #03050b) drop-shadow(0 1px 2px #03050b);
+}
+.provider-logo:is([data-brand="playtech"], [data-brand="jili"], [data-brand="xpg"]) img {
+  filter: drop-shadow(0 0 .8px white) drop-shadow(0 0 1.1px white) drop-shadow(0 0 1.65px white);
+}
+.provider-card p { text-shadow: 0 1px 2px #05070c, 0 0 3px #05070cc9; }
+.live-grid [data-brand="microgaming"] { --logo-left: -9.8%; --logo-top: -3.85%; --logo-width: 119.59%; }
+.live-grid [data-brand="pragmatic-play"] { --logo-left: -13.06%; --logo-top: -6.89%; --logo-width: 126.32%; }
+.live-grid [data-brand="playtech"] { --logo-left: -5.56%; --logo-top: -0.33%; --logo-width: 111.29%; }
+.live-grid [data-brand="evolution-gaming"] { --logo-left: -17.15%; --logo-top: -10.57%; --logo-width: 134.51%; }
+.live-grid [data-brand="dream-gaming"] { --logo-left: -10.04%; --logo-top: -4.3%; --logo-width: 120.08%; }
+.live-grid [data-brand="ezugi"] { --logo-left: -15.43%; --logo-top: -8.93%; --logo-width: 130.86%; }
+.live-grid [data-brand="skywind-group"] { --logo-left: -5.33%; --logo-top: 0.16%; --logo-width: 110.67%; }
+.live-grid [data-brand="sa-gaming"] { --logo-left: -18.57%; --logo-top: -11.76%; --logo-width: 137.14%; }
+.live-grid [data-brand="vivo-gaming"] { --logo-left: -13.37%; --logo-top: -7.41%; --logo-width: 126.95%; }
+.live-grid [data-brand="winfinity"] { --logo-left: -17.61%; --logo-top: -10.89%; --logo-width: 135.22%; }
+.live-grid [data-brand="oriental-game"] { --logo-left: -7.49%; --logo-top: -1.86%; --logo-width: 115.15%; }
+.live-grid [data-brand="betgames"] { --logo-left: -1.92%; --logo-top: 3.05%; --logo-width: 103.83%; }
+.live-grid [data-brand="xpg"] { --logo-left: -14.64%; --logo-top: -8.22%; --logo-width: 129.28%; }
+.live-grid [data-brand="big-gaming"] { --logo-left: -13.52%; --logo-top: -7.54%; --logo-width: 127.23%; }
+.live-grid [data-brand="db-live-casino"] { --logo-left: -6.13%; --logo-top: -0.55%; --logo-width: 112.25%; }
+.live-grid [data-brand="7mojos"] { --logo-left: -11.16%; --logo-top: -5.40%; --logo-width: 122.52%; }
+.live-grid [data-brand="ho-gaming"] { --logo-left: -18.08%; --logo-top: -11.22%; --logo-width: 135.96%; }
+.live-grid [data-brand="tvbet"] { --logo-left: -1.92%; --logo-top: 3.24%; --logo-width: 103.83%; }
+.live-grid [data-brand="super-spade-games"] { --logo-left: -5.50%; --logo-top: -0.28%; --logo-width: 111.18%; }
+.live-grid [data-brand="onetouch"] { --logo-left: -10.57%; --logo-top: -4.55%; --logo-width: 121.14%; }
+.live-grid :is([data-brand="vivo-gaming"], [data-brand="db-live-casino"]) img {
+  filter: drop-shadow(0 0 .8px #fff) drop-shadow(0 0 1.3px #03050b) drop-shadow(0 1px 2px #03050b);
+}
 .live-label, .live-english {
   position: absolute;
   inset-inline: 10px;
@@ -168,7 +218,7 @@ dialog label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weig
 @media(hover:hover) and (prefers-reduced-motion:no-preference){
   .world-dock button:hover{--dock-hover-scale:var(--dock-pop);--dock-glow:var(--dock-light);--dock-spin:dock-spin;--dock-sweep:dock-sweep}
   .card-slot:has(.tracking-light:hover){z-index:3}.provider-card.tracking-light:hover{z-index:3}
-  .tilt-card.tracking-light:hover .card-face{--prism-opacity:.66;--glint-opacity:.92;transform:perspective(900px) translateY(-4px) scale(1.29) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition-duration:95ms}
+  .tilt-card.tracking-light:hover .card-face{--prism-opacity:.66;--glint-opacity:.92;transform:perspective(900px) translateY(var(--hover-lift,-4px)) scale(1.29) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition-duration:95ms}
   .tracking-light:hover .prism-surface>img{scale:1.045}
   .live-card:not(.live-tall).tracking-light:hover .card-face{transform:scale(1.15)}
   .live-tall.tracking-light:hover .live-portrait img{transform:scale(1.08)}

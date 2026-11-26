@@ -66,7 +66,7 @@ async function template(path) {
   return (await templates.get(path)).cloneNode(true);
 }
 async function preload(root) {
-  const urls = [...root.querySelectorAll('img')].map(image => image.getAttribute('src'));
+  const urls = [...root.querySelectorAll('img:not([loading="lazy"])')].map(image => image.getAttribute('src'));
   for (const node of root.querySelectorAll('[style*="url("]')) {
     for (const match of node.getAttribute('style').matchAll(/url\(["']?([^"')]+)["']?\)/g)) urls.push(match[1]);
   }
@@ -289,7 +289,7 @@ function addFrameLight(frame, className) {
 }
 function wireCardMotion(button, live = false) {
   button.classList.add(live ? 'live-card' : 'tilt-card');
-  const viewport = live ? button.closest('.live-viewport') : null;
+  const viewport = button.closest('.live-viewport, .slot-viewport');
   const face = document.createElement('div'); face.className = 'card-face';
   face.append(...button.childNodes); button.append(face);
   let lightMatrix;
@@ -373,16 +373,13 @@ function wireHome(scene) {
   }
 }
 function wireProviders(scene) {
-  const panel = scene.querySelector(page === 'live' ? '[data-name="Live / provider panel and card grid"]' : '[data-name="Providers / 5 + 5 + 4"]');
-  panel.classList.add(page === 'live' ? 'live-grid' : 'slot-grid');
-  const cards = page === 'live' ? panel.querySelector('.live-cards') : panel;
+  const cards = scene.querySelector(page === 'live' ? '.live-cards' : '.slot-cards');
   [...cards.children].forEach(node => {
     const label = node.querySelector('p')?.textContent; if (!label) return;
-    const logo = node.querySelector('[data-name^="Provider / existing"] img')?.getAttribute('src');
+    const logo = node.querySelector('.provider-logo img')?.getAttribute('src');
     const button = buttonize(node, node.dataset.player ? `${label} · ${node.dataset.player}` : label, () => gameLobby(label, logo));
     button.classList.add('provider-card');
     wireCardMotion(button, page === 'live');
-    if (page === 'slots') wrapCard(button);
   });
   if (page === 'slots') {
     scene.querySelector('[data-name="Slots / provider panel"]').classList.add('slots-panel');
@@ -460,15 +457,21 @@ async function render(nextPage = page, nextTeam = team) {
       if (ticket === renderTicket) world.setAttribute('aria-busy', 'false');
       return;
     }
-    const [scene, home, liveCards] = await Promise.all([
+    const [scene, home, catalog] = await Promise.all([
       template(`screens/${nextTeam}-${nextPage}.html`),
       template(`screens/${nextTeam}-home.html`),
-      nextPage === 'live' ? template('screens/live-cards.html') : null
+      nextPage === 'live' || nextPage === 'slots'
+        ? template(nextPage === 'live' ? 'screens/live-cards.html' : 'screens/slot-cards.html')
+        : null
     ]);
-    if (liveCards) {
+    if (nextPage === 'live') {
       const grid = scene.querySelector('.live-cards');
-      for (const frame of liveCards.querySelectorAll('img[data-frame]')) frame.src = grid.dataset[frame.dataset.frame];
-      grid.replaceChildren(...liveCards.children);
+      for (const frame of catalog.querySelectorAll('img[data-frame]')) frame.src = grid.dataset[frame.dataset.frame];
+      grid.replaceChildren(...catalog.children);
+    } else if (nextPage === 'slots') {
+      const viewport = scene.querySelector('.slot-viewport');
+      for (const layer of catalog.querySelectorAll('img[data-layer]')) layer.src = viewport.dataset[layer.dataset.layer];
+      viewport.append(catalog);
     }
     const homeBackground = scene.querySelector('[data-name="Background / common ballpark photograph"] img');
     if (homeBackground) {
@@ -508,7 +511,7 @@ async function render(nextPage = page, nextTeam = team) {
     if (ticket !== renderTicket) return;
     pageHost.replaceChildren(scene);
     // Wait for the newly inserted image elements before taking the transition snapshot.
-    await Promise.all([...world.querySelectorAll('img')].map(image => image.decode()));
+    await Promise.all([...world.querySelectorAll('img:not([loading="lazy"])')].map(image => image.decode()));
     if (ticket !== renderTicket) return;
     stopFlagMotion = animateTeamFlag(flagLayer, reduceMotion);
     document.title = `${titles[pages.indexOf(page)]} | ${teams[team]} | NPB NIGHT SERIES`;
