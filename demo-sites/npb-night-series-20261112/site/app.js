@@ -379,7 +379,7 @@ function wireProviders(scene) {
   [...cards.children].forEach(node => {
     const label = node.querySelector('p')?.textContent; if (!label) return;
     const logo = node.querySelector('[data-name^="Provider / existing"] img')?.getAttribute('src');
-    const button = buttonize(node, label, () => gameLobby(label, logo));
+    const button = buttonize(node, node.dataset.player ? `${label} · ${node.dataset.player}` : label, () => gameLobby(label, logo));
     button.classList.add('provider-card');
     wireCardMotion(button, page === 'live');
     if (page === 'slots') wrapCard(button);
@@ -460,7 +460,16 @@ async function render(nextPage = page, nextTeam = team) {
       if (ticket === renderTicket) world.setAttribute('aria-busy', 'false');
       return;
     }
-    const [scene, home] = await Promise.all([template(`screens/${nextTeam}-${nextPage}.html`), template(`screens/${nextTeam}-home.html`)]);
+    const [scene, home, liveCards] = await Promise.all([
+      template(`screens/${nextTeam}-${nextPage}.html`),
+      template(`screens/${nextTeam}-home.html`),
+      nextPage === 'live' ? template('screens/live-cards.html') : null
+    ]);
+    if (liveCards) {
+      const grid = scene.querySelector('.live-cards');
+      for (const frame of liveCards.querySelectorAll('img[data-frame]')) frame.src = grid.dataset[frame.dataset.frame];
+      grid.replaceChildren(...liveCards.children);
+    }
     const homeBackground = scene.querySelector('[data-name="Background / common ballpark photograph"] img');
     if (homeBackground) {
       const stadium = await template(`screens/${nextTeam}-notice.html`);
